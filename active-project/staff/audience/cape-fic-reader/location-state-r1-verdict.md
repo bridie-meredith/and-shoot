@@ -7,28 +7,26 @@ date: 2026-06-03
 verdict: accept
 ---
 
-# Adversarial read — location-state b01c11
-
 ## Entry-level callouts
 
-None blocking. Working through the six entries:
+None blocking.
 
-[loc-state:1] @1 — Jarvis takes the packet at the feed-station. The packet leaving the station surface is the threshold act. The feed-station anchor at morning with the "station-surface-packet-at-hand-off" condition is the exact frame this reader needs to know the channel is now live, not pre-launch. The board-state reads: channel open, packet in motion. The necessity test clears: ceremony-free hand-off as load, not setup. No attack.
+[loc-state:1 @1] Feed-station, morning, packet at hand-off. Board-state reset after c10's end-of-day close. The time-of-day reboot (morning) + the physical packet-at-surface-edge frame give me the channel-now-live read I need before anything else moves. Ceremony-free = load delivered.
 
-[loc-state:2] @8 — cloth-merchant shop, back-worktable open in low rushlight. First-beat-in-new-location exception. The rushlight condition is the specific perceptible thing the burn scene turns on — off-hour, small enclosed space, low light. Without this anchor the burn at @11 has no spatial container and the "off-hour" threat-register collapses. Clean. No attack.
+[loc-state:2 @8] Cloth-merchant shop, back-worktable, rushlight-lit. First-beat-in-new-location exception fires correctly. The enclosed rushlight space is what makes the burn's dread register legible — a burn in an open market is noise; a burn in a low-lit back room is protocol. This entry does real board-state work.
 
-[loc-state:3] @9 — messenger crosses the shop-threshold. Transitional `crosses` verb. State-change from @2 (no visitors) to (messenger-at-threshold). The off-hour body is the focus element. The pointing test works in five words: the off-hour messenger at the threshold. No attack.
+[loc-state:3 @9] Messenger crosses the shop-threshold, off-hour body. The off-hour charge is the load this entry delivers — without a threshold-crossing that names the visitor's timing as unusual, the @11 burn loses its standing-protocol read. Clean transitional verb, clean state-change from @8.
 
-[loc-state:4] @17 — soap-lane-contact crosses the cross-lane. Scene-C place-anchor. Transitional verb, new location. Focus element: cross-lane open to approach. Necessary for the contact's physical route to be legible before delivery at @18. No attack.
+[loc-state:4 @17] Soap-lane-contact crosses the cross-lane. Scene-C place-anchor. The cross-lane open to approach is the delivery geometry. No attack: this is the minimum needed for the scene to have a physical location.
 
-[loc-state:5] @22 — feed-station, end-of-day, accounting-in-motion. Time-of-day advance from afternoon to end-of-day. New moment-within-location. The focus element (station-surface bare, ledger open) distinguishes scene-D from scene-A's morning. The temporal anchor is what makes the four-arm-close sequence read as closure rather than continuation. No attack.
+[loc-state:5 @22] Feed-station, end-of-day, accounting-in-motion. Time-of-day advance explicit. The station-surface-clear + ledger-open posture distinguishes this from scene-A's morning posture at the same location. Without this differentiation, the four-arm-close sequence has no temporal anchor. Clean.
 
-[loc-state:6] @23 — continuity-carry through the four-arm-close fusion-eligible-run. One carry-entry, anchored to run's first bone, naming the specific persisting thread (accounting surface still under hand). Not a verbatim repeat of @5's sensory note. The carry licenses the stitcher through @23-@26 without over-firing. No attack.
+[loc-state:6 @23] Continuity-carry through the four-arm-close @23–@26 run. Single carry-entry, correct form — names the persisting thread (accounting surface under hand) without repeating @5's sensory note. The rubric-approved carry for a fusion-eligible-run with falling-to-close-image rhythm.
 
-## Overall read
+## Convergence trace
 
-Six entries, no excess. The file is sparsely correct — the three new-location-anchors (@1, @8, @17) are mandatory, the time-advance (@22) is mandatory, the carry (@23) is the single permitted grace. The studio's rejection of @3/@4 (feed-relay beats / grain-measures junction) on the grounds that Taylor doesn't physically occupy that space is the right call. I came to check whether the board-state stays legible through the silences; it does. The four scenes read spatially distinct.
+SEAM-C11-LOC-001 and LOC-002 (no warehouse cards for cloth-merchant-shop and soap-rendering-lane slugs) are margit pre-stitch referrals, not audience-blocking failures. SEAM-C11-LOC-003 (feed-POV philosophy: whether the grain-measures junction earns a loc-state anchor) was correctly decided — Taylor's body does not occupy the junction; the feed mediates; no loc-state. SEAM-C11-LOC-004 (slug canonicalization for the Hook sub-locations) is a margit consistency item, not a board-state legibility failure.
 
-SEAM-C11-LOC-001 and LOC-002 (missing warehouse cards for cloth-merchant-shop and soap-rendering-lane) are margit pre-stitch referrals, not a loc-state facet problem. They don't affect the spatial legibility of the facet itself. Noted, not a blocking condition here.
+## Verdict rationale
 
-verdict: accept
+Six entries across four distinct physical spaces. The three place-anchors, the time-advance, and the single continuity-carry are all the minimum-necessary set for a 4-scene single-day circuit. No dexterity-in-place fires. No entries that are scene-painting without necessity. The board stays legible spatially throughout the chapter. No hot buttons fire. Accept.
