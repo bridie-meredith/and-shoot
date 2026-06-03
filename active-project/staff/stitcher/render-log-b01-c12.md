@@ -226,3 +226,105 @@ dialogue: none (silent chapter — 0 dialogue-anchor bones; no per-character dia
 # s04 causal seam @30→@31→@32 legible without expository bridge. Confirmed.
 # ============================================================================
 </content>
+
+## Phase 7 — editorial reflection
+
+# Per-sentence Q1-Q9 sweep over b01-c12.phase-6.draft.md (4 paragraphs / 4 scenes, 49 sentences).
+# Q-key: Q1=load-bearing? (want Y) | Q5=hollow-prose? (want N) | Q6=fancy-punct-reach? (want N)
+#        | Q8=asinine? (want N) | Q9=anti-jargon coined hyphen-compound? (want N).
+# Persona: neutral (no overrides). Profile cut-aggressiveness: strict.
+# Hyphenated tokens cross-checked against the LICENSED list (fixed referents / bone-content
+# place-names / ledger-columns): overhang-joints, water-gate, gate-tower, rendering-yard,
+# stitch-house, stitch-maker, ward-cluster, source-field, full-circuit, fifth-ward,
+# aggregate-shape, harm-prevention, gap-column, anchor-column, coverage-entry, breach column,
+# end-of-day, lane-mouth, second bell, Muddy Way, Flea Bottom, east-water-gate, cloth-account
+# (c11 burned-cloth callback referent — VERIFIED in draft/b01-c11.md; NOT a coinage), lane-refusal,
+# axis-move (ledger-term). Q9 HITS = stitcher-coined sensory/register nominalizations only.
+
+# ---- PARAGRAPH 1 (s01) — exposition-derived @1 lanes: Q1/Q5/Q8 pre-cleared upstream ----
+# S1  | Q1=Y Q5=N Q6=N Q8=N Q9=N | -> KEEP  (exposition-fold @1; overhang-joints/water-gate/lane-mouth all LICENSED)
+# S2  | Q1=Y Q5=N Q6=N Q8=N Q9=N | -> KEEP  (gate-tower LICENSED; bone @ shadow-take)
+# S3  | Q1=Y Q5=N Q6=N Q8=N Q9=N | -> KEEP  (person-first beat — DO-NOT-TOUCH; "the word these streets keep" load-bearing)
+# S4  | Q1=Y Q5=N Q6=N Q8=N Q9=N | -> KEEP  ("I know the word." — recognition beat, load-bearing terse)
+# S5  | Q1=Y Q5=N Q6=N Q8=N Q9=N | -> KEEP  (willful-placement; character motivation)
+# S6  | Q1=Y Q5=N Q6=N Q8=N Q9=N | -> KEEP  (map-close west; gate-tower LICENSED)
+# S7  | Q1=Y Q5=N Q6=N Q8=N Q9=N | -> KEEP  (map-close east; rendering-yard LICENSED)
+# S8  | Q1=Y Q5=N Q6=N Q8=N Q9=N | -> KEEP  (gap-bounded; "named stretch with two stone edges" = grounding)
+# S9  | Q1=Y Q5=N Q6=N Q8=N Q9=N | -> KEEP  (stitch-house route LICENSED; Wren-lane plot-mechanism)
+# S10 | Q1=Y Q5=N Q6=N Q8=N Q9=N | -> KEEP  (stitch-maker route LICENSED; unindexed-record = withhold setup)
+# S11 | Q1=Y Q5=N Q6=N Q8=N Q9=N | -> KEEP  (bone: lifts stylus)
+# S12 | Q1=Y Q5=N Q6=N Q8=N Q9=N | -> KEEP  (source-field LICENSED; hand-refusal embodiment, not told-emotion)
+# S13 | Q1=Y Q5=N Q6=N Q8=N Q9=N | -> KEEP  (ward-cluster/water-gate LICENSED; placement = capability gain)
+# S14 | Q1=Y Q5=N Q6=N Q8=N Q9=N | -> KEEP  (eastern lanes excluded = the withheld boundary)
+# S15 | Q1=Y Q5=N Q6=N Q8=N Q9=N | -> KEEP  ("never been priced" = cost-axis spine; load-bearing close)
+
+# ---- PARAGRAPH 2 (s02) ----
+# S16 | Q1=Y Q5=N Q6=N Q8=N Q9=N | -> KEEP  (Jarvis packet; channel = station, established)
+# S17 | Q1=Y Q5=N Q6=N Q8=N Q9=Y | -> REWORD (Q9 HIT: "channel-quiet" = stitcher-coined sensory nominalization)
+#       REWORD: "loud in the channel-quiet of the room" -> "loud in the quiet of the channel"
+#       (meaning-preserving; channel = the station-room, established @S16; 1 reword, under cap 2; clean)
+# S18 | Q1=Y Q5=N Q6=N Q8=N Q9=N | -> KEEP  (gate-tower designation LICENSED; west-wall mark)
+# S19 | Q1=Y Q5=N Q6=N Q8=N Q9=N | -> KEEP  (bone: turns sheet)
+# S20 | Q1=Y Q5=N Q6=N Q8=N Q9=N | -> KEEP  (person-first beat — DO-NOT-TOUCH; both gap-edges land; apparatus-shape)
+# S21 | Q1=Y Q5=N Q6=N Q8=N Q9=N | -> KEEP  (apparatus wants the lanes that can't give it = central irony, load-bearing)
+# S22 | Q1=Y Q5=N Q6=N Q8=N Q9=N | -> KEEP  (bone: sets packet down)
+# S23 | Q1=Y Q5=N Q6=N Q8=N Q9=N | -> KEEP  (sensory grounding — morning warmth/damp; GROUNDING-LEDGER licensed; not hollow)
+
+# ---- PARAGRAPH 3 (s03) ----
+# S24 | Q1=Y Q5=N Q6=N Q8=N Q9=N | -> KEEP  (bone: takes stylus up)
+# S25 | Q1=Y Q5=N Q6=N Q8=N Q9=N | -> KEEP  (coverage-entry/gap-column/east-water-gate LICENSED; the written limit)
+# S26 | Q1=Y Q5=N Q6=N Q8=N Q9=N | -> KEEP  ("I did not write why." — the withhold, terse, load-bearing)
+# S27 | Q1=Y Q5=N Q6=N Q8=N Q9=N | -> KEEP  (source-field LICENSED; hand-refusal embodiment)
+# S28 | Q1=Y Q5=N Q6=N Q8=N Q9=N | -> KEEP  (explanation field bare = sealed-withhold; not over-qualification — it's the act)
+# S29 | Q1=Y Q5=N Q6=N Q8=N Q9=N | -> KEEP  (cloth-account LICENSED c11 callback; "third time, recognized and not stopped" = arc spine)
+# S30 | Q1=Y Q5=N Q6=N Q8=N Q9=N | -> KEEP  (person-first beat — DO-NOT-TOUCH; route-around makes withhold invisible = stakes)
+# S31 | Q1=Y Q5=N Q6=N Q8=N Q9=N | -> KEEP  (gap-column flat-register close; bone)
+# S32 | Q1=Y Q5=N Q6=N Q8=N Q9=N | -> KEEP  (bone: opens anchor-column)
+# S33 | Q1=Y Q5=N Q6=N Q8=N Q9=N | -> KEEP  (lane-refusal/axis-move LICENSED; dual-debt settle = substance Δ payload, load-bearing)
+# S34 | Q1=Y Q5=N Q6=N Q8=N Q9=N | -> KEEP  (bone: lifts hand off column)
+
+# ---- PARAGRAPH 4 (s04) — @38 fence-beat + @42 cold-close in this para; DO-NOT-TOUCH ----
+# S35 | Q1=Y Q5=N Q6=N Q8=N Q9=N | -> KEEP  (second ward-cluster runs; bone, time-marker)
+# S36 | Q1=Y Q5=N Q6=N Q8=N Q9=N | -> KEEP  (Muddy Way/Flea Bottom LICENSED; partial->full weight = capability completion)
+# S37 | Q1=Y Q5=N Q6=N Q8=N Q9=N | -> KEEP  (fifth-ward circuit closed LICENSED; bone)
+# S38 | Q1=Y Q5=N Q6=N Q8=N Q9=Y | -> REWORD (Q9 HIT: "walkable-back" = stitcher-coined adj-compound; NOT on licensed list)
+#       REWORD: "not walkable-back by pulling any single node" -> "not walked back by pulling any single node"
+#       (meaning-preserving common-English verb form; full-circuit/architecture content untouched; 1 reword, under cap)
+# S39 | Q1=Y Q5=N Q6=N Q8=N Q9=N | -> KEEP  (full-circuit return LICENSED; bone)
+# S40 | Q1=Y Q5=N Q6=N Q8=N Q9=N | -> KEEP  (person-first beat — DO-NOT-TOUCH; Flea Bottom approaches at full scale = goal reached)
+# S41 | Q1=Y Q5=N Q6=N Q8=N Q9=N | -> KEEP  ("ran as it always ran" = flat-register, load-bearing tonal beat)
+# S42 | Q1=Y Q5=N Q6=N Q8=N Q9=N | -> KEEP  (aggregate-shape/harm-prevention/breach column LICENSED; three-beat accounting buildup — PROTECTED Phase 6)
+# S43 | Q1=Y Q5=N Q6=N Q8=N Q9=N | -> KEEP  (@38 FENCE-BEAT — "the older word"/"shape of the thing I did when the world was ending"/"the one this rhymes with"; fence-clean cipher, DO-NOT-TOUCH)
+# S44 | Q1=Y Q5=N Q6=N Q8=N Q9=N | -> KEEP  (@38 FENCE-BEAT cont. — "the older shape, built in a different city"; DO-NOT-TOUCH)
+# S45 | Q1=Y Q5=N Q6=N Q8=N Q9=N | -> KEEP  ("there for one count" = one-count presence then suppressed; load-bearing)
+# S46 | Q1=Y Q5=N Q6=N Q8=N Q9=N | -> KEEP  ("I did not let it settle." — suppression act, terse, load-bearing)
+# S47 | Q1=Y Q5=N Q6=N Q8=N Q9=N | -> KEEP  (person-first beat — DO-NOT-TOUCH; palm-flat sensory + breath feel; architecture entry closed without the word)
+# S48 | Q1=Y Q5=N Q6=N Q8=N Q9=N | -> KEEP  (ledger entry takes full-circuit count; bone)
+# S49 | Q1=Y Q5=N Q6=N Q8=N Q9=N | -> KEEP  (@42 BREACH-AS-COLD-LEDGER-FACT close — "the word not filed with it"; cold-close, DO-NOT-TOUCH)
+
+# ---- SWEEP RESULT ----
+# 49 sentences swept (full per-sentence sweep shown — no FAULT-PHASE-7-NO-SWEEP).
+# Moves: 0 CUT | 0 CUT-CLAUSE | 0 RESHOW | 0 CUT-BONE | 2 REWORD.
+#   REWORD #1 @S17: "channel-quiet" -> "the quiet of the channel" (Q9 stitcher-coinage).
+#   REWORD #2 @S38: "walkable-back" -> "walked back" (Q9 stitcher-coinage).
+# No bones cut (0 bone loss; monotonic order preserved; all 42 bones survive Phase 7).
+# Exposition-derived @1 lanes (para 1): Q1/Q5/Q8 pre-cleared upstream; Q9/Q6 applied normally, no hits, no borderline downgrades — KEEP.
+# Apparatus-register interior density retained BY DESIGN (readability axis carried by grounding @23/@40/@47/@49 + person-first embodiment); no wholesale strip.
+# FENCE INTEGRITY CONFIRMED:
+#   - @38 shape-word fence-beat (S43-S44): UNTOUCHED — "the older word" / "the shape of the thing I did when the world was ending" / "the one this rhymes with" / "the architecture was the older shape, built in a different city" all intact; no proper noun introduced.
+#   - @42 BREACH-AS-COLD-LEDGER-FACT close (S49): UNTOUCHED — "the word not filed with it" intact; no catharsis/recognition added.
+#   - Person-first embodiment beats (S3, S20, S30, S40, S47, S49): UNTOUCHED.
+# Output: active-project/draft/b01-c12.phase-7.draft.md (2 REWORDs applied; otherwise == phase-6 draft).
+
+## Phase 8 — finalize
+STATS:
+  words: 1194 | sentences: 49 | paragraphs: 4 (= 4 scenes)
+  bones: rendered 42 (fusions @1-2/@4-5/@11-12/@29-30 counted rendered) + merged 0 + dropped 0 + rendered-illegible 0 = 42 authored
+  facets rendered: NI 10, memory 2, sensory 5 (incl 3 licensed-grounding @30/@40/@42), feeling 2, metaphor 1, exposition 2 (@0 preamble + @1 fold), loc-state 8 = 30
+  facets unrendered-remainder: vibes 19 + state-updates 24 = 43 (FLAG-UNRENDERED-REMAINDER — steering facets, render as atmosphere/state-tracking not prose tokens, by design; same as c11)
+  preamble-source: exposition-facet | dialogue-source: none (silent chapter, 0 speech bones)
+  reword: 2 (S17 channel-quiet->the quiet of the channel; S38 walkable-back->walked back) | cut: 0 | reshow: 0 | cut-bone: 0
+RECONCILE:
+  bones: 42 rendered + 0 merged + 0 dropped + 0 rendered-illegible = 42 == authored 42  [BALANCED]
+  facets: 30 rendered + 0 dropped + 43 unrendered-remainder = 73 == cite-index facet-entry count 73  [BALANCED]
+  scene-callout leak: 0 (clean draft; single '---' is the preamble rule, not a scene marker)
