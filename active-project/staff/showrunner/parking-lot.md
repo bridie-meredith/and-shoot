@@ -1896,3 +1896,35 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-06-03-006
+      created_at: 2026-06-03T00:00:00Z
+      created_by: "/and-cohere b01 c06-c12 iteration-1 FAIL-COHERE (dramatist + naive structural CAUTIONs; admin DEC-0081 routes structural items here)"
+      target:
+        command: /and-review
+        scope: "verdict b01"
+        phase: null
+      severity: SOFT
+      description: |
+        Cross-chapter structural CAUTIONs from /and-cohere b01 c06-c12 (NOT per-chapter bones-revises — book-substance /
+        back-half shape items; the load-bearing Q6 apparatus-density is handled separately via the DEC-0081 prologue-variation pass):
+        (a) HALVARD counter-argument drift — seeded c07, no re-entry c08-c12; dramatist flags HOLD->DROP-RISK; needs >=1
+            structural re-entry before book close. PARTLY ADDRESSED: DEC-0071 already designates Halvard FORECLOSE@c13
+            ("last substantive encounter") — verify c13 actually lands the re-entry/foreclosure; if c13 holds him offstage
+            again, the thread drops. Watch at /and-substance chapter b01c13 Phase 3 + /and-review verdict b01.
+        (b) c11 ANTAGONIST-PRESSURE gap (dramatist REVISE) — c11 ran with no Otto move + absorbed the Rhaenyra cross-pressure
+            as color; c11 should have been the pressure-apex before c12. c11 shipped SHIPPED-WITH-CAVEATS; this is a retroactive
+            structural note for /and-review verdict b01 (book-level awareness) — not a c11 re-open unless verdict escalates.
+        (c) SERA payoff hole — the entire arrangement is owed against the protect-target (Sera), who never appears on-page
+            c06-c12. The protect-target must appear / the protection must pay (or visibly fail) before book close. Book-substance:
+            /and-substance book b01 forward chapters + /and-review verdict b01.
+        (d) DRAGONSTONE receipt — the c11 burned-message (Rhaenyra's faction read the cut thread) needs an in-book receipt;
+            tracked by hook-0012 (open). Future-chapter payoff; verify before book close.
+      context_refs:
+        - active-project/staff/reviews/cohere-b01-c06-c12-20260603T151822Z.md
+        - active-project/staff/reviews/cohere-dramatist-b01-c06-c12-20260603T151822Z.md
+        - active-project/staff/showrunner/aggregate-state.md  # hook-0007 Halvard, hook-0012 Dragonstone, hook-0005 Sera
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null

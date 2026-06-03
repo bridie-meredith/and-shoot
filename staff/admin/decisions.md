@@ -4802,3 +4802,73 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+## DEC-0081 | 2026-06-03 | SLOW (user-proxy)
+
+question: |
+  /and-cohere b01 c06-c12 iteration 1 returned FAIL-COHERE (load-bearing fail: naive cold-reader
+  Q6 apparatus-register cumulative load, localized to italic chapter-prologues by cape-fic). Three
+  options: (A) full /and-write revise --from-signals on c08/c09/c11 + re-cascade (~40+ dispatches),
+  (B) targeted prologue-variation pass on all 7 prologues + route structural CAUTIONs to
+  parking-lot/book-substance + re-cohere, (C) record FAIL-COHERE as diagnostic, hold loop, route
+  everything to back-half, proceed to c13.
+
+context: |
+  - Design-tension (apparatus-register density) pre-dispositioned 3x as design-inherent (DEC-0072/
+    0074/0078). Substance-aware cape-fic audience: 3x SUBSTANCE-FELT — body earns the 7-chapter run.
+  - Load-bearing Q6 FAIL localized by cape-fic to the italic per-chapter prologues (7x near-identical
+    restatement of standing conditions — skim-formula by c09). Naive cold-reader: prologues "glue
+    rather than flow."
+  - Structural CAUTIONs (Halvard counter-argument drift, c11 antagonist-pressure gap, Sera hole,
+    Dragonstone-receipt deferred) are book-substance / back-half items — not per-chapter bones-revise
+    targets.
+  - Option A risk: per-chapter bones already carry the correct deltas; bones-revise cannot address
+    cumulative cross-chapter prologue repetition; structural items are wrong layer; ~40+ dispatches
+    against a design-tension dispositioned 3x at near-zero expected movement on Q6.
+  - DEC-0079: PROP-0037 just proposed a Phase 0 HARD-abort at /and-substance chapter when consecutive
+    SHIPPED-WITH-CAVEATS >= 3; /and-cohere first is the current obligation.
+
+options:
+  A: full /and-write revise --from-signals c08/c09/c11 + re-cascade each + re-cohere (~40+ dispatches)
+  B: targeted prologue-variation pass (all 7 prologues) + route structural CAUTIONs to parking-lot +
+     re-run /and-review cohere to see if Q6 clears
+  C: record FAIL-COHERE as diagnostic, hold loop (status: held), route everything to back-half + c13
+
+decision: (B) targeted prologue-variation pass on all 7 prologues + route structural CAUTIONs to
+  parking-lot/book-substance + re-cohere
+
+basis: |
+  Goal:2 (cost discipline) + methodology 3b (cost: cheapest path that addresses the convergent
+  finding) + 3c (blast radius: per-chapter bones-revise touches 3 chapters + re-cascades, vs.
+  prologue variation is scoped to 7 prologue blocks only) + 3a (reversibility: option B is fully
+  reversible — if re-cohere still FAILs, A remains available). Option C abandons a fix with a
+  known low-cost execution path; the diagnostic work is done — the fix target is identified.
+  Option A is high-cost against the wrong layer for the localized finding.
+
+rationale: |
+  The convergent evidence from both forks points at one specific structural element: the 7 italic
+  prologues restate near-identical standing conditions across c06-c12. That is the "skim-formula"
+  and the "glue rather than flow" complaint. The apparatus-density of the BODY is not the complaint
+  — the cape-fic audience calls that SUBSTANCE-FELT. The prologues are separable from the bone-layer
+  substance and can be varied without touching the bones-revise layer. Vary the 7 prologues to break
+  skim-formula (break identical restatement of standing conditions), route the structural CAUTIONs
+  (Halvard-return, c11-antagonist-pressure, Sera, Dragonstone-receipt) to the parking lot with
+  back-half / /and-review verdict b01 as the resolving scope, then re-run /and-review cohere.
+  If Q6 clears, the cohere loop closes at far lower cost than option A. If Q6 does not clear after
+  prologue variation, the diagnostic is richer and option A remains available as a next step.
+
+  The structural CAUTIONs are not "ignore and defer" — they are wrong layer for the cohere loop.
+  The correct layer is book-substance + /and-review verdict b01. Parking-lot with explicit back-half
+  scope is the right routing. Notably, option A cannot fix the structural items either — bones-revise
+  on c08/c09/c11 cannot supply Halvard's return or a c11 antagonist move. Both B and A defer them;
+  B is cheaper on the one item that can be fixed now.
+
+trade-off: |
+  Option B does not guarantee Q6 clears. If re-cohere still FAILs after prologue variation, a
+  second loop will be needed (possibly escalating to A). This is accepted: option B is a low-cost
+  probe that either resolves the loop cheaply or produces sharper evidence before committing to A.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no

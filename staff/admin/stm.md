@@ -10,6 +10,7 @@ Format per entry:
 
 ---
 
+[2026-06-03] DEC-0081 | /and-cohere b01 FAIL-COHERE iteration 1: (A) full revise-cascade ~40d vs (B) prologue-variation + route structural + re-cohere vs (C) hold → (B) prologue-variation pass on all 7 prologues + parking-lot structural CAUTIONs + re-cohere | Design-tension dispositioned 3x; load-bearing Q6 FAIL localizes to prologues (skim-formula), not bone-layer; option A is wrong layer + high cost; C abandons a fixable finding.
 [2026-06-03] DEC-0080 | branch choice at c12 boundary: (A) /and-cohere b01 vs (B) produce c13 → (A) cohere-first | Five prior rulings (DEC-0073/0075/0077/0078/0079) all cohere-before-c13; 3rd consecutive SHIPPED-WITH-CAVEATS on same cause; producing c13 now is 6th consecutive bypass of HIGH-urgency standing obligation.
 [2026-06-03] DEC-0079 | process-critic: 3rd consecutive SHIPPED-WITH-CAVEATS (c10/c11/c12), N=7 apparatus-density → PROCESS-CHANGE-PROPOSED PROP-0037 | Novel from DEC-0075 mechanism: PROP-0037 targets /and-substance chapter Phase 0 HARD-abort (not /and-cohere internals); orthogonal to PROP-0030/0031; no open proposal covered this enforcement surface; S-cost; does not require /and-cohere to be implemented first.
 [2026-06-03] DEC-0078 | /and-stitch b01c12 Phase 9 terminal-gate → (A) SHIPPED-WITH-CAVEATS | Coupling rule exact match (DEC-0072/0074/0076): all CONTINUE=No categories pre-authorized (cold-context + design-inherent jeopardy + apparatus-density N=7); 0 new complaint categories; apparatus-density routed to /and-cohere before c13.
