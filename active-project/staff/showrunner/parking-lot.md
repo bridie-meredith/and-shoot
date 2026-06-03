@@ -1866,3 +1866,33 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-06-03-005
+      created_at: 2026-06-03T00:00:00Z
+      created_by: "/and-facets b01c12 Phase 5 audit (flag-005 CONSTRAINT/RUBRIC-FIDELITY card-resolution SIGNAL)"
+      target:
+        command: margit-card-class-review
+        scope: "b01c12 facet card-slugs"
+        phase: null
+      severity: SOFT
+      description: |
+        Three facet card-slugs introduced/referenced in b01c12 facets do not resolve to warehouse
+        cards (all glosses reader-clear; SIGNAL not HARD at Phase 5):
+        - cond-kl-witch-label-formation-122ac (mem:1 @3 target) — the recurring witch-label monument
+          referral (companion to pl-2026-05-25-005 / pl-2026-06-03-002 monument-card-class family).
+          Margit should author the cond-* (or monument-*) card.
+        - loc:east-water-gate-lanes (vibes:4) — the chapter's coverage-gap spine location; reader-
+          established geography; margit canonicalize as oc-east-water-gate-lanes (or nest under a
+          hook-ward umbrella per existing taxonomy).
+        - loc:the-muddy-way (vibes:16) — s04 second-cluster location; reader-established; margit
+          canonicalize as oc-muddy-way (or hook-ward nest).
+        Non-blocking for /and-stitch (glosses carry). Create before /and-review verdict b01 (unresolved
+        slugs would flag at the book verdict pass).
+      context_refs:
+        - active-project/staff/auditor/facets-final-audit.md  # flag-005
+        - active-project/theater/facets/memory-b01-c12.md
+        - active-project/theater/facets/vibes-b01-c12.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null

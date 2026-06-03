@@ -59,9 +59,9 @@ author: showrunner (R1 BLIND)
 
 12 @30 actor:taylor-hebert-kl-122ac ++ residue not spectacle: [full-deployment-at-Khepri-scale-in-quiet-accounting-no-performance, architecture-complete-in-scope-and-structural-to-the-channel-before-the-accounting-names-it, the-count-moves-in-her-the-way-the-count-has-always-moved, the-threshold-is-an-arithmetic-fact-not-an-event] | licensed-by: state-update:7, proto:30, proto:31, proto:32, proto:33, proto:34
 
-13 @38 actor:taylor-hebert-kl-122ac ++ atonement-as-repetition: [the-shape-word-surfaces-in-the-accounting-for-one-count, the-suppression-IS-the-ledger-entry-for-the-irrevocable-repetition, the-breach-column-receives-the-weight-without-the-word, the-threshold-is-irrevocable-the-recognition-is-not-received] | licensed-by: memory:2, feeling:2, proto:38, proto:39, proto:42, world-build:cl05-cost-side-Khepri-repetition
+13 @38 actor:taylor-hebert-kl-122ac ++ atonement-as-repetition: [the-shape-word-surfaces-in-the-accounting-for-one-count, the-suppression-IS-the-ledger-entry-for-the-irrevocable-repetition, the-breach-column-receives-the-weight-without-the-word, the-threshold-is-irrevocable-the-recognition-is-not-received] | licensed-by: memory:3, feeling:2, proto:38, proto:39, proto:42, world-build:cl05-cost-side-Khepri-repetition
 
-14 @38 actor:taylor-hebert-kl-122ac ++ khepri-memory-as-standard: [the-internal-record-reaches-for-the-shape-word-at-full-feed-density, the-aggregate-scale-is-what-triggers-the-reach-not-any-single-node, the-gap-between-surveillance-and-override-is-real-and-the-scale-is-also-real, the-shape-word-does-not-settle-the-accounting-advances] | licensed-by: memory:2, proto:38, proto:39, proto:40, world-build:Khepri-threshold-irrevocable-at-full-deployment
+14 @38 actor:taylor-hebert-kl-122ac ++ khepri-memory-as-standard: [the-internal-record-reaches-for-the-shape-word-at-full-feed-density, the-aggregate-scale-is-what-triggers-the-reach-not-any-single-node, the-gap-between-surveillance-and-override-is-real-and-the-scale-is-also-real, the-shape-word-does-not-settle-the-accounting-advances] | licensed-by: memory:3, proto:38, proto:39, proto:40, world-build:Khepri-threshold-irrevocable-at-full-deployment
 
 15 @42 actor:taylor-hebert-kl-122ac ++ rising entrapment: [capability-full-deployment-threshold-crossed-cannot-be-walked-back-by-pulling-any-node, the-feed-runs-on-at-full-deployment-for-every-circuit-that-follows, the-gap-east-of-the-water-gate-the-one-place-the-map-does-not-go] | licensed-by: state-update:7, state-update:8, proto:40, proto:41, proto:42, world-build:cl05-irrevocability
 
@@ -71,7 +71,7 @@ author: showrunner (R1 BLIND)
 
 18 @42 loc:the-feed-station + architecture-at-full-scale: [the-station-is-where-the-full-deployment-accounting-closes, breach-column-here-receives-the-irrevocable-threshold, all-five-wards-and-Flea-Bottom-approaches-returned-from-this-surface, the-feed-continues-past-the-hand-that-closed-it] | licensed-by: state-update:7, state-update:8, proto:32, proto:33, proto:34, proto:42
 
-19 @42 episode + suppression-as-ledger-act: [the-shape-word-surfaces-and-is-advanced-past-not-received, the-breach-column-files-the-cost-without-the-word-that-named-it, the-accounting-discipline-is-the-suppression-mechanism, this-is-what-the-irrevocable-threshold-looks-like-from-inside-a-ledger] | licensed-by: memory:2, feeling:2, state-update:8, proto:38, proto:39, proto:42, world-build:cl05-Khepri-repetition-suppressed
+19 @42 episode + suppression-as-ledger-act: [the-shape-word-surfaces-and-is-advanced-past-not-received, the-breach-column-files-the-cost-without-the-word-that-named-it, the-accounting-discipline-is-the-suppression-mechanism, this-is-what-the-irrevocable-threshold-looks-like-from-inside-a-ledger] | licensed-by: memory:3, feeling:2, state-update:8, proto:38, proto:39, proto:42, world-build:cl05-Khepri-repetition-suppressed
 
 # --- Provisional anchor-hints (R1) ---
 # hint-1: @42 moral_framework -1.0 is the chapter's terminal cost-filing. vibes:13 (atonement-as-repetition ++)

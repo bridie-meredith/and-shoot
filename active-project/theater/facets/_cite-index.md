@@ -97,13 +97,13 @@ totals: 73 facet entries; 26/42 protolines decorated (61.9%)
   vibes:10 @27 back=Y co=[narrator:7, state:11, state:22] lic-out=[state-update:5, state-update:6, proto:25, proto:26, proto:27, proto:28]
   vibes:11 @22 back=Y co=[state:8, state:20, vibes:8] lic-out=[state-update:3, state-update:4, proto:18, proto:22, proto:24, proto:25]
   vibes:12 @30 back=Y co=[sensory:3, state:13, state:23, vibes:16] lic-out=[state-update:7, proto:30, proto:31, proto:32, proto:33, proto:34]
-  vibes:13 @38 back=Y co=[mem:3, meta:1, narrator:8, vibes:14] lic-out=[memory:2, feeling:2, proto:38, proto:39, proto:42] lic-in=[meta:1]
-  vibes:14 @38 back=Y co=[mem:3, meta:1, narrator:8, vibes:13] lic-out=[memory:2, proto:38, proto:39, proto:40] lic-in=[meta:1]
+  vibes:13 @38 back=Y co=[mem:3, meta:1, narrator:8, vibes:14] lic-out=[memory:3, feeling:2, proto:38, proto:39, proto:42] lic-in=[meta:1]
+  vibes:14 @38 back=Y co=[mem:3, meta:1, narrator:8, vibes:13] lic-out=[memory:3, proto:38, proto:39, proto:40] lic-in=[meta:1]
   vibes:15 @42 back=Y co=[loc-state:8, narrator:9, sensory:5, state:15, state:16, state:24, vibes:17, vibes:18, vibes:19] lic-out=[state-update:7, state-update:8, proto:40, proto:41, proto:42]
   vibes:16 @30 back=Y co=[sensory:3, state:13, state:23, vibes:12] lic-out=[state-update:7, proto:29, proto:30, proto:31]
   vibes:17 @42 back=Y co=[loc-state:8, narrator:9, sensory:5, state:15, state:16, state:24, vibes:15, vibes:18, vibes:19] lic-out=[state-update:8, proto:40, proto:41, proto:42]
   vibes:18 @42 back=Y co=[loc-state:8, narrator:9, sensory:5, state:15, state:16, state:24, vibes:15, vibes:17, vibes:19] lic-out=[state-update:7, state-update:8, proto:32, proto:33, proto:34, proto:42]
-  vibes:19 @42 back=Y co=[loc-state:8, narrator:9, sensory:5, state:15, state:16, state:24, vibes:15, vibes:17, vibes:18] lic-out=[memory:2, feeling:2, state-update:8, proto:38, proto:39, proto:42]
+  vibes:19 @42 back=Y co=[loc-state:8, narrator:9, sensory:5, state:15, state:16, state:24, vibes:15, vibes:17, vibes:18] lic-out=[memory:3, feeling:2, state-update:8, proto:38, proto:39, proto:42]
 
 ### exposition (2 entries)
   exposition:1 @0 back=N
