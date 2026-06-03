@@ -8346,6 +8346,23 @@ books:
             - "Taylor: social_tether-antag rank 9 (non-extractable confirmed); position-prot-rise rank 6.5; relational_anchor rank 5.5; moral_legibility rank 6; moral_framework rank -2"
             - "cl04 completed: ledger closed on a named person; pattern retroactively visible to reader on Wren"
           target_chapter: b01c15
+        handoff_conflicts:
+          # URI-AGGREGATE-READ (PROP-0031 Amendment 1): /and-substance chapter b01c14 Phase 0
+          # cross-referenced handoff_in (book-author prediction) against aggregate-state.md
+          # axis_state (measured close-state through b01c13). Aggregate wins; scene contracts
+          # author from the aggregate baseline, not the stale handoff_in ranks.
+          - detected_at: 2026-06-03T00:00:00Z
+            axis: position-prot-rise
+            handoff_in_value: 5.5
+            aggregate_value: 5.0
+            resolution: aggregate-wins
+            notes: "handoff_in predicted 5.5; aggregate measured 5.0 (c03+c04+c10+c12 = +4 off start 1). c14 cl-d07a +1.0 therefore lands position-prot-rise at 6.0, not the handoff_out-stated 6.5. Bone-gate baseline = 5.0."
+          - detected_at: 2026-06-03T00:00:00Z
+            axis: social_tether-antag
+            handoff_in_value: 7.0
+            aggregate_value: 6.0
+            resolution: aggregate-wins
+            notes: "handoff_in predicted 7; aggregate measured 6 (c03+c04+c10+c11 = +5 off start 1). c14 cl-antag-d10 +1.5 lands social_tether-antag at 7.5; the chunk-text 'reaches rank 9' completes at c15 (+1.5 cl-antag-d03), not c14. Bone-gate baseline = 6.0."
 
       - slug: b01c15
         status: planned
