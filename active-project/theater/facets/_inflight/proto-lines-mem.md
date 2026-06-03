@@ -1,7 +1,7 @@
 
 1 the insects return the overhang-joints
-2 the insects fan the lane-mouth [mem:1]
-3 taylor-hebert-kl-122ac takes the gate-tower shadow
+2 the insects fan the lane-mouth
+3 taylor-hebert-kl-122ac takes the gate-tower shadow [mem:1]
 4 the coverage map closes the gate-tower boundary
 5 the map closes the rendering-yard boundary
 6 the insects return the stitch-house route
