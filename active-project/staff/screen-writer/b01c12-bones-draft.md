@@ -283,18 +283,13 @@ scenes:
         # grounding: stylus as named physical object; the stylus set (not applied) is the physical closing of the collision-delivery scene.
         # This enacts the pl-2026-06-03-004 (a) watch: the bay-warmth close is Taylor's body paired to setting.
         # The warm-on-held-hand is the indifferent-world-continuance beat; enacted here as body-paired-to-object, not atmospheric description.
+        # NOTE: this bone (n06, stylus set) is the sole carrier of the pl-2026-06-03-004 (a) bay-warmth watch after the Phase-4 trim of n07.
 
-      - slug: b01c12s02n07
-        svo: "taylor-hebert-kl-122ac holds the eyes"
-        shape: held
-        axis_moves: []
-        axes_held:
-          - axis: position-prot-rise
-            rationale: "The gaze held still is the physical enactment of stillness-against-the-pressure to respond; the decision has not yet arrived; held discipline at 4; the bay-warmth presses on while Taylor remains at the ledger surface — the indifferent-world-continuance beat enacted as body stillness (eyes held, not lifted to the door)"
-        cost_ledger_anchor: null
-        grounding: true
-        dialogue_anchor: false
-        # grounding: the body holding the eyes still (a concrete body-act; narrow holds license — body-part stillness-against-pressure). Enacts pl-2026-06-03-004 (a): bay-warmth close = Taylor's body paired to setting (stylus beside packet at n06; eyes held at n07). NOT ambient atmosphere.
+      # Phase-4 trim (dark-fantasy DELETE-PROPOSE, orchestrator-accepted on 1-persona advisory): b01c12s02n07 ("taylor holds the eyes")
+      # removed — third consecutive body-stillness bone in s02 (n04 packet-set / n06 stylus-set / n07 eyes-held); the bay-warmth watch
+      # resolves on n06 (concrete grounded object-bone); n07 extended the stillness into camera-linger, against the chapter's own
+      # lift-and-move discipline (pl-2026-06-03-004). s02 retains 4 grounding bones + position-prot-rise held (n04) + opposing-force (n05).
+      # Slug n07 retired (no renumber, per Phase-4 do-not-renumber rule). s02 now 6 bones.
 
   - slug: b01c12s03
     event_map:

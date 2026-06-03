@@ -463,7 +463,7 @@ The one near-miss: "because his position is now inside Taylor's coverage matrix,
 
 ### Dormancy discipline — five axes held in s01/s03, six in s02
 
-The held-axis rationales do real work in s01 (integration proceeds without ledger-entry; the reader-Taylor gap is enacted in the circuit-closes rhythm) and s03 (integration-completion and body-map advance both proceed without Taylor's accounting opening; the gap IS the scene's substance contribution). In s02 the rationales are accurate but not load-bearing — they describe why axes don't move without generating pressure from the dormancy itself. That is acceptable for a staging chapter with this specific design (foreshadow-as-logistics-noise), but the s02 Aemond-gap-as-geometry watch item is the specific place where "accurate but not load-bearing" needs to become "the feed encounters something with shape."
+The held-axis rationales do real work in s01 (integration proceeds without ledger-entry; the reader-Taylor gap is enacted in the circuit-closes rhythm) and s03 (integration-completion and body-map advance both proceed without Taylor's accounting opening; the gap IS the scene's substance contribution without advancing the axis). In s02 the rationales are accurate but not load-bearing — they describe why axes don't move without generating pressure from the dormancy itself. That is acceptable for a staging chapter with this specific design (foreshadow-as-logistics-noise), but the s02 Aemond-gap-as-geometry watch item is the specific place where "accurate but not load-bearing" needs to become "the feed encounters something with shape."
 
 ### cl-d06 deferral judgment
 
@@ -637,3 +637,46 @@ phase_4_trim: ACCEPT — 27 KEEP, 0 DELETE-PROPOSE. No chatter bone candidates f
 threshold_discipline: no walkout triggers; no catharsis before weight; no enemies pausing; no hope-that-costs-nothing; no world-as-set-dressing; Earth-Bet fence clean.
 
 soft_carry_to_facets: SW-DFR-c11-1 confirmed resolved at bones level. The burn-as-dread shape is structurally correct; the stitch/facet rendering must preserve the world-then-feed causal order (n04-n07) and not compress the physical sequence into a single classification bone. The standing-protocol confirmation (n08) must survive into prose or the "world was already running this" inference loses its grounding.
+
+---
+
+## 2026-06-03 — /and-write b01c12 Phase 4 trim
+
+chapter: b01c12
+date: 2026-06-03
+phase: write-phase4-trim
+dispatch_mode: SINGLE-PERSONA SPLIT (PROP-0036; dark-fantasy-reader only)
+scenes_reviewed: [b01c12s01, b01c12s02, b01c12s03, b01c12s04]
+bones_reviewed: 43
+
+### Per-scene sub-verdicts
+
+s01 (10 bones): ACCEPT — 10 KEEP, 0 DELETE-PROPOSE.
+  World-before-protagonist order maintained. Gap bounded by two distinct landmark bones (n04 gate-tower / n05 rendering-yard). Wren route indexed in two distinct registers (feed at n06 / map at n07). Stylus-lift at n08 establishes the withholding-before-writing pattern that s03 repeats structurally. Capability move (n09) and tether move (n10) cleanly separated.
+
+s02 (7 bones, reordered): REVISE — 6 KEEP, 1 TRIM-CANDIDATE (n07).
+  The Phase-3 reorder (n05 before n04) is load-bearing — both boundaries land before the stilling reaction. n04 (packet set) + n06 (stylus set) carry the stillness in two distinct physical registers. n07 (eyes held) is a third consecutive body-stillness bone with no distinct physical action (the not-lifting-gaze is the absence of an action, not an act). The bay-warmth indifferent-world-continuance beat resolves on n06 (stylus beside the packet is grounded and enacted). n07 extends the stillness into camera-linger rather than lift-and-move. Trimming n07 makes the s02 → s03n01 (takes the stylus) transition read as decisive forward motion.
+
+s03 (12 bones): ACCEPT — 12 KEEP, 0 DELETE-PROPOSE.
+  Withhold enacted physically (n04 hand holds / n05 stylus lifts) without interior aria. Two-bone split of refusal (n03 writes / n06 closes) mirrors anchor-column split (n10 writes / n11 closes) — the parallel is the chapter's structural irony (Taylor keeps two distinct ledgers). n12 (hand lifts) is clean lift-and-move, not linger: n11 closes the ledger entry; n12 closes the body-gesture. Distinct subjects and distinct physical acts. No catharsis. pl-2026-06-03-004 (b) and (c) resolved.
+
+s04 (14 bones including n14 causal bridge): ACCEPT — 14 KEEP, 0 DELETE-PROPOSE.
+  Accumulation bones (n14, n03, n04, n05) each add a distinct dimension: causal connective / aggregate spatial shape / counting-procedure / specific Flea Bottom territory. The Flea Bottom-specific bone (n05) is the bone that makes the shape-word land as felt weight (the place she came to protect, now covered at Khepri-scale). Khepri suppression (n10 advances count / n11 closes architecture entry) is structurally clean — the word does not appear in the next entry because the ledger's format does not provide a field for it, not because Taylor refused. Cold ledger fact. n13 (breach column takes the threshold entry) lands moral_framework -1.0 without the shape-word: the cost is recorded regardless of the suppression. No softening detected.
+
+### File-level verdict
+
+REVISE-s02n07-third-stillness-bone-lingers
+
+One deletion proposal: b01c12s02n07 ("taylor-hebert-kl-122ac holds the eyes"). Third consecutive body-stillness bone (packet set at n04 / stylus set at n06 / eyes held at n07). No new physical action (not-lifting-gaze is the absence of an action). The bay-warmth indifferent-world beat resolves on n06. n07 between n06 and s03n01 is a pause-bone the scene does not need.
+
+### Threshold discipline
+
+No walkout triggers. No catharsis before weight — s03 settles the anchor-column and moves; s04 closes the ledger entry without recognition arriving. No unearned catharsis — the shape-word surfaces at n09 and is suppressed by format (n10-n11), not by moral deliberation; the cost lands at n13 as a ledger entry without the word. No enemies pausing at convenient moments — Jarvis takes the sealed packet without press (s03n07). No hope-that-costs-nothing — the anchor-column settlement at n10-n11 makes Wren's free movement the map's load-bearing eastern boundary: the protection deepens, the trap deepens in the same act. No world-as-set-dressing — the witch-label terrain geometry (n01-n02) operates by its own physics before Taylor acts; the coverage gap is a consequence of the world's social rules, not authorial arrangement.
+
+### Soft carries to /and-write (if revise accepted)
+
+SW-DFR-c12-1: after n07 deletion, verify s02 → s03 transition reads as clean forward motion: s02n06 (stylus set, eyes on ledger surface) → s03n01 (takes the stylus). No bridging bone needed; the transition is the scene-break itself.
+
+SW-DFR-c12-2 (carry to /and-facets): the s04 Khepri accumulation sequence (n09 shape-word surfaces / n10 count advances / n11 architecture entry closes) must render in prose as cold mechanical procedure, not as Taylor's emotional register shifting. The word surfaces because the accounting reaches it; it does not surface because Taylor notices it. If the stitch-layer renders n09 as a recognition beat rather than a ledger-mechanical event, the suppression loses its structural character.
+
+SW-DFR-c12-3 (carry to /and-stitch): n13 (breach column takes the threshold entry) must render as a cold ledger fact — the entry is filed without the shape-word, without recognition arriving. The moral_framework -1.0 must land as the cost being recorded by the accounting's own structure, not by Taylor naming what she has done.
