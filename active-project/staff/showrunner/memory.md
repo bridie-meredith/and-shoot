@@ -8337,13 +8337,13 @@ books:
             - "second courier detained: cl04 closed; extraction path behind Taylor"
             - "cloth merchant fled KL: Rhaenyra-pressure mediated via intelligence inference; Dragonstone knows the apparatus is active"
             - "Wren: anchor rank 5.5; cl04 pattern retroactively names her exclusion from the ledger"
-            - "position-prot-rise at peak (rank 6.5): position-of-no-exit confirmed"
-            - "social tether: at structural peak; non-extractable"
+            - "position-prot-rise at peak (rank 6.0): position-of-no-exit confirmed"   # Phase 0 conflict-corrected from stale 6.5
+            - "social tether: non-extractable confirmed (cl-antag-d10 complete); social_tether-antag rank 7.5 — reaches 9-LOCK at c15 via cl-antag-d03"
           world_state:
             - "KL 122 AC; Green apparatus has two courier detentions; Black-faction logistics two threads closed"
             - "Rhaenyra at Dragonstone: aware the Green apparatus is active in lower-city channels"
           character_state:
-            - "Taylor: social_tether-antag rank 9 (non-extractable confirmed); position-prot-rise rank 6.5; relational_anchor rank 5.5; moral_legibility rank 6; moral_framework rank -2"
+            - "Taylor: social_tether-antag rank 7.5 (non-extractable confirmed; cl-antag-d10 complete; 9-LOCK at c15); position-prot-rise rank 6.0; relational_anchor rank 5.5; moral_legibility rank 6; moral_framework rank -2"   # Phase 0 conflict-corrected: antag 9->7.5, position 6.5->6.0 (scene contracts authoritative; c15 handoff_in drift self-heals at c15 Phase 0 aggregate-read)
             - "cl04 completed: ledger closed on a named person; pattern retroactively visible to reader on Wren"
           target_chapter: b01c15
         handoff_conflicts:
