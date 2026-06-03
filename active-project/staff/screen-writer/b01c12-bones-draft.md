@@ -656,6 +656,9 @@ scenes:
         axes_held:
           - axis: moral_legibility_to_self
             rationale: "The architecture entry closes without the shape-word in it — the suppression is complete in physical-ledger form; the feed continues past the suppression at full deployment; the crack is held shut. The indifferent-world-continuance: the feed running on after the suppression is the physical fact that the suppression succeeded at holding the axis. Opposing-force: the architecture's own scope (irrevocable, structural, not walkable-back by pulling any single node) presses for the shape-word's settlement; Taylor closes the entry instead"
+          - axis: political_register-prot
+            # Phase-6 fix fault-003: s04 contract declares political_register-prot held but no bone enacted it (HELD-AXIS-NOT-WITNESSED). Enacted here.
+            rationale: "The architecture entry closes in flat operational register — the Khepri-suppression is internal, not feed-facing; no contempt-register fires on the close; the accounting runs as it always runs, the same cold-utilitarian mode as every prior entry; political_register-prot held at 3.5 through the suppression sequence"
         cost_ledger_anchor: null
         grounding: true
         dialogue_anchor: false
@@ -669,6 +672,9 @@ scenes:
         axes_held:
           - axis: moral_legibility_to_self
             rationale: "the ledger-record close of the capability gain — the full-circuit count filed; legibility held at 5.5; record-close parallel to s03n12"
+          - axis: social_tether-antag
+            # Phase-6 fix fault-004: s04 contract declares social_tether-antag held but no bone enacted it (HELD-AXIS-NOT-WITNESSED). Enacted here.
+            rationale: "the full-circuit count filed in the ledger-record is what the standard deliverable-update to Otto's channel is built from — the apparatus receives the second-ward-cluster confirmation as a routine update; the Khepri-suppression event does not become visible to Otto; his leverage holds structural at 6, does not press, does not advance; social_tether-antag held"
         cost_ledger_anchor: null
         grounding: false
         dialogue_anchor: false
