@@ -1,3 +1,38 @@
+## SESSION-START — 2026-06-03T00:00:00Z — and-facets-b01c11-cycle2-fixes
+dispatch: /and-facets b01c11 Phase 5b cycle-2 — 4 text edits across 2 facets: narrator:2 @11 (mechanism eclipses dread-timing), narrator:4 @20 (backward-awareness violation), vibes:8 @11 (register-drift to intelligence-analysis), vibes:9 @11/@15 (irony-register token)
+target: active-project/theater/facets/interest-narrator-b01-c11.md, active-project/theater/facets/vibes-b01-c11.md
+audit-report: inline from Phase 5b cycle-2 callouts (dark-fantasy-reader REVISE; cape-fic + worm-canon ACCEPT both facets)
+findings-queued: 4
+
+## narrator:2 @11 — RESOLVED — 2026-06-03T00:10:00Z
+fault: "through the ambient seam" relay-mechanism phrase eclipsed the temporal-displacement DREAD; mechanism led over dread-timing (enemy/event completed before Taylor's consciousness caught it)
+scope: line
+change: "through the ambient seam" excised; text reads "heat first, then the curl of it, a thing already finished by the time I had it; the enemy was done before I was in it" — dread-timing foregrounded; heat-curl shape-language preserved (worm-canon accept fence held); r2-cycle-2-fix annotation appended; anchor @11 + no citation token unchanged
+criteria met: yes
+
+## narrator:4 @20 — RESOLVED — 2026-06-03T00:11:00Z
+fault: "the one that used to test the datum before it moved" imported backward-awareness (Taylor's recollection of absent step), violating HALVARD-FORECLOSE-AS-STRUCTURAL-GAP
+scope: line
+change: backward-looking clause excised; text reads "the sourcing writes itself in three motions and the fourth motion is not there — the cycle closes on three and does not feel short" — gap is arithmetic slot-absence, not recollection; foreclose legibility preserved (cape-fic accept fence held); r2-cycle-2-fix annotation appended; anchor @20 + no citation token unchanged
+criteria met: yes
+
+## vibes:8 @11 — RESOLVED — 2026-06-03T00:12:00Z
+fault: token-bundle used intelligence-analysis vocabulary ("mediated-intelligence-she-does-not-know-exists," "the-logistics-blind-spot-observed-from-within-its-own-burn-signature") instead of DREAD/THREAT register
+scope: line
+change: intelligence-analysis tokens replaced with enemy-moved-first/dread register: [dragonstone-burn-already-completed-before-she-reads-it, the-enemy-moved-first-inside-the-protocol-she-receives-as-routine, the-world-was-already-running-this-ahead-of-her-consciousness, the-channel-she-does-not-know-is-mediated-arrives-as-dread-not-information]; cape-fic board-state asymmetry preserved as threat-framing (not deleted); r2-cycle-2-fix annotation appended; licensed-by: proto:11, narrator:n02, narrator:n03 unchanged
+criteria met: yes — asymmetry preserved as dread/threat (the-channel-she-does-not-know-is-mediated-arrives-as-dread-not-information)
+
+## vibes:9 @11/@15 — RESOLVED — 2026-06-03T00:13:00Z
+fault: "the-irony-compounds" is reader-domain vocabulary; rendering register must be dread/protocol-precedence
+scope: line
+change: irony-register token excised; replacement bundle: [the-protocol-predates-taylors-processing-of-it, the-burn-and-routine-is-already-old-when-she-has-it, they-went-dark-before-she-knew-to-look, the-protocol-was-already-running-before-the-cut-she-reads-as-current]; vibes:3 (halvard-foreclose) and vibes:12 (the-cold-merchant-burn) untouched per dispatch; r2-cycle-2-fix annotation appended; licensed-by: proto:11, proto:15, narrator:n02 unchanged
+criteria met: yes
+
+## SESSION-END — 2026-06-03T00:14:00Z — and-facets-b01c11-cycle2-fixes
+findings-applied: 4 (narrator:2, narrator:4, vibes:8, vibes:9 — all confirmed in place in target files; this session verifies and logs)
+findings-skipped: 0
+exit: CLEAN
+
 ## SESSION-START — 2026-06-02T10:00:00Z — and-facets-b01c10-cycle2-fixes
 dispatch: /and-facets b01c10 Phase 5b cycle-2 remediation — 3 REVISE callouts: sensory:7 @25 old-state unanchored (Fix 1); mem:2 @24 doubled closing-simile (Fix 2); narrator:7 @16 inert spine-provision (Fix 3)
 target: active-project/theater/facets/sensory-b01-c10.md, active-project/theater/facets/memory-b01-c10.md, active-project/theater/facets/interest-narrator-b01-c10.md
