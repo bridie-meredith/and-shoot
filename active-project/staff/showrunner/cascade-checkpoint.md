@@ -19,13 +19,21 @@ cascade:
     feasible; halt cleanly with a checkpoint on cap-exhaustion / hard-block / practical
     session limit.
   last_completed:
-    level: chapter-substance   # b01c11 /and-substance COMPLETE: 4 scenes scened, Phase5 3/3 SUBSTANCE-FELT + dramatist ACCEPT(after 1 revise) + auditor 0 HARD, Phase5.5 cold-read SHIPPED-WITH-RISK-RECORDED (DEC-0072 P). 2 HARD threading-holds resolved (DEC-0071).
+    level: chapter-complete   # b01c11 COMPLETE end-to-end: substance + write + review-bones + facets + stitch (P1-9 cold-read SHIPPED-WITH-CAVEATS DEC-0074 + P10 PASS-THREAD). draft/b01-c11.md TERMINAL (1314 words).
     slug: b01c11
-    completed_at: 2026-06-02T22:05:00Z
+    completed_at: 2026-06-03T00:00:00Z
   prev_completed:
-    level: chapter-complete   # b01c10 COMPLETE end-to-end. draft/b01-c10.md TERMINAL (1074 words).
+    level: chapter-complete
     slug: b01c10
     completed_at: 2026-06-02T04:15:00Z
+  next:
+    command: produce-chapter-protocol b01c12
+    args: [b01c12]
+  reason: chapter-complete   # b01c11 shipped this session end-to-end. c12 is a fresh chapter-production run.
+  pending_depth_passes: []   # c11 cold-read SHIPPED-WITH-CAVEATS (not PASS-WITH-DEPTH-PASS-REQUIRED) — no mandatory depth pass; the low-jeopardy is design-inherent (DEC-0074), not a deferred fix.
+  pending_threading_holds: []   # c11 Phase 10 PASS-THREAD clean; aggregate-state through c11; c12 Phase 0 CLEAR (0 unack substantive).
+  pending_cohere: "DEC-0073/0075: consecutive-abstract N=6 (c06-c11). PROP-0030/0031 recurrence_count=4, triage urgency HIGH. Schedule /and-cohere b01 BEFORE c13 (standing recommendation, reaffirmed twice)."
+  c12_gates: "pl-2026-05-30-001->stitch-thread-002 cl-d06 2nd tranche RE-WINDOW@c12 (DEC-0071): c12 Phase 3 must anchor relational_anchor_status +1.0 with cost_ledger_anchor [cl-d08, cl-d06] (already annotated in chapters[b01c12].substance_delta). pl-2026-06-03-001: oc-soap-lane-report-packet prop card needed before c12 Phase 0 (margit; carried-forward sealed prop)."
   next:
     command: /and-stitch b01c11
     args: [b01c11]

@@ -284,44 +284,44 @@ aggregate_state:
   characters:
     - slug: taylor-hebert-kl-122ac
       introduced_at: b01c01
-      last_appearance: b01c10
+      last_appearance: b01c11
       reader_legibility: high
-      legibility_notes: "POV narrator throughout; full interior access; Worm-Taylor identity + insect-feed mechanism + atonement-frame + the arrangement-with-Otto all reader-legible. c10: the arrangement she serves is now a NAMED standing function (informal-deniability foreclosed); she surrenders the withheld Corwick body-map, reads his detention in the feed, and files him as the ledger's first named closed entry — the suppressed-recognition crack (moral_legibility 5.5) made physical in her gaze holding the lower-gate face the ledger keeps no column for"
+      legibility_notes: "POV narrator throughout; full interior access; Worm-Taylor identity + insect-feed mechanism + atonement-frame + the arrangement-with-Otto all reader-legible. c10: the arrangement she serves is now a NAMED standing function (informal-deniability foreclosed); she surrenders the withheld Corwick body-map, reads his detention in the feed, and files him as the ledger's first named closed entry — the suppressed-recognition crack (moral_legibility 5.5) made physical in her gaze holding the lower-gate face the ledger keeps no column for. c11: runs the full-load circuit; withholds wool-dyer source-name from the deliverable + cloth-merchant Dragonstone-burn signal from Jarvis entirely (two consecutive withholds); closes the ledger at day-end with both withholds sitting in the record where nothing in any packet will name them"
       last_updated_by: and-stitch-phase-10
 
     - slug: wren-stitch-maker-flea-bottom-ward
       introduced_at: b01c01
       last_appearance: b01c10
       reader_legibility: partial
-      legibility_notes: "reader knows occupation (stitch-maker) + Taylor's coverage-map function-node categorization + one spoken exchange (c06) + Taylor's protective omission from the deliverable (NAME deliberately withheld). c09: now the surveillance-pattern SUBJECT — her daily route (door / corner / one-entrance lane) is mapped + indexed in Taylor's internal map; reader-legible via the @0 prologue bridge restatement. c10: PARTIAL appearance only — the rev-0004 prologue callback ('the stitch-maker's days indexed in the record like any other route and kept out of the deliverable') restates her indexed-but-unwritten state at the exact contrast point where Corwick becomes the ledger's first named closed entry; she is the standing counter-example. Still OUTSIDE the formal ledger; relational_anchor_status held at 3.5 (no movement). Not on-page in c07/c08; not in the c10 scene-bodies"
+      legibility_notes: "reader knows occupation (stitch-maker) + Taylor's coverage-map function-node categorization + one spoken exchange (c06) + Taylor's protective omission from the deliverable (NAME deliberately withheld). c09: now the surveillance-pattern SUBJECT — her daily route (door / corner / one-entrance lane) is mapped + indexed in Taylor's internal map; reader-legible via the @0 prologue bridge restatement. c10: PARTIAL appearance only — the rev-0004 prologue callback ('the stitch-maker's days indexed in the record like any other route and kept out of the deliverable') restates her indexed-but-unwritten state at the exact contrast point where Corwick becomes the ledger's first named closed entry; she is the standing counter-example. Still OUTSIDE the formal ledger; relational_anchor_status held at 3.5 (no movement). Not on-page in c07/c08/c11; the c11 s01 wool-dyer withhold is structurally parallel (Taylor withholds a ward-contact identity) but the referenced contact is the unnamed wool-dyer, not Wren"
       last_updated_by: and-stitch-phase-10
 
     - slug: oswyn-mudway-flea-bottom-elder
       introduced_at: b01c01
-      last_appearance: b01c08
+      last_appearance: b01c11
       reader_legibility: partial
-      legibility_notes: "Hook ward-elder; ran his own informal watcher-network (revealed c08, now subsumed into Taylor's coverage without his knowledge); names Corwick at c08 close. Function + ward-standing legible; interior opaque (non-POV)"
+      legibility_notes: "Hook ward-elder; ran his own informal watcher-network (revealed c08, now subsumed into Taylor's coverage without his knowledge); names Corwick at c08 close. Function + ward-standing legible; interior opaque (non-POV). c11: on-page in the feed at the grain-measures junction (weight dispute with two carters); operating as unknowing ward-junction baseline — Taylor reads him as a coordinate without contact"
       last_updated_by: and-stitch-phase-10
 
     - slug: jarvis-coin-kl-courier
       introduced_at: b01c03
-      last_appearance: b01c08
+      last_appearance: b01c11
       reader_legibility: partial
-      legibility_notes: "Otto's courier / the channel up to Otto; reader knows function (carries proposal c03, delivers packets c08) + Earth-Bet-fence-clean voice; standing opaque"
+      legibility_notes: "Otto's courier / the channel up to Otto; reader knows function (carries proposal c03, delivers packets c08) + Earth-Bet-fence-clean voice; standing opaque. c11: takes the packet at second bell, reads the covering sheet in the lane-mouth, folds it once, and is gone before the bell's decay ends — operating as structural conduit without ceremony"
       last_updated_by: and-stitch-phase-10
 
     - slug: otto-hightower-offstage
       introduced_at: b01c03
-      last_appearance: b01c08
+      last_appearance: b01c11
       reader_legibility: cipher
-      legibility_notes: "cipher-by-design — never on-page; reader knows him only as the patron the arrangement routes to (the proposal-maker, the apparatus). Referenced through Jarvis + the handler-rotation"
+      legibility_notes: "cipher-by-design — never on-page; reader knows him only as the patron the arrangement routes to (the proposal-maker, the apparatus). Referenced through Jarvis + the handler-rotation. c11: recipient of the routed precinct-pattern packet (s03); the withholding-from-Otto pattern (two consecutive un-routed observations) is not yet noticed by him"
       last_updated_by: and-stitch-phase-10
 
     - slug: septon-halvard-flea-bottom
       introduced_at: b01c04
       last_appearance: b01c07
       reader_legibility: partial
-      legibility_notes: "Septon Halvard; minor presence c04, major c07 (the unresolved principled-slower argument — counter-argument genuinely engaged, not won). Voice + theological stance legible after c07. NOT on-page c08 (held offstage; only referenced in prologue)"
+      legibility_notes: "Septon Halvard; minor presence c04, major c07 (the unresolved principled-slower argument — counter-argument genuinely engaged, not won). Voice + theological stance legible after c07. NOT on-page c08/c09/c10/c11 (held offstage); counter-argument unresolved + engagement thinning; FORECLOSE@c13 per DEC-0071"
       last_updated_by: and-stitch-phase-10
 
     - slug: corwick
@@ -343,6 +343,27 @@ aggregate_state:
       last_appearance: b01c07
       reader_legibility: cipher
       legibility_notes: "named-in-dialogue DEAD six-year-old — the founding entry in Taylor's grave-count (the named body that justifies the arrangement, c07 Halvard counter). Not a living cast member; recorded for de-collision traceability against meryn-cobb"
+      last_updated_by: and-stitch-phase-10
+
+    - slug: cloth-merchant-black-faction-node
+      introduced_at: b01c11
+      last_appearance: b01c11
+      reader_legibility: partial
+      legibility_notes: "passive Black-faction intelligence node at the Hook's south end; burns messages on a standing protocol (burns rather than carries when the thread is cut). Introduced c11 s02: burns a message from a Dragonstone-adjacent messenger in view of Taylor's insect-feed; the thermal-shift + smoke-curl register in the feed as a burn-not-route confirmation. Dragonstone-awareness of the cut logistics thread is the signal; the merchant is the medium. Taylor withholds the observation from Jarvis. Not named; not a recurring POV; reader-legible as Black-faction passive node at Hook's south margin"
+      last_updated_by: and-stitch-phase-10
+
+    - slug: ward-contact-pool-c11
+      introduced_at: b01c11
+      last_appearance: b01c11
+      reader_legibility: cipher
+      legibility_notes: "minor walk-on ward contacts in c11 s01: wool-dyer (cross-lane; brought Taylor the cart-timing change two days prior; identity withheld from deliverable), salt-seller (water-gate; brought distribution-run shift a week prior), warden's-wife (lower Hook precinct; came three days back with household drain word). All operate through prior-service-reciprocity debt — not prompted, not on-page as scene partners; their contributions establish the service-reciprocity mechanism as load-bearing. Individual names/identities not established for the reader. Recorded as pool entry."
+      last_updated_by: and-stitch-phase-10
+
+    - slug: soap-lane-contact
+      introduced_at: b01c11
+      last_appearance: b01c11
+      reader_legibility: cipher
+      legibility_notes: "minor ward contact in c11 s03: crosses the cross-lane and delivers a nighttime-visitor report to Taylor (physical packet). Taylor opens the packet, writes the precinct-pattern sourcing, and seals for routing. No name, no lines, no interior access — a ward-contact-pool body delivering a report token. Recorded separately from ward-contact-pool-c11 only because s03 is the scene-body appearance; may be consolidated with the pool at cohere if preferred"
       last_updated_by: and-stitch-phase-10
 
   world_state:
@@ -408,14 +429,26 @@ aggregate_state:
 
     - key: green-succession-channel
       kind: condition
-      state: "established c10: the Green-faction succession/intelligence channel running through the now-formalized arrangement is OPERATIONAL — the Corwick detention demonstrates the channel converts Taylor's feed-intelligence into apparatus action (position-world 7, political_register-world 6 first-tranche). The institutional mechanism by which Taylor's deliveries consolidate Green control"
-      last_changed_at: b01c10
+      state: "established c10: the Green-faction succession/intelligence channel running through the now-formalized arrangement is OPERATIONAL — the Corwick detention demonstrates the channel converts Taylor's feed-intelligence into apparatus action (position-world 7, political_register-world 6 first-tranche). c11: CONSOLIDATED post-Corwick-detention — the Green apparatus leveraged the courier detention for succession-channel consolidation; political_register-world advances to 6.5 (second incremental tranche). The institutional mechanism by which Taylor's deliveries consolidate Green control now post-detention-hardened"
+      last_changed_at: b01c11
       last_updated_by: and-stitch-phase-10
 
     - key: black-faction-logistics-thread
       kind: condition
-      state: "the Black-faction logistics corridor Corwick served (lower-gate errands facing 'the wrong way for the Queen's business'). c10: ACTIVELY FORECLOSED — Corwick detained two days after Taylor's report; the first Black-faction casualty produced by the architecture Taylor built (the first Dance-pressure pulse). Rhaenyra/Dragonstone-adjacent counter-response pending at a remove (agents not on-page)"
-      last_changed_at: b01c10
+      state: "the Black-faction logistics corridor Corwick served (lower-gate errands facing 'the wrong way for the Queen's business'). c10: ACTIVELY FORECLOSED — Corwick detained two days after Taylor's report; the first Black-faction casualty produced by the architecture Taylor built (the first Dance-pressure pulse). c11: Dragonstone/Rhaenyra's faction demonstrably AWARE the KL logistics thread was cut — cloth-merchant passive node at Hook's south end burns a message rather than rerouting (going dark, not rerouting = enemy doing triage). First on-page Rhaenyra-pressure signal; larger Black-faction counter-response still mediated, agents not on-page in force. Taylor withholds the burn-signal from Jarvis"
+      last_changed_at: b01c11
+      last_updated_by: and-stitch-phase-10
+
+    - key: dragonstone-rhaenyra-awareness
+      kind: condition
+      state: "c11: first on-page confirmation that Rhaenyra/Dragonstone-faction is aware the KL logistics thread was cut (the Corwick detention). Evidence: cloth-merchant passive Black-faction node burns a message rather than rerouting — going dark, not rerouting = enemy doing damage-triage before Taylor knows the full extent. Mediated signal (cloth-merchant as passive conduit, not a Dragonstone agent on-page). Taylor reads it in the feed; withholds from Jarvis. The larger cf-rhaenyra-pressure / Black-faction counter-response thread remains open (hook-0012)"
+      last_changed_at: b01c11
+      last_updated_by: and-stitch-phase-10
+
+    - key: withholding-from-otto-pattern
+      kind: condition
+      state: "c11: pattern established across two consecutive withheld observations in one chapter — (1) wool-dyer source-name withheld from the deliverable (s01; source-field left bare, hand lifts without the name); (2) cloth-merchant Dragonstone-burn signal withheld from Jarvis entirely (s02; Taylor marks the timestamp and moves on without routing). Pattern is reader-legible (two in one chapter) but not actor-legible within the fiction; Otto not yet aware. The withholds sit in the record where nothing in any packet names them (s04 close). Taylor is protecting her withheld observations the way she protects Wren — without naming either act as protection (hook-0014)"
+      last_changed_at: b01c11
       last_updated_by: and-stitch-phase-10
 
     - key: gold-cloaks-city-watch
