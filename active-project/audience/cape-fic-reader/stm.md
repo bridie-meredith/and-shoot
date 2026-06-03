@@ -495,3 +495,30 @@ threshold_discipline_check:
   - filler_while_plot_is_live: no fire; all four scenes are in the action; s02 holds without resolving — dramatic suspension, not filler
   - new_character_trust_without_cost: not applicable; no new characters
   - fatigue: no triggers; held-axis rationales are planning-layer, not prose-layer
+
+## b01c12 /and-write Phase 4 trim — 2026-06-03
+
+verdict: ACCEPT (43 KEEP, 0 DELETE)
+file_verdict: ACCEPT
+
+phase_5_watches_honored:
+  s02_weather_image: HONORED — n06 (stylus set) + n07 (eyes held) deliver Taylor's body paired to physical setting in two distinct bodily acts; atmospheric warmth is not on the bones; the collision closes on body-stillness, not ambient description
+  s03_un-routed_content_list: HONORED — n04 (hand holds) + n05 (stylus lifts) deliver the stopping-before-writing as two sequential physical acts (pause / completion-of-pause); n08 (response entry closes gap-column without explanation clause) enacts the column-close as a fact of absence, not as interior enumeration; enacted withholding confirmed at bone level
+  s04_khepri_oblique_framing: HONORED — six accumulation bones (n14 causal-bridge, n03 aggregate-count, n04 accounting-act, n05 named-terrain-density, n06 threshold-entry, n07 harm-prevention column) build referent-weight before n09 reaches the shape-word; the shape-word arrives through the accounting's own path, not through a vague gesture
+
+redundancy_checks_resolved:
+  s01_n04_n05: NOT REDUNDANT — n04 closes the western wall (gate-tower), n05 closes the eastern wall (rendering-yard); the gap requires both bounding walls formally confirmed; neither wall is the other
+  s01_n06_n07: NOT REDUNDANT — n06 is the feed returning the route (perceptual event, insect-substrate), n07 is the map marking the route (inscription event, ledger-substrate); the feed/map substrate distinction is load-bearing for the chapter's theme; these are two operations on two different substrates
+  s04_accumulation_n14_n03_n04_n05: NOT REDUNDANT — n14 (causal-bridge: muddy-way entry closes fifth-ward circuit), n03 (aggregate-count: all five wards return simultaneously), n04 (accounting-act: the count runs the full-circuit), n05 (named-terrain-density: Flea Bottom approaches — qualitative texture within the aggregate); each adds a distinct beat; the accumulation is load-bearing per pl-2026-06-03-004(d)
+
+threshold_discipline_check:
+  - established_limits_bypassed_without_cost: no fire; capability +0.5 (s04n02) mechanically paired with moral_framework -1.0 (s04n13)
+  - filler_while_plot_is_live: no fire; all four scenes in action; s02 dramatic suspension not filler; s04 accumulation is the mechanism, not setup preceding it
+  - unmotivated_knowledge: no fire; Otto's terrain literacy independently established
+  - fatigue: no triggers; no reasoning-chain loops; accumulation sequence is operationally purposive
+
+notes:
+  - s01: 10 bones clean; n01/n02 mechanism-sequence (terrain-constraint → ceiling-state); n04/n05 gap-walls (distinct physical boundaries); n06/n07 substrate-distinct (feed vs. map); n08 enacted-withholding (stylus lifts without writing source); axis-moves at n09 (capability) and n10 (social_tether) structurally distinct events
+  - s02: 7 bones; three-bone stillness accumulation (n04 packet-set / n06 stylus-set / n07 eyes-held) are three physically distinct enactments; not redundant; collision arrives complete before stillness fires (Phase-3 reorder honored)
+  - s03: 12 bones; n04+n05 stopping-before-writing enacted as pause/completion-of-pause (two acts); n08 column-closure-without-explanation-clause is the absence as fact; n10+n11 anchor-settlement mandatory for cl-d08+cl-d06 discharge
+  - s04: 14 bones (including anchored chatter n01); accumulation across n14/n03/n04/n05/n06/n07/n08 is six physically distinct accounting-march beats before n09; shape-word at n09 earned through the accounting's own path; suppression at n10+n11 two physically distinct acts; n13 central-event bone concrete SVO confirmed
