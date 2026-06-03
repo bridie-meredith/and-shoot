@@ -33,6 +33,7 @@ planetos:
   - loc-sept-of-baelor-margin
   - loc-tanner-village
   - loc-velaryon-kl-townhouse
+  - oc-cloth-merchant-shop
   - oc-cooper-yard-eel-alley
   - oc-pig-tallow-lane
   - oc-riverlands-river-ford
@@ -40,6 +41,7 @@ planetos:
   - oc-ropers-court
   - oc-rushwick
   - oc-sept-corner
+  - oc-soap-rendering-lane
   - reach-smallfolk-village
   - stormlands-coastal-cliffs
   - westerosi-smallfolk-dwelling-interior
@@ -75,6 +77,7 @@ full:
   - loc-sept-of-baelor-margin
   - loc-tanner-village
   - loc-velaryon-kl-townhouse
+  - oc-cloth-merchant-shop
   - oc-cooper-yard-eel-alley
   - oc-pig-tallow-lane
   - oc-riverlands-river-ford
@@ -82,6 +85,7 @@ full:
   - oc-ropers-court
   - oc-rushwick
   - oc-sept-corner
+  - oc-soap-rendering-lane
   - reach-smallfolk-village
   - stormlands-coastal-cliffs
   - westerosi-smallfolk-dwelling-interior

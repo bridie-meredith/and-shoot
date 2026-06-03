@@ -1736,10 +1736,43 @@ parking_lot:
         - active-project/staff/auditor/facets-final-audit.md  # fault-005, fault-011
         - active-project/theater/facets/state-updates.md  # Margit referrals section
         - active-project/theater/facets/location-state-b01-c11.md  # SEAM-C11-LOC-001/002/004
-      status: open
-      resolved_at: null
-      resolved_by: null
-      resolution_note: null
+      status: resolved
+      resolved_at: 2026-06-03T00:00:00Z
+      resolved_by: "margit dispatch during /and-substance chapter b01c12 cascade Phase 0"
+      resolution_note: |
+        All HIGH-priority and REQUIRED cards authored. Canonicalization decisions:
+
+        (1) oc-cloth-merchant-shop — SEAM-C11-LOC-004 canonicalization: library card already
+        existed at cards/locations/oc-cloth-merchant-shop.card.md (full quality; had been authored
+        but not yet added to INDEX.md or given a warehouse copy). Decision: DO NOT nest under a
+        hook-ward umbrella slug. The card is a distinct named location (a specific shop on a
+        specific corner, with distinct fixed-props and intelligence-node function) and the existing
+        oc- taxonomy does not use umbrella nesting — oc-rushwick, oc-pig-tallow-lane, etc. are all
+        flat. Stored as oc-cloth-merchant-shop. Library card confirmed at path; warehouse copy
+        created at active-project/warehouse/oc-cloth-merchant-shop.md. INDEX.md updated (added
+        to by_world/planetos + by_quality/full).
+
+        (2) oc-soap-rendering-lane — new library card authored at full quality:
+        cards/locations/oc-soap-rendering-lane.card.md. Geography: cross-lane approach and lane
+        interior between cloth-trade and tallow-rendering quarters; soap-rendering workshop at
+        mid-lane; cross-lane mouth is the exchange geometry for nighttime-visitor reports. Warehouse
+        copy at active-project/warehouse/oc-soap-rendering-lane.md. INDEX.md updated.
+
+        (3) oc-soap-lane-report-packet — new prop card authored at full quality:
+        cards/props/oc-soap-lane-report-packet.card.md. Functional state as of b01c11 @21 close:
+        seal_state route-ready, content complete (nighttime-visitor observation + precinct-pattern
+        sourcing annotation), location feed-station outbound stack, dispatch_state pending. Carry-
+        forward note to b01c12 in Functional State section. Warehouse copy at
+        active-project/warehouse/oc-soap-lane-report-packet.md. Props INDEX.md updated.
+
+        (4) oc-cloth-merchant-paper — DEFERRED. Burns @11 and exits tracking in c11; no
+        downstream persistence. Not required for b01c12. Noted as not-required-downstream.
+
+        (5) oc-feed-ledger field-extensions — NOT APPLIED. No oc-feed-ledger card found in
+        warehouse or library. This item is a schema extension on an existing card that does not
+        appear to have been authored yet. Noted for future: when oc-feed-ledger is authored,
+        the field-extension schema (source-field-entry, cloth-merchant-entry, jarvis/oswyn/
+        contacts/arrangement-entry) should be incorporated.
 
     - id: pl-2026-06-03-002
       created_at: 2026-06-03T00:00:00Z
