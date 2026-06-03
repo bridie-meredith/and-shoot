@@ -2019,3 +2019,20 @@ dispatch: /and-facets b01c12 Phase 5b cycle-1 remediation — cipher all Khepri/
 target: active-project/theater/facets/vibes-b01-c12.md, active-project/theater/facets/scene-map-b01-c12.md
 audit-report: Phase 5b cycle-1 adversarial gate (worm-canon-pedant callout)
 findings-queued: 2 (one per file)
+
+## vibes-b01-c12-cipher — RESOLVED — 2026-06-03T11:05:00Z
+fault: Khepri/khepri proper-noun leaks in vibes-b01-c12.md (worm-canon-pedant adversarial gate)
+scope: line
+change: 0 edits required — full 95-line scan confirmed file already clean; all cipher forms pre-applied in draft authoring; memory:3 refs correct; no memory:2 occurrences
+criteria met: yes — grep-0 confirmed
+
+## scene-map-b01-c12-cipher — RESOLVED — 2026-06-03T11:15:00Z
+fault: Khepri/Gold-Morning proper-noun leaks in scene-map-b01-c12.md (worm-canon-pedant adversarial gate)
+scope: line
+change: 7 substitutions — (1) line 7 Khepri-recognition→shape-word-recognition; (2) line 31 Khepri threshold→prior-architecture threshold; (3) line 31 Gold-Morning→the-world's-ending; (4) line 31 irrevocable-Khepri-repetition→irrevocable-prior-architecture-repetition; (5) line 33 Khepri surfacing→shape-word surfacing; (6) line 36 KHEPRI-SURFACE-AND-SUPPRESS→SHAPEWORD-SURFACE-AND-SUPPRESS + Gold-Morning→the-world's-ending + NO proper noun 'Khepri'→NO Earth-Bet proper noun; (7) line 36 Khepri-scale→prior-architecture-scale. DEC-0076 arming + cipher-fence directives intact. No ids/anchors/licensed-by changed.
+criteria met: yes — grep-0 confirmed
+
+## SESSION-END — 2026-06-03T11:15:00Z — and-facets-b01c12-cycle1-earthbet-cipher
+findings-applied: 2 (vibes: 0 edits / already clean; scene-map: 7 substitutions)
+findings-skipped: 0
+exit: CLEAN
