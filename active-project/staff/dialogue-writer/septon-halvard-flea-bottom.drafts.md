@@ -48,7 +48,7 @@ c07 s02n04 + s03n04 established: Halvard works the wrong through honestly, never
 - §Pet-Peeves (persona leaf): the wrong is named BEFORE any alternative — he refuses the "full accounting first" dishonesty by structurally naming the wrong and stopping.
 - §Hard-Fences #2 (persona leaf): he does NOT know what Taylor is — the agent of the wrong is "somebody," "a long way off," never "you."
 - §Syntax (westeros-septon): coordination ("and") not subordination-spine; period-stops, no semicolon chassis.
-**facet-licenses:** [DEFERRED-TO-R2 — no facets exist at Phase 1.5; R2 dialogue-judge resolves against the locked graph (feeling-halvard / NI / memory at @b01c13s04n03) when facets author]
+**facet-licenses:** [R2-RESOLVED] vibes:10 @26 (tragic-causal — cost-of-slower-method-now-a-named-person-Aldric-the-ward-elder; the-wrong-named-to-the-one-responsible-who-does-not-say-so); vibes:11 @26 (moral-legibility-mirror — mirror-held-without-knowing-it-is-a-mirror, lamentation-not-accusation, the-responsible-party-unnamed-and-present). Both vibes entries co-cite [septon-halvard-flea-bottom:1] in the cite-index @26 — resolution confirmed against the locked graph. (NOTE the R1 placeholder named feeling-halvard / NI / memory @26; the locked graph fires NONE of those at @26 — feeling-halvard fires only @31, NI @28/@30, memory @30 — so the license correctly resolves to the two vibes-fires that DO co-locate at @26. The lament's somatic/monument adjacency is carried by the vibes pair, not a feeling/memory fire at this anchor.)
 
 ---
 
@@ -77,7 +77,7 @@ c07 s02n04 + s03n04 established: Halvard works the wrong through honestly, never
 - §Voice-tells (persona leaf): "Names his own uncertainty" — "like as not" hedges the prediction honestly; he does not claim to know Aldric is dead, only that he likely will be.
 - §Hard-Fences #4 (persona leaf): NO alternative — he names the cost of reading-from-a-distance and stops; he does not say what should have been done instead.
 - §Syntax: coordination, period + "And"-start; no semicolon-spine.
-**facet-licenses:** [DEFERRED-TO-R2 — no facets at Phase 1.5; R2 resolves against feeling-halvard / memory at @b01c13s04n06]
+**facet-licenses:** [R2-RESOLVED] narrator:6 @28 (NI — "he names the wrong as somebody a long way off, and the long way off is her, and he does not know it is a mirror he is holding up": the dramatic-irony fire — the spoken utterance is Halvard's words, NI:6 is Taylor's interior read of them; complementary, NOT a DEDUP); vibes:13 @28 (the-counter-argument-still-present — foreclosure-Taylor-unilateral-not-Halvard-conceding, still-speaking-when-she-is-already-gone, departure-mid-speech-as-form-of-the-foreclosure). Both co-cite [septon-halvard-flea-bottom:2] in the cite-index @28 — resolution confirmed against the locked graph. (R1 placeholder named feeling-halvard / memory @28; locked graph fires neither at @28 — NI:6 + vibes:13 are the actual co-located fires.)
 
 ---
 
