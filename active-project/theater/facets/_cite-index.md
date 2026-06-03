@@ -28,7 +28,7 @@ totals: 70 facet entries; 26/42 protolines decorated (61.9%)
   loc-state:7 @29 back=Y co=[state:12]
   loc-state:8 @42 back=Y co=[narrator:9, state:15, state:16, state:24, vibes:15, vibes:17, vibes:18, vibes:19]
 
-### narrator (9 entries)
+### narrator (10 entries)
   narrator:1 @3 back=Y co=[loc-state:2, mem:1, vibes:3]
   narrator:2 @7 back=Y
   narrator:3 @10 back=Y co=[state:18, vibes:2]
@@ -36,6 +36,7 @@ totals: 70 facet entries; 26/42 protolines decorated (61.9%)
   narrator:5 @19 back=Y co=[state:7, state:19, vibes:7]
   narrator:6 @21 back=Y
   narrator:7 @27 back=Y co=[state:11, state:22, vibes:10]
+  narrator:10 @24 back=Y
   narrator:8 @38 back=Y co=[mem:3, meta:1, vibes:13, vibes:14]
   narrator:9 @42 back=Y co=[loc-state:8, state:15, state:16, state:24, vibes:15, vibes:17, vibes:18, vibes:19]
 
@@ -69,9 +70,8 @@ totals: 70 facet entries; 26/42 protolines decorated (61.9%)
   state:23 @30 back=Y co=[state:13, vibes:12, vibes:16]
   state:24 @42 back=Y co=[loc-state:8, narrator:9, state:15, state:16, vibes:15, vibes:17, vibes:18, vibes:19]
 
-### mem (3 entries)
+### mem (2 entries)
   mem:1 @3 back=Y co=[loc-state:2, narrator:1, vibes:3]
-  mem:2 @24 back=Y
   mem:3 @38 back=Y co=[meta:1, narrator:8, vibes:13, vibes:14]
 
 ### feel (2 entries)
@@ -79,7 +79,7 @@ totals: 70 facet entries; 26/42 protolines decorated (61.9%)
   feel:2 @40 back=Y
 
 ### meta (1 entries)
-  meta:1 @38 back=Y co=[mem:3, narrator:8, vibes:13, vibes:14] lic-out=[memory:2]
+  meta:1 @38 back=Y co=[mem:3, narrator:8, vibes:13, vibes:14] lic-out=[memory:3, vibes:13, vibes:14]
 
 ### vibes (19 entries)
   vibes:1 @9 back=Y co=[state:2, state:17, vibes:4] lic-out=[state-update:1, proto:9, proto:10]
@@ -94,8 +94,8 @@ totals: 70 facet entries; 26/42 protolines decorated (61.9%)
   vibes:10 @27 back=Y co=[narrator:7, state:11, state:22] lic-out=[state-update:5, state-update:6, proto:25, proto:26, proto:27, proto:28]
   vibes:11 @22 back=Y co=[state:8, state:20, vibes:8] lic-out=[state-update:3, state-update:4, proto:18, proto:22, proto:24, proto:25]
   vibes:12 @30 back=Y co=[state:13, state:23, vibes:16] lic-out=[state-update:7, proto:30, proto:31, proto:32, proto:33, proto:34]
-  vibes:13 @38 back=Y co=[mem:3, meta:1, narrator:8, vibes:14] lic-out=[memory:2, feeling:2, proto:38, proto:39, proto:42]
-  vibes:14 @38 back=Y co=[mem:3, meta:1, narrator:8, vibes:13] lic-out=[memory:2, proto:38, proto:39, proto:40]
+  vibes:13 @38 back=Y co=[mem:3, meta:1, narrator:8, vibes:14] lic-out=[memory:2, feeling:2, proto:38, proto:39, proto:42] lic-in=[meta:1]
+  vibes:14 @38 back=Y co=[mem:3, meta:1, narrator:8, vibes:13] lic-out=[memory:2, proto:38, proto:39, proto:40] lic-in=[meta:1]
   vibes:15 @42 back=Y co=[loc-state:8, narrator:9, state:15, state:16, state:24, vibes:17, vibes:18, vibes:19] lic-out=[state-update:7, state-update:8, proto:40, proto:41, proto:42]
   vibes:16 @30 back=Y co=[state:13, state:23, vibes:12] lic-out=[state-update:7, proto:29, proto:30, proto:31]
   vibes:17 @42 back=Y co=[loc-state:8, narrator:9, state:15, state:16, state:24, vibes:15, vibes:18, vibes:19] lic-out=[state-update:8, proto:40, proto:41, proto:42]
@@ -120,10 +120,10 @@ _Round-2 deletion candidates — but check the rubric before cutting._
 - narrator:2 @7  `the map marks the stitch-maker route`
 - narrator:4 @14  `taylor-hebert-kl-122ac turns the covering-sheet`
 - narrator:6 @21  `the stylus lifts`
+- narrator:10 @24  `the response entry closes the gap-column`
 - sensory:2 @16  `taylor-hebert-kl-122ac sets the stylus`
 - state:5 @13  `taylor-hebert-kl-122ac opens the covering-sheet`
 - state:14 @32  `the feed returns all five wards`
-- mem:2 @24  `the response entry closes the gap-column`
 - feel:1 @20  `taylor-hebert-kl-122ac holds the hand`
 - feel:2 @40  `taylor-hebert-kl-122ac closes the architecture entry`
 - exposition:1 @0  ``

@@ -13,7 +13,7 @@ r2-note: mem:2 @24 (withholding-pattern callback) DELETED at R2 — functional i
 
 1 @3 the overhang closes at the height where dense placement stops being insects and becomes the word these streets keep for women like her — and she knows the word and lets the placement stand -> cond-kl-witch-label-formation-122ac
 
-2 @38 the count runs and the record reaches past any name for the architecture and lands on the older word — the shape of the thing she did when the world was ending, the one this rhymes with — there for one count and not the name of what is in front of her -> cond-override-architecture-residue-122ac
+3 @38 the count runs and the record reaches past any name for the architecture and lands on the older word — the shape of the thing she did when the world was ending, the one this rhymes with — there for one count and not the name of what is in front of her -> cond-override-architecture-residue-122ac
 
 ---
 R2 cull log:
