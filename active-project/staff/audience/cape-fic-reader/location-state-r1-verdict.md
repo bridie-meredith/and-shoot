@@ -7,8 +7,6 @@ date: 2026-06-03
 verdict: accept
 ---
 
-# Adversarial Read — location-state b01-c12
-
 Eight entries, four locations, three time-of-day advances across one silent accounting chapter. My single question: does the spatial layer put a real body at a real surface at each beat, or is this geometric bookkeeping that floats free of the action?
 
 **loc-state:1 @1 (the-hook-ward, overhang-geometry-active)** — "tight geometry that makes dense insect placement read as witch-label; place-anchor for the morning circuit." This is operational texture reading as concrete: the WHERE tells me WHY the gap is structural, before anything happens. That's the cape-fic move I want — rule stated before it acts.
@@ -25,6 +23,6 @@ Eight entries, four locations, three time-of-day advances across one silent acco
 
 What I looked for and didn't find: no decorative spatial fires — no location entry for a corner that has no load, no time-of-day advance that exists for texture. Every entry carries a named ledger-state or a named scene-transition. The packet is tracked. The surface is named. The body has a place at each beat.
 
-No convergence with auditor findings on this facet. The auditor's signals (flag-004 stale memory:2 citations, flag-005 slug resolution gaps) don't touch the location-state layer.
+No convergence with auditor hard findings on this facet. The auditor's signals (flag-004 stale memory:2 citations, flag-005 slug resolution gaps for east-water-gate-lanes and muddy-way) are noted — vibes:4 and vibes:16 carry those slugs, not location-state — so those are not this facet's problem. The location-state entries themselves use loc:the-hook-ward, loc:the-feed-station as anchors, both warehouse-resolvable; the gap-boundary geography is carried as physical descriptor text, not as a slug-dependent field.
 
 **verdict: accept**

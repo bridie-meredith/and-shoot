@@ -2,57 +2,115 @@
 reviewer: dark-fantasy-reader
 facet: vibes-updates
 cycle: 1
-episode: b01c11
+episode: b01-c12
 date: 2026-06-03
 verdict: revise
 ---
 
-## Verdict
+# Vibes — Adversarial Verdict
 
-REVISE
+**Verdict: REVISE**
 
-## Callouts
+19 entries across 5 events. The chapter is a climax chapter — the irrevocable threshold. My lens: does the vibe-cloud keep the chapter COLD and the cost real? Atonement-as-repetition (vibes:13, vibes:9) and khepri-memory-as-standard (vibes:14) are the entries I came to attack hardest.
 
-[vibes:8 @11] actor:rhaenyra-targaryen-122ac ++ rising-entrapment: *[dragonstone-awareness-of-the-courier-cut-confirmed-through-standing-protocol, mediated-intelligence-she-does-not-know-exists, the-logistics-blind-spot-observed-from-within-its-own-burn-signature]*
+---
 
-[vibes:9 @11/@15] actor:rhaenyra-targaryen-122ac ++ tragic-causal: *[the-protocol-predates-taylors-processing-of-it, the-burn-and-routine-is-already-old-when-she-has-it, the-irony-compounds-the-she-does-not-know-with-the-protocol-was-already-running]*
+**Event E1 (S01): vibes:1-4 — the gap as formal operational fact**
 
-I'm reading these two entries together because they are the burn sequence's vibe footprint and together they constitute what I needed most to verify: does the burn land in the vibe-cloud as DREAD, or as information about faction positioning?
+vibes:1 @9 (actor:taylor ++ cold-utilitarian interiority) — token bundle: the-gap-named-as-formal-fact-not-sentiment, coverage-boundary-as-operational-record-not-protection, the-route-in-the-internal-record-that-goes-nowhere-else.
 
-Both entries fire on Rhaenyra as target. Both are correct in their logic. But the token bundles have drifted toward intelligence-analysis vocabulary rather than dread-register vocabulary. "mediated-intelligence-she-does-not-know-exists" is an operational frame. "the-logistics-blind-spot-observed-from-within-its-own-burn-signature" is abstract-strategic. These tokens read like notes from a game-theory analysis of the scene, not from the gut-floor response I need when fire consumes something in a small room and the enemy has already moved.
+"coverage-boundary-as-operational-record-not-protection" is the crucial token. It frames the gap as a record (not a choice to protect Wren). "The-route-in-the-internal-record-that-goes-nowhere-else" — the route terminates; it is not routed anywhere; it exists in the internal record as a dead-end. These tokens tell downstream agents: render the gap as procedural architecture, not as an act of care. Correct.
 
-What the burn needs in the vibe-cloud: the world's indifference to Taylor's timeline. Dragonstone did not wait for Taylor to process the cut before responding. The burn is evidence of a power that has been running its own protocols while Taylor was still counting nodes. The dread is not in the information; it is in the priority order — they moved first, on their own calendar, and Taylor is reading the residue. The tokens that would carry this: *the-enemy-moved-first, the-burn-is-already-old-when-the-feed-returns-it, the-protocol-outlasts-the-event-that-triggered-it, enemies-who-do-not-pause-for-the-protagonists-knowledge-lag*. Some of those are too long for token-algebra; but the direction is: enemy motion > enemy blindspot. The Rhaenyra-faction's rising-entrapment vibe should carry the fact that they are not static — they act, they burn, they close channels — not that they have a logistics blind spot Taylor can exploit.
+vibes:2 @10 (actor:taylor ++ rising entrapment) — "gap-consolidates-tether-without-entering-the-ledger, the-protection-is-the-architecture-the-ledger-cannot-contain, each-ward-cluster-narrows-the-one-lane-left-uncovered." The protection-is-the-architecture-the-ledger-cannot-contain token is the trap made visible in the vibe-cloud. The tether consolidates; the architecture grows; the one uncovered lane narrows as everything around it is mapped. "Each-ward-cluster-narrows-the-one-lane-left-uncovered" — the protection mechanism is entrapment by compression. Correct.
 
-vibes:9's "the-irony-compounds" token is the specific concern: the irony is the reader's domain, not the vibe-cloud's. Vibes bias downstream agents toward rendering register; if the tragic-causal token says "the-irony-compounds," the downstream agent has been told the correct emotional flavor is irony. But this is a dark-fantasy chapter. The flavor at the burn is not irony; it is threat. The irony is the intellectual structure the reader perceives; the dread is the affect the rendering must produce. The vibe-cloud should carry dread-register tokens, not irony-register tokens.
+vibes:3 @3 (loc:the-hook-ward + gap-geometry-as-operational-law) — "the-terrain-itself-refuses-the-coverage, close-enough-to-pass-messages-hand-to-hand-across-the-gap, the-boundary-is-physical-not-policy." Terrain-before-protagonist confirmed at the location level. The boundary is physical, not a policy decision. The world's social physics produce the constraint. Correct.
 
-[vibes:3 @20] actor:taylor-hebert-kl-122ac ++ tragic-causal: *[halvard-slot-absent-from-the-routing-cycle, the-argument-not-reached-for-is-not-defeated, foreclosure-as-arithmetic-not-decision, the-chain-continues-without-the-counter-weight]*
+vibes:4 @9 (loc:east-water-gate-lanes + the-un-coverable-ground) — "the-lanes-the-map-holds-open, the-absence-in-the-deliverable-that-is-a-structural-fact, the-eastern-boundary-is-what-is-not-there." The absence as structural fact, not as intention. Correct. (Auditor flag-005 notes no warehouse card for this location slug. I accept this as a margit-referral concern, not an entertainment-blocking one. The gloss is clear.)
 
-This is the Halvard-foreclose entry. I came to verify whether the absent-fourth-motion lands as a real loss (foreclosure-as-arithmetic) or is gestured.
+E1: no concerns.
 
-"foreclosure-as-arithmetic-not-decision" is exactly the token this entry needed. It is the correct encoding of what the chapter is doing at @20. "the-argument-not-reached-for-is-not-defeated" is also correct — the Halvard argument was not overcome, it simply stopped being the instrument she reaches for. "halvard-slot-absent-from-the-routing-cycle" is the right structural description.
+---
 
-The only token that softens this: "the-chain-continues-without-the-counter-weight." This is accurate, but "counter-weight" metaphorizes the Halvard argument as a balancing mechanism, which is analytical rather than felt. The token works as a structural description but not as a dread-register entry. Suggestion: *the-chain-runs-and-the-gap-in-it-runs-too* or *the-sequence-is-complete-the-slot-is-structurally-absent* — something that keeps the arithmetic without invoking the mechanical-balance metaphor. This is minor; it does not fail the entry.
+**Event E2 (S02): vibes:5-6 — packet collision**
 
-The core of vibes:3 — foreclosure-as-arithmetic-not-decision — is delivered. I accept this entry's architecture.
+vibes:5 @12 (actor:jarvis ++ social-tether-antag-vector) — "the-packet-delivers-the-collision-not-the-courier, apparatus-terrain-literacy-visible-through-the-channel, the-standard-hour-carries-the-targeted-corridor, the-chain-does-not-know-what-it-carries." The apparatus is terrain-literate; it has spotted the gap. "The-chain-does-not-know-what-it-carries" — the enemy has named the exact un-coverable ground, but the chain is operating blind, which is the institutional-power-without-malice structure. The apparatus has found the gap not through targeted intelligence but through operational terrain-reading. The opposing force does not pause; it continues running at standard-hour. Correct.
 
-SEAM-V01 (Halvard off-stage; vibes:6/@20 licensed by structural absence via inter-episode reflective pattern) — fan-out verified per the seam note. Taylor (vibes:3), Halvard (vibes:6+7), episode (vibes:11) — complete. No gap.
+vibes:6 @11 (loc:the-feed-station + apparatus-arrives-at-the-ledger-surface) — "every-packet-lands-on-the-same-surface-where-the-accounting-runs, the-opposing-force-uses-the-same-instrument-as-the-refusal." The irony is located in terrain, not authored. Correct.
 
-[vibes:12 @11] episode + the-cold-merchant-burn: *[dragonstone-dark-via-standing-protocol, rhaenyra-pressure-mediated-complete-before-taylor-has-it, dread-register-in-the-routine-return-to-bolt-ticket, the-world-was-already-running-this]*
+E2: no concerns.
 
-This is the episode-scope entry for the burn. "dread-register-in-the-routine-return-to-bolt-ticket" is the right token — the merchant squaring the bolt-ticket after burning the paper is the standing-protocol confirmation that this is not improvised, not new, not responsive to Taylor. The world was already running this. "the-world-was-already-running-this" is the precise dark-fantasy token I want in the episode vibe-cloud. It encodes the enemies-who-don't-stop-at-convenient-moments principle at the episode level.
+---
 
-This entry is the one I would preserve without revision if I could only keep one. It reads correctly for dread-register downstream influence.
+**Event E3 (S03): vibes:7-11 — refusal enacted; anchor-column settlement**
 
-## Convergence-trace
+vibes:7 @19 (actor:taylor ++ cold-utilitarian interiority) — "the-refusal-written-in-flat-channel-register, the-explanation-not-appended-because-what-it-names-does-not-go-into-the-channel, the-withholding-is-the-physical-sequence-not-the-interior-enumeration." The withholding as physical sequence rather than as interior deliberation. "What-it-names-does-not-go-into-the-channel" is the correct evasion: the explanation is absent because the contents of the gap cannot be channeled, not because Taylor consciously protected someone. Correct.
 
-The primary concern across vibes:8 and vibes:9 overlaps with what narrator:2 already presented — both facets are trying to carry the burn's significance and both are drifting toward intelligence-analysis register rather than threat/dread register. The convergence across two facets on the same register-drift is not coincidental; it is a pattern in how the burn sequence is being characterized. The stitch-layer will receive both narrator:2 and vibes:8/9 as downstream inputs. If both read as intelligence-analysis, the burn risks rendering as a geo-political data-point rather than a physical threat arriving through a biological relay. The vibes entries bias the downstream rendering agent; the narrator entry is closer to final prose. Both need correction.
+vibes:8 @22 (actor:taylor ++ rising entrapment) — "the-withholding-now-load-bearing-in-the-channel-record, a-named-gap-in-the-deliverable-is-a-structural-fact-the-apparatus-can-return-to, position-approaches-non-exit-confirmation-through-what-the-ledger-refuses-to-contain." The gap-as-structural-fact that the apparatus can return to is the correct rising-entrapment token: the refusal has now become an addressable fact in the record. The apparatus can return to this gap. The trap deepens. Correct.
 
-No auditor report on disk. Working from facet text and scene-map.
+vibes:9 @26 (actor:taylor ++ atonement-as-repetition) — "the-protection-settles-in-the-column-without-a-name-to-carry-it, the-ledger-records-the-cost-of-what-it-will-not-write, the-settlement-is-the-mechanism-by-which-the-anchor-becomes-load-bearing, one-debt-and-one-mechanism-one-axis-move-settles-both."
 
-## Verdict rationale
+This is the atonement-as-repetition entry for the anchor-column settlement. I'm reading it for whether it stays cold or tips into earned-redemption register.
 
-vibes:8 and vibes:9 need token-bundle revision to shift from intelligence-analysis vocabulary (logistics-blind-spot, mediated-intelligence, irony-compounds) toward dread/threat vocabulary (enemy-moved-first, protocol-outlasts-event, the-world-was-already-running). vibes:3 (@20, Halvard-foreclose) is acceptable; the "counter-weight" token is minor and advisory. vibes:12 (episode, burn) is the cleanest entry in the file and does not need revision. Entries 1-2, 4-5, 6-7, 10-11 are not called out because they are not in my attack focus for this chapter.
+"the-protection-settles-in-the-column-without-a-name-to-carry-it" — no name. The protection is a ledger-entry without identification. The protection is recorded; it is not claimed. "the-ledger-records-the-cost-of-what-it-will-not-write" — the cost of the withheld thing is inside the entry even though the thing's name is not. "the-settlement-is-the-mechanism-by-which-the-anchor-becomes-load-bearing" — mechanical causation: the settlement creates the load-bearing function. Not moral: the settlement does not justify the protection. "one-debt-and-one-mechanism-one-axis-move-settles-both" — efficient. One move closes two ledger obligations.
 
-The revise is targeted: vibes:8 and vibes:9 token-bundles need to correct the register-drift from intelligence-analysis to threat/dread. Single revision pass; architecture of both entries is correct.
+What I'm checking: does atonement-as-repetition here carry forward-motion toward resolution or backward-weight of irrevocable repetition? The token bundle reads as: the settlement is a mechanical ledger-act that closes obligations. It is not presented as penance or as earned-redemption. The atonement keyword in the vibe-set encodes what the settlement RHYMES WITH structurally — it does not encode that the settlement IS atonement in the sense of release. The protection settling without a name is the correct suppression of any redemptive reading. No catharsis. Accept this entry.
 
-**VERDICT: REVISE** — vibes:8 and vibes:9 token-bundles (register correction: intelligence-analysis → dread/threat vocabulary).
+vibes:10 @27 (loc:the-feed-station + the-ledger-as-site-of-refusal) — "the-withholding-exits-at-this-surface, the-anchor-column-opens-here-after-the-sealed-packet-leaves, the-settlement-is-written-at-the-same-station-as-every-deliverable." The station receives everything at the same surface: deliverables and refusals and settlements. Correct.
+
+vibes:11 @22 (episode + the-gap-as-formal-fact) — "the-chapter-is-what-the-map-does-not-contain, the-deliverable-carries-the-gap-as-a-structural-limit, the-absence-is-named-and-confirmed-and-now-load-bearing, the-eastern-lanes-are-not-in-it." The episode vibe-cloud at the E3 close. The chapter is defined by what the map does not contain. Correct.
+
+E3: no concerns.
+
+---
+
+**Event E4/E5 (S04): vibes:12-19 — second ward-cluster; Khepri surfaces**
+
+vibes:12 @30 (actor:taylor ++ residue not spectacle) — "full-deployment-at-Khepri-scale-in-quiet-accounting-no-performance, architecture-complete-in-scope-and-structural-to-the-channel-before-the-accounting-names-it, the-count-moves-in-her-the-way-the-count-has-always-moved, the-threshold-is-an-arithmetic-fact-not-an-event."
+
+"the-threshold-is-an-arithmetic-fact-not-an-event" is the token that carries this. The full deployment is reached because the count got there, not because something happened. The count moves the way it has always moved. The threshold is not announced; it is arrived at through arithmetic. Correct.
+
+**vibes:13 @38 (actor:taylor ++ atonement-as-repetition)** — "the-shape-word-surfaces-in-the-accounting-for-one-count, the-suppression-IS-the-ledger-entry-for-the-irrevocable-repetition, the-breach-column-receives-the-weight-without-the-word, the-threshold-is-irrevocable-the-recognition-is-not-received."
+
+This is the entry I have the most to say about. Three loaded phrases:
+
+"the-suppression-IS-the-ledger-entry-for-the-irrevocable-repetition" — the suppression is identified as the ledger-entry for the repetition's cost. This is the chapter's structural thesis at the vibe-cloud level: the not-naming is itself the record of the cost. The irrevocable-repetition is filed in the entry's absence of the word. This token tells downstream agents: render the suppression as the cost-filing, not as a second cost on top of the cost.
+
+"the-threshold-is-irrevocable-the-recognition-is-not-received" — this is the exact structure I needed confirmed. Irrevocable: yes, the threshold has been crossed, it cannot be walked back. Not-received: the recognition does not arrive. Taylor does not know what she has done in the sense of having received that knowledge as consciousness. The recognition IS the one-count surfacing and IS the suppression that follows — the word arrives and is not permitted to settle as the name of what is in front of her. This token correctly encodes that the recognition is functional (the word surfaces) and suppressed (not received as insight). No catharsis.
+
+**Stale licensed-by citation (flag-004):** vibes:13 carries "licensed-by: memory:2" — mem:2 was deleted at R2. The correct anchor is mem:3. This is a citation-hygiene error, not a structural failure of the entry itself. The entry's content and token bundle are correct. The licensed-by field pointing to a deleted entry means the vibes file needs a targeted correction: replace memory:2 with memory:3 in vibes:13, vibes:14, and vibes:19. The auditor confirmed the structural validity of all three entries holds through other licensed-by sources and through the co-citation structure. The stitcher's Phase 0 cite-index consistency check may surface this as a broken reference.
+
+**This is my revise finding.** Not on content grounds — the entries are structurally correct and cold. On citation-hygiene grounds: vibes:13, vibes:14, vibes:19 carry stale licensed-by references to deleted mem:2. These references need to be corrected to mem:3 before /and-stitch runs its cite-index consistency check. If the stitch-phase consistency check encounters the broken reference and treats it as a hard fault, the stitch will be blocked by a metadata error in an otherwise-correct entry. The fixer should correct the three stale citations.
+
+**vibes:14 @38 (actor:taylor ++ khepri-memory-as-standard)** — "the-internal-record-reaches-for-the-shape-word-at-full-feed-density, the-aggregate-scale-is-what-triggers-the-reach-not-any-single-node, the-gap-between-surveillance-and-override-is-real-and-the-scale-is-also-real, the-shape-word-does-not-settle-the-accounting-advances."
+
+"the-aggregate-scale-is-what-triggers-the-reach-not-any-single-node" — the architecture of the Khepri-threshold correctly encoded: not one person, not one decision, but scale. The feed's full deployment is what makes the word surface. "the-gap-between-surveillance-and-override-is-real-and-the-scale-is-also-real" — both are real. The distinction (this is not exact-repetition) is preserved alongside the scale-similarity. Worm-canon CLEAN: the override-vs-surveillance distinction is maintained. "the-shape-word-does-not-settle-the-accounting-advances" — the word does not settle as the chapter's final resting point; the accounting continues. No catharsis. Correct. 
+
+Carries stale memory:2 citation — same correction needed as vibes:13.
+
+vibes:15 @42 (actor:taylor ++ rising entrapment) — "capability-full-deployment-threshold-crossed-cannot-be-walked-back-by-pulling-any-node, the-feed-runs-on-at-full-deployment-for-every-circuit-that-follows, the-gap-east-of-the-water-gate-the-one-place-the-map-does-not-go." The irrevocability token is correctly placed at the terminal bone. The gap persists — the one place the map does not go remains the one place the map does not go. The cost is filed; the architecture runs on. No catharsis.
+
+vibes:16 @30 (loc:the-muddy-way + fifth-ward-circuit-closed) — "the-lane-that-completes-the-architecture, upper-margin-filled-as-the-last-structural-gap-in-the-Flea-Bottom-coverage, the-muddy-way-is-where-the-feed-becomes-citywide-and-irrevocable, the-placement-here-is-the-causal-bridge-to-the-threshold." The location vibe-cloud carries the causal-bridge function: the muddy-way placement IS the action that makes the threshold consequent. "The-placement-here-is-the-causal-bridge-to-the-threshold" is the correct load-bearing token for /and-stitch's Phase 8.5 DEC-0076 check (CAUSAL-BRIDGE-@31 legibility). Correct. (Auditor flag-005 notes no warehouse card for the-muddy-way. Margit-referral. Not entertainment-blocking.)
+
+vibes:17 @42 (loc:the-feed-station ++ the-ledger-as-site-of-refusal) — "the-breach-column-takes-the-threshold-entry-in-flat-register-here, the-architecture-entry-closes-without-the-word, the-cost-filed-at-the-same-surface-as-every-other-entry, the-feed-runs-on-past-accounting-close-from-this-station." "The-feed-runs-on-past-accounting-close-from-this-station" — the feed continues past the hand that closed it. The architecture runs beyond the accounting. No catharsis: the chapter's close is not the architecture's close. Correct.
+
+vibes:18 @42 (loc:the-feed-station + architecture-at-full-scale) — "the-station-is-where-the-full-deployment-accounting-closes, breach-column-here-receives-the-irrevocable-threshold, all-five-wards-and-Flea-Bottom-approaches-returned-from-this-surface, the-feed-continues-past-the-hand-that-closed-it." Confirms the full scale at the terminal location entry. Correct.
+
+**vibes:19 @42 (episode + suppression-as-ledger-act)** — "the-shape-word-surfaces-and-is-advanced-past-not-received, the-breach-column-files-the-cost-without-the-word-that-named-it, the-accounting-discipline-is-the-suppression-mechanism, this-is-what-the-irrevocable-threshold-looks-like-from-inside-a-ledger."
+
+"this-is-what-the-irrevocable-threshold-looks-like-from-inside-a-ledger" — this is the episode vibe-cloud's closing token. The reader sees the threshold from the inside of an accounting register: a breach column taking an entry, a word not written, the count advancing. That is the chapter's structural thesis encoded at the episode level without stating it as a moral. Correct.
+
+Carries stale memory:2 citation — same correction needed.
+
+---
+
+**Revise finding — stale memory:2 citations:**
+
+[vibes:13 @38] @38 — licensed-by field references deleted mem:2. Correct anchor is mem:3 (confirmed by metaphor R2 shard, cite-index, and auditor flag-004). Single word-swap in three entries.
+[vibes:14 @38] @38 — same stale licensed-by reference to mem:2. Correct to mem:3.
+[vibes:19 @42] @42 — same stale licensed-by reference to mem:2. Correct to mem:3.
+
+Convergence-trace: auditor flag-004 (CONTRADICTION class) identifies the same three entries. The auditor notes structural validity of the entries is intact. This is a targeted metadata correction, not a content failure.
+
+These three entries are structurally correct, cold, and load-bearing. The stale citation is a metadata error that propagated from the R1 vibes author (who wrote before the memory R2 delete) and was not caught because no vibes R2 pass was formally dispatched (auditor notes this as a process gap: no vibes R2 shard in the consolidated r2-decisions.md). The fixer should apply a single pass: in vibes:13, vibes:14, vibes:19, replace `memory:2` with `memory:3` in the licensed-by field.
+
+**REVISE** — three stale licensed-by citations (vibes:13, vibes:14, vibes:19): replace memory:2 with memory:3. All other entries ACCEPT without revision.

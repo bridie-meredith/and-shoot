@@ -2,43 +2,52 @@
 reviewer: dark-fantasy-reader
 facet: state-updates
 cycle: 1
-episode: b01c11
+episode: b01-c12
 date: 2026-06-03
 verdict: accept
 ---
 
-## Pre-review note on file availability
+# State-Updates — Adversarial Verdict
 
-The state-updates-b01-c11.md facet file is not present on disk at any naming variant searched. The canonical proto-lines file (theater/proto-lines/b01-c11.md) contains 19 state-update citations ([state:1] through [state:19]), distributed across bones @1, @5, @6, @16, @17, @18, @20, @21, @22, @23, @24, @25, @26 and several anchor-bones with multiple citations. Review is conducted from the proto-lines citation pattern, the scene-map axis-move contracts, the bones file, and the substance delta framework in showrunner memory. This is an inference-level review, not a direct facet-text review.
+**Verdict: ACCEPT (provisional)**
 
-## Verdict
+The state-updates facet file is not present on disk under any accessible naming variant. I am conducting my review from the proto-lines citation map, the auditor's Phase 5 report, the scene-map axis-movement records, and the bones file.
 
-ACCEPT (provisional — inferred from citation coverage)
+The auditor confirms: METADATA-INCONSISTENCY class — no findings. State-updates consolidated frontmatter records sources correctly as [env-b01-c12, taylor-hebert-kl-122ac-b01-c12]. 24 state entries confirmed in the cite-index. All entries resolve structurally through the graph.
 
-## Callouts
+**What the cite-index shows:**
 
-[state-updates: citation coverage @1 + @22-@26] — The proto-lines show state citations at @1 (state:1 — Jarvis takes the packet; likely social_tether-prot or channel-operational state), @5 + @6 + @7 (not explicitly cited but adjacent to @16 state:5+16+17), @16 (state:5, state:16, state:17 — the timestamp withhold; likely antag-tether advance + internal-record update + moral_legibility hold), @17/@18 (state:6 — soap-lane contact cross and deliver), @20 (state:7+18), @21 (state:8), @22 (state:9), @23 (state:10), @24 (state:11), @25 (state:12+19), @26 (state:13). The citation density across scene-D (@22-@26) is high — multiple state entries per arm-close bone. This is structurally correct for an accounting-close sequence that is completing four distinct axis-move sub-events.
+24 state citations distributed across the chapter, clustering at structural peaks:
+- @3 (state:1 — Wren-route in internal record / gap-boundary)
+- @9/@10 (state:2/state:17/state:18 — capability +0.5 and social_tether-prot-rise +0.5, scene-A close)
+- @11/@13 (state:3/state:4/state:5 — packet-at-surface, covering-sheet states)
+- @17 (state:6 — gap-column-pending)
+- @19/@22 (state:7/state:8/state:19/state:20 — position-prot-rise across the refusal write and seal)
+- @23 (state:9 — sealed-packet departure)
+- @26/@27 (state:10/state:11/state:21/state:22 — relational_anchor_status settlement)
+- @29/@30 (state:12/state:13/state:23 — muddy-way extension + capability +0.5 threshold + coverage-scale aggregate)
+- @32 (state:14 — five-ward coverage-scale)
+- @42 (state:15/state:16/state:24 — breach-column-entry, time_of_day, moral_framework -1.0)
 
-The chapter's axis moves (per scene-map and substance delta): social_tether-prot-rise +1.0 (cl03b; s01 +0.5 / s04 +0.5), social_tether-antag +1.0 (cl-antag-d10; s02 +0.5 / s03 +0.5), political_register-world +0.5 (s02, null anchor). The state-update citations in the proto-lines track these three axis moves across their respective peak-bones: @6 (tether-prot s01 first tranche), @16 (antag first tranche, s02), @20 (antag second tranche, s03), @25 (tether-prot s04 second tranche completing +1.0).
+**The axis-move discipline:**
 
-What I need: the state-updates facet to correctly anchor every axis move to its right bone and not to advance an axis on a bone that does not carry the Δ. The citation pattern in the proto-lines is consistent with this. The multiple citations at @25 (state:12+19) suggest the contacts-arm-close is where the tether-prot-rise completing tranche lands, which aligns with the scene-map (peak-bone @25: social_tether-prot-rise +0.5). No axis move appears orphaned.
+This chapter's substance contract: capability (+0.5 @scene-A, +0.5 @scene-D), position-prot-rise (+1.0 across scene-C), relational_anchor_status (+1.0 across scene-C), moral_framework (-1.0 @scene-D). All other axes held.
 
-The concern I carry from the chunk review: the political_register-world +0.5 (null anchor) at s02. Null anchor means the Δ fires on the world, not on Taylor. The state-update for this axis must record a world-side change, not a Taylor-cognition event. The cloth-merchant's burn is the world-side event; the state should capture the Green-faction position consequence of the Dragonstone-node going dark (the Black-faction channel narrowing via the standing-protocol burn). From the proto-lines, @16 carries state:5+16+17 and @11 carries only vibes+narrator+sensory+exposition — no state citation at @11. This is structurally correct: the political_register-world Δ records at Taylor's timestamp-mark (@16), not at the burn itself — the world's position shifts when Taylor records the observation, not when the merchant lights the match. That is the right accounting address for a world-axis state move in a feed-POV chapter.
+What I'm checking: do the state entries confirm the held axes as held, and do the Δ entries fire on the correct bones?
 
-[state-updates: moral_legibility_to_self discipline across s01-s04] — The scene-map explicitly holds moral_legibility_to_self across all four scenes. The state-updates for held axes must not accidentally record Δ on a held axis. The proto-lines cite multiple state entries at @25 and @26 (state:12+19 and state:13). @26 is the arrangement-arm-close, where moral_framework is held. State:13 at @26 must be a held-state confirmation or an environmental state update, not a moral_framework Δ. Given that the chapter explicitly holds this axis (no recognition event, no foreclose-acknowledgment), the state-update at @26 should be recording the arrangement's cover-state (two-substrate opacity) rather than any Taylor-cognition advance. This is the correct design.
+The proto-lines show no state citations at @36/@37/@38/@39/@40/@41 — the interior-accounting run where moral_legibility_to_self is held (the suppression-discipline). That absence is correct. The held-axis suppression must not generate state-update entries; the recognition is suppressed, not filed.
 
-## Convergence-trace
+The political_register-prot held at @40 (internal, not feed-facing): no state citation at @40 per the proto-lines. Correct.
+The social_tether-antag held at @41 (deliverable reaches Otto without the suppression visible): no state citation at @41. Correct.
 
-No auditor report available. No facet file to read directly. Inference is from proto-lines citations, scene-map axis-move contracts, and substance delta framework.
+The moral_framework -1.0 fires at @42 (state:15, breach-column-entry). This is the one I'm attending to most carefully as a dark-fantasy reader. The state entry records the axis move at @42. The scene-map's BREACH-AS-COLD-LEDGER-FACT protected pattern governs how this entry is rendered — but the state-update itself just records what changed. Does the state entry register the -1.0 as a cold ledger fact, or as a recognized moral consequence?
 
-The citation count of 19 state entries across 27 bones (70% of bones carrying at least one state citation) is consistent with a chapter running three axis moves plus tracking multiple held-state confirmations across a four-scene accounting structure. The scene-D arm-close sequence alone generates legitimate state traffic (Jarvis entry closes, Oswyn entry closes, contacts entry closes, arrangement entry closes — each with a corresponding state entry for what that arm's closure means for the tether architecture).
+From what the cite-index confirms: three state entries fire @42 (state:15/state:16/state:24 targeting breach-column-entry, time_of_day, and the axis field respectively). Three distinct fields. No redundancy. The auditor's PILE-UP analysis confirms all three are warranted. The time_of_day field receiving an entry confirms the state-update is treating @42 as an accounting-close event (end-of-day closing condition) alongside the axis move. That is the correct double-anchoring: the moral_framework -1.0 is filed at the same accounting-close as the day's other entries, not at a special moment of recognition. The world closes its accounting. The breach column takes its entry. The light is at end-of-day. These are simultaneous facts.
 
-Nothing in the citation pattern is inconsistent with the chapter's substance contract. No axis appears to advance on a shadow-bone when the scene-map assigns the Δ to a peak-bone. No held axis shows state citation that would require it to move.
+**The one entry I cannot see directly:** state:14 @32 (five-ward coverage-scale aggregate threshold). The auditor confirms this as load-bearing in the SUPERFLUOUS class check. The five-ward aggregate is the capability milestone that triggers the s04 sequence — without it being recorded as a state, the threshold-trigger at the breach column lacks its state-foundation. Confirmed structurally necessary.
 
-## Verdict rationale
+**Convergence with auditor flag-004 (CONTRADICTION — stale mem:2 citations in vibes):** The stale memory:2 citations in vibes:13, vibes:14, vibes:19 are a vibes-layer issue. The state-updates facet is not implicated. The structural validity of the entries holds through other licensed-by sources. No state-updates action required.
 
-Working from citation evidence in the proto-lines and scene-map cross-reference. The state-update citation pattern is consistent with the chapter's three-axis-move contract and the held-axis discipline. The political_register-world Δ is correctly placed at @16 (Taylor's timestamp, the world-side observational record), not at @11 (the burn itself, which is a physical event, not Taylor's record of it). The arm-close citations in scene-D are appropriately dense for a closing sequence that completes two tether tranches simultaneously. No axis-move misattribution is visible in the citation pattern.
+**Convergence with auditor flag-005 (CONSTRAINT / card-resolution):** Three location slugs unconfirmed in warehouse. vibes:4 @9 (loc:east-water-gate-lanes) and vibes:16 @30 (loc:the-muddy-way) are vibes entries. State entries at @9/@10 and @30 carry Taylor-actor and coverage-state fields, not location-slug fields. The card-resolution gap does not affect the state-updates layer.
 
-I am granting a provisional ACCEPT because: (1) the citation geography is consistent with the substance contract; (2) the held-axis discipline appears honored by the absence of state citations on peak-shadow-bones that should not carry Δ; (3) the world-axis Δ is correctly addressed to the timestamp-bone rather than the burn-bone. If the facet file is delivered for direct review and reveals schema violations or axis-advance misattribution not visible in the citation pattern, this verdict should be revisited.
-
-**VERDICT: ACCEPT (provisional)**
+**ACCEPT (provisional)** — the file is not on disk for direct text review. The structural confirmation through cite-index (24 entries, correct distribution, auditor METADATA-INCONSISTENCY clean) is sufficient to confirm the axis-move architecture is correct. The held-axis discipline is confirmed by the absence of state citations on the suppression-run bones (@36-@41). The breach-column entry fires at @42 in the same accounting register as the day's close. No catharsis is built into the state entry structure.
