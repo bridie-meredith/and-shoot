@@ -1,8 +1,18 @@
 # Aggregate State — taylor-westeros-good-intentions
 
 # Rolling forward-feed channel for cross-chapter narrative continuity (schema: schemas/aggregate-state.schema.md).
-# Producer: /and-stitch Phase 10 (forward-thread). Consumer: /and-substance chapter b01c12 Phase 0.
-# Scoped through b01c11. c11 rolled (rising, post-d10 formalization consequences; from chapters[b01c11].substance_delta_measured):
+# Producer: /and-stitch Phase 10 (forward-thread). Consumer: /and-substance chapter b01c13 Phase 0.
+# Scoped through b01c12. c12 rolled (climax-aftermath, d08; the gap-refusal + Khepri-threshold chapter;
+#   from chapters[b01c12].substance_delta_measured):
+#   moral_framework -1.0 (->-2; irrevocable-Khepri-repetition threshold crossed @42, surfaced-and-suppressed; systematic-override now irrevocable at full scale),
+#   capability +1.0 (->6.5; full-deployment threshold; two ward-clusters s01+s04; all five wards + Flea Bottom approaches mapped; architecture complete in scope),
+#   relational_anchor_status +1.0 (->4.5; cl-d06 2nd tranche SETTLED via the lane-refusal mechanism cl-d08; Wren structurally necessary to coverage map without ledger entry; hook-0003 PAID),
+#   position-prot-rise +1.0 (->5; third withhold = named gap in channel record; toward non-exit confirmation; cl02),
+#   social_tether-prot-rise +0.5 (->8.5; gap consolidates tether at/near peak; cl-d08b; auditor SOFT non-blocking — 0.5 past ~8 ceiling, c13-c15 hold).
+#   HELD: moral_legibility_to_self 5.5 (Khepri-word surfaced one count, SUPPRESSED — crack present not opened; deferred to d14 full-recognition),
+#   political_register-prot 3.5, social_tether-antag 6, political_register-world 6.5, position-world 7,
+#   position-prot-collapse 7 + social_tether-prot-collapse 8 (collapse axes still at start_rank; collapse not yet drawn).
+# c11 rolled (rising, post-d10 formalization consequences; from chapters[b01c11].substance_delta_measured):
 #   social_tether-prot-rise +1.0 (->8; near-peak; cl03b 2nd+final tranche),
 #   social_tether-antag +1.0 (->6; cl-antag-d10 continuing, not yet complete),
 #   political_register-world +0.5 (->6.5; Green succession channel consolidates post-Corwick-detention).
@@ -37,34 +47,34 @@ aggregate_state:
   version: 1
   project: taylor-westeros-good-intentions
   through_book: b01
-  through_chapter: b01c11
-  last_updated: 2026-06-03T00:00:00Z   # c11 rising chapter threaded: 3 axes moved, 0 hooks paid, 1 hook opened, hook-0012 notes advanced; 0 revision_layer entries (PASS-THREAD clean)
+  through_chapter: b01c12
+  last_updated: 2026-06-03T12:00:00Z   # c12 climax-aftermath threaded: 5 axes moved (moral_framework -1, capability +1, relational_anchor +1, position-prot-rise +1, social_tether-prot-rise +0.5), hook-0003 PAID, hook-0014 advanced (3rd withhold), 1 hook opened (hook-0015 gap-lanes courier), 2 revision_layer entries (rev-0005 + rev-0006, both presentation-reinforcement acknowledged:true), 0 unacknowledged-substantive (c13 Phase 0 CLEAR — PASS-THREAD)
   last_updated_by: and-stitch-phase-10
 
   axis_state:
     - axis: moral_framework
-      rank: -1
+      rank: -2
       start_rank: 2
-      delta_since_start: -3
-      last_movement_at: b01c10
+      delta_since_start: -4
+      last_movement_at: b01c12
       last_updated_by: and-stitch-phase-10
-      notes: "monotonic collapse; c03 first price-tagged breach (-1.0, cl02) + c06 first named-person delivery (-1.0, cl-d06) + c10 -1.0 (cl03a cost side: Corwick body-map delivered and deployed against a named person now detained; systematic-override-rationalized threshold crossed). rank -1 = prohibition fully a calculable variable, override now systematic; c07/c08 HELD (consolidation + un-logged Oswyn integration); c09 HELD"
+      notes: "monotonic collapse; c03 first price-tagged breach (-1.0, cl02) + c06 first named-person delivery (-1.0, cl-d06) + c10 -1.0 (cl03a cost side: Corwick body-map delivered and deployed against a named person now detained; systematic-override-rationalized threshold crossed) + c12 -1.0 (cl05 cost side: irrevocable-Khepri-repetition threshold crossed at full-feed scale @42; the internal accounting's natural shape-word is the Khepri name, surfaced for one count and SUPPRESSED — the suppression IS the breach-column ledger entry; systematic-override now irrevocable at full scale). rank -2 = prohibition fully a calculable variable + override systematic + the architecture now structurally irrevocable; c07/c08 HELD (consolidation + un-logged Oswyn integration); c09/c11 HELD"
 
     - axis: capability
-      rank: 5.5
+      rank: 6.5
       start_rank: 2
-      delta_since_start: 3.5
-      last_movement_at: b01c08
+      delta_since_start: 4.5
+      last_movement_at: b01c12
       last_updated_by: and-stitch-phase-10
-      notes: "ESTIMATE-DIVERGENCE — measured-delta path (c01 +1.0 / c04 +2.0 measured / c08 +0.5) = 5.5; handoff_out narratives carry 5.0 (stale lineage pre-c04 +1.5→+2.0 /and-write redo). Recorded at measured-authoritative 5.5. c08 added Oswyn watcher-network integration (Khepri-echo in method); c02/c03/c05/c06/c07 HELD"
+      notes: "ESTIMATE-DIVERGENCE (pre-c12) — measured-delta path (c01 +1.0 / c04 +2.0 measured / c08 +0.5) = 5.5; handoff_out narratives carried 5.0 (stale lineage pre-c04 +1.5→+2.0 /and-write redo). c12 +1.0 (cl05 gain side, two tranches: s01 first ward-cluster +0.5 + s04 second ward-cluster +0.5 = full-deployment threshold crossed) -> 6.5; the c12 handoff_out was corrected to MEASURED 6.5 at /and-write Phase 7 (was stale 6->6.5 book-author lineage). Recorded at measured-authoritative 6.5. c12 = architecture complete in scope: all five wards + Flea Bottom approaches mapped simultaneous, the-muddy-way ward added (last cluster), not walked back by pulling any single node. c08 added Oswyn watcher-network integration (Khepri-echo in method); c02/c03/c05/c06/c07/c09/c10/c11 HELD"
 
     - axis: position-prot-rise
-      rank: 4
+      rank: 5
       start_rank: 1
-      delta_since_start: 3
-      last_movement_at: b01c10
+      delta_since_start: 4
+      last_movement_at: b01c12
       last_updated_by: and-stitch-phase-10
-      notes: "rise phase; c03 +1.0 (Otto awareness, cl02) + c04 +1.0 (acceptance confirmed, conduit role) + c10 +1.0 (cl-d07a: formalization of the arrangement — Otto names the function explicitly; position confirmed at near-peak; informal-deniability foreclosed; 1.0 of 2.0 drawn, 1.0 remains for cl-d07a completion at c14). Peaks ~7 at d07; HELD c05-c09"
+      notes: "rise phase; c03 +1.0 (Otto awareness, cl02) + c04 +1.0 (acceptance confirmed, conduit role) + c10 +1.0 (cl-d07a: formalization of the arrangement — Otto names the function explicitly; position confirmed at near-peak; informal-deniability foreclosed; 1.0 of 2.0 drawn, 1.0 remains for cl-d07a completion at c14) + c12 +1.0 (cl02: third and most consequential withholding-from-Otto — the lane-refusal is no longer a quiet pattern but a named gap confirmed in the channel record, a structural limit written into the deliverable; position moves toward non-exit confirmation, withholding now load-bearing for position). Peaks ~7 at d07; HELD c05-c09/c11"
 
     - axis: position-prot-collapse
       rank: 7
@@ -75,12 +85,12 @@ aggregate_state:
       notes: "collapse phase dormant until d10 (non-extractable confirmed); sits at peak-state start_rank 7 through c08; cl07b not yet anchored"
 
     - axis: relational_anchor_status
-      rank: 3.5
+      rank: 4.5
       start_rank: 1
-      delta_since_start: 2.5
-      last_movement_at: b01c09
+      delta_since_start: 3.5
+      last_movement_at: b01c12
       last_updated_by: and-stitch-phase-10
-      notes: "HIGH=WORST; c02 +1.0 (Wren enters coverage map as named function-node, account opens) + c06 +1.0 (first spoken exchange; weight added by Wren's omission from deliverable, cl-d06) + c09 +0.5 (cl-d08 first tranche: Wren now a mapped pattern/route in the internal map — 'the map takes Wren's pattern... clean, indexed, kept' — structurally present without ledger entry). c08 HELD. NOTE: cl-d06 second tranche +1.0 still DEFERRED to c10 (pl-2026-05-30-001); the c09 +0.5 is the distinct cl-d08 route-indexing tranche, not the deferred deliverable-omission tranche"
+      notes: "HIGH=WORST; c02 +1.0 (Wren enters coverage map as named function-node, account opens) + c06 +1.0 (first spoken exchange; weight added by Wren's omission from deliverable, cl-d06) + c09 +0.5 (cl-d08 first tranche: Wren now a mapped pattern/route in the internal map — 'the map takes Wren's pattern... clean, indexed, kept' — structurally present without ledger entry) + c12 +1.0 (cl-d08 mechanism / cl-d06 debt: the lane-refusal SETTLEMENT — Taylor declines to cover the east-water-gate lanes because Wren's free movement through them constitutes the coverage map's eastern boundary; the +1.0 axis-move simultaneously settles the outstanding cl-d06 2nd tranche that reached end of window unsettled while held flat c08-c11. One axis-move, one mechanism, settles both — no name set down. DEC-0071). c08 HELD. Wren now structurally necessary to the coverage map without a ledger entry. Closed pl-2026-05-30-001 / pl-2026-06-02-stitch-thread-002; hook-0003 PAID at c12"
 
     - axis: moral_legibility_to_self
       rank: 5.5
@@ -88,7 +98,7 @@ aggregate_state:
       delta_since_start: 1.5
       last_movement_at: b01c10
       last_updated_by: and-stitch-phase-10
-      notes: "non-linear; c02 +0.5 (coverage-map recognition arrives + suppressed under harm-reduction) + c06 +0.5 (honest accounting of name-delivery deepens the crack) + c10 +0.5 (detention visible in feed; Taylor runs the accounting and files Corwick as a closed entry — suppressed recognition event, crack deepens but does not open; the lower-gate face persists in the feed-record where the ledger keeps no column). c07 genuine-engagement-with-Halvard but resolution deferred not advanced; c08/c09 HELD"
+      notes: "non-linear; c02 +0.5 (coverage-map recognition arrives + suppressed under harm-reduction) + c06 +0.5 (honest accounting of name-delivery deepens the crack) + c10 +0.5 (detention visible in feed; Taylor runs the accounting and files Corwick as a closed entry — suppressed recognition event, crack deepens but does not open; the lower-gate face persists in the feed-record where the ledger keeps no column). c12 HELD at 5.5 — the Khepri shape-word surfaced in the full-scale accounting for the duration of ONE count and was SUPPRESSED before it could settle; the crack is present (same suppression pattern) but does NOT open this chapter. c12's suppression is the last/most-intense pre-opening event; the crack opens at the d14-range full-recognition event where the axis actually moves (NOT the d10 trajectory milestone = c10 content, already past). c07 genuine-engagement-with-Halvard but resolution deferred not advanced; c08/c09/c11 HELD"
 
     - axis: political_register-prot
       rank: 3.5
@@ -99,12 +109,12 @@ aggregate_state:
       notes: "monotonic; c05 +1.5 (first resentment color, cl-d05 first tranche; neutral-instrumentally-observant foreclosed) + c07 +0.5 (Halvard encounter forces articulation of resentment's object) + c09 +0.5 (cl-d05 continuation: resentment-color deepens on a named particular — the lower-gate/Corwick faction-inference, 'a thing already written... a direction I did not infer so much as recognize'). c08 HELD (Aemond feed-ref is logistics, not behavioral)"
 
     - axis: social_tether-prot-rise
-      rank: 8
+      rank: 8.5
       start_rank: 1
-      delta_since_start: 7
-      last_movement_at: b01c11
+      delta_since_start: 7.5
+      last_movement_at: b01c12
       last_updated_by: and-stitch-phase-10
-      notes: "rise phase; c01 +1.0 (Oswyn ward-embedding at rescue) + c03 +1.0 (cl01b court-layer half, Otto awareness via Jarvis) + c04 +2.0 (network-build, cl03b future-cost collateral) + c07 +1.0 (Halvard precinct-node engagement) + c10 +1.0 (cl03b: arrangement formalized = tether load-bearing confirmed; tether now structural in Otto's architecture) + c11 +1.0 (cl03b 2nd+final tranche: all nodes simultaneously load-bearing — Jarvis as structural conduit, Oswyn as unknowing junction-baseline, ward contacts through service-reciprocity, arrangement-as-cover; tether crystallized at near-peak). Peaks ~8 at d07; HELD c05/c06/c08/c09. NOTE: handoff narratives lag (carry rank 3 pre-c04); measured-delta path authoritative at 8. handoff_conflict logged at b01c11 Phase 0 (book-author prediction 4 vs aggregate 7 -> aggregate wins -> rank 8 at chapter close)"
+      notes: "rise phase; c01 +1.0 (Oswyn ward-embedding at rescue) + c03 +1.0 (cl01b court-layer half, Otto awareness via Jarvis) + c04 +2.0 (network-build, cl03b future-cost collateral) + c07 +1.0 (Halvard precinct-node engagement) + c10 +1.0 (cl03b: arrangement formalized = tether load-bearing confirmed; tether now structural in Otto's architecture) + c11 +1.0 (cl03b 2nd+final tranche: all nodes simultaneously load-bearing — Jarvis as structural conduit, Oswyn as unknowing junction-baseline, ward contacts through service-reciprocity, arrangement-as-cover; tether crystallized at near-peak) + c12 +0.5 (cl-d08b: the east-water-gate coverage gap consolidates the tether — Wren's free movement is what keeps the tether intact, the gap is structural to it; the boundary-confirmation closes the map without entering the architecture). Peaks ~8 at d07; the c12 +0.5 sits 0.5 past the ~8 ceiling — auditor SOFT non-blocking (series-audit-accepted; '~8' approx; c13-c15 hold). HELD c05/c06/c08/c09. NOTE: handoff narratives lag (carry rank 3 pre-c04); measured-delta path authoritative at 8.5. handoff_conflict logged at b01c11 Phase 0 (book-author prediction 4 vs aggregate 7 -> aggregate wins)"
 
     - axis: social_tether-prot-collapse
       rank: 8

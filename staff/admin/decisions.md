@@ -4682,3 +4682,84 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0079 | 2026-06-03 | SLOW (process-critic)
+
+mode: process-critic
+trigger:
+  reason: failure
+  source_report: active-project/staff/reviews/coldread-b01c12-2026-06-03.md
+  source_verdict: SHIPPED-WITH-CAVEATS (DEC-0078) — 3rd consecutive SHIPPED-WITH-CAVEATS on apparatus-density / cold-context / design-inherent low-jeopardy pattern (c10 DEC-0072, c11 DEC-0074, c12 DEC-0078); N=7 consecutive-abstract chapters (c06-c12).
+gate_path: .claude/commands/and-stitch.md#phase-9
+verdict: PROCESS-CHANGE-PROPOSED PROP-0037
+
+question: |
+  Does the 3rd consecutive SHIPPED-WITH-CAVEATS on apparatus-register density warrant a
+  process change — specifically, making /and-cohere a HARD gate before the next chapter when
+  N consecutive SHIPPED-WITH-CAVEATS >= 3 — rather than a standing HIGH-urgency recommendation
+  that keeps deferring? Or is this already covered by an open cohere-cadence proposal
+  (PROP-0030/0031) and should be merged?
+
+context: |
+  DEC-0075 (2nd consecutive SHIPPED-WITH-CAVEATS at N=6/2-consecutive) evaluated three
+  candidate process changes including "consecutive-design-inherent-low-jeopardy cap with
+  auto-cohere trigger" and deferred it: "Wait for triage on PROP-0030/0031 first; if they
+  are accepted, the /and-cohere trigger mechanism becomes available and a mechanical cap can
+  be proposed as a lightweight modification then." Condition: PROP-0030/0031 triage first.
+  PROP-0030 + PROP-0031 remain status: open / untriaged as of this dispatch. N is now 7
+  consecutive-abstract; consecutive SHIPPED-WITH-CAVEATS is now 3 (c10/c11/c12).
+
+decision: PROCESS-CHANGE-PROPOSED PROP-0037
+
+basis: |
+  Step 2 (proposals matching): No open proposal covers the specific mechanism proposed —
+  HARD-abort at /and-substance chapter Phase 0 when consecutive SHIPPED-WITH-CAVEATS >= 3.
+  PROP-0030 targets a new /and-review cohere subcommand (the cold-read primitive). PROP-0031
+  targets a new /and-cohere command body (the iteration loop). Neither targets a Phase 0
+  HARD-abort on the next chapter production command as the enforcement mechanism.
+
+  Step 3 (content vs. process): The per-chapter pipeline (Phase 4 voice-embodiment + grounding-
+  ledger + Phase 9 cold-read gate) applied correctly at c10/c11/c12 — it caught the airlessness
+  and dispositioned it correctly via the coupling rule. The process failure is not in any
+  individual gate: it is that the coupling rule, while technically correct per-chapter, is
+  now absorbing a cross-chapter accumulation that the chain has no structural mechanism to force
+  resolution on. /and-cohere is the correct remedy, and it is on-deck, but the process has no
+  gate that PREVENTS the principal from starting c13 without running it. The recommendation is
+  durable-but-bypassable. Three consecutive SHIPPED-WITH-CAVEATS on the same pattern means the
+  recommendation has been bypassed twice already (c10 to c11 without /and-cohere; c11 to c12
+  without /and-cohere). The process needs a HARD enforcement point.
+
+  Step 4 (DEC-0075 deferral re-examined): DEC-0075's deferral condition was "wait for PROP-0030/
+  0031 triage first, THEN propose the mechanical cap." That condition has not been met, but
+  PROP-0037 is discriminated from the DEC-0075 mechanism: DEC-0075 was about wiring the
+  auto-trigger inside the not-yet-implemented /and-cohere command body. PROP-0037 targets a
+  different, smaller, immediately-implementable enforcement surface: a Phase 0 HARD-abort in
+  /and-substance chapter that halts chapter production and surfaces the /and-cohere obligation
+  to the principal BEFORE the chapter runs. This does not require /and-cohere to exist as a
+  command — the HARD-abort instructs the principal to run it (whether that means the
+  implemented /and-cohere, or a manual sub-section coherence review, or any equivalent). It
+  is the "obligation-surfaces-at-the-right-moment" gate; PROP-0030/0031 are the
+  "obligation-execution" machinery. They are orthogonal.
+
+  Step 5 (methodology): reversibility (HARD-abort is bypassable by principal via an explicit
+  acknowledgment stamp — lowest-cost non-destructive enforcement) + blast radius (single Phase
+  0 check; does not touch the chapter authoring chain itself) + optionality (principal can
+  proceed by running /and-cohere first, or by stamping explicit acknowledgment) support this
+  as the minimum viable change. S-cost.
+
+rationale: |
+  At N=3 consecutive SHIPPED-WITH-CAVEATS the pattern is no longer noise — it is a recurring
+  cross-chapter debt the chain's per-chapter gates are structurally incapable of addressing
+  (by design: they are isolated). The coupling rule correctly ships each chapter; the
+  /and-cohere recommendation is correctly stamped HIGH; but the process has no point where it
+  says STOP and requires the cohere to run before proceeding. Three consecutive bypasses is
+  the threshold at which the standing recommendation becomes an active liability. Adding a
+  Phase 0 HARD-abort at /and-substance chapter Phase 0 closes that gap at minimum cost without
+  requiring PROP-0030/0031 to be implemented first.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
