@@ -8013,6 +8013,15 @@ books:
           axes_moved: { political_register-prot: +1.5, political_register-world: +0.5 }   # measured aggregate over moving bones (s01@7, s02@15+@17, s03@19); held axes flat
           density_measured: 0.6-0.8
           felt_verdict: SUBSTANCE-FELT   # Phase 6 audience 3-of-3 all 4 scenes
+        bones_review:   # /and-review bones b01c13 (MANDATORY gate; unblocks /and-facets) 2026-06-03
+          reviewed_at: 2026-06-03T16:57:00Z
+          report_path: active-project/staff/reviews/bones-b01c13-2026-06-03.md
+          verdict: PASS
+          follow_check: PASS   # PROP-0020 followability pre-check — central events + causality + scene-to-scene handoffs recoverable at bone level; s03 naming reads as finding-shape with the word deferred to facets
+          aliveness: GROUNDED   # PROP-0022 — no BONES-AIRLESS-RISK; body to inhabit every scene
+          bones_file_mtime_at_review: 2026-06-03T16:56:10Z
+          stale_since: null
+          signal: "signal-001 (advisory): s03 spine legibility depends on /and-facets landing the deferred interior word 'contempt' + evidence-run as a finding-not-a-decision; forwarded to /and-facets Phase 2.5 + /and-stitch Phase 9. dialogue-coverage + card-compliance + Earth-Bet fence all CLEAN."
         # /and-write b01c13 Phase 7 emit 2026-06-03. 31 bones / 4 scenes. s04 LIVE dialogue (3 anchor bones; 2 per-character files: septon-halvard-flea-bottom, taylor-hebert-kl-122ac). s01/s02 feed-observed (silent — apparatus speech recast to physical action); s03 solo interior (naming->concrete stop @19; word "contempt" + evidence-running deferred to narrator-interest/memory facets per omission_rationale).
         # flat_id map: s01 @1-@9 | s02 @10-@18 | s03 @19-@23 (re-decomposed 7->5; naming bone = @19 stop) | s04 @24-@31 (dramatist reorder applied at emit: reading order n01=@24,n02=@25,n03=@26,n04=@27,n06=@28,n07=@29,n05=@30,n08=@31). dialogue citations: @26 [septon-halvard-flea-bottom:1], @27 [taylor-hebert-kl-122ac:1], @28 [septon-halvard-flea-bottom:2].
         # Pipeline: Phase 2 (14 form-faults recast + 2 compression faults fixed -> 31 bones), Phase 3 (dramatist REVISE: s04 reorder), Phase 4 (trim 3/3 ACCEPT, 0 deletions), Phase 5 continuity (3 doc/state faults fixed: Halvard state file reconciled; handoff capability 6->6.5 + position-prot-rise 5.5->5), Phase 6 bone-gate (auditor 0 HARD after [image: the-word-held] event-map fix; s03n04 jaw-set PASS; s02 stakes-dominant PASS by mechanism-primacy; dialogue+fence+mannerism CLEAN; audience 3-of-3 SUBSTANCE-FELT). Per-bone detail authoritative in active-project/staff/screen-writer/b01c13-bones-draft.md (git-tracked) + bones file + scene-map; NOT duplicated into scenes[].bones[] (memory size mgmt; downstream reads the bones file + scene-map).
