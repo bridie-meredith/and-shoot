@@ -4426,3 +4426,73 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0075 | 2026-06-03 | SLOW (process-critic)
+
+mode: process-critic
+trigger: /and-stitch b01c11 Phase 9.5 — SHIPPED-WITH-CAVEATS (DEC-0074 coupling-rule ship); 2nd consecutive low-jeopardy/abstract cold-read chapter (c10+c11); consecutive-abstract N=6. Question: is the process working, or does recurrence of low-jeopardy cold-read FAILs across consecutive chapters warrant a new process change (book-level jeopardy-distribution check, tighter /and-cohere coupling, or consecutive-design-inherent-low-jeopardy cap)?
+gate_path: .claude/commands/and-stitch.md#phase-9
+secondary_gate_paths: [.claude/commands/and-substance.md#phase-5.5]
+verdict: OK-MERGED-INTO PROP-0030 + PROP-0031
+
+question: |
+  Does the RECURRENCE of low-jeopardy cold-read FAIL (c10+c11 consecutive) constitute a process
+  failure warranting a new gate — book-level jeopardy-distribution check, tighter /and-cohere
+  coupling, or a cap on consecutive design-inherent-low-jeopardy chapters before a cohere gate
+  fires? Or is the process working correctly?
+
+context: |
+  c10 and c11 both shipped via SHIPPED-WITH-CAVEATS (DEC-0070 / DEC-0074). Both had Class-B
+  FAIL cold-reads (CONTINUE=No). Both had the same design-inherent signature: low on-page
+  jeopardy endorsed 3/3 audience + dramatist + auditor 0 HARD, and cold-context proper-noun
+  load. Coupling rule fired correctly on both. DEC-0073 already merged b01c11 as N=6 into
+  PROP-0030 + PROP-0031 with triage-urgency note. /and-cohere before c13 on-deck per DEC-0073.
+
+decision: OK-MERGED-INTO PROP-0030 + PROP-0031 (recurrence evidence already appended by
+DEC-0073; this dispatch confirms no new signal beyond that merge)
+
+basis: |
+  methodology:3e (convention — DEC-0073 same-session performed this exact discrimination and
+  reached OK-MERGED) + methodology:3c (blast radius — a new proposal for the same target/class
+  adds noise without adding signal; the existing open proposals already subsume all three
+  candidate process changes)
+
+rationale: |
+  Three candidate process changes evaluated:
+
+  1. BOOK-LEVEL JEOPARDY-DISTRIBUTION CHECK. Would require /and-stitch to read cross-chapter
+     state it does not hold, and would fire on design-intrinsic content (RISING chapter low
+     jeopardy IS the contractual design; carve-out logic would reproduce the existing coupling
+     rule). Same discrimination as DEC-0073 applied to accumulation-warning gate: wrong
+     instrument class; PROP-0030 /and-cohere primitive is the right instrument.
+
+  2. TIGHTER /AND-COHERE COUPLING. Already the proposal surface of PROP-0030 + PROP-0031
+     (recurrence_count: 4 on both). PROP-0030 Phase 1 Q2 (setup→payoff distribution) + Q7
+     (sub-section feel) + Q6 (apparatus-register load) collectively address jeopardy-
+     distribution concerns. Duplicating into a new proposal adds no value.
+
+  3. CONSECUTIVE-DESIGN-INHERENT-LOW-JEOPARDY CAP WITH AUTO-COHERE TRIGGER. DEC-0073 already
+     named /and-cohere before c13 as the designed response to N=6 — the cap is effectively
+     operative via the triage-urgency note and the principal's stated intent. Wiring it
+     mechanically (cross-chapter counter + HARD-abort) has S-M cost and small marginal benefit
+     given the principal already has the intent written. Wait for triage on PROP-0030/0031
+     first; if they are accepted, the /and-cohere trigger mechanism becomes available and a
+     mechanical cap can be proposed as a lightweight modification then.
+
+  PROCESS WORKING CORRECTLY. Coupling rule prevented a retry on a non-fixable finding.
+  Upstream gates endorsed the design unanimously. Cross-chapter accumulation debt is PROP-0030/
+  0031's designed target; those are open and triage-urgent at N=6. No new proposal warranted.
+
+trade-off: |
+  Risk of OK: jeopardy-distribution as a distinct dimension of accumulation is not explicitly
+  named in PROP-0030/0031 — it is subsumed under apparatus-register accumulation. Mitigated
+  by: (a) PROP-0030 Q2/Q7 would surface it in a cohere run; (b) the two failure classes co-
+  occur in this run (same /and-cohere instrument addresses both); (c) separating them into
+  a new proposal adds a third open proposal for the same fix.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no

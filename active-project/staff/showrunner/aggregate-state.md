@@ -1,8 +1,15 @@
 # Aggregate State — taylor-westeros-good-intentions
 
 # Rolling forward-feed channel for cross-chapter narrative continuity (schema: schemas/aggregate-state.schema.md).
-# Producer: /and-stitch Phase 10 (forward-thread). Consumer: /and-substance chapter b01c11 Phase 0.
-# Scoped through b01c10. c10 rolled (climax, d10; from chapters[b01c10].substance_delta_measured + handoff_out):
+# Producer: /and-stitch Phase 10 (forward-thread). Consumer: /and-substance chapter b01c12 Phase 0.
+# Scoped through b01c11. c11 rolled (rising, post-d10 formalization consequences; from chapters[b01c11].substance_delta_measured):
+#   social_tether-prot-rise +1.0 (->8; near-peak; cl03b 2nd+final tranche),
+#   social_tether-antag +1.0 (->6; cl-antag-d10 continuing, not yet complete),
+#   political_register-world +0.5 (->6.5; Green succession channel consolidates post-Corwick-detention).
+#   All other axes HELD (position-prot-rise, relational_anchor_status, moral_framework,
+#   moral_legibility_to_self, political_register-prot, capability, position-prot-collapse,
+#   social_tether-prot-collapse, position-world).
+# c10 rolled (climax, d10; from chapters[b01c10].substance_delta_measured + handoff_out):
 #   position-prot-rise +1.0 (->4), social_tether-prot-rise +1.0 (->7), social_tether-antag +1.5 (->5),
 #   position-world +1.0 (->7), political_register-world +1.0 (->6; FIRST movement off start_rank 5),
 #   moral_framework -1.0 (->-1; systematic-override entered), moral_legibility_to_self +0.5 (->5.5; suppressed crack).
@@ -30,8 +37,8 @@ aggregate_state:
   version: 1
   project: taylor-westeros-good-intentions
   through_book: b01
-  through_chapter: b01c10
-  last_updated: 2026-06-02T00:00:00Z   # c10 climax (d10) threaded: 7 axes moved, 2 hooks paid, 3 hooks opened, hook-0007 window-passed-open; rev-0004 Wren-callback applied
+  through_chapter: b01c11
+  last_updated: 2026-06-03T00:00:00Z   # c11 rising chapter threaded: 3 axes moved, 0 hooks paid, 1 hook opened, hook-0012 notes advanced; 0 revision_layer entries (PASS-THREAD clean)
   last_updated_by: and-stitch-phase-10
 
   axis_state:
@@ -92,12 +99,12 @@ aggregate_state:
       notes: "monotonic; c05 +1.5 (first resentment color, cl-d05 first tranche; neutral-instrumentally-observant foreclosed) + c07 +0.5 (Halvard encounter forces articulation of resentment's object) + c09 +0.5 (cl-d05 continuation: resentment-color deepens on a named particular — the lower-gate/Corwick faction-inference, 'a thing already written... a direction I did not infer so much as recognize'). c08 HELD (Aemond feed-ref is logistics, not behavioral)"
 
     - axis: social_tether-prot-rise
-      rank: 7
+      rank: 8
       start_rank: 1
-      delta_since_start: 6
-      last_movement_at: b01c10
+      delta_since_start: 7
+      last_movement_at: b01c11
       last_updated_by: and-stitch-phase-10
-      notes: "rise phase; c01 +1.0 (Oswyn ward-embedding at rescue) + c03 +1.0 (cl01b court-layer half, Otto awareness via Jarvis) + c04 +2.0 (network-build, cl03b future-cost collateral) + c07 +1.0 (Halvard precinct-node engagement) + c10 +1.0 (cl03b: arrangement formalized = tether load-bearing confirmed; tether now structural in Otto's architecture). Peaks ~8 at d07; HELD c05/c06/c08/c09. NOTE: handoff narratives lag (carry rank 3 pre-c04); measured-delta path authoritative at 7"
+      notes: "rise phase; c01 +1.0 (Oswyn ward-embedding at rescue) + c03 +1.0 (cl01b court-layer half, Otto awareness via Jarvis) + c04 +2.0 (network-build, cl03b future-cost collateral) + c07 +1.0 (Halvard precinct-node engagement) + c10 +1.0 (cl03b: arrangement formalized = tether load-bearing confirmed; tether now structural in Otto's architecture) + c11 +1.0 (cl03b 2nd+final tranche: all nodes simultaneously load-bearing — Jarvis as structural conduit, Oswyn as unknowing junction-baseline, ward contacts through service-reciprocity, arrangement-as-cover; tether crystallized at near-peak). Peaks ~8 at d07; HELD c05/c06/c08/c09. NOTE: handoff narratives lag (carry rank 3 pre-c04); measured-delta path authoritative at 8. handoff_conflict logged at b01c11 Phase 0 (book-author prediction 4 vs aggregate 7 -> aggregate wins -> rank 8 at chapter close)"
 
     - axis: social_tether-prot-collapse
       rank: 8
@@ -108,12 +115,12 @@ aggregate_state:
       notes: "collapse phase dormant until d10 (non-extractable confirmed); sits at peak-state start_rank 8 through c08; cl07a not yet anchored"
 
     - axis: social_tether-antag
-      rank: 5
+      rank: 6
       start_rank: 1
-      delta_since_start: 4
-      last_movement_at: b01c10
+      delta_since_start: 5
+      last_movement_at: b01c11
       last_updated_by: and-stitch-phase-10
-      notes: "Otto's leverage; c03 +1.5 (offer tendered, leverage embryonic, cl-antag-d03) + c04 +1.0 (acceptance solidifies leverage, cl-antag-d03 third tranche) + c10 +1.5 (cl-antag-d10 opening: non-extractable confirmed in progress; Otto's leverage structural post-formalization). HELD c05-c09. NOTE: cl-antag-d10 not fully drawn (pl-2026-06-02-002 tracks cl04/cl-antag-d10 partial-settle family)"
+      notes: "Otto's leverage; c03 +1.5 (offer tendered, leverage embryonic, cl-antag-d03) + c04 +1.0 (acceptance solidifies leverage, cl-antag-d03 third tranche) + c10 +1.5 (cl-antag-d10 opening: non-extractable confirmed in progress; Otto's leverage structural post-formalization) + c11 +1.0 (cl-antag-d10 continuing: tether at near-peak load-bearing = leverage reaches near-full structural depth; withholding-from-Otto pattern emerging but not yet noticed by Otto). HELD c05-c09. NOTE: cl-antag-d10 not fully drawn (pl-2026-06-02-002 tracks cl04/cl-antag-d10 partial-settle family)"
 
     - axis: position-world
       rank: 7
@@ -124,12 +131,12 @@ aggregate_state:
       notes: "Green consolidation; c04 +1.0 (Flea Bottom intelligence layer delivered, cl-world-d04 — first KL street-layer intel) + c10 +1.0 (cl-world-d04: arrangement formalized = Green succession channel solidifies; position-world gain from the intelligence architecture Taylor accepted; 1.0 of 2.0 remaining, journey-required cl03a). HELD c05-c09"
 
     - axis: political_register-world
-      rank: 6
+      rank: 6.5
       start_rank: 5
-      delta_since_start: 1
-      last_movement_at: b01c10
+      delta_since_start: 1.5
+      last_movement_at: b01c11
       last_updated_by: and-stitch-phase-10
-      notes: "c10 +1.0 (cl-world-d07 FIRST tranche: Green succession channel solidifies through the formalized arrangement — political_register-world's first movement off start_rank 5). FIRST tranche +1.0 of +2.0; balance +1.0 remains for future allocation (NOT completed — c10 contract auditor fault-003 noted). Held flat c01-c09"
+      notes: "c10 +1.0 (cl-world-d07 FIRST tranche: Green succession channel solidifies through the formalized arrangement — political_register-world's first movement off start_rank 5) + c11 +0.5 (Green succession channel consolidated post-Corwick-detention; courier detention leveraged by Green apparatus for succession-channel consolidation; second incremental advance). FIRST tranche +1.0 of +2.0 drawn at c10; c11 additional +0.5 outside the original cl-world-d07 tranche structure (emergent from the courier-detention consolidation). Balance for future allocation (NOT completed). Held flat c01-c09"
 
   open_hooks:
     - hook_id: hook-0001
@@ -245,7 +252,7 @@ aggregate_state:
       last_updated_by: and-stitch-phase-10
 
     - hook_id: hook-0012
-      description: "Dance-pressure pulse 1 / cf-rhaenyra-pressure staging: c10 actively forecloses a Black-faction logistics thread (Corwick detained = the war's logic moved through Taylor's network without her consent or design). Rhaenyra/Dragonstone-adjacent consequences are pending AT A REMOVE — Rhaenyra's agents are not on-page, but the architecture Taylor built has now produced its first Black-faction casualty. The first Dance-pressure pulse; downstream Black-faction counter-response is the open thread."
+      description: "Dance-pressure pulse 1 / cf-rhaenyra-pressure staging: c10 actively forecloses a Black-faction logistics thread (Corwick detained = the war's logic moved through Taylor's network without her consent or design). c11 ADVANCES ON-PAGE: cloth-merchant passive Black-faction node (south end of the Hook) burns a message rather than rerouting — Dragonstone/Rhaenyra's faction is now demonstrably aware the KL logistics thread was cut (going dark, not rerouting = enemy doing triage before Taylor knows the extent). Taylor withholds the observation from Jarvis (does not route it). First on-page Rhaenyra-pressure signal; the larger Black-faction counter-response thread is still open (mediated, not direct; agents not on-page in force)."
       introduced_at: b01c10
       expected_payoff: null
       status: open
@@ -257,6 +264,16 @@ aggregate_state:
     - hook_id: hook-0013
       description: "Corwick-face-persists-in-feed-record: c10 s04 — after Taylor closes the ledger entry on Corwick, the lower-gate face (gait-signature, set of shoulders) holds in the feed-record 'where the ledger kept no column for it'; her gaze stays on it and does not turn away. The moral-legibility crack made physical: the suppressed recognition that the record keeps what the ledger will not price. Forward thread for moral_legibility_to_self / the d14 full-recognition payoff; the recognition is suppressed not opened (c10 suppressed-recognition fence)."
       introduced_at: b01c10
+      expected_payoff: null
+      status: open
+      paid_at: null
+      abandoned_at: null
+      abandonment_reason: null
+      last_updated_by: and-stitch-phase-10
+
+    - hook_id: hook-0014
+      description: "Withholding-from-Otto pattern established: two consecutive withheld observations in c11 — (1) wool-dyer source-name withheld from the deliverable (s01: lane-pattern goes down, source-field stays bare; 'the hand came off the surface with the field still bare'); (2) cloth-merchant Dragonstone-burn signal withheld from Jarvis entirely (s02: Taylor marks the timestamp and 'moved on from it' without routing). Not yet noticed by Otto. Pattern is reader-legible (two in one chapter) but not yet actor-legible within the fiction; the tether carries load and the withholds sit in the record where nothing in any packet will name them (s04 closing)."
+      introduced_at: b01c11
       expected_payoff: null
       status: open
       paid_at: null
