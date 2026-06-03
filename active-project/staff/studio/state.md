@@ -1,8 +1,82 @@
 # studio state
 
-episode: b01c12
+episode: b01c13
 last_updated: 2026-06-03
-action: location-state R1 blind authoring — /and-facets b01-c12 Phase 1
+action: state-updates-env R1 authoring — /and-facets b01-c13 Phase 1
+
+## Location-state sequence locked (b01c13) — 7 entries, 0 cull
+  loc-state:1 @1  — the-hook-upper-provisioning | morning | none | loading-platform-open | crate-ledge at the platform edge (place-anchor; scene-A; Thursday mid-morning)
+  loc-state:2 @2  — the-hook-upper-provisioning | morning | none | trestle-table-active, household-agent-posted | trestle-table where agent stands (state-change: apparatus-component takes position)
+  loc-state:3 @10 — the-magistrate-hall | morning | none | rented-back-room-active, ceiling-corner-above | ceiling-corner of the chandler's rented back room (place-anchor; scene-B; four days later)
+  loc-state:4 @11 — the-magistrate-hall | morning | none | document-at-table-edge, clerk-posted | table edge where clerk placed the list-output before proceedings (state-change: apparatus-component takes position)
+  loc-state:5 @19 — the-hook-lane | evening | none | lane-open, circuit-mid | lane Taylor walks on ordinary circuit (place-anchor; scene-C; that evening)
+  loc-state:6 @24 — the-hook-lower-water-trough | afternoon | none | trough-open | water-trough at lower Hook where chandler's row meets fishmongery open-space (place-anchor; scene-D; two days later)
+  loc-state:7 @29 — the-hook-lower-water-trough | afternoon | none | trough-behind, lane-open-ahead | lane-mouth past trough's edge — threshold crossed mid-speech (state-change: Taylor departs while Halvard still speaking)
+  Continuity-carry: none filed — scene-A (low-heat establishment / fusion-run @1-@2 fully covered by entries 1+2); scene-B (rising / excluded); scene-C fusion-run @21-@22 only 2 bones (below 3-bone floor; excluded); scene-D fusion-run @24-@25 only 2 bones (excluded); scene-D rhythm-shape held-breath-enactment (not flat-low/resolving/release-only)
+  Cull: 0 entries removed — all 7 survive strip / pointing / frugality / previous-entry tests
+
+## Current set (b01c13 chapter-close)
+  location: the-hook-lower-water-trough (Taylor departed; Halvard still present)
+  time_of_day: afternoon
+  weather: none
+  ambient_conditions:
+    - trough open at lower Hook (chandler's row / fishmongery open-space junction)
+    - Taylor departed mid-speech (@29; walked the route @30)
+    - Halvard still at trough filling water-skin (@31)
+
+## Location-state R1 authored (b01c13) — 2026-06-03
+  theater/facets/location-state-b01-c13.md (7 entries, 0 cull)
+  _inflight: theater/facets/_inflight/proto-lines-loc-state.md filed (citations @1, @2, @10, @11, @19, @24, @29)
+
+## Seams flagged for R2 (b01c13)
+  SEAM-C13-LOC-001: the-hook-upper-provisioning — new slug; no confirmed warehouse card; drawn from bones `locations:` field. R2 reviewer confirm slug canonicalization or flag for margit.
+  SEAM-C13-LOC-002: the-magistrate-hall — new slug; no confirmed warehouse card; drawn from bones `locations:` field. Scene-map describes as "rented back room of a chandler's house." R2 confirm slug or flag for margit.
+  SEAM-C13-LOC-003: the-hook-lane — new slug; no confirmed warehouse card; this is the familiar lane Taylor walks as ordinary circuit (distinct from oc-hook-precinct / the-hook-ward slug family used in prior chapters). R2 confirm whether this should canonicalize to oc-hook-precinct or remain a distinct slug.
+  SEAM-C13-LOC-004: the-hook-lower-water-trough — new slug; no confirmed warehouse card; lower end of the Hook at chandler's row / fishmongery junction. R2 confirm slug or flag for margit.
+  SEAM-C13-LOC-005: time-of-day for scene-D set as "afternoon" by inference from "ordinary circuit" / water-carrying context. Scene-map says "two days later" with no explicit time named. R2 confirm or adjust if bones-review establishes a different time.
+
+## State-updates-env locked (b01c13) — 13 entries, 1 cull
+  state:1  @1  — studio.time_of_day: end-of-day -> mid-morning
+  state:2  @1  — studio.location: the-feed-station -> the-hook-upper-provisioning
+  state:3  @7  — prop:oc-fish-account-ledger.condition: open -> closed
+  state:4  @10 — studio.time_of_day: mid-morning -> morning
+  state:5  @10 — studio.location: the-hook-upper-provisioning -> the-magistrate-hall
+  state:6  @11 — prop:oc-d06-document.holder: green-apparatus-possession -> table-surface
+  state:7  @13 — prop:oc-procedural-form.condition: blank -> inscribed
+  state:8  @15 — prop:oc-d06-document.holder: table-surface -> magistrate-hand
+  state:9  @19 — studio.time_of_day: morning -> evening
+  state:10 @19 — studio.location: the-magistrate-hall -> the-hook-lane
+  state:11 @24 — studio.time_of_day: evening -> morning
+  state:12 @24 — studio.location: the-hook-lane -> the-hook-lower-water-trough
+  state:13 @31 — prop:oc-water-skin.condition: empty -> filled
+  Cull (1 entry removed): @8 prop:oc-empty-crate (first-touch; no downstream canonical relevance; @7 fish-account-close captures transaction canonical state; crate-pickup is physical-correlate of already-recorded close)
+  Decisions-not-fire: @2/@3/@4/@5/@6 (approach/tally-in-progress; no persistent field-changes until @7); @9 (actor-fork / fauna-sense domain); @12 (actor-fork; no prop change distinct from scene-B state); @14 (held-against-turn: immediately adjacent to peak @15; cord-holder-change REJECT); @16/@17/@18 (actor-fork / posture; no studio/prop field change); @20 (tallow-smoke ambient transient — sensory territory, not tracked field); @21/@22/@23 (scene-C interior; lane unchanged before/after; no env/prop changes); @25/@26/@27/@28/@29/@30 (actor-state + dialogue; water-trough is environmental fixture = location-card content, not state-update)
+  Field-extensions (4 new oc-props / new fields; margit referrals needed):
+    prop:oc-fish-account-ledger.condition (opposing-force accounting ledger; no prior warehouse card)
+    prop:oc-d06-document.holder (the Taylor-delivered ward-elder list; no prior prop state entry)
+    prop:oc-procedural-form.condition (magistrate's verdict form; scene-local prop; no prior card)
+    prop:oc-water-skin.condition (halvard's water-carrying vessel; no prior prop state entry)
+  Density: 13/31 = 42%; above s01e01 mechanical band (8-18%) but justified by 4×(location + time-of-day) = 8 structural scene-transition fires + 5 prop fires (peak-bone and peak-shadow co-citations); b01c12 precedent 38%; b01c11 precedent 52%
+  State-updates-env R1 authored 2026-06-03 — theater/facets/state-updates-env-b01-c13.md (13 entries)
+  _inflight: theater/facets/_inflight/proto-lines-state-env.md filed (citations @1×2, @7, @10×2, @11, @13, @15, @19×2, @24×2, @31)
+
+## Prop state at b01c13 chapter-close (projected from state-updates-env R1)
+  - studio.time_of_day: morning (@11; scene-D; persistent at chapter-close — no further time advance recorded)
+  - studio.location: the-hook-lower-water-trough (@12; chapter-close location; Taylor departed @29)
+  - prop:oc-fish-account-ledger.condition: closed (@3; permanent; Green-faction transaction archived)
+  - prop:oc-d06-document.holder: magistrate-hand (@8; persistent — document not returned to table in any subsequent bone; chapter-close state)
+  - prop:oc-procedural-form.condition: inscribed (@7; irreversible; verdict pre-inscribed)
+  - prop:oc-water-skin.condition: filled (@13; persistent; Halvard carries filled skin after chapter-close)
+  - All b01c12 carry-forward entries unchanged: studio.time_of_day reset at @1; studio.fauna_sense_status.coverage-scale: five-ward-plus-approaches; prop:oc-ward-coverage-notes.content: hook-rushwick-oswyn-plus-south-plus-both-clusters; feed-ledger entries (gap/anchor/breach-column all closed/permanent); studio.spatial_layout.lane-junction-patrol: Gold-Cloak-pair-posted; studio.fauna_sense_status.lower-gate-road-coverage: corwick-absent
+
+## Seams flagged for R2 (b01c13 state-updates-env)
+  SEAM-C13-ENV-001: prop:oc-d06-document.holder old-state "green-apparatus-possession" is inferred (delivered to Jarvis at d06; no prior explicit state-update entry on this prop); R2 confirm adequacy or trace to prior chapter delivery bone
+  SEAM-C13-ENV-002: studio.time_of_day @10 old-state "morning" — scene-B has no explicit time-of-day in scene-map ("four days later"); value inferred from proceeding context; carve-out preamble in facet file applies; R2 confirm or revise
+  SEAM-C13-ENV-003: studio.time_of_day @24 old-state "morning" — scene-D has no explicit time-of-day in scene-map ("two days later"); value inferred from circuit-walk context; carve-out preamble in facet file applies; R2 confirm or revise; note: scene-D location-state fires "afternoon" (SEAM-C13-LOC-005) — R2 must reconcile state-updates-env @24 vs location-state if both fire time-of-day on the same bone
+  SEAM-C13-ENV-004: prop:oc-procedural-form.condition — form inscribed at @13; confirm form does not exit the scene in a changed condition requiring a follow-up entry (magistrate's handling post-@15 not explicitly boned)
+  SEAM-C13-ENV-005: cross-facet consistency — location-state:6 @24 fires "afternoon" as time-of-day annotation; state-updates-env state:11 @24 fires "morning" as the new-state for studio.time_of_day; these values must be reconciled at R2 cross-facet consistency pass
+
+## Prior set state (b01c12 chapter-close)
 
 ## Location-state sequence locked (b01c12) — 8 entries, 0 cull
   loc-state:1 @1  — the-hook-ward | morning | none | lane-mouth-open, overhang-geometry-active | overhang-joints at lane-mouth (place-anchor; morning circuit open)

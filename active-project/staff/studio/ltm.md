@@ -3,6 +3,100 @@
 
 ---
 
+## 2026-06-03 — b01c13 state-updates-env R1 authoring at /and-facets Phase 1
+
+Chapter b01c13: 31 bones, 4 scenes. Sparse env/prop chapter — most substance is feed-observed (s01/s02) or interior (s03) with no props in Taylor's hands. State-updates correctly sparse; density is structural, not contaminated.
+
+STATE-UPDATES-ENV (13 entries, 1 cull; density 13/31 = 42%):
+  Density justification: 8 entries are structural scene-transition fires (4 scenes × location + time_of_day); 5 entries are prop fires (3 peak-bone or peak-shadow co-citations + 1 post-peak cold-close). No density-on-flat contamination.
+
+  SCENE-TRANSITION BACKBONE (8 entries):
+    @1  studio.time_of_day end-of-day → mid-morning (chapter-open new day)
+    @1  studio.location the-feed-station → the-hook-upper-provisioning
+    @10 studio.time_of_day mid-morning → morning (four-day gap; new day; carve-out: inferred)
+    @10 studio.location the-hook-upper-provisioning → the-magistrate-hall
+    @19 studio.time_of_day morning → evening (explicit: "that evening")
+    @19 studio.location the-magistrate-hall → the-hook-lane
+    @24 studio.time_of_day evening → morning (two-day gap; new day; carve-out: inferred)
+    @24 studio.location the-hook-lane → the-hook-lower-water-trough
+
+  PROP FIRES (5 entries):
+    @7  prop:oc-fish-account-ledger.condition open→closed
+        Peak-bone co-citation. The household-agent's shoulder-drop IS the account-close confirmation.
+        First-touch oc-prop: no prior warehouse card. Margit referral needed.
+    @11 prop:oc-d06-document.holder green-apparatus-possession→table-surface
+        Peak-shadow bone. Clerk sets the list-output at the table's edge before proceedings.
+        First-touch. Old-state "green-apparatus-possession" is inferred — SEAM-C13-ENV-001.
+    @13 prop:oc-procedural-form.condition blank→inscribed
+        Peak-shadow bone, rising zone; NOT immediately adjacent to peak (held-against-turn-clear).
+        Irreversible bureaucratic mutation: verdict pre-inscribed before Aldric finishes speaking.
+        First-touch oc-prop.
+    @15 prop:oc-d06-document.holder table-surface→magistrate-hand
+        Peak-bone co-citation. Central event: LIST-USED-OPERATIONALLY.
+        The apparatus using Taylor's d06 intelligence to decide Aldric's fate.
+    @31 prop:oc-water-skin.condition empty→filled
+        Post-peak cold-close (not held-against-turn: occurs after peaks @28/@29).
+        Persistent: Halvard carries the filled skin out. Mirror-remains image at chapter-close.
+        First-touch oc-prop.
+
+  CULL (1): @8 empty-crate holder-change — first-touch oc-prop with no downstream canonical
+    relevance; @7 fish-account-close already records the transaction's canonical state change.
+    Density-cull defensible.
+
+  HELD-AGAINST-TURN: @14 cord-holder-change FORBIDDEN (immediately adjacent to peak @15).
+    Cord is the pretext; the list is the mechanism. Rubric correctly silent.
+
+  SEAM-C13-ENV-005 (NEW): location-state:6 @24 annotates time-of-day as "afternoon"; state-
+    updates-env state:11 @24 fires "morning" — values conflict. R2 cross-facet consistency
+    pass must reconcile; one value is incorrect (the scene-D time-of-day is either morning or
+    afternoon; the location-state and state-updates-env cannot disagree at the same anchor).
+
+  Field-extensions (4 new oc-props): oc-fish-account-ledger | oc-d06-document |
+    oc-procedural-form | oc-water-skin — all first-touch; margit referrals needed.
+
+---
+
+## 2026-06-03 — b01c13 sensory R1 blind authoring at /and-facets Phase 1
+
+Chapter b01c13: 31 bones, 4 scenes. The articulated-contempt chapter. Four distinct locations.
+
+SENSORY (4 entries, 0 cull):
+  sensory:1 @1 smell — lane-morning-air -> salt-fish-brine-platform. Scene-A entry; Taylor bodily present at provisioning-store loading platform. Brine/salt-fish onset. Old-state from loc-state:1 @1.
+  sensory:2 @20 smell — lane-evening-air -> tallow-smoke-drift. Scene-C hinge grounding; keeps the naming located in a body on known ground. Old-state from loc-state:5 @19.
+  sensory:3 @25 tactile — lane-stone-paving-ambient -> water-trough-rim-cool. Scene-D water-trough grounding; Taylor reaches the trough. Old-state from loc-state:6 @24.
+  sensory:4 @31 sound — lower-hook-lane-ambient -> water-trough-fill-sound. Chapter-close terminal image; Halvard fills water-skin after Taylor departs. Old-state from loc-state:6-7.
+
+Density: 4/31 = 12.9% — ADVISORY above standard ceiling; short-chapter exemption NOT active (31 >= 30). Defended on 3 modalities (smell/tactile/sound) + grounding priority. Per-scene: s01=1, s02=0, s03=1, s04=2 — all within ≤3 cap.
+
+FAUNA-FEED RULING: Scene-B (@10-@18) — all refused. Taylor operates the fly remotely (placed the night before). Confirms prior ruling. Scene-A (@1-@9) — Taylor physically present; sensory:1 is legitimate (not fauna-feed). Physical-presence vs. remote-operation distinction flagged for R2 confirmation (SEAM-C13-SENSORY-002).
+
+Files: theater/facets/sensory-b01-c13.md (4 entries) + theater/facets/_inflight/proto-lines-sensory.md
+
+## 2026-06-03 — b01c13 location-state R1 blind authoring at /and-facets Phase 1
+
+Chapter b01c13: 31 bones, 4 scenes. Four distinct locations. Two feed-observed scenes (blowfly witness), one solo interior (naming), one live-dialogue (foreclosure). This is the hinge chapter — contempt named + enacted.
+
+LOCATION-STATE (7 entries, 0 cull):
+  The structural pattern across all four scenes: place-anchor + state-change for scenes A + B (two-actor setup in each); place-anchor only for scenes C + D (solo or arrival) with one departure state-change in D.
+  Scene-A: @1 loading-platform place-anchor (fly on crate-ledge) + @2 trestle-table state-change (household-agent posts; confrontation geometry established).
+  Scene-B: @10 ceiling-corner place-anchor (fly reads from above) + @11 table-edge state-change (clerk sets list-output; apparatus-component takes position before proceedings).
+  Scene-C: @19 hook-lane place-anchor (body stops mid-circuit; that evening). Solo scene; single entry sufficient.
+  Scene-D: @24 water-trough place-anchor (lower Hook; Halvard in ordinary circuit) + @29 departure state-change (Taylor leaves mid-speech; lane-mouth threshold as the foreclosure enacted at trough-edge).
+  New slugs: the-hook-upper-provisioning, the-magistrate-hall, the-hook-lane, the-hook-lower-water-trough — all new this chapter; no confirmed warehouse cards; margit referrals flagged (SEAM-C13-LOC-001 through -004).
+
+CONTINUITY-CARRY: none filed.
+  Scene-A fusion-run @1-@2: both earn independent entries; no carry needed.
+  Scene-B: rising rhythm-shape — license excluded.
+  Scene-C fusion-run @21-@22: only 2 bones — below 3-bone floor.
+  Scene-D fusion-run @24-@25: only 2 bones — below 3-bone floor. Rhythm-shape held-breath-enactment (not in qualifying list).
+
+NOTABLE RUBRIC DECISIONS:
+  @3 (supplier faces agent): social positioning in established env; strip test passes; REJECT frugality. This chapter's apparatus-staging (trestle-table @2; table-edge @11) demonstrates the entry-pattern: the apparatus component taking position earns a state-change, but the counter-force facing them in the same env does not.
+  @23 (taylor resumes the lane): the resumed movement on the same established lane does not change location state. This is structurally important — the contempt-without-refusal shape REQUIRES that the lane be unchanged; the loc-state correctly holds that: one entry at @19, location inherited unchanged through @23.
+  @29 (taylor leaves trough): the departure mid-speech IS load-bearing as a state-change — the trough-edge threshold is the physical correlate of the foreclosure; "trough-behind, lane-open-ahead" is the focus-element; the pointing test returns "the lane-mouth past the trough's edge" in five words.
+
+---
+
 ## 2026-06-02 — b01c11 three-facet R1 blind authoring at /and-facets Phase 1
 
 Chapter b01c11: 27 bones, 4 scenes, silent feed-POV chapter. Taylor physically at the-feed-station throughout; other locations (grain-measures junction, cloth-merchant's shop, soap-rendering lane) are mediated through the insect-feed. This is the first chapter in which the feed-POV's mediated spaces raise a loc-state interpretation question: do mediated spaces earn place-anchors? Studio's answer (confirmed in loc-state authoring notes): YES for scenes that have explicit named locations in the scene-map and where the stitcher needs a spatial anchor to render the scene; NO for individual perception beats (@3/@4 grain-measures junction; @13/@14 feed relay at worktable) where the physical event is too fine-grained or purely feed-extended.

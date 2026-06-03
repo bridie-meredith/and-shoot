@@ -1,167 +1,159 @@
 ---
 facet: state-updates
-sources: [env-b01-c12, taylor-hebert-kl-122ac-b01-c12]
+sources: [env-b01-c13, taylor-hebert-kl-122ac-b01-c13]
 note: consolidated by build_cite_index from per-source slices. Single top-of-file frontmatter per r3-signal-001.
 ---
 
-# source: env-b01-c12
-facet: state-updates-env
-episode: b01-c12
+# source: env-b01-c13
+facet: state-updates (env/prop scope)
+episode: b01-c13
 author: studio
-note: environment/location/prop scope only (actor-state authored separately)
----
+generated: 2026-06-03
 
-# rubric-carve-out — studio authority; actor-state excluded per author-license
+# rubric-carve-out — multi-bone time-of-day old-state inferred from scene-map
 #
-# design/shoot-v2/rubric-state-updates.md § Authority
+# design/shoot-v2/rubric-state-updates.md § 3. Frugality / § Cross-axis tests / Frugality
 #
-# Carve-out scope: all actor:* entries
-# Carve-out rule: studio does not author actor:* targets; actor-state (taylor, jarvis) is actor-fork authority
-# Coverage justification: chapter is silent (zero dialogue-anchor bones); actor-fork state entries authored separately;
-#   all studio entries in this file target studio.* or prop:oc-* only
-#
-# POV co-citation carve-out: studio entries do not require narrator-interest co-citation
-# (narrator-interest co-citation required only for actor:<POV-character>.* entries per rubric § Cross-axis tests)
-
-# Field-extension note (new fields on oc-feed-ledger):
-#   prop:oc-feed-ledger.gap-column-entry — new field (first-touch b01c12; refusal-response arc)
-#   prop:oc-feed-ledger.anchor-column-entry — new field (first-touch b01c12; cl-d06/cl-d08 settlement arc)
-#   prop:oc-feed-ledger.breach-column-entry — new field (first-touch b01c12; moral_framework -1.0 Khepri-cost arc)
-# Field-extension note (new fields on oc-ward-coverage-notes):
-#   prop:oc-ward-coverage-notes.content prior state value: "hook-rushwick-oswyn-corridors-plus-south-extension"
-#     (last set b01c09 state:1 @7; abbreviated here as "hook-rushwick-oswyn-plus-south" for canonicalization)
-# Field-extension note (new field on studio):
-#   studio.fauna_sense_status.coverage-scale — new sub-field (first-touch b01c12; five-ward aggregate threshold)
-# Margit referrals: oc-feed-ledger schema extension (3 new fields); oc-ward-coverage-notes content-value canonicalization
-
-1 @1 studio.time_of_day: end-of-day -> morning
-# chapter-open reset: b01c11 closed end-of-day; b01c12 opens on the morning circuit east of the water-gate
-# field-extension: n/a (studio.time_of_day is an established tracked field — b01c11 state:9 / b01c10 state anchors)
-
-2 @9 prop:oc-ward-coverage-notes.content: hook-rushwick-oswyn-plus-south -> hook-rushwick-oswyn-plus-south-plus-northern-cluster-1
-# first ward-cluster addition: taylor extends northern ward-cluster off the water-gate approach
-# peak-bone @9 co-citation: capability +0.5 (cl05 first tranche); the ward-cluster is a persistent coverage addition
-# persistence: this content value holds through scene-B and scene-C; second addition fires at @30
-
-3 @11 prop:oc-jarvis-packet.holder: jarvis-coin-kl-courier -> station-surface
-# jarvis delivers the b01c12 incoming packet to the feed-station surface
-# prior state "jarvis-coin-kl-courier": Jarvis carried this packet to the meeting; the handoff at @11 completes
-# persistence: packet remains at station-surface through @12-@15; holder re-flips at @23
-
-4 @12 prop:oc-jarvis-packet.seal-condition: sealed -> broken
-# taylor breaks the wax seal; irreversible; seal-condition cannot return to sealed
-# prior state "sealed": consistent with incoming packet state (Otto's apparatus standard; wax intact on delivery)
-# persistence: broken-seal persists through scene-B (packet is opened, read, and set down)
-
-5 @13 prop:oc-jarvis-packet.physical-condition: folded-closed -> covering-sheet-open
-# taylor opens the covering-sheet; the gate-tower corridor designation is now visible
-# peak-bone @13 co-citation: the collision becomes visible — the apparatus names the lanes by their exact boundary-marks
-# persistence: covering-sheet-open persists through @14 (turning) and @15 (packet set); closes as carried-state
-
-6 @17 studio.time_of_day: morning -> midday
-# scene-C opens at midday (the refusal / response-writing); scene-A and scene-B were both morning-circuit
-# the scene-map names scene-C "midday (the refusal)"; time-of-day advance fires on the scene-C open bone
-# persistence: midday holds through scene-C; late-afternoon fires at @29
-
-7 @19 prop:oc-feed-ledger.gap-column-entry: absent -> boundary-refusal-written
-# taylor writes the boundary entry into the gap-column: the east-water-gate lanes are not accessible, structural limit
-# peak-bone @19 co-citation: position-prot-rise +0.5 (cl02); the refusal written into the channel as a named gap
-# field-extension: gap-column-entry first-touch b01c12 (new field on oc-feed-ledger; covers both column-open and entry-written)
-# persistence: boundary-refusal-written persists to @22; the entry closes (sealed) at the response-entry-close beat
-
-8 @22 prop:oc-feed-ledger.gap-column-entry: boundary-refusal-written -> closed
-# taylor closes the response entry; the refusal is finalized in the channel record
-# peak-bone @22 co-citation: position-prot-rise +0.5 (cl02 second tranche); withholding now load-bearing in the record
-# persistence: closed; gap-column-entry remains closed at chapter-end
-
-9 @23 prop:oc-jarvis-packet.holder: station-surface -> jarvis-coin-kl-courier
-# jarvis takes the sealed response packet; the apparatus accepts the coverage limit and will route an alternate
-# prior state "station-surface": set at @11 (delivery); the same physical packet (now containing the refusal response)
-# persistence: jarvis-coin-kl-courier carries the packet out; packet departs the feed-station at this beat
-
-10 @26 prop:oc-feed-ledger.anchor-column-entry: absent -> settlement-written
-# taylor writes the anchor-column entry; relational_anchor +0.5 (cl-d08 mechanism: Wren's free movement = coverage boundary)
-# peak-shadow @26 co-citation: the weight settling as a decision about what the map can reach (not a name)
-# field-extension: anchor-column-entry first-touch b01c12 (new field on oc-feed-ledger; covers both column-open and entry-written)
-# persistence: settlement-written persists to @27; the entry closes at @27
-
-11 @27 prop:oc-feed-ledger.anchor-column-entry: settlement-written -> closed
-# taylor closes the anchor-column entry; cl-d06 settlement complete (second tranche settled, DEC-0071)
-# peak-bone @27 co-citation: relational_anchor +0.5; the long-deferred cl-d06 debt closes without a name written
-# persistence: closed; anchor-column-entry remains closed at chapter-end; her hand lifts at @28
-
-12 @29 studio.time_of_day: midday -> late-afternoon
-# scene-D opens in the late afternoon (second ward-cluster addition and accounting-close)
-# scene-map names scene-D "late afternoon / accounting-close"; time-of-day advance fires on the scene-D open bone
-# persistence: late-afternoon holds through scene-D accounting; end-of-day fires at @42
-
-13 @30 prop:oc-ward-coverage-notes.content: hook-rushwick-oswyn-plus-south-plus-northern-cluster-1 -> hook-rushwick-oswyn-plus-south-plus-both-clusters
-# muddy-way upper-margin cluster added; full-deployment threshold achieved as the insects fill the new coverage zone
-# peak-shadow @30 co-citation: capability +0.5 (cl05 second tranche); the second ward-cluster completes the architecture
-# prior state: hook-rushwick-oswyn-plus-south-plus-northern-cluster-1 (set at @9 this chapter)
-# persistence: five-ward-plus-approaches coverage holds at chapter-end (the feed runs on at full deployment)
-
-14 @32 studio.fauna_sense_status.coverage-scale: partial-multi-ward -> five-ward-plus-approaches
-# for the first time all five wards and the Flea Bottom approaches are mapped simultaneously
-# field-extension: coverage-scale first-touch b01c12 (new sub-field under studio.fauna_sense_status; tracks aggregate-scale threshold)
-# peak-shadow @32 co-citation: the aggregate-scale threshold is the Khepri-rhyming fact — the architecture complete in scope
-# prior state "partial-multi-ward": the prior chapters (c01-c11) had progressively expanded coverage but not all-five-simultaneous
-# persistence: five-ward-plus-approaches holds at chapter-end and into downstream chapters
-
-15 @42 prop:oc-feed-ledger.breach-column-entry: absent -> threshold-filed
-# the breach column receives its threshold entry: the Khepri-repetition cost recorded in flat ledger register
-# peak-bone @42 co-citation: moral_framework -1.0 (cl05 cost side); the word is not in the entry; the cost is
-# field-extension: breach-column-entry first-touch b01c12 (new field on oc-feed-ledger; Khepri-threshold ledger arc)
-# persistence: threshold-filed is permanent — the breach column entry cannot be un-filed
-
-16 @42 studio.time_of_day: late-afternoon -> end-of-day
-# the accounting closes; the feed runs on; the chapter ends at end-of-day
-# two entries on @42: one prop-field (breach-column-entry), one studio-field (time_of_day) — distinct targets, both licit
-# persistence: end-of-day is the chapter-close time_of_day (carried into b01c13 as baseline)
-
-# source: taylor-hebert-kl-122ac-b01-c12
-facet: state-updates
-episode: b01-c12
-author: impersonator-taylor-hebert-kl-122ac
-scope: actor:taylor-hebert-kl-122ac (POV actor-state ONLY; studio/prop entries out of license)
----
-# rubric-carve-out — silent-climax POV-actor file fires only on substance-contract axis-moves
-#
-# rubric-state-updates.md (design/shoot-v2/rubric-state-updates.md) § Curve-shape rubric (target diversity)
-#
-# Carve-out scope: the whole file (actor:taylor-hebert-kl-122ac.* entries only)
-# Carve-out rule: the file-level "≥3 target classes (studio/prop/actor)" expectation is satisfied across
-#   the chapter's full state-updates corpus, NOT within this single-author fork. This is the POV-actor fork;
-#   studio + prop entries are authored by studio. Density (8/42 ≈ 19%) sits just above the episode band
-#   because b01c12 is the silent climax chapter where the POV actor carries EVERY measured axis-move and
-#   there is no other actor-state carrier on stage (cast: taylor + jarvis-courier, no jarvis state-change).
-# Coverage justification: every entry is a measured substance_delta axis-move from the c12 contract
-#   (scene-map peak-bones), not registration. No inflation; the @38 Khepri-surface beat is held-SKIP
-#   (moral_legibility HELD; the cost files at @42, not @38).
+# Carve-out scope: studio.time_of_day entries at @10 and @24
+# Carve-out rule: scene-B ("four days later") and scene-D ("two days later") carry no explicit
+#   time-of-day annotation in the scene-map. Old-state values are inferred from scene context
+#   (magistrate proceeding = daytime = morning; circuit-walk at fishmongery = daytime = morning).
+#   Both entries are first-in-scene-block resets on a multi-day gap; the inferred value is the
+#   most defensible canonical reading. If loc-state R1 contradicts either baseline, revise or
+#   delete the affected entry at R2.
+# Coverage justification: scene-map does not carry explicit time-of-day for scenes B and D;
+#   firing a time-of-day reset is canonical-correct behavior at a multi-day gap-scene-open even
+#   without a scene-map time anchor. R2 reviewer must ratify both values.
 #
 # Per-entry annotations:
-# - state:8 @38: SKIP-CORRECT (registration, not state) — see trailing note at file end.
+# - state:5 @10: carve-out clause applies — scene-B time-of-day inferred from proceeding context
+# - state:10 @24: carve-out clause applies — scene-D time-of-day inferred from circuit-walk context
 
-17 @9 actor:taylor-hebert-kl-122ac.capability_axis: 5.5 -> 6.0
-18 @10 actor:taylor-hebert-kl-122ac.social_tether_prot_rise_axis: 8 -> 8.5
-19 @19 actor:taylor-hebert-kl-122ac.position_prot_rise_axis: 4 -> 4.5
-20 @22 actor:taylor-hebert-kl-122ac.position_prot_rise_axis: 4.5 -> 5
-21 @26 actor:taylor-hebert-kl-122ac.relational_anchor_status_axis: 3.5 -> 4.0
-22 @27 actor:taylor-hebert-kl-122ac.relational_anchor_status_axis: 4.0 -> 4.5
-23 @30 actor:taylor-hebert-kl-122ac.capability_axis: 6.0 -> 6.5
-24 @42 actor:taylor-hebert-kl-122ac.moral_framework_axis: -1 -> -2
+---
 
-# HELD (no entry — verified SKIP-CORRECT, not missed):
-#   @38 the accounting reaches the shape-word — Khepri surfacing is a REGISTRATION (the word present for
-#     one count); moral_legibility_to_self HELD (the crack does NOT open — suppression holds). Canonical
-#     cost files at @42 (breach column / moral_framework), not at the surface-beat. Firing @38 would be
-#     anti-pattern #1 (registration-as-state) + #7 (lagging the flip to the surface-beat). NI fires @38;
-#     state-updates correctly silent.
-#   moral_legibility_to_self_axis: HELD 5.5 (the held-discipline stakes axis — no fire anywhere in c12).
-#   political_register_prot_axis: HELD (flat register; @40 internal, not feed-facing; no contempt-color).
-#   social_tether_antag: HELD (apparatus accepts the coverage limit @23; leverage not advancing).
+1 @1 studio.time_of_day: end-of-day -> mid-morning  # chapter-open time reset; new day (Thursday); b01c12 chapter-close was end-of-day
+2 @1 studio.location: the-feed-station -> the-hook-upper-provisioning  # scene-A place anchor; chapter opens at the provisioning-store loading platform; first location transition from b01c12
+3 @7 prop:oc-fish-account-ledger.condition: open -> closed  # household-agent's tally-ledger closes at account-complete; peak-bone co-citation (@7 is the central event / satisfied-coercion body — the shoulder-drop IS the account-close confirmation); irreversible bureaucratic close; first-touch field-extension: oc-fish-account-ledger (opposing-force prop; no prior warehouse card; margit referral needed)
+4 @10 studio.time_of_day: mid-morning -> morning  # scene-B time reset; four-day gap (Thursday mid-morning -> following Monday or later); magistrate proceeding takes place during daytime working hours; carve-out applies (see preamble)
+5 @10 studio.location: the-hook-upper-provisioning -> the-magistrate-hall  # scene-B location transition; the rented back room of a chandler's house at the Hook-to-ward-network fringe
+6 @11 prop:oc-d06-document.holder: green-apparatus-possession -> table-surface  # green-faction clerk sets the document at the table's edge before the proceeding opens; document enters the physical scene; first-touch (d06-document delivered at c06, now in apparatus hands; old-state inferred — SEAM-C13-ENV-001)
+7 @13 prop:oc-procedural-form.condition: blank -> inscribed  # magistrate writes the procedural-form before Aldric finishes speaking; verdict pre-inscribed; irreversible bureaucratic mutation; peak-shadow bone in rising zone (not immediately adjacent to peak — clear of held-against-turn class); first-touch field-extension
+8 @15 prop:oc-d06-document.holder: table-surface -> magistrate-hand  # magistrate lifts the d06-document to decide the verdict; peak-bone co-citation (@15 is the central event / political_register-world delivery — the list-output operationally used); the list-used-operationally moment is the canonical state-change
+9 @19 studio.time_of_day: morning -> evening  # scene-C time advance; "that evening" — explicit in scene-map; the naming scene on the lane Taylor has walked five hundred times
+10 @19 studio.location: the-magistrate-hall -> the-hook-lane  # scene-C location transition; the lane at evening after the two feed-events are held together
+11 @24 studio.time_of_day: evening -> morning  # scene-D time reset; "two days later" multi-day gap; Halvard-encounter scene opens during Taylor's ordinary circuit-walk (daytime); carve-out applies (see preamble)
+12 @24 studio.location: the-hook-lane -> the-hook-lower-water-trough  # scene-D location transition; the lower end of the Hook where chandler's row meets the open space before the fishmongery
+13 @31 prop:oc-water-skin.condition: empty -> filled  # septon-halvard fills the water-skin at the trough; peak-shadow bone in post-peak cold-close zone (not held-against-turn; @31 is post-departure, resolving); persistent state: the water-skin is filled and Halvard carries it forward; first-touch field-extension
+
+---
+
+# Decisions-not-fire (b01c13 env/prop scope)
 #
-# POV co-citation note (cross-facet contract, auditor checks symmetry at lock):
-#   Every entry above sits on a scene-map peak-bone where the NI fork is expected to fire on the POV
-#   knowledge/cost shift: @9/@10 (scene-A peaks), @19/@22 (scene-C refusal peaks), @26/@27 (anchor
-#   settlement peaks), @30 (capability/full-deployment), @42 (the cost filed). Authored for symmetry.
+# @8  prop:oc-empty-crate — supplier's-son picks the empty-crate; genuine holder-change (loading-platform
+#     -> suppliers-son) and persistent, but culled for density: first-touch oc-prop with no downstream
+#     canonical relevance; @7 fish-account-close already records the transaction's canonical state change;
+#     crate-pickup is the physical correlate of the already-recorded close. Density-cull defensible.
+#
+# @14 prop:oc-cord — aldric lifts the cord (presents evidence); held-against-turn class (@14 is
+#     immediately adjacent to peak @15); canonical state-change fire forbidden by rubric
+#     § held-against-turn. Actor-posture permitted but cord-holder change on this beat is REJECT.
+#     The cord is the pretext, not the mechanism; the list (@15) is the mechanism.
+#
+# @2, @3, @4, @5, @6 — scene-A approach/dexterity/tally-in-progress; no persistent field-changes
+#     until the account closes at @7; all inherit @1 scene-A anchors.
+#
+# @9  — taylor releases blowfly; actor-fork authority (fauna_sense_status is actor-fork's
+#     domain for Taylor's insect deployment); no studio prop involved.
+#
+# @12 — aldric takes the chair; actor-fork authority; no prop or studio field change distinct
+#     from scene-B opening state.
+#
+# @16, @17, @18 — fly grips ceiling-corner / aldric grips table / fly works ceiling-corner;
+#     actor-fork (Taylor's feed-deployment) + actor-posture (Aldric's grip); no studio/prop
+#     field changes distinct from scene-B state. @17 Aldric grips the table is a peak-shadow
+#     posture (consequence-image); actor-fork for aldric; not studio.
+#
+# @20, @21, @22, @23 — scene-C interior hinge; tallow-smoke crosses lane (ambient transient,
+#     not a persistent tracked field), two-breaths / jaw-set / lane-resumes are actor-state
+#     and interior events; lane is unchanged before and after the naming; no studio/prop fires.
+#
+# @25, @26, @27, @28, @29, @30 — scene-D trough/dialogue/departure; actor-state + dialogue;
+#     the water-trough is environmental fixture (location-card content, not state-update);
+#     no prop changes until @31 water-skin fill.
+#
+# Field-extensions (4 new oc-props / new fields; margit referrals needed):
+#   oc-fish-account-ledger.condition (opposing-force accounting ledger; no prior warehouse card)
+#   oc-d06-document.holder (the Taylor-delivered ward-elder list; no prior prop state entry)
+#   oc-procedural-form.condition (magistrate's verdict form; scene-local prop; no prior card)
+#   oc-water-skin.condition (halvard's water-carrying vessel; no prior prop state entry)
+#
+# Seams flagged for R2:
+#   SEAM-C13-ENV-001: prop:oc-d06-document.holder old-state "green-apparatus-possession" is
+#     inferred (delivered to Jarvis at d06; no prior explicit state-update entry on this prop);
+#     R2 confirm adequacy or trace to prior chapter delivery bone
+#   SEAM-C13-ENV-002: studio.time_of_day @10 old-state "morning" — scene-B has no explicit
+#     time-of-day in scene-map ("four days later"); value inferred from proceeding context;
+#     carve-out preamble applies; R2 confirm or revise
+#   SEAM-C13-ENV-003: studio.time_of_day @24 old-state "morning" — scene-D has no explicit
+#     time-of-day in scene-map ("two days later"); value inferred from circuit-walk context;
+#     carve-out preamble applies; R2 confirm or revise
+#   SEAM-C13-ENV-004: prop:oc-procedural-form.condition — form is described as written before
+#     Aldric finishes speaking; @13 fires on the inscribed state; confirm form does not exit
+#     the scene in a different condition that would require a follow-up entry
+#   SEAM-C13-LOC-001: the-hook-upper-provisioning and the-magistrate-hall slug canonicalization
+#     — both are new slugs in b01c13 (bones `locations:` header); no confirmed warehouse cards;
+#     margit referral needed
+#   SEAM-C13-LOC-002: the-hook-lane slug — bones `locations:` header uses "the-hook-lane";
+#     confirm this is distinct from "the-hook-ward" / "oc-hook-precinct" slugs used in prior
+#     chapters or flag for margit canonicalization (carry from SEAM-C12-LOC-001 lineage)
+
+# source: taylor-hebert-kl-122ac-b01-c13
+facet: state-updates
+episode: b01-c13
+author: taylor-hebert-kl-122ac (dialogue-writer fork — actor-state, POV-restricted)
+target-class: actor:taylor-hebert-kl-122ac
+---
+# rubric-carve-out — POV co-citation dependency forwarded; field-extensions declared
+#
+# rubric-state-updates.md (design/shoot-v2/rubric-state-updates.md) § "Field-extension protocol" + § Cross-facet contract (POV co-citation)
+#
+# Carve-out scope: all actor:taylor-hebert-kl-122ac.* entries below.
+# Carve-out rule: every entry is POV-character actor-state and REQUIRES a narrator-interest
+#   co-citation on the same @anchor (rubric § Cross-facet contract). The locked NI file
+#   (interest-narrator-b01-c13.md) IS present at this authoring; co-citation is RESOLVED, not
+#   forwarded. Two POV register-state entries are re-anchored from the scene-map prot peak-bone
+#   to the adjacent POV-interior NI-fire beat, because the political_register-prot axis is a
+#   POV-interior register-state and must anchor where Taylor's interiority registers, which the
+#   locked NI places one beat off the scene-map's consequence-image peak-bone:
+#     - s02 prot increment: re-anchored @17 -> @16. NI:3 @17 (adjacent) ("his name on her list, his hands
+#       on the table; she holds the connection ... and does not move it to the accounting column")
+#       IS the operational-specificity registration. Scene-map @17 (Aldric grips the table) is the
+#       non-POV consequence-image with no NI fire; single fire across the @16-@17 rising-to-peak
+#       window per § Cross-facet "fire once across the approach-peak window; do not double-fire."
+#     - s04 Halvard-foreclosure: re-anchored @29 -> @30. NI:7 @30 ("the feet stay on the circuit;
+#       the gap Halvard opened is one she does not turn toward, and the not-turning has the shape
+#       of walking") IS the foreclosure made body-state — and satisfies the s04 CARRY_TO_WRITE
+#       requirement that the not-turning-toward-the-ledger take physical bone-form. @29 (leaves the
+#       trough) has no NI fire; @30 is the scene-map CARRY peak-shadow-bone.
+# Field-extension: knowledge.apparatus-assessment + knowledge.halvard-engagement are NEW
+#   tracked-state fields (knowledge is a tracked-state aspect per § Field-extension protocol;
+#   register/mood/emotional-tenor are NOT — the contempt is written back as a knowledge/finding
+#   field + the canonical political_register_prot_axis rank, NEVER as a register/mood field).
+# Coverage justification: the chapter's spine is the political_register-prot progression
+#   (resentment-object-fixed @7 -> operational-specificity @17 -> named-contempt @19, standing
+#   thereafter) + the s04 Halvard-engagement foreclosure. Both are persistent canonical
+#   mutations on Taylor's own state, licensed by handoff_out (prot rank 5; Halvard foreclosed).
+#
+# Per-entry annotations (carve-out clause | rubric clause | defensibility):
+# - state:1/2 @7  : POV-co-cite-RESOLVED (NI:1 @7)  | § Cross-facet (POV requires NI) | s01 peak-bone @7; axis +0.5 measured
+# - state:3/4 @16 : POV-co-cite-RESOLVED (NI:3 @17 adjacent) | § Cross-facet (POV requires NI) | re-anchored @17->@16 per carve-out; operational-specificity registration (@15 is the WORLD axis, not authored here; @17 is non-POV consequence-image, no NI fire)
+# - state:5/6 @19 : POV-co-cite-RESOLVED (NI:5 @19) | § Cross-facet (POV requires NI) | s03 HINGE peak-bone @19; articulate-contempt threshold crossed to rank 5
+# - state:7  @30 : POV-co-cite-RESOLVED (NI:7 @30) | § Cross-facet (POV requires NI) | re-anchored @29->@30 per carve-out; foreclosure as body-state (CARRY peak-shadow-bone; the not-turning-toward-the-ledger in physical form); persistent (handoff_out: will not engage Halvard at substance)
+
+14 @7 actor:taylor-hebert-kl-122ac.political_register_prot_axis: 3.5 -> 4.0   # field-extension: tracked stat (state.md stats.political_register_prot_axis); entering value 3.5 from b01c12 handoff_in (state.md figure 2.5 is c05-stale); s01 peak-bone @7 (the household-agent drops the shoulders — satisfied-coercion posture); resentment-color shifts from ambient to specific-object. NI-co-cite REQUIRED.
+15 @7 actor:taylor-hebert-kl-122ac.knowledge.apparatus-assessment: diffuse-resentment -> resentment-fixed-on-object   # field-extension: knowledge (tracked); the apparatus-coercion acquires a specific object; persistent past @7. NI-co-cite REQUIRED.
+16 @16 actor:taylor-hebert-kl-122ac.political_register_prot_axis: 4.0 -> 4.5   # re-anchored @17->@16 (carve-out): @16 (fly grips ceiling-corner; she holds the connection between her list and Aldric's charge) is the POV-interior registration spined by the adjacent NI:3 @17 fire (Aldric-hands consequence-image-as-body). prot +0.5. (@15 list-lift is the political_register-WORLD axis — studio/world-state author, NOT this fork; scene-map @17 Aldric-grips-table carries NI:3 (the consequence-image-as-body fire); the @16 POV-interior registration is spined by that adjacent NI:3 @17.) NI-co-cite RESOLVED (adjacent NI:3 @17).
+17 @16 actor:taylor-hebert-kl-122ac.knowledge.apparatus-assessment: resentment-fixed-on-object -> operationally-specified   # field-extension: the assessment acquires operational specificity — her own d06 list seen put a named body on the table; persistent. NOTE: operational-specificity acquired, NOT a moral_legibility filing — the watches-without-filing hold stands (the crack does not open; no self-ledger entry; recognition-of-repetition foreclosed). NI-co-cite RESOLVED (adjacent NI:3 @17).
+18 @19 actor:taylor-hebert-kl-122ac.political_register_prot_axis: 4.5 -> 5.0   # s03 HINGE peak-bone @19 (Taylor stops the lane — the naming-threshold made physical); articulate-contempt threshold crossed; rank 5 = articulate-contempt (handoff_out authoritative). The big jump is the threshold-crossing. NI-co-cite REQUIRED.
+19 @19 actor:taylor-hebert-kl-122ac.knowledge.apparatus-assessment: operationally-specified -> named-contempt-standing   # field-extension: the word arrives in the functional register and becomes a STANDING internal finding-state (contempt, a verdict-about-quality with specific evidence); directed OUTWARD at the apparatus, NOT turned on her own ledger (moral_legibility held; recognition-of-repetition foreclosed; Khepri/shape-word ABSENT). Persists for the rest of the chapter (s04 enacts, does not revise it). This is the chapter spine. NI-co-cite REQUIRED.
+20 @30 actor:taylor-hebert-kl-122ac.knowledge.halvard-engagement: counter-open-pending-response -> foreclosed-response-unneeded   # re-anchored @29->@30 (carve-out): the leave (@29) opens the foreclosure; @30 (walks the route — CARRY peak-shadow-bone, the not-turning-toward-the-ledger in body-form) is where it becomes the persistent engagement-state; NI:7 fires here. The engagement-state flips from "counter held, his response still notionally open" to "foreclosed — response cannot change what she does next and is not needed"; persistent (handoff_out: Taylor will not engage Halvard again at substance). The route-walk is the contempt-without-refusal made physical. NI-co-cite RESOLVED (NI:7 @30).

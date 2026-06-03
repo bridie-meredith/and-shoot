@@ -4985,3 +4985,73 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+## DEC-0083 | 2026-06-03 | SLOW (process-critic)
+
+mode: process-critic
+trigger:
+  reason: failure
+  source_report: active-project/staff/auditor/write-b01c13-bone-gate.md
+  source_verdict: |
+    /and-write b01c13 Phase 6 bone-gate FAIL(1-HARD) -> remediated to PASS.
+    Contextual patterns: (1) s03 interior-naming scene re-decomposition; (2) s04
+    all-held foreclosure speech bones flagged FAULT-BONE-DELTA-MALFORMED — adjudicated
+    PASS by orchestrator as held-discipline speech is licit.
+  gate_path: .claude/commands/and-write.md#phase-6
+
+question: |
+  Two patterns from /and-write b01c13: (1) interior-naming scene (s03) required
+  Phase 2 re-decomposition because the chunk's central event is an abstract cognitive
+  act — should /and-substance chapter Phase 3 flag interior-central-event scenes for
+  concrete-correlate-first decomposition at /and-write Phase 1? (2) all-held
+  foreclosure speech bones fired false-positive FAULT-BONE-DELTA-MALFORMED because
+  bones.schema.md has no held-discipline speech license — should the schema be amended?
+
+decision: |
+  Pattern 1 (interior-naming scene flagging upstream): OK. First occurrence,
+    non-catastrophic. Wait for recurrence.
+  Pattern 2 (held-discipline speech bone schema amendment): PROCESS-CHANGE-PROPOSED
+    PROP-0038. Second adjudication ruling on same schema section. Deterministic gap;
+    precision-writable; S-cost; no existing open proposal covers it.
+
+basis: |
+  Pattern 1: process-critic-recurrence-discipline (count=1; non-catastrophic; one
+    recast cycle resolved in-pass; PROP-0024 covers argument-spine but its predicate
+    does not fire on solo interior-naming scenes -- a real gap but first-occurrence-holds).
+  Pattern 2: step 2 proposals check found no open proposal covering bones.schema.md
+    held-discipline speech (pl-2026-05-30-003 covers axis-slug generalization only,
+    not the axis_moves:[] held-discipline form). Step 3: gate exists and fires but
+    produces false positive on licit bone class — change_type: modify (add license).
+    Step 4: recurrence = 2 (pl-2026-05-30-003 b01c06 + b01c13 adjudications on same
+    schema section); override first-occurrence-hold on deterministic-gap grounds.
+
+rationale: |
+  Pattern 1. s03 re-decomposition resolved correctly in one Phase 2 recast cycle.
+  The mechanism is documented in the b01c13 gate report (orchestrator adjudication).
+  A future proposal targeting /and-substance chapter Phase 3 with an interior-central-
+  event predicate would be the correct shape — but at count=1, the cost of a second
+  occurrence (another ~14-bone recast) is acceptable exchange for not adding a Phase 3
+  detection predicate on first evidence. PROP-0024 provides the structural template
+  (Phase 1 brief constraint on PASS-CHUNK-VOICE-RISK chapters) for any future proposal.
+
+  Pattern 2. bones.schema.md §Dialogue-anchor bones rule 1 now requires two adjudication
+  rulings in 7 chapters. Both rulings correctly resolved to PASS; the schema is simply
+  incomplete. The Phase 2 auditor cannot distinguish licit held-discipline speech from
+  malformed speech without an explicit schema license. The fix is narrow: add sub-rule
+  1(b) for held-discipline form with a three-part predicate (scene axes_in_motion: [],
+  axes_held[] declares a communication-class axis, rationale names the discipline). The
+  additional pl-2026-05-30-003 axis-slug generalization text can be co-applied at the
+  same schema-edit pass; both are S-cost; principal may bundle them.
+
+trade-off: |
+  Pattern 1: next interior-naming scene will hit Phase 2 before Phase 1 can prime for it.
+  Acceptable — re-decomposition pattern is on disk; orchestrator can apply it manually;
+  recast cost is low.
+  Pattern 2: not proposing would risk a third false-positive FAULT-BONE-DELTA-MALFORMED
+  on the next all-held dialogue scene, requiring a third adjudication ruling. Schema-edit
+  cost (S) is lower than repeated orchestrator adjudication overhead.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no

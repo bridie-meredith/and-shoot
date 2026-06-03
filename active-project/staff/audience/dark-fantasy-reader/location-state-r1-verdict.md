@@ -2,37 +2,31 @@
 reviewer: dark-fantasy-reader
 facet: location-state
 cycle: 1
-episode: b01-c12
+episode: b01-c13
 date: 2026-06-03
-verdict: accept
+verdict: ACCEPT
 ---
 
-# Location-State — Adversarial Verdict
+# Dark-Fantasy-Reader — location-state adversarial read (b01-c13)
 
-**Verdict: ACCEPT**
+Does the location exist by its own physics? Does it predate the protagonist?
 
-Eight entries. The question is always the same: does the location exist by its own physics, or is it arranged for the protagonist?
+7 entries, 4 locations.
 
-**loc-state:1 @1** (the-hook-ward, morning, lane-mouth-open, overhang-geometry-active) — "the tight geometry that makes dense insect placement read as witch-label." The overhang geometry is a social physics the place already has before the chapter opens. The streets decided what these lanes mean before Taylor arrived. This is the Planetos-specific superstition register I came for — not generic medieval hostility but a specific inherited label, site-specific, operating on its own terms. Terrain-before-protagonist. Correct.
+**loc-state:1 @1** — hook-upper-provisioning, morning. A provisioning-store loading platform in the Hook ward of Flea Bottom. The "apparatus-coercion unfolding on the platform below" note names what happens here — but the platform was there before the apparatus. It is a loading dock at a provisioning store. The coercion happens at it because that is where provisioning transactions happen, not because the story arranged it. The Hook was there before Taylor.
 
-**loc-state:2 @3** (gate-tower-shadow-west, rendering-yard-wall-east) — two landmarks that bounded the gap before Taylor measured it. The body placed inside the coverage boundary is the protagonist reading what the terrain already is. The world did this before it was useful.
+**loc-state:2 @2** — trestle-table-active. The household-agent takes a position at the table. The trestle-table is existing commercial furniture. The apparatus-component takes its position at a working surface that belongs to a commercial transaction. No set-dressing — this is the location's own geometry.
 
-**loc-state:3 @8** (feed-station, ledger-surface-open, stylus-lifted) — minimal interior-state. Physical at-establishment without atmosphere loading. Acceptable.
+**loc-state:3 @10** — magistrate-hall, morning. The rented back room of a chandler's house at the Hook-to-ward-network fringe. The magistrate holds proceedings in a rented back room. That is a detail about how small-scale apparatus justice functions in this world: there is no formal hall, there is a chandler's house with a rented room that serves the purpose. This is Planetos-specific texture — the institutions fit into existing buildings. The world was there before it was useful for the chapter.
 
-**loc-state:4 @11** (packet-at-surface-edge, opposing-force-enters-via-standard-channel) — "via the standard channel" is doing everything here. The apparatus arrives on its routine delivery schedule, not on the chapter's dramatic timing. This is the enemy who does not pause at a convenient moment: it runs on schedule, and its schedule does not know or care what Taylor spent the morning confirming as uncoverable. The irony that the apparatus uses the same instrument as the refusal is located in terrain, not authored into it.
+**loc-state:4 @11** — document-at-table-edge. The clerk sets the d06-document at the table's edge before the proceeding opens. The document arrives before the accused arrives. Verdict-pre-inscribed geography. The proceeding's outcome is already physical before it begins; the document placement is the spatial confirmation of that. Earned bleakness through location-mechanics.
 
-**loc-state:5 @17** (midday, gap-column-pending) — time advance. The location does not editorialize about what's coming. Gap-column-pending is a ledger state, not a mood assignment. Cold.
+**loc-state:5 @19** — hook-lane, evening, circuit-mid. "The lane Taylor has walked on ordinary circuit." The naming event happens at a place Taylor has walked five hundred times. That is not arranged — it is the correct dark-fantasy form of the significant moment: it happens at an unremarkable place, on an ordinary walk, and the place does not change. The lane is the same lane before and after the naming. The world's indifference to significant interior events is confirmed by the location being "lane-open, circuit-mid."
 
-**loc-state:6 @23** (midday, sealed-packet-departing, surface clears to anchor-column) — the apparatus accepts the coverage limit and routes around it. The world's operational logic continues without requiring Otto's presence or deliberation. The opposing force does not stop because the protagonist needs space; it finds another route. That is exactly the dark-fantasy shape of institutional power: it absorbs the refusal and continues running.
+**loc-state:6 @24** — hook-lower-water-trough, afternoon. The trough at the lower Hook where the chandler's row meets the fishmongery. "Halvard in ordinary water-carrying circuit." Halvard's arrival at the trough is his ordinary circuit — not arranged for Taylor's arrival. Two people with different circuits happen to converge at the same water-trough. The world has produced this convergence through two characters going about their business, not through narrative convenience. Correct.
 
-**loc-state:7 @29** (afternoon, muddy-way-extension-in-motion) — time advances again without announcement. The muddy-way boundary enters the feed for the first time. No performance of what that completion means. Just ledger-state.
+**loc-state:7 @29** — same trough, trough-behind, lane-open-ahead. The departure threshold. Taylor leaves mid-speech; the trough stays behind; the lane opens ahead. The physical geography confirms the departure's character: the trough (Halvard's place, his circuit, his water) is behind; the lane (her circuit) opens ahead. The world continues to have geometry after she turns her back on the mirror.
 
-**loc-state:8 @42** (end-of-day, breach-column-receiving, accounting-closed) — the one I attacked hardest. "Breach column at accounting-close — threshold entry filed in flat column register; end-of-day state." The flat-column-register descriptor is doing everything. The breach column receives the moral_framework -1.0 in the same register as every entry above it. End-of-day is a time marker, not a mood assignment. The feed-station at end-of-day is the same surface it was at morning. The world does not react to what was just filed. That is the correct dark-fantasy topology: cost recorded, world continues, nothing changes in the room.
+**flag-002 (time-of-day seam, "afternoon" vs. "morning" @24):** The stitcher advisory is to use loc-state:6's "afternoon" as authoritative. From my lens: the time-of-day question is irrelevant to whether the world exists by its own physics. The trough exists at whatever time it is; Halvard fills his water-skin in the afternoon. Accepts.
 
-**On the @42 / sensory:5 seam:** I checked whether end-of-day combined with licensed sensory:5 (light: late-afternoon-surface-brightness → end-of-day-dimming, grd-002 exception) tips from cold environmental grounding into elegiac mood. The loc-state itself says "end-of-day state" as a time-marker only. It does not render the light. What sensory:5 does with that is the sensory verdict's problem — I attack it there. The loc-state file is clean on this seam.
-
-**Convergence with auditor flag-003 (CURVE-SHAPE / two-peak WARRANTED):** loc-state correctly has NO entry at @38 (the interior climax). The location does not shift register when the shape-word surfaces. That absence is load-bearing. A loc-state entry AT @38 would have been a flag for me — it would mean the location was reacting to the protagonist's interior state, which is the set-dressing-for-protagonist failure mode. Its absence is the correct call.
-
-No entries soften the location's character. No indifferent-world continuance slips into comfort. The opposing force does not pause. The breach column closes in the same flat register as everything above it.
-
-**ACCEPT.**
+**VERDICT: ACCEPT**

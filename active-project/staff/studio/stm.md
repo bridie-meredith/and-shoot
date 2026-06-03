@@ -1,5 +1,87 @@
 # studio STM
 
+## 2026-06-03 — /and-facets b01-c13 Phase 1 R1 sensory authoring (BLIND)
+
+Chapter b01c13: 31 bones, 4 scenes. Two feed-observation scenes (s01/s02), one solo interior hinge (s03), one live-dialogue scene (s04). Four locations across the chapter.
+
+SENSORY: 4 entries, 0 cull. Density 4/31 = 12.9% — above standard 3-6% ceiling; short-chapter exemption NOT active (31 >= 30). Defended on modality-diversity (3 modalities: smell + tactile + sound) and per-brief grounding priority (all four key anchor zones covered). Per-scene cap: s01=1, s02=0, s03=1, s04=2 — all within ≤3. ADVISORY not blocking.
+
+  sensory:1 @1 — smell: lane-morning-air -> salt-fish-brine-platform. Scene-A entry; Taylor physically present at the provisioning-store loading platform (holds the fly bodily, not remote deployment). Brine/salt-fish smell onset at platform arrival. Q1: "takes" is bare; Q2: brine-provisioning smell is large-magnitude vs. lane-morning-air. Old-state from loc-state:1 @1 + series Hook-lane morning vocabulary.
+  sensory:2 @20 — smell: lane-evening-air -> tallow-smoke-drift. Scene-C hinge grounding; the tallow-smoke crossing the lane is the environmental anchor that keeps the naming located in a body on known ground per scene-map grounding note. Q1: "crosses" is bare — the SVO carries no smell intensity. Q2: tallow-smoke is a large-magnitude olfactory inflection on a Hook rendering lane at evening. Spike (transient drift). Old-state from loc-state:5 @19 + series Hook-lane evening vocabulary.
+  sensory:3 @25 — tactile: lane-stone-paving-ambient -> water-trough-rim-cool. Scene-D water-point grounding; Taylor reaches the water-trough. Cool damp stone of trough rim vs. dry lane paving. Q1: "reaches" is bare. Q2: moisture-cool stone trough rim is a distinct tactile register shift. Old-state from loc-state:6 @24 + series lane-tactile vocabulary.
+  sensory:4 @31 — sound: lower-hook-lane-ambient -> water-trough-fill-sound. Chapter-close terminal image; Halvard fills the water-skin. Q1: "fills" is bare — no audible quality in the SVO. Q2: water entering leather at the trough is a discrete audible event that becomes the dominant sound in the chapter's closing image. Old-state from loc-state:6-7 + series lower-Hook ambient vocabulary.
+
+Key REJECT decisions:
+  scene-B (@10-@18): ALL REFUSED — fauna-feed-extension across the entire scene. Taylor is operating the fly remotely (placed the night before); all perceptions mediated. Confirms b01c11 LTM ruling: extended-range insect-feed perception is narrator-interest territory.
+  @7 (agent drops shoulders — posture event; no audience-side perceptual inflection): REFUSE
+  @8 (son picks empty-crate — hollow-wood-on-stone sound borderline; sub-threshold in outdoor provisioning-platform ambient): REFUSE Q2
+  @21-@22 (Taylor takes two-breaths / sets jaw — interior body action; not audience-side environmental): REFUSE interior-only
+
+SEAMS:
+  SEAM-C13-SENSORY-001: density 12.9% defended on modality-diversity + grounding-priority brief; R2 auditor may cull to 2-3 fires if defense fails. Strongest pair to preserve: sensory:2 (@20 tallow-smoke, s03 hinge) + sensory:3 or :4 (s04 water-point).
+  SEAM-C13-SENSORY-002: sensory:1 (@1 scene-A) depends on Taylor being physically at the provisioning platform (not remote fauna-feed). R2 reviewer confirm: "Taylor holds a blowfly on the loading-platform crate-ledge" = bodily present. If R2 rules remote-only, sensory:1 must be deleted.
+  SEAM-C13-SENSORY-003: no visual fires (no discrete light-inflection events above threshold in any scene). Brief requests visual in mix — none found that clear Q1/Q2.
+
+Files: theater/facets/sensory-b01-c13.md (4 entries) + theater/facets/_inflight/proto-lines-sensory.md
+
+## 2026-06-03 — /and-facets b01-c13 Phase 1 state-updates-env authoring
+
+Chapter b01c13: 31 bones, 4 scenes, 4 distinct locations. Hinge chapter — contempt named (s03), Halvard foreclosed (s04). Sparse env/prop chapter: most action is feed-observation (s01/s02) and interior (s03) with no props changing Taylor's hands.
+
+STATE-UPDATES-ENV: 13 entries, 1 cull.
+  Scene-transition backbone (8 entries): studio.time_of_day + studio.location at @1, @10, @19, @24.
+  Prop fires (5 entries):
+    @7  prop:oc-fish-account-ledger.condition open->closed (peak-bone co-citation; account-close confirmed by shoulder-drop posture)
+    @11 prop:oc-d06-document.holder green-apparatus-possession->table-surface (clerk sets document at table-edge; entering scene)
+    @13 prop:oc-procedural-form.condition blank->inscribed (verdict pre-inscribed; irreversible bureaucratic mutation; peak-shadow not adjacent to peak)
+    @15 prop:oc-d06-document.holder table-surface->magistrate-hand (peak-bone co-citation; LIST-USED-OPERATIONALLY central event)
+    @31 prop:oc-water-skin.condition empty->filled (Halvard fills at chapter-close; cold-close post-peak; persistent)
+  Cull (1): @8 empty-crate (first-touch oc-prop; no downstream canonical relevance; @7 already records transaction close; density-cull)
+  Held-against-turn: @14 cord-holder-change FORBIDDEN (immediately adjacent to peak @15)
+  SEAM-C13-ENV-005: location-state:6 @24 fires "afternoon"; state-updates-env state:11 @24 fires "morning" — R2 reconcile at cross-facet consistency
+  Field-extensions (4): oc-fish-account-ledger | oc-d06-document | oc-procedural-form | oc-water-skin (all margit referrals needed)
+  Files: theater/facets/state-updates-env-b01-c13.md + theater/facets/_inflight/proto-lines-state-env.md
+
+## 2026-06-03 — /and-facets b01-c13 Phase 1 R1 location-state authoring (BLIND)
+
+Chapter b01c13: 31 bones, 4 scenes, 4 distinct locations. Two feed-observed scenes (s01/s02) + solo interior (s03) + live-dialogue (s04). Taylor's role: blowfly-reader (s01/s02), solo pedestrian (s03), water-trough encounter (s04). No prior chapter set state carried into c13's new locations.
+
+LOCATION-STATE: 7 entries, 0 cull.
+  loc-state:1 @1  — the-hook-upper-provisioning; morning; place-anchor; crate-ledge at platform edge (blowfly stations; scene-A open).
+  loc-state:2 @2  — the-hook-upper-provisioning; morning; state-change (apparatus-component takes position); trestle-table with household-agent posted — confrontation geometry; @3–@9 all turn on this surface.
+  loc-state:3 @10 — the-magistrate-hall; morning; place-anchor; ceiling-corner of chandler's rented back room (fly reads from above; scene-B open; four days later).
+  loc-state:4 @11 — the-magistrate-hall; morning; state-change (apparatus-component takes position); table's edge where clerk placed list-output before proceedings — @15 document-lift turns on this placement.
+  loc-state:5 @19 — the-hook-lane; evening; place-anchor; familiar lane mid-circuit (body stops; scene-C open; that evening).
+  loc-state:6 @24 — the-hook-lower-water-trough; afternoon; place-anchor; water-trough at lower Hook (scene-D open; two days later; Halvard in ordinary circuit).
+  loc-state:7 @29 — the-hook-lower-water-trough; afternoon; state-change (departure mid-speech); lane-mouth past trough's edge — threshold crossed as foreclosure enacted.
+  Continuity-carry: none filed.
+    — scene-A: fusion-eligible-run @1-@2 both earn independent entries (place-anchor + state-change); no additional carry needed
+    — scene-B: rhythm-shape rising (license excluded)
+    — scene-C: fusion-eligible-run @21-@22 is only 2 bones (below 3-bone floor for license)
+    — scene-D: fusion-eligible-run @24-@25 is only 2 bones (below 3-bone floor); rhythm-shape held-breath-enactment (not flat-low/resolving/release-only)
+  Cull: 0 entries removed — all 7 survive strip / pointing / frugality / previous-entry tests.
+
+Key REJECT decisions:
+  @3 (salt-fish-supplier faces household-agent — social positioning; confrontation geometry already established at @2; strip test passes in @2 inherited env; REJECT frugality)
+  @4–@8 (shoulders/tallies/grips/drops/picks — dexterity or stillness/hold in-place; all inherit @2 trestle-table env; REJECT necessity)
+  @9 (taylor releases the blowfly — releasing an insect is not through-space movement; dexterity in inherited @2 env; REJECT)
+  @12 (aldric takes the chair — positioning verb; frugality REJECT: @10 already established the hall; @11 placed the apparatus-component; Aldric's chair location is legible in inherited env; strip test passes)
+  @13–@18 (procedural/dexterity/stillness verbs — administrative or hold beats; all inherit @11 env; REJECT necessity and frugality)
+  @20 (tallow-smoke crosses the lane — environmental-agency subject; the smoke is ambient; it does not add a new location state beyond the @19 lane already established; anti-pattern 3; REJECT frugality)
+  @21–@22 (takes two-breaths / sets the jaw — stillness/somatic beats; no through-space movement; inherit @19 lane; REJECT necessity)
+  @23 (resumes the lane — transitional verb but no state-change: the lane is unchanged; Taylor returns to motion on the same lane; frugality REJECT)
+  @25 (taylor reaches the water-trough — transitional verb but @24 already established the trough; strip test passes in @24 inherited env; frugality REJECT)
+  @26–@28 (dialogue beats — pure speech, no positioning in question; REJECT per necessity rubric §)
+  @30 (taylor walks the route — transitional verb; Taylor in transit in inherited @29 departure-state; no new location state; frugality REJECT)
+  @31 (halvard fills the water-skin — dexterity at the trough; Halvard remains; inherited env; REJECT dexterity/stillness)
+
+Seams flagged for R2:
+  SEAM-C13-LOC-001: the-hook-upper-provisioning — new slug; no confirmed warehouse card; drawn from bones `locations:` field. R2 confirm slug canonicalization or flag for margit.
+  SEAM-C13-LOC-002: the-magistrate-hall — new slug; no confirmed warehouse card; scene-map describes as "rented back room of a chandler's house." R2 confirm slug.
+  SEAM-C13-LOC-003: the-hook-lane — new slug; the lane Taylor walks on ordinary circuit; no confirmed warehouse card. R2 confirm whether this should canonicalize to oc-hook-precinct or remain distinct.
+  SEAM-C13-LOC-004: the-hook-lower-water-trough — new slug; no confirmed warehouse card. R2 confirm slug or flag for margit.
+  SEAM-C13-LOC-005: scene-D time-of-day set as "afternoon" by inference from Halvard's "ordinary water-carrying circuit." No explicit time named in scene-map. R2 confirm or adjust.
+
 ## 2026-06-03 — /and-facets b01-c12 Phase 1 R1 location-state authoring (BLIND)
 
 Chapter b01c12: 42 bones, 4 scenes. Silent interior chapter — no dialogue-anchor bones. Taylor in the hook-ward east-water-gate lanes (morning circuit) then at the feed-station (scenes B-D). Time progression: morning → midday → afternoon → end-of-day.

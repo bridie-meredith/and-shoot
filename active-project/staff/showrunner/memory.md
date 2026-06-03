@@ -8005,7 +8005,72 @@ books:
           target_chapter: b01c13
 
       - slug: b01c13
-        status: planned
+        status: stitched   # /and-stitch b01c13 Phase 9 cold-read PASS (clean) 2026-06-03; draft/b01-c13.md TERMINAL (1794w). (was audited-r1 at /and-facets COMPLETE.)
+        cold_read:
+          read_at: 2026-06-03
+          verdict: PASS   # clean — completeness PASS (central event recovered: list condemns Aldric; jeopardy present; CONTINUE=yes) AND readability READABLE
+          recovered_summary: "A girl who feeds insect-spun intelligence to the powerful watches her own report condemn an innocent man, recognizes her contempt for the system she serves, and keeps walking the same line anyway."
+          report_path: active-project/staff/reviews/coldread-b01c13-2026-06-03.md
+          coherence_review_verdict: PASS   # Phase 8.5: 0 weave-gaps / 0 followability-breaks / 0 high cold-read-risk (1 med advisory s03 register density); report active-project/staff/reviews/coherence-b01-c13-2026-06-03.md
+          staging_signals: 2   # both ADVISORY sub-threshold (s01 slow-to-declare ~100w; @30 thin physical anchor); no spine-staging-gap, no FAIL
+          staging_report_path: active-project/staff/reviews/staging-b01-c13-2026-06-03.md
+          signal_clusters: []   # no cluster (same-pattern<5, adjacent-peak<3, axis-move<3, spine-staging-gap=0)
+          prose_rationale_audit: { count: 0, verdict: CLEAN }   # all key held bones (@5/@7/@16/@22/@30/@31/@19) stage their rationale's concrete physical token
+          readability_axis: { verdict: READABLE, basis: "deeply first-person interior; Phase 8.5 ALIVE confirmed; person to follow throughout" }
+          depth_pass_required: false   # clean PASS — no mandatory depth-pass owed before book-close
+          stale_since: null
+        # /and-facets b01c13 COMPLETE 2026-06-03 (Phase 6 persist). Phase 5 audit HARD=0 (1 label-fix); Phase 5b audience-gate 3-of-3 ACCEPT all 9 facets + 2 dialogue chars (cycle 1, no remediation/cap-burn); bidirectional_loop: validated.
+        facets_status: audited-r1
+        facets_path: active-project/theater/facets/
+        audit_path: active-project/staff/auditor/facets-final-audit.md
+        audit_complete: true
+        audience_gate_path: active-project/staff/audience/  # per-persona per-facet r1-verdict files (3 personas x 11 facets/dialogue, all ACCEPT)
+        audience_gate_complete: true
+        audience_gate_cycles: 1
+        bidirectional_loop: validated
+        round_1_complete: true
+        round_2_complete: true
+        # /and-facets b01c13 2026-06-03: 61 facet entries (NI 7, memory 2 [mem:1@16 R2-deleted], sensory 4 [12.9% SIGNAL accept-w-rationale], loc-state 7, state-updates 20 [env 13 + taylor 7], feeling 2 [taylor@21 + halvard@31], metaphor 0, vibes 17, exposition 2) + dialogue (halvard 2 + taylor 1). Phase 2.5+4.5 FOLLOWABLE+ALIVE (s03 spine LANDS; ledgers 0 open). SIGNALs: sensory-density 12.9%, @24 time-of-day (stitch uses loc-state 'afternoon'), 2 TASTE-FLAG (taylor 'both columns' / halvard 'a wiser hand wrote off' — both accepted NO-ACTION). Audience Finding A: vibes:4@15 stale licensed-by memory:1 removed. Earth-Bet fence CLEAN. Reviewer reports: staff/auditor/facets-final-audit.md; staff/reviews/context-follow-{r1,r2}-b01-c13-2026-06-03.md.
+        bones_file: theater/bones/b01-c13.md
+        bones_count: 31
+        substance_bone_gate_verdict: PASS
+        substance_delta_measured:
+          axes_moved: { political_register-prot: +1.5, political_register-world: +0.5 }   # measured aggregate over moving bones (s01@7, s02@15+@17, s03@19); held axes flat
+          density_measured: 0.6-0.8
+          felt_verdict: SUBSTANCE-FELT   # Phase 6 audience 3-of-3 all 4 scenes
+        bones_review:   # /and-review bones b01c13 (MANDATORY gate; unblocks /and-facets) 2026-06-03
+          reviewed_at: 2026-06-03T16:57:00Z
+          report_path: active-project/staff/reviews/bones-b01c13-2026-06-03.md
+          verdict: PASS
+          follow_check: PASS   # PROP-0020 followability pre-check — central events + causality + scene-to-scene handoffs recoverable at bone level; s03 naming reads as finding-shape with the word deferred to facets
+          aliveness: GROUNDED   # PROP-0022 — no BONES-AIRLESS-RISK; body to inhabit every scene
+          bones_file_mtime_at_review: 2026-06-03T16:56:10Z
+          stale_since: null
+          signal: "signal-001 (advisory): s03 spine legibility depends on /and-facets landing the deferred interior word 'contempt' + evidence-run as a finding-not-a-decision; forwarded to /and-facets Phase 2.5 + /and-stitch Phase 9. dialogue-coverage + card-compliance + Earth-Bet fence all CLEAN."
+        context_followability:   # /and-facets Phase 2.5 + 4.5 (PROP-0020/0022)
+          completeness_verdict: FOLLOWABLE   # Phase 4.5 post-R2; s03 spine LANDS; mem:1@16 delete cost no followability (d06->Aldric routes via NI:3@17)
+          readability_verdict: ALIVE         # scene-B feed-observed remote-read acceptable; grounded elsewhere
+          context_ledger_open: 0             # ctx-001 satisfied by exposition:2
+          grounding_ledger_open: 0
+          voice_fixable_for_stitch:          # carry to /and-stitch Phase 4 voice-embodiment + Phase 9
+            - "@19 render the stop so the deferred word 'contempt' reads as a genuine finding, not a told assertion (chapter SPINE; render @19+@23 as a pair)"
+            - "@30 render the not-turning as physical departure (feet on the circuit), NOT interior rationale (s04 CARRY)"
+            - "scene-B @10-@18 keep observed bodies embodied (magistrate physically lifts the d06-document); preserve cold remote-read without airless"
+            - "@16 disciplined read-holding; let NI:3@17 carry the does-not-move-it-to-the-accounting-column interior (mem:1 deleted)"
+            - "mem:2@23 carries its own fire/weather simile — render once, no figurative echo in adjacent narrator prose"
+        # /and-write b01c13 Phase 7 emit 2026-06-03. 31 bones / 4 scenes. s04 LIVE dialogue (3 anchor bones; 2 per-character files: septon-halvard-flea-bottom, taylor-hebert-kl-122ac). s01/s02 feed-observed (silent — apparatus speech recast to physical action); s03 solo interior (naming->concrete stop @19; word "contempt" + evidence-running deferred to narrator-interest/memory facets per omission_rationale).
+        # flat_id map: s01 @1-@9 | s02 @10-@18 | s03 @19-@23 (re-decomposed 7->5; naming bone = @19 stop) | s04 @24-@31 (dramatist reorder applied at emit: reading order n01=@24,n02=@25,n03=@26,n04=@27,n06=@28,n07=@29,n05=@30,n08=@31). dialogue citations: @26 [septon-halvard-flea-bottom:1], @27 [taylor-hebert-kl-122ac:1], @28 [septon-halvard-flea-bottom:2].
+        # Pipeline: Phase 2 (14 form-faults recast + 2 compression faults fixed -> 31 bones), Phase 3 (dramatist REVISE: s04 reorder), Phase 4 (trim 3/3 ACCEPT, 0 deletions), Phase 5 continuity (3 doc/state faults fixed: Halvard state file reconciled; handoff capability 6->6.5 + position-prot-rise 5.5->5), Phase 6 bone-gate (auditor 0 HARD after [image: the-word-held] event-map fix; s03n04 jaw-set PASS; s02 stakes-dominant PASS by mechanism-primacy; dialogue+fence+mannerism CLEAN; audience 3-of-3 SUBSTANCE-FELT). Per-bone detail authoritative in active-project/staff/screen-writer/b01c13-bones-draft.md (git-tracked) + bones file + scene-map; NOT duplicated into scenes[].bones[] (memory size mgmt; downstream reads the bones file + scene-map).
+        # Reviewer reports: staff/auditor/write-b01c13-pass2.md, write-b01c13-pass5.md, write-b01c13-bone-gate.md; audience/<persona>/bone-gate-b01c13.md (x3).
+        # /and-substance chapter b01c13 Phase 5/6 persist 2026-06-03. Phase 5: audience 3/3 SUBSTANCE-FELT,
+        # dramatist ACCEPT (hinge enacted: load s1/s2 -> turn s3 -> enactment s4; roll-up EXACT), auditor ACCEPT
+        # (0 HARD/0 SOFT/1 SIGNAL: cl06 per-chapter draw schedule advisory -> confirm at c14). Roll-up EXACT:
+        # political_register-prot +1.5 (s1+s2+s3 @ +0.5 each), political_register-world +0.5 (s2). 4 scenes.
+        # Halvard foreclosure STAGED on-page in s04 (pl-2026-06-03-006a addressed). Chunk-tag protocol applied.
+        # DOC-FIX (4 reviewers convergent): political_register-world stale figures corrected -- handoff_in 7.5->6.5
+        # (reconciled to aggregate-state authoritative entering value), handoff_out 8->7.0 (6.5 + c13 +0.5).
+        # Bones-execution watch (dark-fantasy-reader, -> carry_to_write): s04 moral_legibility_to_self HELD must
+        # take physical bone-form (held stillness / non-movement toward the ledger), not held-axis-rationale-only.
         chunk: |
           The articulated-contempt chapter. Two feed-events in the same week: a court
           provisioning dispute Taylor reads through compound eyes, in which a Green-faction
@@ -8051,6 +8116,117 @@ books:
         goal: |
           Show the audience Taylor naming the contempt with precision and then demonstrating that naming changes nothing about what she does next — the contempt-without-refusal shape at its first appearance.
         pov_narrator: taylor-hebert-kl-122ac
+        scenes:
+          - slug: b01c13s01
+            seq: 1
+            status: scened
+            pov_narrator: taylor-hebert-kl-122ac
+            chunk: |
+              The first [event: provisioning-humiliation] arrives on a Thursday, mid-morning, through the compound eyes of a blowfly [image: blowfly-on-crate-ledge] working the loading platform at the back of a Green-faction household's provisioning store in the upper Hook. A [force: green-faction-apparatus] household agent — Taylor does not know his name but knows his face by now, the specific pinched posture of a man whose authority exists entirely in the gap between one cleaner street and one dirtier one — stands across a trestle table from a Flea Bottom salt-fish supplier [image: trestle-table-copper-dispute] and conducts a [mechanism: copper-penny-margin-humiliation] that has nothing to do with the fish. The fish are adequate. The fish are what they always are, cured and wrapped and carried up from the wharves by the supplier's son, who is eleven and present on the loading platform and does not look at the household agent because he has learned not to. The dispute is over a copper fraction on a bulk price, a margin so thin it cannot be the point, which is what makes it the point. The agent speaks at length. The supplier answers in the register of someone who needs this account to remain open. The agent continues. The blowfly does not move from its ledge position [image: blowfly-witness-angle] and Taylor holds it there for the duration. What she notices is not the words — she has the words, she will have the words — but the shape of the agent's body when the supplier finally agrees to the reduction: the slight forward [mechanism: posture-of-satisfied-coercion] lean of a man who has confirmed something about the supply chain that was never actually in question. The fish account closes. The supplier's son picks up the empty crate. The household agent is already writing. Taylor releases the blowfly and pulls back to the passive layer.
+            scene_conflict:
+              protagonist_force: "Taylor as compound-eye witness, carrying the feed-record without reaction"
+              opposing_force: "Green-faction apparatus conducting smallfolk coercion through the fiction of a commercial dispute"
+              stakes_axis: political_register-prot
+            substance_delta:
+              axes_in_motion:
+                - axis: political_register-prot
+                  direction: up
+                  target_delta_magnitude: 0.5
+                  cost_ledger_anchor: null
+                  notes: "first feed-event of the week; provisioning-humiliation observed through compound eyes; resentment-color shifts from ambient to specific-object; neutral-instrumentally-observant further foreclosed"
+              axes_held:
+                - axis: moral_framework
+                  rationale: "observation is not a breach event; no delivery, no instrumentalization; framework at -2 and not moving"
+                - axis: relational_anchor_status
+                  rationale: "Wren not in scene; anchor holds at 4.5"
+                - axis: moral_legibility_to_self
+                  rationale: "contempt directed outward at the apparatus; no self-accounting event triggered here"
+                - axis: social_tether-antag
+                  rationale: "no Otto contact, no leverage event; patron-lever static"
+              density_target: 0.6-0.8
+          - slug: b01c13s02
+            seq: 2
+            status: scened
+            pov_narrator: taylor-hebert-kl-122ac
+            chunk: |
+              The second [event: magistrate-pretext-charge] lands four days later. The magistrate's hall is in a building Taylor has mapped before — not a court chamber proper, the [image: court-adjacent-hall-rented-room] back room of a chandler's house in the fringe district where the Hook meets the broader ward network, rented by the hour to whatever proceeding needs four walls and a chair of authority. She has a fly [image: single-fly-ceiling-corner] in the ceiling corner by the time the proceedings begin, placed the night before when she had cause to be on that lane and noted the preparation. The man brought in is Aldric, a ward-elder whose name is on the list Taylor delivered to Jarvis at d06 — she knew him as [force: black-faction-adjacent-ward-elder] by pattern-inference, not certainty, and she [mechanism: d06-list-delivery-consequence] set his name down in functional description as someone whose lane-contacts suggested Black-sympathizer networks in the lower ward. The charge against him is receiving stolen cord. The cord is not the point. Taylor reads the magistrate through the fly's perspective [mechanism: fly-reading-the-proceeding]: a man of middle age who writes before Aldric finishes speaking, who asks questions whose answers are already inscribed above the question in the procedural form, who glances once at the document the Green-faction clerk set down at the table's edge before the proceeding opened. Aldric speaks in the register of a man who does not understand what is happening to him and is attempting to explain the cord. The [force: green-apparatus-enforcement] magistrate does not need the explanation. Taylor holds the fly in the ceiling corner and does not move it. Aldric's name on her list. Aldric's hands on the table. The cord was not the mechanism; the list was. She does not file this under the accounting yet. She holds it and watches the proceeding to its end.
+            scene_conflict:
+              protagonist_force: "Taylor reading the proceeding through a fly, holding the connection between her list and Aldric's charge"
+              opposing_force: "Green-faction magistrate and clerk conducting a pretext proceeding with Taylor's intelligence as the prior mechanism"
+              stakes_axis: political_register-world
+            substance_delta:
+              axes_in_motion:
+                - axis: political_register-prot
+                  direction: up
+                  target_delta_magnitude: 0.5
+                  cost_ledger_anchor: null
+                  notes: "second feed-event; magistrate proceeding observed through a fly; Taylor watches the apparatus using her d06 list operationally; resentment acquiring operational specificity, approaching naming threshold"
+                - axis: political_register-world
+                  direction: up
+                  target_delta_magnitude: 0.5
+                  cost_ledger_anchor: null
+                  notes: "ward-elder pretext charge: Green apparatus operationalizes Taylor's d06 list; succession-enforcement channel advances through this proceeding"
+              axes_held:
+                - axis: moral_framework
+                  rationale: "observation is still not a breach event in Taylor's accounting; she watches the consequence of the d06 delivery but does not file a new breach column entry; framework holds at -2"
+                - axis: relational_anchor_status
+                  rationale: "Wren not in scene; anchor holds at 4.5"
+                - axis: moral_legibility_to_self
+                  rationale: "Taylor watches what her list did; she holds it without filing it; contempt directed outward, not yet turned to the ledger itself — recognition of repetition still foreclosed"
+                - axis: social_tether-antag
+                  rationale: "no Otto contact; patron-lever static; Aldric's detention is apparatus output, not a new leverage event for Otto over Taylor"
+              density_target: 0.6-0.8
+          - slug: b01c13s03
+            seq: 3
+            status: scened
+            pov_narrator: taylor-hebert-kl-122ac
+            chunk: |
+              That evening, [event: naming-event] on a lane she has walked five hundred times, Taylor stops moving and lets the two [image: two-feed-events-held-together] events sit in the same accounting. The household agent's forward lean. The magistrate's pre-inscribed form. The supplier's son with the empty crate. Aldric explaining cord he did not steal to a man who had already written the verdict. She has known the shape of this [mechanism: contempt-crystallization] for longer than she has been willing to name it: the specific way the apparatus uses the smallfolk as friction-surface, not as people, as the medium through which faction-logistics is conducted and disputed and enforced, the way a copper-penny margin is exercised because the exercise is the point, the way a pretext charge proceeds because pretext is sufficient when the form exists. She has had the texture of it since d05. What she did not have until now is the word. It arrives in the functional register: [mechanism: naming-act] contempt. Not resentment, which is diffuse and subjective and can be filed as temperament. Contempt, which is a verdict about the quality of something, accurate or inaccurate, with specific evidence for the assessment. She runs the evidence. The household agent's body. The magistrate's document order. The ward-elder list she delivered in functional description to Jarvis. She does not require more. The word is correct. She names it by name — [image: the-word-held] contempt — and then stands with it for the duration of two breaths, and then resumes walking. The contempt does not change the route. It does not change where she is going or what she does when she gets there. It is a finding, not a decision. She has had findings before. She knows what the ledger does with findings.
+            scene_conflict:
+              protagonist_force: "Taylor holding the two feed-events together and arriving at the word for what she has been observing"
+              opposing_force: "the accumulated feed-record of faction-apparatus behavior, presenting itself for assessment"
+              stakes_axis: political_register-prot
+            substance_delta:
+              axes_in_motion:
+                - axis: political_register-prot
+                  direction: up
+                  target_delta_magnitude: 0.5
+                  cost_ledger_anchor: null
+                  notes: "naming event: articulate-contempt threshold crossed; diffuse resentment becomes named by name; the word arrived as a finding, not a decision; contempt-without-refusal shape at first appearance; Taylor resumes walking"
+              axes_held:
+                - axis: moral_framework
+                  rationale: "naming the contempt is not a breach; the naming is directed outward; framework holds at -2"
+                - axis: relational_anchor_status
+                  rationale: "Wren not in scene; anchor holds at 4.5"
+                - axis: moral_legibility_to_self
+                  rationale: "contempt named outward with precision; recognition-of-repetition still not opened — she runs the evidence against the apparatus, not against the ledger; the directed-outward quality is the specific discipline that holds this axis"
+                - axis: social_tether-antag
+                  rationale: "no patron contact; contempt is Taylor-internal; Otto's leverage unaffected"
+              density_target: 0.7-0.9
+          - slug: b01c13s04
+            seq: 4
+            status: scened
+            pov_narrator: taylor-hebert-kl-122ac
+            chunk: |
+              Halvard finds her [event: halvard-encounter-staged] two days after the naming, at the water-trough at the lower end of the Hook where [image: water-trough-hook-lower-end] the chandler's row meets the open space before the fishmongery. He is there for the same reason he is always at water-points: someone sick in the vicinity, someone's water-carrying on his behalf. He does not engineer the encounter; he is in the lane because the lane holds a sick person and Taylor is in the lane because it is on her circuit. He says something about Aldric — the ward-elder's name has moved through the precinct in the way names move when a man is taken up on a charge, and Halvard has heard it, and Halvard says what he says in these encounters: that he knew Aldric, that Aldric's lane-contacts were not what the charge said they were, that someone made a determination about this man from outside the precinct and the determination was wrong. He does not say Taylor is responsible. He does not know she is responsible. He says it in his register: slower than her, paused at the connections, naming what he believes is wrong without providing a better plan. Taylor [mechanism: counter-argument-run-in-full] runs the counter-argument. She knows it already. She has run it before, at d07, at d09, at other encounters she did not record because the counter-argument did not change. The apparatus will not be slower or more principled at her request; the ward-elders caught in its enforcement logic will not survive Halvard's speed; the protection she was hired to maintain is not maintained by a cleaner method at the same cost. The counter is correct. She has the counter. [mechanism: halvard-response-foreclosed] She does not wait for Halvard's response to it, because the response cannot change what she does next, and she knows this, and she is not going to pretend the counter is open when it is not. The contempt is named. The counter is sufficient. Halvard is still speaking when Taylor moves on. He does not call after her. He is [image: halvard-still-present] still at the water-trough, still in his circuit, still the counter-argument that exists and will continue to exist and that she has now confirmed she does not need to hear in order to know what it is.
+            scene_conflict:
+              protagonist_force: "Taylor at the water-trough with the counter-argument already complete, not requiring Halvard's response"
+              opposing_force: "Halvard's continued presence as the counter-argument she has now formally foreclosed"
+              stakes_axis: moral_legibility_to_self
+            substance_delta:
+              axes_in_motion: []
+              axes_held:
+                - axis: moral_framework
+                  rationale: "Halvard encounter is not a breach event; Taylor neither confesses nor is confronted with new information; framework holds at -2"
+                - axis: relational_anchor_status
+                  rationale: "Wren not in scene; anchor holds at 4.5"
+                - axis: moral_legibility_to_self
+                  rationale: "contempt named in the prior scene; Halvard's function as moral mirror remains; Taylor runs the counter-argument but does not turn it toward the ledger; she is not yet examining the repetition — directed outward, not inward; holds at 5.5. CARRY_TO_WRITE: the not-turning-toward-the-ledger must take physical bone-form (held stillness / non-movement), not rationale-absence only."
+                - axis: social_tether-antag
+                  rationale: "Halvard has no lever on Otto's channel; foreclosure is Taylor-unilateral and does not affect patron-leverage; holds at 6"
+                - axis: political_register-prot
+                  rationale: "the naming event was scene 3; the foreclosure is the enactment of what the naming makes possible — contempt-without-refusal shape — not a further movement; holds at post-scene-3 level (5.0)"
+              density_target: 0.6-0.8
         handoff_in:
           open_threads:
             - "coverage gap: east-of-water-gate; Wren free movement the boundary"
@@ -8062,9 +8238,9 @@ books:
             - "non-extractable confirmation: social tether at near-peak 8; approaching cl-antag-d10 completion"
           world_state:
             - "KL 122 AC; coverage at scale; Green apparatus using Taylor's d06 list operationally"
-            - "political_register-world rank 7.5"
+            - "political_register-world rank 6.5"   # reconciled to aggregate-state authoritative (was stale 7.5); Phase 5 4-reviewer convergent DOC-FIX
           character_state:
-            - "Taylor: capability rank 6; position-prot-rise rank 5.5; moral_framework rank -2; relational_anchor rank 4.5; political_register-prot rank 3.5 (articulation threshold approaching)"
+            - "Taylor: capability rank 6.5; position-prot-rise rank 5; moral_framework rank -2; relational_anchor rank 4.5; political_register-prot rank 3.5 (articulation threshold approaching)"   # capability 6->6.5 + position-prot-rise 5.5->5 reconciled to c12 handoff_out + aggregate-state (Phase 5 continuity fault-002; was stale book-author pre-c12 prediction)
           source_chapter: b01c12
         handoff_out:
           open_threads:
@@ -8076,9 +8252,9 @@ books:
             - "cf-rhaenyra-pressure: Dragonstone consequences of courier detention propagating at remove"
           world_state:
             - "KL 122 AC; Green apparatus enforcement of ward-elder list visible in magistrate proceeding"
-            - "political_register-world rank 8"
+            - "political_register-world rank 7.0"   # 6.5 entering + c13 +0.5; corrected from stale 8 (Phase 5 4-reviewer convergent DOC-FIX)
           character_state:
-            - "Taylor: political_register-prot rank 5 (articulate-contempt); moral_framework rank -2; capability rank 6; relational_anchor rank 4.5"
+            - "Taylor: political_register-prot rank 5 (articulate-contempt); moral_framework rank -2; capability rank 6.5; relational_anchor rank 4.5"   # capability 6->6.5 reconciled to aggregate-state (held flat this chapter; Phase 5 continuity fault-003)
             - "Halvard: present in Flea Bottom but Taylor will not engage him again at substance"
           target_chapter: b01c14
 

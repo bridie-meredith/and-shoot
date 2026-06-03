@@ -162,6 +162,39 @@ All 11 actor vibes.md populated with:
 
 ---
 
+### 2026-06-03 — /and-facets b01c13 Phase 5 RUBRIC-FIDELITY card-resolution: 8 cards authored and provisioned
+
+**Trigger:** 3 R1 facet authors flagged 8 uncarted slugs (4 locations + 4 props) from b01c13 bones. Cards authored to clear the /and-facets Phase 5 card-resolution check.
+
+**Project:** taylor-westeros-good-intentions
+
+#### Locations (4)
+
+| slug | library path | warehouse path | note |
+|---|---|---|---|
+| `oc-hook-upper-provisioning` | `cards/locations/oc-hook-upper-provisioning.card.md` | `active-project/warehouse/oc-hook-upper-provisioning.md` | Library card pre-existing; warehouse copy was absent — authored now |
+| `oc-magistrate-hall` | `cards/locations/oc-magistrate-hall.card.md` | `active-project/warehouse/oc-magistrate-hall.md` | New — rented back room of chandler's house; pretext-proceeding site |
+| `oc-hook-lane` | `cards/locations/oc-hook-lane.card.md` | `active-project/warehouse/oc-hook-lane.md` | New — ordinary Hook lane; the naming scene's hinge location |
+| `oc-hook-lower-water-trough` | `cards/locations/oc-hook-lower-water-trough.card.md` | `active-project/warehouse/oc-hook-lower-water-trough.md` | New — public water-point at lower Hook; Halvard circuit stop; foreclosure/scene-close location |
+
+All 4 location cards: quality full, scope library (both copies per pl-2026-05-28-001 Rushwick convention), world planetos, references: cond-kl-geography-122ac + cond-kl-social-physics-122ac + loc-flea-bottom (+ cond-kl-court-state-122ac for oc-hook-upper-provisioning and oc-magistrate-hall).
+
+#### Props (4)
+
+| slug | library path | warehouse path | quality | note |
+|---|---|---|---|---|
+| `oc-d06-document` | `cards/props/oc-d06-document.card.md` | `active-project/warehouse/oc-d06-document.md` | full | Recurring significant prop — Taylor's intelligence turned enforcement instrument; lifted by magistrate @15 |
+| `oc-fish-account-ledger` | `cards/props/oc-fish-account-ledger.card.md` | `active-project/warehouse/oc-fish-account-ledger.md` | scant | Ephemeral — s01 account-close only |
+| `oc-procedural-form` | `cards/props/oc-procedural-form.card.md` | `active-project/warehouse/oc-procedural-form.md` | scant | Ephemeral — s02 verdict-before-speech only |
+| `oc-water-skin` | `cards/props/oc-water-skin.card.md` | `active-project/warehouse/oc-water-skin.md` | scant | Ephemeral — s04 scene-close fill @31 |
+
+#### Index updates
+
+- `cards/locations/INDEX.md`: 4 slugs added to by_world/planetos and by_quality/full (oc-hook-lane, oc-hook-lower-water-trough, oc-hook-upper-provisioning, oc-magistrate-hall)
+- `cards/props/INDEX.md`: 4 slugs added (oc-d06-document to full + portable; oc-fish-account-ledger / oc-procedural-form / oc-water-skin to scant + portable)
+
+---
+
 ### 2026-05-30 — /and-facets b01c07 Phase 0 location gate: oc-sept-corner authored and provisioned
 
 **Trigger:** /and-facets b01c07 Phase 0 ABORTS without warehouse card for `oc-sept-corner` (the sole location in b01c07 bones).

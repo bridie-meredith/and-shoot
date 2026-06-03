@@ -5119,3 +5119,148 @@ pr_ref: null
 defer_until: null
 supersedes: null
 ```
+
+---
+
+## PROP-0038
+
+```yaml
+id: PROP-0038
+created_at: 2026-06-03T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: failure
+  source_report: active-project/staff/auditor/write-b01c13-bone-gate.md
+  source_verdict: |
+    /and-write b01c13 Phase 6 bone-gate FAIL(1-HARD) → remediated to PASS.
+    Phase 2 auditor flagged 3 s04 speech bones FAULT-BONE-DELTA-MALFORMED because
+    they are held (axis_moves: []) in an all-held foreclosure scene; bones.schema.md
+    §Dialogue-anchor bones requires canonical speech bones to move >=1 communication-
+    class axis. Orchestrator ruled held-discipline speech (speech that deliberately
+    holds a communication-class axis with foreclosure/discipline rationale) is licit.
+    This is the second adjudication ruling on speech-bone schema interpretation
+    (first: pl-2026-05-30-003, custom-signature axis taxonomy, b01c06).
+  gate_path: .claude/commands/and-write.md#phase-6
+target:
+  type: schema
+  path: schemas/bones.schema.md
+  section: "Dialogue-anchor bones (URI-WRITE-DIALOGUE-COBONDED, 2026-05-25)"
+change_type: modify
+rationale: |
+  bones.schema.md §Dialogue-anchor bones, rule 1 (canonical speech form) states:
+  "Required substance_delta: >=1 communication-class axis (community / knowledge /
+  reputation / trust)." This is read by the Phase 2 auditor as requiring axis_moves[]
+  to be non-empty — i.e. the speech must MOVE a communication-class axis, not merely
+  hold one.
+
+  b01c13 s04 is an all-held foreclosure scene: every bone holds flat; no axis moves.
+  The three speech bones (s04n03 Halvard / s04n04 Taylor / s04n06 Halvard) are held-
+  discipline bones — the speech IS the holding of the relational/communication-class
+  axis (social_tether-antag, relational_anchor_status) flat, with foreclosure rationale.
+  This is structurally valid: a character speaking while disciplining a communication-
+  class axis to hold is a meaningful bone shape. The schema's silence on this case
+  caused FAULT-BONE-DELTA-MALFORMED false positives that required an orchestrator
+  adjudication ruling to resolve.
+
+  This is the SECOND time the speech-bone rule required an interpretation ruling:
+  - First (pl-2026-05-30-003, b01c06): the universal questionnaire axis slugs
+    (community / knowledge / reputation / trust) do not match this project's custom
+    signature; ruling: relational_anchor_status + social_tether-* are the project's
+    communication/relational-class axes. Fix: generalize the axis-class language.
+  - Second (b01c13): a speech bone that holds a communication-class axis in an all-
+    held scene fires FAULT-BONE-DELTA-MALFORMED because axis_moves: []. Ruling:
+    held-discipline speech is licit when axes_held[] declares a communication-class
+    axis with a foreclosure/discipline rationale.
+
+  The pl-2026-05-30-003 generalization (custom-signature axis class language) and the
+  held-discipline license are SEPARATE schema additions — pl-2026-05-30-003 fixes the
+  axis-slug mismatch; this proposal licenses the held-discipline form. Both are needed.
+  pl-2026-05-30-003 is an open parking-lot item awaiting a pipeline tri-walk or schema-
+  edit pass; this proposal can be applied in the same pass.
+
+  The fix is precision-writable. The held-discipline license has a narrow predicate:
+  (a) axes_in_motion: [] for the scene (all-held scene), AND (b) axes_held[] on the
+  speech bone declares a communication-class axis, AND (c) the held rationale names the
+  discipline (foreclosure / withholding / held-flat-intentional). This does not relax
+  the general movement requirement — speech bones in non-all-held scenes must still
+  move >=1 communication-class axis.
+
+  Recurrence_count: 2 (pl-2026-05-30-003 adjudication + b01c13 adjudication). Two
+  orchestrator adjudication rulings on the same schema section within 7 chapters is
+  sufficient to treat the gap as deterministic rather than waiting for a third instance.
+  The predicate is narrow, enumerable, and non-ambiguous; the false-positive blast
+  (FAULT-BONE-DELTA-MALFORMED on licit held speech in all-held foreclosure scenes) will
+  recur on every future all-held dialogue scene without this amendment.
+evidence_refs:
+  - "active-project/staff/auditor/write-b01c13-bone-gate.md — pass-bone-s04n03/n04/n06:
+    all three speech bones pass on adjudication; auditor note cites held-discipline speech
+    licit when axes_held[] declares a communication-class axis with foreclosure/discipline
+    rationale; explicitly names this as the second speech-bone interpretation ruling."
+  - "active-project/staff/showrunner/parking-lot.md — pl-2026-05-30-003: SCHEMA AMBIGUITY
+    (ruled, needs formalization): custom-signature axis-taxonomy ruling at b01c06; proposes
+    (a) bones.schema.md generalization of axis-class language. The held-discipline license
+    is a SEPARATE addition to the same schema section — this proposal can be co-applied."
+  - "schemas/bones.schema.md — Dialogue-anchor bones rule 1: 'Required substance_delta:
+    >=1 communication-class axis (community / knowledge / reputation / trust)' — axis slugs
+    are universal-questionnaire only; no held-discipline license; bottom paragraph: 'speech
+    bones must move at least one communication-class axis' — implies non-empty axis_moves[]."
+  - ".claude/commands/and-write.md — Phase 1 step 5 speech-bone form; Phase 2
+    FAULT-BONE-DELTA-MALFORMED definition (magnitude 0 or null is malformed, implying
+    axis_moves: [] on a speech bone is malformed when the movement requirement is enforced)."
+recurrence_count: 2
+proposed_diff: |
+  In schemas/bones.schema.md, §Dialogue-anchor bones, rule 1 (canonical speech form),
+  amend as follows:
+
+  CURRENT TEXT (rule 1):
+    1. **Canonical speech form** — `<speaker-slug> speaks to <listener-slug>`.
+       Required substance_delta: ≥1 communication-class axis (community / knowledge /
+       reputation / trust).
+
+  AMENDED TEXT (rule 1):
+    1. **Canonical speech form** — `<speaker-slug> speaks to <listener-slug>`.
+       Required substance_delta: one of:
+         (a) **Movement form.** axis_moves[] declares ≥1 communication/relational-class
+             axis (universal questionnaire: community / knowledge / reputation / trust;
+             custom signature: the axis/axes the signature designates relational or
+             communicative — e.g. relational_anchor_status, social_tether-*). The axis
+             is moved (non-zero magnitude).
+         (b) **Held-discipline form.** axes_held[] declares ≥1 communication/relational-
+             class axis AND axis_moves: [] AND the scene's axes_in_motion: [] (all-held
+             scene). The held rationale MUST name the discipline: foreclosure /
+             withholding / held-flat-intentional / any equivalent. This licenses speech
+             that enacts the deliberate non-movement of a relational/communicative axis
+             — e.g. a character speaking while foreclosing a patron-channel, refusing a
+             relational proposition, or withholding the response the other character
+             invited.
+
+  Also in §Dialogue-anchor bones, at the bottom paragraph ("Speech bones must move at
+  least one communication-class axis..."), amend:
+
+  CURRENT:
+    Speech bones must move at least one communication-class axis (community / knowledge /
+    reputation / trust) per the substance bone-gate; speech bones whose substance_delta
+    lists only physical-action axes are malformed.
+
+  AMENDED:
+    Speech bones must satisfy rule 1(a) or rule 1(b) above. Speech bones in axis-move
+    scenes (axes_in_motion non-empty) must use form (a): move ≥1 communication/relational-
+    class axis. Speech bones in all-held scenes (axes_in_motion: []) may use form (b):
+    hold ≥1 communication/relational-class axis with discipline rationale. Speech bones
+    whose substance_delta declares only physical-action axes without any communication/
+    relational-class entry in either axis_moves[] OR axes_held[] are malformed.
+
+  NOTE: This amendment incorporates pl-2026-05-30-003 proposed generalization (a) —
+  axis-class language is generalized to cover custom-signature axis slugs. If
+  pl-2026-05-30-003 is resolved at the same schema-edit pass, both changes should be
+  applied together. The parking-lot item can be stamped resolved at that point.
+
+cost_estimate: S
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```

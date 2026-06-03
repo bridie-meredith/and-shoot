@@ -1,14 +1,22 @@
 ---
 facet: feeling
-sources: [taylor-hebert-kl-122ac-b01-c12]
+sources: [septon-halvard-flea-bottom-b01-c13, taylor-hebert-kl-122ac-b01-c13]
 note: consolidated by build_cite_index from per-source slices. Single top-of-file frontmatter per r3-signal-001.
 ---
 
-# source: taylor-hebert-kl-122ac-b01-c12
+# source: septon-halvard-flea-bottom-b01-c13
 facet: feeling
-episode: b01-c12
-author: taylor-hebert-kl-122ac
+episode: b01-c13
+author: septon-halvard-flea-bottom (dialogue-writer fork, feeling-show output mode)
+r2-judged: septon-halvard-flea-bottom impersonator (FACET-JUDGE mode)
 ---
-1 @20 taylor-hebert-kl-122ac: her hand stops short of the source-field and does not come down | expressed: partial
-2 @40 taylor-hebert-kl-122ac: her breath stays flat and does not lift | expressed: no
-# r2-judge: KEEP feel:1 @20 (5/5 multi-justification; refusal-withhold somatic on the held hand, NI fires @21 not @20 — cognition-register distinct, non-redundant), KEEP feel:2 @40 (5/5; suppression-hold on flat-held breath, NI silent @40 by design — shape-word cognition lives @38), 0 adds. Both clean: no named-feeling vocab, same-subject compounds (hand / breath) within permitted negative-micro-action form, vocab-distinct, ≤1/scene (loc-state segments @17-23 and @29-42), 2/42≈4.8% sparsity. @40-KEEP carries an NI-dependency: if the parallel R2 NI judge ADDS an NI fire at @40, re-verify feel:2 does not become a Q1-dup (see decision-shard).
+
+1 @31 septon-halvard-flea-bottom: He works the water-skin under the trough-spout and sets it on his shoulder for the next house. | expressed: yes
+
+# source: taylor-hebert-kl-122ac-b01-c13
+facet: feeling
+episode: b01-c13
+author: taylor-hebert-kl-122ac (dialogue-writer fork, feeling-show mode)
+r2-judged: taylor-hebert-kl-122ac impersonator (FACET-JUDGE mode)
+---
+2 @21 taylor-hebert-kl-122ac: the breath goes out and her weight settles back onto the heel that had stopped | expressed: no
