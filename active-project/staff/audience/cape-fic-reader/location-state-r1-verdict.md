@@ -2,31 +2,29 @@
 reviewer: cape-fic-reader
 facet: location-state
 cycle: 1
-episode: b01c11
+episode: b01-c12
 date: 2026-06-03
 verdict: accept
 ---
 
-## Entry-level callouts
+# Adversarial Read — location-state b01-c12
 
-None blocking.
+Eight entries, four locations, three time-of-day advances across one silent accounting chapter. My single question: does the spatial layer put a real body at a real surface at each beat, or is this geometric bookkeeping that floats free of the action?
 
-[loc-state:1 @1] Feed-station, morning, packet at hand-off. Board-state reset after c10's end-of-day close. The time-of-day reboot (morning) + the physical packet-at-surface-edge frame give me the channel-now-live read I need before anything else moves. Ceremony-free = load delivered.
+**loc-state:1 @1 (the-hook-ward, overhang-geometry-active)** — "tight geometry that makes dense insect placement read as witch-label; place-anchor for the morning circuit." This is operational texture reading as concrete: the WHERE tells me WHY the gap is structural, before anything happens. That's the cape-fic move I want — rule stated before it acts.
 
-[loc-state:2 @8] Cloth-merchant shop, back-worktable, rushlight-lit. First-beat-in-new-location exception fires correctly. The enclosed rushlight space is what makes the burn's dread register legible — a burn in an open market is noise; a burn in a low-lit back room is protocol. This entry does real board-state work.
+**loc-state:2 @3 (gate-tower-shadow-west, rendering-yard-wall-east)** — two named architectural features as the gap's bounding walls. "The body placed inside the coverage boundary" is the correct caption: the map's edges are physically named, so the gap reads as a specific spatial fact rather than a policy decision. Surveillance mechanics legible here. The gap has walls I can see.
 
-[loc-state:3 @9] Messenger crosses the shop-threshold, off-hour body. The off-hour charge is the load this entry delivers — without a threshold-crossing that names the visitor's timing as unusual, the @11 burn loses its standing-protocol read. Clean transitional verb, clean state-change from @8.
+**loc-state:4 @11 and loc-state:6 @23 (packet-at-surface-edge / sealed-packet-departing)** — operational bookends on the collision scene. The apparatus enters at the ledger's working edge; the sealed refusal exits at the same edge. The surface is load-bearing here: it's the physical site where the collision between the coverage-gap and Otto's apparatus becomes visible. The packet has a tracked physical location through the exchange.
 
-[loc-state:4 @17] Soap-lane-contact crosses the cross-lane. Scene-C place-anchor. The cross-lane open to approach is the delivery geometry. No attack: this is the minimum needed for the scene to have a physical location.
+**loc-state:5 @17 (midday, gap-column-pending)** — time advance from morning to midday anchored to the refusal's sit-down. Same surface, different clock. The time-advance tells me the deliberation took real duration. That's not texture — that's state.
 
-[loc-state:5 @22] Feed-station, end-of-day, accounting-in-motion. Time-of-day advance explicit. The station-surface-clear + ledger-open posture distinguishes this from scene-A's morning posture at the same location. Without this differentiation, the four-arm-close sequence has no temporal anchor. Clean.
+**loc-state:7 @29 (late-afternoon, muddy-way-extension-in-motion)** — the scene-D open. The ledger surface in late-afternoon as the second ward-cluster deploys. The time advance is anchored to a specific operational event (second cluster addition), not to atmosphere.
 
-[loc-state:6 @23] Continuity-carry through the four-arm-close @23–@26 run. Single carry-entry, correct form — names the persisting thread (accounting surface under hand) without repeating @5's sensory note. The rubric-approved carry for a fusion-eligible-run with falling-to-close-image rhythm.
+**loc-state:8 @42 (breach-column-receiving, accounting-closed)** — "breach column at accounting-close." The entry correctly captures the flat administrative nature of the chapter's moral catastrophe: filed as a column header, not as an event. The location-state holds its register flat even at the terminal cost-filing. That's earned and correct for this chapter's shape.
 
-## Convergence trace
+What I looked for and didn't find: no decorative spatial fires — no location entry for a corner that has no load, no time-of-day advance that exists for texture. Every entry carries a named ledger-state or a named scene-transition. The packet is tracked. The surface is named. The body has a place at each beat.
 
-SEAM-C11-LOC-001 and LOC-002 (no warehouse cards for cloth-merchant-shop and soap-rendering-lane slugs) are margit pre-stitch referrals, not audience-blocking failures. SEAM-C11-LOC-003 (feed-POV philosophy: whether the grain-measures junction earns a loc-state anchor) was correctly decided — Taylor's body does not occupy the junction; the feed mediates; no loc-state. SEAM-C11-LOC-004 (slug canonicalization for the Hook sub-locations) is a margit consistency item, not a board-state legibility failure.
+No convergence with auditor findings on this facet. The auditor's signals (flag-004 stale memory:2 citations, flag-005 slug resolution gaps) don't touch the location-state layer.
 
-## Verdict rationale
-
-Six entries across four distinct physical spaces. The three place-anchors, the time-advance, and the single continuity-carry are all the minimum-necessary set for a 4-scene single-day circuit. No dexterity-in-place fires. No entries that are scene-painting without necessity. The board stays legible spatially throughout the chapter. No hot buttons fire. Accept.
+**verdict: accept**
