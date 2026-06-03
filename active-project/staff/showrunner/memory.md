@@ -6683,10 +6683,23 @@ books:
               omission_rationale: The two-bone split (n06 = ledger closes; n08 = face persists) is the enacted form of the opposing force. The surplus of n08 over n06 is the scene's argument.
 
       - slug: b01c11
-        status: audited-r1-mechanical
+        status: audited-r1
         bones_file: theater/bones/b01-c11.md
         bones_count: 27
         substance_bone_gate_verdict: PASS
+        facets:
+          facets_path: active-project/theater/facets/
+          round_1_complete: true
+          round_2_complete: true
+          audit_path: active-project/staff/auditor/facets-final-audit.md
+          audit_complete: true
+          audit_findings: "0 HARD / SIGNAL: 3 FREQUENCY-BAND + 3 METADATA + 1 CONSTRAINT(state-old-state-continuity) + 3 RUBRIC-FIDELITY(card-resolution) + 1 PILE-UP(pass)"
+          audience_gate_path: active-project/staff/auditor/facets-audience-gate-r2.md
+          audience_gate_complete: true
+          audience_gate_cycles: 2
+          bidirectional_loop: one-sided   # auditor (mechanical band/metadata/card) + audience (NI/vibes register-drift) fired disjoint; TASTE-FLAG for NI/vibes rubric REJECT promotion (Rule 11)
+          facet_summary: "10 facets: loc-state 6, NI 7, sensory 5 (3 grd-licensed), state 19, memory 2, feeling 1, metaphor 0, vibes 12, exposition 2; 55 entries, 26/27 decorated. Context-ledger empty (R1 oriented spine); grounding-ledger 2 satisfied (grd-001@12/@13/@14, grd-002@19). Earth-Bet fence CLEAN."
+          margit_card_referrals: ["oc-cloth-merchant-shop (loc)", "oc-soap-rendering-lane (loc)", "oc-cloth-merchant-paper (prop)", "oc-soap-lane-report-packet (prop; before c12)", "oc-feed-ledger field-extensions", "monument-mass-casualty-foreshadow / cond-mass-casualty-foreshadow-122ac (before verdict)"]   # parking-lot pl-2026-06-03-001/002
         substance_delta_measured:
           axes_moved:
             social_tether-prot-rise: "+1.0 (flat 6 +0.5 + flat 25 +0.5)"

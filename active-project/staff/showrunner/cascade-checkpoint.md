@@ -27,9 +27,9 @@ cascade:
     slug: b01c10
     completed_at: 2026-06-02T04:15:00Z
   next:
-    command: /and-facets b01c11
+    command: /and-stitch b01c11
     args: [b01c11]
-  reason: chapter-substance-write-review-complete-practical-limit   # c11 stages 1-3 of 5 COMPLETE (substance + write + review-bones), all PASS + committed. CLEAN HALT at the pristine bones-review boundary (status bones-written, no partial facet state) — mirrors c09->c10 precedent (facets+stitch = the larger half, run with fresh budget). Resume: /and-facets b01c11 (CLEARED; bones_review PASS / follow_check PASS-WITH-NOTES; 6 carry-items to Phase 2.5 in chapters[b01c11].bones_review.carry_to_facets_phase_2_5). Then /and-stitch b01c11 (P1-9 + P10 forward-thread). Watch: consecutive-abstract N=6 (c10+c11) -> /and-cohere triage before c13 (DEC-0073).
+  reason: chapter-production-in-progress   # c11 substance+write+review-bones+FACETS COMPLETE. /and-facets: 9/9 facets 3-of-3 ACCEPT (cycle 2; NI+vibes fixer for dark-fantasy burn-register-drift), auditor 0 HARD, fence CLEAN, orchestrator-critic SUCCESS. status audited-r1. Cascade -> /and-stitch (P1-9 cold-read + P10 forward-thread). Stitch carries: VOICE-FIXABLE @16/@23-26 (P4 voice-embodiment); grounding @12/@13/@14/@19 landed; chunk_cold_read SHIPPED-WITH-RISK-RECORDED DEC-0072 (arms P8.5+P9); margit loc/prop cards (pl-2026-06-03-001, stitch P0). Watch: consecutive-abstract N=6 -> /and-cohere before c13 (DEC-0073).
   halt:
     class: practical-session-limit
     at_stage: bones-review-complete (3 of 5 cascade stages)
