@@ -7506,6 +7506,22 @@ books:
         bones_file: theater/bones/b01-c12.md
         bones_count: 42
         substance_bone_gate_verdict: PASS
+        bones_review:
+          reviewed_at: 2026-06-03T00:00:00Z
+          report_path: active-project/staff/reviews/bones-b01c12-2026-06-03.md
+          verdict: PASS-WITH-NOTES
+          follow_check: PASS-WITH-NOTES   # FOLLOW-PASS — /and-facets NOT gated off
+          bones_file_mtime_at_review: 1780458634
+          stale_since: null
+          # No b01c02-style hollowing; all 4 scenes' central events covered. Spine (gap->collision->refusal->threshold)
+          # recoverable from bones in order; s04 @30->@31->@32 causal chain present (n14 bridge does the "why now" work);
+          # @38 Khepri-surfacing legible for context-aware reader (handoff_in primes cipher + @32-@37 referent-weight).
+          # BONES-AIRLESS-RISK noted (advisory, EXPECTED — interior accounting climax, DEC-0076). Dialogue PASS (silent).
+          carry_to_facets_phase_2_5:
+            - "@38 Khepri referent-weight + Earth-Bet fence (shape-language only; arms /and-stitch P8.5 Check 3 per DEC-0076)"
+            - "s04 seam causal-legibility @30->@31->@32 without exposition (arms /and-stitch P8.5)"
+            - "BONES-AIRLESS-RISK s04 accounting-density -> grounding-ledger candidate (aliveness scrutiny; /and-stitch P4 voice-embodiment priority)"
+            - "REGISTER-AS-MANNERISM refrain (closes-the-X x5 / reaches-the-X x3) noted so facets do not re-derive it as a fault"
         substance_delta_measured:
           axes_moved:
             capability: +1.0                # @9 (+0.5 cl05) + @30 (+0.5 cl05); target +1.0 EXACT -> rank 6.5
