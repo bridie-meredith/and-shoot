@@ -1,5 +1,29 @@
 # studio STM
 
+## 2026-06-03 — /and-facets b01-c13 Phase 1 R1 sensory authoring (BLIND)
+
+Chapter b01c13: 31 bones, 4 scenes. Two feed-observation scenes (s01/s02), one solo interior hinge (s03), one live-dialogue scene (s04). Four locations across the chapter.
+
+SENSORY: 4 entries, 0 cull. Density 4/31 = 12.9% — above standard 3-6% ceiling; short-chapter exemption NOT active (31 >= 30). Defended on modality-diversity (3 modalities: smell + tactile + sound) and per-brief grounding priority (all four key anchor zones covered). Per-scene cap: s01=1, s02=0, s03=1, s04=2 — all within ≤3. ADVISORY not blocking.
+
+  sensory:1 @1 — smell: lane-morning-air -> salt-fish-brine-platform. Scene-A entry; Taylor physically present at the provisioning-store loading platform (holds the fly bodily, not remote deployment). Brine/salt-fish smell onset at platform arrival. Q1: "takes" is bare; Q2: brine-provisioning smell is large-magnitude vs. lane-morning-air. Old-state from loc-state:1 @1 + series Hook-lane morning vocabulary.
+  sensory:2 @20 — smell: lane-evening-air -> tallow-smoke-drift. Scene-C hinge grounding; the tallow-smoke crossing the lane is the environmental anchor that keeps the naming located in a body on known ground per scene-map grounding note. Q1: "crosses" is bare — the SVO carries no smell intensity. Q2: tallow-smoke is a large-magnitude olfactory inflection on a Hook rendering lane at evening. Spike (transient drift). Old-state from loc-state:5 @19 + series Hook-lane evening vocabulary.
+  sensory:3 @25 — tactile: lane-stone-paving-ambient -> water-trough-rim-cool. Scene-D water-point grounding; Taylor reaches the water-trough. Cool damp stone of trough rim vs. dry lane paving. Q1: "reaches" is bare. Q2: moisture-cool stone trough rim is a distinct tactile register shift. Old-state from loc-state:6 @24 + series lane-tactile vocabulary.
+  sensory:4 @31 — sound: lower-hook-lane-ambient -> water-trough-fill-sound. Chapter-close terminal image; Halvard fills the water-skin. Q1: "fills" is bare — no audible quality in the SVO. Q2: water entering leather at the trough is a discrete audible event that becomes the dominant sound in the chapter's closing image. Old-state from loc-state:6-7 + series lower-Hook ambient vocabulary.
+
+Key REJECT decisions:
+  scene-B (@10-@18): ALL REFUSED — fauna-feed-extension across the entire scene. Taylor is operating the fly remotely (placed the night before); all perceptions mediated. Confirms b01c11 LTM ruling: extended-range insect-feed perception is narrator-interest territory.
+  @7 (agent drops shoulders — posture event; no audience-side perceptual inflection): REFUSE
+  @8 (son picks empty-crate — hollow-wood-on-stone sound borderline; sub-threshold in outdoor provisioning-platform ambient): REFUSE Q2
+  @21-@22 (Taylor takes two-breaths / sets jaw — interior body action; not audience-side environmental): REFUSE interior-only
+
+SEAMS:
+  SEAM-C13-SENSORY-001: density 12.9% defended on modality-diversity + grounding-priority brief; R2 auditor may cull to 2-3 fires if defense fails. Strongest pair to preserve: sensory:2 (@20 tallow-smoke, s03 hinge) + sensory:3 or :4 (s04 water-point).
+  SEAM-C13-SENSORY-002: sensory:1 (@1 scene-A) depends on Taylor being physically at the provisioning platform (not remote fauna-feed). R2 reviewer confirm: "Taylor holds a blowfly on the loading-platform crate-ledge" = bodily present. If R2 rules remote-only, sensory:1 must be deleted.
+  SEAM-C13-SENSORY-003: no visual fires (no discrete light-inflection events above threshold in any scene). Brief requests visual in mix — none found that clear Q1/Q2.
+
+Files: theater/facets/sensory-b01-c13.md (4 entries) + theater/facets/_inflight/proto-lines-sensory.md
+
 ## 2026-06-03 — /and-facets b01-c13 Phase 1 state-updates-env authoring
 
 Chapter b01c13: 31 bones, 4 scenes, 4 distinct locations. Hinge chapter — contempt named (s03), Halvard foreclosed (s04). Sparse env/prop chapter: most action is feed-observation (s01/s02) and interior (s03) with no props changing Taylor's hands.

@@ -56,6 +56,22 @@ STATE-UPDATES-ENV (13 entries, 1 cull; density 13/31 = 42%):
 
 ---
 
+## 2026-06-03 — b01c13 sensory R1 blind authoring at /and-facets Phase 1
+
+Chapter b01c13: 31 bones, 4 scenes. The articulated-contempt chapter. Four distinct locations.
+
+SENSORY (4 entries, 0 cull):
+  sensory:1 @1 smell — lane-morning-air -> salt-fish-brine-platform. Scene-A entry; Taylor bodily present at provisioning-store loading platform. Brine/salt-fish onset. Old-state from loc-state:1 @1.
+  sensory:2 @20 smell — lane-evening-air -> tallow-smoke-drift. Scene-C hinge grounding; keeps the naming located in a body on known ground. Old-state from loc-state:5 @19.
+  sensory:3 @25 tactile — lane-stone-paving-ambient -> water-trough-rim-cool. Scene-D water-trough grounding; Taylor reaches the trough. Old-state from loc-state:6 @24.
+  sensory:4 @31 sound — lower-hook-lane-ambient -> water-trough-fill-sound. Chapter-close terminal image; Halvard fills water-skin after Taylor departs. Old-state from loc-state:6-7.
+
+Density: 4/31 = 12.9% — ADVISORY above standard ceiling; short-chapter exemption NOT active (31 >= 30). Defended on 3 modalities (smell/tactile/sound) + grounding priority. Per-scene: s01=1, s02=0, s03=1, s04=2 — all within ≤3 cap.
+
+FAUNA-FEED RULING: Scene-B (@10-@18) — all refused. Taylor operates the fly remotely (placed the night before). Confirms prior ruling. Scene-A (@1-@9) — Taylor physically present; sensory:1 is legitimate (not fauna-feed). Physical-presence vs. remote-operation distinction flagged for R2 confirmation (SEAM-C13-SENSORY-002).
+
+Files: theater/facets/sensory-b01-c13.md (4 entries) + theater/facets/_inflight/proto-lines-sensory.md
+
 ## 2026-06-03 — b01c13 location-state R1 blind authoring at /and-facets Phase 1
 
 Chapter b01c13: 31 bones, 4 scenes. Four distinct locations. Two feed-observed scenes (blowfly witness), one solo interior (naming), one live-dialogue (foreclosure). This is the hinge chapter — contempt named + enacted.
