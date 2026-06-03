@@ -79,3 +79,40 @@ NOT entered in the grounding-ledger; forwarded to /and-stitch Phase 4 voice-embo
 - **grd-002 @19 (seal @21 rides same anchor at stitch):** physical specificity at the packet cycle — the packet's weight/texture in hand at @19, the surface under the stylus, so the routing decision is a person's hands completing a cycle with a piece missing, not a clean data operation. Keeps the foreclose-bearing sequence located per the s03 ABSTRACTION-DOMINANT advisory (grounding 1/threshold 2).
 
 **Forward to /and-stitch Phase 4 (report-only, not 4.6):** @16 timestamp render + @23-@26 four-arm-close run — voice-embodiment / ACCOUNTING-IN-MOTION-NOT-CATALOG; no material add.
+
+---
+
+# Phase 4.6 Step 2 — FINAL re-check (post-grounding-add)
+
+generated: 2026-06-03
+reviewer: context-follow-reviewer + aliveness-reviewer (CONTEXT-AWARE; has read c01-c10 — NOT a cold read)
+source-graph: active-project/theater/proto-lines/b01-c11.md (27 bones, post-grounding-add canonical)
+adds-under-review: sensory:3 @12 (thermal: shop-ambient -> ash-dish-residual-warmth) + sensory:4 @14 (smell: paper-burning-char -> char-smoke-curl) + sensory:5 @19 (tactile: hands-empty -> packet-cloth-weight) — all licensed-grounding-exception (sensory facet now 5 entries; 18.5% density under LICENSED-GROUNDING-EXCEPTION exemption from frequency-band cap)
+grounding-ledger: grd-001 + grd-002 both status: satisfied
+
+## AXIS 1 — COMPLETENESS (re-confirm)
+
+The grounding-adds are sensory-modality embodiment entries. They add no exposition, name no new node, and breach no protected pattern (suppressed-recognition fence / HALVARD-FORECLOSE-AS-STRUCTURAL-GAP). They cannot open or close a follow-gap — they put a body on already-followable beats. The four R1/R2 follow-points (Dragonstone-distance irony @11→@16, cut-thread causality, Halvard-slot-absence @20, second-withhold parallel @16) are unchanged and remain covered by the same surfaces verified at Phase 4.5. Context-ledger remains EMPTY (0). No new gap manufactured.
+
+**AXIS 1 RESULT: FOLLOWABLE (unchanged).** No GLARING-HOLE.
+
+## AXIS 2 — READABILITY / ALIVENESS (the two airless holes)
+
+**grd-001 @12 (+@13/@14 feed-relay) — CLOSED.** The bare @12-@14 burn-aftermath stretch now carries body on two surfaces. sensory:3 @12 (iron-dish residual warmth) puts the settled-ash materiality on a perceptual surface — the dish holds burn-residue heat after the page is fully ash, an in-room physical fact, audience-perceptible without feed-extension. sensory:4 @14 (char-smoke-curl) delivers the two-class feed-relay datum the sensory facet refused under fauna-feed-extension (SEAM-C11-SENSORY-001 RESOLVED). Between narrator:2@11 (burn onset) and narrator:3@16 (timestamp), the aftermath is no longer on no surface: heat-residue at @12, smoke-curl at @14. The DREAD register no longer decays to a filed "the feed flags a burn" classification — the residue is a perceived physical fact. Airless symptom CLOSED.
+
+**Earth-Bet fence on sensory:4 @14 — HELD.** The smoke-curl reads as physical sensory data relayed through the insects in the worktable's ambient zone, anchored old-state to sensory:1@11's established char (paper-burning-char -> char-smoke-curl). It is olfactory/physical ambient-zone relay — a consequence of the burn that the feed registers — NOT mind-reading the cloth-merchant. No interior-state inference about the merchant appears anywhere in the entry. The fence holds: this is the feed perceiving what is physically there, the same domain narrator:2@11 already legitimized for the burn onset. Confirmed clean.
+
+**grd-002 @19 — CLOSED.** sensory:5 @19 (packet cloth-weight in hand) puts the body into the s03 routing cycle. The bare verb "opens" did not self-carry tactile register; the cloth-weight now locates Taylor's hands at the routing open. narrator:4@20 keeps the MIND present at the foreclose; sensory:5@19 puts the BODY across @19→@21 (seal rides the same anchor at stitch). The routing-WITHOUT-the-Halvard-test no longer lands as a clean data operation with no one performing it — there is a person's hands completing a cycle with a piece missing. Airless symptom CLOSED.
+
+**Is there a body to inhabit at the burn + routing beats now? YES.** Both licensed loci were the precise loci the airless-hole opened; both adds land exactly on them. The remaining VOICE-FIXABLE beats (@16 timestamp render, @23-@26 four-arm-close run) are unchanged and remain forwarded to /and-stitch Phase 4 — they were never grounding-ledger items and do not bear on this re-check.
+
+**AXIS 2 RESULT: ALIVE.** Both grd lines satisfied; the two airless holes closed by adds targeting the named loci. No RESIDUAL-HOLE.
+
+## COMBINED GATE
+
+| Axis | Verdict |
+|------|---------|
+| Completeness | FOLLOWABLE (unchanged; context-ledger 0) |
+| Readability/Aliveness | ALIVE (grounding-ledger 0 open; both satisfied) |
+
+**FOLLOWABLE AND ALIVE? YES.** → /and-facets PROCEEDS to Phase 5. Earth-Bet fence confirmed held on all three new sensory entries (sensory:4@14 in particular: physical ambient-zone feed-relay, not mind-reading).
