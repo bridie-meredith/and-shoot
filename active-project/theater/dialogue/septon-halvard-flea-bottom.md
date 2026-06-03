@@ -1,0 +1,6 @@
+character: septon-halvard-flea-bottom
+episode: b01c13
+behavior-card: westeros-septon
+---
+1 @b01c13s04n03 | name what he believes was done wrong to Aldric — that the determination came from outside the precinct and was mistaken — as witness and lament, not accusation, not aimed at Taylor | "They took up Aldric. You'll have heard. I knew him — knew the lanes he walked and who he talked to on them, and it was not what they put to him. He carried cord. He carried word between two old women who can't walk the hill themselves. That was the worst of it. Somebody decided what he was from a long way off, from a street they've never stood in, and they decided it wrong. A man who's never seen the Hook can't tell you who's a danger in it. But he can write a name down, and the name's enough."
+2 @b01c13s04n06 | continue the counter-argument into the space she has left — name what it costs to read a man from a distance, plainly, while she is already gone; the argument that goes on existing unanswered | "You can know a street five hundred times over and still not know what it weighs to be the name on the page. I've buried men a wiser hand wrote off. I'll bury Aldric too, like as not, and I'll not have the comfort of being able to say it had to be him."
