@@ -703,3 +703,42 @@ carry_forward:
   - No new carry-forward items from this trim pass.
   - Prior soft items already on record (b01c07 prose-burden) carry forward unchanged.
   - No SVO correction flags; no fence-risk items requiring Phase 7 attention.
+
+## b01c12 /and-write Phase 6 bone-gate — 2026-06-03
+
+---
+reviewer: worm-canon-pedant
+chapter: b01c12
+phase: write-bone-gate
+date: 2026-06-03
+dispatch_mode: override — single-persona load (PROP-0036)
+scenes_reviewed: [b01c12s01, b01c12s02, b01c12s03, b01c12s04]
+---
+
+verdict_per_scene:
+  b01c12s01: SUBSTANCE-FELT
+  b01c12s02: SUBSTANCE-FELT
+  b01c12s03: SUBSTANCE-FELT
+  b01c12s04: SUBSTANCE-FELT
+
+chapter_aggregate: SUBSTANCE-FELT
+hard_findings: none
+SUBSTANCE-FLAT: none
+SUBSTANCE-SUSPECT: none
+
+earth_bet_fence_ruling: CLEAN — full 42-bone set reviewed; no Earth-Bet proper noun in any SVO across all four scenes; "the shape-word" cipher holds at s04n09 (the point of maximum pressure); inner-monologue-rare cap untested (no Gold Morning reference in c12); fence clean
+
+override_vs_surveillance_distinction: PRESERVED — n06–n13 accounting sequence does not collapse surveillance-inference into override; shape-word surfaces in accounting (n09), accounting routes around it (n10), entry closes without it (n11); capability gain at n02 is insect-placement (surveillance-coverage act), not body-direction; "not an exact rhyme" preserved at bone level
+
+suppression_canon_check: WILLFUL — n09 shape-word present for one count; n10 count advances past it (behavioral routing-around); n11 entry closes without it (behavioral discipline); not dissociation, not impossibility; consistent with b01c02 pattern and b01c12 substance_delta note from /and-substance book Phase 5
+
+cl_d06_settlement: CONFIRMED — n10+n11 deliver +1.0 relational_anchor_status across two tranches; cl-d06 parking-lot items (pl-2026-05-30-001 / pl-2026-06-02-stitch-thread-002) closed
+
+soft_findings:
+  - b01c07 prose-burden soft finding carries forward to b01c07 /and-write (unchanged; no new soft findings from this gate)
+
+key_canonicity_confirmations:
+  - s01: gap-boundary bones (n04/n05) together bound the coverage map's gap; witholding-before-writing (n08 stylus-lifted) is behavioral discipline at bone level; capability sequential acquisition confirmed (not broadcast)
+  - s02: Otto apparatus terrain-precise request (gate-tower boundary n05, rendering-yard boundary n03) — irony-complete before Taylor stills; override-vs-surveillance uncontaminated
+  - s03: cl-d06 settled across two ledger-acts (n10/n11); refusal-without-explanation (n04/n05) enacted as physical withholding not interior enumeration; lift-and-move close correct (n12)
+  - s04: n14 causal bridge canon-clean; accumulation sequence (n14/n03/n04/n05/n06/n07/n08) earns shape-word weight; suppression three-phase sequence (n09 arrives / n10 routes around / n11 closes) canonically correct; moral_framework -1.0 (n13) lands as ledger-act not emotional event

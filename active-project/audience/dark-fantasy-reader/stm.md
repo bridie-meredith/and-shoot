@@ -680,3 +680,45 @@ SW-DFR-c12-1: after n07 deletion, verify s02 → s03 transition reads as clean f
 SW-DFR-c12-2 (carry to /and-facets): the s04 Khepri accumulation sequence (n09 shape-word surfaces / n10 count advances / n11 architecture entry closes) must render in prose as cold mechanical procedure, not as Taylor's emotional register shifting. The word surfaces because the accounting reaches it; it does not surface because Taylor notices it. If the stitch-layer renders n09 as a recognition beat rather than a ledger-mechanical event, the suppression loses its structural character.
 
 SW-DFR-c12-3 (carry to /and-stitch): n13 (breach column takes the threshold entry) must render as a cold ledger fact — the entry is filed without the shape-word, without recognition arriving. The moral_framework -1.0 must land as the cost being recorded by the accounting's own structure, not by Taylor naming what she has done.
+
+---
+
+## 2026-06-03 — /and-write b01c12 Phase 6 bone-gate
+
+chapter: b01c12
+date: 2026-06-03
+phase: write-bone-gate
+dispatch_mode: SINGLE-PERSONA DISPATCH (PROP-0036; dark-fantasy-reader only)
+scenes_reviewed: [b01c12s01, b01c12s02, b01c12s03, b01c12s04]
+bones_reviewed: 42
+
+verdict_per_scene:
+  b01c12s01: SUBSTANCE-FELT
+  b01c12s02: SUBSTANCE-FELT
+  b01c12s03: SUBSTANCE-FELT
+  b01c12s04: SUBSTANCE-FELT
+
+chapter_verdict: SUBSTANCE-FELT
+hard_findings: none
+SUBSTANCE-FLAT: none
+SUBSTANCE-SUSPECT: none
+
+### Key passage notes
+
+s01: Gap as terrain constraint before it is a choice — world-before-protagonist confirmed. Stylus-lift (n08) is the anchor-discipline enacted as bodily gesture against the apparatus expectation. The capability gain and tether close arrive without ceremony. The eastern lanes are absent from the ledger as the scene's closing fact, not sentiment.
+
+s02: Six-bone collision with no pause. The dramatist reorder (n05 before n04) is load-bearing — both corridor landmarks land before the stilling reaction. The apparatus names both walls of the gap before Taylor sets anything down. The bay-warmth close on n06 (sole carrier after n07 retirement per Phase 4 trim) is correct: indifferent-world-continuance via texture on a physical object, not ambient atmospheric description. The opposing force does not pause.
+
+s03: Twelve-bone flat-register execution. The refusal is record-keeping throughout. The withheld explanation is enacted as physical stop (n04 holds the hand / n05 stylus lifts without reaching the explanation field) — not interior enumeration. The settlement at n10-n11 (two concrete ledger-acts for two tranches, cl-d08 mechanism + cl-d06 debt) is accounting not sentiment. N12 (hand lifts) is lift-and-move — no linger. The choosing of Wren's safety stays COLD throughout all twelve bones; the anchor-column entry is structural record-keeping, not affection.
+
+s04: The accumulation before the shape-word (n14 causal bridge + n03 + n04 + n05) earns the threshold. The shape-word surfaces in n09 because the accounting arrived at the right ledger position, not because Taylor noticed something. The suppression is enacted as ledger-progression (n10 count advances, n11 architecture entry closes without the word) — not as emotional discipline. N13 (breach column takes the threshold entry, moral_framework -1.0) is cost without absolution: the entry does not contain the word, and the word's absence does not resolve the breach. The feed runs on at full deployment after the suppression — the world's physics continue regardless. No catharsis. No relief for Taylor or the reader.
+
+### Threshold discipline
+
+No walkout triggers. No catharsis before weight. No unearned catharsis — the shape-word is suppressed by format, not by moral decision; the breach column receives full weight regardless. No hope-that-costs-nothing — the relational-anchor settlement deepens the trap in the same act it deepens the protection. No enemies pausing — the apparatus accepts the coverage limit and arranges an alternate route (that is how the apparatus works; it does not need Otto's attention to advance). No world-as-set-dressing — the witch-label terrain geometry is a consequence of the world's social rules operating before Taylor acts. Earth-Bet fence CLEAN: "the shape-word," "the thing-she-did-at-Gold-Morning word" — no proper noun.
+
+### Soft carries
+
+SW-DFR-c12-2 and SW-DFR-c12-3 (from Phase 4 trim) carry forward unchanged:
+  - SW-DFR-c12-2 (/and-facets): s04 Khepri accumulation must render as cold mechanical procedure, not emotional register shift; the word surfaces because the ledger reaches it
+  - SW-DFR-c12-3 (/and-stitch): n13 must render as a cold ledger fact — cost recorded without the shape-word, without recognition arriving, without Taylor naming what she has done
