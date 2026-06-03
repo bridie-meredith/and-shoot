@@ -155,7 +155,12 @@ register removals required. Register entries below remain authoritative.
 ## Glossed in b01c13 (R1 author-time write-back; R2 may revise)
 
 - aldric | glossed-in: b01c13 | gloss-id: 2 | first-mention-anchor: @12 | qualifier: character first-mention; a ward-elder of the lower precinct, one of the men whose name was on the d06 list Taylor delivered, brought before a court-adjacent pretext proceeding on a charge of receiving stolen cord; the person-behind-the-list, the abstraction made a body on a table (@17); scoped as an anonymous-tier named figure (no canonical HOTD/F&B identity — minor smallfolk ward-elder consistent with period); render-as inline-appositive (@12 is in scene-B, the magistrate hall; nearest dialogue is the s04 cluster @26-@28, 14+ bones away — fence-window-clear); the CHARGE-AS-PRETEXT mechanic + the d06-list-as-the-real-mechanism are NOT folded into this gloss (lens/bone-body carried per rubric §Never-gloss plot-content); future chapters do NOT re-gloss Aldric; a markedly-different sense (e.g. Aldric's fate becoming load-bearing, or a second appearance) would license a new qualifier-entry
-- household-agent | glossed-in: b01c13 | gloss-id: 3 | first-mention-anchor: @2 | qualifier: term first-mention; a Green-faction household's provisioning-store agent in the upper Hook — the role that holds, over a Flea Bottom supplier, the authority of the household behind him (which is the whole of his authority); the s01 copper-penny coercion mechanism made a person; render-as em-dash-fold (@2 is in scene-A, silent scene, fence-window-clear); the COERCION-IS-THE-POINT reading (margin-too-thin-to-be-the-point) is NOT folded — bone-body/lens carried; Green faction-frame is register-resident (c09:2); future chapters do NOT re-gloss the household-agent provisioning role; a markedly-different sense (e.g. a noble-household steward of higher tier) would license a new qualifier-entry
+# household-agent first-mention CULLED at per-file cull (was gloss-id:3 @2). The
+# role is a common-English compound decodable from its own context (Green-faction
+# provisioning store + agent running accounts; Green faction-frame register-resident
+# c09:2; KL class-authority register-resident). The audience gap is the COERCION
+# READING, not the role-label — and that reading is bone-body/lens-carried (graph-
+# resident below). Glossing the label is wallpaper per the validated routing principle.
 
 # NOTE: the @0 prior-episode-bridge (gloss-id:1) IS authored this chapter as a
 # prior-episode-bridge scope (NOT a glossed-term per se — per-chapter reader-state refresh)

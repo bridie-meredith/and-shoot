@@ -1,8 +1,6 @@
-# proto-lines — exposition decoration pass — b01c13
-# 31 bones verbatim from theater/bones/b01-c13.md; [exposition:<id>] appended on decorated lines.
-# @0 synthetic anchor (episode-open) renders pre-body; not a body line — listed separately below.
-
-@0 [exposition:1]   # prior-episode-bridge (italic-preamble; renders before body)
+# proto-lines + metaphor citations — b01c13
+# generated: metaphor facet authoring pass (0 entries; no [meta:N] citations)
+# bones: 31 | metaphor fires: 0 | decorated lines: 0
 
 1 the blowfly takes the crate-ledge
 2 the household-agent stands the trestle-table
@@ -16,7 +14,7 @@
 
 10 the fly takes the ceiling-corner
 11 the green-faction-clerk sets the document
-12 aldric takes the chair [exposition:2]
+12 aldric takes the chair
 13 the magistrate writes the procedural-form
 14 aldric lifts the cord
 15 the magistrate lifts the d06-document
