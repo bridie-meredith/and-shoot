@@ -614,10 +614,14 @@ scenes:
       - slug: b01c12s04n08
         svo: "the accounting reaches the breach column"
         shape: held
+        # Pre-Phase-6 fix (orchestrator): held axis changed moral_framework -> moral_legibility_to_self to avoid held-on-in-motion
+        # (moral_framework is s04's MOVING axis at n13; holding it here would fire HELD-AXIS-UNCONTRACTED since moral_framework is not
+        # in s04's declared axes_held). moral_legibility_to_self IS s04's declared held axis and is the truer discipline for this beat:
+        # the accounting reaching the breach column at full scale WITHOUT yet recording it as the shape-word is the suppression-discipline.
         axis_moves: []
         axes_held:
-          - axis: moral_framework
-            rationale: "The breach column is where the cost-side weight lands; the moral_framework axis-move (cl05 cost side, -1.0) belongs to the ledger entry bone at n13; here the accounting reaches the column without the entry being written yet; opposing-force: the breach column's accumulation at full scale is what the shape-word names; held discipline against recording it as what it rhymes with"
+          - axis: moral_legibility_to_self
+            rationale: "The accounting reaches the breach column where the cost-side weight will land — but the entry is not yet written (the moral_framework axis-move belongs to n13). The accounting reaching the column without recording it as what it rhymes with is the suppression-discipline: legibility held at 5.5; the crack does not open. Opposing-force: the breach column's accumulation at full scale is what the shape-word names; the held discipline is the refusal to write it as that."
         cost_ledger_anchor: null
         grounding: false
         dialogue_anchor: false
