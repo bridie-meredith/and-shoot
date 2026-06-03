@@ -7562,6 +7562,34 @@ books:
         goal: |
           Show the audience the gap, the choice, and the suppression — Taylor choosing Wren's safety over the deliverable without naming what she is doing — and the Khepri word surfacing and being pushed back down.
         pov_narrator: taylor-hebert-kl-122ac
+        handoff_conflicts:
+          # /and-substance chapter b01c12 Phase 0 step 6c (2026-06-03): handoff_in character_state/world_state
+          # (book-author prediction lineage) diverged from aggregate-state.md close-of-c11. AGGREGATE WINS on all.
+          - detected_at: 2026-06-03T00:00:00Z
+            axis: social_tether-prot-rise
+            handoff_in_value: 5
+            aggregate_value: 8
+            resolution: aggregate-wins
+          - detected_at: 2026-06-03T00:00:00Z
+            axis: social_tether-antag
+            handoff_in_value: 7
+            aggregate_value: 6
+            resolution: aggregate-wins
+          - detected_at: 2026-06-03T00:00:00Z
+            axis: capability
+            handoff_in_value: 5
+            aggregate_value: 5.5
+            resolution: aggregate-wins
+          - detected_at: 2026-06-03T00:00:00Z
+            axis: position-prot-rise
+            handoff_in_value: 4.5
+            aggregate_value: 4
+            resolution: aggregate-wins
+          - detected_at: 2026-06-03T00:00:00Z
+            axis: political_register-world
+            handoff_in_value: 7.5
+            aggregate_value: 6.5
+            resolution: aggregate-wins
         handoff_in:
           open_threads:
             - "social tether at near-peak"
