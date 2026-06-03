@@ -328,3 +328,25 @@ RECONCILE:
   bones: 42 rendered + 0 merged + 0 dropped + 0 rendered-illegible = 42 == authored 42  [BALANCED]
   facets: 30 rendered + 0 dropped + 43 unrendered-remainder = 73 == cite-index facet-entry count 73  [BALANCED]
   scene-callout leak: 0 (clean draft; single '---' is the preamble rule, not a scene marker)
+
+## Phase 10 — Forward-thread edits
+verdict: PASS-THREAD (clean; 0 substantive, 0 parking-lot items)
+spine: hook-0003 (Wren cl-d06 2nd tranche) PAID; hook-0014 (withholding-from-Otto, 3rd) ADVANCED; hook-0007 (Halvard) correctly absent (FORECLOSE@c13); no STATE-DRIFT.
+
+- entry_id: rev-0005
+  finding_class: MISSED-CALLBACK
+  classification: presentation-reinforcement
+  location: scene-A, the stitch-house-route sentence
+  before: "the lane Wren takes from the rendering-yard through to the upper stitch-house"
+  after: "the lane Wren — the stitch-maker whose name I had kept out of every deliverable since the first — takes from the rendering-yard through to the upper stitch-house"
+  rationale: re-touches Wren's protective-omission history (the c06 withheld-name) at her c12 first appearance; mirrors rev-0004 (c10). Zero substance Δ — restates established characters[wren] indexed-but-unwritten state.
+  applied_at: 2026-06-03T00:00:00Z
+
+- entry_id: rev-0006
+  finding_class: MISSED-CALLBACK
+  classification: presentation-reinforcement
+  location: scene-C, the withhold-triad
+  before: "the burned cloth-account never written"
+  after: "the burned message at the Hook's south end never written"
+  rationale: clarifies the c11 cloth-merchant Dragonstone-burn referent in the third-withhold triad (legibility); tangentially reinforces hook-0012 without paying/advancing it. Triad rhythm preserved. Zero substance Δ — restates established c11 world-state.
+  applied_at: 2026-06-03T00:00:00Z

@@ -7502,7 +7502,26 @@ books:
             note: "book-author handoff_in prediction stale vs aggregate-state.md; scene ranks authored on aggregate basis per Phase 0 step 6c. +1.0 chapter delta -> rank 8 near-peak. See aggregate-state.md axis_state for full reconciliation."
 
       - slug: b01c12
-        status: audited-r1   # /and-facets b01c12 COMPLETE 2026-06-03 (was bones-written at /and-write Phase 7)
+        status: stitched   # /and-stitch b01c12 Phase 9 SHIPPED-WITH-CAVEATS (DEC-0078) 2026-06-03; draft/b01-c12.md TERMINAL (1194w)
+        cold_read:
+          read_at: 2026-06-03T00:00:00Z
+          verdict: SHIPPED-WITH-CAVEATS   # DEC-0078 (admin user-proxy): coupling rule exact match to c10/c11 (DEC-0072/0074)
+          recovered_summary: "A surveillance-clerk spends a day filing reports and quietly leaves one lane off the map to protect someone, while refusing to write down why."
+          report_path: active-project/staff/reviews/coldread-b01c12-2026-06-03.md
+          continue: no   # design-inherent low-jeopardy (internal CLIMAX) + cold-context proper-noun opacity + apparatus-density — ALL pre-dispositioned in chunk_cold_read.cold_read_risk_carry (DEC-0076); zero new categories
+          central_event_recovered: yes   # ledger-refusal w/ blank source-field + five-ward full-deployment + breach-column cost-entry withholding the older word all recovered
+          staging_signals: 3   # EXPAND @15, NEEDS-BEAT @26, GROUND @38 — all advisory; 0 spine-staging-gap; 0 FAIL; all 7 central-event clusters STAGED
+          signal_clusters: []   # no Step-4 cluster (3 advisory, different patterns; no >=5 same-pattern / >=3 adjacent-peak / >=3 on-axis-move / spine-gap)
+          prose_rationale_audit: {verdict: PASS, count: 0}   # all held-bone rationale elements staged in prose
+          readability_axis:
+            verdict: AIRLESS-DESIGN-INHERENT
+            basis: "uninformed cold-reader read apparatus-density airless, BUT Phase-4 person-first throughout (0 VOICE-APPARATUS-DEFAULT/0 EMBODIMENT-BLOCKED), grounding staged (prose-rationale-mute CLEAN), Phase-8.5 person-present + @38 registers. Residual = cold-context accumulation (N=7 c06-c12) -> /and-cohere before c13 (DEC-0073/0075/0077/0078), NOT a per-chapter depth pass"
+          coherence_review_verdict: PASS   # Phase 8.5: 0 weave-gap/0 follow-break; @38 registers; s04-seam CAUSED
+          stale_since: null
+        # /and-stitch b01c12 2026-06-03: persona neutral, first-person past, scene-window single-arm (voice-exemplar POV-PASS), SILENT chapter.
+        # Phase 1-6 render 1109w (all 42 bones, person-first voice-embodiment, @38 fence-clean shape-word THROUGH accounting register, s04 causal-seam CAUSED).
+        # Phase 7 sweep: 49 sentences, 2 REWORD (channel-quiet/walkable-back), 0 cut. Phase 8 finalize: draft/b01-c12.md 1194w (preamble + 4-scene body) + annotated; RECONCILE balanced (42 bones / 73 facet entries; vibes+state steering-unrendered). Phase 8.5 coherence PASS. Phase 9 cold-read SHIPPED-WITH-CAVEATS (DEC-0078). depth_pass: NOT required (admin A; density -> /and-cohere).
+        facets_status: audited-r1   # /and-facets b01c12 COMPLETE 2026-06-03 (was bones-written at /and-write Phase 7)
         facets_status: audited-r1
         facets_path: active-project/theater/facets/
         audit_path: active-project/staff/auditor/facets-final-audit.md
