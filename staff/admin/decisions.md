@@ -4685,6 +4685,45 @@ methodology-update-proposed: no
 
 ---
 
+## DEC-0080 | 2026-06-03 | FAST (user-proxy, RUNBOOK R1)
+
+question: Branch choice at b01c12 chapter boundary: (A) /and-cohere b01 before c13, or (B) produce b01c13 now. Principal said "continue."
+
+context: |
+  c12 just shipped SHIPPED-WITH-CAVEATS (DEC-0078) — 3rd consecutive on same cause
+  (apparatus-register density / cold-context / design-inherent). N=7 consecutive
+  apparatus-dense chapters (c06-c12). /and-cohere has been a standing HIGH-urgency
+  recommendation reaffirmed five times (DEC-0073, DEC-0075, DEC-0077, DEC-0078,
+  DEC-0079). PROP-0037 (DEC-0079) explicitly proposes a HARD-abort at /and-substance
+  chapter Phase 0 when consecutive_shipped_with_caveats >= 3 without cohere acknowledgment
+  — not yet implemented, so c13 is not mechanically blocked, but the process-critic intent
+  is unambiguous. Producing c13 now would very likely produce a 4th SHIPPED-WITH-CAVEATS on
+  the same unaddressed accumulation.
+
+options: (A) /and-cohere b01 first; (B) produce b01c13 now
+
+decision: (A) /and-cohere b01 first.
+basis: ltm:DEC-0073/0075/0077/0078 (same ruling every time; no new signal favoring B)
+rationale: |
+  Five prior dispatches ruled cohere-before-c13. At N=3 consecutive SHIPPED-WITH-CAVEATS
+  on the same cross-chapter accumulation problem (which per-chapter gates cannot address),
+  "continue" means run the outstanding HIGH-urgency obligation before starting the next
+  chapter — not defer it a sixth time. The process-critic proposal (PROP-0037) gives the
+  same answer from the process side. The cross-chapter airless-read is a known accumulation
+  that only /and-cohere addresses; producing c13 into that accumulation is not forward motion.
+trade-off: |
+  /and-cohere is a sizable operation; the principal may have intended "continue" to mean
+  "next chapter." But five consistent prior rulings at this same boundary make the intent
+  unambiguous: cohere was already the declared obligation before c13 ran. Option B here
+  would be the sixth consecutive bypass of the same HIGH-urgency flag on the same cause.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
 ## DEC-0079 | 2026-06-03 | SLOW (process-critic)
 
 mode: process-critic
