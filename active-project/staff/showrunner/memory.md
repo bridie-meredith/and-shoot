@@ -8005,7 +8005,7 @@ books:
           target_chapter: b01c13
 
       - slug: b01c13
-        status: bones-written   # /and-write b01c13 Phase 7 emit 2026-06-03 (was scened)
+        status: faceted-r1   # /and-facets b01c13 Phase 2 fanin 2026-06-03 (was bones-written); R1 10 facets + cite-index (62 entries, slice-collision fixed)
         bones_file: theater/bones/b01-c13.md
         bones_count: 31
         substance_bone_gate_verdict: PASS
