@@ -1,19 +1,42 @@
 ---
 reviewer: dark-fantasy-reader
-facet: vibes
+facet: vibes-updates
+episode: b01-c12
 cycle: 2
-episode: b01c11
+phase: facet-adversarial-review
 date: 2026-06-03
-verdict: accept
+prior_cycle_verdict: revise
+prior_cycle_finding: stale licensed-by refs — memory:2 in vibes:13, vibes:14, vibes:19 (correct anchor: memory:3)
 ---
 
-# vibes — cycle 2 verdict
+# Vibes b01-c12 — Cycle 2 Re-verification
 
-## vibes:8 @11
-Token set replaced: [dragonstone-burn-already-completed-before-she-reads-it, the-enemy-moved-first-inside-the-protocol-she-receives-as-routine, the-world-was-already-running-this-ahead-of-her-consciousness, the-channel-she-does-not-know-is-mediated-arrives-as-dread-not-information]. The discrimination is made explicit in the final token: the channel arrives as dread, not information. Enemy-moved-first is threat-register, not strategic-assessment. The temporal asymmetry (world-running-ahead-of-her-consciousness) is cast as the enemy having already completed the action, not as a board-state observation Rhaenyra could theoretically process. Intelligence-analysis vocabulary absent. Callout resolved.
+## Memory-ref scan — full file
 
-## vibes:9 @11/@15
-Token set replaced: [the-protocol-predates-taylors-processing-of-it, the-burn-and-routine-is-already-old-when-she-has-it, they-went-dark-before-she-knew-to-look, the-protocol-was-already-running-before-the-cut-she-reads-as-current]. "They-went-dark-before-she-knew-to-look" is the correct register — the darkness is a completed fact, not an ironic observation the reader is invited to appreciate. "The-protocol-was-already-running-before-the-cut-she-reads-as-current" encodes the temporal layering as threat: what Rhaenyra reads as current is already historical. Reader-domain irony-observation gone. What remains is protocol-precedence as threat, the world having moved without her. Callout resolved.
+All 19 entries scanned for `memory:N` tokens in licensed-by fields:
 
-## verdict
-ACCEPT. Both cycle-1 callouts addressed. The Rhaenyra rising-entrapment tokens now operate in dread/threat register throughout. No intelligence-analysis vocabulary, no reader-domain irony framing. No residual.
+- vibes:3 `licensed-by: memory:1` — valid existing ref. No issue.
+- vibes:13 `licensed-by: memory:3, feeling:2, proto:38, ...` — FIXED from memory:2. ✓
+- vibes:14 `licensed-by: memory:3, proto:38, ...` — FIXED from memory:2. ✓
+- vibes:19 `licensed-by: memory:3, feeling:2, state-update:8, ...` — FIXED from memory:2. ✓
+- Remaining 15 entries — no memory refs; licensed by state-updates, proto-lines, world-build, feeling refs only. Clean.
+
+Zero instances of `memory:2` in the file. The cycle-1 revise finding is fully resolved.
+
+## Adversarial re-read — new substantive issue?
+
+I re-read hostile. The prior cycle confirmed all 19 entries as cold and architecturally correct on content; the only finding was the metadata error. I'm looking for anything I waved through in cycle 1 that I now want to pull.
+
+**vibes:9 @26 atonement-as-repetition** — "the-settlement-is-the-mechanism-by-which-the-anchor-becomes-load-bearing, one-debt-and-one-mechanism-one-axis-move-settles-both." Re-read cold: the settlement is mechanical — closes ledger obligations. The anchor becomes load-bearing because the ledger settled it as a structural fact, not because Taylor earned anything. The atonement keyword encodes structural rhyming, not achieved release. No catharsis-register. Holds.
+
+**vibes:13 + vibes:14 @38 (shape-word cluster)** — content unchanged by the fix; re-reading only the tokens. "The-suppression-IS-the-ledger-entry-for-the-irrevocable-repetition" — the suppression is the cost-filing, not a second cost on top. "The-threshold-is-irrevocable-the-recognition-is-not-received" — recognition fires and is not permitted to settle as named consciousness. "The-shape-word-does-not-settle-the-accounting-advances" — accounting moves past the word. No catharsis. Still holds.
+
+**vibes:19 @42 episode** — "the-accounting-discipline-is-the-suppression-mechanism, this-is-what-the-irrevocable-threshold-looks-like-from-inside-a-ledger." The chapter's vibe-close is the ledger's interior view of a threshold crossing: breach column takes an entry, word not written, count advances. World does not pause. Feed runs on. No catharsis. Still holds.
+
+No new finding.
+
+## Verdict
+
+verdict: accept
+
+The sole cycle-1 finding — stale `memory:2` citations in vibes:13, vibes:14, vibes:19 — is corrected to `memory:3`. No new substantive issues found on adversarial re-read. All 19 entries confirmed cold, structurally correct, and architecture-serving. Cycle-2 passes.

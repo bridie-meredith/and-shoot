@@ -7502,7 +7502,36 @@ books:
             note: "book-author handoff_in prediction stale vs aggregate-state.md; scene ranks authored on aggregate basis per Phase 0 step 6c. +1.0 chapter delta -> rank 8 near-peak. See aggregate-state.md axis_state for full reconciliation."
 
       - slug: b01c12
-        status: bones-written   # /and-write b01c12 Phase 7 emit 2026-06-03
+        status: audited-r1   # /and-facets b01c12 COMPLETE 2026-06-03 (was bones-written at /and-write Phase 7)
+        facets_status: audited-r1
+        facets_path: active-project/theater/facets/
+        audit_path: active-project/staff/auditor/facets-final-audit.md
+        audit_complete: true
+        audit_findings: 5   # 0 HARD, 5 SIGNAL (advisory: exposition@0 back=N, memory floor-breach [doubled-register passes], curve two-peak, flag-004 vibes-licensed-by [FIXED memory:2->memory:3], flag-005 card-referrals [pl-2026-06-03-005])
+        audience_gate_path: active-project/staff/auditor/facets-audience-gate-r2.md
+        audience_gate_complete: true
+        audience_gate_cycles: 2
+        bidirectional_loop: validated   # shared finding flag-004 (vibes memory:2) ; audience-only: vibes:12 Khepri + scene-map Gold-Morning (auditor fence-scan missed keyword-arrays/scene-map fields)
+        round_1_complete: true
+        round_2_complete: true
+        context_followability:
+          completeness_verdict: FOLLOWABLE
+          readability_verdict: ALIVE
+          report_path: active-project/staff/reviews/context-follow-r2-b01-c12-2026-06-03.md
+          reviewed_at: 2026-06-03T00:00:00Z
+          context_ledger_open: 0
+          grounding_ledger_open: 0   # grd-001/002 satisfied by sensory:3/4/5 (cap-exempt s04 grounding adds)
+        # /and-facets b01c12 COMPLETE 2026-06-03. R1: 10 authors (silent — no dialogue). NI 10, memory 2 (R2 deleted mem:2@24
+        #   functional/spineless/G5; doubled-register mem:1@3+mem:3@38), sensory 5 (2 + 3 grounding-cap-exempt), loc-state 8,
+        #   feeling 2, metaphor 1 (licensed-by memory:2->memory:3 R2-resolved), vibes 19, exposition 2 (@0 bridge + @1 lanes),
+        #   state-updates 24 (16 env + 8 taylor [tool state-slice-collision FIXED: taylor remapped to ids 17-24]).
+        # Phase 2.5 FOLLOW-PASS + 2 grounding-ledger lines -> Phase 4.6 sensory grounding-add (cap-exempt). Phase 4.5 FOLLOWABLE+ALIVE.
+        # Phase 5 audit 0 HARD / 5 SIGNAL. Phase 5b audience-gate PASS 3/3 all 9 facets (2 cycles): cycle-1 real revises
+        #   (vibes:12 Khepri keyword + scene-map Gold-Morning -> Earth-Bet cipher fix) + stale revises (memory:2 already memory:3).
+        #   cycle-2 all ACCEPT. bidirectional_loop VALIDATED. Phase 5c process-critic SKIPPED (final cycle clean ACCEPT, no cap-burn).
+        # Carried to /and-stitch: VOICE-FIXABLE @3/@8/@20/@21/@30/@40/@42 (person-first render, P4 voice-embodiment); DEC-0076
+        #   chunk_cold_read SHIPPED-WITH-RISK-RECORDED arms P8.5 (@38 shape-word must register THROUGH accounting register;
+        #   @30->@31->@32 causal seam legible w/o exposition). scene-map protected-patterns carry all the bones-execution watches.
         bones_file: theater/bones/b01-c12.md
         bones_count: 42
         substance_bone_gate_verdict: PASS
