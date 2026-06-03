@@ -1,8 +1,41 @@
 # studio state
 
-episode: b01c12
+episode: b01c13
 last_updated: 2026-06-03
-action: location-state R1 blind authoring — /and-facets b01-c12 Phase 1
+action: location-state R1 blind authoring — /and-facets b01-c13 Phase 1
+
+## Location-state sequence locked (b01c13) — 7 entries, 0 cull
+  loc-state:1 @1  — the-hook-upper-provisioning | morning | none | loading-platform-open | crate-ledge at the platform edge (place-anchor; scene-A; Thursday mid-morning)
+  loc-state:2 @2  — the-hook-upper-provisioning | morning | none | trestle-table-active, household-agent-posted | trestle-table where agent stands (state-change: apparatus-component takes position)
+  loc-state:3 @10 — the-magistrate-hall | morning | none | rented-back-room-active, ceiling-corner-above | ceiling-corner of the chandler's rented back room (place-anchor; scene-B; four days later)
+  loc-state:4 @11 — the-magistrate-hall | morning | none | document-at-table-edge, clerk-posted | table edge where clerk placed the list-output before proceedings (state-change: apparatus-component takes position)
+  loc-state:5 @19 — the-hook-lane | evening | none | lane-open, circuit-mid | lane Taylor walks on ordinary circuit (place-anchor; scene-C; that evening)
+  loc-state:6 @24 — the-hook-lower-water-trough | afternoon | none | trough-open | water-trough at lower Hook where chandler's row meets fishmongery open-space (place-anchor; scene-D; two days later)
+  loc-state:7 @29 — the-hook-lower-water-trough | afternoon | none | trough-behind, lane-open-ahead | lane-mouth past trough's edge — threshold crossed mid-speech (state-change: Taylor departs while Halvard still speaking)
+  Continuity-carry: none filed — scene-A (low-heat establishment / fusion-run @1-@2 fully covered by entries 1+2); scene-B (rising / excluded); scene-C fusion-run @21-@22 only 2 bones (below 3-bone floor; excluded); scene-D fusion-run @24-@25 only 2 bones (excluded); scene-D rhythm-shape held-breath-enactment (not flat-low/resolving/release-only)
+  Cull: 0 entries removed — all 7 survive strip / pointing / frugality / previous-entry tests
+
+## Current set (b01c13 chapter-close)
+  location: the-hook-lower-water-trough (Taylor departed; Halvard still present)
+  time_of_day: afternoon
+  weather: none
+  ambient_conditions:
+    - trough open at lower Hook (chandler's row / fishmongery open-space junction)
+    - Taylor departed mid-speech (@29; walked the route @30)
+    - Halvard still at trough filling water-skin (@31)
+
+## Location-state R1 authored (b01c13) — 2026-06-03
+  theater/facets/location-state-b01-c13.md (7 entries, 0 cull)
+  _inflight: theater/facets/_inflight/proto-lines-loc-state.md filed (citations @1, @2, @10, @11, @19, @24, @29)
+
+## Seams flagged for R2 (b01c13)
+  SEAM-C13-LOC-001: the-hook-upper-provisioning — new slug; no confirmed warehouse card; drawn from bones `locations:` field. R2 reviewer confirm slug canonicalization or flag for margit.
+  SEAM-C13-LOC-002: the-magistrate-hall — new slug; no confirmed warehouse card; drawn from bones `locations:` field. Scene-map describes as "rented back room of a chandler's house." R2 confirm slug or flag for margit.
+  SEAM-C13-LOC-003: the-hook-lane — new slug; no confirmed warehouse card; this is the familiar lane Taylor walks as ordinary circuit (distinct from oc-hook-precinct / the-hook-ward slug family used in prior chapters). R2 confirm whether this should canonicalize to oc-hook-precinct or remain a distinct slug.
+  SEAM-C13-LOC-004: the-hook-lower-water-trough — new slug; no confirmed warehouse card; lower end of the Hook at chandler's row / fishmongery junction. R2 confirm slug or flag for margit.
+  SEAM-C13-LOC-005: time-of-day for scene-D set as "afternoon" by inference from "ordinary circuit" / water-carrying context. Scene-map says "two days later" with no explicit time named. R2 confirm or adjust if bones-review establishes a different time.
+
+## Prior set state (b01c12 chapter-close)
 
 ## Location-state sequence locked (b01c12) — 8 entries, 0 cull
   loc-state:1 @1  — the-hook-ward | morning | none | lane-mouth-open, overhang-geometry-active | overhang-joints at lane-mouth (place-anchor; morning circuit open)
