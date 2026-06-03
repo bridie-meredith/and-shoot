@@ -56,22 +56,28 @@ scenes:
     bones:
       - slug: b01c12s01n01
         svo: "the insects return the overhang-joints"
-        shape: chatter
+        shape: held
         axis_moves: []
-        axes_held: []
+        axes_held:
+          - axis: relational_anchor_status
+            rationale: "witch-label terrain geometry is the structural constraint against which the coverage gap is formed; the overhang-joints are the specific feature that makes dense placement readable as witch-label and forces the gap; axis held at 3.5"
         cost_ledger_anchor: null
         grounding: true
         dialogue_anchor: false
         # grounding: eaves/gutter-joints of the upper stories — the specific terrain feature that makes dense placement readable as witch-label.
+        # Phase-2 fix: fault-001 — chatter→held; relational_anchor_status attached (s01 declared held axis)
 
       - slug: b01c12s01n02
         svo: "the insects fan the lane-mouth"
-        shape: chatter
+        shape: held
         axis_moves: []
-        axes_held: []
+        axes_held:
+          - axis: relational_anchor_status
+            rationale: "ambient deployment in the gap lanes — the feed at its placement ceiling is the terrain-constraint that makes Wren's route the boundary; anchor held at 3.5"
         cost_ledger_anchor: null
         grounding: false
         dialogue_anchor: false
+        # Phase-2 fix: fault-002 — chatter→held; relational_anchor_status attached per meta-rule 2 override (not capability — s01 does not declare capability as a held axis)
 
       - slug: b01c12s01n03
         svo: "taylor-hebert-kl-122ac takes the gate-tower shadow"
@@ -88,23 +94,28 @@ scenes:
 
       - slug: b01c12s01n04
         svo: "the coverage map closes the gate-tower boundary"
-        shape: chatter
+        shape: held
         axis_moves: []
-        axes_held: []
+        axes_held:
+          - axis: relational_anchor_status
+            rationale: "gate-tower boundary is the confirmed western limit of the coverage gap; the gap's eastern limit is defined against it; axis held at 3.5"
         cost_ledger_anchor: null
         grounding: false
         dialogue_anchor: false
-        # cost_ledger_anchor: null; chatter permitted here because it names the formal operational fact (coverage-gap-established) that the subsequent axis-moving bones are built on.
+        # Phase-2 fix: fault-003 — chatter→held; relational_anchor_status attached (s01 declared held axis)
 
       - slug: b01c12s01n05
         svo: "the map closes the rendering-yard boundary"
-        shape: chatter
+        shape: held
         axis_moves: []
-        axes_held: []
+        axes_held:
+          - axis: relational_anchor_status
+            rationale: "rendering-yard east wall is the confirmed eastern limit of the coverage gap; together with n04 the gap is formally bounded; Wren's free movement in the gap is the structural condition the anchor depends on; axis held at 3.5"
         cost_ledger_anchor: null
         grounding: true
         dialogue_anchor: false
         # grounding: rendering yard east wall named as a specific physical landmark bounding the gap.
+        # Phase-2 fix: fault-004 — chatter→held; relational_anchor_status attached (s01 declared held axis)
 
       - slug: b01c12s01n06
         svo: "the insects return the stitch-house route"
@@ -118,8 +129,9 @@ scenes:
         dialogue_anchor: false
 
       - slug: b01c12s01n07
-        svo: "the map indexes the stitch-maker route"
+        svo: "the map marks the stitch-maker route"
         shape: held
+        # Phase-2 fix: fault-005 — "indexes" (non-action verb) → "marks" (concrete transitive physical act)
         axis_moves: []
         axes_held:
           - axis: relational_anchor_status
@@ -129,8 +141,9 @@ scenes:
         dialogue_anchor: false
 
       - slug: b01c12s01n08
-        svo: "taylor-hebert-kl-122ac lifts the stylus from the source-field"
+        svo: "taylor-hebert-kl-122ac lifts the stylus"
         shape: held
+        # Phase-2 fix: fault-006 — dropped PP "from the source-field" (banned source-preposition)
         axis_moves: []
         axes_held:
           - axis: relational_anchor_status
@@ -190,28 +203,34 @@ scenes:
 
     bones:
       - slug: b01c12s02n01
-        svo: "jarvis-coin-kl-courier places the packet on the ledger surface"
-        shape: chatter
+        svo: "jarvis-coin-kl-courier places the packet"
+        shape: held
         axis_moves: []
-        axes_held: []
+        axes_held:
+          - axis: social_tether-antag
+            rationale: "opposing force enters via the standard channel — the apparatus's terrain-literate delivery; tether-antag held at 6"
         cost_ledger_anchor: null
         grounding: true
         dialogue_anchor: false
-        # grounding: ledger surface as named physical object; packet and wax seal as physical items.
+        # grounding: packet as named physical object; physical delivery act.
         # opposing_force enters with Jarvis.
+        # Phase-2 fix: fault-007 — dropped PP "on the ledger surface" (banned PP of place); chatter→held; social_tether-antag attached (s02 declared held axis)
 
       - slug: b01c12s02n02
         svo: "taylor-hebert-kl-122ac breaks the wax seal"
-        shape: chatter
+        shape: held
         axis_moves: []
-        axes_held: []
+        axes_held:
+          - axis: relational_anchor_status
+            rationale: "seal-breaking is the physical threshold action that makes the collision-delivery arrive as a fact; the anchor gap-route is what the packet targets; axis held at 3.5"
         cost_ledger_anchor: null
         grounding: true
         dialogue_anchor: false
         # grounding: wax seal as concrete physical object.
+        # Phase-2 fix: fault-008 — chatter→held; relational_anchor_status attached (s02 declared held axis)
 
       - slug: b01c12s02n03
-        svo: "the covering-sheet names the east-water-gate corridor"
+        svo: "taylor-hebert-kl-122ac opens the covering-sheet"
         shape: held
         axis_moves: []
         axes_held:
@@ -220,10 +239,12 @@ scenes:
         cost_ledger_anchor: null
         grounding: false
         dialogue_anchor: false
+        # Phase-2 fix: fault-009 — "the covering-sheet names the east-water-gate corridor" (non-action verb/stative document-content) → "taylor-hebert-kl-122ac opens the covering-sheet" (physical act); corridor content is facet territory
 
       - slug: b01c12s02n04
-        svo: "taylor-hebert-kl-122ac sets the packet on the ledger surface"
+        svo: "taylor-hebert-kl-122ac sets the packet"
         shape: held
+        # Phase-2 fix: fault-010 — dropped PP "on the ledger surface" (banned PP of place)
         axis_moves: []
         axes_held:
           - axis: position-prot-rise

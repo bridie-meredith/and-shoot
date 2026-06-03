@@ -1,3 +1,9 @@
+## SESSION-START — 2026-06-03T09:00:00Z — write-b01c12-pass2-bone-fixes
+dispatch: apply 19 Phase-2 faults (fault-001..fault-023) to b01c12-bones-draft.md — 15 unpaid-chatter recasts to held/chatter-with-anchor, 6 PP/form drops, 2 interiority SVO recasts; meta-rules override auditor on s01n02, s03n09, s03n12, s04n01; flag-003 s04n12 recast to held
+target: active-project/staff/screen-writer/b01c12-bones-draft.md
+audit-report: active-project/staff/auditor/write-b01c12-pass2.md
+findings-queued: 19 faults + 4 flags (flags 001/002 leave-as-is; flag-003 recast)
+
 ## SESSION-START — 2026-06-03T00:00:00Z — and-facets-b01c11-cycle2-fixes
 dispatch: /and-facets b01c11 Phase 5b cycle-2 — 4 text edits across 2 facets: narrator:2 @11 (mechanism eclipses dread-timing), narrator:4 @20 (backward-awareness violation), vibes:8 @11 (register-drift to intelligence-analysis), vibes:9 @11/@15 (irony-register token)
 target: active-project/theater/facets/interest-narrator-b01-c11.md, active-project/theater/facets/vibes-b01-c11.md
