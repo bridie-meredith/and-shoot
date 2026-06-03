@@ -1,33 +1,49 @@
----
-facet: memory
-episode: b01c10
-layer: R2 (graph-aware memory judge — fresh POV fork)
-narrator: taylor-hebert-kl-122ac
-cite_index_hash: f0fe62ec02a561fa69d8587b2d2be0f1c0e0d841
-f-r2-counts: {f-r2-1: 0, f-r2-2: 0, f-r2-3: 0, f-r2-4: 0}
-k-d-a: {keep: 2, delete: 0, add: 0}
-register-balance: {earth-bet-displacement: 1, westerosi-monument-clamp: 1, doubled-register: satisfied}
-add-cap: 5 (0 consumed)
-deletion-authority: self-scoped (memory facet only)
+facet: memory (mem)
+chapter: b01c11
+phase: 3 R2 — memory JUDGE mode (POV impersonator taylor-hebert-kl-122ac, fresh fork, facet-judge override; full locked R1 graph)
+rubric: design/shoot-v2/rubric-memory-flags.md (V3 locked 2026-05-21)
+cite_index_hash: 2ebbcfe3110d775d8866062f9bd2466fff1ef4157026811ad87b7fcf94308ea1
+scene-map: theater/facets/scene-map-b01-c11.md (locked; dramatic_shape: rising)
 ---
 
-# R2 Memory Decision Shard — b01c10
+## Verdict summary
 
-Two existing fires, no adds earned, no deletes. The chapter is the formalization-and-detention climax; memory's job here is to let the two monuments that actually light at quiet beats carry the doubled register while the peak bones stay clean. I judged both fires on monument-grade merit against the LOCKED R1 graph, set aside the R1 file's own annotation, and re-encountered each entry cold.
+K=2 / D=0 / A=0. Density 2/27 = 7.4% (within 5-12% chapter band; no cull, no inflation).
+File-level: SHAPE-OK (single-register acceptable per rubric §single-register; FILE-LEVEL SIGNAL recorded for season doubled-register kickback watch).
 
-mem:1 @16 — Cold read of "the stone-post marks the side-exit": the entry lands the side-exit fixture read *backward* against the intact circuit baseline — "a machinery this old empties a corridor of one body and leaves the stone unmarked." What it does at its anchor, with the next bone covered: it makes the empty road a fact about an *apparatus*, not a status update — the geometry holds and one body is gone, and the description tells me the removal-machinery is older than the city's name for it. That is the disappearance-apparatus monument lighting on resonance, not on the detention act (the act is at @15/@17/@18, the peak-bones; @16 is peak-shadow). It clears displacement-discipline: no Watch, no Hightower, no witch-label named, no Earth-Bet proper noun — the *shape* of institutional removal is produced, not the label. It clears audience-meaningfulness: a reader with zero source fluency feels the machinery close over a man without being told what the machinery is — that is the both-meaningful test passing on the exterior side. Functional-register hits two cleanly: social commentary (the institutional-removal apparatus surfacing as structural fact) plus moment-of-realization (Corwick is gone, read off the stone). This is monument-grade callback, not functional callback — strip it and the stitcher cannot render the apparatus-weight at this beat; the empty road reads as a clean coverage delta. KEEP. The one honest weakness is the spine: narrator-interest is silent at @16 in the locked R1 graph, and at climax the V3 feel-as-spine carve-out does not apply (it requires hinge), so standard NI co-citation is mandatory and currently absent. Per the KEY DECISION I do not delete a monument-grade entry for a spine the parallel NI judge is provisioning; I flag the dependency below.
-VERDICT: KEEP
+## Per-entry
 
-mem:2 @24 — Cold read of "corwick crosses the errand-corridor": the crossing is named as "one entry in the months of him she kept without his leave, the record closing the same way the old architecture closed around bodies it never asked." Covering @25 (the ledger closing) with my hand, this entry still stands on its own — it is not leaning on the closure that follows; it is the body-map layer of the did-not-consent sequence, and it carries the override-architecture displacement directly: the months-accumulated record closing the way the prior architecture closed around bodies that were never asked. Displacement-discipline holds with the hardest-to-hold fence in the chapter intact: Khepri is ABSENT — the systematic-override register is *echoed* ("the old architecture closed around bodies it never asked") and never *named*. No mantle, no cape-name, no Earth-Bet proper noun. That fence is precisely why the displacement lands at @24 and not at @21 (where it would risk affirmation-by-naming on the inscription act). Audience-meaningfulness: a reader feels instrumentalization-without-consent — a person kept in a record without his leave — without needing the source. Functional-register hits two: painting-characterization (Taylor's monument-history surfacing as the shape of the thing she built that she came here to refuse to build) plus social commentary (the unconsented body-mapping rendered as the architecture's residue). Quiet-beat anchor is clean: @24 is peak-shadow in scene-D's falling-to-thesis-image tail, the primary eligible zone. Monument-grade. Strip it and the override-architecture register has no licensed home in the chapter and the file collapses to single-register. KEEP — with the same NI-spine dependency (NI silent at @24 in the locked R1 graph; climax → no carve-out; mandatory NI being provisioned in parallel).
-VERDICT: KEEP
+### mem:1 @7 — KEEP
+- anchor: @7 "taylor-hebert-kl-122ac lifts the stylus" (scene-A, peak-shadow-bone; rhythm-shape low-heat establishment; NOT in peak-bones — @6 is the peak). Quiet-beat anchor: default-licit.
+- monument-trigger: Earth-Bet displacement, override-architecture residue (building quiet machines to run on what nobody chose to give). Target cond-override-architecture-residue-122ac RESOLVES (warehouse card present).
+- displacement-discipline: PASS. No Earth-Bet proper noun; the override-architecture weight carried as shape ("every quiet machine to run on what nobody chose to give it").
+- functional-register: painting-characterization + social-commentary (≥2 hit).
+- SPINE STATUS: R1-state NI-absent at @7 (cite-index shows mem:1 @7 lic-in=[vibes:3], no narrator co-citation). Spine PROVIDED BY PARALLEL R2 NI ADD @7 (coordinated cross-facet seam). Per dispatch: KEEP held on the coordinated add; NOT deleted on R1-state NI-absence. spine: narrator-interest @7 (parallel-R2-add — assumed-landed). NO V3 feel-as-spine carve-out invoked (chapter dramatic_shape: rising, not hinge — carve-out conditions fail; the coordinated NI add is the spine, not feel).
+- hard-fence: CLEAN (description + target both Earth-Bet-proper-noun-free).
 
-NI-SPINE DEPENDENCY (Phase-5-verifiable; NOT a deletion ground): In the LOCKED R1 graph narrator-interest fires at @2/@5/@10/@14/@15/@27 — NOT at @16, NOT at @24. Both memory anchors therefore lack their mandatory narrator-interest spine in the graph I judged against. Chapter dramatic_shape is climax, so the V3 feel-as-spine carve-out (hinge-only) does not rescue either anchor; standard NI co-citation is required on both. Both entries are monument-grade (see per-entry justifications above), so per the parallel-judge anti-double-jeopardy rule I flag rather than delete. The parallel R2 narrator-interest judge has been briefed to add NI @16 + NI @24. PHASE-5 CHECK (HARD): confirm narrator-interest fires on @16 AND @24 post-parallel-mutation. If present → both ship spined, dependency clears. If still silent on either → that memory entry becomes a missing-spine REJECT at Phase 5; resolution order: relocate to nearest co-cited quiet bone in the same scene (scene-C tail: @19 has sensory:5; scene-D: @20/@22/@23/@26 carry loc-state/sensory) OR cull to single-register fallback. Relocation degrades cue strength materially (@24 is the strongest override-architecture anchor in scene-D; @16 the strongest apparatus-clamp anchor in scene-C's tail), so the parallel NI add at the existing anchors is the preferred resolution. Note: I judged against the locked graph only; the interest-narrator R1 file shows the parallel add (narrator:7@16 + narrator:8@24) has in fact been written, which I record as corroboration but do not treat as discharging the Phase-5 verification.
+### mem:2 @16 — KEEP
+- anchor: @16 "taylor-hebert-kl-122ac marks the timestamp" (scene-B, IS a peak-bone, social_tether-antag +0.5). Peak-bone fire — default-forbidden, EXCEPTION earned: displacement-clamp construction + resonance-not-action argument. The mass-casualty-foreshadow lights as a resonance reaching backward/outward (this small mark measured against a larger ending) precisely as the timestamp act discharges; the displacement lights BECAUSE of the peak's discharge (matches the scene-map threat-flicker protected-pattern at @16 — one felt register of war-pressure, filed and moved from). Resonance-not-action defensible.
+- monument-trigger: Earth-Bet displacement, mass-casualty-foreshadow / inevitable-disaster register ("smaller wars still burn the people standing under them").
+- displacement-discipline: PASS. No proper noun; "a larger ending" carries the load without naming.
+- functional-register: moment-of-realization + social-commentary + painting-characterization (≥2 hit).
+- SPINE STATUS: narrator:3 @16 present in R1 graph (co-cited per cite-index). Standard NI co-citation; no carve-out. spine: narrator-interest @16 (R1-state present).
+- hard-fence: CLEAN (description Earth-Bet-proper-noun-free).
+- TARGET-CARD SEAM: target "monument-mass-casualty-foreshadow" does NOT resolve — no card in cards/conditions/ or warehouse/. Gloss is structurally clear (the description produces the mass-casualty-foreshadow shape distinctly). Per URI-FACETS-CYCLE-1 monument-card resolution test: SIGNAL (not HARD) — margit-referral flagged, entry SHIPS flagged, NOT deleted on resolution-gap alone.
 
-PATTERN-SCAN: Two fires, two distinct monument families, two distinct registers (Westerosi-apparatus clamp at @16 / Earth-Bet override-architecture displacement at @24), separated by a full scene. Nothing formulaic — the descriptions do not echo each other's construction; one reaches outward to an institution older than the city, the other reaches inward to an architecture Taylor will not name. No saturation of low-frequency words across the two (each "closes/closed" usage is doing distinct work: the apparatus leaving stone unmarked at @16 vs. the record closing around unasked bodies at @24, and the second is the load-bearing rhyme not a tic). The sparsity gradient is intact at 7.4% with zero peak-bone fires. No within-character or cross-construction pattern bothers the ear.
+## ADDs considered + refused (add-cap 5; used 0)
 
-CAP-REFUSAL: mem-candidate @9 (corwick squares the stone-post) — strong override-architecture displacement (the months-accumulated body-map made concrete in one feed-recalled posture), but it sits in scene-B's rising zone adjacent to the surrender peak-bones @10/@11, and the per-scene cap routes the single override-architecture fire to scene-D's quiet tail where the closed-entry discipline is most itself. The displacement lands cleaner at @24, off the peak. I do not believe a second override-architecture fire at @9 earns its place — it would dilute the gradient and double the same monument family.
-CAP-REFUSAL: mem-candidate @21 (taylor writes corwick) — the systematic-override threshold crossed, the most thematically charged beat in the chapter. Refused on two grounds I hold independently: it is a peak-bones member (interior fully committed to the inscription act, no resonance-not-action room), and a memory-fire here risks affirmation-by-naming on the precise Khepri-ABSENT register the chapter must echo without naming. Firing memory on the inscription act would convert the unspoken into a registration event. The override resonance belongs at @24 as residue, not on the act.
-CAP-REFUSAL: mem-candidate @27 (corwick squares the feed-record) — TERMINAL, hard suppressed-recognition fence. The face persisting after the ledger closes is the chapter's final somatic feed-datum (carried by feel:2 @27), not an interior recognition. A memory-fire would invert the scene-D protected-pattern, naming what the staying means. Refused, load-bearing.
-CAP-REFUSAL: mem-candidate @17/@18 (scene-C peak-bones) — KL-apparatus clamp candidate, but peak-bones members with central-event-muffle armed; peak-without-resonance. The clamp resonance is correctly relocated to @16 (peak-shadow). Refused.
+- @8 / @17 / @22 (rhythm-shape scene transitions): grounding/transition bones, no monument cue lights. REFUSE.
+- @6 (scene-A peak, NI:1 present, mem-absent): per-scene cap — mem:1 already fires in scene-A @7. REFUSE.
+- @11 (scene-B peak, NI:2 present, mem-absent): per-scene cap — mem:2 already fires in scene-B @16. REFUSE.
+- @20 (scene-C peak, NI:4 present, mem-absent): the Halvard-foreclose is a STRUCTURAL GAP, not a monument; no behavior-pack monument lights on an absent moderating-check. Forcing administrative-violence here = forced-fit. Scene-map forbids interior-narration adds around the foreclose. REFUSE.
+- @25 / @26 (scene-D arm-closes, NI:5/NI:6 present, mem-absent): ACCOUNTING-IN-MOTION-NOT-CATALOG + crystallization-not-re-declaration protected-patterns; a mem fire risks re-declaration; no fresh monument cue beyond @7/@16. REFUSE.
+- Westerosi-monument clamp add (doubled-register pull): no genuine Westerosi clamp cue present in c11 beats; the @16 Dragonstone signal is Earth-Bet-displacement-coded. Forcing a Westerosi add = prohibited density-inflation. REFUSE (single-register acceptable; per-season doubled-register watch recorded).
 
-No arbiter interventions fired against my own justifications (each names entry-specific content — the construction, the fence held, the resonance-not-action read — rather than reciting rubric labels). f-r2-counts all zero.
+## Margit-referral flags (SIGNAL)
+
+- monument-mass-casualty-foreshadow (mem:2 @16 target) — no card resolves; gloss structurally clear; queue card creation with mechanism-descriptive slug. Entry ships flagged, not deleted.
+
+## Cross-facet seam status
+
+- mem:1@7 spine: DEPENDENT on parallel R2 NI ADD @7. If that add does not land, mem:1@7 reverts spineless and this verdict + the inflight cascade go STALE; re-judge required.
+- mem:2@16 spine: narrator:3@16 R1-state present; independent, stable.

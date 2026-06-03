@@ -1,41 +1,36 @@
-# proto-lines (in-flight R2 — memory facet view) — b01c10
+facet-cascade: memory (mem)
+chapter: b01c11
+phase: 3 R2 (facet-judge override; locked R1 graph)
+cite-index: theater/facets/_cite-index.md (cite_index_hash 2ebbcfe3110d775d8866062f9bd2466fff1ef4157026811ad87b7fcf94308ea1)
+scope: mem-prefix citation projection onto proto-lines (bodies byte-identical to source proto-lines; only mem citation tokens are authoritative here)
+r2-result: mem:1 KEEP / mem:2 KEEP / ADD 0 / cull 0 — post-R2 mem graph identical to R1 graph (no token churn)
+cross-facet-seam: mem:1@7 spine provided by PARALLEL R2 NI ADD @7 (coordinated; assumed-landed per dispatch). If the NI @7 add does not land, mem:1@7 reverts to spineless and this cascade is stale.
+---
 
-# Source: active-project/theater/proto-lines/b01-c10.md (canonical, copied)
-# Scope: R2 memory judge. Reflects memory KEEP/DELETE/ADD ONLY as [mem:id] tokens.
-#        SVO bodies byte-identical to canonical. Non-memory facet tokens omitted from this view
-#        (this is the memory-facet in-flight artifact; the canonical merged file carries all facets).
-# r2-memory verdict: KEEP mem:1 @16, KEEP mem:2 @24. K/D/A = 2/0/0. No relocations, no deletes, no adds.
-#        Both [mem:*] tokens remain at their locked R1 anchors.
-# cite_index_hash: f0fe62ec02a561fa69d8587b2d2be0f1c0e0d841
-
-episode: b01c10
-narrator: taylor-hebert-kl-122ac
-aggregate_range: 1-27
-
-1 jarvis delivers the packet
-2 the packet-text closes the frame
-3 the morning-stone holds the bay-cold
-4 taylor-hebert-kl-122ac folds the packet
-5 taylor-hebert-kl-122ac exhales
-6 the second item opens the packet
-7 the lower-gate road marks the body-map
-8 the body-map fills the feed-record
-9 corwick squares the stone-post
-10 taylor-hebert-kl-122ac translates the body-map
-11 taylor-hebert-kl-122ac routes the body-map
-12 the wax dries
-13 the supply cart marks the lower-gate road
-14 corwick walks the errand-corridor
-15 the lower-gate road loses corwick
-16 the stone-post marks the side-exit [mem:1]
-17 the Gold Cloak pair posts the lane-junction
-18 the insect-feed sweeps the errand-corridor
-19 the bay-cold presses the lower road
-20 taylor-hebert-kl-122ac opens the ledger
-21 taylor-hebert-kl-122ac writes corwick
-22 the feed-station stone grounds the wrist
-23 corwick faces the lower-gate
-24 corwick crosses the errand-corridor [mem:2]
-25 taylor-hebert-kl-122ac closes the ledger
-26 taylor-hebert-kl-122ac presses the feed-station
-27 corwick squares the feed-record
+1 jarvis-coin-kl-courier takes the packet [loc-state:1] [state:1] [vibes:4]
+2 jarvis-coin-kl-courier folds the covering-sheet [vibes:4]
+3 oswyn-mudway-flea-bottom-elder presses the cart-frame [vibes:5]
+4 the wool-dyer returns the cart-timing observation [vibes:5]
+5 taylor-hebert-kl-122ac sets the stylus to the source-field [state:2]
+6 taylor-hebert-kl-122ac writes the lane-pattern [narrator:1] [state:3] [state:15] [vibes:11]
+7 taylor-hebert-kl-122ac lifts the stylus [mem:1]
+8 the cloth-merchant opens the back-worktable [loc-state:2]
+9 the messenger crosses the shop-threshold [loc-state:3]
+10 the cloth-merchant lifts the folded-paper
+11 the cloth-merchant burns the paper [exposition:2] [narrator:2] [sensory:1] [state:4] [vibes:8] [vibes:9] [vibes:12]
+12 the iron-dish receives the ash
+13 the insect-feed returns the thermal-shift
+14 the insect-feed carries the smoke-curl
+15 the cloth-merchant squares the bolt-ticket [vibes:9]
+16 taylor-hebert-kl-122ac marks the timestamp [mem:2] [narrator:3] [state:5] [state:16] [state:17] [vibes:10]
+17 the soap-lane-contact crosses the cross-lane [loc-state:4]
+18 the soap-lane-contact delivers the nighttime-visitor report [state:6]
+19 taylor-hebert-kl-122ac opens the packet
+20 taylor-hebert-kl-122ac writes the precinct-pattern sourcing [narrator:4] [state:7] [state:18] [vibes:3] [vibes:6] [vibes:7]
+21 taylor-hebert-kl-122ac seals the packet [state:8]
+22 taylor-hebert-kl-122ac enters the feed-station [loc-state:5] [state:9]
+23 taylor-hebert-kl-122ac closes the Jarvis entry [loc-state:6] [state:10]
+24 taylor-hebert-kl-122ac closes the Oswyn entry [state:11]
+25 taylor-hebert-kl-122ac closes the contacts entry [narrator:5] [state:12] [state:19] [vibes:1] [vibes:2] [vibes:11]
+26 taylor-hebert-kl-122ac closes the arrangement entry [narrator:6] [state:13]
+27 taylor-hebert-kl-122ac sets the stylus down [feel:1] [sensory:2] [state:14] [vibes:1]

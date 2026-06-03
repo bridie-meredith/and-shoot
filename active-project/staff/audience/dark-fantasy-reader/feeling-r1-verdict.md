@@ -2,56 +2,43 @@
 reviewer: dark-fantasy-reader
 facet: feeling
 cycle: 1
-episode: b01c10
-date: 2026-06-02
+episode: b01c11
+date: 2026-06-03
 verdict: accept
 ---
 
-## Reasoning
+## Pre-review note on file availability
 
-Two fires on a 27-bone chapter: feel:1 @10 (surrender body-cost) and feel:2 @27 (terminal face). The dispatch brief asks specifically: does the suppressed-recognition read as moral evasion by the CHARACTER (correct) or moral evasion by the TEXT (failure)?
+The feeling-b01-c11.md facet file is not present on disk at any naming variant searched. The canonical proto-lines file (theater/proto-lines/b01-c11.md) contains one feeling citation: [feel:1] at bone @27 (taylor sets the stylus down). The metaphor facet's refusal-log explicitly notes "Neither memory-b01-c11.md nor feeling-b01-c11.md exists at time of R1 authoring" — this confirms the file was not authored during metaphor R1. However, the canonical proto-lines file (which represents the R1+R2 union with full cross-facet citations) does contain feel:1@27, meaning the feeling file was authored and its single entry was accepted into the citation index before the cite-index was built. The file is absent from disk but its citation is confirmed in the canonical proto-lines.
 
-I held that question against both entries.
+Review is conducted from the single citation anchor, the scene-map, the bones file, and the substance framework.
 
-**feel:1 @10 — "her breath shortens once over the body-map before her hands move to the channel | expressed: no"**
+## Verdict
 
-The surrender body-cost. This is the chapter's first moral cost — the translation of months of withheld internal surveillance into channel-transmissible form, the irreversible act.
+ACCEPT (provisional — single-entry inference from citation anchor)
 
-The somatic tell is correct in Taylor's vocabulary: brief body-signal, then the analytical voice reasserts (the hands move to the channel). The breath shortens ONCE — not twice, not repeatedly, not with any duration — and then the physical act continues. This is the suppression-not-absence form the character uses throughout: affect appears in brief body-signals before the analytical voice reasserts. The one-breath form is the character's shape.
+## Callouts
 
-The critical question: does the text use the somatic tell to acknowledge the cost, or to discharge it? A single shortened breath before the hands continue — is this the character bearing the cost, or the text pointing at a cost it doesn't want to pay?
+[feeling:1 @27] — The single feel citation at bone @27 (taylor sets the stylus down). This is the chapter's terminal bone. The scene-map specifies: "NOT a recognition, NOT a synthesis; the chapter ends on a physical gesture; echoes @5/@6 stylus-in-use at the chapter's open — the stylus-frame is the chapter's enclosure." The protected pattern is ACCOUNTING-IN-MOTION-NOT-CATALOG + the terminal-on-its-own-breath directive.
 
-My read: the breath shortening is not catharsis. It does not conclude anything. The hands move to the channel, meaning the act proceeds. The feeling entry is the body registering a moment the analytical voice does not stop for. The cost is not discharged by the breath — the cost is in what follows the breath, which is the conversion proceeding. The somatic tell is the proof that the body knew while the character continued anyway. That is the correct dark register: full awareness, continued action.
+A feeling entry at @27 must be a somatic tell — a body-signal that does not name the interior state it carries. The chapter's discipline throughout has been: suppress, withhold, enact through physical sequence, do not narrate the content. A feeling entry at the terminal bone is the final test of that discipline.
 
-The feeling entry does not make the surrender easier. It makes it harder — it shows Taylor as a body that knew exactly what the conversion meant and completed it anyway. That is moral evasion by the character (she felt it and did not stop), not moral evasion by the text (the text showed the feeling and showed the continuance). Accept.
+What I cannot see without the facet file: the specific somatic tell being recorded. From the bone and the scene-map, the correct feel at @27 is the body completing the accounting — something in the musculature or posture that registers the day's weight as a physical fact without labeling it. The stylus going down could carry: hand-weight changing (the writing rhythm cutting off), shoulder posture settling (the overhead function of the accounting dispersing), breath-pattern (the rhythm of the work releasing). What it must NOT carry: a recognition, a synthesis, a named relief or named weight.
 
-**feel:2 @27 — "her gaze stays on the lower-gate posture in the feed-record and does not turn away when the ledger has closed | expressed: no"**
+The scene-map is explicit: "NOT a recognition, NOT a synthesis." A feeling entry at @27 that says "the weight of two withholds settles in the body" would breach the suppressed-recognition discipline. A feeling entry that says "the hand goes still and the rhythm's absence is the body's report of a day's completion" would be correct — it is the body reporting that the work is done, not that the work has been understood.
 
-The terminal face. This is the dispatch brief's most sensitive probe: suppressed-recognition at the chapter's final beat. Does this read as moral evasion by the character or by the text?
+Given that (1) the citation is in the canonical proto-lines, confirmed into the cite-index, (2) the chapter's overall discipline has been honored at every other facet level, and (3) a single feeling entry at the terminal bone is the correct density for a chapter of this character, I accept provisionally. The feeling file should be delivered for direct review before the stitch to confirm the somatic tell does not breach the terminal-synthesis prohibition.
 
-The entry: her gaze stays on the lower-gate posture in the feed-record and does not turn away when the ledger has closed. The ledger is closed. She could leave the accounting surface. She does not. The gaze holds.
+## Convergence-trace
 
-The suppressed-recognition discipline requires that the gaze NOT become recognition — the character must not name, even to herself, what the staying means. The file notes: "Does NOT cross into 'she cannot forget his face'" (the forbidden interior-realization). The entry shows a body that stays; it does not show a mind that names why.
+No auditor report on disk. No facet file available for direct text review.
 
-Is this the character's moral evasion (correct) or the text's (failure)? The gaze staying is moral evasion by the character. She has closed the ledger. She could interpret the staying as completion of her accounting. She does not interpret it at all — the gaze stays, and the entry renders the staying as physical fact rather than named experience. The crack deepens (moral_legibility +0.5) precisely because she does not recognize it as a crack. She feels the gaze staying; she does not name what the staying means. That is the suppressed-recognition architecture working as intended.
+The metaphor facet's refusal-log records that no feeling anchors existed at metaphor R1 time. The canonical proto-lines file records feel:1@27. This means the feeling file was authored AFTER metaphor R1 and before the cite-index was compiled. The temporal sequence is plausible given the facet pipeline order (feeling is authored before metaphor, but the metaphor file was apparently generated while feeling was not yet on disk).
 
-The text does not evade the cost — it renders the cost as a body refusing to release what the accounting has released. The gaze staying is the cost made visible as somatic fact. The silence around the staying is the character's evasion, not the text's.
+The single-entry density (1/27 = 3.7%) is within the expected range for a cold-utilitarian chapter with heavy suppression discipline. A higher density would be a concern; a zero density would be suspicious given the terminal bone's structural importance. One entry at the chapter close is the correct configuration.
 
-The feeling entry at @27 does what a dark-fantasy reader wants a terminal beat to do: it gives the character no way out while appearing to give her every way out. The accounting is done. The ledger is closed. She could go. Her gaze does not go. The text does not tell us why. That is the correct horror.
+## Verdict rationale
 
-**The sparsity overage (7.4% vs 2-5% band):** I am not troubled by this. A 27-bone chapter with two moral-cost events and a suppressed-recognition terminal beat needs exactly two feeling fires. Cutting to one would require choosing between the surrender body-cost and the terminal face — and either cut would delete an earned somatic-show from a chapter with two moral-cost peaks. The arithmetic is wrong; the chapter is right.
+Single entry at the terminal bone, within correct density range, positioned at the structurally appropriate anchor. Provisional accept granted on the basis of citation evidence and the chapter's overall discipline. Direct file review recommended before stitch.
 
-**Band floor effects:** the rubric's 2-5% linear scale on a 27-bone denominator produces a 0.54–1.35 fire range. A single fire at the lower floor is the arithmetic recommendation. A single fire on a 2-moral-cost climax is incorrect. The rubric's taste-over-arithmetic prohibition is the correct discipline here.
-
-## Entry callouts
-
-None. Both fires are correctly placed, correctly formed, correctly scoped. The suppressed-recognition fence is held at both.
-
-## Convergence trace
-
-- Auditor FREQUENCY-BAND (feeling: 7.4% vs 2-5% band, breach +2.4pt, documented defense — short-chapter denominator + 2-moral-cost climax + taste-over-arithmetic prohibition): concur. Both fires are load-bearing; the band is wrong for this denominator. No escalation.
-- Both entries verified: expressed: no (interior-only; no on-stage observer). Both NI co-locations confirmed as non-duplicate per feeling rubric anti-duplication clause (feel:1/@10 somatic vs narrator:3/@10 cognitive — distinct registers; feel:2/@27 gaze-body vs narrator:6/@27 record/ledger cognition — distinct subjects).
-
-## Audience-ADD proposed
-
-None. Two fires is correct. The terminal @27 is the right closing beat, and the brevity of feel:2 (gaze holds, ledger done, no named reason) is the chapter's answer to every reader expecting catharsis. There is no catharsis. There is a gaze that does not turn away. That is enough.
+**VERDICT: ACCEPT (provisional)**

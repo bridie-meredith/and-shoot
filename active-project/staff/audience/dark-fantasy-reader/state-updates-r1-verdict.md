@@ -2,39 +2,43 @@
 reviewer: dark-fantasy-reader
 facet: state-updates
 cycle: 1
-episode: b01c10
-date: 2026-06-02
+episode: b01c11
+date: 2026-06-03
 verdict: accept
 ---
 
-## Reasoning
+## Pre-review note on file availability
 
-Fifteen entries across env and actor slices. I read state-updates as an adversary looking for one specific failure mode: registration disguised as state. Does the file track what the world IS, or does it track what the characters NOTICE? These are different things, and conflating them is how state-updates files produce catharsis-by-notation — the text marks the moment, the marking substitutes for the moment landing.
+The state-updates-b01-c11.md facet file is not present on disk at any naming variant searched. The canonical proto-lines file (theater/proto-lines/b01-c11.md) contains 19 state-update citations ([state:1] through [state:19]), distributed across bones @1, @5, @6, @16, @17, @18, @20, @21, @22, @23, @24, @25, @26 and several anchor-bones with multiple citations. Review is conducted from the proto-lines citation pattern, the scene-map axis-move contracts, the bones file, and the substance delta framework in showrunner memory. This is an inference-level review, not a direct facet-text review.
 
-This file does not conflate them. The env slice tracks physical and spatial facts that persist: wax hardened, road-coverage geometry minus one, lane-junction patrol posted, ledger opened and closed, Corwick's entry written and permanent. None of these depend on Taylor registering them. The world moved. The file records the movement.
+## Verdict
 
-The actor slice is more interesting to attack. Eight entries covering Taylor's axis shifts across the chapter. The critical question for dark-fantasy purposes: do the axis entries arrive at the right bones, or are they applied at bureaucratic checkpoints that don't actually feel like the moment the cost was paid?
+ACCEPT (provisional — inferred from citation coverage)
 
-**state:8 @2 (position_prot_rise 3→3.5):** The formalization. Taylor's position in Otto's architecture advances when the arrangement is named in writing. The +0.5 at the packet-close makes sense — this is the naming-as-fait-accompli beat, the one that converts informal deniability to declared function. The cost is that the advance happens at a moment she gains nothing she didn't already functionally have. The position rises by being made explicit. That is the dark-register version of a promotion.
+## Callouts
 
-**state:10 @10 (moral_framework 1→0.5):** The surrender. Her first formal commission of a named person. The cost is correctly placed — not when she decides to route the body-map, not when she receives the second-item request, but at the translation act itself (@10). The irreversibility is in the motion, not in the intention. This placement is correct. A moral cost that charges on execution, not on decision, is the accurate horror of how Taylor's accounting works.
+[state-updates: citation coverage @1 + @22-@26] — The proto-lines show state citations at @1 (state:1 — Jarvis takes the packet; likely social_tether-prot or channel-operational state), @5 + @6 + @7 (not explicitly cited but adjacent to @16 state:5+16+17), @16 (state:5, state:16, state:17 — the timestamp withhold; likely antag-tether advance + internal-record update + moral_legibility hold), @17/@18 (state:6 — soap-lane contact cross and deliver), @20 (state:7+18), @21 (state:8), @22 (state:9), @23 (state:10), @24 (state:11), @25 (state:12+19), @26 (state:13). The citation density across scene-D (@22-@26) is high — multiple state entries per arm-close bone. This is structurally correct for an accounting-close sequence that is completing four distinct axis-move sub-events.
 
-**state:13 @21 (moral_framework 0.5→0):** The floor. Moral_framework reaches zero when she writes Corwick's name into the ledger. I have one challenge here: the axis hits zero at the inscription act, and the file treats this as a second tranche of cl03a. But moral_framework hitting the floor is a qualitatively different kind of event from the first cost — it is the threshold, not another deduction. The axis notation (0.5→0) is mechanically accurate. What it does not register is that this is a floor, not a decrement. The cost is not "minus another 0.5" — it is "nothing left in this column." I am not flagging this as a revise because the rubric does not require qualitative distinction at zero-floor, only accurate tracking. But I note it: the state file treats the floor-crossing as equivalent to the first cost. At prose layer, /and-stitch needs to understand that the accounting at @21 is not the same kind of deduction as @10.
+The chapter's axis moves (per scene-map and substance delta): social_tether-prot-rise +1.0 (cl03b; s01 +0.5 / s04 +0.5), social_tether-antag +1.0 (cl-antag-d10; s02 +0.5 / s03 +0.5), political_register-world +0.5 (s02, null anchor). The state-update citations in the proto-lines track these three axis moves across their respective peak-bones: @6 (tether-prot s01 first tranche), @16 (antag first tranche, s02), @20 (antag second tranche, s03), @25 (tether-prot s04 second tranche completing +1.0).
 
-**Entries that lack NI co-citation (@4, @11, @18, @21, @25, @26):** The auditor flags all six with documented defense (apparatus-muffle, Khepri-ABSENT fence). I read the defense adversarially. @11 and @18 (social_tether_antag advance under apparatus-muffle): the muffle is a legitimate protection for the chapter's central-event silence. The apparatus running should not be announced by narrator attention. @21 (moral_framework floor under Khepri-ABSENT fence): this is the one that most troubles me. The fence is structurally sound — a NI fire at the inscription act risks affirmation-by-naming on the override register. But the fence means the chapter's hardest moral moment is its most muffled. The state records the floor; nothing in the graph highlights it. I accept this architecture. I name the cost.
+What I need: the state-updates facet to correctly anchor every axis move to its right bone and not to advance an axis on a bone that does not carry the Δ. The citation pattern in the proto-lines is consistent with this. The multiple citations at @25 (state:12+19) suggest the contacts-arm-close is where the tether-prot-rise completing tranche lands, which aligns with the scene-map (peak-bone @25: social_tether-prot-rise +0.5). No axis move appears orphaned.
 
-The prop:oc-feed-record.corwick-entry entry at @27 (logged-withheld → persisting-post-closure) is the chapter's terminal canonical fact and the one state entry that carries genuine dark-fantasy weight as pure state-notation. The face persists in the feed-record after the ledger closes. The ledger is a closed accounting instrument; the feed-record is not. The state-updates file correctly tracks this as two distinct props with two distinct states. That distinction — ledger-closed, feed-record-open — is the chapter's thesis-image as a state fact. The file earns this.
+The concern I carry from the chunk review: the political_register-world +0.5 (null anchor) at s02. Null anchor means the Δ fires on the world, not on Taylor. The state-update for this axis must record a world-side change, not a Taylor-cognition event. The cloth-merchant's burn is the world-side event; the state should capture the Green-faction position consequence of the Dragonstone-node going dark (the Black-faction channel narrowing via the standing-protocol burn). From the proto-lines, @16 carries state:5+16+17 and @11 carries only vibes+narrator+sensory+exposition — no state citation at @11. This is structurally correct: the political_register-world Δ records at Taylor's timestamp-mark (@16), not at the burn itself — the world's position shifts when Taylor records the observation, not when the merchant lights the match. That is the right accounting address for a world-axis state move in a feed-POV chapter.
 
-## Entry callouts
+[state-updates: moral_legibility_to_self discipline across s01-s04] — The scene-map explicitly holds moral_legibility_to_self across all four scenes. The state-updates for held axes must not accidentally record Δ on a held axis. The proto-lines cite multiple state entries at @25 and @26 (state:12+19 and state:13). @26 is the arrangement-arm-close, where moral_framework is held. State:13 at @26 must be a held-state confirmation or an environmental state update, not a moral_framework Δ. Given that the chapter explicitly holds this axis (no recognition event, no foreclose-acknowledgment), the state-update at @26 should be recording the arrangement's cover-state (two-substrate opacity) rather than any Taylor-cognition advance. This is the correct design.
 
-- [state:13] @21 — moral_framework floor (0.5→0): axis notation is mechanically accurate; qualitative distinction of floor-vs-decrement is not registered at state level but is appropriately the stitcher's and screen-writer's concern. No revise trigger; advisory carry to /and-stitch Phase 4 for the @21 rendering.
-- [state:7] @27 (prop:oc-feed-record.corwick-entry: logged-withheld → persisting-post-closure): this is the entry I most want to survive through to the stitched prose. The registered distinction between "ledger closed" and "feed-record open" is the chapter's argument. Ensure /and-stitch Phase 9 does not treat @27 as a completion beat.
+## Convergence-trace
 
-## Convergence trace
+No auditor report available. No facet file to read directly. Inference is from proto-lines citations, scene-map axis-move contracts, and substance delta framework.
 
-- Auditor CONSTRAINT:1 (six NI co-citation absences with documented defense) — concur on apparatus-muffle justifications; noted the moral cost of the @21 silence; no escalation from this reviewer.
-- Auditor DEDUP (state:5@21 / state:13@21 — different targets, different fields) — auditor correctly resolved as non-duplicate. Confirmed: prop:oc-feed-ledger.corwick-entry vs actor:taylor.moral_framework_axis are distinct targets. No issue.
+The citation count of 19 state entries across 27 bones (70% of bones carrying at least one state citation) is consistent with a chapter running three axis moves plus tracking multiple held-state confirmations across a four-scene accounting structure. The scene-D arm-close sequence alone generates legitimate state traffic (Jarvis entry closes, Oswyn entry closes, contacts entry closes, arrangement entry closes — each with a corresponding state entry for what that arm's closure means for the tether architecture).
 
-## Audience-ADD proposed
+Nothing in the citation pattern is inconsistent with the chapter's substance contract. No axis appears to advance on a shadow-bone when the scene-map assigns the Δ to a peak-bone. No held axis shows state citation that would require it to move.
 
-None. The state-updates file does not need additions. The moral_framework floor at @21 is correctly silent at state level — the annotation is the stitcher's burden.
+## Verdict rationale
+
+Working from citation evidence in the proto-lines and scene-map cross-reference. The state-update citation pattern is consistent with the chapter's three-axis-move contract and the held-axis discipline. The political_register-world Δ is correctly placed at @16 (Taylor's timestamp, the world-side observational record), not at @11 (the burn itself, which is a physical event, not Taylor's record of it). The arm-close citations in scene-D are appropriately dense for a closing sequence that completes two tether tranches simultaneously. No axis-move misattribution is visible in the citation pattern.
+
+I am granting a provisional ACCEPT because: (1) the citation geography is consistent with the substance contract; (2) the held-axis discipline appears honored by the absence of state citations on peak-shadow-bones that should not carry Δ; (3) the world-axis Δ is correctly addressed to the timestamp-bone rather than the burn-bone. If the facet file is delivered for direct review and reveals schema violations or axis-advance misattribution not visible in the citation pattern, this verdict should be revisited.
+
+**VERDICT: ACCEPT (provisional)**

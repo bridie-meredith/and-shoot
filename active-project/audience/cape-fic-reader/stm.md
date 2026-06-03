@@ -1,4 +1,4 @@
-# Audience STM — cape-fic-reader
+	# Audience STM — cape-fic-reader
 STM:
 
 ## /and-series Attempt 1 verdict
@@ -216,7 +216,7 @@ VERDICT: ACCEPT — the chunk set delivers all five axes with felt mechanisms, t
 - b01c04s02n03: KEEP — moving: capability +1.0; both adjacent wards in one deployment; canonical "extends the insect-range" form; magnitude floor met at 1.0; axis-aggregate EXACT
 - b01c04s02n04: KEEP — held: moral_legibility_to_self; mapping-without-naming enacts the legibility hold; covers [mechanism: capability expansion as rote procedure]; first of two moral_legibility_to_self held bones in s02; the un-examined framing IS the information-asymmetry shape — reader sees the architecture growing while Taylor doesn't name what she's building
 - b01c04s02n05: KEEP — sensory grounding; carter parks the middens cart; stages the middens court context before Oswyn registers in the feed; the image-tag from the chunk ("Oswyn at the cart, fever-burned look long gone") requires the carter context; without it n06's Oswyn return has no crowd cover and reads as a marked event rather than a coverage discovery; cost_ledger_anchor present (cl03b)
-- b01c04s02n06: KEEP — moving: social_tether-prot-rise +1.0; Oswyn fully enters coverage as unknowing node; information-asymmetry-that-reshapes-the-board: Oswyn was c01 fever-child, now he's a coordinate; setup paid; canonical "returns" form; axis-aggregate EXACT
+- b01c04s02n06: KEEP — moving: social_tether-prot-rise +1.0; Oswyn fully enters coverage as unknowing node; information-asymmetry-that-reshapes-the-board: Oswyn was c01 fever-child, now he's a named coordinate; setup paid; canonical "returns" form; axis-aggregate EXACT
 - b01c04s02n07: KEEP — held: moral_framework; Taylor maps Oswyn's interval without naming the act as intelligence-routing; covers [force: Oswyn's unknowing-node status — routing him into the architecture without naming it]; opposing_force_bone in scene_conflict; the same walk-and-read that was triage now routes upward — this bone is the opposing force enacted
 - b01c04s02n08: KEEP — sensory grounding; stitch-house frames mark the second ward; second ward's sensory identifier (sound-signature of looms); distinct from Pig Tallow Lane; grounds the Wren-return at n09 in a specific location; cost_ledger_anchor present (cl03b)
 - b01c04s02n09: KEEP — held: relational_anchor_status; feed returns Wren, anchor holds; first of two anchor-discipline bone-level contents (worm-canon watch: distinct feed-return vs. route-choice); canonical "returns" form; Wren in range, not in the report
@@ -417,3 +417,45 @@ notes:
   - s04 ledger-close on Corwick as named person is the cost-column made specific: he did not consent to the observation, the body-map, the delivery; the face stays in the feed-record after the entry closes; suppressed-recognition beat lands in the gap between "the ledger is complete" and "the face does not disappear"; the chapter closes on the accounting convention showing its limits without Taylor naming them
   - no fatigue triggers: no filler, no unmotivated knowledge (Otto's apparatus has independent sight-line on Corwick — explicitly named in s02); no established limits bypassed without cost; the held axes read as load-bearing dormancy throughout
   - bones-execution watch: s02 harm-reduction calculus must have visible seams at bone level — "she does not recount to herself why she had been holding it" must be enacted as substrate-routing, not as absence of a bone; the rationalization needs a bone that shows it running (the calculus is operative) without a bone that endorses it; the chunk telegraphs the seam, bones must deliver it
+
+## b01c11 /and-write Phase 6 bone-gate — 2026-06-02
+
+---
+reviewer: cape-fic-reader
+chapter: b01c11
+phase: write-bone-gate
+date: 2026-06-02
+scenes_reviewed: [b01c11s01, b01c11s02, b01c11s03, b01c11s04]
+---
+
+verdict_per_scene:
+  b01c11s01: SUBSTANCE-FELT
+  b01c11s02: SUBSTANCE-FELT
+  b01c11s03: SUBSTANCE-FELT
+  b01c11s04: SUBSTANCE-FELT
+hard_findings: none
+SUBSTANCE-FLAT: none
+SUBSTANCE-SUSPECT: none
+chapter_verdict: SUBSTANCE-FELT
+
+phase_5_watches:
+  s01_wool-dyer-discrete-act: HONORED — n05 (stylus to source-field) / n06 (writes lane-pattern, axis-mover) / n07 (lifts stylus) deliver three structurally distinct beats; omission enacted as bodily completion at n07, not narrated
+  s03_enacted-not-stated-halvard-absence: HONORED — opens packet (n03) → writes precinct-pattern sourcing (n04, axis-mover) with no intervening Halvard-test beat; the absence is the action sequence itself
+  s04_procedural-not-catalog-crystallization: HONORED — sequential four-arm closing (n02 Jarvis / n03 Oswyn / n04 contacts, axis-mover / n05 arrangement); crystallization fires at n04 through prior closes, not asserted at scene-open
+
+notes:
+  - s01: tether-at-load confirmed via node-action sequence (n01-n04) before the axis-mover fires; unprompted debt-service return (n04) is the information-asymmetry beat that shows the tether working; wool-dyer withhold triple-beat is enacted correctly
+  - s02: burn lands as world-state event through physical sequence (sealed/opened/burned) visible to reader before Taylor's feed confirms; two relay data points (thermal-shift n06 / smoke-curl n07) demonstrate detection bandwidth; timestamp mark (n09) lands as positive recording act — withheld-category widens through what she records, not what she decides; two axis-moves (world +0.5 at n04 / antag +0.5 at n09) structurally distinct
+  - s03: Halvard-slot absence is enacted through action-sequence omission (no test bone between n03 and n04); moral_legibility_to_self hold at n05 (argument not reached for before packet seals) is the correct suppression shape — not recognition-then-suppression, but non-arrival; reader sees the gap Taylor does not reach for
+  - s04: near-peak crystallization is procedural (sequential arm closings) not declarative; the completed count visible to reader (two withholds in internal record, Dragonstone-distance irony) while Taylor closes columns without labeling any entry as withhold; stylus-rests (n06) as closing image is voice-load-bearing
+  - no fatigue triggers: no filler, no unmotivated knowledge, no established limits bypassed without cost; held axes throughout four scenes enacted via physical acts
+
+phase_4_trim:
+  verdict: ACCEPT (27 KEEP, 0 DELETE)
+  notes:
+    - s01 n01/n02 confirmed distinct (channel-active beat vs. ceremony-free departure register)
+    - s02 n06/n07 confirmed distinct (thermal-shift vs. smoke-curl = two sensory classes); n07 is thinner; prose compression licensed at stitch if relay reads redundant in flow
+    - s03 n01/n02 confirmed distinct (contact physical arrival vs. nighttime-visitor datum)
+    - s04 n04/n05 confirmed distinct (contacts-arm crystallization vs. arrangement/cover accounting)
+    - no bones serve neither goal nor declared Δ; no chatter without cost_ledger_anchor
+    - one prose-execution note: s02n07 (smoke-curl) is the thinnest bone in the file; stitcher may compress if n06+n07 run redundant in voice

@@ -753,3 +753,55 @@ canonicity_findings:
   - multi-shard fence: CLEAN — no body-coordination; no directive deployment; insect-feed returns positions/posture data only
   - Wren-surveillance: coverage-as-accumulation form; established methodology applied to a body in coverage; canonical
 verdict_file: active-project/audience/worm-canon-pedant/bone-gate-b01c09-2026-06-01.md
+
+## 2026-06-02 — /and-substance chapter b01c11 Phase 5 review
+
+reviewer: worm-canon-pedant
+dispatch_mode: single-persona override (PROP-0036)
+chapter: b01c11
+dramatic_shape: rising
+scenes_reviewed: [b01c11s01, b01c11s02, b01c11s03, b01c11s04]
+
+### Earth-Bet fence
+CLEAN. All four scenes reviewed. No Khepri, no Gold Morning, no parahuman, no capes, no shard, no Manton, no trigger-event across any scene. Functional descriptive language throughout: "insect-feed," "feed," "coverage grid," "compound eyes," "worktable's ambient zone," "thermal shift," "smoke-curl." The burn-detection mechanism specifically: thermal shift + smoke-curl through insects in the worktable's ambient zone — biological sensory relay form correct; no broadcast; no non-physical access to paper content. CLEAN.
+
+### Insect-feed burn-detection mechanism — adjudication
+CANON-CONSISTENT. The mechanism decomposes correctly into (1) physical events insects register (heat, particulate, air disturbance from a small iron dish at worktable range) and (2) Taylor's inference chain from physical observations (paper geometry distinguishable from bolt-ticket geometry; iron dish as prior artifact; practiced-recovery pattern). Feed supplies physical data; Taylor supplies the conclusion. Feed does not read intent or content. This is the courier-3-distinct-bones discipline applied correctly to a burn event. Clean mechanism.
+Write-time watch: must decompose to minimum two bones — one for feed's thermal/smoke return, one for Taylor's inference about burn-intent from geometry and timing. No single collapsed inference bone.
+
+### Partial-settlement bookkeeping
+cl-d06 second tranche re-window to b01c12: CLEAN. Named, DEC-0071 cited, relational_anchor_status held flat at rank 3.5 across all four scenes. Wren's presence in s04 internal record ("indexed in the coverage geometry as it has been indexed for three months") is continuity-presence without weight-loading. Re-window executed cleanly.
+cl-antag-d10 partial-settle: CLEAN. Chapter takes +1.0 (s02 +0.5 / s03 +0.5) against the partial-settle; the non-extractable-confirmation component linked to cl04 is explicitly not claimed; pl-2026-06-02-002 remains open per s04 rationale. Honest bookkeeping — the ledger opens on what is done, not what will be done.
+
+### Per-axis verdicts
+
+social_tether-prot-rise (+1.0, cl03b, s01 +0.5 + s04 +0.5): SUBSTANCE-FELT
+Crystallization mechanism correct: tether was built; this chapter makes all four nodes simultaneously legible. Gain reads as accumulated weight becoming visible, not as a new event on top of held discipline. cl03b anchor chain solid. s04 evening count enumerates all nodes without Taylor naming the peak — accounting closes at "operational state," not "tether at full load." Opposing force is the load itself (each node doing work beyond Taylor's single operational choice). Earned.
+
+social_tether-antag (+1.0, cl-antag-d10, s02 +0.5 + s03 +0.5): SUBSTANCE-FELT
+Two-withhold mechanism: ward-contact identity / Rhaenyra-pressure signal — two distinct categories of withheld intelligence. Substrate split widening in scope. s03 Halvard-thinning is the chapter's strongest piece of axis-held writing: argument not defeated, simply inactive as the instrument she reaches for. Taylor-register accurate — she does not argue her way into moral positions, she behaves her way out of them. Non-extractable-confirmation flag on cl04 component is honest, not evasive. Earned.
+
+political_register-world (+0.5, s02, null cost_ledger_anchor): SUBSTANCE-FELT
+Null anchor classified as recurring-correct-architecture (documented precedent from b01c02s02 and b01c15; pattern is structurally sound, not evasion). World-state consequence of c10 detention legible through burn: logistics thread known-cut on Dragonstone side. Taylor withholds; world moves without Taylor moving it. Write-time watch: axis advances on world-state event, not on Taylor's recognition of significance. No bone should give Taylor the read "Dragonstone is now a factor."
+
+axes held (moral_framework, moral_legibility_to_self, relational_anchor_status, political_register-prot): all four correct. Moral_framework hold at rank -1 across four scenes of active withholding is the chapter's most load-bearing discipline — two withholds do not open a ledger entry, Halvard thinning does not produce a recognition event, evening count does not name the withholding as withholding. Accounting closes. Architecture operating as designed.
+
+### Chapter goal coverage
+tether-at-full-load: LAND — s04 count enumerates all four nodes; stylus-down image with two withheld observations in internal record is the Dragonstone-distance irony the goal requires
+Rhaenyra-pressure via cloth merchant message-burn: LAND — mechanism concrete; burn readable through physical sensory relay; Dragonstone-distance correctly maintained; Taylor infers "Dragonstone has learned" from logistics context without Dragonstone being named as burn's direct origin
+withholding-from-Otto pattern: LAND — two withholds, two categories, neither enters Jarvis packet, evening count closes without labeling either as a withholding act
+
+### Write-time watches for /and-write (not blocks)
+1. Burn-detection decomposition: two distinct bone operations minimum (feed-returns-thermal-smoke / Taylor-infers-burn-intent-from-geometry-and-timing); no single collapsed inference bone
+2. political_register-world at bones level: axis moves on world-state event, not Taylor's recognition of significance; no bone gives Taylor "Dragonstone is now a factor"
+3. Halvard-thinning at bones level: enact as behavioral observation (Taylor reaches for mechanism, circuit does not complete) not as labeled psychological shift; no bone says "halvard-argument is no longer Taylor's instrument"
+4. s04 evening count: enact as Taylor's actual count-procedure with procedural texture, not as a four-item catalog; four sequential enumeration bones with no procedural texture reads as catalog, not accounting discipline
+
+### Overall verdict
+SUBSTANCE-FELT — all three axes in motion earn their Δ through described mechanisms; held axes correctly dormant; partial-settlement bookkeeping clean and honest; Earth-Bet fence CLEAN across all four scenes.
+SUBSTANCE-FLAT: none
+SUBSTANCE-SUSPECT: none
+earth_bet_fence_verdict: CLEAN
+hard_findings: []
+soft_findings: none (all write-time watches are not blocks)
+carry_forward: 4 write-time watches to /and-write b01c11 (listed above)

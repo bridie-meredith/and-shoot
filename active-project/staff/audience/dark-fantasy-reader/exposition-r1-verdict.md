@@ -2,51 +2,47 @@
 reviewer: dark-fantasy-reader
 facet: exposition
 cycle: 1
-episode: b01c10
-date: 2026-06-02
+episode: b01c11
+date: 2026-06-03
 verdict: accept
 ---
 
-## Reasoning
+## Verdict
 
-Four entries. The binding exemption applies to exposition:4 @2 (licensed-context-exception: ctx-001) — I may not REVISE or FAIL this entry for being exposition or over-explanation; I may flag craft (REWORD) or propose audience-ADD. I hold this constraint throughout.
+ACCEPT
 
-**exposition:1 @0 (prior-episode-bridge):** The auditor's TASTE-FLAG on this entry is a legitimate craft note: "the harm I can prevent is still the only column that closes" is Taylor's accounting register, but "the harm I can prevent" abstracting before "the column that closes" registering creates a small gap where the abstract goal and the clinical instrument almost miss each other. The near-rhyme "column / closes" calls attention to the construct at the preamble moment.
+## Callouts
 
-This is a craft note, not a content failure. The bridge earns its place — it restates the still-informal arrangement and the nine-circuit withhold, both load-bearing preconditions for the chapter's two central events (formalization undoes the informality; the surrender collapses the withhold). Without both preconditions restated, the chapter opens cold.
+[exposition:1 @0] — *The prior-episode-bridge.*
 
-For the dark-fantasy reader specifically: I need the bridge to establish that the arrangement has been informal — because the formalization in s01 only costs something if there was a prior state the formalization replaces. The bridge gives me the prior state. "Each delivery still mine to weigh in sequence, the function never written down" — that is the condition being ended by the packet. The bridge is earning its weight.
+The bridge does what a bridge must do in a dark-fantasy chapter: it does not reset the weight. The arrangement is named, formalized, ALREADY OWED — the reader arrives in a chapter where the cost is running, not in a chapter where the cost is being established. "each delivery still mine to weigh in sequence, the harm I can prevent still the only column that closes" — this is Taylor's voice, in Taylor's register, naming the constraint as the discipline she has already accepted. It does not perform the acceptance; it reports that the acceptance is the standing condition.
 
-The TASTE-FLAG craft note stands: /and-stitch Phase 1 should consider whether "the harm I can prevent is still the only column that closes" can be tightened — the near-rhyme is avoidable if the phrasing is reworked at prose level without changing the content. I flag it as a /and-stitch advisory; it is not a graph-level revise trigger.
+The cold-read flag was a risk on this chapter (SHIPPED-WITH-RISK-RECORDED DEC-0072: cold-context proper-noun load for Otto/Rhaenyra/Dragonstone/Corwick/Halvard). The bridge addresses the reader-state carrying requirement — Corwick as a closed ledger entry, the thread cut at the lower gate, the one withheld observation already standing. Each of these is restated as register-resident fact, not as gloss. "There is one observation I have not routed, and this morning the circuit runs as it always runs" is the bridge's terminal clause, and it does what the dark-fantasy reader needs: it lands the reader inside a running machine, not at the start of a new one.
 
-**exposition:2 @17 (first-mention-term: the Gold Cloaks):** I am the persona who knows Gold Cloaks as City Watch from Westeros canon, so the gloss carries a note I've seen before: "the City Watch, the crown's armed guard in King's Landing." For me, the gloss orients the institution. It does not over-explain. The gloss correctly withholds the post-detention significance — the fact that a patrol is posted AT the junction rather than transiting is the chapter's work, not the exposition's. The gloss says WHO the Gold Cloaks are; the bones say WHAT their posture means. That division is correct. Accept.
+114 words, within the ≤120 cap. No Earth-Bet proper nouns. First-person Taylor throughout. The voice is cold-utilitarian: the harm I can prevent, the column that closes, the ledger, the circuit, the internal record. Not a character reflecting on her situation — a character running a morning briefing to herself.
 
-**exposition:3 @13 (scene-open-orient: "Two days later."):** Three words. This is the scene-orient the chapter required, stripped to exactly the residual content the lens facets cannot carry. The loc-state at @13 holds the cold-morning and the road; the exposition holds the two-day elapsed interval — the chapter's central causal-timing relation. The R2 REWORD correctly stripped the duplicative loc-state material (the lower-gate road, the cold morning) and kept only the interval. The three-word marker is correct. Accept.
+BINDING EXEMPTION: exposition:2 @11 carries the COMPLEMENTARY world-state leg of the Dragonstone irony. I may not fail or revise on info-dump grounds per the dispatch instruction. I confirm the exemption is correctly claimed: the two-leg irony structure (world-state leg via exposition, felt leg via narrator/memory) means neither entry is complete without the other, and the exposition entry is the only surface that can carry the world-state leg without breaching the suppressed-recognition discipline.
 
-**exposition:4 @2 (first-mention-term: the-stated-consideration / licensed-context-exception: ctx-001):** The binding exemption applies. I may not revise or fail for being exposition. I may flag craft.
+[exposition:2 @11] — *"The thread that ran through the merchant's shop ran to Dragonstone — the island seat across the bay where Rhaenyra keeps her court and the heir's faction holds, a half-day's water from the city. Something on that side has learned the channel is cut, and the answer is a burned page, not a rerouted one."*
 
-Craft read: "the packet sets it plainly: the protection over Sera continues as the consideration the function is owed against." The auditor flags the AP-SCAN voice-register-density concern: "the consideration the function is owed against" is an inverted-prepositional construction. The entry correctly identifies this as borderline — traceable to Taylor's accounting register but dense for a post-bone clause at a scene-open beat.
+The Dragonstone entry. 53 words. Post-bone-clause placement, meaning it surfaces after the burn has landed as a physical fact. The voice-fence is held: this is reader-facing world-state, not Taylor articulating the irony. Taylor does not say "and the channel I cut has been noticed." The entry says the thread RAN TO Dragonstone and SOMETHING ON THAT SIDE has learned. The agency is Dragonstone's, not Taylor's.
 
-My craft read: the inversion ("the function is owed against" rather than "the consideration owed to the function") is the bureaucratic inversion. Taylor does not think in terms of what she receives — she thinks in terms of what the function is owed, which is the passive accounting form. The inversion is not a mistake; it is the register. But it is dense, and at @2 — one of the chapter's highest-pressure bones — a reader parsing the post-bone clause may need a moment to unwind the syntax.
+"a burned page, not a rerouted one" — this is the dark-fantasy register at its most efficient. The enemy's response is named in its simplest material form. A burned page: they chose silence over redirect. That is not a neutral intelligence decision; that is an operational discipline from a faction that has protocols. "Something on that side has learned the channel is cut" — "something on that side" is deliberately impersonal, keeping the threat at the level of a power rather than a named individual. The Dragonstone-distance irony at @16 is the FELT form of this; the exposition gives the reader the world-state leg so that when narrator:3 @16 arrives ("the thread I cut was read somewhere I do not route to, read before I had finished knowing it was cut"), the felt-register can land as weight rather than confusion.
 
-Craft flag for /and-stitch: the post-bone clause should render in a way that makes the Sera-consideration legible on first pass. If the inversion causes readers to re-read, /and-stitch may smooth to "the protection over Sera continues as the stated consideration — what the function pays for" or similar, as long as the accounting register and the suppressed-recognition fence are preserved. The content earns its place (ctx-001 licensed; gain-pole of the gain/cost calculus, essential for s01 followability). Only the syntax is the question.
+The exemption is confirmed by my reading: this entry is necessary for all three personas to read the burn as what it actually is. For me, specifically: without the Dragonstone anchor, the burn is a merchant's private business in a shop. With it, the burn is an island a half-day across the water running its own protocol, indifferent to Taylor's processing speed. The world was already running this.
 
-No REWORD trigger — the content is correct and the exemption applies. A craft advisory only.
+No revision needed. The entry is lean, correctly placed, correctly fenced, and does exactly what the irony's two-leg structure requires.
 
-The sparsity computation (11.1% band-counted, above the 1-5% band ceiling) is consistent with the auditor's SIGNAL disposition: denominator-driven at 27 bones, each individually mandatory, bridge-suppression applies. I do not dispute this. The 11.1% figure at this denominator is an arithmetic artefact, not a sign of over-explanation. The text does not feel over-explained — it feels like a chapter that begins with exactly the context a reader needs to understand what the chapter is doing to the characters.
+## Convergence-trace
 
-## Entry callouts
+No auditor report on disk. Context-ledger confirms zero context-required gaps — the SEAM items (Dragonstone world-state, Halvard-foreclose) are carried by the facets and lens rendering, with exposition carrying the world-state leg it can carry without fence violation.
 
-- [exposition:1] @0 — craft advisory: "the harm I can prevent is still the only column that closes" — near-rhyme "column/closes" may call attention to construct at preamble moment; /and-stitch Phase 1 may rephrase if it can do so without changing the accounting register or the content. Not a revise trigger.
-- [exposition:4] @2 — craft advisory: "the consideration the function is owed against" inverted-prepositional construction; dense at a high-pressure beat; /and-stitch Phase 4 may smooth for first-pass legibility while preserving the accounting register and the suppressed-recognition fence. Not a revise trigger (exemption applies; content correct).
+SEAM-2 (Halvard-slot-absence) — exposition correctly stays OUT per the dispatch confirmation. A structural absence cannot be oriented by exposition without naming the absent thing, which the HALVARD-FORECLOSE-AS-STRUCTURAL-GAP pattern prohibits. The narrator-interest facet carries this (narrator:4 @20 confirmed in my NI verdict as needing one targeted revision, but the structure of the carry is correct).
 
-## Convergence trace
+## Verdict rationale
 
-- Auditor FREQUENCY-BAND (exposition: 11.1% band-counted, SIGNAL, denominator-driven + bridge-suppression + register-residence-maximized): concur. No escalation.
-- Auditor AP-SCAN:2 (exposition:4 @2 inverted-prepositional density): concur; noted in entry callout above.
-- Auditor TASTE-FLAG:1 (exposition:1 @0 "column/closes" near-rhyme): concur; /and-stitch advisory confirmed.
-- Auditor structural advisory (exposition ID file-physical ordering — non-monotonic): cosmetic; no content impact.
+Two entries. The bridge lands the reader inside a running cost, not at the start of a fresh situation. The Dragonstone entry carries the world-state leg of the chapter's central irony in the minimum required form: one sentence of place, one sentence of consequence. Neither entry tells the reader how to feel. Neither entry tells the reader Taylor has understood the stakes. Both entries give the reader what Taylor's suppression prevents the chapter's own first-person register from providing directly.
 
-## Audience-ADD proposed
+The chapter's cold-context risk is addressed. The burn at @11 is legible as a Rhaenyra-pressure signal, not as a merchant's domestic routine. The reader has the world-state; the chapter's lens facets provide the felt-register. The two halves are complementary and the exposition carries its half correctly.
 
-None required. The four entries cover the chapter's orientation needs. The bridge establishes the precondition. The time-skip marks the interval. The Gold Cloak gloss orients the institution. The stated-consideration gloss gives the gain-pole. Nothing structural is missing.
+**VERDICT: ACCEPT**

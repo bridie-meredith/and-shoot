@@ -1,37 +1,27 @@
-# bones — b01c10
-
-episode: b01c10
-narrator: taylor-hebert-kl-122ac
-goal: Show the audience the formalization and the detention in the same chapter so the structure is clear: Otto naming the arrangement and Taylor's feed confirming its operational consequence are the same event.
-cast: jarvis-coin-kl-courier, taylor-hebert-kl-122ac, corwick
-locations: the-feed-station, the-lower-gate, the-dragonpit-margin
-prior_episode: b01c09
-aggregate_range: 1-27
-
-1 jarvis delivers the packet
-2 the packet-text closes the frame
-3 the morning-stone holds the bay-cold
-4 taylor-hebert-kl-122ac folds the packet
-5 taylor-hebert-kl-122ac exhales
-6 the second item opens the packet
-7 the lower-gate road marks the body-map
-8 the body-map fills the feed-record
-9 corwick squares the stone-post
-10 taylor-hebert-kl-122ac translates the body-map [feel:1]
-11 taylor-hebert-kl-122ac routes the body-map
-12 the wax dries
-13 the supply cart marks the lower-gate road
-14 corwick walks the errand-corridor
-15 the lower-gate road loses corwick
-16 the stone-post marks the side-exit
-17 the Gold Cloak pair posts the lane-junction
-18 the insect-feed sweeps the errand-corridor
-19 the bay-cold presses the lower road
-20 taylor-hebert-kl-122ac opens the ledger
-21 taylor-hebert-kl-122ac writes corwick
-22 the feed-station stone grounds the wrist
-23 corwick faces the lower-gate
-24 corwick crosses the errand-corridor
-25 taylor-hebert-kl-122ac closes the ledger
-26 taylor-hebert-kl-122ac presses the feed-station
-27 corwick squares the feed-record [feel:2]
+1 jarvis-coin-kl-courier takes the packet
+2 jarvis-coin-kl-courier folds the covering-sheet
+3 oswyn-mudway-flea-bottom-elder presses the cart-frame
+4 the wool-dyer returns the cart-timing observation
+5 taylor-hebert-kl-122ac sets the stylus to the source-field
+6 taylor-hebert-kl-122ac writes the lane-pattern
+7 taylor-hebert-kl-122ac lifts the stylus
+8 the cloth-merchant opens the back-worktable
+9 the messenger crosses the shop-threshold
+10 the cloth-merchant lifts the folded-paper
+11 the cloth-merchant burns the paper
+12 the iron-dish receives the ash
+13 the insect-feed returns the thermal-shift
+14 the insect-feed carries the smoke-curl
+15 the cloth-merchant squares the bolt-ticket
+16 taylor-hebert-kl-122ac marks the timestamp
+17 the soap-lane-contact crosses the cross-lane
+18 the soap-lane-contact delivers the nighttime-visitor report
+19 taylor-hebert-kl-122ac opens the packet
+20 taylor-hebert-kl-122ac writes the precinct-pattern sourcing
+21 taylor-hebert-kl-122ac seals the packet
+22 taylor-hebert-kl-122ac enters the feed-station
+23 taylor-hebert-kl-122ac closes the Jarvis entry
+24 taylor-hebert-kl-122ac closes the Oswyn entry
+25 taylor-hebert-kl-122ac closes the contacts entry
+26 taylor-hebert-kl-122ac closes the arrangement entry
+27 taylor-hebert-kl-122ac sets the stylus down [feel:1]

@@ -1,8 +1,70 @@
 # studio state
 
-episode: b01c10
+episode: b01c11
 last_updated: 2026-06-02
-action: state-updates-env R1 blind authoring — /and-facets b01-c10 Phase 1
+action: three-facet R1 blind authoring — /and-facets b01-c11 Phase 1
+
+## Current set (b01c11 chapter-close)
+location: the-feed-station (end-of-day; accounting closed)
+time_of_day: end-of-day
+weather: none
+ambient_conditions:
+  - feed-station surface: feed-ledger closed, soap-lane-report-packet sealed (on surface or with Taylor)
+  - Gold-Cloak-pair-posted at lane-junction-patrol (carry from b01c10; unchanged)
+  - oc-jarvis-packet (b01c10 packet): in transit with jarvis-coin-kl-courier (departed @1)
+  - studio.fauna_sense_status.lower-gate-road-coverage: corwick-absent (carry from b01c10)
+
+## Location-state sequence locked (b01c11) — 6 entries, 0 cull
+  loc-state:1 @1  — the-feed-station | morning | none | station-surface-packet-at-hand-off | sealed packet at surface edge where Jarvis takes it (place-anchor; time-of-day reset to morning)
+  loc-state:2 @8  — oc-cloth-merchant-shop | morning | none | back-worktable-open, rushlight-lit | narrow back-worktable open in low rushlight (scene-B place-anchor)
+  loc-state:3 @9  — oc-cloth-merchant-shop | morning | none | back-worktable-open, messenger-at-threshold | threshold carrying off-hour body (state-change: new entrant)
+  loc-state:4 @17 — oc-soap-rendering-lane | afternoon | none | cross-lane-open | cross-lane at soap-rendering lane mouth, open to approach (scene-C place-anchor)
+  loc-state:5 @22 — the-feed-station | end-of-day | none | station-surface-clear, accounting-in-motion | feed-station surface bare, ledger open before arm-closes (scene-D place-anchor + time-of-day advance)
+  loc-state:6 @23 — the-feed-station | end-of-day | none | accounting-in-motion | continuity-from loc-state:5: accounting surface still under hand through the four arm-close sequence (continuity-carry)
+  Continuity-carry: @23 qualifies — scene-D fusion-eligible-run (@23-@26); falling-to-close-image (resolving posture; not in excluded list)
+  Cull: 0 entries removed — all 6 survive strip / pointing / frugality / previous-entry tests
+
+## Sensory facet filed (b01c11) — 2 entries, 0 cull
+  sensory:1 @11 — smell: shop-ambient -> paper-burning-char (scene-B; burn-beat smell onset)
+  sensory:2 @27 — sound: stylus-on-surface-rhythm -> silence (scene-D terminal; accounting-close cutoff)
+  Density: 2/27 = 7.4% — SHORT-CHAPTER EXEMPTION ACTIVE (27 < 30; modality-count = floor = 2; ceiling relaxed to max(6%, 7.4%) = 7.4%; ADVISORY not blocking)
+  Modalities: smell + sound (2; meets ≥2 floor)
+  Per-scene cap: scene-A=0, scene-B=1 (@11), scene-C=0, scene-D=1 (@27) — all within ≤3
+  SEAM-C11-SENSORY-001: @13/@14 grounding-ledger anticipation cannot be satisfied by sensory-flags (fauna-feed-extension reject); narrator-interest must carry the insect-feed thermal/smoke relay materiality
+  SEAM-C11-SENSORY-002: sensory:2 old-state partial lineage; R2 confirm or add loc-state sensory-note at @22
+
+## State-updates-env locked (b01c11) — 14 entries, 6 decisions-not-fire
+  state:1  @1  — prop:oc-jarvis-packet.holder: station-surface -> jarvis-coin-kl-courier
+  state:2  @5  — prop:oc-feed-ledger.condition: closed -> open
+  state:3  @6  — prop:oc-feed-ledger.source-field-entry: absent -> lane-pattern-only
+  state:4  @11 — prop:oc-cloth-merchant-paper.physical-condition: intact -> burned
+  state:5  @16 — prop:oc-feed-ledger.cloth-merchant-entry: absent -> timestamp-marked
+  state:6  @18 — prop:oc-soap-lane-report-packet.holder: soap-lane-contact -> taylor-hebert-kl-122ac
+  state:7  @20 — prop:oc-soap-lane-report-packet.content: nighttime-visitor-report -> precinct-pattern-sourcing-added
+  state:8  @21 — prop:oc-soap-lane-report-packet.physical-condition: opened -> sealed
+  state:9  @22 — studio.time_of_day: afternoon -> end-of-day
+  state:10 @23 — prop:oc-feed-ledger.jarvis-entry: open -> closed
+  state:11 @24 — prop:oc-feed-ledger.oswyn-entry: open -> closed
+  state:12 @25 — prop:oc-feed-ledger.contacts-entry: open -> closed
+  state:13 @26 — prop:oc-feed-ledger.arrangement-entry: open -> closed
+  state:14 @27 — prop:oc-feed-ledger.condition: open -> closed
+  Decisions-not-fire: @2 (fine-grain folding), @7 (withhold physical-completion stylistic), @8 (scene-local worktable), @9 (scene-local visitor), @10 (held-against-turn), @12 (scene-local iron-dish ash), @13/@14 (instrument-subject/actor-fork), @15 (routine bolt-ticket), @17 (actor-fork authority), @19 (held-against-turn), @15 (see above)
+  Field-extensions (8): oc-cloth-merchant-paper (new prop), oc-soap-lane-report-packet (new prop), feed-ledger.source-field-entry, feed-ledger.cloth-merchant-entry, feed-ledger.jarvis-entry, feed-ledger.oswyn-entry, feed-ledger.contacts-entry, feed-ledger.arrangement-entry
+  Margit referrals pending: oc-cloth-merchant-paper.card.md (new); oc-soap-lane-report-packet.card.md (new); oc-feed-ledger schema extension (8 new fields); oc-cloth-merchant-shop.card.md (location)
+
+## Seams flagged for R2
+  SEAM-C11-LOC-001: oc-cloth-merchant-shop — no confirmed warehouse card; margit referral
+  SEAM-C11-LOC-002: oc-soap-rendering-lane — no confirmed warehouse card; margit referral
+  SEAM-C11-LOC-003: feed-POV interpretation of @3/@4 and @13/@14 — physical vs. mediated spaces; R2 ruling needed
+  SEAM-C11-LOC-004: cloth-merchant-shop slug consistency with hook-ward / oc-hook-precinct umbrella
+  SEAM-C11-SENSORY-001: @13/@14 grounding-ledger anticipation — fauna-feed-extension reject; narrator-interest vehicle
+  SEAM-C11-SENSORY-002: sensory:2 @27 old-state partial lineage
+  SEAM-C11-ENV-001: oc-cloth-merchant-paper first-touch old-state "intact" — no prior anchor
+  SEAM-C11-ENV-002: oc-soap-lane-report-packet first-touch at @18 — no prior anchor
+  SEAM-C11-ENV-003: studio.time_of_day afternoon old-state at @22 — inferred from scene-map; no explicit prior state-update for afternoon
+  SEAM-C11-ENV-004: four arm-close fields old-state "open" — inferred from @5 ledger-open + circuit work; R2 confirm adequacy
+
+
 
 ## Current set
 location: the-feed-station (scene-C close; end of day)

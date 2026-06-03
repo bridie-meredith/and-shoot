@@ -1,36 +1,15 @@
 ---
 facet: feeling
-sources: [taylor-hebert-kl-122ac-b01-c10]
+sources: [taylor-hebert-kl-122ac-b01-c11]
 note: consolidated by build_cite_index from per-source slices. Single top-of-file frontmatter per r3-signal-001.
 ---
 
-# source: taylor-hebert-kl-122ac-b01-c10
-# source: taylor-hebert-kl-122ac-b01-c10
-# R2 graph-aware feeling judge (taylor slice) — 2026-06-02
-# cite_index_hash: f0fe62ec02a561fa69d8587b2d2be0f1c0e0d841
-# R2 verdicts: feel:1 @10 KEEP / feel:2 @27 KEEP. K/D/A = 2/0/0. Sparsity held at 7.4% (2 fires / 27 beats).
-# NI-anti-duplication (KEY CHECK): @10 PASS (somatic breath-register distinct from narrator:3's priced-conversion cognition); @27 PASS (Taylor-gaze-as-body-subject distinct from narrator:6's record-datum-persistence + ledger-no-column cognition). Both NI co-locations carry a DIFFERENT register than the feeling-show; neither feeling entry restates what NI already carries — each adds the body bearing what NI registers cognitively. @27 fence held: strict somatic-tell, no named realization.
-# Sparsity-overage taste call (7.4% vs 2-5% band): not actioned. R1-flagged @10 as the cut candidate under hard-binding frugality; on cold-read @10 does NOT cut — it carries the chapter's first moral cost as the body-bearing of a beat NI handles only as accounting, and cutting it to satisfy arithmetic deletes an earned somatic-show to hit a band number (prohibited per B-locked-rubric §taste-over-arithmetic). Both fires are the better choice in their scenes; the overage is 0.4pt on a tiny denominator (2 fires on 27 beats — the band's linear-scale floor of 1.5 fires would force a single-fire file, which under-covers a 2-moral-cost climax). Documented in r2-decision-shard-taylor-hebert-kl-122ac.md.
-
-1 @10 taylor-hebert-kl-122ac: her breath shortens once over the body-map before her hands move to the channel | expressed: no
-
-  - somatic-tell-card-match: card §Voice "Affect appears in brief body-signals before the analytical voice reasserts" + behavior-pack §Affect "Cold in the chest before a decision. The shortness of breath that is not quite fear" — the once-shortened breath is the carded body-signal, and the analytical reassertion (the hands moving to the channel) follows in the same clause-pair.
-  - Q1-interior passes: the proto-line @10 ("taylor translates the body-map") renders a procedural form-conversion; the co-located NI (narrator:3) registers the conversion as priced-and-paid accounting — the months coming up, the one motion that cannot be unmade. Neither shows the body bearing the commission. Without the fire the audience reads the surrender as a clean operation and a clean ledger-line. The interior cost-on-the-body is invisible from proto-line + NI alone.
-  - Q2-meaningful passes: @10 is the chapter's first moral cost (moral_framework -0.5; the irreversible act of rendering withheld substrate into channel form). Structural to the scene's pivot (W1 SURRENDER-AS-IRREVERSIBLE-ACT) and to the episode's stakes. Worth a clause.
-  - Functional-register (≥2 of 4): painting-characterization (the suppressed-affect register made flesh — she does not flinch, she shortens one breath and proceeds) + realization-suppressed-into-body (the cost is borne by the body precisely because the analytical voice will not name it).
-
-  NI-anti-duplication: narrator:3 @10 is cognitive — it registers the conversion as priced, paid, irreversible (the accounting register: "the conversion priced and paid in the one motion that cannot be unmade"). feel:1 @10 is somatic — a single shortened breath, a body-signal, no accounting in it. The NI carries the cost as ledger-fact; the feeling carries the cost as a thing the body does once before the hands obey. Distinct registers at the same anchor; the feeling is not a restatement of the NI but its somatic complement (NI = cost registered, feeling = body bearing it). PASS.
-
-  Discipline notes: one clause, body-register only. No named feeling. The body-signal precedes the action (breath shortens BEFORE hands move) per card's before-reassertion shape, but the action carries the line — affect-suppressed-not-absent. expressed: no — interior-only; Jarvis-channel and apparatus see a clean delivery.
-
-2 @27 taylor-hebert-kl-122ac: her gaze stays on the lower-gate posture in the feed-record and does not turn away when the ledger has closed | expressed: no
-
-  - somatic-tell-card-match: card §Look "her attention shifts fractionally before her body does. Her eyes will track..." — the gaze-as-attention tell is the carded signature; here the tell is inverted (the gaze that does NOT release) which is the same vocabulary held past its usual fractional duration.
-  - Q1-interior passes: the proto-line @27 ("corwick squares the feed-record") renders the datum persisting as a feed-fact; the closing proto-line @25 renders the ledger shut. The co-located NI (narrator:6) registers the surplus cognitively — the posture squaring in the record, the ledger having no column for it, the ledger not asking her to stay. But the NI keeps the record and the ledger as its subjects; it does not show Taylor's body refusing to release the datum. The fire shows the gaze holding where the accounting has finished; without it the persistence reads as record-state, not as the body staying with what the ledger let her leave.
-  - Q2-meaningful passes: @27 is the chapter's TERMINAL bone-weight (W2 FACE-AS-TERMINAL-WEIGHT; moral_legibility_to_self +0.5 — the crack deepens). The single most structural interior beat in the chapter. The final weight depends on this landing.
-  - Scene-eligible (selection): scene-D candidates were @22 (stone grounds the wrist — grounding/W4) and @27. Per-scene cap forces one. @27 is selected over @22 because it carries the moral_legibility move and is the chapter's terminal weight; @22 is grounding the body at the accounting surface, lower interior-yield. The cap is spent on the better choice.
-  - Functional-register (≥2 of 4): painting-characterization (the suppressed-recognition discipline rendered as a body that holds without naming) + realization-suppressed-into-body (moral_legibility +0.5 = the crack deepening, NOT opening — the gaze that does not turn is the crack; she does not articulate the shape).
-
-  NI-anti-duplication: narrator:6 @27 takes the feed-record and the ledger as its subjects — the posture "squares again in the feed-record," the "ledger has no column for it," "the ledger does not ask her to stay." That is cognition about the record's persistence and the ledger's silence: what the apparatus holds and what the accounting cannot close. feel:2 @27 takes Taylor's gaze/body as its subject — she does not turn away. The NI says the record keeps the face and the ledger releases her; the feeling says her body does not take the release. The body staying is precisely the thing the NI's ledger-cognition cannot carry (the ledger lets her leave; the gaze does not). Distinct subjects, distinct registers; the feeling is the somatic surplus over the NI's record/ledger registration, not a restatement of it. PASS.
-
-  Discipline notes: STRICT somatic-tell only. The gaze stays and does not turn — body-action and gaze, no named realization. Does NOT cross into "she cannot forget his face" (the protected-pattern's forbidden interior-realization). The not-turning is a body-action with a visible consequence (the holding), not an enumeration of a withheld reflex. Suppressed-recognition fence held: the entry shows the body staying; it does not name what the staying means. expressed: no — interior-only; no observer in the scene.
+# source: taylor-hebert-kl-122ac-b01-c11
+facet: feeling
+episode: b01-c11
+author: taylor-hebert-kl-122ac (impersonator, facet-authoring override)
+character: taylor-hebert-kl-122ac
+r2-judge: taylor-hebert-kl-122ac (impersonator, facet-judge override) — KEEP 1 / DELETE 0 / ADD 0
+r2-cite-index-hash: 2ebbcfe3110d775d8866062f9bd2466fff1ef4157026811ad87b7fcf94308ea1
+---
+1 @27 taylor-hebert-kl-122ac: her hand stays on the stylus a beat after it is down | expressed: no

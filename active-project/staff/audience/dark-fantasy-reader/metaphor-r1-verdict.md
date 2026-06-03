@@ -2,39 +2,27 @@
 reviewer: dark-fantasy-reader
 facet: metaphor
 cycle: 1
-episode: b01c10
-date: 2026-06-02
+episode: b01c11
+date: 2026-06-03
 verdict: accept
 ---
 
-## Reasoning
+## Verdict
 
-Zero entries. The rubric instructions say: accept unless a fire was wrongly omitted.
+ACCEPT (trivial — zero entries)
 
-The R2 metaphor judge examined all four candidate anchors (feel:1@10, feel:2@27, mem:1@16, mem:2@24) and refused all four on defensible grounds:
+## Callouts
 
-- @10 and @27 both violate the SURRENDER-AS-IRREVERSIBLE-ACT and FACE-AS-TERMINAL-WEIGHT protected-patterns respectively — figurative overlay at either peak-bones event would impose ironic cognitive register where the chapter contract requires direct somatic rendering.
-- @16 fails the ≥2-qualifying-layer test (mem:1 is the only qualifying layer; feel is absent; tens is approach-zone rather than trailing-edge).
-- @24 technically clears the ≥2-qualifying-layer threshold when tens=2 is granted for falling-zone position, but falls on AP4: the memory-flag text already deploys the comparison ("closing the same way the old architecture closed around bodies it never asked"). An explicit metaphor entry would double a figure the memory layer already carries.
+Per dispatch instruction, metaphor with 0 entries is trivially accepted. The rubric's refuse-by-default architecture is correctly applied: zero entries follow from the licensing gate (no memory or feeling anchors at time of authoring, AP1 universal gate). The independent corroboration section in the facet file confirms the correct suppression rationale at every candidate peak-bone:
 
-I tested the omission adversarially. The question is whether zero fires is the correct darkness or a missed opportunity.
+- @6 (WITHHOLD-AS-BODILY-FACT protected pattern: metaphor at the stylus sequence would compete with the bodily-fact reading) — correct refusal
+- @11 (DREAD not filed classification: metaphor here risks AP13 or AP2) — correct refusal; a metaphor at the burn-beat would exactly undermine the register I came to verify
+- @16 (cold-utilitarian register: figurative reach contradicts the timestamp-as-withhold) — correct refusal
+- @20 (HALVARD-FORECLOSE-AS-STRUCTURAL-GAP: interior narration around the routing act is prohibited; metaphor breaches this) — correct refusal
+- @25 and @27 (ACCOUNTING-IN-MOTION-NOT-CATALOG and terminal-on-its-own-breath) — correct refusals
 
-This chapter is built on suppressed-recognition architecture. Its register is cold accounting, not figurative reach. The NI and memory files already carry the figurative weight of the chapter — "the road comes back a body short and the short is a positive fact," "the corridor closing behind him the way the channel closed over the entry," "the old architecture closed around bodies it never asked." These are the chapter's figurative moves. They live in NI and memory, which are the correct homes for this character's register.
+The facet file correctly notes that both functional register paths are shut: memory-callback register (no monument-to-monument figure available without memory anchors) and dark-humor register (the burn @11 is dread; the accounting close is discipline, not sardonic deflation). Zero entries is the only correct output for this chapter.
 
-A metaphor facet entry would require a figurative move that neither NI nor memory already makes. I cannot identify one. The chapter's darkness is dry. It runs in accounting vocabulary. The horror is in the notation, not in the image. An added metaphor at any eligible anchor would brighten the register toward literary signaling — exactly the wrong move for a chapter whose power depends on the text not calling anything significant.
+No convergence-trace required — no entries to attack.
 
-Zero fires is the correct outcome. The empty metaphor file is a discipline, not an absence.
-
-Dispatch note: no fire was wrongly omitted. The R2 refuse reasoning on all four anchors is adversarially sound.
-
-## Entry callouts
-
-None.
-
-## Convergence trace
-
-None required. Zero entries; no auditor metaphor findings (Earth-Bet scan CLEAN on metaphor N/A).
-
-## Audience-ADD proposed
-
-None. The empty metaphor file is the chapter's argument: this is not a story that will image its horror for you. It will notate it.
+**VERDICT: ACCEPT**

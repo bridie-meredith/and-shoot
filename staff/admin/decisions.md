@@ -4209,3 +4209,290 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+## DEC-0071 | 2026-06-02 | FAST (user-proxy, RUNBOOK R1)
+
+question: |
+  b01c11 /and-substance chapter Phase 3 — disposition for two HARD parking-lot items.
+  Item 1 (pl-2026-06-02-stitch-thread-001): UNPAID-HOOK hook-0007 (Halvard counter-argument).
+    Opened c07; payoff slipped c10; c10+c11 hold Halvard offstage. Reached/passed window.
+    c13 contract states "Halvard appears... engagement foreclosed"; c11/c12/c13 handoffs carry
+    "Halvard: counter-argument thinning in Taylor's engagement."
+  Item 2 (pl-2026-06-02-stitch-thread-002): UNPAID-HOOK cl-d06 relational_anchor_status +2 (2nd +1.0 tranche).
+    First +1.0 settled c06. 2nd +1.0 window c08-c10 expired unsettled. c11 holds axis flat.
+    c12 moves relational_anchor_status +1.0 (mechanism: cl-d08 "Wren structurally necessary to coverage map").
+
+context: |
+  Silent chapter-production run for b01c11 (RUNBOOK Rule 1). Items flagged for Phase 3 resolution.
+  Established pattern: prior parking-lot re-windows (pl-2026-05-25-001, pl-2026-05-30-001) re-windowed
+  to the chapter where the axis next moves or the hook's downstream contract settles it.
+
+options:
+  - re-window: carry the item forward to a specific future chapter
+  - resolve-here: settle the item in Phase 3 in-substance (not possible given offstage constraints)
+  - foreclose: declare the hook retired via downstream authored contract
+  - ESCALATE: surface to principal
+
+decision: |
+  Item 1 (hook-0007 Halvard counter-argument): FORECLOSE.
+    The c13 authored contract ("engagement foreclosed") is the payoff. The c11/c12/c13 handoffs
+    already carry the thinning trajectory. Phase 3 should stamp: foreclosed-at-c13, citing c13 handoff
+    language. No re-window needed — the downstream authored contract IS the resolution.
+  Item 2 (cl-d06 2nd +1.0 relational_anchor_status tranche): RE-WINDOW to c12.
+    c12 delivers relational_anchor_status +1.0. That axis-move is the settlement event for the
+    outstanding cl-d06 tranche regardless of which ledger entry (cl-d08) describes the mechanism.
+    The axis does not track mechanism attribution per tranche — movement settles debt.
+
+basis: |
+  Item 1: methodology:3e (convention — prior hooks whose downstream authored contracts carry explicit
+  "foreclosed/thinning" language are stamped FORECLOSE at the point they reach/pass window; the
+  resolution is already authored, not deferred). The c13 contract is unambiguous ("engagement
+  foreclosed"); the handoff language confirms it; no new authoring required at Phase 3.
+  Item 2: methodology:3e (convention — established re-window pattern re-windows to the chapter
+  where the axis next moves; c12 is that chapter). The mechanism-attribution distinction (cl-d08 vs.
+  cl-d06) does not create a separate axis-move; relational_anchor_status +1.0 in c12 settles whatever
+  cl-d06 balance is outstanding.
+
+trade-off: |
+  Item 1: FORECLOSE vs. RE-WINDOW-to-c13. FORECLOSE is correct because c13 doesn't just open a new
+  window — its authored contract explicitly delivers the resolution text. Re-windowing implies the
+  hook is still open and awaits content not yet written; foreclosing recognizes the content is
+  already written and designated.
+  Item 2: The cl-d08/cl-d06 distinction is a ledger-mechanism detail, not an axis-movement gating
+  condition. Treating it as a gate would require tracking which ledger entry "authorized" a given
+  unit of axis movement, which the substance framework does not do.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+## DEC-0072 | 2026-06-02 | SLOW (user-proxy, RUNBOOK R1)
+
+question: |
+  b01c11 /and-substance chapter Phase 5.5 cold-read disposition (Step 3).
+  CHUNK-CLASS-B: summary maps to goal; strict-CONTINUE=No on attempt 2 (after revise).
+  Residual complaints: (a) low on-page jeopardy / nobody at risk / nothing goes wrong;
+  (b) load-bearing proper nouns (Otto, Rhaenyra, Dragonstone, Corwick, Halvard) introduced
+  without context. All upstream gates PASS (audience 3/3 ACCEPT, dramatist ACCEPT on attempt 2,
+  auditor 0 HARD). One revise attempt remaining in 3-try cap.
+  Counter: consecutive-airless concern (DEC-0066/0067; N=5 c06-c10). Does the
+  consecutive-quiet pattern change the call from P to R?
+
+context: |
+  Silent chapter-production run for b01c11 (RUNBOOK Rule 1). c11 is a RISING consolidation
+  chapter between two CLIMAX chapters (c10, c12). Design: surveillance architecture at peak
+  load before collapse phase opens. Dramatist ACCEPT (attempt 2) explicitly confirms
+  "genuine stakes-accumulation; rising shape correct, does not over-climax."
+  Substance contract: 3/3 audience SUBSTANCE-FELT, 0 FLAT, 0 SUSPECT, Earth-Bet CLEAN.
+
+options:
+  R: burn last revise to add on-page jeopardy / reduce proper-noun opacity
+  P: proceed; record as CHUNK-CLASS-B SHIPPED-WITH-RISK-RECORDED; carry risk to /and-stitch
+  S: substance-contract redo (not warranted — no reviewer faults the delta)
+  ESCALATE: surface to principal
+
+decision: P — proceed with risk recorded (CHUNK-CLASS-B / SHIPPED-WITH-RISK-RECORDED)
+
+basis: ltm:DEC-0060 + ltm:DEC-0062 (exact same decision shape; both P)
++ methodology:3a (reversibility — burning last revise risks over-torquing into false climax)
++ methodology:3c (blast radius — R affects c12 structural relationship; P does not)
+
+rationale: |
+  The cold-read objection splits cleanly into two non-fixable-at-chunk-level categories:
+  (a) Low jeopardy is the contractual design of a RISING consolidation chapter sitting between
+  two CLIMAX chapters. All three audience reviewers felt substance; the dramatist endorsed the
+  rising shape explicitly on attempt 2. Burning the last revise to manufacture jeopardy would
+  violate the substance design that every upstream gate endorsed, and risks making c11 step on
+  c12's earned climax. This is design-inherent, not a chunk delivery failure.
+  (b) Cold-context proper-noun opacity is universal for chapter 11 of a serial. An invested reader
+  (c01-c10) arrives with full context; the uninformed cold-reader is not the target audience.
+  Both complaint categories are correctly routed to /and-stitch Phase 8.5 Check 3 (cold-context
+  risk arming) and Phase 9 jeopardy scrutiny — not to a chunk revise that would only damage the
+  design.
+  Counter-consideration (consecutive-airless N=5): the concern is about *prose airlessness*
+  (apparatus-density in rendered stitch), not about dramatic jeopardy or proper-noun opacity.
+  These are distinct failure classes. If c11 ships with airless prose, that is a stitch-layer
+  issue properly addressed by /and-cohere (flagged in DEC-0070). R would apply a chunk-revise
+  to a prose-layer problem — wrong layer, wrong tool.
+
+trade-off: |
+  P accepts that the cold-read remains at strict-CONTINUE=No on the assembled draft. Mitigation:
+  /and-stitch Phase 8.5 + Phase 9 have explicit jeopardy-scrutiny and cold-context-risk tooling
+  armed by cold_read_risk_carry; /and-cohere is on-deck after c11 for the consecutive-airless
+  pattern. R would spend the last revise attempt and risk a false-climax that undercuts c12.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+## DEC-0073 | 2026-06-02 | PROCESS-CRITIC (b01c11 bone-gate — ABSTRACTION-DOMINANT fire-and-accept on feed-POV chapter)
+
+mode: process-critic
+trigger: /and-write b01c11 Phase 6 bone-gate — 0 HARD / 2 SIGNAL (ABSTRACTION-DOMINANT s02 + s03, both ACCEPTED-with-rationale); Chapter PASS, 3/3 SUBSTANCE-FELT
+gate_path: .claude/commands/and-write.md#phase-6
+verdict: OK-MERGED-INTO PROP-0030 + PROP-0031 (recurrence_count 3→4 on both)
+
+question: |
+  Does ABSTRACTION-DOMINANT firing-and-accepting on feed-POV chapters warrant a process change?
+  Candidates: (1) feed-POV grounding-quota carve-out at Phase 6; (2) tighter coupling to /and-cohere
+  apparatus-density tracker; (3) stitch-layer obligation rather than bones-layer SIGNAL; (4) OK.
+
+decision: OK-MERGED-INTO PROP-0030 + PROP-0031
+
+rationale: |
+  The existing process is functioning correctly on all three dimensions:
+
+  (1) Gate behavior. ABSTRACTION-DOMINANT is correctly classified as a SIGNAL (not HARD) on
+  architecture-licensed abstract bones. The accept-with-rationale path is the designed handling
+  when abstraction is design-intrinsic (feed relay structure + behavioral ABSENCE as central event),
+  not authoring laziness. The gate fires, the rationale is logged, the stitch-carry obligation is
+  set. This is the process working.
+
+  (2) Downstream handling. The stitch-carry to /and-stitch Phase 4 physical-materiality
+  reinforcement is the designed downstream obligation for accepted ABSTRACTION-DOMINANT SIGNALs.
+  3/3 audience SUBSTANCE-FELT confirms the chain is delivering on that obligation. A feed-POV
+  carve-out that suppressed the SIGNAL would *remove* the stitch-carry trigger — net-negative,
+  because the SIGNAL is load-bearing as an advisory arm to stitch.
+
+  (3) Cross-chapter accumulation. The consecutive-abstract concern (c10+c11 both abstract;
+  consecutive-airless N=6, the threshold named in DEC-0067) is PROP-0030/0031's designed target.
+  Both proposals are open and await principal triage. Adding a new accumulation-warning gate at
+  the bones layer would duplicate PROP-0030/0031 rather than addressing their root cause (chapter-
+  isolated scoring cannot see cross-chapter accumulation — that is structural, not a gap in the
+  Phase 6 gate). The correct action is to merge c11 as evidence into the two open proposals and
+  note that N=6 is at the DEC-0067 threshold, not to author a third accumulation-warning proposal.
+
+  Process discrimination: could a stricter existing gate have caught a process failure here?
+  No. There is no process failure: the SIGNAL fired, the rationale was logged, the audience
+  confirmed substance delivery. The stitch layer will carry the physical-materiality obligation.
+  The only potential concern — cross-chapter accumulation — is already the target of open
+  proposals PROP-0030/PROP-0031.
+
+  DEC-0067 named N=6 as the threshold for "a separate warning gate becomes warranted." N is now
+  6 (c06/c07/c08/c09/c10/c11). However: the DEC-0067 framing was "no new proposal at N=5;
+  threshold for potential new proposal is N=6." At N=6 the consideration is whether to open a
+  new proposal or continue merging into the existing open proposals. Assessment: PROP-0030/PROP-0031
+  are already open and their proposed_diff already addresses the cross-chapter accumulation class
+  precisely (cross-chapter cold-read primitive + iteration loop). The accumulation debt at N=6 is
+  the case for triage urgency on those proposals, not a case for a third overlapping proposal.
+  Proposing a new accumulation-warning gate at N=6 when N=1 open proposals exist for the same
+  class is noise, not signal. Merge and flag triage urgency.
+
+  Triage urgency note: PROP-0030 + PROP-0031 have been open since 2026-05-31. Accumulation-count
+  N is now at 6 (the DEC-0067 threshold). If both proposals remain untriaged through c12-c13,
+  the accumulation debt will be larger and the /and-cohere convergence run more expensive.
+  Principal triage of PROP-0030/PROP-0031 is strongly recommended before c13.
+
+trade-off: |
+  Merging vs. proposing a new accumulation-warning gate:
+  - A new gate (e.g., "after 2 consecutive ABSTRACTION-DOMINANT chapters, HARD-abort at /and-write
+    unless principal acknowledges") would be high-blast-radius, would require /and-write to read
+    cross-chapter state it does not currently read, and would fire on design-intrinsic content
+    (the project's feed-POV architecture deliberately produces abstract chapters). False-positive
+    rate would be high; the carve-out logic needed to avoid false-positives would reproduce the
+    accept-with-rationale path that already exists at Phase 6.
+  - Merging into PROP-0030/PROP-0031 accepts that the per-chapter gate is not the right instrument
+    for a cross-chapter accumulation problem. The accumulation problem requires a cross-chapter
+    review primitive (/and-review cohere) + iteration loop (/and-cohere) — both of which
+    PROP-0030/PROP-0031 define. The cost of not merging is a premature gate that would suppress
+    the stitch-carry trigger without solving the accumulation problem.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
+## DEC-0074 | 2026-06-03 | FAST (user-proxy: Phase 9 terminal-gate disposition)
+
+question: /and-stitch b01c11 Phase 9 terminal-gate disposition. Cold-read recovered all central events; CONTINUE=No ("almost nothing happens / no question pulling me forward"); staging PASS (all 4 central-event bones on-page); readability READABLE; Phase 8.5 PASS; 2 LOW advisories (design-inherent). Class-B FAIL maps exactly onto DEC-0072 carried categories: (1) low on-page jeopardy / design-inherent RISING chapter; (2) cold-context proper-noun load. Disposition candidates: SHIPPED-WITH-CAVEATS / FAIL-REVISE / ESCALATE.
+context: Phase 9 coupling rule: chunk_cold_read.verdict == SHIPPED-WITH-RISK-RECORDED (DEC-0072); live Class-B FAIL hits ONLY the carried categories → ships terminal as SHIPPED-WITH-CAVEATS without re-asking. DEC-0072 dispositioned both items explicitly. Staging clean, readability READABLE; no structural or airlessness FAIL. Consecutive-abstract N=6 already flagged for /and-cohere before c13 (DEC-0073).
+options: SHIPPED-WITH-CAVEATS | FAIL-REVISE (1 retry via /and-write revise --from-signals) | ESCALATE
+
+decision: SHIPPED-WITH-CAVEATS
+
+basis: ltm: DEC-0072 (chunk-level carried disposition authorizes terminal ship on exact-category match) + Phase 9 coupling rule. Runbook R2's generic FAIL-REVISE path is overridden by the coupling rule when the FAIL is design-inherent and pre-dispositioned at chunk level.
+
+rationale: DEC-0072 pre-adjudicated both FAIL drivers: low jeopardy is the substance contract of a RISING consolidation chapter (endorsed by 3/3 audience SUBSTANCE-FELT + dramatist ACCEPT + auditor 0 HARD), and proper-noun opacity is serial mid-point context-noise not in-chunk holes. The coupling rule exists precisely to prevent a retry that would consume 1 cap and risk a false-climax undercutting c12, against a finding that cannot be fixed without violating the endorsed substance contract. Staging is clean and readability is READABLE — the two conditions that would warrant a structural retry (URI-STITCH-SPINE-STAGING gap or AIRLESS) are both absent.
+
+trade-off: FAIL-REVISE would spend the 1 retry cap on a diagnosable non-fixable finding, with seed-variance risk and potential false-climax undercutting c12. ESCALATE is unnecessary — the coupling rule and DEC-0072 together constitute a pre-authorization that removes the irreversibility / uncertainty conditions warranting escalation.
+
+caveat-string: "Class-B FAIL: CONTINUE=No — low on-page jeopardy (design-inherent RISING chapter between c10-CLIMAX and c12-CLIMAX; substance contract endorsed 3/3 audience + dramatist + auditor) + cold-context proper-noun load (serial mid-point; Halvard/Corwick/Otto/Rhaenyra opacity is context-noise, not in-chunk hole). Carried from DEC-0072 chunk-level disposition. Consecutive-abstract N=6 (c10+c11) flagged for /and-cohere before c13 per DEC-0073. Staging clean; readability READABLE."
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
+## DEC-0075 | 2026-06-03 | SLOW (process-critic)
+
+mode: process-critic
+trigger: /and-stitch b01c11 Phase 9.5 — SHIPPED-WITH-CAVEATS (DEC-0074 coupling-rule ship); 2nd consecutive low-jeopardy/abstract cold-read chapter (c10+c11); consecutive-abstract N=6. Question: is the process working, or does recurrence of low-jeopardy cold-read FAILs across consecutive chapters warrant a new process change (book-level jeopardy-distribution check, tighter /and-cohere coupling, or consecutive-design-inherent-low-jeopardy cap)?
+gate_path: .claude/commands/and-stitch.md#phase-9
+secondary_gate_paths: [.claude/commands/and-substance.md#phase-5.5]
+verdict: OK-MERGED-INTO PROP-0030 + PROP-0031
+
+question: |
+  Does the RECURRENCE of low-jeopardy cold-read FAIL (c10+c11 consecutive) constitute a process
+  failure warranting a new gate — book-level jeopardy-distribution check, tighter /and-cohere
+  coupling, or a cap on consecutive design-inherent-low-jeopardy chapters before a cohere gate
+  fires? Or is the process working correctly?
+
+context: |
+  c10 and c11 both shipped via SHIPPED-WITH-CAVEATS (DEC-0070 / DEC-0074). Both had Class-B
+  FAIL cold-reads (CONTINUE=No). Both had the same design-inherent signature: low on-page
+  jeopardy endorsed 3/3 audience + dramatist + auditor 0 HARD, and cold-context proper-noun
+  load. Coupling rule fired correctly on both. DEC-0073 already merged b01c11 as N=6 into
+  PROP-0030 + PROP-0031 with triage-urgency note. /and-cohere before c13 on-deck per DEC-0073.
+
+decision: OK-MERGED-INTO PROP-0030 + PROP-0031 (recurrence evidence already appended by
+DEC-0073; this dispatch confirms no new signal beyond that merge)
+
+basis: |
+  methodology:3e (convention — DEC-0073 same-session performed this exact discrimination and
+  reached OK-MERGED) + methodology:3c (blast radius — a new proposal for the same target/class
+  adds noise without adding signal; the existing open proposals already subsume all three
+  candidate process changes)
+
+rationale: |
+  Three candidate process changes evaluated:
+
+  1. BOOK-LEVEL JEOPARDY-DISTRIBUTION CHECK. Would require /and-stitch to read cross-chapter
+     state it does not hold, and would fire on design-intrinsic content (RISING chapter low
+     jeopardy IS the contractual design; carve-out logic would reproduce the existing coupling
+     rule). Same discrimination as DEC-0073 applied to accumulation-warning gate: wrong
+     instrument class; PROP-0030 /and-cohere primitive is the right instrument.
+
+  2. TIGHTER /AND-COHERE COUPLING. Already the proposal surface of PROP-0030 + PROP-0031
+     (recurrence_count: 4 on both). PROP-0030 Phase 1 Q2 (setup→payoff distribution) + Q7
+     (sub-section feel) + Q6 (apparatus-register load) collectively address jeopardy-
+     distribution concerns. Duplicating into a new proposal adds no value.
+
+  3. CONSECUTIVE-DESIGN-INHERENT-LOW-JEOPARDY CAP WITH AUTO-COHERE TRIGGER. DEC-0073 already
+     named /and-cohere before c13 as the designed response to N=6 — the cap is effectively
+     operative via the triage-urgency note and the principal's stated intent. Wiring it
+     mechanically (cross-chapter counter + HARD-abort) has S-M cost and small marginal benefit
+     given the principal already has the intent written. Wait for triage on PROP-0030/0031
+     first; if they are accepted, the /and-cohere trigger mechanism becomes available and a
+     mechanical cap can be proposed as a lightweight modification then.
+
+  PROCESS WORKING CORRECTLY. Coupling rule prevented a retry on a non-fixable finding.
+  Upstream gates endorsed the design unanimously. Cross-chapter accumulation debt is PROP-0030/
+  0031's designed target; those are open and triage-urgent at N=6. No new proposal warranted.
+
+trade-off: |
+  Risk of OK: jeopardy-distribution as a distinct dimension of accumulation is not explicitly
+  named in PROP-0030/0031 — it is subsumed under apparatus-register accumulation. Mitigated
+  by: (a) PROP-0030 Q2/Q7 would surface it in a cohere run; (b) the two failure classes co-
+  occur in this run (same /and-cohere instrument addresses both); (c) separating them into
+  a new proposal adds a third open proposal for the same fix.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no

@@ -1,21 +1,50 @@
 cascade:
-  root: b01c09
-  invoked_at: 2026-06-01T15:30:00Z
-  invoked_command: "produce-chapter-protocol b01c09 → cascade to b01-complete (c10–c20)"
+  root: b01c11
+  invoked_at: 2026-06-02T21:35:00Z
+  invoked_command: "produce-chapter-protocol b01c11 (fresh run; resume of c10-c20 cascade intent)"
   mode: unattended
+  current_run:
+    command: produce-chapter-protocol b01c11
+    started_at: 2026-06-02T21:35:00Z
+    pre_flight: |
+      GREEN. series-audit APPROVED 2026-05-24 (stale null). aggregate-state PRESENT through c10,
+      0 unack substantive (rev-0001..0004 all acknowledged:true; the two SUBSTANTIVE c10 forward-thread
+      findings route to parking-lot, not revision_layer). voice-exemplar PRESENT. Two HARD parking-lot
+      items in scope (pl-2026-06-02-stitch-thread-001 Halvard hook-0007 + -002 cl-d06 second tranche),
+      BOTH targeting /and-substance chapter b01c11 Phase 3 — surfaced at Phase 0, resolve AT Phase 3.
+    chain: "/and-substance chapter b01c11 --cascade -> write -> review bones -> facets -> stitch (P9 + P10)"
   run_intent: |
     Multi-chapter cascade. c09 COMPLETE. Now producing c10..c20 end-to-end per RUNBOOK
     chapter-production protocol (R1–R5). Book b01 chapter_count = 20. Drive as far as
     feasible; halt cleanly with a checkpoint on cap-exhaustion / hard-block / practical
     session limit.
   last_completed:
-    level: chapter-complete   # b01c10 COMPLETE end-to-end: substance + write + bones-review + facets + stitch (P1-9 + P10). draft/b01-c10.md TERMINAL (1074 words).
+    level: chapter-complete   # b01c11 COMPLETE end-to-end: substance + write + review-bones + facets + stitch (P1-9 cold-read SHIPPED-WITH-CAVEATS DEC-0074 + P10 PASS-THREAD). draft/b01-c11.md TERMINAL (1314 words).
+    slug: b01c11
+    completed_at: 2026-06-03T00:00:00Z
+  prev_completed:
+    level: chapter-complete
     slug: b01c10
     completed_at: 2026-06-02T04:15:00Z
   next:
-    command: produce-chapter-protocol b01c11
+    command: produce-chapter-protocol b01c12
+    args: [b01c12]
+  reason: chapter-complete   # b01c11 shipped this session end-to-end. c12 is a fresh chapter-production run.
+  pending_depth_passes: []   # c11 cold-read SHIPPED-WITH-CAVEATS (not PASS-WITH-DEPTH-PASS-REQUIRED) — no mandatory depth pass; the low-jeopardy is design-inherent (DEC-0074), not a deferred fix.
+  pending_threading_holds: []   # c11 Phase 10 PASS-THREAD clean; aggregate-state through c11; c12 Phase 0 CLEAR (0 unack substantive).
+  pending_cohere: "DEC-0073/0075: consecutive-abstract N=6 (c06-c11). PROP-0030/0031 recurrence_count=4, triage urgency HIGH. Schedule /and-cohere b01 BEFORE c13 (standing recommendation, reaffirmed twice)."
+  c12_gates: "pl-2026-05-30-001->stitch-thread-002 cl-d06 2nd tranche RE-WINDOW@c12 (DEC-0071): c12 Phase 3 must anchor relational_anchor_status +1.0 with cost_ledger_anchor [cl-d08, cl-d06] (already annotated in chapters[b01c12].substance_delta). pl-2026-06-03-001: oc-soap-lane-report-packet prop card needed before c12 Phase 0 (margit; carried-forward sealed prop)."
+  next:
+    command: /and-stitch b01c11
     args: [b01c11]
-  reason: chapter-complete-practical-limit   # c10 shipped this session (resumed from bones-complete; ran facets+stitch = the larger half). c11 is a fresh chapter-production run — best with fresh budget given this session's spend (~50+ dispatches across the full facets+stitch pipeline). Two HARD parking-lot items gate c11 Phase 3 (see pending_threading_holds).
+  reason: chapter-production-in-progress   # c11 substance+write+review-bones+FACETS COMPLETE. /and-facets: 9/9 facets 3-of-3 ACCEPT (cycle 2; NI+vibes fixer for dark-fantasy burn-register-drift), auditor 0 HARD, fence CLEAN, orchestrator-critic SUCCESS. status audited-r1. Cascade -> /and-stitch (P1-9 cold-read + P10 forward-thread). Stitch carries: VOICE-FIXABLE @16/@23-26 (P4 voice-embodiment); grounding @12/@13/@14/@19 landed; chunk_cold_read SHIPPED-WITH-RISK-RECORDED DEC-0072 (arms P8.5+P9); margit loc/prop cards (pl-2026-06-03-001, stitch P0). Watch: consecutive-abstract N=6 -> /and-cohere before c13 (DEC-0073).
+  halt:
+    class: practical-session-limit
+    at_stage: bones-review-complete (3 of 5 cascade stages)
+    clean: true
+    resume_command: /and-facets b01c11
+    resume_then: /and-stitch b01c11
+    halted_at: 2026-06-02T22:45:00Z
   failure: null
   pending_depth_passes: [b01c10]   # PASS-WITH-DEPTH-PASS-REQUIRED (spine-staging-gap acts-of-commission + readability AIRLESS). /and-write b01c10 revise --from-signals before book-close. NON-blocking for c11 production.
   pending_threading_holds: [b01c10]   # Phase 10 HOLD-THREAD: pl-2026-06-02-stitch-thread-001 (Halvard hook-0007) + -002 (cl-d06 tranche) -> resolve at /and-substance c11 Phase 3.

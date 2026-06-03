@@ -2,27 +2,23 @@
 reviewer: worm-canon-pedant
 facet: location-state
 cycle: 1
-episode: b01c10
-date: 2026-06-02
+episode: b01-c11
+date: 2026-06-03
 verdict: accept
 ---
 
-## Reasoning
+[location-state:1] @1 — loc-state fires on "the feed-station" at the packet handoff. The "feed-station" slug is project-internal vocabulary, not an Earth-Bet import. Clean.
 
-Eight entries, four scenes, clean sequential coverage from @1 through @23. The pedant read this twice looking for somewhere to land a flag and found nothing that tracks.
+[location-state:2] @8 / [location-state:3] @9 — "oc-cloth-merchant-shop" slug is unresolved per SEAM-C11-LOC-001. That is a margit/warehouse gap, not a fence violation. The location is described in Westerosi-physical terms (back-worktable, rushlight) with no parahuman contamination.
 
-The Earth-Bet fence is irrelevant here — location-state is purely environmental (stone-post, wax, bay-cold, supply-cart, Gold-Cloak-pair-posted, ledger-open). Every term is Planetos-register or common English. "Gold Cloak" is the Westerosi Watch term. No parahuman jargon in any field, including the annotation notes.
+[location-state:4] @17 — "oc-soap-rendering-lane" per SEAM-C11-LOC-002, same gap. The location naming is mundane-Westerosi. No fence breach.
 
-The `corwick-feed-image` framing at @9 is correct: the entry explicitly notes Corwick as "a feed-recalled image, not a body in the room" and marks the geometry register, not physical presence. That is precisely the distinction the chapter contract requires — Taylor's insect-feed gives her the geometry of the stone-post; Corwick's body is what isn't there two scenes later. The grammar of that absence is set up correctly here.
+[location-state:5] @22 / [location-state:6] @23 — both return to "the-feed-station." The feed-station slug is project-internal (first established in prior chapter bones), not a parahuman term. The "feed" naming is from Taylor's functional-description register ("what the bugs show me" → "the feed" as internal shorthand), not Earth-Bet jargon leaking into the world.
 
-@5 continuity-from entry reads correctly: loc-state:8 @23 carries `corwick faces the lower-gate` as a feed-image (no state-change assertion about Corwick as a present body — this is the feed-recalled accounting-close image). Clean.
+FENCE CHECK: CLEAN. No Earth-Bet place-names. No parahuman institutional vocabulary. The "feed" in "feed-station" is the project's established substitution-register term for Taylor's insect-relay perception — consistent with cond-earth-bet-noun-fence §Substitution Register ("what the bugs show me" / "the way I see"). The location slugs are Westerosi-physical environments (worktable, lane, stone surfaces). No flag.
 
-The `bay-cold` condition at @3 vs `none` at @13 — the scene-C entries drop `bay-cold` from the ambient notation and substitute `cold-morning`. That reads as a deliberate narrowing: scene-A `morning | bay-cold` is the full establishing frame; scene-C `cold-morning | none` uses `cold-morning` as the combined register without the bay-specific modifier. The distinction is defensible (time-skip of two days; the weather reads as persistent cold, not re-established bay-cold), though borderline. Not a flag — the condition card doesn't make bay-cold a persistent across-scene requirement; it is a named ambient at scene-A.
+The feed-POV interpretation (SEAM-C11-LOC-003 — whether mediated-feed spaces should earn loc-state entries for @3/@4 and @13/@14) is an authoring-philosophy note, not a canonicity problem. Studio correctly rejected those beats: Taylor's body does not occupy the grain-measures junction or the merchant's shop worktable-zone. That's the right call per canon — Taylor's awareness is in her body at the station; the feed relays what is there. The distinction between Taylor-physically-present and Taylor-feed-perceiving is a real Worm-mechanical distinction and studio honored it.
 
-## Entry callouts
+CONVERGENCE: The SEAM-C11-LOC-001/002 flag overlaps with a structural gap the auditor would catch (warehouse slug unresolved = potential stitch render fault), but neither is an Earth-Bet fence issue.
 
-None.
-
-## Convergence trace
-
-No auditor findings intersect with location-state directly. The auditor's RUBRIC-FIDELITY §4 (loc-state continuity-carry check) passed. No convergence.
+VERDICT: accept

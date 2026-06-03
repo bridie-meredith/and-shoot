@@ -819,10 +819,16 @@ parking_lot:
         - active-project/staff/auditor/substance-b01c06-scenes-v2.md  # flag-001
         - active-project/staff/showrunner/memory.md  # b01c06s01 substance_delta notes
         - active-project/staff/showrunner/series-trajectory.md  # d08 delta
-      status: open
-      resolved_at: null
-      resolved_by: null
-      resolution_note: null
+      status: resolved
+      resolved_at: 2026-06-02T21:40:00Z
+      resolved_by: "/and-substance chapter b01c11 Phase 3 (admin user-proxy DEC-0071; via pl-2026-06-02-stitch-thread-002)"
+      resolution_note: |
+        Superseded/closed by the c12 re-window (DEC-0071). The c08-c10 window closed unsettled
+        (relational_anchor_status held flat c08-c11). Re-windowed to c12, whose authored
+        relational_anchor_status +1.0 axis-move settles the outstanding cl-d06 2nd tranche
+        (cost_ledger_anchor extended to [cl-d08, cl-d06] in chapters[b01c12].substance_delta).
+        cl-d08 = mechanism; cl-d06 = debt; one axis-move settles both. The recurring
+        worm-canon-pedant partial-settlement pattern is closed for cl-d06.
 
     - id: pl-2026-05-30-002
       created_at: 2026-05-30T00:00:00Z
@@ -1655,10 +1661,17 @@ parking_lot:
         - active-project/staff/reviews/forward-thread-b01-c10-2026-06-02.md  # ft-c10-001
         - active-project/staff/showrunner/aggregate-state.md  # hook-0007 (Halvard counter-argument)
         - active-project/staff/showrunner/memory.md  # chapters[b01c10].handoff_out "Halvard: counter-argument unresolved; Taylor's engagement becoming thinner"
-      status: open
-      resolved_at: null
-      resolved_by: null
-      resolution_note: null
+      status: resolved
+      resolved_at: 2026-06-02T21:40:00Z
+      resolved_by: "/and-substance chapter b01c11 Phase 3 (admin user-proxy DEC-0071)"
+      resolution_note: |
+        FORECLOSE — designated foreclosed-at-c13. Admin DEC-0071: the hook is not unpaid; the
+        c13 contract is already authored with the resolution ("Halvard appears for what is
+        effectively his last substantive encounter ... engagement foreclosed") and c11/c12/c13
+        handoffs all carry "counter-argument thinning in Taylor's engagement." Re-windowing
+        would misrepresent state (re-window implies not-yet-written); foreclose recognizes the
+        content is written and designated. c11 correctly holds Halvard OFFSTAGE; the thinning
+        is carried as a handoff thread, not staged in c11. No c11 contract change required.
 
     - id: pl-2026-06-02-stitch-thread-002
       created_at: 2026-06-02T00:00:00Z
@@ -1684,6 +1697,96 @@ parking_lot:
         - active-project/staff/reviews/forward-thread-b01-c10-2026-06-02.md  # ft-c10-004
         - active-project/staff/showrunner/parking-lot.md  # pl-2026-05-30-001 (cl-d06 first-tranche / window b01c08-b01c10)
         - active-project/staff/showrunner/memory.md  # chapters[b01c10] relational_anchor_status held all 4 scenes
+      status: resolved
+      resolved_at: 2026-06-02T21:40:00Z
+      resolved_by: "/and-substance chapter b01c11 Phase 3 (admin user-proxy DEC-0071)"
+      resolution_note: |
+        RE-WINDOW to c12. Admin DEC-0071: c11 (rising) structurally holds relational_anchor_status
+        FLAT (axes_held — Wren in coverage, anchor 3.5, no new weight). c12 (climax) moves
+        relational_anchor_status +1.0; that move is the settlement event for the outstanding cl-d06
+        2nd tranche. The cl-d08/cl-d06 distinction is mechanism-attribution, not competition:
+        cl-d08 is the MECHANISM (Wren structurally necessary to coverage map without entering ledger),
+        cl-d06 is the DEBT. Axis movement settles outstanding axis debt; the framework does not gate
+        tranche settlement on which ledger id is cited as mechanism. c12's relational_anchor_status
+        entry annotated: cost_ledger_anchor extended to [cl-d08, cl-d06] with settlement note.
+        Closes the cl-d06 partial-settle pl-2026-05-30-001 has tracked since c06.
+
+    - id: pl-2026-06-03-001
+      created_at: 2026-06-03T00:00:00Z
+      created_by: "/and-facets b01c11 Phase 5 audit (fault-005/011 RUBRIC-FIDELITY card-resolution SIGNAL)"
+      target:
+        command: /and-stitch
+        scope: "b01-c11"
+        phase: Phase 0
+      severity: SOFT
+      description: |
+        New location + prop slugs introduced in b01c11 facets have no warehouse cards
+        (all glosses structurally clear + author-defended; SIGNAL not HARD at Phase 5):
+        - oc-cloth-merchant-shop (loc; Hook south end; back-worktable + rushlight + iron-dish;
+          may nest under a hook-ward umbrella slug per existing taxonomy — margit canonicalization)
+        - oc-soap-rendering-lane (loc; cross-lane approach; nighttime-visitor-report delivery point)
+        - oc-cloth-merchant-paper (prop; burns @11, exits tracking — low urgency)
+        - oc-soap-lane-report-packet (prop; sealed @21, PERSISTS into b01c12 — author before c12)
+        - oc-feed-ledger field-extensions (source-field-entry, cloth-merchant-entry, jarvis/oswyn/
+          contacts/arrangement-entry) — schema extension on the existing oc-feed-ledger card
+        /and-stitch Phase 0 may margit-dispatch the two location cards (scene-window mode uses
+        loc slugs) like the c05 oc-rushwick precedent; the oc-soap-lane-report-packet prop card
+        is required before /and-substance chapter b01c12 Phase 0 (carried-forward prop).
+      context_refs:
+        - active-project/staff/auditor/facets-final-audit.md  # fault-005, fault-011
+        - active-project/theater/facets/state-updates.md  # Margit referrals section
+        - active-project/theater/facets/location-state-b01-c11.md  # SEAM-C11-LOC-001/002/004
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-03-002
+      created_at: 2026-06-03T00:00:00Z
+      created_by: "/and-facets b01c11 Phase 5 audit (fault-004 RUBRIC-FIDELITY card-resolution SIGNAL)"
+      target:
+        command: /and-review
+        scope: "verdict b01"
+        phase: null
+      severity: SOFT
+      description: |
+        memory mem:2@16 target `monument-mass-casualty-foreshadow` has no card in
+        cards/conditions/ or warehouse (gloss structurally clear; SIGNAL). Recommended
+        margit slug: cond-mass-casualty-foreshadow-122ac (Earth-Bet displacement weight as
+        resonance shape — smaller-wars-still-burn, reaching from Gold-Morning scale to KL
+        smallfolk-casualty contexts). Create before /and-review verdict b01 (unresolved slug
+        would flag at the book verdict pass). Companion to the recurring monument-card-class
+        referral pattern (cf pl-2026-05-25-005).
+      context_refs:
+        - active-project/staff/auditor/facets-final-audit.md  # fault-004
+        - active-project/theater/facets/memory-b01-c11.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-03-003
+      created_at: 2026-06-03T00:00:00Z
+      created_by: "/and-facets b01c11 Phase 5 audit (fault-003 CONSTRAINT state-old-state-continuity SIGNAL) + fault-001/006 cite-index tool quirks"
+      target:
+        command: /and-stitch
+        scope: "b01-c11"
+        phase: null
+      severity: SOFT
+      description: |
+        (a) state:9 @22 studio.time_of_day: afternoon->end-of-day — the "afternoon" old-state is
+        inferred from the scene-map (scene-C "early afternoon"), not anchored by a prior state-update
+        at the scene-B/C boundary (@17). Continuity gap on time_of_day between morning (loc-state:1 @1)
+        and end-of-day (@22). Non-blocking: chapter-close projection is end-of-day (correct); the interim
+        afternoon is overwritten. /and-stitch should render the time progression morning->afternoon->
+        end-of-day smoothly without relying on a missing canonical afternoon anchor.
+        (b) cite-index tool quirks (build-tool, not content): phantom display row `sensory:27 @- back=-`
+        (no proto-line carries [sensory:27]; harmless) + multi-anchor vibes entries indexed at first
+        anchor only (vibes:1/:2 @25+@27 -> indexed @25 only). Both are build_cite_index.py display
+        artifacts; a future tool fix should clear them. Stitcher resolves from proto-line tokens, not
+        cite-index back-links, so neither affects render correctness.
+      context_refs:
+        - active-project/staff/auditor/facets-final-audit.md  # fault-003, fault-001, fault-006
       status: open
       resolved_at: null
       resolved_by: null
