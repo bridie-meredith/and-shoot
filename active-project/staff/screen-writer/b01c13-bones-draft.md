@@ -388,14 +388,7 @@ cost_ledger_anchor: null
 grounding-class: NO
 dialogue-anchor: YES (taylor-hebert-kl-122ac speaks to halvard — TAYLOR SPEECH-ANCHOR; she runs the counter-argument aloud: the apparatus will not be slower at her request; the ward-elders will not survive Halvard's speed; the counter is correct and complete) [taylor-hebert-kl-122ac:1]
 
-**b01c13s04n05**
-SVO: taylor-hebert-kl-122ac walks the route
-shape: held
-axes_held: [{ axis: moral_legibility_to_self, rationale: "PHYSICAL ENACTMENT of not-turning-inward: Taylor's body continues the circuit; she does not pause to check the ledger for what the counter-argument implies about the d06 list and Aldric; the route continuing IS the non-movement toward the ledger; the discipline is in the feet staying on course, not in the absence of thought" }]
-cost_ledger_anchor: null
-grounding-class: YES (route — the lane underfoot; Taylor's body on the route; walking-the-route is a concrete transitive motion act on a named ground)
-dialogue-anchor: NO
-note: CARRY_TO_WRITE BONE. This is the held bone that physically enacts the not-turning-toward-the-ledger. The body continuing the circuit IS the non-movement toward the ledger. Not a negation — the affirmative physical act of walking the route simultaneously enacts the discipline of not-turning-inward.
+# NOTE (dramatist Phase 3 reorder): sequence is n04 → n06 → n07 → n05 → n08 (slugs preserved; flat_id assigned monotonically at Phase 7). Taylor cannot walk the route (n05) before she leaves the trough (n07); Halvard's continued speech (n06) and the departure (n07) precede the not-turning-inward route-walk (n05).
 
 **b01c13s04n06**
 SVO: halvard speaks to taylor-hebert-kl-122ac
@@ -412,6 +405,15 @@ axes_held: [{ axis: political_register-prot, rationale: "contempt-without-refusa
 cost_ledger_anchor: null
 grounding-class: YES (water-trough — Taylor departs from the named physical object; the trough holds Halvard; Taylor leaves; the spatial action on the named ground is the foreclosure's physical form)
 dialogue-anchor: NO
+
+**b01c13s04n05**
+SVO: taylor-hebert-kl-122ac walks the route
+shape: held
+axes_held: [{ axis: moral_legibility_to_self, rationale: "PHYSICAL ENACTMENT of not-turning-inward: Taylor's body continues the circuit; she does not pause to check the ledger for what the counter-argument implies about the d06 list and Aldric; the route continuing IS the non-movement toward the ledger; the discipline is in the feet staying on course, not in the absence of thought" }]
+cost_ledger_anchor: null
+grounding-class: YES (route — the lane underfoot; Taylor's body on the route; walking-the-route is a concrete transitive motion act on a named ground)
+dialogue-anchor: NO
+note: CARRY_TO_WRITE BONE. Positioned post-departure (after n07) per dramatist Phase 3 reorder. This is the held bone that physically enacts the not-turning-toward-the-ledger. The body continuing the circuit after leaving the trough IS the non-movement toward the ledger. Not a negation — the affirmative physical act of walking the route simultaneously enacts the discipline of not-turning-inward.
 
 **b01c13s04n08**
 SVO: halvard fills the water-skin
