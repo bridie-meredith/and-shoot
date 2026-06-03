@@ -4,11 +4,11 @@ cascade:
   invoked_command: /and-substance chapter b01c13 --cascade
   mode: unattended
   last_completed:
-    level: chapter
+    level: bones
     slug: b01c13
-    completed_at: 2026-06-03T16:00:00Z
+    completed_at: 2026-06-03T16:40:00Z
   next:
-    command: /and-write b01c13
-    args: [b01c13]
+    command: /and-review bones b01c13
+    args: [bones, b01c13]
   reason: continue
   failure: null

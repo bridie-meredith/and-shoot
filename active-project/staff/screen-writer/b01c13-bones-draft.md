@@ -315,6 +315,7 @@ dialogue-anchor: NO
 | [mechanism: naming-act] | n01 | CENTRAL-EVENT: taylor-hebert-kl-122ac stops the lane — the stop is the naming-threshold made physical |
 | [image: lane-evening-atmosphere] | n02 | tallow-smoke crosses the lane — concrete place-situated particular grounding the stop |
 | [image: standing-with-the-finding] | n03 | two-breaths bone — the body dwelling with the assessment output |
+| [image: the-word-held] | n03, n04 | the word held for the duration after naming: the two-breaths (n03) is the body dwelling with the finding; the jaw-set (n04) is the word held internal, undelivered to any patron-channel. The word "contempt" itself is realized at the narrator-interest/memory facet layer; the physical form of holding-the-word is the two-breaths + jaw-set |
 
 ---
 
