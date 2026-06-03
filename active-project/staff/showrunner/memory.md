@@ -8184,7 +8184,7 @@ books:
             - "KL 122 AC; coverage at scale; Green apparatus using Taylor's d06 list operationally"
             - "political_register-world rank 6.5"   # reconciled to aggregate-state authoritative (was stale 7.5); Phase 5 4-reviewer convergent DOC-FIX
           character_state:
-            - "Taylor: capability rank 6; position-prot-rise rank 5.5; moral_framework rank -2; relational_anchor rank 4.5; political_register-prot rank 3.5 (articulation threshold approaching)"
+            - "Taylor: capability rank 6.5; position-prot-rise rank 5; moral_framework rank -2; relational_anchor rank 4.5; political_register-prot rank 3.5 (articulation threshold approaching)"   # capability 6->6.5 + position-prot-rise 5.5->5 reconciled to c12 handoff_out + aggregate-state (Phase 5 continuity fault-002; was stale book-author pre-c12 prediction)
           source_chapter: b01c12
         handoff_out:
           open_threads:
@@ -8198,7 +8198,7 @@ books:
             - "KL 122 AC; Green apparatus enforcement of ward-elder list visible in magistrate proceeding"
             - "political_register-world rank 7.0"   # 6.5 entering + c13 +0.5; corrected from stale 8 (Phase 5 4-reviewer convergent DOC-FIX)
           character_state:
-            - "Taylor: political_register-prot rank 5 (articulate-contempt); moral_framework rank -2; capability rank 6; relational_anchor rank 4.5"
+            - "Taylor: political_register-prot rank 5 (articulate-contempt); moral_framework rank -2; capability rank 6.5; relational_anchor rank 4.5"   # capability 6->6.5 reconciled to aggregate-state (held flat this chapter; Phase 5 continuity fault-003)
             - "Halvard: present in Flea Bottom but Taylor will not engage him again at substance"
           target_chapter: b01c14
 
