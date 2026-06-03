@@ -35,6 +35,10 @@ planetos:
   - loc-velaryon-kl-townhouse
   - oc-cloth-merchant-shop
   - oc-cooper-yard-eel-alley
+  - oc-hook-lane
+  - oc-hook-lower-water-trough
+  - oc-hook-upper-provisioning
+  - oc-magistrate-hall
   - oc-pig-tallow-lane
   - oc-riverlands-river-ford
   - oc-riverlands-ruined-tower
@@ -79,6 +83,10 @@ full:
   - loc-velaryon-kl-townhouse
   - oc-cloth-merchant-shop
   - oc-cooper-yard-eel-alley
+  - oc-hook-lane
+  - oc-hook-lower-water-trough
+  - oc-hook-upper-provisioning
+  - oc-magistrate-hall
   - oc-pig-tallow-lane
   - oc-riverlands-river-ford
   - oc-riverlands-ruined-tower
