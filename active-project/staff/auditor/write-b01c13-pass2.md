@@ -305,3 +305,171 @@ Priority cluster — s03: fault-006/007/008 (three "accounting holds the X-image
 Priority cluster — dialogue-anchor malformation: fault-012/013/014 (all three s04 speech bones). The project's state_axes include no axis labeled community / knowledge / reputation / trust. The closest project analog for the communicative dimension of these bones requires screen-writer determination. Fixer must either map to an existing axis or escalate.
 
 Non-action-verb cluster: fault-001 (carries), fault-002/003/004 (three unlicensed holds on the fly-observation beats), fault-010 (holds the route), fault-011 (stands the water-trough). Six bones.
+
+---
+
+## RE-AUDIT (cycle 1)
+
+```yaml
+audit:
+  scope: chapter
+  target: b01c13
+  cycle: 1
+  timestamp: 2026-06-03
+  basis: corrected 30-bone draft at active-project/staff/screen-writer/b01c13-bones-draft.md
+  findings:
+
+    - id: r1-fault-001
+      type: fault
+      what: >
+        b01c13s03 scene header declares axes_held including social_tether-antag, but no bone
+        in s03 carries social_tether-antag in its axes_held entry. Roll-up commentary attributes
+        social_tether-antag witness to n02, but n02's actual axes_held block declares only
+        moral_framework. The attribution exists only in the prose roll-up comment, not in the
+        bone's structured field.
+      why: >
+        A scene-declared held axis with no witnessing bone is a substance gap. The requirement
+        is that each declared axes_held entry at scene level be witnessed by ≥1 bone explicitly
+        holding it. Downstream facet authors and the stitcher consult bone-level axes_held
+        entries, not roll-up commentary, when confirming held-axis discipline. If social_tether-antag
+        is not anchored by a bone in s03, the scene's held-axis contract is unverifiable at the
+        bone layer.
+      criteria: >
+        Either (a) one of the four s03 bones must declare social_tether-antag in its axes_held
+        block (n02 is the natural candidate since its rationale already references the familiar
+        lane environment and the absence of patron-lever), or (b) social_tether-antag must be
+        removed from the s03 scene-level axes_held declaration if it cannot be legitimately
+        witnessed at the bone layer in a 4-bone scene. The bone's axes_held rationale need not
+        change — only the structured axes_held field must carry the axis slug.
+
+    - id: r1-fault-002
+      type: fault
+      what: >
+        b01c13s03 bone count = 4. Scene-level chunk_targets band (memory.md line 1463) specifies
+        bone_count: 5-15 for scenes. The re-decomposition from 7 bones to 4 bones falls below
+        the declared scene minimum.
+      why: >
+        The scene-level band is the schema-declared production target for this tier. A 4-bone
+        scene is below floor. While the chapter-level aggregate (30 bones, target 15-75) is
+        satisfied, the scene-level band exists because scene structural integrity requires
+        sufficient bone resolution to cover all declared held axes and both the central-event
+        and grounding needs. With only 4 bones and 4 declared held axes (plus 1 moving axis),
+        each bone is doing exactly one axis job — there is zero redundancy, and the social_tether-antag
+        gap in r1-fault-001 is a direct consequence of the under-bone count.
+      criteria: >
+        s03 must reach a minimum of 5 bones. The additional bone(s) must not introduce
+        SVO violations and must witness at least the missing social_tether-antag held-axis.
+        The scene's substance_delta allocation (political_register-prot +0.5, mapped to one
+        magnitude-1 moving bone) does not change — additional bones are held bones.
+
+    - id: r1-flag-001
+      type: flag
+      what: >
+        b01c13s03n03 — SVO: taylor-hebert-kl-122ac takes the two-breaths. Object "the
+        two-breaths" is a hyphenated compound denoting a measured duration of physical action.
+      why: >
+        "the two-breaths" is at the edge of the abstraction-as-object rule. Breath is a
+        physical act; a counted quantity of breaths is still physically realizable and the
+        stitcher can anchor to it. The hyphenated compound form is idiomatic rather than abstract
+        in the way "the contempt" or "the weight" are abstract. Classification: FLAG not FAULT —
+        the object is physically realizable, but the unusual compound form may prompt a renderer
+        to treat it as a duration-abstraction rather than a concrete physical act. Advisory only.
+      criteria: null
+```
+
+### Prior-fault clearance table
+
+| prior fault | bone targeted | corrected SVO | cleared? | note |
+|-------------|---------------|---------------|----------|------|
+| fault-001 | s01n04 `carries` | `the supplier's-son shoulders the wrapped-crates` | YES | `shoulders` = discrete hoisting act; transitive; not on deny-list |
+| fault-002 | s01n06 `taylor holds the blowfly` | `the blowfly grips the crate-ledge` | YES | object-as-subject ambient insect form; `grips` a physical surface = narrow holds license (surface resisting pressure) or clean `grips` verb; fly as subject not Taylor |
+| fault-003 | s02n07 `taylor holds the fly` | `the fly grips the ceiling-corner` | YES | same ambient insect form; concrete surface object |
+| fault-004 | s02n09 `taylor holds the fly` | `the fly works the ceiling-corner` | YES | `works` = physically traverses/engages; not a holds form; concrete |
+| fault-005 | s02n08 `places his hands on the table` | `aldric grips the table` | YES | transitive `grips` absorbs the surface as direct object; no PP; no possessive modifier |
+| fault-006 | s03n02 `the accounting holds the household-agent-image` | `the tallow-smoke crosses the lane` | YES | environment element as subject; `crosses` = concrete transitive motion verb; `the lane` = concrete object |
+| fault-007 | s03n03 `the accounting holds the magistrate-document-image` | `taylor-hebert-kl-122ac takes the two-breaths` | YES (with r1-flag-001 advisory) | physical subject; `takes` = concrete act verb; see flag |
+| fault-008 | s03n04 `the accounting holds the aldric-hands-image` | `taylor-hebert-kl-122ac resumes the lane` | YES | PP-suppression: `resumes` takes `the lane` as direct object; concrete transitive |
+| fault-009 | s03n05 `names the contempt` (CENTRAL-EVENT BONE) | s03 re-decomposed; central-event is now s03n01 `taylor-hebert-kl-122ac stops the lane` | YES | actor-slug subject; `stops` = concrete motion-termination verb; `the lane` = non-abstract object; EVENT-NOT-CONCRETE resolved |
+| fault-010 | s04n05 `holds the route` | `taylor-hebert-kl-122ac walks the route` | YES | `walks` = transitive motion verb taking `the route` as direct object; not `holds` |
+| fault-011 | s04n08 `halvard stands the water-trough` | `halvard fills the water-skin` | YES | `fills` = concrete transitive physical act; `the water-skin` = concrete object; no stative position |
+| fault-012 | s04n03 speech bone; shape: held; axis_moves: [] | shape: held; axes_held: social_tether-antag; citation [septon-halvard-flea-bottom:1] present | YES — under pl-2026-05-30-003 ruling | held-discipline speech bone; comm-class analog axis (social_tether-antag) declared in axes_held; foreclosure rationale present; ruling confirmed by dispatch |
+| fault-013 | s04n04 speech bone; shape: held; axis_moves: [] | shape: held; axes_held: relational_anchor_status; citation [taylor-hebert-kl-122ac:1] present | YES — under pl-2026-05-30-003 ruling | same ruling; relational_anchor_status = comm-class analog |
+| fault-014 | s04n06 speech bone; shape: held; axis_moves: [] | shape: held; axes_held: social_tether-antag; citation [septon-halvard-flea-bottom:2] present | YES — under pl-2026-05-30-003 ruling | same ruling |
+| flag-001 | s01n07 `leans the trestle-table` (transitive ambiguity) | `the household-agent drops the shoulders` | RESOLVED | `drops` transitive; `the shoulders` = body-part object; unambiguous physical posture-release; ambiguity eliminated |
+| flag-002 | s02n06 `glances` (perception-verb borderline) | `the magistrate lifts the d06-document` | RESOLVED | `lifts` = clean physical-handling verb; no perception component; central-event concreteness confirmed |
+
+### New per-bone verdict table (corrected 30-bone draft)
+
+| bone | verdict | note |
+|------|---------|------|
+| b01c13s01n01 | CORRECT | `the blowfly takes the crate-ledge` — ambient insect; `takes` = arrival action; concrete surface |
+| b01c13s01n02 | CORRECT | `the household-agent stands the trestle-table` — note: `stands` here is the discrete act of taking a standing position at the table (not stative position-naming); context is scene-open, agent arriving at the table. Accepted. |
+| b01c13s01n03 | CORRECT | `the salt-fish supplier faces the household-agent` — `faces` = discrete transitive act of turning to confront |
+| b01c13s01n04 | CORRECT | `the supplier's-son shoulders the wrapped-crates` — `shoulders` = discrete hoisting act; cleared |
+| b01c13s01n05 | CORRECT | `the household-agent tallies the fish-account` — concrete transitive |
+| b01c13s01n06 | CORRECT | `the blowfly grips the crate-ledge` — ambient insect form; cleared |
+| b01c13s01n07 | CORRECT | `the household-agent drops the shoulders` — `drops` transitive; `the shoulders` = body-part object; unambiguous |
+| b01c13s01n08 | CORRECT | `the supplier's-son picks the empty-crate` — `picks` = discrete transitive; concrete object |
+| b01c13s01n09 | CORRECT | `taylor-hebert-kl-122ac releases the blowfly` — `releases` = discrete transitive act |
+| b01c13s02n01 | CORRECT | `the fly takes the ceiling-corner` — ambient insect; `takes` = arrival action |
+| b01c13s02n02 | CORRECT | `the green-faction-clerk sets the document` — `sets` = concrete transitive placement act |
+| b01c13s02n03 | CORRECT | `aldric takes the chair` — `takes` = concrete seating action |
+| b01c13s02n04 | CORRECT | `the magistrate writes the procedural-form` — `writes` = concrete transitive |
+| b01c13s02n05 | CORRECT | `aldric lifts the cord` — `lifts` = discrete transitive physical act |
+| b01c13s02n06 | CORRECT | `the magistrate lifts the d06-document` — `lifts` = clean physical-handling; CENTRAL-EVENT bone; prior flag-002 resolved |
+| b01c13s02n07 | CORRECT | `the fly grips the ceiling-corner` — ambient insect form; cleared |
+| b01c13s02n08 | CORRECT | `aldric grips the table` — transitive; cleared |
+| b01c13s02n09 | CORRECT | `the fly works the ceiling-corner` — `works` = concrete physical engagement; cleared |
+| b01c13s03n01 | CORRECT | `taylor-hebert-kl-122ac stops the lane` — CENTRAL-EVENT BONE; PP-suppression; concrete motion-termination; cleared |
+| b01c13s03n02 | CORRECT | `the tallow-smoke crosses the lane` — environment element; concrete motion; cleared |
+| b01c13s03n03 | FLAG (r1-flag-001) | `taylor-hebert-kl-122ac takes the two-breaths` — object borderline; see r1-flag-001; not a FAULT |
+| b01c13s03n04 | CORRECT | `taylor-hebert-kl-122ac resumes the lane` — PP-suppression; concrete transitive; cleared |
+| b01c13s04n01 | CORRECT | `halvard finds the water-trough` — `finds` = concrete motion-arrival |
+| b01c13s04n02 | CORRECT | `taylor-hebert-kl-122ac reaches the water-trough` — `reaches` = concrete transitive motion-arrival |
+| b01c13s04n03 | CORRECT (under ruling) | speech bone; held; axes_held: social_tether-antag; citation present; pl-2026-05-30-003 ruling |
+| b01c13s04n04 | CORRECT (under ruling) | speech bone; held; axes_held: relational_anchor_status; citation present; pl-2026-05-30-003 ruling |
+| b01c13s04n05 | CORRECT | `taylor-hebert-kl-122ac walks the route` — `walks` transitive; cleared |
+| b01c13s04n06 | CORRECT (under ruling) | speech bone; held; axes_held: social_tether-antag; citation present; pl-2026-05-30-003 ruling |
+| b01c13s04n07 | CORRECT | `taylor-hebert-kl-122ac leaves the water-trough` — `leaves` = discrete transitive departure |
+| b01c13s04n08 | CORRECT | `halvard fills the water-skin` — `fills` = concrete transitive physical act; cleared |
+
+### Substance and aggregate checks (corrected draft)
+
+- Axis slugs: all axis slugs in corrected draft (political_register-prot, political_register-world, moral_framework, relational_anchor_status, moral_legibility_to_self, social_tether-antag) are valid state_axes slugs. PASS.
+- Cost ledger anchors: all 30 bones carry cost_ledger_anchor: null; no orphan references. PASS.
+- Aggregate delta — s01: political_register-prot +1 (n07, magnitude 1) vs scene target +0.5. Within ±1 convention. PASS.
+- Aggregate delta — s02: political_register-world +1 (n06) and political_register-prot +1 (n08) vs targets +0.5 each. Within ±1 convention. PASS.
+- Aggregate delta — s03: political_register-prot +1 (n01, magnitude 1) vs scene target +0.5. PASS.
+- Aggregate delta — s04: zero vs declared axes_in_motion: []. PASS.
+- Chapter aggregate: political_register-prot +3 bone-Δ maps to +1.5 fractional; matches chapter target +1.5. PASS.
+- Chapter aggregate: political_register-world +1 bone-Δ maps to +0.5 fractional; matches chapter target +0.5. PASS.
+- STAKES-AXIS-DOMINANT (s02): political_register-world moving bone (n06) is the CENTRAL-EVENT bone (mechanism-primary); political_register-prot moving bone (n08) is the consequence-image. Satisfied by mechanism primacy. PASS.
+- CARRY_TO_WRITE (s04): two held bones physically enact not-turning-inward — n05 `walks the route` (body on course) and n08 `halvard fills the water-skin` (mirror-still-present). Both grounding-class. PASS.
+- Central-event concreteness: s01 n07 `drops the shoulders` (body-part object; discrete act); s02 n06 `lifts the d06-document` (physical-handling; concrete); s03 n01 `stops the lane` (motion-termination; concrete); s04 n07 `leaves the water-trough` (departure; concrete). All PASS.
+- s04 held-axis coverage (5 declared axes): moral_framework(n02) ✓ relational_anchor_status(n04) ✓ moral_legibility_to_self(n05,n08) ✓ social_tether-antag(n01,n03,n06) ✓ political_register-prot(n07) ✓. PASS.
+- s03 held-axis coverage (4 declared axes): moral_framework(n02) ✓ moral_legibility_to_self(n03) ✓ relational_anchor_status(n04) ✓ social_tether-antag: NO BONE (r1-fault-001 above). FAIL.
+- s03 bone count: 4 (below scene minimum 5). FAIL (r1-fault-002 above).
+- s01 held-axis coverage (4 declared axes): moral_framework(n03,n08) ✓ relational_anchor_status(n04) ✓ moral_legibility_to_self(n05) ✓ social_tether-antag(n02) ✓. PASS.
+- s02 held-axis coverage (4 declared axes): moral_framework(n03) ✓ relational_anchor_status(n05) ✓ moral_legibility_to_self(n07) ✓ social_tether-antag(n02) ✓. PASS.
+- Dialogue-anchor citation tokens: s04n03 [septon-halvard-flea-bottom:1] ✓ s04n04 [taylor-hebert-kl-122ac:1] ✓ s04n06 [septon-halvard-flea-bottom:2] ✓. PASS.
+- Opposing force visible: s01 (n02,n05,n07) ✓ s02 (n02,n04,n06) ✓ s03 (accumulated feed-record — prior scenes establish the record; naming-threshold is the force; omission_rationale present) ✓ s04 (n03,n06,n08 — Halvard present and acting) ✓. PASS.
+- omission_rationale present in s03 event_map for [image: two-feed-events-held-together] and [mechanism: contempt-crystallization]. PASS.
+- Register-as-mannerism check: no single VERB+OBJECT pair recurs in ≥3 bones. `speaks to` appears 3 times in s04 but is schema-licensed dialogue form, not a descriptive verb. PASS.
+- Bone count chapter total: 30; target 15-75. PASS.
+
+### RE-AUDIT terminate-or-fix verdict
+
+**FIX REQUIRED. Cycle 1 does not terminate.**
+
+All 14 prior HARD faults are cleared. Two new faults introduced by the s03 re-decomposition.
+
+**New HARD faults:**
+
+| id | bone/scope | class |
+|----|-----------|-------|
+| r1-fault-001 | b01c13s03 (scene level) | social_tether-antag declared held; no witnessing bone in axes_held |
+| r1-fault-002 | b01c13s03 (scene level) | bone_count 4 below scene minimum 5 |
+
+Both faults are co-located in s03 and share a single fix path: add ≥1 held bone to s03 that (a) brings the count to ≥5 and (b) explicitly declares social_tether-antag in its axes_held block. The additional bone must satisfy SVO discipline (no copula, no PP, no perception verb, no non-action verb, no abstraction-as-object). r1-flag-001 (`the two-breaths` object) is advisory only and does not block.
+
+The s04 speech-bone held-discipline recasts (fault-012/013/014) are confirmed licit under the pl-2026-05-30-003 extended ruling. No action required on those bones.

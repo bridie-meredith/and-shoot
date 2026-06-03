@@ -288,6 +288,14 @@ grounding-class: YES (two-breaths — concrete physical action; the body's measu
 dialogue-anchor: NO
 
 **b01c13s03n04**
+SVO: taylor-hebert-kl-122ac sets the jaw
+shape: held
+axes_held: [{ axis: social_tether-antag, rationale: "the contempt stays Taylor-internal; she carries it toward no deliverable and no patron-channel; Otto's leverage is unengaged by the naming — the finding changes nothing in the architecture; tether-antag held flat" }]
+cost_ledger_anchor: null
+grounding-class: NO (body-part action; s03 grounding quota already met by n01/n02/n05)
+dialogue-anchor: NO
+
+**b01c13s03n05**
 SVO: taylor-hebert-kl-122ac resumes the lane
 shape: held
 axes_held: [{ axis: relational_anchor_status, rationale: "the naming does not engage the anchor; Wren not present; the resuming-without-turning carries the relational discipline — the finding does not transform into a relational proposition" }]
@@ -301,7 +309,7 @@ dialogue-anchor: NO
 
 | tag | bone(s) | note |
 |-----|---------|------|
-| [event: naming-event] | n01, n03, n04 | stop (n01) → two-breaths standing-with-finding (n03) → resume (n04); n01 is CENTRAL-EVENT |
+| [event: naming-event] | n01, n03, n04, n05 | stop (n01) → two-breaths standing-with-finding (n03) → jaw-set finding-held-internal (n04) → resume (n05); n01 is CENTRAL-EVENT |
 | [image: two-feed-events-held-together] | n01 | omission_rationale: interior recall (the two feed-events run together in the accounting) is not bone-concretizable; realized at the memory + narrator-interest facet layer; the naming's concrete correlate is the stop bone n01 |
 | [mechanism: contempt-crystallization] | n01 | omission_rationale: the crystallization into the word "contempt" is interior recall — not bone-concretizable; realized at the narrator-interest/memory facets; the physical form of the crystallization is the body's stop |
 | [mechanism: naming-act] | n01 | CENTRAL-EVENT: taylor-hebert-kl-122ac stops the lane — the stop is the naming-threshold made physical |
@@ -312,10 +320,10 @@ dialogue-anchor: NO
 
 ### s03 roll-up
 
-- bone count: 4 (within 5–15 target)
+- bone count: 5 (within 5–15 target)
 - in-motion aggregate: political_register-prot +1 (n01, magnitude 1) → scene target +0.5 ✓
-- held axes witnessed: moral_framework (n02 — lane familiar, no new breach threshold), relational_anchor_status (n04 — resuming without turning relational), moral_legibility_to_self (n03 — two-breaths; contempt directed outward, not toward own ledger), social_tether-antag (n02 — grounding bone also witnesses: the familiar lane-environment holds no patron-lever; tether-antag held flat)
-- grounding bones: n01 (lane/stop — CENTRAL-EVENT), n02 (lane/tallow-smoke), n03 (two-breaths), n04 (lane/resume) — 4 grounding bones for 4 total; above quota ✓
+- held axes witnessed: moral_framework (n02 — lane familiar, no new breach threshold), relational_anchor_status (n05 — resuming without turning relational), moral_legibility_to_self (n03 — two-breaths; contempt directed outward, not toward own ledger), social_tether-antag (n04 — jaw-set; the contempt stays Taylor-internal, no patron-channel engaged; tether-antag held flat)
+- grounding bones: n01 (lane/stop — CENTRAL-EVENT), n02 (lane/tallow-smoke), n03 (two-breaths), n05 (lane/resume) — 4 grounding bones for 5 total; above quota ✓
 - opposing force visible: YES — accumulated feed-record presenting for assessment is the unnamed pressure the stop responds to; the naming-threshold is the force; prior scenes (s01/s02) establish the record; the interior recall that names it is omitted from bone layer per omission_rationale above
 - dialogue-anchors: 0 (solo interior scene)
 - central-event concreteness: CONFIRMED — n01 is "taylor-hebert-kl-122ac stops the lane"; actor + concrete physical verb + non-abstract object; NOT a perception verb; NOT an abstract object ✓
@@ -473,7 +481,7 @@ Discipline verbs across the chapter (post-fix): takes, shoulders, faces, grips, 
 
 - s01: 5 grounding bones / 9 bones
 - s02: 5 grounding bones / 9 bones
-- s03: 4 grounding bones / 4 bones (all bones grounding)
+- s03: 4 grounding bones / 5 bones (n04 jaw-set is the non-grounding held bone)
 - s04: 5 grounding bones / 8 bones
 URI-WRITE-SENSORY-GROUNDING satisfied in all four scenes. ✓
 
@@ -498,7 +506,7 @@ Both are grounding-class (named surfaces: route, water-skin/water-trough). NOT r
 
 ### total bone count
 
-s01: 9 + s02: 9 + s03: 4 + s04: 8 = **30 bones**
+s01: 9 + s02: 9 + s03: 5 + s04: 8 = **31 bones**
 Chapter target: 15–75 ✓
 
 ### dialogue-anchor inventory (full chapter)
