@@ -4612,3 +4612,73 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0078 | 2026-06-03 | FAST (user-proxy, RUNBOOK R1)
+
+mode: user-proxy
+trigger: /and-stitch b01c12 Phase 9 terminal-gate disposition
+context: |
+  b01c12 Phase 9 split picture:
+  - Completeness PASS: central events recovered (ledger-refusal blank-source-field, five-ward
+    deployment, breach-column cost-entry withholding "older word"). 0 spine-staging-gaps,
+    0 FAIL, 7/7 central-event clusters STAGED. Prose-rationale-mute CLEAN. Phase 8.5 PASS
+    (@38 recognition registers through apparatus register, s04 causal-seam reads CAUSED).
+    No Step-4 cluster fired.
+  - Cold-read CONTINUE=No + low jeopardy + "airless" read: cold-reader complaint categories
+    are (1) cold-context proper-noun opacity (Khepri/Gold-Morning/Wren/Otto — prior-chapter-
+    resident + Earth-Bet fence by design); (2) design-inherent low jeopardy (CLIMAX of
+    internal/offstage stakes by substance contract); (3) apparatus-register density. All three
+    categories are explicitly named in DEC-0076 cold_read_risk_carry items 1/3/4. No new
+    complaint categories.
+  Precedent: DEC-0072 (c10 Phase 9) + DEC-0074 (c11 Phase 9) = SHIPPED-WITH-CAVEATS on
+  identical pattern. DEC-0076 coupling rule explicitly states "Phase 9 may NOT FAIL on
+  cold-context cause alone."
+  Phase 4 voice-embodiment: 0 VOICE-APPARATUS-DEFAULT, 0 EMBODIMENT-BLOCKED.
+  Grounding adds: prose-rationale-mute CLEAN.
+  Phase 8.5 context-aware: person present — "airlessness" is cold-context reader effect.
+  N=7 apparatus-density already routed to /and-cohere before c13 (DEC-0073/0075/0077, HIGH).
+
+options:
+  - (A) SHIPPED-WITH-CAVEATS: terminal ship; CONTINUE=No on pre-authorized categories;
+        apparatus-density routes to /and-cohere (not per-chapter depth pass).
+  - (B) PASS-WITH-DEPTH-PASS-REQUIRED: terminal ship but mandate /and-write revise
+        --from-signals + re-cascade before book-close.
+
+decision: (A) SHIPPED-WITH-CAVEATS. Apparatus-density confirmed routed to /and-cohere before c13.
+
+basis: |
+  ltm:DEC-0074 (c11 coupling rule) + ltm:DEC-0072 (c10 coupling rule) + DEC-0076 (b01c12
+  pre-authorization of Phase 9 disposition on exact these categories). All three cold-read
+  CONTINUE=No categories are pre-authorized design-inherent or cold-context categories.
+  methodology:3a (reversibility) — (B) is costlier and targets the wrong layer; apparatus-density
+  is a cross-chapter cross-stitch concern, not a per-bone failure at c12.
+
+rationale: |
+  The coupling rule (DEC-0076 item 4) is deterministic: Phase 9 may not FAIL on cold-context
+  gaps on a climax chapter mid-serial. All three CONTINUE=No categories are pre-authorized:
+  (1) cold-context proper-noun opacity — design-inherent Earth-Bet fence; (2) design-inherent
+  low jeopardy — internal CLIMAX offstage stakes by substance contract; (3) apparatus-density —
+  N=7 cross-chapter accumulation, /and-cohere is the correct resolution layer. No new complaint
+  category exists that would distinguish c12 from c10/c11. Phase 4 applied person-first
+  throughout (0 apparatus-default bones), grounding-ledger satisfied (prose-rationale-mute
+  CLEAN), Phase 8.5 found the person present with context — the "airless" read is cold-context
+  reader effect, not a bone-layer or stitch-layer failure. (B) would mandate a depth pass
+  targeting apparatus-density at the per-chapter layer when the correct fix is already scheduled
+  at the cross-chapter /and-cohere layer; that is the wrong repair surface. c10 and c11 both
+  shipped SHIPPED-WITH-CAVEATS on this exact pattern; consistency requires the same verdict.
+
+trade-off: |
+  Accepting SHIPPED-WITH-CAVEATS without a depth pass means the apparatus-density concern is
+  not addressed until /and-cohere. Risk: if /and-cohere is skipped or deferred past book-close,
+  c12's airlessness remains unaddressed in the terminal draft. Mitigated by: (a) /and-cohere is
+  already stamped HIGH urgency (DEC-0073/0075/0077) and is the explicitly suggested next step
+  after the chapter-production run ends; (b) the depth pass under (B) would target bones in
+  isolation and cannot address the cross-chapter register accumulation — it would be lower-value
+  spend on the same content.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
