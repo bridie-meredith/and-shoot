@@ -1,0 +1,620 @@
+# b01c12 bones draft — screen-writer Phase 1 (scene-decomposition)
+# /and-write b01c12 Phase 1 — 2026-06-03
+# SVO reference form: b01-c02.md (canonical clean Phase-2 form)
+
+# ============================================================
+# per-scene roll-up check
+# ============================================================
+# s01: capability +0.5 (target +0.5 ✓), social_tether-prot-rise +0.5 (target +0.5 ✓)
+#      HELD relational_anchor_status ✓, political_register-prot ✓
+#      bone-Δ sum: capability +0.5, social_tether-prot-rise +0.5 — EXACT
+#
+# s02: axes_in_motion EMPTY (target: none ✓)
+#      HELD relational_anchor_status ✓, position-prot-rise ✓, social_tether-antag ✓
+#      bone-Δ sum: 0 axis moves — EXACT (held-discipline + chatter-with-anchor scene)
+#
+# s03: relational_anchor_status +1.0 (target +1.0 ✓), position-prot-rise +1.0 (target +1.0 ✓)
+#      HELD political_register-prot ✓, social_tether-antag ✓, moral_legibility_to_self ✓
+#      bone-Δ sum: relational_anchor_status +1.0, position-prot-rise +1.0 — EXACT
+#
+# s04: capability +0.5 (target +0.5 ✓), moral_framework -1.0 (target -1.0 ✓)
+#      HELD moral_legibility_to_self ✓, political_register-prot ✓, social_tether-antag ✓
+#      bone-Δ sum: capability +0.5, moral_framework -1.0 — EXACT
+#
+# chapter roll-up:
+#   capability: +0.5 (s01) + 0 (s02) + 0 (s03) + 0.5 (s04) = +1.0  ✓ (contract +1.0)
+#   social_tether-prot-rise: +0.5 (s01) = +0.5  ✓ (contract +0.5)
+#   relational_anchor_status: +1.0 (s03) = +1.0  ✓ (contract +1.0)
+#   position-prot-rise: +1.0 (s03) = +1.0  ✓ (contract +1.0)
+#   moral_framework: -1.0 (s04) = -1.0  ✓ (contract -1.0)
+# ALL 5 chapter axes EXACT. ✓
+# ============================================================
+
+scenes:
+
+  - slug: b01c12s01
+    event_map:
+      - event: "east-of-water-gate-lanes [image]"
+        covers: [b01c12s01n01, b01c12s01n02]
+        omission_rationale: null
+      - event: "witch-label-trigger-geometry [mechanism]"
+        covers: [b01c12s01n03]
+        omission_rationale: null
+      - event: "coverage-gap-established [event]"
+        covers: [b01c12s01n04, b01c12s01n05]
+        omission_rationale: null
+      - event: "wren-daily-pattern-through-gap [image]"
+        covers: [b01c12s01n06]
+        omission_rationale: null
+      - event: "wren-as-effective-eastern-boundary [mechanism]"
+        covers: [b01c12s01n07, b01c12s01n08]
+        omission_rationale: null
+      - event: "first-ward-cluster-added [event]"
+        covers: [b01c12s01n09, b01c12s01n10]
+        omission_rationale: null
+
+    bones:
+      - slug: b01c12s01n01
+        svo: "the insects return the overhang-joints"
+        shape: chatter
+        axis_moves: []
+        axes_held: []
+        cost_ledger_anchor: null
+        grounding: true
+        dialogue_anchor: false
+        # grounding: eaves/gutter-joints of the upper stories — the specific terrain feature that makes dense placement readable as witch-label.
+
+      - slug: b01c12s01n02
+        svo: "the insects fan the lane-mouth"
+        shape: chatter
+        axis_moves: []
+        axes_held: []
+        cost_ledger_anchor: null
+        grounding: false
+        dialogue_anchor: false
+
+      - slug: b01c12s01n03
+        svo: "taylor-hebert-kl-122ac takes the gate-tower shadow"
+        shape: held
+        axis_moves: []
+        axes_held:
+          - axis: political_register-prot
+            rationale: "the gap-mapping is a cold technical accounting act; no resentment register fires here; Taylor operates in flat operational mode, no contempt-register action"
+        cost_ledger_anchor: null
+        grounding: true
+        dialogue_anchor: false
+        # grounding: the gate-tower shadow as a named physical coordinate; Taylor's body placed inside the lane geometry.
+        # opposing_force visible: the lane's geometry enforces the constraint — the inhabited upper stories refuse clean placement.
+
+      - slug: b01c12s01n04
+        svo: "the coverage map closes the gate-tower boundary"
+        shape: chatter
+        axis_moves: []
+        axes_held: []
+        cost_ledger_anchor: null
+        grounding: false
+        dialogue_anchor: false
+        # cost_ledger_anchor: null; chatter permitted here because it names the formal operational fact (coverage-gap-established) that the subsequent axis-moving bones are built on.
+
+      - slug: b01c12s01n05
+        svo: "the map closes the rendering-yard boundary"
+        shape: chatter
+        axis_moves: []
+        axes_held: []
+        cost_ledger_anchor: null
+        grounding: true
+        dialogue_anchor: false
+        # grounding: rendering yard east wall named as a specific physical landmark bounding the gap.
+
+      - slug: b01c12s01n06
+        svo: "the insects return the stitch-house route"
+        shape: held
+        axis_moves: []
+        axes_held:
+          - axis: relational_anchor_status
+            rationale: "Wren's daily pattern through the gap is re-confirmed as an operational indexed fact; the anchor-axis move (cl-d06 settlement via the choice) belongs in s03; held at 3.5 here because the choice has not yet arrived — this is the indexing-without-weighting beat that sets up the collision"
+        cost_ledger_anchor: null
+        grounding: false
+        dialogue_anchor: false
+
+      - slug: b01c12s01n07
+        svo: "the map indexes the stitch-maker route"
+        shape: held
+        axis_moves: []
+        axes_held:
+          - axis: relational_anchor_status
+            rationale: "Wren's route indexed as the gap's operative eastern boundary — not an anchor-status advance, a held confirmation; the entry goes nowhere else; held-discipline against the opposing-force push of the lane geometry"
+        cost_ledger_anchor: null
+        grounding: false
+        dialogue_anchor: false
+
+      - slug: b01c12s01n08
+        svo: "taylor-hebert-kl-122ac lifts the stylus from the source-field"
+        shape: held
+        axis_moves: []
+        axes_held:
+          - axis: relational_anchor_status
+            rationale: "The stylus lifts without writing the source — the indexed-but-unwritten state re-enacted as a physical stopping-before-writing beat; the route goes down, the source-field is not reached; opposing-force (the apparatus's expectation of a priced source) held off by the physical withdrawal of the stylus; anchor held at 3.5"
+        cost_ledger_anchor: null
+        grounding: true
+        dialogue_anchor: false
+        # grounding: stylus as named physical object; the source-field as the specific target not reached.
+
+      - slug: b01c12s01n09
+        svo: "taylor-hebert-kl-122ac extends the northern ward-cluster"
+        shape: moving
+        axis_moves:
+          - axis: capability
+            direction: up
+            magnitude: 0.5
+        axes_held: []
+        cost_ledger_anchor: cl05
+        grounding: false
+        dialogue_anchor: false
+        # cl05 gain side, first partial tranche (+0.5 of +1.0 across chapter).
+
+      - slug: b01c12s01n10
+        svo: "the ledger column closes the water-gate entry"
+        shape: moving
+        axis_moves:
+          - axis: social_tether-prot-rise
+            direction: up
+            magnitude: 0.5
+        axes_held: []
+        cost_ledger_anchor: cl-d08b
+        grounding: true
+        dialogue_anchor: false
+        # grounding: the ledger column as a physical surface; the entry closing is a concrete physical act.
+        # cl-d08b: gap-boundary confirmation consolidates tether — Wren's free movement in uncovered lanes closes the map without entering the architecture.
+
+  - slug: b01c12s02
+    event_map:
+      - event: "jarvis-delivers-new-request [event]"
+        covers: [b01c12s02n01, b01c12s02n02]
+        omission_rationale: null
+      - event: "otto-requests-east-water-gate-lane-coverage [event]"
+        covers: [b01c12s02n03]
+        omission_rationale: null
+      - event: "packet-describing-the-gap-lanes [image]"
+        covers: [b01c12s02n03, b01c12s02n04]
+        omission_rationale: null
+      - event: "request-collides-with-gap-boundary [mechanism]"
+        covers: [b01c12s02n04, b01c12s02n05]
+        omission_rationale: null
+      - event: "otto-apparatus-knowing-the-terrain [force]"
+        covers: [b01c12s02n05]
+        omission_rationale: null
+      - event: "collision-between-request-and-gap-confirmed [event]"
+        covers: [b01c12s02n05, b01c12s02n06]
+        omission_rationale: null
+
+    bones:
+      - slug: b01c12s02n01
+        svo: "jarvis-coin-kl-courier places the packet on the ledger surface"
+        shape: chatter
+        axis_moves: []
+        axes_held: []
+        cost_ledger_anchor: null
+        grounding: true
+        dialogue_anchor: false
+        # grounding: ledger surface as named physical object; packet and wax seal as physical items.
+        # opposing_force enters with Jarvis.
+
+      - slug: b01c12s02n02
+        svo: "taylor-hebert-kl-122ac breaks the wax seal"
+        shape: chatter
+        axis_moves: []
+        axes_held: []
+        cost_ledger_anchor: null
+        grounding: true
+        dialogue_anchor: false
+        # grounding: wax seal as concrete physical object.
+
+      - slug: b01c12s02n03
+        svo: "the covering-sheet names the east-water-gate corridor"
+        shape: held
+        axis_moves: []
+        axes_held:
+          - axis: relational_anchor_status
+            rationale: "The request arrives naming the exact lanes that constitute the anchor's boundary; the collision is delivered but the axis-move belongs to the response (s03), not the delivery. Held at 3.5; the opposing-force (the apparatus's terrain-literate precision request) is now fully visible"
+        cost_ledger_anchor: null
+        grounding: false
+        dialogue_anchor: false
+
+      - slug: b01c12s02n04
+        svo: "taylor-hebert-kl-122ac sets the packet on the ledger surface"
+        shape: held
+        axis_moves: []
+        axes_held:
+          - axis: position-prot-rise
+            rationale: "The withholding-from-Otto position-move (cl02) belongs to the refusal act in s03; the request arriving is the condition, not the decision; held at 4. The opposing-force push: the request is precise, terrain-literate, the kind of ask that expects a corresponding deliverable"
+        cost_ledger_anchor: null
+        grounding: true
+        dialogue_anchor: false
+        # grounding: packet returned to ledger surface — physical act of setting down against pressure to comply.
+
+      - slug: b01c12s02n05
+        svo: "the covering-sheet names the rendering-yard boundary"
+        shape: held
+        axis_moves: []
+        axes_held:
+          - axis: social_tether-antag
+            rationale: "Otto's apparatus targets the gap lanes as a structural leverage expression — the apparatus knows the territory, names the exact corridor. Leverage is structural but not advancing this chapter (Otto has not noticed the pattern of withholding); held at 6. The opposing-force enacted: the request carries the shape of prior intelligence, reading back the gap with precision"
+        cost_ledger_anchor: null
+        grounding: false
+        dialogue_anchor: false
+
+      - slug: b01c12s02n06
+        svo: "taylor-hebert-kl-122ac sets the stylus beside the packet"
+        shape: chatter
+        axis_moves: []
+        axes_held: []
+        cost_ledger_anchor: null
+        grounding: true
+        dialogue_anchor: false
+        # grounding: stylus and packet as named physical objects; the stylus set beside (not applied to) the covering-sheet is the physical closing of the collision-delivery scene.
+        # This enacts the pl-2026-06-03-004 (a) watch: the bay-warmth close is Taylor's body paired to setting.
+        # The warm-on-held-hand is the indifferent-world-continuance beat; enacted here as body-paired-to-object, not atmospheric description.
+
+      - slug: b01c12s02n07
+        svo: "taylor-hebert-kl-122ac holds the eyes"
+        shape: held
+        axis_moves: []
+        axes_held:
+          - axis: position-prot-rise
+            rationale: "The gaze held still is the physical enactment of stillness-against-the-pressure to respond; the decision has not yet arrived; held discipline at 4; the bay-warmth presses on while Taylor remains at the ledger surface — the indifferent-world-continuance beat enacted as body stillness (eyes held, not lifted to the door)"
+        cost_ledger_anchor: null
+        grounding: true
+        dialogue_anchor: false
+        # grounding: the body holding the eyes still (a concrete body-act; narrow holds license — body-part stillness-against-pressure). Enacts pl-2026-06-03-004 (a): bay-warmth close = Taylor's body paired to setting (stylus beside packet at n06; eyes held at n07). NOT ambient atmosphere.
+
+  - slug: b01c12s03
+    event_map:
+      - event: "taylor-drafts-refusal-to-otto [event]"
+        covers: [b01c12s03n01, b01c12s03n02]
+        omission_rationale: null
+      - event: "bare-source-field-in-the-response [image]"
+        covers: [b01c12s03n03]
+        omission_rationale: null
+      - event: "refusal-without-explanation [mechanism]"
+        covers: [b01c12s03n04, b01c12s03n05]
+        omission_rationale: null
+      - event: "response-sealed-and-routed-to-jarvis [event]"
+        covers: [b01c12s03n06, b01c12s03n07]
+        omission_rationale: null
+      - event: "taylor-withholding-the-gap [force]"
+        covers: [b01c12s03n05, b01c12s03n08]
+        omission_rationale: null
+      - event: "apparatus-accepting-the-boundary [force]"
+        covers: [b01c12s03n07]
+        omission_rationale: null
+      - event: "ledger-entry-anchor-column-opened [event]"
+        covers: [b01c12s03n09]
+        omission_rationale: null
+      - event: "cl-d06-settlement-via-cl-d08-refusal-act [mechanism]"
+        covers: [b01c12s03n10, b01c12s03n11]
+        omission_rationale: null
+      - event: "relational-anchor-weight-settles [event]"
+        covers: [b01c12s03n11, b01c12s03n12]
+        omission_rationale: null
+
+    bones:
+      - slug: b01c12s03n01
+        svo: "taylor-hebert-kl-122ac takes the stylus"
+        shape: chatter
+        axis_moves: []
+        axes_held: []
+        cost_ledger_anchor: null
+        grounding: true
+        dialogue_anchor: false
+        # grounding: stylus as named physical object; taking up the stylus is the concrete opening of the refusal-writing act.
+
+      - slug: b01c12s03n02
+        svo: "the coverage-entry opens the gap-column"
+        shape: chatter
+        axis_moves: []
+        axes_held: []
+        cost_ledger_anchor: null
+        grounding: false
+        dialogue_anchor: false
+
+      - slug: b01c12s03n03
+        svo: "taylor-hebert-kl-122ac writes the boundary entry"
+        shape: moving
+        axis_moves:
+          - axis: position-prot-rise
+            direction: up
+            magnitude: 0.5
+        axes_held: []
+        cost_ledger_anchor: cl02
+        grounding: false
+        dialogue_anchor: false
+        # First half of position-prot-rise +1.0: the refusal written into the channel record as a structural limit.
+        # cl02: withholding-from-Otto (hook-0014 third instance). The named gap now enters the deliverable.
+
+      - slug: b01c12s03n04
+        svo: "taylor-hebert-kl-122ac holds the hand"
+        shape: held
+        axis_moves: []
+        axes_held:
+          - axis: moral_legibility_to_self
+            rationale: "The hand stops before reaching the explanation field — physical enactment of the withholding-before-writing beat (pl-2026-06-03-004 (b)); the stylus does not reach the source-clause; the suppression-pattern is enacted physically (not an interior enumeration); moral_legibility_to_self held at 5.5 — the crack is present in this pause, not opening"
+        cost_ledger_anchor: null
+        grounding: true
+        dialogue_anchor: false
+        # grounding: the hand as a body-part executing the physical stop; narrow holds license — body-part stillness-against-pressure.
+
+      - slug: b01c12s03n05
+        svo: "the stylus lifts from the explanation field"
+        shape: held
+        axis_moves: []
+        axes_held:
+          - axis: moral_legibility_to_self
+            rationale: "The stylus does not reach the field that would name the gap's contents; the physical withholding (not-writing what lives inside the gap) is the held-discipline beat; opposing-force visible: the channel expects an explanation; Taylor's hand goes elsewhere"
+        cost_ledger_anchor: null
+        grounding: true
+        dialogue_anchor: false
+        # grounding: stylus as physical object; the field (a specific column on the ledger surface) as the target that is not reached.
+
+      - slug: b01c12s03n06
+        svo: "taylor-hebert-kl-122ac closes the response entry"
+        shape: moving
+        axis_moves:
+          - axis: position-prot-rise
+            direction: up
+            magnitude: 0.5
+        axes_held: []
+        cost_ledger_anchor: cl02
+        grounding: false
+        dialogue_anchor: false
+        # Second half of position-prot-rise +1.0: the refusal sealed — withholding now load-bearing and recorded in the channel.
+
+      - slug: b01c12s03n07
+        svo: "jarvis-coin-kl-courier takes the sealed packet"
+        shape: held
+        axis_moves: []
+        axes_held:
+          - axis: social_tether-antag
+            rationale: "The apparatus receives the refusal via the standard channel without press; Otto's leverage is structural but not advancing — the lane-refusal does not reduce leverage because Otto has not noticed the pattern. Held at 6; the opposing-force enacted: the apparatus accepts the boundary, as it always accepts coverage limits, which makes Taylor's withholding structurally invisible"
+        cost_ledger_anchor: null
+        grounding: true
+        dialogue_anchor: false
+        # grounding: the sealed packet in Jarvis's hand is a concrete physical act; the covering-sheet flat over the seal.
+
+      - slug: b01c12s03n08
+        svo: "the response entry closes the gap-column"
+        shape: held
+        axis_moves: []
+        axes_held:
+          - axis: political_register-prot
+            rationale: "The gap-column closes in flat operational register — a tactical operational close, not a contempt-register event; no resentment-color fires in the refusal; political_register-prot held at 3.5; the opposing-force enacted: the channel entry is now a named gap in the deliverable, load-bearing and visible, but delivered in the same flat register as every prior entry"
+        cost_ledger_anchor: null
+        grounding: false
+        dialogue_anchor: false
+        # This enacts pl-2026-06-03-004 (b): the un-routed content (what the gap protects) is the absence in the closed entry — NOT interior enumeration. The physical closing of the column without the explanation clause is the stopping-before-writing enacted.
+
+      - slug: b01c12s03n09
+        svo: "taylor-hebert-kl-122ac opens the anchor-column"
+        shape: chatter
+        axis_moves: []
+        axes_held: []
+        cost_ledger_anchor: null
+        grounding: true
+        dialogue_anchor: false
+        # grounding: the ledger as a physical object opened to a specific column; the anchor-column as a named surface. Chatter licensed here as setup for the two axis-moving bones that follow; this scene pays the two heaviest cost-ledger anchors in the chapter.
+
+      - slug: b01c12s03n10
+        svo: "the anchor-column entry takes the refusal weight"
+        shape: moving
+        axis_moves:
+          - axis: relational_anchor_status
+            direction: up
+            magnitude: 0.5
+        axes_held: []
+        cost_ledger_anchor: cl-d08
+        grounding: false
+        dialogue_anchor: false
+        # cl-d08 mechanism: the lane-refusal IS the mechanism by which Wren's free movement becomes the map's load-bearing eastern boundary. First 0.5 of the +1.0 relational_anchor_status move; settles cl-d08.
+
+      - slug: b01c12s03n11
+        svo: "the anchor-column entry takes the deferred weight"
+        shape: moving
+        axis_moves:
+          - axis: relational_anchor_status
+            direction: up
+            magnitude: 0.5
+        axes_held: []
+        cost_ledger_anchor: cl-d06
+        grounding: false
+        dialogue_anchor: false
+        # cl-d06 debt: the outstanding second tranche (+1.0 total across n10+n11), settling cl-d06 per DEC-0071. This is the second 0.5; the combined n10+n11 deliver the full +1.0. Closes pl-2026-05-30-001 / pl-2026-06-02-stitch-thread-002.
+
+      - slug: b01c12s03n12
+        svo: "taylor-hebert-kl-122ac lifts the hand from the anchor-column"
+        shape: chatter
+        axis_moves: []
+        axes_held: []
+        cost_ledger_anchor: null
+        grounding: true
+        dialogue_anchor: false
+        # grounding: the hand as a body-part lifting from the physical ledger surface; enacts pl-2026-06-03-004 (c): hand-on-ledger close is lift-and-move — the hand lifts, the column closes. No camera-linger.
+
+  - slug: b01c12s04
+    event_map:
+      - event: "second-ward-cluster-added [event]"
+        covers: [b01c12s04n01, b01c12s04n02]
+        omission_rationale: null
+      - event: "aggregate-feed-scale-at-full-deployment [image]"
+        covers: [b01c12s04n03, b01c12s04n04]
+        omission_rationale: null
+      - event: "khepri-threshold-crossed-in-aggregate [mechanism]"
+        covers: [b01c12s04n05, b01c12s04n06]
+        omission_rationale: null
+      - event: "internal-accounting-runs-at-full-scale [event]"
+        covers: [b01c12s04n07, b01c12s04n08]
+        omission_rationale: null
+      - event: "khepri-word-surfaces-in-accounting [event]"
+        covers: [b01c12s04n09]
+        omission_rationale: null
+      - event: "khepri-suppression-act [mechanism]"
+        covers: [b01c12s04n10, b01c12s04n11]
+        omission_rationale: null
+      - event: "feed-continuing-past-the-suppression [image]"
+        covers: [b01c12s04n11, b01c12s04n12]
+        omission_rationale: null
+      - event: "capability-full-deployment-confirmed [event]"
+        covers: [b01c12s04n12]
+        omission_rationale: null
+      - event: "moral-framework-ledger-entry-for-threshold [event]"
+        covers: [b01c12s04n13]
+        omission_rationale: null
+
+    bones:
+      - slug: b01c12s04n01
+        svo: "taylor-hebert-kl-122ac extends the muddy-way ward-cluster"
+        shape: chatter
+        axis_moves: []
+        axes_held: []
+        cost_ledger_anchor: null
+        grounding: false
+        dialogue_anchor: false
+        # The second ward-cluster extension begins; this is setup for the capability-moving bone at n02.
+
+      - slug: b01c12s04n02
+        svo: "the insects fill the muddy-way upper-margin"
+        shape: moving
+        axis_moves:
+          - axis: capability
+            direction: up
+            magnitude: 0.5
+        axes_held: []
+        cost_ledger_anchor: cl05
+        grounding: true
+        dialogue_anchor: false
+        # grounding: the Muddy Way upper-margin as a named physical location in the coverage geography.
+        # cl05 gain side, second partial tranche (completing +1.0 across s01+s04).
+        # Central-event bone for capability-full-deployment: concrete SVO — insects (subject) fill (transitive physical verb) named location (object). EVENT-NOT-CONCRETE check: passes.
+
+      - slug: b01c12s04n03
+        svo: "the feed returns all five wards"
+        shape: chatter
+        axis_moves: []
+        axes_held: []
+        cost_ledger_anchor: null
+        grounding: false
+        dialogue_anchor: false
+        # Setup: the aggregate shape at full deployment, establishing the referent-weight that makes the shape-word land.
+
+      - slug: b01c12s04n04
+        svo: "the count moves through the full-circuit return"
+        shape: chatter
+        axis_moves: []
+        axes_held: []
+        cost_ledger_anchor: null
+        grounding: false
+        dialogue_anchor: false
+        # The counting-as-physical-act (the count as it always runs); establishes the aggregate scale before the threshold-cross.
+
+      - slug: b01c12s04n05
+        svo: "the feed returns the Flea Bottom approaches"
+        shape: chatter
+        axis_moves: []
+        axes_held: []
+        cost_ledger_anchor: null
+        grounding: false
+        dialogue_anchor: false
+        # Accumulates the referent-weight — rhymes-with-framing building: full-feed density established before the word surfaces.
+
+      - slug: b01c12s04n06
+        svo: "the accounting reaches the aggregate-shape entry"
+        shape: held
+        axis_moves: []
+        axes_held:
+          - axis: moral_legibility_to_self
+            rationale: "The aggregate-shape entry is the threshold where the internal accounting's natural shape-word surfaces; the accounting reaches this entry and the architecture's own scope becomes the opposing-force; moral_legibility_to_self held at 5.5 — the crack is present but not opening; the suppression is what keeps it held"
+        cost_ledger_anchor: null
+        grounding: false
+        dialogue_anchor: false
+        # opposing_force visible: the aggregate scale itself is the pressure; the architecture's scope pushes toward the shape-word.
+
+      - slug: b01c12s04n07
+        svo: "the accounting runs the harm-prevention column"
+        shape: held
+        axis_moves: []
+        axes_held:
+          - axis: moral_legibility_to_self
+            rationale: "The harm-prevention column is the rational framework Taylor uses to suppress the shape-word's claim; the accounting runs it as it always runs — the gap between surveillance-and-inference and the override-method is the held reality; the crack does not open because the harm-prevention logic is still functional; held at 5.5"
+        cost_ledger_anchor: null
+        grounding: false
+        dialogue_anchor: false
+
+      - slug: b01c12s04n08
+        svo: "the accounting reaches the breach column"
+        shape: held
+        axis_moves: []
+        axes_held:
+          - axis: moral_framework
+            rationale: "The breach column is where the cost-side weight lands; the moral_framework axis-move (cl05 cost side, -1.0) belongs to the ledger entry bone at n13; here the accounting reaches the column without the entry being written yet; opposing-force: the breach column's accumulation at full scale is what the shape-word names; held discipline against recording it as what it rhymes with"
+        cost_ledger_anchor: null
+        grounding: false
+        dialogue_anchor: false
+
+      - slug: b01c12s04n09
+        svo: "the accounting reaches the shape-word"
+        shape: held
+        axis_moves: []
+        axes_held:
+          - axis: moral_legibility_to_self
+            rationale: "The accounting reaches the shape-word at full-feed density — the word the internal record's own shape produces, the thing-she-did-at-Gold-Morning word, surfaces in one count. EARTH-BET FENCE HOLD: 'the shape-word' — no proper noun. The suppression-discipline is what keeps moral_legibility_to_self from opening; the word is there for the duration of one count; the axis stays held at 5.5 because the word does not settle. Opposing-force: the architecture's own aggregate scale is the pressure — irreducible, not argument"
+        cost_ledger_anchor: null
+        grounding: false
+        dialogue_anchor: false
+        # Central-event bone for Khepri-word-surfaces: the accounting (established subject-idiom from b01-c02) reaches (established verb-idiom from b01-c02 line 38: "the accounting reaches the ward-junction entry") the shape-word (object). Earth-Bet fence clean. Accumulated referent-weight from n03-n08 makes this land as felt weight. EVENT-NOT-CONCRETE check: "reaches" with "the shape-word" as object is borderline — the shape-word is an abstraction. However: the accounting reaching for a word in an internal ledger IS the concrete physical act of this world (the feed-accounting is the physical process); "the shape-word" is the project's established cipher-noun for the Khepri-referent within the Earth-Bet fence. Acceptable under the project idiom; closest possible concrete formulation within the fence constraint.
+
+      - slug: b01c12s04n10
+        svo: "the accounting advances the count"
+        shape: held
+        axis_moves: []
+        axes_held:
+          - axis: moral_legibility_to_self
+            rationale: "The accounting advances the count forward without settling on the shape-word — the suppression act enacted as a physical ledger-progression; the count continues; the word is not in the next entry because the next entry does not require it; held at 5.5; opposing-force: the architecture's irrevocable scope presses for the shape-word's settlement and the accounting routes around it"
+        cost_ledger_anchor: null
+        grounding: false
+        dialogue_anchor: false
+
+      - slug: b01c12s04n11
+        svo: "taylor-hebert-kl-122ac closes the architecture entry"
+        shape: held
+        axis_moves: []
+        axes_held:
+          - axis: moral_legibility_to_self
+            rationale: "The architecture entry closes without the shape-word in it — the suppression is complete in physical-ledger form; the feed continues past the suppression at full deployment; the crack is held shut. The indifferent-world-continuance: the feed running on after the suppression is the physical fact that the suppression succeeded at holding the axis. Opposing-force: the architecture's own scope (irrevocable, structural, not walkable-back by pulling any single node) presses for the shape-word's settlement; Taylor closes the entry instead"
+        cost_ledger_anchor: null
+        grounding: true
+        dialogue_anchor: false
+        # grounding: Taylor's hand closing a specific physical column in the ledger record (the architecture entry = a named surface in the ledger). Named physical act.
+
+      - slug: b01c12s04n12
+        svo: "the ledger entry takes the full-circuit count"
+        shape: chatter
+        axis_moves: []
+        axes_held: []
+        cost_ledger_anchor: cl05
+        grounding: false
+        dialogue_anchor: false
+        # Chatter licensed: anchors cl05 for the capability-full-deployment-confirmed event coverage; the axis Δ (+0.5) is fully allocated to n02 (the insect-placement bone, the physical cause). This bone records the formal ledger-side confirmation that the threshold was crossed — a downstream accounting of the n02 action; paired to n02 under the same cl05 anchor to make the gain-side visible on both the action and the record.
+
+      - slug: b01c12s04n13
+        svo: "the breach column takes the threshold entry"
+        shape: moving
+        axis_moves:
+          - axis: moral_framework
+            direction: down
+            magnitude: 1.0
+        axes_held: []
+        cost_ledger_anchor: cl05
+        grounding: true
+        dialogue_anchor: false
+        # grounding: the breach column as a named physical surface; the entry going down as a concrete ledger-act.
+        # cl05 cost side: the irrevocable-Khepri-repetition threshold crossed; systematic-override now irrevocable at full scale; the ledger records the cost-side weight without the shape-word in it. Central-event bone for [event: moral-framework-ledger-entry-for-threshold] — concrete SVO: the breach column takes the entry. EVENT-NOT-CONCRETE check: "takes" is a concrete transitive verb with physical object ("the threshold entry"); passes.
+        # This is the chapter's last axis-moving bone; takes moral_framework -1 → -2.
