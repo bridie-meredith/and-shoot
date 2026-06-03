@@ -4872,3 +4872,116 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0082 | 2026-06-03 | SLOW (process-critic)
+
+mode: process-critic
+trigger:
+  reason: cohere-converged-caution
+  source_report: active-project/staff/reviews/cohere-naive-b01-c06-c12-20260603T152850Z.md
+  source_verdict: CAUTION-COHERE (converged, iteration 2; load-bearing naive-Q6 FAIL->CAUTION via DEC-0081 prologue-variation)
+gate_path: .claude/commands/and-cohere.md#phase-2
+secondary_gate_paths: [.claude/commands/and-stitch.md#phase-9, .claude/commands/and-facets.md#phase-2.5]
+
+question: |
+  /and-cohere b01 c06-c12 converged at CAUTION-COHERE in 2 iterations via targeted prologue-variation
+  (DEC-0081 option B, not full per-chapter revise-cascade). Three process candidates:
+  (1) Should /and-facets exposition @0 bridge carry cross-chapter prologue-variation discipline
+      so skim-formula doesn't accumulate in the first place?
+  (2) Should the cohere-triage heuristic (FAIL localizes to prologues → targeted presentation-pass
+      preferred over per-chapter bones-revise) be codified in the cohere command body?
+  (3) Does the cohere successfully discharging the c10-c12 SHIPPED-WITH-CAVEATS accumulation
+      change PROP-0037's framing?
+
+context: |
+  Iteration 1 FAIL-COHERE: load-bearing Q6 apparatus-register cumulative load localized by
+  cape-fic audience to 7 near-identical italic prologues (skim-formula). Iteration 2 ran after
+  a targeted prologue-variation pass on all 7 chapter openings. Q6 moved from FAIL to CAUTION
+  (body-register tipping in c10-c12 remains, but formula-problem is solved). Total cost: ~10
+  dispatches vs. ~40 dispatches for option A (full per-chapter bones-revise). Cohere converged.
+
+decision: |
+  Candidate 1: OK — no proposal. First occurrence, non-catastrophic, cohere architecture is the
+    correct catch for this class.
+  Candidate 2: OK — no proposal. First occurrence. Would layer on untriaged PROP-0031.
+  Candidate 3: OK — PROP-0037 unchanged. Cohere discharge is confirmatory, not a framing problem.
+
+basis: |
+  Candidate 1: process-critic-recurrence-discipline (first occurrence of cross-chapter prologue
+    skim-formula; non-catastrophic; cohere caught and fixed it at low cost) + gate-discrimination
+    (the fix requires per-chapter exposition authors to load N prior chapters' exposition facets
+    at dispatch time — a new cross-chapter context dependency with non-trivial cost; the cohere
+    loop is already the designated architecture for cross-chapter presentation accumulation) +
+    methodology:3d (optionality — prevention would foreclose the current clean architecture where
+    per-chapter authoring is context-isolated; that isolation is structurally load-bearing for
+    parallelism across facet authors).
+  Candidate 2: process-critic-recurrence-discipline (recurrence_count = 1 for prologue-localization
+    triage path) + PROP-0031-not-triaged (layering a triage heuristic on an untriaged base
+    proposal increases blast radius before the principal has accepted the base).
+  Candidate 3: methodology:3c (blast radius of zero — PROP-0037 is not a framing problem;
+    the cohere discharging the c10-c12 accumulation is the intended behavior of the proposed
+    mechanism, confirmation not counterevidence; no proposal amendment warranted).
+
+rationale: |
+  CANDIDATE 1 (upstream prologue-variation gate): The per-chapter exposition author produces
+  `episode-open` entries that became 7 near-identical restatements of standing conditions.
+  Each entry was correct in isolation — the skim-formula emerged only across the full sequence.
+  A cross-chapter diversity check at authoring time would require loading prior chapters'
+  exposition facets into the dispatch context window, creating a new N-prior-chapters dependency
+  not present anywhere in the current per-chapter authoring chain. This is a meaningful
+  architecture change (all per-chapter agents currently operate blind to sibling chapters by
+  design — this enables parallelism and limits context-window cost). The cohere loop exists
+  precisely to catch cross-chapter presentation problems post-section. That it caught and fixed
+  this at iteration 2 for ~10 dispatches is the mechanism working as designed. First-occurrence
+  hold applies per Rule 11: non-catastrophic (cohere resolved it), single-occurrence, cleanly
+  caught by designated architecture. If a future project sees the same skim-formula accumulate
+  across its section and the cohere loop is not run before it becomes a book-close problem, that
+  second occurrence warrants a cross-chapter awareness rule at authoring time. Not now.
+
+  CANDIDATE 2 (cohere-triage heuristic): DEC-0081's option B judgment — "FAIL localizes to
+  prologues (presentation layer), therefore targeted presentation-pass is preferred over
+  per-chapter bones-revise" — was an operator triage call made correctly on the evidence at hand.
+  The cohere Phase 3 triage queue already provides the structural surface where this judgment
+  lives (read the chapter-revise queue, coalesce by chapter + axis, order by dependency). Making
+  it a named heuristic in the command body would commit future runs to "presentation-localized
+  FAIL → presentation-pass always" before the operator has seen what the specific failing axes
+  contain. On this project the localization was clear (italic-prologue skim-formula); on a
+  different project or a different Q6 failure shape, the localization might look similar but
+  require bone-layer changes. One data point is insufficient. Additionally: PROP-0031 (the
+  /and-cohere command body proposal) is still status: open / untriaged. Adding a triage heuristic
+  to an untriaged base proposal increases the scope the principal must evaluate at triage. The
+  correct sequence is triage PROP-0031 first, then consider triage-heuristic additions. Hold.
+
+  CANDIDATE 3 (PROP-0037 interaction): PROP-0037 proposes a Phase 0 HARD-abort at /and-substance
+  chapter when consecutive_shipped_with_caveats >= 3 without cohere_acknowledgment. Under
+  PROP-0037's proposed mechanism, the /and-cohere persist phase (Phase 7) stamps
+  cohere_acknowledgment in showrunner memory after a successful convergence — this clears the
+  HARD-abort gate. The cohere converging at CAUTION-COHERE (0 load-bearing fails) is exactly
+  the successful resolution that the mechanism is designed to enable: the cohere ran, resolved
+  the load-bearing Q6 FAIL, converged, stamps acknowledgment, gate clears, c13 can proceed.
+  This is not a framing problem; it is confirmatory evidence that PROP-0037's proposed mechanism
+  has the right shape. PROP-0037 remains correctly framed: the problem was the recommendation
+  being bypassable (bypassed twice, c10→c11→c12); the proposed fix is a HARD-abort that requires
+  cohere acknowledgment. That the cohere then worked efficiently (10 dispatches, 2 iterations)
+  confirms the mechanism's expected cost is acceptable. No amendment.
+
+trade-off: |
+  Not proposing Candidate 1 means the per-chapter exposition author will continue to author
+  prologues blind to the accumulating sequence. Mitigation: /and-review cohere is the correct
+  architectural catch, and the cost of catching it there (~10 dispatches per section) is low.
+  If the principal runs /and-cohere per-section (as now established), the skim-formula will
+  always be caught within one iteration. The prevention cost (cross-chapter context loading at
+  each /and-facets exposition dispatch, plus architectural dependency) exceeds the expected
+  repair cost at the cohere layer.
+
+  Not proposing Candidate 2 means the triage judgment remains operator-level. Mitigation:
+  DEC-0081 is a well-documented operator decision that future dispatches can reference. If
+  the same localization pattern recurs on a second cohere run, that is the correct second data
+  point for a heuristic proposal.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
