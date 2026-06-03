@@ -2,14 +2,14 @@
 generated: 2026-06-03
 source: active-project/theater/proto-lines/b01-c11.md + active-project/theater/facets/
 scope: 9 facet files + 1 proto-lines file
-totals: 52 facet entries; 22/27 protolines decorated (81.5%)
+totals: 55 facet entries; 26/27 protolines decorated (96.3%)
 
 ## Density distribution (protolines by citation count)
 
 | cites/line | count |
 |------------|-------|
-| 0 (bare)   | 5 |
-| 1          | 11 |
+| 0 (bare)   | 1 |
+| 1          | 15 |
 | 2          | 4 |
 | 3          | 1 |
 | 4          | 2 |
@@ -35,9 +35,12 @@ totals: 52 facet entries; 22/27 protolines decorated (81.5%)
   narrator:6 @26 back=Y co=[state:13]
   narrator:7 @7 back=Y co=[mem:1]
 
-### sensory (3 entries)
+### sensory (6 entries)
   sensory:1 @11 back=Y co=[exposition:2, narrator:2, state:4, vibes:8, vibes:9, vibes:12]
   sensory:2 @27 back=Y co=[feel:1, state:14, vibes:1]
+  sensory:3 @12 back=Y
+  sensory:4 @14 back=Y
+  sensory:5 @19 back=Y
   sensory:27 @- back=-
 
 ### state (19 entries)
@@ -106,6 +109,9 @@ _Round-2 deletion candidates — but check the rubric before cutting._
 - loc-state:2 @8  `the cloth-merchant opens the back-worktable`
 - loc-state:3 @9  `the messenger crosses the shop-threshold`
 - loc-state:4 @17  `the soap-lane-contact crosses the cross-lane`
+- sensory:3 @12  `the iron-dish receives the ash`
+- sensory:4 @14  `the insect-feed carries the smoke-curl`
+- sensory:5 @19  `taylor-hebert-kl-122ac opens the packet`
 - state:2 @5  `taylor-hebert-kl-122ac sets the stylus to the source-field`
 - state:6 @18  `the soap-lane-contact delivers the nighttime-visitor report`
 - state:8 @21  `taylor-hebert-kl-122ac seals the packet`
@@ -116,4 +122,4 @@ _Round-2 deletion candidates — but check the rubric before cutting._
 ## Bare protolines (no citations accrued)
 _Round-2 add candidates if the rubric licenses a fire here._
 
-@10, @12, @13, @14, @19
+@10

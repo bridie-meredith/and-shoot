@@ -22,8 +22,8 @@ entries:
     license: GROUNDING-REQUIRED
     licensed_at: 2.5
     licensed_by: aliveness-reviewer
-    status: open
-    satisfied_by: null
+    status: satisfied
+    satisfied_by: "sensory:3 (@12 thermal: shop-ambient -> ash-dish-residual-warmth) + sensory:4 (@14 smell: paper-burning-char -> char-smoke-curl)"
     airless_symptom: "the burn's aftermath reads as 'the feed flags a burn' classification — no settled-ash materiality, no embodied two-class relay datum — the DREAD register decays to filed event across @12-@14"
   - id: grd-002
     anchor: "@19"
@@ -32,6 +32,6 @@ entries:
     license: GROUNDING-REQUIRED
     licensed_at: 2.5
     licensed_by: aliveness-reviewer
-    status: open
-    satisfied_by: null
+    status: satisfied
+    satisfied_by: "sensory:5 (@19 tactile: hands-empty -> packet-cloth-weight)"
     airless_symptom: "the routing-WITHOUT-the-Halvard-test reads as a clean data operation — narrator:4 keeps a MIND present at @20 but no BODY is present across @19->@21, so the foreclose lands as arithmetic with no one performing it"
