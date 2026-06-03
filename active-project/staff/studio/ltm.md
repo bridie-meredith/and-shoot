@@ -3,6 +3,31 @@
 
 ---
 
+## 2026-06-03 — b01c13 location-state R1 blind authoring at /and-facets Phase 1
+
+Chapter b01c13: 31 bones, 4 scenes. Four distinct locations. Two feed-observed scenes (blowfly witness), one solo interior (naming), one live-dialogue (foreclosure). This is the hinge chapter — contempt named + enacted.
+
+LOCATION-STATE (7 entries, 0 cull):
+  The structural pattern across all four scenes: place-anchor + state-change for scenes A + B (two-actor setup in each); place-anchor only for scenes C + D (solo or arrival) with one departure state-change in D.
+  Scene-A: @1 loading-platform place-anchor (fly on crate-ledge) + @2 trestle-table state-change (household-agent posts; confrontation geometry established).
+  Scene-B: @10 ceiling-corner place-anchor (fly reads from above) + @11 table-edge state-change (clerk sets list-output; apparatus-component takes position before proceedings).
+  Scene-C: @19 hook-lane place-anchor (body stops mid-circuit; that evening). Solo scene; single entry sufficient.
+  Scene-D: @24 water-trough place-anchor (lower Hook; Halvard in ordinary circuit) + @29 departure state-change (Taylor leaves mid-speech; lane-mouth threshold as the foreclosure enacted at trough-edge).
+  New slugs: the-hook-upper-provisioning, the-magistrate-hall, the-hook-lane, the-hook-lower-water-trough — all new this chapter; no confirmed warehouse cards; margit referrals flagged (SEAM-C13-LOC-001 through -004).
+
+CONTINUITY-CARRY: none filed.
+  Scene-A fusion-run @1-@2: both earn independent entries; no carry needed.
+  Scene-B: rising rhythm-shape — license excluded.
+  Scene-C fusion-run @21-@22: only 2 bones — below 3-bone floor.
+  Scene-D fusion-run @24-@25: only 2 bones — below 3-bone floor. Rhythm-shape held-breath-enactment (not in qualifying list).
+
+NOTABLE RUBRIC DECISIONS:
+  @3 (supplier faces agent): social positioning in established env; strip test passes; REJECT frugality. This chapter's apparatus-staging (trestle-table @2; table-edge @11) demonstrates the entry-pattern: the apparatus component taking position earns a state-change, but the counter-force facing them in the same env does not.
+  @23 (taylor resumes the lane): the resumed movement on the same established lane does not change location state. This is structurally important — the contempt-without-refusal shape REQUIRES that the lane be unchanged; the loc-state correctly holds that: one entry at @19, location inherited unchanged through @23.
+  @29 (taylor leaves trough): the departure mid-speech IS load-bearing as a state-change — the trough-edge threshold is the physical correlate of the foreclosure; "trough-behind, lane-open-ahead" is the focus-element; the pointing test returns "the lane-mouth past the trough's edge" in five words.
+
+---
+
 ## 2026-06-02 — b01c11 three-facet R1 blind authoring at /and-facets Phase 1
 
 Chapter b01c11: 27 bones, 4 scenes, silent feed-POV chapter. Taylor physically at the-feed-station throughout; other locations (grain-measures junction, cloth-merchant's shop, soap-rendering lane) are mediated through the insect-feed. This is the first chapter in which the feed-POV's mediated spaces raise a loc-state interpretation question: do mediated spaces earn place-anchors? Studio's answer (confirmed in loc-state authoring notes): YES for scenes that have explicit named locations in the scene-map and where the stitcher needs a spatial anchor to render the scene; NO for individual perception beats (@3/@4 grain-measures junction; @13/@14 feed relay at worktable) where the physical event is too fine-grained or purely feed-extended.

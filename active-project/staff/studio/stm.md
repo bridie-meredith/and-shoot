@@ -1,5 +1,45 @@
 # studio STM
 
+## 2026-06-03 — /and-facets b01-c13 Phase 1 R1 location-state authoring (BLIND)
+
+Chapter b01c13: 31 bones, 4 scenes, 4 distinct locations. Two feed-observed scenes (s01/s02) + solo interior (s03) + live-dialogue (s04). Taylor's role: blowfly-reader (s01/s02), solo pedestrian (s03), water-trough encounter (s04). No prior chapter set state carried into c13's new locations.
+
+LOCATION-STATE: 7 entries, 0 cull.
+  loc-state:1 @1  — the-hook-upper-provisioning; morning; place-anchor; crate-ledge at platform edge (blowfly stations; scene-A open).
+  loc-state:2 @2  — the-hook-upper-provisioning; morning; state-change (apparatus-component takes position); trestle-table with household-agent posted — confrontation geometry; @3–@9 all turn on this surface.
+  loc-state:3 @10 — the-magistrate-hall; morning; place-anchor; ceiling-corner of chandler's rented back room (fly reads from above; scene-B open; four days later).
+  loc-state:4 @11 — the-magistrate-hall; morning; state-change (apparatus-component takes position); table's edge where clerk placed list-output before proceedings — @15 document-lift turns on this placement.
+  loc-state:5 @19 — the-hook-lane; evening; place-anchor; familiar lane mid-circuit (body stops; scene-C open; that evening).
+  loc-state:6 @24 — the-hook-lower-water-trough; afternoon; place-anchor; water-trough at lower Hook (scene-D open; two days later; Halvard in ordinary circuit).
+  loc-state:7 @29 — the-hook-lower-water-trough; afternoon; state-change (departure mid-speech); lane-mouth past trough's edge — threshold crossed as foreclosure enacted.
+  Continuity-carry: none filed.
+    — scene-A: fusion-eligible-run @1-@2 both earn independent entries (place-anchor + state-change); no additional carry needed
+    — scene-B: rhythm-shape rising (license excluded)
+    — scene-C: fusion-eligible-run @21-@22 is only 2 bones (below 3-bone floor for license)
+    — scene-D: fusion-eligible-run @24-@25 is only 2 bones (below 3-bone floor); rhythm-shape held-breath-enactment (not flat-low/resolving/release-only)
+  Cull: 0 entries removed — all 7 survive strip / pointing / frugality / previous-entry tests.
+
+Key REJECT decisions:
+  @3 (salt-fish-supplier faces household-agent — social positioning; confrontation geometry already established at @2; strip test passes in @2 inherited env; REJECT frugality)
+  @4–@8 (shoulders/tallies/grips/drops/picks — dexterity or stillness/hold in-place; all inherit @2 trestle-table env; REJECT necessity)
+  @9 (taylor releases the blowfly — releasing an insect is not through-space movement; dexterity in inherited @2 env; REJECT)
+  @12 (aldric takes the chair — positioning verb; frugality REJECT: @10 already established the hall; @11 placed the apparatus-component; Aldric's chair location is legible in inherited env; strip test passes)
+  @13–@18 (procedural/dexterity/stillness verbs — administrative or hold beats; all inherit @11 env; REJECT necessity and frugality)
+  @20 (tallow-smoke crosses the lane — environmental-agency subject; the smoke is ambient; it does not add a new location state beyond the @19 lane already established; anti-pattern 3; REJECT frugality)
+  @21–@22 (takes two-breaths / sets the jaw — stillness/somatic beats; no through-space movement; inherit @19 lane; REJECT necessity)
+  @23 (resumes the lane — transitional verb but no state-change: the lane is unchanged; Taylor returns to motion on the same lane; frugality REJECT)
+  @25 (taylor reaches the water-trough — transitional verb but @24 already established the trough; strip test passes in @24 inherited env; frugality REJECT)
+  @26–@28 (dialogue beats — pure speech, no positioning in question; REJECT per necessity rubric §)
+  @30 (taylor walks the route — transitional verb; Taylor in transit in inherited @29 departure-state; no new location state; frugality REJECT)
+  @31 (halvard fills the water-skin — dexterity at the trough; Halvard remains; inherited env; REJECT dexterity/stillness)
+
+Seams flagged for R2:
+  SEAM-C13-LOC-001: the-hook-upper-provisioning — new slug; no confirmed warehouse card; drawn from bones `locations:` field. R2 confirm slug canonicalization or flag for margit.
+  SEAM-C13-LOC-002: the-magistrate-hall — new slug; no confirmed warehouse card; scene-map describes as "rented back room of a chandler's house." R2 confirm slug.
+  SEAM-C13-LOC-003: the-hook-lane — new slug; the lane Taylor walks on ordinary circuit; no confirmed warehouse card. R2 confirm whether this should canonicalize to oc-hook-precinct or remain distinct.
+  SEAM-C13-LOC-004: the-hook-lower-water-trough — new slug; no confirmed warehouse card. R2 confirm slug or flag for margit.
+  SEAM-C13-LOC-005: scene-D time-of-day set as "afternoon" by inference from Halvard's "ordinary water-carrying circuit." No explicit time named in scene-map. R2 confirm or adjust.
+
 ## 2026-06-03 — /and-facets b01-c12 Phase 1 R1 location-state authoring (BLIND)
 
 Chapter b01c12: 42 bones, 4 scenes. Silent interior chapter — no dialogue-anchor bones. Taylor in the hook-ward east-water-gate lanes (morning circuit) then at the feed-station (scenes B-D). Time progression: morning → midday → afternoon → end-of-day.

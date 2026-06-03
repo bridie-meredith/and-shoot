@@ -2,7 +2,7 @@
 
 episode: b01c13
 last_updated: 2026-06-03
-action: location-state R1 blind authoring — /and-facets b01-c13 Phase 1
+action: state-updates-env R1 authoring — /and-facets b01-c13 Phase 1
 
 ## Location-state sequence locked (b01c13) — 7 entries, 0 cull
   loc-state:1 @1  — the-hook-upper-provisioning | morning | none | loading-platform-open | crate-ledge at the platform edge (place-anchor; scene-A; Thursday mid-morning)
