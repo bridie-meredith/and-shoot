@@ -7,8 +7,8 @@
 6 the insects return the stitch-house route
 7 the map marks the stitch-maker route
 8 taylor-hebert-kl-122ac lifts the stylus
-9 taylor-hebert-kl-122ac extends the northern ward-cluster [state:1]
-10 the ledger column closes the water-gate entry [state:2]
+9 taylor-hebert-kl-122ac extends the northern ward-cluster [state:17]
+10 the ledger column closes the water-gate entry [state:18]
 11 jarvis-coin-kl-courier places the packet
 12 taylor-hebert-kl-122ac breaks the wax seal
 13 taylor-hebert-kl-122ac opens the covering-sheet
@@ -17,18 +17,18 @@
 16 taylor-hebert-kl-122ac sets the stylus
 17 taylor-hebert-kl-122ac takes the stylus
 18 the coverage-entry opens the gap-column
-19 taylor-hebert-kl-122ac writes the boundary entry [state:3]
+19 taylor-hebert-kl-122ac writes the boundary entry [state:19]
 20 taylor-hebert-kl-122ac holds the hand
 21 the stylus lifts
-22 taylor-hebert-kl-122ac closes the response entry [state:4]
+22 taylor-hebert-kl-122ac closes the response entry [state:20]
 23 jarvis-coin-kl-courier takes the sealed packet
 24 the response entry closes the gap-column
 25 taylor-hebert-kl-122ac opens the anchor-column
-26 taylor-hebert-kl-122ac writes the anchor-column entry [state:5]
-27 taylor-hebert-kl-122ac closes the anchor-column entry [state:6]
+26 taylor-hebert-kl-122ac writes the anchor-column entry [state:21]
+27 taylor-hebert-kl-122ac closes the anchor-column entry [state:22]
 28 taylor-hebert-kl-122ac lifts the hand
 29 taylor-hebert-kl-122ac extends the muddy-way ward-cluster
-30 the insects fill the muddy-way upper-margin [state:7]
+30 the insects fill the muddy-way upper-margin [state:23]
 31 the muddy-way entry closes the fifth-ward circuit
 32 the feed returns all five wards
 33 the count runs the full-circuit return
@@ -40,4 +40,4 @@
 39 the accounting advances the count
 40 taylor-hebert-kl-122ac closes the architecture entry
 41 the ledger entry takes the full-circuit count
-42 the breach column takes the threshold entry [state:8]
+42 the breach column takes the threshold entry [state:24]

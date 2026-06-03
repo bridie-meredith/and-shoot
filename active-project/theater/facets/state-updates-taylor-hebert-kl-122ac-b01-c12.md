@@ -20,14 +20,14 @@ scope: actor:taylor-hebert-kl-122ac (POV actor-state ONLY; studio/prop entries o
 # Per-entry annotations:
 # - state:8 @38: SKIP-CORRECT (registration, not state) — see trailing note at file end.
 
-1 @9 actor:taylor-hebert-kl-122ac.capability_axis: 5.5 -> 6.0
-2 @10 actor:taylor-hebert-kl-122ac.social_tether_prot_rise_axis: 8 -> 8.5
-3 @19 actor:taylor-hebert-kl-122ac.position_prot_rise_axis: 4 -> 4.5
-4 @22 actor:taylor-hebert-kl-122ac.position_prot_rise_axis: 4.5 -> 5
-5 @26 actor:taylor-hebert-kl-122ac.relational_anchor_status_axis: 3.5 -> 4.0
-6 @27 actor:taylor-hebert-kl-122ac.relational_anchor_status_axis: 4.0 -> 4.5
-7 @30 actor:taylor-hebert-kl-122ac.capability_axis: 6.0 -> 6.5
-8 @42 actor:taylor-hebert-kl-122ac.moral_framework_axis: -1 -> -2
+17 @9 actor:taylor-hebert-kl-122ac.capability_axis: 5.5 -> 6.0
+18 @10 actor:taylor-hebert-kl-122ac.social_tether_prot_rise_axis: 8 -> 8.5
+19 @19 actor:taylor-hebert-kl-122ac.position_prot_rise_axis: 4 -> 4.5
+20 @22 actor:taylor-hebert-kl-122ac.position_prot_rise_axis: 4.5 -> 5
+21 @26 actor:taylor-hebert-kl-122ac.relational_anchor_status_axis: 3.5 -> 4.0
+22 @27 actor:taylor-hebert-kl-122ac.relational_anchor_status_axis: 4.0 -> 4.5
+23 @30 actor:taylor-hebert-kl-122ac.capability_axis: 6.0 -> 6.5
+24 @42 actor:taylor-hebert-kl-122ac.moral_framework_axis: -1 -> -2
 
 # HELD (no entry — verified SKIP-CORRECT, not missed):
 #   @38 the accounting reaches the shape-word — Khepri surfacing is a REGISTRATION (the word present for

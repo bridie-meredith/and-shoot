@@ -205,3 +205,47 @@ ambient_conditions:
   SEAM-011: sensory:1 old-state "stone-lane-late-morning-warmth" has no prior loc-state anchor in b01c09; R2 reviewer must confirm loc-state:3 baseline does not contradict; if it does, revise or delete sensory:1
   Cull: 2 entries refused at file-shape pass — @3 smell (genuine but activates 3-modality standard ceiling; priority brief does not call for scene-A grounding) and @19 smell (genuine but same-scene pair with @23 weakens separation; @8+@23 two-scene distribution is stronger)
   Files: theater/facets/sensory-b01-c09.md (facet) + theater/facets/_inflight/proto-lines-sensory.md (inflight)
+
+## State-updates-env locked (b01c12) — 16 entries, decisions-not-fire documented
+  state:1  @1  — studio.time_of_day: end-of-day -> morning
+  state:2  @9  — prop:oc-ward-coverage-notes.content: hook-rushwick-oswyn-plus-south -> hook-rushwick-oswyn-plus-south-plus-northern-cluster-1
+  state:3  @11 — prop:oc-jarvis-packet.holder: jarvis-coin-kl-courier -> station-surface
+  state:4  @12 — prop:oc-jarvis-packet.seal-condition: sealed -> broken
+  state:5  @13 — prop:oc-jarvis-packet.physical-condition: folded-closed -> covering-sheet-open
+  state:6  @17 — studio.time_of_day: morning -> midday
+  state:7  @19 — prop:oc-feed-ledger.gap-column-entry: absent -> boundary-refusal-written
+  state:8  @22 — prop:oc-feed-ledger.gap-column-entry: boundary-refusal-written -> closed
+  state:9  @23 — prop:oc-jarvis-packet.holder: station-surface -> jarvis-coin-kl-courier
+  state:10 @26 — prop:oc-feed-ledger.anchor-column-entry: absent -> settlement-written
+  state:11 @27 — prop:oc-feed-ledger.anchor-column-entry: settlement-written -> closed
+  state:12 @29 — studio.time_of_day: midday -> late-afternoon
+  state:13 @30 — prop:oc-ward-coverage-notes.content: hook-rushwick-oswyn-plus-south-plus-northern-cluster-1 -> hook-rushwick-oswyn-plus-south-plus-both-clusters
+  state:14 @32 — studio.fauna_sense_status.coverage-scale: partial-multi-ward -> five-ward-plus-approaches
+  state:15 @42 — prop:oc-feed-ledger.breach-column-entry: absent -> threshold-filed
+  state:16 @42 — studio.time_of_day: late-afternoon -> end-of-day
+  Decisions-not-fire: @2 (fauna motion / registration not state), @3 (actor-fork gate-tower shadow), @4-@5 (map-closes = perception/recognition, gap excludes not adds), @6-@7 (feed/map read — registration, actor-fork), @8 (actor-fork motor), @10 (water-gate ledger entry — low-stakes archival, culled for density), @14 (covering-sheet-turned — fine-grain continuation of @13 state; culled), @15 (packet set — holder returns to station-surface but actor is the agent; transient cycle), @16 (stylus set — actor-fork), @17 (actor-fork takes stylus), @18 (gap-column open — collapsed into @19 first-touch entry; no separate column-open/close fired), @20-@21 (actor-fork holds-hand / stylus-lifts), @24 (gap-column close — column-open not fired so no old-state for close; entries @19/@22 cover the entry-lifecycle), @25 (anchor-column open — collapsed into @26 first-touch entry), @28 (actor-fork lifts hand), @29 (actor-fork extends cluster; content fires at @30 completion), @31 (fifth-ward-circuit ledger — coverage-scale @32 carries the state), @33-@37 (accounting-traversal — transient/held-against-turn; no persistent field-flips), @38-@39 (interior event / actor-fork suppression), @40 (architecture-entry — coverage-notes @13/@30 + coverage-scale @32 carry the state; ledger echo culled), @41 (full-circuit-count — subsumed by @42 breach-column; culled for density)
+  Field-extensions (6 new fields): prop:oc-feed-ledger.gap-column-entry (new); prop:oc-feed-ledger.anchor-column-entry (new); prop:oc-feed-ledger.breach-column-entry (new); studio.fauna_sense_status.coverage-scale (new sub-field); prop:oc-jarvis-packet.physical-condition first-use on c12 incoming packet (parallel to c09 field-extension); prop:oc-ward-coverage-notes.content extended values (two new value states: northern-cluster-1 added, then both-clusters)
+  Margit referrals pending: oc-feed-ledger schema extension (3 new fields + carry from b01c11 8-field extension); oc-ward-coverage-notes content-value canonicalization; oc-jarvis-packet.card.md (carry from b01c09)
+  Density: 16/42 = 38%; above the mechanical s01e01 band (8-18%) but justified by 4 time-of-day transitions + 2 coverage-extension events + 2 ledger arcs (4 peak-bones) + 1 five-ward threshold; b01c11 precedent 14/27 = 52%
+  State-updates-env R1 authored 2026-06-03 — theater/facets/state-updates-env-b01-c12.md (16 entries)
+  _inflight: theater/facets/_inflight/proto-lines-state-env.md filed (citations @1, @9, @11, @12, @13, @17, @19, @22, @23, @26, @27, @29, @30, @32, @42 x2)
+
+## Prop state at b01c12 chapter-close (projected from state-updates-env R1)
+  - studio.time_of_day: end-of-day (@16; chapter-close)
+  - studio.fauna_sense_status.coverage-scale: five-ward-plus-approaches (@14; first-touch; persistent into downstream chapters)
+  - prop:oc-ward-coverage-notes.content: hook-rushwick-oswyn-plus-south-plus-both-clusters (@13; persistent)
+  - prop:oc-jarvis-packet.holder: jarvis-coin-kl-courier (@9; departed with refusal-response; persistent-out)
+  - prop:oc-jarvis-packet.seal-condition: broken (@4; b01c12 incoming packet; irrecoverable)
+  - prop:oc-jarvis-packet.physical-condition: covering-sheet-open (@5; b01c12 incoming packet; read-state at chapter-open; note the packet departs @23 with Jarvis, so this physical-condition is on the chapter-close-departed packet)
+  - prop:oc-feed-ledger.gap-column-entry: closed (@8; permanent; refusal archived in the ledger)
+  - prop:oc-feed-ledger.anchor-column-entry: closed (@11; permanent; cl-d06 settlement archived)
+  - prop:oc-feed-ledger.breach-column-entry: threshold-filed (@15; permanent; Khepri-cost recorded)
+  - prop:oc-soap-lane-report-packet.physical-condition: sealed (carry from b01c11 state:8; no c12 state-update fired)
+  - prop:oc-soap-lane-report-packet.holder: taylor-hebert-kl-122ac (carry from b01c11 state:6; no c12 departure bone)
+  - All b01c10-carry entries unchanged: studio.spatial_layout.lane-junction-patrol: Gold-Cloak-pair-posted; studio.fauna_sense_status.lower-gate-road-coverage: corwick-absent; prop:oc-feed-record.corwick-entry: persisting-post-closure
+
+## Seams flagged for R2 (b01c12 state-updates-env)
+  SEAM-C12-ENV-001: prop:oc-jarvis-packet.seal-condition old-state "sealed" — inferred from delivery convention and b01c09 state:3 lifecycle (prior packets sealed before delivery); no explicit b01c11/c12 upstream seal-state entry on this specific packet; R2 confirm adequacy
+  SEAM-C12-ENV-002: prop:oc-ward-coverage-notes.content prior-value abbreviation — "hook-rushwick-oswyn-plus-south" abbreviates the b01c09 state:1 canonical value ("hook-rushwick-oswyn-corridors-plus-south-extension"); showrunner must reconcile at write-back (both refer to the same state)
+  SEAM-C12-ENV-003: prop:oc-jarvis-packet physical-condition @5 (covering-sheet-open) — this applies to the b01c12 INCOMING packet read by Taylor; the packet departs at @23 with this state still "covering-sheet-open" (Taylor read it but did not re-fold it); showrunner should note at write-back that the departed packet is in covering-sheet-open state, carried out by Jarvis
+  SEAM-C12-ENV-004: two entries on @42 (breach-column-entry + time_of_day) — both distinct targets; no frugality conflict; confirmed licit per rubric
