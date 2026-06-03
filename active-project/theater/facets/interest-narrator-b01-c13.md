@@ -1,6 +1,7 @@
 facet: interest-narrator
 episode: b01-c13
 author: taylor-hebert-kl-122ac
+r2-judged: taylor-hebert-kl-122ac impersonator (FACET-JUDGE mode)
 ---
 
 1 @7 she has the words for the agent already; what the forward lean adds is the body confirming a thing that was never actually in question

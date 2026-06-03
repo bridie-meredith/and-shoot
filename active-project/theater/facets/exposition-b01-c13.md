@@ -44,3 +44,39 @@ author: exposition-author
 # and correctly left graph-resident — NOT the role-label. Glossing the label is
 # wallpaper per the validated routing principle. Density returns to band (1 body-line
 # decoration over 31 bones = 3.2%, in the 1-5% band; @0 bridge is synthetic pre-body).
+
+# ===========================================================================
+# R2 GRAPH-AWARE JUDGE DISPOSITION (exposition-author, judge mode; 2026-06-03)
+# cite_index_hash: 0e12ee9c89ee2002e4b5a6b751c9c393e02bbbf5941a58c6b61ba06b45468e30
+# Graph-read: interest-narrator-b01-c13 (7 fires; esp. narrator:2 @15 list-as-mechanism,
+#   narrator:3 @17 hands-on-table) · vibes-b01-c13 (17; esp. vibes:4 @15 d06-output-as-the-
+#   paper-the-magistrate-lifts) · memory-b01-c13 (mem:1 @16 name-she-set-down) · loc-state (7)
+#   · sensory (4) · feeling-taylor / feeling-halvard · state-updates-env + state-updates-taylor
+#   (20) · metaphor (0) · scene-map (locked) · _cite-index.md · canonical proto-lines (31 bones).
+# Context-ledger: 0 OPEN (ctx-001 @12 satisfied by exposition:2). 0 ledger-licensed adds.
+# Decision shard (authoritative): staff/exposition-author/r2-decision-shard.md.
+#
+# Both entry bodies BYTE-IDENTICAL to R1 — disposition stamp only.
+#
+# exposition:1 @0 prior-episode-bridge — KEEP (verbatim).
+#   OVER-DETERMINATION VERDICT (Phase 2.5 R2 watch): CLEAR — does NOT over-leak
+#   "Taylor caused this". The bridge sets the list's existence + her delivery as PRIOR
+#   STATE and frames the WATCH posture ("did not watch where it went. This week she
+#   watches.") WITHOUT naming Aldric, the magistrate, the @15 lift, or the @17 body.
+#   The d06->Aldric consequence is left to the lens layer (NI:2 @15 mechanism, NI:3 @17
+#   consequence-image, vibes:4 @15) + exposition:2 @12 first-mention. @0-SYNTHETIC
+#   (cite-index back=N — no lens facet anchors @0; a pre-chapter interval recap is
+#   structurally exposition's to hold). 68 words (<=120). Earth-Bet fence CLEAN. No REWORD.
+#
+# exposition:2 @12 aldric first-mention-term — KEEP (verbatim).
+#   The only first-mention gloss this chapter; ctx-001 depends on it. 27 words (<=30).
+#   Dialogue-adjacency: @12 +/-2 window {@10..@14} carries 0 speech bones (speech set =
+#   {@26,@27,@28}, s04) -> inline-appositive PERMITTED. Earth-Bet fence CLEAN.
+#
+# Scene-open-orient: 0 fires confirmed against locked graph — every scene-open carries
+#   time/place via loc-state at-establishment (loc-state:1 @1 / :3 @10 / :5 @19 / :6 @24).
+#   s03 @19 + s04 @24 both have loc-state live -> fire-rule (b) fails. 0 fires, correct.
+#
+# f-r2-counts: KEEP 2 / DELETE 0 / REWORD 0 / ADD 0.
+# Sparsity: 1 body-line decoration / 31 bones = 3.2% (IN 1-5% band; @0 synthetic pre-body).
+# ===========================================================================
