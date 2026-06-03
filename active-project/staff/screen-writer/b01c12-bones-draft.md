@@ -255,8 +255,9 @@ scenes:
         # grounding: packet returned to ledger surface — physical act of setting down against pressure to comply.
 
       - slug: b01c12s02n05
-        svo: "the covering-sheet names the rendering-yard boundary"
+        svo: "taylor-hebert-kl-122ac turns the covering-sheet"
         shape: held
+        # Phase-2 fix: fault-011 — "the covering-sheet names the rendering-yard boundary" (non-action verb/stative document-content) → "taylor-hebert-kl-122ac turns the covering-sheet" (physical act distinct from n03's opening); boundary content is facet territory
         axis_moves: []
         axes_held:
           - axis: social_tether-antag
@@ -266,14 +267,17 @@ scenes:
         dialogue_anchor: false
 
       - slug: b01c12s02n06
-        svo: "taylor-hebert-kl-122ac sets the stylus beside the packet"
-        shape: chatter
+        svo: "taylor-hebert-kl-122ac sets the stylus"
+        shape: held
+        # Phase-2 fix: fault-012 — dropped PP "beside the packet" (banned PP of place); chatter→held; position-prot-rise attached (s02 declared held axis per meta-rule 2)
         axis_moves: []
-        axes_held: []
+        axes_held:
+          - axis: position-prot-rise
+            rationale: "physical stillness at the decision threshold — stylus set without writing; the withholding-before-refusal enacted physically; axis held at 4"
         cost_ledger_anchor: null
         grounding: true
         dialogue_anchor: false
-        # grounding: stylus and packet as named physical objects; the stylus set beside (not applied to) the covering-sheet is the physical closing of the collision-delivery scene.
+        # grounding: stylus as named physical object; the stylus set (not applied) is the physical closing of the collision-delivery scene.
         # This enacts the pl-2026-06-03-004 (a) watch: the bay-warmth close is Taylor's body paired to setting.
         # The warm-on-held-hand is the indifferent-world-continuance beat; enacted here as body-paired-to-object, not atmospheric description.
 
@@ -322,9 +326,12 @@ scenes:
     bones:
       - slug: b01c12s03n01
         svo: "taylor-hebert-kl-122ac takes the stylus"
-        shape: chatter
+        shape: held
+        # Phase-2 fix: fault-013 — chatter→held; political_register-prot attached (s03 declared held axis per meta-rule 2)
         axis_moves: []
-        axes_held: []
+        axes_held:
+          - axis: political_register-prot
+            rationale: "taking the stylus in flat operational register — the refusal-writing act opens in the same cold-utilitarian mode as every prior deliverable entry; no contempt-register fires; register held at 3.5"
         cost_ledger_anchor: null
         grounding: true
         dialogue_anchor: false
@@ -332,9 +339,12 @@ scenes:
 
       - slug: b01c12s03n02
         svo: "the coverage-entry opens the gap-column"
-        shape: chatter
+        shape: held
+        # Phase-2 fix: fault-014 — chatter→held; political_register-prot attached (s03 declared held axis per meta-rule 2)
         axis_moves: []
-        axes_held: []
+        axes_held:
+          - axis: political_register-prot
+            rationale: "gap-column opens in the same flat format as every prior entry — no register advance; no contempt fires on the act of opening; held at 3.5"
         cost_ledger_anchor: null
         grounding: false
         dialogue_anchor: false
@@ -366,8 +376,9 @@ scenes:
         # grounding: the hand as a body-part executing the physical stop; narrow holds license — body-part stillness-against-pressure.
 
       - slug: b01c12s03n05
-        svo: "the stylus lifts from the explanation field"
+        svo: "the stylus lifts"
         shape: held
+        # Phase-2 fix: fault-015 — dropped PP "from the explanation field" (banned source-preposition)
         axis_moves: []
         axes_held:
           - axis: moral_legibility_to_self
@@ -417,16 +428,18 @@ scenes:
       - slug: b01c12s03n09
         svo: "taylor-hebert-kl-122ac opens the anchor-column"
         shape: chatter
+        # Phase-2 fix: fault-016 — chatter-with-anchor per meta-rule 2 override (do NOT hold relational_anchor_status — s03 MOVES that axis; instead attach cl-d08 anchor prefiguring n10 settlement)
         axis_moves: []
         axes_held: []
-        cost_ledger_anchor: null
+        cost_ledger_anchor: cl-d08
         grounding: true
         dialogue_anchor: false
-        # grounding: the ledger as a physical object opened to a specific column; the anchor-column as a named surface. Chatter licensed here as setup for the two axis-moving bones that follow; this scene pays the two heaviest cost-ledger anchors in the chapter.
+        # grounding: the ledger as a physical object opened to a specific column; the anchor-column as a named surface. Prefigures the relational_anchor_status +0.5 at n10 (cl-d08 gain side); resolves at-or-under s03.
 
       - slug: b01c12s03n10
-        svo: "the anchor-column entry takes the refusal weight"
+        svo: "taylor-hebert-kl-122ac writes the anchor-column entry"
         shape: moving
+        # Phase-2 fix: fault-017 — "the anchor-column entry takes the refusal weight" (abstract object / interiority) → concrete ledger-act "taylor-hebert-kl-122ac writes the anchor-column entry"; axis_moves PRESERVED per meta-rule 1
         axis_moves:
           - axis: relational_anchor_status
             direction: up
@@ -438,8 +451,9 @@ scenes:
         # cl-d08 mechanism: the lane-refusal IS the mechanism by which Wren's free movement becomes the map's load-bearing eastern boundary. First 0.5 of the +1.0 relational_anchor_status move; settles cl-d08.
 
       - slug: b01c12s03n11
-        svo: "the anchor-column entry takes the deferred weight"
+        svo: "taylor-hebert-kl-122ac closes the anchor-column entry"
         shape: moving
+        # Phase-2 fix: fault-018 — "the anchor-column entry takes the deferred weight" (abstract object / interiority) → concrete ledger-act "taylor-hebert-kl-122ac closes the anchor-column entry"; mirrors n06 "closes the response entry" pattern; axis_moves PRESERVED per meta-rule 1
         axis_moves:
           - axis: relational_anchor_status
             direction: up
@@ -451,10 +465,13 @@ scenes:
         # cl-d06 debt: the outstanding second tranche (+1.0 total across n10+n11), settling cl-d06 per DEC-0071. This is the second 0.5; the combined n10+n11 deliver the full +1.0. Closes pl-2026-05-30-001 / pl-2026-06-02-stitch-thread-002.
 
       - slug: b01c12s03n12
-        svo: "taylor-hebert-kl-122ac lifts the hand from the anchor-column"
-        shape: chatter
+        svo: "taylor-hebert-kl-122ac lifts the hand"
+        shape: held
+        # Phase-2 fix: fault-019 — dropped PP "from the anchor-column" (banned source-preposition); chatter→held; moral_legibility_to_self attached (s03 declared held axis per meta-rule 2 override — do NOT hold relational_anchor_status since s03 MOVES that axis)
         axis_moves: []
-        axes_held: []
+        axes_held:
+          - axis: moral_legibility_to_self
+            rationale: "the hand lifts without the suppression cracking — the accounting is filed, the column closed; legibility holds at 5.5; lift-and-move, no linger (pl-2026-06-03-004 c)"
         cost_ledger_anchor: null
         grounding: true
         dialogue_anchor: false
@@ -494,12 +511,13 @@ scenes:
       - slug: b01c12s04n01
         svo: "taylor-hebert-kl-122ac extends the muddy-way ward-cluster"
         shape: chatter
+        # Phase-2 fix: fault-020 — chatter-with-anchor per meta-rule 2 override (do NOT hold capability — s04 MOVES that axis; instead attach cl05 anchor prefiguring the n02 capability gain, resolves at-or-under s04)
         axis_moves: []
         axes_held: []
-        cost_ledger_anchor: null
+        cost_ledger_anchor: cl05
         grounding: false
         dialogue_anchor: false
-        # The second ward-cluster extension begins; this is setup for the capability-moving bone at n02.
+        # The second ward-cluster extension begins; prefigures the capability +0.5 at n02 (cl05 gain side); resolves at-or-under s04.
 
       - slug: b01c12s04n02
         svo: "the insects fill the muddy-way upper-margin"
@@ -518,19 +536,25 @@ scenes:
 
       - slug: b01c12s04n03
         svo: "the feed returns all five wards"
-        shape: chatter
+        shape: held
+        # Phase-2 fix: fault-021 — chatter→held; moral_legibility_to_self attached (s04 declared held axis per meta-rule 2)
         axis_moves: []
-        axes_held: []
+        axes_held:
+          - axis: moral_legibility_to_self
+            rationale: "full-circuit feed returning all five wards simultaneously — aggregate shape now differs from any prior count; moral_legibility holds at 5.5 because the word has not yet surfaced; the shape of the whole is what will surface it; held-discipline against the approaching threshold"
         cost_ledger_anchor: null
         grounding: false
         dialogue_anchor: false
-        # Setup: the aggregate shape at full deployment, establishing the referent-weight that makes the shape-word land.
+        # The aggregate shape at full deployment, establishing the referent-weight that makes the shape-word land.
 
       - slug: b01c12s04n04
-        svo: "the count moves through the full-circuit return"
-        shape: chatter
+        svo: "the count runs the full-circuit return"
+        shape: held
+        # Phase-2 fix: fault-022 — dropped PP "through the full-circuit return" (banned direction-preposition); bare intransitive motion recast to transitive "runs" + concrete ledger-object (established idiom per s04n07 "the accounting runs the harm-prevention column"); chatter→held; moral_legibility_to_self attached (s04 declared held axis per meta-rule 2)
         axis_moves: []
-        axes_held: []
+        axes_held:
+          - axis: moral_legibility_to_self
+            rationale: "the count runs the full-circuit return at full deployment — the aggregate scale establishing the referent-weight that presses toward the threshold; legibility held at 5.5 as the shape of the whole is yet to surface the word"
         cost_ledger_anchor: null
         grounding: false
         dialogue_anchor: false
@@ -538,9 +562,12 @@ scenes:
 
       - slug: b01c12s04n05
         svo: "the feed returns the Flea Bottom approaches"
-        shape: chatter
+        shape: held
+        # Phase-2 fix: fault-023 — chatter→held; moral_legibility_to_self attached (s04 declared held axis per meta-rule 2)
         axis_moves: []
-        axes_held: []
+        axes_held:
+          - axis: moral_legibility_to_self
+            rationale: "Flea Bottom approaches returning at full scale — the accumulation beat before the threshold crossing; legibility held at 5.5; the word has not surfaced yet but the density of the full-feed presses toward it"
         cost_ledger_anchor: null
         grounding: false
         dialogue_anchor: false
@@ -617,13 +644,16 @@ scenes:
 
       - slug: b01c12s04n12
         svo: "the ledger entry takes the full-circuit count"
-        shape: chatter
+        shape: held
+        # Phase-2 fix: flag-003 — recast from chatter-with-cl05 to held; removes redundant third cl05 citation (n02 gain + n13 cost already exhaust cl05); capability +0.5 stays solely on n02
         axis_moves: []
-        axes_held: []
-        cost_ledger_anchor: cl05
+        axes_held:
+          - axis: moral_legibility_to_self
+            rationale: "the ledger-record close of the capability gain — the full-circuit count filed; legibility held at 5.5; record-close parallel to s03n12"
+        cost_ledger_anchor: null
         grounding: false
         dialogue_anchor: false
-        # Chatter licensed: anchors cl05 for the capability-full-deployment-confirmed event coverage; the axis Δ (+0.5) is fully allocated to n02 (the insect-placement bone, the physical cause). This bone records the formal ledger-side confirmation that the threshold was crossed — a downstream accounting of the n02 action; paired to n02 under the same cl05 anchor to make the gain-side visible on both the action and the record.
+        # The capability axis Δ (+0.5) is fully allocated to n02 (the insect-placement bone, the physical cause). This bone records the formal ledger-side confirmation that the threshold was crossed — a downstream accounting of the n02 action. Held (not anchored) to remove redundant third cl05 citation.
 
       - slug: b01c12s04n13
         svo: "the breach column takes the threshold entry"
