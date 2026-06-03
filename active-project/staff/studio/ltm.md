@@ -3,6 +3,59 @@
 
 ---
 
+## 2026-06-03 — b01c13 state-updates-env R1 authoring at /and-facets Phase 1
+
+Chapter b01c13: 31 bones, 4 scenes. Sparse env/prop chapter — most substance is feed-observed (s01/s02) or interior (s03) with no props in Taylor's hands. State-updates correctly sparse; density is structural, not contaminated.
+
+STATE-UPDATES-ENV (13 entries, 1 cull; density 13/31 = 42%):
+  Density justification: 8 entries are structural scene-transition fires (4 scenes × location + time_of_day); 5 entries are prop fires (3 peak-bone or peak-shadow co-citations + 1 post-peak cold-close). No density-on-flat contamination.
+
+  SCENE-TRANSITION BACKBONE (8 entries):
+    @1  studio.time_of_day end-of-day → mid-morning (chapter-open new day)
+    @1  studio.location the-feed-station → the-hook-upper-provisioning
+    @10 studio.time_of_day mid-morning → morning (four-day gap; new day; carve-out: inferred)
+    @10 studio.location the-hook-upper-provisioning → the-magistrate-hall
+    @19 studio.time_of_day morning → evening (explicit: "that evening")
+    @19 studio.location the-magistrate-hall → the-hook-lane
+    @24 studio.time_of_day evening → morning (two-day gap; new day; carve-out: inferred)
+    @24 studio.location the-hook-lane → the-hook-lower-water-trough
+
+  PROP FIRES (5 entries):
+    @7  prop:oc-fish-account-ledger.condition open→closed
+        Peak-bone co-citation. The household-agent's shoulder-drop IS the account-close confirmation.
+        First-touch oc-prop: no prior warehouse card. Margit referral needed.
+    @11 prop:oc-d06-document.holder green-apparatus-possession→table-surface
+        Peak-shadow bone. Clerk sets the list-output at the table's edge before proceedings.
+        First-touch. Old-state "green-apparatus-possession" is inferred — SEAM-C13-ENV-001.
+    @13 prop:oc-procedural-form.condition blank→inscribed
+        Peak-shadow bone, rising zone; NOT immediately adjacent to peak (held-against-turn-clear).
+        Irreversible bureaucratic mutation: verdict pre-inscribed before Aldric finishes speaking.
+        First-touch oc-prop.
+    @15 prop:oc-d06-document.holder table-surface→magistrate-hand
+        Peak-bone co-citation. Central event: LIST-USED-OPERATIONALLY.
+        The apparatus using Taylor's d06 intelligence to decide Aldric's fate.
+    @31 prop:oc-water-skin.condition empty→filled
+        Post-peak cold-close (not held-against-turn: occurs after peaks @28/@29).
+        Persistent: Halvard carries the filled skin out. Mirror-remains image at chapter-close.
+        First-touch oc-prop.
+
+  CULL (1): @8 empty-crate holder-change — first-touch oc-prop with no downstream canonical
+    relevance; @7 fish-account-close already records the transaction's canonical state change.
+    Density-cull defensible.
+
+  HELD-AGAINST-TURN: @14 cord-holder-change FORBIDDEN (immediately adjacent to peak @15).
+    Cord is the pretext; the list is the mechanism. Rubric correctly silent.
+
+  SEAM-C13-ENV-005 (NEW): location-state:6 @24 annotates time-of-day as "afternoon"; state-
+    updates-env state:11 @24 fires "morning" — values conflict. R2 cross-facet consistency
+    pass must reconcile; one value is incorrect (the scene-D time-of-day is either morning or
+    afternoon; the location-state and state-updates-env cannot disagree at the same anchor).
+
+  Field-extensions (4 new oc-props): oc-fish-account-ledger | oc-d06-document |
+    oc-procedural-form | oc-water-skin — all first-touch; margit referrals needed.
+
+---
+
 ## 2026-06-03 — b01c13 location-state R1 blind authoring at /and-facets Phase 1
 
 Chapter b01c13: 31 bones, 4 scenes. Four distinct locations. Two feed-observed scenes (blowfly witness), one solo interior (naming), one live-dialogue (foreclosure). This is the hinge chapter — contempt named + enacted.

@@ -1,5 +1,23 @@
 # studio STM
 
+## 2026-06-03 — /and-facets b01-c13 Phase 1 state-updates-env authoring
+
+Chapter b01c13: 31 bones, 4 scenes, 4 distinct locations. Hinge chapter — contempt named (s03), Halvard foreclosed (s04). Sparse env/prop chapter: most action is feed-observation (s01/s02) and interior (s03) with no props changing Taylor's hands.
+
+STATE-UPDATES-ENV: 13 entries, 1 cull.
+  Scene-transition backbone (8 entries): studio.time_of_day + studio.location at @1, @10, @19, @24.
+  Prop fires (5 entries):
+    @7  prop:oc-fish-account-ledger.condition open->closed (peak-bone co-citation; account-close confirmed by shoulder-drop posture)
+    @11 prop:oc-d06-document.holder green-apparatus-possession->table-surface (clerk sets document at table-edge; entering scene)
+    @13 prop:oc-procedural-form.condition blank->inscribed (verdict pre-inscribed; irreversible bureaucratic mutation; peak-shadow not adjacent to peak)
+    @15 prop:oc-d06-document.holder table-surface->magistrate-hand (peak-bone co-citation; LIST-USED-OPERATIONALLY central event)
+    @31 prop:oc-water-skin.condition empty->filled (Halvard fills at chapter-close; cold-close post-peak; persistent)
+  Cull (1): @8 empty-crate (first-touch oc-prop; no downstream canonical relevance; @7 already records transaction close; density-cull)
+  Held-against-turn: @14 cord-holder-change FORBIDDEN (immediately adjacent to peak @15)
+  SEAM-C13-ENV-005: location-state:6 @24 fires "afternoon"; state-updates-env state:11 @24 fires "morning" — R2 reconcile at cross-facet consistency
+  Field-extensions (4): oc-fish-account-ledger | oc-d06-document | oc-procedural-form | oc-water-skin (all margit referrals needed)
+  Files: theater/facets/state-updates-env-b01-c13.md + theater/facets/_inflight/proto-lines-state-env.md
+
 ## 2026-06-03 — /and-facets b01-c13 Phase 1 R1 location-state authoring (BLIND)
 
 Chapter b01c13: 31 bones, 4 scenes, 4 distinct locations. Two feed-observed scenes (s01/s02) + solo interior (s03) + live-dialogue (s04). Taylor's role: blowfly-reader (s01/s02), solo pedestrian (s03), water-trough encounter (s04). No prior chapter set state carried into c13's new locations.
