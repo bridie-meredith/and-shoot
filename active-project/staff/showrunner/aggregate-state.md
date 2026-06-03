@@ -68,7 +68,7 @@ aggregate_state:
   project: taylor-westeros-good-intentions
   through_book: b01
   through_chapter: b01c13
-  last_updated: 2026-06-03T18:35:00Z   # c13 hinge threaded: 2 axes moved (political_register-prot +1.5 -> 5.0 articulate-contempt threshold; political_register-world +0.5 -> 7.0 d06-list operationalized in magistrate proceeding), all others HELD, hook-0007 FORECLOSED on-page (DEC-0071 FORECLOSE@c13), Aldric introduced, 0 revision_layer entries (0 cosmetic + 0 presentation-reinforcement — every callback already on-page; PASS-THREAD), 0 unacknowledged-substantive (c14 Phase 0 CLEAR). pl-2026-06-03-006(a) Halvard-foreclosure-watch SATISFIED
+  last_updated: 2026-06-03T18:50:00Z   # c13 hinge threaded: 2 axes moved (political_register-prot +1.5 -> 5.0 articulate-contempt threshold; political_register-world +0.5 -> 7.0 d06-list operationalized in magistrate proceeding), all others HELD, hook-0007 FORECLOSED on-page (DEC-0071 FORECLOSE@c13; structured entry stamped status:paid paid_at:b01c13), Aldric appended (aldric-ward-elder-lower-precinct), Halvard last_appearance advanced b01c07->b01c13, world_state +2 (the-hook-lower-water-trough, d06-list-operationalized), 0 revision_layer entries (0 cosmetic + 0 presentation-reinforcement — every callback already on-page; PASS-THREAD), 0 unacknowledged-substantive (c14 Phase 0 CLEAR). pl-2026-06-03-006(a) Halvard-foreclosure-watch SATISFIED. (18:50 completion pass: prior 18:35 emit left the structured hook-0007/Aldric/Halvard/world_state writes unfinished — header+axis_state+log were done; this pass finished Step 4.)
   last_updated_by: and-stitch-phase-10
 
   axis_state:
@@ -231,14 +231,17 @@ aggregate_state:
       last_updated_by: and-stitch-phase-10
 
     - hook_id: hook-0007
-      description: "Halvard counter-argument: c07 first genuine engagement of the principled-slower argument; ends without resolution; Taylor has a counter she believes (the named-death body-count). Halvard does not appear on-page in c08/c09/c10 (held offstage). WINDOW PASSED: expected_payoff c10 reached unpaid — c10 (climax) pays the courier thread but does not return to Halvard, and the c10 contract deliberately holds him offstage (handoff_out: 'counter-argument unresolved; Taylor's engagement becoming thinner'). NOT paid, NOT abandoned: the foreclosure/resolution is axis-movement that belongs to a future scene-chunk, not a draft-layer edit. Routed to parking-lot HARD pl-2026-06-02-stitch-thread-001 targeting /and-substance chapter b01c11 Phase 3 (resolve / foreclose / formally abandon). Window-passed-open per ft-c10-001."
+      description: "Halvard counter-argument: c07 first genuine engagement of the principled-slower argument; ends without resolution; Taylor has a counter she believes (the named-death body-count). Halvard held offstage c08-c12. FORECLOSED ON-PAGE at c13 (DEC-0071 FORECLOSE@c13): the water-trough encounter at the lower end of the Hook (@29-@45) is Halvard's last substantive encounter — he names the apparatus's verdict-from-a-distance over Aldric ('a man who's never set foot in the Hook can't tell you who's a danger in it. He can write a name down'), not knowing the long-way-off he names is Taylor (@33 'The long way off was me. He did not know it was a mirror he was holding up'); Taylor runs the same counter she has run at this trough before (@35 'I've counted what your way costs and what mine costs... Mine keeps more of them alive') and leaves mid-speech (@41 'I left the trough while he was still speaking'); the unanswered-mirror close (@45 'The counter went on existing where I had left it, unanswered, in the mouth of a man who did not know whose hand he was naming'). Engagement foreclosed: Taylor-unilateral, no patron-lever effect, no axis-movement on social_tether-antag. The on-page foreclosure landed; the thread did not drop (pl-2026-06-03-006(a) Halvard-foreclosure-watch SATISFIED)."
       introduced_at: b01c07
       expected_payoff: c10
-      status: open
-      paid_at: null
+      status: paid
+      paid_at: b01c13
       abandoned_at: null
       abandonment_reason: null
       last_updated_by: and-stitch-phase-10
+      # status: paid = FORECLOSED-ON-PAGE (foreclosure is the payoff form designated by DEC-0071; not an
+      #   axis-move payoff — the thread is closed by Taylor running the counter aloud + leaving mid-speech +
+      #   the unanswered-mirror close, all on-page in c13 s04). Per the c13 handoff_out: 'engagement foreclosed.'
 
     - hook_id: hook-0008
       description: "Black-faction elder list consequences: the four ward-elders named to Otto at c06 — operational follow-through pending; faction-violence sub-pressure flagged to produce on-page consequences. Not revisited c07/c08."
@@ -359,9 +362,9 @@ aggregate_state:
 
     - slug: septon-halvard-flea-bottom
       introduced_at: b01c04
-      last_appearance: b01c07
+      last_appearance: b01c13
       reader_legibility: partial
-      legibility_notes: "Septon Halvard; minor presence c04, major c07 (the unresolved principled-slower argument — counter-argument genuinely engaged, not won). Voice + theological stance legible after c07. NOT on-page c08/c09/c10/c11 (held offstage); counter-argument unresolved + engagement thinning; FORECLOSE@c13 per DEC-0071"
+      legibility_notes: "Septon Halvard; minor presence c04, major c07 (the unresolved principled-slower argument — counter-argument genuinely engaged, not won). Voice + theological stance legible after c07. Held offstage c08-c12 (counter-argument unresolved + engagement thinning). c13: LAST SUBSTANTIVE ENCOUNTER — found at the lower-Hook water-trough in his ordinary water-carrying circuit (not lying in wait); names the apparatus's verdict-from-a-distance over the detained Aldric ('a man who's never set foot in the Hook can't tell you who's a danger in it. He can write a name down') without knowing the long-way-off he names is Taylor herself (the mirror he does not see he is holding up). Taylor runs the cost-counter at him once more and leaves mid-speech; he keeps working the water-skin and carries the unanswered counter on into his circuit. counter-argument FORECLOSED on-page (DEC-0071 FORECLOSE@c13; hook-0007 paid/foreclosed). Theological-witness role + circuit-fixture standing fully legible; no further substantive on-page engagement expected"
       last_updated_by: and-stitch-phase-10
 
     - slug: corwick
@@ -404,6 +407,13 @@ aggregate_state:
       last_appearance: b01c11
       reader_legibility: cipher
       legibility_notes: "minor ward contact in c11 s03: crosses the cross-lane and delivers a nighttime-visitor report to Taylor (physical packet). Taylor opens the packet, writes the precinct-pattern sourcing, and seals for routing. No name, no lines, no interior access — a ward-contact-pool body delivering a report token. Recorded separately from ward-contact-pool-c11 only because s03 is the scene-body appearance; may be consolidated with the pool at cohere if preferred"
+      last_updated_by: and-stitch-phase-10
+
+    - slug: aldric-ward-elder-lower-precinct
+      introduced_at: b01c13
+      last_appearance: b01c13
+      reader_legibility: partial
+      legibility_notes: "a ward-elder of the lower precinct — one of the men whose name was on the list Taylor compiled and delivered to Jarvis at d06 (pattern-inferred Black-faction-adjacent, by lane-contact, not certainty). c13 s02: brought before a court-adjacent magistrate proceeding (the rented chandler's back room) on a pretext charge of receiving stolen cord; the verdict pre-inscribed, the magistrate writing ahead of Aldric's answer, the cord the pretext and Taylor's own d06 document the engine. Taylor watches the whole proceeding through a single fly in the ceiling-corner. Reader-legible by name + function (ward-elder) + the d06-list origin of his detention; the detention is the on-page CONSEQUENCE of Taylor's delivered intelligence (political_register-world 7.0 — enforcement now visible). c13 s04: Halvard names him at the water-trough ('They took up Aldric... He carried cord. He carried word between two old women who can't walk the hill themselves'), the smallfolk-witness face of the detention. No on-page lines beyond the proceeding-register attempt to explain the cord; non-POV; interior opaque. Detained / outcome foreclosed within the chapter"
       last_updated_by: and-stitch-phase-10
 
   world_state:
@@ -513,6 +523,18 @@ aggregate_state:
       kind: condition
       state: "established c12: at the full-scale accounting (s04, @42), the breach-column reckoning runs past any name for the architecture and lands on 'the older word' — 'not a description of the thing in front of me but the shape of the thing I did when the world was ending, the one this rhymes with' (the Khepri name, the Earth-Bet full-feed/Khepri precedent, fence-clean cipher per Earth-Bet fence). The architecture is now structurally IRREVOCABLE at full scale — 'not walked back by pulling any single node.' The Khepri shape-word surfaces 'for one count' and is SUPPRESSED before it can settle ('I did not let it settle... closed the architecture entry without it'); the suppression IS the breach-column ledger entry (moral_framework -2: systematic-override now irrevocable at full scale; moral_legibility HELD 5.5 — crack present, not opened; full-recognition deferred to the d14 range). The most-intense pre-opening suppression event"
       last_changed_at: b01c12
+      last_updated_by: and-stitch-phase-10
+
+    - key: the-hook-lower-water-trough
+      kind: location
+      state: "established c13: the water-trough at the lower end of the Hook, where the chandler's row gives out onto the open ground before the fishmongery. A node on Septon Halvard's ordinary water-carrying circuit (he fills the skin here on another man's behalf and carries it on to the next house). Site of c13 s04 — Halvard's last substantive encounter with Taylor (the Aldric/foreclosure exchange). Ties to the established chandler-corner / sept-corner Halvard-fixture node (the-chandler-corner); both are circuit nodes the feed and Taylor's route pass without remark"
+      last_changed_at: b01c13
+      last_updated_by: and-stitch-phase-10
+
+    - key: d06-list-operationalized
+      kind: condition
+      state: "established c13: the ward-elder list Taylor compiled and handed to Jarvis at d06 (pattern-inferred Black-faction-adjacent names, in plain functional description) is now OPERATIONALIZED by the Green apparatus in an enforcement proceeding. c13 s02: Aldric, a named ward-elder from the list, is brought before a court-adjacent magistrate (the rented chandler's back room) on a stolen-cord pretext; the magistrate writes the verdict ahead of the answer and takes his authority from the document the Green clerk squared at the table's edge — 'the document I had set down in functional description and handed to Jarvis... lifted now by another hand to decide a man.' The cord is the pretext, the list is the engine. Enforcement now VISIBLE on-page (political_register-world 7.0); the d06 list's faction-violence consequence (hook-0008, opened c06) lands its first concrete enforcement instance. The broader hook-0008 operational follow-through (other named elders) remains open"
+      last_changed_at: b01c13
       last_updated_by: and-stitch-phase-10
 
   revision_layer:

@@ -4,11 +4,13 @@ cascade:
   invoked_command: /and-substance chapter b01c13 --cascade
   mode: unattended
   last_completed:
-    level: facets
+    level: draft
     slug: b01c13
-    completed_at: 2026-06-03T18:00:00Z
+    completed_at: 2026-06-03T18:45:00Z
   next:
-    command: /and-stitch b01c13
-    args: [b01c13]
-  reason: continue
+    command: null   # chapter-production COMPLETE (Phase 9 clean PASS + Phase 10 PASS-THREAD)
+    args: []
+  reason: complete
   failure: null
+  pending_depth_passes: []
+  pending_threading_holds: []
