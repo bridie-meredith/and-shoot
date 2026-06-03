@@ -4,7 +4,39 @@ episode: b01c12
 last_updated: 2026-06-03
 action: location-state R1 blind authoring — /and-facets b01-c12 Phase 1
 
-## Current set (b01c11 chapter-close)
+## Location-state sequence locked (b01c12) — 8 entries, 0 cull
+  loc-state:1 @1  — the-hook-ward | morning | none | lane-mouth-open, overhang-geometry-active | overhang-joints at lane-mouth (place-anchor; morning circuit open)
+  loc-state:2 @3  — the-hook-ward | morning | none | gate-tower-shadow-west, rendering-yard-wall-east | gate-tower shadow thrown west across the lane (body placed inside gap's west boundary)
+  loc-state:3 @8  — the-feed-station | morning | none | ledger-surface-open, stylus-lifted | ledger surface at the station (sub-anchor; body moved from lane circuit to accounting surface)
+  loc-state:4 @11 — the-feed-station | morning | none | ledger-surface-open, packet-at-surface-edge | station surface edge where packet lands (state-change: Jarvis/opposing-force arrives)
+  loc-state:5 @17 — the-feed-station | midday | none | ledger-surface-open, gap-column-pending | ledger surface at midday (time-advance: morning → midday; refusal sit-down begins)
+  loc-state:6 @23 — the-feed-station | midday | none | ledger-surface-clear, sealed-packet-departing | station surface edge as sealed packet is taken (state-change: Jarvis exits, withholding in motion)
+  loc-state:7 @29 — the-feed-station | afternoon | none | ledger-surface-open, muddy-way-extension-in-motion | ledger surface late-afternoon as fifth-ward cluster extends (time-advance: midday → afternoon; muddy-way first enters feed)
+  loc-state:8 @42 — the-feed-station | end-of-day | none | breach-column-receiving, accounting-closed | breach column at accounting-close (time-advance: afternoon → end-of-day; threshold entry filed in flat register)
+  Continuity-carry: none filed — scene-D rhythm-shape is rising-to-interior-climax (excluded from license); no flat-low/resolving/release-only runs applicable
+  Cull: 0 entries removed — all 8 survive strip / pointing / frugality / previous-entry tests
+
+## Current set (b01c12 chapter-close)
+  location: the-feed-station (accounting closed)
+  time_of_day: end-of-day
+  weather: none
+  ambient_conditions:
+    - breach-column entry filed (cost recorded; architecture-entry closed)
+    - feed-station surface: accounting closed, ledger at rest
+    - all five wards + Flea Bottom approaches in feed at full-circuit density (new threshold state from @31)
+    - muddy-way ward-cluster: active (new from @29)
+
+## Location-state R1 authored (b01c12) — 2026-06-03
+  theater/facets/location-state-b01-c12.md (8 entries, 0 cull)
+  _inflight: theater/facets/_inflight/proto-lines-loc-state.md filed (citations @1, @3, @8, @11, @17, @23, @29, @42)
+
+## Seams flagged for R2 (b01c12)
+  SEAM-C12-LOC-001: the-hook-ward slug used for east-water-gate lanes (@1, @2, @3); prior chapters used `oc-hook-precinct` for the lane-south entry — R2 reviewer should confirm slug consistency or flag for margit canonicalization (carry from SEAM-C11-LOC-004)
+  SEAM-C12-LOC-002: @6 `insects return the stitch-house route` — mediated feed-perception beat; no loc-state fired (rejected as perception/feed beat, not Taylor's physical transition); R2 confirm the inherited env from @3 is sufficient for Wren-as-boundary rendering
+  SEAM-C12-LOC-003: @8 sub-anchor for feed-station — prior b01c11 loc-state sequencing puts Taylor at the feed-station throughout; b01c12 scene-A starts in the lanes and moves to the feed-station; @8 stylus-lift is the first explicit ledger-surface beat; no prior state-update records the lane→station transition; R2 confirm the sub-anchor is adequate or whether a explicit entry at @3→@8 transition gap is needed
+  SEAM-C12-LOC-004: the-feed-station warehouse card still unconfirmed (carry from SEAM-C11-LOC-001; b01c12 fires 6 entries on this slug)
+
+## Prior set state (b01c11 chapter-close)
 location: the-feed-station (end-of-day; accounting closed)
 time_of_day: end-of-day
 weather: none
