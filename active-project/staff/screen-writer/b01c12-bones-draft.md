@@ -241,6 +241,20 @@ scenes:
         dialogue_anchor: false
         # Phase-2 fix: fault-009 — "the covering-sheet names the east-water-gate corridor" (non-action verb/stative document-content) → "taylor-hebert-kl-122ac opens the covering-sheet" (physical act); corridor content is facet territory
 
+      # Phase-3 dramatist REVISE-1 reorder: n05 (second boundary-name) now precedes n04 (packet-set reaction) so the
+      # full irony lands (BOTH gate-tower west + rendering-yard east named) BEFORE the stilling-reaction. List order = n03,n05,n04,n06,n07. Slugs unchanged.
+      - slug: b01c12s02n05
+        svo: "taylor-hebert-kl-122ac turns the covering-sheet"
+        shape: held
+        # Phase-2 fix: fault-011 — "the covering-sheet names the rendering-yard boundary" (non-action verb/stative document-content) → "taylor-hebert-kl-122ac turns the covering-sheet" (physical act distinct from n03's opening); boundary content is facet territory
+        axis_moves: []
+        axes_held:
+          - axis: social_tether-antag
+            rationale: "Otto's apparatus targets the gap lanes as a structural leverage expression — the apparatus knows the territory, names the exact corridor. Leverage is structural but not advancing this chapter (Otto has not noticed the pattern of withholding); held at 6. The opposing-force enacted: the request carries the shape of prior intelligence, reading back the gap with precision"
+        cost_ledger_anchor: null
+        grounding: false
+        dialogue_anchor: false
+
       - slug: b01c12s02n04
         svo: "taylor-hebert-kl-122ac sets the packet"
         shape: held
@@ -253,18 +267,7 @@ scenes:
         grounding: true
         dialogue_anchor: false
         # grounding: packet returned to ledger surface — physical act of setting down against pressure to comply.
-
-      - slug: b01c12s02n05
-        svo: "taylor-hebert-kl-122ac turns the covering-sheet"
-        shape: held
-        # Phase-2 fix: fault-011 — "the covering-sheet names the rendering-yard boundary" (non-action verb/stative document-content) → "taylor-hebert-kl-122ac turns the covering-sheet" (physical act distinct from n03's opening); boundary content is facet territory
-        axis_moves: []
-        axes_held:
-          - axis: social_tether-antag
-            rationale: "Otto's apparatus targets the gap lanes as a structural leverage expression — the apparatus knows the territory, names the exact corridor. Leverage is structural but not advancing this chapter (Otto has not noticed the pattern of withholding); held at 6. The opposing-force enacted: the request carries the shape of prior intelligence, reading back the gap with precision"
-        cost_ledger_anchor: null
-        grounding: false
-        dialogue_anchor: false
+        # Phase-3 dramatist REVISE-1: this stilling-reaction now lands AFTER both corridor boundaries are named (n03 opens sheet / gate-tower; n05 turns sheet / rendering-yard), so the collision is complete before Taylor stills.
 
       - slug: b01c12s02n06
         svo: "taylor-hebert-kl-122ac sets the stylus"
@@ -483,8 +486,9 @@ scenes:
         covers: [b01c12s04n01, b01c12s04n02]
         omission_rationale: null
       - event: "aggregate-feed-scale-at-full-deployment [image]"
-        covers: [b01c12s04n03, b01c12s04n04]
+        covers: [b01c12s04n14, b01c12s04n03, b01c12s04n04]
         omission_rationale: null
+      # n14 (Phase-3 dramatist REVISE-2 causal bridge): the muddy-way entry closes the fifth-ward circuit -> the aggregate completes for the first time.
       - event: "khepri-threshold-crossed-in-aggregate [mechanism]"
         covers: [b01c12s04n05, b01c12s04n06]
         omission_rationale: null
@@ -533,6 +537,22 @@ scenes:
         # grounding: the Muddy Way upper-margin as a named physical location in the coverage geography.
         # cl05 gain side, second partial tranche (completing +1.0 across s01+s04).
         # Central-event bone for capability-full-deployment: concrete SVO — insects (subject) fill (transitive physical verb) named location (object). EVENT-NOT-CONCRETE check: passes.
+
+      - slug: b01c12s04n14
+        svo: "the muddy-way entry closes the fifth-ward circuit"
+        shape: held
+        # Phase-3 dramatist REVISE-2: causal-bridge bone inserted between n02 and n03 (positionally; slug n14 monotonic).
+        # Addresses cold-read s04-seam + admin DEC-0076: makes the full-deployment threshold a CONSEQUENCE of this afternoon's
+        # muddy-way fill (n02), not an asserted fact at n03. The muddy-way ledger-entry closing the fifth-ward circuit is the
+        # physical act that completes the five-ward aggregate for the first time. No exposition, no proper noun, no axis-move.
+        axis_moves: []
+        axes_held:
+          - axis: moral_legibility_to_self
+            rationale: "the muddy-way entry completing the fifth-ward circuit is the physical cause of the full-deployment aggregate — the last accumulation beat before the threshold; legibility held at 5.5 (the shape-word has not surfaced yet); the held-discipline against the approaching threshold. This is the causal connective the cold-read flagged missing (s04-seam / DEC-0076): muddy-way filled (n02) -> fifth-ward circuit closes (here) -> feed returns all five (n03) as a new complete total"
+        cost_ledger_anchor: null
+        grounding: true
+        dialogue_anchor: false
+        # grounding: the muddy-way ledger-entry + the fifth-ward circuit as named physical ledger surfaces; concrete close-act.
 
       - slug: b01c12s04n03
         svo: "the feed returns all five wards"
