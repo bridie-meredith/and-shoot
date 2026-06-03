@@ -8005,7 +8005,7 @@ books:
           target_chapter: b01c13
 
       - slug: b01c13
-        status: faceted-r1   # /and-facets b01c13 Phase 2 fanin 2026-06-03 (was bones-written); R1 10 facets + cite-index (62 entries, slice-collision fixed)
+        status: faceted-r2   # /and-facets b01c13 Phase 4 fanin 2026-06-03 (was faceted-r1); R2 6 judges (1 delete mem:1@16, 0 adds, dialogue licenses resolved); 61 entries; scene-map URI-SCENE-WINDOW PASS
         bones_file: theater/bones/b01-c13.md
         bones_count: 31
         substance_bone_gate_verdict: PASS
@@ -8022,6 +8022,17 @@ books:
           bones_file_mtime_at_review: 2026-06-03T16:56:10Z
           stale_since: null
           signal: "signal-001 (advisory): s03 spine legibility depends on /and-facets landing the deferred interior word 'contempt' + evidence-run as a finding-not-a-decision; forwarded to /and-facets Phase 2.5 + /and-stitch Phase 9. dialogue-coverage + card-compliance + Earth-Bet fence all CLEAN."
+        context_followability:   # /and-facets Phase 2.5 + 4.5 (PROP-0020/0022)
+          completeness_verdict: FOLLOWABLE   # Phase 4.5 post-R2; s03 spine LANDS; mem:1@16 delete cost no followability (d06->Aldric routes via NI:3@17)
+          readability_verdict: ALIVE         # scene-B feed-observed remote-read acceptable; grounded elsewhere
+          context_ledger_open: 0             # ctx-001 satisfied by exposition:2
+          grounding_ledger_open: 0
+          voice_fixable_for_stitch:          # carry to /and-stitch Phase 4 voice-embodiment + Phase 9
+            - "@19 render the stop so the deferred word 'contempt' reads as a genuine finding, not a told assertion (chapter SPINE; render @19+@23 as a pair)"
+            - "@30 render the not-turning as physical departure (feet on the circuit), NOT interior rationale (s04 CARRY)"
+            - "scene-B @10-@18 keep observed bodies embodied (magistrate physically lifts the d06-document); preserve cold remote-read without airless"
+            - "@16 disciplined read-holding; let NI:3@17 carry the does-not-move-it-to-the-accounting-column interior (mem:1 deleted)"
+            - "mem:2@23 carries its own fire/weather simile — render once, no figurative echo in adjacent narrator prose"
         # /and-write b01c13 Phase 7 emit 2026-06-03. 31 bones / 4 scenes. s04 LIVE dialogue (3 anchor bones; 2 per-character files: septon-halvard-flea-bottom, taylor-hebert-kl-122ac). s01/s02 feed-observed (silent — apparatus speech recast to physical action); s03 solo interior (naming->concrete stop @19; word "contempt" + evidence-running deferred to narrator-interest/memory facets per omission_rationale).
         # flat_id map: s01 @1-@9 | s02 @10-@18 | s03 @19-@23 (re-decomposed 7->5; naming bone = @19 stop) | s04 @24-@31 (dramatist reorder applied at emit: reading order n01=@24,n02=@25,n03=@26,n04=@27,n06=@28,n07=@29,n05=@30,n08=@31). dialogue citations: @26 [septon-halvard-flea-bottom:1], @27 [taylor-hebert-kl-122ac:1], @28 [septon-halvard-flea-bottom:2].
         # Pipeline: Phase 2 (14 form-faults recast + 2 compression faults fixed -> 31 bones), Phase 3 (dramatist REVISE: s04 reorder), Phase 4 (trim 3/3 ACCEPT, 0 deletions), Phase 5 continuity (3 doc/state faults fixed: Halvard state file reconciled; handoff capability 6->6.5 + position-prot-rise 5.5->5), Phase 6 bone-gate (auditor 0 HARD after [image: the-word-held] event-map fix; s03n04 jaw-set PASS; s02 stakes-dominant PASS by mechanism-primacy; dialogue+fence+mannerism CLEAN; audience 3-of-3 SUBSTANCE-FELT). Per-bone detail authoritative in active-project/staff/screen-writer/b01c13-bones-draft.md (git-tracked) + bones file + scene-map; NOT duplicated into scenes[].bones[] (memory size mgmt; downstream reads the bones file + scene-map).
