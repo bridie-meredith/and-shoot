@@ -4551,3 +4551,64 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0077 | 2026-06-03 | SLOW (process-critic)
+
+mode: process-critic
+trigger:
+  reason: failure
+  source_report: active-project/staff/auditor/write-b01c12-bone-gate.md
+  source_verdict: FAIL — 3 HARD (fault-001/003/004; single structural gap: s04 HELD-AXIS-NOT-WITNESSED for political_register-prot + social_tether-antag); 2 SIGNAL accept-with-rationale (ABSTRACTION-DOMINANT s04; REGISTER-AS-MANNERISM). Resolved in-cycle.
+  gate_path: .claude/commands/and-write.md#phase-6
+context: |
+  Two distinct patterns in b01c12's /and-write run:
+
+  PATTERN A — HELD-AXIS-NOT-WITNESSED (Phase 6 HARD): s04 scene contract declared
+  political_register-prot + social_tether-antag as held axes; zero bones in s04 carried
+  either axis in axes_held[]. Resolved in-cycle (fixer attached axes_held to two existing
+  bones). Fourth chapter-level occurrence of this class (c04: 5 axes; c06: 1 axis;
+  c10: 9 axes; c12: 2 axes). PROP-0011 covers this class.
+
+  PATTERN B — 15 unpaid-chatter bones (Phase 2 FAULT-BONE-DELTA-MALFORMED): screen-writer
+  authored grounding/setup bones as shape=chatter with null cost_ledger_anchor AND empty
+  axes_held[] across all 4 scenes (15/42 = 36%). Required a Phase 2 fixer pass. No prior
+  proposal covers this specific failure class at this scale (c09: 2; c04's FAULT-BONE-
+  DELTA-MALFORMED was magnitude pair-splits, not null-anchor chatter).
+
+decision: |
+  (A) OK-MERGED-INTO PROP-0011. Increment recurrence_count 3→4. Add b01c12 evidence ref.
+      Proposed_diff unchanged (Phase 1 step 4a completion gate for held-axis witnessing).
+      In-cycle fix confirms root cause is Phase 1 brief gap, not bone-count deficiency.
+
+  (B) OK — hold at first occurrence. Pattern B is a first-occurrence at scale. Phase 2 caught
+      it correctly; in-cycle fixer resolved all 15 at low cost. No gate failed to catch it;
+      no irreversible consequence. Non-catastrophic first occurrence → hold for recurrence.
+
+basis: |
+  (A) PROP-0011 mandatory merge (same change_type, same target, same root cause, 4th occurrence).
+  (B) Methodology: first-occurrence rule for non-catastrophic gate-caught failures. Gate chain
+      functioning as designed. Phase 1 self-check addition would be a second mandated completion
+      gate alongside step 4a; overhead cost exceeds periodic fixer-pass cost at single occurrence.
+
+rationale: |
+  PROP-0011 fully addresses Pattern A. The rollup-attribution note already added at count=3
+  covers the b01c12 root cause (axes were declared but omitted from bone-level axes_held[]).
+  No new proposed_diff content needed; the merge is administrative.
+
+  Pattern B: 15 is anomalous (36% of bones) but mechanically simple to fix — every chatter
+  bone needs either a held-axis or an anchor. Phase 2 is the correct catching gate; it fired.
+  Adding a Phase 1 self-check creates friction for a pattern that appeared at scale only once
+  across 12 chapters. Hold until recurrence at c13+ to determine if it's systematic.
+
+trade-off: |
+  (A) None — merge is mandatory by schema.
+  (B) Not proposing risks a repeat fixer pass at c13+. Proposing prematurely risks adding
+  Phase 1 overhead for a pattern that may not recur (absent from c05–c11 at scale).
+  Phase 2 fixer pass for 15 chatter bones costs less than a mandated completion-gate.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no

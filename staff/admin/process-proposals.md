@@ -1454,7 +1454,7 @@ evidence_refs:
   - ".claude/commands/and-write.md — Phase 1 step 2 held-bone shape description: 'Held axes contribute zero by definition and must each have at least one bone in the scene with that axis in its bone-level axes_held[]' — requirement exists but is embedded in shape description, not in numbered authoring steps"
   - ".claude/commands/and-write.md — Phase 6 HELD-AXIS-NOT-WITNESSED: 'for each entry in scenes[].substance_delta.axes_held[], at least one bone in the scene must have that axis in its bone-level axes_held[]' — the gate exists and fires correctly; the gap is at the authoring brief, not the gate"
   - "active-project/staff/auditor/write-b01c06-bone-gate.md — fault-001 HELD-AXIS-NOT-WITNESSED: political_register-prot s01; resolved by assigning axis to existing bone s01n02 (no new bone required); same failure class at lower severity than c04 (1 axis vs 5; trivial fix vs additive cycle). Confirms the pattern is recurrent across chapters with held axes in the contract."
-recurrence_count: 3
+recurrence_count: 4
 # recurrence_count bumped 2→3 by admin process-critic DEC-0069 (2026-06-02):
 # b01c10 Phase 6 bone-gate returned 4 HARD HELD-AXIS-NOT-WITNESSED covering 9 scene-contract
 # held axes (s01 ×2, s02 ×3, s03 ×1, s04 ×3). Root cause: screen-writer attributed
@@ -1462,7 +1462,16 @@ recurrence_count: 3
 # into the target bone's bone-level axes_held[]. All 9 resolved cycle-1 by fixer. Same failure
 # class as c04 (5 axes, additive-bone cycle) and c06 (1 axis, assign-to-existing). Third
 # chapter-level occurrence confirms the Phase 1 brief gap is persistent.
+# recurrence_count bumped 3→4 by admin process-critic DEC-0077 (2026-06-03):
+# b01c12 Phase 6 bone-gate returned 3 HARD (fault-001/003/004) — single structural gap:
+# s04 contract declared political_register-prot + social_tether-antag held; zero bones in s04
+# carried either axis in bone-level axes_held[]. Resolved in-cycle by fixer attaching axes_held
+# to two existing s04 bones (n40 + n41 in the final bones file) without adding new bones.
+# Root cause identical to prior occurrences: Phase 1 brief does not present held-axis witnessing
+# as an explicit numbered completion gate, so the screen-writer omits the axes_held[] population
+# step when focusing on moving/chatter bone authoring. Fourth chapter-level occurrence.
 recurrence_refs:
+  - "active-project/staff/auditor/write-b01c12-bone-gate.md — 3 HARD HELD-AXIS-NOT-WITNESSED; 2 axes (political_register-prot, social_tether-antag) in s04; resolved in-cycle (fixer attached axes_held to existing bones n40/n41; no new bones added). Fourth occurrence of the Phase 1 brief gap."
   - "active-project/staff/auditor/write-b01-c10-bone-gate.md — 4 HARD HELD-AXIS-NOT-WITNESSED; 9 axes across s01/s02/s03/s04; resolved cycle-1 (fixer added 9 axes_held[] entries to s01n03/n05, s02n03/n04/n07, s03n07, s04n01/n03/n05). Process note: 'screen-writer attributed held axes via rollup rather than bone-level axes_held[]' — the exact authoring gap PROP-0011 proposes to close."
   - "active-project/staff/auditor/write-b01c04-bone-gate-redo.md — first occurrence: 5 HARD across 3 scenes; additive bone cycle."
   - "active-project/staff/auditor/write-b01c06-bone-gate.md — second occurrence: 1 HARD fault-001; trivial fix."
