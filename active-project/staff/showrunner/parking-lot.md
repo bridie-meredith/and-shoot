@@ -1928,3 +1928,63 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-06-03-c14-001
+      created_at: 2026-06-03T00:00:00Z
+      created_by: "/and-substance chapter b01c14 Phase 5 (audience 3-of-3 SUBSTANCE-FELT) + Phase 5.5 (chunk cold-read PASS-CHUNK-VOICE-RISK)"
+      target:
+        command: /and-write
+        scope: "b01c14"
+        phase: null
+      severity: SOFT
+      description: |
+        b01c14 bones-execution watches (chunk PASSED 3-of-3 SUBSTANCE-FELT; cold-read
+        PASS-CHUNK-VOICE-RISK). These are write-time prose/bone disciplines, NOT chunk
+        revisions — a climax chapter whose central event (confirmation -> detention)
+        is rendered in a dense accounting/ledger register that risks abstraction-muffle.
+
+        From the audience trio (10 watches):
+        - WATCH-01 [S01]: absent merchant must read as a person who LEFT a place (oil-cloth flat,
+          samples on hook, missing bag-peg) — not collapsed to "node went dark."
+        - WATCH-02 [S02]: person-before-paths sequencing. The figure's face (low-set left eye)
+          and pause-habit must be introduced in the bones BEFORE the two alternative paths are
+          enumerated. Reorder if bones sequence paths first.
+        - WATCH-03 [S03]: harm-before-protection column entry. The harm column must be entered
+          and held before the protection column opens, or the accounting reads as rationalization.
+        - WATCH-04 [S03]: "she does not let it take less" — render as action/posture/time-held,
+          not as a narrated fact about Taylor's discipline.
+        - WATCH-05 [S03]: stylus-above-closed-entry is a physical beat (body-position + absence-
+          of-action), not a cognitive summary of the accounting's accuracy.
+        - WATCH-06 [S04]: pause-habit fires one last time — "both hands going to the strap the way
+          they always do" — full physical presence; the chapter's earned-cost peak image; do NOT
+          subordinate to the detention geometry.
+        - WATCH-07 [S04]: Wren retroactive-naming kept minimal and physical (two column-positions,
+          one breath, hand off surface). Over-explanation of the parallel = authorial-cleverness read.
+        - WATCH-08 [S04]: Gold-Morning echo ("a city, a different kind of count, a different kind of
+          named-and-unpriced") — three clauses, NO proper nouns, NO power mechanics, NO event
+          description. Earth-Bet fence, shape-language only. Worm-specific content here = HARD fence
+          violation, flag immediately.
+        - WATCH-09 [S04]: "non-extractable" arrives as prior-known/settled, not as revelation; a
+          thing she has been AVOIDING writing, not one she has not yet written.
+        - WATCH-10 [S02/S03]: the walk-detail (adjusted weight, low-set eye) Taylor adds to the
+          confirmation sheet is the moment her withheld 11-week tracking becomes the instrument of
+          the detention — the inversion (private knowledge becoming the delivery) should be visible.
+
+        From the chunk cold-read (PASS-CHUNK-VOICE-RISK, Signals A+B):
+        - WATCH-11: vary the accounting-register across S2/S3/S4. Cold reader flagged "four
+          near-identical 'she holds both columns' passages — the accounting repeats almost verbatim."
+          Bones must differentiate the three column-runs (weighing / deciding-and-writing / closing-
+          and-recognizing) so the assembled prose does not read as one passage three times.
+        - WATCH-12: the concrete central-event spine (stylus-to-sheet, wax-seal, two men at the
+          junction, hands-on-strap, lane going empty) must carry the event ABOVE the accounting-
+          register. PASS-CHUNK-VOICE-RISK arms /and-stitch Phase 8.5 Check 3; bones should give that
+          check a concrete spine to verify against.
+      context_refs:
+        - active-project/staff/reviews/chunk-coldread-b01c14-2026-06-03.md
+        - active-project/staff/auditor/substance-b01c14-scenes.md
+        - active-project/staff/showrunner/_drafts/b01c14-draft-2026-06-03.md
+        - active-project/staff/showrunner/memory.md  # chapters[b01c14].chunk_cold_read.voice_risk
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
