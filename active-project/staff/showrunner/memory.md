@@ -7502,7 +7502,7 @@ books:
             note: "book-author handoff_in prediction stale vs aggregate-state.md; scene ranks authored on aggregate basis per Phase 0 step 6c. +1.0 chapter delta -> rank 8 near-peak. See aggregate-state.md axis_state for full reconciliation."
 
       - slug: b01c12
-        status: planned
+        status: scened
         chunk: |
           The cost-bearer free-movement leverage beat at d08: Taylor's coverage map has a
           structural gap — the lanes east of the water-gate that Wren moves through daily but
@@ -7562,6 +7562,303 @@ books:
         goal: |
           Show the audience the gap, the choice, and the suppression — Taylor choosing Wren's safety over the deliverable without naming what she is doing — and the Khepri word surfacing and being pushed back down.
         pov_narrator: taylor-hebert-kl-122ac
+        # /and-substance chapter b01c12 Phase 6 persist 2026-06-03. Phase 5: audience 3/3 SUBSTANCE-FELT
+        # (cape-fic/dark-fantasy/worm-canon); worm-canon Earth-Bet fence CLEAN (s04 Khepri-surfacing passes
+        # all 3 criteria — proper noun absent from prose, "Gold Morning" oblique event-anchor within
+        # inner-monologue-RARE, override-vs-surveillance gap preserved as "not an exact rhyme"). dramatist
+        # ACCEPT (roll-up EXACT independently verified; climax shape sound; s04 = terminal interior coda not
+        # second climax). auditor PASS 0 HARD: roll-up EXACT all 5 axes, THEMATIC-AXIS does not fire;
+        # social_tether 8->8.5 SOFT non-blocking (cl-d08b series-audit-accepted; "~8" approx; c13-c15 hold).
+        # Phase 5.5 chunk cold-read CHUNK-CLASS-B (summary maps to goal; strict-CONTINUE=No driven by
+        # cold-context + s04 seam + apparatus-density) -> admin user-proxy DEC-0076 disposition P
+        # (proceed-with-risk; c10/c11 precedent). worm-canon SOFT: "d10 suppression event" notation clarified
+        # in s03/s04 moral_legibility rationales below. Bones-execution watches -> pl-2026-06-03-004 / carry_to_write.
+        scenes:
+          - slug: b01c12s01
+            seq: 1
+            status: scened
+            pov_narrator: taylor-hebert-kl-122ac
+            chunk: |
+              Taylor runs the morning circuit east of the water-gate — [image: east-of-water-gate-lanes]
+              the lanes that spool off the Gate Road and press into the lower city's
+              older skin, where the stone-work pre-dates the Conqueror's harbor improvements
+              and the overhangs are close enough to pass messages hand-to-hand across the
+              gap. [mechanism: witch-label-trigger-geometry] The insect-cover problem in those
+              lanes is structural: any placement dense enough to read traffic requires anchoring
+              in the eaves and gutter-joints of the inhabited upper stories, and the inhabitants
+              of the east-water-gate lanes know a thing crawling in a close overhang for
+              what it is — or what they have agreed to call it — and the label travels faster
+              than any observation she could collect. [event: coverage-gap-established] Taylor
+              maps the gap's exact boundaries as a formal operational fact: the lanes begin
+              where the old gate-tower's shadow falls at second bell and end at the rendering
+              yard's east wall, and she has no clean placement inside that boundary without
+              the community-safety cost. [image: wren-daily-pattern-through-gap] Wren moves
+              through those lanes every morning and every evening — stitch-work pickup, return,
+              the wool-merchant at the corner, the back-and-forth a stitch-maker's day makes
+              across the same ground — and her movement reads the gap the way a finger traces
+              the seam in a thing that is otherwise closed. [mechanism: wren-as-effective-eastern-boundary]
+              The coverage map's eastern boundary is Wren's free movement through it: the gap
+              exists because the boundary holds, and the boundary holds because Wren passes
+              through unindexed-by-Otto, unpriced, her route a fact inside Taylor's internal
+              record that goes nowhere else. Taylor extends two new ward-clusters northward off
+              the water-gate approach — first of the two additions — and the aggregate shifts
+              under her hand. [event: first-ward-cluster-added] The mapping entry closes cleanly.
+              The eastern lanes are not in it.
+            scene_conflict:
+              protagonist_force: "Taylor mapping the gap's exact legal boundaries — what the coverage can reach without triggering witch-label responses — as a cold operational act with no resolution sentence in it."
+              opposing_force: "The structural geometry of the east-of-water-gate lanes: close overhangs, inhabited upper stories, community-label-formation already active; the terrain refuses clean placement."
+              stakes_axis: social_tether-prot-rise
+            substance_delta:
+              axes_in_motion:
+                - axis: capability
+                  direction: up
+                  target_delta_magnitude: 0.5
+                  cost_ledger_anchor: cl05
+                  notes: "First of two ward-cluster additions this chapter; northern approach off the water-gate incorporated; aggregate coverage expands; cl05 gain side (partial tranche — second 0.5 in s04)."
+                - axis: social_tether-prot-rise
+                  direction: up
+                  target_delta_magnitude: 0.5
+                  cost_ledger_anchor: cl-d08b
+                  notes: "Coverage-gap boundary-confirmation consolidates tether: Wren's free movement in the uncovered lanes closes the map without entering the architecture. The consolidation is structural — the gap is what keeps the tether intact. cl-d08b. Takes social_tether-prot-rise from 8 to 8.5 (at peak; auditor SOFT non-blocking — 0.5 past ~8 ceiling, c13-c15 hold)."
+              axes_held:
+                - axis: relational_anchor_status
+                  rationale: "Wren's route is re-mapped and the gap re-confirmed as a formal operational fact, but the anchor-status axis-move (the cl-d06 settlement) requires the CHOICE — the withholding of lane access — as its mechanism. Choice has not yet arrived; axis held at 3.5 until s03."
+                - axis: political_register-prot
+                  rationale: "Gap-mapping is technical accounting, not contempt-register action; no register advance here."
+              density_target: 0.70-0.90
+            # bones-execution watch (cape-fic s02-adjacent): s01 plants Wren-as-boundary; the indexed-but-unwritten state must read as operational fact, not affection.
+          - slug: b01c12s02
+            seq: 2
+            status: scened
+            pov_narrator: taylor-hebert-kl-122ac
+            chunk: |
+              Jarvis arrives at the standard hour with the standard packet — [event: jarvis-delivers-new-request]
+              wax, weight, the covering-sheet folded down in the motion Taylor has learned
+              to read before she opens anything. The new ask is inside in Otto's flat register:
+              [event: otto-requests-east-water-gate-lane-coverage] a Black-faction courier-adjacent
+              figure has been using the lanes east of the water-gate to pass messages — not
+              carrying them himself but staging handoffs in the rendered dark of the overhangs
+              where the street-facing traffic cannot resolve direction. The apparatus wants a
+              route-pattern, a frequency, a body-map of the handoff points. [image: packet-describing-the-gap-lanes]
+              The ask names the lanes by the gate-tower's old designation and the rendering
+              yard's east wall — the exact boundary-marks Taylor spent the morning circuit
+              confirming as outside her coverage. [mechanism: request-collides-with-gap-boundary]
+              She holds the packet and reads it twice. The ask is precise; it has the shape
+              of intelligence that reaches back to someone who already knows the territory
+              — [force: otto-apparatus-knowing-the-terrain] not a random survey request but
+              a targeted corridor, the kind of request that comes when the apparatus has
+              spotted a shape it does not have the resolution to fill. The packet asks for
+              exactly what the gap cannot give. [event: collision-between-request-and-gap-confirmed]
+              Taylor sets it on the ledger surface. She does not open the coverage-map column
+              yet. She re-reads the lane designation. The corridor the packet wants is the
+              corridor Wren walks twice a day in both directions, the corridor the map holds
+              open because the boundary holds, and the boundary holds because Taylor has
+              not placed anything inside it that would cost the boundary what it is worth.
+              She sets the stylus down beside the packet. The morning is already warm with
+              the kind of warm that comes before the bay-wind clears it.
+            scene_conflict:
+              protagonist_force: "Taylor reading the new request against the coverage map she spent the morning confirming — holding the packet beside the gap it requires her to fill."
+              opposing_force: "The apparatus's request, precise and terrain-literate: a courier-adjacent figure using exactly the lanes Taylor cannot enter without paying the community-safety cost to the coverage boundary that the east lanes constitute."
+              stakes_axis: relational_anchor_status
+            substance_delta:
+              axes_in_motion: []
+              axes_held:
+                - axis: relational_anchor_status
+                  rationale: "The collision arrives — the request targets precisely the lanes that constitute the gap, the gap that the anchor inhabits — but the axis-move belongs to the response (s03), not the delivery of the demand. No movement here; held at 3.5."
+                - axis: position-prot-rise
+                  rationale: "The withholding-from-Otto position-move (cl02) belongs to the refusal act in s03; the request arriving is the condition, not the decision. Held at 4."
+                - axis: social_tether-antag
+                  rationale: "Otto's apparatus targeting the gap lanes is structural leverage expression, not an advance in leverage itself; the request does not move the tether-antag axis — that moves only when Otto notices the pattern of withholding. He has not noticed yet."
+              density_target: 0.65-0.85
+            # bones-execution watch (cape-fic + dark-fantasy): closing weather image must be ENACTED as Taylor's body paired to setting (stylus beside packet, warm on a held hand) — indifferent-world-continuance, NOT ambient atmosphere / softening.
+          - slug: b01c12s03
+            seq: 3
+            status: scened
+            pov_narrator: taylor-hebert-kl-122ac
+            chunk: |
+              Taylor writes the response. [event: taylor-drafts-refusal-to-otto]
+              It is a short entry — the channel expects the flat register the
+              deliverables have always used, and what she has to say in flat
+              register is brief: the lanes east of the water-gate are not accessible
+              within the current coverage parameters; [image: bare-source-field-in-the-response]
+              the gap is a structural limit of the architecture, not a temporary
+              absence. She does not write why. [mechanism: refusal-without-explanation]
+              The explanation would require her to write what lives inside the gap,
+              and what lives inside the gap does not go into the channel — it has
+              never gone into the channel, not in the source-field of the
+              wool-dyer's observation, not in the lane-pattern that returned the
+              stitch-maker's route indexed and kept. The response seals without
+              a clause added to it. [event: response-sealed-and-routed-to-jarvis]
+              She routes it to Jarvis at the standard hour, the packet sitting
+              in his hand the way every packet has, the covering-sheet flat
+              over the seal, no word added that the contents do not already carry.
+              [force: taylor-withholding-the-gap] What she does not route is
+              the full operational shape of the gap: the fact that the boundary's
+              depth is Wren's pattern through it, that the gap holds because a
+              route she keeps only internally moves freely through it each day,
+              that the lane-refusal is not a coverage failure but a coverage
+              decision she is not naming as one. [force: apparatus-accepting-the-boundary]
+              Otto's apparatus does not press — the channel will return an alternate
+              arrangement for the courier-adjacent figure's corridor; that is how
+              the apparatus handles a coverage limit. Taylor seals the entry.
+              She opens the ledger to the relational-anchor column. [event: ledger-entry-anchor-column-opened]
+              The column has not moved since the route-indexing tranche — Wren
+              indexed, kept, the stitch-maker's days in the internal record and
+              out of the deliverable; one tranche settled, one deferred.
+              [mechanism: cl-d06-settlement-via-cl-d08-refusal-act]
+              She does not write a name. The weight in the column is not a name;
+              it is a decision about what the coverage map can reach, and the
+              decision's anchor is structural to the architecture that the
+              response just confirmed. The entry goes down as a record of the
+              gap's operational status. The weight in the column settles under
+              her hand — [event: relational-anchor-weight-settles]
+              the second tranche of what was already owed, arriving not as a
+              payment-date but as a physical fact in the architecture: the lane
+              refusal is the mechanism by which the anchor becomes load-bearing
+              in the map, because the map now holds the gap as confirmed-and-named,
+              and the gap's weight is Wren's free movement through it without
+              an entry anywhere that names the reason. She closes the ledger column.
+              Her hand stays on it a moment before she lifts it.
+            scene_conflict:
+              protagonist_force: "Taylor writing the refusal in flat operational register — a coverage limit, a structural boundary, no explanation appended — and sealing the response without the clause that would name what the gap protects."
+              opposing_force: "The apparatus's precision request and what it costs Taylor to decline it: a named gap in the deliverable, a withholding that is now load-bearing and visible in the channel record, the relational-anchor weight settling in the ledger column without a name to carry it."
+              stakes_axis: position-prot-rise
+            substance_delta:
+              axes_in_motion:
+                - axis: relational_anchor_status
+                  direction: up
+                  target_delta_magnitude: 1.0
+                  cost_ledger_anchor: [cl-d08, cl-d06]
+                  notes: "Lane-refusal enacted: Wren's free movement constitutes the coverage map's eastern boundary without entering the ledger (cl-d08 mechanism). SETTLEMENT (DEC-0071): this +1.0 axis-move simultaneously settles the outstanding cl-d06 2nd tranche (+1.0) that reached end of c08-c10 window unsettled while the axis was held flat c08-c11. cl-d08 = mechanism; cl-d06 = the debt. One axis-move settles both. Takes relational_anchor_status 3.5 -> 4.5. Closes pl-2026-05-30-001 / pl-2026-06-02-stitch-thread-002."
+                - axis: position-prot-rise
+                  direction: up
+                  target_delta_magnitude: 1.0
+                  cost_ledger_anchor: cl02
+                  notes: "Third and most consequential withholding-from-Otto (hook-0014 third instance). The refusal of lane coverage is no longer a quiet pattern — it is a named gap confirmed in the channel, a structural limit Taylor has written into the deliverable. Position moves toward non-exit confirmation; withholding now load-bearing for position, not just a quiet operational choice. cl02. Takes position-prot-rise 4 -> 5."
+              axes_held:
+                - axis: political_register-prot
+                  rationale: "The gap-refusal is a tactical operational decision delivered in flat channel register. It is not a contempt-register event; it is not feed-facing resentment. Held at 3.5."
+                - axis: social_tether-antag
+                  rationale: "Otto's apparatus accepts the coverage limit and arranges an alternate route. Leverage is structural but not advancing; Otto has not noticed the pattern of withholds. Held at 6."
+                - axis: moral_legibility_to_self
+                  rationale: "The ledger-column entry is an operational record, not a recognition event. Taylor does not name what she is doing as protection; she does not notice she is doing the same thing she did with Wren's route-indexing. The crack is present — it is the same suppression pattern — but it does not open this scene. NOTATION (worm-canon SOFT clarification): the proximate deferral is the s04 Khepri-surfacing within THIS chapter (where the suppression intensifies but still does not open the crack); the terminal deferral is the d14-range full-recognition event where the axis actually moves. NOT the trajectory milestone d10 (already past, = c10 content)."
+              density_target: 0.75-0.90
+            # bones-execution watch (cape-fic): the three un-routed-content clauses ("the fact that / that / that") must become a physical stopping-before-writing beat (hand stops, stylus not reaching field) — ENACTED withholding, NOT interior enumeration of what she declines to write. dark-fantasy: hand-on-ledger beat must lift-and-move, not camera-linger.
+          - slug: b01c12s04
+            seq: 4
+            status: scened
+            pov_narrator: taylor-hebert-kl-122ac
+            chunk: |
+              The second ward-cluster addition runs in the late afternoon —
+              [event: second-ward-cluster-added] the coverage extending past
+              the water-gate approach northward into the Muddy Way's upper
+              margin, filling a gap in the existing architecture that has been
+              a planning entry for two circuits without becoming an action.
+              [image: aggregate-feed-scale-at-full-deployment] Taylor works
+              the placement across the standard circuit, the count moving in
+              her the way the count has always moved, and then the aggregate
+              is different — not in any single node but in the shape of the
+              whole, the feed returning the city at a density and a completeness
+              that it has not returned before, all five wards and the
+              Flea Bottom approaches mapped and simultaneous. [mechanism: khepri-threshold-crossed-in-aggregate]
+              She is reading bodies she has never asked, routes she has never
+              offered to keep, the architecture complete in scope and structural
+              to the channel in a way that cannot be walked back by pulling
+              any single node — the pull would leave a shape the whole could
+              not hold. She holds the feed at full scale for the count.
+              [event: internal-accounting-runs-at-full-scale]
+              The accounting runs the way the accounting always runs: the gain
+              set against the cost, the harm-prevention column against the
+              breach column, the architecture's scope against what the
+              scope rhymes with. It is not an exact rhyme. It was never an
+              exact rhyme. The gap between the surveillance-and-inference method
+              and the override method is real and she has built her entire
+              operating framework on the reality of that gap. The gap is still
+              real. The aggregate scale is also real. At full scale, running
+              the accounting at full-feed density, the word her internal record
+              reaches for is [event: khepri-word-surfaces-in-accounting] not
+              a description of the architecture but the name of the thing it
+              rhymes with — the shape-word, the thing-she-did-at-Gold-Morning
+              word, the word she has not used in any column because the column
+              does not require it and because the gap is real. The word is
+              there in the accounting for the duration of one count.
+              [mechanism: khepri-suppression-act] She does not let it settle.
+              The accounting moves past the count — the gain column, the cost
+              column, the harm-prevention logic, the architecture's operational
+              necessity — and the word is not in the next entry because the
+              next entry does not require it, and the gap is real, and the
+              word does not help the count run. [image: feed-continuing-past-the-suppression]
+              The feed returns the city at full scale. She closes the
+              architecture entry. [event: capability-full-deployment-confirmed]
+              The ledger entry for the second ward-cluster goes down clean.
+              The breach column receives its entry: the threshold crossed,
+              the scope irrevocable, the shape of the accounting that reached
+              for the shape-word and was given something else to do instead.
+              The entry does not contain the word. [event: moral-framework-ledger-entry-for-threshold]
+              The entry contains what happened: the architecture at full scale,
+              the count completed, the harm-prevention logic intact, and the
+              cost side receiving its full weight. She closes the ledger. The
+              feed runs on at full deployment the way it will run for every
+              circuit that follows this one, the coverage complete, the
+              architecture structural, the gap east of the water-gate
+              the one place the map does not go.
+            scene_conflict:
+              protagonist_force: "Taylor completing the second ward-cluster addition and running the full-scale accounting — the architecture at full deployment, the harm-prevention logic intact, the count moving forward."
+              opposing_force: "The aggregate scale itself: at full-feed density, the internal accounting reaches for the Khepri shape-word — the architecture's own scope is the pressure, internal, irreducible, the thing that cannot be argued down because it is not argument."
+              stakes_axis: moral_legibility_to_self
+            substance_delta:
+              axes_in_motion:
+                - axis: capability
+                  direction: up
+                  target_delta_magnitude: 0.5
+                  cost_ledger_anchor: cl05
+                  notes: "Second of two ward-cluster additions (first in s01); full-deployment threshold crossed — architecture complete in scope, all five wards + Flea Bottom approaches mapped simultaneously; cl05 gain side (second partial tranche, completing the +1.0 across s01+s04). Takes capability 5.5 + 1.0 -> 6.5 across the chapter."
+                - axis: moral_framework
+                  direction: down
+                  target_delta_magnitude: 1.0
+                  cost_ledger_anchor: cl05
+                  notes: "Irrevocable-Khepri-repetition threshold crossed: aggregate scale at full-feed density reaches the point where the internal accounting's natural shape-word is the Khepri name; word surfaces in one count and is suppressed; the suppression IS the ledger entry (the breach column receives full weight); cl05 cost side. Systematic-override now irrevocable at this scale. Takes moral_framework -1 -> -2."
+              axes_held:
+                - axis: moral_legibility_to_self
+                  rationale: "The Khepri-word surfaces and is suppressed — this IS the suppressed-recognition pattern, and the ledger records the cost-side weight — but the crack does not open fully this scene; the recognition is pushed back down, not received. This is the load-bearing held-discipline stakes axis for this scene: the suppression is what keeps the axis from moving, and the suppression is the chapter's interior climax. NOTATION (worm-canon SOFT clarification): the crack opens at the d14-range full-recognition event (where the axis actually moves), NOT at trajectory milestone d10 (= c10 content, already past). c12's suppression is the last/most-intense pre-opening event in that sequence. Held at 5.5."
+                - axis: political_register-prot
+                  rationale: "Khepri-suppression is internal, not feed-facing; no register advance. Held at 3.5."
+                - axis: social_tether-antag
+                  rationale: "Otto's channel receives the second ward-cluster confirmation via the standard deliverable update; his leverage structural, not advancing. Held at 6."
+              density_target: 0.75-0.90
+            # bones-execution watch (cape-fic): "the thing-she-did-at-Gold-Morning word" must carry accumulated referent-weight through prior bones (rhymes-with framing, aggregate-shape language, full-feed density building toward threshold) so the un-named word arrives as felt weight, not vague circling. worm-canon: Earth-Bet fence CLEAN at chunk — keep shape-language at bones (no proper-noun "Khepri" in prose).
+        chunk_cold_read:
+          reviewed_at: 2026-06-03T00:00:00Z
+          verdict: SHIPPED-WITH-RISK-RECORDED
+          classification: B
+          recovered_summary: "A surveillance-runner quietly refuses to bug the one neighborhood that would expose a person she's secretly protecting, then realizes her now-citywide network has become the very thing she swore she'd never be again."
+          intended_goal: "Show the audience the gap, the choice, and the suppression — Taylor choosing Wren's safety over the deliverable without naming what she is doing — and the Khepri word surfacing and being pushed back down."
+          continue: no
+          continue_strict: no
+          report_path: active-project/staff/reviews/chunk-coldread-b01c12-2026-06-03.md
+          disposition: P
+          dispositioned_at: 2026-06-03T00:00:00Z
+          dispositioned_by: admin   # DEC-0076
+          cold_read_risk_carry: |
+            CHUNK-CLASS-B / SHIPPED-WITH-RISK-RECORDED | b01c12 | summary MAPS to goal; strict-CONTINUE=No.
+            "No" decomposes into design-inherent + cold-context only (admin DEC-0076 P, c10/c11 precedent):
+            (1) cold-context proper-noun load (Khepri / Gold Morning / Wren / Otto / witch-label) — all
+                established c01-c11; Khepri/Gold-Morning opacity is the Earth-Bet fence operating BY DESIGN
+                (worm-canon ruled s04 surfacing CLEAN precisely because it stays shape-language). Phase 9 may
+                NOT FAIL on this cause alone; do NOT recast toward exposition to resolve it.
+            (2) s04 SEAM (genuine craft note, routes to stitch not re-chunk): cold-reader read s04 as "a
+                different chapter's climax stapled on" + "why does the full-net threshold trigger NOW? Arbitrary."
+                dramatist ACCEPTED s04 as terminal interior coda / consequence-train of the s03 refusal.
+                ARMS /and-stitch Phase 8.5: verify the threshold-trigger renders as causally-earned consequence
+                of the s03 coverage-gap refusal, NOT an arbitrary scene-pivot; render the causal chain legible
+                WITHOUT adding an expository bridge. If P8.5 catches it, targeted repair is s04 bones only.
+            (3) apparatus-register DENSITY ("ledger/tranche/architecture so heavy I can't tell magic from
+                bookkeeping"): ARMS /and-stitch Phase 8.5 central-event-muffle check — specifically test that
+                the Khepri-recognition beat registers THROUGH the accounting vocabulary at the moment it
+                appears; the apparatus register must not bury it. This is the most dangerous register-point in
+                the chapter. Cross-ref: consecutive-abstract N=6 (DEC-0073/0075) -> /and-cohere before c13
+                (cannot be fixed at chunk layer).
+            DEC-0076 | dispositioned_by: admin user-proxy.
         handoff_conflicts:
           # /and-substance chapter b01c12 Phase 0 step 6c (2026-06-03): handoff_in character_state/world_state
           # (book-author prediction lineage) diverged from aggregate-state.md close-of-c11. AGGREGATE WINS on all.

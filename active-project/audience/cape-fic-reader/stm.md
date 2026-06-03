@@ -459,3 +459,39 @@ phase_4_trim:
     - s04 n04/n05 confirmed distinct (contacts-arm crystallization vs. arrangement/cover accounting)
     - no bones serve neither goal nor declared Δ; no chatter without cost_ledger_anchor
     - one prose-execution note: s02n07 (smoke-curl) is the thinnest bone in the file; stitcher may compress if n06+n07 run redundant in voice
+
+## b01c12 /and-substance chapter Phase 5 chunk review — 2026-06-03
+
+verdict_per_scene:
+  b01c12s01: SUBSTANCE-FELT
+  b01c12s02: SUBSTANCE-FELT
+  b01c12s03: SUBSTANCE-FELT
+  b01c12s04: SUBSTANCE-FELT
+hard_findings: none
+SUBSTANCE-FLAT: none
+SUBSTANCE-SUSPECT: none
+chapter_verdict: SUBSTANCE-FELT
+
+chapter_goal_coverage:
+  gap_shown: LAND
+  choice_without_naming: LAND
+  khepri_surface_and_suppression: LAND
+overall: ACCEPT
+
+notes:
+  - s01: gap-as-formal-operational-fact lands; witch-label-trigger-geometry is named before the constraint acts; Wren's free movement as the eastern boundary is the information-asymmetry-that-reshapes-the-board move in correct form; capability +0.5 structurally distinct from gap-mapping (two separate events, expansion in the other direction); social_tether-prot-rise +0.5 not cheap-gain — gap becoming a formal architectural feature is the mechanism that converts the tether from behavioral pattern to structural fact
+  - s02: collision between request and gap is tactically clean; Otto's apparatus terrain-literacy is named (independent knowledge, no unmotivated-knowledge hot button); four-beat dilemma sequence is assembled from mechanical facts, not narrated; held axes correctly sequenced as conditions-not-decisions; bones-execution watch: closing weather image must be Taylor's body paired to physical setting, not ambient atmosphere
+  - s03: refusal in flat register holds the "without naming what she is doing" fence; cl-d06 second tranche settled via cl-d08 mechanism (one axis-move settles two debts) — structurally sound; position-prot-rise +1.0 correctly framed as gap now named in the channel record (structural, not behavioral); bones-execution watch: the "the fact that / that / that" un-routed content list must become a physical stopping-before-writing beat at bones, not Taylor's interior enumeration of what she's declining to write (enacted withholding vs. stated withholding is a real distinction)
+  - s04: capability +0.5 and moral_framework -1.0 mechanically linked as same event moving two axes in opposite directions — the irony the story is built around is structurally confirmed at the chapter's climax; Khepri-word surfaces during the accounting as "the name of the thing it rhymes with" then suppressed as "the word does not help the count run" — enacted as accounting-moving-past, not as decision-to-suppress; moral_legibility_to_self hold preserved (suppression filed, not recognized as suppression); bones-execution watch: "the thing-she-did-at-Gold-Morning word" oblique framing must carry enough accumulated referent-weight at bones that the un-named thing lands as felt weight rather than vague circling; closing image ("the gap east of the water-gate the one place the map does not go") earns the structural irony landing
+
+bones_execution_watches_to_and-write:
+  - s02_weather_image: closing warm-before-the-bay-wind beat must be Taylor's body (stylus set down, packet beside it) in a physically specific beat, not ambient atmosphere filling space after the collision; if bones flatten to atmosphere it becomes filler while the plot is live
+  - s03_un-routed_content_list: the "the fact that the boundary's depth is Wren's pattern / that the gap holds because / that the lane-refusal is not a coverage failure" enumeration must become a physical stopping-before-writing beat at bones; enacted withholding (hand stops / stylus does not reach the field) vs. stated withholding (Taylor thinks through what she is declining to write) — the distinction matters
+  - s04_khepri_oblique_framing: "the thing-she-did-at-Gold-Morning word" or equivalent must have enough referent-weight accumulated across the chapter's prior bones (the accounting building toward the threshold, the aggregate-shape language, the rhymes-with framing) that the un-named word arrives as a felt weight; if the referent-weight is thin, the suppression reads as vague circling rather than as a suppression of something specific and terrible
+
+threshold_discipline_check:
+  - unmotivated_knowledge: no fire; Otto's apparatus has independent terrain knowledge named explicitly in s02
+  - established_limits_bypassed_without_cost: no fire; capability +0.5 in s04 is mechanically linked to moral_framework -1.0 as the same deployment
+  - filler_while_plot_is_live: no fire; all four scenes are in the action; s02 holds without resolving — dramatic suspension, not filler
+  - new_character_trust_without_cost: not applicable; no new characters
+  - fatigue: no triggers; held-axis rationales are planning-layer, not prose-layer

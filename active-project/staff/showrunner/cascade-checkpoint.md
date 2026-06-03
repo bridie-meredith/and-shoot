@@ -25,18 +25,32 @@ cascade:
     pl-2026-06-03-001: oc-soap-lane-report-packet prop card (carried-forward sealed prop from c11 s03)
       + oc-cloth-merchant-shop / oc-soap-rendering-lane loc cards — margit dispatch at facets/stitch P0.
   last_completed:
-    level: chapter-contract-read   # Phase 0 complete; entering Phase 2 (screen-writer scene-chunk authoring)
+    level: chapter   # /and-substance chapter b01c12 COMPLETE (scened). 4 scenes persisted + chunk_cold_read.
     slug: b01c12
     completed_at: 2026-06-03T00:00:00Z
+    detail: |
+      Phase 5: audience 3/3 SUBSTANCE-FELT (cape-fic/dark-fantasy/worm-canon); worm-canon Earth-Bet
+      fence CLEAN (s04 Khepri-surfacing passes all 3 criteria). dramatist ACCEPT. auditor PASS 0 HARD
+      (roll-up EXACT all 5 axes; social_tether 8->8.5 SOFT non-blocking; THEMATIC-AXIS clean).
+      Phase 5.5 cold-read CHUNK-CLASS-B -> admin DEC-0076 P (proceed-with-risk; SHIPPED-WITH-RISK-RECORDED;
+      cold_read_risk_carry arms /and-stitch P8.5 s04-seam-causal-legibility + Khepri-beat-muffle test).
+      Bones-execution watches -> pl-2026-06-03-004 (carry to /and-write). Draft pruned to _drafts/.
   prev_completed:
     level: chapter-complete
     slug: b01c11
     completed_at: 2026-06-03T00:00:00Z
   next:
-    command: /and-substance chapter b01c12 Phase 2 (screen-writer scene chunks)
+    command: /and-write b01c12
     args: [b01c12]
   reason: continue
   failure: null
+  carry_to_write: |
+    pl-2026-06-03-004 (5 bones-execution watches): s02 weather-image enacted-not-ambient; s03 un-routed
+    clauses as physical stopping-beat (not interior enumeration); s03 hand-on-ledger lift-and-move (no
+    camera-linger); s04 Gold-Morning-word needs accumulated referent-weight (Earth-Bet shape-language only,
+    no proper-noun Khepri in prose); s01/s03 Wren-anchor as record-keeping not affection. ALSO pl-2026-05-30-002
+    (Wren-omission ENACTED physical, not moral narration) family. EVENT-CONCRETENESS watch (spine-legibility):
+    s03 refusal + s04 Khepri-threshold are the central-event bones — must be concrete SVO, not abstraction-dominant.
   pending_depth_passes: []
   pending_threading_holds: []
   pending_cohere: "DEC-0073/0075: consecutive-abstract N=6 (c06-c11). Schedule /and-cohere b01 BEFORE c13 (standing recommendation, reaffirmed twice). c12 production proceeds; cohere is opt-in post-ship."

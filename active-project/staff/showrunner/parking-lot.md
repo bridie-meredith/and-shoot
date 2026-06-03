@@ -1824,3 +1824,45 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-06-03-004
+      created_at: 2026-06-03T00:00:00Z
+      created_by: "/and-substance chapter b01c12 Phase 5 (audience trio bones-execution watches: cape-fic 3 + dark-fantasy 2, convergent)"
+      target:
+        command: /and-write
+        scope: "b01c12"
+        phase: null
+      severity: SOFT
+      description: |
+        Five convergent bones-execution watches attached to the b01c12 Phase 5 3/3 SUBSTANCE-FELT
+        ACCEPT — write-time prose/SVO discipline for /and-write Phase 1 scene-decomposition, NOT
+        chunk revisions. Each is a place the chunk-layer planning language could drift into
+        stated-rather-than-enacted prose at bones if not watched:
+        (a) s02 closing weather image ("the morning is already warm with the kind of warm that comes
+            before the bay-wind clears it") — ENACT as Taylor's body paired to setting (stylus set
+            beside the packet, the warm settling on a held hand) = indifferent-world-continuance.
+            NOT ambient atmosphere filling space after the collision (cape-fic + dark-fantasy both).
+        (b) s03 the three un-routed-content clauses ("the fact that / that / that ... she is not
+            naming as one") — ENACT as a physical stopping-before-writing beat (hand stops, the
+            stylus not reaching the field), NOT Taylor's interior enumeration of what she declines
+            to write. Enacted vs stated withholding read differently and the distinction is not
+            recoverable at stitch (cape-fic).
+        (c) s03 hand-on-ledger beat ("Her hand stays on it a moment before she lifts it") — must
+            LIFT AND MOVE (entry closes, scene ends on function), NOT a camera-lingers-on-what-she-
+            protects moment (dark-fantasy). The danger is catharsis-that-isn't-earned.
+        (d) s04 "the thing-she-did-at-Gold-Morning word" — must carry accumulated referent-weight
+            through the chapter's prior bones (rhymes-with framing, aggregate-shape language, full-feed
+            density building toward the threshold) so the un-named word arrives as FELT weight, not
+            vague circling (cape-fic). Keep Earth-Bet fence: shape-language only, no proper-noun
+            "Khepri" in prose (worm-canon, fence ruled CLEAN at chunk).
+        (e) s01/s03 Wren-as-boundary + relational-anchor settlement — ENACTED as record-keeping /
+            operational act (indexed-but-unwritten state, the column entry), NOT interior moral
+            narration or affection (dark-fantasy + the recurring pl-2026-05-30-002 watch).
+      context_refs:
+        - active-project/audience/cape-fic-reader/stm.md
+        - active-project/audience/dark-fantasy-reader/stm.md
+        - active-project/staff/showrunner/memory.md  # chapters[b01c12].scenes (per-scene bones-execution-watch comments)
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
