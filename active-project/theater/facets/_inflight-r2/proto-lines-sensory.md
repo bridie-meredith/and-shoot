@@ -28,7 +28,7 @@
 27 taylor-hebert-kl-122ac closes the anchor-column entry
 28 taylor-hebert-kl-122ac lifts the hand
 29 taylor-hebert-kl-122ac extends the muddy-way ward-cluster
-30 the insects fill the muddy-way upper-margin
+30 the insects fill the muddy-way upper-margin [sensory:3]
 31 the muddy-way entry closes the fifth-ward circuit
 32 the feed returns all five wards
 33 the count runs the full-circuit return
@@ -38,6 +38,6 @@
 37 the accounting reaches the breach column
 38 the accounting reaches the shape-word
 39 the accounting advances the count
-40 taylor-hebert-kl-122ac closes the architecture entry
+40 taylor-hebert-kl-122ac closes the architecture entry [sensory:4]
 41 the ledger entry takes the full-circuit count
-42 the breach column takes the threshold entry
+42 the breach column takes the threshold entry [sensory:5]

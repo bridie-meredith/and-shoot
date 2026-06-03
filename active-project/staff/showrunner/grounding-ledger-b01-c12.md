@@ -37,7 +37,15 @@ grd-001:
   license: GROUNDING-REQUIRED
   licensed_at: 2.5
   licensed_by: aliveness-reviewer
-  status: open
+  status: satisfied
+  satisfied_by: sensory:3, sensory:4
+  resolution_note: >
+    sensory:3 @30 (pressure: partial-circuit-insect-weight -> full-circuit-weight-settled)
+    grounds the full-deployment placement as proprioceptive weight-settled event.
+    sensory:4 @40 (tactile: stylus-on-page-motion -> palm-flat-on-closed-page) grounds
+    the architecture-close as hand on physical ledger page. Complements feel:2 @40
+    (breath-flat) without duplication. BREACH-AS-COLD-LEDGER-FACT preserved — no
+    catharsis or recognition-arriving authored.
 
 # ---------------------------------------------------------------------------
 grd-002:
@@ -66,7 +74,17 @@ grd-002:
   license: GROUNDING-REQUIRED
   licensed_at: 2.5
   licensed_by: aliveness-reviewer
-  status: open
+  status: satisfied
+  satisfied_by: sensory:5
+  resolution_note: >
+    sensory:5 @42 (light: late-afternoon-surface-brightness -> end-of-day-dimming)
+    grounds the breach-column filing as a person at a surface in late-afternoon light
+    going to end-of-day dimming — the moral_framework -1.0 cost-filing happens TO a
+    body at a table, not in abstract column space. Register stays cold: light-dimming
+    is environmental, not affective. @38 cipher untouched (no sensory entry AT @38;
+    @40/@42 proximity carries the ledger register across the shape-word without naming it).
+    BREACH-AS-COLD-LEDGER-FACT preserved.
 
 # ---------------------------------------------------------------------------
-open-entry count: 2
+open-entry count: 0
+satisfied-entry count: 2
