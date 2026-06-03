@@ -6,7 +6,7 @@ rubric: design/shoot-v2/rubric-vibes.md V1 + V1.1-patch
 inflight: active-project/theater/facets/_inflight/proto-lines-vibes.md
 pre-seeded-state: actors/*/vibes.md (world-build load; constitutes authoritative existing state per V1.1-patch Patch 1)
 episode-scope-prior-state: none (no prior vibes facet; first episode vibes file for this project)
-entry-count: 11
+entry-count: 12
 cull-count: 0
 ---
 
