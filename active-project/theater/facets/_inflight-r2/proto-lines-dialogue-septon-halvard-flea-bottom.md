@@ -18,14 +18,14 @@
 18 the fly works the ceiling-corner
 19 taylor-hebert-kl-122ac stops the lane
 20 the tallow-smoke crosses the lane
-21 taylor-hebert-kl-122ac takes the two-breaths [feel:2]
+21 taylor-hebert-kl-122ac takes the two-breaths
 22 taylor-hebert-kl-122ac sets the jaw
 23 taylor-hebert-kl-122ac resumes the lane
 24 septon-halvard-flea-bottom finds the water-trough
 25 taylor-hebert-kl-122ac reaches the water-trough
-26 septon-halvard-flea-bottom speaks to taylor-hebert-kl-122ac
+26 septon-halvard-flea-bottom speaks to taylor-hebert-kl-122ac [septon-halvard-flea-bottom:1]
 27 taylor-hebert-kl-122ac speaks to septon-halvard-flea-bottom
-28 septon-halvard-flea-bottom speaks to taylor-hebert-kl-122ac
+28 septon-halvard-flea-bottom speaks to taylor-hebert-kl-122ac [septon-halvard-flea-bottom:2]
 29 taylor-hebert-kl-122ac leaves the water-trough
 30 taylor-hebert-kl-122ac walks the route
 31 septon-halvard-flea-bottom fills the water-skin

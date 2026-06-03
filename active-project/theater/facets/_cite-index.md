@@ -2,7 +2,7 @@
 generated: 2026-06-03
 source: active-project/theater/proto-lines/b01-c13.md + active-project/theater/facets/
 scope: 9 facet files + 1 proto-lines file
-totals: 62 facet entries; 22/31 protolines decorated (71.0%)
+totals: 61 facet entries; 22/31 protolines decorated (71.0%)
 
 ## Density distribution (protolines by citation count)
 
@@ -10,8 +10,8 @@ totals: 62 facet entries; 22/31 protolines decorated (71.0%)
 |------------|-------|
 | 0 (bare)   | 9 |
 | 1          | 6 |
-| 2          | 4 |
-| 3          | 7 |
+| 2          | 5 |
+| 3          | 6 |
 | 4          | 2 |
 | 5          | 1 |
 | 7          | 1 |
@@ -59,14 +59,13 @@ totals: 62 facet entries; 22/31 protolines decorated (71.0%)
   state:13 @31 back=Y co=[feel:1, sensory:4, vibes:16, vibes:17]
   state:14 @7 back=Y co=[narrator:1, state:3, state:15, vibes:1, vibes:2, vibes:3]
   state:15 @7 back=Y co=[narrator:1, state:3, state:14, vibes:1, vibes:2, vibes:3]
-  state:16 @16 back=Y co=[mem:1, state:17]
-  state:17 @16 back=Y co=[mem:1, state:16]
+  state:16 @16 back=Y co=[state:17]
+  state:17 @16 back=Y co=[state:16]
   state:18 @19 back=Y co=[loc-state:5, narrator:4, state:9, state:10, state:19, vibes:7, vibes:8, vibes:9]
   state:19 @19 back=Y co=[loc-state:5, narrator:4, state:9, state:10, state:18, vibes:7, vibes:8, vibes:9]
   state:20 @30 back=Y co=[mem:3, narrator:7]
 
-### mem (3 entries)
-  mem:1 @16 back=Y co=[state:16, state:17]
+### mem (2 entries)
   mem:2 @23 back=Y co=[narrator:5]
   mem:3 @30 back=Y co=[narrator:7, state:20]
 

@@ -1,13 +1,31 @@
-# In-flight R2 citation cascade — memory facet — b01-c13
-# Scope: [mem:<id>] tokens ONLY. Bodies byte-identical to active-project/theater/proto-lines/b01-c13.md.
-# Source cite-index hash: 0e12ee9c89ee2002e4b5a6b751c9c393e02bbbf5941a58c6b61ba06b45468e30
-# R2 mutation: mem:1 @16 DELETED (cascade 2) — [mem:1] stripped from @16; co-citation back-refs on state:16/state:17 drop the [mem:1] anchor (state entries themselves untouched, owned by state facet).
-# Survivors: mem:2 @23, mem:3 @30 — tokens unchanged.
-
+1 the blowfly takes the crate-ledge
+2 the household-agent stands the trestle-table
+3 the salt-fish-supplier faces the household-agent
+4 the supplier's-son shoulders the wrapped-crates
+5 the household-agent tallies the fish-account
+6 the blowfly grips the crate-ledge
+7 the household-agent drops the shoulders
+8 the supplier's-son picks the empty-crate
+9 taylor-hebert-kl-122ac releases the blowfly
+10 the fly takes the ceiling-corner
+11 the green-faction-clerk sets the document
+12 aldric takes the chair
+13 the magistrate writes the procedural-form
+14 aldric lifts the cord
+15 the magistrate lifts the d06-document
 16 the fly grips the ceiling-corner
+17 aldric grips the table
+18 the fly works the ceiling-corner
+19 taylor-hebert-kl-122ac stops the lane
+20 the tallow-smoke crosses the lane
+21 taylor-hebert-kl-122ac takes the two-breaths
+22 taylor-hebert-kl-122ac sets the jaw
 23 taylor-hebert-kl-122ac resumes the lane [mem:2]
+24 septon-halvard-flea-bottom finds the water-trough
+25 taylor-hebert-kl-122ac reaches the water-trough
+26 septon-halvard-flea-bottom speaks to taylor-hebert-kl-122ac
+27 taylor-hebert-kl-122ac speaks to septon-halvard-flea-bottom
+28 septon-halvard-flea-bottom speaks to taylor-hebert-kl-122ac
+29 taylor-hebert-kl-122ac leaves the water-trough
 30 taylor-hebert-kl-122ac walks the route [mem:3]
-
-# Cascade note (cross-facet, advisory — not actioned here; memory R2 self-scoped):
-# state:16 @16 and state:17 @16 previously carried co=[mem:1, ...] in the cite-index. The [mem:1] back-ref is now dead.
-# The state-facet co-citation lists should drop mem:1 at the next cite-index rebuild. state:16/state:17 bodies + the state facet file are NOT touched by this memory-R2 pass (self-scoped deletion authority — fence).
+31 septon-halvard-flea-bottom fills the water-skin
