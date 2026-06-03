@@ -1,7 +1,27 @@
 # Aggregate State — taylor-westeros-good-intentions
 
 # Rolling forward-feed channel for cross-chapter narrative continuity (schema: schemas/aggregate-state.schema.md).
-# Producer: /and-stitch Phase 10 (forward-thread). Consumer: /and-substance chapter b01c13 Phase 0.
+# Producer: /and-stitch Phase 10 (forward-thread). Consumer: /and-substance chapter b01c14 Phase 0.
+# Scoped through b01c13. c13 rolled (hinge, d13; the articulated-contempt + Halvard-foreclosure chapter;
+#   from chapters[b01c13].substance_delta_measured):
+#   political_register-prot +1.5 (->5; articulate-contempt threshold crossed — diffuse resentment becomes
+#     named by name; the word "contempt" arrives in the functional register as a finding-not-a-decision @23-@27;
+#     s01 provisioning-humiliation + s02 magistrate-pretext + s03 naming-event @ +0.5 each),
+#   political_register-world +0.5 (->7.0; the Green apparatus operationalizes Taylor's d06 ward-elder list in
+#     a magistrate proceeding @13-@17 — enforcement now VISIBLE on-page; Aldric detained on a stolen-cord pretext,
+#     the verdict pre-inscribed, the list the engine).
+#   HELD: moral_framework -2 (naming the contempt is directed outward, not a breach event — no delivery, no
+#     instrumentalization; framework holds), relational_anchor_status 4.5 (Wren not in the feed-events this chapter),
+#     moral_legibility_to_self 5.5 (contempt named OUTWARD at the apparatus; recognition-of-repetition not turned
+#     to the ledger itself — crack not opened), social_tether-antag 6 (Halvard foreclosure is Taylor-unilateral,
+#     does not affect the patron-lever; no Otto contact), capability 6.5, position-prot-rise 5, position-world 7,
+#     position-prot-collapse 7 + social_tether-prot-collapse 8 (collapse axes still dormant at start_rank),
+#     social_tether-prot-rise 8.5.
+#   hook-0007 (Halvard counter-argument) FORECLOSED on-page (DEC-0071 FORECLOSE@c13; the water-trough encounter
+#     @29-@45 — Taylor runs the counter aloud and leaves mid-speech; the unanswered mirror "a man who did not know
+#     whose hand he was naming"). Halvard's last substantive encounter. pl-2026-06-03-006(a) Halvard-foreclosure-watch
+#     SATISFIED. Aldric introduced (the d06-list ward-elder, detained on pretext). 0 threading edits applied
+#     (every callback already on-page); PASS-THREAD; c14 Phase 0 CLEAR.
 # Scoped through b01c12. c12 rolled (climax-aftermath, d08; the gap-refusal + Khepri-threshold chapter;
 #   from chapters[b01c12].substance_delta_measured):
 #   moral_framework -1.0 (->-2; irrevocable-Khepri-repetition threshold crossed @42, surfaced-and-suppressed; systematic-override now irrevocable at full scale),
@@ -47,8 +67,8 @@ aggregate_state:
   version: 1
   project: taylor-westeros-good-intentions
   through_book: b01
-  through_chapter: b01c12
-  last_updated: 2026-06-03T12:00:00Z   # c12 climax-aftermath threaded: 5 axes moved (moral_framework -1, capability +1, relational_anchor +1, position-prot-rise +1, social_tether-prot-rise +0.5), hook-0003 PAID, hook-0014 advanced (3rd withhold), 1 hook opened (hook-0015 gap-lanes courier), 2 revision_layer entries (rev-0005 + rev-0006, both presentation-reinforcement acknowledged:true), 0 unacknowledged-substantive (c13 Phase 0 CLEAR — PASS-THREAD)
+  through_chapter: b01c13
+  last_updated: 2026-06-03T18:35:00Z   # c13 hinge threaded: 2 axes moved (political_register-prot +1.5 -> 5.0 articulate-contempt threshold; political_register-world +0.5 -> 7.0 d06-list operationalized in magistrate proceeding), all others HELD, hook-0007 FORECLOSED on-page (DEC-0071 FORECLOSE@c13), Aldric introduced, 0 revision_layer entries (0 cosmetic + 0 presentation-reinforcement — every callback already on-page; PASS-THREAD), 0 unacknowledged-substantive (c14 Phase 0 CLEAR). pl-2026-06-03-006(a) Halvard-foreclosure-watch SATISFIED
   last_updated_by: and-stitch-phase-10
 
   axis_state:
@@ -101,12 +121,12 @@ aggregate_state:
       notes: "non-linear; c02 +0.5 (coverage-map recognition arrives + suppressed under harm-reduction) + c06 +0.5 (honest accounting of name-delivery deepens the crack) + c10 +0.5 (detention visible in feed; Taylor runs the accounting and files Corwick as a closed entry — suppressed recognition event, crack deepens but does not open; the lower-gate face persists in the feed-record where the ledger keeps no column). c12 HELD at 5.5 — the Khepri shape-word surfaced in the full-scale accounting for the duration of ONE count and was SUPPRESSED before it could settle; the crack is present (same suppression pattern) but does NOT open this chapter. c12's suppression is the last/most-intense pre-opening event; the crack opens at the d14-range full-recognition event where the axis actually moves (NOT the d10 trajectory milestone = c10 content, already past). c07 genuine-engagement-with-Halvard but resolution deferred not advanced; c08/c09/c11 HELD"
 
     - axis: political_register-prot
-      rank: 3.5
+      rank: 5
       start_rank: 1
-      delta_since_start: 2.5
-      last_movement_at: b01c09
+      delta_since_start: 4
+      last_movement_at: b01c13
       last_updated_by: and-stitch-phase-10
-      notes: "monotonic; c05 +1.5 (first resentment color, cl-d05 first tranche; neutral-instrumentally-observant foreclosed) + c07 +0.5 (Halvard encounter forces articulation of resentment's object) + c09 +0.5 (cl-d05 continuation: resentment-color deepens on a named particular — the lower-gate/Corwick faction-inference, 'a thing already written... a direction I did not infer so much as recognize'). c08 HELD (Aemond feed-ref is logistics, not behavioral)"
+      notes: "monotonic; c05 +1.5 (first resentment color, cl-d05 first tranche; neutral-instrumentally-observant foreclosed) + c07 +0.5 (Halvard encounter forces articulation of resentment's object) + c09 +0.5 (cl-d05 continuation: resentment-color deepens on a named particular — the lower-gate/Corwick faction-inference, 'a thing already written... a direction I did not infer so much as recognize') + c13 +1.5 (ARTICULATE-CONTEMPT THRESHOLD crossed: the d09-trajectory articulated-contempt milestone — diffuse resentment becomes NAMED BY NAME; two feed-events in one week (s01 provisioning-humiliation, the copper-margin worked as a tool; s02 magistrate-pretext, the form written before the answer) land the word in the functional register at s03 @23 — 'contempt. Not resentment... a verdict about quality, and the evidence was already counted and already true.' The word arrives as a finding-not-a-decision (@27): 'it did not bend the route by a single stone.' The contempt-WITHOUT-refusal shape at first appearance, three @ +0.5 each across s1/s2/s3). c08 HELD (Aemond feed-ref is logistics, not behavioral)"
 
     - axis: social_tether-prot-rise
       rank: 8.5
@@ -141,12 +161,12 @@ aggregate_state:
       notes: "Green consolidation; c04 +1.0 (Flea Bottom intelligence layer delivered, cl-world-d04 — first KL street-layer intel) + c10 +1.0 (cl-world-d04: arrangement formalized = Green succession channel solidifies; position-world gain from the intelligence architecture Taylor accepted; 1.0 of 2.0 remaining, journey-required cl03a). HELD c05-c09"
 
     - axis: political_register-world
-      rank: 6.5
+      rank: 7.0
       start_rank: 5
-      delta_since_start: 1.5
-      last_movement_at: b01c11
+      delta_since_start: 2.0
+      last_movement_at: b01c13
       last_updated_by: and-stitch-phase-10
-      notes: "c10 +1.0 (cl-world-d07 FIRST tranche: Green succession channel solidifies through the formalized arrangement — political_register-world's first movement off start_rank 5) + c11 +0.5 (Green succession channel consolidated post-Corwick-detention; courier detention leveraged by Green apparatus for succession-channel consolidation; second incremental advance). FIRST tranche +1.0 of +2.0 drawn at c10; c11 additional +0.5 outside the original cl-world-d07 tranche structure (emergent from the courier-detention consolidation). Balance for future allocation (NOT completed). Held flat c01-c09"
+      notes: "c10 +1.0 (cl-world-d07 FIRST tranche: Green succession channel solidifies through the formalized arrangement — political_register-world's first movement off start_rank 5) + c11 +0.5 (Green succession channel consolidated post-Corwick-detention; courier detention leveraged by Green apparatus for succession-channel consolidation; second incremental advance) + c13 +0.5 (the Green apparatus OPERATIONALIZES Taylor's d06 ward-elder list in a magistrate proceeding @13-@17 — Aldric, a named ward-elder from the list, detained on a stolen-cord pretext; the verdict pre-inscribed; the cord the pretext, the list the engine, the document in the magistrate's hand the one Taylor handed to Jarvis 'lifted now by another hand to decide a man.' Enforcement now VISIBLE on-page; succession-position advances through enforcement). FIRST tranche +1.0 of +2.0 drawn at c10; c11 +0.5 + c13 +0.5 emergent advances outside the original cl-world-d07 tranche structure. Held flat c01-c09"
 
   open_hooks:
     - hook_id: hook-0001

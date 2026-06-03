@@ -97,3 +97,25 @@ clean draft: active-project/draft/b01-c13.md (preamble + 4 scenes; no scene-call
 RECONCILE:
   bones: rendered+merged+dropped+rendered-illegible = 31 = authored (31). (fused: @1+@2, @6->@9 scene-A; @24+@25 scene-D; 0 dropped; 0 rendered-illegible)
   facets: rendered + dropped + unrendered-remainder = 61 cite-index entries. NI 7 rendered; memory 2 rendered; sensory 4 rendered; feeling 2 rendered; loc-state 7 (scene-orient folded); state-updates 20 (continuity bookkeeping — not all prose-surfaced, tracked as state not render); vibes 17 (register-color, folded into NI/prose tone — presentation, not discrete sentences); exposition 2 (1 preamble + 1 inline-appositive @12). unrendered-remainder: state-updates + vibes are continuity/register facets (consumed as tone + state, not discrete prose spans) — FLAG-UNRENDERED-REMAINDER not raised (these facet classes are non-discrete-surface by design, consistent with c12 RECONCILE).
+
+## Phase 10 — Forward-thread edits
+verdict: PASS-THREAD (0 substantive parking-lot items; 0 uncertain held)
+edits applied: 0 cosmetic + 0 presentation-reinforcement.
+rationale: c13 lands all three threading-review classes on-page without intervention —
+  (1) UNPAID-HOOK hook-0007 (Halvard, DEC-0071 FORECLOSE@c13): foreclosure STAGED on-page —
+      Halvard's last substantive encounter at the water-trough (@29-@45); Taylor runs the counter
+      aloud (@35) and leaves mid-speech (@41); unanswered-mirror close (@45 "a man who did not
+      know whose hand he was naming"). hook-0007 -> paid/foreclosed at b01c13. pl-2026-06-03-006(a)
+      Halvard-foreclosure-watch SATISFIED (the foreclosure landed; the thread did not drop).
+      hook-0015 (gap-lanes courier) correctly absent — c14 material, holds open.
+  (2) MISSED-CALLBACK: none open. Halvard's recurring-fixture chandler's-row node is tied to the
+      new water-trough node already on-page (@29 "where the chandler's row gave out onto the open
+      ground before the fishmongery"); the d06-list is operationalized + origin-restated on-page
+      (@13 Aldric "one of the men whose name had been on the list"; @17 "the document I had set
+      down in functional description and handed to Jarvis"). No cost-free reinforcing callback owed.
+  (3) STATE-DRIFT: none. The contempt-naming (@23-@27, finding-not-decision) is consistent with
+      political_register-prot 3.5->5.0; the apparatus lifting Taylor's own document to seal a
+      pre-written verdict (@17) is consistent with political_register-world 6.5->7.0.
+  Minimal-change discipline: every callback a threading edit would add is already present; no
+  gratuitous reinforcement applied. 0-unacknowledged-substantive => c14 Phase 0 CLEAR.
+aggregate-state: updated through b01c13 (last_updated_by and-stitch-phase-10).
