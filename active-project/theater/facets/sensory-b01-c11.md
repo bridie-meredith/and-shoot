@@ -3,17 +3,20 @@ chapter: b01c11
 author: studio
 rubric: design/shoot-v2/rubric-sensory.md (V3 locked 2026-05-21)
 bones: 27
-entries: 2 (pre-cull) | 2 (post-cull: 0 removed)
-density: 2/27 = 7.4%
-density-note: SHORT-CHAPTER EXEMPTION ACTIVE (27 < 30; modality-count = floor = 2; effective ceiling = max(6%, 2/27) = 7.4%; ADVISORY not blocking)
-modalities: smell + sound (2; ≥2 floor met)
-per-scene-cap: scene-A=0, scene-B=1, scene-C=0, scene-D=1 (all ≤3)
-mode: BLIND
+entries: 5 (pre-cull) | 5 (post-cull: 0 removed)
+density: 5/27 = 18.5%
+density-note: SHORT-CHAPTER EXEMPTION ACTIVE (27 < 30; base entries 2 at 7.4% ceiling); entries 3-5 are LICENSED-GROUNDING-EXCEPTION (grd-001 ×2, grd-002 ×1) per grounding-ledger-b01-c11.md — exempt from frequency-band cap per Phase 4.6 AIRLESS-HOLE license
+modalities: smell + sound + thermal + tactile (4; ≥2 floor met)
+per-scene-cap: scene-A=0, scene-B=3, scene-C=1, scene-D=1 (all ≤3)
+mode: GROUNDING-ADD (Phase 4.6; grd-001 + grd-002 satisfied)
 
 ---
 
 1 @11 smell: shop-ambient -> paper-burning-char
 2 @27 sound: stylus-on-surface-rhythm -> silence
+3 @12 thermal: shop-ambient -> ash-dish-residual-warmth  # licensed-grounding-exception: grd-001 (in-room physical; the iron-dish holds burn-residue heat after the paper is fully ash; audience-perceptible without feed-extension)
+4 @14 smell: paper-burning-char -> char-smoke-curl  # licensed-grounding-exception: grd-001 (feed-relay: the smoke-curl as perceived through the insects in the worktable ambient zone; Earth-Bet fence held — rendered as physical sensory data, not merchant mind-reading; old-state anchored to sensory:1 @11)
+5 @19 tactile: hands-empty -> packet-cloth-weight  # licensed-grounding-exception: grd-002 (packet's physical weight and cloth surface in Taylor's hands as she opens it; locates the body in the routing cycle; bare verb "opens" does not self-carry tactile register)
 
 ---
 
