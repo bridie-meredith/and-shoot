@@ -21,7 +21,7 @@ fork: taylor-hebert-kl-122ac (feeling-show)
 18 the fly works the ceiling-corner
 19 taylor-hebert-kl-122ac stops the lane
 20 the tallow-smoke crosses the lane
-21 taylor-hebert-kl-122ac takes the two-breaths [feel:1]
+21 taylor-hebert-kl-122ac takes the two-breaths [feel:2]
 22 taylor-hebert-kl-122ac sets the jaw
 23 taylor-hebert-kl-122ac resumes the lane
 24 septon-halvard-flea-bottom finds the water-trough

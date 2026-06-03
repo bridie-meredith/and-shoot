@@ -11,7 +11,7 @@ fork: taylor-hebert-kl-122ac
 4 the supplier's-son shoulders the wrapped-crates
 5 the household-agent tallies the fish-account
 6 the blowfly grips the crate-ledge
-7 the household-agent drops the shoulders [state:1] [state:2]
+7 the household-agent drops the shoulders [state:14] [state:15]
 8 the supplier's-son picks the empty-crate
 9 taylor-hebert-kl-122ac releases the blowfly
 
@@ -21,11 +21,11 @@ fork: taylor-hebert-kl-122ac
 13 the magistrate writes the procedural-form
 14 aldric lifts the cord
 15 the magistrate lifts the d06-document
-16 the fly grips the ceiling-corner [state:3] [state:4]
+16 the fly grips the ceiling-corner [state:16] [state:17]
 17 aldric grips the table
 18 the fly works the ceiling-corner
 
-19 taylor-hebert-kl-122ac stops the lane [state:5] [state:6]
+19 taylor-hebert-kl-122ac stops the lane [state:18] [state:19]
 20 the tallow-smoke crosses the lane
 21 taylor-hebert-kl-122ac takes the two-breaths
 22 taylor-hebert-kl-122ac sets the jaw
@@ -37,5 +37,5 @@ fork: taylor-hebert-kl-122ac
 27 taylor-hebert-kl-122ac speaks to septon-halvard-flea-bottom [taylor-hebert-kl-122ac:1]
 28 septon-halvard-flea-bottom speaks to taylor-hebert-kl-122ac [septon-halvard-flea-bottom:2]
 29 taylor-hebert-kl-122ac leaves the water-trough
-30 taylor-hebert-kl-122ac walks the route [state:7]
+30 taylor-hebert-kl-122ac walks the route [state:20]
 31 septon-halvard-flea-bottom fills the water-skin
