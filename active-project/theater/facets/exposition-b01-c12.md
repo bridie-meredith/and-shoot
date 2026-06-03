@@ -1,9 +1,80 @@
 # exposition — b01-c12
 
 episode: b01-c12
-author: exposition-author (R1, BLIND)
+author: exposition-author (R1, BLIND) → R2 JUDGE (graph-aware; FACET-JUDGE mode)
+r2_judged: 2026-06-03 | cite_index_hash: f73df23718518f3cb726a1efc7d52d0789dda8f6
 voice: pov-frame first-person (Taylor Hebert)
 aggregate_range: 1-42 (42 bones, SILENT chapter — 0 speech bones; dialogue-adjacency fence window is clear for ALL anchors)
+
+# ============================================================================
+# R2 JUDGE DISPOSITION (graph-aware; locked-lens-facets in hand)
+# Both R1 entries judged against the now-locked graph (cite-index + 9 lens facets).
+# Counts: KEEP 2 | DELETE 0 | REWORD 0 | ADD 0.
+#
+# exposition:1 @0 prior-episode-bridge — KEEP. No lens facet carries the @0
+#   reader-state preamble; the bridge is exposition-own by construction (a
+#   per-chapter reader-state refresh, not a bone-anchored fire). All bridge terms
+#   confirmed register-resident against glossed-terms.md: Otto (b01c03:6),
+#   Jarvis (b01c03:3), the count/coverage/accounting/channel
+#   (coverage-map-instrument-family graph-resident b01c02), the wards (c01-c05
+#   register), the stitch-maker/Wren (b01c01:9), the lower city/Flea-Bottom
+#   (b01c01:4). ZERO new register entries promoted — same disposition as the
+#   c06 / c11 bridges. The cost-clause ("the wrong eyes named them") touches the
+#   witch-label cost at register-altitude WITHOUT spelling the trigger-geometry
+#   mechanic (s01 bone-body owns it; DEC-0076 over-explanation refusal honored).
+#   Cold-read (G1): reads as Taylor's own ledger-voice preamble; no impulse to
+#   edit; voice-fault clean (first-person throughout, no 3rd-person pronoun).
+#
+# exposition:2 @1 east-of-water-gate-lanes — KEEP (vs loc-state:1 @1).
+#   THE FLAGGED ADJUDICATION. loc-state:1 fires @1 carrying the-hook-ward at
+#   morning with the PHYSICAL at-establishment — lane-mouth-open,
+#   overhang-geometry-active, "the tight geometry that makes dense insect
+#   placement read as witch-label; place-anchor for the morning circuit."
+#   That is PHYSICAL-at-establishment of the hook-ward's overhang geometry.
+#   It does NOT carry place-IDENTITY: (a) that this is a distinct lane-cluster
+#   EAST OF THE WATER-GATE, named for the reader on first mention, and (b) that
+#   it is "the one ground Taylor's coverage cannot reach" — the gap-identity /
+#   coverage-boundary fact that is the chapter's spatial spine. NI:2 @7 + NI:3
+#   @10 carry the route-as-eastern-boundary, but (i) at @7/@10, not the @1
+#   first-mention, and (ii) as Taylor's INTERNAL cognition of the route, not a
+#   reader-facing place-orientation. The "what this place is / why the gap
+#   matters" gap is real and exposition-owned. Per rubric § Never-gloss:
+#   "loc-state firing at-establishment → exposition does NOT add time-of-day or
+#   location-shift" — loc-state DOES carry the morning + the physical geometry,
+#   and exposition refuses BOTH of those; what survives is the place-identity +
+#   gap-spine, which loc-state does not carry. DECISION: KEEP (PHYSICAL covered
+#   by loc-state, IDENTITY+gap-spine the real exposition-owned gap).
+#   REWORD considered and REFUSED: the "close overhangs let a thing pass
+#   hand-to-hand" clause reads at-rest as the MESSAGE-PASSING place-function
+#   (why the gap matters for Wren's route), NOT a duplicate of loc-state:2 @3's
+#   witch-label-trigger geometry; same physical feature, different load; the
+#   cold-read does not trip on it. No double-coverage. em-dash-fold survives
+#   (cheapest; SILENT chapter, fence-window clear at all anchors). 26 words
+#   (≤30 first-mention cap). Not a re-gloss: the only register entry for this
+#   slug is THIS chapter's own projected promote (glossed-in: b01c12), not a
+#   prior block.
+#
+# Scene-open-orient re-validation against the LOCKED graph (R1 authored 0; confirmed):
+#   s01 @1  — chapter open; @0 bridge + loc-state:1 carry. REFUSE (confirmed).
+#   s02 @11 — loc-state:4 fires @11 (the-feed-station, morning, packet-at-edge).
+#             (b) loc-state NOT silent. REFUSE (confirmed).
+#   s03 @17 — loc-state:5 fires @17 (the-feed-station, MIDDAY — carries the
+#             time-advance from morning). (a) continuous + (b) loc-state live.
+#             REFUSE (confirmed).
+#   s04 @29 — loc-state:7 fires @29 (the-feed-station, AFTERNOON — carries the
+#             time-advance + muddy-way extension). (b) loc-state live + (c) the
+#             chunk's own first clause names the time. REFUSE (confirmed).
+#   All four boundaries: lens carries time/place at-establishment → 0 scene-orient.
+#
+# Context-ledger: 0 open CONTEXT-REQUIRED entries (Phase 2.5 FOLLOW-PASS) → NO
+#   licensed adds. Confirmed. Add-cap unspent.
+# DEC-0076 honored: @38 shape-word (Khepri cipher) + s04 seam @30→@31→@32 +
+#   witch-label trigger-geometry — NO exposition authored toward any; opacity
+#   intentional, lens/bone-body/handoff-carried. WEAVE-FIXABLE @14 + @27 are
+#   lens-carried (NI/vibes); NOT picked up.
+# Earth-Bet fence: CLEAN. No Khepri / Gold-Morning / Worm-canon proper noun in
+#   any gloss-text; functional/Westerosi register only (cond-earth-bet-noun-fence).
+# ============================================================================
 
 # ============================================================================
 # AUDIENCE-MODEL NOTE

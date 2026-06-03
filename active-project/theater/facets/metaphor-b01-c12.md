@@ -20,4 +20,4 @@ author: editor
 #     no distinct memory or feeling anchor of its own — per-scene cap already consumed by @38
 #     entry; REFUSED: per-scene cap + no independent anchor.
 
-1 @38 metaphor: the architecture is the older shape, built in a different city | licensed-by: memory:2 + peak-bone:@38
+1 @38 metaphor: the architecture is the older shape, built in a different city | licensed-by: memory:3 + peak-bone:@38 + vibes:13 + vibes:14
