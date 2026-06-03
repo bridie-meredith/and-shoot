@@ -47,7 +47,7 @@ grounding-class: NO
 dialogue-anchor: NO
 
 **b01c13s01n04**
-SVO: the supplier's-son carries the wrapped-crates
+SVO: the supplier's-son shoulders the wrapped-crates
 shape: held
 axes_held: [{ axis: relational_anchor_status, rationale: "Wren not in scene; coercion's weight lands on a different smallfolk body; anchor holds at 4.5" }]
 cost_ledger_anchor: null
@@ -64,21 +64,21 @@ dialogue-anchor: NO
 note: Recast from `speaks to` form (orchestrator, /and-write Phase 1.5 pre-pass). The household-agent is a feed-observed background figure, not cast-resolvable and without a behavior card; rendering the coercion as a physical tally-action (not character dialogue) avoids a phantom dialogue-coverage obligation. The "agent speaks at length" texture is carried as the tally over the copper-penny margin; the central coercion event remains the lean at n07.
 
 **b01c13s01n06**
-SVO: taylor-hebert-kl-122ac holds the blowfly
+SVO: the blowfly grips the crate-ledge
 shape: held
-axes_held: [{ axis: political_register-prot, rationale: "Taylor chooses observation-stillness; does not withdraw or reassign the fly; the holding is the discipline — neutral-instrumentally-observant posture maintained under coercion-display" }]
+axes_held: [{ axis: political_register-prot, rationale: "Taylor maintains the fly's position on the ledge; observation-stillness held — neutral-instrumentally-observant posture under coercion-display" }]
 cost_ledger_anchor: null
-grounding-class: NO
+grounding-class: YES (crate-ledge — the blowfly at the ledge surface; concrete physical anchor)
 dialogue-anchor: NO
 
 **b01c13s01n07**
-SVO: the household-agent leans the trestle-table
+SVO: the household-agent drops the shoulders
 shape: moving
 axis_moves: [{ axis: political_register-prot, direction: up, magnitude: 1 }]
 cost_ledger_anchor: null
-grounding-class: YES (trestle-table — the central-event bone: the posture-of-satisfied-coercion forward lean, physical concrete action at a named surface)
+grounding-class: YES (trestle-table — the central-event bone: the posture-of-satisfied-coercion at account-close, concrete body-weight action at the table surface)
 dialogue-anchor: NO
-note: CENTRAL-EVENT BONE. The agent's forward lean at account-close = the mechanism of satisfied coercion made physical. This is the moment the copper-penny humiliation crystallizes as apparatus-behavior rather than commercial dispute. political_register-prot +0.5 (fractional; full scene +0.5 allocated to this bone at magnitude 1 on the 1-3 band; scene target met).
+note: CENTRAL-EVENT BONE. The agent's shoulder-drop at account-close = the satisfied-coercion posture made physical; the discrete body-weight release when the account closes in the apparatus's favor. This is the moment the copper-penny humiliation crystallizes as apparatus-behavior rather than commercial dispute. political_register-prot +0.5 (fractional; full scene +0.5 allocated to this bone at magnitude 1 on the 1-3 band; scene target met).
 
 **b01c13s01n08**
 SVO: the supplier's-son picks the empty-crate
@@ -182,39 +182,39 @@ dialogue-anchor: NO
 note: Recast from `speaks to` form (orchestrator, /and-write Phase 1.5 pre-pass). Aldric is a feed-observed ward-elder from the d06 list, not cast-resolvable and without a behavior card; the "attempting to explain the cord" texture is carried as the physical act of lifting the evidence-cord, not as character dialogue — avoids a phantom dialogue-coverage obligation.
 
 **b01c13s02n06**
-SVO: the magistrate glances the d06-document
+SVO: the magistrate lifts the d06-document
 shape: moving
 axis_moves: [{ axis: political_register-world, direction: up, magnitude: 1 }]
 cost_ledger_anchor: null
-grounding-class: YES (d06-document — the document the Green-faction clerk set at the table's edge; the magistrate's glance at it before writing the verdict = the Green apparatus using Taylor's d06 list operationally)
+grounding-class: YES (d06-document — the document the Green-faction clerk set at the table's edge; the magistrate physically taking up the list-output to decide the verdict = the apparatus using Taylor's d06 list operationally)
 dialogue-anchor: NO
-note: CENTRAL-EVENT BONE (political_register-world). The magistrate's glance at the document = the operational use of Taylor's d06 list. This is the concrete physical action where the list mechanism becomes visible: the document is the list-output, the glance is the apparatus using it. political_register-world +1 (the stakes-axis first move; its magnitude here must lead the aggregate for STAKES-AXIS-DOMINANT).
+note: CENTRAL-EVENT BONE (political_register-world). The magistrate lifting the document = the operational use of Taylor's d06 list — the physical taking-up IS the act of using the list to pronounce the verdict. This is the concrete physical action where the list mechanism becomes visible. political_register-world +1 (the stakes-axis first move; its magnitude here must lead the aggregate for STAKES-AXIS-DOMINANT).
 
 **b01c13s02n07**
-SVO: taylor-hebert-kl-122ac holds the fly
+SVO: the fly grips the ceiling-corner
 shape: held
-axes_held: [{ axis: moral_legibility_to_self, rationale: "Taylor watches what her list did; holds the connection without filing it under accounting; contempt directed outward, recognition-of-repetition foreclosed; the holding-without-filing is the discipline" }]
+axes_held: [{ axis: moral_legibility_to_self, rationale: "Taylor watches what her list did; holds the connection without filing it; contempt directed outward, recognition-of-repetition foreclosed; the holding-without-filing is the discipline" }]
 cost_ledger_anchor: null
-grounding-class: NO
+grounding-class: YES (ceiling-corner — the fly at the ceiling-corner; concrete location anchor)
 dialogue-anchor: NO
 
 **b01c13s02n08**
-SVO: aldric places his hands on the table
+SVO: aldric grips the table
 shape: moving
 axis_moves: [{ axis: political_register-prot, direction: up, magnitude: 1 }]
 cost_ledger_anchor: null
-grounding-class: YES (table — Aldric's hands on the table; concrete physical image from the chunk; the person-becoming-evidence made physical)
+grounding-class: YES (table — Aldric's hands gripping the table; concrete physical image from the chunk; the person-becoming-evidence made physical as a body in contact with a surface)
 dialogue-anchor: NO
-note: CENTRAL-EVENT BONE (political_register-prot). Aldric's hands on the table = the person from Taylor's list physically present as a body in a proceeding, not a name on a form. The abstraction of the d06 list becomes a person with hands on a surface. political_register-prot +1 (the second in-motion axis; magnitude 1).
+note: CENTRAL-EVENT BONE (political_register-prot). Aldric gripping the table = the person from Taylor's list physically present as a body in a proceeding, not a name on a form. The abstraction of the d06 list becomes a person in physical contact with a surface. political_register-prot +1 (the second in-motion axis; magnitude 1).
 
 **b01c13s02n09**
-SVO: taylor-hebert-kl-122ac holds the fly
+SVO: the fly works the ceiling-corner
 shape: held
-axes_held: [{ axis: political_register-prot, rationale: "Taylor does not move the fly, does not withdraw from the proceeding; continues to watch to the end; the continued watching is not indulgence — it is the feed-record completing itself" }]
+axes_held: [{ axis: political_register-prot, rationale: "Taylor does not move the fly, does not withdraw from the proceeding; the fly continues its circuit at the ceiling as the feed-record completes itself" }]
 cost_ledger_anchor: null
-grounding-class: NO
+grounding-class: YES (ceiling-corner — the fly working the ceiling-corner surface; distinct from n07's grip, now in motion at the same location)
 dialogue-anchor: NO
-note: Second held bone for political_register-prot — confirms the held discipline across the two in-motion deliveries; n09 and n06 together mark the hinge: Taylor watches the connection between her list and the outcome and does not withdraw from the feed.
+note: Second held bone for political_register-prot — confirms the held discipline across the two in-motion deliveries. Distinct from n07 (fly grips) by verb: n07 = grip/stillness; n09 = works/motion. Together n07 and n09 mark the hinge: Taylor watches the connection between her list and the outcome and does not withdraw from the feed.
 
 ---
 
@@ -264,57 +264,33 @@ note: Second held bone for political_register-prot — confirms the held discipl
 
 **b01c13s03n01**
 SVO: taylor-hebert-kl-122ac stops the lane
-shape: held
-axes_held: [{ axis: political_register-prot, rationale: "stopping before naming — the feed-record presents for assessment; Taylor holds the incoming accounting before the word arrives; resentment-color near the naming threshold" }]
-cost_ledger_anchor: null
-grounding-class: YES (lane — a lane she has walked five hundred times; the lane underfoot is the physical anchor; stopping on known terrain = the familiar becoming the site of the finding)
-dialogue-anchor: NO
-
-**b01c13s03n02**
-SVO: the accounting holds the household-agent-image
-shape: held
-axes_held: [{ axis: moral_legibility_to_self, rationale: "Taylor holds the feed-image of the household agent without filing it yet; the accounting runs but does not close; contempt directed outward; recognition-of-repetition foreclosed" }]
-cost_ledger_anchor: null
-grounding-class: NO
-dialogue-anchor: NO
-
-**b01c13s03n03**
-SVO: the accounting holds the magistrate-document-image
-shape: held
-axes_held: [{ axis: moral_framework, rationale: "Taylor holds the feed-image of the magistrate's pre-inscribed verdict; the accounting treats this as evidence, not a breach event; framework at −2 and not moving" }]
-cost_ledger_anchor: null
-grounding-class: YES (magistrate-document-image — the procedural form Taylor read through the fly; it appears in the accounting as a concrete object; image held here grounds the scene in the physical evidence from the prior proceeding)
-dialogue-anchor: NO
-
-**b01c13s03n04**
-SVO: the accounting holds the aldric-hands-image
-shape: held
-axes_held: [{ axis: relational_anchor_status, rationale: "Aldric's hands on the table — a person from the ward-elder list; Wren not in scene; anchor holds at 4.5; a different body's cost remains unpriced" }]
-cost_ledger_anchor: null
-grounding-class: NO
-dialogue-anchor: NO
-
-**b01c13s03n05**
-SVO: taylor-hebert-kl-122ac names the contempt
 shape: moving
 axis_moves: [{ axis: political_register-prot, direction: up, magnitude: 1 }]
 cost_ledger_anchor: null
-grounding-class: YES (the naming-event as concrete speech-act — "contempt" is a functional-register word; the name is a concrete act of assessment, not a perception or abstraction; the naming is the thing that happens, the SVO is actor-verb: taylor names)
+grounding-class: YES (lane — a lane she has walked five hundred times; the stop on known terrain is the body's registration of the completed assessment; the naming-threshold made physical)
 dialogue-anchor: NO
-note: CENTRAL-EVENT BONE (political_register-prot). The articulate-contempt threshold crossed: diffuse resentment becomes named by name. SVO: "taylor-hebert-kl-122ac names the contempt" — subject = Taylor, verb = names (concrete act of assessment), object = the contempt (the accumulated resentment-object). Not "notices" or "feels" — names, which is an active act of classification with evidence. political_register-prot +1.
+note: CENTRAL-EVENT BONE (political_register-prot). The stop is the articulate-contempt threshold crossing made physical — diffuse resentment becomes named contempt; the body stops when the assessment completes. "contempt" and the evidence-running (the two feed-events held together) are interior recall realized downstream in the narrator-interest/memory facets — omission rationale: interior recall is not bone-concretizable; the naming's concrete correlate is the stop. political_register-prot +1. event_map [event: naming-event] + [mechanism: naming-act] map here.
 
-**b01c13s03n06**
-SVO: taylor-hebert-kl-122ac takes two breaths
+**b01c13s03n02**
+SVO: the tallow-smoke crosses the lane
 shape: held
-axes_held: [{ axis: social_tether-antag, rationale: "Taylor stands with the finding; patron-lever not engaged; the contempt is Taylor-internal and does not surface toward Otto's architecture" }]
+axes_held: [{ axis: moral_framework, rationale: "Taylor is not confronted with new breach-threshold information; the lane is familiar terrain; framework at −2 and not moving" }]
 cost_ledger_anchor: null
-grounding-class: YES (two breaths — concrete physical action; the pause after naming before resuming; the body doing something measurable)
+grounding-class: YES (lane / tallow-smoke — a concrete place-situated particular; the lane in evening atmosphere; grounds the stop in physical environment)
 dialogue-anchor: NO
 
-**b01c13s03n07**
+**b01c13s03n03**
+SVO: taylor-hebert-kl-122ac takes the two-breaths
+shape: held
+axes_held: [{ axis: moral_legibility_to_self, rationale: "Taylor stands with the finding after the stop; the contempt is directed outward, not turned on her own ledger; recognition-of-repetition foreclosed; the two-breath pause is the body dwelling with what the assessment produced without turning inward" }]
+cost_ledger_anchor: null
+grounding-class: YES (two-breaths — concrete physical action; the body's measurable pause at the site of the finding)
+dialogue-anchor: NO
+
+**b01c13s03n04**
 SVO: taylor-hebert-kl-122ac resumes the lane
 shape: held
-axes_held: [{ axis: political_register-prot, rationale: "contempt-without-refusal shape at first appearance: the naming does not change the route; it is a finding, not a decision; Taylor resumes walking; the contempt does not constitute refusal" }]
+axes_held: [{ axis: relational_anchor_status, rationale: "the naming does not engage the anchor; Wren not present; the resuming-without-turning carries the relational discipline — the finding does not transform into a relational proposition" }]
 cost_ledger_anchor: null
 grounding-class: YES (lane — Taylor resumes walking on the lane; movement on the same named physical ground as the stop in n01; the lane is unchanged)
 dialogue-anchor: NO
