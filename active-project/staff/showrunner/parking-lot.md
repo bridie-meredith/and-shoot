@@ -1736,10 +1736,43 @@ parking_lot:
         - active-project/staff/auditor/facets-final-audit.md  # fault-005, fault-011
         - active-project/theater/facets/state-updates.md  # Margit referrals section
         - active-project/theater/facets/location-state-b01-c11.md  # SEAM-C11-LOC-001/002/004
-      status: open
-      resolved_at: null
-      resolved_by: null
-      resolution_note: null
+      status: resolved
+      resolved_at: 2026-06-03T00:00:00Z
+      resolved_by: "margit dispatch during /and-substance chapter b01c12 cascade Phase 0"
+      resolution_note: |
+        All HIGH-priority and REQUIRED cards authored. Canonicalization decisions:
+
+        (1) oc-cloth-merchant-shop — SEAM-C11-LOC-004 canonicalization: library card already
+        existed at cards/locations/oc-cloth-merchant-shop.card.md (full quality; had been authored
+        but not yet added to INDEX.md or given a warehouse copy). Decision: DO NOT nest under a
+        hook-ward umbrella slug. The card is a distinct named location (a specific shop on a
+        specific corner, with distinct fixed-props and intelligence-node function) and the existing
+        oc- taxonomy does not use umbrella nesting — oc-rushwick, oc-pig-tallow-lane, etc. are all
+        flat. Stored as oc-cloth-merchant-shop. Library card confirmed at path; warehouse copy
+        created at active-project/warehouse/oc-cloth-merchant-shop.md. INDEX.md updated (added
+        to by_world/planetos + by_quality/full).
+
+        (2) oc-soap-rendering-lane — new library card authored at full quality:
+        cards/locations/oc-soap-rendering-lane.card.md. Geography: cross-lane approach and lane
+        interior between cloth-trade and tallow-rendering quarters; soap-rendering workshop at
+        mid-lane; cross-lane mouth is the exchange geometry for nighttime-visitor reports. Warehouse
+        copy at active-project/warehouse/oc-soap-rendering-lane.md. INDEX.md updated.
+
+        (3) oc-soap-lane-report-packet — new prop card authored at full quality:
+        cards/props/oc-soap-lane-report-packet.card.md. Functional state as of b01c11 @21 close:
+        seal_state route-ready, content complete (nighttime-visitor observation + precinct-pattern
+        sourcing annotation), location feed-station outbound stack, dispatch_state pending. Carry-
+        forward note to b01c12 in Functional State section. Warehouse copy at
+        active-project/warehouse/oc-soap-lane-report-packet.md. Props INDEX.md updated.
+
+        (4) oc-cloth-merchant-paper — DEFERRED. Burns @11 and exits tracking in c11; no
+        downstream persistence. Not required for b01c12. Noted as not-required-downstream.
+
+        (5) oc-feed-ledger field-extensions — NOT APPLIED. No oc-feed-ledger card found in
+        warehouse or library. This item is a schema extension on an existing card that does not
+        appear to have been authored yet. Noted for future: when oc-feed-ledger is authored,
+        the field-extension schema (source-field-entry, cloth-merchant-entry, jarvis/oswyn/
+        contacts/arrangement-entry) should be incorporated.
 
     - id: pl-2026-06-03-002
       created_at: 2026-06-03T00:00:00Z
@@ -1787,6 +1820,110 @@ parking_lot:
         cite-index back-links, so neither affects render correctness.
       context_refs:
         - active-project/staff/auditor/facets-final-audit.md  # fault-003, fault-001, fault-006
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-03-004
+      created_at: 2026-06-03T00:00:00Z
+      created_by: "/and-substance chapter b01c12 Phase 5 (audience trio bones-execution watches: cape-fic 3 + dark-fantasy 2, convergent)"
+      target:
+        command: /and-write
+        scope: "b01c12"
+        phase: null
+      severity: SOFT
+      description: |
+        Five convergent bones-execution watches attached to the b01c12 Phase 5 3/3 SUBSTANCE-FELT
+        ACCEPT — write-time prose/SVO discipline for /and-write Phase 1 scene-decomposition, NOT
+        chunk revisions. Each is a place the chunk-layer planning language could drift into
+        stated-rather-than-enacted prose at bones if not watched:
+        (a) s02 closing weather image ("the morning is already warm with the kind of warm that comes
+            before the bay-wind clears it") — ENACT as Taylor's body paired to setting (stylus set
+            beside the packet, the warm settling on a held hand) = indifferent-world-continuance.
+            NOT ambient atmosphere filling space after the collision (cape-fic + dark-fantasy both).
+        (b) s03 the three un-routed-content clauses ("the fact that / that / that ... she is not
+            naming as one") — ENACT as a physical stopping-before-writing beat (hand stops, the
+            stylus not reaching the field), NOT Taylor's interior enumeration of what she declines
+            to write. Enacted vs stated withholding read differently and the distinction is not
+            recoverable at stitch (cape-fic).
+        (c) s03 hand-on-ledger beat ("Her hand stays on it a moment before she lifts it") — must
+            LIFT AND MOVE (entry closes, scene ends on function), NOT a camera-lingers-on-what-she-
+            protects moment (dark-fantasy). The danger is catharsis-that-isn't-earned.
+        (d) s04 "the thing-she-did-at-Gold-Morning word" — must carry accumulated referent-weight
+            through the chapter's prior bones (rhymes-with framing, aggregate-shape language, full-feed
+            density building toward the threshold) so the un-named word arrives as FELT weight, not
+            vague circling (cape-fic). Keep Earth-Bet fence: shape-language only, no proper-noun
+            "Khepri" in prose (worm-canon, fence ruled CLEAN at chunk).
+        (e) s01/s03 Wren-as-boundary + relational-anchor settlement — ENACTED as record-keeping /
+            operational act (indexed-but-unwritten state, the column entry), NOT interior moral
+            narration or affection (dark-fantasy + the recurring pl-2026-05-30-002 watch).
+      context_refs:
+        - active-project/audience/cape-fic-reader/stm.md
+        - active-project/audience/dark-fantasy-reader/stm.md
+        - active-project/staff/showrunner/memory.md  # chapters[b01c12].scenes (per-scene bones-execution-watch comments)
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-03-005
+      created_at: 2026-06-03T00:00:00Z
+      created_by: "/and-facets b01c12 Phase 5 audit (flag-005 CONSTRAINT/RUBRIC-FIDELITY card-resolution SIGNAL)"
+      target:
+        command: margit-card-class-review
+        scope: "b01c12 facet card-slugs"
+        phase: null
+      severity: SOFT
+      description: |
+        Three facet card-slugs introduced/referenced in b01c12 facets do not resolve to warehouse
+        cards (all glosses reader-clear; SIGNAL not HARD at Phase 5):
+        - cond-kl-witch-label-formation-122ac (mem:1 @3 target) — the recurring witch-label monument
+          referral (companion to pl-2026-05-25-005 / pl-2026-06-03-002 monument-card-class family).
+          Margit should author the cond-* (or monument-*) card.
+        - loc:east-water-gate-lanes (vibes:4) — the chapter's coverage-gap spine location; reader-
+          established geography; margit canonicalize as oc-east-water-gate-lanes (or nest under a
+          hook-ward umbrella per existing taxonomy).
+        - loc:the-muddy-way (vibes:16) — s04 second-cluster location; reader-established; margit
+          canonicalize as oc-muddy-way (or hook-ward nest).
+        Non-blocking for /and-stitch (glosses carry). Create before /and-review verdict b01 (unresolved
+        slugs would flag at the book verdict pass).
+      context_refs:
+        - active-project/staff/auditor/facets-final-audit.md  # flag-005
+        - active-project/theater/facets/memory-b01-c12.md
+        - active-project/theater/facets/vibes-b01-c12.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-03-006
+      created_at: 2026-06-03T00:00:00Z
+      created_by: "/and-cohere b01 c06-c12 iteration-1 FAIL-COHERE (dramatist + naive structural CAUTIONs; admin DEC-0081 routes structural items here)"
+      target:
+        command: /and-review
+        scope: "verdict b01"
+        phase: null
+      severity: SOFT
+      description: |
+        Cross-chapter structural CAUTIONs from /and-cohere b01 c06-c12 (NOT per-chapter bones-revises — book-substance /
+        back-half shape items; the load-bearing Q6 apparatus-density is handled separately via the DEC-0081 prologue-variation pass):
+        (a) HALVARD counter-argument drift — seeded c07, no re-entry c08-c12; dramatist flags HOLD->DROP-RISK; needs >=1
+            structural re-entry before book close. PARTLY ADDRESSED: DEC-0071 already designates Halvard FORECLOSE@c13
+            ("last substantive encounter") — verify c13 actually lands the re-entry/foreclosure; if c13 holds him offstage
+            again, the thread drops. Watch at /and-substance chapter b01c13 Phase 3 + /and-review verdict b01.
+        (b) c11 ANTAGONIST-PRESSURE gap (dramatist REVISE) — c11 ran with no Otto move + absorbed the Rhaenyra cross-pressure
+            as color; c11 should have been the pressure-apex before c12. c11 shipped SHIPPED-WITH-CAVEATS; this is a retroactive
+            structural note for /and-review verdict b01 (book-level awareness) — not a c11 re-open unless verdict escalates.
+        (c) SERA payoff hole — the entire arrangement is owed against the protect-target (Sera), who never appears on-page
+            c06-c12. The protect-target must appear / the protection must pay (or visibly fail) before book close. Book-substance:
+            /and-substance book b01 forward chapters + /and-review verdict b01.
+        (d) DRAGONSTONE receipt — the c11 burned-message (Rhaenyra's faction read the cut thread) needs an in-book receipt;
+            tracked by hook-0012 (open). Future-chapter payoff; verify before book close.
+      context_refs:
+        - active-project/staff/reviews/cohere-b01-c06-c12-20260603T151822Z.md
+        - active-project/staff/reviews/cohere-dramatist-b01-c06-c12-20260603T151822Z.md
+        - active-project/staff/showrunner/aggregate-state.md  # hook-0007 Halvard, hook-0012 Dragonstone, hook-0005 Sera
       status: open
       resolved_at: null
       resolved_by: null

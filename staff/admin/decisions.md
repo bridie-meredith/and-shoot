@@ -4496,3 +4496,492 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0076 | 2026-06-03 | FAST (user-proxy, RUNBOOK R1)
+
+mode: user-proxy
+trigger: /and-substance chapter b01c12 Phase 5.5 chunk cold-read disposition
+context: |
+  b01c12 (d08 climax: coverage-gap refusal protecting Wren + Khepri-repetition threshold
+  surfacing-and-suppression) returned CHUNK-CLASS-B. Cold-reader summary maps to chapter goal
+  (Q6-level pass). Strict-CONTINUE (Q7 post-no-charity) = NO. Three decomposed causes:
+  (1) Cold-context holes — all established across c01–c11; Khepri/Gold-Morning opacity is the
+      Earth-Bet proper-noun fence operating by design (worm-canon-pedant ruled s04 surfacing
+      CLEAN).
+  (2) s04 seam — cold-reader calls s04 "a different chapter's climax stapled on." Dramatist
+      independently examined and ACCEPTED as climax-sound (s04 = terminal interior coda,
+      consequence-train of s03 refusal). Defensible design; prose-rendering risk.
+  (3) Apparatus-register density — "coverage/ledger/tranche/architecture" apparatus-metaphor
+      opacity. Recurring concern; DEC-0073/0075 flagged N=6 for /and-cohere before c13.
+
+decision: P — Proceed with risk recorded (SHIPPED-WITH-RISK-RECORDED)
+
+cold_read_risk_carry items for /and-stitch Phase 8.5 + Phase 9:
+  1. strict-CONTINUE=No (Class-B design-inherent; pre-dispositioned)
+  2. s04 seam — verify threshold-trigger lands as causally-earned consequence of s03 refusal,
+     not an arbitrary scene-pivot; stitcher must render the interior coda's causal chain legible
+     without expository bridge.
+  3. apparatus-register density — ledger/tranche/architecture vocabulary must not muffle the
+     Khepri beat; Phase 8.5 central-event-muffle check must explicitly test whether Khepri's
+     name/presence registers through the accounting register at the beat where it appears.
+  4. Khepri/Gold-Morning proper-noun opacity — design-inherent; Phase 9 may not FAIL on this
+     cause alone (coupling rule: cold-context gaps on a climax chapter mid-serial are not
+     delivery failures).
+
+basis: |
+  DEC-0072 (b01c11 Class-B) + DEC-0074 (c11 Phase 9 ship) + DEC-0060 (b01c08) exact precedent
+  chain. All three same pattern: summary maps, dramatist ACCEPT, upstream gates clean (2-of-3
+  audience SUBSTANCE-FELT; auditor PASS 0 HARD), strict-CONTINUE=No driven by cold-context +
+  design-inherent causes. (R) is the Class-A default, not the Class-B default. (S) is reserved
+  for when (P) is unacceptable — upstream gates at PASS unanimous, so (P) is acceptable. The
+  s04 seam concern is a prose-rendering risk that /and-stitch Phase 8.5 is designed to catch;
+  it does not belong at the chunk revision layer. The apparatus-density concern is the same
+  N=6 /and-cohere accumulation (DEC-0073/0075) — a chunk-layer re-author would not address it.
+
+trade-off: |
+  Risk of P: s04 seam may not render as causally-earned under stitch. Mitigated by: (a) cold_
+  read_risk_carry item 2 explicitly arms Phase 8.5 with the causal-chain test; (b) Phase 9
+  coupling rule pre-dispositions cold-context-caused CONTINUE=No; (c) if stitch fails the seam
+  test, /and-write revise targets only s04 bones, not full re-chunk. Apparatus-density risk
+  mitigated by item 3 (Khepri-beat explicit) + /and-cohere on deck before c13.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
+## DEC-0077 | 2026-06-03 | SLOW (process-critic)
+
+mode: process-critic
+trigger:
+  reason: failure
+  source_report: active-project/staff/auditor/write-b01c12-bone-gate.md
+  source_verdict: FAIL — 3 HARD (fault-001/003/004; single structural gap: s04 HELD-AXIS-NOT-WITNESSED for political_register-prot + social_tether-antag); 2 SIGNAL accept-with-rationale (ABSTRACTION-DOMINANT s04; REGISTER-AS-MANNERISM). Resolved in-cycle.
+  gate_path: .claude/commands/and-write.md#phase-6
+context: |
+  Two distinct patterns in b01c12's /and-write run:
+
+  PATTERN A — HELD-AXIS-NOT-WITNESSED (Phase 6 HARD): s04 scene contract declared
+  political_register-prot + social_tether-antag as held axes; zero bones in s04 carried
+  either axis in axes_held[]. Resolved in-cycle (fixer attached axes_held to two existing
+  bones). Fourth chapter-level occurrence of this class (c04: 5 axes; c06: 1 axis;
+  c10: 9 axes; c12: 2 axes). PROP-0011 covers this class.
+
+  PATTERN B — 15 unpaid-chatter bones (Phase 2 FAULT-BONE-DELTA-MALFORMED): screen-writer
+  authored grounding/setup bones as shape=chatter with null cost_ledger_anchor AND empty
+  axes_held[] across all 4 scenes (15/42 = 36%). Required a Phase 2 fixer pass. No prior
+  proposal covers this specific failure class at this scale (c09: 2; c04's FAULT-BONE-
+  DELTA-MALFORMED was magnitude pair-splits, not null-anchor chatter).
+
+decision: |
+  (A) OK-MERGED-INTO PROP-0011. Increment recurrence_count 3→4. Add b01c12 evidence ref.
+      Proposed_diff unchanged (Phase 1 step 4a completion gate for held-axis witnessing).
+      In-cycle fix confirms root cause is Phase 1 brief gap, not bone-count deficiency.
+
+  (B) OK — hold at first occurrence. Pattern B is a first-occurrence at scale. Phase 2 caught
+      it correctly; in-cycle fixer resolved all 15 at low cost. No gate failed to catch it;
+      no irreversible consequence. Non-catastrophic first occurrence → hold for recurrence.
+
+basis: |
+  (A) PROP-0011 mandatory merge (same change_type, same target, same root cause, 4th occurrence).
+  (B) Methodology: first-occurrence rule for non-catastrophic gate-caught failures. Gate chain
+      functioning as designed. Phase 1 self-check addition would be a second mandated completion
+      gate alongside step 4a; overhead cost exceeds periodic fixer-pass cost at single occurrence.
+
+rationale: |
+  PROP-0011 fully addresses Pattern A. The rollup-attribution note already added at count=3
+  covers the b01c12 root cause (axes were declared but omitted from bone-level axes_held[]).
+  No new proposed_diff content needed; the merge is administrative.
+
+  Pattern B: 15 is anomalous (36% of bones) but mechanically simple to fix — every chatter
+  bone needs either a held-axis or an anchor. Phase 2 is the correct catching gate; it fired.
+  Adding a Phase 1 self-check creates friction for a pattern that appeared at scale only once
+  across 12 chapters. Hold until recurrence at c13+ to determine if it's systematic.
+
+trade-off: |
+  (A) None — merge is mandatory by schema.
+  (B) Not proposing risks a repeat fixer pass at c13+. Proposing prematurely risks adding
+  Phase 1 overhead for a pattern that may not recur (absent from c05–c11 at scale).
+  Phase 2 fixer pass for 15 chatter bones costs less than a mandated completion-gate.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
+## DEC-0078 | 2026-06-03 | FAST (user-proxy, RUNBOOK R1)
+
+mode: user-proxy
+trigger: /and-stitch b01c12 Phase 9 terminal-gate disposition
+context: |
+  b01c12 Phase 9 split picture:
+  - Completeness PASS: central events recovered (ledger-refusal blank-source-field, five-ward
+    deployment, breach-column cost-entry withholding "older word"). 0 spine-staging-gaps,
+    0 FAIL, 7/7 central-event clusters STAGED. Prose-rationale-mute CLEAN. Phase 8.5 PASS
+    (@38 recognition registers through apparatus register, s04 causal-seam reads CAUSED).
+    No Step-4 cluster fired.
+  - Cold-read CONTINUE=No + low jeopardy + "airless" read: cold-reader complaint categories
+    are (1) cold-context proper-noun opacity (Khepri/Gold-Morning/Wren/Otto — prior-chapter-
+    resident + Earth-Bet fence by design); (2) design-inherent low jeopardy (CLIMAX of
+    internal/offstage stakes by substance contract); (3) apparatus-register density. All three
+    categories are explicitly named in DEC-0076 cold_read_risk_carry items 1/3/4. No new
+    complaint categories.
+  Precedent: DEC-0072 (c10 Phase 9) + DEC-0074 (c11 Phase 9) = SHIPPED-WITH-CAVEATS on
+  identical pattern. DEC-0076 coupling rule explicitly states "Phase 9 may NOT FAIL on
+  cold-context cause alone."
+  Phase 4 voice-embodiment: 0 VOICE-APPARATUS-DEFAULT, 0 EMBODIMENT-BLOCKED.
+  Grounding adds: prose-rationale-mute CLEAN.
+  Phase 8.5 context-aware: person present — "airlessness" is cold-context reader effect.
+  N=7 apparatus-density already routed to /and-cohere before c13 (DEC-0073/0075/0077, HIGH).
+
+options:
+  - (A) SHIPPED-WITH-CAVEATS: terminal ship; CONTINUE=No on pre-authorized categories;
+        apparatus-density routes to /and-cohere (not per-chapter depth pass).
+  - (B) PASS-WITH-DEPTH-PASS-REQUIRED: terminal ship but mandate /and-write revise
+        --from-signals + re-cascade before book-close.
+
+decision: (A) SHIPPED-WITH-CAVEATS. Apparatus-density confirmed routed to /and-cohere before c13.
+
+basis: |
+  ltm:DEC-0074 (c11 coupling rule) + ltm:DEC-0072 (c10 coupling rule) + DEC-0076 (b01c12
+  pre-authorization of Phase 9 disposition on exact these categories). All three cold-read
+  CONTINUE=No categories are pre-authorized design-inherent or cold-context categories.
+  methodology:3a (reversibility) — (B) is costlier and targets the wrong layer; apparatus-density
+  is a cross-chapter cross-stitch concern, not a per-bone failure at c12.
+
+rationale: |
+  The coupling rule (DEC-0076 item 4) is deterministic: Phase 9 may not FAIL on cold-context
+  gaps on a climax chapter mid-serial. All three CONTINUE=No categories are pre-authorized:
+  (1) cold-context proper-noun opacity — design-inherent Earth-Bet fence; (2) design-inherent
+  low jeopardy — internal CLIMAX offstage stakes by substance contract; (3) apparatus-density —
+  N=7 cross-chapter accumulation, /and-cohere is the correct resolution layer. No new complaint
+  category exists that would distinguish c12 from c10/c11. Phase 4 applied person-first
+  throughout (0 apparatus-default bones), grounding-ledger satisfied (prose-rationale-mute
+  CLEAN), Phase 8.5 found the person present with context — the "airless" read is cold-context
+  reader effect, not a bone-layer or stitch-layer failure. (B) would mandate a depth pass
+  targeting apparatus-density at the per-chapter layer when the correct fix is already scheduled
+  at the cross-chapter /and-cohere layer; that is the wrong repair surface. c10 and c11 both
+  shipped SHIPPED-WITH-CAVEATS on this exact pattern; consistency requires the same verdict.
+
+trade-off: |
+  Accepting SHIPPED-WITH-CAVEATS without a depth pass means the apparatus-density concern is
+  not addressed until /and-cohere. Risk: if /and-cohere is skipped or deferred past book-close,
+  c12's airlessness remains unaddressed in the terminal draft. Mitigated by: (a) /and-cohere is
+  already stamped HIGH urgency (DEC-0073/0075/0077) and is the explicitly suggested next step
+  after the chapter-production run ends; (b) the depth pass under (B) would target bones in
+  isolation and cannot address the cross-chapter register accumulation — it would be lower-value
+  spend on the same content.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
+## DEC-0080 | 2026-06-03 | FAST (user-proxy, RUNBOOK R1)
+
+question: Branch choice at b01c12 chapter boundary: (A) /and-cohere b01 before c13, or (B) produce b01c13 now. Principal said "continue."
+
+context: |
+  c12 just shipped SHIPPED-WITH-CAVEATS (DEC-0078) — 3rd consecutive on same cause
+  (apparatus-register density / cold-context / design-inherent). N=7 consecutive
+  apparatus-dense chapters (c06-c12). /and-cohere has been a standing HIGH-urgency
+  recommendation reaffirmed five times (DEC-0073, DEC-0075, DEC-0077, DEC-0078,
+  DEC-0079). PROP-0037 (DEC-0079) explicitly proposes a HARD-abort at /and-substance
+  chapter Phase 0 when consecutive_shipped_with_caveats >= 3 without cohere acknowledgment
+  — not yet implemented, so c13 is not mechanically blocked, but the process-critic intent
+  is unambiguous. Producing c13 now would very likely produce a 4th SHIPPED-WITH-CAVEATS on
+  the same unaddressed accumulation.
+
+options: (A) /and-cohere b01 first; (B) produce b01c13 now
+
+decision: (A) /and-cohere b01 first.
+basis: ltm:DEC-0073/0075/0077/0078 (same ruling every time; no new signal favoring B)
+rationale: |
+  Five prior dispatches ruled cohere-before-c13. At N=3 consecutive SHIPPED-WITH-CAVEATS
+  on the same cross-chapter accumulation problem (which per-chapter gates cannot address),
+  "continue" means run the outstanding HIGH-urgency obligation before starting the next
+  chapter — not defer it a sixth time. The process-critic proposal (PROP-0037) gives the
+  same answer from the process side. The cross-chapter airless-read is a known accumulation
+  that only /and-cohere addresses; producing c13 into that accumulation is not forward motion.
+trade-off: |
+  /and-cohere is a sizable operation; the principal may have intended "continue" to mean
+  "next chapter." But five consistent prior rulings at this same boundary make the intent
+  unambiguous: cohere was already the declared obligation before c13 ran. Option B here
+  would be the sixth consecutive bypass of the same HIGH-urgency flag on the same cause.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
+## DEC-0079 | 2026-06-03 | SLOW (process-critic)
+
+mode: process-critic
+trigger:
+  reason: failure
+  source_report: active-project/staff/reviews/coldread-b01c12-2026-06-03.md
+  source_verdict: SHIPPED-WITH-CAVEATS (DEC-0078) — 3rd consecutive SHIPPED-WITH-CAVEATS on apparatus-density / cold-context / design-inherent low-jeopardy pattern (c10 DEC-0072, c11 DEC-0074, c12 DEC-0078); N=7 consecutive-abstract chapters (c06-c12).
+gate_path: .claude/commands/and-stitch.md#phase-9
+verdict: PROCESS-CHANGE-PROPOSED PROP-0037
+
+question: |
+  Does the 3rd consecutive SHIPPED-WITH-CAVEATS on apparatus-register density warrant a
+  process change — specifically, making /and-cohere a HARD gate before the next chapter when
+  N consecutive SHIPPED-WITH-CAVEATS >= 3 — rather than a standing HIGH-urgency recommendation
+  that keeps deferring? Or is this already covered by an open cohere-cadence proposal
+  (PROP-0030/0031) and should be merged?
+
+context: |
+  DEC-0075 (2nd consecutive SHIPPED-WITH-CAVEATS at N=6/2-consecutive) evaluated three
+  candidate process changes including "consecutive-design-inherent-low-jeopardy cap with
+  auto-cohere trigger" and deferred it: "Wait for triage on PROP-0030/0031 first; if they
+  are accepted, the /and-cohere trigger mechanism becomes available and a mechanical cap can
+  be proposed as a lightweight modification then." Condition: PROP-0030/0031 triage first.
+  PROP-0030 + PROP-0031 remain status: open / untriaged as of this dispatch. N is now 7
+  consecutive-abstract; consecutive SHIPPED-WITH-CAVEATS is now 3 (c10/c11/c12).
+
+decision: PROCESS-CHANGE-PROPOSED PROP-0037
+
+basis: |
+  Step 2 (proposals matching): No open proposal covers the specific mechanism proposed —
+  HARD-abort at /and-substance chapter Phase 0 when consecutive SHIPPED-WITH-CAVEATS >= 3.
+  PROP-0030 targets a new /and-review cohere subcommand (the cold-read primitive). PROP-0031
+  targets a new /and-cohere command body (the iteration loop). Neither targets a Phase 0
+  HARD-abort on the next chapter production command as the enforcement mechanism.
+
+  Step 3 (content vs. process): The per-chapter pipeline (Phase 4 voice-embodiment + grounding-
+  ledger + Phase 9 cold-read gate) applied correctly at c10/c11/c12 — it caught the airlessness
+  and dispositioned it correctly via the coupling rule. The process failure is not in any
+  individual gate: it is that the coupling rule, while technically correct per-chapter, is
+  now absorbing a cross-chapter accumulation that the chain has no structural mechanism to force
+  resolution on. /and-cohere is the correct remedy, and it is on-deck, but the process has no
+  gate that PREVENTS the principal from starting c13 without running it. The recommendation is
+  durable-but-bypassable. Three consecutive SHIPPED-WITH-CAVEATS on the same pattern means the
+  recommendation has been bypassed twice already (c10 to c11 without /and-cohere; c11 to c12
+  without /and-cohere). The process needs a HARD enforcement point.
+
+  Step 4 (DEC-0075 deferral re-examined): DEC-0075's deferral condition was "wait for PROP-0030/
+  0031 triage first, THEN propose the mechanical cap." That condition has not been met, but
+  PROP-0037 is discriminated from the DEC-0075 mechanism: DEC-0075 was about wiring the
+  auto-trigger inside the not-yet-implemented /and-cohere command body. PROP-0037 targets a
+  different, smaller, immediately-implementable enforcement surface: a Phase 0 HARD-abort in
+  /and-substance chapter that halts chapter production and surfaces the /and-cohere obligation
+  to the principal BEFORE the chapter runs. This does not require /and-cohere to exist as a
+  command — the HARD-abort instructs the principal to run it (whether that means the
+  implemented /and-cohere, or a manual sub-section coherence review, or any equivalent). It
+  is the "obligation-surfaces-at-the-right-moment" gate; PROP-0030/0031 are the
+  "obligation-execution" machinery. They are orthogonal.
+
+  Step 5 (methodology): reversibility (HARD-abort is bypassable by principal via an explicit
+  acknowledgment stamp — lowest-cost non-destructive enforcement) + blast radius (single Phase
+  0 check; does not touch the chapter authoring chain itself) + optionality (principal can
+  proceed by running /and-cohere first, or by stamping explicit acknowledgment) support this
+  as the minimum viable change. S-cost.
+
+rationale: |
+  At N=3 consecutive SHIPPED-WITH-CAVEATS the pattern is no longer noise — it is a recurring
+  cross-chapter debt the chain's per-chapter gates are structurally incapable of addressing
+  (by design: they are isolated). The coupling rule correctly ships each chapter; the
+  /and-cohere recommendation is correctly stamped HIGH; but the process has no point where it
+  says STOP and requires the cohere to run before proceeding. Three consecutive bypasses is
+  the threshold at which the standing recommendation becomes an active liability. Adding a
+  Phase 0 HARD-abort at /and-substance chapter Phase 0 closes that gap at minimum cost without
+  requiring PROP-0030/0031 to be implemented first.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+## DEC-0081 | 2026-06-03 | SLOW (user-proxy)
+
+question: |
+  /and-cohere b01 c06-c12 iteration 1 returned FAIL-COHERE (load-bearing fail: naive cold-reader
+  Q6 apparatus-register cumulative load, localized to italic chapter-prologues by cape-fic). Three
+  options: (A) full /and-write revise --from-signals on c08/c09/c11 + re-cascade (~40+ dispatches),
+  (B) targeted prologue-variation pass on all 7 prologues + route structural CAUTIONs to
+  parking-lot/book-substance + re-cohere, (C) record FAIL-COHERE as diagnostic, hold loop, route
+  everything to back-half, proceed to c13.
+
+context: |
+  - Design-tension (apparatus-register density) pre-dispositioned 3x as design-inherent (DEC-0072/
+    0074/0078). Substance-aware cape-fic audience: 3x SUBSTANCE-FELT — body earns the 7-chapter run.
+  - Load-bearing Q6 FAIL localized by cape-fic to the italic per-chapter prologues (7x near-identical
+    restatement of standing conditions — skim-formula by c09). Naive cold-reader: prologues "glue
+    rather than flow."
+  - Structural CAUTIONs (Halvard counter-argument drift, c11 antagonist-pressure gap, Sera hole,
+    Dragonstone-receipt deferred) are book-substance / back-half items — not per-chapter bones-revise
+    targets.
+  - Option A risk: per-chapter bones already carry the correct deltas; bones-revise cannot address
+    cumulative cross-chapter prologue repetition; structural items are wrong layer; ~40+ dispatches
+    against a design-tension dispositioned 3x at near-zero expected movement on Q6.
+  - DEC-0079: PROP-0037 just proposed a Phase 0 HARD-abort at /and-substance chapter when consecutive
+    SHIPPED-WITH-CAVEATS >= 3; /and-cohere first is the current obligation.
+
+options:
+  A: full /and-write revise --from-signals c08/c09/c11 + re-cascade each + re-cohere (~40+ dispatches)
+  B: targeted prologue-variation pass (all 7 prologues) + route structural CAUTIONs to parking-lot +
+     re-run /and-review cohere to see if Q6 clears
+  C: record FAIL-COHERE as diagnostic, hold loop (status: held), route everything to back-half + c13
+
+decision: (B) targeted prologue-variation pass on all 7 prologues + route structural CAUTIONs to
+  parking-lot/book-substance + re-cohere
+
+basis: |
+  Goal:2 (cost discipline) + methodology 3b (cost: cheapest path that addresses the convergent
+  finding) + 3c (blast radius: per-chapter bones-revise touches 3 chapters + re-cascades, vs.
+  prologue variation is scoped to 7 prologue blocks only) + 3a (reversibility: option B is fully
+  reversible — if re-cohere still FAILs, A remains available). Option C abandons a fix with a
+  known low-cost execution path; the diagnostic work is done — the fix target is identified.
+  Option A is high-cost against the wrong layer for the localized finding.
+
+rationale: |
+  The convergent evidence from both forks points at one specific structural element: the 7 italic
+  prologues restate near-identical standing conditions across c06-c12. That is the "skim-formula"
+  and the "glue rather than flow" complaint. The apparatus-density of the BODY is not the complaint
+  — the cape-fic audience calls that SUBSTANCE-FELT. The prologues are separable from the bone-layer
+  substance and can be varied without touching the bones-revise layer. Vary the 7 prologues to break
+  skim-formula (break identical restatement of standing conditions), route the structural CAUTIONs
+  (Halvard-return, c11-antagonist-pressure, Sera, Dragonstone-receipt) to the parking lot with
+  back-half / /and-review verdict b01 as the resolving scope, then re-run /and-review cohere.
+  If Q6 clears, the cohere loop closes at far lower cost than option A. If Q6 does not clear after
+  prologue variation, the diagnostic is richer and option A remains available as a next step.
+
+  The structural CAUTIONs are not "ignore and defer" — they are wrong layer for the cohere loop.
+  The correct layer is book-substance + /and-review verdict b01. Parking-lot with explicit back-half
+  scope is the right routing. Notably, option A cannot fix the structural items either — bones-revise
+  on c08/c09/c11 cannot supply Halvard's return or a c11 antagonist move. Both B and A defer them;
+  B is cheaper on the one item that can be fixed now.
+
+trade-off: |
+  Option B does not guarantee Q6 clears. If re-cohere still FAILs after prologue variation, a
+  second loop will be needed (possibly escalating to A). This is accepted: option B is a low-cost
+  probe that either resolves the loop cheaply or produces sharper evidence before committing to A.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
+## DEC-0082 | 2026-06-03 | SLOW (process-critic)
+
+mode: process-critic
+trigger:
+  reason: cohere-converged-caution
+  source_report: active-project/staff/reviews/cohere-naive-b01-c06-c12-20260603T152850Z.md
+  source_verdict: CAUTION-COHERE (converged, iteration 2; load-bearing naive-Q6 FAIL->CAUTION via DEC-0081 prologue-variation)
+gate_path: .claude/commands/and-cohere.md#phase-2
+secondary_gate_paths: [.claude/commands/and-stitch.md#phase-9, .claude/commands/and-facets.md#phase-2.5]
+
+question: |
+  /and-cohere b01 c06-c12 converged at CAUTION-COHERE in 2 iterations via targeted prologue-variation
+  (DEC-0081 option B, not full per-chapter revise-cascade). Three process candidates:
+  (1) Should /and-facets exposition @0 bridge carry cross-chapter prologue-variation discipline
+      so skim-formula doesn't accumulate in the first place?
+  (2) Should the cohere-triage heuristic (FAIL localizes to prologues → targeted presentation-pass
+      preferred over per-chapter bones-revise) be codified in the cohere command body?
+  (3) Does the cohere successfully discharging the c10-c12 SHIPPED-WITH-CAVEATS accumulation
+      change PROP-0037's framing?
+
+context: |
+  Iteration 1 FAIL-COHERE: load-bearing Q6 apparatus-register cumulative load localized by
+  cape-fic audience to 7 near-identical italic prologues (skim-formula). Iteration 2 ran after
+  a targeted prologue-variation pass on all 7 chapter openings. Q6 moved from FAIL to CAUTION
+  (body-register tipping in c10-c12 remains, but formula-problem is solved). Total cost: ~10
+  dispatches vs. ~40 dispatches for option A (full per-chapter bones-revise). Cohere converged.
+
+decision: |
+  Candidate 1: OK — no proposal. First occurrence, non-catastrophic, cohere architecture is the
+    correct catch for this class.
+  Candidate 2: OK — no proposal. First occurrence. Would layer on untriaged PROP-0031.
+  Candidate 3: OK — PROP-0037 unchanged. Cohere discharge is confirmatory, not a framing problem.
+
+basis: |
+  Candidate 1: process-critic-recurrence-discipline (first occurrence of cross-chapter prologue
+    skim-formula; non-catastrophic; cohere caught and fixed it at low cost) + gate-discrimination
+    (the fix requires per-chapter exposition authors to load N prior chapters' exposition facets
+    at dispatch time — a new cross-chapter context dependency with non-trivial cost; the cohere
+    loop is already the designated architecture for cross-chapter presentation accumulation) +
+    methodology:3d (optionality — prevention would foreclose the current clean architecture where
+    per-chapter authoring is context-isolated; that isolation is structurally load-bearing for
+    parallelism across facet authors).
+  Candidate 2: process-critic-recurrence-discipline (recurrence_count = 1 for prologue-localization
+    triage path) + PROP-0031-not-triaged (layering a triage heuristic on an untriaged base
+    proposal increases blast radius before the principal has accepted the base).
+  Candidate 3: methodology:3c (blast radius of zero — PROP-0037 is not a framing problem;
+    the cohere discharging the c10-c12 accumulation is the intended behavior of the proposed
+    mechanism, confirmation not counterevidence; no proposal amendment warranted).
+
+rationale: |
+  CANDIDATE 1 (upstream prologue-variation gate): The per-chapter exposition author produces
+  `episode-open` entries that became 7 near-identical restatements of standing conditions.
+  Each entry was correct in isolation — the skim-formula emerged only across the full sequence.
+  A cross-chapter diversity check at authoring time would require loading prior chapters'
+  exposition facets into the dispatch context window, creating a new N-prior-chapters dependency
+  not present anywhere in the current per-chapter authoring chain. This is a meaningful
+  architecture change (all per-chapter agents currently operate blind to sibling chapters by
+  design — this enables parallelism and limits context-window cost). The cohere loop exists
+  precisely to catch cross-chapter presentation problems post-section. That it caught and fixed
+  this at iteration 2 for ~10 dispatches is the mechanism working as designed. First-occurrence
+  hold applies per Rule 11: non-catastrophic (cohere resolved it), single-occurrence, cleanly
+  caught by designated architecture. If a future project sees the same skim-formula accumulate
+  across its section and the cohere loop is not run before it becomes a book-close problem, that
+  second occurrence warrants a cross-chapter awareness rule at authoring time. Not now.
+
+  CANDIDATE 2 (cohere-triage heuristic): DEC-0081's option B judgment — "FAIL localizes to
+  prologues (presentation layer), therefore targeted presentation-pass is preferred over
+  per-chapter bones-revise" — was an operator triage call made correctly on the evidence at hand.
+  The cohere Phase 3 triage queue already provides the structural surface where this judgment
+  lives (read the chapter-revise queue, coalesce by chapter + axis, order by dependency). Making
+  it a named heuristic in the command body would commit future runs to "presentation-localized
+  FAIL → presentation-pass always" before the operator has seen what the specific failing axes
+  contain. On this project the localization was clear (italic-prologue skim-formula); on a
+  different project or a different Q6 failure shape, the localization might look similar but
+  require bone-layer changes. One data point is insufficient. Additionally: PROP-0031 (the
+  /and-cohere command body proposal) is still status: open / untriaged. Adding a triage heuristic
+  to an untriaged base proposal increases the scope the principal must evaluate at triage. The
+  correct sequence is triage PROP-0031 first, then consider triage-heuristic additions. Hold.
+
+  CANDIDATE 3 (PROP-0037 interaction): PROP-0037 proposes a Phase 0 HARD-abort at /and-substance
+  chapter when consecutive_shipped_with_caveats >= 3 without cohere_acknowledgment. Under
+  PROP-0037's proposed mechanism, the /and-cohere persist phase (Phase 7) stamps
+  cohere_acknowledgment in showrunner memory after a successful convergence — this clears the
+  HARD-abort gate. The cohere converging at CAUTION-COHERE (0 load-bearing fails) is exactly
+  the successful resolution that the mechanism is designed to enable: the cohere ran, resolved
+  the load-bearing Q6 FAIL, converged, stamps acknowledgment, gate clears, c13 can proceed.
+  This is not a framing problem; it is confirmatory evidence that PROP-0037's proposed mechanism
+  has the right shape. PROP-0037 remains correctly framed: the problem was the recommendation
+  being bypassable (bypassed twice, c10→c11→c12); the proposed fix is a HARD-abort that requires
+  cohere acknowledgment. That the cohere then worked efficiently (10 dispatches, 2 iterations)
+  confirms the mechanism's expected cost is acceptable. No amendment.
+
+trade-off: |
+  Not proposing Candidate 1 means the per-chapter exposition author will continue to author
+  prologues blind to the accumulating sequence. Mitigation: /and-review cohere is the correct
+  architectural catch, and the cost of catching it there (~10 dispatches per section) is low.
+  If the principal runs /and-cohere per-section (as now established), the skim-formula will
+  always be caught within one iteration. The prevention cost (cross-chapter context loading at
+  each /and-facets exposition dispatch, plus architectural dependency) exceeds the expected
+  repair cost at the cohere layer.
+
+  Not proposing Candidate 2 means the triage judgment remains operator-level. Mitigation:
+  DEC-0081 is a well-documented operator decision that future dispatches can reference. If
+  the same localization pattern recurs on a second cohere run, that is the correct second data
+  point for a heuristic proposal.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no

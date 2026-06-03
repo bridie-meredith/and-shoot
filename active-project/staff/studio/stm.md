@@ -1,5 +1,31 @@
 # studio STM
 
+## 2026-06-03 — /and-facets b01-c12 Phase 1 R1 location-state authoring (BLIND)
+
+Chapter b01c12: 42 bones, 4 scenes. Silent interior chapter — no dialogue-anchor bones. Taylor in the hook-ward east-water-gate lanes (morning circuit) then at the feed-station (scenes B-D). Time progression: morning → midday → afternoon → end-of-day.
+
+LOCATION-STATE: 8 entries, 0 cull.
+  loc-state:1 @1 — the-hook-ward; morning; place-anchor; overhang-geometry at lane-mouth (the witch-label geometry that defines the gap); morning circuit opens.
+  loc-state:2 @3 — the-hook-ward; morning; state-change; gate-tower shadow (body placed inside gap's west boundary — the body in the coverage gap).
+  loc-state:3 @8 — the-feed-station; morning; sub-anchor; ledger surface open (body moved from lane circuit to accounting surface; lane→station transition).
+  loc-state:4 @11 — the-feed-station; morning; state-change (new entrant); packet at surface edge where Jarvis places it (opposing force enters via standard channel).
+  loc-state:5 @17 — the-feed-station; midday; time-advance morning→midday; ledger surface in midday stillness (refusal sit-down begins at the same working face).
+  loc-state:6 @23 — the-feed-station; midday; state-change (Jarvis exits); sealed packet departing (withholding exits; surface clears to anchor-column).
+  loc-state:7 @29 — the-feed-station; afternoon; time-advance midday→afternoon; muddy-way extension in motion (fifth-ward boundary enters feed for first time; time advances).
+  loc-state:8 @42 — the-feed-station; end-of-day; time-advance afternoon→end-of-day; breach column receiving (threshold entry filed at accounting-close; chapter-terminal state).
+  Continuity-carry: none — scene-D rhythm-shape rising-to-interior-climax excluded from license.
+  Cull: 0 entries removed.
+
+Key REJECT decisions:
+  @2 (insects fan lane-mouth — @1 place-anchor inherited; no new state-change); @6/@7 (insects return stitch-house route / map marks stitch-maker route — mediated feed-perception beats, not Taylor's physical movement through the lane); @4/@5 (map closes boundaries — ledger/perception in-place; inherit @3); @9/@10 (ledger acts in-place; inherit @3); @12–@16 (dexterity in-place after Jarvis arrives; inherit @11); @18–@22 (ledger acts; inherit @17); @24–@28 (ledger/stillness acts; inherit @17/@23); @30–@41 (feed-returns/accounting sequence — all dexterity/perception in-place; inherit @29; rising rhythm-shape excludes continuity-carry).
+  @8 accepted as sub-anchor because the lane→feed-station location transition has no prior explicit entry in scene-A and the stylus-lift is the first feed-station body-beat of the chapter.
+
+Seams flagged for R2:
+  SEAM-C12-LOC-001: the-hook-ward slug vs. oc-hook-precinct slug (cross-chapter consistency; carry from prior chapters)
+  SEAM-C12-LOC-002: @6 feed-perception-of-stitch-house-route — no loc-state fired; confirm inherited @3 env is sufficient for Wren-as-boundary rendering
+  SEAM-C12-LOC-003: @8 sub-anchor — lane→station transition implicit; confirm no explicit entry needed
+  SEAM-C12-LOC-004: the-feed-station warehouse card still unconfirmed (carry from prior chapters; 6 entries fire on this slug this chapter)
+
 ## 2026-06-02 — /and-facets b01-c11 Phase 1 R1 three-facet authoring (BLIND)
 
 Chapter b01c11: 27 bones, 4 scenes. Silent chapter — feed-POV. Taylor at feed-station throughout; other locations mediated through insect-feed.

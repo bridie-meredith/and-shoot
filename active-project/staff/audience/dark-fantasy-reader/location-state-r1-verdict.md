@@ -2,37 +2,37 @@
 reviewer: dark-fantasy-reader
 facet: location-state
 cycle: 1
-episode: b01c11
+episode: b01-c12
 date: 2026-06-03
 verdict: accept
 ---
 
-# location-state verdict — b01-c11
+# Location-State — Adversarial Verdict
 
-## Entry-level callouts
+**Verdict: ACCEPT**
 
-**[loc-state:1@1]** @1 (feed-station, morning / station-surface-packet-at-hand-off) — *The sealed packet at the station surface edge where Jarvis's hand closes on it.* The focus-element is doing real work. This is not "the feed-station, morning" as ambient stage-setting — the packet AT the surface EDGE, Jarvis's HAND closing, locates a transaction that is already in motion rather than being set up. The world was running before this chapter opened. That is the correct dark-fantasy opening posture. The time-of-day reset from b01c10 end-of-day is functional; the reader lands in a morning that is not fresh. ACCEPT.
+Eight entries. The question is always the same: does the location exist by its own physics, or is it arranged for the protagonist?
 
-**[loc-state:2@8]** @8 (cloth-merchant's shop / back-worktable-open, rushlight-lit) — *The narrow back-worktable open in low rushlight.* "Narrow" and "low rushlight" are the two words that make this a place rather than a designation. The back-worktable being OPEN before the messenger arrives is the right structural choice — the scene-map's BURN-WORLD-THEN-FEED-ORDER requires that the shop already be running its own business when the off-hour body crosses the threshold. The exception-rule application (first-beat-in-new-location licenses dexterity verb "opens") is defensible. The rushlight earns its keep: a back-worktable scene in a cloth shop in a ward at this period runs by rushlight, and naming it makes the enclosed space a physical fact before anything burns in it. ACCEPT.
+**loc-state:1 @1** (the-hook-ward, morning, lane-mouth-open, overhang-geometry-active) — "the tight geometry that makes dense insect placement read as witch-label." The overhang geometry is a social physics the place already has before the chapter opens. The streets decided what these lanes mean before Taylor arrived. This is the Planetos-specific superstition register I came for — not generic medieval hostility but a specific inherited label, site-specific, operating on its own terms. Terrain-before-protagonist. Correct.
 
-**[loc-state:3@9]** @9 (cloth-merchant's shop / messenger-at-threshold) — *The shop-threshold carrying an off-hour body.* The "off-hour body" phrasing in the focus-element is the detail that makes this loc-state entry earn its keep rather than being a transitive-verb formality. A body at a threshold at the wrong time of day — this is not explained, it is placed. The world pushes back against routine by the shape of who arrives when. The state-change from @2 to @3 is real: the focus-element shifts from a lit working surface to a presence at the boundary that changes what the scene is. ACCEPT.
+**loc-state:2 @3** (gate-tower-shadow-west, rendering-yard-wall-east) — two landmarks that bounded the gap before Taylor measured it. The body placed inside the coverage boundary is the protagonist reading what the terrain already is. The world did this before it was useful.
 
-**[loc-state:4@17]** @17 (soap-rendering lane / cross-lane-open) — *The cross-lane at the soap-rendering lane mouth, open to approach.* "Open to approach" is the detail doing the work here — a cross-lane at a ward mouth that is OPEN means the contact's crossing is readable as a deliberate arrival against visible geometry. The soap-rendering lane is doing something that the Hook is not: the world emits specific ward-labor that distinguishes this location from a generic street. The scene-B → scene-C transition depends on a new physical substrate; this delivers one. ACCEPT.
+**loc-state:3 @8** (feed-station, ledger-surface-open, stylus-lifted) — minimal interior-state. Physical at-establishment without atmosphere loading. Acceptable.
 
-**[loc-state:5@22] + [loc-state:6@23]** @22-@23 (feed-station / end-of-day / accounting-in-motion) — *Surface bare, ledger open before the arm-closes begin; the accounting surface still under hand through the four arm-close sequence.* The time-of-day advance (afternoon → end-of-day) is load-bearing: the same location at a different weight of the day. The decision to carry the scene-D fusion-eligible run with ONE entry at @23 rather than four entries is correct — the loc-state rubric's continuity-carry license exists precisely for runs like this, and adding three additional loc-state entries would thin the distinction between the accounting-close's physical substrate and a catalog of acts. The stitcher has what it needs: a surface and a hand and a sequence. ACCEPT.
+**loc-state:4 @11** (packet-at-surface-edge, opposing-force-enters-via-standard-channel) — "via the standard channel" is doing everything here. The apparatus arrives on its routine delivery schedule, not on the chapter's dramatic timing. This is the enemy who does not pause at a convenient moment: it runs on schedule, and its schedule does not know or care what Taylor spent the morning confirming as uncoverable. The irony that the apparatus uses the same instrument as the refusal is located in terrain, not authored into it.
 
-## Convergence-trace
+**loc-state:5 @17** (midday, gap-column-pending) — time advance. The location does not editorialize about what's coming. Gap-column-pending is a ledger state, not a mood assignment. Cold.
 
-No prior auditor Phase 5 report is present at the expected path (active-project/staff/auditor/facets-final-audit.md). This reviewer cannot cross-cite auditor finding IDs. Review is conducted from facet + scene-map + bones only.
+**loc-state:6 @23** (midday, sealed-packet-departing, surface clears to anchor-column) — the apparatus accepts the coverage limit and routes around it. The world's operational logic continues without requiring Otto's presence or deliberation. The opposing force does not stop because the protagonist needs space; it finds another route. That is exactly the dark-fantasy shape of institutional power: it absorbs the refusal and continues running.
 
-SEAM-C11-LOC-001/002 (slug validation for oc-cloth-merchant-shop + oc-soap-rendering-lane) are flagged but correctly dispositioned as margit-referral items, not entertainment failures. This reader does not reject a facet for slug housekeeping.
+**loc-state:7 @29** (afternoon, muddy-way-extension-in-motion) — time advances again without announcement. The muddy-way boundary enters the feed for the first time. No performance of what that completion means. Just ledger-state.
 
-SEAM-C11-LOC-003 (feed-POV physical-space ruling for @3/@4 grain-measures junction) — the studio's disposition (Taylor does not physically occupy those spaces) is the correct entertainment call. Adding loc-state entries for feed-mediated off-site locations would inflate the facet with entries the stitcher cannot use as physical grounding — the junction is a datum, not a stage. The feed-POV chapter's loc-state correctly limits itself to Taylor's physical locations.
+**loc-state:8 @42** (end-of-day, breach-column-receiving, accounting-closed) — the one I attacked hardest. "Breach column at accounting-close — threshold entry filed in flat column register; end-of-day state." The flat-column-register descriptor is doing everything. The breach column receives the moral_framework -1.0 in the same register as every entry above it. End-of-day is a time marker, not a mood assignment. The feed-station at end-of-day is the same surface it was at morning. The world does not react to what was just filed. That is the correct dark-fantasy topology: cost recorded, world continues, nothing changes in the room.
 
-SEAM-C11-LOC-004 (slug consistency) is housekeeping. Not a reader concern.
+**On the @42 / sensory:5 seam:** I checked whether end-of-day combined with licensed sensory:5 (light: late-afternoon-surface-brightness → end-of-day-dimming, grd-002 exception) tips from cold environmental grounding into elegiac mood. The loc-state itself says "end-of-day state" as a time-marker only. It does not render the light. What sensory:5 does with that is the sensory verdict's problem — I attack it there. The loc-state file is clean on this seam.
 
-## Verdict rationale
+**Convergence with auditor flag-003 (CURVE-SHAPE / two-peak WARRANTED):** loc-state correctly has NO entry at @38 (the interior climax). The location does not shift register when the shape-word surfaces. That absence is load-bearing. A loc-state entry AT @38 would have been a flag for me — it would mean the location was reacting to the protagonist's interior state, which is the set-dressing-for-protagonist failure mode. Its absence is the correct call.
 
-Six entries across 27 bones (22.2%) in a chapter with four distinct location clusters. No entry is inert. The time-of-day sequencing (morning → same circuit → early afternoon → end of day) builds a DAY that has weight by the time the accounting-close arrives — and the accounting-close IS the weight, not a named conclusion. The world exists before Taylor enters each location. The back-worktable was open before the messenger crossed. The cross-lane was open before the contact crossed. The feed-station surface was bare before the ledger opened. This is the world-as-place-that-was-there-first, not world-as-set-dressing. No false safety, no enemies pausing, no magic-as-reliable-tool. The loc-state facet delivers the physical substrate the stitcher needs to render this chapter as a real day in a real place.
+No entries soften the location's character. No indifferent-world continuance slips into comfort. The opposing force does not pause. The breach column closes in the same flat register as everything above it.
 
-**VERDICT: ACCEPT**
+**ACCEPT.**

@@ -1,3 +1,170 @@
+## SESSION-START — 2026-06-03T10:00:00Z — write-b01c12-pass2-bone-fixes
+dispatch: apply 19 Phase-2 faults (fault-001..fault-023) to b01c12-bones-draft.md — 15 unpaid-chatter recasts to held/chatter-with-anchor, 6 PP/form drops, 2 interiority SVO recasts; meta-rules override auditor on s01n02, s03n09, s03n12, s04n01; flag-003 s04n12 recast to held
+target: active-project/staff/screen-writer/b01c12-bones-draft.md
+audit-report: active-project/staff/auditor/write-b01c12-pass2.md
+findings-queued: 19 faults + 4 flags (flags 001/002 leave-as-is; flag-003 recast)
+
+## fault-001 — RESOLVED — 2026-06-03T10:05:00Z
+fault: s01n01 shape=chatter, axes_held=[], cost_ledger_anchor=null (unpaid chatter)
+scope: line
+change: confirmed pre-applied in draft — shape: held, axes_held: [{relational_anchor_status}]; no edit required this session
+criteria met: yes
+
+## fault-002 — RESOLVED — 2026-06-03T10:05:00Z
+fault: s01n02 shape=chatter, axes_held=[], cost_ledger_anchor=null (unpaid chatter)
+scope: line
+change: confirmed pre-applied in draft — shape: held, axes_held: [{relational_anchor_status}]; meta-rule 2 override (not capability — s01 does not list capability as a held axis)
+criteria met: yes
+
+## fault-003 — RESOLVED — 2026-06-03T10:05:00Z
+fault: s01n04 shape=chatter, axes_held=[], cost_ledger_anchor=null (unpaid chatter)
+scope: line
+change: confirmed pre-applied in draft — shape: held, axes_held: [{relational_anchor_status}]
+criteria met: yes
+
+## fault-004 — RESOLVED — 2026-06-03T10:05:00Z
+fault: s01n05 shape=chatter, axes_held=[], cost_ledger_anchor=null (unpaid chatter)
+scope: line
+change: confirmed pre-applied in draft — shape: held, axes_held: [{relational_anchor_status}]
+criteria met: yes
+
+## fault-005 — RESOLVED — 2026-06-03T10:05:00Z
+fault: s01n07 svo "the map indexes the stitch-maker route" — non-action verb "indexes"
+scope: line
+change: confirmed pre-applied in draft — svo: "the map marks the stitch-maker route"; axes_held unchanged
+criteria met: yes
+
+## fault-006 — RESOLVED — 2026-06-03T10:05:00Z
+fault: s01n08 svo "taylor-hebert-kl-122ac lifts the stylus from the source-field" — banned PP of source
+scope: line
+change: confirmed pre-applied in draft — svo: "taylor-hebert-kl-122ac lifts the stylus"; PP dropped
+criteria met: yes
+
+## fault-007 — RESOLVED — 2026-06-03T10:05:00Z
+fault: s02n01 svo PP "on the ledger surface" (banned PP of place) + shape=chatter unpaid (dual fault)
+scope: line
+change: confirmed pre-applied in draft — svo: "jarvis-coin-kl-courier places the packet"; shape: held; axes_held: [{social_tether-antag}]
+criteria met: yes
+
+## fault-008 — RESOLVED — 2026-06-03T10:05:00Z
+fault: s02n02 shape=chatter, axes_held=[], cost_ledger_anchor=null (unpaid chatter)
+scope: line
+change: confirmed pre-applied in draft — shape: held; axes_held: [{relational_anchor_status}]
+criteria met: yes
+
+## fault-009 — RESOLVED — 2026-06-03T10:05:00Z
+fault: s02n03 svo "the covering-sheet names the east-water-gate corridor" — non-action verb "names"
+scope: line
+change: confirmed pre-applied in draft — svo: "taylor-hebert-kl-122ac opens the covering-sheet"; shape: held, axes_held: [{relational_anchor_status}] unchanged
+criteria met: yes
+
+## fault-010 — RESOLVED — 2026-06-03T10:05:00Z
+fault: s02n04 svo PP "on the ledger surface" (banned PP of place)
+scope: line
+change: confirmed pre-applied in draft — svo: "taylor-hebert-kl-122ac sets the packet"; PP dropped; held structure unchanged
+criteria met: yes
+
+## fault-011 — RESOLVED — 2026-06-03T10:06:00Z
+fault: s02n05 svo "the covering-sheet names the rendering-yard boundary" — non-action verb "names"
+scope: line
+change: svo recast to "taylor-hebert-kl-122ac turns the covering-sheet" (physical act distinct from n03 "opens"); shape: held, axes_held: [{social_tether-antag}] unchanged
+criteria met: yes
+
+## fault-012 — RESOLVED — 2026-06-03T10:07:00Z
+fault: s02n06 svo PP "beside the packet" (banned PP of place) + shape=chatter unpaid (dual fault)
+scope: line
+change: svo: "taylor-hebert-kl-122ac sets the stylus" (PP dropped); shape: held; axes_held: [{position-prot-rise, "physical stillness at the decision threshold..."}] per meta-rule 2 (s02 declared held axis)
+criteria met: yes
+
+## fault-013 — RESOLVED — 2026-06-03T10:08:00Z
+fault: s03n01 shape=chatter, axes_held=[], cost_ledger_anchor=null (unpaid chatter)
+scope: line
+change: shape: held; axes_held: [{political_register-prot, "taking the stylus in flat operational register..."}] per meta-rule 2 (s03 declared held axis)
+criteria met: yes
+
+## fault-014 — RESOLVED — 2026-06-03T10:08:00Z
+fault: s03n02 shape=chatter, axes_held=[], cost_ledger_anchor=null (unpaid chatter)
+scope: line
+change: shape: held; axes_held: [{political_register-prot, "gap-column opens in the same flat format..."}] per meta-rule 2 (s03 declared held axis)
+criteria met: yes
+
+## fault-015 — RESOLVED — 2026-06-03T10:09:00Z
+fault: s03n05 svo "the stylus lifts from the explanation field" — banned PP of source
+scope: line
+change: svo: "the stylus lifts" (PP dropped); shape: held, axes_held: [{moral_legibility_to_self}] unchanged
+criteria met: yes
+
+## fault-016 — RESOLVED — 2026-06-03T10:10:00Z
+fault: s03n09 shape=chatter, axes_held=[], cost_ledger_anchor=null (unpaid chatter)
+scope: line
+change: chatter-with-anchor per meta-rule 2 override (NOT relational_anchor_status — s03 MOVES that axis); cost_ledger_anchor: cl-d08 (prefigures n10 relational_anchor_status +0.5, resolves at-or-under s03); shape: chatter + axes_held: [] retained
+criteria met: yes — deviation from auditor's "hold relational_anchor_status" required by meta-rule 2; cl-d08 is the dispatch-specified resolution
+
+## fault-017 — RESOLVED — 2026-06-03T10:11:00Z
+fault: s03n10 svo "the anchor-column entry takes the refusal weight" — abstract object (FAULT-FORM-INTERIORITY)
+scope: line
+change: svo: "taylor-hebert-kl-122ac writes the anchor-column entry" (concrete ledger-act); axis_moves relational_anchor_status +0.5 cl-d08 PRESERVED per meta-rule 1
+criteria met: yes
+
+## fault-018 — RESOLVED — 2026-06-03T10:12:00Z
+fault: s03n11 svo "the anchor-column entry takes the deferred weight" — abstract object (FAULT-FORM-INTERIORITY)
+scope: line
+change: svo: "taylor-hebert-kl-122ac closes the anchor-column entry" (mirrors n06 pattern; n10 writes/n11 closes pair); axis_moves relational_anchor_status +0.5 cl-d06 PRESERVED per meta-rule 1
+criteria met: yes
+
+## fault-019 — RESOLVED — 2026-06-03T10:13:00Z
+fault: s03n12 svo PP "from the anchor-column" (banned PP of source) + shape=chatter unpaid (dual fault)
+scope: line
+change: svo: "taylor-hebert-kl-122ac lifts the hand" (PP dropped); shape: held; axes_held: [{moral_legibility_to_self, "the hand lifts without the suppression cracking..."}] per meta-rule 2 override (NOT relational_anchor_status — s03 MOVES that axis)
+criteria met: yes
+
+## fault-020 — RESOLVED — 2026-06-03T10:14:00Z
+fault: s04n01 shape=chatter, axes_held=[], cost_ledger_anchor=null (unpaid chatter)
+scope: line
+change: chatter-with-anchor per meta-rule 2 override (NOT capability — s04 MOVES that axis); cost_ledger_anchor: cl05 (prefigures n02 capability +0.5 gain, resolves at-or-under s04); shape: chatter + axes_held: [] retained
+criteria met: yes — deviation from auditor's "hold capability" required by meta-rule 2; cl05 anchor is the dispatch-specified resolution
+
+## fault-021 — RESOLVED — 2026-06-03T10:15:00Z
+fault: s04n03 shape=chatter, axes_held=[], cost_ledger_anchor=null (unpaid chatter)
+scope: line
+change: shape: held; axes_held: [{moral_legibility_to_self, "full-circuit feed returning all five wards..."}] per meta-rule 2 (s04 declared held axis)
+criteria met: yes
+
+## fault-022 — RESOLVED — 2026-06-03T10:16:00Z
+fault: s04n04 svo "the count moves through the full-circuit return" — banned PP of direction + bare intransitive + shape=chatter unpaid (dual fault)
+scope: line
+change: svo: "the count runs the full-circuit return" (transitive; established idiom per s04n07); shape: held; axes_held: [{moral_legibility_to_self}] per meta-rule 2 (s04 declared held axis)
+criteria met: yes
+
+## fault-023 — RESOLVED — 2026-06-03T10:17:00Z
+fault: s04n05 shape=chatter, axes_held=[], cost_ledger_anchor=null (unpaid chatter)
+scope: line
+change: shape: held; axes_held: [{moral_legibility_to_self, "Flea Bottom approaches returning at full scale..."}] per meta-rule 2 (s04 declared held axis)
+criteria met: yes
+
+## flag-001 — SKIPPED — 2026-06-03T10:18:00Z
+fault: s04n07 abstraction-as-object borderline — soft advisory
+scope: n/a
+change: left as-is per dispatch instruction (within idiom; no required fix)
+criteria met: n/a
+
+## flag-002 — SKIPPED — 2026-06-03T10:18:00Z
+fault: s04n09 FAULT-FORM-INTERIORITY borderline — Earth-Bet-constrained
+scope: n/a
+change: left as-is per dispatch instruction (Earth-Bet fence prevents concrete recast; no proper noun introduced)
+criteria met: n/a
+
+## flag-003 — RESOLVED — 2026-06-03T10:18:00Z
+fault: s04n12 triple cl05 citation — redundant third anchor citation
+scope: line
+change: recast from shape: chatter + cost_ledger_anchor: cl05 to shape: held + axes_held: [{moral_legibility_to_self, "the ledger-record close of the capability gain...record-close parallel to s03n12"}] + cost_ledger_anchor: null; cl05 now cited exactly twice (n02 gain + n13 cost)
+criteria met: yes
+
+## SESSION-END — 2026-06-03T10:19:00Z — write-b01c12-pass2-bone-fixes
+findings-applied: 19 faults (fault-001 through fault-023) + flag-003 recast; faults 001-010 confirmed pre-applied in draft; faults 011-023 applied this session; flag-003 applied this session
+findings-skipped: 2 (flag-001 and flag-002 leave-as-is per dispatch)
+exit: CLEAN
+
 ## SESSION-START — 2026-06-03T00:00:00Z — and-facets-b01c11-cycle2-fixes
 dispatch: /and-facets b01c11 Phase 5b cycle-2 — 4 text edits across 2 facets: narrator:2 @11 (mechanism eclipses dread-timing), narrator:4 @20 (backward-awareness violation), vibes:8 @11 (register-drift to intelligence-analysis), vibes:9 @11/@15 (irony-register token)
 target: active-project/theater/facets/interest-narrator-b01-c11.md, active-project/theater/facets/vibes-b01-c11.md
@@ -1846,3 +2013,26 @@ fault: AP-001 inverted-predicate cap ≤1/file exceeded; narrator:3@15 + narrato
 scope: line
 change: interest-narrator.md narrator:3@15 final clause: "that is the answer she is giving in place of the rebuttal she is holding back" → "she gives him the staying instead of the rebuttal she is holding back"; NI content preserved; anchor/citation unchanged
 criteria met: yes
+
+## SESSION-START — 2026-06-03T12:00:00Z — and-facets-b01c12-cycle1-earthbet-cipher
+dispatch: /and-facets b01c12 Phase 5b cycle-1 remediation — cipher all Khepri/Gold-Morning proper-noun leaks in vibes-b01-c12.md and scene-map-b01-c12.md; documentation/keyword-hygiene only; no entry content, ids, or licensed-by targets changed
+target: active-project/theater/facets/vibes-b01-c12.md, active-project/theater/facets/scene-map-b01-c12.md
+audit-report: Phase 5b cycle-1 adversarial gate (worm-canon-pedant callout)
+findings-queued: 2 (one per file)
+
+## vibes-b01-c12-cipher — RESOLVED — 2026-06-03T11:05:00Z
+fault: Khepri/khepri proper-noun leaks in vibes-b01-c12.md (worm-canon-pedant adversarial gate)
+scope: line
+change: 0 edits required — full 95-line scan confirmed file already clean; all cipher forms pre-applied in draft authoring; memory:3 refs correct; no memory:2 occurrences
+criteria met: yes — grep-0 confirmed
+
+## scene-map-b01-c12-cipher — RESOLVED — 2026-06-03T11:15:00Z
+fault: Khepri/Gold-Morning proper-noun leaks in scene-map-b01-c12.md (worm-canon-pedant adversarial gate)
+scope: line
+change: 7 substitutions — (1) line 7 Khepri-recognition→shape-word-recognition; (2) line 31 Khepri threshold→prior-architecture threshold; (3) line 31 Gold-Morning→the-world's-ending; (4) line 31 irrevocable-Khepri-repetition→irrevocable-prior-architecture-repetition; (5) line 33 Khepri surfacing→shape-word surfacing; (6) line 36 KHEPRI-SURFACE-AND-SUPPRESS→SHAPEWORD-SURFACE-AND-SUPPRESS + Gold-Morning→the-world's-ending + NO proper noun 'Khepri'→NO Earth-Bet proper noun; (7) line 36 Khepri-scale→prior-architecture-scale. DEC-0076 arming + cipher-fence directives intact. No ids/anchors/licensed-by changed.
+criteria met: yes — grep-0 confirmed
+
+## SESSION-END — 2026-06-03T11:15:00Z — and-facets-b01c12-cycle1-earthbet-cipher
+findings-applied: 2 (vibes: 0 edits / already clean; scene-map: 7 substitutions)
+findings-skipped: 0
+exit: CLEAN

@@ -1454,7 +1454,7 @@ evidence_refs:
   - ".claude/commands/and-write.md — Phase 1 step 2 held-bone shape description: 'Held axes contribute zero by definition and must each have at least one bone in the scene with that axis in its bone-level axes_held[]' — requirement exists but is embedded in shape description, not in numbered authoring steps"
   - ".claude/commands/and-write.md — Phase 6 HELD-AXIS-NOT-WITNESSED: 'for each entry in scenes[].substance_delta.axes_held[], at least one bone in the scene must have that axis in its bone-level axes_held[]' — the gate exists and fires correctly; the gap is at the authoring brief, not the gate"
   - "active-project/staff/auditor/write-b01c06-bone-gate.md — fault-001 HELD-AXIS-NOT-WITNESSED: political_register-prot s01; resolved by assigning axis to existing bone s01n02 (no new bone required); same failure class at lower severity than c04 (1 axis vs 5; trivial fix vs additive cycle). Confirms the pattern is recurrent across chapters with held axes in the contract."
-recurrence_count: 3
+recurrence_count: 4
 # recurrence_count bumped 2→3 by admin process-critic DEC-0069 (2026-06-02):
 # b01c10 Phase 6 bone-gate returned 4 HARD HELD-AXIS-NOT-WITNESSED covering 9 scene-contract
 # held axes (s01 ×2, s02 ×3, s03 ×1, s04 ×3). Root cause: screen-writer attributed
@@ -1462,7 +1462,16 @@ recurrence_count: 3
 # into the target bone's bone-level axes_held[]. All 9 resolved cycle-1 by fixer. Same failure
 # class as c04 (5 axes, additive-bone cycle) and c06 (1 axis, assign-to-existing). Third
 # chapter-level occurrence confirms the Phase 1 brief gap is persistent.
+# recurrence_count bumped 3→4 by admin process-critic DEC-0077 (2026-06-03):
+# b01c12 Phase 6 bone-gate returned 3 HARD (fault-001/003/004) — single structural gap:
+# s04 contract declared political_register-prot + social_tether-antag held; zero bones in s04
+# carried either axis in bone-level axes_held[]. Resolved in-cycle by fixer attaching axes_held
+# to two existing s04 bones (n40 + n41 in the final bones file) without adding new bones.
+# Root cause identical to prior occurrences: Phase 1 brief does not present held-axis witnessing
+# as an explicit numbered completion gate, so the screen-writer omits the axes_held[] population
+# step when focusing on moving/chatter bone authoring. Fourth chapter-level occurrence.
 recurrence_refs:
+  - "active-project/staff/auditor/write-b01c12-bone-gate.md — 3 HARD HELD-AXIS-NOT-WITNESSED; 2 axes (political_register-prot, social_tether-antag) in s04; resolved in-cycle (fixer attached axes_held to existing bones n40/n41; no new bones added). Fourth occurrence of the Phase 1 brief gap."
   - "active-project/staff/auditor/write-b01-c10-bone-gate.md — 4 HARD HELD-AXIS-NOT-WITNESSED; 9 axes across s01/s02/s03/s04; resolved cycle-1 (fixer added 9 axes_held[] entries to s01n03/n05, s02n03/n04/n07, s03n07, s04n01/n03/n05). Process note: 'screen-writer attributed held axes via rollup rather than bone-level axes_held[]' — the exact authoring gap PROP-0011 proposes to close."
   - "active-project/staff/auditor/write-b01c04-bone-gate-redo.md — first occurrence: 5 HARD across 3 scenes; additive bone cycle."
   - "active-project/staff/auditor/write-b01c06-bone-gate.md — second occurrence: 1 HARD fault-001; trivial fix."
@@ -4969,6 +4978,138 @@ proposed_diff: |
   trio-in-one format's apparent benefit (fewer dispatches) is outweighed by two
   demonstrated catastrophic failures. Three ~90-second dispatches is always cheaper than
   one 40-minute dispatch that dies before returning.
+cost_estimate: S
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
+
+---
+
+## PROP-0037
+
+```yaml
+id: PROP-0037
+created_at: 2026-06-03T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: failure
+  source_report: active-project/staff/reviews/coldread-b01c12-2026-06-03.md
+  source_verdict: SHIPPED-WITH-CAVEATS (DEC-0078) — 3rd consecutive SHIPPED-WITH-CAVEATS
+    on apparatus-register density / cold-context / design-inherent low-jeopardy (c10
+    DEC-0072, c11 DEC-0074, c12 DEC-0078); N=7 consecutive-abstract chapters (c06-c12).
+target:
+  type: command
+  path: .claude/commands/and-substance.md
+  section: "Phase 0 — Validate + mode select (chapter b<NN>c<MM> invocation only)"
+change_type: modify
+rationale: |
+  The per-chapter pipeline correctly applied the coupling rule at c10, c11, and c12,
+  shipping each chapter as SHIPPED-WITH-CAVEATS with /and-cohere flagged HIGH for the
+  apparatus-register accumulation concern. The per-chapter gates are working correctly.
+  The process failure is structural: no gate prevents the principal from starting the
+  next chapter production run without first running /and-cohere. The /and-cohere
+  recommendation has been bypassed twice (c10 to c11, c11 to c12) because the process
+  only surfaces it as an end-of-run suggestion rather than a blocking precondition.
+
+  At N=3 consecutive SHIPPED-WITH-CAVEATS on the same cross-chapter pattern, the
+  recommendation class needs to become a HARD-abort class. The minimum-viable enforcement
+  surface is a Phase 0 check in /and-substance chapter: before authoring the next chapter,
+  read the showrunner memory's consecutive_shipped_with_caveats counter; if >= 3 and
+  no cohere acknowledgment stamp is present, abort with instructions to run /and-cohere
+  (or acknowledge the bypass explicitly).
+
+  This proposal is discriminated from the DEC-0075 deferred mechanism (wiring a counter
+  inside the not-yet-implemented /and-cohere command body — PROP-0030/0031 dependency).
+  PROP-0037 targets the next chapter production command, not the cohere command body;
+  it does not require /and-cohere to be implemented. It is the "obligation-surfaces-at-
+  the-right-moment" gate. PROP-0030/0031 are the "obligation-execution" machinery.
+  They are orthogonal: accept PROP-0037 independently of PROP-0030/0031 triage.
+
+  Evidence chain: DEC-0072 (c10 ship) → DEC-0073 (N=6, PROP-0030/0031 recurrence_count
+  3→4, /and-cohere before c13 flagged) → DEC-0074 (c11 ship) → DEC-0075 (2nd consecutive,
+  DEC-0075 deferred cap mechanism pending PROP-0030/0031 triage) → DEC-0076 (c12 chunk
+  proceed) → DEC-0077 (N=7, PROP-0030/0031 recurrence_count 4→4, urgency HIGH) → DEC-0078
+  (c12 ship) → DEC-0079 (this dispatch, PROP-0037 authored).
+evidence_refs:
+  - "active-project/staff/reviews/coldread-b01c12-2026-06-03.md — cold-read CONTINUE=No:
+    apparatus-register density, design-inherent low jeopardy, cold-context proper-noun
+    opacity; all three categories pre-authorized by DEC-0076; identical pattern to c10/c11."
+  - "staff/admin/decisions.md — DEC-0075: deferred consecutive-cap mechanism pending
+    PROP-0030/0031 triage; 2nd consecutive at that decision point."
+  - "staff/admin/decisions.md — DEC-0078: 3rd consecutive SHIPPED-WITH-CAVEATS; /and-cohere
+    before c13 urgency HIGH; this dispatch is the 3rd-consecutive trigger."
+  - "staff/admin/process-proposals.md — PROP-0030 (status: open, recurrence_count: 4) +
+    PROP-0031 (status: open, recurrence_count: 4): the cohere execution machinery.
+    PROP-0037 is complementary, not overlapping."
+  - ".claude/commands/and-substance.md — Phase 0 chapter invocation: existing HARD-abort
+    pattern (aggregate-state unacknowledged substantive entries) is the structural analog;
+    same enforcement shape."
+recurrence_count: 3
+proposed_diff: |
+  In .claude/commands/and-substance.md, Phase 0 — Validate + mode select, at the
+  chapter b<NN>c<MM> invocation level, add a new numbered step after step 6 (Aggregate-
+  state read) or after the parking-lot scan, whichever comes last:
+
+  NEW STEP — Consecutive SHIPPED-WITH-CAVEATS gate:
+
+    a. Read showrunner memory field:
+       books[<book>].consecutive_shipped_with_caveats (integer; default 0 if absent).
+       Also check books[<book>].cohere_acknowledgment (see step d below).
+
+    b. If consecutive_shipped_with_caveats < 3 OR cohere_acknowledgment is present
+       and its timestamp post-dates the last SHIPPED-WITH-CAVEATS entry: proceed.
+
+    c. If consecutive_shipped_with_caveats >= 3 AND no valid cohere_acknowledgment:
+       HARD-ABORT with message:
+
+       /and-substance chapter <slug> Phase 0 abort: consecutive SHIPPED-WITH-CAVEATS
+       = <N> (>= 3 threshold). Cross-chapter apparatus-register accumulation requires
+       resolution before the next chapter production run. Resolve by one of:
+         (a) Run /and-cohere <book> [range covering the SHIPPED-WITH-CAVEATS chapters]
+             and allow it to complete or reach its convergence cap. On completion,
+             /and-cohere stamps cohere_acknowledgment in showrunner memory; this
+             gate clears automatically.
+         (b) If /and-cohere is not yet implemented or the run is not feasible before
+             this chapter, stamp a manual acknowledgment in showrunner memory:
+             books[<book>].cohere_acknowledgment:
+               acknowledged_at: <ISO timestamp>
+               acknowledged_by: <principal>
+               reason: <one line explaining why /and-cohere is deferred>
+             This allows the chapter to proceed; it does NOT clear the counter.
+             The gate will re-fire at the NEXT chapter unless /and-cohere runs.
+
+    d. cohere_acknowledgment validity: a stamp qualifies as valid for ONE chapter
+       production run only. After the chapter ships, the gate re-evaluates
+       consecutive_shipped_with_caveats against the current count (which may or
+       may not have increased). A prior acknowledgment does not carry forward.
+
+  COUNTER MAINTENANCE: The showrunner (or the command that emits SHIPPED-WITH-CAVEATS,
+  i.e. /and-stitch Phase 9) is responsible for incrementing
+  books[<book>].consecutive_shipped_with_caveats on each SHIPPED-WITH-CAVEATS verdict
+  and resetting it to 0 on a clean PASS verdict. Proposed: add a single line to
+  /and-stitch Phase 9's verdict-persist block for each case. (S-cost addition to
+  /and-stitch as a companion change — can be a note here or a separate micro-proposal;
+  principal's choice.)
+
+  SCHEMA: Add books[<book>].consecutive_shipped_with_caveats (integer, default 0) and
+  books[<book>].cohere_acknowledgment (object: acknowledged_at, acknowledged_by, reason;
+  nullable) to schemas/showrunner-memory.schema.md. (S-cost companion change.)
+
+  INTERACTION WITH PROP-0030/0031:
+    - If PROP-0031 is accepted and /and-cohere is implemented: path (a) in step c is
+      the canonical resolution; /and-cohere writes the acknowledgment stamp.
+    - If PROP-0030/0031 are not yet implemented: path (b) is the fallback; the gate
+      still enforces the obligation and requires an explicit principal decision to
+      proceed.
+    - On PROP-0030/0031 implementation, the acknowledgment-stamp write can be added
+      to /and-cohere's Phase 7 (persist) as a natural extension of that command body.
+      PROP-0037 does not need to wait for that.
+
 cost_estimate: S
 status: open
 triaged_at: null
