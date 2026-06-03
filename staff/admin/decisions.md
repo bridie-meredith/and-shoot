@@ -4403,3 +4403,26 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0074 | 2026-06-03 | FAST (user-proxy: Phase 9 terminal-gate disposition)
+
+question: /and-stitch b01c11 Phase 9 terminal-gate disposition. Cold-read recovered all central events; CONTINUE=No ("almost nothing happens / no question pulling me forward"); staging PASS (all 4 central-event bones on-page); readability READABLE; Phase 8.5 PASS; 2 LOW advisories (design-inherent). Class-B FAIL maps exactly onto DEC-0072 carried categories: (1) low on-page jeopardy / design-inherent RISING chapter; (2) cold-context proper-noun load. Disposition candidates: SHIPPED-WITH-CAVEATS / FAIL-REVISE / ESCALATE.
+context: Phase 9 coupling rule: chunk_cold_read.verdict == SHIPPED-WITH-RISK-RECORDED (DEC-0072); live Class-B FAIL hits ONLY the carried categories → ships terminal as SHIPPED-WITH-CAVEATS without re-asking. DEC-0072 dispositioned both items explicitly. Staging clean, readability READABLE; no structural or airlessness FAIL. Consecutive-abstract N=6 already flagged for /and-cohere before c13 (DEC-0073).
+options: SHIPPED-WITH-CAVEATS | FAIL-REVISE (1 retry via /and-write revise --from-signals) | ESCALATE
+
+decision: SHIPPED-WITH-CAVEATS
+
+basis: ltm: DEC-0072 (chunk-level carried disposition authorizes terminal ship on exact-category match) + Phase 9 coupling rule. Runbook R2's generic FAIL-REVISE path is overridden by the coupling rule when the FAIL is design-inherent and pre-dispositioned at chunk level.
+
+rationale: DEC-0072 pre-adjudicated both FAIL drivers: low jeopardy is the substance contract of a RISING consolidation chapter (endorsed by 3/3 audience SUBSTANCE-FELT + dramatist ACCEPT + auditor 0 HARD), and proper-noun opacity is serial mid-point context-noise not in-chunk holes. The coupling rule exists precisely to prevent a retry that would consume 1 cap and risk a false-climax undercutting c12, against a finding that cannot be fixed without violating the endorsed substance contract. Staging is clean and readability is READABLE — the two conditions that would warrant a structural retry (URI-STITCH-SPINE-STAGING gap or AIRLESS) are both absent.
+
+trade-off: FAIL-REVISE would spend the 1 retry cap on a diagnosable non-fixable finding, with seed-variance risk and potential false-climax undercutting c12. ESCALATE is unnecessary — the coupling rule and DEC-0072 together constitute a pre-authorization that removes the irreversibility / uncertainty conditions warranting escalation.
+
+caveat-string: "Class-B FAIL: CONTINUE=No — low on-page jeopardy (design-inherent RISING chapter between c10-CLIMAX and c12-CLIMAX; substance contract endorsed 3/3 audience + dramatist + auditor) + cold-context proper-noun load (serial mid-point; Halvard/Corwick/Otto/Rhaenyra opacity is context-noise, not in-chunk hole). Carried from DEC-0072 chunk-level disposition. Consecutive-abstract N=6 (c10+c11) flagged for /and-cohere before c13 per DEC-0073. Staging clean; readability READABLE."
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no

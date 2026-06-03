@@ -6683,7 +6683,23 @@ books:
               omission_rationale: The two-bone split (n06 = ledger closes; n08 = face persists) is the enacted form of the opposing force. The surplus of n08 over n06 is the scene's argument.
 
       - slug: b01c11
-        status: audited-r1
+        status: stitched
+        stitched: true
+        draft_path: active-project/draft/b01-c11.md
+        cold_read:
+          read_at: 2026-06-03T00:00:00Z
+          verdict: SHIPPED-WITH-CAVEATS   # DEC-0074 (admin user-proxy); Class-B FAIL on carried-risk -> terminal ship per chunk_cold_read coupling
+          recovered_summary: "a spymaster-narrator runs a day of routine deliveries, quietly leaves an informant's name out of the record, notices an enemy already burned a message he'd hoped to intercept, and closes his ledger"
+          continue: no
+          central_event_recovered: true   # Q6 summary maps to goal (tether-at-load + first Rhaenyra-pressure burn-signal / Dragonstone-distance irony)
+          report_path: active-project/staff/reviews/coldread-b01c11-2026-06-03.md
+          staging_signals: 2   # @4 wool-dyer + @18 soap-lane-contact body-token advisories (non-central, pre-carried form-watch); staging PASS, 0 spine-staging-gap, 0 central-event FAIL
+          signal_clusters: []   # no cluster (staging clean)
+          prose_rationale_audit: { count: 0, verdict: not-soft-block }
+          readability_axis: { verdict: READABLE, basis: "person-first render; Phase 8.5 PASS; staging found all 4 spine beats embodied with physical tokens; airlessness risk cleared" }
+          coherence_review: { verdict: PASS, weave_gaps: 0, followability_breaks: 0, cold_read_risk_high: 0, cold_read_risk_advisory: 2, report_path: active-project/staff/reviews/coherence-b01-c11-2026-06-03.md }
+          caveat: "Class-B FAIL: CONTINUE=No — low on-page jeopardy (design-inherent RISING chapter between c10-CLIMAX and c12-CLIMAX; substance contract endorsed 3/3 audience + dramatist + auditor) + cold-context proper-noun load (serial mid-point; Halvard/Corwick/Otto/Rhaenyra opacity is context-noise, not in-chunk hole). Carried from DEC-0072 chunk-level disposition. Consecutive-abstract N=6 (c10+c11) flagged for /and-cohere before c13 per DEC-0073. Staging clean; readability READABLE."
+          stale_since: null
         bones_file: theater/bones/b01-c11.md
         bones_count: 27
         substance_bone_gate_verdict: PASS
