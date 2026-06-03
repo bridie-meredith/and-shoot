@@ -7502,7 +7502,29 @@ books:
             note: "book-author handoff_in prediction stale vs aggregate-state.md; scene ranks authored on aggregate basis per Phase 0 step 6c. +1.0 chapter delta -> rank 8 near-peak. See aggregate-state.md axis_state for full reconciliation."
 
       - slug: b01c12
-        status: scened
+        status: bones-written   # /and-write b01c12 Phase 7 emit 2026-06-03
+        bones_file: theater/bones/b01-c12.md
+        bones_count: 42
+        substance_bone_gate_verdict: PASS
+        substance_delta_measured:
+          axes_moved:
+            capability: +1.0                # @9 (+0.5 cl05) + @30 (+0.5 cl05); target +1.0 EXACT -> rank 6.5
+            social_tether-prot-rise: +0.5   # @10 (cl-d08b); target +0.5 EXACT -> rank 8.5 (at/near peak; auditor SOFT non-blocking)
+            relational_anchor_status: +1.0  # @26 (+0.5 cl-d08) + @27 (+0.5 cl-d06); target +1.0 EXACT -> rank 4.5 (cl-d06 2nd tranche SETTLED, DEC-0071; closes pl-2026-05-30-001 / pl-2026-06-02-stitch-thread-002)
+            position-prot-rise: +1.0        # @19 (+0.5 cl02) + @22 (+0.5 cl02); target +1.0 EXACT -> rank 5
+            moral_framework: -1.0           # @42 (cl05 cost side); target -1.0 EXACT -> rank -2
+          density_measured: 0.70-0.90
+          felt_verdict: SUBSTANCE-FELT-3-of-3   # audience trio all 4 scenes (Phase 6 bone-gate); Earth-Bet fence CLEAN
+        # /and-write b01c12 Phase 7 emit 2026-06-03. 42 bones / 4 scenes. SILENT chapter (0 dialogue-anchor bones; no per-character dialogue files).
+        # Phase 2 constraint audit: 19 FAULT (15 chatter-unpaid + 6 PP-modifier + 3 non-action-verb + 2 interiority) -> fixer ALL CLEARED (recast-as-held/anchor, PP drops, concrete ledger-acts); roll-up preserved EXACT.
+        # Phase 3 dramatist REVISE -> applied: s02 n04<->n05 reorder (irony lands before stilling-reaction); s04 causal-bridge bone n14 'the muddy-way entry closes the fifth-ward circuit' inserted (cold-read s04-seam / DEC-0076: threshold as consequence not assertion).
+        # Phase 4 trim: cape-fic ACCEPT + worm-canon ACCEPT (fence CLEAN) + dark-fantasy REVISE -> s02n07 ('holds the eyes') trimmed (third-stillness camera-linger; 1-persona advisory orchestrator-accepted).
+        # Phase 5 continuity: CONTINUITY-OK 0 faults. Pre-Phase-6 fix: s04n08 held axis moral_framework->moral_legibility (avoid held-on-in-motion).
+        # Phase 6 substance bone-gate: auditor FAIL 3 HARD (s04 HELD-AXIS-NOT-WITNESSED political_register-prot + social_tether-antag) -> RESOLVED (n40[@40] holds political_register-prot; n41[@41] holds social_tether-antag; honors s04 contract holds; no SVO/Δ change). All other auditor checks PASS (roll-up EXACT all 5 axes, event-presence, chunk-tags, cost-ledger cl02/cl05/cl-d06/cl-d08/cl-d08b paid, grounding, held-on-in-motion clean). Audience 3/3 SUBSTANCE-FELT all 4 scenes, full coverage, Earth-Bet fence CLEAN, 0 FLAT/SUSPECT.
+        # Carried to /and-stitch: SIGNAL ABSTRACTION-DOMINANT s04 (interior-climax, accept-w-rationale -> P4+P8.5); SIGNAL REGISTER-AS-MANNERISM 'closes-the-X' x5 + 'reaches-the-X' x3 (accept-w-rationale refrain -> P4); s04n09 (@38 'the accounting reaches the shape-word') EVENT-NOT-CONCRETE FLAG (Earth-Bet-fence-mandated cipher; worm-canon CLEAN; DEC-0076 -> P8.5 Check 3 Khepri-beat-muffle test). chunk_cold_read SHIPPED-WITH-RISK-RECORDED (DEC-0076) arms P8.5 (s04-seam causal-legibility @30->@31->@32 + Khepri-beat-through-register).
+        # Bones-execution watches pl-2026-06-03-004 (a-e) all honored at bones + carried forward in scene-map protected-patterns.
+        # NOTE (persist deviation, documented): full per-bone detail (slug/svo/shape/axis_moves/axes_held/cost_ledger_anchor/grounding + per-scene event_map) lives in active-project/staff/screen-writer/b01c12-bones-draft.md (git-tracked, authoritative for per-bone deltas) + the emitted bones file theater/bones/b01-c12.md + scene-map facet — NOT duplicated into scenes[].bones[] here (memory.md size management; downstream /and-review bones + /and-facets + /and-stitch read the bones file + scene-map, not scenes[].bones[]). flat_id map: s01 @1-@10, s02 @11-@16 (n07 trimmed; n04/n05 swapped -> @14=n05,@15=n04), s03 @17-@28, s04 @29-@42 (n14=@31 bridge).
+        # Reviewer reports: staff/auditor/write-b01c12-pass2.md, write-b01c12-pass5.md, write-b01c12-bone-gate.md; audience/<persona>/bone-gate-b01c12.md (x3).
         chunk: |
           The cost-bearer free-movement leverage beat at d08: Taylor's coverage map has a
           structural gap — the lanes east of the water-gate that Wren moves through daily but
@@ -7911,7 +7933,10 @@ books:
             - "KL 122 AC; coverage at Khepri-rhyming scale; Flea Bottom and five wards fully mapped"
             - "Otto accepts coverage map with eastern gap; arranges alternate route for that channel"
           character_state:
-            - "Taylor: capability rank 6 (full deployment); position-prot-rise rank 5.5; social_tether-prot-rise rank 5.5; relational_anchor_status rank 4.5; moral_framework rank -2; political_register-prot holding"
+            - "Taylor: capability rank 6.5 (full deployment); position-prot-rise rank 5; social_tether-prot-rise rank 8.5; relational_anchor_status rank 4.5; moral_framework rank -2; political_register-prot holding 3.5"
+            # /and-write b01c12 Phase 7: handoff_out character_state corrected to MEASURED close-of-c12 (was stale book-author lineage:
+            # capability 6->6.5, position-prot-rise 5.5->5, social_tether-prot-rise 5.5->8.5). Per Phase-5 continuity flags + substance_delta_measured.
+            # Prevents a spurious handoff_conflict at b01c13 Phase 0. (Phase 10 forward-thread will re-confirm against aggregate-state.)
             - "Wren: structurally necessary to coverage map; anchor weight at 4.5; not in deliverable"
           target_chapter: b01c13
 
