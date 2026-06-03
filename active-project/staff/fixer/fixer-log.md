@@ -2013,3 +2013,9 @@ fault: AP-001 inverted-predicate cap ≤1/file exceeded; narrator:3@15 + narrato
 scope: line
 change: interest-narrator.md narrator:3@15 final clause: "that is the answer she is giving in place of the rebuttal she is holding back" → "she gives him the staying instead of the rebuttal she is holding back"; NI content preserved; anchor/citation unchanged
 criteria met: yes
+
+## SESSION-START — 2026-06-03T12:00:00Z — and-facets-b01c12-cycle1-earthbet-cipher
+dispatch: /and-facets b01c12 Phase 5b cycle-1 remediation — cipher all Khepri/Gold-Morning proper-noun leaks in vibes-b01-c12.md and scene-map-b01-c12.md; documentation/keyword-hygiene only; no entry content, ids, or licensed-by targets changed
+target: active-project/theater/facets/vibes-b01-c12.md, active-project/theater/facets/scene-map-b01-c12.md
+audit-report: Phase 5b cycle-1 adversarial gate (worm-canon-pedant callout)
+findings-queued: 2 (one per file)

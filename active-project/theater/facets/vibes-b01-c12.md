@@ -9,7 +9,7 @@ author: showrunner (R1 BLIND)
 #   PRESENT: cold-utilitarian interiority, penitential-grey King's Landing, tragic-causal,
 #            contempt-without-refusal, smallfolk-gallows register, residue not spectacle,
 #            atonement-as-repetition, rising entrapment,
-#            khepri-memory-as-standard, insect-sense-as-residue-not-spectacle,
+#            prior-architecture-memory-as-standard, insect-sense-as-residue-not-spectacle,
 #            earth-bet-noun-fence, cost-signature-range-bound
 #   ABSENT (available for `+`): any keyword not in the above list
 #
@@ -55,13 +55,13 @@ author: showrunner (R1 BLIND)
 
 11 @22 episode + the-gap-as-formal-fact: [the-chapter-is-what-the-map-does-not-contain, the-deliverable-carries-the-gap-as-a-structural-limit, the-absence-is-named-and-confirmed-and-now-load-bearing, the-eastern-lanes-are-not-in-it] | licensed-by: state-update:3, state-update:4, proto:18, proto:22, proto:24, proto:25
 
-# --- S04 events (E4: second ward-cluster; full-deployment threshold; E5: Khepri surfaces and is suppressed) ---
+# --- S04 events (E4: second ward-cluster; full-deployment threshold; E5: shape-word surfaces and is suppressed) ---
 
-12 @30 actor:taylor-hebert-kl-122ac ++ residue not spectacle: [full-deployment-at-Khepri-scale-in-quiet-accounting-no-performance, architecture-complete-in-scope-and-structural-to-the-channel-before-the-accounting-names-it, the-count-moves-in-her-the-way-the-count-has-always-moved, the-threshold-is-an-arithmetic-fact-not-an-event] | licensed-by: state-update:7, proto:30, proto:31, proto:32, proto:33, proto:34
+12 @30 actor:taylor-hebert-kl-122ac ++ residue not spectacle: [full-deployment-at-prior-architecture-scale-in-quiet-accounting-no-performance, architecture-complete-in-scope-and-structural-to-the-channel-before-the-accounting-names-it, the-count-moves-in-her-the-way-the-count-has-always-moved, the-threshold-is-an-arithmetic-fact-not-an-event] | licensed-by: state-update:7, proto:30, proto:31, proto:32, proto:33, proto:34
 
-13 @38 actor:taylor-hebert-kl-122ac ++ atonement-as-repetition: [the-shape-word-surfaces-in-the-accounting-for-one-count, the-suppression-IS-the-ledger-entry-for-the-irrevocable-repetition, the-breach-column-receives-the-weight-without-the-word, the-threshold-is-irrevocable-the-recognition-is-not-received] | licensed-by: memory:3, feeling:2, proto:38, proto:39, proto:42, world-build:cl05-cost-side-Khepri-repetition
+13 @38 actor:taylor-hebert-kl-122ac ++ atonement-as-repetition: [the-shape-word-surfaces-in-the-accounting-for-one-count, the-suppression-IS-the-ledger-entry-for-the-irrevocable-repetition, the-breach-column-receives-the-weight-without-the-word, the-threshold-is-irrevocable-the-recognition-is-not-received] | licensed-by: memory:3, feeling:2, proto:38, proto:39, proto:42, world-build:cl05-cost-side-prior-architecture-repetition
 
-14 @38 actor:taylor-hebert-kl-122ac ++ khepri-memory-as-standard: [the-internal-record-reaches-for-the-shape-word-at-full-feed-density, the-aggregate-scale-is-what-triggers-the-reach-not-any-single-node, the-gap-between-surveillance-and-override-is-real-and-the-scale-is-also-real, the-shape-word-does-not-settle-the-accounting-advances] | licensed-by: memory:3, proto:38, proto:39, proto:40, world-build:Khepri-threshold-irrevocable-at-full-deployment
+14 @38 actor:taylor-hebert-kl-122ac ++ prior-architecture-memory-as-standard: [the-internal-record-reaches-for-the-shape-word-at-full-feed-density, the-aggregate-scale-is-what-triggers-the-reach-not-any-single-node, the-gap-between-surveillance-and-override-is-real-and-the-scale-is-also-real, the-shape-word-does-not-settle-the-accounting-advances] | licensed-by: memory:3, proto:38, proto:39, proto:40, world-build:prior-architecture-threshold-irrevocable-at-full-deployment
 
 15 @42 actor:taylor-hebert-kl-122ac ++ rising entrapment: [capability-full-deployment-threshold-crossed-cannot-be-walked-back-by-pulling-any-node, the-feed-runs-on-at-full-deployment-for-every-circuit-that-follows, the-gap-east-of-the-water-gate-the-one-place-the-map-does-not-go] | licensed-by: state-update:7, state-update:8, proto:40, proto:41, proto:42, world-build:cl05-irrevocability
 
@@ -71,7 +71,7 @@ author: showrunner (R1 BLIND)
 
 18 @42 loc:the-feed-station + architecture-at-full-scale: [the-station-is-where-the-full-deployment-accounting-closes, breach-column-here-receives-the-irrevocable-threshold, all-five-wards-and-Flea-Bottom-approaches-returned-from-this-surface, the-feed-continues-past-the-hand-that-closed-it] | licensed-by: state-update:7, state-update:8, proto:32, proto:33, proto:34, proto:42
 
-19 @42 episode + suppression-as-ledger-act: [the-shape-word-surfaces-and-is-advanced-past-not-received, the-breach-column-files-the-cost-without-the-word-that-named-it, the-accounting-discipline-is-the-suppression-mechanism, this-is-what-the-irrevocable-threshold-looks-like-from-inside-a-ledger] | licensed-by: memory:3, feeling:2, state-update:8, proto:38, proto:39, proto:42, world-build:cl05-Khepri-repetition-suppressed
+19 @42 episode + suppression-as-ledger-act: [the-shape-word-surfaces-and-is-advanced-past-not-received, the-breach-column-files-the-cost-without-the-word-that-named-it, the-accounting-discipline-is-the-suppression-mechanism, this-is-what-the-irrevocable-threshold-looks-like-from-inside-a-ledger] | licensed-by: memory:3, feeling:2, state-update:8, proto:38, proto:39, proto:42, world-build:cl05-prior-architecture-repetition-suppressed
 
 # --- Provisional anchor-hints (R1) ---
 # hint-1: @42 moral_framework -1.0 is the chapter's terminal cost-filing. vibes:13 (atonement-as-repetition ++)
@@ -86,7 +86,7 @@ author: showrunner (R1 BLIND)
 #   within the episode; this is valid per rubric gate 2 — the `+` in a current episode facet establishes
 #   the keyword for the `++` in the same facet, provided `++` entries appear after the `+` entry).
 # hint-4: Fan-out check (gate 7):
-#   E5 (Khepri-surfaces @38-@42): affects actor:taylor + episode + loc:the-feed-station.
+#   E5 (shape-word-surfaces @38-@42): affects actor:taylor + episode + loc:the-feed-station.
 #     Covered: vibes:13 + vibes:14 (actor:taylor), vibes:19 (episode), vibes:17 + vibes:18 (loc:the-feed-station).
 #     jarvis-coin-kl-courier not on stage at s04; NOT a fan-out omission.
 #   E3 (refusal + settlement @19-@27): affects actor:taylor + actor:jarvis + episode + loc:the-feed-station.
