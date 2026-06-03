@@ -36,8 +36,8 @@
 35 the accounting reaches the aggregate-shape entry
 36 the accounting runs the harm-prevention column
 37 the accounting reaches the breach column
-38 the accounting reaches the shape-word [feel:2]
+38 the accounting reaches the shape-word
 39 the accounting advances the count
-40 taylor-hebert-kl-122ac closes the architecture entry
+40 taylor-hebert-kl-122ac closes the architecture entry [feel:2]
 41 the ledger entry takes the full-circuit count
 42 the breach column takes the threshold entry

@@ -1,8 +1,8 @@
 # studio state
 
-episode: b01c11
-last_updated: 2026-06-02
-action: three-facet R1 blind authoring — /and-facets b01-c11 Phase 1
+episode: b01c12
+last_updated: 2026-06-03
+action: location-state R1 blind authoring — /and-facets b01-c12 Phase 1
 
 ## Current set (b01c11 chapter-close)
 location: the-feed-station (end-of-day; accounting closed)

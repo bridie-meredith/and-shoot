@@ -3,9 +3,11 @@ episode: b01-c12
 author: studio
 ---
 
-1 @1 oc-east-water-gate-lanes | morning | none | overhang-geometry-active | the lane-mouth overhang-joints overhead — the tight-spanned geometry that makes a dense return read as infestation
-2 @3 oc-east-water-gate-lanes | morning | none | gate-tower-shadow-west | the gate-tower shadow thrown west across the lane — the body-cover the position turns on
-3 @6 oc-east-water-gate-lanes | morning | none | stitch-house-route-active | the stitch-house lane opening east — the route the insects thread back, which is Wren's daily passage
-4 @11 the-feed-station | morning | none | ledger-surface-open, channel-active | the working surface where the packet lands — the ledger's open face as the apparatus enters via the standard channel
-5 @17 the-feed-station | midday | none | channel-active, gap-column-open | the channel surface at the high-noon read — time-advance from the morning-packet delivery; the same ledger face, the light shifted
-6 @29 oc-muddy-way | afternoon | none | ward-cluster-extending | the muddy-way upper margin — the physical territory the insects push into, the edge of the fifth-ward circuit before it closes
+1 @1 the-hook-ward | morning | none | lane-mouth-open, overhang-geometry-active | the overhang-joints at the lane-mouth — the tight geometry that makes dense insect placement read as witch-label; place-anchor for the morning circuit
+2 @3 the-hook-ward | morning | none | gate-tower-shadow-west, rendering-yard-wall-east | the gate-tower shadow thrown across the lane — the west wall of the gap; the body placed inside the coverage boundary
+3 @8 the-feed-station | morning | none | ledger-surface-open, stylus-lifted | the ledger surface at the station — body moved from lane circuit to accounting surface; feed-station sub-anchor for the circuit-close
+4 @11 the-feed-station | morning | none | ledger-surface-open, packet-at-surface-edge | the station surface edge where the packet lands — the opposing force enters at the ledger's working edge via the standard channel
+5 @17 the-feed-station | midday | none | ledger-surface-open, gap-column-pending | the ledger surface in midday stillness — time advanced from morning; the refusal sit-down begins at the same working face
+6 @23 the-feed-station | midday | none | ledger-surface-clear, sealed-packet-departing | the station surface edge as the sealed packet is taken — the withholding exits; the surface clears to the anchor-column
+7 @29 the-feed-station | afternoon | none | ledger-surface-open, muddy-way-extension-in-motion | the ledger surface late-afternoon as the fifth-ward cluster extends — time advances; the muddy-way boundary enters the feed for the first time
+8 @42 the-feed-station | end-of-day | none | breach-column-receiving, accounting-closed | the breach column at accounting-close — threshold entry filed in flat column register; end-of-day state
