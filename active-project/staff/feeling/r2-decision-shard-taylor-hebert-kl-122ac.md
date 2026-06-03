@@ -1,91 +1,62 @@
 facet: feeling
-episode: b01-c12
+episode: b01-c13
 character: taylor-hebert-kl-122ac
 pass: R2 (feeling JUDGE mode — facet-judge override)
 judge: taylor-hebert-kl-122ac impersonator
-cite_index_hash: f73df23718518f3cb726a1efc7d52d0789dda8f6
+cite_index_hash: 0e12ee9c89ee2002e4b5a6b751c9c393e02bbbf5941a58c6b61ba06b45468e30
+f-r2-counts: {f-r2-1: 0, f-r2-2: 0, f-r2-3: 0, f-r2-4: 0}
 ---
 
 ## Counts
-- KEEP: 2
+- KEEP: 1
 - DELETE: 0
 - ADD: 0
-- f-r2-counts: { keep: 2, delete: 0, add: 0 }
 
-POV impersonator in FACET-JUDGE mode. Judged the locked R1 feeling graph (2 entries)
-against rubric-feeling.md V1 (LOCKED 2026-05-07). Both entries are POV (Taylor) and carry
-the mandatory NI non-redundancy contract.
+POV impersonator in FACET-JUDGE mode. One Taylor feeling entry on the locked R1 graph,
+judged against rubric-feeling.md V1 (LOCKED 2026-05-07) under the B-locked-rubric
+justification-first gates. The entry is POV and carries the mandatory NI non-redundancy
+contract. This is the s03 spine body-register — the held beat between the naming-cognition
+and the resumption-as-finding.
 
-## Per-entry decisions
+feel:2 @21 taylor-hebert-kl-122ac — I read this cold, with my hand over @22 and @23, and what the breath going out and the weight settling back onto the heel that had stopped does at its own anchor is hold the cost of the word in the body without naming the word's content. The word already arrived at @19 — NI:4 carries it: "the word arrives in the functional register and it is contempt ... a verdict about quality, with the evidence already counted." That is cognition. It is the mind's filing of what the contempt IS. The cite-index confirms no narrator fire at @21 — NI is silent across @20, @21, @22 and does not resume until @23, where NI:5 reads the route as unchanged, "a finding, not a decision, and she knows what the ledger does with findings." So the architecture is clean three ways: @19 is the word's cognition, @23 is the consequence the word files as, and @21 is the body bearing it in between — the stopped lane (@19 proto, "stops the lane") held one breath-cycle before the jaw sets (@22) and the lane resumes (@23). The heel "that had stopped" reaches back to the @19 stop without re-narrating it; the weight settling back onto it is the body absorbing the standing-contempt before motion returns. That settle-and-resume is exactly §Voice's "affect appears in brief body-signals before the analytical voice reasserts" — the body-signal is @21, the analytical reassertion is @23's finding-not-decision. Card-match holds: the cold-utilitarian register does not break, the word is never named in the description, and the somatic IS the cost the swarm-suppression-and-contempt chapter is otherwise too clean to show. Q1 passes — without this fire the reader gets stop (proto @19), jaw (proto @22), resume (proto @23), and the cognition (NI), but never the body bearing the word, which is the one place the chapter's central register-shift becomes physical rather than filed. Q2 passes — this is the s03 hinge; the standing-contempt that runs the rest of the chapter crosses its threshold here, so the clause is structurally earned. Functional-register: painting-characterization (default) + realization (the word's arrival made body). Form: single-subject reading — the breath goes out, then her weight settles; the connector "and" joins two body-shows of the same bearing-event, not a body-show to a latency/rule/abstraction-noun clause, so it clears the URI-FACETS-CYCLE-1 REJECT signatures. No named-feeling vocab (contempt is named nowhere in the description — it lives in NI, correctly), no hedge, no simile, no metaphor, no compound naming. expressed: no is correct — this is interior-only; Halvard is not present in s03 and no in-scene observer reads the heel-settle. Scene cap: this is the sole Taylor fire in scene C (@19–@23). It earns its keep cold.
+VERDICT: KEEP
 
-### feel:1 @20 — KEEP
-Entry: "her hand stops short of the source-field and does not come down | expressed: partial"
-Proto @20: "taylor-hebert-kl-122ac holds the hand"
+## ADD adjudication (default-refuse; sparse single-POV chapter)
+- @19 (s03 HINGE peak, 9-facet pile-up): REFUSE. NI:4 + loc-state:5 + four state entries +
+  three vibes already saturate the beat with cognition/state/register. A somatic add here
+  would be Q1-redundant against NI:4 and would breach the scene-C cap that feel:2 @21 holds.
+  The word's body-bearing was deliberately placed one beat downstream at @21, off the
+  cognition-peak, exactly to avoid the POV-duplicate-with-NI failure (anti-pattern #6).
+- @30 (route-walk, the foreclosure-as-body-state): REFUSE on G5 position grounds. @30 is the
+  s04 cold-close; state:20 already writes the not-turning as canonical body-state and NI:7
+  carries "the not-turning has the shape of walking." That is the foreclosure already made
+  body in the state+NI layer; a feeling add would close in the same archival register NI:7
+  closes in — the @131-pattern paired-archive seam G5 exists to catch. REFUSE.
+Result: 0 ADDs. The chapter's discipline is the held single somatic at the hinge; multiplying
+somatics would dilute the one that matters.
 
-Multi-justification (5 of 5):
-1. Somatic-tell-card-match — PASS. §Signature Moves "The second answer" (refuse first, hold
-   the refusal legible as a choice); §Voice "affect appears in brief body-signals." The
-   withheld hand is the body-bearing of the held refusal — the refusal-withhold somatic.
-2. Q1 audience-cannot-otherwise-read — PASS. Proto-line gives only the act ("holds the
-   hand"); the refusal-withhold interior (stops short of the source-field, does not come
-   down) is not readable from proto + NI alone. NI fires @21 (narrator:6, "the stylus
-   lifts"), NOT @20 — cite-index confirms no narrator entry at @20. The cognition sits on
-   the adjacent prior beat; distinct job. Non-redundant.
-3. Q2 meaningful — PASS. Structural to the chapter's controlled-suppression pivot.
-4. Scene-eligible — PASS. Single Taylor fire in loc-state segment @17–@23 (cap ≤1).
-5. Functional-register (≥2 of 4) — PASS. Painting-characterization (default) + realization.
+## Caps / file-shape (Taylor slice)
+- Per-character per-scene cap ≤1 (HARD): one Taylor fire, scene C. PASS.
+- Per-episode sparsity (cross-character, file-level): 2 fires / 31 beats = 6.5%. Slightly
+  above the 2-5% target band but defensible — 31 beats is a short chapter and the two fires
+  sit on different characters at different scenes (Taylor s03, Halvard s04). Soft target;
+  no cut warranted. FLAG-soft for Phase 4 file-shape ratify.
+- POV NI non-redundancy (mandatory, HARD): NI silent @21; word's cognition at @19/@23.
+  Clean. PASS.
+- No labeled-feeling leak, no idiom/simile/metaphor/hedge. PASS.
 
-Form discipline — same-subject compound (subject = the hand throughout). Second clause
-"does not come down" is a permitted negative micro-action ("does not speak again"
-precedent), NOT a subject-shift to an abstraction-noun, latency observation, or
-rule-statement. Does not trip URI-FACETS-CYCLE-1 REJECT signatures. No named-feeling vocab,
-no hedge, no simile, no metaphor, no compound naming. expressed: partial correct.
+PATTERN-SCAN: Across the two-entry file my ear catches nothing formulaic — the two fires use
+different bodies (Taylor's breath/weight/heel; Halvard's hands working the water-skin),
+different expressed-values (no vs. yes), different registers (interior cost-bearing vs.
+visible continuation-of-work), and different scenes. The one thing to watch is the
+cross-character non-redundancy of REGISTER, not vocabulary: both fires are "the body keeping
+on / the body bearing" — but Taylor's is a held stop and Halvard's is an unbroken continuation,
+which is the intended contrast (she stops and resumes carrying the word; he never stops
+carrying the work). The contrast is the point, not a saturation. Nothing to cut.
 
-### feel:2 @40 — KEEP
-Entry: "her breath stays flat and does not lift | expressed: no"
-Proto @40: "taylor-hebert-kl-122ac closes the architecture entry"
-
-Multi-justification (5 of 5):
-1. Somatic-tell-card-match — PASS. §Voice "affect appears in brief body-signals"; the
-   insect-suppression / controlled-suppression overhead renders as the flat-held breath.
-2. Q1 audience-cannot-otherwise-read — PASS. NI is SILENT @40 by design — the shape-word
-   cognition lives @38 (narrator:8 + mem:3 + meta:1); cite-index confirms no narrator entry
-   at @40. The proto-line is the ledger act ("closes the architecture entry"); the
-   suppression-hold somatic at the architecture-closing-WITHOUT-the-shape-word is invisible
-   without the fire. Non-redundant.
-3. Q2 meaningful — PASS. Structural: the chapter's controlled-suppression close-beat; the
-   shape-word reached @38 but the body does not release.
-4. Scene-eligible — PASS. Single Taylor fire in loc-state segment @29–@42 (cap ≤1).
-5. Functional-register (≥2 of 4) — PASS. Painting-characterization (default) + realization.
-
-Form discipline — same-subject compound (subject = the breath throughout). "breath stays
-flat" is a permitted breath-show; "does not lift" is a permitted negative micro-action,
-same subject. "flat" modifies breath as a body-state (even/unraised), not a feeling-synonym
-for a banned slot. No subject-shift, no rule/latency clause. No named-feeling vocab, no
-hedge, no simile, no metaphor. expressed: no correct (interior-only; in-scene misses).
-
-## ADD adjudication (default-refuse; controlled-suppression chapter)
-- @38 (shape-word beat): REFUSE. NI (narrator:8) + mem:3 + meta:1 already carry
-  registration/cognition richly → a somatic add is Q1-redundant. It is also the beat feel:2
-  was deliberately moved OFF (@38 → @40) to avoid NI-dup; adding here re-introduces the dup
-  and pushes to 3 fires.
-- @42 (9-facet pile-up): REFUSE. Environmental/state/vibes-heavy (loc-state + state +
-  vibes); not an interior-somatic locus.
-Result: 0 ADDs. Over-adding somatics would defeat the controlled-suppression discipline.
-
-## Caps / file-shape
-- Per-character per-scene cap ≤1 (HARD): @20 in loc-state segment @17–@23; @40 in segment
-  @29–@42. Distinct scenes. PASS.
-- Per-scene total cap ≤3: max 1. PASS.
-- Per-episode sparsity: 2 fires / 42 beats = 4.8% (within 2-5%). PASS.
-- Vocabulary distinctness (HARD): feel:1 = hand; feel:2 = breath. No saturation. PASS.
-- POV NI non-redundancy (mandatory): both clear (NI @21 not @20; NI silent @40). PASS.
-- No labeled-feeling leak, no idiom/simile/metaphor/hedge anywhere. PASS.
-
-## @40 NI-dependency note (cross-facet, for arbiter)
-feel:2 @40 KEEP relies on NI being SILENT at @40. The parallel R2 NI judge for this POV must
-NOT add an NI fire at @40, or if it does, the added NI must stay in cognition/registration
-register distinct from the somatic-breath show. If R2 NI adds at @40 in a register that
-duplicates the breath-hold, re-verify feel:2 against Q1 — it would convert to POV
-duplicate-with-NI (anti-pattern #6) and flip to DELETE. Flagged for arbiter cross-check
-(C-arbiter-protocol).
+## Cross-facet note (for arbiter / Phase 4)
+feel:2 @21 KEEP relies on NI being SILENT at @21. The parallel R2 NI judge for this POV must
+NOT add an NI fire at @21. If NI later adds at @21 in a register duplicating the breath/heel
+somatic, re-verify feel:2 against Q1 — it would convert to POV-duplicate-with-NI
+(anti-pattern #6) and flip to DELETE. NI carries the word's cognition (@19/@23); feeling
+carries the body bearing it (@21). The seam is clean now; it must stay clean through NI R2.
