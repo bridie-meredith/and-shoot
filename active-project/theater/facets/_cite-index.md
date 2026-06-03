@@ -1,16 +1,16 @@
 # Cite-Index — b01-c11
-generated: 2026-06-02
+generated: 2026-06-03
 source: active-project/theater/proto-lines/b01-c11.md + active-project/theater/facets/
 scope: 9 facet files + 1 proto-lines file
-totals: 51 facet entries; 22/27 protolines decorated (81.5%)
+totals: 52 facet entries; 22/27 protolines decorated (81.5%)
 
 ## Density distribution (protolines by citation count)
 
 | cites/line | count |
 |------------|-------|
 | 0 (bare)   | 5 |
-| 1          | 12 |
-| 2          | 3 |
+| 1          | 11 |
+| 2          | 4 |
 | 3          | 1 |
 | 4          | 2 |
 | 6          | 3 |
@@ -26,13 +26,14 @@ totals: 51 facet entries; 22/27 protolines decorated (81.5%)
   loc-state:5 @22 back=Y co=[state:9]
   loc-state:6 @23 back=Y co=[state:10]
 
-### narrator (6 entries)
+### narrator (7 entries)
   narrator:1 @6 back=Y co=[state:3, state:15, vibes:11]
   narrator:2 @11 back=Y co=[exposition:2, sensory:1, state:4, vibes:8, vibes:9, vibes:12]
   narrator:3 @16 back=Y co=[mem:2, state:5, state:16, state:17, vibes:10]
   narrator:4 @20 back=Y co=[state:7, state:18, vibes:3, vibes:6, vibes:7]
   narrator:5 @25 back=Y co=[state:12, state:19, vibes:1, vibes:2, vibes:11]
   narrator:6 @26 back=Y co=[state:13]
+  narrator:7 @7 back=Y co=[mem:1]
 
 ### sensory (3 entries)
   sensory:1 @11 back=Y co=[exposition:2, narrator:2, state:4, vibes:8, vibes:9, vibes:12]
@@ -61,7 +62,7 @@ totals: 51 facet entries; 22/27 protolines decorated (81.5%)
   state:19 @25 back=Y co=[narrator:5, state:12, vibes:1, vibes:2, vibes:11]
 
 ### mem (2 entries)
-  mem:1 @7 back=Y lic-in=[vibes:3]
+  mem:1 @7 back=Y co=[narrator:7] lic-in=[vibes:3]
   mem:2 @16 back=Y co=[narrator:3, state:5, state:16, state:17, vibes:10]
 
 ### feel (1 entries)
