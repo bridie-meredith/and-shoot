@@ -1,8 +1,89 @@
 # studio state
 
-episode: b01c13
-last_updated: 2026-06-03
-action: state-updates-env R1 authoring — /and-facets b01-c13 Phase 1
+episode: b01c14
+last_updated: 2026-06-04
+action: location-state + sensory + state-updates-env R1 authoring — /and-facets b01-c14 Phase 1
+
+## Location-state sequence locked (b01c14) — 4 entries, 0 cull
+  loc-state:1 @1  — oc-rushwick-cloth-stall | morning | none | stall-door-open, goods-staged-unheld, bag-peg-bare | the bare peg on the lane-side wall (place-anchor; scene-A; working morning; the one missing object against staged goods)
+  loc-state:2 @10 — the-channel-station | morning | none | response-sheet-on-surface, wax-at-hand, station-surface-clear | station surface open and cleared before Jarvis places the incoming packet (place-anchor; scene-B/C)
+  loc-state:3 @32 — the-gap-lanes-east-water-gate | evening | none | overhang-timber-occupied-bottlefly, second-junction-open | overhang timber above second junction where bottlefly grips (place-anchor; scene-D; following evening)
+  loc-state:4 @38 — the-gap-lanes-east-water-gate | evening | none | lane-empty | second-junction gap-lane floor — clear of all bodies (state-change: lane empties after detention)
+  Feed-observation beats excluded: @12-@15 (figure approach, S02), @33-@37 (two men + figure in S04) are perception-feed SVO per rubric §Necessity REJECT list; cite narrator/feel, not loc-state.
+  Cull: 0 entries removed — all 4 survive strip / pointing / previous-entry / frugality tests.
+
+## Current set (b01c14 chapter-close)
+  location: the-channel-station (Taylor's body; the gap-lane observation is fauna-feed, not body-location)
+  time_of_day: evening (S04 time advance)
+  weather: none
+  ambient_conditions:
+    - response-sheet sealed and staged at station-edge (for Jarvis pickup; @29)
+    - gap-lane-bottlefly-coverage: bottlefly-released (@39; coverage closed)
+    - feed-ledger: cl04 outcome-entry closed (@40); exit-column complete (@44)
+    - second-junction gap-lane: empty (@38; lane-empty condition holds through chapter-close)
+
+## Location-state R1 authored (b01c14) — 2026-06-04
+  theater/facets/location-state-b01-c14.md (4 entries, 0 cull)
+  _inflight: theater/facets/_inflight/proto-lines-loc-state.md filed (citations @1, @10, @32, @38)
+
+## Seams flagged for R2 (b01c14 location-state)
+  SEAM-C14-LOC-001: the-channel-station — no confirmed warehouse card; slug drawn from scene-map / bones grounding notes; R2 confirm canonicalization or flag for margit. Consistent with b01c12 "the-feed-station" slug family — SEAM-C14-ENV-006 flags possible identity with the-feed-station.
+  SEAM-C14-LOC-002: the-gap-lanes-east-water-gate — no confirmed warehouse card; slug from scene-map S04 header. R2 confirm or flag for margit.
+  SEAM-C14-LOC-003: oc-rushwick-cloth-stall — runtime node within oc-rushwick; no dedicated card. R2 confirm slug or flag for margit.
+
+## Sensory facet filed (b01c14) — 3 entries, 0 cull
+  sensory:1 @11 — tactile: cured-leather-surface-ambient -> wax-seal-crack (incoming seal breaks; S02 channel-station tactile baseline established)
+  sensory:2 @28 — tactile: wax-unset-warm -> wax-give-under-thumb (outgoing seal pressed; S03 airless-relief anchor) # airless-relief @28
+  sensory:3 @45 — sound: lane-ambient -> lane-empty-silence (second-junction lane clears; S04)
+  Density: 3/46 = 6.5% — marginally over 6% ceiling; authorized by BONES-AIRLESS-RISK brief (grounding-ledger candidates for @16-@31 stretch; @28 is the primary airless-relief fire)
+  Modalities: tactile + sound (2; meets ≥2 floor)
+  Per-scene cap: scene-A=0, scene-B=1 (@11), scene-C=1 (@28), scene-D=1 (@45) — all within ≤3
+  Old-state anchors: sensory:1 from loc-state:2 @10 (cured-leather working surface in conditions); sensory:2 from loc-state:2 @10 (wax-at-hand condition) + sensory:1 prior tactile baseline; sensory:3 from loc-state:3 @32 (second-junction-open lane ambient baseline)
+  Files: theater/facets/sensory-b01-c14.md + theater/facets/_inflight/proto-lines-sensory.md
+
+## State-updates-env locked (b01c14) — 13 entries, decisions-not-fire documented
+  state:1  @1  — studio.location: the-hook-lower-water-trough -> oc-rushwick-cloth-stall
+  state:2  @9  — prop:oc-feed-ledger.rushwick-cloth-stall-node-entry: active -> foreclosed
+  state:3  @10 — studio.location: oc-rushwick-cloth-stall -> the-channel-station
+  state:4  @10 — prop:oc-jarvis-packet.holder: jarvis-coin-kl-courier -> station-surface
+  state:5  @11 — prop:oc-jarvis-packet.seal-condition: sealed -> broken
+  state:6  @28 — prop:oc-response-sheet.seal-condition: unsealed -> wax-pressed
+  state:7  @29 — prop:oc-response-sheet.position: working-surface -> station-edge
+  state:8  @30 — prop:oc-feed-ledger.breach-column-entry: threshold-filed -> cl04-added
+  state:9  @32 — studio.time_of_day: morning -> evening
+  state:10 @32 — studio.fauna_sense_status.gap-lane-bottlefly-coverage: absent -> bottlefly-at-overhang-timber-active
+  state:11 @39 — studio.fauna_sense_status.gap-lane-bottlefly-coverage: bottlefly-at-overhang-timber-active -> bottlefly-released
+  state:12 @40 — prop:oc-feed-ledger.cl04-outcome-entry: open -> closed
+  state:13 @44 — prop:oc-feed-ledger.exit-column: in-progress -> complete
+  Field-extensions (5 new): prop:oc-response-sheet (new oc-prop); prop:oc-feed-ledger.rushwick-cloth-stall-node-entry (new field); prop:oc-feed-ledger.cl04-outcome-entry (new field); prop:oc-feed-ledger.exit-column (new field); studio.fauna_sense_status.gap-lane-bottlefly-coverage (new sub-field)
+  Margit referrals needed: oc-response-sheet.card.md (new); oc-feed-ledger schema extension (4 new fields + carry from c11/c12/c13)
+  Density: 13/46 = 28%; consistent with b01c12 (38%) and b01c13 (42%) precedent; all 13 entries clear Reality+Authority+Frugality.
+  State-updates-env R1 authored 2026-06-04 — theater/facets/state-updates-env-b01-c14.md (13 entries)
+  _inflight: theater/facets/_inflight/proto-lines-state-env.md filed (citations @1, @9, @10×2, @11, @28, @29, @30, @32×2, @39, @40, @44)
+
+## Prop state at b01c14 chapter-close (projected from state-updates-env R1)
+  - studio.time_of_day: evening (@32; chapter-close)
+  - studio.location: the-channel-station (@10; body-anchor through chapter-close)
+  - studio.fauna_sense_status.gap-lane-bottlefly-coverage: bottlefly-released (@39; coverage closed)
+  - prop:oc-jarvis-packet (c14 incoming): holder=station-surface (@10); seal-condition=broken (@11)
+  - prop:oc-response-sheet: seal-condition=wax-pressed (@28); position=station-edge (@29; awaiting Jarvis collection off-screen in c15)
+  - prop:oc-feed-ledger.rushwick-cloth-stall-node-entry: foreclosed (@9; permanent)
+  - prop:oc-feed-ledger.breach-column-entry: cl04-added (@30; both threshold-filed + cl04 entries in column)
+  - prop:oc-feed-ledger.cl04-outcome-entry: closed (@40; permanent)
+  - prop:oc-feed-ledger.exit-column: complete (@44; terminal record state for this chapter's arc)
+  - All b01c13 carry-forward entries unchanged: studio.spatial_layout.lane-junction-patrol: Gold-Cloak-pair-posted; studio.fauna_sense_status.lower-gate-road-coverage: corwick-absent; prop:oc-ward-coverage-notes.content: hook-rushwick-oswyn-plus-south-plus-both-clusters; prop:oc-feed-ledger.condition: closed; prop:oc-feed-ledger.corwick-entry: written; studio.fauna_sense_status.coverage-scale: five-ward-plus-approaches
+
+## Seams flagged for R2 (b01c14 state-updates-env)
+  SEAM-C14-ENV-001: prop:oc-response-sheet first-touch; no prior warehouse card; old-state "unsealed" inferred from blank-response-sheet context at @16; R2 confirm.
+  SEAM-C14-ENV-002: prop:oc-jarvis-packet old-state "sealed" inferred from delivery convention (c12/c13 precedent); no explicit c14 upstream seal-state entry; R2 confirm.
+  SEAM-C14-ENV-003: prop:oc-feed-ledger.breach-column-entry old-state "threshold-filed" traces to b01c12 state:15 @42; held through c13 (no c13 breach-column fire); chain unbroken; R2 confirm.
+  SEAM-C14-ENV-004: Four new oc-feed-ledger fields — margit referrals needed for schema extension documentation.
+  SEAM-C14-ENV-005: prop:oc-response-sheet.position holds at station-edge through chapter-close; no c14 departure bone; showrunner note for c15 canonical state: Jarvis collects off-screen between chapters.
+  SEAM-C14-ENV-006: studio.location at chapter-close = the-channel-station; prior chapters used the-feed-station for the same (apparent) location. R2 confirm if these are the same slug or distinct; reconcile if same.
+
+## Airless-relief sensory entries
+  Primary airless-relief: sensory:2 @28 (tactile: wax-unset-warm -> wax-give-under-thumb; inside the @16-@31 BONES-AIRLESS-RISK window; tagged for grounding-ledger cross-ref at Phase 2.5)
+  Supporting: sensory:1 @11 (tactile: cured-leather-surface-ambient -> wax-seal-crack; just before the airless stretch onset; sets the station tactile baseline)
 
 ## Location-state sequence locked (b01c13) — 7 entries, 0 cull
   loc-state:1 @1  — the-hook-upper-provisioning | morning | none | loading-platform-open | crate-ledge at the platform edge (place-anchor; scene-A; Thursday mid-morning)
