@@ -5494,6 +5494,138 @@ methodology-update-proposed: no
 
 ---
 
+## DEC-0089 | 2026-06-04 | SLOW (process-critic)
+
+mode: process-critic
+trigger:
+  reason: failure
+  source_report: active-project/staff/reviews/coldread-b01-c15-2026-06-04.md
+  source_verdict: |
+    SHIPPED-WITH-CAVEATS — /and-stitch b01c15 Phase 9 cold-read FAIL (CONTINUE=no;
+    events recovered + summary maps to goal; categories = event-poverty/jeopardy-offstage/
+    nothing-changes, ALL pre-authorized in chunk_cold_read.cold_read_risk_carry per DEC-0087).
+    Auto-shipped terminal per Phase-9 Step-4 SHIPPED-WITH-RISK-RECORDED coupling. Phase 8.5
+    confirmed central-event-muffle NOT-MATERIALIZED. Mandatory depth-pass logged
+    (pl-2026-06-04-c15-004). Readability axis READABLE (CONTINUE=no is event-poverty/
+    uninformedness, not airlessness).
+  gate_path: .claude/commands/and-stitch.md#phase-9
+  secondary_gate_paths: [.claude/commands/and-substance.md#phase-5.5]
+verdict: OK
+
+question: |
+  Second consecutive SHIPPED-WITH-CAVEATS (c14 DEC-0085 + c15 now — both deliberately-quiet
+  falling/accounting chapters). Is the back-to-back-quiet accumulation a process signal worth
+  a proposal — specifically: (a) should two consecutive SHIPPED-WITH-CAVEATS auto-arm
+  /and-cohere, or (b) should the falling-arc run of c13-c15 have been compressed at
+  /and-substance book, or (c) is the coupling functioning as designed and the accumulation
+  handler already named?
+
+decision: OK — no new proposal.
+
+basis: |
+  Step 1 (evidence):
+    c15 cold-read data (from showrunner memory — report file not on disk, data embedded in
+    memory.md cold_read block): CONTINUE=no. Event-poverty + jeopardy-offstage (by design)
+    + nothing-changes. Fail categories ALL in cold_read_risk_carry (per DEC-0087 Phase 5.5
+    P-disposition). Phase 8.5 PASS. Readability axis READABLE. Central-event-muffle NOT-
+    MATERIALIZED (c14 failure did not recur). 3/3 audience SUBSTANCE-FELT (bone-gate).
+    9/9 facets ACCEPT. The SHIPPED-WITH-CAVEATS auto-shipped under the PROP-0040-proposed
+    Case 1 path: zero tractable complaints, all complaints covered by carried risk. Mandatory
+    depth-pass logged for both c14 and c15.
+
+    Consecutive-quiet count: c14 + c15 = 2. Prior run: c10/c11/c12 (3 consecutive) triggered
+    PROP-0037 at N=3. /and-cohere ran after c12 (before c13) and converged at CAUTION-COHERE
+    (DEC-0081/0082), stamping cohere_acknowledgment, clearing PROP-0037's proposed gate.
+    c13-c15 are the new run of quiet chapters post-cohere. Current consecutive count = 2 (c14 +
+    c15); this is below the N=3 threshold PROP-0037 proposes.
+
+  Step 2 (proposals log):
+    PROP-0037 (status: open): targets /and-substance chapter Phase 0 HARD-abort at
+    consecutive_shipped_with_caveats >= 3 without cohere_acknowledgment. Current count is 2.
+    Not triggered yet. No prior proposal covers a two-consecutive auto-cohere-arm rule.
+    PROP-0040 (status: open): targets Phase 9 Case 1 auto-ship (all complaints covered →
+    no admin dispatch). c15 executed exactly as Case 1 — the mechanism proposed in PROP-0040
+    worked correctly here.
+    No rejected or deferred proposal matches a "two-consecutive triggers cohere" rule.
+
+  Step 3 (content vs. process):
+    Is this a process failure? No. The gate chain executed correctly at every level:
+      — /and-substance chapter Phase 5.5: Class-B disposition P per DEC-0087 (7-consecutive
+        precedent; dramatist ACCEPT; informed 3/3 SUBSTANCE-FELT; execution watches HARD into
+        /and-write).
+      — /and-write: bones-gate PASS, audience 3/3 SUBSTANCE-FELT (DEC-0088 context).
+      — /and-review bones: FOLLOW-PASS, fidelity PASS.
+      — /and-facets: 9/9 ACCEPT (cycle 2 after spurious cycle-1 file-path miss).
+      — /and-stitch Phase 8.5: PASS, central-event-muffle NOT-MATERIALIZED.
+      — /and-stitch Phase 9: SHIPPED-WITH-CAVEATS via Case 1 auto-ship (PROP-0040 mechanism).
+    The coupling functioned as designed. DEC-0087 explicitly named /and-cohere before book-close
+    as the accumulation handler for consecutive-quiet fatigue. That is correct.
+
+    Candidate (a) — two-consecutive SHIPPED-WITH-CAVEATS auto-arms /and-cohere:
+      PROP-0037's threshold is N=3, derived from three-chapter evidence (c10/c11/c12). That
+      threshold was deliberately chosen over N=2 because: (a) two quiet chapters in a falling-arc
+      is designed behavior, not accumulation requiring cross-chapter intervention; (b) the
+      /and-cohere mechanism has non-trivial cost (~10 dispatches minimum per DEC-0081); (c) the
+      falling arc for b01 was known to span c13-c15 when book substance was authored. Dropping
+      the threshold from 3 to 2 would fire /and-cohere in the middle of a deliberately-designed
+      3-chapter falling arc — the exact chapter class the informed critics (dramatist + audience)
+      consistently endorse. Lowering the threshold to 2 is a regression against an established
+      ruling, not a process improvement. No new evidence supports overriding PROP-0037's N=3.
+
+    Candidate (b) — falling-arc c13-c15 should have been compressed at /and-substance book:
+      The c13-c15 falling arc was structurally authored at /and-substance book with explicit
+      dramatic_shape annotations. Three chapters of falling action for a 17-chapter book is
+      architecturally standard (17% of book, comparable to the rising-action proportion). The
+      book-substance series-audit (DEC series) approved this structure. The cold-reader's
+      event-poverty/nothing-changes complaint is the designed cold-reader cost of a falling arc
+      with interior-accounting chapters — not evidence of a book-level design failure. No gate
+      in the existing chain is positioned to catch this at /and-substance book level; and
+      adding one (e.g. a "no more than N consecutive falling chapters" gate) would be a
+      taste-gate on architectural story structure, which is human-only territory per methodology.
+      First-occurrence hold applies; the falling arc completed at c15 without the c14 central-
+      event-muffle failure recurring (Phase 8.5 NOT-MATERIALIZED).
+
+    Candidate (c) — system is working:
+      Affirmative. The chunk-cold-read correctly pre-identified the risk at Phase 5.5 (DEC-0087).
+      The principal pre-authorized via the Class-B P-disposition. The terminal gate shipped
+      without re-litigation (PROP-0040 Case 1 path). Mandatory depth-passes are logged for both
+      c14 and c15. The /and-cohere accumulation handler is already named as the before-book-close
+      obligation. At N=2 the PROP-0037 gate has not fired. The consecutive-quiet run is 2 chapters
+      below a designed 3-chapter threshold. Nothing broke.
+
+  Step 4 (recurrence):
+    This is the second consecutive SHIPPED-WITH-CAVEATS on the Class-B quiet-chapter pattern
+    (c14 + c15). The first consecutive run was c10/c11/c12 (N=3), which produced PROP-0037
+    at N=3. The current N=2 run is below that threshold. Per process-critic rule: "prefer to
+    return OK and wait for recurrence" when count < threshold and failure is non-catastrophic.
+    Count=2 is explicitly below the previously-established N=3 threshold. Standard hold.
+
+  Step 5 (methodology):
+    Reversibility: adding a lower threshold would be harder to undo once baked into the chain.
+    Cost: /and-cohere at 2 consecutive chapters would fire mid-falling-arc at non-trivial cost
+    (~10 dispatches) on chapters the informed critics ACCEPT by design.
+    Blast radius: modifying PROP-0037's threshold affects every future book with falling-arc
+    chapters.
+    Optionality: DEC-0087 already named /and-cohere before book-close; keeping that as the
+    timing preserves optionality to run it when the arc completes rather than mid-arc.
+    Convention: PROP-0037 N=3 is the established threshold from three data points. N=2 would
+    be counter-conventional without new evidence.
+
+rationale: |
+  The c14+c15 back-to-back-quiet is the designed behavior of a falling arc, not a process
+  failure. The coupling functioned as designed at every stage. PROP-0037 (N=3 threshold) and
+  DEC-0087 (/and-cohere before book-close) are the correct existing mechanisms — both remain
+  valid and neither requires amendment at N=2. The mandatory depth-pass debt (c14 + c15) is
+  logged and gates /and-substance book b02 Phase 0 + /and-review verdict b01. No new proposal
+  warranted; the process signal does not exceed what the existing machinery already handles.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
 ## DEC-0087 | 2026-06-04 | FAST (user-proxy, RUNBOOK R1)
 
 question: b01c15 Phase 5.5 CHUNK-CLASS-B — disposition R (revise chunk) / P (proceed with risk recorded) / S (substance-contract redo). Back-to-back quiet chapter after c14 SHIPPED-WITH-CAVEATS: does the consecutive-quiet pattern change the call from the standard Class-B default?

@@ -10,6 +10,7 @@ Format per entry:
 
 ---
 
+[2026-06-04] DEC-0089 | process-critic: b01c15 SHIPPED-WITH-CAVEATS (2nd consecutive quiet chapter; c14+c15) — auto-arm /and-cohere? compress falling-arc at book-substance? → OK | System working as designed: PROP-0037 threshold is N=3 (current N=2); DEC-0087 named /and-cohere before book-close as accumulation handler; no gate failed; coupling functioned correctly; falling-arc c13-c15 is endorsed book-level structure; depth-pass debt logged for c14+c15.
 [2026-06-04] DEC-0088 | process-critic: b01c15 REGISTER-AS-MANNERISM signal-accepted ([fly-population+verb+location] x5, insect-POV) → OK | Gate correct; stitcher Phase 4 is the resolution point; screen-writer brief upstream would conflict with SVO fence; first-occurrence at this template shape; standard hold.
 [2026-06-04] DEC-0087 | b01c15 Phase 5.5 CHUNK-CLASS-B disposition → P (proceed with risk recorded) | 7-consecutive-P precedent (DEC-0060–0085) + informed 3/3 SUBSTANCE-FELT + dramatist ACCEPT; back-to-back-quiet fatigue handled by HARD watches into /and-write, not chunk revise.
 [2026-06-04] DEC-0086 | process-critic: 4th consecutive coupling-rule application (c10/c11/c12/c14 SHIPPED-WITH-CAVEATS) → PROCESS-CHANGE-PROPOSED PROP-0040 | Case 1 auto-ship (all complaints covered by carried risk → no admin dispatch) vs. Case 2 (tractable items → admin dispatch as before); depth-pass debt is c10+c14 only (c11/c12 have none; trigger's "4 chapters" was inaccurate); upstream grounding for interior-accounting class = first-occurrence hold.
