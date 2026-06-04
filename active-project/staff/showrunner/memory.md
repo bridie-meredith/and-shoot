@@ -8270,7 +8270,15 @@ books:
             position-prot-rise: 1.0          # 5.0->6.0 (cl-d07a COMPLETE)
             moral_legibility_to_self: 0.5    # 5.5->6.0
           density_measured: 0.7-0.9
-          felt_verdict: "audience 3-of-3 SUBSTANCE-FELT all 4 scenes; auditor 11 HARD remediated (form recasts + held-axis fixes + mover-reduction so chapter measured = contract); S04 co-dominant-tie disposition (lenient stakes-reading; admin ratification queued); chunk_cold_read PASS-CHUNK-VOICE-RISK arms /and-stitch Phase 8.5 Check 3"
+          felt_verdict: "audience 3-of-3 SUBSTANCE-FELT all 4 scenes; auditor 11 HARD remediated (form recasts + held-axis fixes + mover-reduction so chapter measured = contract); S04 co-dominant-tie RATIFIED (DEC-0084, lenient stakes-reading); chunk_cold_read PASS-CHUNK-VOICE-RISK arms /and-stitch Phase 8.5 Check 3"
+        bones_review:
+          reviewed_at: 2026-06-04T00:21:00Z
+          report_path: active-project/staff/reviews/bones-b01c14-2026-06-04.md
+          verdict: PASS-WITH-NOTES
+          follow_check: PASS-WITH-NOTES
+          bones_file_mtime_at_review: 2026-06-04T00:21:13Z
+          stale_since: null
+          notes: "Fidelity PASS-WITH-NOTES (all 4 scene spines delivered; flag-001 degraded-alternative weight S02 + note-001 decision-before-sheet S03 = narrator-facet recoverable). Followability PASS-WITH-NOTES (no FOLLOW-FAIL; 3 context-addable orientation gaps -> /and-facets Phase 2.5: accounting-vocabulary orientation @20, Wren-identification @41, S02 degraded-alternative). Dialogue N/A (silent). BONES-AIRLESS-RISK @16-31 (S02-S03 accounting stretch) -> /and-facets Phase 2.5 grounding-ledger + /and-stitch Phase 4 voice-embodiment priority."
         # bones[] not inlined per c13 precedent: per-bone substance_delta preserved in
         # active-project/staff/auditor/write-b01c14-bone-gate.md + scene-map-b01-c14.md +
         # staff/showrunner/_drafts/b01c14-bones-draft-2026-06-04.md (full per-bone detail).
