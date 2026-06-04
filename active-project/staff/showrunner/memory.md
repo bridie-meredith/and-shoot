@@ -9281,7 +9281,7 @@ books:
             FAIL with NEW categories re-dispatches admin per normal flow.
 
       - slug: b01c16
-        status: audited-r1   # /and-facets b01c16 Phase 6 (was bones-written); facets audited + audience-gate ACCEPT
+        status: drafted   # /and-stitch b01c16 COMPLETE: Phase 9 SHIPPED-WITH-CAVEATS + Phase 10 PASS-THREAD; terminal deliverable draft/b01-c16.md (depth_pass_required before book-close)
 
         bones_file: theater/bones/b01-c16.md
         bones_count: 27

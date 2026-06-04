@@ -4,13 +4,13 @@ cascade:
   invoked_command: /and-substance chapter b01c16 --cascade
   mode: unattended
   last_completed:
-    level: facets
+    level: draft
     slug: b01c16
-    completed_at: 2026-06-04T16:20:00Z   # /and-facets: 10/10 facets audience-gate ACCEPT (2 cycles; NI:6 DEC-0090 fix); audit 0 HARD; FOLLOWABLE+ALIVE
+    completed_at: 2026-06-04T16:50:00Z   # chapter-production COMPLETE: Phase 9 SHIPPED-WITH-CAVEATS (Class-B DEC-0090 coupling) + Phase 10 PASS-THREAD
   next:
-    command: /and-stitch
-    args: [b01c16]
-  reason: continue
+    command: null   # run complete
+    args: []
+  reason: complete
   failure: null
-  pending_depth_passes: [b01c14, b01c15]   # gate book-close, NOT c16; carried forward
-  pending_threading_holds: []   # b01c16 Phase 0 CLEAR per aggregate-state through c15
+  pending_depth_passes: [b01c14, b01c15, b01c16]   # all three gate book-close (mandatory before /and-substance book b02 + /and-review verdict b01); c16 = pl-2026-06-04-c16-001
+  pending_threading_holds: []   # Phase 10 PASS-THREAD; b01c17 Phase 0 CLEAR (0 unack-substantive in aggregate-state through c16)
