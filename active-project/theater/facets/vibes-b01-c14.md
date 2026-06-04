@@ -17,7 +17,7 @@ facet: vibes / episode: b01-c14 / author: showrunner / ---
 
 5 [@41] actor:taylor-hebert-kl-122ac ++ tragic-causal: [the-column-logic-finds-what-else-is-written-in-the-same-format, the-Wren-omission-surfaces-as-the-un-priced-item-without-being-entered, one-closed-entry-names-one-open-entry-by-adjacency, the-ledger-completes-its-own-recognitions] | licensed-by: proto:40, proto:41, proto:42, state-update:relational_anchor_status-S04-delta
 
-6 [@42] actor:wren-stitch-maker-flea-bottom-ward ++ tragic-causal: [named-by-column-logic-not-by-Taylor-choice, the-un-priced-item-surfaces-in-the-accounting-that-closed-another-entry, the-recognition-is-present-the-suppression-is-active-she-does-not-know, free-movement-is-the-cost-the-ledger-has-already-registered] | licensed-by: proto:41, proto:42, proto:43, state-update:relational_anchor_status-S04-delta
+6 [@42] actor:wren-stitch-maker-flea-bottom-ward ++ tragic-causal: [named-by-column-logic-not-by-Taylor-choice, the-un-priced-item-surfaces-in-the-accounting-that-closed-another-entry, the-recognition-is-present-the-suppression-is-active-she-does-not-know, free-movement-is-the-cost-the-omission-has-already-incurred] | licensed-by: proto:41, proto:42, proto:43, state-update:relational_anchor_status-S04-delta
 
 7 [@11] actor:jarvis-coin-kl-courier ++ rising entrapment: [the-packet-he-delivered-completed-d10, structural-exposure-vector-activated-not-latent, he-knows-the-exchange-location-not-the-consequence, the-courier-detained-at-d10-whose-route-map-reached-Otto-complete] | licensed-by: proto:10, proto:11, state-update:social_tether-antag-S02-delta, state-update:cl-antag-d10-COMPLETE
 

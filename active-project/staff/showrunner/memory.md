@@ -8259,7 +8259,16 @@ books:
           target_chapter: b01c14
 
       - slug: b01c14
-        status: audited-r1-mechanical
+        status: audited-r1
+        audit_path: active-project/staff/auditor/facets-final-audit.md
+        audit_complete: true
+        audience_gate_path: active-project/staff/auditor/facets-audience-gate-r2.md
+        audience_gate_complete: true
+        audience_gate_cycles: 2
+        bidirectional_loop: one-sided
+        facets_path: active-project/theater/facets/
+        round_1_complete: true
+        round_2_complete: true
         bones_file: theater/bones/b01-c14.md
         bones_count: 46
         substance_bone_gate_verdict: PASS
