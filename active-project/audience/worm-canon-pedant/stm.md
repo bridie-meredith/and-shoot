@@ -252,7 +252,7 @@ The Khepri-architecture surfacing at s02n12 and s02n13 is the primary canonicity
 
 ## scene b01c02s03
 verdict: SUBSTANCE-FELT
-The three-bone crack-and-suppress decomposition (s03n11 recognition/stall → s03n12 holds the breath → s03n13 draws the line) is the Khepri-psychology test for this scene, and it passes the specific test: the recognition does not instantaneously close in Taylor. One holding-beat (breath-hold, s03n12) exists before the suppression fires. That is canon-true — Taylor holds things one beat before the accounting closes over them; the beat is not drama, it is mechanism. The stall is causally attached to the ward-junction entry via s03n09 and s03n10 (accounting reaches the ward-junction entry → ward-junction corner returns the junction-lane void) rather than arising as a standalone interior event: Taylor's recognition arrives through arithmetic, not through feeling, which is the correct register. The second draws-the-line (s03n13) echoing s01n12 is the Khepri-rhyme completing cleanly — same gesture, same prohibition, architecture and accounting identical. The suppression is willful (behavioral gesture), not dissociative; consistent with the b01c12 Khepri-word-suppression pattern in the substance records. Moral_legibility_to_self +1.0 at n11 is within tolerance (target 0.5, floor 1.0 accepted at original gate). Cost paid: the recognition arriving unpreventable is the cost — Taylor cannot route around her own arithmetic. No parahuman jargon in SVOs or rationales. SUBSTANCE-FELT.
+The three-bone crack-and-suppress decomposition (s03n11 recognition/stall → s03n12 holds the breath → s03n13 draws the line) is the Khepri-psychology test for this scene, and it passes the specific test: the recognition does not instantaneously close in Taylor. One holding-beat (breath-hold, s03n12) exists before the suppression fires. That is canon-true — Taylor holds things one beat before the accounting closes over them; the beat is not drama, it is mechanism. The stall is causally attached to the ward-junction entry via s03n09 and s03n10 (accounting reaches the ward-junction entry → ward-junction corner returns the junction-lane void) rather than arising as a standalone interior event: Taylor's recognition arrives through arithmetic, not through feeling, which is the correct register. The second draws-the-line (s03n13) echoing s01n12 is the Khepri-rhyme completing cleanly — same gesture, same prohibition, architecture and accounting identical. The suppression is willful (behavioral gesture), not dissociative; consistent with the b01c12 suppression-pattern established in STM ("suppression is willful behavioral act, not dissociative inability; consistent with b01c12 Khepri-word-suppression pattern"). Moral_legibility_to_self +1.0 at n11 is within tolerance (target 0.5, floor 1.0 accepted at original gate). Cost paid: the recognition arriving unpreventable is the cost — Taylor cannot route around her own arithmetic. No parahuman jargon in SVOs or rationales. SUBSTANCE-FELT.
 
 ---
 
@@ -499,7 +499,7 @@ Three scenes, one hard-watch on s02 (Aemond-gap must be geometric, not notationa
 hard_findings: none
 watch_items:
   - s02 WATCH: Aemond-gap-as-geometry — at /and-write, the handler-rotation bone must deliver the name's coverage-absence as a geometric fact (a shape in the feed the coverage cannot reach), not as a notation of absence; "the name does not appear in her current coverage" is not enough; needs one bone that makes the gap have dimension
-  - s03 WATCH: near-miss explanatory clause — "because his position is now inside Taylor's coverage matrix, covered by the geometry she mapped this afternoon" should be two structurally separate bones at the bones layer; the because-clause is the narrator explaining the image; the image should carry it; the prior scene (s01) already did the mapping; s03 should enact the completion (watcher-boy's position absent from where it was; Taylor's coverage there instead) without the explanatory bridge
+  - s03 WATCH: near-miss explanatory clause — "because his position is now inside Taylor's coverage matrix, covered by the geometry she mapped this afternoon" should be two structurally separate bones at the bones layer; the because-clause is the narrator explaining the image; the image should carry it; the prior scene (s01) already did the mapping; s03 should enact the completion (watcher-boy's missing position; Taylor's coverage there instead) without the explanatory bridge
 cl_d06_routing: CONCUR — deferral to c09/c10 correct; Wren in coverage as byproduct is not the relational-anchor beat
 
 ---
@@ -744,4 +744,75 @@ soft_findings:
 
 carry_forward:
   - No new soft findings from this gate; SW-WCP-c15-1 resolved at bone layer
+  - b01c07 prose-burden carries forward unchanged
+
+## 2026-06-04 — /and-substance chapter b01c17 Phase 5 chunk review
+
+chapter: b01c17
+date: 2026-06-04
+scenes_reviewed: [b01c17s01, b01c17s02, b01c17s03, b01c17s04]
+
+verdict_per_scene:
+  b01c17s01: SUBSTANCE-FELT
+  b01c17s02: SUBSTANCE-FELT
+  b01c17s03: SUBSTANCE-FELT
+  b01c17s04: SUBSTANCE-FELT
+
+chapter_verdict: SUBSTANCE-FELT
+hard_findings: none
+SUBSTANCE-FLAT: none
+SUBSTANCE-SUSPECT: none
+overall: ACCEPT
+
+### Earth-Bet fence ruling: CLEAN
+
+Reviewed all four scenes. The chapter's central act is a false-attribution entry in a coverage log. The Khepri-echo is carried entirely through structural description: "routing a body through a coverage map without their knowledge or consent, substituting one person's pattern for another's, adjusting the record so the apparatus reads what Taylor needs it to read." This is functional-operational language that describes the act's mechanism. The shape-language ("the shape of the act is the shape of the thing she built her prohibition against") uses the architectural-residue cipher that has been established across prior chapters — no proper noun, no parahuman jargon, no Earth-Bet referents. Taylor's interiority in s02 runs a ledger-style accounting that uses the chapter's own internal vocabulary ("the screen option," "false attribution," "a ward-elder inserted into a pattern-profile"). No Khepri. No Gold Morning. No shard or trigger-event vocabulary. No parahuman ratings or jargon. The "override architecture" phrase in s03 and s04 is project-internal terminology (the prohibition she built for herself) — not a Worm canon technical term. FENCE CLEAN throughout all four scenes.
+
+### Multi-shard fence: CLEAN
+
+The protection deployment is insect-network record-modification. Taylor writes three lines in a coverage log — pen, log, hand. No bodies directed. No nervous-system coordination. No person moved. The instrument is paper and ink, not the swarm. The "routing a body through a coverage map" language is metaphorical/structural (describing the information architecture, not a physical act of moving Elder Norren through space). No body-direction. Multi-shard fence clean.
+
+### Khepri-echo discipline: CORRECTLY STAGED
+
+This is the chapter that deploys the full Khepri-echo for the first time as protection rather than as intelligence. The echo must be shape-language only — and the chunk executes this correctly. The parallel is named through the act's mechanism ("routing a body through a coverage map without their knowledge or consent") rather than through Khepri's name. The phrase "the architecture she built her prohibition against" is the cipher that all prior chapters have been building — it does not name Khepri; it names the structural pattern. The reader sees it; Taylor does not name it. The chapter's goal explicitly calls for the irony to be explicit ("show the irony before it becomes catastrophic"), and the chunk satisfies this by making the mechanism legible without the proper noun.
+
+The "at single-person scale" qualifier is precisely right — it separates this deployment from Khepri's mass-scale application while naming the structural identity. This is exactly the shape-language-only fence that the canon pedant checks: override architecture (the act), naming (the scale), single-person (the qualifier). No Khepri, no Gold Morning, no Earth-Bet proper noun.
+
+### Moral_framework axis accuracy
+
+The moral_framework -1.0 across s02+s03 is the third material breach (from the tracker established in prior STM entries: first was systematic-override-rationalized in c10, second was Khepri-word-threshold in c12). The chapter contract calls this the third material breach and the accumulation reads correctly — the ledger has been building, and this is the first deployment that is protection rather than intelligence-gathering. The cost is not free: moral_framework drops -0.5 in s02 (accounting-recognition: the structural equivalence is named before the act) and -0.5 in s03 (enacted breach: three lines in Taylor's own hand). The split is canon-accurate — Taylor prices the recognition first, then the act; the ledger opens at recognition, not at consequence.
+
+### Collapse-axis first allocations: CORRECTLY STAGED
+
+The position-prot-collapse and social_tether-prot-collapse both fire their first -1.0 allocations at s03. The chapter notes they ACTIVATE here — this is correct in the project's arc structure. The activation rationale for each is sound:
+- position-prot-collapse: Taylor's position of no-exit deepens because extraction would now require resolving a false attribution she authored; the act makes her position structurally more entangled, not less
+- social_tether-prot-collapse: the false attribution is now structural in the tether's architecture; an unwind requires resolving what Taylor has written
+
+Both rationales track Taylor's operational position correctly. The collapse axes having their first allocation here (at the protection deployment, not at the intelligence-gathering escalation) is the correct arc-sequencing: the network running as surveillance was ambiguous about its direction; the network running as protection is the first event that names the direction explicitly. The collapse starts at the first explicit direction-naming event. Canon-sound logic.
+
+### Relational_anchor_status +0.5 (s04)
+
+The gain is correct and the mechanism is sound: Wren is screened, the apparatus's query is closed, the anchor weight rises from 7.0 to 7.5. The cost-carrier note ("the gain and the cost are the same event; relational_anchor_status rises because Wren is now inside a false record that protects her") is the right accounting for an axis-gain that is simultaneously its own cost-future. This is not cheap-gain — the anchor weight rises because the protection landed, but the protection is also the mechanism that will eventually cost. The axis correctly registers the gain while the project's architecture carries the cost-forward structure. Not SUBSTANCE-SUSPECT.
+
+### Write-time watches to /and-write
+
+SW-c17-WCP-1 (Earth-Bet fence at override-architecture naming): The bones must not use the phrase "override architecture" or any equivalent Earth-Bet-proper-noun-adjacent cipher that could read as importing the Khepri vocabulary rather than the project-internal prohibition vocabulary. "The architecture she built her prohibition against" is the established cipher; "override architecture" is the project's operational shorthand. The bones must use the cipher-form, not the shorthand. At bone level, the shape-language must be mechanical description of the act (coverage-map routing without knowledge/consent, record-adjustment, attribution-substitution) — not named recognition in Taylor's interiority.
+
+SW-c17-WCP-2 (Suppression discipline at s03 close): Taylor leaves the pen beside the log. This is a held-gesture that enacts the crack without completing the recognition. At bones, this must be a physical act (pen set beside the log, not capped, not put away) — not a conclusion or a named recognition. The "held gesture" annotation in the contract is precisely right; the bones must deliver the gesture, not the recognition the gesture defers.
+
+SW-c17-WCP-3 (Ledger non-entry at s04): The column that would hold this entry stays blank. At bones this must be an enacted absence — Taylor does not open the column, or Taylor lifts the stylus past the column header, or the page returns from the accounting without the entry-field touched. The enacted non-entry is load-bearing for the s04 irony ("both facts are true"). If bones render this as Taylor deciding not to write rather than Taylor's hand not writing, the distinction collapses.
+
+earth_bet_fence_verdict: CLEAN
+hard_findings: none
+SUBSTANCE-FLAT: none
+SUBSTANCE-SUSPECT: none
+
+soft_findings:
+  - SW-c17-WCP-1: override-architecture language at bones level — must use cipher-form (architectural description of the act), not shorthand label; not a block; bones-execution watch
+  - SW-c17-WCP-2: pen-beside-log held gesture — physical act, not deferred recognition; bones must deliver the gesture
+  - SW-c17-WCP-3: ledger non-entry at s04 — enacted absence (hand does not write), not decision-not-to-write; bones-execution watch
+  - SOFT (carried forward): b01c07 prose-burden — Halvard tether-gain; carries to b01c07 /and-write (unchanged)
+
+carry_forward:
+  - Three new bones-execution watches for /and-write b01c17 (SW-c17-WCP-1, SW-c17-WCP-2, SW-c17-WCP-3)
   - b01c07 prose-burden carries forward unchanged

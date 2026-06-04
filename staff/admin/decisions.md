@@ -5973,3 +5973,58 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+id: DEC-0094
+date: 2026-06-04
+mode: user-proxy
+question: |
+  b01c17 Phase 5.5 CHUNK-CLASS-B disposition: R (revise chunk), P (proceed with risk recorded),
+  or S (substance-contract revision)? Phase 5 passed 3/3 with irony judged enacted-not-declared;
+  cold-read strict-no dominated by uninformed-reader artifacts + known event-density risk;
+  event-density risk already targeted by write-time enactment carries flowing into /and-write;
+  three chapters of direct precedent (DEC-0085/0087/0090).
+decision: P — proceed with risk recorded
+basis: prior-ruling (DEC-0085/0087/0090 exact precedent family) + methodology-3b (cost) + methodology-3a (reversibility)
+rationale: |
+  Fourth consecutive Class-B P in the c14/c15/c16/c17 sequence. Pattern identical each time:
+  uninformed-reader cold-read returns strict-no on (a) withheld serial context (Earth-Bet fence /
+  prior-chapter backstory) and (b) event-density / interior-accounting-dominant staging. Both
+  categories pre-dispositioned as design-inherent across the entire book.
+
+  Phase 5 signal is decisive and points opposite to revision: 3/3 SUBSTANCE-FELT on all 4 scenes,
+  dramatist ACCEPT, auditor 0-HARD. "The irony is enacted, not declared" is exactly the test the
+  substance contract sets for this chapter, and the informed reviewers returned a clean PASS.
+
+  The cold-read's load-bearing genuine finding — item (d), four scenes restating the same internal
+  ledger-recalculation with little physical action — is already addressed by the write-time
+  enactment carries (recognition-as-physical-feed-events / hand-acts / enacted-absence) flowing
+  into /and-write as the correction layer. Fixing this at the chunk layer would either (i) be
+  redundant, or (ii) damage the substance contract by forcing staging additions that alter
+  axis-movement math.
+
+  (R) is wrong layer — chunk design is not broken.
+  (S) is wrong layer and wrong cost — substance contract passes all informed gates.
+  (P) with cold_read_risk_carry is correct: preserve the cold-read finding as targeting brief
+  for /and-write; arm /and-stitch Phase 8.5/9 for the same complaint class.
+
+  cold_read_risk_carry items for /and-write:
+    1. (HARD watch) Recognition of moral_framework mirror must be ENACTED via physical feed-event
+       or observable hand-act, not restated as interiority across multiple scenes.
+    2. (HARD watch) Norren-attribution act: concrete physical write-action required — the forgery
+       must be staged as a thing Taylor does with her hands/tools, not summarized as decision.
+    3. (SOFT) Wren-identity context: single grounded detail (role/relationship) per scene-entry
+       to anchor the uninformed reader; licensed by context-ledger.
+    4. (design-inherent CONTINUE=No) Cold-reader strict-no on jargon (stitch-house, Hook,
+       ward-read) and withheld prior-chapter motive — pre-authorized serial mid-point categories;
+       stitch Phase 4+9 carry.
+
+trade-off: |
+  Only cost of P is forwarding the event-density risk to /and-write. Write-time carries already
+  target exactly this risk. No realistic scenario where R or S produces a better chapter at lower
+  total cost given the clean substance contract.
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no

@@ -639,3 +639,35 @@ soft_carries_forward:
   - SW-c15-1, SW-c15-2, SW-c15-3: all RESOLVED at bone layer; no carries to /and-facets on these
   - No new soft carries from b01c15 bone-gate
   - b01c20 soft finding from book Phase 5 review carries forward unchanged (social_tether-prot-collapse -3.5 load check)
+
+## 2026-06-04 — /and-substance chapter b01c17 Phase 5 chunk review
+
+chapter: b01c17
+date: 2026-06-04
+scenes_reviewed: [b01c17s01, b01c17s02, b01c17s03, b01c17s04]
+
+verdict_per_scene:
+  b01c17s01: SUBSTANCE-FELT
+  b01c17s02: SUBSTANCE-FELT
+  b01c17s03: SUBSTANCE-FELT
+  b01c17s04: SUBSTANCE-FELT
+
+chapter_verdict: SUBSTANCE-FELT
+hard_findings: none
+SUBSTANCE-FLAT: none
+SUBSTANCE-SUSPECT: none
+overall: ACCEPT
+
+notes:
+  - s01: query-arrives-before-decision is the correct asymmetry opening — reader and Taylor know the answer to the apparatus's question simultaneously; the apparatus does not; three-way information gap is the capefic asymmetry this reader wants. Taylor standing still at the trough already knowing, not yet acting: this is not slack, this is the loaded spring. The held-axes-only scene earns its place because the question has teeth (it cannot be unanswered) and the apparatus's query from the other side of the gap is the exact opposing force it needs to be. No filler hot button fires.
+  - s02: the two-option pricing structure is the tactical-mechanism grounding this reader requires before a decision lands. The "names Wren to apparatus" option prices out to exposure; the "false attribution" option prices out to a record-manipulation that is mechanically identical to override-architecture. Both options are priced honestly in the chunk. The reader sees the dilemma's shape before Taylor resolves it. The "structurally indistinguishable from the architecture she built her coming-here to be the refusal of" line is the board-reshape — the asymmetry between what Taylor thinks she's doing (protecting Wren) and what the reader sees she's doing (deploying Khepri-architecture). Exactly the information-asymmetry-that-reshapes-the-board move this reader comes for.
+  - s03: the act is enacted, not narrated. Three lines in Taylor's own hand, attributing a person's presence to a person who was not there. The pen is the instrument. The log is the record. The capability gain (+1.0) comes from a specific physical act with a specific mechanism: false-attribution routing in the coverage log, not some vague network adjustment. The override-architecture parallel is named in the chunk as mechanism-description ("routing a body through a coverage map without their knowledge or consent"), not as Taylor's recognition of the echo — the reader sees it; Taylor leaves the pen beside the log. Correct asymmetry discipline. No established limits bypassed without cost — the capability gain here is the first deployment of override-mechanism-as-protection, and it fires moral_framework and both collapse axes simultaneously. Not cheap.
+  - s04: irony-made-explicit in the close is the right shape for a chapter whose goal is "show the irony before it becomes catastrophic." "This is called protection, and the ledger is blank, and both facts are true" is the thesis landing as a physical juxtaposition, not as argument. The blank-ledger-column image gives the irony its physical form: Taylor knows what the column would say, does not write it, and both the protection and the un-written accounting are true simultaneously. This reader's hot button on "establishing limits bypassed without cost" does NOT fire — the moral_framework -1.0 and both collapse-axis -1.0s are exactly the cost the capability deployment pays.
+  - threshold_discipline_check: no fires; no unmotivated knowledge (Taylor has had Wren's gait in her own coverage data for months — explicitly named in s01); no established limits bypassed without cost (three axes move down against the one axis moving up); no filler; no new character trust without cost (Wren is not a new character and the protection does not constitute trust-earning); no established fence violations
+  - no fatigue triggers: the accounting march in s02 is the mechanism, not setup preceding it; s01 held-axes open is the loaded spring; s04 irony-explicit close is the chapter's payoff
+
+bones_execution_watches_to_and-write:
+  SW-c17-1 (recognition must be ENACTED not narrated): The wren-identification at s01 is structurally correct — "the gait-pattern is Wren's — the particular hesitation at the second step" — but at bones the identification must be a physical feed-event (specific sensory detail the insects return, not Taylor's reasoning chain that concludes it is Wren). The gait-hesitation must be what the feed returns, not what Taylor infers from what the feed returns. A single recognition-event bone where the subject is the feed, not Taylor's cognition.
+  SW-c17-2 (false-attribution must be a concrete physical act): The s03 writing of the supplementary entries must be a bone where Taylor's hand performs a specific physical act — pen on log, specific entry written — not a bone describing that the entries will be written or that the mechanism will work. The act is on-page per the chunk; bones must preserve this as a present-tense physical event, not a described plan.
+  SW-c17-3 (collapse-axis activation must land as first concrete allocation): The position-prot-collapse and social_tether-prot-collapse both fire at s03. At bones these must read as the first downward allocation of an arc that has been building, not as abstract arithmetic. The "7 → 6" movement needs a bone that gives the collapse its physical form — what is different in the architecture after the false attribution is written that was not different before.
+  SW-c17-4 (blank-ledger-column close): The s04 close hinges on "the column stays blank." At bones this must be an enacted absence — Taylor lifts the stylus past the entry field, or the pen sits beside the log, or a specific physical gesture that enacts non-writing rather than Taylor's interior monologue about not writing.

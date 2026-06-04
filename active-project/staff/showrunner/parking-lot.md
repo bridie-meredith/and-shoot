@@ -2241,3 +2241,73 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-06-04-c17-001
+      created_at: 2026-06-04T23:10:00Z
+      created_by: "/and-substance chapter b01c17 Phase 5 (auditor fault-002)"
+      target:
+        command: /and-substance
+        scope: "chapter b01c18"
+        phase: Phase 3
+      severity: SOFT
+      description: |
+        cl-d11 in series.substance.cost_ledger declares gain "relational_anchor_status +1"
+        but b01c17 settles only +0.5 (anchored at b01c17s04 — apparatus-query closes / Wren
+        screened). The remaining +0.5 is named but not anchored downstream. Matches the
+        recurring worm-canon-pedant partial-settlement pattern (cf. pl-2026-05-25-001 /
+        pl-2026-05-30-001). c17 deliberately moves relational_anchor_status only +0.5 (Wren
+        held in coverage but screened); c18 holds the axis flat ("anchor holds at 7.5"), so the
+        cl-d11 2nd tranche is NOT settled at c18 either. Surface at b01c18 Phase 3: anchor the
+        remaining +0.5 to a later chapter, or document it as a cost-forward carry to the d14
+        collapse settlement. Non-blocking; the +0.5 c17 move is contract-honored.
+      context_refs:
+        - active-project/staff/auditor/substance-b01c17-scenes.md  # fault-002
+        - active-project/staff/showrunner/memory.md  # cl-d11 (~line 1402); chapters[b01c17s04].substance_delta
+      resolution_suggestion: "b01c18 Phase 3 anchor remaining cl-d11 +0.5, or document cost-forward carry to d14"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-04-c17-002
+      created_at: 2026-06-04T23:10:00Z
+      created_by: "/and-substance chapter b01c17 Phase 5 (auditor fault-001 + audience trio + admin DEC-0094)"
+      target:
+        command: /and-write
+        scope: "b01c17"
+        phase: Phase 6
+      severity: HARD
+      description: |
+        ENACTMENT GATE for /and-write b01c17. Three reviewers converged: the chapter's substance
+        is interior-accounting and must be ENACTED as physical staging at bone level, not narrated
+        as Taylor-interiority — or it risks SUBSTANCE-FLAT at Phase 6 bone-gate (esp. the two
+        collapse axes whose trap-tightening mechanism the auditor found living only in
+        substance_delta.notes, not chunk prose). Required bone-level enactment (consolidated):
+        1. (auditor fault-001) s03 collapse-axis activation must be a bone giving the collapse a
+           PHYSICAL form — what is structurally different in the architecture AFTER the writing
+           that was not before (extraction now requires resolving the false record; the tether
+           now carries the false attribution as a structural constraint). The trap made visible,
+           not interiority about the trap.
+        2. (audience watch 2) the Norren false-attribution staged as a present-tense physical
+           write-action (pen on log, the three specific lines), not a summarized decision/plan.
+        3. (audience watch 1) s01 wren-identification = feed-event bone (subject = the feed
+           returning the gait), not Taylor-cognition; s02 accounting-recognition arrives through
+           the pricing arithmetic (subject = the accounting), not Taylor's emotional register.
+        4. (audience watch 3 / WCP) echo-naming uses cipher/shape-language form and CLOSES — no
+           Taylor interiority after the shape-language statement (leave the pen, end the scene);
+           s04 blank-ledger close = ENACTED ABSENCE (hand not writing / stylus past the column),
+           not interior monologue about not writing.
+        Earth-Bet fence: Khepri-echo shape-language only; NO Khepri/Gold Morning/parahuman leak
+        (WCP Phase 5 CLEAN — keep clean). Chunk cold-read CHUNK-CLASS-B (DEC-0094 P); the genuine
+        non-uninformedness signal (ledger-recalc over physical staging) is what this gate targets.
+      context_refs:
+        - active-project/staff/auditor/substance-b01c17-scenes.md  # fault-001
+        - active-project/audience/cape-fic-reader/stm.md  # SW-c17-1..4
+        - active-project/audience/literary-snob/stm.md  # SW-c17-LS-1..3
+        - active-project/audience/worm-canon-pedant/stm.md  # SW-c17-WCP-1..3
+        - active-project/staff/showrunner/memory.md  # chapters[b01c17].chunk_cold_read.cold_read_risk_carry
+      resolution_suggestion: "/and-write b01c17 Phase 1 brief on enacted-not-narrated; Phase 6 bone-gate verifies"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
