@@ -1354,10 +1354,22 @@ evidence_refs:
   - "active-project/staff/auditor/write-b01c04-bone-gate-redo.md — PASS verdict after redo; additive cycle confirms the 2.0 target with 1.0-per-scene split is structurally valid"
   - ".claude/commands/and-write.md — Phase 2: FAULT-BONE-DELTA-MALFORMED classification: magnitude outside chunk_targets.bone.delta_per_axis is a HARD fault"
   - "schemas/showrunner-memory.schema.md — chunk_targets.bone.delta_per_axis field (the floor the chapter contract must pre-flight against)"
-recurrence_count: 3
+recurrence_count: 4
+# recurrence_count bumped 3->4 by admin process-critic DEC-0084 (2026-06-04):
+# b01c14 Phase 6 bone-gate — 11 HARD, root cause: every fractional scene-target (0.25/0.5)
+# enacted by a 1.0-floor moving bone, producing chapter bone-sum 2-6x the contract AND
+# axis-ties at 1.0 in S03/S04 (3 STAKES-AXIS-NOT-DOMINANT HARDs). Remediated in-cycle
+# via mover-to-held conversions + S04 lenient-tie disposition. S04 convergence-climax
+# (4 arcs closing simultaneously) is the most consequential sub-case of fractional-floor
+# collision: strict single-dominance is structurally impossible when N arcs complete at
+# the 1.0 floor simultaneously. PROP-0010's proposed_diff consolidation language already
+# covers the mechanism but should be read as especially binding for multi-arc convergence
+# chapters. Note: the co-dominant-tie clause for simultaneous N-arc completion is proposed
+# separately as PROP-0039 (Phase 6 gate spec amendment).
 recurrence_refs:
   - "active-project/staff/auditor/write-b01c06-bone-gate.md — signal-001 + signal-002: moral_legibility_to_self scene-aggregate target +0.5 (fractional residual after scene distribution); bone-floor 1.0 forced over-delivery to +1.0; accepted-with-rationale; stakes-axis tie (moral_framework=moral_legibility at 1.0 each) is a direct consequence of the same fractional-target-floor collision. Second chapter exhibiting this exact structural pattern (b01c04 was first). No HARD fired; accepted path worked. Confirms recurrence is predictable on any chapter with fractional scene residuals."
-  - "active-project/staff/auditor/write-b01c06-bone-gate-revise.md — signal-001 + signal-002 (identical signals, depth-pass revise run): moral_legibility +0.5→+1.0 bone-floor artifact + stakes-tie mf=mls at 1.0. Third chapter run exhibiting the fractional-target-floor collision. Merged by DEC-0057."
+  - "active-project/staff/auditor/write-b01c06-bone-gate-revise.md — signal-001 + signal-002 (identical signals, depth-pass revise run): moral_legibility +0.5->+1.0 bone-floor artifact + stakes-tie mf=mls at 1.0. Third chapter run exhibiting the fractional-target-floor collision. Merged by DEC-0057."
+  - "active-project/staff/auditor/write-b01c14-bone-gate.md — 11 HARD (all remediated in-cycle); root cause: every fractional scene-target (0.25/0.5 for antag/position/moral_leg in multi-arc convergence chapter) enacted by a 1.0-floor moving bone. Chapter bone-sum (relational +2.0, antag +3.0, position +3.0, moral_leg +2.0) overshot contract (+1.0/+1.5/+1.0/+0.5) 2-6x. 3 STAKES-AXIS-NOT-DOMINANT HARDs in S03/S04 from axis-ties at 1.0. Remediated via mover-to-held conversions (S02/S03 to strict single-mover dominance; S04 convergence-climax via lenient co-dominant-tie disposition). Fourth occurrence. The multi-arc simultaneous-completion case is the most structurally forced sub-case of this collision: strict single-dominance is impossible when N arcs complete at the 1.0 floor per the substance contract. PROP-0010's consolidation guidance must be understood as mandatory for such chapters. Merged by DEC-0084."
 proposed_diff: |
   In .claude/commands/and-substance.md, in the chapter-level authoring phase (Phase 4 or
   Phase 5 — whichever phase persists the per-scene substance contract to memory), add a
@@ -5264,3 +5276,308 @@ pr_ref: null
 defer_until: null
 supersedes: null
 ```
+
+---
+
+## PROP-0039
+
+```yaml
+id: PROP-0039
+created_at: 2026-06-04T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: failure
+  source_report: active-project/staff/auditor/write-b01c14-bone-gate.md
+  source_verdict: |
+    /and-write b01c14 Phase 6 bone-gate: 3 HARD STAKES-AXIS-NOT-DOMINANT on S03/S04
+    from axis-ties at 1.0 in a multi-arc convergence climax. Remediated in-cycle:
+    S02/S03 reconciled to strict single-mover dominance via mover-to-held conversions;
+    S04 convergence-climax (4 arcs x +1.0) accepted via lenient co-dominant-tie reading
+    (no non-stakes axis delivers strictly more than the stakes axis; ties accepted as
+    co-dominant). Queued for admin ratification and process-critic judgment.
+  gate_path: .claude/commands/and-write.md#phase-6
+target:
+  type: command
+  path: .claude/commands/and-write.md
+  section: "Phase 6 — Per-scene verification, stakes-axis-dominant check (URI-WRITE-STAKES-AWARE)"
+change_type: modify
+rationale: |
+  The Phase 6 gate spec (stakes-axis-dominant check) reads: "that axis's delivered aggregate
+  magnitude MUST be the largest delivered delta in the scene. If a non-stakes axis delivers a
+  larger aggregate than the declared stakes axis, the scene is mis-shaped — STAKES-AXIS-NOT-
+  DOMINANT (HARD)."
+
+  This formulation has no carve-out for simultaneous N-arc completion scenes. In a convergence-
+  climax scene where 3+ cost-arcs complete simultaneously, every completing axis delivers at the
+  1.0 bone floor — the minimum deliverable magnitude. In that configuration, strict single-axis
+  dominance is structurally impossible: the bone floor prevents any axis from delivering LESS
+  than 1.0 in the scene where it completes, so all completing axes tie at 1.0.
+
+  b01c14 S04 is the first live convergence-climax scene in the project: cl-antag-d10 +
+  cl-d07a + cl04 + relational arc all close at S04, each with a 1.0-floor completing bone.
+  The auditor correctly reasoned that "no non-stakes axis delivers strictly more than the
+  stakes axis" and accepted the tie. But that reasoning is not supported by the spec text,
+  which reads "MUST be the largest" — a future auditor following the spec literally would
+  HARD on any tie, including the co-dominant convergence-climax case.
+
+  The gate's intent is to prevent stakes-axis under-delivery: a chapter whose declared
+  capability stakes axis delivers +0.5 while a knowledge axis delivers +3.0 is mis-shaped.
+  Co-dominant ties at the 1.0 floor are not mis-shaped — the stakes axis delivered its
+  contractual increment, and other arcs completed alongside it. The gate's purpose is fully
+  satisfied when the stakes axis is not outscored; it is over-applied when it HARDs on ties.
+
+  This is the first occurrence of the convergence-climax co-dominant tie. First-occurrence
+  hold is overridden because: (a) the failure is deterministic — every future convergence
+  climax in a multi-arc project will hit this structural condition; (b) the fix is narrow
+  and precise; (c) the orchestrator adjudication ruling (lenient tie accepted) confirms the
+  correct outcome is clear even without a spec change; (d) leaving the spec inconsistent
+  creates a reproducible false-positive HARD on every future convergence-climax scene.
+evidence_refs:
+  - "active-project/staff/auditor/write-b01c14-bone-gate.md — S04 stakes-dominance section:
+    'four movers tied at +1.0. LENIENT PASS: no non-stakes axis delivers strictly more than
+    the stakes axis (relational). The convergence-climax completes three cost-arcs + closes
+    cl04 simultaneously; strict single-dominance is structurally impossible when N arcs
+    complete at the 1.0 floor. Disposition: co-dominant tie accepted; queued for admin
+    user-proxy ratification.' Audience 3/3 SUBSTANCE-FELT on S04."
+  - ".claude/commands/and-write.md — Phase 6 per-scene verification, stakes-axis-dominant
+    check: 'that axis's delivered aggregate magnitude MUST be the largest delivered delta
+    in the scene. If a non-stakes axis delivers a larger aggregate than the declared stakes
+    axis, the scene is mis-shaped — STAKES-AXIS-NOT-DOMINANT (HARD).' No co-dominant-tie
+    exception exists in the current spec."
+  - "staff/admin/decisions.md — DEC-0084: user-proxy ratification of lenient-tie; accepted
+    on goal:1 (gate purpose satisfied) + goal:2 (3/3 SUBSTANCE-FELT; revise would burn caps
+    on a chapter that delivered by every informed-critic measure) + methodology:3a grounds."
+recurrence_count: 1
+proposed_diff: |
+  In .claude/commands/and-write.md, Phase 6 — Per-scene verification, stakes-axis-dominant
+  check (URI-WRITE-STAKES-AWARE — HARD), amend the check criterion as follows:
+
+  CURRENT TEXT:
+    When scene_conflict.stakes_axis resolves to an axes_in_motion[] axis, that axis's
+    delivered aggregate magnitude MUST be the largest delivered delta in the scene. If a
+    non-stakes axis delivers a larger aggregate than the declared stakes axis, the scene
+    is mis-shaped — STAKES-AXIS-NOT-DOMINANT (HARD). (A scene of *watching* delivering
+    a knowledge overrun while its declared capability stakes axis under-delivers is the
+    canonical failure this catches.) When stakes_axis resolves to an axes_held[] axis,
+    this check is N/A (held axes deliver zero by design).
+
+  AMENDED TEXT:
+    When scene_conflict.stakes_axis resolves to an axes_in_motion[] axis, that axis's
+    delivered aggregate magnitude MUST NOT be outscored by any other axis. Two cases:
+
+      (a) Strict dominance (normal scenes): the stakes axis delivers strictly the largest
+          aggregate delta in the scene. Any non-stakes axis delivering a larger aggregate
+          is STAKES-AXIS-NOT-DOMINANT (HARD). (A scene of *watching* delivering a
+          knowledge overrun while its declared capability stakes axis under-delivers is
+          the canonical failure this catches.)
+
+      (b) Co-dominant tie (convergence-climax exception): when >=2 axes complete
+          simultaneously at the bone delta floor (chunk_targets.bone.delta_per_axis.floor)
+          in a single scene, co-dominant ties are ACCEPTED — the gate fires HARD only when
+          a non-stakes axis delivers STRICTLY GREATER magnitude than the stakes axis.
+
+          Conditions for the co-dominant-tie exception:
+            1. The scene is a convergence scene: >=2 cost_ledger entries whose anchor
+               resolves at-or-under this scene each have a completing bone in this scene.
+            2. The tied axes are all at the bone delta floor value (not above it).
+            3. The stakes axis is INCLUDED in the tie (i.e., it is not outscored; it
+               ties for highest or shares the highest delivered magnitude).
+
+          If all three conditions are met, report as LENIENT-PASS-CO-DOMINANT (not HARD;
+          not a blocking finding). Log the tie explicitly in the bone-gate report with
+          the convergence rationale. Admin process-critic dispatch (Phase 6.5) receives
+          the LENIENT-PASS log for user-proxy ratification.
+
+          If any condition is NOT met (non-stakes axis ties above the bone floor, or
+          the stakes axis is genuinely outscored, or there is no convergence trigger),
+          apply the standard strict-dominance check.
+
+      When stakes_axis resolves to an axes_held[] axis, this check is N/A (held axes
+      deliver zero by design).
+
+  HARD / SIGNAL classification table: update the STAKES-AXIS-NOT-DOMINANT row to clarify
+  it applies only under strict-dominance case (a); LENIENT-PASS-CO-DOMINANT is not a
+  SIGNAL — it is a passing log entry that routes to Phase 6.5 admin ratification.
+
+  NOTE: This change does not relax the gate for any scenario where a non-stakes axis
+  genuinely outscores the stakes axis. The co-dominant exception is structurally narrow:
+  it requires simultaneous cost-arc completion at the bone floor — a condition that arises
+  only in designed convergence-climax scenes. A chapter where the stakes axis under-delivers
+  (e.g., delivers 0.5 while others deliver 1.0) is still STAKES-AXIS-NOT-DOMINANT (HARD)
+  because 0.5 < 1.0 is strict outscoring, not a tie.
+
+cost_estimate: S
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
+
+---
+
+## PROP-0040
+
+```yaml
+id: PROP-0040
+created_at: 2026-06-04T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: failure
+  source_report: active-project/staff/reviews/coldread-b01c14-2026-06-04.md
+  source_verdict: |
+    SHIPPED-WITH-CAVEATS (Phase 9 Class-B cold-read FAIL CONTINUE=no; central event recovered;
+    cause = design-inherent accounting-abstraction register + cold-context name-opacity;
+    DEC-0085 coupling-rule dispatch). Fourth application of the coupling rule across
+    c10/c11/c12/c14 (DEC-0072/0074/0078/0085). All four deterministic on identical pattern.
+target:
+  type: command
+  path: .claude/commands/and-stitch.md
+  section: "Phase 9 — Step 2 Diff against intent (harness) / Step 4 Verdict + memory"
+change_type: modify
+rationale: |
+  PROBLEM: The Phase 9 coupling-rule (Class-B FAIL + matching-complaint → SHIPPED-WITH-CAVEATS)
+  has now been applied four times across c10/c11/c12/c14. Each application was deterministic —
+  in DEC-0074 and DEC-0078 and DEC-0085 the admin user-proxy answered identically, with zero
+  ambiguity, citing the prior DEC entries as the basis. The coupling rule is stable. Two
+  sub-cases have emerged across the four applications:
+
+  Case 1 — Zero tractable complaints (c11/c12 shape): CONTINUE=no causes are 100%
+  design-inherent (design-inherent abstract register by contract) and/or cold-context noise
+  (serial mid-point proper-noun load). No complaint is addressable by any revise without
+  violating the endorsed substance contract. Admin round-trip adds no information. DEC-0074
+  and DEC-0078 are both pure Case 1 — both answered "SHIPPED-WITH-CAVEATS, no depth pass" in
+  one sentence citing prior decisions.
+
+  Case 2 — Tractable complaints remain alongside design-inherent causes (c14 shape): the
+  CONTINUE=no causes include at least one addressable texture gap (courier-as-person
+  concreteness, Sera-stake staging) that is NOT design-inherent and CAN be addressed via
+  /and-write revise --from-signals without violating the substance contract. Admin round-trip
+  adds value here: it identifies the tractable items, names the depth-pass targets, and
+  stamps `depth_pass_mandatory: yes` with a specific target brief. DEC-0085 is a pure Case 2
+  — the tractable items are what distinguished c14's disposition from c11/c12's.
+
+  The current Phase 9 spec does not encode this distinction. The Phase 9 Step 2 harness fires
+  a FAIL and routes to admin user-proxy in both cases. In Case 1, the admin round-trip is pure
+  overhead — a deterministic call with the answer already encoded in DEC-0072/0074/0078. In
+  Case 2, it is load-bearing (the tractable-item identification is the admin value-add).
+
+  PROPOSED CHANGE: Add a Case 1 auto-ship path to Phase 9 Step 2 (the diff harness). When
+  the Class-B routing fires AND the chunk_cold_read.cold_read_risk_carry categories account
+  for ALL CONTINUE=no complaint categories (zero tractable complaints remain), the harness
+  resolves directly to SHIPPED-WITH-CAVEATS WITHOUT an admin user-proxy dispatch. The
+  per-chapter caveat string is assembled mechanically from the carried risk items. When any
+  CONTINUE=no complaint is NOT covered by the carried risk categories (Case 2), the existing
+  admin user-proxy dispatch fires as before.
+
+  This does not change the gate's detection (CONTINUE=no still fires Class-B), routing
+  (Class-B still goes to SHIPPED-WITH-CAVEATS on matching-complaint), or the caveat record
+  (the caveat string is still written to showrunner memory). It eliminates one admin
+  dispatch per Case 1 chapter — a small efficiency gain per chapter that adds up at book scale
+  (c10+c11+c12 would each have saved one admin round-trip under this rule; across a 14-chapter
+  book that is real budget). The residual admin dispatch (Phase 9.5 process-critic) still fires.
+
+  DISCRIMINATION — what counts as Case 1 (zero tractable) vs. Case 2 (tractable remains):
+  The Phase 9 harness performs this classification by matching each CONTINUE=no complaint
+  from the cold-read against the chapter's `chunk_cold_read.cold_read_risk_carry` list:
+    - If every complaint maps to a carried risk item (exact or paraphrase match), Case 1.
+    - If ANY complaint has no carried risk match, Case 2.
+  Hard fence: the harness applies conservative matching — "no match" wins over "marginal
+  match." When in doubt, fire the admin dispatch (Case 2 path). The auto-ship path is not a
+  cost-cutting bypass; it is the mechanical expression of a ruling the principal has made
+  four times on identical evidence. Case 2 complaints are not about cost; they are about
+  specificity of the depth-pass brief.
+
+  INTERACTION WITH PROP-0018 (Class A/B discriminator): PROP-0018 added the Class A/B branch
+  at Phase 9 Step 2 and specified "admin returns disposition; pipeline applies it. Class B
+  admin default: (P) given substance contract was approved." This proposal amends the Case 1
+  half of that admin default to mechanical harness execution (admin default = SHIP, no dispatch
+  needed). The Case 2 half (admin dispatch for tractable items) is unchanged — PROP-0018's
+  pipeline-applies-it contract continues to govern Case 2. PROP-0018 does not need to be
+  reopened; this is a refinement of its routing.
+
+  DEPTH-PASS STATUS CLARIFICATION (candidate b in trigger): the trigger's concern about
+  "4 chapters with depth-pass debt" is inaccurate. Actual pending depth passes as of
+  this dispatch: c10 (PASS-WITH-DEPTH-PASS-REQUIRED, bone-level staging targets) and
+  c14 (mandatory per DEC-0085, texture-level targets). c11 and c12 are SHIPPED-WITH-CAVEATS
+  without depth-pass obligations (c11: readability READABLE, no mandatory depth pass;
+  c12: DEC-0078 explicitly resolved apparatus-density to /and-cohere, not a per-chapter
+  depth pass). The SHIPPED-WITH-CAVEATS / PASS-WITH-DEPTH-PASS-REQUIRED distinction is
+  working correctly. No process change warranted on depth-pass accumulation.
+
+  UPSTREAM GROUNDING DEFAULTS (candidate c in trigger): c14's tractable gaps
+  (courier-as-person, Sera-stake) are first-occurrence at this exact class (tractable texture
+  gap in an interior-accounting chapter shipping SHIPPED-WITH-CAVEATS). Not catastrophic.
+  Standard first-occurrence hold applies per process-critic Rule step 4.
+evidence_refs:
+  - "active-project/staff/reviews/coldread-b01c14-2026-06-04.md — Class-B, CONTINUE=no,
+    causes = aggregate abstraction-density + names-unfamiliar; Phase 8.5 PASS; tractable
+    items (courier-as-person, Sera-stake) identified; DEC-0085 coupling-rule dispatch."
+  - "staff/admin/decisions.md — DEC-0074 (c11 Phase 9, Case 1: all complaints covered by
+    carried risk; one-sentence answer; no depth pass); DEC-0078 (c12 Phase 9, Case 1:
+    identical); DEC-0085 (c14 Phase 9, Case 2: tractable items identified; depth-pass
+    mandatory before book-close). DEC-0072 (c10 chunk-level precedent)."
+  - ".claude/commands/and-stitch.md — Phase 9 Step 2 (current harness: FAIL routes to admin
+    user-proxy unconditionally; no Case 1/2 discrimination in the spec). Phase 9 Step 4
+    (SHIPPED-WITH-CAVEATS not listed as a first-class verdict alongside PASS / PASS-WITH-
+    DEPTH-PASS-REQUIRED / FAIL)."
+  - "staff/admin/process-proposals.md — PROP-0018 (Class A/B discriminator; status: check
+    triage stamp before implementing; this amendment is a refinement of PROP-0018's Class B
+    admin-default, not a rewrite of it)."
+recurrence_count: 4
+proposed_diff: |
+  In .claude/commands/and-stitch.md, Phase 9 Step 2 — Diff against intent (harness),
+  immediately after the Class-B classification check (summary maps to goal), add:
+
+  **Complaint-coverage check (Case 1 vs. Case 2):**
+
+    After Class-B is established, classify each CONTINUE=no complaint from the cold
+    reader's answers against `chapters[<slug>].chunk_cold_read.cold_read_risk_carry` items:
+      - COVERED = a carried risk item accounts for this complaint class. Examples of
+        covered mappings: "relentlessly abstract ledger-metaphor" → carried risk
+        "design-inherent abstract register"; "Otto/Sera faction unexplained" → carried risk
+        "cold-context proper-noun load (serial mid-point)."
+      - UNCOVERED = no carried risk match, OR the complaint names a tractable texture gap
+        (e.g., "courier never felt as a person", "stakes not staged on-page", "no concrete
+        scene") even if partially overlapping with a carried item.
+      Conservative fence: classify UNCOVERED when in doubt.
+
+    **Case 1 — all complaints COVERED:**
+      Skip the admin user-proxy dispatch. Resolve directly:
+        cold_read.verdict: SHIPPED-WITH-CAVEATS
+        cold_read.case: 1
+        cold_read.caveat: <assembled from cold_read_risk_carry items verbatim>
+        depth_pass_pending: false
+      Continue to Step 3, Step 3.5, Step 4 (write memory), Phase 9.5 (process-critic).
+
+    **Case 2 — ≥1 complaint UNCOVERED:**
+      Dispatch admin user-proxy as currently specified (PROP-0018 path, unchanged).
+        cold_read.case: 2
+      Admin identifies tractable items, authors depth-pass brief if warranted, returns
+      disposition. Pipeline applies it.
+
+    If `chunk_cold_read.cold_read_risk_carry` is absent (chapter had PASS-CHUNK, not
+    PASS-CHUNK-VOICE-RISK), treat as Case 2 unconditionally (no carried risk → all
+    complaints are uncovered).
+
+  In .claude/commands/and-stitch.md, Phase 9 Step 4 Verdict + memory block,
+  add SHIPPED-WITH-CAVEATS as a first-class verdict bullet:
+
+    "**SHIPPED-WITH-CAVEATS** — Class-B FAIL; all CONTINUE=no complaints covered by
+    carried risk (Case 1) OR admin-dispositioned (Case 2). Terminal. No retry.
+    Depth-pass obligation: none for Case 1; per admin brief for Case 2.
+    Write: `cold_read = {verdict: SHIPPED-WITH-CAVEATS, case: 1|2, caveat: <string>, ...}`.
+    Phase 9.5 (process-critic) fires as normal."
+
+cost_estimate: S
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
+

@@ -1,40 +1,46 @@
-# proto-lines — exposition decoration pass — b01c13
-# 31 bones verbatim from theater/bones/b01-c13.md; [exposition:<id>] appended on decorated lines.
-# @0 synthetic anchor (episode-open) renders pre-body; not a body line — listed separately below.
-
-@0 [exposition:1]   # prior-episode-bridge (italic-preamble; renders before body)
-
-1 the blowfly takes the crate-ledge
-2 the household-agent stands the trestle-table
-3 the salt-fish-supplier faces the household-agent
-4 the supplier's-son shoulders the wrapped-crates
-5 the household-agent tallies the fish-account
-6 the blowfly grips the crate-ledge
-7 the household-agent drops the shoulders
-8 the supplier's-son picks the empty-crate
-9 taylor-hebert-kl-122ac releases the blowfly
-
-10 the fly takes the ceiling-corner
-11 the green-faction-clerk sets the document
-12 aldric takes the chair [exposition:2]
-13 the magistrate writes the procedural-form
-14 aldric lifts the cord
-15 the magistrate lifts the d06-document
-16 the fly grips the ceiling-corner
-17 aldric grips the table
-18 the fly works the ceiling-corner
-
-19 taylor-hebert-kl-122ac stops the lane
-20 the tallow-smoke crosses the lane
-21 taylor-hebert-kl-122ac takes the two-breaths
-22 taylor-hebert-kl-122ac sets the jaw
-23 taylor-hebert-kl-122ac resumes the lane
-
-24 septon-halvard-flea-bottom finds the water-trough
-25 taylor-hebert-kl-122ac reaches the water-trough
-26 septon-halvard-flea-bottom speaks to taylor-hebert-kl-122ac [septon-halvard-flea-bottom:1]
-27 taylor-hebert-kl-122ac speaks to septon-halvard-flea-bottom [taylor-hebert-kl-122ac:1]
-28 septon-halvard-flea-bottom speaks to taylor-hebert-kl-122ac [septon-halvard-flea-bottom:2]
-29 taylor-hebert-kl-122ac leaves the water-trough
-30 taylor-hebert-kl-122ac walks the route
-31 septon-halvard-flea-bottom fills the water-skin
+1 the fly takes the corner-shelf
+2 the stall-door admits the lane-light
+3 the oil-cloth square covers the counter
+4 the bolt-end samples weight the hook
+5 the bag-peg faces the lane
+6 taylor-hebert-kl-122ac sweeps the fly across the lane-mouth
+7 taylor-hebert-kl-122ac sweeps the adjacent insects east
+8 taylor-hebert-kl-122ac releases the fly from the corner-shelf
+9 taylor-hebert-kl-122ac closes the passive-count entry
+10 jarvis sets the packet at the channel-station [exposition:3]
+11 taylor-hebert-kl-122ac breaks the seal
+12 the figure rounds the water-gate corner
+13 the figure raises the chin
+14 the figure pauses the second junction
+15 the figure adjusts the satchel-weight
+16 taylor-hebert-kl-122ac sets the packet beside the response-sheet
+17 taylor-hebert-kl-122ac lifts the stylus above the response-sheet
+18 taylor-hebert-kl-122ac lowers the stylus to the working surface
+19 taylor-hebert-kl-122ac sets the hand on the response-sheet
+20 taylor-hebert-kl-122ac brings the stylus to the left column [exposition:2]
+21 taylor-hebert-kl-122ac marks the left margin
+22 taylor-hebert-kl-122ac sets the wrist on the left column
+23 taylor-hebert-kl-122ac brings the stylus to the right column
+24 the stylus stops above the closed entry
+25 taylor-hebert-kl-122ac writes the lane-designation
+26 taylor-hebert-kl-122ac writes the weight-adjustment detail
+27 taylor-hebert-kl-122ac writes the low-set-left-eye detail
+28 taylor-hebert-kl-122ac presses the wax seal
+29 taylor-hebert-kl-122ac sets the response-sheet at the station edge
+30 taylor-hebert-kl-122ac enters the breach-column record
+31 taylor-hebert-kl-122ac lifts the stylus above the breach-entry
+32 the bottlefly grips the overhang timber
+33 the two men enter the lane from the south approach
+34 the figure rounds the water-gate corner
+35 the figure lifts both hands to the satchel-strap
+36 the two men reach the junction-vertex
+37 the figure walks between the two men
+38 the lane empties
+39 taylor-hebert-kl-122ac releases the bottlefly
+40 taylor-hebert-kl-122ac closes the cl04 outcome-entry
+41 the adjacent column-position surfaces the open item
+42 taylor-hebert-kl-122ac lifts the column-positions
+43 taylor-hebert-kl-122ac sets the hand off the surface
+44 taylor-hebert-kl-122ac runs the exit-column to the bottom entry
+45 the second-junction lane clears
+46 taylor-hebert-kl-122ac releases the stylus

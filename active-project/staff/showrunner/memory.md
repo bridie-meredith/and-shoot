@@ -8259,7 +8259,59 @@ books:
           target_chapter: b01c14
 
       - slug: b01c14
-        status: planned
+        status: stitched
+        stitched: true
+        draft_path: active-project/draft/b01-c14.md
+        cold_read:
+          read_at: 2026-06-04T00:00:00Z
+          verdict: SHIPPED-WITH-CAVEATS   # DEC-0085 (admin user-proxy): Class-B FAIL (CONTINUE=no, events recovered) -> terminal ship per coupling rule (exact match c10/c11/c12 DEC-0072/0074/0078)
+          recovered_summary: "A surveillance operator, paying off a blackmail debt, betrays a courier she's quietly watched for weeks, then refuses to do the same to the next unnamed person -- told almost entirely as bookkeeping metaphor."
+          report_path: active-project/staff/reviews/coldread-b01c14-2026-06-04.md
+          continue: no
+          staging_signals: 0
+          signal_clusters: []
+          readability_axis:
+            verdict: AIRLESS
+            basis: "cold-read CONTINUE=no on aggregate accounting-abstraction density (design-inherent; chunk PASS-CHUNK-VOICE-RISK); Phase 8.5 muffle-check PASSED (spine concrete) but aggregate register reads airless to uninformed cold-reader"
+          phase_8_5_coherence:
+            verdict: PASS
+            central_event_muffle: PASS (confirmation + detention land concrete)
+            report_path: active-project/staff/reviews/coherence-b01-c14-2026-06-04.md
+          depth_pass_pending: true
+          depth_pass_target: "courier-as-person concretization + Sera-as-stake staging (/and-write b01c14 revise --from-signals)"
+          cold_read_risk_carry: "aggregate abstraction-density; courier-not-felt-as-person; Sera-stake-not-staged -- DEC-0085 authorized as known design-inherent risk; depth pass mandatory before book-close"
+          stale_since: null
+        audit_path: active-project/staff/auditor/facets-final-audit.md
+        audit_complete: true
+        audience_gate_path: active-project/staff/auditor/facets-audience-gate-r2.md
+        audience_gate_complete: true
+        audience_gate_cycles: 2
+        bidirectional_loop: one-sided
+        facets_path: active-project/theater/facets/
+        round_1_complete: true
+        round_2_complete: true
+        bones_file: theater/bones/b01-c14.md
+        bones_count: 46
+        substance_bone_gate_verdict: PASS
+        substance_delta_measured:
+          axes_moved:
+            relational_anchor_status: 1.0   # 4.5->5.5 (cl04 chapter-draw; arc continues c15)
+            social_tether-antag: 1.5         # 6.0->7.5 (cl-antag-d10 COMPLETE)
+            position-prot-rise: 1.0          # 5.0->6.0 (cl-d07a COMPLETE)
+            moral_legibility_to_self: 0.5    # 5.5->6.0
+          density_measured: 0.7-0.9
+          felt_verdict: "audience 3-of-3 SUBSTANCE-FELT all 4 scenes; auditor 11 HARD remediated (form recasts + held-axis fixes + mover-reduction so chapter measured = contract); S04 co-dominant-tie RATIFIED (DEC-0084, lenient stakes-reading); chunk_cold_read PASS-CHUNK-VOICE-RISK arms /and-stitch Phase 8.5 Check 3"
+        bones_review:
+          reviewed_at: 2026-06-04T00:21:00Z
+          report_path: active-project/staff/reviews/bones-b01c14-2026-06-04.md
+          verdict: PASS-WITH-NOTES
+          follow_check: PASS-WITH-NOTES
+          bones_file_mtime_at_review: 2026-06-04T00:21:13Z
+          stale_since: null
+          notes: "Fidelity PASS-WITH-NOTES (all 4 scene spines delivered; flag-001 degraded-alternative weight S02 + note-001 decision-before-sheet S03 = narrator-facet recoverable). Followability PASS-WITH-NOTES (no FOLLOW-FAIL; 3 context-addable orientation gaps -> /and-facets Phase 2.5: accounting-vocabulary orientation @20, Wren-identification @41, S02 degraded-alternative). Dialogue N/A (silent). BONES-AIRLESS-RISK @16-31 (S02-S03 accounting stretch) -> /and-facets Phase 2.5 grounding-ledger + /and-stitch Phase 4 voice-embodiment priority."
+        # bones[] not inlined per c13 precedent: per-bone substance_delta preserved in
+        # active-project/staff/auditor/write-b01c14-bone-gate.md + scene-map-b01-c14.md +
+        # staff/showrunner/_drafts/b01c14-bones-draft-2026-06-04.md (full per-bone detail).
         chunk: |
           The non-extractable confirmation chapter: cl04 and cl-antag-d10. A request arrives
           through Jarvis that requires Taylor to identify the Black-faction courier-adjacent
@@ -8318,6 +8370,316 @@ books:
         goal: |
           Show the audience Taylor closing the ledger on a named person with full awareness — the accounting is explicit, the person is real, and the closure is chosen — and the cloth merchant's flight as Rhaenyra-pressure made visible.
         pov_narrator: taylor-hebert-kl-122ac
+        scenes:
+          - slug: b01c14s01
+            seq: 1
+            status: scened
+            pov_narrator: taylor-hebert-kl-122ac
+            chunk: |
+              The cloth merchant is gone [event: cloth-merchant-absent] by the time Taylor's fly reaches the
+              corner shelf above the stall-door — the [image: empty-stall-corner-shelf] bolt-end fabric
+              samples still on the hook, the oil-cloth square that served as a working surface still flat
+              on the counter, the merchant himself not inside the stall and not in the lane-mouth and not at
+              the water-trough he used in the late morning when his inventory count was done. The stall is
+              not closed; it is open in the way of a thing whose owner expected to return, the goods arranged
+              as if for a day's trade. The merchant had been a [image: cloth-merchant-passive-node] passive
+              node in the lane-net for four weeks — a man who did not courier anything, who did not carry
+              names in a verbal register, but who took note of which people were in which lanes on which
+              days and of what those people's regular circuits suggested about their routes and their contact-
+              shapes. A counter, not a runner. Taylor had placed him in the net for exactly that function.
+              She had four insects on and near the stall in rotation, not for any specific expected delivery
+              but for the continuity of the passive count, and the fly on the corner shelf [mechanism: absence-
+              reading-via-passive-node] returned the absence first: the stall open, the samples on the hook,
+              a small cured-leather work-bag missing from the peg where it hung when he was not traveling.
+              The bag was gone. Everything else was arranged as for business. A man who [image: bag-gone-
+              goods-left] takes his work-bag and leaves his stock does not intend to come back in an hour.
+              Taylor held the fly in place and swept the adjacent insects across the lane-approaches from
+              the south and east, looking for the merchant's specific round-shouldered posture and the red
+              stripe on the collar of his working overshirt. He was not in the lane-mouth. He was not at the
+              chandler's stall two down where he sometimes stopped in the midmorning. He was not where any
+              part of the passive-circuit put him. She ran [mechanism: dragonstone-inference-from-absence]
+              the inference. The cloth merchant did not know Taylor's name. He did not know which apparatus
+              his counting served, because that was the function of the passive layer: the nodes in it hold
+              shapes, not affiliations. If the merchant had fled the lane — and the bag said fled, said it
+              with the specificity of a single chosen object packed and the goods left — then the thing that
+              moved him was not Otto's apparatus. The apparatus did not expose nodes. The thing that moved
+              him was the [force: dragonstone-pressure-mediated] pressure coming the other direction: a
+              Dragonstone-side inference that the Green counting-apparatus was active in these lanes, that
+              the passive layer existed, that nodes were being used for shape-counting. The intelligence
+              reached Dragonstone and Dragonstone moved its people. The cloth merchant had not been waiting
+              to run; he ran when the signal reached him, which meant the signal had come. Taylor released
+              the fly from the corner shelf and closed the passive-count entry for the stall. She wrote
+              [event: passive-node-foreclosed] the node-termination into the internal record in the same
+              flat register she used for every coverage adjustment. The stall was open and the merchant was
+              gone and the [image: signal-read-through-absence] Dance had arrived in the lane the way all
+              pressure arrived in the passive layer: not as a contact but as an absence, not as a message
+              but as the shape of a thing that had heard something and left.
+            scene_conflict:
+              protagonist_force: "Taylor reading the cloth merchant's absence through compound eyes, running the Dragonstone-pressure inference from a missing bag and an open stall"
+              opposing_force: "Dragonstone-side intelligence apparatus, visible only through what it has moved — a node gone silent, a stall left open mid-day"
+              stakes_axis: position-prot-rise
+            substance_delta:
+              axes_in_motion: []
+              axes_held:
+                - axis: moral_framework
+                  rationale: "observation of absence is not a breach event; no delivery, no confirmation act; framework holds at -2"
+                - axis: relational_anchor_status
+                  rationale: "Wren not in scene; no closure event; anchor holds at 4.5"
+                - axis: social_tether-antag
+                  rationale: "no contact with Jarvis, no Otto request yet; patron-lever static; the Dragonstone pressure is world-event not Taylor-antag leverage"
+                - axis: position-prot-rise
+                  rationale: "the cloth merchant's flight is Dance-pressure made visible — it demonstrates the apparatus is known to Dragonstone — but the position-axis moves at S02 when the Jarvis packet arrives and the non-exit nature becomes structurally explicit; hold here"
+                - axis: moral_legibility_to_self
+                  rationale: "no self-accounting event; Taylor reads inference from absence; no ledger column opened"
+                - axis: political_register-prot
+                  rationale: "contempt stable from c13 naming event; cloth-merchant flight is world-state data, not a new contempt object"
+                - axis: capability
+                  rationale: "no new capability; the passive-node foreclosure is a coverage loss, not an architecture change"
+                - axis: social_tether-prot-rise
+                  rationale: "no protected-figure contact; holds at 8.5"
+              density_target: 0.6-0.8
+
+          - slug: b01c14s02
+            seq: 2
+            status: scened
+            pov_narrator: taylor-hebert-kl-122ac
+            chunk: |
+              Jarvis brings the packet [event: jarvis-packet-arrives] to the channel-station before the
+              second bell, earlier than the usual schedule, and the deviation in timing is itself a data
+              point: the request is prioritized. Taylor breaks the seal [mechanism: packet-seal-broken]
+              with her thumb the way she always does, the wax releasing in a clean line, and the single
+              sheet inside names the east-of-water-gate gap-lanes by their designation marks and asks
+              for confirmation on a specific pattern-shape that Otto's apparatus has partially traced —
+              a [image: request-sheet-lane-designation] counter-adjacent courier figure, a man who carries
+              verbal routing-information along the gap-lane approach from the east water-gate toward the
+              inland wharf-district. The sheet uses the apparatus's description, not the figure's name,
+              but the description is exact enough that Taylor knows immediately who it designates. She has
+              been tracking him for [image: figure-in-gap-lane-tracked] eleven weeks. She knows his face
+              by the specific way his left eye is set slightly lower than his right, a mild asymmetry that
+              makes him look as if he is always weighing something. She knows his route — the gap-lane
+              from the water-gate east boundary to the tallow-chandler's back approach, then north along
+              the rendering-yard margin where the lane-overhangs are close and the insects stop being
+              insects — and she knows his habit of pausing at the second junction to adjust the weight
+              of whatever he carries before he turns north. The request did not give her this. She gave
+              herself this, in weeks of gap-lane coverage that she never entered into a deliverable, and
+              she has had his face and route and habit in the internal record since the fifth week of the
+              tracking and never reported it. She sets the sheet flat on the working surface and reads
+              [mechanism: independent-identification-inference] the second implication: Otto's apparatus
+              has identified him independently, through a different channel, without Taylor's pattern-
+              knowledge. The confirmation request is not a demand for a name the apparatus lacks; it is
+              a demand that Taylor validate what they already believe they know, which means [force:
+              otto-apparatus-operating-independently] the apparatus can act without her. The gap-lane
+              figure is at risk whether she responds or not. If she confirms, the apparatus moves him to
+              detention within its standard timeline. If she withholds — she holds this open deliberately,
+              she will not let the withhold read as closed before she has run it properly — if she withholds,
+              the apparatus routes around the gap, the figure's route is eventually traced by other means,
+              the lane is closed to Black-faction logistics regardless, and [force: sera-guarantee-degraded]
+              Sera's protection guarantee steps down from active to contingency. The apparatus interprets
+              withholding as a coverage failure, not a deliberate block; repeated coverage failures on the
+              same corridor shift Taylor's value-calculation in Otto's accounting and reduce the protection-
+              payment certainty below the threshold that keeps Sera's parentage-liability quiet. Both paths
+              take the gap-lane figure. The distinction between them is what happens to Sera. Taylor sets
+              [event: genuine-alternative-held-open] the packet beside the blank response-sheet and holds
+              the genuine alternative in place, the way the accounting requires: withhold is a real option,
+              withhold has real downstream shape, she is allowed to know that. She knows that. The figure
+              has a face with unequal eyes and a habit of pausing at the second junction and eleven weeks
+              of her compound-eye tracking in the internal record and none of that in any deliverable. A
+              [image: figure-face-in-gap-lane] real person in the gap lanes, known to her through her
+              insects and withheld from the apparatus until now, at risk whether she moves or not.
+            scene_conflict:
+              protagonist_force: "Taylor holding the genuine alternative open — withhold is a real option, with real downstream shape — before the accounting runs"
+              opposing_force: "Otto's apparatus, operating independently, rendering Taylor's withholding moot on the gap-lane figure while making Sera's guarantee the stake that distinguishes the two paths"
+              stakes_axis: social_tether-antag
+            substance_delta:
+              axes_in_motion:
+                - axis: social_tether-antag
+                  direction: up
+                  target_delta_magnitude: 0.5
+                  cost_ledger_anchor: cl-antag-d10
+                  notes: "apparatus confirms independent identification; Taylor's withholding capacity structurally revealed as non-protective; Otto's leverage advances because she now knows it operates without her — cl-antag-d10 opening advance; sole in-motion axis (stakes-dominant)"
+              axes_held:
+                - axis: position-prot-rise
+                  rationale: "BONE-GATE RECONCILE (2026-06-04): position sub-tranche folds forward to S04 cl-d07a completion (the position-of-no-exit is named at the detention-outcome, not at the packet-read). Witnessed held by s02n10. Keeps social_tether-antag the sole/dominant S02 mover."
+                - axis: moral_framework
+                  rationale: "weighing is not the breach; the request exists and Taylor is running it; the framework sits at -2 and the accounting has not yet delivered anything"
+                - axis: relational_anchor_status
+                  rationale: "Wren not in scene; no closure event yet; the figure is identified but the confirmation has not been given; anchor holds at 4.5"
+                - axis: moral_legibility_to_self
+                  rationale: "the alternative held open is Taylor running the genuine-alternative step of the accounting, not a recognition event; self-accounting not yet opened; moves at S03 with the actual running of costs"
+                - axis: political_register-prot
+                  rationale: "contempt stable; the apparatus's behavior is within established pattern; no new contempt object added"
+                - axis: social_tether-prot-rise
+                  rationale: "Sera's guarantee is the stake being weighed but Sera's structural position is not yet moved — that is contingent on the choice made in S03; holds at 8.5"
+                - axis: capability
+                  rationale: "no new capability deployment; the figure's tracking was established prior"
+              density_target: 0.7-0.9
+
+          - slug: b01c14s03
+            seq: 3
+            status: scened
+            pov_narrator: taylor-hebert-kl-122ac
+            chunk: |
+              The accounting runs. Taylor opens [event: ledger-accounting-runs] the cost column in the
+              internal record with the same gesture she uses every time — a specific act, the stylus brought
+              to the correct page-position of the working surface, the left side marked as harm and the right
+              as protection, the balance-entry waiting at the bottom. She does not shortcut this. She has
+              never shortcutted it. The left column takes: one gap-lane figure, courier-adjacent, detained
+              by the apparatus within its standard timeline — detained, [image: harm-column-entry] not a
+              worse word than detained, because the apparatus runs detentions not executions for this class
+              of figure and she has the record for it. She holds the left column open long enough to read
+              it. The figure has a face and a route and a pause-habit at the second junction and he does
+              not know her name and she will never speak to him and she has tracked him for eleven weeks
+              through insects in the overhangs above his head while he did the ordinary work of carrying
+              information through a city where carrying information for the wrong people is a thing that
+              can be charged. The left column takes all of that. She does not let it take less. The right
+              column takes: Sera's protection guarantee, elevated from contingency to active, held at the
+              level where Otto's apparatus keeps parentage-liability quiet because the arrangement is
+              functioning and the deliverables are calibrated and the withholding-tolerance has not been
+              reached. One protection guarantee, concrete, covering a specific person, currently held by
+              the quality of Taylor's deliverables and dropped to contingency if her deliverable-quality
+              degrades below the apparatus's tolerance on the gap-lane corridor. The right column takes all
+              of that. The [mechanism: balance-entry-computed] balance-entry runs at the bottom. Taylor
+              holds both columns in the same accounting, the way the accounting requires, and the columns
+              are not close: the harm is real and the harm is entered and the harm is a man going into
+              detention who would not have been detained by any action of his own, and the protection is
+              real and the protection is a person who cannot protect her own parentage-liability through
+              any action of her own, and the balance goes where the balance goes. She [event: confirmation-
+              decision-made] records the decision in the internal record before she writes it on the
+              response-sheet: one closed ledger entry, one named person — she does not use the euphemism,
+              she uses the entry-language she uses for every breach column, [image: closed-ledger-entry-
+              named-person] the one that has the person's function and route and the operational consequence
+              — one person closed, without their knowledge, chosen by the accounting. Then she brings the
+              stylus to the response-sheet and [mechanism: confirmation-written-to-response-sheet] writes
+              the confirmation. She writes the lane-designation. She writes the pattern-shape in the
+              apparatus's description-register, adding the specific walk-detail — the adjusted weight at
+              the second junction, the low-set left eye — that validates her independent tracking and
+              signals to the apparatus that the identification is cross-confirmed. She does not write
+              the figure's name because she does not know it. She writes what she knows: eleven weeks of
+              compound-eye feed-reading, rendered to the functional specification the apparatus requires.
+              She folds the [event: response-sheet-sealed-for-jarvis] sheet and seals it with the working
+              wax and sets it at the edge of the station surface where Jarvis will collect it. Then she
+              opens the anchor-column of the internal record and makes the entry that the breach column
+              requires: [mechanism: cl04-ledger-closure] one ledger closed on a named person without their
+              knowledge; one protection guarantee elevated in exchange; the balance stated as entered; the
+              entry closed. She holds the stylus above the closed entry. She does not add a line. The
+              accounting is honest. It has always been honest. The accuracy is the thing she cannot put down.
+            scene_conflict:
+              protagonist_force: "Taylor running the accounting with full ledger discipline — harm column entered completely, balance computed, decision made in the internal record before the confirmation is written"
+              opposing_force: "the accounting itself: its honesty, its balance, the fact that it is correct and therefore irrevocable — the thing she cannot falsify to make the choice easier"
+              stakes_axis: relational_anchor_status
+            substance_delta:
+              axes_in_motion:
+                - axis: relational_anchor_status
+                  direction: up
+                  target_delta_magnitude: 0.5
+                  cost_ledger_anchor: cl04
+                  notes: "cl04 FIRST TRANCHE (+0.5 of the chapter's +1.0 cl04 draw; cl04 total gain = relational_anchor_status +3, of which c14 draws +1.0, c15 draws +1.5, +0.5 later): the NARRATIVE ledger-entry on the figure is opened and written here — one named person, closed without knowledge, chosen explicitly, recorded as an explicit breach-column entry. This is the cost-ledger arc cl04 OPENING, not completing. SOLE in-motion axis (stakes-dominant; witnessed by s03n08)."
+              axes_held:
+                # BONE-GATE RECONCILE (2026-06-04): antag / position / moral_legibility fold forward to the
+                # S04 detention-outcome where the cost-arcs complete. S03 is the confirmation-WRITTEN scene;
+                # the axis-MOVES land at the S04 outcome. This makes relational_anchor_status S03's sole
+                # in-motion axis (clean stakes-dominance) and keeps the chapter measured-delta = contract.
+                - axis: social_tether-antag
+                  rationale: "confirmation written and sealed for Jarvis, but Otto's leverage becomes structural at the detention-outcome (S04), not at the writing; antag held in S03 pending cl-antag-d10 completion. Witnessed by s03n10."
+                - axis: position-prot-rise
+                  rationale: "the breach-column record is entered (s03n11) but the position-of-no-exit is NAMED at the detention-outcome (S04); position held in S03 pending cl-d07a completion. Witnessed by s03n11."
+                - axis: moral_legibility_to_self
+                  rationale: "W05 stylus-above-entry: recognition present, no line added; the suppression-crack actually deepens at the S04 closure (Wren retroactive-naming), so moral_legibility holds in S03. Witnessed by s03n12."
+                - axis: moral_framework
+                  rationale: "confirmation delivery is within the established rationalize-each-trade pattern; no new breach threshold — the framework already holds at -2; this is a moral_legibility event (accurate accounting visible to Taylor) not a new moral_framework breach. Witnessed by s03n02."
+              density_target: 0.8-0.9
+
+          - slug: b01c14s04
+            seq: 4
+            status: scened
+            pov_narrator: taylor-hebert-kl-122ac
+            chunk: |
+              The figure [event: figure-detained] is taken the following evening — Taylor knows it not
+              through a Jarvis packet but through the compound eyes of a bottlefly she has on the gap-lane
+              approach from the east water-gate, placed on the overhang timber above the second junction
+              where the figure always pauses to adjust his weight. She has the [image: bottlefly-on-overhang-
+              timber] fly there as a matter of pattern-coverage, not surveillance of the detention itself,
+              and the detention arrives in the feed as two men entering the lane from the south approach at
+              the fourth bell and the figure coming around the water-gate corner at his usual time and the
+              [mechanism: detention-mechanism-via-feed] three of them meeting at the second junction in the
+              specific geometry of a thing that has been timed. The figure pauses at the junction the way he
+              always pauses and adjusts the weight of the satchel he is carrying, both hands going to the
+              strap the way they always do, and the two men are at the geometry's other vertex before the
+              hands have finished the adjustment. Taylor holds the fly in the overhang timber and watches
+              the [image: detention-at-second-junction] figure go with them — not a struggle, not a word
+              she can read, the lane-geometry resolving itself into the standard shape and the man walking
+              between the two of them back toward the south approach, the satchel still on his shoulder,
+              the route he walked eleven weeks of Tuesdays and Thursdays ending at the junction where he
+              always paused. The bottlefly watches the lane go empty after them. Taylor releases it and
+              brings the record back to the working surface. She opens the anchor-column. She [mechanism:
+              cl04-closure-complete] closes the cl04 entry: the figure detained, the confirmation sequence
+              complete, the cost-ledger entry running from the closed breach-column to the outcome-column
+              in the format the ledger uses for completed items. The entry closes. Then — and this is the
+              move the accounting makes next, the one that requires no deliberate act but [force: ledger-
+              closing-logic] arrives as the natural consequence of completing an entry — the record goes
+              back to the column it shares format with, and the format finds what else is written in the
+              same hand. The [event: wren-pattern-retroactively-named] Wren omission is in that column.
+              The gap-lane figure's entry is a closed item: one named person, ledger closed, cost recorded,
+              outcome received. The Wren non-entry is an open item in the same column: one person with a
+              route Taylor tracks and a route Taylor covers and a route Taylor has never entered into a
+              deliverable, the mechanism that keeps the eastern boundary unpriced running the same logical
+              function as the mechanism that closed the gap-lane entry — a person-shaped item, in the
+              column adjacent, not entered, not [image: wren-non-entry-visible-in-adjacent-column] closed,
+              carried at the same accounting-logic cost as the entry beside it and not in the ledger. Taylor
+              does not open a Wren entry. She does not write a name into the deliverable column. She does
+              not do anything except [mechanism: suppression-of-recognition] hold the two column-positions
+              — the closed one, the un-entered one — in the same accounting-look for the duration of the
+              breath that the look takes, and then close the anchor-column and set the stylus down and move
+              her hand off the surface. The recognition is present. She knows it is present. She has had
+              the architecture of this before — a city, a different kind of count, a different kind of
+              named-and-unpriced, and the same quality of accurate accounting running honest to the bottom
+              of the column and stopping short of one entry the balance needed — and she does not let the
+              shape settle because if the shape settles the accuracy of it will have [image: suppression-
+              shape-before-full-recognition] the same quality as the accuracy below it and there is no
+              column for that. The accounting closes. The ledger runs the final balance. The position is
+              what it is: the apparatus has the confirmation, the apparatus has the cross-validation, Sera's
+              guarantee is active, and [event: position-of-no-exit-named] the exit calculus runs where it
+              always runs and lands where it always lands — the same column, the same balance, no path that
+              does not go through the apparatus and no mechanism that clears the confirmation already given.
+              Non-extractable. The word is in the internal record without being written. Taylor sets her
+              hand flat on the closed anchor-column. The bottlefly is already off the overhang timber.
+              The lane at the second junction is empty. The weight-adjustment that ended the eleven weeks
+              of Tuesdays and Thursdays is the last entry in that portion of the record, and the record
+              is accurate, and the ledger closes clean.
+            scene_conflict:
+              protagonist_force: "Taylor watching the detention through the feed, then holding the closed cl04 entry alongside the un-entered Wren non-entry — recognition present, not opened"
+              opposing_force: "the ledger's own closing logic, which makes the Wren omission visible by the same mechanism that completed the gap-lane entry — the accounting finding the pattern it would rather not find"
+              stakes_axis: relational_anchor_status
+            substance_delta:
+              axes_in_motion:
+                - axis: relational_anchor_status
+                  direction: up
+                  target_delta_magnitude: 0.5
+                  cost_ledger_anchor: cl04
+                  notes: "cl04 chapter-draw COMPLETE (+1.0 = +0.5 S03 + +0.5 S04 of cl04's +3 total; +2.0 remains for c15+): the NARRATIVE ledger-entry on the figure CLOSES (figure detained, outcome recorded), retroactively naming the Wren omission via shared column-logic — the un-entered item visible in the adjacent format. The cost-ledger ARC cl04 continues at c15; only this chapter's tranche and the figure's specific entry close here."
+                - axis: social_tether-antag
+                  direction: up
+                  target_delta_magnitude: 1.0
+                  cost_ledger_anchor: cl-antag-d10
+                  notes: "cl-antag-d10 COMPLETES at the detention-outcome: non-extractable confirmation complete; Otto's leverage structural from this outcome. BONE-GATE RECONCILE (2026-06-04): absorbs the S03 antag sub-tranche (which held pending outcome) — S02 (+0.5) + S04 (+1.0) = cl-antag-d10's +1.5 chapter draw, landing social_tether-antag at 7.5. Witnessed by s04n13."
+                - axis: position-prot-rise
+                  direction: up
+                  target_delta_magnitude: 1.0
+                  cost_ledger_anchor: cl-d07a
+                  notes: "cl-d07a COMPLETES: position-of-no-exit NAMED in internal record at the detention-outcome; exit calculus confirms no path out; peak position confirmed at 6.0. BONE-GATE RECONCILE (2026-06-04): absorbs the S02 (+0.25) and S03 (+0.5) position sub-tranches that held pending outcome — cl-d07a's full +1.0 chapter draw lands here. Witnessed by s04n14."
+                - axis: moral_legibility_to_self
+                  direction: up
+                  target_delta_magnitude: 0.5
+                  cost_ledger_anchor: null
+                  notes: "recognition present and suppressed — Taylor holds the closed entry and the Wren non-entry in the same look and does not let the shape settle; crack deepest before full recognition; suppression active; ends at 6.0. BONE-GATE RECONCILE (2026-06-04): absorbs the S03 moral_legibility sub-tranche (held as the stylus-above-entry discipline) — the crack deepens at the Wren-naming closure. Witnessed by s04n15."
+              axes_held:
+                - axis: moral_framework
+                  rationale: "completion of the accounting is within the established rationalize-each-trade pattern; no new breach threshold; the repetition-shape is glimpsed and suppressed, not integrated; framework holds at -2. Witnessed by s04n07/n10/n11."
+                - axis: social_tether-prot-rise
+                  rationale: "Sera's guarantee confirmed active by completed delivery; no new structural node; holds at 8.5"
+                - axis: capability
+                  rationale: "no new capability; the bottlefly placement is standard coverage"
+              density_target: 0.8-0.9
         handoff_in:
           open_threads:
             - "contempt named: articulate-contempt threshold passed"
@@ -8337,15 +8699,63 @@ books:
             - "second courier detained: cl04 closed; extraction path behind Taylor"
             - "cloth merchant fled KL: Rhaenyra-pressure mediated via intelligence inference; Dragonstone knows the apparatus is active"
             - "Wren: anchor rank 5.5; cl04 pattern retroactively names her exclusion from the ledger"
-            - "position-prot-rise at peak (rank 6.5): position-of-no-exit confirmed"
-            - "social tether: at structural peak; non-extractable"
+            - "position-prot-rise at peak (rank 6.0): position-of-no-exit confirmed"   # Phase 0 conflict-corrected from stale 6.5
+            - "social tether: non-extractable confirmed (cl-antag-d10 complete); social_tether-antag rank 7.5 — reaches 9-LOCK at c15 via cl-antag-d03"
           world_state:
             - "KL 122 AC; Green apparatus has two courier detentions; Black-faction logistics two threads closed"
             - "Rhaenyra at Dragonstone: aware the Green apparatus is active in lower-city channels"
           character_state:
-            - "Taylor: social_tether-antag rank 9 (non-extractable confirmed); position-prot-rise rank 6.5; relational_anchor rank 5.5; moral_legibility rank 6; moral_framework rank -2"
+            - "Taylor: social_tether-antag rank 7.5 (non-extractable confirmed; cl-antag-d10 complete; 9-LOCK at c15); position-prot-rise rank 6.0; relational_anchor rank 5.5; moral_legibility rank 6; moral_framework rank -2"   # Phase 0 conflict-corrected: antag 9->7.5, position 6.5->6.0 (scene contracts authoritative; c15 handoff_in drift self-heals at c15 Phase 0 aggregate-read)
             - "cl04 completed: ledger closed on a named person; pattern retroactively visible to reader on Wren"
           target_chapter: b01c15
+        handoff_conflicts:
+          # URI-AGGREGATE-READ (PROP-0031 Amendment 1): /and-substance chapter b01c14 Phase 0
+          # cross-referenced handoff_in (book-author prediction) against aggregate-state.md
+          # axis_state (measured close-state through b01c13). Aggregate wins; scene contracts
+          # author from the aggregate baseline, not the stale handoff_in ranks.
+          - detected_at: 2026-06-03T00:00:00Z
+            axis: position-prot-rise
+            handoff_in_value: 5.5
+            aggregate_value: 5.0
+            resolution: aggregate-wins
+            notes: "handoff_in predicted 5.5; aggregate measured 5.0 (c03+c04+c10+c12 = +4 off start 1). c14 cl-d07a +1.0 therefore lands position-prot-rise at 6.0, not the handoff_out-stated 6.5. Bone-gate baseline = 5.0."
+          - detected_at: 2026-06-03T00:00:00Z
+            axis: social_tether-antag
+            handoff_in_value: 7.0
+            aggregate_value: 6.0
+            resolution: aggregate-wins
+            notes: "handoff_in predicted 7; aggregate measured 6 (c03+c04+c10+c11 = +5 off start 1). c14 cl-antag-d10 +1.5 lands social_tether-antag at 7.5; the chunk-text 'reaches rank 9' completes at c15 (+1.5 cl-antag-d03), not c14. Bone-gate baseline = 6.0."
+        chunk_cold_read:
+          reviewed_at: 2026-06-03T00:00:00Z
+          verdict: PASS-CHUNK-VOICE-RISK
+          classification: n/a
+          recovered_summary: "A bug-controlling spy is asked to confirm a man's identity knowing it dooms him, does the math, confirms — and the same cold ledger forces her to face the one person she's quietly refusing to price."
+          intended_goal: "Show the audience Taylor closing the ledger on a named person with full awareness — the accounting is explicit, the person is real, and the closure is chosen — and the cloth merchant's flight as Rhaenyra-pressure made visible."
+          continue: yes
+          continue_strict: yes
+          report_path: active-project/staff/reviews/chunk-coldread-b01c14-2026-06-03.md
+          disposition: n/a
+          dispositioned_at: 2026-06-03T00:00:00Z
+          dispositioned_by: n/a
+          voice_risk:
+            triggered: true
+            signals: [A, B]
+            central_event: "Taylor confirms the gap-lane courier-figure's identity to Otto's apparatus — writes the lane-designation plus the withheld walk-detail (adjusted weight at the second junction, low-set left eye) to the response-sheet and seals it for Jarvis; the apparatus detains him the next evening (two men take him at the second junction where his pause-habit fires one last time); Taylor closes the ledger entry and the same column-logic surfaces the un-priced Wren omission, which she holds for one breath and suppresses."
+            voice_risk_carry: |
+              Central event is rendered heavily through ledger/column/accounting abstraction-vocabulary.
+              Cold reader: "almost entirely internal accounting; the payoff is a moral recognition, not an
+              event-turn" + "four near-identical 'she holds both columns' passages — the accounting repeats
+              almost verbatim across S2/S3/S4." Arms /and-stitch Phase 8.5 Check 3: verify the
+              confirmation-and-detention event lands at cold-reader legibility in assembled prose (the
+              concrete spine — stylus-to-sheet, wax-seal, two men at the junction, hands-on-strap, lane
+              going empty — must surface ABOVE the accounting-register, not be muffled below it).
+          cold_read_risk_carry: |
+            (P-equivalent surface; verdict is VOICE-RISK not SHIPPED-WITH-RISK, so no Phase 9 auto-caveat
+            coupling.) Known single-chunk artifacts the assembled book resolves: Wren unintroduced-in-chunk
+            (established c02/c06/c09/c12); Sera/Otto/factions/the-Dance assumed-backstory (all upstream).
+            Real downstream watches: (1) S04 Wren retroactive-naming must anchor to Wren's established
+            presence, not introduce her cold; (2) vary the accounting-register across S2/S3/S4 to defeat
+            the near-verbatim column-passage repetition.
 
       - slug: b01c15
         status: planned

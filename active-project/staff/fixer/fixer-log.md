@@ -2036,3 +2036,26 @@ criteria met: yes — grep-0 confirmed
 findings-applied: 2 (vibes: 0 edits / already clean; scene-map: 7 substitutions)
 findings-skipped: 0
 exit: CLEAN
+
+## SESSION-START — 2026-06-04T00:00:00Z — and-facets-b01c14-cycle2-fixes
+dispatch: /and-facets b01c14 Phase 5b cycle-2 remediation — 2 targeted fixes: (1) mem:4 @42 license-note add (KEEP entry, ADD #-comment); (2) vibes:6 @42 token rephrase (ledger-has-already-registered → omission-has-already-incurred)
+target: active-project/theater/facets/memory-b01-c14.md, active-project/theater/facets/vibes-b01-c14.md
+audit-report: inline from Phase 5b cycle-2 (worm-canon-pedant REVISE on both facets)
+findings-queued: 2
+
+## fix-1-mem4-license-note — RESOLVED — 2026-06-04T00:05:00Z
+fault: worm-canon-pedant REVISE on mem:4 @42 — reviewer questioned whether Taylor-in-this-AU carries Gold Morning as an established memory-addressable referent; entry body was sound but lacked documentation of the series-canonical license
+scope: line
+change: added 10-line LICENSE-NOTE #-comment block immediately after the mem:4 body line, before the existing margit-referral comment; entry body "a city, a different kind of count, a different kind of named-and-unpriced; the two positions sit in one look and the older one does not acquire a name -> monument-mass-casualty-named-unpriced" is UNCHANGED verbatim; Earth-Bet fence confirmed clean (no Gold Morning / Khepri / Brockton / Scion / shard in rendered text; shape-language only); margit-referral comment preserved intact
+criteria met: yes
+
+## fix-2-vibes6-token — RESOLVED — 2026-06-04T00:06:00Z
+fault: worm-canon-pedant REVISE on vibes:6 @42 — token "free-movement-is-the-cost-the-ledger-has-already-registered" conflated Taylor's internal omission-register with the apparatus's external ledger (state-updates.md: no entry filed for Wren; non-entry is canonical state)
+scope: line
+change: token replaced: "free-movement-is-the-cost-the-ledger-has-already-registered" → "free-movement-is-the-cost-the-omission-has-already-incurred"; all other tokens in vibes:6 unchanged; all other vibes entries (1–5, 7–8) unchanged; @42 anchor and citation unchanged; no cite-index rebuild needed (no entry added/removed)
+criteria met: yes
+
+## SESSION-END — 2026-06-04T00:07:00Z — and-facets-b01c14-cycle2-fixes
+findings-applied: 2
+findings-skipped: 0
+exit: CLEAN

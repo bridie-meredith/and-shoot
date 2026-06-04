@@ -5055,3 +5055,328 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0084 | 2026-06-04 | SLOW (process-critic + user-proxy)
+
+mode: process-critic (primary) + user-proxy (lenient-tie ratification)
+trigger:
+  reason: failure (11 HARD at /and-write Phase 6 bone-gate, all remediated in-cycle)
+  source_report: active-project/staff/auditor/write-b01c14-bone-gate.md
+  source_verdict: |
+    11 HARD remediated (5 SVO form recasts + signal-002 modifier sweep + 3 held-axis
+    fixes + mover-reduction reconcile) + 4 SIGNAL dispositioned. Bone-gate PASS after
+    remediation. S04 convergence-climax co-dominant tie (4 axes × +1.0) accepted via
+    lenient interpretation; queued for admin user-proxy ratification.
+gate_path: .claude/commands/and-write.md#phase-6
+
+question: |
+  (A) Process-critic: c14 exhibited the floor-vs-fractional-target structural tension for
+  the second time (first: c03/c04, cf. PROP-0010). Root cause: every fractional scene-target
+  (0.25/0.5) was enacted by a 1.0-floor moving bone, causing chapter bone-sum overshoot AND
+  axis-ties at 1.0 within S03/S04. Three candidate process changes offered: (a) /and-substance
+  guidance that scene-targets should be >=1.0 for multi-arc convergence chapters; (b) /and-write
+  Phase 1 rule that a fractional scene-target uses a SINGLE chapter-level mover (not per-scene);
+  (c) an auditor-rule clarifying that STAKES-AXIS-NOT-DOMINANT uses delivered-bone-magnitude
+  (ties = co-dominant). Does the process need to change?
+
+  (B) User-proxy: The S04 convergence-climax has 4 axes at +1.0 each. S02/S03 were reconciled
+  to strict single-mover dominance. S04 relies on the lenient reading: gate fires only if a
+  non-stakes axis delivers *strictly more* than the stakes axis; ties are co-dominant. Does the
+  principal accept this disposition for c14 ship?
+
+context: |
+  Bone-gate report: active-project/staff/auditor/write-b01c14-bone-gate.md
+  11 HARD, all resolved in-cycle. Audience 3/3 SUBSTANCE-FELT all 4 scenes.
+  Dramatist ACCEPT (shape; 2 non-blocking renderer flags).
+  S04 is a 4-arc simultaneous completion scene: cl-antag-d10 + cl-d07a + cl04 +
+  relational arc all close here. Strict single-dominance structurally impossible
+  when N arcs complete at the 1.0 floor.
+  Measured-delta tracks the contract exactly:
+    relational_anchor_status +1.0, social_tether-antag +1.5, position-prot-rise +1.0,
+    moral_legibility_to_self +0.5.
+  Relevant open proposals: PROP-0010 (magnitude-floor pre-flight at /and-substance chapter;
+    recurrence_count: 3, third chapter exhibiting fractional-target-floor collision).
+  PROP-0010 proposed diff already includes "consolidate scenes so the full target is
+  delivered in fewer scenes each with >=floor per-axis target" -- covers candidates (a) + (b)
+  from the dispatch but does not specifically flag multi-arc convergence chapters as
+  requiring this consolidation path.
+  No existing open proposal addresses the STAKES-AXIS-NOT-DOMINANT co-dominant-tie
+  clause for simultaneous N-arc completion scenes.
+
+options: |
+  Process-critic:
+    (i) OK-MERGED-INTO PROP-0010 for the floor-vs-fractional-target recurrence
+    (ii) PROCESS-CHANGE-PROPOSED PROP-0039 for the lenient-tie co-dominant clause
+    (iii) Some combination or OK-only verdict
+  User-proxy:
+    (I) Accept the c14 lenient-tie disposition -- ship as-is
+    (II) ESCALATE to human -- require strict single-dominance (would force S04 revise)
+
+decision: |
+  Process-critic:
+    (i) OK-MERGED-INTO PROP-0010 (recurrence_count 3->4; multi-arc convergence
+        consolidation guidance added to recurrence_refs).
+    (ii) PROCESS-CHANGE-PROPOSED PROP-0039 (new; lenient-tie co-dominant clause for
+        simultaneous N-arc completion at the 1.0 floor; change_type: modify on
+        Phase 6 STAKES-AXIS-NOT-DOMINANT criterion).
+  User-proxy:
+    (I) ACCEPT the lenient-tie disposition for c14 ship.
+
+basis: |
+  Process-critic step 2 (proposals-log check):
+    Floor-vs-fractional: PROP-0010 is open and matches target + change_type. Merge mandatory.
+    Lenient-tie: no open proposal covers STAKES-AXIS-NOT-DOMINANT tie-clause. No rejected
+    proposal matches. PROP-0039 is net-new.
+  Process-critic step 3 (content vs. process):
+    Floor-vs-fractional: the multi-arc consolidation note is a precision gap in PROP-0010's
+    proposed_diff (covers the mechanism but does not call out convergence chapters by name);
+    c14 is the recurrence that confirms the guidance needs to be more explicit on this path.
+    Lenient-tie: the Phase 6 gate spec reads "MUST be the largest delivered delta in the scene"
+    with no carve-out for N-axis simultaneous completion at the bone floor. The current spec
+    would HARD on any future convergence-climax tie. The auditor resolved correctly via
+    context-sensitive judgment; but without a spec change, that judgment is non-reproducible
+    and the gate remains structurally inconsistent with the project's multi-arc closure design.
+    change_type: modify (add co-dominant-tie clause).
+  Process-critic step 4 (recurrence):
+    Floor-vs-fractional: count=4 (c04 DEC-0031, c06 DEC-0046/0057, c06-revise DEC-0057,
+    c14 this dispatch). Merge is mandatory.
+    Lenient-tie: count=1. Non-catastrophic (resolved in-cycle; 3/3 audience PASS). But:
+    first-occurrence-hold override applies -- the failure is deterministic. Every future
+    convergence-climax scene completes N cost-arcs simultaneously at the 1.0 floor; strict
+    single-dominance is structurally impossible by design in those scenes. Without a spec
+    amendment, the gate will hard-fire on every convergence climax. Deterministic gap
+    + precise fix = propose at count=1 per methodology recurrence-override.
+  User-proxy (lenient-tie):
+    goal:1 (pipeline correctness) -- the gate's purpose is to prevent a non-stakes axis
+    delivering MORE than the stakes axis. That purpose is satisfied in S04: relational
+    (stakes) is not under-delivered; no axis outscores it; they co-complete. Firing HARD
+    on a tie at the 1.0 floor when all four completing axes are structurally constrained
+    to 1.0 violates the gate's intent.
+    goal:2 (cost discipline) -- audience 3/3 SUBSTANCE-FELT; forcing revise burns caps on
+    a chapter that delivered by every measurement including the informed critic standard.
+    methodology:3a (reversibility) -- accepting the lenient tie is reversible (PROP-0039
+    proposes the gate amendment; can be revisited if the clause proves too permissive).
+    No escalation triggers: not architectural direction, not irreversible at meaningful cost,
+    not human-only territory. Within admin authority.
+
+rationale: |
+  PROP-0010 MERGE: The c14 floor-vs-fractional pattern is structurally identical to
+  prior recurrences: sub-1.0 scene-targets authored at /and-substance chapter, 1.0-floor
+  bones at /and-write, chapter-sum overshoot of contract. PROP-0010's proposed pre-flight
+  check at /and-substance chapter Phase 4/5 (surface SUBSTANCE-CONTRACT-FLOOR-CONFLICT
+  when any scene's per-axis target < bone.delta_per_axis.floor) would have surfaced this
+  before decomposition. The multi-arc convergence case is the most consequential sub-case:
+  when a chapter is designed to close 3+ cost-arcs simultaneously, the scene-target author
+  must consolidate delivery into one scene with >=1.0 per axis rather than splitting
+  0.25/0.5 residuals across multiple scenes (since each scene enacts a 1.0-floor mover).
+  This precision note belongs in PROP-0010's recurrence_refs; it is not a separate proposal.
+
+  PROP-0039 (new): The Phase 6 gate spec says the stakes axis "MUST be the largest" with
+  no exception. The S04 co-dominant tie is not a gate miss -- the auditor correctly applied
+  context-sensitive reasoning. But the spec as written cannot support that reasoning
+  reproducibly: a future auditor following the gate spec literally would HARD on a tie
+  even in a structurally identical convergence scene. The fix is a single clause: when >=2
+  axes complete simultaneously at the 1.0 floor in a single scene, co-dominant ties are
+  accepted -- the gate fires HARD only when a non-stakes axis delivers strictly greater
+  magnitude than the stakes axis. Small, precise, closes the spec gap without relaxing the
+  gate's actual enforcement intent (stakes-axis under-delivery).
+
+  LENIENT-TIE ACCEPTANCE: S02 and S03 were correctly reconciled to strict single-mover
+  dominance -- there the mover-to-held conversions were achievable without violating the
+  delivery contract. S04 is structurally different: all four arcs are at 1.0 by design.
+  No single axis can be made sole mover without under-delivering the contracted +1.0 on
+  the others -- which would itself produce AXIS-DELTA-MISMATCH or AXIS-UNDERDELIVERED.
+  The gate cannot simultaneously require (a) each axis delivers its contracted +1.0 AND
+  (b) only one axis delivers in S04. That is a contradiction built into the multi-arc
+  convergence structure. Accepting the co-dominant tie is the only internally-consistent
+  outcome.
+
+trade-off: |
+  Merging into PROP-0010 rather than a separate "multi-arc guidance" proposal: the
+  proposed_diff on PROP-0010 already contains the consolidation language; adding a
+  recurrence_ref is minimum-blast-radius. A separate proposal would duplicate the
+  core mechanism.
+
+  Proposing PROP-0039 at count=1: accepted on deterministic-gap grounds. The alternative
+  means the next convergence-climax chapter hits the same structural HARD, requires the
+  same orchestrator adjudication, and the spec remains inconsistent with the project's
+  multi-arc closure design. Fix is S-cost; delay has no benefit.
+
+  Accepting lenient-tie for c14: if the co-dominant tie clause proves too permissive
+  in a future chapter, PROP-0039's amendment can be narrowed at that point. The
+  acceptance is reversible at the process level; c14's ship is supported by 3/3
+  SUBSTANCE-FELT + measured-delta-on-contract evidence.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
+## DEC-0085 | 2026-06-04 | FAST (user-proxy, RUNBOOK R1)
+
+mode: user-proxy
+trigger: /and-stitch b01c14 Phase 9 terminal-gate disposition (Class-B FAIL; CONTINUE=no; central event recovered; cause: abstract ledger-register + cold-context name-unfamiliarity)
+
+question: |
+  Phase 9 cold-read returned CONTINUE=no on b01c14. Class-B: central event recovered
+  (Taylor confirms courier → detained → refuses to price Wren). FAIL cause: (1) relentlessly
+  abstract ledger-metaphor, no concrete courier-as-person, no Sera-as-stake; (2) Otto/Sera/
+  Jarvis/faction name-unfamiliarity (c14-read-in-isolation artifact).
+  Phase 8.5 returned PASS (central events land concrete at spine; weave + followability clean;
+  @42 Gold-Morning fence-clean). Bone-gate audience 3/3 SUBSTANCE-FELT. /and-facets 9/9 ACCEPT.
+  Chapter GOAL explicitly licenses accounting register as designed nature.
+  PASS-CHUNK-VOICE-RISK was armed from /and-substance chapter (Signal-B: ledger-abstraction
+  risk). Options: (A) SHIPPED-WITH-CAVEATS + mandatory depth pass before book-close,
+  (B) structural re-write now, (C) ESCALATE.
+
+context: |
+  DEC-0072 (b01c11 chunk cold-read + Phase 9), DEC-0074 (c11 Phase 9), DEC-0078 (c12 Phase 9)
+  are exact coupling-rule precedents. All three: Class-B FAIL, CONTINUE=no, central event
+  recovered, causes = design-inherent abstract register + cold-context name-opacity. All three
+  shipped SHIPPED-WITH-CAVEATS. The accounting register is the moral_legibility series signature
+  ("the accounting is explicit" is c14's stated GOAL). Cold-context name-unfamiliarity (Otto/
+  Sera/Jarvis) is serial mid-point noise — an invested reader has c01-c13 context.
+  Phase 8.5 substance-aware check confirmed followability clean and concreteness at spine.
+  The c14 case has one additional carried item not present in c10-c12: courier-as-person +
+  Sera-as-stake concreteness gaps are addressable via depth pass (not structural-unfixable),
+  making the depth-pass mandatory flag load-bearing.
+
+options:
+  - (A) SHIPPED-WITH-CAVEATS + mandatory depth pass (/and-write b01c14 revise --from-signals) before book-close
+  - (B) Structural re-write now (~40 dispatches, re-cascade /and-facets + /and-stitch)
+  - (C) ESCALATE to human (queued to end-of-run summary)
+
+decision: (A) SHIPPED-WITH-CAVEATS. Depth pass flagged mandatory before book-close.
+
+basis: |
+  ltm:DEC-0072 + ltm:DEC-0074 + ltm:DEC-0078 — coupling rule exact match: Class-B FAIL,
+  CONTINUE=no, central event recovered, causes = design-inherent abstract register +
+  cold-context name-opacity. All three prior cases shipped SHIPPED-WITH-CAVEATS.
+  methodology:3e (convention) — the established project disposition for this failure class
+  is terminal-ship + recorded-risk + depth-pass flag; consistency requires same verdict.
+  methodology:3b (cost) — (B) burns ~40 dispatches to re-derive a chapter whose bones,
+  facets, and Phase 8.5 all PASS; wrong repair layer (bone-layer re-decompose cannot address
+  cold-context name-opacity, which is non-fixable).
+
+rationale: |
+  The coupling rule established across DEC-0072/0074/0078 is deterministic on the c14 facts:
+  (1) central event recovered — the step-2 diff gate did NOT fire; (2) all CONTINUE=no causes
+  fall into pre-authorized categories (design-inherent abstract register per chapter GOAL;
+  cold-context name-opacity as serial mid-point noise). Phase 8.5 (substance-aware, context-
+  held) returned PASS, which is the informed standard the cold-read cannot replicate.
+  The accounting register is not a defect introduced at stitch — it is the chapter's declared
+  moral_legibility axis ("accounting is explicit" is the GOAL text). Re-writing now would
+  violate the substance contract that 3/3 audience + 9/9 facets all endorsed.
+  The c14 depth-pass (courier-as-person concrete detail; Sera-stake staged) is addressable at
+  /and-write revise --from-signals and should be flagged mandatory-before-book-close, consistent
+  with PASS-WITH-DEPTH-PASS-REQUIRED semantics. Option (B) is wrong repair layer + wrong cost.
+  Option (C) is unnecessary — prior rulings decide this without human judgment.
+
+trade-off: |
+  Accepting (A) means the courier-as-person and Sera-stake gaps ship in the terminal draft
+  pending depth pass. Risk: if the depth pass is skipped before book-close, those texture
+  gaps persist. Mitigated by: (a) mandatory depth-pass flag in this entry + run summary;
+  (b) the gaps are texture-level (bone-delivered substance is clean), not event-delivery
+  failures; (c) /and-postop can surface them in the gap between ship and book-close.
+
+depth_pass_mandatory: yes — /and-write b01c14 revise --from-signals before book-close.
+  Targets: courier-as-person concreteness (@courier-anchored bones); Sera-stake staged
+  (visible in at least one concrete body-act or consequence bone); cold-read-flagged
+  abstraction-dominant passages that survived Phase 8.5 as texture-level (not spine) gaps.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
+## DEC-0086 | 2026-06-04 | SLOW (process-critic)
+
+mode: process-critic
+trigger:
+  reason: failure
+  source_report: active-project/staff/reviews/coldread-b01c14-2026-06-04.md
+  source_verdict: SHIPPED-WITH-CAVEATS (Phase 9 Class-B cold-read FAIL CONTINUE=no; fourth application of coupling rule across c10/c11/c12/c14 — DEC-0072/0074/0078/0085)
+  gate_path: .claude/commands/and-stitch.md#phase-9
+  secondary_gate_paths: [.claude/commands/and-write.md#phase-6]
+verdict: PROCESS-CHANGE-PROPOSED PROP-0040
+
+question: |
+  At the fourth identical coupling-rule application (c10/c11/c12/c14 all shipped
+  SHIPPED-WITH-CAVEATS via admin user-proxy on the same Class-B pattern), should the
+  process mechanize any part of that ruling? Three specific candidate questions:
+  (a) auto-ship for known-voice-risk chapter class when complaint categories are all
+  covered by carried risk; (b) depth-pass debt accumulation concern (4 chapters?);
+  (c) interior-accounting chapter class upstream grounding-ledger default.
+
+decision: PROCESS-CHANGE-PROPOSED PROP-0040 (candidate a). Candidate b: OK (no new signal
+— depth-pass debt is c10 + c14 only; c11/c12 have no pending depth passes). Candidate c: OK
+(first occurrence; hold for recurrence per standard rule).
+
+basis: |
+  Step 1 (evidence): The report shows identical Class-B pattern at c14: central event
+  recovered, CONTINUE=no, causes = design-inherent accounting-abstraction + cold-context
+  name-opacity, Phase 8.5 PASS. The c14 case adds one new dimension absent from c10-c12:
+  tractable texture gaps (courier-as-person, Sera-stake) that DEC-0085 flagged for a
+  mandatory depth pass. This produces a Case 1 / Case 2 distinction not encoded in the spec.
+
+  Step 2 (proposals log): No existing open proposal covers Phase 9 Case 1 auto-ship. PROP-0018
+  added the Class A/B discrimination and the "admin default: (P)" rule. DEC-0085's Case 2
+  is consistent with PROP-0018's admin-dispatch path. The Case 1 path (all complaints covered,
+  no tractable items, no admin dispatch needed) is new and not in any existing proposal. No
+  rejected or deferred proposal matches this target.
+
+  Step 3 (content vs. process): Could a stricter existing gate have caught this? No. The
+  coupling rule works correctly at every application. The gap is efficiency, not correctness:
+  the Phase 9 harness routes to admin user-proxy even when the answer is fully deterministic.
+  Case 1 is a process-efficiency gap, not a process-correctness gap. change_type: modify on
+  Phase 9 Step 2 (add the complaint-coverage check + auto-ship path).
+
+  Step 4 (recurrence): count=4 across c10/c11/c12/c14. Rule says "prefer to return OK and
+  wait for recurrence" at count=1. At count=4 with two sub-cases discriminated, the
+  mechanism is stable enough to codify. Automating a deterministic ruling is not premature
+  promotion of a one-off signal.
+
+  Step 5 (methodology): S-cost (add a complaint-coverage check and a conditional branch to
+  Phase 9 Step 2 + Step 4 verdict block; no new dispatches, no schema changes). Blast radius:
+  low — only affects Class-B FAIL chapters with PASS-CHUNK-VOICE-RISK carry, which is a
+  structurally narrow class. Reversibility: adding a Case 2 fallback preserves full admin
+  involvement whenever the classification is ambiguous or a tractable item appears.
+
+  Candidate b (depth-pass debt): The trigger's "4 chapters" framing is inaccurate. Checking
+  memory.md directly: c10 depth_pass_pending: true (PASS-WITH-DEPTH-PASS-REQUIRED, bone-level
+  staging targets — @2/@11/@21); c11 SHIPPED-WITH-CAVEATS, readability READABLE, no mandatory
+  depth pass; c12 SHIPPED-WITH-CAVEATS, DEC-0078 explicitly resolved apparatus-density to
+  /and-cohere not per-chapter depth pass; c14 depth_pass_pending: true (DEC-0085, texture-
+  level targets). Actual debt = c10 + c14. The SHIPPED-WITH-CAVEATS / PASS-WITH-DEPTH-PASS-
+  REQUIRED distinction is working correctly. No new process change warranted.
+
+  Candidate c (interior-accounting upstream grounding): c14's courier-as-person + Sera-stake
+  gaps are first-occurrence at this specific class. Not catastrophic. Standard first-occurrence
+  hold. No proposal.
+
+rationale: |
+  PROP-0040 targets the only confirmed process gap: Phase 9 routinely fires an admin user-proxy
+  dispatch on a deterministic Class 1 ruling (all complaints covered, answer already in DEC
+  history), adding per-chapter overhead without changing the outcome. The Case 1 / Case 2
+  discrimination surfaces for the first time at c14 (where DEC-0085 identified tractable items).
+  The Case 2 path (admin dispatch with depth-pass brief) is exactly where admin value was
+  delivered at c14. Encoding Case 1 as auto-ship preserves that value while eliminating the
+  overhead on chapters where the coupling rule is fully deterministic.
+
+trade-off: |
+  Risk: the auto-ship path could miss a tractable item if the harness over-classifies a
+  complaint as COVERED. Mitigated by: (a) conservative matching rule (UNCOVERED wins when in
+  doubt); (b) the existing Phase 9.5 process-critic dispatch fires regardless and can flag
+  if a Chapter 1 auto-ship was mis-classified; (c) the Case 2 fallback is always available
+  for any ambiguous classification.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no

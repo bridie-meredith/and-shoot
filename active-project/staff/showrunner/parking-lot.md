@@ -1928,3 +1928,122 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-06-03-c14-001
+      created_at: 2026-06-03T00:00:00Z
+      created_by: "/and-substance chapter b01c14 Phase 5 (audience 3-of-3 SUBSTANCE-FELT) + Phase 5.5 (chunk cold-read PASS-CHUNK-VOICE-RISK)"
+      target:
+        command: /and-write
+        scope: "b01c14"
+        phase: null
+      severity: SOFT
+      description: |
+        b01c14 bones-execution watches (chunk PASSED 3-of-3 SUBSTANCE-FELT; cold-read
+        PASS-CHUNK-VOICE-RISK). These are write-time prose/bone disciplines, NOT chunk
+        revisions — a climax chapter whose central event (confirmation -> detention)
+        is rendered in a dense accounting/ledger register that risks abstraction-muffle.
+
+        From the audience trio (10 watches):
+        - WATCH-01 [S01]: absent merchant must read as a person who LEFT a place (oil-cloth flat,
+          samples on hook, missing bag-peg) — not collapsed to "node went dark."
+        - WATCH-02 [S02]: person-before-paths sequencing. The figure's face (low-set left eye)
+          and pause-habit must be introduced in the bones BEFORE the two alternative paths are
+          enumerated. Reorder if bones sequence paths first.
+        - WATCH-03 [S03]: harm-before-protection column entry. The harm column must be entered
+          and held before the protection column opens, or the accounting reads as rationalization.
+        - WATCH-04 [S03]: "she does not let it take less" — render as action/posture/time-held,
+          not as a narrated fact about Taylor's discipline.
+        - WATCH-05 [S03]: stylus-above-closed-entry is a physical beat (body-position + absence-
+          of-action), not a cognitive summary of the accounting's accuracy.
+        - WATCH-06 [S04]: pause-habit fires one last time — "both hands going to the strap the way
+          they always do" — full physical presence; the chapter's earned-cost peak image; do NOT
+          subordinate to the detention geometry.
+        - WATCH-07 [S04]: Wren retroactive-naming kept minimal and physical (two column-positions,
+          one breath, hand off surface). Over-explanation of the parallel = authorial-cleverness read.
+        - WATCH-08 [S04]: Gold-Morning echo ("a city, a different kind of count, a different kind of
+          named-and-unpriced") — three clauses, NO proper nouns, NO power mechanics, NO event
+          description. Earth-Bet fence, shape-language only. Worm-specific content here = HARD fence
+          violation, flag immediately.
+        - WATCH-09 [S04]: "non-extractable" arrives as prior-known/settled, not as revelation; a
+          thing she has been AVOIDING writing, not one she has not yet written.
+        - WATCH-10 [S02/S03]: the walk-detail (adjusted weight, low-set eye) Taylor adds to the
+          confirmation sheet is the moment her withheld 11-week tracking becomes the instrument of
+          the detention — the inversion (private knowledge becoming the delivery) should be visible.
+
+        From the chunk cold-read (PASS-CHUNK-VOICE-RISK, Signals A+B):
+        - WATCH-11: vary the accounting-register across S2/S3/S4. Cold reader flagged "four
+          near-identical 'she holds both columns' passages — the accounting repeats almost verbatim."
+          Bones must differentiate the three column-runs (weighing / deciding-and-writing / closing-
+          and-recognizing) so the assembled prose does not read as one passage three times.
+        - WATCH-12: the concrete central-event spine (stylus-to-sheet, wax-seal, two men at the
+          junction, hands-on-strap, lane going empty) must carry the event ABOVE the accounting-
+          register. PASS-CHUNK-VOICE-RISK arms /and-stitch Phase 8.5 Check 3; bones should give that
+          check a concrete spine to verify against.
+      context_refs:
+        - active-project/staff/reviews/chunk-coldread-b01c14-2026-06-03.md
+        - active-project/staff/auditor/substance-b01c14-scenes.md
+        - active-project/staff/showrunner/_drafts/b01c14-draft-2026-06-03.md
+        - active-project/staff/showrunner/memory.md  # chapters[b01c14].chunk_cold_read.voice_risk
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-04-001
+      created_at: 2026-06-04T00:00:00Z
+      created_by: "/and-facets b01c14 Phase 5 audit (flag-002)"
+      target:
+        command: margit-card-authoring
+        scope: "b01c14 warehouse cards"
+        phase: null
+      severity: SOFT
+      description: |
+        Five slugs referenced in b01c14 facets lack warehouse cards (pre-flagged
+        seams; non-blocking — entries carry sufficient inline description):
+        - the-channel-station (loc; SEAM-C14-LOC-001) — Taylor's Jarvis channel-station
+        - the-gap-lanes-east-water-gate (loc; SEAM-C14-LOC-002) — the courier gap-lanes
+        - prop:oc-feed-ledger (SEAM-C14-ENV) — Taylor's interior accounting ledger
+        - prop:oc-jarvis-packet — the courier packet
+        - prop:oc-response-sheet (SEAM-C14-ENV-001) — the confirmation sheet
+        margit should author these (mechanism-descriptive) so future loc-state
+        old-state continuity audits + /and-cast revise can verify constraint
+        compliance. Matches the oc-rushwick precedent (pl-2026-05-28-001).
+      context_refs:
+        - active-project/theater/facets/location-state-b01-c14.md
+        - active-project/theater/facets/state-updates.md
+        - active-project/staff/auditor/facets-final-audit.md  # flag-002
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-04-002
+      created_at: 2026-06-04T00:00:00Z
+      created_by: "/and-stitch b01c14 Phase 9 cold-read (DEC-0085 SHIPPED-WITH-CAVEATS)"
+      label: depth-pass-mandatory-b01c14
+      target:
+        command: /and-write
+        scope: b01c14
+        phase: null
+      severity: HARD
+      description: |
+        b01c14 shipped SHIPPED-WITH-CAVEATS (DEC-0085) on a Class-B cold-read FAIL
+        (CONTINUE=no; events recovered; cause = design-inherent accounting-abstraction
+        density, flagged upstream as PASS-CHUNK-VOICE-RISK; Phase 8.5 muffle-check PASSED).
+        MANDATORY depth pass before book-close (gates /and-substance book b02 Phase 0 +
+        /and-review verdict b01). Consume the cold-read signals via
+        /and-write b01c14 revise --from-signals + re-cascade /and-facets + /and-stitch:
+        - concretize the courier as a felt person (the cold-reader "never felt the courier
+          as a person; told to") -- the 11-week-tracking + low-set-eye detail exists in
+          bones but reads abstract in aggregate; stage more body/scene around him.
+        - stage Sera as a felt stake (the body never dramatizes Sera; the guarantee is
+          known only from the preamble). The degraded-alternative stake needs on-page weight.
+        Resolution: run the depth pass; on Phase 9 re-PASS stamp depth_pass_resolved_at.
+      context_refs:
+        - active-project/staff/reviews/coldread-b01c14-2026-06-04.md
+        - active-project/staff/reviews/coherence-b01-c14-2026-06-04.md
+        - staff/admin/decisions.md  # DEC-0085
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
