@@ -8800,6 +8800,31 @@ books:
             grounding_ledger_open: 0   # 2 entries all satisfied
             voice_fixable_carry: "[@22 feed-record-as-Taylor-making-entry, @31 continuous-with-@30-breath, @35-38 apparatus-noun-cluster-render-as-person] -> /and-stitch Phase 4 voice-embodiment (maps onto existing voice_risk_carry arming P8.5)"
             unresolved: []
+        stitched: true
+        draft_file: active-project/draft/b01-c15.md   # 1049-word body + italic preamble; persona neutral, first-person past
+        coherence_review:   # Phase 8.5
+          reviewed_at: 2026-06-04
+          verdict: PASS
+          weave_gaps: 0
+          followability_breaks: 0
+          cold_read_risk_high: 0
+          cold_read_risk_advisory: 1   # @21/@22 "site-condition" label = clinical under-naming (NOTES-AND-DOES-NOT-ENTER); covered by voice_fixable_carry @22
+          central_event_muffle: NOT-MATERIALIZED   # all 4 armed central events cold-reader-legible; the Class-B/c14 muffle failure did NOT recur
+          report_path: active-project/staff/reviews/coherence-b01-c15-2026-06-04.md
+        cold_read:   # Phase 9 terminal gate
+          read_at: 2026-06-04
+          verdict: SHIPPED-WITH-CAVEATS   # Class-B FAIL on PRE-AUTHORIZED categories per Phase-9 Step-4 SHIPPED-WITH-RISK-RECORDED coupling (chunk_cold_read DEC-0087); auto-ships terminal, no principal re-prompt; mirrors c14 DEC-0085
+          recovered_summary: "A surveillance operator watches a one-eyed prince spar, briefly glimpses a hidden gap in their own network, and chooses to record nothing — protecting a person I was never introduced to."
+          central_event_recovered: true   # cold-reader recovered all events + summary maps to goal (Aemond-observed + gap + choice-not-to-record)
+          continue: no   # event-poverty + uninformedness (no character to follow after 15 chapters of context the cold-reader lacks)
+          jeopardy: faint-implied   # offstage BY DESIGN (falling chapter; Dance/Otto pressure structural/mediated per DEC-0087)
+          fail_categories: [event-poverty, jeopardy-offstage, nothing-changes]   # ALL in cold_read_risk_carry; NO new categories -> auto SHIPPED-WITH-CAVEATS
+          report_path: active-project/staff/reviews/coldread-b01-c15-2026-06-04.md
+          depth_pass_required: true   # MANDATORY before book-close (gates /and-substance book b02 Phase 0 + /and-review verdict b01); consume via /and-write b01c15 revise --from-signals
+          depth_pass_resolved_at: null
+          signal_clusters: []
+          readability_axis: { verdict: READABLE, basis: "Phase 8.5 central-event-muffle NOT-MATERIALIZED + person-first voice-embodiment held; the quiet reads vivid not airless; CONTINUE=no is event-poverty/uninformedness, not airlessness" }
+          stale_since: null
         chunk: |
           Non-extractable confirmation deepens and Aemond arrives on-stage with Vhagar-
           proximity. Aemond (now 12; F&B-canon, born 110 AC) is brought to a Red Keep outer court exercise that

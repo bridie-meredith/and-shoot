@@ -2171,3 +2171,43 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-06-04-c15-004
+      created_at: 2026-06-04T00:00:00Z
+      created_by: "/and-stitch b01c15 Phase 9 cold-read (SHIPPED-WITH-CAVEATS; Class-B DEC-0087 coupling)"
+      label: depth-pass-mandatory-b01c15
+      target:
+        command: /and-write
+        scope: b01c15
+        phase: null
+      severity: HARD
+      description: |
+        b01c15 shipped SHIPPED-WITH-CAVEATS on a Class-B cold-read FAIL (CONTINUE=no;
+        events recovered + summary maps to goal; cause = design-inherent event-poverty /
+        jeopardy-offstage / nothing-changes, ALL pre-authorized in chunk_cold_read.cold_read_risk_carry
+        per DEC-0087; auto-shipped terminal per the Phase-9 Step-4 SHIPPED-WITH-RISK-RECORDED
+        coupling, mirroring c14 DEC-0085). Phase 8.5 confirmed the central-event-muffle did NOT
+        materialize (all 4 events legible) — this is NOT the c14 abstraction-muffle failure; it is
+        the deliberately-quiet falling chapter shipping with the known event-poverty caveat.
+        MANDATORY depth pass before book-close (gates /and-substance book b02 Phase 0 +
+        /and-review verdict b01). Consume the cold-read signals via
+        /and-write b01c15 revise --from-signals + re-cascade /and-facets + /and-stitch:
+        - the cold-reader's "no character to care about / no stake to follow" is the uninformedness
+          leg — a reader 15 chapters in HAS Taylor/Wren/the-arrangement; but the depth-pass should
+          still consider whether ONE more on-page anchor of stake (the Wren-cost made a hair more
+          present, or the Aemond-as-the-war's-engine weight) would lift the in-chapter continue-pull
+          without breaking the falling-arc design.
+        - NOTE the two-consecutive-quiet pattern (c14 + c15 both Class-B SHIPPED-WITH-CAVEATS):
+          DEC-0087 named /and-cohere before book-close as the designed accumulation handler for this.
+          Consider /and-cohere b01 over the c13-c15 stretch.
+        Resolution: run the depth pass; on Phase 9 re-PASS stamp chapters[b01c15].cold_read.depth_pass_resolved_at.
+      context_refs:
+        - active-project/staff/reviews/coldread-b01-c15-2026-06-04.md
+        - active-project/staff/reviews/coherence-b01-c15-2026-06-04.md
+        - active-project/staff/showrunner/memory.md  # chapters[b01c15].cold_read
+        - staff/admin/decisions.md  # DEC-0087
+      resolution_suggestion: "/and-write b01c15 revise --from-signals + re-cascade; OR /and-cohere b01 c13-c15 (two-consecutive-quiet accumulation handler per DEC-0087)"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
