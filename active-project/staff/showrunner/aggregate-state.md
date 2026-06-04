@@ -1,7 +1,39 @@
 # Aggregate State — taylor-westeros-good-intentions
 
 # Rolling forward-feed channel for cross-chapter narrative continuity (schema: schemas/aggregate-state.schema.md).
-# Producer: /and-stitch Phase 10 (forward-thread). Consumer: /and-substance chapter b01c16 Phase 0.
+# Producer: /and-stitch Phase 10 (forward-thread). Consumer: /and-substance chapter b01c17 Phase 0.
+# Scoped through b01c16. c16 rolled (aftermath, precinct-scale; the Halvard walk-away / foreclosure-by-behavior chapter;
+#   from chapters[b01c16].substance_delta_measured):
+#   moral_legibility_to_self +0.5 (->6.5; the walk-away CRACK expressed as BEHAVIOR — Taylor walks away from Halvard
+#     mid-wait (@13-@15 'There was no answer that was also a continuing... I turned. Not away from the argument —
+#     away from the man'); the recognition that knowing-what-she-did was never the variable that stopped her
+#     (@13 'It was the only honest thing he had said, and it was not live. Knowing what I did had never been the
+#     variable that stopped me') is the first MOVEMENT since c14's suppressed @21 hold — the crack now legible as act,
+#     not interior. last_movement_at b01c16).
+#   HELD: moral_framework -2, capability 7.5, social_tether-prot-rise 8.5, position-prot-rise 6.0,
+#     relational_anchor_status 7.0, political_register-prot 5.5, social_tether-antag 9.0 (9-LOCK), position-world 7,
+#     political_register-world 7.
+#   COLLAPSE-AXES STATUS TRANSITION (IMPORTANT for c17): social_tether-prot-collapse 8 + position-prot-collapse 7
+#     transition dormant -> LATENT-ARMED this chapter — the position-arithmetic ('worth less to hold than it costs')
+#     became VISIBLE to Taylor at the fence-rail (@7 'what the position was worth to me now against what it cost to
+#     hold, and the number on the right had moved... Worth less to hold than it cost.'); RANK did NOT move (no collapse
+#     event; c17 fires the collapse events at -1.0 each). Aggregate entries note latent-armed (arithmetic visible),
+#     rank unchanged.
+#   hook-0007 (Halvard counter-argument, paid/foreclosed@c13) RE-CONFIRMED FORECLOSED@c16 by BEHAVIOR — the c16
+#     walk-away IS the foreclosure's payoff landing (she walks away mid-wait; he does not call after, @15 'he kept his
+#     face to the eaves and did not turn his head after me, and he did not call out'). No NEW hook; the existing
+#     foreclosed hook gets a c16-landing note. septon-halvard-flea-bottom ON-PAGE@c16 (last_appearance b01c15->b01c16
+#     — NOTE: prior aggregate carried Halvard last_appearance b01c13; the c16 walk-away is his ON-PAGE return + functional
+#     exit). reader_legibility high. No new characters (old man/woman/child are unnamed walk-ons, not added to characters[]).
+#   No new world_state beyond the sept-corner (the-chandler-corner, established c07/c09/c13). No new open_hooks.
+#   0 threading edits applied (every callback already on-page — the 'third time he found me at this corner' prior-encounter
+#     callback @7, the fence-rail position-arithmetic @7, the moral_legibility behavior-crack @13-@15; the eastern-gap/Wren
+#     + Otto-arrangement threads correctly ABSENT (c16 is precinct-scale aftermath, not court/feed-routing — not a drop)).
+#   STATE-DRIFT none; PASS-THREAD; 0 substantive parking-lotted; 0 unacknowledged-substantive (b01c17 Phase 0 CLEAR).
+#   NOTE: the c16 cold-read SHIPPED-WITH-CAVEATS depth_pass_required:true (event-poverty / jeopardy-offstage / quiet-
+#     aftermath / argument-foreclosed-not-dramatized, all DEC-0090 pre-authorized) gates BOOK-CLOSE via the open
+#     pl-2026-06-04-c16-001 (target /and-write book-close, NOT Phase 0); it is NOT a Phase-10 threading finding and does
+#     NOT add an unacknowledged-substantive revision_layer entry — c17's /and-substance chapter Phase 0 stays CLEAR.
 # Scoped through b01c15. c15 rolled (falling, close-of-rise; the Aemond-on-stage + gap-as-negative-shape chapter;
 #   from chapters[b01c15].substance_delta_measured):
 #   social_tether-antag +1.5 (->9.0, **9-LOCK**; cl-antag-d03 COMPLETE — riding on the c14 cl-antag-d10 confirmation,
@@ -141,8 +173,8 @@ aggregate_state:
   version: 1
   project: taylor-westeros-good-intentions
   through_book: b01
-  through_chapter: b01c15
-  last_updated: 2026-06-04T07:00:00Z   # c15 falling/close-of-rise threaded (Aemond on-stage + gap-as-negative-shape): 4 axes moved (social_tether-antag +1.5 -> 9.0 cl-antag-d03 COMPLETE 9.0-LOCK; relational_anchor_status +1.5 -> 7.0 cl04 c15 draw, +0.5 remains, gap-lane exclusion now reader-PERCEPTIBLE as negative shape; political_register-prot +0.5 -> 5.5 Aemond-specimen accumulation-within-band; capability +1.0 -> 7.5 cl05 gain-side COMPLETE), all 8 others HELD (social_tether-prot-rise 8.5, moral_framework -2, position-prot-rise 6.0, moral_legibility_to_self 6.0, social_tether-prot-collapse 8 dormant, position-prot-collapse 7 dormant, position-world 7, political_register-world 7). hook-0006 ADVANCED to ON-STAGE (Aemond now ON-PAGE-observed + logged-NOT-routed; stays open); hook-0016 ADDED (gap-as-negative-shape perceptually confirmed; transient). aemond-targaryen added/promoted (logistics-reference c08 -> ON-PAGE-observed c15, reader_legibility cipher->partial); master-at-arms appended (cipher walk-on); wren last_appearance b01c14->b01c15 (NOT on-page, negative-shape only; anchor 5.5->7.0; exclusion now reader-perceptible). world_state +2 (aemond-at-court-observable, vhagar-eastern-slope-proximity) + the-east-water-gate-gap perceptual-confirmation noted. 0 threading edits applied (every callback already on-page — hook-0006 bridge @5, Wren suppressed-register exclusion @11/@13, non-extractable continuity @9, calendar/season anchors @9/@11/@13); STATE-DRIFT none (three clocks — KL-tenure eleven-months / Vhagar-read two-months / arrangement third-month — all coherent); 0 revision_layer entries (0 cosmetic + 0 presentation-reinforcement); PASS-THREAD; 0 substantive parking-lotted; 0 unacknowledged-substantive (b01c16 Phase 0 CLEAR). NOTE: the c15 cold-read SHIPPED-WITH-CAVEATS depth_pass_required:true (event-poverty + uninformedness) + the open c14 pl-2026-06-04-002 (courier-as-person) both gate book-close; neither is a Phase-10 threading finding; both independent of this pass.
+  through_chapter: b01c16
+  last_updated: 2026-06-04T17:00:00Z   # c16 aftermath/precinct-scale threaded (Halvard walk-away / foreclosure-by-behavior): 1 axis moved (moral_legibility_to_self +0.5 -> 6.5 — the walk-away crack expressed as BEHAVIOR, first movement since c14's suppressed @21 hold; @13 'Knowing what I did had never been the variable that stopped me'), all others HELD (moral_framework -2, capability 7.5, social_tether-prot-rise 8.5, position-prot-rise 6.0, relational_anchor_status 7.0, political_register-prot 5.5, social_tether-antag 9.0 9-LOCK, position-world 7, political_register-world 7). COLLAPSE-AXES dormant -> LATENT-ARMED (social_tether-prot-collapse 8 + position-prot-collapse 7; the position-arithmetic 'worth less to hold than it costs' became VISIBLE to Taylor at the fence-rail @7, RANK unchanged — c17 fires the collapse events at -1.0 each). hook-0007 (Halvard counter, paid/foreclosed@c13) RE-CONFIRMED FORECLOSED@c16 by behavior (the walk-away IS the foreclosure's payoff landing); no new hook. septon-halvard-flea-bottom ON-PAGE@c16 (last_appearance ->b01c16; reader_legibility high; counter foreclosed-by-behavior, functional exit). No new characters (old man/woman/child unnamed walk-ons). No new world_state (sept-corner = the-chandler-corner, established c07/c09/c13). No new open_hooks. 0 threading edits applied (every callback already on-page — 'third time he found me at this corner' @7, fence-rail position-arithmetic @7, moral_legibility behavior-crack @13-@15; eastern-gap/Wren + Otto-arrangement threads correctly ABSENT, precinct-scale not court/feed-routing, not a drop); STATE-DRIFT none; 0 revision_layer entries (0 cosmetic + 0 presentation-reinforcement); PASS-THREAD; 0 substantive parking-lotted; 0 unacknowledged-substantive (b01c17 Phase 0 CLEAR). NOTE: the c16 cold-read SHIPPED-WITH-CAVEATS depth_pass_required:true (DEC-0090 pre-authorized event-poverty/jeopardy-offstage/quiet-aftermath/argument-foreclosed-not-dramatized) gates BOOK-CLOSE via open pl-2026-06-04-c16-001 (target /and-write book-close, NOT Phase 0); NOT a Phase-10 threading finding; does NOT add an unacknowledged-substantive revision_layer entry.
   last_updated_by: and-stitch-phase-10
 
   axis_state:
@@ -176,7 +208,7 @@ aggregate_state:
       delta_since_start: 0
       last_movement_at: null
       last_updated_by: and-stitch-phase-10
-      notes: "collapse phase dormant until d10 (non-extractable confirmed); sits at peak-state start_rank 7 through c08; cl07b not yet anchored"
+      notes: "collapse phase was dormant until c16; sits at peak-state start_rank 7 (no collapse EVENT yet — rank unchanged). c16: dormant -> LATENT-ARMED. The position-arithmetic became VISIBLE to Taylor at the fence-rail (@7 'I set my hand to the fence-rail and pressed... the arithmetic finished — what the position was worth to me now against what it cost to hold, and the number on the right had moved, not by a margin that triggered some other accounting, only by enough to notice. Worth less to hold than it cost.'). The position-of-no-exit (named c14, non-extractable) is now being WEIGHED — the cost-of-holding has crossed worth-of-holding in Taylor's own count. RANK does NOT move (no collapse event drawn at c16; the visibility is the arming, not the firing). c17 fires the collapse event at -1.0. cl07b armed-not-anchored"
 
     - axis: relational_anchor_status
       rank: 7.0
@@ -187,12 +219,12 @@ aggregate_state:
       notes: "HIGH=WORST; c02 +1.0 (Wren enters coverage map as named function-node, account opens) + c06 +1.0 (first spoken exchange; weight added by Wren's omission from deliverable, cl-d06) + c09 +0.5 (cl-d08 first tranche: Wren now a mapped pattern/route in the internal map — 'the map takes Wren's pattern... clean, indexed, kept' — structurally present without ledger entry) + c12 +1.0 (cl-d08 mechanism / cl-d06 debt: the lane-refusal SETTLEMENT — Taylor declines to cover the east-water-gate lanes because Wren's free movement through them constitutes the coverage map's eastern boundary; settles the cl-d06 2nd tranche while held flat c08-c11. One axis-move, one mechanism, settles both — no name set down. DEC-0071) + c14 +1.0 (cl04 chapter-draw; the gap-lane courier ledger-entry OPENS + CLOSES, and the cl04 closing-logic RETROACTIVELY NAMES the un-priced Wren omission @21 via the shared-column parallel; held one breath, suppressed, no name set down) + c15 +1.5 (cl04 c15 draw of cl04's +3 total; +0.5 remains later: the Vhagar-backwash feed-degradation renders the deliberately-uncovered east-water-gate gap PERCEPTIBLE as a person-sized negative shape @11/@13 — 'the absence was the shape... the edge was person-sized, the clearing I had kept blank for eleven months'; Wren's exclusion is now reader-PERCEPTIBLE as a deliberate structure of not-covering, held suppressed-register-safe @13 'set no name down.' Negative-shape: the exclusion moves from c14 column-parallel-visible to c15 perceptually-confirmed). c08/c13 HELD. cl04 ARC continues (+0.5 remains). Wren still structurally necessary to the coverage map without a ledger entry. Closed pl-2026-05-30-001 / pl-2026-06-02-stitch-thread-002; hook-0003 PAID at c12; hook-0016 (gap-shape-now-perceptible) opened at c15"
 
     - axis: moral_legibility_to_self
-      rank: 6.0
+      rank: 6.5
       start_rank: 4
-      delta_since_start: 2.0
-      last_movement_at: b01c14
+      delta_since_start: 2.5
+      last_movement_at: b01c16
       last_updated_by: and-stitch-phase-10
-      notes: "non-linear; c02 +0.5 (coverage-map recognition arrives + suppressed under harm-reduction) + c06 +0.5 (honest accounting of name-delivery deepens the crack) + c10 +0.5 (detention visible in feed; Taylor runs the accounting and files Corwick as a closed entry — suppressed recognition event, crack deepens but does not open; the lower-gate face persists in the feed-record where the ledger keeps no column). c12 HELD at 5.5 — the Khepri shape-word surfaced in the full-scale accounting for the duration of ONE count and was SUPPRESSED before it could settle; the crack is present (same suppression pattern) but does NOT open. c12's suppression is the last/most-intense pre-opening event before c14. c14 +0.5 (->6.0; the d14-range deepest-crack-before-full-recognition: Taylor holds the closed cl04 entry and the un-entered Wren item in the same accounting-look @21 and does NOT let the shape settle; the Gold-Morning echo @42 'a city, a different kind of count, a different kind of named-and-unpriced' surfaces SHAPE-ONLY (Earth-Bet fence clean) for one breath and is suppressed. Recognition PRESENT and SUPPRESSED — the crack deepens but the full recognition (where the suppression finally fails) is deferred beyond c14). c07 genuine-engagement-with-Halvard but resolution deferred not advanced; c08/c09/c11/c13 HELD"
+      notes: "non-linear; c02 +0.5 (coverage-map recognition arrives + suppressed under harm-reduction) + c06 +0.5 (honest accounting of name-delivery deepens the crack) + c10 +0.5 (detention visible in feed; Taylor runs the accounting and files Corwick as a closed entry — suppressed recognition event, crack deepens but does not open; the lower-gate face persists in the feed-record where the ledger keeps no column). c12 HELD at 5.5 — the Khepri shape-word surfaced in the full-scale accounting for the duration of ONE count and was SUPPRESSED before it could settle; the crack is present (same suppression pattern) but does NOT open. c12's suppression is the last/most-intense pre-opening event before c14. c14 +0.5 (->6.0; the d14-range deepest-crack-before-full-recognition: Taylor holds the closed cl04 entry and the un-entered Wren item in the same accounting-look @21 and does NOT let the shape settle; the Gold-Morning echo @42 'a city, a different kind of count, a different kind of named-and-unpriced' surfaces SHAPE-ONLY (Earth-Bet fence clean) for one breath and is suppressed. Recognition PRESENT and SUPPRESSED — the crack deepens but the full recognition (where the suppression finally fails) is deferred beyond c14). c16 +0.5 (->6.5; the walk-away CRACK expressed as BEHAVIOR — the first MOVEMENT since c14's suppressed @21 hold: at the Halvard corner, Taylor names the recognition that knowing-what-she-did was never the variable that stopped her (@13 'It was the only honest thing he had said, and it was not live. Knowing what I did had never been the variable that stopped me') and ENACTS it — she walks away from the man mid-wait (@13-@15 'There was no answer that was also a continuing... I turned. Not away from the argument — away from the man'). Where c12/c14 surfaced-and-suppressed the recognition INTERIORLY, c16 lets it land as ACT: the crack is now legible as behavior, not held interior. Still short of the full-recognition where the suppression finally fails — the act is a foreclosure of the counter-argument, not a turn of the accounting onto the ledger itself). c07 genuine-engagement-with-Halvard but resolution deferred not advanced; c08/c09/c11/c13/c15 HELD"
 
     - axis: political_register-prot
       rank: 5.5
@@ -216,7 +248,7 @@ aggregate_state:
       delta_since_start: 0
       last_movement_at: null
       last_updated_by: and-stitch-phase-10
-      notes: "collapse phase dormant until d10 (non-extractable confirmed); sits at peak-state start_rank 8 through c08; cl07a not yet anchored"
+      notes: "collapse phase was dormant until c16; sits at peak-state start_rank 8 (no collapse EVENT yet — rank unchanged). c16: dormant -> LATENT-ARMED. Riding the same fence-rail moment (@7) as position-prot-collapse — the position-arithmetic 'worth less to hold than it cost' makes the cost-of-the-tether VISIBLE to Taylor: the network/tether she built to survive (cl03b trap, hook-0009) now reads as carrying more cost than worth. The collapse the rise-phase tether handed forward (social_tether-prot-rise 8.5 peak -> collapse axis at d14+) is now ARMED — the arithmetic is on the page, weighed by Taylor, but no collapse event fires at c16 (RANK unchanged). c17 fires the collapse event at -1.0. cl07a armed-not-anchored"
 
     - axis: social_tether-antag
       rank: 9.0
@@ -446,9 +478,9 @@ aggregate_state:
 
     - slug: septon-halvard-flea-bottom
       introduced_at: b01c04
-      last_appearance: b01c13
-      reader_legibility: partial
-      legibility_notes: "Septon Halvard; minor presence c04, major c07 (the unresolved principled-slower argument — counter-argument genuinely engaged, not won). Voice + theological stance legible after c07. Held offstage c08-c12 (counter-argument unresolved + engagement thinning). c13: LAST SUBSTANTIVE ENCOUNTER — found at the lower-Hook water-trough in his ordinary water-carrying circuit (not lying in wait); names the apparatus's verdict-from-a-distance over the detained Aldric ('a man who's never set foot in the Hook can't tell you who's a danger in it. He can write a name down') without knowing the long-way-off he names is Taylor herself (the mirror he does not see he is holding up). Taylor runs the cost-counter at him once more and leaves mid-speech; he keeps working the water-skin and carries the unanswered counter on into his circuit. counter-argument FORECLOSED on-page (DEC-0071 FORECLOSE@c13; hook-0007 paid/foreclosed). Theological-witness role + circuit-fixture standing fully legible; no further substantive on-page engagement expected"
+      last_appearance: b01c16
+      reader_legibility: high
+      legibility_notes: "Septon Halvard; minor presence c04, major c07 (the unresolved principled-slower argument — counter-argument genuinely engaged, not won). Voice + theological stance legible after c07. Held offstage c08-c12 (counter-argument unresolved + engagement thinning). c13: water-trough encounter — found at the lower-Hook water-trough in his ordinary water-carrying circuit (not lying in wait); names the apparatus's verdict-from-a-distance over the detained Aldric ('a man who's never set foot in the Hook can't tell you who's a danger in it. He can write a name down') without knowing the long-way-off he names is Taylor herself (the mirror he does not see he is holding up). Taylor runs the cost-counter at him once more and leaves mid-speech; he keeps working the water-skin and carries the unanswered counter on into his circuit. counter-argument FORECLOSED on-page (DEC-0071 FORECLOSE@c13; hook-0007 paid/foreclosed). c16: ON-PAGE RETURN + FUNCTIONAL EXIT — found at the sept/chandler corner on Taylor's west-precinct circuit (she comes in for coverage, not for him: 'I was not there for Halvard'). He falls into step and delivers the counter once more in its most honest form — not the cost-argument but the ask-to-KNOW ('I am not asking you to do differently... I am asking you to know what you're doing. That's the whole of it.'). Taylor names that knowing was never the variable that stopped her (@13 'Knowing what I did had never been the variable that stopped me') and FORECLOSES BY BEHAVIOR — she walks away mid-wait (@15 'I turned. Not away from the argument — away from the man'); he does not call after ('he kept his face to the eaves and did not turn his head after me, and he did not call out'). The counter-argument is now foreclosed by ACT, not just interior recognition — the c16 walk-away IS the foreclosure's payoff landing. reader_legibility HIGH: theological-witness role + circuit-fixture standing + the full shape of his appeal (cost-counter c07/c13 -> the ask-to-know c16) all reader-legible. Functional exit; no further substantive on-page engagement expected"
       last_updated_by: and-stitch-phase-10
 
     - slug: corwick

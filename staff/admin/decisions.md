@@ -5644,3 +5644,332 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0090 | 2026-06-04 | FAST (user-proxy, RUNBOOK R1)
+
+question: b01c16 Phase 5.5 CHUNK-CLASS-B — disposition R (revise chunk) / P (proceed with risk recorded) / S (substance-contract redo). If P, specify the risk-carry list.
+context: Phase 5 informed reviewers all PASS: 3/3 SUBSTANCE-FELT, dramatist ACCEPT (shape sound for falling chapter, correctly ARMS c17 collapse axes without pre-spending), auditor PASS 0 HARD. Cold-reader strict-CONTINUE=No, but decomposed: (1) series-context holes are uninformedness, not real defects; (2) s03 closing-paragraph over-explains thesis (narrator-voice restatement of already-shown behavior) — flagged by ALL Phase 5 reviewers; (3) cold-reader-only: old-man+stunted-child props in s01 dropped (Chekhov), position-arithmetic rendered as abstract left/right numbers, Halvard "applies no pressure" (disclaims wanting anything). Central event is already a concrete physical act (body turning, walking out of clearing while man is mid-sentence) — better bones-entry shape than c14/c15.
+options:
+  - R: revise chunk — re-author at chunk layer (Class A default)
+  - P: proceed with risk recorded — advance to /and-write with findings as authorized known-risk
+  - S: substance-contract redo — high cost, reserved for genuine contract failure
+
+decision: P — proceed with risk recorded. Risk-carry list below.
+basis: DEC-0060/0062/0072/0074/0076/0078/0085/0087 — eight consecutive Class-B chunk dispositions all went P; ruling is settled. c16 is in better bones-entry shape than c14/c15 (central event already concrete physical act). Informed reviewer consensus (3/3 SUBSTANCE-FELT + dramatist ACCEPT + auditor 0 HARD) is decisive.
+rationale: Same decision shape as the eight prior Class-B dispositions. The cold-reader's confusions are decomposed and explained: series-context uninformedness (not design holes), one prose-register item shared by Phase 5 reviewers (correctly surfaced as a bones/stitch target, not a chunk hole), and cold-reader-only catches that are rendering concerns. R would be wrong-layer (the chunk design is sound per informed critics); S is wrong-layer + high cost. Thematic-demonstration chapter with concrete physical central event is the best Class-B entry in the book.
+trade-off: Four risk-carry items enter /and-write (3 HARD) and one enters /and-stitch. Accepted; this is the established mechanism.
+
+risk-carry:
+  1. [/and-write — HARD concreteness target] s01: old-man + stunted-child props staged in the opening — they must either fire (earn a callback beat at bones level) or be cut before the bones file ships. Chekhov unfired is a bones-layer error; Phase 6 bone-gate should catch as EVENT-NOT-CONCRETE / FAULT-BONE-DELTA-MALFORMED if these props vanish without a bones-level callback.
+  2. [/and-write — HARD concreteness target] Position-arithmetic (the moral counter-argument): must be rendered as a concrete image or spatial metaphor at the central-event bone, not abstract "left/right numbers" or pure cognition-narration. Phase 6 EVENT-NOT-CONCRETE fires if the central-event bone presents this as abstraction-dominant.
+  3. [/and-write — HARD concreteness target] Halvard's pressure: the disclaimer-not-wanting framing must coexist with a visible on-page cost for Taylor of staying vs. leaving — Halvard does not need to threaten; the clearing must feel non-neutral to her body. The bones must carry a physical-behavioral signal (posture, spatial proximity, breath, weight) not only interior arithmetic.
+  4. [/and-stitch — trim target, Phase 4 + Phase 9] s03 closing paragraph: the narrator-voice thesis restatement ("That is not the same thing. She knows the difference" or equivalent) must be cut or recast as behavior-only in the stitch pass. All Phase 5 reviewers flagged this as over-explanation of already-shown behavior. Phase 9 auditor should treat survival of explicit thesis-narrator-voice in the closing paragraph as a HARD finding.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
+## DEC-0091 | 2026-06-04 | SLOW (process-critic)
+
+mode: process-critic
+trigger:
+  reason: signal-accepted
+  source_report: active-project/staff/auditor/write-b01c16-bone-gate.md
+  source_verdict: |
+    HARD 0; SIGNAL 2 both accepted (signal-001 marks-repetition advisory ≥3 threshold,
+    advisory to stitch; signal-002 taylor-has-full-counter occasion-carrier mapping,
+    interior-state delivery to narrator-interest facet). Phase 3 MT-2 SOFT accepted
+    (no feed-tracking bone during s03 walk — inference carries, n08 delivers
+    foreclosure-not-flight).
+  gate_path: .claude/commands/and-write.md#phase-6
+verdict: OK
+
+question: |
+  /and-write b01c16 bone-gate passed clean (0 HARD; 3/3 SUBSTANCE-FELT all scenes).
+  Two advisory SIGNALs and one Phase-3 SOFT accepted at emit. Should the process change?
+  Specific question: "marks" prop-anchor verb-repetition has now appeared as an advisory
+  across c09 / c10 / c11 / c15 / c16 (5 chapters). Does that 5-chapter recurrence
+  warrant a process note (Rule 11 promotion: ≥3 occurrences)?
+
+decision: OK — no process change proposed.
+
+basis: |
+  Step 1 (proposals log): No prior proposal targets "marks"-verb advisory,
+  verb-frequency advisory for instrument/record/environment SVO class, or
+  any screen-writer-brief constraint for this verb class. No rejected or deferred
+  proposal covers this target. No open proposal with matching target+change_type.
+
+  Step 2 (content vs. process): The gate at Phase 6 is already performing the
+  detection function that a new AP-SCAN would encode. REGISTER-AS-MANNERISM fires
+  on ≥3 of the same VERB+OBJECT pair; the "marks" occurrences across all five chapters
+  have distinct objects in every case except the c16 within-chapter exact repeat (×2,
+  below the ≥3 HARD threshold). The existing SIGNAL path catches the advisory at the
+  correct severity and routes it to /and-stitch Phase 3/4 — the only structurally
+  viable resolution point. No gate gap exists.
+
+  Step 3 (Rule 11 promotion check): Rule 11 says taste flags that recur ≥3 times
+  across reviews should graduate to mechanical AP-SCAN checks. The "marks" advisory
+  has fired 5 times (c09/c10/c11/c15/c16). However, the Rule 11 promotion path requires
+  the same FAILURE CLASS to recur — not just the same gate firing. The prior
+  DEC-0088 (c15 insect-feed template) made this discrimination explicitly: "Multiple
+  architecturally distinct accept-with-rationale dispositions at the same gate is the
+  gate functioning correctly — each accepted instance is the gate doing its job." The
+  "marks" advisory is the same architectural root across all five chapters: the SVO
+  discipline fence requires concrete transitive verbs for instrument/record/environment
+  bones, and "marks" (concrete physical act: leaves a trace on a surface) is one of
+  the narrowly compliant verb forms in that semantic class. The recurrence is not a
+  process failure — it is the gate correctly flagging an SVO-constraint artifact and
+  correctly routing it to prose-variation resolution at the stitch layer.
+
+  Step 4 (stitcher resolution evidence): The c09 render-log explicitly shows the stitcher
+  varied the "marks" verb at all three occurrences. The c10 fixer log shows
+  "corwick marks → corwick walks the errand-corridor" specifically to avoid marks-mannerism
+  (resolved at the fixer level before the stitcher even needed to act). There is no
+  evidence of stitch-layer failure on any prior "marks" carry-forward. The
+  advisory-and-resolve path is functioning correctly.
+
+  Step 5 (c16 new element — exact VERB+OBJECT pair repeat): "marks the storehouse wall"
+  appears at s01n02 and s03n05 — the same exact pair twice. The formal REGISTER-AS-MANNERISM
+  gate fires at ≥3 of the same pair; 2 is below the HARD threshold. The auditor correctly
+  called it advisory and flagged it as the highest-risk instance, routing to Phase 3
+  redundancy cull and Phase 8 editorial reflection. This is the correct disposition.
+  The within-chapter exact-pair repeat is a new severity sub-class, but the gate caught
+  it and routed it at the right severity. A stricter threshold (≥2 as HARD) would
+  over-fire on legitimate bookend-callback pairs. Advisory-plus-flag is the correct
+  calibration; no gate-criterion gap.
+
+  Step 6 (signal-002 occasion-carrier mapping): Gate correctly identified that the
+  event_map entry for "taylor-has-full-counter" is mapped to an occasion-carrier bone
+  without an omission_rationale annotation. The gate correctly routed interior-state
+  delivery to the narrator-interest facet. No fixer action required; no bone revision.
+  Pure content flow, not a process gap.
+
+  Step 7 (Phase-3 MT-2 SOFT — no feed-tracking bone during s03 walk): SOFT findings
+  are non-blocking by design. The inference carries via n08 (foreclosure-not-flight).
+  The gate correctly classified this as SOFT and accepted it with rationale.
+  Not a process failure.
+
+rationale: |
+  Three independent findings, three clean OK judgments. Signal-001 ("marks" advisory):
+  the gate is functioning as designed; the SVO fence structurally constrains the verb
+  set for instrument/record/environment bones; the stitcher resolves the advisory at
+  prose layer; the existing SIGNAL detection is already the AP-SCAN equivalent for this
+  class; adding a new AP-SCAN would duplicate live gate logic. Signal-002 (occasion-carrier
+  mapping): routing-gap identification with correct facet-resolution routing; not a
+  process gap. Phase-3 SOFT: correctly dispositioned non-blocking with inference carry.
+
+  On the 5-chapter "marks" recurrence: the recurrence count does not override the
+  content-vs-process discrimination. What matters is whether the SAME FAILURE CLASS
+  recurs, and the "marks" advisory is architecturally forced (SVO fence + instrument-class
+  verb set), not an authoring error. The stitcher has not failed on any prior carry.
+  A screen-writer brief constraint would conflict with the SVO fence; a new AP-SCAN would
+  replicate existing gate logic. Standard hold: the appropriate trigger for a process
+  change is stitch-layer failure on a "marks" advisory carry, not bone-gate advisory
+  recurrence. This entry is the N=5 occurrence marker.
+
+  The c16 within-chapter exact-pair repeat ("marks the storehouse wall" ×2) is the most
+  novel element in this dispatch. It is adjacent to REGISTER-AS-MANNERISM territory
+  (one below the ≥3 HARD threshold). The auditor's advisory-plus-flag route is correctly
+  calibrated. If a future chapter produces an exact-pair count of ≥2 AND the stitcher
+  fails to vary it in the draft, that is the triggering evidence to revisit the ≥3
+  HARD threshold (or add a ≥2 SIGNAL-with-stitch-block disposition).
+
+trade-off: |
+  Not proposing means the "marks" advisory pattern is not formally tracked as a
+  promotion candidate in the proposals log. Mitigated by: this decisions-log entry
+  explicitly counts N=5 and records the architectural root cause; the stitcher has
+  resolved every prior instance; if stitch-layer failure occurs on c16 or a future
+  chapter, that is the triggering evidence and the evidence trail is here.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
+## DEC-0092 | 2026-06-04 | SLOW (process-critic)
+
+mode: process-critic
+trigger:
+  reason: failure
+  source_report: active-project/staff/audience/ (Phase 5b cycle-1 FAIL b01c16 NI:6 thesis-narrating; Phase 5 HARD moral_legibility Drift-old)
+  source_verdict: |
+    Phase 5b cycle 1 FAIL: interest-narrator REVISE 3-of-3 on NI:6 @20 thesis-narrating
+    the foreclosure-vs-suppression distinction (DEC-0090 item 4). Resolved cycle 2.
+    Phase 5 HARD: state-updates @19 moral_legibility recorded 4->4.5 (series-baseline)
+    instead of 6.0->6.5 (chapter-entry value); fixed.
+  gate_path: .claude/commands/and-facets.md#phase-5b
+
+question: |
+  Two judgment calls:
+  Q1: Does the NI:6 thesis-narrating catch indicate a process gap -- specifically, should
+      the no-thesis-restatement watch (DEC-0090 item 4) be promoted to a RUBRIC-FIDELITY
+      REJECT entry in the NI rubric so Phase 5 catches it mechanically (Rule 11 path)?
+  Q2: Does the moral_legibility 4-vs-6.0 mismatch indicate the Phase 1 state-updates-actor
+      dispatch payload needs the current per-axis chapter-entry value supplied explicitly?
+
+decision: Q1 -> OK (first-occurrence hold, no process change). Q2 -> PROCESS-CHANGE-PROPOSED PROP-0041.
+
+basis: |
+  Q1: Step 2 (content vs. process discrimination).
+  Phase 5b IS the correct catch point for the thesis-narrating class. Discriminating
+  a legitimate channel-registration from a moral-category-parse restatement requires
+  loading the chapter's substance contract + behavior pack -- inputs the Phase 5
+  mechanical auditor does not receive and is not structured to process. Moving this
+  catch to Phase 5 would require the auditor to become a different gate. The gate
+  worked correctly (Phase 5b caught what DEC-0090 item 4 pre-flagged). N=1;
+  Rule 11 threshold (>=3) not met. First-occurrence hold.
+
+  Q2: Step 2 (content vs. process discrimination).
+  Drift-old HARD per state-updates rubric: "<old> must match the most-recent prior cited
+  value." The Phase 1 state-updates-actor dispatch payload (and-facets.md Phase 1 item 5)
+  names: character stack + base proto-lines + per-chapter substance_delta + rubric.
+  Current per-axis entry values are NOT named. The substance_delta gives delta targets,
+  not the current-entry anchor. Without an explicit payload route to the character's current
+  axis values, the impersonator defaults to the series-baseline start_rank (the most visible
+  rank in the axis definition). Deterministic spec omission; S-cost fix; N=1 first-occurrence
+  proposal warranted per PROP-0027 analogy (first live test, deterministic gap).
+
+rationale: |
+  Q1: Gate over-performed (caught at Phase 5b a risk DEC-0090 item 4 had flagged as a
+  stitch-layer watch). No structural gap. The NI rubric's existing anti-patterns 1+3 cover
+  the general Author-voice-intrusion + Generic-curiosity class; the no-thesis-restatement
+  sub-case requires contextual judgment Phase 5 is not equipped for. Hold at N=1.
+
+  Q2: After 16 chapters, a substance axis can be 2+ units above its series-baseline. The
+  dispatch payload gives delta targets (how much it moves this chapter) but not the anchor
+  (where it stands entering the chapter). The impersonator used the only available value --
+  the series-baseline start_rank -- and produced a Drift-old HARD. Adding the character's
+  actor state file to the dispatch payload closes this deterministically.
+
+trade-off: |
+  Q1 trade-off: holding means a future chapter could re-emit thesis-narrating NI at the
+  same gate. Mitigated by DEC-0090 item 4 standing watch + Phase 5b remaining armed.
+  N=1 occurrence marker logged here; N=3 triggers Rule 11 promotion.
+
+  Q2 trade-off: PROP-0041 adds one payload file per per-actor state-updates dispatch.
+  Slightly larger impersonator context; eliminates a deterministic Drift-old class.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
+## DEC-0093 | 2026-06-04 | SLOW (process-critic)
+
+mode: process-critic
+trigger:
+  reason: failure
+  source_report: active-project/staff/reviews/coldread-b01-c16-2026-06-04.md
+  source_verdict: |
+    SHIPPED-WITH-CAVEATS (Class-B; DEC-0090 SHIPPED-WITH-RISK-RECORDED coupling auto-ship;
+    CONTINUE=no on event-poverty/quiet-aftermath; central event recovered; Phase 8.5 PASS).
+    FOURTH consecutive quiet falling chapter to ship SHIPPED-WITH-CAVEATS (c13 was PASS;
+    c14 DEC-0085 / c15 DEC-0087 / c16 DEC-0090). Consecutive count since last
+    cohere_acknowledgment clearance: c14+c15+c16 = 3.
+  gate_path: .claude/commands/and-stitch.md#phase-9
+  secondary_gate_paths: [.claude/commands/and-write.md#phase-6]
+verdict: OK-MERGED-INTO PROP-0037
+
+question: |
+  Four consecutive quiet falling chapters shipping SHIPPED-WITH-CAVEATS. Two sub-questions:
+  (A) Is the repeated single-chapter Class-B disposition still the right lever, or has evidence
+      accumulated to the point where /and-cohere b01 c13-c16 should be the recommended
+      resolution for the whole run of depth-passes rather than per-chapter /and-write revise
+      --from-signals?
+  (B) Does the recurring quiet-falling-chapter pattern indicate a book-structural issue (too
+      many consecutive falling chapters before the c17 cascade) that should surface to the
+      principal?
+
+decision: OK-MERGED-INTO PROP-0037 (recurrence_count 3 -> 4).
+
+basis: |
+  Step 1 (proposals log):
+    PROP-0037 (status: open) targets /and-substance chapter Phase 0 HARD-abort at
+    consecutive_shipped_with_caveats >= 3 without cohere_acknowledgment. That threshold has
+    now been hit for a SECOND independent run (c10/c11/c12 was the first; c14/c15/c16 is the
+    second). No rejected or deferred proposal overlaps. No proposal covers the sub-questions
+    (A) resolution-layer choice or (B) book-structural surface separately from PROP-0037.
+    recurrence_count merges into PROP-0037: 3 -> 4.
+
+  Step 2 (content vs. process — question A):
+    The per-chapter depth-pass obligations for c14/c15/c16 are MANDATORY before book-close
+    (they gate /and-substance book b02 Phase 0 + /and-review verdict b01) and are
+    chapter-scoped at the bone/texture level. c14 targets courier-as-person + Sera-stake.
+    c15 targets event-poverty texture. c16 targets position-arithmetic concreteness +
+    Halvard-pressure physical signal + s01 props + s03 thesis-restatement trim. These are
+    three independently-specified bone-level briefs. /and-cohere c13-c16 would be a
+    cross-chapter cold-read, not a bone-level revise — it cannot deliver the per-chapter
+    depth passes. The correct resolution order is: (1) per-chapter depth passes (mandatory,
+    chapter-scoped), then (2) /and-cohere on the whole arc (cross-chapter accumulation
+    handler, before book-close). /and-cohere is additive and complementary, not a substitute.
+    No process gap: existing decisions (DEC-0087/0089) already name /and-cohere before
+    book-close as the accumulation handler. This is not a process failure — it is a
+    question of sequencing the two existing mechanisms. The answer is: depth passes first,
+    then /and-cohere.
+
+  Step 3 (content vs. process — question B):
+    The c13-c16 falling arc was structurally endorsed at /and-substance book with explicit
+    dramatic_shape annotations. Dramatist ACCEPT on each individual chapter. The cold-reader's
+    event-poverty/quiet-aftermath complaints are all pre-authorized design-inherent costs of
+    a deliberate multi-chapter falling arc. DEC-0089 dispositioned the identical question at
+    N=2 (c14+c15): "adding a structural gate on 'no more than N consecutive falling chapters'
+    would be a taste-gate on architectural story structure, which is human-only territory per
+    methodology." N=3 does not change this ruling. The book structure is the principal's domain;
+    no gate in the existing chain is positioned to catch this without overriding a series-audit-
+    approved structural contract. First-occurrence hold on book-structural escalation: DEC-0089
+    explicitly held at N=2 and the evidence at N=3 is qualitatively identical.
+
+  Step 4 (recurrence):
+    PROP-0037 was authored at N=3 (c10/c11/c12). The current c14/c15/c16 run is a second
+    independent N=3 sequence post-cohere-clearance. This is the 4th data point confirming
+    the N=3 threshold is correctly calibrated. The failing class matches exactly (quiet falling
+    chapters, design-inherent cold-reader complaints, coupling-rule auto-ship). Merge is
+    mandatory per process-critic procedure (same target.path + change_type as an open proposal).
+
+  Step 5 (methodology):
+    Reversibility: no new proposal needed; merging into the existing open proposal is lower
+    blast radius than a new redundant entry.
+    Cost: incremental update to PROP-0037 is S-cost.
+    Optionality: the /and-cohere c13-c16 recommendation (before book-close) is already
+    named in decisions.md. No process change required to surface it; it is in the existing
+    end-of-run summary machinery.
+    Convention: DEC-0089 held at N=2; DEC-0079 proposed at N=3; both cases are exact
+    precedent for the current ruling.
+
+rationale: |
+  Question A: /and-cohere is the right resolution for cross-chapter accumulation, but it
+  is NOT a replacement for the mandatory per-chapter depth passes. The three depth-pass
+  briefs (c14/c15/c16) target specific bone-level defects that /and-cohere does not touch.
+  The correct sequence — per-chapter depth passes first, then /and-cohere c13-c16 before
+  book-close — is already encoded in the existing decisions and the depth-pass obligation
+  records in showrunner memory. No process change needed; the recommendation is: run the
+  three mandatory depth passes, then run /and-cohere c13-c16.
+
+  Question B: The c13-c16 falling-arc structure is a series-audit-approved design choice.
+  Surfacing it as a structural problem to the principal would be proposing a taste-gate on
+  endorsed architecture. DEC-0089's exact reasoning applies. Hold.
+
+  PROP-0037 merge: The second independent N=3 run confirms the threshold is correctly
+  calibrated. recurrence_count increments to 4. No new evidence argues for changing N=3
+  to N=2 (DEC-0089 explicitly rejected that — mid-arc cohere firing at N=2 would violate
+  the falling-arc endorsement). No new evidence argues for changing N=3 to N=4.
+
+trade-off: |
+  Merging into PROP-0037 rather than proposing a new entry means no additional triage
+  burden for the principal. The recommendation to run /and-cohere c13-c16 (after depth
+  passes) lives in this decisions entry and DEC-0087/0089 — not in a new proposal, which
+  is correct because it is an operational recommendation, not a process-change proposal.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no

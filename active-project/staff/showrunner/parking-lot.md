@@ -2211,3 +2211,33 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-06-04-c16-001
+      created_at: 2026-06-04T16:40:00Z
+      created_by: "/and-stitch b01c16 Phase 9 cold-read (SHIPPED-WITH-CAVEATS; Class-B DEC-0090 coupling)"
+      label: depth-pass-mandatory-b01c16
+      target:
+        command: /and-write
+        scope: b01c16
+        phase: null
+      severity: HARD
+      description: |
+        b01c16 (the Halvard walk-away / foreclosure chapter) shipped SHIPPED-WITH-CAVEATS on a
+        Class-B cold-read FAIL (CONTINUE=no; central event RECOVERED + summary maps to goal; cause =
+        design-inherent event-poverty / jeopardy-offstage / quiet-aftermath / argument-foreclosed-not-
+        dramatized, ALL pre-authorized in chunk_cold_read.cold_read_risk_carry per DEC-0090; auto-shipped
+        terminal per the Phase-9 Step-4 SHIPPED-WITH-RISK-RECORDED coupling, mirroring c14 DEC-0085 / c15
+        DEC-0087). Phase 8.5 coherence PASS (weave/followability clean; DEC-0090 no-thesis-restatement
+        confirmed). The "what is the narrator literally" opacity is the known uninformed-reader artifact
+        (the assembled book resolves it c01-c15). MANDATORY depth pass before book-close (gates
+        /and-substance book b02 Phase 0 + /and-review verdict b01). Consume via /and-write b01c16 revise
+        --from-signals + re-cascade; OR fold into /and-cohere b01 c13-c16 (the now-FOUR-consecutive-quiet
+        accumulation c13/c14/c15/c16 — the cohere stretch handler is the more efficient lever per DEC-0087).
+      context_refs:
+        - active-project/staff/reviews/coldread-b01-c16-2026-06-04.md
+        - active-project/staff/showrunner/memory.md  # chapters[b01c16].cold_read
+      resolution_suggestion: "/and-cohere b01 c13-c16 (four-consecutive-quiet accumulation handler) OR /and-write b01c16 revise --from-signals + re-cascade"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
