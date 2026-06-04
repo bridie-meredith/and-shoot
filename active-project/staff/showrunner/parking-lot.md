@@ -2096,10 +2096,21 @@ parking_lot:
         - active-project/audience/worm-canon-pedant/stm.md  # SW-WCP-c15-1
         - staff/admin/decisions.md  # DEC-0087
       resolution_suggestion: "/and-write b01c15 Phase 6 bone-gate verifies the three watches (concrete feed-texture contrast; S4 ledger-act-not-conclusion; axis-slug fence); stamp resolved on PASS or HARD-abort to a Phase-1 redo."
-      status: open
-      resolved_at: null
-      resolved_by: null
-      resolution_note: null
+      status: resolved
+      resolved_at: 2026-06-04T00:00:00Z
+      resolved_by: "/and-write b01c15 Phase 6 bone-gate (auditor fault-025/026/027 PASS)"
+      resolution_note: |
+        All three HARD watches adjudicated PASS. (1) FEED-TEXTURE CONTRAST CONCRETE:
+        s03n02 (fringe drops image-resolution) / s03n03 (gap-lane returns silence) /
+        s03n04 (gap-lane opens a hole in the feed-image) deliver the gap as physical
+        figure-ground feed-texture, not interior labeling. (2) S04 LEDGER-ACT NOT
+        CONCLUSION: all 9 S04 bones are physical acts (circuit-close, record-run,
+        notation-written, stylus-lifted-past-name-field, afternoon-circuit-run); no
+        drawn conclusion; no S03 recap. (3) AXIS-SLUG FENCE: zero pipeline slugs in
+        any of 40 bone SVOs. Downstream arming intact: chunk_cold_read.voice_risk
+        (Signal B) → /and-stitch Phase 8.5 Check 3; cold_read_risk_carry → Phase 9.
+        Note: REGISTER-AS-MANNERISM fly-template (signal-002) carried to /and-stitch
+        Phase 4 for structural variation.
 
     - id: pl-2026-06-04-c15-002
       created_at: 2026-06-04T00:00:00Z
