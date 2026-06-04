@@ -2140,3 +2140,34 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-06-04-c15-003
+      created_at: 2026-06-04T00:00:00Z
+      created_by: "/and-facets b01c15 Phase 5 audit (RUBRIC-FIDELITY card-resolution SIGNAL) + state-updates-env field-extension self-flag"
+      target:
+        command: margit-card-authoring
+        scope: "b01c15 warehouse cards"
+        phase: null
+      severity: SOFT
+      description: |
+        b01c15 state-updates-env introduces one new prop + three new studio sub-fields
+        in use without warehouse cards (non-blocking — entries carry sufficient inline
+        description; field-extension protocol self-flagged; matches the oc-rushwick /
+        c14-seam precedent pl-2026-05-28-001 / pl-2026-06-04-001):
+        - prop:oc-coverage-record (4 fields: site-condition-entries.thermal-rise,
+          eastern-boundary-entry, final-notation, condition) — Taylor's per-session
+          internal circuit coverage-record.
+        - studio.ambient_conditions.thermal-rise-status (tracks Vhagar-backwash thermal event)
+        - studio.fauna_sense_status.eastern-fringe-interference (tracks fringe thermal-noise)
+        - studio.fauna_sense_status.feed-density (scan-density state; reconcile with the
+          b01c12+ fauna_sense_status schema)
+        margit should author / reconcile these so future loc-state old-state continuity
+        audits + /and-cast revise can verify constraint compliance.
+      context_refs:
+        - active-project/theater/facets/state-updates-env-b01-c15.md  # field-extension block + margit referrals
+        - active-project/staff/auditor/facets-final-audit.md  # RUBRIC-FIDELITY card-resolution SIGNAL
+      resolution_suggestion: "margit authors prop:oc-coverage-record.card.md + reconciles the three studio sub-fields against the fauna_sense_status / ambient_conditions schema."
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null

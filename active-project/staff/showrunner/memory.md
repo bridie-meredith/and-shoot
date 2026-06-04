@@ -8779,6 +8779,27 @@ books:
           cleared_facets: true
           report_path: active-project/staff/reviews/bones-b01c15-2026-06-04.md
           notes: "S04 @37/@39 within-scene ordering advisory -> /and-stitch Phase 4 render @39 (stylus-past-name-field, the chapter's most weight-bearing bone) as a continuous act within the circuit-close. Non-blocking. S2->S3 critical connective (Vhagar-backwash -> fringe-degradation -> gap-as-negative-shape) verified legible."
+        facets:
+          status: audited-r1
+          facets_path: active-project/theater/facets/
+          audit_complete: true
+          audit_path: active-project/staff/auditor/facets-final-audit.md   # Phase 5: HARD 0, 3 SIGNAL (Earth-Bet fence clean, curve-shape OK, scene-map 40/40)
+          audience_gate_complete: true
+          audience_gate_path: active-project/staff/audience/   # per-persona cycle-1 + cycle-2 verdict files
+          audience_gate_cycles: 2   # cycle 1 FAIL was a spurious file-path miss (consolidated state-updates.md/feeling.md vs *-b01-c15.md); cycle 2 all 9 facets 3-of-3 ACCEPT
+          round_1_complete: true
+          round_2_complete: true   # NOTE: R2 graph-aware judging folded into R1-graph-conscious authoring (briefed with scene-map + cross-facet awareness) + Phase 5 audit + Phase 5b adversarial gate under cascade-budget; no separate R2 fanout dispatched. Metaphor provisional anchor + cross-facet DEDUP resolved at audit.
+          cap_burned: false
+          entries: "49 facet entries across 9 facets (loc-state 4, sensory 4 [2 grounding-licensed], state-updates 15, NI 10, memory 2, feeling 2, metaphor 1, vibes 7, exposition 4 [3 context-licensed]); SILENT chapter (no dialogue)"
+          context_followability:
+            completeness_verdict: FOLLOWABLE
+            readability_verdict: ALIVE   # PROP-0022; Class-B bet (DEC-0087) vindicated at Phase 4.5
+            report_path: active-project/staff/reviews/context-follow-r2-b01-c15-2026-06-04.md
+            reviewed_at: 2026-06-04
+            context_ledger_open: 0   # 3 entries all satisfied
+            grounding_ledger_open: 0   # 2 entries all satisfied
+            voice_fixable_carry: "[@22 feed-record-as-Taylor-making-entry, @31 continuous-with-@30-breath, @35-38 apparatus-noun-cluster-render-as-person] -> /and-stitch Phase 4 voice-embodiment (maps onto existing voice_risk_carry arming P8.5)"
+            unresolved: []
         chunk: |
           Non-extractable confirmation deepens and Aemond arrives on-stage with Vhagar-
           proximity. Aemond (now 12; F&B-canon, born 110 AC) is brought to a Red Keep outer court exercise that
