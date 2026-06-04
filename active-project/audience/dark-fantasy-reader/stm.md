@@ -611,7 +611,7 @@ SUBSTANCE-SUSPECT: none
 chapter: b01c11
 date: 2026-06-02
 phase: write-bone-gate
-dispatch_mode: SINGLE-PERSONA SPLIT (PROP-0036; dark-fantasy-reader only)
+dispatch_mode: SINGLE-PERSONA DISPATCH (PROP-0036; dark-fantasy-reader only)
 scenes_reviewed: [b01c11s01, b01c11s02, b01c11s03, b01c11s04]
 
 verdict_per_scene:
@@ -765,3 +765,57 @@ soft_carries_forward:
   - SW-DFR-c15-1: S4 accounting-close must not narrate its own significance; bones must enact what Taylor does, not conclude what it means
   - SW-DFR-c15-2: axis-slug contract-bleed must be stripped at /and-write; same finding as prior chapters; no regression from established pattern
   - SW-DFR-c12-2 and SW-DFR-c12-3 carry forward unchanged (b01c12 facets/stitch watches)
+
+## 2026-06-04 — /and-write b01c15 Phase 6 bone-gate
+
+chapter: b01c15
+date: 2026-06-04
+phase: write-bone-gate
+scenes_reviewed: [b01c15s01, b01c15s02, b01c15s03, b01c15s04]
+bones_reviewed: 40
+
+verdict_per_scene:
+  b01c15s01: SUBSTANCE-FELT
+  b01c15s02: SUBSTANCE-FELT
+  b01c15s03: SUBSTANCE-FELT
+  b01c15s04: SUBSTANCE-FELT
+
+chapter_verdict: SUBSTANCE-FELT
+hard_findings: none
+SUBSTANCE-FLAT: none
+SUBSTANCE-SUSPECT: none
+
+### Per-scene notes
+
+s01 (political_register-prot +0.5, capability +0.5): SUBSTANCE-FELT. The coercive-grammar scene at the passage delivers the contempt-accumulation through what the master-at-arms's body does (yields without being asked) while the boy's frame holds level. The capability draw is a coverage walk, not a performance of expansion. No catharsis on either axis. The held axes (all others) read as load-bearing dormancy: the arrangement continues, the morning circuit runs, the feed returns the passage-structure before Taylor's accounting opens on it. No walkout triggers — the enemy (Aemond) is not waiting for Taylor to notice him; the coercive grammar operates through the ward's social physics whether or not Taylor routes it anywhere. SW-DFR-c15-2 (contract-bleed) RESOLVED: no axis-slug vocabulary present in any bone SVO; the bones are in Taylor's register throughout.
+
+s02 (social_tether-antag +0.75, first draw toward LOCK): SUBSTANCE-FELT. The Vhagar thermal/pressure-backwash mechanism earns the antag draw. The world generates the pressure: arch-fly flight-musculature encounters the thermal differential before Taylor maps what the differential means. The fringe-degradation (eastern slope, warm current backwash, arch-fly density reading different than bay-warm) is the world pushing against the feed's normal operation. The social_tether-antag +0.75 is not a declared gain — it is the trap acquiring substrate form through insect-biology, which is dread landing as architecture. No hope-that-costs-nothing. No enemy pausing — Vhagar is backgrounded via thermal (not on-stage); the heat-residue operates by dragon-physics, not by narrative convenience. The opposing force does not accommodate.
+
+s03 (relational_anchor_status +1.5, social_tether-antag +0.75 LOCK): SUBSTANCE-FELT.
+
+SW-c15-2 (feed-texture contrast): SATISFIED at bone layer. n03 ("east-water-gate lanes return silence to the feed") — the lanes as subject, "return" as the feed's canonical verb, "silence" as the object: the feed returns what the lane contains, and what the lane contains is silence. n04 ("the gap-lane opens a hole in the feed-image") — the gap-lane as subject acting on the feed-image: the hole is a physical fact in the image-plane, not a label Taylor applies. The fringe-noise (arch-fly thermal-degradation) is the contrasting register that makes the silence readable as a gap rather than as ordinary low-density coverage. Figure-ground is enacted as physical insect-feed mechanics: noisy fringe → clean gap → the gap registers as a specific shape because it has no noise where the fringe does. The relational_anchor_status +1.5 lands because the gap's shape is perceptible through the feed's own physics, not through Taylor's interior labeling. No abstraction over the mechanism; no perception verb as substitute for physical fact. The exclusion is seen through a physical process the world delivers.
+
+Social_tether-antag +0.75 LOCK confirmed: the antag axis reaches its cl-antag-d03 lock point through the combination of s02's thermal-substrate form and s03's gap-shape confirmation. The trap is now structurally visible at the feed level — the architecture-can't-be-walked-back quality is no longer abstract knowledge; it has a thermal signature in the substrate.
+
+Taylor notes the gap as a site-condition variant in the coverage record. She does not note what it looks like. That is the correct non-cathartic close: the exclusion is seen and filed as an operational fact, not named as a relational fact. The +1.5 is earned without the character processing its significance.
+
+s04 (all held — plateau-close): SUBSTANCE-FELT.
+
+SW-c15-3 (physical ledger-ACT not conclusion): SATISFIED at bone layer. The seven-act sequence is enacted as physical acts: n03 (circuit-close), n04 (coverage-record run), n05 (notation written), n06 (record closed), n07 (feed returned to density), n08 (taylor-hebert-kl-122ac lifts the stylus past the name-field), n09 (afternoon circuit run). The chapter's most weight-bearing bone is n08: the stylus moving past without stopping is the enacted absence — the gap-lane does not receive a name-field entry not because Taylor decided to withhold but because the stylus passes the field and continues. That is the arrangement-continues plateau as physical gesture, not as interior declaration. No conclusion-language. No "it is perceptible as a deliberate thing" framing (SW-DFR-c15-1 watch honored at bone layer). The zero-axis-movement close is load-bearing dormancy: the accounting closes without opening the ledger on the gap's significance, which is the chapter's correct falling-arc shape. No catharsis. No walkout triggers. The arrangement continues because it does.
+
+### SW resolution summary
+
+SW-DFR-c15-1 (S4 conclusion-language): RESOLVED. No interior declaration present in any S04 bone. n08 ("lifts the stylus past the name-field") is the enacted absence — the stylus is the subject, the movement is transitive and directional, the name-field is not entered. The significance is visible through what is not written, not stated by any bone SVO.
+SW-DFR-c15-2 (contract-bleed): RESOLVED. No axis-slug vocabulary in any bone SVO across all four scenes. Bones are in Taylor's operative register throughout.
+SW-c15-3: SATISFIED (see s04 notes above).
+
+### Threshold discipline
+
+No walkout triggers. No catharsis before weight — the chapter closes on the afternoon circuit running, not on recognition. No enemies pausing — Vhagar's thermal and the apparatus's coverage requirements operate by their own physics throughout; the opposition does not accommodate. No hope-that-costs-nothing — the relational_anchor +1.5 is the exclusion becoming concrete, not a reward; the gap is more clearly shaped after c15, not less present. No world-as-set-dressing — the eastern slope, the passage-arch, the arch-fly density, the bay-warmth differential all exist by their own physics before Taylor reads them.
+
+### Soft carries forward
+
+soft_carries_forward:
+  - SW-DFR-c12-2 and SW-DFR-c12-3 carry forward unchanged (b01c12 facets/stitch watches)
+  - SW-DFR-c15-1 and SW-DFR-c15-2: RESOLVED at bone layer; no carries to /and-facets on these
+  - No new soft carries from b01c15 bone-gate

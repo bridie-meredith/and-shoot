@@ -521,7 +521,7 @@ notes:
   - s01: 10 bones clean; n01/n02 mechanism-sequence (terrain-constraint → ceiling-state); n04/n05 gap-walls (distinct physical boundaries); n06/n07 substrate-distinct (feed vs. map); n08 enacted-withholding (stylus lifts without writing source); axis-moves at n09 (capability) and n10 (social_tether) structurally distinct events
   - s02: 7 bones; three-bone stillness accumulation (n04 packet-set / n06 stylus-set / n07 eyes-held) are three physically distinct enactments; not redundant; collision arrives complete before stillness fires (Phase-3 reorder honored)
   - s03: 12 bones; n04+n05 stopping-before-writing enacted as pause/completion-of-pause (two acts); n08 column-closure-without-explanation-clause is the absence as fact; n10+n11 anchor-settlement mandatory for cl-d08+cl-d06 discharge
-  - s04: 14 bones (including anchored chatter n01); accumulation across n14/n03/n04/n05/n06/n07/n08 is six physically distinct accounting-march beats before n09; shape-word at n09 earned through the accounting's own path; suppression at n10+n11 two physically distinct acts; n13 central-event bone concrete SVO confirmed
+  - s04: 14 bones (including anchored chatter n01); accumulation across n14/n03/n04/n05/n06/n07/n08 is six physically distinct accounting-march beats before n09; shape-word at n09 earned through the accounting's own path; suppression two physically distinct acts (n10/n11); n13 central-event bone concrete SVO confirmed
 
 ## b01c12 /and-write Phase 6 bone-gate — 2026-06-03
 
@@ -587,3 +587,55 @@ soft_bones_execution_watches:
   SW-c15-1 (contract-bleed): two axis-slug sentences in S1 and S3 chunk prose must not survive to bones; bones-layer author must convert the self-commentary to enacted physical acts
   SW-c15-2 (person-shaped percept): relational_anchor_status +1.5 hangs on whether bones execute "a person-shaped quality" as specific feed-texture (what fringe-flies return with noise vs. what gap returns as clean absence) rather than as Taylor's interior label; if bones abstract over the perceptual mechanism, the +1.5 loses its physical grounding
   SW-c15-3 (S4 conclusion-language): "It is not invisible anymore. It is perceptible as a deliberate thing, a structure of not-covering" — bones must not render these as interior declarations; the accounting close must enact Taylor doing something with the feed, not drawing a conclusion about what she sees
+
+## 2026-06-04 — /and-write b01c15 Phase 6 bone-gate
+
+chapter: b01c15
+date: 2026-06-04
+phase: write-bone-gate
+scenes_reviewed: [b01c15s01, b01c15s02, b01c15s03, b01c15s04]
+bones_reviewed: 40
+
+verdict_per_scene:
+  b01c15s01: SUBSTANCE-FELT
+  b01c15s02: SUBSTANCE-FELT
+  b01c15s03: SUBSTANCE-FELT
+  b01c15s04: SUBSTANCE-FELT
+
+chapter_verdict: SUBSTANCE-FELT
+hard_findings: none
+SUBSTANCE-FLAT: none
+SUBSTANCE-SUSPECT: none
+
+### Per-scene notes
+
+s01 (political_register-prot +0.5, capability +0.5): SUBSTANCE-FELT. The coercive-grammar read through the master-at-arms's yield is a board-state update that reshapes what Taylor knows about Aemond's escalation engine: reader sees it before Taylor routes it anywhere. The information-asymmetry-that-reshapes-the-board shape fires correctly — the master-at-arms yields without being asked; the boy's frame holds level; the register deepens as a fact of the architecture, not as Taylor's recognition. The capability draw (coverage walk, passage-arch) is procedural: no new mechanism, no established limits bypassed without cost, same method as every prior circuit. SW-c15-1 (contract-bleed) RESOLVED: no axis-slug vocabulary in any bone SVO; bones are in Taylor's operational register throughout.
+
+s02 (social_tether-antag +0.75 draw toward LOCK): SUBSTANCE-FELT. The Vhagar thermal/pressure-backwash mechanism delivers the antag draw correctly. The arch-fly flight-musculature encounters the warm current before Taylor maps what the current means — world-physics first, feed-reading second. The thermal differential (eastern slope backwash distinct from bay-warm) is physically specific: not a vague "the dragon's presence is felt" but a named mechanism in the insect-body. This is the information-asymmetry shape this reader wants: the world has a new physical parameter in it; reader sees it through the feed-mechanism before Taylor's accounting opens on its implications. No established limits bypassed; the thermal-detection is within capability physics (compound-eye sensitivity, flight-musculature resistance to warm airstream). No fatigue triggers; the mechanism is the mechanism, not a narrative convenience.
+
+s03 (relational_anchor_status +1.5, social_tether-antag +0.75 LOCK): SUBSTANCE-FELT.
+
+SW-c15-2 (person-shaped percept / feed-texture contrast): SATISFIED at bone layer. The test was whether the gap's negative-shape is delivered as a physical feed-texture fact or as Taylor's interior label. The bones execute the physical fact: n03 ("east-water-gate lanes return silence to the feed") — the lanes as subject, "return" as canonical feed-output verb, "silence" as what the feed receives from that region; n04 ("the gap-lane opens a hole in the feed-image") — the gap-lane acting on the feed-image, making the hole a feature of the image-plane. The fringe-noise (arch-fly thermal-degradation from s02) is the contrast register: noisy fringe vs. clean gap. The figure-ground is enacted as a physical fact of what different regions return to the feed — disrupted signal where the fringe-flies are, no signal where the gap is — rather than as Taylor's perception verb or interior state. The relational_anchor_status +1.5 is earned because the gap-shape arrives through the feed's own mechanics, not through Taylor's choosing to notice. No abstraction over the mechanism; no label substituting for the physical fact.
+
+Social_tether-antag +0.75 LOCK confirmed. The trap acquires substrate form across s02-s03: the thermal tells Taylor the Dragonpit is inhabited by Vhagar; the gap tells her the eastern-ward exclusion pattern is structurally readable. The architecture-can't-be-walked-back quality is no longer inferential; it has a physical substrate in the insect-feed. Both draws land through the world's own physics. No unmotivated knowledge. No established limits bypassed.
+
+s04 (all held — plateau-close): SUBSTANCE-FELT.
+
+SW-c15-3 (physical ledger-ACT not conclusion): SATISFIED at bone layer. The seven-act sequence delivers physical acts: circuit-close, coverage-record run, notation written, record closed, feed returned to density, stylus lifted past the name-field, afternoon circuit run. The chapter's most weight-bearing bone is n08 ("taylor-hebert-kl-122ac lifts the stylus past the name-field"): the stylus moves past without stopping — this is the enacted absence, the gap-lane receiving no entry because the stylus does not stop at the name-field. No conclusion-language in any SVO. No "it is perceptible as a deliberate thing" framing. The accounting closes on the afternoon circuit running; the feed does not announce what the name-field holds blank. This is the arrangement-continues plateau as physical fact, not declaration. No fatigue triggers: zero-axis-movement is load-bearing dormancy for a falling-arc chapter; the held axes generate pressure through the accumulated weight of what the notation does not record. The filler-while-plot-is-live trigger does not fire — s04 is the required plateau before the cascade; structurally obligatory, architecturally load-bearing.
+
+### SW resolution summary
+
+SW-c15-1 (contract-bleed): RESOLVED. No axis-slug vocabulary in any bone SVO across all four scenes.
+SW-c15-2 (person-shaped percept / feed-texture contrast): SATISFIED. Physical feed-texture executed in n03-n04 of s03; no interior label; figure-ground as mechanical fact.
+SW-c15-3 (S4 conclusion-language): SATISFIED. n08 (stylus past the name-field) is the enacted absence; no conclusion declared in any SVO.
+
+### Threshold discipline
+
+No walkout triggers. No established limits bypassed without cost — the thermal-detection and fringe-degradation are within capability physics established across prior chapters. No unmotivated knowledge — Vhagar's thermal arrives through biological sensory relay (arch-fly flight-musculature, compound-eye sensitivity); the gap's shape arrives through negative contrast in the feed-image, not through Taylor reasoning it out. No canon fence violations — Aemond age/sapphire-eye correct for 122 AC; Vhagar backgrounded via thermal, not on-stage; Earth-Bet fence CLEAN throughout (no parahuman jargon in any bone SVO). No slice-of-life filler while plot is live — all four scenes are in the action; s04 plateau-close is structurally required. No fatigue triggers: no tactics-stalling, no eye-glaze moments, no reasoning chains substituting for physical acts.
+
+### Soft carries forward
+
+soft_carries_forward:
+  - SW-c15-1, SW-c15-2, SW-c15-3: all RESOLVED at bone layer; no carries to /and-facets on these
+  - No new soft carries from b01c15 bone-gate
+  - b01c20 soft finding from book Phase 5 review carries forward unchanged (social_tether-prot-collapse -3.5 load check)

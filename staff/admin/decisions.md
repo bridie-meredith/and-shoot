@@ -5383,6 +5383,117 @@ methodology-update-proposed: no
 
 ---
 
+## DEC-0088 | 2026-06-04 | process-critic (signal-accepted)
+
+mode: process-critic
+trigger:
+  reason: signal-accepted
+  source_report: active-project/staff/auditor/write-b01c15-bone-gate.md
+  source_verdict: |
+    /and-write b01c15 Phase 6 bone-gate PASS (0 HARD). signal-002 ACCEPTED:
+    REGISTER-AS-MANNERISM — [fly-population + verb + location] template in 5 bones,
+    flagged to /and-stitch Phase 4 for structural variation; no bone revision.
+  gate_path: .claude/commands/and-write.md#phase-6
+verdict: OK
+
+question: |
+  Does the b01c15 accepted REGISTER-AS-MANNERISM signal (insect-feed POV chapter
+  producing [fly-population + verb + location] template repetition at 5 bones, dispositioned
+  accept-and-flag-to-stitcher) indicate a process gap? Specifically: should the screen-writer
+  Phase 1 brief pre-empt feed-template repetition in insect-POV chapters?
+
+decision: OK — no proposal. The accept-and-flag-to-stitcher disposition is correct
+and the gate is functioning as intended. The pattern is first-occurrence at this exact
+shape; prior insect-feed REGISTER-AS-MANNERISM instances (c04, c05, c09) were structurally
+distinct and all accepted-with-rationale. A screen-writer Phase 1 brief constraint is
+both unnecessary (the gate already catches + routes) and counterproductive (the SVO
+discipline fence is what forces template convergence in the first place).
+
+basis: |
+  Step 1 (evidence): signal-002 fires on 5 bones across s02/s03/s04 where the grammatical
+  shape [fly-population + verb + location] repeats with varying verbs but identical
+  subject-class and object-class. The auditor dispositioned ACCEPTED with flag to
+  /and-stitch Phase 4. No bone revision. The gate performed its detection function correctly;
+  the disposition is the right one (structural variation belongs at the prose render layer,
+  not the SVO bones layer where the schema requires concrete subject-verb-object form).
+
+  Step 2 (proposals log): No prior proposal targets REGISTER-AS-MANNERISM feed-template
+  repetition, feed-POV screen-writer briefs, or insect-POV SVO constraint. The existing
+  proposal at line 1046 (PROP-0039 context only) references register-as-mannerism as an
+  "existing analog this change extends" — that reference is incidental (PROP-0039 targets
+  a different gate: Phase 6 per-axis-Δ floor vs. fractional). No rejected or deferred
+  proposal materially covers this shape.
+
+  Step 3 (content vs. process): Is this a process failure? The gate detected the pattern,
+  the auditor applied correct disposition (accept + forward to stitcher), the stitcher Phase 4
+  voice-embodiment discipline is exactly the right resolution point. Nothing fell through.
+  The question is whether the pipeline should move the catch earlier (screen-writer brief).
+  Answer: no, because the cause is architectural, not authorable-away at the chunk layer.
+
+  WHY A SCREEN-WRITER BRIEF WOULD NOT HELP: The [fly-population + verb + location] template
+  arises from two mandatory constraints operating together: (a) the bones SVO discipline fence
+  requires a concrete syntactically complete subject-verb-object triple with no directional PP,
+  no intransitive motion, no abstract predicate; (b) in a fly/insect POV chapter the feed
+  subject is always some variant of fly-population, and the action is necessarily positional
+  (they occupy, cluster, cover, settle on a location). The intersection of these two constraints
+  is a structurally narrow morphological corridor. Telling the screen-writer "vary the SVO
+  template" at chunk level either (1) produces chunk descriptions that violate the SVO fence
+  when the bones author tries to honor them, or (2) produces abstract-or-intransitive bones
+  that trip ABSTRACTION-DOMINANT or CENTRAL-EVENT-CONCRETENESS. The stitcher Phase 4 render
+  layer is the structurally correct point to introduce surface-level variation (synonym
+  substitution, inverted syntax, compressed compound) without violating the SVO contract.
+
+  Step 4 (recurrence): The insect-feed REGISTER-AS-MANNERISM pattern appeared in:
+  - c02: "takes the drain angle" x3 — accepted (architectural boundary-transition marker)
+  - c04: "[insect-feed]-returns-[entity]" x4 — accepted (canonical feed-output verb by design)
+  - c04: "exits-[location]" x4, "enters-[location]" x5 — accepted (only compliant transitive
+    departure/arrival form under SVO discipline)
+  - c09: "marks" x3 (verb-frequency, not strict VERB+OBJECT pair) — signal advisory, accepted
+  - c10: "corwick-squares" x3 diff-objects — light-REMEDIATED + carry
+  - c12: "closes the X" x5, "reaches the X" x3 — accepted as intentional accounting-refrain
+  - c15: [fly-population + verb + location] x5 — current, accepted
+
+  This is occurrence N=7 of REGISTER-AS-MANNERISM firing and being accepted. However,
+  the previous occurrences do not aggregate into a single recurrence class — they are
+  architecturally distinct causes (feed-output verb, transitive-departure form, accounting
+  refrain, feed-position template). The c15 instance is first-occurrence for the specific
+  shape [feed-population + verb + location] as a subject-class + object-class template
+  (as distinct from exact VERB+OBJECT pair). Standard first-occurrence hold applies.
+
+  The process-critic "wait for recurrence" rule specifically requires the same failure class
+  to recur, not just the same gate firing. Multiple architecturally distinct
+  accept-with-rationale dispositions at the same gate is the gate functioning correctly —
+  each accepted instance is the gate doing its job. That is not a failure-class accumulation.
+
+  Step 5 (methodology): A screen-writer brief add would be M-cost (new constraint text in
+  /and-substance + the screen-writer agent card) and medium-blast-radius (fires on every
+  insect-POV chapter). The current accept-and-forward path is zero-cost in the absence of
+  actual stitcher failure. Per methodology, prefer reversible + lower-cost path when outcomes
+  are comparable. The stitcher Phase 4 flag is already positioned to handle this — if it
+  fails to resolve the variation at render, THAT would be the triggering evidence for a
+  process change. No failure has occurred at the stitch layer on any prior REGISTER-AS-
+  MANNERISM accepted carry.
+
+  CONCLUSION: The accept-and-flag-to-stitcher disposition is architecturally correct. The
+  stitcher Phase 4 voice-embodiment + structural-variation directive is the right resolution
+  surface. This is the gate functioning as designed. No proposal warranted.
+
+rationale: |
+  The gate caught the pattern (correct detection), auditor applied correct disposition
+  (accept + carry to stitcher, not bones-revise), stitcher Phase 4 is exactly calibrated
+  to produce surface-level variation without violating SVO bones. A screen-writer Phase 1
+  brief constraint would be upstream of the only feasible resolution point and would create
+  a schema-constraint tension (vary the template vs. honor the SVO fence). First occurrence
+  at this specific shape. No prior proposal covers this target. Standard first-occurrence
+  hold: return OK.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
 ## DEC-0087 | 2026-06-04 | FAST (user-proxy, RUNBOOK R1)
 
 question: b01c15 Phase 5.5 CHUNK-CLASS-B — disposition R (revise chunk) / P (proceed with risk recorded) / S (substance-contract redo). Back-to-back quiet chapter after c14 SHIPPED-WITH-CAVEATS: does the consecutive-quiet pattern change the call from the standard Class-B default?
