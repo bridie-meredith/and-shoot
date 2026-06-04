@@ -88,3 +88,29 @@ Calibration anchor: the persona-exemplar's Berrec close ("I don't have an answer
 ## Earth-Bet fence scan (self-scan before return)
 
 Case-insensitive substring scan of both utterances against the canonical hard-fence list (Brockton Bay, Skitter, Lung, Khepri, Bakuda, PRT, Endbringer, Gold Morning, Scion, Cauldron, Coil, shard, parahuman, cape, Worm, power, ability, trigger, etc.): CLEAN. Halvard is a Westerosi septon with no parahuman framework; nothing in his lines could carry Earth-Bet vocabulary.
+
+---
+---
+
+# Dialogue drafts — septon-halvard-flea-bottom — b01c16 (s02 the counter in final form)
+
+Author: dialogue-writer fork (/and-write Phase 1.5). Blind to facets. `facet-licenses:` in R1-blind deferred form per schemas/dialogue.schema.md; resolve at /and-facets R2.
+
+## Continuity (c07, c13 → c16)
+Same register across the act: Halvard works the wrong through honestly, never aimed at Taylor; names the cost of his own slower way without retracting it; STILL does not accuse her, STILL offers no alternative. c16 is the counter in its final form — the persona's axis_carried (moral_legibility_to_self) at its terminal point. n02 = external mirror naming the living and the cost; n09 = the explicit final ask. "The argument she has confirmed is not live"; Halvard knows it is not live and makes it anyway — being-the-counter-still-present IS his function.
+
+## Anchor 1 — @b01c16s02n02 (halvard:1) — opens the counter
+**Draft A (chosen):** "The ones who lived through the autumn. The woman with the chest-complaint in Muggers' Row. The boy from the fishmonger's lane — he's still on it, still gutting fish, I saw him a sennight past. I'll not claim them. I don't know what you did or didn't do, and I'm not asking. I have not counted them, either. It is not my count to run. The count I run is what it costs them, after. What they understand about how they survived. Some of them understand things about this precinct that I did not think anyone who arrived the way you arrived would know."
+- card-signatures: §Cadence (homiletic three-and-build into the specific, then the turn to "the count I run"); §Syntax (parallel coordination, period-stops, not the semicolon-spine); §Vocabulary (plain-Anglo: count, autumn, lane); §Refuses (refusal-of-personal-authority: "It is not my count to run").
+- facet-licenses: [DEFERRED-TO-R2] — feeling-halvard (pause before "I'll not claim them"); memory-halvard (the boy "a sennight past").
+**Draft B (rejected):** "You've kept people alive..." — near-claim attributing the keeping to her directly; crowds §Hard-Fence-2 knowledge boundary; reads as report not testimony.
+**Draft C (rejected):** "...The Mother sees them..." — violates persona-leaf "no theological jargon" override. Cut.
+
+## Anchor 2 — @b01c16s02n09 (halvard:2) — the explicit final ask
+**Draft A (chosen):** "I am not asking you to do differently. I've no better way to give you, and I'll not pretend I have. I am asking you to know what you're doing. That's the whole of it."
+- card-signatures: §Cadence (plain closer "That's the whole of it"); §Syntax (disclaim-then-ask: not-this, not-that, only-this); §Refuses (overpromising/self-claim refused — "I've no better way to give you, and I'll not pretend I have").
+- facet-licenses: [DEFERRED-TO-R2] — feeling-halvard (the stop-and-face pause before the ask).
+**Draft B (rejected):** "...and not look away from it." — imports accusation-shaped move (tells her her own state); §Voice-tell "does not finish Taylor's logic for her" bars it.
+**Draft C (rejected):** "I'm not here to change you. I never was..." — valedictory self-narration; drops the load-bearing no-better-plan disclaimer. Cut.
+
+## Earth-Bet fence scan (self-scan): CLEAN — both utterances scanned against the canonical hard-fence list.

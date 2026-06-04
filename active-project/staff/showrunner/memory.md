@@ -9437,31 +9437,64 @@ books:
               be elsewhere. [mechanism: circuit-stop-as-habit-not-encounter] The old man straightens. Halvard's
               head comes up. [event: halvard-registers-taylor] She does not stop moving. She does not stop.
             substance_delta:
+              # NOTE: scene-level axes_held trimmed to the load-bearing subset the bones enact
+              # (c15 convention). Chapter-level axes_held (book contract) carries the full hold-list;
+              # axes held by global discipline (political_register-prot, social_tether-prot-rise,
+              # position-prot-rise, both collapse axes here) are not bone-enacted in this scene.
               axes_in_motion: []
               axes_held:
                 - axis: moral_legibility_to_self
-                  rationale: "the crack does not move here — it is set up, not expressed; arrival is habitual, not a recognition event; the +0.5 anchors at s03"
-                - axis: political_register-prot
-                  rationale: "no court-feed content; sept-corner is Flea Bottom precinct only; held at 5.5"
-                - axis: social_tether-prot-rise
-                  rationale: "no new structural node; routine circuit stop; held at 8.5 (peak)"
-                - axis: position-prot-rise
-                  rationale: "no position-event; circuit stop is not a patron interaction; held at 6.0 (peak)"
+                  rationale: "the crack does not move here — set up, not expressed; arrival habitual; the external mirror (Halvard) is located in the space before the +0.5 anchors at s03; held at 6.0"
                 - axis: relational_anchor_status
-                  rationale: "Wren in east-lane coverage, not in this clearing; anchor holds at 7.0"
+                  rationale: "sept-corner grounding; Wren in east-lane coverage, not in this clearing; anchor holds at 7.0"
                 - axis: capability
-                  rationale: "routine coverage pass; no new deployment scope; held at 7.5"
-                - axis: moral_framework
-                  rationale: "no new breach; coverage through the sept-corner is established architecture; held at -2"
-                - axis: social_tether-prot-collapse
-                  rationale: "latent-activating (dormant->latent status transition pending); arithmetic not yet surfaced this scene; rank held"
-                - axis: position-prot-collapse
-                  rationale: "latent-activating (dormant->latent status transition pending); arithmetic not yet surfaced this scene; rank held"
+                  rationale: "routine coverage pass at passive density; eaves-feed returns the clearing-bodies; no new deployment scope; held at 7.5"
               density_target: 0.5-0.65
             scene_conflict:
               protagonist_force: "Taylor continuing her coverage circuit through the sept-corner as a routine stop — her route runs through Halvard's clearing whether she engages or not"
               opposing_force: "Halvard's presence in the clearing as the person who holds the counter-argument Taylor has stopped engaging — the encounter is structural; she cannot route around the corner without adjusting the pass"
               stakes_axis: moral_legibility_to_self
+            event_map:
+              - event: taylor-at-sept-margin
+                bones: [b01c16s01n07]
+              - event: sept-corner-crates-reed-mat
+                bones: [b01c16s01n02, b01c16s01n03]
+              - event: halvard-in-the-clearing
+                bones: [b01c16s01n06, b01c16s01n01]
+              - event: halvard-pastoral-register-visible
+                bones: [b01c16s01n06]
+                omission_rationale: "register carried by the head-lift mid-conversation; prose/dialogue facet renders the slowed-down pastoral register"
+              - event: taylor-continuing-the-circuit
+                bones: [b01c16s01n07, b01c16s01n08]
+              - event: circuit-stop-as-habit-not-encounter
+                bones: [b01c16s01n07, b01c16s01n08]
+              - event: halvard-registers-taylor
+                bones: [b01c16s01n06]
+            bones:
+              - slug: b01c16s01n01
+                svo: "the storehouse eaves shadow the clearing-ground"
+                substance_delta: {axis_moves: [], axes_held: [{axis: moral_legibility_to_self, rationale: "sept-corner located as the physical space where Halvard's counter lives — the crack's external mirror sited before it is refused; held at 6.0"}], cost_ledger_anchor: null}
+              - slug: b01c16s01n02
+                svo: "the reed-mat leans the storehouse wall"
+                substance_delta: {axis_moves: [], axes_held: [{axis: relational_anchor_status, rationale: "sept-corner grounding object — mat rolled, no one dying; space populated but not at weight-bearing use; anchor holds at 7.0 (Wren not in scene)"}], cost_ledger_anchor: null}
+              - slug: b01c16s01n03
+                svo: "the two crates stack the kneeling-bench position"
+                substance_delta: {axis_moves: [], axes_held: [{axis: moral_legibility_to_self, rationale: "second grounding object establishing the clearing as Halvard's functional space — topology of the encounter before it begins; held"}], cost_ledger_anchor: null}
+              - slug: b01c16s01n04
+                svo: "the old man straightens the back"
+                substance_delta: {axis_moves: [], axes_held: [{axis: capability, rationale: "insect-feed returns the old man's body-read (gout-swollen foot); coverage passing through the clearing at passive density; held at 7.5"}], cost_ledger_anchor: null}
+              - slug: b01c16s01n05
+                svo: "the child leans the woman's side"
+                substance_delta: {axis_moves: [], axes_held: [{axis: capability, rationale: "second body in the clearing registered by the eaves-flies — stunted-growth visible in the feed; populated-world grounding; coverage running without deployment"}], cost_ledger_anchor: null}
+              - slug: b01c16s01n06
+                svo: "septon-halvard-flea-bottom lifts the head"
+                substance_delta: {axis_moves: [], axes_held: [{axis: moral_legibility_to_self, rationale: "Halvard registers Taylor — the external mirror of the crack becomes present in the scene; stakes_axis setup; recognition not yet triggered; held at 6.0"}], cost_ledger_anchor: null}
+              - slug: b01c16s01n07
+                svo: "taylor-hebert-kl-122ac enters the clearing-diagonal"
+                substance_delta: {axis_moves: [], axes_held: [{axis: moral_legibility_to_self, rationale: "enters on the habitual route — no adjustment, no avoidance; the circuit continues as circuit; the crack present in the space before it is acted on; held"}], cost_ledger_anchor: null}
+              - slug: b01c16s01n08
+                svo: "the storehouse-eaves flies return the clearing-bodies"
+                substance_delta: {axis_moves: [], axes_held: [{axis: capability, rationale: "eaves-flies at passive density covering the clearing and two adjacent lanes — architecture at coverage-routine without active deployment; held at 7.5"}], cost_ledger_anchor: null}
 
           - slug: b01c16s02
             seq: 2
@@ -9491,31 +9524,82 @@ books:
               [event: halvard-stops-and-faces-taylor] "I am not asking you to do differently," he says. "I am
               asking you to know what you're doing." [event: halvard-counter-explicit]
             substance_delta:
+              # scene-level axes_held trimmed to bone-enacted load-bearing subset (c15 convention).
               axes_in_motion: []
               axes_held:
-                - axis: moral_legibility_to_self
-                  rationale: "recognition present but not yet behavioral; Taylor runs the counter internally; the +0.5 anchors at s03; held at 6.0"
                 - axis: position-prot-collapse
-                  rationale: "latent-activating: the position-arithmetic ('worth less than it costs to hold') becomes VISIBLE to Taylor in this scene — dormant->latent status transition — but the prose explicitly forecloses a rank move ('not by a margin that triggers a different accounting'); rank held; the collapse EVENT is c17's (-1.0)"
+                  rationale: "latent-activating: position-arithmetic ('worth less than it costs to hold') becomes VISIBLE to Taylor here, enacted through the fence-rail press/hold (DEC-0090 dir-2 concrete correlate); prose explicitly forecloses a rank move ('not a margin that triggers a different accounting'); dormant->latent status transition; rank held; collapse EVENT is c17's. STAKES axis."
                 - axis: social_tether-prot-collapse
-                  rationale: "latent-activating: tether-cost co-surfaces as a visible number in parallel with position; dormant->latent status transition; rank held; collapse EVENT is c17's (-1.0)"
-                - axis: political_register-prot
-                  rationale: "Halvard's counter names the people she keeps alive, not the court apparatus; no new contempt-object; held at 5.5"
-                - axis: social_tether-prot-rise
-                  rationale: "rise axis at peak; no new structural node; held at 8.5"
-                - axis: position-prot-rise
-                  rationale: "rise axis at peak; no new position-event; held at 6.0"
-                - axis: relational_anchor_status
-                  rationale: "Wren not in scene; anchor holds at 7.0"
+                  rationale: "latent-activating: tether-cost co-surfaces as a visible number in parallel with position; anchored spatially at the rendering-yard fence; dormant->latent; rank held; collapse EVENT is c17's"
+                - axis: moral_legibility_to_self
+                  rationale: "recognition present but not yet behavioral; Halvard's counter delivered (the external mirror speaks); Taylor runs the counter internally; the +0.5 anchors at s03; held at 6.0"
                 - axis: capability
-                  rationale: "no new deployment; coverage at passive density; held at 7.5"
-                - axis: moral_framework
-                  rationale: "no new breach; running the arithmetic and holding the counter internally are within the established rationalize-each-trade pattern; held at -2"
+                  rationale: "eaves-feed still running during the encounter (old man's foot at clearing-edge); no new deployment; coverage at passive density; held at 7.5"
               density_target: 0.65-0.8
             scene_conflict:
               protagonist_force: "Taylor holding the counter internally — she has the answer, the answer is correct, and she has confirmed the argument is not live because it addresses the contempt, not the continuation"
               opposing_force: "Halvard's counter in his d09+ register: naming specific people she kept alive without demanding gratitude, then asking her to know what she is doing — the argument is not wrong; it is beside the point"
               stakes_axis: position-prot-collapse
+            event_map:
+              - event: halvard-falls-into-step
+                bones: [b01c16s02n01]
+              - event: halvard-matching-pace-at-clearing-margin
+                bones: [b01c16s02n01]
+              - event: halvard-counter-delivered
+                bones: [b01c16s02n02, b01c16s02n09]
+              - event: halvard-names-the-cost-obliquely
+                bones: [b01c16s02n02]
+              - event: taylor-has-the-answer-confirmed
+                bones: [b01c16s02n04]
+              - event: counter-addresses-contempt-not-continuation
+                bones: [b01c16s02n04, b01c16s02n07]
+              - event: taylor-confirms-argument-not-live
+                bones: [b01c16s02n07, b01c16s02n10]
+              - event: position-arithmetic-surfaces
+                bones: [b01c16s02n04]
+              - event: position-arithmetic-in-background-of-speech
+                bones: [b01c16s02n04]
+              - event: position-worth-less-than-cost-confirmed
+                bones: [b01c16s02n07, b01c16s02n10]
+              - event: halvard-stops-and-faces-taylor
+                bones: [b01c16s02n05, b01c16s02n06]
+              - event: halvard-counter-explicit
+                bones: [b01c16s02n09]
+            bones:
+              - slug: b01c16s02n01
+                svo: "septon-halvard-flea-bottom matches the pace"
+                substance_delta: {axis_moves: [], axes_held: [{axis: position-prot-collapse, rationale: "Halvard pace-matched at the clearing-margin: physical-behavioral signal of his non-neutral presence (DEC-0090 dir-3); latent-activating axis accrues sensory substrate; dormant->latent in progress; rank held"}], cost_ledger_anchor: null}
+              - slug: b01c16s02n02
+                svo: "septon-halvard-flea-bottom speaks to taylor-hebert-kl-122ac"
+                substance_delta: {axis_moves: [], axes_held: [{axis: moral_legibility_to_self, rationale: "Halvard opens the counter — the external mirror speaks; the argument enters Taylor's space; recognition present as structuring force, not yet behavioral; held at 6.0"}], cost_ledger_anchor: null}
+                dialogue_anchor: true
+                dialogue_citations: [septon-halvard-flea-bottom:1]
+              - slug: b01c16s02n03
+                svo: "the rendering-yard fence crosses the clearing-margin"
+                substance_delta: {axis_moves: [], axes_held: [{axis: social_tether-prot-collapse, rationale: "the rendering-yard fence is the physical boundary Taylor walks toward — the approach to it is the approach to the scene's exit; latent-activating collapse axis receives its first spatial anchor; dormant->latent in progress"}], cost_ledger_anchor: null}
+              - slug: b01c16s02n04
+                svo: "taylor-hebert-kl-122ac presses the fence-rail"
+                substance_delta: {axis_moves: [], axes_held: [{axis: position-prot-collapse, rationale: "DEC-0090 dir-2 (EVENT-NOT-CONCRETE resolution): the position-arithmetic runs while Taylor's hand presses the rail — the fence-press is the concrete physical correlate of 'position worth less than it costs to hold,' enacted through the body's weight against a fixed surface; dormant->latent; rank held"}], cost_ledger_anchor: null}
+              - slug: b01c16s02n05
+                svo: "septon-halvard-flea-bottom stops the pace"
+                substance_delta: {axis_moves: [], axes_held: [{axis: moral_legibility_to_self, rationale: "Halvard's stop (not blocking, but stopping) marks the counter's completion — the argument is fully delivered; Taylor has it in full; recognition fully available; held at 6.0"}], cost_ledger_anchor: null}
+              - slug: b01c16s02n06
+                svo: "septon-halvard-flea-bottom faces taylor-hebert-kl-122ac"
+                substance_delta: {axis_moves: [], axes_held: [{axis: moral_legibility_to_self, rationale: "Halvard faces Taylor — the external mirror at maximum proximity and orientation; the crack is set up to be expressed as behavioral fact in s03; held"}], cost_ledger_anchor: null}
+              - slug: b01c16s02n07
+                svo: "taylor-hebert-kl-122ac holds the fence-rail"
+                substance_delta: {axis_moves: [], axes_held: [{axis: social_tether-prot-collapse, rationale: "Taylor holds the rail while Halvard faces her — the arithmetic's weight is in the body's contact with the fence; latent-activating; the hold is the physical posture of the 'continue holding it' decision; rank unchanged"}], cost_ledger_anchor: null}
+              - slug: b01c16s02n08
+                svo: "the gout-swollen foot rests the clearing-edge"
+                substance_delta: {axis_moves: [], axes_held: [{axis: capability, rationale: "old man at clearing-edge visible in the eaves-feed — populated world; grounding bone confirming the eaves-architecture still runs during the Halvard encounter; held at 7.5; DEC-0090 dir-1 callback foundation"}], cost_ledger_anchor: null}
+              - slug: b01c16s02n09
+                svo: "septon-halvard-flea-bottom speaks to taylor-hebert-kl-122ac"
+                substance_delta: {axis_moves: [], axes_held: [{axis: position-prot-collapse, rationale: "Halvard's explicit ask ('I am not asking you to do differently / I am asking you to know what you're doing') — the counter in final form, the argument Taylor has confirmed is not live; latent-activating (arithmetic visible: worth less than costs; continues holding); rank held"}], cost_ledger_anchor: null}
+                dialogue_anchor: true
+                dialogue_citations: [septon-halvard-flea-bottom:2]
+              - slug: b01c16s02n10
+                svo: "taylor-hebert-kl-122ac releases the fence-rail"
+                substance_delta: {axis_moves: [], axes_held: [{axis: social_tether-prot-collapse, rationale: "releases the rail — the arithmetic has run; 'continues holding it' confirmed not by the rail but by not walking away yet; the release closes the arithmetic beat before the s03 walk-away; latent-activating; rank held"}], cost_ledger_anchor: null}
 
           - slug: b01c16s03
             seq: 3
@@ -9551,28 +9635,77 @@ books:
                   target_delta_magnitude: 0.5
                   cost_ledger_anchor: null
                   notes: "the walk-away IS the crack expressed as behavioral fact — Taylor does not suppress the recognition, she removes herself from its mirror; 6.0->6.5; behavioral expression of the suppression-pattern made visible as action, not the recognition-too-late event"
+              # scene-level axes_held trimmed to bone-enacted load-bearing subset (c15 convention).
               axes_held:
                 - axis: moral_framework
-                  rationale: "the walk-away is a legibility event not a framework event; no new breach; held at -2"
-                - axis: political_register-prot
-                  rationale: "no new court content; precinct-scale encounter; held at 5.5"
-                - axis: social_tether-prot-rise
-                  rationale: "rise axis at peak; no new structural node; held at 8.5"
+                  rationale: "the walk-away is a legibility event not a framework event; sept-corner unchanged (mat still rolled); no new breach; held at -2"
                 - axis: social_tether-prot-collapse
-                  rationale: "latent-activating: arithmetic surfaced at s02; s03 holds without further move; the walk-away is a legibility event not a new tether-threat; latency confirmed ongoing"
-                - axis: position-prot-rise
-                  rationale: "rise axis at peak; no new position-event; held at 6.0"
-                - axis: position-prot-collapse
-                  rationale: "latent-activating: arithmetic surfaced at s02; s03 holds without further move; Taylor continues holding the position after confirming the cost exceeds value; latency confirmed ongoing"
-                - axis: relational_anchor_status
-                  rationale: "Wren not in scene; anchor holds at 7.0"
+                  rationale: "latent-activating: arithmetic surfaced at s02; s03 holds without further move (Taylor reaches the fence she pressed); the walk-away is a legibility event not a new tether-threat; latency confirmed ongoing"
                 - axis: capability
-                  rationale: "feed pulled back to coverage density at circuit-resume; no new deployment; held at 7.5"
+                  rationale: "feed pulled back to coverage density at circuit-resume; eaves-coverage running; no new deployment; held at 7.5"
               density_target: 0.65-0.75
             scene_conflict:
               protagonist_force: "Taylor removing herself from Halvard's presence while he is still mid-wait — not suppressing the recognition but foreclosing the encounter by the physical act of turning and walking"
               opposing_force: "Halvard standing still in the cleared space, having said the thing and waiting — his stillness is what makes Taylor's departure legible as foreclosure rather than flight; he does not call after her"
               stakes_axis: moral_legibility_to_self
+            event_map:
+              - event: taylor-does-not-answer
+                bones: [b01c16s03n01]
+              - event: body-stop-not-a-pause
+                bones: [b01c16s03n01]
+              - event: halvard-stillness-waiting
+                bones: [b01c16s03n02]
+              - event: taylor-has-the-full-counter
+                bones: [b01c16s03n02]
+              - event: counter-withheld
+                bones: [b01c16s03n01, b01c16s03n03]
+              - event: foreclosure-as-cognitive-act
+                bones: [b01c16s03n03]
+              - event: contempt-continuation-same-fact-enacted
+                bones: [b01c16s03n03, b01c16s03n04]
+              - event: halvard-mid-sentence-waiting
+                bones: [b01c16s03n02]
+              - event: taylor-turns-away-from-halvard
+                bones: [b01c16s03n03]
+              - event: taylor-walks-out-of-the-clearing
+                bones: [b01c16s03n04]
+              - event: sept-corner-unchanged
+                bones: [b01c16s03n05, b01c16s03n06]
+              - event: halvard-does-not-call-after
+                bones: []
+                omission_rationale: "non-event (negation) — bones cannot record non-calling; the absence is carried by the gap between n04 (walks away) and n08 (angle moves him out) with no reaching-after bone; the narrator-interest facet renders 'his voice does not reach after her' citing n04+n07+n08"
+              - event: feed-carries-halvard-until-angle-clears
+                bones: [b01c16s03n02, b01c16s03n08]
+              - event: circuit-resumes
+                bones: [b01c16s03n09]
+            bones:
+              - slug: b01c16s03n01
+                svo: "taylor-hebert-kl-122ac stops the forward-step"
+                substance_delta: {axis_moves: [], axes_held: [{axis: moral_legibility_to_self, rationale: "the body-stop (not a pause) is the moment before the behavioral expression of foreclosure; the recognition is present and available; the +0.5 has not yet happened — the stop is its physical precondition; held at 6.0"}], cost_ledger_anchor: null}
+              - slug: b01c16s03n02
+                svo: "the storehouse-eaves flies return halvard's stillness"
+                substance_delta: {axis_moves: [], axes_held: [{axis: moral_legibility_to_self, rationale: "the eaves-flies carry Halvard standing mid-wait — the quality of his stillness returned through the feed; the counter fully available; the legibility crack present in the same data that runs the coverage; held"}], cost_ledger_anchor: null}
+              - slug: b01c16s03n03
+                svo: "taylor-hebert-kl-122ac turns the clearing"
+                substance_delta: {axis_moves: [{axis: moral_legibility_to_self, direction: up, magnitude: 0.25}], axes_held: [], cost_ledger_anchor: null}
+              - slug: b01c16s03n04
+                svo: "taylor-hebert-kl-122ac walks the rendering-yard approach"
+                substance_delta: {axis_moves: [{axis: moral_legibility_to_self, direction: up, magnitude: 0.25}], axes_held: [], cost_ledger_anchor: null}
+              - slug: b01c16s03n05
+                svo: "the reed-mat stands the wall"
+                substance_delta: {axis_moves: [], axes_held: [{axis: moral_framework, rationale: "sept-corner unchanged — mat still rolled, crates still stacked; the framework has not broken; the walk-away is a legibility event not a breach; held at -2"}], cost_ledger_anchor: null}
+              - slug: b01c16s03n06
+                svo: "the old man holds the clearing-edge"
+                substance_delta: {axis_moves: [], axes_held: [{axis: capability, rationale: "DEC-0090 dir-1 callback: old man still at clearing-edge as Taylor crosses back out — minimal callback, populates the exit without over-loading; eaves-coverage running; held at 7.5"}], cost_ledger_anchor: null}
+              - slug: b01c16s03n07
+                svo: "taylor-hebert-kl-122ac reaches the rendering-yard fence"
+                substance_delta: {axis_moves: [], axes_held: [{axis: social_tether-prot-collapse, rationale: "fence reached — Taylor completes the walk-away to the spatial boundary she pressed during the arithmetic; latent-activating collapse axis sits in the scene's geometry without triggering; latency confirmed ongoing"}], cost_ledger_anchor: null}
+              - slug: b01c16s03n08
+                svo: "the angle-line moves halvard past the eaves-edge"
+                substance_delta: {axis_moves: [], axes_held: [{axis: moral_legibility_to_self, rationale: "Halvard exits the feed's coverage angle — the external mirror of the crack out of range; the foreclosure complete as a physical fact; crack expressed and completed as behavior; held at 6.5 (post n03+n04 move)"}], cost_ledger_anchor: null}
+              - slug: b01c16s03n09
+                svo: "taylor-hebert-kl-122ac runs the next circuit-segment"
+                substance_delta: {axis_moves: [], axes_held: [{axis: capability, rationale: "feed returned to coverage density; circuit continues; architecture at routine operational state post-encounter; held at 7.5"}], cost_ledger_anchor: null}
 
       - slug: b01c17
         status: planned
