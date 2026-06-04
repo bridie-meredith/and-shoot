@@ -8758,7 +8758,19 @@ books:
             the near-verbatim column-passage repetition.
 
       - slug: b01c15
-        status: scened
+        status: bones-written   # /and-write b01c15 Phase 7 emit (was scened)
+        bones_file: active-project/theater/bones/b01-c15.md
+        bones_count: 40
+        substance_bone_gate_verdict: PASS   # Phase 6: auditor 0 HARD + audience 3-of-3 SUBSTANCE-FELT all 4 scenes; 3 HARD concreteness watches PASS (pl-2026-06-04-c15-001 RESOLVED); 2 SIGNALs dispositioned (s02n02/n10 relabel; fly-template mannerism -> stitch P4)
+        substance_delta_measured:
+          axes_moved:
+            social_tether-antag: { from: 7.5, to: 9.0, delta: 1.5, ledger: cl-antag-d03, note: "LOCK; cl-antag-d03 COMPLETE" }
+            relational_anchor_status: { from: 5.5, to: 7.0, delta: 1.5, ledger: cl04, note: "cl04 c15 draw; +0.5 remains later; gap-lane negative-shape" }
+            political_register-prot: { from: 5.0, to: 5.5, delta: 0.5, ledger: null, note: "Aemond-specimen accumulation-within-band" }
+            capability: { from: 6.5, to: 7.5, delta: 1.0, ledger: cl05, note: "cl05 gain-side COMPLETE; cost moral_framework -1 paid c12" }
+          axes_held: [social_tether-prot-rise (8.5), moral_framework (-2), position-prot-rise (6.0), moral_legibility_to_self (6.0), social_tether-prot-collapse (8 dormant), position-prot-collapse (7 dormant), position-world (7), political_register-world (7)]
+          density_measured: "40 bones / 4 scenes; 23 grounding (~58%); 27 chunk-tags 0 omissions"
+          felt_verdict: "audience 3-of-3 SUBSTANCE-FELT all 4 scenes (Phase 6 bone-gate); chunk Class-B -> P (DEC-0087), quietness carried by bones concreteness; armed to stitch Phase 8.5 + 9"
         chunk: |
           Non-extractable confirmation deepens and Aemond arrives on-stage with Vhagar-
           proximity. Aemond (now 12; F&B-canon, born 110 AC) is brought to a Red Keep outer court exercise that

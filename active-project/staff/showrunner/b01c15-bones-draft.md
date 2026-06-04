@@ -205,7 +205,7 @@ SVO: the compound eyes lose aemond-targaryen into stone
 axis_moves: []
 axes_held: []
 event_map: event:exercise-ends (completion — Aemond fully out of feed)
-notes: the feed-transition beat before the Vhagar substrate event; compound eyes as the camera losing the subject
+notes: event-coverage bone (covers event:exercise-ends completion); the feed-transition beat before the Vhagar substrate event; compound eyes as the camera losing the subject [signal-001: reclassified chatter->event-coverage per bone-gate]
 
 **b01c15s02n03**
 SVO: the arch-flies judder in the warm airstream
@@ -270,7 +270,7 @@ axis_moves: []
 axes_held: []
 event_map: (author-noticed: thermal normalization completing the two-minute window)
 grounding: YES — passage-arch gutter; normalization as physical state-change
-notes: chatter bone (transition to S03); bridges S02 site-condition to S03 fringe-degradation; cost_ledger_anchor: none (chatter; no ledger cost)
+notes: event-coverage bone (covers author-noticed thermal-normalization completing the two-minute window); bridges S02 site-condition to S03 fringe-degradation [signal-001: reclassified chatter->event-coverage per bone-gate]
 
 ---
 
