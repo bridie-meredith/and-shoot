@@ -1,4 +1,4 @@
-facet: state-updates (consolidated)
+facet: state-updates
 episode: b01-c15
 source-slices: state-updates-env-b01-c15.md + state-updates-taylor-hebert-kl-122ac-b01-c15.md
 note: taylor actor-state IDs renumbered 12-15 (from slice-local 1-4) into the shared state namespace; proto-line [state:N] tokens reflect the consolidated IDs.

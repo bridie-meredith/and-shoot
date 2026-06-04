@@ -1,8 +1,90 @@
 # studio state
 
-episode: b01c14
+episode: b01c15
 last_updated: 2026-06-04
-action: location-state + sensory + state-updates-env R1 authoring — /and-facets b01-c14 Phase 1
+action: location-state + sensory + state-updates-env R1 authoring — /and-facets b01-c15 Phase 1
+
+## Location-state sequence locked (b01c15) — 4 entries, 0 cull
+  loc-state:1 @1  — the-passage-adjacent-ward | morning | none | stone-lip-open, corner-gutter-occupied, outer-court-approach-clear | stone-lip above the outer-court approach (place-anchor; scene-A; working morning)
+  loc-state:2 @3  — the-red-keep-outer-court | morning | none | court-center-open, master-at-arms-led | the outer-court ground where Aemond halts at center (state-change: court-ground now carries two bodies)
+  loc-state:3 @14 — the-passage-adjacent-ward | morning | none | passage-slope-open, corner-gutter-occupied | the passage-slope at the arch-entry (transitional: Aemond exits upslope; scene-B first bone of fusion-eligible-run @14-@15)
+  loc-state:4 @32 — the-passage-adjacent-ward | morning | none | passage-arch-gutter-settled, eastern-fringe-normalizing | continuity-from loc-state:3: passage-arch gutter where arch-flies settle (scene-D fusion-eligible-run @32-@33; rhythm-shape resolving)
+  Excluded: @16-@25/@26-@29 (perception-feed SVO per rubric §Necessity REJECT list — fly-substrate physiology + gap-silence are feed-mediated, not Taylor's body-location); @31 (dexterity-stillness: writing in-place); @36/@37/@39 (dexterity-stillness: stylus acts)
+  Cull: 0 entries removed — all 4 survive strip / pointing / previous-entry / frugality tests
+
+## Current set (b01c15 chapter-close)
+  location: the-passage-adjacent-ward (Taylor's body throughout; the outer-court and gap-lanes are observed terrain)
+  time_of_day: afternoon (S04 @40 afternoon circuit begins)
+  weather: none
+  ambient_conditions:
+    - coverage-record: closed (@37; final notation written @36; eastern-boundary-entry written @31; thermal-rise site-condition marked @22)
+    - thermal-rise-status: normalized (@23; Vhagar-backwash dissipated)
+    - eastern-fringe-interference: cleared (@33; post-backwash)
+    - feed-density: routine-coverage (@38; returned to routine after backwash disruption)
+    - passage-arch-gutter: settled (@32; arch-flies at rest)
+
+## Location-state R1 authored (b01c15) — 2026-06-04
+  theater/facets/location-state-b01-c15.md (4 entries, 0 cull)
+
+## Seams flagged for R2 (b01c15 location-state)
+  SEAM-C15-LOC-001: the-passage-adjacent-ward — new slug for this chapter; no confirmed warehouse card; drawn from bones `locations:` field. R2 confirm canonicalization or flag for margit. Note scene-map describes as "outer-court margin abutting the Red Keep servant-passage tier."
+  SEAM-C15-LOC-002: the-red-keep-outer-court — no confirmed warehouse card; slug from bones `locations:` field. Only 1 loc-state entry fires on this slug (@3); the outer-court is visible terrain not Taylor's position. R2 confirm slug or flag for margit.
+  SEAM-C15-LOC-003: the-gap-lanes-east-water-gate — no loc-state entry fires on this slug; the gap-lanes are perceived through the feed (fauna-mediated), not a body-location. Consistent with rubric §Necessity REJECT (perception-feed beats). R2 confirm no loc-state entry is needed or whether a place-anchor for the gap-lanes is warranted at @26/@27.
+  SEAM-C15-LOC-004: loc-state:4 @32 continuity-carry — rhythm-shape for scene-D is "fall into settled state" (closest rubric match: resolving posture). License fires on basis of falling-arc resolving posture and fusion-eligible-run @32-@33. R2 confirm rhythm-shape classification supports the continuity-carry license.
+
+## Sensory facet filed (b01c15) — 4 entries, 0 cull
+  sensory:1 @5  — light: outer-court-stone-morning-ambient -> sapphire-flat-catch (S01; Aemond's sapphire catching morning light; the non-tracking quality of the glass eye)
+  sensory:2 @20 — thermal: outer-court-stone-morning-cold -> passage-arch-stone-hill-warm (S02; Vhagar-backwash thermal onset; airless-relief anchor) # airless-relief @20
+  sensory:3 @30 — sound: feed-interior-silence -> one-exhalation (S03; one breath above the feed; spike; airless-relief anchor) # airless-relief @30
+  sensory:4 @32 — thermal: passage-arch-stone-hill-warm -> stone-morning-baseline (S04; thermal normalization back-to-baseline; pair with sensory:2)
+  Density: 4/40 = 10%; standard entries (sensory:1 + sensory:4) = 2/40 = 5% (within band); airless-relief licensed adds (sensory:2 + sensory:3) = grounding-ledger-authorized per BONES-AIRLESS-RISK brief (same authorization family as c14 BONES-AIRLESS-RISK)
+  Modalities: light + thermal + sound (3; exceeds ≥2 floor)
+  Per-scene cap: S01=1 (@5), S02=1 (@20), S03=1 (@30), S04=1 (@32) — all within ≤3
+  Excluded: @17/@18/@19 (fauna-feed-extension; flight-muscles / arch-flies / fly-substrate physiology not audience-perceptible without Taylor's faculty); @26 ("silence" is charged — self-carries the auditory inflection); @27 (feed-image hole = fauna-feed-extension); @36/@39 (stylus acts — sub-threshold tactile, Q2 FAIL, consistent with s01e01 @64 calibration anchor)
+  Inflection-pair coherence: sensory:2 new-state = passage-arch-stone-hill-warm; sensory:4 old-state = passage-arch-stone-hill-warm. Match — back-to-baseline pair coherent.
+  Old-state anchors: sensory:1 from loc-state:1/@1 (morning; outer-court-approach-clear; morning ambient baseline); sensory:2 from loc-state:1/@1 (morning cold baseline); sensory:3 from the feed-interior register established by @22-@29 (interior accounting silence; the breath is the first audible event in the feed-interior stretch); sensory:4 from sensory:2 (prior thermal sensory entry on same modality = canonical old-state source)
+  Files: theater/facets/sensory-b01-c15.md
+
+## Airless-relief sensory entries (b01c15)
+  Primary airless-relief: sensory:2 @20 (thermal: passage-arch-stone hill-warm onset; inside the S02 BONES-AIRLESS-RISK window; the stone-fact that grounds the Vhagar-backwash in physical substrate)
+  Secondary airless-relief: sensory:3 @30 (sound: one-exhalation spike; inside the S03 feed-abstraction window; the sole bodily-presence marker against the gap-figure-ground accounting)
+
+## State-updates-env locked (b01c15) — 11 entries, decisions-not-fire documented
+  state:1  @1  — studio.location: the-channel-station -> the-passage-adjacent-ward
+  state:2  @1  — studio.time_of_day: evening -> morning
+  state:3  @12 — studio.fauna_sense_status.feed-density: elevated-court-observation -> routine-scan
+  state:4  @22 — prop:oc-coverage-record.site-condition-entries.thermal-rise: absent -> marked
+  state:5  @23 — studio.ambient_conditions.thermal-rise-status: active -> normalized
+  state:6  @31 — prop:oc-coverage-record.eastern-boundary-entry: absent -> written
+  state:7  @33 — studio.fauna_sense_status.eastern-fringe-interference: active -> cleared
+  state:8  @36 — prop:oc-coverage-record.final-notation: absent -> written
+  state:9  @37 — prop:oc-coverage-record.condition: open -> closed
+  state:10 @38 — studio.fauna_sense_status.feed-density: backwash-disrupted -> routine-coverage
+  state:11 @40 — studio.time_of_day: morning -> afternoon
+  Decisions-not-fire: @2-@11 (observation/registration beats; no persistent env/prop field-changes until @12 routine-scan return); @13 (aemond repeats — no env change); @14-@21 (passage-slope exit + arch-fly physics = fauna-substrate events; @21 is the record absorbing, fire lands at @22); @24-@30 (feed-fringe read + gap-figure-ground + exhalation = fauna-perception + interior; no prop field-changes until @31); @32 (arch-flies settle = environmental restatement subsumed by sensory:4 thermal baseline; no distinct tracked field change distinct from @23 thermal normalization and @33 fringe-clearance; skip-frugality); @34-@35 (morning-circuit close + coverage-record entries run = interior aggregation; no new field-flip); @38-@39 (stylus acts — fine-grain motor; @37 record-closed captures the lifecycle terminal; @39 stylus-past-name-field is the enacted absence, not a tracked field-change on oc-coverage-record)
+  Field-extensions: see header block in facet file (8 new fields / 1 new prop)
+  Density: 11/40 = 27.5%; justified by 2 scene-open structural fires (@1×2) + 4 coverage-record lifecycle fires + 4 environmental sub-field fires + 1 time-of-day advance; consistent with b01c12 (38%) and b01c13 (42%) precedent
+
+## Prop state at b01c15 chapter-close (projected from state-updates-env R1)
+  - studio.location: the-passage-adjacent-ward (@1; persistent at chapter-close)
+  - studio.time_of_day: afternoon (@11; chapter-close)
+  - studio.ambient_conditions.thermal-rise-status: normalized (@5; permanent within this session)
+  - studio.fauna_sense_status.feed-density: routine-coverage (@10; persistent)
+  - studio.fauna_sense_status.eastern-fringe-interference: cleared (@7; persistent)
+  - prop:oc-coverage-record.condition: closed (@9; terminal for this morning session)
+  - prop:oc-coverage-record.eastern-boundary-entry: written (@6; permanent)
+  - prop:oc-coverage-record.final-notation: written (@8; permanent)
+  - prop:oc-coverage-record.site-condition-entries.thermal-rise: marked (@4; permanent)
+  - All b01c14 carry-forward entries unchanged: studio.spatial_layout.lane-junction-patrol: Gold-Cloak-pair-posted; studio.fauna_sense_status.lower-gate-road-coverage: corwick-absent; prop:oc-ward-coverage-notes.content: hook-rushwick-oswyn-plus-south-plus-both-clusters; prop:oc-feed-ledger.condition: closed; prop:oc-feed-ledger.corwick-entry: written; studio.fauna_sense_status.coverage-scale: five-ward-plus-approaches
+
+## Seams flagged for R2 (b01c15 state-updates-env)
+  SEAM-C15-ENV-001: prop:oc-coverage-record first-touch; no prior warehouse card; old-state for all fields "absent" derived from chapter-open context (a blank record at morning-circuit-open). R2 confirm adequacy of first-touch "absent" baseline.
+  SEAM-C15-ENV-002: studio.fauna_sense_status.feed-density — new sub-field first-touch at @3 (@12 fires). Old-state "elevated-court-observation" is inferred from the context of Taylor watching the drill through two flies on the stone-lip (S01 elevated-observation posture). R2 confirm the elevated-to-routine transition is the correct framing or whether a separate @1 fire is needed to establish the initial elevated state.
+  SEAM-C15-ENV-003: studio.fauna_sense_status.feed-density at @10 — old-state "backwash-disrupted." The backwash-disruption is not explicitly fired as a state-update (the arch-flies juddering at @16/@17 established the disruption in the bones but no state:N entry fires to record disruption-onset). R2 confirm whether a disruption-onset entry is needed between @12 and @38, or whether the @38 old-state "backwash-disrupted" is inferable from bones context.
+  SEAM-C15-ENV-004: prop:oc-coverage-record — new prop. Reconcile with prop:oc-feed-ledger and prop:oc-ward-coverage-notes to confirm these are distinct props with distinct purposes (the coverage-record appears to be the session-level morning-circuit log; the feed-ledger and ward-coverage-notes are the persistent cross-session accounting instruments). Margit referral needed.
+  SEAM-C15-ENV-005: studio.ambient_conditions.thermal-rise-status old-state "active" — inferred from @16-@22 bones (backwash onset). No prior state-update records the onset explicitly; the "active" state is bones-inferable. R2 confirm adequacy.
+
+---
 
 ## Location-state sequence locked (b01c14) — 4 entries, 0 cull
   loc-state:1 @1  — oc-rushwick-cloth-stall | morning | none | stall-door-open, goods-staged-unheld, bag-peg-bare | the bare peg on the lane-side wall (place-anchor; scene-A; working morning; the one missing object against staged goods)

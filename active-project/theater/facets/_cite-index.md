@@ -1,112 +1,37 @@
-# Cite-Index — b01-c14
+# Cite-Index — b01-c15
 generated: 2026-06-04
-source: active-project/theater/proto-lines/b01-c14.md + active-project/theater/facets/
-scope: 9 facet files + 1 proto-lines file
-totals: 51 facet entries; 24/46 protolines decorated (52.2%)
+source: active-project/theater/proto-lines/b01-c15.md + active-project/theater/facets/
+scope: 9 facet files + 1 proto-lines file (SILENT chapter — no dialogue files)
+totals: 49 facet entries; 27/40 protolines decorated (67.5%)
+merge: hand-merged from R1 citation maps (4 author groups: studio env / Taylor interiority / exposition / metaphor+vibes); _inflight machinery bypassed under cascade-budget; body-integrity verified (proto SVO bodies byte-identical to bones file)
+
+## Per-facet entry counts
+| facet | entries | density | band | status |
+|-------|---------|---------|------|--------|
+| location-state | 4 | 10% | sparse-by-design (single-location) | OK |
+| sensory | 4 | 10% | 3-6% + 2 grounding-ledger-licensed (@20, @30) | OK (licensed) |
+| state-updates | 15 | (11 env + 4 actor) | precedent c12-c14 ~27% env | OK |
+| narrator-interest | 10 | 25% | 15-25% | top-of-band OK |
+| memory | 2 | 5% | 5-12% | OK |
+| feeling | 2 | 5% | 2-5% | top-of-band OK |
+| metaphor | 1 | 2.5% | 0-3% | OK |
+| vibes | 7 | — | entity-target-primary | OK |
+| exposition | 4 | 10% | 1-5% + 3 context-ledger-licensed (@3, @16, @26) + @0 bridge | OK (licensed) |
 
 ## Density distribution (protolines by citation count)
-
 | cites/line | count |
 |------------|-------|
-| 0 (bare)   | 22 |
-| 1          | 8 |
-| 2          | 4 |
-| 3          | 8 |
-| 4          | 2 |
-| 5          | 2 |
+| 0 (bare)   | 13 |
+| 1          | 9 |
+| 2          | 9 |
+| 3          | 6 |
+| 4          | 3 |
 
-## Per-facet entries
+## Licensed exceptions
+- context-ledger (PROP-0020): exposition:2 @3 (ctx-001 Aemond), exposition:3 @16 (ctx-002 Vhagar-mechanic), exposition:4 @26 (ctx-003 gap-exclusion) — exempt from anti-exposition penalty + add-cap.
+- grounding-ledger (PROP-0022): sensory:2 @20 (grd-001 warm-stone airless-relief), sensory:3 @30 (grd-002 one-exhalation airless-relief) — exempt from sensory FREQUENCY-BAND cap.
 
-### loc-state (4 entries)
-  loc-state:1 @1 back=Y co=[state:1]
-  loc-state:2 @10 back=Y co=[exposition:3, state:3, state:4, vibes:7]
-  loc-state:3 @32 back=Y co=[state:9, state:10]
-  loc-state:4 @38 back=Y
-
-### narrator (11 entries)
-  narrator:1 @9 back=Y co=[mem:1, state:2, state:14, vibes:1]
-  narrator:2 @13 back=Y
-  narrator:3 @18 back=Y co=[mem:2, vibes:8]
-  narrator:4 @22 back=Y
-  narrator:5 @27 back=Y co=[state:15, vibes:2]
-  narrator:6 @31 back=Y co=[feel:1, mem:3]
-  narrator:7 @35 back=Y
-  narrator:8 @40 back=Y co=[state:12, state:16, vibes:5]
-  narrator:9 @41 back=Y co=[vibes:5, vibes:6]
-  narrator:10 @42 back=Y co=[mem:4, vibes:6]
-  narrator:11 @44 back=Y co=[state:13, state:17, vibes:4]
-
-### sensory (3 entries)
-  sensory:1 @11 back=Y co=[state:5, vibes:7]
-  sensory:2 @28 back=Y co=[state:6, vibes:3]
-  sensory:3 @45 back=Y co=[vibes:4]
-
-### state (17 entries)
-  state:1 @1 back=Y co=[loc-state:1]
-  state:2 @9 back=Y co=[mem:1, narrator:1, state:14, vibes:1]
-  state:3 @10 back=Y co=[exposition:3, loc-state:2, state:4, vibes:7]
-  state:4 @10 back=Y co=[exposition:3, loc-state:2, state:3, vibes:7]
-  state:5 @11 back=Y co=[sensory:1, vibes:7]
-  state:6 @28 back=Y co=[sensory:2, vibes:3]
-  state:7 @29 back=Y co=[vibes:3]
-  state:8 @30 back=Y
-  state:9 @32 back=Y co=[loc-state:3, state:10]
-  state:10 @32 back=Y co=[loc-state:3, state:9]
-  state:11 @39 back=Y
-  state:12 @40 back=Y co=[narrator:8, state:16, vibes:5]
-  state:13 @44 back=Y co=[narrator:11, state:17, vibes:4]
-  state:14 @9 back=Y co=[mem:1, narrator:1, state:2, vibes:1]
-  state:15 @27 back=Y co=[narrator:5, vibes:2]
-  state:16 @40 back=Y co=[narrator:8, state:12, vibes:5]
-  state:17 @44 back=Y co=[narrator:11, state:13, vibes:4]
-
-### mem (4 entries)
-  mem:1 @9 back=Y co=[narrator:1, state:2, state:14, vibes:1]
-  mem:2 @18 back=Y co=[narrator:3, vibes:8]
-  mem:3 @31 back=Y co=[feel:1, narrator:6]
-  mem:4 @42 back=Y co=[narrator:10, vibes:6]
-
-### feel (2 entries)
-  feel:1 @31 back=Y co=[mem:3, narrator:6]
-  feel:2 @43 back=Y
-
-### meta (0 entries)
-_(no entries)_
-
-### vibes (8 entries)
-  vibes:1 @9 back=Y co=[mem:1, narrator:1, state:2, state:14] lic-out=[proto:8, proto:9]
-  vibes:2 @27 back=Y co=[narrator:5, state:15] lic-out=[proto:26, proto:27]
-  vibes:3 @29 back=Y co=[state:7] lic-out=[proto:28, proto:29, proto:46]
-  vibes:4 @45 back=Y co=[sensory:3] lic-out=[proto:44, proto:45]
-  vibes:5 @41 back=Y co=[narrator:9, vibes:6] lic-out=[proto:40, proto:41, proto:42]
-  vibes:6 @42 back=Y co=[mem:4, narrator:10] lic-out=[proto:41, proto:42, proto:43]
-  vibes:7 @11 back=Y co=[sensory:1, state:5] lic-out=[proto:10, proto:11]
-  vibes:8 @- back=- lic-out=[proto:18, proto:27, proto:40, proto:44, proto:46]
-
-### exposition (2 entries)
-  exposition:1 @0 back=N
-  exposition:3 @10 back=Y co=[loc-state:2, state:3, state:4, vibes:7]
-
-## Pile-ups (>4 facets co-located on one protoline)
-
-- **@9** (5): mem:1, narrator:1, state:2, state:14, vibes:1
-    `taylor-hebert-kl-122ac closes the passive-count entry`
-- **@10** (5): exposition:3, loc-state:2, state:3, state:4, vibes:7
-    `jarvis sets the packet at the channel-station`
-
-## Lonely entries (no co-location, no inbound license)
-_Round-2 deletion candidates — but check the rubric before cutting._
-
-- loc-state:4 @38  `the lane empties`
-- narrator:2 @13  `the figure raises the chin`
-- narrator:4 @22  `taylor-hebert-kl-122ac sets the wrist on the left column`
-- narrator:7 @35  `the figure lifts both hands to the satchel-strap`
-- state:8 @30  `taylor-hebert-kl-122ac enters the breach-column record`
-- state:11 @39  `taylor-hebert-kl-122ac releases the bottlefly`
-- feel:2 @43  `taylor-hebert-kl-122ac sets the hand off the surface`
-- exposition:1 @0  ``
-
-## Bare protolines (no citations accrued)
-_Round-2 add candidates if the rubric licenses a fire here._
-
-@2, @3, @4, @5, @6, @7, @8, @12, @14, @15, @16, @17, @19, @20, @21, @23, @24, @25, @33, @34, @36, @37
+## Notes
+- exposition:1 is the @0 chapter-preamble bridge (prior-episode reader-state); not a proto-line citation (no @0 bone). Carried in exposition-b01-c15.md as the episode-open bridge.
+- 3-layer bones (carry cognition + monument/stakes + somatic): @22 (mem+narrator+state×2), @39 (feel+mem+narrator+vibes), @27 (narrator+state+vibes), @30 (feel+narrator+sensory).
+- FLY-TEMPLATE-VARIATION (scene-map signal-002): @16/@18/@24/@25/@32 share the [fly-population+verb+location] template; facet fires land mostly off them; stitcher Phase 4 applies structural variation across the assembled text.

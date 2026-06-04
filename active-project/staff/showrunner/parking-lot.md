@@ -2047,3 +2047,167 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-06-04-c15-001
+      created_at: 2026-06-04T00:00:00Z
+      created_by: "/and-substance chapter b01c15 Phase 5.5 (chunk cold-read CHUNK-CLASS-B) + admin DEC-0087 (P disposition) + Phase 5 audience trio + dramatist + auditor"
+      target:
+        command: /and-write
+        scope: "b01c15"
+        phase: Phase 6
+      severity: HARD
+      description: |
+        b01c15 is a FALLING accounting chapter (Aemond-through-compound-eyes; the space before the
+        cascade). Chunk cold-read returned CHUNK-CLASS-B (CONTINUE-strict=No; event-poverty/jeopardy-
+        offstage/"nothing-changes" — the SAME failure family as the b01c14 cold-read FAIL). Principal
+        (admin DEC-0087) chose PROCEED with the explicit condition that the quietness be carried by
+        bones-layer CONCRETENESS, not by adding plot. The c14 lesson applied prophylactically: de-
+        abstract the bones so event-poverty renders as vivid quiet rather than accounting-register muffle.
+        /and-write Phase 6 (bone-gate; EVENT-NOT-CONCRETE / ABSTRACTION-DOMINANT spine-legibility checks)
+        MUST verify these three watches or HARD-abort:
+
+        (1) FEED-TEXTURE CONTRAST CONCRETE (audience SW-c15-2). The relational_anchor_status +1.5 (S3,
+            cl04) is contingent on bones executing the gap-lane "person-shaped quality" as a SPECIFIC
+            feed-texture contrast — what the fringe-flies return WITH thermal-noise/resolution-dropout
+            vs. what the gap returns as CLEAN absence (figure-ground, "shadow against a lit wall") —
+            rendered as concrete sensory description, NOT as Taylor's interior labeling. If bones abstract
+            over the perceptual mechanism, the +1.5 loses physical grounding → HARD.
+        (2) S4 LEDGER-ACT NOT CONCLUSION (audience SW-c15-3 / SW-DFR-c15-1 + dramatist S4-recap-drift).
+            S4 (axes_in_motion: []; accounting-close) must ENACT Taylor doing something with the feed —
+            a ledger-act, a coverage notation, a physical gesture — NOT a drawn conclusion / interior
+            declaration. S4 bones must stay on the NEW articulation (the register-change: the gap is now
+            a named absence with a shape) and must NOT recap the S3 perceptual event → HARD if S4 bones
+            read as S3 rephrase or as reflective summary.
+        (3) AXIS-SLUG FENCE AT BONES (audience SW-c15-1 / SW-WCP-c15-1 / auditor fault-002). The chunk-
+            prose axis-slug literals were purged at the chunk layer (fault-002 fixed). Bones must NOT re-
+            introduce pipeline-internal vocabulary (axis slugs, "the relational_anchor advances," etc.)
+            into Taylor's feed-utilitarian register → HARD if any bone SVO/mechanism names a pipeline slug.
+
+        ARMING (carried to /and-stitch, not resolved at /and-write): chunk_cold_read.voice_risk
+        (triggered, Signal B) arms /and-stitch Phase 8.5 Check 3 central-event-muffle verification;
+        cold_read_risk_carry arms /and-stitch Phase 9 (a Phase 9 FAIL Class-B on the SAME categories
+        — event-poverty/jeopardy-offstage/nothing-changes — ships SHIPPED-WITH-CAVEATS automatically per
+        DEC-0087; NEW categories re-dispatch admin).
+      context_refs:
+        - active-project/staff/auditor/substance-b01c15-scenes.md  # fault-002 axis-slug bleed
+        - active-project/staff/showrunner/memory.md  # chapters[b01c15].chunk_cold_read + scenes
+        - active-project/audience/cape-fic-reader/stm.md  # SW-c15-1/2/3
+        - active-project/audience/dark-fantasy-reader/stm.md  # SW-DFR-c15-1/2
+        - active-project/audience/worm-canon-pedant/stm.md  # SW-WCP-c15-1
+        - staff/admin/decisions.md  # DEC-0087
+      resolution_suggestion: "/and-write b01c15 Phase 6 bone-gate verifies the three watches (concrete feed-texture contrast; S4 ledger-act-not-conclusion; axis-slug fence); stamp resolved on PASS or HARD-abort to a Phase-1 redo."
+      status: resolved
+      resolved_at: 2026-06-04T00:00:00Z
+      resolved_by: "/and-write b01c15 Phase 6 bone-gate (auditor fault-025/026/027 PASS)"
+      resolution_note: |
+        All three HARD watches adjudicated PASS. (1) FEED-TEXTURE CONTRAST CONCRETE:
+        s03n02 (fringe drops image-resolution) / s03n03 (gap-lane returns silence) /
+        s03n04 (gap-lane opens a hole in the feed-image) deliver the gap as physical
+        figure-ground feed-texture, not interior labeling. (2) S04 LEDGER-ACT NOT
+        CONCLUSION: all 9 S04 bones are physical acts (circuit-close, record-run,
+        notation-written, stylus-lifted-past-name-field, afternoon-circuit-run); no
+        drawn conclusion; no S03 recap. (3) AXIS-SLUG FENCE: zero pipeline slugs in
+        any of 40 bone SVOs. Downstream arming intact: chunk_cold_read.voice_risk
+        (Signal B) → /and-stitch Phase 8.5 Check 3; cold_read_risk_carry → Phase 9.
+        Note: REGISTER-AS-MANNERISM fly-template (signal-002) carried to /and-stitch
+        Phase 4 for structural variation.
+
+    - id: pl-2026-06-04-c15-002
+      created_at: 2026-06-04T00:00:00Z
+      created_by: "/and-write b01c15 Phase 2 auditor (fault-010 inter-document canon conflict)"
+      target:
+        command: margit-card-authoring
+        scope: "Aemond age / lore card"
+        phase: null
+      severity: SOFT
+      description: |
+        Inter-document Aemond-age conflict surfaced at /and-write b01c15 Phase 2:
+        - actor card: 12, born 110 AC  (F&B-canon-correct)
+        - lore card (cond-kl-court-state-122ac or adjacent): 16, born 106 AC  (CANON-WRONG)
+        - c15 chapter chunk + goal: said "13" (FIXED at Phase 2 -> 12)
+        - c15 bones: "twelve" (canon-correct, unchanged)
+        F&B: Aemond Targaryen born 110 AC -> age 12 in 122 AC. Lost left eye at Driftmark
+        (120 AC, age 10); wears a sapphire. The lore-card 106 AC/age-16 value is a canon
+        error that should be reconciled to 110 AC/age-12 so future chapters touching court-
+        tier Targaryen ages do not inherit the wrong baseline. Non-blocking for c15 (bones
+        + chunk + goal now all at canon-correct 12). margit should locate the offending lore
+        card and correct the Targaryen-children birth-year/age block against F&B.
+      context_refs:
+        - active-project/staff/auditor/write-b01c15-pass2.md  # fault-010
+        - active-project/staff/showrunner/memory.md  # series.lore cond-kl-court-state-122ac
+      resolution_suggestion: "margit reconciles the lore card's Aemond birth-year to 110 AC (age 12 in 122 AC) per F&B; cross-check other Targaryen-children ages in the same card."
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-04-c15-003
+      created_at: 2026-06-04T00:00:00Z
+      created_by: "/and-facets b01c15 Phase 5 audit (RUBRIC-FIDELITY card-resolution SIGNAL) + state-updates-env field-extension self-flag"
+      target:
+        command: margit-card-authoring
+        scope: "b01c15 warehouse cards"
+        phase: null
+      severity: SOFT
+      description: |
+        b01c15 state-updates-env introduces one new prop + three new studio sub-fields
+        in use without warehouse cards (non-blocking — entries carry sufficient inline
+        description; field-extension protocol self-flagged; matches the oc-rushwick /
+        c14-seam precedent pl-2026-05-28-001 / pl-2026-06-04-001):
+        - prop:oc-coverage-record (4 fields: site-condition-entries.thermal-rise,
+          eastern-boundary-entry, final-notation, condition) — Taylor's per-session
+          internal circuit coverage-record.
+        - studio.ambient_conditions.thermal-rise-status (tracks Vhagar-backwash thermal event)
+        - studio.fauna_sense_status.eastern-fringe-interference (tracks fringe thermal-noise)
+        - studio.fauna_sense_status.feed-density (scan-density state; reconcile with the
+          b01c12+ fauna_sense_status schema)
+        margit should author / reconcile these so future loc-state old-state continuity
+        audits + /and-cast revise can verify constraint compliance.
+      context_refs:
+        - active-project/theater/facets/state-updates-env-b01-c15.md  # field-extension block + margit referrals
+        - active-project/staff/auditor/facets-final-audit.md  # RUBRIC-FIDELITY card-resolution SIGNAL
+      resolution_suggestion: "margit authors prop:oc-coverage-record.card.md + reconciles the three studio sub-fields against the fauna_sense_status / ambient_conditions schema."
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-04-c15-004
+      created_at: 2026-06-04T00:00:00Z
+      created_by: "/and-stitch b01c15 Phase 9 cold-read (SHIPPED-WITH-CAVEATS; Class-B DEC-0087 coupling)"
+      label: depth-pass-mandatory-b01c15
+      target:
+        command: /and-write
+        scope: b01c15
+        phase: null
+      severity: HARD
+      description: |
+        b01c15 shipped SHIPPED-WITH-CAVEATS on a Class-B cold-read FAIL (CONTINUE=no;
+        events recovered + summary maps to goal; cause = design-inherent event-poverty /
+        jeopardy-offstage / nothing-changes, ALL pre-authorized in chunk_cold_read.cold_read_risk_carry
+        per DEC-0087; auto-shipped terminal per the Phase-9 Step-4 SHIPPED-WITH-RISK-RECORDED
+        coupling, mirroring c14 DEC-0085). Phase 8.5 confirmed the central-event-muffle did NOT
+        materialize (all 4 events legible) — this is NOT the c14 abstraction-muffle failure; it is
+        the deliberately-quiet falling chapter shipping with the known event-poverty caveat.
+        MANDATORY depth pass before book-close (gates /and-substance book b02 Phase 0 +
+        /and-review verdict b01). Consume the cold-read signals via
+        /and-write b01c15 revise --from-signals + re-cascade /and-facets + /and-stitch:
+        - the cold-reader's "no character to care about / no stake to follow" is the uninformedness
+          leg — a reader 15 chapters in HAS Taylor/Wren/the-arrangement; but the depth-pass should
+          still consider whether ONE more on-page anchor of stake (the Wren-cost made a hair more
+          present, or the Aemond-as-the-war's-engine weight) would lift the in-chapter continue-pull
+          without breaking the falling-arc design.
+        - NOTE the two-consecutive-quiet pattern (c14 + c15 both Class-B SHIPPED-WITH-CAVEATS):
+          DEC-0087 named /and-cohere before book-close as the designed accumulation handler for this.
+          Consider /and-cohere b01 over the c13-c15 stretch.
+        Resolution: run the depth pass; on Phase 9 re-PASS stamp chapters[b01c15].cold_read.depth_pass_resolved_at.
+      context_refs:
+        - active-project/staff/reviews/coldread-b01-c15-2026-06-04.md
+        - active-project/staff/reviews/coherence-b01-c15-2026-06-04.md
+        - active-project/staff/showrunner/memory.md  # chapters[b01c15].cold_read
+        - staff/admin/decisions.md  # DEC-0087
+      resolution_suggestion: "/and-write b01c15 revise --from-signals + re-cascade; OR /and-cohere b01 c13-c15 (two-consecutive-quiet accumulation handler per DEC-0087)"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null

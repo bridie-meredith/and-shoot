@@ -1,4 +1,4 @@
-facet: feeling (consolidated)
+facet: feeling
 episode: b01-c15
 source-slices: feeling-taylor-hebert-kl-122ac-b01-c15.md
 ---

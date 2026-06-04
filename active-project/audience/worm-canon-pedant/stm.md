@@ -280,7 +280,7 @@ The rationalization running its own accounting — Sera is real, the ward is rea
 **capability +1.0:** SUBSTANCE-FELT.
 "The feed opens across Pig Tallow Lane and its courts within an hour of walking" — the mechanism is correct. Coverage is built through physical presence and established insect-contact points, not through a single broadcast. The hour-of-walking specification is important: it names coverage-as-procedure, not coverage-as-range. "She reads the ward the way she reads the Hook. She does not stop to name what she is doing." That second sentence is the Khepri-residue telling line. Canon Taylor does not always name what she is doing when the accounting is continuous with prior practice. No flag.
 
-The opposing force — the expansion's upward routing making the same walk-and-read that constituted Hook triage now constitutes intelligence for Otto — is correct and visible. The reader sees it; Taylor does not name it. That asymmetry is the chapter's whole mechanism.
+The opposing force — the expansion's upward routing making the same walk-and-read that constituted Hook triage now constituting intelligence for Otto — is correct and visible. The reader sees it; Taylor does not name it. That asymmetry is the chapter's whole mechanism.
 
 **social_tether-prot-rise +1.0 (cl03b first tranche):** SUBSTANCE-FELT.
 Oswyn as unknowing node is a clean Khepri echo. "He does not know he is now a coordinate in a map that routes upward through a courier to a man in a tower." The architecture is the same architecture she used at Gold Morning — people as substrate, no contact, no consent, no choice — at reduced scale and with a harm-reduction framing that Taylor believes. The chunk makes the structural homology visible without naming it. That is the right execution for this stage.
@@ -383,79 +383,6 @@ scenes_reviewed: [b01c05s01, b01c05s02, b01c05s03]
 
 ## scene b01c05s01
 verdict: SUBSTANCE-FELT
-Nine bones, zero axis moves, political_register-prot and capability held throughout. The multi-stream-parallel-narrator watch for s01 was whether the accumulation across 9 bones reads as genuine feed-processing across multiple body-types or as sequential events Taylor merely notices. It reads as genuine processing: the provisioner-train is handled in n04-n06 (arrival, east-lane exit, interval mapped), the message-runner is handled in n07-n09 (crossing, lane-mouth exit, gait-class filed), and the two bodies are treated by the same method with the same neutral-instrumental discipline — "different substrate, same method" is enacted in the bone structure, not asserted. The multi-body coverage is present at bone level across distinct event sequences, not collapsed to a single observation bone. The parallel treatment (each body entering the feed, exiting coverage, getting filed) is the correct form for Taylor's feed processing at this stage: rote categorization, no color. The court-tier content's novel weight — the opposing force — is present only in the specificity demanded by the categorization work (n06, n09), not as a labeled recognition. The discipline holds because Taylor does not register the strain; the reader sees the strain in the volume of filing work. No axis moves, which is correct per the substance contract (s01 is setup for the s03 payoff; the held posture is load-bearing for the contrast). Earth-Bet fence: all SVOs use functional descriptive language; no parahuman jargon. Khepri silence correct — coverage extension into Rushwick is maintenance, not new architecture. SUBSTANCE-FELT.
-
-## scene b01c05s02
-verdict: SUBSTANCE-FELT
-The courier-3-distinct-bones soft watch lands cleanly. n02 (gait-signature recognition), n04 (approach-geometry read — three figures closing, alley-mouth sealed, enforcement vs. robbery categorization), and n08 (filing into Jarvis report format — movement-pattern, body-count, approach geometry, duration) are three structurally distinct cognitive operations at three distinct points in the s02 sequence. They are not redundant: n02 is the identification event (recurring body, same heel-first gait, this is a body I have seen); n04 is the categorization event (this approach geometry means enforcement, not robbery — a new class of content the feed has not processed before); n08 is the output event (this goes to Jarvis as movement-pattern, factual routing). The distinction between the three is the distinction between recognizing, reading, and reporting — three phases of Taylor's intelligence-processing that are canonically distinct in Worm. The cf-d10 plant is callable at d10 because the courier has a specific gait-signature, an attached enforcement-incident, and a body-record with three observations — the face will be recognizable when it recurs because the filing has given it a shape. The dark-fantasy gap instrument at n06 (effortful sound the feed has no field for) is the chapter's most precise canonicity test: Taylor's feed does not capture subjective suffering; it captures physical data; the sound a body makes trying not to make sound is below the feed's resolution. The gap is correctly named as a gap in the feed's data-frame, not as a Taylor failure to perceive. n07 (courier finds the feet, feed re-categorizes) correctly closes the gap into the feed's available categories. The moral_framework hold throughout is the rationalization running: routing enforcement as pattern-data is inside the licensed exception; "this is what the feed reads" runs twice in the chunk text as the rationalization's self-echo, which is canonical. No SUBSTANCE-FLAT. No SUBSTANCE-SUSPECT. SUBSTANCE-FELT.
-
-## scene b01c05s03
-verdict: SUBSTANCE-FELT
-The evening replay mechanism passes the multi-stream-parallel-narrator test. The concern was whether the replay — Taylor noticing color she did not notice in real-time — contradicts her known parallel-processing capacity. It does not. The bones enact the specific mechanism that makes this canon-compatible: the replay strips the real-time categorization discipline's active frame (s03n04: Taylor runs the Rushwick-feed; s03n05: provisioner-train re-crosses the junction — the re-prefix marks replay context; s03n06: Taylor stops the Rushwick-pass, the +1.5 axis-move bone). What Taylor's parallel processing does in real-time is categorize-while-routing, holding the content inside the discipline's organizational frame. The evening replay has no routing function, no action to take, no report to produce — the discipline's active frame cannot sustain itself without a function to perform. The color that was arriving during acquisition was being processed as pattern-data by the discipline; in replay, without the frame, it is not. This is not Taylor failing to notice during acquisition; it is the discipline's holding-function collapsing when its operational context is removed. The multi-stream parallel processing is operating correctly in both acquisition (categorization-while-routing) and replay (categorization-without-routing produces a different output). Mechanically sound and canon-consistent.
-
-The foreclosure enacted at n10-n13 is the bone-gate's central canonicity test for this scene: does it honor the capability-failure beat as distinct cognitive work, or does it abstract over the specifics? It honors it. The four-bone sequence (n10: first attempt; n11: provisioner-train holds the pass — physical subject resisting a physical procedure, first fail; n12: second attempt; n13: courier-walk holds the pass — distinct content-anchor, second fail) enacts the foreclosure as a tested-and-confirmed capability-failure, not as a labeled conclusion. Taylor does not name the foreclosure as foreclosure; she runs the pass twice and gets the same result. The parallel structure (attempt+fail, attempt+fail) is the mechanism of the canon-Taylor capability-failure beat: she tests, the test fails, the failing is the event. The two distinct content-anchors (provisioner-train at n11, courier-walk at n13) make the foreclosure structural rather than episodic — the neutral read is not available for this class of content, demonstrated across two separate content instances in two separate attempts. The cl-d05 anchor at n06 and confirmed-permanent at the second failure (n13). Khepri silence at d05 is correct throughout: no Khepri reference in any bone; the courier body-filing at n09 is operational texture, not a named rhyme; the foreclosure is enacted as what it is (capability-failure) not as what it means (Khepri-architecture in formation). SUBSTANCE-FELT.
-
-hard_findings: none
-SUBSTANCE-FLAT: none
-SUBSTANCE-SUSPECT: none
-soft_findings:
-  - SOFT (carried forward): dialogue-file stale citation — Jarvis entry 9 @n10; carry to /and-review bones; not a bone-gate block
-  - SOFT (carried forward): b01c07 prose-burden — Halvard tether-gain; carries to b01c07 /and-write
-
-## b01c05 revise --from-signals — Phase 4 trim
-
-date: 2026-05-28
-scope: 5 new bones only (A1, B1, B2, B3, C1); existing bones 1-31 pre-passed and out of scope
-
-### Per-bone verdicts
-
-**A1 — `the insect-feed returns the courier-entry` (after @8)**
-KEEP — contingent on SVO correction before Phase 7 emit.
-The bone closes confusion (v) and is not chatter: chatter+cl-d05 classification is correct, the third-sighting recurrence feeds s03 foreclosure, and the feed-first substrate is voice-load-bearing. The object noun is the problem: "the courier-entry" is not a feed-returnable object. The feed returns bodies present in the coverage area via biological sensory relay; it does not surface archived event-records. "Returns the courier-entry" attributes a mnemonic-retrieval function to the feed that is not part of established Worm mechanics. Correct form: "the insect-feed returns the courier" — feed recognizes the body from the established gait-signature; the prior-sighting structure becomes legible through the same feed-first posture the chapter has been building. The corrected form is also structurally distinct from @n02 (gait-recognition mapping by Taylor), @n04 (approach-geometry categorization), and @n08 (filing) — the feed's live-return is a fourth phase, not a collapse. SVO correction flag carried to Phase 7 emit.
-
-**B1 — `the courier raises the spine` (between @13-@14)**
-KEEP.
-Closes confusion (ii) cleanly. "Raises the spine" → "finds the feet" is unambiguous sequential recovery. SVO form is correct: body-part DO, "raises" is concrete and transitive, licensed by the bones schema. axes_held rationale correct: courier's physical recovery does not threaten the licensed-exception frame; moral_framework holds because the observable incident continues without interrogation. Structurally distinct from @14 (spine-raise precedes foot-find; distinct temporal position and distinct physical action). SOFT-WATCH honored: B1 is a courier-body-state bone, not a Taylor-mapping bone; not collapsed into any of the three-phase cognitive operations (@n02, @n04, @n08).
-
-**B2 — `the enforcement-report enters the jarvis-channel` (after @16)**
-KEEP.
-Closes confusion (iii) partial. SVO analysis: "the enforcement-report enters the jarvis-channel" — report as subject, "enters" as motion verb, "jarvis-channel" as DO. Structural license confirmed via parallel with @17 ("the three figures exit the alley-mouth") and @19 ("the courier takes the junction-corner") — location/channel nouns as DO with motion verbs containing their own directional semantics is an established pattern in this chapter's bones. axes_held rationale correct: routing through the named channel is inside the licensed exception; apparatus named without interrogation. Structurally distinct from @16 (Taylor delivers, Taylor is actor) vs. B2 (report enters, report is actor) — the phase distinction is real: delivery and channel-entry are separate events. SOFT-WATCH honored: B2 is not collapsed into @n08 (mapping to format), @n09 (delivery act), or any existing bone.
-
-**B3 — `taylor-hebert-kl-122ac adds the jarvis-form to the sera-arrangement-file` (after B2, before @17)**
-KEEP.
-Closes confusion (iii) fully. SVO follows @18 ("adds the courier to the body-map") precedent exactly — "adds X to Y" with destination-PP tail licensed by established bone in same chapter. Sera named for the first time in the bones as a file-destination, not as a person: correct understated form for canonical Taylor accounting (names destinations precisely, without editorial). axes_held rationale correct: filing into the Sera-arrangement file is the licensed exception in operation. Structurally distinct from B2 (channel-entry) and @17 (three figures exit) — B3 is the attachment of the report to the specific arrangement it serves, a distinct act from the routing. SOFT-WATCH honored: filing destination is a new layer not collapsed into any prior bone.
-
-**C1 — `the rushwick-feed resists the flat-read` (between @24-@25)**
-KEEP — contingent on SVO refinement before Phase 7 emit.
-Closes confusion (iv) and is not chatter: chatter+cl-d05 classification is correct, the apparatus-level correlate makes @25's stopping legible as a response rather than an unmotivated event. The verb "resists" is the problem: it attributes agentive opposition to a biological sensory system, which is slightly off-register for Worm mechanics. Taylor's feed does not actively resist — it fails to return the expected neutral output when the categorization discipline's organizational frame has collapsed. The existing bones in the try-flat-read sequence use "holds" for physical actors (@29: "provisioner-train holds the rushwick-pass"; @31: "courier-walk holds the rushwick-pass"). The analogous feed-event should use a verb that names the failure-to-resolve, not active resistance. Candidate forms: "the rushwick-feed holds the color" (feed retains the non-neutral content against the attempted flat-read) or "the rushwick-flat-read returns color" (the read yields a different output class). The "holds" form has the strongest precedent in this chapter's vocabulary. SVO refinement flag carried to Phase 7 emit.
-
-### SOFT-WATCH compliance (gait-signature + approach-geometry + filing structurally distinct in s02 + s03)
-
-HONORED across all 5 new bones. None of the 5 collapse the three-phase cognitive-operations architecture (recognition-by-gait / approach-geometry-categorization / filing-to-format). A1 adds a feed-live-return phase distinct from all three. B1 is a courier-body-state bone outside the cognitive-operations architecture. B2 and B3 operate on report-routing and arrangement-filing infrastructure distinct from the three-phase sequence. C1 operates on feed-apparatus resistance in s03, not on any s02 cognitive operation.
-
-### File-level verdict
-
-ACCEPT — 5 KEEP, 0 DELETE-PROPOSE.
-Two SVO correction flags carried to Phase 7 emit (not deletion candidates): A1 object noun ("the courier-entry" → "the courier"); C1 verb ("resists" → "holds the color" or equivalent feed-failure form). All 5 new bones serve goal, close documented cold-read confusions, honor the SOFT-WATCH discipline, and are not chatter by the substance-overhaul criterion. The SVO corrections are constraint-edge findings, not trim findings.
-
-carry_forward:
-  - A1 SVO correction: "the insect-feed returns the courier-entry" → "the insect-feed returns the courier"; feed returns bodies, not archived event-records; carry to Phase 7 emit
-  - C1 SVO refinement: "resists" is agentive for a biological sensory system; candidate: "the rushwick-feed holds the color"; carry to Phase 7 emit
-  - SOFT (carried forward): dialogue-file stale citation — Jarvis entry 9 @n10; carry to /and-review bones
-  - SOFT (carried forward): b01c07 prose-burden — Halvard tether-gain; carries to b01c07 /and-write
-## b01c05 revise --from-signals — Phase 6 bone-gate
-
----
-reviewer: worm-canon-pedant
-chapter: b01c05
-phase: write-bone-gate
-date: 2026-05-28
-scenes_reviewed: [b01c05s01, b01c05s02, b01c05s03]
-revise_pass: true
----
-
-## scene b01c05s01
-verdict: SUBSTANCE-FELT (re-attested; s01 unchanged)
 
 No change to s01. Prior gate verdict stands without review. Zero axis moves, correct held-discipline throughout, no adjacency contamination from the @13 recast. SUBSTANCE-FELT.
 
@@ -531,92 +458,54 @@ The mechanism is mechanically sound: Taylor maps Oswyn's watcher-positions throu
 
 ---
 
-### s02 — Aemond logistics-noise
+### s02 — Vhagar-handler-rotation / Aemond foreshadow
+
+SUBSTANCE-FELT with WATCH.
+
+The design is correct: the escalation engine inserts itself into the feed at low intensity without requiring Taylor's attention or affect-register shift. "The logistics note is a logistics note" followed immediately by the bread-price counterpoint — the Aemond-adjacent name filed alongside provisioner data — is the right normalization gesture. The [image: feed-geometry-acquires-a-new-edge] is genuinely good: what shifts is not Taylor's posture but the map's geometry, and the map's geometry is the chapter's objective substrate. The edge is lit at low intensity, and it was not lit before.
+
+The watch is this: the scene carries nothing in axes_in_motion. All six axes held. The chapter's sole forward-motion marker is the feed acquiring a new geometric edge, and "low intensity" is doing a lot of work to justify that. The Aemond name must arrive with one degree more texture at the bones layer for the handler-rotation note to read as the world inserting a tooth rather than the author planting a flag. The logistics-section placement is smart — court-tier content arriving via scheduling noise rather than via directed intelligence is operationally correct and earns the scene's restraint. But the name above the handler in the possessive notation needs one bone that makes the gap in Taylor's current coverage geometrically specific: not "the name does not appear in her current coverage" (which reads as absence-as-notation) but "the name does not appear because coverage does not reach — and that gap is a shape in the feed" (which reads as absence-as-fact). The distinction is the difference between the reader filing it and the reader watching the feed encounter something it cannot reach.
+
+This is a WATCH, not a rejection. The restraint is structurally correct for a staging chapter. But the bones layer must deliver the Aemond-gap as geometric specificity or the scene's claim that "the feed's geometry acquires a new edge" lands as the narrator describing the chapter's significance rather than the apparatus demonstrating it.
+
+### s03 — courier face / Oswyn-integration completed
 
 SUBSTANCE-FELT.
 
-The Aemond-feed-entry passes the political_register hold test. The name appears in possessive chain-of-responsibility notation — "above the handler" in the logistics section — and Taylor logs it without marking it differently from the bread-price report. The flat-register hold is explicitly enacted: [mechanism: political-register-held-on-logistics-noise] is the annotation; the surrounding prose confirms it — "She does not mark it differently from the bread prices." The affect-register stay-flat is described as a held posture, not as a Taylor decision to suppress affect. That distinction matters: affect doesn't advance because there's no affect to suppress at this stage, not because Taylor is working to suppress it. That is the correct d08 register for Aemond: logistics-noise, no behavioral content, flat.
+The closer is the chapter's strongest scene. Oswyn as unknowing conduit delivering the courier name in a plain-contact social-physics exchange — "Corwick," he says, using the name without ceremony, the way he mentions anyone he has placed in a category — is exactly right. The name drops into the feed the way a position locks into a sightline: the face had a face, now has a name, a pattern (above-his-station, twice-up-the-hill), a direction. The body-map advances by one node and the node is a person with a route and a patron-shape. Taylor does not follow it tonight. That restraint is earned: the thread is open; the circuit is not forced.
 
-**The escalation-engine images:** The two images in this scene ([image: escalation-engine-visible-at-feed-edge] and [image: feed-geometry-acquires-a-new-edge]) are reader-facing images. Taylor does not see an "escalation engine" — she sees the feed's geometry change. The image-annotations correctly belong to the reader-side recognition layer, not Taylor's interiority. At write-time, the bones must not let these images enter Taylor's prose-voice. Watch-item: "escalation engine" is a reader-framing label; Taylor's prose must read as "the edge is lit at low intensity, and it was not lit before" — geometrical, not diagnostic. The image-tag names the reader-recognition; the bone must not reproduce the label in Taylor's interior.
+"Oswyn is still talking when Taylor leaves" is the right chapter closer for the Khepri-echo's first fully staged cycle. Oswyn unknowingly delivered the courier name AND his watcher-network was absorbed in the same encounter, and he does not know either happened. He is still talking. That image is not explained; it is the final physical fact of the chapter. That is the correct dark-fantasy close: the person whose network you absorbed is still talking as you walk away.
 
-**s02 axes_in_motion: []** — zero axis moves this scene. The Aemond-entry changes the feed's geometry but does not advance any substance axis. Holding political_register-prot at rank 3 while the escalation engine inserts itself is correct: the axis measures Taylor's resentment-register, not her feed's content. Feed-geometry change is not resentment-advance. The substance contract is correctly drawn.
+The one near-miss: "because his position is now inside Taylor's coverage matrix, covered by the geometry she mapped this afternoon" at the scene's penultimate sentence risks narrating what the image should carry. The [image: oswyn-network-subsumed-in-silence] does its work; the explanatory clause after it is the narrator doing the image's job. At the bones layer, the connection between the watcher-boy's missing position and Taylor's coverage matrix should be structural rather than stated — two bones, not one bone with a because-clause.
 
-**Body-count discipline / Wenna Cobb continuity:** s02 has no specific body-count content. Wenna Cobb (the c07 anchor at Eel Lane) is not named or referenced in c08 at all. This is a chapter-level continuity concern, not a s02-specific violation. See s03 discussion and chapter-level note below.
+### Dormancy discipline — five axes held in s01/s03, six in s02
 
----
+The held-axis rationales do real work in s01 (integration proceeds without ledger-entry; the reader-Taylor gap is enacted in the circuit-closes rhythm) and s03 (integration-completion and body-map advance both proceed without Taylor's accounting opening; the gap IS the scene's substance contribution without advancing the axis). In s02 the rationales are accurate but not load-bearing — they describe why axes don't move without generating pressure from the dormancy itself. That is acceptable for a staging chapter with this specific design (foreshadow-as-logistics-noise), but the s02 Aemond-gap-as-geometry watch item is the specific place where "accurate but not load-bearing" needs to become "the feed encounters something with shape."
 
-### s03 — courier-face beat 1 / Oswyn-integration confirmation
+### cl-d06 deferral judgment
 
-SUBSTANCE-FELT.
+CONCUR. Wren appears in coverage as a byproduct of the Oswyn-integration's geographic radius, but a byproduct is not the relational-anchor beat. The cl-d06 note in b01c06s01 describes "Wren becomes structurally necessary to the coverage map without appearing in the ledger" — that requires Wren's necessity to be the chapter's specific event, not a side effect of a chapter whose event is Oswyn. c09/c10 is the correct window. Defer confirmed.
 
-The courier-face beat lands correctly. Oswyn provides the name ("Corwick") and the pattern ("above his station; twice up the hill") in passing, without ceremony. The name-and-pattern drop into Taylor's feed as a position-lock — "the face she has had without a name now has the name, and the name has a pattern, and the pattern has a direction." This is the correct cf-d10-courier-face beat 1: the body-map advances by one node; the node now has a person-shape she can follow. Taylor does not follow it tonight. The restraint is correct.
+### Threshold discipline fires
 
-**Oswyn-integration confirmation image:** [image: oswyn-network-subsumed-in-silence] closes the chapter at "Oswyn does not know this. He is still talking when Taylor leaves." This is the Khepri-echo's second leg: the first leg (s01) was the geometric integration; the third scene confirms the integration is complete and operating without Oswyn's awareness while he is present and talking. The image and the closing line together constitute the reader-recognition without Taylor naming any of it. Discipline held.
+No walkout triggers. No catharsis-before-weight: the chapter closes on Oswyn still talking, not on resolution or recognition. No enemies pausing at convenient moments: Oswyn delivers the name in plain-contact social physics, not as a convenience arranged for Taylor. No magic-as-reliable-tool: the insect-feed is returning geometric positions, not analyzing intent; the labor of mapping is structural throughout. No world-as-set-dressing: the chandler's corner, the water-point, the watcher-boy with his slowing nail-rate — these are ward-bodies with their own physics before Taylor reads them.
 
-**[force: oswyn-unknowing-node-complete]:** The force annotation is structurally parallel to [force: taylor-coverage-integration-without-consent] in s01. Same watch applies: at write-time, the bones must not reproduce "unknowing" or "consent" in Taylor's interiority. Taylor's close is "She walks the remainder of the circuit" — not a recognition-beat, a continuation-beat. Carry watch to /and-write.
+### Aggregate verdict
 
-**s03 axes_in_motion: []** — zero axis moves. Capability advanced in s01; s03 closes the courier-face thread and confirms the integration without taking additional Δ. The note in the substance_delta rationale ("capability holds at rank 5 through scene-close") is correctly stated. The moral_framework rationale is correctly held: "no new ledger-entry; the integration completion and the body-map advance both proceed without Taylor's accounting opening." That is the correct held-discipline.
+SUBSTANCE-FELT
 
-**The word "patron-shape"** in the chunk text: "the pattern has a direction she can follow if she needs to follow it" and "a patron-shape she can recognize when she sees it again." This is not a lore-leak. "Patron-shape" is a generic Westerosi political-hierarchy observation — someone running errands above their station has a patron. No Worm-internal conceptual frame is required. Clean.
+Three scenes, one hard-watch on s02 (Aemond-gap must be geometric, not notational), one prose-discipline watch on s03 (near-miss explanatory clause after the final image). Neither is a hard finding. The chapter's design conceit (reader-Taylor recognition gap on the Khepri-echo) is calibrated correctly: readable without being underlined. The s01 architecture is the chapter's core, and it delivers.
 
----
-
-### Chapter-level assessment
-
-**Substance on held axes:** The chapter has capability +0.5 across three scenes with five axes held flat. The held-flat discipline is load-bearing in the following specific way: the chapter's work is not incremental moral deterioration — it is staging, and staging chapters must make the architecture legible to the reader without making it legible to Taylor. The s01 opposing-force annotation ("Oswyn's network as an independent system with its own social physics — a consent-requiring structure Taylor is absorbing without consent") names exactly the architecture that will become the chapter's downstream cost. The staging work is real because the reader-Taylor recognition gap is structurally present: a reader who has been following the ledger can see what Taylor cannot. That is not weightless. That is the chapter doing its designed work. SUBSTANCE-FELT holds across five held axes precisely because the held-flat discipline is legible as dormancy-under-pressure, not dormancy-as-absence.
-
-**Wenna Cobb continuity:** Wenna Cobb does not appear in c08. The c07 handoff named her as the body-anchor at Eel Lane. C08's quietness on the body-count front is a continuity-vacuum question. My read: the staging chapter's mandate is Oswyn-integration + Aemond-foreshadow + courier-face. The body-count discipline is not the chapter's active axis. However, Wenna Cobb's absence is not a continuity error — she is not in Taylor's active operational beat this chapter; she is in the coverage area but not the chapter's event-sequence. The body-count discipline requires that Wenna's existence remain legible in the architecture (she is in the coverage map; Taylor's feed passes over the area), not that she appears in every chapter's event-sequence. The quietness is not a vacuum; it is silence-as-architecture. The body-count continuity can be confirmed at write-time by a single bone that places Wenna within the feed's routine pass without making her an event. SOFT WATCH: at /and-write, one bone should confirm the body-count discipline by returning Wenna as an ordinary pass-through in the routine circuit — she is still there, still in coverage, still not in the ledger. This is a character-continuity beat, not a canon violation.
-
-**cl-d06 routing — CONCUR:**
-The draft's deferral rationale is correct. Wren appears in coverage this chapter — the relational_anchor_status rationale in s01, s02, s03 all note "Wren in coverage; no new weight." That is the correct status: Wren is inside the geometric architecture but is not yet structurally necessary to it. The "Wren becomes structurally necessary to the coverage map without appearing in the ledger" beat is the cl-d06 trigger. That beat belongs at c09 or c10, where the structural-necessity is a distinct event that can carry its own axis-move. Delivering it here, inside a capability-staging chapter where five axes are held flat, would either (a) force an additional relational_anchor_status increment on top of the capability increment, breaking the held-discipline contract, or (b) bury the beat inside a chapter whose primary design conceit is reader-Taylor recognition gap on the Khepri-echo — where a Wren-structural-necessity beat would compete for the same reader-recognition bandwidth. Deferral is correct. CONCUR.
+hard_findings: none
+watch_items:
+  - s02 WATCH: Aemond-gap-as-geometry — at /and-write, the handler-rotation bone must deliver the name's coverage-absence as a geometric fact (a shape in the feed the coverage cannot reach), not as a notation of absence; "the name does not appear in her current coverage" is not enough; needs one bone that makes the gap have dimension
+  - s03 WATCH: near-miss explanatory clause — "because his position is now inside Taylor's coverage matrix, covered by the geometry she mapped this afternoon" should be two structurally separate bones at the bones layer; the because-clause is the narrator explaining the image; the image should carry it; the prior scene (s01) already did the mapping; s03 should enact the completion (watcher-boy's position absent from where it was; Taylor's coverage there instead) without the explanatory bridge
+cl_d06_routing: CONCUR — deferral to c09/c10 correct; Wren in coverage as byproduct is not the relational-anchor beat
 
 ---
-
-### Hard findings
-
-NONE. Earth-Bet fence is CLEAN across all three scenes. No parahuman jargon. No Khepri named in Taylor's interior. No override-pattern named in Taylor's interior. No lore-dump. The Aemond-entry stays in logistics-class notation. The chapter's fence discipline holds.
-
-### WATCH-items for /and-write
-
-1. **[force: taylor-coverage-integration-without-consent] prose discipline (s01):** The force annotation names the moral event for structural tracking. The prose bones must not reproduce "consent," "override," or "integration without permission" in Taylor's interiority. Taylor's prose-voice must read: gap noted, geometry filed, circuit continues. If any bone gives Taylor the Khepri-recognition, that is a fence violation at prose level.
-
-2. **Escalation-engine images (s02):** [image: escalation-engine-visible-at-feed-edge] and [image: feed-geometry-acquires-a-new-edge] are reader-framing labels. Taylor's bones must read geometrically — "the edge is lit at low intensity, and it was not lit before" is the correct prose register. No bone should reproduce "escalation engine" in Taylor's interior.
-
-3. **[force: oswyn-unknowing-node-complete] prose discipline (s03):** Same as watch-1. Taylor's close is a continuation-beat, not a recognition-beat. "Oswyn does not know this" is narrator-voice in the chunk; at bone level, it must be enacted through Taylor's physical departure and the feed's continued coverage, not through Taylor naming Oswyn's unknowing.
-
-4. **Wenna Cobb body-count continuity (chapter-level):** One bone in the routine circuit pass should place Wenna as an ordinary feed-return — present in coverage, not an event. This confirms body-count discipline from c07 without forcing a character scene. Soft carry only; not a HARD gate.
-
-5. **Insect-feed density target (s01, 0.5-0.65):** The integration mechanism must read as operational-texture, not as a set-piece. The bone-count for s01 should not exceed what is needed to carry the [image: two-surveillance-architectures-occupying-the-same-ground] recognition. If the bones over-develop the sightline-geometry enumeration, the scene tips from texture to spectacle. Target: the three watchers (boy, woman, cobbler's apprentice) as brief physical-body returns in the feed, then geometry-filed-and-closed. Not a three-watcher taxonomy scene.
-
----
-
-verdict_per_scene:
-  b01c08s01: SUBSTANCE-FELT
-  b01c08s02: SUBSTANCE-FELT
-  b01c08s03: SUBSTANCE-FELT
-chapter_verdict: SUBSTANCE-FELT
-earth_bet_fence_verdict: CLEAN
-hard_findings: []
-soft_findings:
-  - WATCH-1: s01 force-annotation prose discipline (consent / override not in Taylor's interiority)
-  - WATCH-2: s02 escalation-engine images not in Taylor's prose-voice
-  - WATCH-3: s03 force-annotation prose discipline (unknowing not named by Taylor)
-  - WATCH-4: Wenna Cobb body-count continuity bone at write-time (soft; not a HARD gate)
-  - WATCH-5: s01 insect-feed density — operational-texture, not watcher-taxonomy set-piece
-cl_d06_routing: CONCUR — deferral to c09/c10 correct; Wren in coverage but not yet structurally necessary; structural-necessity beat belongs at c09/c10 where it can carry its own axis-move without competing with the Khepri-echo recognition bandwidth
-canonicity_findings:
-  - Khepri-echo discipline: HELD — reader-side recognition fires on [image: two-surveillance-architectures-occupying-the-same-ground]; Taylor's interior reads operational-not-recursive throughout s01 and s03
-  - Override-architecture-residue: OPERATIONAL — texture, not spectacle; biological-relay physical contact; no range inflation; no mythology
-  - Aemond logistics-noise: HELD — possessive chain-of-responsibility notation; flat register; affect does not advance; feed-geometry change correctly distinguished from resentment-advance
-  - Earth-Bet noun fence: CLEAN — no parahuman jargon; no Khepri in prose; inner-monologue-rare cap not tested (no Gold Morning reference this chapter)
-  - Multi-shard fence: CLEAN — integration is insect-network geometry, not body-coordination; Oswyn's watchers are observed, not directed; the fence is respected
-carry_forward:
-  - WATCH-1 through WATCH-5 carried to /and-write b01c08
-  - b01c07 prose-burden soft finding carries forward to b01c07 /and-write (unchanged)
 
 ## b01c08 /and-write Phase 4 trim
 
-reviewer: worm-canon-pedant
 date: 2026-05-31
 chapter: b01c08
 scenes_reviewed: [b01c08s01, b01c08s02, b01c08s03]
@@ -742,3 +631,117 @@ key_canonicity_confirmations:
   - s02: Otto apparatus terrain-precise request (gate-tower boundary n05, rendering-yard boundary n03) — irony-complete before Taylor stills; override-vs-surveillance uncontaminated
   - s03: cl-d06 settled across two ledger-acts (n10/n11); refusal-without-explanation (n04/n05) enacted as physical withholding not interior enumeration; lift-and-move close correct (n12)
   - s04: n14 causal bridge canon-clean; accumulation sequence (n14/n03/n04/n05/n06/n07/n08) earns shape-word weight; suppression three-phase sequence (n09 arrives / n10 routes around / n11 closes) canonically correct; moral_framework -1.0 (n13) lands as ledger-act not emotional event
+
+## 2026-06-04 — /and-substance chapter b01c15 Phase 5 chunk review
+
+chapter: b01c15
+date: 2026-06-04
+dispatch_mode: three-card plan-review
+scenes_reviewed: [b01c15s01, b01c15s02, b01c15s03, b01c15s04]
+
+verdict_per_scene:
+  b01c15s01: SUBSTANCE-FELT
+  b01c15s02: SUBSTANCE-FELT
+  b01c15s03: SUBSTANCE-FELT
+  b01c15s04: SUBSTANCE-FELT
+
+chapter_verdict: SUBSTANCE-FELT
+hard_findings: none
+SUBSTANCE-FLAT: none
+SUBSTANCE-SUSPECT: none
+overall: ACCEPT
+
+### Canonicity findings
+
+**Aemond age/sapphire-eye:** "Aemond Targaryen, twelve years old" — born 110 AC, 122 AC = 12. TRACK. Sapphire eye for 122 AC is post-Driftmark (120 AC) and correct. The "Vhagar-behavioral-imprint-gait-read" annotation (wide ground-check, angle accounting for a body much larger than the boy's) is HotD/F&B consistent for Aemond's established physical imprinting from Vhagar-bonding. No flag.
+
+**Vhagar backgrounded:** Dragon never on-stage. Taylor reads it through thermal/pressure backwash via flight-musculature resistance in arch-flies. This is the same mechanism validated at book Phase 5 attempt 2 (CANON-CONSISTENT ruling). No regression. cond-dragon-proximity-122ac honored.
+
+**Earth-Bet noun fence:** CLEAN. Reviewed entire chunk. Mechanism language: "compound eyes," "flight-musculature," "thermal-resistance," "signal-interference," "insect-feed," "arch-fly density," "coverage map," "feed-disruption," "fringe-fly," "compound-eye fringe-degradation." All functional-descriptive, no parahuman jargon. No Khepri. No Gold Morning. No shard, no Manton, no trigger-event. The chunk's own constraint-check confirms this, and the review confirms the confirmation. FENCE CLEAN.
+
+**Insect-feed thermal detection:** Flies in warm airstream register it as motion-pressure (changed resistance in flight-musculature). This is mechanically correct for insect-biology: insects do not have mammal thermoreceptors; they read thermal differences as changed environmental resistance. The arch-fly density producing a differential read (bay-warm vs. hill-warm vs. dragon-added-weight) is consistent with how Taylor has always used density gradients — more insects = finer resolution on environmental differences. Two months of coverage at this margin earning this competency is the correct time-frame framing (coverage-as-procedure, not capability-as-broadcast). No range inflation: the passage-arch is physically proximate to the Red Keep outer court. TRACK.
+
+**Gap-as-negative-shape mechanism:** The mechanism builds on the canon-confirmed logic from book Phase 5 attempt 2: disruption creates contrast; contrast makes the structured absence perceptible. The specific execution here — fringe-flies have thermal-noise and resolution-dropout (known interference character); the gap's clean absence has no noise (different character); the figure-ground relationship makes the gap perceptible as a gap — is mechanically sound Worm-physics. Taylor reads the feed's texture as a data layer alongside its content-layer. This is established in canon. TRACK.
+
+**Social_tether-antag 9-LOCK via non-extractable confirmation:** The +1.5 draw across S2+S3 completes cl-antag-d03. The c14 confirmation (non-extractable structural fact) is the prior knowledge Taylor draws on in S2 when she names "the apparatus's awareness that the architecture exists." The c14 STM records confirm this as established operational knowledge (cl-antag-d10 COMPLETE at c14). This is not unmotivated knowledge — she knows because c14 established it. TRACK.
+
+**Political_register-prot +0.5 (S1):** Aemond through compound eyes, coercive register. The "grammar of receiving no-as-inadequate-theory" is a behavioral observation through the feed — Taylor reads posture and interpersonal geometry, which is established capability. The "Vhagar-behavioral-imprint-gait-read" mechanism is specific and functional. No inference leap that requires knowledge beyond what the feed returns and what prior context established. TRACK.
+
+### Axis-slug vocabulary (soft flag — canonical register concern)
+
+Two sentences in the chunk use axis-slug vocabulary in what reads as Taylor's observational register:
+- S1, chunk prose: "The political_register-prot entry does not change with what she is watching; the entry that was already there — the one that had the word in it by c13 — deepens by accumulation, not addition."
+- S3, chunk prose: "The relational_anchor_status advances: the exclusion is no longer something Taylor knows abstractly in the accounting..."
+
+Taylor's cold-utilitarian interior does not use axis-slug terminology. This language is planning-document self-commentary bleeding into what should be Taylor's POV. In prior chapters (c04, c05, c12), this pattern has been consistently stripped at the bones layer. The established pattern holds — at chunk stage this is an acceptable planning annotation; at /and-write this must be stripped and converted to physical enacted acts.
+
+SOFT FLAG: axis-slug vocabulary in two chunk paragraphs; must not survive to bones. Registered as SW-WCP-c15-1. Not a chunk-level block. The prior-chapter pattern provides the correct execution baseline: Taylor's interiority uses operative accounting language ("files it as," "notes in the record as," "does not open a ledger entry") never the slug names themselves.
+
+### Chapter goal coverage
+
+goal: Show Aemond through compound eyes (escalation engine in physical form), Vhagar proximity as full-load confirmation, gap-lane negative-shape as perceptual relational_anchor advance, tether at 9-LOCK. LAND on all four:
+- Aemond compound-eye read: S1 — LAND
+- Vhagar proximity / tether full-load: S2 — LAND
+- Gap-lane negative-shape / relational_anchor +1.5: S3 — LAND
+- Accounting close / cascade-space: S4 — LAND
+
+### Verdict
+
+SUBSTANCE-FELT — all four axes deliver within contract; canonicity findings clean; Earth-Bet fence clean; Aemond and Vhagar correctly handled per established project conditions; one soft flag on axis-slug vocabulary (bones-execution watch, not block).
+
+earth_bet_fence_verdict: CLEAN
+hard_findings: none
+SUBSTANCE-FLAT: none
+SUBSTANCE-SUSPECT: none
+
+soft_findings:
+  - SW-WCP-c15-1: axis-slug vocabulary in S1 chunk prose ("political_register-prot entry") and S3 chunk prose ("relational_anchor_status advances") — must not survive to bones; Taylor's interiority does not name axis slugs; bones-execution watch; not a chunk-level block
+  - SOFT (carried forward): b01c07 prose-burden — Halvard tether-gain; carries to b01c07 /and-write (unchanged from prior sessions)
+
+canonicity_findings:
+  - Aemond age/sapphire-eye: CLEAN — 12 in 122 AC (born 110 AC), sapphire post-Driftmark (120 AC), Vhagar-behavioral-imprint HotD-consistent
+  - Vhagar backgrounded: CLEAN — thermal/pressure backwash only; never on-stage; cond-dragon-proximity-122ac honored
+  - Earth-Bet noun fence: CLEAN — all mechanism language functional-descriptive; no parahuman jargon; fence respected throughout
+  - Thermal-detection mechanism: CANON-CONSISTENT — insect flight-musculature resistance model; arch-fly density gradient; two-month competency correctly framed as learned procedure; no range inflation
+  - Gap-negative-shape mechanism: CANON-CONSISTENT — disruption-creates-contrast logic validated at book Phase 5 attempt 2; specific fringe-character vs. absence-character execution is mechanically sound Worm-physics
+  - Non-extractable knowledge: CLEAN — c14 cl-antag-d10 established the operational fact; c15 draws on it correctly; no unmotivated knowledge
+  - Multi-shard fence: CLEAN — coverage reading and thermal detection; no body-direction; no nervous-system coordination
+
+## 2026-06-04 — /and-write b01c15 Phase 6 bone-gate
+
+reviewer: worm-canon-pedant
+chapter: b01c15
+phase: write-bone-gate
+date: 2026-06-04
+scenes_reviewed: [b01c15s01, b01c15s02, b01c15s03, b01c15s04]
+
+verdict_per_scene:
+  b01c15s01: SUBSTANCE-FELT
+  b01c15s02: SUBSTANCE-FELT
+  b01c15s03: SUBSTANCE-FELT
+  b01c15s04: SUBSTANCE-FELT
+
+chapter_aggregate: SUBSTANCE-FELT
+hard_findings: none
+SUBSTANCE-FLAT: none
+SUBSTANCE-SUSPECT: none
+
+SW_c15_2_disposition: SATISFIED — n03 ("east-water-gate lanes return silence to the feed") and n04 ("gap-lane opens a hole in the feed-image") deliver the specific feed-texture contrast at bone level; gap returns silence, fringe returns signal-interference; figure-ground rendered as physical fact in the feed (no perception verb, no interior label); mechanism is the feed returning its signal, not Taylor interpreting
+SW_c15_3_disposition: SATISFIED — S04 contains seven distinct physical acts (n03 circuit-close through n09 afternoon-circuit); n05 is the stylus-act, not a recap; n08 (stylus lifted past name-field) is the absence enacted as a physical gesture; no S03 restatement; no drawn conclusion
+
+earth_bet_fence_verdict: CLEAN — all 40 bones and axes_held rationales reviewed; no parahuman jargon; no Khepri; no Gold Morning; Vhagar backgrounded as thermal/pressure residue only; Aemond's sapphire and behavioral imprint rendered through functional-descriptive language throughout
+
+canonicity_findings:
+  - Aemond age/sapphire-eye: CLEAN — 12 in 122 AC; sapphire post-Driftmark; behavioral characterization (wide ground-check, approach-angle, weight-ready) is HotD-consistent post-Vhagar-bonding
+  - Vhagar backgrounded: CLEAN — thermal/pressure backwash at bone level (arch-flies judder, flight-muscles labor, hill-warm vs bay-warm differential); never on-stage; cond-dragon-proximity-122ac honored
+  - Thermal-detection mechanism: CANON-CONSISTENT — flight-musculature registers warm airstream as motion-pressure (changed resistance); the mechanism is physically correct insect-biology; no mammalian thermoreceptor attribution; two-month competency confirmed in bone structure (n03 cl05 completion)
+  - Gap-negative-shape mechanism: CANON-CONSISTENT — noisy fringe (thermal-noise + resolution-dropout) creates contrast against clean gap (no noise = no signal-interference); the disruption reveals the structured absence by contrast; this is the confirmed disruption-creates-contrast logic; no mythology; no range inflation
+  - SW-WCP-c15-1 RESOLVED: axis-slug vocabulary ("political_register-prot entry" / "relational_anchor_status advances") from chunk stage does not appear in any bone SVO; bones use operative accounting language ("coverage record," "site-condition," "notation," "morning circuit"); fence held throughout
+  - Multi-shard fence: CLEAN — coverage reading and thermal detection; no body-direction; no nervous-system coordination; all 40 bone SVOs verified
+
+soft_findings:
+  - SOFT (carried forward): b01c07 prose-burden — Halvard tether-gain; carries to b01c07 /and-write (unchanged; this finding predates c15)
+
+carry_forward:
+  - No new soft findings from this gate; SW-WCP-c15-1 resolved at bone layer
+  - b01c07 prose-burden carries forward unchanged

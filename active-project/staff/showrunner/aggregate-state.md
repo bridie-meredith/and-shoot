@@ -1,7 +1,43 @@
 # Aggregate State — taylor-westeros-good-intentions
 
 # Rolling forward-feed channel for cross-chapter narrative continuity (schema: schemas/aggregate-state.schema.md).
-# Producer: /and-stitch Phase 10 (forward-thread). Consumer: /and-substance chapter b01c15 Phase 0.
+# Producer: /and-stitch Phase 10 (forward-thread). Consumer: /and-substance chapter b01c16 Phase 0.
+# Scoped through b01c15. c15 rolled (falling, close-of-rise; the Aemond-on-stage + gap-as-negative-shape chapter;
+#   from chapters[b01c15].substance_delta_measured):
+#   social_tether-antag +1.5 (->9.0, **9-LOCK**; cl-antag-d03 COMPLETE — riding on the c14 cl-antag-d10 confirmation,
+#     the channel-found-from-both-ends recognition @9 ('a channel found from both ends does not unmake. The read that
+#     grounded me here was the same one that had closed the way out') completes the non-extractable lock at full depth),
+#   relational_anchor_status +1.5 (->7.0; cl04 c15 draw of cl04's +3 total — c14 drew +1.0, c15 +1.5, +0.5 remains
+#     later: the Vhagar-backwash feed-degradation renders the deliberately-uncovered east-water-gate gap PERCEPTIBLE
+#     as a person-sized negative shape @11/@13 ('the absence was the shape... the edge was person-sized, the clearing
+#     I had kept blank for eleven months'); Wren's exclusion is now reader-PERCEPTIBLE as a deliberate structure of
+#     not-covering, held suppressed-register-safe @13 'set no name down'),
+#   political_register-prot +0.5 (->5.5; Aemond-specimen accumulation-within-band — the prince through compound eyes
+#     is one more item of court content the feed returns with color Taylor cannot neutralize; toward contempt-saturation),
+#   capability +1.0 (->7.5; cl05 gain-side COMPLETE — Aemond observation adds scope, coverage acknowledged fully
+#     load-bearing; the cost-side moral_framework -1 was already paid c12).
+#   HELD: social_tether-prot-rise 8.5 (peak already reached c12; c15 enacts the embedded weight made perceptible via
+#     the gap-lane negative-shape, NOT a new structural addition — RECONCILED Phase 0/Phase 5 fault-001), moral_framework
+#     -2 (no new breach; Aemond observation routed to no one), position-prot-rise 6.0 (peak; no new formalization),
+#     moral_legibility_to_self 6.0 (Aemond routed to no one; recognition deferred), social_tether-prot-collapse 8 +
+#     position-prot-collapse 7 (collapse axes still dormant at start_rank), position-world 7, political_register-world 7.
+#   hook-0006 (Aemond-adjacent pressure, planted c08 as logistics-reference) ADVANCED to ON-STAGE: Aemond now ON-PAGE-
+#     observed through compound eyes (face logged: blue-stone left socket, Vhagar behavioral imprint, coercive register)
+#     and explicitly logged-NOT-ROUTED (@7 'I routed nothing of him anywhere'; @13 'I was not routing a twelve-year-old
+#     to a patron'). Hook stays open (escalation-engine now visible, payoff future). hook-0016 ADDED (gap-as-negative-
+#     shape perceptually confirmed — the east-water-gate exclusion is now reader-perceptible as a deliberate structure;
+#     transient, visible only during the Vhagar backwash then normalized @13).
+#   aemond-targaryen promoted (logistics-reference c08 -> ON-PAGE-observed c15; reader_legibility cipher->partial).
+#   master-at-arms appended (cipher walk-on, c15). Wren NOT on-page (negative-shape only; anchor 7.0; exclusion now
+#     reader-perceptible). world_state +2/updated (aemond-at-court-observable, vhagar-eastern-slope-proximity, the-
+#     east-water-gate-gap perceptual-confirmation noted).
+#   0 threading edits applied (every callback already on-page — the draft carries the hook-0006 bridge @5 'the name
+#     behind a handler's note; here he was a body', the Wren suppressed-register exclusion @13, the non-extractable
+#     continuity @9, the calendar/season anchor @9/@11/@13); STATE-DRIFT none (three distinct clocks — KL-tenure
+#     eleven-months / Vhagar-read two-months / arrangement third-month — all coherent); PASS-THREAD; 0 substantive
+#     parking-lotted; 0 unacknowledged-substantive (b01c16 Phase 0 CLEAR). NOTE: the c15 cold-read SHIPPED-WITH-CAVEATS
+#     depth_pass_required:true (event-poverty + uninformedness) + the open c14 pl-2026-06-04-002 (courier-as-person)
+#     both gate book-close; neither is a Phase-10 threading finding; both independent of this pass.
 # Scoped through b01c14. c14 rolled (climax, d14; the non-extractable-confirmation + cl04-courier-closure chapter;
 #   from chapters[b01c14].substance_delta_measured):
 #   relational_anchor_status +1.0 (->5.5; cl04 chapter-draw of cl04's +3 total — c14 draws +1.0, c15 +1.5, +0.5 later;
@@ -105,8 +141,8 @@ aggregate_state:
   version: 1
   project: taylor-westeros-good-intentions
   through_book: b01
-  through_chapter: b01c14
-  last_updated: 2026-06-04T03:45:00Z   # c14 climax threaded (cl04 + cl-antag-d10 + cl-d07a): 4 axes moved (relational_anchor_status +1.0 -> 5.5 cl04 chapter-draw + retroactive Wren-naming; social_tether-antag +1.5 -> 7.5 cl-antag-d10 COMPLETE non-extractable confirmed (9-LOCK deferred to c15); position-prot-rise +1.0 -> 6.0 cl-d07a COMPLETE position-of-no-exit named; moral_legibility_to_self +0.5 -> 6.0 recognition-present-and-suppressed, deepest crack pre-full-recognition), all others HELD. hook-0015 PAID@c14 (gap-lane courier confirmed+detained); hook-0012 ADVANCED-but-open (cloth-merchant flight = Dragonstone-pressure escalated); hook-0014 INVERTED-but-open (11-week-withheld walk-detail delivered as confirming instrument). gap-lane-courier appended (detained; reader_legibility partial — depth-pass pl-2026-06-04-002); Wren last_appearance b01c12->b01c14 (off-page @21 retroactive-naming; anchor 5.5; exclusion-pattern reader-visible); cloth-merchant last_appearance b01c11->b01c14 (FLED). world_state +3 (cloth-merchant-stall-foreclosed, dragonstone-aware-of-lower-city-apparatus, two-courier-detentions). 0 revision_layer entries (0 cosmetic + 0 presentation-reinforcement — every callback already on-page; PASS-THREAD), 0 unacknowledged-substantive (c15 Phase 0 CLEAR). 1 uncertain held (cloth-merchant c11-burn callback; overlaps pl-2026-06-04-002 S01 depth-pass scope). Phase 0 handoff_conflicts pre-corrected position-prot-rise (5.0) + social_tether-antag (6.0) baselines; draft verified consistent.
+  through_chapter: b01c15
+  last_updated: 2026-06-04T07:00:00Z   # c15 falling/close-of-rise threaded (Aemond on-stage + gap-as-negative-shape): 4 axes moved (social_tether-antag +1.5 -> 9.0 cl-antag-d03 COMPLETE 9.0-LOCK; relational_anchor_status +1.5 -> 7.0 cl04 c15 draw, +0.5 remains, gap-lane exclusion now reader-PERCEPTIBLE as negative shape; political_register-prot +0.5 -> 5.5 Aemond-specimen accumulation-within-band; capability +1.0 -> 7.5 cl05 gain-side COMPLETE), all 8 others HELD (social_tether-prot-rise 8.5, moral_framework -2, position-prot-rise 6.0, moral_legibility_to_self 6.0, social_tether-prot-collapse 8 dormant, position-prot-collapse 7 dormant, position-world 7, political_register-world 7). hook-0006 ADVANCED to ON-STAGE (Aemond now ON-PAGE-observed + logged-NOT-routed; stays open); hook-0016 ADDED (gap-as-negative-shape perceptually confirmed; transient). aemond-targaryen added/promoted (logistics-reference c08 -> ON-PAGE-observed c15, reader_legibility cipher->partial); master-at-arms appended (cipher walk-on); wren last_appearance b01c14->b01c15 (NOT on-page, negative-shape only; anchor 5.5->7.0; exclusion now reader-perceptible). world_state +2 (aemond-at-court-observable, vhagar-eastern-slope-proximity) + the-east-water-gate-gap perceptual-confirmation noted. 0 threading edits applied (every callback already on-page — hook-0006 bridge @5, Wren suppressed-register exclusion @11/@13, non-extractable continuity @9, calendar/season anchors @9/@11/@13); STATE-DRIFT none (three clocks — KL-tenure eleven-months / Vhagar-read two-months / arrangement third-month — all coherent); 0 revision_layer entries (0 cosmetic + 0 presentation-reinforcement); PASS-THREAD; 0 substantive parking-lotted; 0 unacknowledged-substantive (b01c16 Phase 0 CLEAR). NOTE: the c15 cold-read SHIPPED-WITH-CAVEATS depth_pass_required:true (event-poverty + uninformedness) + the open c14 pl-2026-06-04-002 (courier-as-person) both gate book-close; neither is a Phase-10 threading finding; both independent of this pass.
   last_updated_by: and-stitch-phase-10
 
   axis_state:
@@ -119,12 +155,12 @@ aggregate_state:
       notes: "monotonic collapse; c03 first price-tagged breach (-1.0, cl02) + c06 first named-person delivery (-1.0, cl-d06) + c10 -1.0 (cl03a cost side: Corwick body-map delivered and deployed against a named person now detained; systematic-override-rationalized threshold crossed) + c12 -1.0 (cl05 cost side: irrevocable-Khepri-repetition threshold crossed at full-feed scale @42; the internal accounting's natural shape-word is the Khepri name, surfaced for one count and SUPPRESSED — the suppression IS the breach-column ledger entry; systematic-override now irrevocable at full scale). rank -2 = prohibition fully a calculable variable + override systematic + the architecture now structurally irrevocable; c07/c08 HELD (consolidation + un-logged Oswyn integration); c09/c11 HELD"
 
     - axis: capability
-      rank: 6.5
+      rank: 7.5
       start_rank: 2
-      delta_since_start: 4.5
-      last_movement_at: b01c12
+      delta_since_start: 5.5
+      last_movement_at: b01c15
       last_updated_by: and-stitch-phase-10
-      notes: "ESTIMATE-DIVERGENCE (pre-c12) — measured-delta path (c01 +1.0 / c04 +2.0 measured / c08 +0.5) = 5.5; handoff_out narratives carried 5.0 (stale lineage pre-c04 +1.5→+2.0 /and-write redo). c12 +1.0 (cl05 gain side, two tranches: s01 first ward-cluster +0.5 + s04 second ward-cluster +0.5 = full-deployment threshold crossed) -> 6.5; the c12 handoff_out was corrected to MEASURED 6.5 at /and-write Phase 7 (was stale 6->6.5 book-author lineage). Recorded at measured-authoritative 6.5. c12 = architecture complete in scope: all five wards + Flea Bottom approaches mapped simultaneous, the-muddy-way ward added (last cluster), not walked back by pulling any single node. c08 added Oswyn watcher-network integration (Khepri-echo in method); c02/c03/c05/c06/c07/c09/c10/c11 HELD"
+      notes: "ESTIMATE-DIVERGENCE (pre-c12) — measured-delta path (c01 +1.0 / c04 +2.0 measured / c08 +0.5) = 5.5; handoff_out narratives carried 5.0 (stale lineage pre-c04 +1.5→+2.0 /and-write redo). c12 +1.0 (cl05 gain side, two tranches: s01 first ward-cluster +0.5 + s04 second ward-cluster +0.5 = full-deployment threshold crossed) -> 6.5; recorded at measured-authoritative 6.5. c12 = architecture complete in scope: all five wards + Flea Bottom approaches mapped simultaneous, the-muddy-way ward added (last cluster). c15 +1.0 (cl05 gain-side COMPLETE: the Aemond observation adds SCOPE — the passage-adjacent ward abutting the court's traffic returns a court-tier specimen the coverage reads behaviorally through compound eyes (specimen-accumulation, the two-runs-is-a-finding read @7); coverage acknowledged fully load-bearing. The cost-side moral_framework -1 was already paid c12, so c15 draws the gain-side only). c08 added Oswyn watcher-network integration (Khepri-echo in method); c02/c03/c05/c06/c07/c09/c10/c11/c13/c14 HELD"
 
     - axis: position-prot-rise
       rank: 6.0
@@ -143,12 +179,12 @@ aggregate_state:
       notes: "collapse phase dormant until d10 (non-extractable confirmed); sits at peak-state start_rank 7 through c08; cl07b not yet anchored"
 
     - axis: relational_anchor_status
-      rank: 5.5
+      rank: 7.0
       start_rank: 1
-      delta_since_start: 4.5
-      last_movement_at: b01c14
+      delta_since_start: 6.0
+      last_movement_at: b01c15
       last_updated_by: and-stitch-phase-10
-      notes: "HIGH=WORST; c02 +1.0 (Wren enters coverage map as named function-node, account opens) + c06 +1.0 (first spoken exchange; weight added by Wren's omission from deliverable, cl-d06) + c09 +0.5 (cl-d08 first tranche: Wren now a mapped pattern/route in the internal map — 'the map takes Wren's pattern... clean, indexed, kept' — structurally present without ledger entry) + c12 +1.0 (cl-d08 mechanism / cl-d06 debt: the lane-refusal SETTLEMENT — Taylor declines to cover the east-water-gate lanes because Wren's free movement through them constitutes the coverage map's eastern boundary; the +1.0 axis-move simultaneously settles the outstanding cl-d06 2nd tranche that reached end of window unsettled while held flat c08-c11. One axis-move, one mechanism, settles both — no name set down. DEC-0071) + c14 +1.0 (cl04 chapter-draw of cl04's +3 total; c15 draws +1.5, +0.5 later: the NARRATIVE ledger-entry on the gap-lane courier OPENS (S03 +0.5, confirmation written) + CLOSES (S04 +0.5, figure detained), and the cl04 closing-logic RETROACTIVELY NAMES the un-priced Wren omission @21 — the open item in the adjacent column-format running the same logical function as the closed one; held one breath, suppressed, no name set down). c08/c13 HELD. cl04 ARC continues at c15. Wren still structurally necessary to the coverage map without a ledger entry; the exclusion-pattern is now reader-visible via the shared-column parallel. Closed pl-2026-05-30-001 / pl-2026-06-02-stitch-thread-002; hook-0003 PAID at c12"
+      notes: "HIGH=WORST; c02 +1.0 (Wren enters coverage map as named function-node, account opens) + c06 +1.0 (first spoken exchange; weight added by Wren's omission from deliverable, cl-d06) + c09 +0.5 (cl-d08 first tranche: Wren now a mapped pattern/route in the internal map — 'the map takes Wren's pattern... clean, indexed, kept' — structurally present without ledger entry) + c12 +1.0 (cl-d08 mechanism / cl-d06 debt: the lane-refusal SETTLEMENT — Taylor declines to cover the east-water-gate lanes because Wren's free movement through them constitutes the coverage map's eastern boundary; settles the cl-d06 2nd tranche while held flat c08-c11. One axis-move, one mechanism, settles both — no name set down. DEC-0071) + c14 +1.0 (cl04 chapter-draw; the gap-lane courier ledger-entry OPENS + CLOSES, and the cl04 closing-logic RETROACTIVELY NAMES the un-priced Wren omission @21 via the shared-column parallel; held one breath, suppressed, no name set down) + c15 +1.5 (cl04 c15 draw of cl04's +3 total; +0.5 remains later: the Vhagar-backwash feed-degradation renders the deliberately-uncovered east-water-gate gap PERCEPTIBLE as a person-sized negative shape @11/@13 — 'the absence was the shape... the edge was person-sized, the clearing I had kept blank for eleven months'; Wren's exclusion is now reader-PERCEPTIBLE as a deliberate structure of not-covering, held suppressed-register-safe @13 'set no name down.' Negative-shape: the exclusion moves from c14 column-parallel-visible to c15 perceptually-confirmed). c08/c13 HELD. cl04 ARC continues (+0.5 remains). Wren still structurally necessary to the coverage map without a ledger entry. Closed pl-2026-05-30-001 / pl-2026-06-02-stitch-thread-002; hook-0003 PAID at c12; hook-0016 (gap-shape-now-perceptible) opened at c15"
 
     - axis: moral_legibility_to_self
       rank: 6.0
@@ -159,12 +195,12 @@ aggregate_state:
       notes: "non-linear; c02 +0.5 (coverage-map recognition arrives + suppressed under harm-reduction) + c06 +0.5 (honest accounting of name-delivery deepens the crack) + c10 +0.5 (detention visible in feed; Taylor runs the accounting and files Corwick as a closed entry — suppressed recognition event, crack deepens but does not open; the lower-gate face persists in the feed-record where the ledger keeps no column). c12 HELD at 5.5 — the Khepri shape-word surfaced in the full-scale accounting for the duration of ONE count and was SUPPRESSED before it could settle; the crack is present (same suppression pattern) but does NOT open. c12's suppression is the last/most-intense pre-opening event before c14. c14 +0.5 (->6.0; the d14-range deepest-crack-before-full-recognition: Taylor holds the closed cl04 entry and the un-entered Wren item in the same accounting-look @21 and does NOT let the shape settle; the Gold-Morning echo @42 'a city, a different kind of count, a different kind of named-and-unpriced' surfaces SHAPE-ONLY (Earth-Bet fence clean) for one breath and is suppressed. Recognition PRESENT and SUPPRESSED — the crack deepens but the full recognition (where the suppression finally fails) is deferred beyond c14). c07 genuine-engagement-with-Halvard but resolution deferred not advanced; c08/c09/c11/c13 HELD"
 
     - axis: political_register-prot
-      rank: 5
+      rank: 5.5
       start_rank: 1
-      delta_since_start: 4
-      last_movement_at: b01c13
+      delta_since_start: 4.5
+      last_movement_at: b01c15
       last_updated_by: and-stitch-phase-10
-      notes: "monotonic; c05 +1.5 (first resentment color, cl-d05 first tranche; neutral-instrumentally-observant foreclosed) + c07 +0.5 (Halvard encounter forces articulation of resentment's object) + c09 +0.5 (cl-d05 continuation: resentment-color deepens on a named particular — the lower-gate/Corwick faction-inference, 'a thing already written... a direction I did not infer so much as recognize') + c13 +1.5 (ARTICULATE-CONTEMPT THRESHOLD crossed: the d09-trajectory articulated-contempt milestone — diffuse resentment becomes NAMED BY NAME; two feed-events in one week (s01 provisioning-humiliation, the copper-margin worked as a tool; s02 magistrate-pretext, the form written before the answer) land the word in the functional register at s03 @23 — 'contempt. Not resentment... a verdict about quality, and the evidence was already counted and already true.' The word arrives as a finding-not-a-decision (@27): 'it did not bend the route by a single stone.' The contempt-WITHOUT-refusal shape at first appearance, three @ +0.5 each across s1/s2/s3). c08 HELD (Aemond feed-ref is logistics, not behavioral)"
+      notes: "monotonic; c05 +1.5 (first resentment color, cl-d05 first tranche; neutral-instrumentally-observant foreclosed) + c07 +0.5 (Halvard encounter forces articulation of resentment's object) + c09 +0.5 (cl-d05 continuation: resentment-color deepens on a named particular — the lower-gate/Corwick faction-inference) + c13 +1.5 (ARTICULATE-CONTEMPT THRESHOLD crossed: diffuse resentment becomes NAMED BY NAME; two feed-events in one week land the word in the functional register at s03 @23 — 'contempt. Not resentment...'; the contempt-WITHOUT-refusal shape, three @ +0.5 across s1/s2/s3) + c15 +0.5 (Aemond-specimen accumulation-within-band: the prince through compound eyes is one more item of court content the feed returns with color Taylor cannot neutralize — the sapphire holding flat light, the master-at-arms yielding without being asked, the coercive register; toward contempt-saturation. NOTE: c08's Aemond feed-ref was logistics-only; c15 is the BEHAVIORAL on-page observation, hence the register-advance). c08 HELD (Aemond feed-ref was logistics, not behavioral)"
 
     - axis: social_tether-prot-rise
       rank: 8.5
@@ -183,12 +219,12 @@ aggregate_state:
       notes: "collapse phase dormant until d10 (non-extractable confirmed); sits at peak-state start_rank 8 through c08; cl07a not yet anchored"
 
     - axis: social_tether-antag
-      rank: 7.5
+      rank: 9.0
       start_rank: 1
-      delta_since_start: 6.5
-      last_movement_at: b01c14
+      delta_since_start: 8.0
+      last_movement_at: b01c15
       last_updated_by: and-stitch-phase-10
-      notes: "Otto's leverage; c03 +1.5 (offer tendered, leverage embryonic, cl-antag-d03) + c04 +1.0 (acceptance solidifies leverage, cl-antag-d03 third tranche) + c10 +1.5 (cl-antag-d10 opening: non-extractable confirmed in progress; Otto's leverage structural post-formalization) + c11 +1.0 (cl-antag-d10 continuing: tether at near-peak load-bearing = leverage reaches near-full structural depth; withholding-from-Otto pattern emerging but not yet noticed by Otto) + c14 +1.5 (cl-antag-d10 COMPLETE: S02 +0.5 the apparatus confirms it identified the gap-lane figure INDEPENDENTLY — Taylor's withholding-capacity structurally revealed as non-protective; S04 +1.0 the detention-outcome lands Otto's leverage as structural and confirms non-extractable. Bone-gate baseline 6.0 per the Phase-0 handoff_conflict correction (handoff_in predicted 7.0; aggregate measured 6.0); +1.5 lands at 7.5. The chunk-text 'reaches rank 9' completes at c15 (+1.5 cl-antag-d03 = 9-LOCK), NOT at c14). HELD c05-c09/c12/c13. cl-antag-d10 fully drawn at c14 (closes the pl-2026-06-02-002 partial-settle family for cl-antag-d10)"
+      notes: "Otto's leverage; c03 +1.5 (offer tendered, leverage embryonic, cl-antag-d03) + c04 +1.0 (acceptance solidifies leverage, cl-antag-d03 third tranche) + c10 +1.5 (cl-antag-d10 opening: non-extractable confirmed in progress; Otto's leverage structural post-formalization) + c11 +1.0 (cl-antag-d10 continuing: tether at near-peak load-bearing = leverage reaches near-full structural depth; withholding-from-Otto pattern emerging but not yet noticed by Otto) + c14 +1.5 (cl-antag-d10 COMPLETE: S02 +0.5 the apparatus confirms it identified the gap-lane figure INDEPENDENTLY — Taylor's withholding-capacity structurally revealed as non-protective; S04 +1.0 the detention-outcome lands Otto's leverage as structural and confirms non-extractable. Bone-gate baseline 6.0 per the Phase-0 handoff_conflict correction; +1.5 lands at 7.5) + c15 +1.5 (cl-antag-d03 COMPLETE: **9.0 LOCK**. The non-extractable lock reaches full depth riding on the c14 cl-antag-d10 confirmation — @9 'a channel found from both ends does not unmake. The read that grounded me here was the same one that had closed the way out' completes the lock; the chunk-text 'reaches rank 9' lands here, NOT at c14). HELD c05-c09/c12/c13. cl-antag-d10 fully drawn at c14; cl-antag-d03 fully drawn at c15 (9.0 LOCK terminal for the rise-phase antag axis)"
 
     - axis: position-world
       rank: 7
@@ -259,7 +295,7 @@ aggregate_state:
       last_updated_by: and-stitch-phase-10
 
     - hook_id: hook-0006
-      description: "Aemond-adjacent pressure: c08 PLANTS the Aemond name (logistics object in the Jarvis handler-rotation; Vhagar's handler rotation referenced) at low intensity — the escalation engine becoming visible at feed edges. Off-stage but logistically present; newly-introduced forward hook this chapter."
+      description: "Aemond-adjacent pressure: c08 PLANTS the Aemond name (logistics object in the Jarvis handler-rotation; Vhagar's handler rotation referenced) at low intensity — the escalation engine becoming visible at feed edges. c15 ADVANCES to ON-STAGE: Aemond is now ON-PAGE-observed through the compound-eye feed at a Red Keep outer-court exercise touched by the passage-adjacent ward — face logged (blue-stone left socket holding flat light, the Vhagar behavioral imprint in the arc sized for a body not on the court, the coercive register where 'the world adjusted' and the master-at-arms yielded without being asked @7). The c08-plant->c15-payoff bridge is on-page @5 ('the name behind a handler's note; here he was a body'). Taylor explicitly logs-NOT-routes him (@7 'I routed nothing of him anywhere'; @13 'I was not routing a twelve-year-old to a patron'). Hook STAYS OPEN — the escalation-engine is now visible, the full payoff (Aemond as the war's engine) is future."
       introduced_at: b01c08
       expected_payoff: null
       status: open
@@ -362,6 +398,16 @@ aggregate_state:
       abandonment_reason: null
       last_updated_by: and-stitch-phase-10
 
+    - hook_id: hook-0016
+      description: "Gap-as-negative-shape perceptually confirmed: c15 — the deliberately-uncovered east-water-gate gap (the Wren-protection terrain, established c12) is for the first time PERCEPTIBLE to Taylor (and the reader) as a person-sized negative shape in the feed. The Vhagar-proximity thermal backwash (Vhagar resting on the Red Keep's eastern slope @9) degrades the compound-eye image-resolution at the eastern boundary; against the degraded fringe-noise the clean silence of the never-covered gap reads LOUDER than the noise around it — 'the feed-noise framed the gap the way a lit wall frames a shadow... the absence was the shape, and the shape was perceptible; the edge was person-sized' (@11). The exclusion is now reader-perceptible as a DELIBERATE STRUCTURE of not-covering, not merely an absence. TRANSIENT: visible only for the duration of the backwash, then normalized — 'The negative shape had gone. It had been visible for the duration of the backwash and no longer' (@13). Held suppressed-register-safe — Taylor 'set no name down' (@13). Open: whether the perceptual confirmation recurs / forces a recognition event downstream (tied to the cl04 +0.5 remaining + the d14+ full-recognition arc on moral_legibility_to_self)."
+      introduced_at: b01c15
+      expected_payoff: null
+      status: open
+      paid_at: null
+      abandoned_at: null
+      abandonment_reason: null
+      last_updated_by: and-stitch-phase-10
+
   characters:
     - slug: taylor-hebert-kl-122ac
       introduced_at: b01c01
@@ -372,9 +418,9 @@ aggregate_state:
 
     - slug: wren-stitch-maker-flea-bottom-ward
       introduced_at: b01c01
-      last_appearance: b01c14
+      last_appearance: b01c15
       reader_legibility: partial
-      legibility_notes: "reader knows occupation (stitch-maker) + Taylor's coverage-map function-node categorization + one spoken exchange (c06) + Taylor's protective omission from the deliverable (NAME deliberately withheld). c09: now the surveillance-pattern SUBJECT — her daily route mapped + indexed in Taylor's internal map. c10: PARTIAL — the rev-0004 prologue callback restates her indexed-but-unwritten state at the contrast point where Corwick becomes the ledger's first named entry. c12: PARTIAL appearance — her route is the load-bearing thread of the lane-refusal: the indexed stitch-house route (rendering-yard through to the upper stitch-house) runs the map's eastern edge 'and stops there, unindexed, in the record I keep and nowhere a column can reach,' and her free movement through the east-water-gate lanes IS the coverage map's eastern boundary, the reason Taylor declines to cover them. The rev-0005 omission-callback re-touches the protective-omission. relational_anchor_status MOVES to 4.5 (cl-d06 2nd tranche settled via the lane-refusal mechanism; hook-0003 PAID) — Wren now structurally necessary to the coverage map without a ledger entry. c14: NOT on-page — the appearance is STRUCTURAL/INTERIOR ONLY. The preamble names her explicitly ('And there was Wren, whose route she covered and had never once priced — a person-shaped item the ledger had simply left open'); the body @21 RETROACTIVELY NAMES her omission via the cl04 closing-logic — when Taylor closes the gap-lane-courier ledger entry, the shared column-format surfaces 'the open one written in the same hand: a route tracked, a route covered, never once entered into a deliverable, running the same logical function as the entry just closed.' Held suppressed-register-safe (role-shape, no recognition event, no name set down — WATCH-07). relational_anchor_status advances to 5.5 (cl04 chapter-draw); the EXCLUSION-PATTERN is now reader-visible (the parallel between the closed courier-item and the un-entered Wren-item). Still OUTSIDE the formal ledger; no name set down. cl04 arc continues at c15"
+      legibility_notes: "reader knows occupation (stitch-maker) + Taylor's coverage-map function-node categorization + one spoken exchange (c06) + Taylor's protective omission from the deliverable (NAME deliberately withheld). c09: now the surveillance-pattern SUBJECT — her daily route mapped + indexed in Taylor's internal map. c10: PARTIAL — the rev-0004 prologue callback restates her indexed-but-unwritten state. c12: PARTIAL appearance — her route is the load-bearing thread of the lane-refusal: her free movement through the east-water-gate lanes IS the coverage map's eastern boundary, the reason Taylor declines to cover them; relational_anchor_status MOVES to 4.5 (cl-d06 2nd tranche settled; hook-0003 PAID). c14: NOT on-page — STRUCTURAL/INTERIOR ONLY; the body @21 RETROACTIVELY NAMES her omission via the cl04 closing-logic (the open item 'running the same logical function as the entry just closed'); suppressed-register-safe, no name set down (WATCH-07); relational_anchor 5.5; exclusion-pattern reader-VISIBLE. c15: NOT on-page — NEGATIVE-SHAPE ONLY. She is not named in the c15 body at all; her presence is the person-sized hole the Vhagar-backwash feed-degradation makes PERCEPTIBLE at the eastern boundary — 'the absence was the shape... the edge was person-sized, the clearing I had kept blank for eleven months' (@11), 'the one ground I had built to read nothing so the one who moved there moved unseen by it' (@13). The exclusion moves from c14 reader-VISIBLE (column-parallel) to c15 reader-PERCEPTIBLE (perceptual confirmation as a deliberate structure of not-covering). Held suppressed-register-safe — 'My hand crossed the field where a name would go... set no name down' (@13). relational_anchor_status advances to 7.0 (cl04 c15 draw; +0.5 remains). Still OUTSIDE the formal ledger; no name set down. cl04 arc continues (+0.5); hook-0016 (gap-shape-now-perceptible) opened at c15"
       last_updated_by: and-stitch-phase-10
 
     - slug: oswyn-mudway-flea-bottom-elder
@@ -459,6 +505,20 @@ aggregate_state:
       last_appearance: b01c13
       reader_legibility: partial
       legibility_notes: "a ward-elder of the lower precinct — one of the men whose name was on the list Taylor compiled and delivered to Jarvis at d06 (pattern-inferred Black-faction-adjacent, by lane-contact, not certainty). c13 s02: brought before a court-adjacent magistrate proceeding (the rented chandler's back room) on a pretext charge of receiving stolen cord; the verdict pre-inscribed, the magistrate writing ahead of Aldric's answer, the cord the pretext and Taylor's own d06 document the engine. Taylor watches the whole proceeding through a single fly in the ceiling-corner. Reader-legible by name + function (ward-elder) + the d06-list origin of his detention; the detention is the on-page CONSEQUENCE of Taylor's delivered intelligence (political_register-world 7.0 — enforcement now visible). c13 s04: Halvard names him at the water-trough ('They took up Aldric... He carried cord. He carried word between two old women who can't walk the hill themselves'), the smallfolk-witness face of the detention. No on-page lines beyond the proceeding-register attempt to explain the cord; non-POV; interior opaque. Detained / outcome foreclosed within the chapter"
+      last_updated_by: and-stitch-phase-10
+
+    - slug: aemond-targaryen
+      introduced_at: b01c08
+      last_appearance: b01c15
+      reader_legibility: partial
+      legibility_notes: "the escalation-engine of the Dance, F&B-canon (born 110 AC; 12 years old at c15). c08: PLANTED as a logistics-reference ONLY — the Aemond name as an object in the Jarvis handler-rotation (Vhagar's handler rotation referenced); off-page, cipher (hook-0006). c15: ON-PAGE-OBSERVED for the first time, through Taylor's compound-eye feed at a Red Keep outer-court swordsmanship exercise touched by the passage-adjacent ward. Reader-legible physical/behavioral detail (all via the feed, no interior access): the blue stone / sapphire in the left socket that 'caught the morning light and held it flat, and the stone did not move with the eye behind it' (@5/@7); the Vhagar behavioral imprint — he 'raised the blade past the master-at-arms' guard at a clearance no twelve-year-old's reach accounts for; the arc was sized for a body that was not on the court' (@7); the coercive register — 'he reset and waited for the world to adjust to the reset, and the world adjusted'; the master-at-arms 'yielded the shoulder; the correction landed, and the yielding happened in the older man's frame, not the boy's' (@7). Taylor reads him as a specimen ('two was a finding, and the finding fit a specimen I already held') and logs-NOT-routes him ('I routed nothing of him anywhere' @7; 'I was not routing a twelve-year-old to a patron' @13). reader_legibility cipher (c08) -> PARTIAL (c15: face + behavioral signature + Vhagar-imprint logged; interior opaque, non-POV; the war's-engine significance is reader-inferable but the full payoff is future, hook-0006 stays open). The dragon he rides was not with him; 'The habit of it was' (@5)"
+      last_updated_by: and-stitch-phase-10
+
+    - slug: master-at-arms-red-keep
+      introduced_at: b01c15
+      last_appearance: b01c15
+      reader_legibility: cipher
+      legibility_notes: "cipher walk-on, c15. The household master-at-arms who runs Aemond through the outer-court swordsmanship exercise; leads the boy across the court (@5), reduces the drill-pressure at the shoulder-line, and 'yielded the shoulder' without being asked (the yielding lands in his frame — the function of Aemond's coercive register). No name, no lines, no interior access — a body that registers only as the surface against which Aemond's behavioral signature shows. Walks Aemond up the passage-slope and out of the compound eyes (@9)"
       last_updated_by: and-stitch-phase-10
 
   world_state:
@@ -560,8 +620,8 @@ aggregate_state:
 
     - key: the-east-water-gate-gap
       kind: location
-      state: "established c12: the lanes east of the water-gate — the old lower-city stretch where close timber overhangs let the upper stories lean in over the lanes and a thing can pass hand-to-hand, 'the one ground my coverage cannot reach.' c12 confirms-and-NAMES it in the deliverable: the gap is bounded west by the gate-tower boundary and east by the rendering-yard wall ('not a vagueness now but a named stretch with two stone edges'), and written into the coverage-entry as 'the east-water-gate lanes not accessible within current coverage parameters, a structural limit, not a temporary absence.' Its effective eastern boundary is Wren's free movement (the stitch-house route runs the map's eastern edge and stops there, unindexed). The lane-refusal makes the boundary load-bearing and un-priced ('the thing that held it had never been priced'). The only uncovered ground in the otherwise-complete architecture; a Black-faction courier-adjacent figure still operational here (hook-0015)"
-      last_changed_at: b01c12
+      state: "established c12: the lanes east of the water-gate — the old lower-city stretch where close timber overhangs let the upper stories lean in over the lanes and a thing can pass hand-to-hand, 'the one ground my coverage cannot reach.' c12 confirms-and-NAMES it in the deliverable: the gap is bounded west by the gate-tower boundary and east by the rendering-yard wall ('not a vagueness now but a named stretch with two stone edges'), and written into the coverage-entry as 'the east-water-gate lanes not accessible within current coverage parameters, a structural limit, not a temporary absence.' Its effective eastern boundary is Wren's free movement (the stitch-house route runs the map's eastern edge and stops there, unindexed). The lane-refusal makes the boundary load-bearing and un-priced ('the thing that held it had never been priced'). The only uncovered ground in the otherwise-complete architecture; a Black-faction courier-adjacent figure still operational here (hook-0015, PAID@c14 — figure detained, corridor closed; the gap persists as Wren-protection terrain). c15 PERCEPTUAL-CONFIRMATION: for the first time the gap is PERCEPTIBLE to Taylor as a person-sized negative shape — the Vhagar-eastern-slope thermal backwash degrades the compound-eye image-resolution at the eastern boundary, and against the degraded fringe-noise the clean silence of the never-covered gap reads LOUDER than the noise around it ('the feed-noise framed the gap the way a lit wall frames a shadow... the absence was the shape... the edge was person-sized, the clearing I had kept blank for eleven months' @11). The gap is now reader-perceptible as a DELIBERATE STRUCTURE of not-covering. TRANSIENT — visible only for the duration of the backwash, then normalized back to 'clean coverage west, clean gap east, the two stone edges holding' (@13). Marked 'eastern-boundary, backwash-effect' in the coverage-record; the perceptual confirmation deliberately NOT noted ('I did not note what it looked like' @11; 'set no name down' @13). hook-0016 opened at c15"
+      last_changed_at: b01c15
       last_updated_by: and-stitch-phase-10
 
     - key: khepri-threshold-crossed
@@ -598,6 +658,18 @@ aggregate_state:
       kind: condition
       state: "established c14: the Green apparatus now has TWO courier detentions produced through Taylor's intelligence architecture — Corwick (c10, the lower-gate heir's-business courier) and the gap-lane courier-figure (c14, the east-of-water-gate counter-adjacent figure). Both Black-faction logistics threads closed; the second confirms the architecture is not a one-off (the gap-lane corridor closes, the apparatus's alternate-route need foreclosed). The pattern of feed-intelligence-converting-to-detention is now established at scale; non-extractable confirmed (cl-antag-d10 COMPLETE — Otto's leverage structural). Taylor's withholding-capacity revealed as non-protective (the apparatus identifies the figure independently and acts regardless)"
       last_changed_at: b01c14
+      last_updated_by: and-stitch-phase-10
+
+    - key: aemond-at-court-observable
+      kind: condition
+      state: "established c15: Aemond Targaryen (12) is now PRESENT at court in Taylor's observable range — brought to a Red Keep outer-court swordsmanship exercise on ground the coverage map touches via the passage-adjacent ward (the margin abutting the court's traffic without being the court itself). The escalation-engine of the Dance is now a face in Taylor's feed, not just a c08 logistics-reference. Observed once (a working morning); logged-NOT-routed (Taylor routes nothing of him to Jarvis/Otto). His recurrence at court is the standing forward condition — the war's engine is now within compound-eye reach when court traffic crosses the passage tier. hook-0006 ON-STAGE"
+      last_changed_at: b01c15
+      last_updated_by: and-stitch-phase-10
+
+    - key: vhagar-eastern-slope-proximity
+      kind: condition
+      state: "established c15: Vhagar rests on the Red Keep's eastern slope — 'too large to be anywhere without the stone carrying her heat.' Taylor cannot see her (the flies do not see her); she reads the dragon's WEIGHT at distance off the thermal differential alone (the arch-flies labor in air that has 'changed weight'; the eastern-slope stone channels the added weight into the substrate and radiates it into the gutter-flies — 'the way you feel a hand near a wall in the dark'). Two months of this read by c15 (bay-warm-off-the-morning-stone vs hill-warm-with-the-load-behind-it). The proximity is the physical correlate of the escalation engine; it is also the mechanism that produces the gap-as-negative-shape (the backwash degrades the eastern-boundary feed-resolution). Forward condition: Vhagar's heat is a readable site-condition at the eastern margin whenever she is on the slope. Marked in the coverage-record as 'eastern-boundary, backwash-effect' (the perceptual confirmation NOT noted)"
+      last_changed_at: b01c15
       last_updated_by: and-stitch-phase-10
 
   revision_layer:
