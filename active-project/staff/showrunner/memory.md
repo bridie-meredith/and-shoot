@@ -8854,6 +8854,29 @@ books:
             - "Taylor: social_tether-antag rank 9 LOCKED; social_tether-prot-rise rank 8 (peak); capability rank 7; relational_anchor rank 7; political_register-prot rank 5.5; position-prot-rise rank 6.5 (peak)"
             - "Aemond: in Taylor's feed; not in deliverable; sapphire eye, Vhagar-imprint behavioral pattern logged"
           target_chapter: b01c16
+        handoff_conflicts:
+          # URI-AGGREGATE-READ (PROP-0031 Amendment 1): /and-substance chapter b01c15 Phase 0
+          # cross-referenced handoff_in against aggregate-state.md axis_state[] (through b01c14).
+          # Aggregate wins on all. Corrected baselines feed the c15 scene-contract authoring + bone-gate.
+          - detected_at: 2026-06-04T00:00:00Z
+            axis: social_tether-antag
+            handoff_in_value: 9
+            aggregate_value: 7.5
+            resolution: aggregate-wins   # +1.5 c15 draw lands 7.5 -> 9.0 LOCKED (cl-antag-d03 completion)
+          - detected_at: 2026-06-04T00:00:00Z
+            axis: position-prot-rise
+            handoff_in_value: 6.5
+            aggregate_value: 6.0
+            resolution: aggregate-wins   # held this chapter; corrected peak baseline 6.0
+          - detected_at: 2026-06-04T00:00:00Z
+            axis: capability
+            handoff_in_value: 6
+            aggregate_value: 6.5
+            resolution: aggregate-wins   # +1.0 c15 draw lands 6.5 -> 7.5 (toward end_rank 8 LOCK)
+          # NOTE for scene-author + Phase 5 auditor: social_tether-prot-rise is at aggregate 8.5
+          # (overshot the ~8 ceiling at c12; aggregate intent = "c13-c15 HOLD"). The c15 contract
+          # lists it +0.5 in axes_in_motion; reconcile to axes_held (peak already reached) OR accept
+          # 8.5->9.0 only if scene-decomposition shows a genuine new embedding event. Flag to auditor.
 
       - slug: b01c16
         status: planned
