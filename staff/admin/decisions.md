@@ -5644,3 +5644,30 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0090 | 2026-06-04 | FAST (user-proxy, RUNBOOK R1)
+
+question: b01c16 Phase 5.5 CHUNK-CLASS-B — disposition R (revise chunk) / P (proceed with risk recorded) / S (substance-contract redo). If P, specify the risk-carry list.
+context: Phase 5 informed reviewers all PASS: 3/3 SUBSTANCE-FELT, dramatist ACCEPT (shape sound for falling chapter, correctly ARMS c17 collapse axes without pre-spending), auditor PASS 0 HARD. Cold-reader strict-CONTINUE=No, but decomposed: (1) series-context holes are uninformedness, not real defects; (2) s03 closing-paragraph over-explains thesis (narrator-voice restatement of already-shown behavior) — flagged by ALL Phase 5 reviewers; (3) cold-reader-only: old-man+stunted-child props in s01 dropped (Chekhov), position-arithmetic rendered as abstract left/right numbers, Halvard "applies no pressure" (disclaims wanting anything). Central event is already a concrete physical act (body turning, walking out of clearing while man is mid-sentence) — better bones-entry shape than c14/c15.
+options:
+  - R: revise chunk — re-author at chunk layer (Class A default)
+  - P: proceed with risk recorded — advance to /and-write with findings as authorized known-risk
+  - S: substance-contract redo — high cost, reserved for genuine contract failure
+
+decision: P — proceed with risk recorded. Risk-carry list below.
+basis: DEC-0060/0062/0072/0074/0076/0078/0085/0087 — eight consecutive Class-B chunk dispositions all went P; ruling is settled. c16 is in better bones-entry shape than c14/c15 (central event already concrete physical act). Informed reviewer consensus (3/3 SUBSTANCE-FELT + dramatist ACCEPT + auditor 0 HARD) is decisive.
+rationale: Same decision shape as the eight prior Class-B dispositions. The cold-reader's confusions are decomposed and explained: series-context uninformedness (not design holes), one prose-register item shared by Phase 5 reviewers (correctly surfaced as a bones/stitch target, not a chunk hole), and cold-reader-only catches that are rendering concerns. R would be wrong-layer (the chunk design is sound per informed critics); S is wrong-layer + high cost. Thematic-demonstration chapter with concrete physical central event is the best Class-B entry in the book.
+trade-off: Four risk-carry items enter /and-write (3 HARD) and one enters /and-stitch. Accepted; this is the established mechanism.
+
+risk-carry:
+  1. [/and-write — HARD concreteness target] s01: old-man + stunted-child props staged in the opening — they must either fire (earn a callback beat at bones level) or be cut before the bones file ships. Chekhov unfired is a bones-layer error; Phase 6 bone-gate should catch as EVENT-NOT-CONCRETE / FAULT-BONE-DELTA-MALFORMED if these props vanish without a bones-level callback.
+  2. [/and-write — HARD concreteness target] Position-arithmetic (the moral counter-argument): must be rendered as a concrete image or spatial metaphor at the central-event bone, not abstract "left/right numbers" or pure cognition-narration. Phase 6 EVENT-NOT-CONCRETE fires if the central-event bone presents this as abstraction-dominant.
+  3. [/and-write — HARD concreteness target] Halvard's pressure: the disclaimer-not-wanting framing must coexist with a visible on-page cost for Taylor of staying vs. leaving — Halvard does not need to threaten; the clearing must feel non-neutral to her body. The bones must carry a physical-behavioral signal (posture, spatial proximity, breath, weight) not only interior arithmetic.
+  4. [/and-stitch — trim target, Phase 4 + Phase 9] s03 closing paragraph: the narrator-voice thesis restatement ("That is not the same thing. She knows the difference" or equivalent) must be cut or recast as behavior-only in the stitch pass. All Phase 5 reviewers flagged this as over-explanation of already-shown behavior. Phase 9 auditor should treat survival of explicit thesis-narrator-voice in the closing paragraph as a HARD finding.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no

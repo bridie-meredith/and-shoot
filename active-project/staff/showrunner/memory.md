@@ -9281,7 +9281,7 @@ books:
             FAIL with NEW categories re-dispatches admin per normal flow.
 
       - slug: b01c16
-        status: planned
+        status: scened   # /and-substance chapter b01c16 Phase 6 (was planned)
         chunk: |
           The aftermath chapter: Taylor stops engaging Halvard's counter-argument. He finds
           her at the sept, as before. She hears the counter. She has the answer. She does not
@@ -9353,6 +9353,226 @@ books:
             - "Taylor: moral_legibility rank 6.5 (crack expressed as behavioral withdrawal); all other axes holding from b01c15"
             - "Halvard: functionally exited from Taylor's active engagement"
           target_chapter: b01c17
+        handoff_conflicts:
+          # /and-substance chapter b01c16 Phase 0 step-6c: handoff_in (book-author prediction)
+          # vs aggregate-state (actual close through c15). Aggregate wins; ranks below are the
+          # bone-gate baseline for /and-write.
+          - detected_at: 2026-06-04T00:00:00Z
+            axis: capability
+            handoff_in_value: 7.0
+            aggregate_value: 7.5
+            resolution: aggregate-wins
+            notes: "handoff_in predicted 7; aggregate measured 7.5 (cl05 gain-side completed at c15). c16 holds capability; bone-gate baseline = 7.5."
+          - detected_at: 2026-06-04T00:00:00Z
+            axis: social_tether-prot-rise
+            handoff_in_value: 8.0
+            aggregate_value: 8.5
+            resolution: aggregate-wins
+            notes: "handoff_in predicted 8 (peak); aggregate measured 8.5 (reconciled peak). c16 holds tether-rise; bone-gate baseline = 8.5."
+          - detected_at: 2026-06-04T00:00:00Z
+            axis: position-prot-rise
+            handoff_in_value: 6.5
+            aggregate_value: 6.0
+            resolution: aggregate-wins
+            notes: "handoff_in predicted 6.5; aggregate measured 6.0 (peak). c16 holds position-rise; bone-gate baseline = 6.0."
+        chunk_cold_read:
+          reviewed_at: 2026-06-04T00:00:00Z
+          verdict: SHIPPED-WITH-RISK-RECORDED
+          classification: B
+          recovered_summary: "A woman on insect-patrol lets a priest make his moral case to her, decides it doesn't apply, and walks off without answering."
+          intended_goal: "Show the audience Taylor walking away from Halvard — not suppressing recognition, choosing not to hold it — so the difference between suppression and foreclosure is on the page before the cascade."
+          continue: no
+          continue_strict: no
+          report_path: (cold-read returned inline; summary preserved in memory)
+          disposition: P
+          dispositioned_at: 2026-06-04T00:00:00Z
+          dispositioned_by: admin   # DEC-0090 (user-proxy); 9th consecutive Class-B P (DEC-0060/0062/0072/0074/0076/0078/0085/0087/0090)
+          voice_risk:
+            triggered: false
+            signals: []
+            central_event: "Taylor physically turns and walks out of Halvard's sept-corner clearing while he is still standing mid-wait, having delivered his counter; the walk-away is the moral_legibility crack expressed as behavior (foreclosure, not suppression). The central event is already CONCRETE/stageable (a body crossing ground away from a man still talking) — unlike c14/c15, Signal B does not fire."
+            voice_risk_carry: |
+              n/a — central event is concrete. The downstream concreteness watches live in
+              cold_read_risk_carry (DEC-0090 risk-carry items 1-3), not in a voice_risk muffle-check.
+          cold_read_risk_carry: |
+            Principal (DEC-0090) authorized Class-B disposition P with a 4-item risk-carry. Of the
+            cold-reader's CONTINUE=No drivers, the series-context confusions (architecture/contempt/
+            cascade) are uninformed-reader artifacts the assembled book resolves (c01-c15). The real
+            downstream watches, armed forward:
+            (1) [/and-write Phase 6 HARD] s01 old-man + stunted-child props: earn a callback bone or cut
+                before bones ship — Chekhov-unfired is a bones-layer error.
+            (2) [/and-write Phase 6 HARD/EVENT-NOT-CONCRETE] position-arithmetic at the central-event
+                bone must render as a concrete image/spatial figure, NOT abstract "left/right numbers"
+                or pure cognition-narration.
+            (3) [/and-write Phase 6 HARD] Halvard's pressure: the disclaimer-not-wanting framing must
+                coexist with a physical-behavioral signal (posture/proximity/breath/weight) that makes
+                the clearing feel non-neutral to Taylor's body; interior arithmetic alone does not satisfy.
+            (4) [/and-stitch Phase 4 + Phase 9] s03 closing-paragraph thesis restatement ("That is not
+                the same thing. She knows the difference.") must be cut or recast as behavior-only.
+                ALL Phase 5 reviewers (audience 3/3 + dramatist + auditor fault-006) independently
+                flagged it. Phase 9 treats surviving explicit thesis-narrator-voice in the close as HARD.
+            A Phase 9 FAIL Class-B with these SAME categories ships terminal as SHIPPED-WITH-CAVEATS
+            automatically (no re-disposition). A Phase 9 FAIL with NEW categories re-dispatches admin.
+        scenes:
+          - slug: b01c16s01
+            seq: 1
+            status: scened
+            pov_narrator: taylor-hebert-kl-122ac
+            chunk: |
+              Taylor is mid-circuit on the west-precinct coverage pass when she reaches the corner of the
+              chandler's storehouse where Septon Halvard keeps what passes for his sept. [event: taylor-at-sept-margin]
+              The corner is as it always is: the cleared space between the storehouse wall and the rendering-yard
+              fence, two crates stacked as kneeling-benches, the reed-mat that Halvard sets out when someone
+              is coming to die. [image: sept-corner-crates-reed-mat] There is no one dying today — the mat is
+              rolled and standing against the wall. There are three people in the clearing who are not dying:
+              a woman with a child who has stopped growing the way children sometimes stop; an old man Taylor
+              has read through the precinct-feed before, gout-swollen right foot, slower than he was in the
+              fall. And Halvard. [image: halvard-in-the-clearing] Halvard is not looking at her yet. He is
+              finishing something with the old man — a low exchange, pausal, the specific register Taylor has
+              placed by now: the slowed-down version of a conversation, the kind that leaves room for someone
+              to find the word they are reaching for. [mechanism: halvard-pastoral-register-visible] Taylor does
+              not change her route. [force: taylor-continuing-the-circuit] She enters the clearing on the
+              diagonal she always enters it on. She is not here for Halvard. She is here because the insects in the
+              storehouse eaves give her the bodies in the clearing and two lanes adjacent without her needing to
+              be elsewhere. [mechanism: circuit-stop-as-habit-not-encounter] The old man straightens. Halvard's
+              head comes up. [event: halvard-registers-taylor] She does not stop moving. She does not stop.
+            substance_delta:
+              axes_in_motion: []
+              axes_held:
+                - axis: moral_legibility_to_self
+                  rationale: "the crack does not move here — it is set up, not expressed; arrival is habitual, not a recognition event; the +0.5 anchors at s03"
+                - axis: political_register-prot
+                  rationale: "no court-feed content; sept-corner is Flea Bottom precinct only; held at 5.5"
+                - axis: social_tether-prot-rise
+                  rationale: "no new structural node; routine circuit stop; held at 8.5 (peak)"
+                - axis: position-prot-rise
+                  rationale: "no position-event; circuit stop is not a patron interaction; held at 6.0 (peak)"
+                - axis: relational_anchor_status
+                  rationale: "Wren in east-lane coverage, not in this clearing; anchor holds at 7.0"
+                - axis: capability
+                  rationale: "routine coverage pass; no new deployment scope; held at 7.5"
+                - axis: moral_framework
+                  rationale: "no new breach; coverage through the sept-corner is established architecture; held at -2"
+                - axis: social_tether-prot-collapse
+                  rationale: "latent-activating (dormant->latent status transition pending); arithmetic not yet surfaced this scene; rank held"
+                - axis: position-prot-collapse
+                  rationale: "latent-activating (dormant->latent status transition pending); arithmetic not yet surfaced this scene; rank held"
+              density_target: 0.5-0.65
+            scene_conflict:
+              protagonist_force: "Taylor continuing her coverage circuit through the sept-corner as a routine stop — her route runs through Halvard's clearing whether she engages or not"
+              opposing_force: "Halvard's presence in the clearing as the person who holds the counter-argument Taylor has stopped engaging — the encounter is structural; she cannot route around the corner without adjusting the pass"
+              stakes_axis: moral_legibility_to_self
+
+          - slug: b01c16s02
+            seq: 2
+            status: scened
+            pov_narrator: taylor-hebert-kl-122ac
+            chunk: |
+              Halvard is beside her before she reaches the rendering-yard fence. [event: halvard-falls-into-step]
+              Not blocking — he is not a blocking kind of man — but matching her pace at the margin of the
+              cleared space, the way he has done before. [image: halvard-matching-pace-at-clearing-margin]
+              He does not open with a question. He opens with a statement in the slower register: [force: halvard-counter-delivered]
+              "The ones who lived through the autumn. The woman with the chest-complaint in Muggers' Row. The
+              boy from the fishmonger's lane." He names them in the specific way he has — not claiming them,
+              not demanding gratitude, setting them down the way you set down evidence that is not in dispute.
+              "I have not counted. It is not my count to run." A pause. [image: halvard-pausal-register]
+              "The count I run is what it costs them, after. What they understand about how they survived."
+              [event: halvard-names-the-cost-obliquely] Taylor has heard the shape of this before. She has
+              the answer — she has had it since the third time he found her at this corner. [mechanism: taylor-has-the-answer-confirmed]
+              The answer addresses what Halvard is saying. The answer is also beside the point, because what
+              his counter addresses is the contempt — whether the contempt is justified — and the contempt and
+              the continuation are the same fact. [mechanism: counter-addresses-contempt-not-continuation] The
+              argument is not wrong. The argument addresses the wrong thing. [force: taylor-confirms-argument-not-live]
+              Taylor runs the position-arithmetic while Halvard is still speaking. [event: position-arithmetic-surfaces]
+              [image: position-arithmetic-in-background-of-speech] The position is worth less to her now than it
+              costs to hold. Not by a margin that triggers a different accounting. By enough to notice. She
+              continues holding it. [mechanism: position-worth-less-than-cost-confirmed] Halvard finishes the
+              passage he was in. He stops walking and faces her — not blocking, but stopping, which is different.
+              [event: halvard-stops-and-faces-taylor] "I am not asking you to do differently," he says. "I am
+              asking you to know what you're doing." [event: halvard-counter-explicit]
+            substance_delta:
+              axes_in_motion: []
+              axes_held:
+                - axis: moral_legibility_to_self
+                  rationale: "recognition present but not yet behavioral; Taylor runs the counter internally; the +0.5 anchors at s03; held at 6.0"
+                - axis: position-prot-collapse
+                  rationale: "latent-activating: the position-arithmetic ('worth less than it costs to hold') becomes VISIBLE to Taylor in this scene — dormant->latent status transition — but the prose explicitly forecloses a rank move ('not by a margin that triggers a different accounting'); rank held; the collapse EVENT is c17's (-1.0)"
+                - axis: social_tether-prot-collapse
+                  rationale: "latent-activating: tether-cost co-surfaces as a visible number in parallel with position; dormant->latent status transition; rank held; collapse EVENT is c17's (-1.0)"
+                - axis: political_register-prot
+                  rationale: "Halvard's counter names the people she keeps alive, not the court apparatus; no new contempt-object; held at 5.5"
+                - axis: social_tether-prot-rise
+                  rationale: "rise axis at peak; no new structural node; held at 8.5"
+                - axis: position-prot-rise
+                  rationale: "rise axis at peak; no new position-event; held at 6.0"
+                - axis: relational_anchor_status
+                  rationale: "Wren not in scene; anchor holds at 7.0"
+                - axis: capability
+                  rationale: "no new deployment; coverage at passive density; held at 7.5"
+                - axis: moral_framework
+                  rationale: "no new breach; running the arithmetic and holding the counter internally are within the established rationalize-each-trade pattern; held at -2"
+              density_target: 0.65-0.8
+            scene_conflict:
+              protagonist_force: "Taylor holding the counter internally — she has the answer, the answer is correct, and she has confirmed the argument is not live because it addresses the contempt, not the continuation"
+              opposing_force: "Halvard's counter in his d09+ register: naming specific people she kept alive without demanding gratitude, then asking her to know what she is doing — the argument is not wrong; it is beside the point"
+              stakes_axis: position-prot-collapse
+
+          - slug: b01c16s03
+            seq: 3
+            status: scened
+            pov_narrator: taylor-hebert-kl-122ac
+            chunk: |
+              Taylor does not answer. [event: taylor-does-not-answer] Not a pause before answering — a stop,
+              the kind the body makes when it has finished weighing something and the weight has resolved.
+              [image: body-stop-not-a-pause] Halvard is still standing with his face toward her. He is close
+              enough that the compound eyes in the storehouse eaves give her the specific quality of his
+              attention: the particular stillness of a man who has said the thing and is now waiting to see what
+              it does. [image: halvard-stillness-waiting] She can see what she would say if she were going to say
+              it. [mechanism: taylor-has-the-full-counter] She does not say it. [event: counter-withheld] She
+              does not say it not because she has no answer but because saying it requires treating the argument
+              as live, and she has confirmed that it is not live. [force: foreclosure-as-cognitive-act] The
+              contempt and the continuation are the same fact because the continuation predates the naming: she
+              was running the architecture before she had the word for what she thought about the people it
+              served, and the word's arrival changed nothing about the route. [mechanism: contempt-continuation-same-fact-enacted]
+              Halvard is still there. He has not moved. He is in the middle of having said a thing and waiting.
+              [image: halvard-mid-sentence-waiting] Taylor turns. [event: taylor-turns-away-from-halvard] Not
+              away from the argument — away from the man, which is different. She walks back across the clearing
+              toward the rendering-yard approach, not hurrying, the same pace she came in with. [event: taylor-walks-out-of-the-clearing]
+              The reed-mat is still rolled against the wall. The crates are still stacked. [image: sept-corner-unchanged]
+              Halvard's voice does not reach after her — he does not call out, which she had known without knowing
+              she had known it: this is the kind of man who does not call after people. [force: halvard-does-not-call-after]
+              The compound eyes carry him standing in the cleared space until Taylor is at the rendering-yard
+              fence and the angle-line has moved him to the eaves' edge and then out of it. [mechanism: feed-carries-halvard-until-angle-clears]
+              She brings the feed back to coverage density and runs the next segment of the circuit. [event: circuit-resumes]
+            substance_delta:
+              axes_in_motion:
+                - axis: moral_legibility_to_self
+                  direction: up
+                  target_delta_magnitude: 0.5
+                  cost_ledger_anchor: null
+                  notes: "the walk-away IS the crack expressed as behavioral fact — Taylor does not suppress the recognition, she removes herself from its mirror; 6.0->6.5; behavioral expression of the suppression-pattern made visible as action, not the recognition-too-late event"
+              axes_held:
+                - axis: moral_framework
+                  rationale: "the walk-away is a legibility event not a framework event; no new breach; held at -2"
+                - axis: political_register-prot
+                  rationale: "no new court content; precinct-scale encounter; held at 5.5"
+                - axis: social_tether-prot-rise
+                  rationale: "rise axis at peak; no new structural node; held at 8.5"
+                - axis: social_tether-prot-collapse
+                  rationale: "latent-activating: arithmetic surfaced at s02; s03 holds without further move; the walk-away is a legibility event not a new tether-threat; latency confirmed ongoing"
+                - axis: position-prot-rise
+                  rationale: "rise axis at peak; no new position-event; held at 6.0"
+                - axis: position-prot-collapse
+                  rationale: "latent-activating: arithmetic surfaced at s02; s03 holds without further move; Taylor continues holding the position after confirming the cost exceeds value; latency confirmed ongoing"
+                - axis: relational_anchor_status
+                  rationale: "Wren not in scene; anchor holds at 7.0"
+                - axis: capability
+                  rationale: "feed pulled back to coverage density at circuit-resume; no new deployment; held at 7.5"
+              density_target: 0.65-0.75
+            scene_conflict:
+              protagonist_force: "Taylor removing herself from Halvard's presence while he is still mid-wait — not suppressing the recognition but foreclosing the encounter by the physical act of turning and walking"
+              opposing_force: "Halvard standing still in the cleared space, having said the thing and waiting — his stillness is what makes Taylor's departure legible as foreclosure rather than flight; he does not call after her"
+              stakes_axis: moral_legibility_to_self
 
       - slug: b01c17
         status: planned

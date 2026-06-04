@@ -10,6 +10,7 @@ Format per entry:
 
 ---
 
+[2026-06-04] DEC-0090 | b01c16 Phase 5.5 CHUNK-CLASS-B disposition → P (proceed with risk recorded) | 9th consecutive Class-B P; c16 better-entry-shape than c14/c15 (central event concrete physical act); 4 risk-carry items: s01 Chekhov props (HARD), position-arithmetic concreteness (HARD), Halvard clearing-pressure physical signal (HARD), s03 thesis-narrator-voice trim (stitch Phase 4+9).
 [2026-06-04] DEC-0089 | process-critic: b01c15 SHIPPED-WITH-CAVEATS (2nd consecutive quiet chapter; c14+c15) — auto-arm /and-cohere? compress falling-arc at book-substance? → OK | System working as designed: PROP-0037 threshold is N=3 (current N=2); DEC-0087 named /and-cohere before book-close as accumulation handler; no gate failed; coupling functioned correctly; falling-arc c13-c15 is endorsed book-level structure; depth-pass debt logged for c14+c15.
 [2026-06-04] DEC-0088 | process-critic: b01c15 REGISTER-AS-MANNERISM signal-accepted ([fly-population+verb+location] x5, insect-POV) → OK | Gate correct; stitcher Phase 4 is the resolution point; screen-writer brief upstream would conflict with SVO fence; first-occurrence at this template shape; standard hold.
 [2026-06-04] DEC-0087 | b01c15 Phase 5.5 CHUNK-CLASS-B disposition → P (proceed with risk recorded) | 7-consecutive-P precedent (DEC-0060–0085) + informed 3/3 SUBSTANCE-FELT + dramatist ACCEPT; back-to-back-quiet fatigue handled by HARD watches into /and-write, not chunk revise.
