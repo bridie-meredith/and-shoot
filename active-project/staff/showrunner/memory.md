@@ -8761,7 +8761,7 @@ books:
         status: scened
         chunk: |
           Non-extractable confirmation deepens and Aemond arrives on-stage with Vhagar-
-          proximity. Aemond (now 13) is brought to a Red Keep outer court exercise that
+          proximity. Aemond (now 12; F&B-canon, born 110 AC) is brought to a Red Keep outer court exercise that
           Taylor's coverage map touches via a passage-adjacent ward. She sees him through
           compound eyes: a boy with a sapphire eye, moving with Vhagar's behavioral
           imprint, already performing the coercive register of someone who has never been
@@ -8821,7 +8821,7 @@ books:
           chapter_class: standard
         dramatic_shape: falling
         goal: |
-          Show the audience Aemond through compound eyes — the escalation engine in physical form, 13 years old, already coercive — and the tether at full load, so the falling arc reads as the space before the cascade begins.
+          Show the audience Aemond through compound eyes — the escalation engine in physical form, 12 years old, already coercive — and the tether at full load, so the falling arc reads as the space before the cascade begins.
         pov_narrator: taylor-hebert-kl-122ac
         handoff_in:
           open_threads:

@@ -2100,3 +2100,32 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-06-04-c15-002
+      created_at: 2026-06-04T00:00:00Z
+      created_by: "/and-write b01c15 Phase 2 auditor (fault-010 inter-document canon conflict)"
+      target:
+        command: margit-card-authoring
+        scope: "Aemond age / lore card"
+        phase: null
+      severity: SOFT
+      description: |
+        Inter-document Aemond-age conflict surfaced at /and-write b01c15 Phase 2:
+        - actor card: 12, born 110 AC  (F&B-canon-correct)
+        - lore card (cond-kl-court-state-122ac or adjacent): 16, born 106 AC  (CANON-WRONG)
+        - c15 chapter chunk + goal: said "13" (FIXED at Phase 2 -> 12)
+        - c15 bones: "twelve" (canon-correct, unchanged)
+        F&B: Aemond Targaryen born 110 AC -> age 12 in 122 AC. Lost left eye at Driftmark
+        (120 AC, age 10); wears a sapphire. The lore-card 106 AC/age-16 value is a canon
+        error that should be reconciled to 110 AC/age-12 so future chapters touching court-
+        tier Targaryen ages do not inherit the wrong baseline. Non-blocking for c15 (bones
+        + chunk + goal now all at canon-correct 12). margit should locate the offending lore
+        card and correct the Targaryen-children birth-year/age block against F&B.
+      context_refs:
+        - active-project/staff/auditor/write-b01c15-pass2.md  # fault-010
+        - active-project/staff/showrunner/memory.md  # series.lore cond-kl-court-state-122ac
+      resolution_suggestion: "margit reconciles the lore card's Aemond birth-year to 110 AC (age 12 in 122 AC) per F&B; cross-check other Targaryen-children ages in the same card."
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null

@@ -69,14 +69,15 @@ event_map: event:aemond-court-exercise (partial)
 grounding: YES — outer-court-ground; place named concretely; master-at-arms physical body as actor
 
 **b01c15s01n04**
-SVO: aemond-targaryen steps onto the outer-court-ground
+SVO: aemond-targaryen halts at the court-center
 axis_moves: []
-axes_held: []
+axes_held:
+  - axis: social_tether-prot-rise  rationale: Aemond's entry onto the ground does not shift the tether; peak-hold enacted; no new structural node
 event_map: image:boy-with-sapphire-eye; event:aemond-court-exercise (completion)
-notes: chatter bone (transition — establishes Aemond on court before the feed begins returning him); cost_ledger_anchor: none — covered by n01's cl05 entry.
+notes: held bone (Aemond takes the ready position); fault-009 fix — converted from malformed chatter to held bone; place-grounded action
 
 **b01c15s01n05**
-SVO: the sapphire catches the morning light differently from the eye beside it
+SVO: the sapphire catches the morning light
 axis_moves:
   - axis: political_register-prot  direction: up  magnitude: 1
     cost_ledger_anchor: null
@@ -93,14 +94,14 @@ event_map: image:vhagar-behavioral-imprint (partial); mechanism:vhagar-behaviora
 notes: ground-check SVO names the physical action concretely (not "Taylor reads the gait")
 
 **b01c15s01n07**
-SVO: aemond-targaryen sets the approach angle wide
+SVO: aemond-targaryen opens the approach angle
 axis_moves: []
 axes_held:
   - axis: moral_framework  rationale: same — feed returns the body; Taylor does not route it
 event_map: image:vhagar-behavioral-imprint (partial); mechanism:vhagar-behavioral-imprint-gait-read (partial)
 
 **b01c15s01n08**
-SVO: aemond-targaryen holds the weight ready at a height that clears more ground than the yard provides
+SVO: aemond-targaryen raises the blade past the master-at-arms' guard
 axis_moves: []
 axes_held: []
 event_map: mechanism:vhagar-behavioral-imprint-gait-read (completion — weight-ready for dragon-scale clearance)
@@ -137,7 +138,7 @@ axes_held:
 event_map: mechanism:nothing-routed-to-jarvis
 
 **b01c15s01n13**
-SVO: aemond-targaryen runs the correction again
+SVO: aemond-targaryen repeats the correction
 axis_moves: []
 axes_held:
   - axis: political_register-prot  rationale: the second-run is the accumulation confirming — same specimen, same finding; no new band-crossing
@@ -323,7 +324,7 @@ AUTHOR-NOTICED events:
 ### bones — S03
 
 **b01c15s03n01**
-SVO: the eastern-fringe flies pick up more thermal-noise than the arch-flies
+SVO: the eastern-fringe flies carry the thermal-noise
 axis_moves: []
 axes_held:
   - axis: social_tether-prot-rise  rationale: the fringe degradation is the feed-state that enables the S03 perceptual event; tether peak-hold enacted in the background
@@ -339,14 +340,14 @@ event_map: image:compound-eye-fringe-degradation (completion); mechanism:fringe-
 grounding: YES — eastern boundary; image-resolution as concrete feed-quality named
 
 **b01c15s03n03**
-SVO: the east-water-gate lanes return no thermal-noise against the noisy fringe
+SVO: the east-water-gate lanes return silence to the feed
 axis_moves: []
 axes_held: []
 event_map: event:gap-lane-negative-shape-emerges (partial); mechanism:absence-reads-as-negative-shape (partial)
 notes: the concreteness watch (1): gap-lane CLEAN vs fringe NOISY — figure-ground contrast set up physically before the relational_anchor bone fires; NOT Taylor labeling; the feed itself returns the contrast; no perception verb
 
 **b01c15s03n04**
-SVO: the gap-lane holds a clean window against the noisy fringe
+SVO: the gap-lane opens a hole in the feed-image
 axis_moves:
   - axis: relational_anchor_status  direction: up  magnitude: 2
     cost_ledger_anchor: cl04
@@ -356,7 +357,7 @@ grounding: YES — gap-lane window; noisy fringe; concrete figure-ground physica
 notes: HARD concreteness watch (1) satisfaction: "clean window against noisy fringe" is a SPECIFIC feed-texture contrast — the gap returns NO signal vs fringe returning signal-interference; figure-ground rendered as physical (not interior-label). Narrow `holds` license: "holds a clean window" — the gap holds absence (silence against noise = gap resisting the fringe-noise filling it; the gap is the subject; the clean-window is the absence-object held against pressure of surrounding interference).
 
 **b01c15s03n05**
-SVO: the gap-lane stands as shadow stands against a lit wall
+SVO: the feed-noise frames the gap-shape
 axis_moves:
   - axis: social_tether-antag  direction: up  magnitude: 1
     cost_ledger_anchor: cl-antag-d03
@@ -364,7 +365,7 @@ axis_moves:
 event_map: force:wren-unmapped-presence-as-negative-shape; event:wren-movement-in-gap-lanes (off-page presence encoded as negative-shape bone)
 
 **b01c15s03n06**
-SVO: the eastern-boundary edge sharpens against the fringe where the two stone edges named at c12 meet the disrupted feed
+SVO: the eastern-boundary edge sharpens against the fringe-noise
 axis_moves: []
 axes_held:
   - axis: relational_anchor_status  rationale: post-move hold; the boundary's sharpening is the perceptual event that the +2 bone encoded; no further draw this scene
@@ -494,7 +495,7 @@ axes_held:
 event_map: image:architecture-at-full-load; mechanism:deliberate-gap-structure-made-visible
 
 **b01c15s04n08**
-SVO: the coverage-record notation rests without a name-field entry for the gap-lane
+SVO: taylor-hebert-kl-122ac lifts the stylus past the name-field
 axis_moves: []
 axes_held:
   - axis: moral_legibility_to_self  rationale: the absence of a name-field entry IS the suppression enacted physically; the named-absence-without-a-name is the held axis made concrete; legibility held at 6.0
