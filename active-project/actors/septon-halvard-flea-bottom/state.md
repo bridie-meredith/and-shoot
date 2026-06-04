@@ -1,11 +1,11 @@
 STATE:
-  location: flea-bottom-hook-lower-water-trough   # b01c13 s04: the lower-Hook water-trough encounter
-  condition: [post-b01c13-encounter-foreclosed]
+  location: flea-bottom-hook-sept-corner   # b01c16: the chandler's-storehouse sept-corner (his functional sept); he clears the eaves-line at c16 close, functionally exited from Taylor's active engagement
+  condition: [post-b01c16-walkaway-foreclosed]
   inventory: []
   stats:
     age: ~45
     precinct: hook-and-adjacent-blocks
     faith_conviction: genuine-revised
-    relationship_to_taylor: established-counter-argument-foreclosed   # the moral-mirror / counter-argument figure; the same argument made at c07(d07) + c09(d09) and now formally foreclosed by Taylor at c13 (she runs the counter, does not wait for his response, moves on while he is still speaking). He does NOT know Taylor is responsible for the apparatus's decisions.
-    direct_encounters_this_arc: 3   # c07 (d07, genuine engagement), c09 (d09), c13 (last substantive — foreclosed); plus unrecorded minor water-point encounters per s04 chunk
-  # Updated /and-write b01c13 Phase 5 continuity-audit reconciliation (was story-open-d01 defaults; never advanced through c07/c09). Reflects close-of-c13 state.
+    relationship_to_taylor: behaviorally-foreclosed   # the moral-mirror / counter-argument figure. c07(d07) genuine engagement -> c09(d09) she begins not-engaging -> c13 she runs the counter and moves on while he speaks -> c16 the escalation: she does NOT give the answer at all, hears the full counter ("I am not asking you to do differently. I am asking you to know what you're doing"), and physically WALKS AWAY while he is still mid-wait. Foreclosure by behavior, not argument. He does NOT know Taylor is responsible for the apparatus's decisions; he does not call after her.
+    direct_encounters_this_arc: 4   # c07 (d07, genuine engagement), c09 (d09), c13 (runs-counter-moves-on), c16 (the behavioral walk-away — counter withheld entirely)
+  # Updated /and-write b01c16 Phase 5 continuity-audit flag-001 (location advanced from c13 water-trough to c16 sept-corner) + Phase 7 emit. Reflects close-of-c16 state.

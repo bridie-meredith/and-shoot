@@ -5671,3 +5671,122 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0091 | 2026-06-04 | SLOW (process-critic)
+
+mode: process-critic
+trigger:
+  reason: signal-accepted
+  source_report: active-project/staff/auditor/write-b01c16-bone-gate.md
+  source_verdict: |
+    HARD 0; SIGNAL 2 both accepted (signal-001 marks-repetition advisory ≥3 threshold,
+    advisory to stitch; signal-002 taylor-has-full-counter occasion-carrier mapping,
+    interior-state delivery to narrator-interest facet). Phase 3 MT-2 SOFT accepted
+    (no feed-tracking bone during s03 walk — inference carries, n08 delivers
+    foreclosure-not-flight).
+  gate_path: .claude/commands/and-write.md#phase-6
+verdict: OK
+
+question: |
+  /and-write b01c16 bone-gate passed clean (0 HARD; 3/3 SUBSTANCE-FELT all scenes).
+  Two advisory SIGNALs and one Phase-3 SOFT accepted at emit. Should the process change?
+  Specific question: "marks" prop-anchor verb-repetition has now appeared as an advisory
+  across c09 / c10 / c11 / c15 / c16 (5 chapters). Does that 5-chapter recurrence
+  warrant a process note (Rule 11 promotion: ≥3 occurrences)?
+
+decision: OK — no process change proposed.
+
+basis: |
+  Step 1 (proposals log): No prior proposal targets "marks"-verb advisory,
+  verb-frequency advisory for instrument/record/environment SVO class, or
+  any screen-writer-brief constraint for this verb class. No rejected or deferred
+  proposal covers this target. No open proposal with matching target+change_type.
+
+  Step 2 (content vs. process): The gate at Phase 6 is already performing the
+  detection function that a new AP-SCAN would encode. REGISTER-AS-MANNERISM fires
+  on ≥3 of the same VERB+OBJECT pair; the "marks" occurrences across all five chapters
+  have distinct objects in every case except the c16 within-chapter exact repeat (×2,
+  below the ≥3 HARD threshold). The existing SIGNAL path catches the advisory at the
+  correct severity and routes it to /and-stitch Phase 3/4 — the only structurally
+  viable resolution point. No gate gap exists.
+
+  Step 3 (Rule 11 promotion check): Rule 11 says taste flags that recur ≥3 times
+  across reviews should graduate to mechanical AP-SCAN checks. The "marks" advisory
+  has fired 5 times (c09/c10/c11/c15/c16). However, the Rule 11 promotion path requires
+  the same FAILURE CLASS to recur — not just the same gate firing. The prior
+  DEC-0088 (c15 insect-feed template) made this discrimination explicitly: "Multiple
+  architecturally distinct accept-with-rationale dispositions at the same gate is the
+  gate functioning correctly — each accepted instance is the gate doing its job." The
+  "marks" advisory is the same architectural root across all five chapters: the SVO
+  discipline fence requires concrete transitive verbs for instrument/record/environment
+  bones, and "marks" (concrete physical act: leaves a trace on a surface) is one of
+  the narrowly compliant verb forms in that semantic class. The recurrence is not a
+  process failure — it is the gate correctly flagging an SVO-constraint artifact and
+  correctly routing it to prose-variation resolution at the stitch layer.
+
+  Step 4 (stitcher resolution evidence): The c09 render-log explicitly shows the stitcher
+  varied the "marks" verb at all three occurrences. The c10 fixer log shows
+  "corwick marks → corwick walks the errand-corridor" specifically to avoid marks-mannerism
+  (resolved at the fixer level before the stitcher even needed to act). There is no
+  evidence of stitch-layer failure on any prior "marks" carry-forward. The
+  advisory-and-resolve path is functioning correctly.
+
+  Step 5 (c16 new element — exact VERB+OBJECT pair repeat): "marks the storehouse wall"
+  appears at s01n02 and s03n05 — the same exact pair twice. The formal REGISTER-AS-MANNERISM
+  gate fires at ≥3 of the same pair; 2 is below the HARD threshold. The auditor correctly
+  called it advisory and flagged it as the highest-risk instance, routing to Phase 3
+  redundancy cull and Phase 8 editorial reflection. This is the correct disposition.
+  The within-chapter exact-pair repeat is a new severity sub-class, but the gate caught
+  it and routed it at the right severity. A stricter threshold (≥2 as HARD) would
+  over-fire on legitimate bookend-callback pairs. Advisory-plus-flag is the correct
+  calibration; no gate-criterion gap.
+
+  Step 6 (signal-002 occasion-carrier mapping): Gate correctly identified that the
+  event_map entry for "taylor-has-full-counter" is mapped to an occasion-carrier bone
+  without an omission_rationale annotation. The gate correctly routed interior-state
+  delivery to the narrator-interest facet. No fixer action required; no bone revision.
+  Pure content flow, not a process gap.
+
+  Step 7 (Phase-3 MT-2 SOFT — no feed-tracking bone during s03 walk): SOFT findings
+  are non-blocking by design. The inference carries via n08 (foreclosure-not-flight).
+  The gate correctly classified this as SOFT and accepted it with rationale.
+  Not a process failure.
+
+rationale: |
+  Three independent findings, three clean OK judgments. Signal-001 ("marks" advisory):
+  the gate is functioning as designed; the SVO fence structurally constrains the verb
+  set for instrument/record/environment bones; the stitcher resolves the advisory at
+  prose layer; the existing SIGNAL detection is already the AP-SCAN equivalent for this
+  class; adding a new AP-SCAN would duplicate live gate logic. Signal-002 (occasion-carrier
+  mapping): routing-gap identification with correct facet-resolution routing; not a
+  process gap. Phase-3 SOFT: correctly dispositioned non-blocking with inference carry.
+
+  On the 5-chapter "marks" recurrence: the recurrence count does not override the
+  content-vs-process discrimination. What matters is whether the SAME FAILURE CLASS
+  recurs, and the "marks" advisory is architecturally forced (SVO fence + instrument-class
+  verb set), not an authoring error. The stitcher has not failed on any prior carry.
+  A screen-writer brief constraint would conflict with the SVO fence; a new AP-SCAN would
+  replicate existing gate logic. Standard hold: the appropriate trigger for a process
+  change is stitch-layer failure on a "marks" advisory carry, not bone-gate advisory
+  recurrence. This entry is the N=5 occurrence marker.
+
+  The c16 within-chapter exact-pair repeat ("marks the storehouse wall" ×2) is the most
+  novel element in this dispatch. It is adjacent to REGISTER-AS-MANNERISM territory
+  (one below the ≥3 HARD threshold). The auditor's advisory-plus-flag route is correctly
+  calibrated. If a future chapter produces an exact-pair count of ≥2 AND the stitcher
+  fails to vary it in the draft, that is the triggering evidence to revisit the ≥3
+  HARD threshold (or add a ≥2 SIGNAL-with-stitch-block disposition).
+
+trade-off: |
+  Not proposing means the "marks" advisory pattern is not formally tracked as a
+  promotion candidate in the proposals log. Mitigated by: this decisions-log entry
+  explicitly counts N=5 and records the architectural root cause; the stitcher has
+  resolved every prior instance; if stitch-layer failure occurs on c16 or a future
+  chapter, that is the triggering evidence and the evidence trail is here.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no

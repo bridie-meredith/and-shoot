@@ -9281,7 +9281,29 @@ books:
             FAIL with NEW categories re-dispatches admin per normal flow.
 
       - slug: b01c16
-        status: scened   # /and-substance chapter b01c16 Phase 6 (was planned)
+        status: bones-written   # /and-write b01c16 Phase 7 emit (was scened)
+        bones_file: theater/bones/b01-c16.md
+        bones_count: 27
+        substance_bone_gate_verdict: PASS   # auditor 0 HARD / 2 advisory SIGNAL-FLAG accepted; audience 3-of-3 SUBSTANCE-FELT all 3 scenes
+        substance_delta_measured:
+          axes_moved: [{axis: moral_legibility_to_self, delivered: 0.5, target: 0.5}]   # @19 stop +0.25 + @21 turn +0.25
+          density_measured: "all-held except s03 (2 movers / 9 bones); falling-aftermath shape; 0 chatter bones"
+          felt_verdict: SUBSTANCE-FELT-3of3
+        # flat_id map (Phase 7; bones file authoritative): s01 -> flat 1-8 (n07/n06 swapped: 6=n07,7=n06);
+        # s02 -> flat 9-18 (n08 moved forward: 9=n01,10=n02,11=n03,12=n08,13=n04,14=n05,15=n06,16=n07,17=n09,18=n10);
+        # s03 n01-n09 -> flat 19-27. Dialogue anchors: flat 10 [halvard:1], flat 17 [halvard:2].
+        write_signals:   # Phase 6 SIGNALs (both accepted, advisory) + Phase 3 MT-2 (accepted)
+          - id: signal-001
+            finding: "marks-repetition (verb 'marks' x4 chapter-wide; pair 'marks the storehouse wall' x2 @2/@23) — under the >=3 VERB+OBJECT mannerism threshold"
+            disposition: accepted
+            note: "advisory to /and-stitch Phase 3/8 voice-embodiment; vary clause-rhythm across the 'marks' prop-anchors"
+          - id: signal-002
+            finding: "s03 event_map 'taylor-has-full-counter' -> @20 (occasion-carrier); interior-state delivery to narrator-interest facet at /and-facets"
+            disposition: accepted
+          - id: mt-2
+            finding: "Phase 3 SOFT — no feed-tracking bone during the s03 @22-@25 walk; foreclosure-not-flight proof deferred to @26"
+            disposition: accepted
+            note: "inference carries; @26 (Halvard clears the eaves-line) delivers; adding a bone risks redundancy / over-explanation (DEC-0090 item 4)"
         chunk: |
           The aftermath chapter: Taylor stops engaging Halvard's counter-argument. He finds
           her at the sept, as before. She hears the counter. She has the answer. She does not
