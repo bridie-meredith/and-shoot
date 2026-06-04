@@ -5415,3 +5415,169 @@ pr_ref: null
 defer_until: null
 supersedes: null
 ```
+
+---
+
+## PROP-0040
+
+```yaml
+id: PROP-0040
+created_at: 2026-06-04T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: failure
+  source_report: active-project/staff/reviews/coldread-b01c14-2026-06-04.md
+  source_verdict: |
+    SHIPPED-WITH-CAVEATS (Phase 9 Class-B cold-read FAIL CONTINUE=no; central event recovered;
+    cause = design-inherent accounting-abstraction register + cold-context name-opacity;
+    DEC-0085 coupling-rule dispatch). Fourth application of the coupling rule across
+    c10/c11/c12/c14 (DEC-0072/0074/0078/0085). All four deterministic on identical pattern.
+target:
+  type: command
+  path: .claude/commands/and-stitch.md
+  section: "Phase 9 — Step 2 Diff against intent (harness) / Step 4 Verdict + memory"
+change_type: modify
+rationale: |
+  PROBLEM: The Phase 9 coupling-rule (Class-B FAIL + matching-complaint → SHIPPED-WITH-CAVEATS)
+  has now been applied four times across c10/c11/c12/c14. Each application was deterministic —
+  in DEC-0074 and DEC-0078 and DEC-0085 the admin user-proxy answered identically, with zero
+  ambiguity, citing the prior DEC entries as the basis. The coupling rule is stable. Two
+  sub-cases have emerged across the four applications:
+
+  Case 1 — Zero tractable complaints (c11/c12 shape): CONTINUE=no causes are 100%
+  design-inherent (design-inherent abstract register by contract) and/or cold-context noise
+  (serial mid-point proper-noun load). No complaint is addressable by any revise without
+  violating the endorsed substance contract. Admin round-trip adds no information. DEC-0074
+  and DEC-0078 are both pure Case 1 — both answered "SHIPPED-WITH-CAVEATS, no depth pass" in
+  one sentence citing prior decisions.
+
+  Case 2 — Tractable complaints remain alongside design-inherent causes (c14 shape): the
+  CONTINUE=no causes include at least one addressable texture gap (courier-as-person
+  concreteness, Sera-stake staging) that is NOT design-inherent and CAN be addressed via
+  /and-write revise --from-signals without violating the substance contract. Admin round-trip
+  adds value here: it identifies the tractable items, names the depth-pass targets, and
+  stamps `depth_pass_mandatory: yes` with a specific target brief. DEC-0085 is a pure Case 2
+  — the tractable items are what distinguished c14's disposition from c11/c12's.
+
+  The current Phase 9 spec does not encode this distinction. The Phase 9 Step 2 harness fires
+  a FAIL and routes to admin user-proxy in both cases. In Case 1, the admin round-trip is pure
+  overhead — a deterministic call with the answer already encoded in DEC-0072/0074/0078. In
+  Case 2, it is load-bearing (the tractable-item identification is the admin value-add).
+
+  PROPOSED CHANGE: Add a Case 1 auto-ship path to Phase 9 Step 2 (the diff harness). When
+  the Class-B routing fires AND the chunk_cold_read.cold_read_risk_carry categories account
+  for ALL CONTINUE=no complaint categories (zero tractable complaints remain), the harness
+  resolves directly to SHIPPED-WITH-CAVEATS WITHOUT an admin user-proxy dispatch. The
+  per-chapter caveat string is assembled mechanically from the carried risk items. When any
+  CONTINUE=no complaint is NOT covered by the carried risk categories (Case 2), the existing
+  admin user-proxy dispatch fires as before.
+
+  This does not change the gate's detection (CONTINUE=no still fires Class-B), routing
+  (Class-B still goes to SHIPPED-WITH-CAVEATS on matching-complaint), or the caveat record
+  (the caveat string is still written to showrunner memory). It eliminates one admin
+  dispatch per Case 1 chapter — a small efficiency gain per chapter that adds up at book scale
+  (c10+c11+c12 would each have saved one admin round-trip under this rule; across a 14-chapter
+  book that is real budget). The residual admin dispatch (Phase 9.5 process-critic) still fires.
+
+  DISCRIMINATION — what counts as Case 1 (zero tractable) vs. Case 2 (tractable remains):
+  The Phase 9 harness performs this classification by matching each CONTINUE=no complaint
+  from the cold-read against the chapter's `chunk_cold_read.cold_read_risk_carry` list:
+    - If every complaint maps to a carried risk item (exact or paraphrase match), Case 1.
+    - If ANY complaint has no carried risk match, Case 2.
+  Hard fence: the harness applies conservative matching — "no match" wins over "marginal
+  match." When in doubt, fire the admin dispatch (Case 2 path). The auto-ship path is not a
+  cost-cutting bypass; it is the mechanical expression of a ruling the principal has made
+  four times on identical evidence. Case 2 complaints are not about cost; they are about
+  specificity of the depth-pass brief.
+
+  INTERACTION WITH PROP-0018 (Class A/B discriminator): PROP-0018 added the Class A/B branch
+  at Phase 9 Step 2 and specified "admin returns disposition; pipeline applies it. Class B
+  admin default: (P) given substance contract was approved." This proposal amends the Case 1
+  half of that admin default to mechanical harness execution (admin default = SHIP, no dispatch
+  needed). The Case 2 half (admin dispatch for tractable items) is unchanged — PROP-0018's
+  pipeline-applies-it contract continues to govern Case 2. PROP-0018 does not need to be
+  reopened; this is a refinement of its routing.
+
+  DEPTH-PASS STATUS CLARIFICATION (candidate b in trigger): the trigger's concern about
+  "4 chapters with depth-pass debt" is inaccurate. Actual pending depth passes as of
+  this dispatch: c10 (PASS-WITH-DEPTH-PASS-REQUIRED, bone-level staging targets) and
+  c14 (mandatory per DEC-0085, texture-level targets). c11 and c12 are SHIPPED-WITH-CAVEATS
+  without depth-pass obligations (c11: readability READABLE, no mandatory depth pass;
+  c12: DEC-0078 explicitly resolved apparatus-density to /and-cohere, not a per-chapter
+  depth pass). The SHIPPED-WITH-CAVEATS / PASS-WITH-DEPTH-PASS-REQUIRED distinction is
+  working correctly. No process change warranted on depth-pass accumulation.
+
+  UPSTREAM GROUNDING DEFAULTS (candidate c in trigger): c14's tractable gaps
+  (courier-as-person, Sera-stake) are first-occurrence at this exact class (tractable texture
+  gap in an interior-accounting chapter shipping SHIPPED-WITH-CAVEATS). Not catastrophic.
+  Standard first-occurrence hold applies per process-critic Rule step 4.
+evidence_refs:
+  - "active-project/staff/reviews/coldread-b01c14-2026-06-04.md — Class-B, CONTINUE=no,
+    causes = aggregate abstraction-density + names-unfamiliar; Phase 8.5 PASS; tractable
+    items (courier-as-person, Sera-stake) identified; DEC-0085 coupling-rule dispatch."
+  - "staff/admin/decisions.md — DEC-0074 (c11 Phase 9, Case 1: all complaints covered by
+    carried risk; one-sentence answer; no depth pass); DEC-0078 (c12 Phase 9, Case 1:
+    identical); DEC-0085 (c14 Phase 9, Case 2: tractable items identified; depth-pass
+    mandatory before book-close). DEC-0072 (c10 chunk-level precedent)."
+  - ".claude/commands/and-stitch.md — Phase 9 Step 2 (current harness: FAIL routes to admin
+    user-proxy unconditionally; no Case 1/2 discrimination in the spec). Phase 9 Step 4
+    (SHIPPED-WITH-CAVEATS not listed as a first-class verdict alongside PASS / PASS-WITH-
+    DEPTH-PASS-REQUIRED / FAIL)."
+  - "staff/admin/process-proposals.md — PROP-0018 (Class A/B discriminator; status: check
+    triage stamp before implementing; this amendment is a refinement of PROP-0018's Class B
+    admin-default, not a rewrite of it)."
+recurrence_count: 4
+proposed_diff: |
+  In .claude/commands/and-stitch.md, Phase 9 Step 2 — Diff against intent (harness),
+  immediately after the Class-B classification check (summary maps to goal), add:
+
+  **Complaint-coverage check (Case 1 vs. Case 2):**
+
+    After Class-B is established, classify each CONTINUE=no complaint from the cold
+    reader's answers against `chapters[<slug>].chunk_cold_read.cold_read_risk_carry` items:
+      - COVERED = a carried risk item accounts for this complaint class. Examples of
+        covered mappings: "relentlessly abstract ledger-metaphor" → carried risk
+        "design-inherent abstract register"; "Otto/Sera faction unexplained" → carried risk
+        "cold-context proper-noun load (serial mid-point)."
+      - UNCOVERED = no carried risk match, OR the complaint names a tractable texture gap
+        (e.g., "courier never felt as a person", "stakes not staged on-page", "no concrete
+        scene") even if partially overlapping with a carried item.
+      Conservative fence: classify UNCOVERED when in doubt.
+
+    **Case 1 — all complaints COVERED:**
+      Skip the admin user-proxy dispatch. Resolve directly:
+        cold_read.verdict: SHIPPED-WITH-CAVEATS
+        cold_read.case: 1
+        cold_read.caveat: <assembled from cold_read_risk_carry items verbatim>
+        depth_pass_pending: false
+      Continue to Step 3, Step 3.5, Step 4 (write memory), Phase 9.5 (process-critic).
+
+    **Case 2 — ≥1 complaint UNCOVERED:**
+      Dispatch admin user-proxy as currently specified (PROP-0018 path, unchanged).
+        cold_read.case: 2
+      Admin identifies tractable items, authors depth-pass brief if warranted, returns
+      disposition. Pipeline applies it.
+
+    If `chunk_cold_read.cold_read_risk_carry` is absent (chapter had PASS-CHUNK, not
+    PASS-CHUNK-VOICE-RISK), treat as Case 2 unconditionally (no carried risk → all
+    complaints are uncovered).
+
+  In .claude/commands/and-stitch.md, Phase 9 Step 4 Verdict + memory block,
+  add SHIPPED-WITH-CAVEATS as a first-class verdict bullet:
+
+    "**SHIPPED-WITH-CAVEATS** — Class-B FAIL; all CONTINUE=no complaints covered by
+    carried risk (Case 1) OR admin-dispositioned (Case 2). Terminal. No retry.
+    Depth-pass obligation: none for Case 1; per admin brief for Case 2.
+    Write: `cold_read = {verdict: SHIPPED-WITH-CAVEATS, case: 1|2, caveat: <string>, ...}`.
+    Phase 9.5 (process-critic) fires as normal."
+
+cost_estimate: S
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
+

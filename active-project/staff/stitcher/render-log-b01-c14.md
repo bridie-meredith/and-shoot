@@ -126,3 +126,32 @@ RECONCILE:
   bones: rendered=46 + merged=0 + dropped=0 + rendered-illegible=0 = 46 authored ✓
   facets: rendered across NI(11)+memory(4)+sensory(3,grd-licensed @11/@28)+feeling(2)+exposition(2:@0 preamble+@10 bridge)+loc-state(4)+vibes(8)+state-updates(17); metaphor 0. unrendered-remainder surfaced per cite-index where zero-citation (vibes episode-ambient + some state-updates render as connective, not discrete spans — standard for interior chapter).
   reshow=0 reword=0(Q9 clean) cuts=0 illegible=0
+
+## Phase 10 — Forward-thread (final cascade step)
+- threaded_against: active-project/staff/showrunner/aggregate-state.md (through_chapter b01c13)
+- verdict: **PASS-THREAD** (0 substantive parking-lot items; c15 Phase 0 CLEAR)
+- report: active-project/staff/reviews/forward-thread-b01-c14-2026-06-04.md
+- aggregate-state: advanced through_chapter b01c13 -> b01c14 (4 axes moved; held axes unchanged; schema-validated)
+
+### Threading-review (Step 2)
+- UNPAID-HOOK: none requiring action. hook-0015 (gap-lanes residual / Black-faction courier-adjacent figure) PAID by c14 (figure confirmed S02-S03 + detained S04 @19; corridor closed). hook-0012 (cf-rhaenyra-pressure) ADVANCED on-page (cloth-merchant FLIGHT past the c11 burn @5-@7) — stays open. hook-0014 (withholding-from-Otto) INVERTED on-page (11-week-withheld walk-detail delivered as confirming instrument @17) — stays open. hook-0011 (non-extractable) confirmed @23. hook-0005 (Sera) is the live stake throughout (@9), correctly left open (Sera-as-felt-stake gap owned by depth-pass pl-2026-06-04-002, OUT of Phase 10 scope).
+- MISSED-CALLBACK: none applied. 1 candidate held uncertain (cloth-merchant c11-burn callback @5-@7 — its target span is inside the queued depth-pass pl-2026-06-04-002 S01 rework scope; applying an analeptic clause now risks adding to the cold-read-flagged AIRLESS density the depth-pass must reduce). Wren (preamble names her by name; body @21 keeps suppressed-register-safe per WATCH-07), Jarvis (@11 functional, frame established), gap-lanes/east-water-gate (consistent with c12 frame) all reinforced on-page already.
+- STATE-DRIFT: none. Draft consistent with the Phase-0-corrected baselines (position-prot-rise 5.0->6.0 cl-d07a; social_tether-antag 6.0->7.5 cl-antag-d10); "Non-extractable" @23 + position-of-no-exit consistent with measured close; no rank-9-lock asserted (correctly deferred to c15).
+
+### Classify-and-apply (Step 3)
+- cosmetic: 0 applied
+- presentation-reinforcement: 0 applied (every callback already on-page; chapter prose-finalized through Phase 9)
+- substantive: 0 written (cl04 / cl-antag-d10 / cl-d07a completions are bone-authored + rendered; the courier-as-person + Sera-as-stake depth gap is already captured by pl-2026-06-04-002 (HARD) and NOT duplicated per the run note)
+- uncertain: 1 held (uncertain-001 cloth-merchant c11-burn callback — not applied, not parking-lotted; folds into depth-pass author discretion)
+
+### Aggregate-state update (Step 4)
+- axis_state[]: relational_anchor_status 4.5->5.5 (cl04 chapter-draw + retroactive Wren-naming), social_tether-antag 6.0->7.5 (cl-antag-d10 COMPLETE; 9-LOCK deferred to c15), position-prot-rise 5.0->6.0 (cl-d07a COMPLETE; position-of-no-exit named), moral_legibility_to_self 5.5->6.0 (recognition present + suppressed, deepest crack pre-full-recognition). All else HELD.
+- open_hooks[]: hook-0015 -> paid (paid_at b01c14, expected_payoff c14-c15); hook-0012 / hook-0014 / hook-0011 c14-advance notes appended (stay open).
+- characters[]: gap-lane-courier-figure appended (detained b01c14; reader_legibility partial; depth-pass not-felt-as-person note). Wren last_appearance b01c12->b01c14 (off-page; @21 retroactive-naming; anchor 5.5; exclusion-pattern reader-visible). cloth-merchant last_appearance b01c11->b01c14 (FLED).
+- world_state[]: +3 (cloth-merchant-stall-foreclosed, dragonstone-aware-of-lower-city-apparatus, two-courier-detentions).
+- revision_layer[]: 0 new entries (0 cosmetic + 0 presentation-reinforcement applied).
+- conflict_log[]: no new entries (cohere has not run; no contradiction).
+- Validation: through_chapter monotonic b01c13->b01c14 PASS; all axes in state_axes[] PASS; all hook introduced_at <= b01c14 PASS; hook-0015 paid_at b01c14 > introduced_at b01c12 PASS; characters introduced_at <= b01c14 PASS.
+
+### Verdict (Step 5)
+**PASS-THREAD.** 0 cosmetic + 0 presentation-reinforcement applied; 0 substantive parking-lot items; aggregate-state updated through b01c14; 1 uncertain held; c15 Phase 0 CLEAR. The mandatory depth-pass pl-2026-06-04-002 (courier-as-person + Sera-as-stake; gates book-close) is a cold-read gap independent of this threading pass, not duplicated here.

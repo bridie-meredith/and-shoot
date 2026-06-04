@@ -8260,6 +8260,27 @@ books:
 
       - slug: b01c14
         status: stitched
+        stitched: true
+        draft_path: active-project/draft/b01-c14.md
+        cold_read:
+          read_at: 2026-06-04T00:00:00Z
+          verdict: SHIPPED-WITH-CAVEATS   # DEC-0085 (admin user-proxy): Class-B FAIL (CONTINUE=no, events recovered) -> terminal ship per coupling rule (exact match c10/c11/c12 DEC-0072/0074/0078)
+          recovered_summary: "A surveillance operator, paying off a blackmail debt, betrays a courier she's quietly watched for weeks, then refuses to do the same to the next unnamed person -- told almost entirely as bookkeeping metaphor."
+          report_path: active-project/staff/reviews/coldread-b01c14-2026-06-04.md
+          continue: no
+          staging_signals: 0
+          signal_clusters: []
+          readability_axis:
+            verdict: AIRLESS
+            basis: "cold-read CONTINUE=no on aggregate accounting-abstraction density (design-inherent; chunk PASS-CHUNK-VOICE-RISK); Phase 8.5 muffle-check PASSED (spine concrete) but aggregate register reads airless to uninformed cold-reader"
+          phase_8_5_coherence:
+            verdict: PASS
+            central_event_muffle: PASS (confirmation + detention land concrete)
+            report_path: active-project/staff/reviews/coherence-b01-c14-2026-06-04.md
+          depth_pass_pending: true
+          depth_pass_target: "courier-as-person concretization + Sera-as-stake staging (/and-write b01c14 revise --from-signals)"
+          cold_read_risk_carry: "aggregate abstraction-density; courier-not-felt-as-person; Sera-stake-not-staged -- DEC-0085 authorized as known design-inherent risk; depth pass mandatory before book-close"
+          stale_since: null
         audit_path: active-project/staff/auditor/facets-final-audit.md
         audit_complete: true
         audience_gate_path: active-project/staff/auditor/facets-audience-gate-r2.md

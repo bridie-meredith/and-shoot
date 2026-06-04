@@ -1,7 +1,45 @@
 # Aggregate State — taylor-westeros-good-intentions
 
 # Rolling forward-feed channel for cross-chapter narrative continuity (schema: schemas/aggregate-state.schema.md).
-# Producer: /and-stitch Phase 10 (forward-thread). Consumer: /and-substance chapter b01c14 Phase 0.
+# Producer: /and-stitch Phase 10 (forward-thread). Consumer: /and-substance chapter b01c15 Phase 0.
+# Scoped through b01c14. c14 rolled (climax, d14; the non-extractable-confirmation + cl04-courier-closure chapter;
+#   from chapters[b01c14].substance_delta_measured):
+#   relational_anchor_status +1.0 (->5.5; cl04 chapter-draw of cl04's +3 total — c14 draws +1.0, c15 +1.5, +0.5 later;
+#     the NARRATIVE ledger-entry on the gap-lane courier opens (S03) + closes (S04, figure detained), and the cl04
+#     closing-logic retroactively NAMES the un-priced Wren omission in the adjacent column-format @21 — the open item
+#     running the same logical function as the closed one; held one breath and suppressed, no name set down),
+#   social_tether-antag +1.5 (->7.5; cl-antag-d10 COMPLETE — the apparatus confirms it identified the figure
+#     independently (S02), Taylor's confirmation makes her withholding-capacity structurally non-protective, and the
+#     detention-outcome (S04) lands Otto's leverage as structural; non-extractable confirmed. Reaches 9-LOCK at c15
+#     via cl-antag-d03, NOT at c14 — the chunk-text 'reaches rank 9' completes next chapter),
+#   position-prot-rise +1.0 (->6.0; cl-d07a COMPLETE — the position-of-no-exit is NAMED in the internal record at
+#     the detention-outcome @23: 'no path that did not go through the apparatus, no mechanism that cleared the
+#     confirmation already given'; 'Non-extractable. The word was in the record without being written'),
+#   moral_legibility_to_self +0.5 (->6.0; recognition present AND suppressed — the deepest crack before full
+#     recognition; Taylor holds the closed cl04 entry and the un-entered Wren item in the same accounting-look for
+#     one breath and does not let the shape settle; the Gold-Morning echo @42 'a city, a different kind of count,
+#     a different kind of named-and-unpriced' surfaces SHAPE-ONLY (Earth-Bet fence clean) and does not settle).
+#   HELD: moral_framework -2 (completion within the rationalize-each-trade pattern; repetition-shape glimpsed +
+#     suppressed, not integrated; no new breach threshold), political_register-prot 5 (contempt stable from c13;
+#     no new feed-content), social_tether-prot-rise 8.5 (Sera's guarantee confirmed active by completed delivery;
+#     no new structural node), capability 6.5 (no new expansion; bottlefly placement is standard coverage),
+#     position-world 7, political_register-world 7.0, position-prot-collapse 7 + social_tether-prot-collapse 8
+#     (collapse axes still dormant at start_rank; collapse not yet drawn).
+#   hook-0015 (gap-lanes residual / Black-faction courier-adjacent figure, c12) PAID@c14 (the figure confirmed +
+#     detained; corridor closed). hook-0012 (Dance / cf-rhaenyra-pressure) ADVANCED on-page (cloth-merchant FLIGHT
+#     = Dragonstone-pressure escalated past the c11 burn) but stays OPEN (larger Black-faction counter-response
+#     mediated/future). hook-0014 (withholding-from-Otto pattern) INVERTED on-page (the 11-week-withheld walk-detail
+#     — low-set left eye — DELIVERED as the confirming instrument @17); pattern-thread continues, hook stays open.
+#   gap-lane-courier appended (introduced+detained b01c14; reader_legibility partial — cold-read flagged
+#     not-felt-as-person, depth-pass target pl-2026-06-04-002). Wren NOT on-page; @21 retroactive-naming is
+#     structural/interior — anchor advanced to 5.5, exclusion-pattern now reader-visible. cloth-merchant FLED@c14.
+#   world_state +3 (cloth-merchant-stall-foreclosed, dragonstone-aware-of-lower-city-apparatus, two-courier-detentions).
+#   0 threading edits applied (every callback already on-page — preamble carries Wren/Sera/Otto/gap-lane-courier
+#     by name; body keeps Wren suppressed-register-safe; hook-0015 paid in body; STATE-DRIFT none vs the Phase-0-
+#     corrected baselines); PASS-THREAD; 1 uncertain held (cloth-merchant c11-burn callback, overlaps pl-2026-06-04-002
+#     S01 depth-pass scope; not applied, not parking-lotted); c15 Phase 0 CLEAR. NOTE: the mandatory depth-pass
+#     pl-2026-06-04-002 (courier-as-person + Sera-as-stake; gates book-close) is a cold-read gap, NOT a Phase-10
+#     threading finding; independent of this pass.
 # Scoped through b01c13. c13 rolled (hinge, d13; the articulated-contempt + Halvard-foreclosure chapter;
 #   from chapters[b01c13].substance_delta_measured):
 #   political_register-prot +1.5 (->5; articulate-contempt threshold crossed — diffuse resentment becomes
@@ -67,8 +105,8 @@ aggregate_state:
   version: 1
   project: taylor-westeros-good-intentions
   through_book: b01
-  through_chapter: b01c13
-  last_updated: 2026-06-03T18:50:00Z   # c13 hinge threaded: 2 axes moved (political_register-prot +1.5 -> 5.0 articulate-contempt threshold; political_register-world +0.5 -> 7.0 d06-list operationalized in magistrate proceeding), all others HELD, hook-0007 FORECLOSED on-page (DEC-0071 FORECLOSE@c13; structured entry stamped status:paid paid_at:b01c13), Aldric appended (aldric-ward-elder-lower-precinct), Halvard last_appearance advanced b01c07->b01c13, world_state +2 (the-hook-lower-water-trough, d06-list-operationalized), 0 revision_layer entries (0 cosmetic + 0 presentation-reinforcement — every callback already on-page; PASS-THREAD), 0 unacknowledged-substantive (c14 Phase 0 CLEAR). pl-2026-06-03-006(a) Halvard-foreclosure-watch SATISFIED. (18:50 completion pass: prior 18:35 emit left the structured hook-0007/Aldric/Halvard/world_state writes unfinished — header+axis_state+log were done; this pass finished Step 4.)
+  through_chapter: b01c14
+  last_updated: 2026-06-04T03:45:00Z   # c14 climax threaded (cl04 + cl-antag-d10 + cl-d07a): 4 axes moved (relational_anchor_status +1.0 -> 5.5 cl04 chapter-draw + retroactive Wren-naming; social_tether-antag +1.5 -> 7.5 cl-antag-d10 COMPLETE non-extractable confirmed (9-LOCK deferred to c15); position-prot-rise +1.0 -> 6.0 cl-d07a COMPLETE position-of-no-exit named; moral_legibility_to_self +0.5 -> 6.0 recognition-present-and-suppressed, deepest crack pre-full-recognition), all others HELD. hook-0015 PAID@c14 (gap-lane courier confirmed+detained); hook-0012 ADVANCED-but-open (cloth-merchant flight = Dragonstone-pressure escalated); hook-0014 INVERTED-but-open (11-week-withheld walk-detail delivered as confirming instrument). gap-lane-courier appended (detained; reader_legibility partial — depth-pass pl-2026-06-04-002); Wren last_appearance b01c12->b01c14 (off-page @21 retroactive-naming; anchor 5.5; exclusion-pattern reader-visible); cloth-merchant last_appearance b01c11->b01c14 (FLED). world_state +3 (cloth-merchant-stall-foreclosed, dragonstone-aware-of-lower-city-apparatus, two-courier-detentions). 0 revision_layer entries (0 cosmetic + 0 presentation-reinforcement — every callback already on-page; PASS-THREAD), 0 unacknowledged-substantive (c15 Phase 0 CLEAR). 1 uncertain held (cloth-merchant c11-burn callback; overlaps pl-2026-06-04-002 S01 depth-pass scope). Phase 0 handoff_conflicts pre-corrected position-prot-rise (5.0) + social_tether-antag (6.0) baselines; draft verified consistent.
   last_updated_by: and-stitch-phase-10
 
   axis_state:
@@ -89,12 +127,12 @@ aggregate_state:
       notes: "ESTIMATE-DIVERGENCE (pre-c12) — measured-delta path (c01 +1.0 / c04 +2.0 measured / c08 +0.5) = 5.5; handoff_out narratives carried 5.0 (stale lineage pre-c04 +1.5→+2.0 /and-write redo). c12 +1.0 (cl05 gain side, two tranches: s01 first ward-cluster +0.5 + s04 second ward-cluster +0.5 = full-deployment threshold crossed) -> 6.5; the c12 handoff_out was corrected to MEASURED 6.5 at /and-write Phase 7 (was stale 6->6.5 book-author lineage). Recorded at measured-authoritative 6.5. c12 = architecture complete in scope: all five wards + Flea Bottom approaches mapped simultaneous, the-muddy-way ward added (last cluster), not walked back by pulling any single node. c08 added Oswyn watcher-network integration (Khepri-echo in method); c02/c03/c05/c06/c07/c09/c10/c11 HELD"
 
     - axis: position-prot-rise
-      rank: 5
+      rank: 6.0
       start_rank: 1
-      delta_since_start: 4
-      last_movement_at: b01c12
+      delta_since_start: 5.0
+      last_movement_at: b01c14
       last_updated_by: and-stitch-phase-10
-      notes: "rise phase; c03 +1.0 (Otto awareness, cl02) + c04 +1.0 (acceptance confirmed, conduit role) + c10 +1.0 (cl-d07a: formalization of the arrangement — Otto names the function explicitly; position confirmed at near-peak; informal-deniability foreclosed; 1.0 of 2.0 drawn, 1.0 remains for cl-d07a completion at c14) + c12 +1.0 (cl02: third and most consequential withholding-from-Otto — the lane-refusal is no longer a quiet pattern but a named gap confirmed in the channel record, a structural limit written into the deliverable; position moves toward non-exit confirmation, withholding now load-bearing for position). Peaks ~7 at d07; HELD c05-c09/c11"
+      notes: "rise phase; c03 +1.0 (Otto awareness, cl02) + c04 +1.0 (acceptance confirmed, conduit role) + c10 +1.0 (cl-d07a: formalization of the arrangement — Otto names the function explicitly; position confirmed at near-peak; informal-deniability foreclosed; 1.0 of 2.0 drawn, 1.0 remains for cl-d07a completion at c14) + c12 +1.0 (cl02: third and most consequential withholding-from-Otto — the lane-refusal is no longer a quiet pattern but a named gap confirmed in the channel record, a structural limit written into the deliverable; position moves toward non-exit confirmation, withholding now load-bearing for position) + c14 +1.0 (cl-d07a COMPLETE: the position-of-no-exit NAMED in the internal record at the gap-lane-courier detention-outcome @23 — 'no path that did not go through the apparatus, no mechanism that cleared the confirmation already given'; 'Non-extractable. The word was in the record without being written.' Bone-gate baseline 5.0 per the Phase-0 handoff_conflict correction (handoff_in predicted 5.5; aggregate measured 5.0); +1.0 lands at 6.0, not the stale handoff_out-stated 6.5). Peaks ~6-7 at d07/d14; HELD c05-c09/c11/c13"
 
     - axis: position-prot-collapse
       rank: 7
@@ -105,20 +143,20 @@ aggregate_state:
       notes: "collapse phase dormant until d10 (non-extractable confirmed); sits at peak-state start_rank 7 through c08; cl07b not yet anchored"
 
     - axis: relational_anchor_status
-      rank: 4.5
+      rank: 5.5
       start_rank: 1
-      delta_since_start: 3.5
-      last_movement_at: b01c12
+      delta_since_start: 4.5
+      last_movement_at: b01c14
       last_updated_by: and-stitch-phase-10
-      notes: "HIGH=WORST; c02 +1.0 (Wren enters coverage map as named function-node, account opens) + c06 +1.0 (first spoken exchange; weight added by Wren's omission from deliverable, cl-d06) + c09 +0.5 (cl-d08 first tranche: Wren now a mapped pattern/route in the internal map — 'the map takes Wren's pattern... clean, indexed, kept' — structurally present without ledger entry) + c12 +1.0 (cl-d08 mechanism / cl-d06 debt: the lane-refusal SETTLEMENT — Taylor declines to cover the east-water-gate lanes because Wren's free movement through them constitutes the coverage map's eastern boundary; the +1.0 axis-move simultaneously settles the outstanding cl-d06 2nd tranche that reached end of window unsettled while held flat c08-c11. One axis-move, one mechanism, settles both — no name set down. DEC-0071). c08 HELD. Wren now structurally necessary to the coverage map without a ledger entry. Closed pl-2026-05-30-001 / pl-2026-06-02-stitch-thread-002; hook-0003 PAID at c12"
+      notes: "HIGH=WORST; c02 +1.0 (Wren enters coverage map as named function-node, account opens) + c06 +1.0 (first spoken exchange; weight added by Wren's omission from deliverable, cl-d06) + c09 +0.5 (cl-d08 first tranche: Wren now a mapped pattern/route in the internal map — 'the map takes Wren's pattern... clean, indexed, kept' — structurally present without ledger entry) + c12 +1.0 (cl-d08 mechanism / cl-d06 debt: the lane-refusal SETTLEMENT — Taylor declines to cover the east-water-gate lanes because Wren's free movement through them constitutes the coverage map's eastern boundary; the +1.0 axis-move simultaneously settles the outstanding cl-d06 2nd tranche that reached end of window unsettled while held flat c08-c11. One axis-move, one mechanism, settles both — no name set down. DEC-0071) + c14 +1.0 (cl04 chapter-draw of cl04's +3 total; c15 draws +1.5, +0.5 later: the NARRATIVE ledger-entry on the gap-lane courier OPENS (S03 +0.5, confirmation written) + CLOSES (S04 +0.5, figure detained), and the cl04 closing-logic RETROACTIVELY NAMES the un-priced Wren omission @21 — the open item in the adjacent column-format running the same logical function as the closed one; held one breath, suppressed, no name set down). c08/c13 HELD. cl04 ARC continues at c15. Wren still structurally necessary to the coverage map without a ledger entry; the exclusion-pattern is now reader-visible via the shared-column parallel. Closed pl-2026-05-30-001 / pl-2026-06-02-stitch-thread-002; hook-0003 PAID at c12"
 
     - axis: moral_legibility_to_self
-      rank: 5.5
+      rank: 6.0
       start_rank: 4
-      delta_since_start: 1.5
-      last_movement_at: b01c10
+      delta_since_start: 2.0
+      last_movement_at: b01c14
       last_updated_by: and-stitch-phase-10
-      notes: "non-linear; c02 +0.5 (coverage-map recognition arrives + suppressed under harm-reduction) + c06 +0.5 (honest accounting of name-delivery deepens the crack) + c10 +0.5 (detention visible in feed; Taylor runs the accounting and files Corwick as a closed entry — suppressed recognition event, crack deepens but does not open; the lower-gate face persists in the feed-record where the ledger keeps no column). c12 HELD at 5.5 — the Khepri shape-word surfaced in the full-scale accounting for the duration of ONE count and was SUPPRESSED before it could settle; the crack is present (same suppression pattern) but does NOT open this chapter. c12's suppression is the last/most-intense pre-opening event; the crack opens at the d14-range full-recognition event where the axis actually moves (NOT the d10 trajectory milestone = c10 content, already past). c07 genuine-engagement-with-Halvard but resolution deferred not advanced; c08/c09/c11 HELD"
+      notes: "non-linear; c02 +0.5 (coverage-map recognition arrives + suppressed under harm-reduction) + c06 +0.5 (honest accounting of name-delivery deepens the crack) + c10 +0.5 (detention visible in feed; Taylor runs the accounting and files Corwick as a closed entry — suppressed recognition event, crack deepens but does not open; the lower-gate face persists in the feed-record where the ledger keeps no column). c12 HELD at 5.5 — the Khepri shape-word surfaced in the full-scale accounting for the duration of ONE count and was SUPPRESSED before it could settle; the crack is present (same suppression pattern) but does NOT open. c12's suppression is the last/most-intense pre-opening event before c14. c14 +0.5 (->6.0; the d14-range deepest-crack-before-full-recognition: Taylor holds the closed cl04 entry and the un-entered Wren item in the same accounting-look @21 and does NOT let the shape settle; the Gold-Morning echo @42 'a city, a different kind of count, a different kind of named-and-unpriced' surfaces SHAPE-ONLY (Earth-Bet fence clean) for one breath and is suppressed. Recognition PRESENT and SUPPRESSED — the crack deepens but the full recognition (where the suppression finally fails) is deferred beyond c14). c07 genuine-engagement-with-Halvard but resolution deferred not advanced; c08/c09/c11/c13 HELD"
 
     - axis: political_register-prot
       rank: 5
@@ -145,12 +183,12 @@ aggregate_state:
       notes: "collapse phase dormant until d10 (non-extractable confirmed); sits at peak-state start_rank 8 through c08; cl07a not yet anchored"
 
     - axis: social_tether-antag
-      rank: 6
+      rank: 7.5
       start_rank: 1
-      delta_since_start: 5
-      last_movement_at: b01c11
+      delta_since_start: 6.5
+      last_movement_at: b01c14
       last_updated_by: and-stitch-phase-10
-      notes: "Otto's leverage; c03 +1.5 (offer tendered, leverage embryonic, cl-antag-d03) + c04 +1.0 (acceptance solidifies leverage, cl-antag-d03 third tranche) + c10 +1.5 (cl-antag-d10 opening: non-extractable confirmed in progress; Otto's leverage structural post-formalization) + c11 +1.0 (cl-antag-d10 continuing: tether at near-peak load-bearing = leverage reaches near-full structural depth; withholding-from-Otto pattern emerging but not yet noticed by Otto). HELD c05-c09. NOTE: cl-antag-d10 not fully drawn (pl-2026-06-02-002 tracks cl04/cl-antag-d10 partial-settle family)"
+      notes: "Otto's leverage; c03 +1.5 (offer tendered, leverage embryonic, cl-antag-d03) + c04 +1.0 (acceptance solidifies leverage, cl-antag-d03 third tranche) + c10 +1.5 (cl-antag-d10 opening: non-extractable confirmed in progress; Otto's leverage structural post-formalization) + c11 +1.0 (cl-antag-d10 continuing: tether at near-peak load-bearing = leverage reaches near-full structural depth; withholding-from-Otto pattern emerging but not yet noticed by Otto) + c14 +1.5 (cl-antag-d10 COMPLETE: S02 +0.5 the apparatus confirms it identified the gap-lane figure INDEPENDENTLY — Taylor's withholding-capacity structurally revealed as non-protective; S04 +1.0 the detention-outcome lands Otto's leverage as structural and confirms non-extractable. Bone-gate baseline 6.0 per the Phase-0 handoff_conflict correction (handoff_in predicted 7.0; aggregate measured 6.0); +1.5 lands at 7.5. The chunk-text 'reaches rank 9' completes at c15 (+1.5 cl-antag-d03 = 9-LOCK), NOT at c14). HELD c05-c09/c12/c13. cl-antag-d10 fully drawn at c14 (closes the pl-2026-06-02-002 partial-settle family for cl-antag-d10)"
 
     - axis: position-world
       rank: 7
@@ -275,7 +313,7 @@ aggregate_state:
       # PAID at c10: the c09 filed-but-unrouted lower-gate faction-inference observation is routed to Otto via Jarvis (s02); the d10 accounting runs in s04. Thread foreclosed — courier detained.
 
     - hook_id: hook-0011
-      description: "arrangement-now-formal: c10 s01 — Otto names the arrangement outright as an ongoing function (Taylor = the lower-city intelligence instrument); the informal-deniability Taylor carried through every prior errand is foreclosed ('there was no version of the sentence I could fold back into a question'). The function is now a named standing role, not a contingent exchange. Forward consequence: Taylor can no longer treat the arrangement as deniable/exitable; feeds the non-extractable confirmation (social_tether-prot-collapse opens at d10+)."
+      description: "arrangement-now-formal: c10 s01 — Otto names the arrangement outright as an ongoing function (Taylor = the lower-city intelligence instrument); the informal-deniability Taylor carried through every prior errand is foreclosed ('there was no version of the sentence I could fold back into a question'). The function is now a named standing role, not a contingent exchange. Forward consequence: Taylor can no longer treat the arrangement as deniable/exitable; feeds the non-extractable confirmation (social_tether-prot-collapse opens at d10+). c14: the non-extractable confirmation LANDS on-page @23 ('Non-extractable. The word was in the record without being written'); the consequence the hook predicted is now confirmed. Hook stays open — collapse-axis (social_tether-prot-collapse) draw still future."
       introduced_at: b01c10
       expected_payoff: null
       status: open
@@ -285,7 +323,7 @@ aggregate_state:
       last_updated_by: and-stitch-phase-10
 
     - hook_id: hook-0012
-      description: "Dance-pressure pulse 1 / cf-rhaenyra-pressure staging: c10 actively forecloses a Black-faction logistics thread (Corwick detained = the war's logic moved through Taylor's network without her consent or design). c11 ADVANCES ON-PAGE: cloth-merchant passive Black-faction node (south end of the Hook) burns a message rather than rerouting — Dragonstone/Rhaenyra's faction is now demonstrably aware the KL logistics thread was cut (going dark, not rerouting = enemy doing triage before Taylor knows the extent). Taylor withholds the observation from Jarvis (does not route it). First on-page Rhaenyra-pressure signal; the larger Black-faction counter-response thread is still open (mediated, not direct; agents not on-page in force)."
+      description: "Dance-pressure pulse 1 / cf-rhaenyra-pressure staging: c10 actively forecloses a Black-faction logistics thread (Corwick detained = the war's logic moved through Taylor's network without her consent or design). c11 ADVANCES ON-PAGE: cloth-merchant passive Black-faction node (south end of the Hook) burns a message rather than rerouting — Dragonstone/Rhaenyra's faction is now demonstrably aware the KL logistics thread was cut (going dark, not rerouting = enemy doing triage before Taylor knows the extent). Taylor withholds the observation from Jarvis (does not route it). First on-page Rhaenyra-pressure signal. c14 ADVANCES AGAIN ON-PAGE (escalation past the c11 burn): the same cloth-merchant FLEES KL outright — stall left open mid-day, stock arranged for trade, the work-bag gone (the one chosen object packed) — read by Taylor @5-@7 as a Dragonstone-side inference that the Green count is active in these lanes ('The Dance had reached the merchant and the merchant had run'). The pressure is now node-flight, not just node-going-dark. The larger Black-faction counter-response thread is still open (mediated, not direct; agents not on-page in force)."
       introduced_at: b01c10
       expected_payoff: null
       status: open
@@ -305,7 +343,7 @@ aggregate_state:
       last_updated_by: and-stitch-phase-10
 
     - hook_id: hook-0014
-      description: "Withholding-from-Otto pattern: two consecutive withheld observations in c11 — (1) wool-dyer source-name withheld from the deliverable (s01); (2) cloth-merchant Dragonstone-burn signal withheld from Jarvis entirely (s02). c12 lands the THIRD withhold and makes the pattern reader-explicit: the lane-refusal — Taylor writes the east-water-gate lanes into the deliverable as 'not accessible within current coverage parameters' (a structural limit, not a temporary absence), leaves the source/explanation field bare ('I did not write why'), and the hand 'knew the shape of the gesture now — the route never written, the burned message at the Hook's south end never written, and this; the same withhold, the third time, recognized and not stopped.' Otto/the apparatus accepts the coverage limit and routes around it ('which made the withholding a thing no one would ever see') — STILL not noticed as a pattern within the fiction. The third instance names the prior two on-page; pattern now reader-fully-legible, actor-recognized-but-unstopped, Otto-unaware."
+      description: "Withholding-from-Otto pattern: two consecutive withheld observations in c11 — (1) wool-dyer source-name withheld from the deliverable (s01); (2) cloth-merchant Dragonstone-burn signal withheld from Jarvis entirely (s02). c12 lands the THIRD withhold and makes the pattern reader-explicit: the lane-refusal — Taylor writes the east-water-gate lanes into the deliverable as 'not accessible within current coverage parameters' (a structural limit, not a temporary absence), leaves the source/explanation field bare ('I did not write why'), and the hand 'knew the shape of the gesture now — the route never written, the burned message at the Hook's south end never written, and this; the same withhold, the third time, recognized and not stopped.' Otto/the apparatus accepts the coverage limit and routes around it ('which made the withholding a thing no one would ever see') — STILL not noticed as a pattern within the fiction. The third instance names the prior two on-page; pattern now reader-fully-legible, actor-recognized-but-unstopped, Otto-unaware. c14 INVERTS the pattern on-page: the most-specific thing Taylor had WITHHELD for eleven weeks (the low-set left eye of the gap-lane figure) is now DELIVERED — 'set down now as the instrument that confirmed him' @17 — making the private withheld knowledge the instrument of the detention (WATCH-10 inversion-visible). The withhold/deliver tension continues (Wren remains the held one — @21 retroactive-naming); hook stays open."
       introduced_at: b01c11
       expected_payoff: null
       status: open
@@ -315,11 +353,11 @@ aggregate_state:
       last_updated_by: and-stitch-phase-10
 
     - hook_id: hook-0015
-      description: "Gap-lanes residual operation: the east-of-water-gate lanes (the close-overhang lower-city stretch where things pass hand-to-hand, the one ground Taylor's coverage cannot reach) are confirmed-and-named as a structural coverage gap in the c12 deliverable — the gap's effective eastern boundary is Wren's free movement. The handoff_out carries the gap as a live forward thread: a Black-faction courier-adjacent figure still operational in the gap lanes, with Otto notified of the access limit and arranging an alternate route for that channel. The withheld east-water-gate stretch is therefore not merely a Wren-protection mechanism but an uncovered operational corridor the apparatus will route around. Open: whether the gap-lanes activity (and the alternate route Otto arranges) surfaces as on-page consequence; tied to the Black-faction counter-response thread (hook-0012)."
+      description: "Gap-lanes residual operation: the east-of-water-gate lanes (the close-overhang lower-city stretch where things pass hand-to-hand, the one ground Taylor's coverage cannot reach) are confirmed-and-named as a structural coverage gap in the c12 deliverable — the gap's effective eastern boundary is Wren's free movement. The handoff_out carries the gap as a live forward thread: a Black-faction courier-adjacent figure still operational in the gap lanes, with Otto notified of the access limit and arranging an alternate route for that channel. The withheld east-water-gate stretch is therefore not merely a Wren-protection mechanism but an uncovered operational corridor the apparatus will route around. Open: whether the gap-lanes activity (and the alternate route Otto arranges) surfaces as on-page consequence; tied to the Black-faction counter-response thread (hook-0012). PAID at c14: the gap-lane courier-adjacent figure IS the cl04 subject — Otto's apparatus identifies him independently and requests confirmation (S02); Taylor confirms with the eleven-week-withheld walk-detail (S03); the apparatus detains him at the second junction the following evening (S04 @19). The gap-lanes operational corridor closes; the apparatus's 'alternate route' need is foreclosed by the detention. The figure-thread is closed on-page; the east-water-gate gap as Wren-protection terrain persists (the relational/Wren arc continues at cl04/c15)."
       introduced_at: b01c12
-      expected_payoff: null
-      status: open
-      paid_at: null
+      expected_payoff: c14-c15
+      status: paid
+      paid_at: b01c14
       abandoned_at: null
       abandonment_reason: null
       last_updated_by: and-stitch-phase-10
@@ -334,9 +372,9 @@ aggregate_state:
 
     - slug: wren-stitch-maker-flea-bottom-ward
       introduced_at: b01c01
-      last_appearance: b01c12
+      last_appearance: b01c14
       reader_legibility: partial
-      legibility_notes: "reader knows occupation (stitch-maker) + Taylor's coverage-map function-node categorization + one spoken exchange (c06) + Taylor's protective omission from the deliverable (NAME deliberately withheld). c09: now the surveillance-pattern SUBJECT — her daily route mapped + indexed in Taylor's internal map. c10: PARTIAL — the rev-0004 prologue callback restates her indexed-but-unwritten state at the contrast point where Corwick becomes the ledger's first named entry. c12: PARTIAL appearance — her route is the load-bearing thread of the lane-refusal: the indexed stitch-house route (rendering-yard through to the upper stitch-house) runs the map's eastern edge 'and stops there, unindexed, in the record I keep and nowhere a column can reach,' and her free movement through the east-water-gate lanes IS the coverage map's eastern boundary, the reason Taylor declines to cover them. The rev-0005 omission-callback re-touches the protective-omission. relational_anchor_status MOVES to 4.5 (cl-d06 2nd tranche settled via the lane-refusal mechanism; hook-0003 PAID) — Wren now structurally necessary to the coverage map without a ledger entry. Still OUTSIDE the formal ledger; no name set down"
+      legibility_notes: "reader knows occupation (stitch-maker) + Taylor's coverage-map function-node categorization + one spoken exchange (c06) + Taylor's protective omission from the deliverable (NAME deliberately withheld). c09: now the surveillance-pattern SUBJECT — her daily route mapped + indexed in Taylor's internal map. c10: PARTIAL — the rev-0004 prologue callback restates her indexed-but-unwritten state at the contrast point where Corwick becomes the ledger's first named entry. c12: PARTIAL appearance — her route is the load-bearing thread of the lane-refusal: the indexed stitch-house route (rendering-yard through to the upper stitch-house) runs the map's eastern edge 'and stops there, unindexed, in the record I keep and nowhere a column can reach,' and her free movement through the east-water-gate lanes IS the coverage map's eastern boundary, the reason Taylor declines to cover them. The rev-0005 omission-callback re-touches the protective-omission. relational_anchor_status MOVES to 4.5 (cl-d06 2nd tranche settled via the lane-refusal mechanism; hook-0003 PAID) — Wren now structurally necessary to the coverage map without a ledger entry. c14: NOT on-page — the appearance is STRUCTURAL/INTERIOR ONLY. The preamble names her explicitly ('And there was Wren, whose route she covered and had never once priced — a person-shaped item the ledger had simply left open'); the body @21 RETROACTIVELY NAMES her omission via the cl04 closing-logic — when Taylor closes the gap-lane-courier ledger entry, the shared column-format surfaces 'the open one written in the same hand: a route tracked, a route covered, never once entered into a deliverable, running the same logical function as the entry just closed.' Held suppressed-register-safe (role-shape, no recognition event, no name set down — WATCH-07). relational_anchor_status advances to 5.5 (cl04 chapter-draw); the EXCLUSION-PATTERN is now reader-visible (the parallel between the closed courier-item and the un-entered Wren-item). Still OUTSIDE the formal ledger; no name set down. cl04 arc continues at c15"
       last_updated_by: and-stitch-phase-10
 
     - slug: oswyn-mudway-flea-bottom-elder
@@ -390,9 +428,16 @@ aggregate_state:
 
     - slug: cloth-merchant-black-faction-node
       introduced_at: b01c11
-      last_appearance: b01c11
+      last_appearance: b01c14
       reader_legibility: partial
-      legibility_notes: "passive Black-faction intelligence node at the Hook's south end; burns messages on a standing protocol (burns rather than carries when the thread is cut). Introduced c11 s02: burns a message from a Dragonstone-adjacent messenger in view of Taylor's insect-feed; the thermal-shift + smoke-curl register in the feed as a burn-not-route confirmation. Dragonstone-awareness of the cut logistics thread is the signal; the merchant is the medium. Taylor withholds the observation from Jarvis. Not named; not a recurring POV; reader-legible as Black-faction passive node at Hook's south margin"
+      legibility_notes: "passive Black-faction intelligence node at the Hook's south end; burns messages on a standing protocol (burns rather than carries when the thread is cut). Introduced c11 s02: burns a message from a Dragonstone-adjacent messenger in view of Taylor's insect-feed; the thermal-shift + smoke-curl register in the feed as a burn-not-route confirmation. Dragonstone-awareness of the cut logistics thread is the signal; the merchant is the medium. Taylor withholds the observation from Jarvis. c14 s01: FLEES KL — the stall left open mid-day with stock arranged for trade and the work-bag gone from the lane-side peg (the one chosen object packed; 'a man who takes his work-bag and leaves his stock does not intend to come back in an hour'); read by Taylor through the corner-shelf fly as a NODE-FLIGHT, the escalation past the c11 burn. The flight is the Dragonstone-side inference made physical — the Green count is read as active in these lanes, and the merchant ran when the signal reached him ('The Dance had reached the merchant and the merchant had run'). Taylor closes the passive-count entry in the flat coverage-loss register; she does NOT route the observation to Jarvis. Stall foreclosed (will not reopen). Not named; not a recurring POV; reader-legible as Black-faction passive node, now fled"
+      last_updated_by: and-stitch-phase-10
+
+    - slug: gap-lane-courier-figure
+      introduced_at: b01c14
+      last_appearance: b01c14
+      reader_legibility: partial
+      legibility_notes: "the east-of-water-gate gap-lane courier-adjacent figure — the cl04 subject. A counter-adjacent figure carrying verbal routing-information along the gap-lane from the east water-gate toward the inland wharf-district; tracked by Taylor through her insect-feed for ELEVEN WEEKS (Tuesdays and Thursdays) and never entered into any deliverable. Reader-legible physical detail: the left eye set lower than the right (the asymmetry that makes him look as if always weighing something), the round shoulders + red collar-stripe, the habit of pausing at the second junction to adjust his satchel-weight before turning north. c14 S02: Otto's apparatus identifies him INDEPENDENTLY through a different channel and requests confirmation of Taylor's pattern-knowledge (which structurally reveals her withholding-capacity as non-protective). S03: Taylor confirms — writes the lane-designation + the eleven-week-withheld walk-detail (adjusted weight, low-set left eye) to the response-sheet, making the private knowledge the instrument of the detention. S04: detained at the second junction the following evening (two men take him as his pause-habit fires one last time; the lane goes empty). NEVER NAMED (Taylor does not know his name); the patron up the line + the specific errand stay unnamed. NOTE: the c14 cold-read flagged him as NOT-FELT-AS-PERSON ('never felt the courier as a person; told to') — the depth-pass pl-2026-06-04-002 (HARD, gates book-close) targets courier-as-person concretization. He is the closed cl04 item whose column-format retroactively names the un-entered Wren"
       last_updated_by: and-stitch-phase-10
 
     - slug: ward-contact-pool-c11
@@ -535,6 +580,24 @@ aggregate_state:
       kind: condition
       state: "established c13: the ward-elder list Taylor compiled and handed to Jarvis at d06 (pattern-inferred Black-faction-adjacent names, in plain functional description) is now OPERATIONALIZED by the Green apparatus in an enforcement proceeding. c13 s02: Aldric, a named ward-elder from the list, is brought before a court-adjacent magistrate (the rented chandler's back room) on a stolen-cord pretext; the magistrate writes the verdict ahead of the answer and takes his authority from the document the Green clerk squared at the table's edge — 'the document I had set down in functional description and handed to Jarvis... lifted now by another hand to decide a man.' The cord is the pretext, the list is the engine. Enforcement now VISIBLE on-page (political_register-world 7.0); the d06 list's faction-violence consequence (hook-0008, opened c06) lands its first concrete enforcement instance. The broader hook-0008 operational follow-through (other named elders) remains open"
       last_changed_at: b01c13
+      last_updated_by: and-stitch-phase-10
+
+    - key: cloth-merchant-stall-foreclosed
+      kind: location
+      state: "established c14: the cloth-merchant's stall at the Hook's south end (the c11 passive-node site) — found by Taylor's corner-shelf fly FORECLOSED c14 s01: the stall standing open mid-day with the oil-cloth working-surface flat on the counter and the bolt-end samples on the hook, but the merchant gone and the cured-leather work-bag missing from the lane-side peg. The arrangement of staged goods against the single missing object reads as flight, not closing. The merchant is nowhere the passive circuit puts him (not the round shoulders, not the red collar-stripe). The node is closed — the stall 'would not reopen.' A coverage loss in the lane-net, written into the internal record in the flat coverage-adjustment register"
+      last_changed_at: b01c14
+      last_updated_by: and-stitch-phase-10
+
+    - key: dragonstone-aware-of-lower-city-apparatus
+      kind: condition
+      state: "established c14 (escalation of dragonstone-rhaenyra-awareness): the c14 cloth-merchant FLIGHT (node-flight, past the c11 burn-not-route) confirms a Dragonstone-side inference that the Green counting-apparatus is ACTIVE in the lower-city lanes — 'a reading, Dragonstone-side, that the Green count was active in these lanes... The Dance had reached the merchant and the merchant had run.' The pressure is now Dragonstone moving its own people in response to inferred surveillance, not merely a node going dark. The apparatus does not expose its own nodes, so the thing that moved the merchant was the inference coming the OTHER direction (Dragonstone-side), not Otto's apparatus. Mediated still (no Dragonstone agent on-page in force); the larger Black-faction counter-response thread remains open (hook-0012). Taylor withholds the flight-observation from Jarvis"
+      last_changed_at: b01c14
+      last_updated_by: and-stitch-phase-10
+
+    - key: two-courier-detentions
+      kind: condition
+      state: "established c14: the Green apparatus now has TWO courier detentions produced through Taylor's intelligence architecture — Corwick (c10, the lower-gate heir's-business courier) and the gap-lane courier-figure (c14, the east-of-water-gate counter-adjacent figure). Both Black-faction logistics threads closed; the second confirms the architecture is not a one-off (the gap-lane corridor closes, the apparatus's alternate-route need foreclosed). The pattern of feed-intelligence-converting-to-detention is now established at scale; non-extractable confirmed (cl-antag-d10 COMPLETE — Otto's leverage structural). Taylor's withholding-capacity revealed as non-protective (the apparatus identifies the figure independently and acts regardless)"
+      last_changed_at: b01c14
       last_updated_by: and-stitch-phase-10
 
   revision_layer:

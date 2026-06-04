@@ -2016,3 +2016,34 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-06-04-002
+      created_at: 2026-06-04T00:00:00Z
+      created_by: "/and-stitch b01c14 Phase 9 cold-read (DEC-0085 SHIPPED-WITH-CAVEATS)"
+      label: depth-pass-mandatory-b01c14
+      target:
+        command: /and-write
+        scope: b01c14
+        phase: null
+      severity: HARD
+      description: |
+        b01c14 shipped SHIPPED-WITH-CAVEATS (DEC-0085) on a Class-B cold-read FAIL
+        (CONTINUE=no; events recovered; cause = design-inherent accounting-abstraction
+        density, flagged upstream as PASS-CHUNK-VOICE-RISK; Phase 8.5 muffle-check PASSED).
+        MANDATORY depth pass before book-close (gates /and-substance book b02 Phase 0 +
+        /and-review verdict b01). Consume the cold-read signals via
+        /and-write b01c14 revise --from-signals + re-cascade /and-facets + /and-stitch:
+        - concretize the courier as a felt person (the cold-reader "never felt the courier
+          as a person; told to") -- the 11-week-tracking + low-set-eye detail exists in
+          bones but reads abstract in aggregate; stage more body/scene around him.
+        - stage Sera as a felt stake (the body never dramatizes Sera; the guarantee is
+          known only from the preamble). The degraded-alternative stake needs on-page weight.
+        Resolution: run the depth pass; on Phase 9 re-PASS stamp depth_pass_resolved_at.
+      context_refs:
+        - active-project/staff/reviews/coldread-b01c14-2026-06-04.md
+        - active-project/staff/reviews/coherence-b01-c14-2026-06-04.md
+        - staff/admin/decisions.md  # DEC-0085
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null

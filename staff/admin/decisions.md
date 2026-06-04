@@ -5292,3 +5292,91 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0086 | 2026-06-04 | SLOW (process-critic)
+
+mode: process-critic
+trigger:
+  reason: failure
+  source_report: active-project/staff/reviews/coldread-b01c14-2026-06-04.md
+  source_verdict: SHIPPED-WITH-CAVEATS (Phase 9 Class-B cold-read FAIL CONTINUE=no; fourth application of coupling rule across c10/c11/c12/c14 — DEC-0072/0074/0078/0085)
+  gate_path: .claude/commands/and-stitch.md#phase-9
+  secondary_gate_paths: [.claude/commands/and-write.md#phase-6]
+verdict: PROCESS-CHANGE-PROPOSED PROP-0040
+
+question: |
+  At the fourth identical coupling-rule application (c10/c11/c12/c14 all shipped
+  SHIPPED-WITH-CAVEATS via admin user-proxy on the same Class-B pattern), should the
+  process mechanize any part of that ruling? Three specific candidate questions:
+  (a) auto-ship for known-voice-risk chapter class when complaint categories are all
+  covered by carried risk; (b) depth-pass debt accumulation concern (4 chapters?);
+  (c) interior-accounting chapter class upstream grounding-ledger default.
+
+decision: PROCESS-CHANGE-PROPOSED PROP-0040 (candidate a). Candidate b: OK (no new signal
+— depth-pass debt is c10 + c14 only; c11/c12 have no pending depth passes). Candidate c: OK
+(first occurrence; hold for recurrence per standard rule).
+
+basis: |
+  Step 1 (evidence): The report shows identical Class-B pattern at c14: central event
+  recovered, CONTINUE=no, causes = design-inherent accounting-abstraction + cold-context
+  name-opacity, Phase 8.5 PASS. The c14 case adds one new dimension absent from c10-c12:
+  tractable texture gaps (courier-as-person, Sera-stake) that DEC-0085 flagged for a
+  mandatory depth pass. This produces a Case 1 / Case 2 distinction not encoded in the spec.
+
+  Step 2 (proposals log): No existing open proposal covers Phase 9 Case 1 auto-ship. PROP-0018
+  added the Class A/B discrimination and the "admin default: (P)" rule. DEC-0085's Case 2
+  is consistent with PROP-0018's admin-dispatch path. The Case 1 path (all complaints covered,
+  no tractable items, no admin dispatch needed) is new and not in any existing proposal. No
+  rejected or deferred proposal matches this target.
+
+  Step 3 (content vs. process): Could a stricter existing gate have caught this? No. The
+  coupling rule works correctly at every application. The gap is efficiency, not correctness:
+  the Phase 9 harness routes to admin user-proxy even when the answer is fully deterministic.
+  Case 1 is a process-efficiency gap, not a process-correctness gap. change_type: modify on
+  Phase 9 Step 2 (add the complaint-coverage check + auto-ship path).
+
+  Step 4 (recurrence): count=4 across c10/c11/c12/c14. Rule says "prefer to return OK and
+  wait for recurrence" at count=1. At count=4 with two sub-cases discriminated, the
+  mechanism is stable enough to codify. Automating a deterministic ruling is not premature
+  promotion of a one-off signal.
+
+  Step 5 (methodology): S-cost (add a complaint-coverage check and a conditional branch to
+  Phase 9 Step 2 + Step 4 verdict block; no new dispatches, no schema changes). Blast radius:
+  low — only affects Class-B FAIL chapters with PASS-CHUNK-VOICE-RISK carry, which is a
+  structurally narrow class. Reversibility: adding a Case 2 fallback preserves full admin
+  involvement whenever the classification is ambiguous or a tractable item appears.
+
+  Candidate b (depth-pass debt): The trigger's "4 chapters" framing is inaccurate. Checking
+  memory.md directly: c10 depth_pass_pending: true (PASS-WITH-DEPTH-PASS-REQUIRED, bone-level
+  staging targets — @2/@11/@21); c11 SHIPPED-WITH-CAVEATS, readability READABLE, no mandatory
+  depth pass; c12 SHIPPED-WITH-CAVEATS, DEC-0078 explicitly resolved apparatus-density to
+  /and-cohere not per-chapter depth pass; c14 depth_pass_pending: true (DEC-0085, texture-
+  level targets). Actual debt = c10 + c14. The SHIPPED-WITH-CAVEATS / PASS-WITH-DEPTH-PASS-
+  REQUIRED distinction is working correctly. No new process change warranted.
+
+  Candidate c (interior-accounting upstream grounding): c14's courier-as-person + Sera-stake
+  gaps are first-occurrence at this specific class. Not catastrophic. Standard first-occurrence
+  hold. No proposal.
+
+rationale: |
+  PROP-0040 targets the only confirmed process gap: Phase 9 routinely fires an admin user-proxy
+  dispatch on a deterministic Class 1 ruling (all complaints covered, answer already in DEC
+  history), adding per-chapter overhead without changing the outcome. The Case 1 / Case 2
+  discrimination surfaces for the first time at c14 (where DEC-0085 identified tractable items).
+  The Case 2 path (admin dispatch with depth-pass brief) is exactly where admin value was
+  delivered at c14. Encoding Case 1 as auto-ship preserves that value while eliminating the
+  overhead on chapters where the coupling rule is fully deterministic.
+
+trade-off: |
+  Risk: the auto-ship path could miss a tractable item if the harness over-classifies a
+  complaint as COVERED. Mitigated by: (a) conservative matching rule (UNCOVERED wins when in
+  doubt); (b) the existing Phase 9.5 process-critic dispatch fires regardless and can flag
+  if a Chapter 1 auto-ship was mis-classified; (c) the Case 2 fallback is always available
+  for any ambiguous classification.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no

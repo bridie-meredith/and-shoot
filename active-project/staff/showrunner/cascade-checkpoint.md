@@ -4,22 +4,13 @@ cascade:
   invoked_command: /and-substance chapter b01c14 --cascade
   mode: unattended
   last_completed:
-    level: facets
+    level: draft
     slug: b01c14
-    completed_at: 2026-06-04T01:30:00Z
+    completed_at: 2026-06-04T02:30:00Z
   next:
-    command: /and-stitch b01c14
-    args: [b01c14]
-  reason: continue
+    command: null   # chapter-production COMPLETE (Phase 9 SHIPPED-WITH-CAVEATS + Phase 10 PASS-THREAD)
+    args: []
+  reason: complete
   failure: null
-  pending_depth_passes: []
-  pending_threading_holds: []
-  notes: |
-    /and-facets b01c14 COMPLETE (status -> audited-r1). 9 facets + scene-map; 52->51 entries
-    (exposition:2 @20 R2-deleted). Phase 5 audit HARD=0 (fault-001 citation-renumber remediated).
-    Phase 5b audience-gate ACCEPT all 9 facets, 2 cycles (mem:4 @42 LICENSE-NOTE + vibes:6 @42
-    omission-rephrase resolved cycle-1 worm-canon-pedant REVISEs). Orchestrator-critic SUCCESS 7/7.
-    CARRY INTO /and-stitch: chunk_cold_read PASS-CHUNK-VOICE-RISK arms Phase 8.5 Check 3 (central-event
-    muffle verification @25-28 confirmation + @33-38 detention); grounding-ledger grd-001 @11 / grd-002 @28;
-    Phase 2.5 VOICE-FIXABLE @20-27 -> Phase 4 person-first voice-embodiment; pl-2026-05-25-019-style
-    spatial-continuity N/A; BONES-AIRLESS-RISK @16-31 voice-embodiment priority.
+  pending_depth_passes: [b01c14]   # DEC-0085 mandatory before book-close (pl-2026-06-04-002)
+  pending_threading_holds: []      # Phase 10 PASS-THREAD; c15 Phase 0 CLEAR
