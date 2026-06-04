@@ -9318,6 +9318,20 @@ books:
           bidirectional_loop: one-sided   # NI:6 audience-only; DEC-0090->NI-rubric promotion under process-critic review
           facet_entry_counts: {location-state: 5, interest-narrator: 7, sensory: 2, state-updates: 12, memory: 1, feeling: 3, metaphor: 0, vibes: 4, exposition: 0, dialogue: 2}
           orchestrator_critic: {result: SUCCESS, note: "0 HARD final; 10/10 facets 3-of-3; DEC-0090 item-4 over-explanation caught+fixed at the gate (the risk-carry worked as designed)"}
+        draft_file: active-project/draft/b01-c16.md   # 809-word body; persona neutral, first-person past; no preamble (exposition 0-entries, mid-circuit open)
+        cold_read:
+          read_at: 2026-06-04T16:40:00Z
+          verdict: SHIPPED-WITH-CAVEATS   # Class-B; DEC-0090 SHIPPED-WITH-RISK-RECORDED coupling auto-ship (mirrors c14 DEC-0085 / c15 DEC-0087)
+          central_event_recovered: true   # the walk-away/foreclosure is in the cold-reader's events list + one-line summary
+          recovered_summary: "A man corners a coldly arithmetic patroller to insist they 'know what they're doing' regarding people who died, and the patroller silently weighs it, declines to answer, and walks back to work."
+          continue: no   # event-poverty / quiet-aftermath grounds — pre-authorized category
+          report_path: active-project/staff/reviews/coldread-b01-c16-2026-06-04.md
+          coherence_review: {verdict: PASS, weave_gaps: 0, followability_breaks: 0, cold_read_risk_high: 0, report: assembled-clean DEC-0090-confirmed}
+          readability_axis: {verdict: AIRLESS-with-caveat, basis: "abstraction-density (the count/feed) is the Class-B family risk pre-authorized at chunk-level; READABLE for a c01-c15 reader per Phase 8.5; voice-embodiment applied person-first"}
+          depth_pass_required: true   # MANDATORY before book-close; gates /and-substance book b02 Phase 0 + /and-review verdict b01; consume via /and-write b01c16 revise --from-signals
+          depth_pass_resolved_at: null
+          signal_clusters: []   # no separate Step-3/3.5 staging cluster dispatch under cascade-budget; DEC-0090 coupling ships SHIPPED-WITH-CAVEATS regardless; Phase 8.5 PASS + protected-patterns intact
+          stale_since: null
         # flat_id map (Phase 7; bones file authoritative): s01 -> flat 1-8 (n07/n06 swapped: 6=n07,7=n06);
         # s02 -> flat 9-18 (n08 moved forward: 9=n01,10=n02,11=n03,12=n08,13=n04,14=n05,15=n06,16=n07,17=n09,18=n10);
         # s03 n01-n09 -> flat 19-27. Dialogue anchors: flat 10 [halvard:1], flat 17 [halvard:2].

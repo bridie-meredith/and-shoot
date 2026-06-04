@@ -5061,7 +5061,11 @@ evidence_refs:
   - ".claude/commands/and-substance.md — Phase 0 chapter invocation: existing HARD-abort
     pattern (aggregate-state unacknowledged substantive entries) is the structural analog;
     same enforcement shape."
-recurrence_count: 3
+  - "active-project/staff/reviews/coldread-b01-c16-2026-06-04.md + DEC-0093 (2026-06-04) —
+    second independent N=3 run: c14/c15/c16 all SHIPPED-WITH-CAVEATS on quiet-falling-chapter
+    pattern post-cohere-clearance. Consecutive count = 3 (matching c10/c11/c12 first run).
+    DEC-0093 confirms N=3 threshold correctly calibrated; no argument for N=2 or N=4 change."
+recurrence_count: 4
 proposed_diff: |
   In .claude/commands/and-substance.md, Phase 0 — Validate + mode select, at the
   chapter b<NN>c<MM> invocation level, add a new numbered step after step 6 (Aggregate-
@@ -5571,6 +5575,118 @@ proposed_diff: |
     Write: `cold_read = {verdict: SHIPPED-WITH-CAVEATS, case: 1|2, caveat: <string>, ...}`.
     Phase 9.5 (process-critic) fires as normal."
 
+cost_estimate: S
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
+
+---
+
+## PROP-0041
+
+```yaml
+id: PROP-0041
+created_at: 2026-06-04T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: failure
+  source_report: active-project/staff/audience/ (b01c16 Phase 5 HARD state-updates moral_legibility Drift-old)
+  source_verdict: |
+    Phase 5 HARD: state-updates @19 moral_legibility recorded 4->4.5 (series-baseline
+    start_rank) instead of 6.0->6.5 (chapter-entry value from aggregate-state); fixed.
+target:
+  type: command
+  path: .claude/commands/and-facets.md
+  section: "Phase 1 — R1 author 5: state-updates actor (per-character impersonators)"
+change_type: modify
+rationale: |
+  The per-actor state-updates impersonator (Phase 1 item 5) produced a Drift-old HARD
+  violation: moral_legibility recorded as "4 -> 4.5" (series-baseline start_rank = 4)
+  instead of "6.0 -> 6.5" (chapter-entry value = 6.0 from the character's aggregate-state
+  after 15 prior chapters of axis movement). The state-updates rubric requires <old> to
+  match the most-recent prior cited canonical value (Drift-old REJECT: "<old> doesn't
+  match the prior cited canonical value").
+
+  The Phase 1 state-updates-actor dispatch payload currently names: character stack
+  (card + behavior cards + LTM + STM + state) + base proto-lines + per-chapter
+  substance_delta from showrunner memory + rubric-state-updates.md § actor-state.
+  The per-chapter substance_delta gives the delta targets for this chapter (how much
+  each axis moves) but NOT the current chapter-entry value (where the axis stands
+  entering the chapter). For a project in its first chapter these are the same
+  (chapter-entry = series-baseline start_rank). After N chapters of cumulative movement
+  they can differ materially -- here by 2.0 units (4 vs 6.0).
+
+  The character stack includes the character's state file; however the state file's
+  primary content is the character's narrative/behavioral state, and the most visible
+  per-axis rank value in a dispatch context is the axis definition's start_rank
+  (series-baseline). Without an explicit call to read the current per-axis value from
+  the state file (or aggregate-state), the impersonator will default to the most
+  accessible rank value -- the series-baseline -- producing systematic Drift-old at
+  any axis that has moved significantly from baseline. This is a deterministic payload
+  spec gap, not an authoring error.
+
+  The fix is a single instruction added to the Phase 1 state-updates-actor dispatch
+  brief: explicitly require the impersonator to read the character's current per-axis
+  values from the actor state file before authoring any state-update entry, and use
+  those as the <old> anchor rather than the axis definition's start_rank. S-cost.
+
+  Proposing at N=1 because the gap is deterministic (same error class will recur on
+  any chapter where a substance axis has moved significantly from series-baseline) and
+  the fix is precisely targeted (analogous to PROP-0027: first live test of a mechanism
+  with a deterministic omission in the dispatch payload).
+evidence_refs:
+  - "active-project/staff/audience/ b01c16 Phase 5 audit -- HARD: state-updates @19
+    moral_legibility 4->4.5 (series-baseline) vs. correct 6.0->6.5 (chapter-entry);
+    fixed before Phase 5b."
+  - ".claude/commands/and-facets.md Phase 1 item 5 -- state-updates-actor dispatch
+    payload: 'Character stack + base proto-lines + per-chapter substance_delta from
+    showrunner memory + rubric-state-updates.md § actor-state.' Current per-axis
+    entry values from actor state file are NOT named as an explicit required input."
+  - "design/shoot-v2/rubric-state-updates.md § V2 rubric axes -- Drift-old REJECT:
+    '<old> doesn't match the prior cited canonical value.' ACCEPT: '<old> matches
+    the most-recent prior cited value on the same field (or the project-setup baseline
+    if first-touch).'"
+  - "staff/admin/process-proposals.md -- PROP-0027 (grounding-ledger first-live-test
+    dispatch omission; proposed at N=1 on same deterministic-gap rationale)."
+  - "staff/admin/decisions.md -- DEC-0092 (this dispatch; Q2 judgment)."
+recurrence_count: 1
+proposed_diff: |
+  In .claude/commands/and-facets.md, Phase 1 item 5 (state-updates actor), in the
+  dispatch payload description, add a required pre-authoring read step:
+
+  Current payload (paraphrase):
+    "Character stack + base proto-lines + per-chapter substance_delta from showrunner
+    memory + rubric-state-updates.md § actor-state."
+
+  Add to the dispatch payload list:
+    "character's CURRENT per-axis values -- read the actor state file at
+    active-project/actors/<slug>/state.md (or the aggregate-state section of
+    active-project/staff/showrunner/memory.md chapters[<slug>]) and extract the
+    current rank/value for each tracked substance axis."
+
+  Add to the dispatch brief sent to the impersonator (before the first authoring step):
+    "REQUIRED PRE-AUTHORING STEP: Read <character>'s actor state file and record the
+    CURRENT value of each tracked substance axis (moral_legibility, social_position,
+    community_belonging, [etc. per series signature]). Use these values as the <old>
+    anchor for every state-update entry on actor:<slug> fields. Do NOT use the axis
+    definition's start_rank (series-baseline). The series-baseline is the value at
+    story-start; the chapter-entry value is the current value after N chapters of
+    accumulated movement, and they diverge as the series progresses. A state-update
+    entry whose <old> uses the series-baseline instead of the chapter-entry value is
+    a Drift-old HARD finding per the state-updates rubric."
+
+  Scope: state-updates-actor per-character impersonator dispatches only (Phase 1 item 5).
+  State-updates-env (item 4) uses environmental fields sourced from loc-state / studio
+  state, not substance-axis tracking; this change does not apply to item 4.
+
+  The character stack already contains the actor state file; this change makes the
+  read-and-extract step explicit rather than implicit, eliminating the impersonator's
+  fallback to the axis-definition start_rank.
 cost_estimate: S
 status: open
 triaged_at: null
