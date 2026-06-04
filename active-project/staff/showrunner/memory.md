@@ -8771,6 +8771,14 @@ books:
           axes_held: [social_tether-prot-rise (8.5), moral_framework (-2), position-prot-rise (6.0), moral_legibility_to_self (6.0), social_tether-prot-collapse (8 dormant), position-prot-collapse (7 dormant), position-world (7), political_register-world (7)]
           density_measured: "40 bones / 4 scenes; 23 grounding (~58%); 27 chunk-tags 0 omissions"
           felt_verdict: "audience 3-of-3 SUBSTANCE-FELT all 4 scenes (Phase 6 bone-gate); chunk Class-B -> P (DEC-0087), quietness carried by bones concreteness; armed to stitch Phase 8.5 + 9"
+        bones_review:
+          reviewed_at: 2026-06-04
+          reviewer: "auditor (/and-review bones b01c15)"
+          fidelity_verdict: PASS
+          follow_verdict: FOLLOW-PASS
+          cleared_facets: true
+          report_path: active-project/staff/reviews/bones-b01c15-2026-06-04.md
+          notes: "S04 @37/@39 within-scene ordering advisory -> /and-stitch Phase 4 render @39 (stylus-past-name-field, the chapter's most weight-bearing bone) as a continuous act within the circuit-close. Non-blocking. S2->S3 critical connective (Vhagar-backwash -> fringe-degradation -> gap-as-negative-shape) verified legible."
         chunk: |
           Non-extractable confirmation deepens and Aemond arrives on-stage with Vhagar-
           proximity. Aemond (now 12; F&B-canon, born 110 AC) is brought to a Red Keep outer court exercise that
