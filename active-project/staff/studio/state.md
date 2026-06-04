@@ -1,8 +1,69 @@
 # studio state
 
-episode: b01c15
+episode: b01c16
 last_updated: 2026-06-04
-action: location-state + sensory + state-updates-env R1 authoring — /and-facets b01-c15 Phase 1
+action: location-state + sensory + state-updates-env R1 authoring — /and-facets b01-c16 Phase 1
+
+## Location-state sequence locked (b01c16) — 5 entries, 0 cull
+  loc-state:1 @6  — oc-sept-corner | morning | none | clearing-open, storehouse-wall-northwest, rendering-yard-fence-southeast | the diagonal approach across the cleared ground (place-anchor; S01; working morning; fence-as-far-edge, wall-as-back-wall)
+  loc-state:2 @9  — oc-sept-corner | morning | none | clearing-open, storehouse-wall-northwest, rendering-yard-fence-southeast | the clearing-ground between Halvard's station and Taylor's line — pace-match opens the gap at walking distance (state-change: two bodies in motion on converging lines)
+  loc-state:3 @12 — oc-sept-corner | morning | none | clearing-margin-occupied, rendering-yard-fence-close | the clearing-margin at the fence where the old man plants — fence-line now carries a body as spatial anchor (state-change: margin occupied)
+  loc-state:4 @22 — oc-sept-corner | morning | none | clearing-open, rendering-yard-approach-active | the rendering-yard approach at the fence-gap — Taylor's walk-out route (state-change: body in motion on departure trajectory)
+  loc-state:5 @26 — oc-sept-corner | morning | none | clearing-open, eaves-line-cleared | the eaves-line threshold past which Halvard passes out of the scene's spatial frame (state-change: clearing now holds only Taylor's body on the approach)
+  Excluded: @1-@5 (set-open / static fixtures — location-card content; no actor in motion at clearing-scale); @7 (Halvard lifts head = body-charge/posture, not positioning through the location); @8/@20 (feed-return beats = perception-feed SVO; rubric §Necessity REJECT); @10/@17 (dialogue beats = pure dialogue; no positioning in question); @11 (fence as static boundary = location-card content; no body at it yet); @13/@16 (press/grip = dexterity-stillness at established fence-margin; place-anchor @3 already established; loc-state:3 @12 licenses by inheritance); @14/@15 (Halvard stops/faces = body-charge in established position; no location state-change); @18 (releases = dexterity-stillness resolve); @19 (Taylor stops = momentary; subsumed by @22 departure); @21 (Taylor turns = transitional; approach fires at @22); @23 (reed-mat persistence = location-card content); @24 (old man faces = body-charge; no location state-change); @25 (Taylor reaches fence = arrival at already-established fence-margin; no new state-change since loc-state:3); @27 (circuit-resume = location fires in state-updates-env @27; loc-state covered by @22 + @26 sequence)
+  Cull: 0 entries removed — all 5 survive strip / pointing / previous-entry / frugality tests
+
+## Current set (b01c16 chapter-close)
+  location: oc-hook-precinct-circuit (Taylor departed clearing at @27; circuit resumed)
+  time_of_day: morning
+  weather: none
+  ambient_conditions:
+    - feed-density: routine-coverage (continuous through chapter; no flip)
+    - sept-corner fixtures: static (cleared ground, crates/kneeling-bench, reed-mat, rendering-yard fence — unchanged)
+    - storehouse eaves: flies at eaves (continuous; registration anchor for Taylor's feed)
+
+## Location-state R1 authored (b01c16) — 2026-06-04
+  theater/facets/location-state-b01-c16.md (5 entries, 0 cull)
+
+## Seams flagged for R2 (b01c16 location-state)
+  SEAM-C16-LOC-001: oc-sept-corner — no confirmed warehouse card; warehouse entry exists at active-project/warehouse/oc-sept-corner.md but it is a location card, not a confirmed slug-registered card; R2 confirm slug canonicalization or flag for margit.
+  SEAM-C16-LOC-002: oc-hook-precinct-circuit — generic slug for Taylor's circuit transit; no warehouse card; consistent with b01c13 the-hook-lane / b01c09 oc-hook-precinct slug family; R2 confirm slug or flag for margit canonicalization.
+  SEAM-C16-LOC-003: loc-state:2 @9 fires on pace-match bone (movement verb "matches"); the pace-match is transitional but the spatial change is convergence — two bodies now in motion toward the fence. Strip test: removing loc-state:2 and reading @9 against inherited loc-state:1 (clearing-open) — the pace-match is legible but the convergence-line spatial fact is not. Entry survives strip test.
+  SEAM-C16-LOC-004: loc-state:4 @22 fires at the walk-out departure bone vs. @19 (Taylor stops). @19 is a momentary stop, not a location state-change; @22 is the committed departure trajectory. Correct anchor confirmed.
+
+## Sensory facet filed (b01c16) — 2 entries, 0 cull
+  sensory:1 @6  — smell: hook-lane-ambient -> tallow-wax-cold-stone (S01; Taylor enters the sept-corner; onset inflection of the corner's characteristic ambient)
+  sensory:2 @13 — tactile: clearing-ground-ambient -> fence-rail-cold-iron (S02; fence-rail press; cold-holding iron at contact)
+  Density: 2/27 = 7.4% — SHORT-CHAPTER EXEMPTION ACTIVE (27 < 30; modality-count = floor = 2; ceiling relaxed to max(6%, 7.4%) = 7.4%; ADVISORY not blocking)
+  Modalities: smell + tactile (2; meets ≥2 floor)
+  Per-scene cap: S01=1 (@6), S02=1 (@13), S03=0 — all within ≤3
+  Old-state anchors: sensory:1 old-state "hook-lane-ambient" — sourced from loc-state baseline prior to loc-state:1 (Taylor is in the Hook circuit prior to entering the corner; hook-lane-ambient is the established baseline for all Hook circuit chapters); sensory:2 old-state "clearing-ground-ambient" — sourced from loc-state:1 @6 (clearing-open conditions at morning; ground-ambient is the tactile baseline of the cleared paving before contact with the fence)
+  Excluded: @16 grip (same tactile modality as @13; sustained contact, not a new inflection — anti-pattern #2 sustained-as-inflection); @8/@20 (feed-return = fauna-feed-extension; REJECT axis 4); all dialogue bones @10/@17 (no perceptual modality inflection); @27 (departure movement; no modality inflection at bare circuit-resume verb)
+  Files: theater/facets/sensory-b01-c16.md
+
+## State-updates-env locked (b01c16) — 3 entries, decisions-not-fire documented
+  state:1  @1  — studio.location: the-passage-adjacent-ward -> oc-sept-corner
+  state:2  @1  — studio.time_of_day: afternoon -> morning
+  state:3  @27 — studio.location: oc-sept-corner -> oc-hook-precinct-circuit
+  Decisions-not-fire: @6-@26 actor-position changes (actor-fork authority); @8/@20 feed-registration beats (reality-axis reject); @23 reed-mat persistence (frugality-axis reject; location-card content); feed-density throughout (continuously routine-coverage; no field-flip); sept-corner scene-local fixtures (static — the chapter's point; no prop state-updates warranted)
+  Field-extensions: oc-hook-precinct-circuit slug (new; margit referral — confirm vs. the-hook-lane / oc-hook-precinct slug family)
+  Density: 3/27 = 11%; within s01e01 mechanical band (8-18%); 2 scene-open structural fires + 1 scene-close departure; chapter is static by design (no prop lifecycle events, no coverage events)
+  State-updates-env R1 authored 2026-06-04 — theater/facets/state-updates-env-b01-c16.md (3 entries)
+
+## Prop state at b01c16 chapter-close (projected from state-updates-env R1)
+  - studio.location: oc-hook-precinct-circuit (@27; Taylor resumed circuit)
+  - studio.time_of_day: morning (@1; no advance this chapter)
+  - studio.fauna_sense_status.feed-density: routine-coverage (carry from b01c15; no change)
+  - All b01c15 carry-forward entries unchanged: studio.fauna_sense_status.eastern-fringe-interference: cleared; studio.fauna_sense_status.feed-density: routine-coverage; studio.spatial_layout.lane-junction-patrol: Gold-Cloak-pair-posted; studio.fauna_sense_status.lower-gate-road-coverage: corwick-absent; prop:oc-ward-coverage-notes.content: hook-rushwick-oswyn-plus-south-plus-both-clusters; prop:oc-feed-ledger.condition: closed; prop:oc-feed-ledger.corwick-entry: written; studio.fauna_sense_status.coverage-scale: five-ward-plus-approaches
+
+## Seams flagged for R2 (b01c16 state-updates-env)
+  SEAM-C16-ENV-001: state:1 old-state "the-passage-adjacent-ward" — carries directly from b01c15 state:1/@1 and b01c15 chapter-close location; chain unbroken; R2 confirm.
+  SEAM-C16-ENV-002: state:2 old-state "afternoon" — carries from b01c15 chapter-close (time_of_day: afternoon); new morning is consistent with mid-circuit working morning brief; R2 confirm adequacy or trace to explicit time-advance bone.
+  SEAM-C16-ENV-003: state:3 @27 oc-hook-precinct-circuit — new slug; slug family reconciliation needed (b01c13 the-hook-lane / b01c09 oc-hook-precinct / b01c15 the-passage-adjacent-ward); margit referral recommended.
+
+---
+
+## Location-state sequence locked (b01c15) — 4 entries, 0 cull
 
 ## Location-state sequence locked (b01c15) — 4 entries, 0 cull
   loc-state:1 @1  — the-passage-adjacent-ward | morning | none | stone-lip-open, corner-gutter-occupied, outer-court-approach-clear | stone-lip above the outer-court approach (place-anchor; scene-A; working morning)
