@@ -5055,3 +5055,161 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0084 | 2026-06-04 | SLOW (process-critic + user-proxy)
+
+mode: process-critic (primary) + user-proxy (lenient-tie ratification)
+trigger:
+  reason: failure (11 HARD at /and-write Phase 6 bone-gate, all remediated in-cycle)
+  source_report: active-project/staff/auditor/write-b01c14-bone-gate.md
+  source_verdict: |
+    11 HARD remediated (5 SVO form recasts + signal-002 modifier sweep + 3 held-axis
+    fixes + mover-reduction reconcile) + 4 SIGNAL dispositioned. Bone-gate PASS after
+    remediation. S04 convergence-climax co-dominant tie (4 axes × +1.0) accepted via
+    lenient interpretation; queued for admin user-proxy ratification.
+gate_path: .claude/commands/and-write.md#phase-6
+
+question: |
+  (A) Process-critic: c14 exhibited the floor-vs-fractional-target structural tension for
+  the second time (first: c03/c04, cf. PROP-0010). Root cause: every fractional scene-target
+  (0.25/0.5) was enacted by a 1.0-floor moving bone, causing chapter bone-sum overshoot AND
+  axis-ties at 1.0 within S03/S04. Three candidate process changes offered: (a) /and-substance
+  guidance that scene-targets should be >=1.0 for multi-arc convergence chapters; (b) /and-write
+  Phase 1 rule that a fractional scene-target uses a SINGLE chapter-level mover (not per-scene);
+  (c) an auditor-rule clarifying that STAKES-AXIS-NOT-DOMINANT uses delivered-bone-magnitude
+  (ties = co-dominant). Does the process need to change?
+
+  (B) User-proxy: The S04 convergence-climax has 4 axes at +1.0 each. S02/S03 were reconciled
+  to strict single-mover dominance. S04 relies on the lenient reading: gate fires only if a
+  non-stakes axis delivers *strictly more* than the stakes axis; ties are co-dominant. Does the
+  principal accept this disposition for c14 ship?
+
+context: |
+  Bone-gate report: active-project/staff/auditor/write-b01c14-bone-gate.md
+  11 HARD, all resolved in-cycle. Audience 3/3 SUBSTANCE-FELT all 4 scenes.
+  Dramatist ACCEPT (shape; 2 non-blocking renderer flags).
+  S04 is a 4-arc simultaneous completion scene: cl-antag-d10 + cl-d07a + cl04 +
+  relational arc all close here. Strict single-dominance structurally impossible
+  when N arcs complete at the 1.0 floor.
+  Measured-delta tracks the contract exactly:
+    relational_anchor_status +1.0, social_tether-antag +1.5, position-prot-rise +1.0,
+    moral_legibility_to_self +0.5.
+  Relevant open proposals: PROP-0010 (magnitude-floor pre-flight at /and-substance chapter;
+    recurrence_count: 3, third chapter exhibiting fractional-target-floor collision).
+  PROP-0010 proposed diff already includes "consolidate scenes so the full target is
+  delivered in fewer scenes each with >=floor per-axis target" -- covers candidates (a) + (b)
+  from the dispatch but does not specifically flag multi-arc convergence chapters as
+  requiring this consolidation path.
+  No existing open proposal addresses the STAKES-AXIS-NOT-DOMINANT co-dominant-tie
+  clause for simultaneous N-arc completion scenes.
+
+options: |
+  Process-critic:
+    (i) OK-MERGED-INTO PROP-0010 for the floor-vs-fractional-target recurrence
+    (ii) PROCESS-CHANGE-PROPOSED PROP-0039 for the lenient-tie co-dominant clause
+    (iii) Some combination or OK-only verdict
+  User-proxy:
+    (I) Accept the c14 lenient-tie disposition -- ship as-is
+    (II) ESCALATE to human -- require strict single-dominance (would force S04 revise)
+
+decision: |
+  Process-critic:
+    (i) OK-MERGED-INTO PROP-0010 (recurrence_count 3->4; multi-arc convergence
+        consolidation guidance added to recurrence_refs).
+    (ii) PROCESS-CHANGE-PROPOSED PROP-0039 (new; lenient-tie co-dominant clause for
+        simultaneous N-arc completion at the 1.0 floor; change_type: modify on
+        Phase 6 STAKES-AXIS-NOT-DOMINANT criterion).
+  User-proxy:
+    (I) ACCEPT the lenient-tie disposition for c14 ship.
+
+basis: |
+  Process-critic step 2 (proposals-log check):
+    Floor-vs-fractional: PROP-0010 is open and matches target + change_type. Merge mandatory.
+    Lenient-tie: no open proposal covers STAKES-AXIS-NOT-DOMINANT tie-clause. No rejected
+    proposal matches. PROP-0039 is net-new.
+  Process-critic step 3 (content vs. process):
+    Floor-vs-fractional: the multi-arc consolidation note is a precision gap in PROP-0010's
+    proposed_diff (covers the mechanism but does not call out convergence chapters by name);
+    c14 is the recurrence that confirms the guidance needs to be more explicit on this path.
+    Lenient-tie: the Phase 6 gate spec reads "MUST be the largest delivered delta in the scene"
+    with no carve-out for N-axis simultaneous completion at the bone floor. The current spec
+    would HARD on any future convergence-climax tie. The auditor resolved correctly via
+    context-sensitive judgment; but without a spec change, that judgment is non-reproducible
+    and the gate remains structurally inconsistent with the project's multi-arc closure design.
+    change_type: modify (add co-dominant-tie clause).
+  Process-critic step 4 (recurrence):
+    Floor-vs-fractional: count=4 (c04 DEC-0031, c06 DEC-0046/0057, c06-revise DEC-0057,
+    c14 this dispatch). Merge is mandatory.
+    Lenient-tie: count=1. Non-catastrophic (resolved in-cycle; 3/3 audience PASS). But:
+    first-occurrence-hold override applies -- the failure is deterministic. Every future
+    convergence-climax scene completes N cost-arcs simultaneously at the 1.0 floor; strict
+    single-dominance is structurally impossible by design in those scenes. Without a spec
+    amendment, the gate will hard-fire on every convergence climax. Deterministic gap
+    + precise fix = propose at count=1 per methodology recurrence-override.
+  User-proxy (lenient-tie):
+    goal:1 (pipeline correctness) -- the gate's purpose is to prevent a non-stakes axis
+    delivering MORE than the stakes axis. That purpose is satisfied in S04: relational
+    (stakes) is not under-delivered; no axis outscores it; they co-complete. Firing HARD
+    on a tie at the 1.0 floor when all four completing axes are structurally constrained
+    to 1.0 violates the gate's intent.
+    goal:2 (cost discipline) -- audience 3/3 SUBSTANCE-FELT; forcing revise burns caps on
+    a chapter that delivered by every measurement including the informed critic standard.
+    methodology:3a (reversibility) -- accepting the lenient tie is reversible (PROP-0039
+    proposes the gate amendment; can be revisited if the clause proves too permissive).
+    No escalation triggers: not architectural direction, not irreversible at meaningful cost,
+    not human-only territory. Within admin authority.
+
+rationale: |
+  PROP-0010 MERGE: The c14 floor-vs-fractional pattern is structurally identical to
+  prior recurrences: sub-1.0 scene-targets authored at /and-substance chapter, 1.0-floor
+  bones at /and-write, chapter-sum overshoot of contract. PROP-0010's proposed pre-flight
+  check at /and-substance chapter Phase 4/5 (surface SUBSTANCE-CONTRACT-FLOOR-CONFLICT
+  when any scene's per-axis target < bone.delta_per_axis.floor) would have surfaced this
+  before decomposition. The multi-arc convergence case is the most consequential sub-case:
+  when a chapter is designed to close 3+ cost-arcs simultaneously, the scene-target author
+  must consolidate delivery into one scene with >=1.0 per axis rather than splitting
+  0.25/0.5 residuals across multiple scenes (since each scene enacts a 1.0-floor mover).
+  This precision note belongs in PROP-0010's recurrence_refs; it is not a separate proposal.
+
+  PROP-0039 (new): The Phase 6 gate spec says the stakes axis "MUST be the largest" with
+  no exception. The S04 co-dominant tie is not a gate miss -- the auditor correctly applied
+  context-sensitive reasoning. But the spec as written cannot support that reasoning
+  reproducibly: a future auditor following the gate spec literally would HARD on a tie
+  even in a structurally identical convergence scene. The fix is a single clause: when >=2
+  axes complete simultaneously at the 1.0 floor in a single scene, co-dominant ties are
+  accepted -- the gate fires HARD only when a non-stakes axis delivers strictly greater
+  magnitude than the stakes axis. Small, precise, closes the spec gap without relaxing the
+  gate's actual enforcement intent (stakes-axis under-delivery).
+
+  LENIENT-TIE ACCEPTANCE: S02 and S03 were correctly reconciled to strict single-mover
+  dominance -- there the mover-to-held conversions were achievable without violating the
+  delivery contract. S04 is structurally different: all four arcs are at 1.0 by design.
+  No single axis can be made sole mover without under-delivering the contracted +1.0 on
+  the others -- which would itself produce AXIS-DELTA-MISMATCH or AXIS-UNDERDELIVERED.
+  The gate cannot simultaneously require (a) each axis delivers its contracted +1.0 AND
+  (b) only one axis delivers in S04. That is a contradiction built into the multi-arc
+  convergence structure. Accepting the co-dominant tie is the only internally-consistent
+  outcome.
+
+trade-off: |
+  Merging into PROP-0010 rather than a separate "multi-arc guidance" proposal: the
+  proposed_diff on PROP-0010 already contains the consolidation language; adding a
+  recurrence_ref is minimum-blast-radius. A separate proposal would duplicate the
+  core mechanism.
+
+  Proposing PROP-0039 at count=1: accepted on deterministic-gap grounds. The alternative
+  means the next convergence-climax chapter hits the same structural HARD, requires the
+  same orchestrator adjudication, and the spec remains inconsistent with the project's
+  multi-arc closure design. Fix is S-cost; delay has no benefit.
+
+  Accepting lenient-tie for c14: if the co-dominant tie clause proves too permissive
+  in a future chapter, PROP-0039's amendment can be narrowed at that point. The
+  acceptance is reversible at the process level; c14's ship is supported by 3/3
+  SUBSTANCE-FELT + measured-delta-on-contract evidence.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no

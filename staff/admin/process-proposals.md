@@ -1354,10 +1354,22 @@ evidence_refs:
   - "active-project/staff/auditor/write-b01c04-bone-gate-redo.md — PASS verdict after redo; additive cycle confirms the 2.0 target with 1.0-per-scene split is structurally valid"
   - ".claude/commands/and-write.md — Phase 2: FAULT-BONE-DELTA-MALFORMED classification: magnitude outside chunk_targets.bone.delta_per_axis is a HARD fault"
   - "schemas/showrunner-memory.schema.md — chunk_targets.bone.delta_per_axis field (the floor the chapter contract must pre-flight against)"
-recurrence_count: 3
+recurrence_count: 4
+# recurrence_count bumped 3->4 by admin process-critic DEC-0084 (2026-06-04):
+# b01c14 Phase 6 bone-gate — 11 HARD, root cause: every fractional scene-target (0.25/0.5)
+# enacted by a 1.0-floor moving bone, producing chapter bone-sum 2-6x the contract AND
+# axis-ties at 1.0 in S03/S04 (3 STAKES-AXIS-NOT-DOMINANT HARDs). Remediated in-cycle
+# via mover-to-held conversions + S04 lenient-tie disposition. S04 convergence-climax
+# (4 arcs closing simultaneously) is the most consequential sub-case of fractional-floor
+# collision: strict single-dominance is structurally impossible when N arcs complete at
+# the 1.0 floor simultaneously. PROP-0010's proposed_diff consolidation language already
+# covers the mechanism but should be read as especially binding for multi-arc convergence
+# chapters. Note: the co-dominant-tie clause for simultaneous N-arc completion is proposed
+# separately as PROP-0039 (Phase 6 gate spec amendment).
 recurrence_refs:
   - "active-project/staff/auditor/write-b01c06-bone-gate.md — signal-001 + signal-002: moral_legibility_to_self scene-aggregate target +0.5 (fractional residual after scene distribution); bone-floor 1.0 forced over-delivery to +1.0; accepted-with-rationale; stakes-axis tie (moral_framework=moral_legibility at 1.0 each) is a direct consequence of the same fractional-target-floor collision. Second chapter exhibiting this exact structural pattern (b01c04 was first). No HARD fired; accepted path worked. Confirms recurrence is predictable on any chapter with fractional scene residuals."
-  - "active-project/staff/auditor/write-b01c06-bone-gate-revise.md — signal-001 + signal-002 (identical signals, depth-pass revise run): moral_legibility +0.5→+1.0 bone-floor artifact + stakes-tie mf=mls at 1.0. Third chapter run exhibiting the fractional-target-floor collision. Merged by DEC-0057."
+  - "active-project/staff/auditor/write-b01c06-bone-gate-revise.md — signal-001 + signal-002 (identical signals, depth-pass revise run): moral_legibility +0.5->+1.0 bone-floor artifact + stakes-tie mf=mls at 1.0. Third chapter run exhibiting the fractional-target-floor collision. Merged by DEC-0057."
+  - "active-project/staff/auditor/write-b01c14-bone-gate.md — 11 HARD (all remediated in-cycle); root cause: every fractional scene-target (0.25/0.5 for antag/position/moral_leg in multi-arc convergence chapter) enacted by a 1.0-floor moving bone. Chapter bone-sum (relational +2.0, antag +3.0, position +3.0, moral_leg +2.0) overshot contract (+1.0/+1.5/+1.0/+0.5) 2-6x. 3 STAKES-AXIS-NOT-DOMINANT HARDs in S03/S04 from axis-ties at 1.0. Remediated via mover-to-held conversions (S02/S03 to strict single-mover dominance; S04 convergence-climax via lenient co-dominant-tie disposition). Fourth occurrence. The multi-arc simultaneous-completion case is the most structurally forced sub-case of this collision: strict single-dominance is impossible when N arcs complete at the 1.0 floor per the substance contract. PROP-0010's consolidation guidance must be understood as mandatory for such chapters. Merged by DEC-0084."
 proposed_diff: |
   In .claude/commands/and-substance.md, in the chapter-level authoring phase (Phase 4 or
   Phase 5 — whichever phase persists the per-scene substance contract to memory), add a
@@ -5254,6 +5266,145 @@ proposed_diff: |
   axis-class language is generalized to cover custom-signature axis slugs. If
   pl-2026-05-30-003 is resolved at the same schema-edit pass, both changes should be
   applied together. The parking-lot item can be stamped resolved at that point.
+
+cost_estimate: S
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
+
+---
+
+## PROP-0039
+
+```yaml
+id: PROP-0039
+created_at: 2026-06-04T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: failure
+  source_report: active-project/staff/auditor/write-b01c14-bone-gate.md
+  source_verdict: |
+    /and-write b01c14 Phase 6 bone-gate: 3 HARD STAKES-AXIS-NOT-DOMINANT on S03/S04
+    from axis-ties at 1.0 in a multi-arc convergence climax. Remediated in-cycle:
+    S02/S03 reconciled to strict single-mover dominance via mover-to-held conversions;
+    S04 convergence-climax (4 arcs x +1.0) accepted via lenient co-dominant-tie reading
+    (no non-stakes axis delivers strictly more than the stakes axis; ties accepted as
+    co-dominant). Queued for admin ratification and process-critic judgment.
+  gate_path: .claude/commands/and-write.md#phase-6
+target:
+  type: command
+  path: .claude/commands/and-write.md
+  section: "Phase 6 — Per-scene verification, stakes-axis-dominant check (URI-WRITE-STAKES-AWARE)"
+change_type: modify
+rationale: |
+  The Phase 6 gate spec (stakes-axis-dominant check) reads: "that axis's delivered aggregate
+  magnitude MUST be the largest delivered delta in the scene. If a non-stakes axis delivers a
+  larger aggregate than the declared stakes axis, the scene is mis-shaped — STAKES-AXIS-NOT-
+  DOMINANT (HARD)."
+
+  This formulation has no carve-out for simultaneous N-arc completion scenes. In a convergence-
+  climax scene where 3+ cost-arcs complete simultaneously, every completing axis delivers at the
+  1.0 bone floor — the minimum deliverable magnitude. In that configuration, strict single-axis
+  dominance is structurally impossible: the bone floor prevents any axis from delivering LESS
+  than 1.0 in the scene where it completes, so all completing axes tie at 1.0.
+
+  b01c14 S04 is the first live convergence-climax scene in the project: cl-antag-d10 +
+  cl-d07a + cl04 + relational arc all close at S04, each with a 1.0-floor completing bone.
+  The auditor correctly reasoned that "no non-stakes axis delivers strictly more than the
+  stakes axis" and accepted the tie. But that reasoning is not supported by the spec text,
+  which reads "MUST be the largest" — a future auditor following the spec literally would
+  HARD on any tie, including the co-dominant convergence-climax case.
+
+  The gate's intent is to prevent stakes-axis under-delivery: a chapter whose declared
+  capability stakes axis delivers +0.5 while a knowledge axis delivers +3.0 is mis-shaped.
+  Co-dominant ties at the 1.0 floor are not mis-shaped — the stakes axis delivered its
+  contractual increment, and other arcs completed alongside it. The gate's purpose is fully
+  satisfied when the stakes axis is not outscored; it is over-applied when it HARDs on ties.
+
+  This is the first occurrence of the convergence-climax co-dominant tie. First-occurrence
+  hold is overridden because: (a) the failure is deterministic — every future convergence
+  climax in a multi-arc project will hit this structural condition; (b) the fix is narrow
+  and precise; (c) the orchestrator adjudication ruling (lenient tie accepted) confirms the
+  correct outcome is clear even without a spec change; (d) leaving the spec inconsistent
+  creates a reproducible false-positive HARD on every future convergence-climax scene.
+evidence_refs:
+  - "active-project/staff/auditor/write-b01c14-bone-gate.md — S04 stakes-dominance section:
+    'four movers tied at +1.0. LENIENT PASS: no non-stakes axis delivers strictly more than
+    the stakes axis (relational). The convergence-climax completes three cost-arcs + closes
+    cl04 simultaneously; strict single-dominance is structurally impossible when N arcs
+    complete at the 1.0 floor. Disposition: co-dominant tie accepted; queued for admin
+    user-proxy ratification.' Audience 3/3 SUBSTANCE-FELT on S04."
+  - ".claude/commands/and-write.md — Phase 6 per-scene verification, stakes-axis-dominant
+    check: 'that axis's delivered aggregate magnitude MUST be the largest delivered delta
+    in the scene. If a non-stakes axis delivers a larger aggregate than the declared stakes
+    axis, the scene is mis-shaped — STAKES-AXIS-NOT-DOMINANT (HARD).' No co-dominant-tie
+    exception exists in the current spec."
+  - "staff/admin/decisions.md — DEC-0084: user-proxy ratification of lenient-tie; accepted
+    on goal:1 (gate purpose satisfied) + goal:2 (3/3 SUBSTANCE-FELT; revise would burn caps
+    on a chapter that delivered by every informed-critic measure) + methodology:3a grounds."
+recurrence_count: 1
+proposed_diff: |
+  In .claude/commands/and-write.md, Phase 6 — Per-scene verification, stakes-axis-dominant
+  check (URI-WRITE-STAKES-AWARE — HARD), amend the check criterion as follows:
+
+  CURRENT TEXT:
+    When scene_conflict.stakes_axis resolves to an axes_in_motion[] axis, that axis's
+    delivered aggregate magnitude MUST be the largest delivered delta in the scene. If a
+    non-stakes axis delivers a larger aggregate than the declared stakes axis, the scene
+    is mis-shaped — STAKES-AXIS-NOT-DOMINANT (HARD). (A scene of *watching* delivering
+    a knowledge overrun while its declared capability stakes axis under-delivers is the
+    canonical failure this catches.) When stakes_axis resolves to an axes_held[] axis,
+    this check is N/A (held axes deliver zero by design).
+
+  AMENDED TEXT:
+    When scene_conflict.stakes_axis resolves to an axes_in_motion[] axis, that axis's
+    delivered aggregate magnitude MUST NOT be outscored by any other axis. Two cases:
+
+      (a) Strict dominance (normal scenes): the stakes axis delivers strictly the largest
+          aggregate delta in the scene. Any non-stakes axis delivering a larger aggregate
+          is STAKES-AXIS-NOT-DOMINANT (HARD). (A scene of *watching* delivering a
+          knowledge overrun while its declared capability stakes axis under-delivers is
+          the canonical failure this catches.)
+
+      (b) Co-dominant tie (convergence-climax exception): when >=2 axes complete
+          simultaneously at the bone delta floor (chunk_targets.bone.delta_per_axis.floor)
+          in a single scene, co-dominant ties are ACCEPTED — the gate fires HARD only when
+          a non-stakes axis delivers STRICTLY GREATER magnitude than the stakes axis.
+
+          Conditions for the co-dominant-tie exception:
+            1. The scene is a convergence scene: >=2 cost_ledger entries whose anchor
+               resolves at-or-under this scene each have a completing bone in this scene.
+            2. The tied axes are all at the bone delta floor value (not above it).
+            3. The stakes axis is INCLUDED in the tie (i.e., it is not outscored; it
+               ties for highest or shares the highest delivered magnitude).
+
+          If all three conditions are met, report as LENIENT-PASS-CO-DOMINANT (not HARD;
+          not a blocking finding). Log the tie explicitly in the bone-gate report with
+          the convergence rationale. Admin process-critic dispatch (Phase 6.5) receives
+          the LENIENT-PASS log for user-proxy ratification.
+
+          If any condition is NOT met (non-stakes axis ties above the bone floor, or
+          the stakes axis is genuinely outscored, or there is no convergence trigger),
+          apply the standard strict-dominance check.
+
+      When stakes_axis resolves to an axes_held[] axis, this check is N/A (held axes
+      deliver zero by design).
+
+  HARD / SIGNAL classification table: update the STAKES-AXIS-NOT-DOMINANT row to clarify
+  it applies only under strict-dominance case (a); LENIENT-PASS-CO-DOMINANT is not a
+  SIGNAL — it is a passing log entry that routes to Phase 6.5 admin ratification.
+
+  NOTE: This change does not relax the gate for any scenario where a non-stakes axis
+  genuinely outscores the stakes axis. The co-dominant exception is structurally narrow:
+  it requires simultaneous cost-arc completion at the bone floor — a condition that arises
+  only in designed convergence-climax scenes. A chapter where the stakes axis under-delivers
+  (e.g., delivers 0.5 while others deliver 1.0) is still STAKES-AXIS-NOT-DOMINANT (HARD)
+  because 0.5 < 1.0 is strict outscoring, not a tie.
 
 cost_estimate: S
 status: open
