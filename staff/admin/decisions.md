@@ -5213,3 +5213,82 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0085 | 2026-06-04 | FAST (user-proxy, RUNBOOK R1)
+
+mode: user-proxy
+trigger: /and-stitch b01c14 Phase 9 terminal-gate disposition (Class-B FAIL; CONTINUE=no; central event recovered; cause: abstract ledger-register + cold-context name-unfamiliarity)
+
+question: |
+  Phase 9 cold-read returned CONTINUE=no on b01c14. Class-B: central event recovered
+  (Taylor confirms courier → detained → refuses to price Wren). FAIL cause: (1) relentlessly
+  abstract ledger-metaphor, no concrete courier-as-person, no Sera-as-stake; (2) Otto/Sera/
+  Jarvis/faction name-unfamiliarity (c14-read-in-isolation artifact).
+  Phase 8.5 returned PASS (central events land concrete at spine; weave + followability clean;
+  @42 Gold-Morning fence-clean). Bone-gate audience 3/3 SUBSTANCE-FELT. /and-facets 9/9 ACCEPT.
+  Chapter GOAL explicitly licenses accounting register as designed nature.
+  PASS-CHUNK-VOICE-RISK was armed from /and-substance chapter (Signal-B: ledger-abstraction
+  risk). Options: (A) SHIPPED-WITH-CAVEATS + mandatory depth pass before book-close,
+  (B) structural re-write now, (C) ESCALATE.
+
+context: |
+  DEC-0072 (b01c11 chunk cold-read + Phase 9), DEC-0074 (c11 Phase 9), DEC-0078 (c12 Phase 9)
+  are exact coupling-rule precedents. All three: Class-B FAIL, CONTINUE=no, central event
+  recovered, causes = design-inherent abstract register + cold-context name-opacity. All three
+  shipped SHIPPED-WITH-CAVEATS. The accounting register is the moral_legibility series signature
+  ("the accounting is explicit" is c14's stated GOAL). Cold-context name-unfamiliarity (Otto/
+  Sera/Jarvis) is serial mid-point noise — an invested reader has c01-c13 context.
+  Phase 8.5 substance-aware check confirmed followability clean and concreteness at spine.
+  The c14 case has one additional carried item not present in c10-c12: courier-as-person +
+  Sera-as-stake concreteness gaps are addressable via depth pass (not structural-unfixable),
+  making the depth-pass mandatory flag load-bearing.
+
+options:
+  - (A) SHIPPED-WITH-CAVEATS + mandatory depth pass (/and-write b01c14 revise --from-signals) before book-close
+  - (B) Structural re-write now (~40 dispatches, re-cascade /and-facets + /and-stitch)
+  - (C) ESCALATE to human (queued to end-of-run summary)
+
+decision: (A) SHIPPED-WITH-CAVEATS. Depth pass flagged mandatory before book-close.
+
+basis: |
+  ltm:DEC-0072 + ltm:DEC-0074 + ltm:DEC-0078 — coupling rule exact match: Class-B FAIL,
+  CONTINUE=no, central event recovered, causes = design-inherent abstract register +
+  cold-context name-opacity. All three prior cases shipped SHIPPED-WITH-CAVEATS.
+  methodology:3e (convention) — the established project disposition for this failure class
+  is terminal-ship + recorded-risk + depth-pass flag; consistency requires same verdict.
+  methodology:3b (cost) — (B) burns ~40 dispatches to re-derive a chapter whose bones,
+  facets, and Phase 8.5 all PASS; wrong repair layer (bone-layer re-decompose cannot address
+  cold-context name-opacity, which is non-fixable).
+
+rationale: |
+  The coupling rule established across DEC-0072/0074/0078 is deterministic on the c14 facts:
+  (1) central event recovered — the step-2 diff gate did NOT fire; (2) all CONTINUE=no causes
+  fall into pre-authorized categories (design-inherent abstract register per chapter GOAL;
+  cold-context name-opacity as serial mid-point noise). Phase 8.5 (substance-aware, context-
+  held) returned PASS, which is the informed standard the cold-read cannot replicate.
+  The accounting register is not a defect introduced at stitch — it is the chapter's declared
+  moral_legibility axis ("accounting is explicit" is the GOAL text). Re-writing now would
+  violate the substance contract that 3/3 audience + 9/9 facets all endorsed.
+  The c14 depth-pass (courier-as-person concrete detail; Sera-stake staged) is addressable at
+  /and-write revise --from-signals and should be flagged mandatory-before-book-close, consistent
+  with PASS-WITH-DEPTH-PASS-REQUIRED semantics. Option (B) is wrong repair layer + wrong cost.
+  Option (C) is unnecessary — prior rulings decide this without human judgment.
+
+trade-off: |
+  Accepting (A) means the courier-as-person and Sera-stake gaps ship in the terminal draft
+  pending depth pass. Risk: if the depth pass is skipped before book-close, those texture
+  gaps persist. Mitigated by: (a) mandatory depth-pass flag in this entry + run summary;
+  (b) the gaps are texture-level (bone-delivered substance is clean), not event-delivery
+  failures; (c) /and-postop can surface them in the gap between ship and book-close.
+
+depth_pass_mandatory: yes — /and-write b01c14 revise --from-signals before book-close.
+  Targets: courier-as-person concreteness (@courier-anchored bones); Sera-stake staged
+  (visible in at least one concrete body-act or consequence bone); cold-read-flagged
+  abstraction-dominant passages that survived Phase 8.5 as texture-level (not spine) gaps.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no

@@ -8259,7 +8259,7 @@ books:
           target_chapter: b01c14
 
       - slug: b01c14
-        status: audited-r1
+        status: stitched
         audit_path: active-project/staff/auditor/facets-final-audit.md
         audit_complete: true
         audience_gate_path: active-project/staff/auditor/facets-audience-gate-r2.md
