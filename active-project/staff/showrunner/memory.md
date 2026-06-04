@@ -8259,7 +8259,7 @@ books:
           target_chapter: b01c14
 
       - slug: b01c14
-        status: faceted-r2
+        status: audited-r1-mechanical
         bones_file: theater/bones/b01-c14.md
         bones_count: 46
         substance_bone_gate_verdict: PASS

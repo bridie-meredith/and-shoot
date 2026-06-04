@@ -1988,3 +1988,31 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-06-04-001
+      created_at: 2026-06-04T00:00:00Z
+      created_by: "/and-facets b01c14 Phase 5 audit (flag-002)"
+      target:
+        command: margit-card-authoring
+        scope: "b01c14 warehouse cards"
+        phase: null
+      severity: SOFT
+      description: |
+        Five slugs referenced in b01c14 facets lack warehouse cards (pre-flagged
+        seams; non-blocking — entries carry sufficient inline description):
+        - the-channel-station (loc; SEAM-C14-LOC-001) — Taylor's Jarvis channel-station
+        - the-gap-lanes-east-water-gate (loc; SEAM-C14-LOC-002) — the courier gap-lanes
+        - prop:oc-feed-ledger (SEAM-C14-ENV) — Taylor's interior accounting ledger
+        - prop:oc-jarvis-packet — the courier packet
+        - prop:oc-response-sheet (SEAM-C14-ENV-001) — the confirmation sheet
+        margit should author these (mechanism-descriptive) so future loc-state
+        old-state continuity audits + /and-cast revise can verify constraint
+        compliance. Matches the oc-rushwick precedent (pl-2026-05-28-001).
+      context_refs:
+        - active-project/theater/facets/location-state-b01-c14.md
+        - active-project/theater/facets/state-updates.md
+        - active-project/staff/auditor/facets-final-audit.md  # flag-002
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null

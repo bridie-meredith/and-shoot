@@ -6,7 +6,7 @@
 6 taylor-hebert-kl-122ac sweeps the fly across the lane-mouth
 7 taylor-hebert-kl-122ac sweeps the adjacent insects east
 8 taylor-hebert-kl-122ac releases the fly from the corner-shelf
-9 taylor-hebert-kl-122ac closes the passive-count entry [state:1]
+9 taylor-hebert-kl-122ac closes the passive-count entry [state:14]
 10 jarvis sets the packet at the channel-station
 11 taylor-hebert-kl-122ac breaks the seal
 12 the figure rounds the water-gate corner
@@ -24,7 +24,7 @@
 24 the stylus stops above the closed entry
 25 taylor-hebert-kl-122ac writes the lane-designation
 26 taylor-hebert-kl-122ac writes the weight-adjustment detail
-27 taylor-hebert-kl-122ac writes the low-set-left-eye detail [state:2]
+27 taylor-hebert-kl-122ac writes the low-set-left-eye detail [state:15]
 28 taylor-hebert-kl-122ac presses the wax seal
 29 taylor-hebert-kl-122ac sets the response-sheet at the station edge
 30 taylor-hebert-kl-122ac enters the breach-column record
@@ -37,10 +37,10 @@
 37 the figure walks between the two men
 38 the lane empties
 39 taylor-hebert-kl-122ac releases the bottlefly
-40 taylor-hebert-kl-122ac closes the cl04 outcome-entry [state:3]
+40 taylor-hebert-kl-122ac closes the cl04 outcome-entry [state:16]
 41 the adjacent column-position surfaces the open item
 42 taylor-hebert-kl-122ac lifts the column-positions
 43 taylor-hebert-kl-122ac sets the hand off the surface
-44 taylor-hebert-kl-122ac runs the exit-column to the bottom entry [state:4]
+44 taylor-hebert-kl-122ac runs the exit-column to the bottom entry [state:17]
 45 the second-junction lane clears
 46 taylor-hebert-kl-122ac releases the stylus
