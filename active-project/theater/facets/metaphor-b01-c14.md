@@ -1,63 +1,75 @@
-facet: metaphor / episode: b01-c14 / author: editor / ---
+facet: metaphor
+episode: b01-c14
+author: editor
+---
 
-# Refuse-by-default accounting
-#
-# Peak-bone candidates assessed per AP7 default-refuse + per-scene cap + Q1/Q2 gate:
-#
-# @18 (S02 peak) — REFUSE-CORRECT. No explicit Reading-A comparator clears Q1; the
-#   conceptual content (apparatus-operates-without-her inference) is already carried by
-#   the physical SVO and the S02 protected-pattern WITHHELD-BECOMES-INSTRUMENT. AP2 risk.
-#
-# @27 (S03 central-event peak) — REFUSE-CORRECT. AP7: tens=3 peak-zone (S03 rhythm-shape
-#   is "the peak — pressure converts to consequence that cannot roll back"; @27 is the sole
-#   central-event bone). Exception (dark-humor deflation at peak) does not apply — the
-#   inversion completes here; this is rupture, not deflation.
-#
-# @35 (S04 peak-shadow) — FIRE. See entry below.
-#
-# @40 (S04 central-event) — REFUSE-CORRECT. AP2 + AP9: the closure of the cl04 entry is
-#   rendered direct (physical SVO); any metaphor doubles a figure already in the accounting-
-#   register or slides into painting-characterization. The WREN-NAMING-MINIMAL-PHYSICAL
-#   protected pattern (W07) explicitly guards against over-rendering here.
-#
-# @42 (S04 peak-shadow, Gold-Morning echo) — REFUSE-CORRECT. Hard fence per dispatch
-#   instruction: @42 is the memory facet's shape-language domain; metaphor at this bone
-#   is explicitly fenced.
-#
-# @44-@45 (S04 non-extractable / lane-clears) — REFUSE-CORRECT. Per-scene cap: S04 is
-#   already taken by @35. @45 is the concrete completion of @35 (the physical correlate
-#   the prose will carry); scene cap precludes a second S04 fire.
+# ZERO ENTRIES — refuse-by-default discipline applied; no candidate cleared the bar.
+
+## Candidate assessment
+
+Eligible peak-bones per scene-map and dispatch: @18 (S02 antag-advance), @27 (S03 relational
+spine), @35 (S04 pause-habit fires last time), @40 (S04 cl04 closure), @44-@45 (S04
+non-extractable). Dispatch explicitly fences @42 for memory facet shape-language.
+
+Available upstream anchors (memory facet b01-c14): entries at @9, @18, @31, @42.
+Feeling facet for b01-c14: NOT AUTHORED (silent chapter; no feeling file emitted at Phase 1).
+Feeling anchor: unavailable for all beats.
+
+### @35 — REFUSE (AP1: no resolvable upstream anchor)
+Strongest candidate by scene-map designation (W06: pause-habit fires one last time, eleven
+weeks condensed into one gesture, earned-cost peak image). No memory entry at @35 (memory
+entries cover @9, @18, @31, @42 only). No feeling entry at @35 (feeling facet absent). No
+anchor from {memory, feeling} resolves at this beat. Multi-justification requirement cannot be
+satisfied. AP1 applies without exception. The dispatch named @35 as a candidate — it remains
+a candidate the rubric refuses.
+
+### @27 — REFUSE (AP1: no resolvable upstream anchor)
+Relational spine peak-bone, S03 central event. No memory entry at @27. No feeling entry. AP1.
+
+### @44 / @45 — REFUSE (AP1: no resolvable upstream anchor)
+Non-extractable settling and lane-clears. No memory entry at @44 or @45. No feeling entry. AP1.
+
+### @40 — REFUSE (AP1: no resolvable upstream anchor)
+cl04 closure bone (relational_anchor +0.5, S04 central event). No memory entry at @40. No
+feeling entry. AP1.
+
+### @18 — REFUSE (AP4: figure already carried in memory flag)
+Memory entry 2 exists (e05:sera-protection-arrangement): "the ward she has never stood in the
+same room with, the protection that was a contingency until this sheet and is active the moment
+the stylus comes down." The memory flag already deploys the comparative shape (protection as
+relational distance, contingency-to-active as physical gesture). A metaphor at @18 rendering the
+same pivot restates the memory figure. AP4 applies. Additionally: no feeling anchor available
+to form the second layer for multi-justification alongside memory. Refuse.
+
+### @9 — REFUSE (AP2: figurative already in chunk prose)
+Memory entry 1 exists (monument-dance-of-dragons). Tens=1 quiet zone (low-heat establishment
+scene). The S01 chunk prose already carries the figure explicitly: "the Dance had arrived in
+the lane the way all pressure arrived in the passive layer: not as a contact but as an absence,
+not as a message but as the shape of a thing that had heard something and left." The narrator
+facet will render this figure. A metaphor entry at @9 doubles figuration already present in
+source prose. Q1 fails: the metaphor adds nothing the proto-line and chunk do not already carry.
+AP2 applies.
+
+### @31 — REFUSE (AP4: figure already carried in memory flag)
+Memory entry 3 exists (e12:wren-omission-uncosted): "the breach-line is not the only line she
+holds above and does not write; there is another item run in this same hand, a route covered and
+never entered." The memory flag already renders the Wren-parallel as a structural figure in the
+ledger-register. A metaphor restating the parallel doubles what the memory flag already figures.
+AP4. No feeling anchor available for the second layer.
+
+### @42 — REFUSE (dispatch hard fence)
+Explicitly fenced as memory facet shape-language (Gold-Morning echo). Hard fence honored; no
+assessment required.
 
 ---
 
-meta-001 @35 simile: the hands at the strap are eleven weeks of counting compressed to one gesture — the identifier and the end arriving in the same reach | licensed-by: feeling-@35-pause-habit-recognition (provisional; the somatic recognition of the pause-habit firing one last time, Taylor having read this gesture across eleven weeks) + memory-@35-accumulated-private-count (provisional; the eleven-week withheld tracking, never entered into a deliverable, now landing as coincident ordinary motion at the detention geometry)
-# Functional register: dark-humor — the grim irony of the tracker's identifying mark coinciding
-#   with the tracked figure's last free gesture. The recognition lands not as revelation but as
-#   the accounting's final precision: the thing Taylor counted is the thing that is ending.
-# Multi-justification: feeling anchor + memory support = 2 layers from {memory, feeling, tens}.
-#   Tens reading: @35 is S04 peak-shadow (the charged beat before the detention resolves),
-#   consistent with tens=2 trailing-toward-peak — AP7 (tens=3 default-refuse) does not apply.
-# Q1: the proto-line ("the figure lifts both hands to the satchel-strap") carries the SVO;
-#   the simile adds the compression-figure (eleven weeks into one gesture) that the proto-line
-#   does not carry. CLEARS.
-# Q2: audience-meaningful — the irony of the identifying gesture coinciding with the end is
-#   the chapter's earned-cost peak (W06). CLEARS.
-# AP-check: AP1 CLEARED (dual provisional anchor). AP2 CLEARED (proto-line carries no
-#   compression-figure). AP5 CLEARED (no Earth-Bet proper nouns; "eleven weeks of counting"
-#   is within-world). AP6: register is terse and measurement-inflected — consistent with
-#   Taylor's flat accounting voice. AP7 CLEARED (peak-shadow, not tens=3 peak). AP9 CLEARED
-#   (dark-humor register, not painting-characterization). AP13 CLEARED (tens=2 and dark-humor
-#   mode are coherent).
-
----
-
-# File-shape audit
-# Fires: 1 (@35)
-# Bones: 46
-# Sparsity: 1/46 = 2.2% — within 0-3% cap. PASS.
-# Per-scene cap: S04 only (@35). All other scenes: 0. PASS.
-# Schema content-shape: single entry uses <id> @<pid> <kind>: <text> | licensed-by: <anchor> [+<support>]. PASS.
-# Anchor: provisional feeling + memory description per R1 license (R2 resolves to <prefix>:<id>). PASS.
-# Multi-justification: 2 layers (feeling + memory). PASS.
-# Functional-register: dark-humor. PASS.
-# Voice-register: terse, measurement-inflected, Taylor-flat. PASS.
+## File-shape audit
+Fires: 0
+Bones: 46
+Sparsity: 0/46 = 0% — within 0-3% cap. PASS.
+Per-scene cap: 0/4 scenes. PASS.
+Schema content-shape: no entries to check. PASS.
+Anchor verification: N/A. PASS.
+Multi-justification: N/A. PASS.
+Functional-register: N/A. PASS.
+Voice-register: N/A. PASS.
