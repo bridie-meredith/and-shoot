@@ -44,4 +44,4 @@ author: editor
 #   anti-form (rubric §Tens-curve discipline, peak-bone default-refuse); the physical act is
 #   the figure; figurative re-rendering is AP2 redundant with the bone's own enactment.
 
-1 @28 simile: the feed-noise frames the gap-shape the way a lit wall frames a shadow — the absence is the shape | licensed-by: peak-bone:27 + ni:tba + sensory:tba [feeling:tba — resolves at Phase 4 to feeling-flag @30]
+1 @28 simile: the feed-noise frames the gap-shape the way a lit wall frames a shadow — the absence is the shape | licensed-by: feeling:1 (@30, mandatory somatic anchor) + narrator:8 (@27, peak-bone) + sensory:3 (@30) [Phase 4 resolved: ≥2 supporting layers + mandatory feeling anchor]
