@@ -9486,12 +9486,12 @@ books:
               - slug: b01c16s01n05
                 svo: "the child presses the woman's side"
                 substance_delta: {axis_moves: [], axes_held: [{axis: capability, rationale: "second body in the clearing registered by the eaves-flies — stunted-growth visible in the feed; populated-world grounding; coverage running without deployment"}], cost_ledger_anchor: null}
-              - slug: b01c16s01n06
-                svo: "septon-halvard-flea-bottom lifts the head"
-                substance_delta: {axis_moves: [], axes_held: [{axis: moral_legibility_to_self, rationale: "Halvard registers Taylor — the external mirror of the crack becomes present in the scene; stakes_axis setup; recognition not yet triggered; held at 6.0"}], cost_ledger_anchor: null}
               - slug: b01c16s01n07
                 svo: "taylor-hebert-kl-122ac enters the clearing-diagonal"
                 substance_delta: {axis_moves: [], axes_held: [{axis: moral_legibility_to_self, rationale: "enters on the habitual route — no adjustment, no avoidance; the circuit continues as circuit; the crack present in the space before it is acted on; held"}], cost_ledger_anchor: null}
+              - slug: b01c16s01n06
+                svo: "septon-halvard-flea-bottom lifts the head"
+                substance_delta: {axis_moves: [], axes_held: [{axis: moral_legibility_to_self, rationale: "Halvard registers Taylor — the external mirror of the crack becomes present in the scene; stakes_axis setup; recognition not yet triggered; held at 6.0"}], cost_ledger_anchor: null}
               - slug: b01c16s01n08
                 svo: "the storehouse-eaves flies return the clearing-bodies"
                 substance_delta: {axis_moves: [], axes_held: [{axis: capability, rationale: "eaves-flies at passive density covering the clearing and two adjacent lanes — architecture at coverage-routine without active deployment; held at 7.5"}], cost_ledger_anchor: null}
@@ -9577,6 +9577,9 @@ books:
               - slug: b01c16s02n03
                 svo: "the rendering-yard fence marks the clearing-margin"
                 substance_delta: {axis_moves: [], axes_held: [{axis: social_tether-prot-collapse, rationale: "the rendering-yard fence is the physical boundary Taylor walks toward — the approach to it is the approach to the scene's exit; latent-activating collapse axis receives its first spatial anchor; dormant->latent in progress"}], cost_ledger_anchor: null}
+              - slug: b01c16s02n08
+                svo: "the old man plants the clearing-edge"
+                substance_delta: {axis_moves: [], axes_held: [{axis: capability, rationale: "old man at clearing-edge visible in the eaves-feed — populated world; grounding bone confirming the eaves-architecture still runs during the Halvard encounter; held at 7.5; DEC-0090 dir-1 callback foundation"}], cost_ledger_anchor: null}
               - slug: b01c16s02n04
                 svo: "taylor-hebert-kl-122ac presses the fence-rail"
                 substance_delta: {axis_moves: [], axes_held: [{axis: position-prot-collapse, rationale: "DEC-0090 dir-2 (EVENT-NOT-CONCRETE resolution): the position-arithmetic runs while Taylor's hand presses the rail — the fence-press is the concrete physical correlate of 'position worth less than it costs to hold,' enacted through the body's weight against a fixed surface; dormant->latent; rank held"}], cost_ledger_anchor: null}
@@ -9589,9 +9592,6 @@ books:
               - slug: b01c16s02n07
                 svo: "taylor-hebert-kl-122ac grips the fence-rail"
                 substance_delta: {axis_moves: [], axes_held: [{axis: social_tether-prot-collapse, rationale: "Taylor holds the rail while Halvard faces her — the arithmetic's weight is in the body's contact with the fence; latent-activating; the hold is the physical posture of the 'continue holding it' decision; rank unchanged"}], cost_ledger_anchor: null}
-              - slug: b01c16s02n08
-                svo: "the old man plants the clearing-edge"
-                substance_delta: {axis_moves: [], axes_held: [{axis: capability, rationale: "old man at clearing-edge visible in the eaves-feed — populated world; grounding bone confirming the eaves-architecture still runs during the Halvard encounter; held at 7.5; DEC-0090 dir-1 callback foundation"}], cost_ledger_anchor: null}
               - slug: b01c16s02n09
                 svo: "septon-halvard-flea-bottom speaks to taylor-hebert-kl-122ac"
                 substance_delta: {axis_moves: [], axes_held: [{axis: position-prot-collapse, rationale: "Halvard's explicit ask ('I am not asking you to do differently / I am asking you to know what you're doing') — the counter in final form, the argument Taylor has confirmed is not live; latent-activating (arithmetic visible: worth less than costs; continues holding); rank held"}], cost_ledger_anchor: null}
@@ -9681,7 +9681,8 @@ books:
             bones:
               - slug: b01c16s03n01
                 svo: "taylor-hebert-kl-122ac stops"
-                substance_delta: {axis_moves: [], axes_held: [{axis: moral_legibility_to_self, rationale: "the body-stop (not a pause) is the moment before the behavioral expression of foreclosure; the recognition is present and available; the +0.5 has not yet happened — the stop is its physical precondition; held at 6.0"}], cost_ledger_anchor: null}
+                # Phase 3 MT-1: the body-stop (not a pause) IS the commitment — crack-as-behavior begins here (the non-answer); carries decision-weight per dramatist MT-1 rather than deferring entirely to the turn. +0.25.
+                substance_delta: {axis_moves: [{axis: moral_legibility_to_self, direction: up, magnitude: 0.25}], axes_held: [], cost_ledger_anchor: null}
               - slug: b01c16s03n02
                 svo: "the storehouse-eaves flies return septon-halvard-flea-bottom"
                 substance_delta: {axis_moves: [], axes_held: [{axis: moral_legibility_to_self, rationale: "the eaves-flies carry Halvard standing mid-wait — the quality of his stillness returned through the feed; the counter fully available; the legibility crack present in the same data that runs the coverage; held"}], cost_ledger_anchor: null}
@@ -9690,7 +9691,8 @@ books:
                 substance_delta: {axis_moves: [{axis: moral_legibility_to_self, direction: up, magnitude: 0.25}], axes_held: [], cost_ledger_anchor: null}
               - slug: b01c16s03n04
                 svo: "taylor-hebert-kl-122ac walks the rendering-yard approach"
-                substance_delta: {axis_moves: [{axis: moral_legibility_to_self, direction: up, magnitude: 0.25}], axes_held: [], cost_ledger_anchor: null}
+                # Phase 3 MT-1: the walk completes the foreclosure as the falling consequence — the crack already expressed at the stop (n01) + turn (n03); the walk is the landing.
+                substance_delta: {axis_moves: [], axes_held: [{axis: moral_legibility_to_self, rationale: "walk completes the foreclosure as falling consequence; crack already expressed at stop+turn; held at 6.5"}], cost_ledger_anchor: null}
               - slug: b01c16s03n05
                 svo: "the reed-mat marks the storehouse wall"
                 substance_delta: {axis_moves: [], axes_held: [{axis: moral_framework, rationale: "sept-corner unchanged — mat still rolled, crates still stacked; the framework has not broken; the walk-away is a legibility event not a breach; held at -2"}], cost_ledger_anchor: null}
