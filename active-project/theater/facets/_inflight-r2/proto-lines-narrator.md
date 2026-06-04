@@ -18,7 +18,7 @@
 17 taylor-hebert-kl-122ac lifts the stylus above the response-sheet
 18 taylor-hebert-kl-122ac lowers the stylus to the working surface [mem:2] [narrator:3] [vibes:8]
 19 taylor-hebert-kl-122ac sets the hand on the response-sheet
-20 taylor-hebert-kl-122ac brings the stylus to the left column
+20 taylor-hebert-kl-122ac brings the stylus to the left column [exposition:2]
 21 taylor-hebert-kl-122ac marks the left margin
 22 taylor-hebert-kl-122ac sets the wrist on the left column [narrator:4]
 23 taylor-hebert-kl-122ac brings the stylus to the right column

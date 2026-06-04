@@ -2,14 +2,14 @@
 generated: 2026-06-04
 source: active-project/theater/proto-lines/b01-c14.md + active-project/theater/facets/
 scope: 9 facet files + 1 proto-lines file
-totals: 52 facet entries; 25/46 protolines decorated (54.3%)
+totals: 51 facet entries; 24/46 protolines decorated (52.2%)
 
 ## Density distribution (protolines by citation count)
 
 | cites/line | count |
 |------------|-------|
-| 0 (bare)   | 21 |
-| 1          | 9 |
+| 0 (bare)   | 22 |
+| 1          | 8 |
 | 2          | 4 |
 | 3          | 8 |
 | 4          | 2 |
@@ -83,9 +83,8 @@ _(no entries)_
   vibes:7 @11 back=Y co=[sensory:1, state:5] lic-out=[proto:10, proto:11]
   vibes:8 @- back=- lic-out=[proto:18, proto:27, proto:40, proto:44, proto:46]
 
-### exposition (3 entries)
+### exposition (2 entries)
   exposition:1 @0 back=N
-  exposition:2 @20 back=Y
   exposition:3 @10 back=Y co=[loc-state:2, state:3, state:4, vibes:7]
 
 ## Pile-ups (>4 facets co-located on one protoline)
@@ -106,9 +105,8 @@ _Round-2 deletion candidates — but check the rubric before cutting._
 - state:11 @39  `taylor-hebert-kl-122ac releases the bottlefly`
 - feel:2 @43  `taylor-hebert-kl-122ac sets the hand off the surface`
 - exposition:1 @0  ``
-- exposition:2 @20  `taylor-hebert-kl-122ac brings the stylus to the left column`
 
 ## Bare protolines (no citations accrued)
 _Round-2 add candidates if the rubric licenses a fire here._
 
-@2, @3, @4, @5, @6, @7, @8, @12, @14, @15, @16, @17, @19, @21, @23, @24, @25, @33, @34, @36, @37
+@2, @3, @4, @5, @6, @7, @8, @12, @14, @15, @16, @17, @19, @20, @21, @23, @24, @25, @33, @34, @36, @37
