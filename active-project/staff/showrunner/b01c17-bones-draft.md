@@ -62,7 +62,7 @@ bones:
     cost_ledger_anchor: null
 
   - slug: b01c17s01n03
-    svo: "the query returns a height-and-gait pattern across six observation points"
+    svo: "the query returns the height-and-gait pattern"
     grounding: false
     axis_moves: []
     axes_held:
@@ -82,7 +82,7 @@ bones:
     cost_ledger_anchor: null
 
   - slug: b01c17s01n05
-    svo: "taylor-hebert-kl-122ac stops at the water-trough"
+    svo: "taylor-hebert-kl-122ac stills the body"
     grounding: true
     axis_moves: []
     axes_held:
@@ -93,7 +93,7 @@ bones:
     cost_ledger_anchor: null
 
   - slug: b01c17s01n06
-    svo: "the feed returns the second-step hesitation across the east-of-water-gate interval"
+    svo: "the feed returns the second-step hesitation"
     grounding: false
     axis_moves: []
     axes_held:
@@ -102,7 +102,7 @@ bones:
     cost_ledger_anchor: null
 
   - slug: b01c17s01n07
-    svo: "the coverage log matches the eleven-day interval to the stitch-house rotation"
+    svo: "the coverage log matches the eleven-day interval"
     grounding: false
     axis_moves: []
     axes_held:
@@ -181,7 +181,7 @@ bones:
     cost_ledger_anchor: null
 
   - slug: b01c17s02n02
-    svo: "the accounting prices the name-option to its terminus"
+    svo: "the accounting prices the name-option"
     grounding: false
     axis_moves: []
     axes_held:
@@ -190,7 +190,7 @@ bones:
     cost_ledger_anchor: null
 
   - slug: b01c17s02n03
-    svo: "the ledger returns the exposure-entry for the name-option"
+    svo: "the ledger returns the exposure-entry"
     grounding: false
     axis_moves: []
     axes_held:
@@ -212,7 +212,7 @@ bones:
     # cl03a cost side approaching completion: intelligence-network-build rolling over into use-deployment; the crack opens as accounting-recognition of the structural equivalence between the screen option and the override architecture
 
   - slug: b01c17s02n05
-    svo: "the accounting prices the false-attribution cost against the ward-elder"
+    svo: "the accounting prices the ward-elder-cost"
     grounding: false
     axis_moves: []
     axes_held:
@@ -223,7 +223,7 @@ bones:
     cost_ledger_anchor: null
 
   - slug: b01c17s02n06
-    svo: "the ledger returns no resolution across both entries"
+    svo: "the ledger holds both entries open"
     grounding: false
     axis_moves: []
     axes_held:
@@ -243,7 +243,7 @@ bones:
     cost_ledger_anchor: null
 
   - slug: b01c17s02n08
-    svo: "the accounting returns the screen-option shape against the override-architecture shape"
+    svo: "the accounting returns the screen-option-override-architecture-match"
     grounding: false
     axis_moves: []
     axes_held:
@@ -252,7 +252,7 @@ bones:
     cost_ledger_anchor: null
 
   - slug: b01c17s02n09
-    svo: "taylor-hebert-kl-122ac extends the walk along the Hook's edge"
+    svo: "taylor-hebert-kl-122ac extends the walk"
     grounding: true
     axis_moves: []
     axes_held:
@@ -335,7 +335,7 @@ bones:
     cost_ledger_anchor: null
 
   - slug: b01c17s03n02
-    svo: "taylor-hebert-kl-122ac pulls the coverage log from the east-of-water-gate corridor"
+    svo: "taylor-hebert-kl-122ac pulls the coverage log"
     grounding: true
     axis_moves: []
     axes_held:
@@ -344,7 +344,7 @@ bones:
     cost_ledger_anchor: null
 
   - slug: b01c17s03n03
-    svo: "the coverage log returns the entry-cluster across eleven days and six observation points"
+    svo: "the coverage log returns the eleven-day entry-cluster"
     grounding: true
     axis_moves: []
     axes_held:

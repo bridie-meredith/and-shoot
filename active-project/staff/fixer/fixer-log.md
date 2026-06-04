@@ -1,3 +1,69 @@
+## SESSION-START — 2026-06-04T00:00:00Z — write-b01c17-bone-gate-form-fixes
+dispatch: apply 26 Phase-2/6 findings (fault-001..fault-026) to b01c17-bones-draft.md — 25 SVO form rewrites (PP-strip / negation-to-positive / conjunction-strip / echo-compound) + 1 cost_ledger_anchor field addition (cl07a to s03n06) + 3 verb differentiations (signal-003 carry)
+target: active-project/staff/showrunner/b01c17-bones-draft.md
+audit-report: active-project/staff/auditor/write-b01c17-bone-gate.md
+findings-queued: 26 (fault-001..026)
+
+## fault-001 — RESOLVED — 2026-06-04T00:01:00Z
+fault: s01n03 "the query returns a height-and-gait pattern across six observation points" — PP of extent
+scope: line
+change: svo → "the query returns the height-and-gait pattern" (PP stripped)
+criteria met: yes
+
+## fault-002 — RESOLVED — 2026-06-04T00:01:00Z
+fault: s01n05 "taylor-hebert-kl-122ac stops at the water-trough" — intransitive + PP of place
+scope: line
+change: svo → "taylor-hebert-kl-122ac stills the body" (positive held-discipline; trough as environment in loc-state)
+criteria met: yes
+
+## fault-003 — RESOLVED — 2026-06-04T00:01:00Z
+fault: s01n06 "the feed returns the second-step hesitation across the east-of-water-gate interval" — PP of extent
+scope: line
+change: svo → "the feed returns the second-step hesitation" (PP stripped)
+criteria met: yes
+
+## fault-004 — RESOLVED — 2026-06-04T00:01:00Z
+fault: s01n07 "the coverage log matches the eleven-day interval to the stitch-house rotation" — PP of destination
+scope: line
+change: svo → "the coverage log matches the eleven-day interval" (PP stripped; stitch-house rotation routes to event_map)
+criteria met: yes
+
+## fault-005 — RESOLVED — 2026-06-04T00:02:00Z
+fault: s02n02 "the accounting prices the name-option to its terminus" — PP of destination
+scope: line
+change: svo → "the accounting prices the name-option" (PP stripped)
+criteria met: yes
+
+## fault-006 — RESOLVED — 2026-06-04T00:02:00Z
+fault: s02n03 "the ledger returns the exposure-entry for the name-option" — PP of purpose
+scope: line
+change: svo → "the ledger returns the exposure-entry" (PP stripped)
+criteria met: yes
+
+## fault-007 — RESOLVED — 2026-06-04T00:02:00Z
+fault: s02n05 "the accounting prices the false-attribution cost against the ward-elder" — PP of comparison
+scope: line
+change: svo → "the accounting prices the ward-elder-cost" (ward-elder folded into compound-noun object; false-attribution-cost-to-ward-elder preserved as compound)
+criteria met: yes
+
+## fault-008 — RESOLVED — 2026-06-04T00:02:00Z
+fault: s02n06 "the ledger returns no resolution across both entries" — negation + PP of extent (double fault)
+scope: line
+change: svo → "the ledger holds both entries open" (positive physical act — unresolved state as positive hold)
+criteria met: yes
+
+## fault-009 — RESOLVED — 2026-06-04T00:02:00Z
+fault: s02n08 "the accounting returns the screen-option shape against the override-architecture shape" — PP of comparison; irony load-bearing
+scope: line
+change: svo → "the accounting returns the screen-option-override-architecture-match" (comparison folded into compound-noun object; override-architecture irony preserved)
+criteria met: yes
+
+## fault-010 — RESOLVED — 2026-06-04T00:02:00Z
+fault: s02n09 "taylor-hebert-kl-122ac extends the walk along the Hook's edge" — PP of path
+scope: line
+change: svo → "taylor-hebert-kl-122ac extends the walk" (PP stripped; Hook's-edge routes to loc-state)
+criteria met: yes
+
 ## SESSION-START — 2026-06-03T10:00:00Z — write-b01c12-pass2-bone-fixes
 dispatch: apply 19 Phase-2 faults (fault-001..fault-023) to b01c12-bones-draft.md — 15 unpaid-chatter recasts to held/chatter-with-anchor, 6 PP/form drops, 2 interiority SVO recasts; meta-rules override auditor on s01n02, s03n09, s03n12, s04n01; flag-003 s04n12 recast to held
 target: active-project/staff/screen-writer/b01c12-bones-draft.md
