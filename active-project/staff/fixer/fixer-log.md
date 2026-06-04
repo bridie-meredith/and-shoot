@@ -2059,3 +2059,80 @@ criteria met: yes
 findings-applied: 2
 findings-skipped: 0
 exit: CLEAN
+
+## SESSION-START — 2026-06-04T12:00:00Z — write-b01c16-pass2-svo-recasts
+dispatch: fix 11 FAULT-FORM violations in b01c16 bones (fault-002/003/005/011/015/016/019/020/023/024/026) — stative verbs, modifier-on-subject, abstract objects, non-action verbs; return corrected SVO table only (caller applies to memory + bones)
+target: active-project/staff/showrunner/b01c16-bones (bones live in showrunner memory chapters[b01c16].scenes[].bones[])
+audit-report: active-project/staff/auditor/write-b01c16-pass2.md
+findings-queued: 11
+
+## fault-002 — RESOLVED — 2026-06-04T12:01:00Z
+fault: s01n02 "the reed-mat leans the storehouse wall" — "leans" stative position-naming verb
+scope: line
+change: svo recast to "the reed-mat marks the storehouse wall"; "marks" is concrete transitive (prop-as-ambient-subject establishing spatial anchor; consistent with marks-pattern precedent b01c09/b01c12); relational_anchor_status grounding function preserved; event_map sept-corner-crates-reed-mat intact
+criteria met: yes
+
+## fault-003 — RESOLVED — 2026-06-04T12:02:00Z
+fault: s01n03 "the two crates stack the kneeling-bench position" — "two" modifier on subject + "stack" stative-result-state
+scope: line
+change: svo recast to "the crates mark the kneeling-bench"; "two" modifier dropped; "position" abstract location qualifier dropped; "mark" is concrete transitive; moral_legibility grounding function preserved; event_map sept-corner-crates-reed-mat intact
+criteria met: yes
+
+## fault-005 — RESOLVED — 2026-06-04T12:03:00Z
+fault: s01n05 "the child leans the woman's side" — "leans" stative position-naming verb
+scope: line
+change: svo recast to "the child presses the woman's side"; "presses" is discrete physical contact act (not stative); capability grounding / populated-world function preserved
+criteria met: yes
+
+## fault-011 — RESOLVED — 2026-06-04T12:04:00Z
+fault: s02n03 "the rendering-yard fence crosses the clearing-margin" — static object cannot "cross"; stative existence disguised as action verb
+scope: line
+change: svo recast to "the rendering-yard fence marks the clearing-margin"; "marks" is concrete transitive (fence delineates/defines the boundary — observable spatial act); social_tether-prot-collapse held-axis function preserved; fence-as-exit-boundary spatial grounding intact
+criteria met: yes
+
+## fault-015 — RESOLVED — 2026-06-04T12:05:00Z
+fault: s02n07 "taylor-hebert-kl-122ac holds the fence-rail" — "holds" fails narrow license (sustained gripping, not body-part stillness or pressure-resistance)
+scope: line
+change: svo recast to "taylor-hebert-kl-122ac grips the fence-rail"; "grips" is discrete grip-initiation act (distinct from s02n04 "presses" which is initial contact); social_tether-prot-collapse arithmetic-decision posture preserved
+criteria met: yes
+
+## fault-016 — RESOLVED — 2026-06-04T12:06:00Z
+fault: s02n08 "the gout-swollen foot rests the clearing-edge" — "gout-swollen" adjectival modifier on subject + "rests" stative position verb
+scope: line
+change: svo recast to "the old man plants the clearing-edge"; modifier dropped (bare actor subject); "rests" replaced with "plants" (discrete placement act — foot set down); old-man callback function preserved; capability grounding intact
+criteria met: yes
+
+## fault-019 — RESOLVED — 2026-06-04T12:07:00Z
+fault: s03n01 "taylor-hebert-kl-122ac stops the forward-step" — "the forward-step" is abstract motion concept (interiority object)
+scope: line
+change: svo recast to "taylor-hebert-kl-122ac stops" (bare intransitive); abstract object removed; body-stop moral_legibility function preserved; intransitive form explicitly licensed by audit criteria
+criteria met: yes
+
+## fault-020 — RESOLVED — 2026-06-04T12:08:00Z
+fault: s03n02 "the storehouse-eaves flies return halvard's stillness" — "halvard's stillness" is abstract state-noun (interiority object)
+scope: line
+change: svo recast to "the storehouse-eaves flies return septon-halvard-flea-bottom"; actor-slug replaces abstract object; flies return to Halvard's body (concrete physical motion); moral_legibility / feed-carrying-Halvard function preserved; parallel to s01n08 "the storehouse-eaves flies return the clearing-bodies" (PASS bone)
+criteria met: yes
+
+## fault-023 — RESOLVED — 2026-06-04T12:09:00Z
+fault: s03n05 "the reed-mat stands the wall" — "stands" explicitly on stative deny-list
+scope: line
+change: svo recast to "the reed-mat marks the storehouse wall"; parallel to s01n02 fix within same chapter; stative dropped; moral_framework / sept-corner-unchanged grounding preserved; event_map sept-corner-crates-reed-mat intact
+criteria met: yes
+
+## fault-024 — RESOLVED — 2026-06-04T12:10:00Z
+fault: s03n06 "the old man holds the clearing-edge" — "holds" fails narrow license; stative spatial-presence
+scope: line
+change: svo recast to "the old man faces the clearing-edge"; discrete posture-orientation act (same licensed form as s02n06 "septon-halvard-flea-bottom faces taylor-hebert-kl-122ac"); capability DEC-0090 old-man callback as Taylor exits preserved; concrete observable physical action
+criteria met: yes
+
+## fault-026 — RESOLVED — 2026-06-04T12:11:00Z
+fault: s03n08 "the angle-line moves halvard past the eaves-edge" — "the angle-line" abstract geometric subject + "past the eaves-edge" banned prepositional phrase
+scope: line
+change: svo recast to "septon-halvard-flea-bottom clears the eaves-line"; concrete actor-slug subject replaces abstract subject; "clears" is transitive motion verb encoding exit (moves past/beyond); "the eaves-line" compound-noun direct object without PP; moral_legibility / Halvard-exits-coverage / foreclosure-complete function preserved
+criteria met: yes
+
+## SESSION-END — 2026-06-04T12:12:00Z — write-b01c16-pass2-svo-recasts
+findings-applied: 11
+findings-skipped: 0
+exit: CLEAN
