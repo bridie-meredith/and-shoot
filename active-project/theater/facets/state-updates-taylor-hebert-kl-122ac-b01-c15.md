@@ -14,10 +14,7 @@ author: impersonator(taylor-hebert-kl-122ac)
 # Per-entry annotations:
 # - state:1 @17: carve-out clause (advance co-cited at competency-in-use beat); rubric clause (POV co-citation required); defensibility (capability gain-side resolves to load-bearing use at @17; narrator-interest @17 is the spine)
 
-1 @17 actor:taylor-hebert-kl-122ac.coverage_scope: flea-bottom-and-hook-margin -> flea-bottom-and-hook-margin-plus-red-keep-outer-court-margin  # field-extension: coverage_scope (cl05 capability gain-side; the passage-adjacent ward at the Red Keep outer margin now load-bearing terrain; spine: narrator-interest @17)
-
-2 @13 actor:taylor-hebert-kl-122ac.contempt_register-aemond: absent -> articulated-and-not-acted-on  # field-extension: contempt_register-aemond (political_register-prot deepening; the finding holds across the second run, filed as measurement not refusal; spine: narrator-interest @13)
-
-3 @22 actor:taylor-hebert-kl-122ac.arrangement_extractability: constrained -> non-extractable-confirmed-from-both-ends  # field-extension: arrangement_extractability (social_tether-antag advance; the channel found from both sides cannot be walked back; spine: narrator-interest @22)
-
-4 @27 actor:taylor-hebert-kl-122ac.arrangement_extractability: non-extractable-confirmed-from-both-ends -> non-extractable-locked  # social_tether-antag reaches 9.0 LOCK; the architecture-that-cannot-be-walked-back now includes the visible gap; spine: narrator-interest @27
+1 @17 actor:taylor-hebert-kl-122ac.coverage_scope: flea-bottom-and-hook-margin -> flea-bottom-and-hook-margin-plus-red-keep-outer-court-margin  # field-extension: coverage_scope (cl05 capability gain-side COMPLETE; the passage-adjacent ward at the Red Keep outer margin now load-bearing terrain; spine: narrator-interest @17)
+2 @13 actor:taylor-hebert-kl-122ac.contempt_register-aemond: absent -> articulated-and-not-acted-on  # field-extension: contempt_register-aemond (political_register-prot deepening 5.0->5.5; the finding holds across the second run, filed as measurement not refusal; spine: narrator-interest @13)
+3 @22 actor:taylor-hebert-kl-122ac.arrangement_extractability: constrained -> non-extractable-confirmed-from-both-ends  # field-extension: arrangement_extractability (social_tether-antag advance 7.5->9.0 LOCK; the channel found from both sides cannot be walked back; spine: narrator-interest @22)
+4 @27 actor:taylor-hebert-kl-122ac.relational_anchor_status_axis: 5.5 -> 7.0  # cl04 c15 draw, STAKES axis dominant +1.5; the gap-lane built to protect the un-priced relationship made a feed-visible negative shape; spine: narrator-interest @27
