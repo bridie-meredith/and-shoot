@@ -1,16 +1,21 @@
 cascade:
-  root: b01c14
-  invoked_at: 2026-06-03T19:30:00Z
-  invoked_command: /and-substance chapter b01c14 --cascade
+  root: b01c15
+  invoked_at: 2026-06-04T00:00:00Z
+  invoked_command: /and-substance chapter b01c15 --cascade
   mode: unattended
   last_completed:
-    level: draft
-    slug: b01c14
-    completed_at: 2026-06-04T02:30:00Z
+    level: chapter
+    slug: b01c15
+    completed_at: 2026-06-04T00:00:00Z   # Phase 2-6 complete: 4 scenes + contracts persisted; chunk cold-read CHUNK-CLASS-B -> P (DEC-0087); auditor fault-001/002 fixed
   next:
-    command: null   # chapter-production COMPLETE (Phase 9 SHIPPED-WITH-CAVEATS + Phase 10 PASS-THREAD)
-    args: []
-  reason: complete
+    command: /and-write b01c15
+    args: [b01c15]
+  reason: continue
   failure: null
-  pending_depth_passes: [b01c14]   # DEC-0085 mandatory before book-close (pl-2026-06-04-002)
-  pending_threading_holds: []      # Phase 10 PASS-THREAD; c15 Phase 0 CLEAR
+  pending_depth_passes: [b01c14]   # DEC-0085 mandatory before book-close (pl-2026-06-04-002); independent of c15
+  pending_threading_holds: []
+  carried_watches:
+    - pl-2026-06-04-c15-001   # HARD at /and-write Phase 6: feed-texture concreteness + S4 ledger-act + axis-slug fence
+  armed_downstream:
+    - "stitch Phase 8.5 Check 3 (central-event muffle) — chunk_cold_read.voice_risk Signal B"
+    - "stitch Phase 9 (auto SHIPPED-WITH-CAVEATS on same Class-B categories per DEC-0087) — cold_read_risk_carry"

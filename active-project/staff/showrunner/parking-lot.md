@@ -2047,3 +2047,56 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-06-04-c15-001
+      created_at: 2026-06-04T00:00:00Z
+      created_by: "/and-substance chapter b01c15 Phase 5.5 (chunk cold-read CHUNK-CLASS-B) + admin DEC-0087 (P disposition) + Phase 5 audience trio + dramatist + auditor"
+      target:
+        command: /and-write
+        scope: "b01c15"
+        phase: Phase 6
+      severity: HARD
+      description: |
+        b01c15 is a FALLING accounting chapter (Aemond-through-compound-eyes; the space before the
+        cascade). Chunk cold-read returned CHUNK-CLASS-B (CONTINUE-strict=No; event-poverty/jeopardy-
+        offstage/"nothing-changes" — the SAME failure family as the b01c14 cold-read FAIL). Principal
+        (admin DEC-0087) chose PROCEED with the explicit condition that the quietness be carried by
+        bones-layer CONCRETENESS, not by adding plot. The c14 lesson applied prophylactically: de-
+        abstract the bones so event-poverty renders as vivid quiet rather than accounting-register muffle.
+        /and-write Phase 6 (bone-gate; EVENT-NOT-CONCRETE / ABSTRACTION-DOMINANT spine-legibility checks)
+        MUST verify these three watches or HARD-abort:
+
+        (1) FEED-TEXTURE CONTRAST CONCRETE (audience SW-c15-2). The relational_anchor_status +1.5 (S3,
+            cl04) is contingent on bones executing the gap-lane "person-shaped quality" as a SPECIFIC
+            feed-texture contrast — what the fringe-flies return WITH thermal-noise/resolution-dropout
+            vs. what the gap returns as CLEAN absence (figure-ground, "shadow against a lit wall") —
+            rendered as concrete sensory description, NOT as Taylor's interior labeling. If bones abstract
+            over the perceptual mechanism, the +1.5 loses physical grounding → HARD.
+        (2) S4 LEDGER-ACT NOT CONCLUSION (audience SW-c15-3 / SW-DFR-c15-1 + dramatist S4-recap-drift).
+            S4 (axes_in_motion: []; accounting-close) must ENACT Taylor doing something with the feed —
+            a ledger-act, a coverage notation, a physical gesture — NOT a drawn conclusion / interior
+            declaration. S4 bones must stay on the NEW articulation (the register-change: the gap is now
+            a named absence with a shape) and must NOT recap the S3 perceptual event → HARD if S4 bones
+            read as S3 rephrase or as reflective summary.
+        (3) AXIS-SLUG FENCE AT BONES (audience SW-c15-1 / SW-WCP-c15-1 / auditor fault-002). The chunk-
+            prose axis-slug literals were purged at the chunk layer (fault-002 fixed). Bones must NOT re-
+            introduce pipeline-internal vocabulary (axis slugs, "the relational_anchor advances," etc.)
+            into Taylor's feed-utilitarian register → HARD if any bone SVO/mechanism names a pipeline slug.
+
+        ARMING (carried to /and-stitch, not resolved at /and-write): chunk_cold_read.voice_risk
+        (triggered, Signal B) arms /and-stitch Phase 8.5 Check 3 central-event-muffle verification;
+        cold_read_risk_carry arms /and-stitch Phase 9 (a Phase 9 FAIL Class-B on the SAME categories
+        — event-poverty/jeopardy-offstage/nothing-changes — ships SHIPPED-WITH-CAVEATS automatically per
+        DEC-0087; NEW categories re-dispatch admin).
+      context_refs:
+        - active-project/staff/auditor/substance-b01c15-scenes.md  # fault-002 axis-slug bleed
+        - active-project/staff/showrunner/memory.md  # chapters[b01c15].chunk_cold_read + scenes
+        - active-project/audience/cape-fic-reader/stm.md  # SW-c15-1/2/3
+        - active-project/audience/dark-fantasy-reader/stm.md  # SW-DFR-c15-1/2
+        - active-project/audience/worm-canon-pedant/stm.md  # SW-WCP-c15-1
+        - staff/admin/decisions.md  # DEC-0087
+      resolution_suggestion: "/and-write b01c15 Phase 6 bone-gate verifies the three watches (concrete feed-texture contrast; S4 ledger-act-not-conclusion; axis-slug fence); stamp resolved on PASS or HARD-abort to a Phase-1 redo."
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
