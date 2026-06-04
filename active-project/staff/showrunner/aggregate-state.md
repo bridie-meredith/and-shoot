@@ -1,7 +1,43 @@
 # Aggregate State — taylor-westeros-good-intentions
 
 # Rolling forward-feed channel for cross-chapter narrative continuity (schema: schemas/aggregate-state.schema.md).
-# Producer: /and-stitch Phase 10 (forward-thread). Consumer: /and-substance chapter b01c15 Phase 0.
+# Producer: /and-stitch Phase 10 (forward-thread). Consumer: /and-substance chapter b01c16 Phase 0.
+# Scoped through b01c15. c15 rolled (falling, close-of-rise; the Aemond-on-stage + gap-as-negative-shape chapter;
+#   from chapters[b01c15].substance_delta_measured):
+#   social_tether-antag +1.5 (->9.0, **9-LOCK**; cl-antag-d03 COMPLETE — riding on the c14 cl-antag-d10 confirmation,
+#     the channel-found-from-both-ends recognition @9 ('a channel found from both ends does not unmake. The read that
+#     grounded me here was the same one that had closed the way out') completes the non-extractable lock at full depth),
+#   relational_anchor_status +1.5 (->7.0; cl04 c15 draw of cl04's +3 total — c14 drew +1.0, c15 +1.5, +0.5 remains
+#     later: the Vhagar-backwash feed-degradation renders the deliberately-uncovered east-water-gate gap PERCEPTIBLE
+#     as a person-sized negative shape @11/@13 ('the absence was the shape... the edge was person-sized, the clearing
+#     I had kept blank for eleven months'); Wren's exclusion is now reader-PERCEPTIBLE as a deliberate structure of
+#     not-covering, held suppressed-register-safe @13 'set no name down'),
+#   political_register-prot +0.5 (->5.5; Aemond-specimen accumulation-within-band — the prince through compound eyes
+#     is one more item of court content the feed returns with color Taylor cannot neutralize; toward contempt-saturation),
+#   capability +1.0 (->7.5; cl05 gain-side COMPLETE — Aemond observation adds scope, coverage acknowledged fully
+#     load-bearing; the cost-side moral_framework -1 was already paid c12).
+#   HELD: social_tether-prot-rise 8.5 (peak already reached c12; c15 enacts the embedded weight made perceptible via
+#     the gap-lane negative-shape, NOT a new structural addition — RECONCILED Phase 0/Phase 5 fault-001), moral_framework
+#     -2 (no new breach; Aemond observation routed to no one), position-prot-rise 6.0 (peak; no new formalization),
+#     moral_legibility_to_self 6.0 (Aemond routed to no one; recognition deferred), social_tether-prot-collapse 8 +
+#     position-prot-collapse 7 (collapse axes still dormant at start_rank), position-world 7, political_register-world 7.
+#   hook-0006 (Aemond-adjacent pressure, planted c08 as logistics-reference) ADVANCED to ON-STAGE: Aemond now ON-PAGE-
+#     observed through compound eyes (face logged: blue-stone left socket, Vhagar behavioral imprint, coercive register)
+#     and explicitly logged-NOT-ROUTED (@7 'I routed nothing of him anywhere'; @13 'I was not routing a twelve-year-old
+#     to a patron'). Hook stays open (escalation-engine now visible, payoff future). hook-0016 ADDED (gap-as-negative-
+#     shape perceptually confirmed — the east-water-gate exclusion is now reader-perceptible as a deliberate structure;
+#     transient, visible only during the Vhagar backwash then normalized @13).
+#   aemond-targaryen promoted (logistics-reference c08 -> ON-PAGE-observed c15; reader_legibility cipher->partial).
+#   master-at-arms appended (cipher walk-on, c15). Wren NOT on-page (negative-shape only; anchor 7.0; exclusion now
+#     reader-perceptible). world_state +2/updated (aemond-at-court-observable, vhagar-eastern-slope-proximity, the-
+#     east-water-gate-gap perceptual-confirmation noted).
+#   0 threading edits applied (every callback already on-page — the draft carries the hook-0006 bridge @5 'the name
+#     behind a handler's note; here he was a body', the Wren suppressed-register exclusion @13, the non-extractable
+#     continuity @9, the calendar/season anchor @9/@11/@13); STATE-DRIFT none (three distinct clocks — KL-tenure
+#     eleven-months / Vhagar-read two-months / arrangement third-month — all coherent); PASS-THREAD; 0 substantive
+#     parking-lotted; 0 unacknowledged-substantive (b01c16 Phase 0 CLEAR). NOTE: the c15 cold-read SHIPPED-WITH-CAVEATS
+#     depth_pass_required:true (event-poverty + uninformedness) + the open c14 pl-2026-06-04-002 (courier-as-person)
+#     both gate book-close; neither is a Phase-10 threading finding; both independent of this pass.
 # Scoped through b01c14. c14 rolled (climax, d14; the non-extractable-confirmation + cl04-courier-closure chapter;
 #   from chapters[b01c14].substance_delta_measured):
 #   relational_anchor_status +1.0 (->5.5; cl04 chapter-draw of cl04's +3 total — c14 draws +1.0, c15 +1.5, +0.5 later;
