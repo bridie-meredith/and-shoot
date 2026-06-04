@@ -8259,7 +8259,21 @@ books:
           target_chapter: b01c14
 
       - slug: b01c14
-        status: scened
+        status: bones-written
+        bones_file: theater/bones/b01-c14.md
+        bones_count: 46
+        substance_bone_gate_verdict: PASS
+        substance_delta_measured:
+          axes_moved:
+            relational_anchor_status: 1.0   # 4.5->5.5 (cl04 chapter-draw; arc continues c15)
+            social_tether-antag: 1.5         # 6.0->7.5 (cl-antag-d10 COMPLETE)
+            position-prot-rise: 1.0          # 5.0->6.0 (cl-d07a COMPLETE)
+            moral_legibility_to_self: 0.5    # 5.5->6.0
+          density_measured: 0.7-0.9
+          felt_verdict: "audience 3-of-3 SUBSTANCE-FELT all 4 scenes; auditor 11 HARD remediated (form recasts + held-axis fixes + mover-reduction so chapter measured = contract); S04 co-dominant-tie disposition (lenient stakes-reading; admin ratification queued); chunk_cold_read PASS-CHUNK-VOICE-RISK arms /and-stitch Phase 8.5 Check 3"
+        # bones[] not inlined per c13 precedent: per-bone substance_delta preserved in
+        # active-project/staff/auditor/write-b01c14-bone-gate.md + scene-map-b01-c14.md +
+        # staff/showrunner/_drafts/b01c14-bones-draft-2026-06-04.md (full per-bone detail).
         chunk: |
           The non-extractable confirmation chapter: cl04 and cl-antag-d10. A request arrives
           through Jarvis that requires Taylor to identify the Black-faction courier-adjacent
@@ -8444,13 +8458,10 @@ books:
                   direction: up
                   target_delta_magnitude: 0.5
                   cost_ledger_anchor: cl-antag-d10
-                  notes: "apparatus confirms independent identification; Taylor's withholding capacity structurally revealed as non-protective; Otto's leverage advances because she now knows it operates without her — cl-antag-d10 opening advance"
-                - axis: position-prot-rise
-                  direction: up
-                  target_delta_magnitude: 0.25
-                  cost_ledger_anchor: cl-d07a
-                  notes: "the independent-identification inference makes position-of-no-exit structurally explicit: the apparatus does not need her to act; it needs her confirmation to confirm she is inside, not outside — cl-d07a partial advance"
+                  notes: "apparatus confirms independent identification; Taylor's withholding capacity structurally revealed as non-protective; Otto's leverage advances because she now knows it operates without her — cl-antag-d10 opening advance; sole in-motion axis (stakes-dominant)"
               axes_held:
+                - axis: position-prot-rise
+                  rationale: "BONE-GATE RECONCILE (2026-06-04): position sub-tranche folds forward to S04 cl-d07a completion (the position-of-no-exit is named at the detention-outcome, not at the packet-read). Witnessed held by s02n10. Keeps social_tether-antag the sole/dominant S02 mover."
                 - axis: moral_framework
                   rationale: "weighing is not the breach; the request exists and Taylor is running it; the framework sits at -2 and the accounting has not yet delivered anything"
                 - axis: relational_anchor_status
@@ -8524,31 +8535,20 @@ books:
                   direction: up
                   target_delta_magnitude: 0.5
                   cost_ledger_anchor: cl04
-                  notes: "cl04 FIRST TRANCHE (+0.5 of the chapter's +1.0 cl04 draw; cl04 total gain = relational_anchor_status +3, of which c14 draws +1.0, c15 draws +1.5, +0.5 later): the NARRATIVE ledger-entry on the figure is opened and written here — one named person, closed without knowledge, chosen explicitly, recorded as an explicit breach-column entry. This is the cost-ledger arc cl04 OPENING, not completing."
-                - axis: social_tether-antag
-                  direction: up
-                  target_delta_magnitude: 0.5
-                  cost_ledger_anchor: cl-antag-d10
-                  notes: "confirmation written and sealed for Jarvis; the apparatus now has Taylor's cross-confirmation on the gap-lane figure; structural advance in non-extractable confirmation — cl-antag-d10 mid-point"
-                - axis: position-prot-rise
-                  direction: up
-                  target_delta_magnitude: 0.5
-                  cost_ledger_anchor: cl-d07a
-                  notes: "confirmation delivered makes the position-of-no-exit concrete: Taylor has now delivered a confirmation that distinguishes her from a non-actor; cl-d07a major advance"
-                - axis: moral_legibility_to_self
-                  direction: up
-                  target_delta_magnitude: 0.25
-                  cost_ledger_anchor: null
-                  notes: "Taylor holds the closed entry and does not add a line — recognition present and not filed; the accuracy of the accounting is named as a quality she cannot put down; crack deepens but suppression holds"
+                  notes: "cl04 FIRST TRANCHE (+0.5 of the chapter's +1.0 cl04 draw; cl04 total gain = relational_anchor_status +3, of which c14 draws +1.0, c15 draws +1.5, +0.5 later): the NARRATIVE ledger-entry on the figure is opened and written here — one named person, closed without knowledge, chosen explicitly, recorded as an explicit breach-column entry. This is the cost-ledger arc cl04 OPENING, not completing. SOLE in-motion axis (stakes-dominant; witnessed by s03n08)."
               axes_held:
+                # BONE-GATE RECONCILE (2026-06-04): antag / position / moral_legibility fold forward to the
+                # S04 detention-outcome where the cost-arcs complete. S03 is the confirmation-WRITTEN scene;
+                # the axis-MOVES land at the S04 outcome. This makes relational_anchor_status S03's sole
+                # in-motion axis (clean stakes-dominance) and keeps the chapter measured-delta = contract.
+                - axis: social_tether-antag
+                  rationale: "confirmation written and sealed for Jarvis, but Otto's leverage becomes structural at the detention-outcome (S04), not at the writing; antag held in S03 pending cl-antag-d10 completion. Witnessed by s03n10."
+                - axis: position-prot-rise
+                  rationale: "the breach-column record is entered (s03n11) but the position-of-no-exit is NAMED at the detention-outcome (S04); position held in S03 pending cl-d07a completion. Witnessed by s03n11."
+                - axis: moral_legibility_to_self
+                  rationale: "W05 stylus-above-entry: recognition present, no line added; the suppression-crack actually deepens at the S04 closure (Wren retroactive-naming), so moral_legibility holds in S03. Witnessed by s03n12."
                 - axis: moral_framework
-                  rationale: "confirmation delivery is within the established rationalize-each-trade pattern; no new breach threshold — the framework already holds at -2; this is a moral_legibility event (accurate accounting visible to Taylor) not a new moral_framework breach"
-                - axis: political_register-prot
-                  rationale: "contempt stable; the apparatus's function here is within established pattern; no new contempt object"
-                - axis: social_tether-prot-rise
-                  rationale: "Sera's guarantee elevated to active by the confirmation, but Sera's structural position does not add a new tether node; holds at 8.5"
-                - axis: capability
-                  rationale: "confirmation is application of existing tracking architecture; no new capability"
+                  rationale: "confirmation delivery is within the established rationalize-each-trade pattern; no new breach threshold — the framework already holds at -2; this is a moral_legibility event (accurate accounting visible to Taylor) not a new moral_framework breach. Witnessed by s03n02."
               density_target: 0.8-0.9
 
           - slug: b01c14s04
@@ -8621,24 +8621,22 @@ books:
                   notes: "cl04 chapter-draw COMPLETE (+1.0 = +0.5 S03 + +0.5 S04 of cl04's +3 total; +2.0 remains for c15+): the NARRATIVE ledger-entry on the figure CLOSES (figure detained, outcome recorded), retroactively naming the Wren omission via shared column-logic — the un-entered item visible in the adjacent format. The cost-ledger ARC cl04 continues at c15; only this chapter's tranche and the figure's specific entry close here."
                 - axis: social_tether-antag
                   direction: up
-                  target_delta_magnitude: 0.5
+                  target_delta_magnitude: 1.0
                   cost_ledger_anchor: cl-antag-d10
-                  notes: "cl-antag-d10 COMPLETES: non-extractable confirmation complete; Taylor has seen the detention that followed her cross-confirmation; Otto's leverage is structural from this outcome; held at 7.5"
+                  notes: "cl-antag-d10 COMPLETES at the detention-outcome: non-extractable confirmation complete; Otto's leverage structural from this outcome. BONE-GATE RECONCILE (2026-06-04): absorbs the S03 antag sub-tranche (which held pending outcome) — S02 (+0.5) + S04 (+1.0) = cl-antag-d10's +1.5 chapter draw, landing social_tether-antag at 7.5. Witnessed by s04n13."
                 - axis: position-prot-rise
                   direction: up
-                  target_delta_magnitude: 0.25
+                  target_delta_magnitude: 1.0
                   cost_ledger_anchor: cl-d07a
-                  notes: "cl-d07a COMPLETES: position-of-no-exit named in internal record; exit calculus runs and confirms no path out; peak position confirmed at 6.0"
+                  notes: "cl-d07a COMPLETES: position-of-no-exit NAMED in internal record at the detention-outcome; exit calculus confirms no path out; peak position confirmed at 6.0. BONE-GATE RECONCILE (2026-06-04): absorbs the S02 (+0.25) and S03 (+0.5) position sub-tranches that held pending outcome — cl-d07a's full +1.0 chapter draw lands here. Witnessed by s04n14."
                 - axis: moral_legibility_to_self
                   direction: up
-                  target_delta_magnitude: 0.25
+                  target_delta_magnitude: 0.5
                   cost_ledger_anchor: null
-                  notes: "recognition present and suppressed — Taylor holds the closed entry and the Wren non-entry in the same look and does not let the shape settle; crack deepest before full recognition; suppression active; ends at 6.0"
+                  notes: "recognition present and suppressed — Taylor holds the closed entry and the Wren non-entry in the same look and does not let the shape settle; crack deepest before full recognition; suppression active; ends at 6.0. BONE-GATE RECONCILE (2026-06-04): absorbs the S03 moral_legibility sub-tranche (held as the stylus-above-entry discipline) — the crack deepens at the Wren-naming closure. Witnessed by s04n15."
               axes_held:
                 - axis: moral_framework
-                  rationale: "completion of the accounting is within the established rationalize-each-trade pattern; no new breach threshold; the repetition-shape is glimpsed and suppressed, not integrated; framework holds at -2"
-                - axis: political_register-prot
-                  rationale: "contempt stable; no new contempt object this scene"
+                  rationale: "completion of the accounting is within the established rationalize-each-trade pattern; no new breach threshold; the repetition-shape is glimpsed and suppressed, not integrated; framework holds at -2. Witnessed by s04n07/n10/n11."
                 - axis: social_tether-prot-rise
                   rationale: "Sera's guarantee confirmed active by completed delivery; no new structural node; holds at 8.5"
                 - axis: capability
