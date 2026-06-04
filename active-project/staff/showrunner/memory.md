@@ -9289,6 +9289,15 @@ books:
           axes_moved: [{axis: moral_legibility_to_self, delivered: 0.5, target: 0.5}]   # @19 stop +0.25 + @21 turn +0.25
           density_measured: "all-held except s03 (2 movers / 9 bones); falling-aftermath shape; 0 chatter bones"
           felt_verdict: SUBSTANCE-FELT-3of3
+        bones_review:   # /and-review bones b01c16 — MANDATORY gate; /and-facets Phase 0 reads this
+          reviewed_at: 2026-06-04T15:58:00Z
+          report_path: active-project/staff/reviews/bones-b01c16-2026-06-04.md
+          verdict: PASS   # chunk->bones fidelity: no hollowing; all 27 bones carry their events
+          follow_check: PASS-WITH-NOTES   # central event recoverable + scene-to-scene hand-offs present; 2 context-addable flags (fault-002 bone19 bare-stop, fault-003 bone20 feed-confirm) -> /and-facets Phase 2.5 + /and-stitch Phase 4
+          dialogue_coverage: PASS   # both anchors cited (@10 halvard:1, @17 halvard:2); speaker file 2 entries; all 5 fences pass
+          aliveness: ok   # no BONES-AIRLESS-RISK; physical grounding distributed; bones 19-22 deliberately spare (voice-embodiment must inhabit @19 without thesis-narration)
+          bones_file_mtime_at_review: 2026-06-04T15:56:04Z
+          stale_since: null
         # flat_id map (Phase 7; bones file authoritative): s01 -> flat 1-8 (n07/n06 swapped: 6=n07,7=n06);
         # s02 -> flat 9-18 (n08 moved forward: 9=n01,10=n02,11=n03,12=n08,13=n04,14=n05,15=n06,16=n07,17=n09,18=n10);
         # s03 n01-n09 -> flat 19-27. Dialogue anchors: flat 10 [halvard:1], flat 17 [halvard:2].

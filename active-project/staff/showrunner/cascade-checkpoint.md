@@ -4,12 +4,12 @@ cascade:
   invoked_command: /and-substance chapter b01c16 --cascade
   mode: unattended
   last_completed:
-    level: bones
+    level: bones-review
     slug: b01c16
-    completed_at: 2026-06-04T15:40:00Z   # /and-write Phase 7 emit: 27 bones / 3 scenes; bone-gate PASS (0 HARD, 2 advisory SIGNAL accepted); audience 3/3 SUBSTANCE-FELT
+    completed_at: 2026-06-04T15:58:00Z   # /and-review bones: fidelity PASS, follow_check PASS-WITH-NOTES, dialogue PASS; /and-facets UNBLOCKED
   next:
-    command: /and-review
-    args: [bones, b01c16]
+    command: /and-facets
+    args: [b01c16]
   reason: continue
   failure: null
   pending_depth_passes: [b01c14, b01c15]   # gate book-close, NOT c16; carried forward
