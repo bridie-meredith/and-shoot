@@ -4,11 +4,11 @@ cascade:
   invoked_command: /and-substance chapter b01c16 --cascade
   mode: unattended
   last_completed:
-    level: bones-review
+    level: facets
     slug: b01c16
-    completed_at: 2026-06-04T15:58:00Z   # /and-review bones: fidelity PASS, follow_check PASS-WITH-NOTES, dialogue PASS; /and-facets UNBLOCKED
+    completed_at: 2026-06-04T16:20:00Z   # /and-facets: 10/10 facets audience-gate ACCEPT (2 cycles; NI:6 DEC-0090 fix); audit 0 HARD; FOLLOWABLE+ALIVE
   next:
-    command: /and-facets
+    command: /and-stitch
     args: [b01c16]
   reason: continue
   failure: null

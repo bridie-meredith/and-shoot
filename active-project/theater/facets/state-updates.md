@@ -7,7 +7,7 @@ episode: b01-c16
 3 @27 studio.location: oc-sept-corner -> oc-hook-precinct-circuit
 # source: taylor-hebert-kl-122ac
 4 @6 actor:taylor-hebert-kl-122ac.position: circuit-approach -> sept-corner-clearing
-5 @19 actor:taylor-hebert-kl-122ac.moral_legibility_to_self_axis: 4 -> 4.5
+5 @19 actor:taylor-hebert-kl-122ac.moral_legibility_to_self_axis: 6.0 -> 6.5
 6 @21 actor:taylor-hebert-kl-122ac.halvard_engagement_state: engaged -> foreclosed
 7 @25 actor:taylor-hebert-kl-122ac.position: sept-corner-clearing -> rendering-yard-fence
 8 @27 actor:taylor-hebert-kl-122ac.position: rendering-yard-fence -> circuit-resumed

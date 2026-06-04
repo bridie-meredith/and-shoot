@@ -9281,7 +9281,8 @@ books:
             FAIL with NEW categories re-dispatches admin per normal flow.
 
       - slug: b01c16
-        status: bones-written   # /and-write b01c16 Phase 7 emit (was scened)
+        status: audited-r1   # /and-facets b01c16 Phase 6 (was bones-written); facets audited + audience-gate ACCEPT
+
         bones_file: theater/bones/b01-c16.md
         bones_count: 27
         substance_bone_gate_verdict: PASS   # auditor 0 HARD / 2 advisory SIGNAL-FLAG accepted; audience 3-of-3 SUBSTANCE-FELT all 3 scenes
@@ -9298,6 +9299,25 @@ books:
           aliveness: ok   # no BONES-AIRLESS-RISK; physical grounding distributed; bones 19-22 deliberately spare (voice-embodiment must inhabit @19 without thesis-narration)
           bones_file_mtime_at_review: 2026-06-04T15:56:04Z
           stale_since: null
+        facets:   # /and-facets b01c16 (consolidated R1+R2 pass under chapter-production budget, per c15 precedent)
+          status: audited-r1
+          facets_path: active-project/theater/facets/
+          proto_lines: active-project/theater/proto-lines/b01-c16.md
+          cite_index: active-project/theater/facets/_cite-index.md
+          round_1_complete: true
+          round_2_complete: true   # consolidated into R1 graph-aware authoring
+          context_followability: {completeness_verdict: FOLLOWABLE, readability_verdict: ALIVE, both_bones_review_flags_carried: true, ledgers_opened: 0}
+          audit_path: active-project/staff/auditor/facets-final-audit.md
+          audit_complete: true
+          audit_hard_final: 0   # 1 HARD (moral_legibility 4->4.5 number mismatch) fixed -> 6.0->6.5
+          audit_signals: 4   # NI 25.9% / sensory 7.4% / Halvard-feeling 7.4% / memory cross-episode gloss — all advisory
+          audience_gate_path: active-project/staff/auditor/facets-audience-gate-r2.md
+          audience_gate_complete: true
+          audience_gate_cycles: 2   # cycle 1 FAIL interest-narrator NI:6 (DEC-0090 thesis-narration) -> cycle 2 ACCEPT after feed-register rewrite
+          audience_gate_result: ACCEPT   # all 10 facets 3-of-3
+          bidirectional_loop: one-sided   # NI:6 audience-only; DEC-0090->NI-rubric promotion under process-critic review
+          facet_entry_counts: {location-state: 5, interest-narrator: 7, sensory: 2, state-updates: 12, memory: 1, feeling: 3, metaphor: 0, vibes: 4, exposition: 0, dialogue: 2}
+          orchestrator_critic: {result: SUCCESS, note: "0 HARD final; 10/10 facets 3-of-3; DEC-0090 item-4 over-explanation caught+fixed at the gate (the risk-carry worked as designed)"}
         # flat_id map (Phase 7; bones file authoritative): s01 -> flat 1-8 (n07/n06 swapped: 6=n07,7=n06);
         # s02 -> flat 9-18 (n08 moved forward: 9=n01,10=n02,11=n03,12=n08,13=n04,14=n05,15=n06,16=n07,17=n09,18=n10);
         # s03 n01-n09 -> flat 19-27. Dialogue anchors: flat 10 [halvard:1], flat 17 [halvard:2].
