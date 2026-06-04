@@ -179,3 +179,51 @@ register removals required. Register entries below remain authoritative.
 - pretext-charge-mechanic / cord-as-pretext | first-mention-anchor: graph-resident-via-bones-13-14-15-b01c13 + chunk-scene-b01c13s02 (WHY the charge of receiving stolen cord is a fiction — the magistrate writes before Aldric finishes @13, asks questions whose answers are pre-inscribed, lifts the list to decide the verdict @15 — is PLOT CONTENT carried by the bone-body sequence + s02 chunk ["the cord is not the point"]; NOT exposition-glossed per rubric §Never-gloss plot-content; recorded so future authors know the pretext-charge mechanic is reader-resident as bone/lens-carried, NOT an exposition gloss)
 - the-naming / contempt-as-the-word | first-mention-anchor: graph-resident-via-NI-memory-facet-layer-b01c13s03 + bone-19-b01c13 ("taylor-hebert-kl-122ac stops the lane") (the s03 naming — the word "contempt" as Taylor's verdict-with-evidence — is DELIBERATELY NOT exposition-glossed and NOT rendered as on-page protagonist articulation; per /and-review bones signal-001 + scene-map NAMING-AS-BODY-STOP protected-pattern, the word + the evidence-run are INTERIOR recall realized at the narrator-interest/memory facet layer; the physical correlate is the @19 STOP; exposition's ONLY spine contribution is the @0 bridge holding the two feed-events together so the stop reads as a finding-not-a-decision; recorded so future authors know contempt is reader-resident as the c13 interior-named verdict carried by NI/memory + the bone-stop, NEVER an exposition gloss and NEVER on-page articulation)
 - the-provisioning-humiliation / copper-penny-margin-coercion | first-mention-anchor: graph-resident-via-bones-1-9-b01c13 + chunk-scene-b01c13s01 (the s01 coercion-is-the-point reading — a margin so thin it cannot be the point, which is what makes it the point; the satisfied-coercion posture @7 — is PLOT/lens content carried by bone-body + s01 chunk + scene-map SATISFIED-COERCION-AS-BODY protected-pattern; the household-agent ROLE is exposition-glossed [gloss-id:3] but the coercion-mechanic-as-the-point is NOT; recorded so future authors do not gloss the coercion reading)
+
+## Glossed in b01c14 (R1 author-time write-back; R2 may revise)
+
+# b01c14 promoted ZERO new register terms (same disposition as the c06/c11/c12/c13
+# bridge-only chapters). SILENT interior-accounting chapter, dense ledger register,
+# chapter 14 of 20. Three exposition entries authored — NONE is a glossed-term:
+#   - exposition:1 @0 prior-episode-bridge (per-chapter reader-state refresh; NOT a glossed-term).
+#     Refreshes the load-bearing register-resident connections the bones-review flagged: Otto's
+#     apparatus (the Hand-who-was, still working through Jarvis), the Sera arrangement (counting
+#     pays for parentage-question quiet; holds only while deliverables hold), the east-of-water-gate
+#     gap-lane courier (eleven weeks watched, never entered), AND Wren as the route-covered /
+#     never-priced cost-bearer — the load-bearing GAP-2 connection so @41's column-surfacing reads
+#     as the SAME un-pricing logic on her. References ONLY register-resident terms.
+#   - exposition:2 @20 scene-open-orient (column-as-literal-ledger; GAP-1) — a micro-bridge orienting
+#     the LITERAL left=harm / right=protection interior column as Taylor's named ledger device; NOT a
+#     first-mention (the coverage-map-instrument-family is c02-register-resident; this orients the
+#     column STRUCTURE the cold-read flagged opens mid-vocabulary, not the instrument-family term).
+#   - exposition:3 @10 scene-open-orient (degraded-alternative-stake; GAP-3) — a micro-bridge orienting
+#     that both paths take the figure; only Sera's guarantee distinguishes them. NOT a first-mention.
+#
+# Register-resident terms re-confirmed NO-GLOSS (re-gloss PROHIBITED):
+#   - otto-hightower (c03:6) — "the Hand-who-was, still working through Jarvis"; refreshed in @0 bridge, NOT re-glossed
+#   - sera-hightower-kl-122ac (c03:8) + sera-protection-architecture (c05:2) — "the arrangement / paid by deliverable quality"; refreshed in @0 bridge, NOT re-glossed
+#   - jarvis-coin-kl-courier (c03:3) — "the channel / through Jarvis"; NOT re-glossed
+#   - east-of-water-gate-lanes (c12:2) — "east of the water-gate the lanes"; NOT re-glossed
+#   - wren-stitch-maker (b01c01:9) — refreshed in @0 bridge as the never-priced cost-bearer (GAP-2); already-resident character, NOT re-glossed
+#   - dragonstone (c11:2) + green-black-faction-frame (c09:2) + the-dance (b01c01) — the s01 cloth-merchant's
+#     flight as Rhaenyra/Dragonstone-side pressure is bone-body/chunk-carried ([force: dragonstone-pressure-mediated])
+#     and reader-resident; NOT exposition-glossed. A scene-A scene-open-orient was CONSIDERED and REFUSED
+#     (the bone-body carries the Dragonstone-inference-from-absence; an orient would pre-draw the s01 read).
+#   - the count / coverage / ledger / accounting / channel-station (c02 coverage-map-instrument-family) — NOT re-glossed.
+
+## Graph-resident from b01c14 (NOT exposition-glossed; recorded so future authors do not re-gloss)
+
+- the-cloth-merchant-c14 / the-passive-lane-net-node | first-mention-anchor: graph-resident-via-bones-1-9-b01c14 + chunk-scene-b01c14s01 (role-tagged ANONYMOUS figure — no proper name; four weeks a passive node in the lane-net, a counter not a runner; the figure whose absence/flight the s01 read runs the Dragonstone-pressure inference from; rubric §first-mention-character exclusion for unnamed role-tag figures [cf. c05 the-three-figures, c08 the-watcher-boy, c11 the-cloth-merchant-c11 — a DISTINCT c11 figure, a Black-faction node that burned; this c14 merchant is the passive counting-node that fled]; node-identity + flight-as-Dragonstone-pressure carried by bone-body + s01 chunk; cull-dropped as standalone first-mention-character; reader-resident as the c14 fled passive lane-net node)
+- the-gap-lane-courier-figure / the-courier-adjacent-figure | first-mention-anchor: graph-resident-via-bones-12-15-b01c14 + bones-25-27-b01c14 + bones-34-37-b01c14 + chunk-scenes-b01c14s02/s03/s04 (role-tagged ANONYMOUS figure — the apparatus uses a DESCRIPTION not a name ["she does not know his name"]; the courier-adjacent figure east of the water-gate, eleven weeks tracked, identified by the low-set left eye + the second-junction pause-habit + the adjusted satchel-weight; the figure Taylor confirms (s03) and whose detention she witnesses through the feed (s04); rubric §first-mention-character exclusion for unnamed role-tag figures; the figure's specificity [the eye, the pause, the eleven weeks] is the EARNED cost-anchor carried on-bone @27/@35 + scene-map FIGURE-SPECIFICITY-CARRIES-THE-COST + PERSON-BEFORE-PATHS [W02], NOT exposition-glossed [glossing would flatten the earned reveal]; cull-dropped as standalone first-mention-character; reader-resident as the c14 confirmed-then-detained gap-lane courier)
+- the-harm-protection-column / the-literal-interior-ledger | first-mention-anchor: graph-resident-via-exposition:2-b01c14-scene-orient + bones-20-23-b01c14 + chunk-scene-b01c14s03 (the LITERAL left=harm / right=protection cost/benefit column is Taylor's central interior device this chapter; the scene-orient exposition:2 ORIENTS the column structure [GAP-1, bones-review priority], but the column's USE — the harm entry held before protection [W03 HARM-BEFORE-PROTECTION], "she does not let it take less" — is bone-body/lens-carried, NOT exposition-glossed; the coverage-map-instrument-family is c02-register-resident; recorded so future authors know the harm/protection column is reader-resident as the c14 device oriented at the scene-C open + carried in bone-body/lens, NOT a standalone first-mention)
+- the-wren-omission-as-column-surfaced-item | first-mention-anchor: graph-resident-via-exposition:1-bridge-b01c14 + bones-41-43-b01c14 + scene-map-b01-c14:scene-D:WREN-NAMING-MINIMAL-PHYSICAL [W07] (the s04 retroactive surfacing of the Wren omission — the ledger's own closing logic finding the un-entered person-shaped item running the same un-pricing function as the entry just closed — is DELIBERATELY NOT exposition-glossed and NOT over-explained [authorial-cleverness risk per scene-map]; the @0 bridge ONLY holds Wren as the route-covered/never-priced cost-bearer [GAP-2] so the @41 column-surfacing lands as the SAME logic, but the surfacing-EVENT itself — one look, one breath, hand off, suppression active — is bone-body/lens-carried [the accounting FINDS what it finds]; the @42 Gold-Morning echo is SHAPE-LANGUAGE-ONLY [W08, HARD Earth-Bet fence, worm-canon-pedant CONFIRMED clean] and is NOT touched by exposition; recorded so future authors know the Wren-column-surfacing is reader-resident as the c14 bridge-primed + bone/lens-carried suppression event, NEVER an exposition gloss)
+
+# NOTE: the @0 prior-episode-bridge (exposition:1) is NOT a glossed-term (per-chapter reader-state
+# refresh; references only register-resident terms — Otto / Jarvis / the arrangement / Sera / the
+# count / the coverage / the wards / Wren / the gap-lanes / the Black-faction courier; promotes ZERO
+# new register entries; same disposition as the c06/c11/c12/c13 bridges). Earth-Bet fence CLEAN
+# (no Khepri / Gold-Morning / shard / parahuman in any gloss-text; the @42 shape-echo is bone/lens-only).
+# Sparsity self-flag: 3 entries / 46 proto-lines = 6.5% (above the 1-5% band; structurally inflated by
+# the small silent-chapter denominator). Both scene-orients are bones-review priority targets (the
+# followability reviewer checks they close) so neither is R1-cull-eligible; flagged for R2: if a lens
+# facet carries the @20 column-frame, exposition:2 DELETEs and sparsity drops to 4.3% (in-band).
