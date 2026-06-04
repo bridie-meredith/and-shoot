@@ -2307,7 +2307,21 @@ parking_lot:
         - active-project/audience/worm-canon-pedant/stm.md  # SW-c17-WCP-1..3
         - active-project/staff/showrunner/memory.md  # chapters[b01c17].chunk_cold_read.cold_read_risk_carry
       resolution_suggestion: "/and-write b01c17 Phase 1 brief on enacted-not-narrated; Phase 6 bone-gate verifies"
-      status: open
-      resolved_at: null
-      resolved_by: null
-      resolution_note: null
+      status: resolved
+      resolved_at: 2026-06-04T23:55:00Z
+      resolved_by: "/and-write b01c17 Phase 6 bone-gate (auditor gate-001: enactment-gate MET)"
+      resolution_note: |
+        All four enactment points verified MET at bone level by the Phase 6 auditor:
+        (1) s03 collapse-axis physical form — @22 writes first Norren-attribution-line +
+            @23 pen adds two supplementary lines; the false record now sits in the log
+            (extraction requires resolving what is written). (2) Norren false-attribution as
+            present-tense physical write-action — @21/@22/@23, no future-tense/summary framing.
+            (3) s01 wren-identification as feed/log-event — @6 subject "the feed" / @7 subject
+            "the coverage log", not Taylor-cognition. (4) Echo-naming closes on shape-language
+            (@27 compound) + s03 leave-the-open-log (@28) + s04 enacted-absence positive-form
+            (@33 lifts the pen / @34 column holds the blank slot). Audience 3-of-3 SUBSTANCE-FELT
+            confirmed the enactment LANDS (the collapse axes felt as structural consequence, not
+            arithmetic; the pen-on-page the tactical high point). Earth-Bet fence CLEAN.
+            The interior-ledger-recalculation risk (the genuine cold-read signal) is targeted at
+            bone level; remaining prose-render watches (s02 embodiment, returns-verb variation,
+            leave-the-open-log not softened) carried to /and-stitch via scene-map protected-patterns.
