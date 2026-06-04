@@ -722,3 +722,46 @@ No walkout triggers. No catharsis before weight. No unearned catharsis — the s
 SW-DFR-c12-2 and SW-DFR-c12-3 (from Phase 4 trim) carry forward unchanged:
   - SW-DFR-c12-2 (/and-facets): s04 Khepri accumulation must render as cold mechanical procedure, not emotional register shift; the word surfaces because the ledger reaches it
   - SW-DFR-c12-3 (/and-stitch): n13 must render as a cold ledger fact — cost recorded without the shape-word, without recognition arriving, without Taylor naming what she has done
+
+## 2026-06-04 — /and-substance chapter b01c15 Phase 5 chunk review
+
+chapter: b01c15
+date: 2026-06-04
+scenes_reviewed: [b01c15s01, b01c15s02, b01c15s03, b01c15s04]
+
+verdict_per_scene:
+  b01c15s01: SUBSTANCE-FELT
+  b01c15s02: SUBSTANCE-FELT
+  b01c15s03: SUBSTANCE-FELT
+  b01c15s04: SUBSTANCE-FELT
+
+chapter_verdict: SUBSTANCE-FELT
+hard_findings: none
+SUBSTANCE-FLAT: none
+SUBSTANCE-SUSPECT: none
+overall: ACCEPT
+
+### Per-scene notes
+
+s01 (political_register-prot +0.5): SUBSTANCE-FELT. The coercive-grammar read through the master-at-arms's yield delivers the contempt-accumulation correctly: a new specimen the contempt already fits, not a new threshold. Aemond as an enemy who does not pause — the correction that follows is not spoken, is visible in the yield of the other man's frame while the boy's frame stays level. Routing-nothing-to-Jarvis is the discipline enacted as restraint. The opposition is present and does not accommodate the protagonist. No hope-that-costs-nothing: the political_register deepens as cost, not as reward.
+
+s02 (social_tether-antag +0.75, first half): SUBSTANCE-FELT. The Vhagar thermal arrives as world-physics — the dragon's heat dissipates through the eastern slope in a way that is physically distinct from the bay-warm, and the arch-fly density reads the differential. This is the world pushing back: Vhagar's footprint reaching Taylor through stone and insect-substrate before she names what it means. The non-extractable-confirmation-deepens is not a walkout trigger — it is the trap's weight acquiring a physical form it had not had before. The c14 structural confirmation is now a thermal in the substrate. That is the correct darkening.
+
+s03 (relational_anchor_status +1.5, social_tether-antag +0.75 LOCK): SUBSTANCE-FELT. The negative-shape mechanism is the chapter's core claim and it earns its place: the degraded fringe is noise; the gap is clean absence; the contrast makes the gap perceptible as a specific thing where before it was just nothing. This is not authorial arrangement — the dragon's thermal produces the fringe-effect that produces the contrast that makes the absence visible. The world delivers the visibility. Taylor notes it in the coverage record as a site-condition variant. She does not note what it looks like. That is the correct non-cathartic close on a +1.5 advance: the exclusion is seen and not named.
+
+s04 (all held): SUBSTANCE-FELT as plateau-close. Zero movement is architecturally required — this is the space before the cascade, not the cascade. The accounting close is the chapter's earned image: the gap has a shape, the shape is not entered, the arrangement continues. No catharsis. The weight has accumulated without arriving.
+
+### Threshold discipline
+
+No walkout triggers. No catharsis before weight — the chapter closes on the arrangement continuing, not on recognition or resolution. No enemies pausing at convenient moments — Vhagar's thermal does what a dragon's heat does; it does not pause for Taylor's accounting. No hope-that-costs-nothing — the negative-shape visibility is the exclusion becoming concrete, not a reward. No magic-as-reliable-tool — the thermal detection is a two-month learned competency via arch-fly density; it is labor, not certainty. No world-as-set-dressing — the eastern slope, the passage-arch, the bay-warmth differential — these exist by their own physics before Taylor reads them.
+
+### Soft bones-execution watch (dark-fantasy-reader)
+
+SW-DFR-c15-1 (S4 conclusion-language): S4 contains two sentences that risk the narrator drawing the reader's inference for them: "It is not invisible anymore. It is perceptible as a deliberate thing, a structure of not-covering." The text should watch Taylor's accounting close without naming what the close means. If bones render this as Taylor's interior conclusion-drawing (the gap is now X, I know this), the narrator has done the reader's work. Bones must enact what Taylor does with the feed after the fringe clears — the gap's ordinary state returning, the site-condition note recorded, the circuit continuing — without the narrative summarizing the chapter's significance. The significance must be visible to the reader through what is not entered, not stated by the text. Soft flag; not a blocking finding at chunk stage.
+
+SW-DFR-c15-2 (contract-bleed): Axis-slug vocabulary in S1 and S3 chunk prose (same as cape-fic-reader and worm-canon-pedant flags). Must not survive to bones. Taylor's interior does not narrate axis-slug terminology. The dark-fantasy register in particular cannot carry cold-utilitarian POV mixed with what reads as planning-document self-commentary. The bones must be in Taylor's register throughout.
+
+soft_carries_forward:
+  - SW-DFR-c15-1: S4 accounting-close must not narrate its own significance; bones must enact what Taylor does, not conclude what it means
+  - SW-DFR-c15-2: axis-slug contract-bleed must be stripped at /and-write; same finding as prior chapters; no regression from established pattern
+  - SW-DFR-c12-2 and SW-DFR-c12-3 carry forward unchanged (b01c12 facets/stitch watches)

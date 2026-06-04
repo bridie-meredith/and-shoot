@@ -742,3 +742,78 @@ key_canonicity_confirmations:
   - s02: Otto apparatus terrain-precise request (gate-tower boundary n05, rendering-yard boundary n03) — irony-complete before Taylor stills; override-vs-surveillance uncontaminated
   - s03: cl-d06 settled across two ledger-acts (n10/n11); refusal-without-explanation (n04/n05) enacted as physical withholding not interior enumeration; lift-and-move close correct (n12)
   - s04: n14 causal bridge canon-clean; accumulation sequence (n14/n03/n04/n05/n06/n07/n08) earns shape-word weight; suppression three-phase sequence (n09 arrives / n10 routes around / n11 closes) canonically correct; moral_framework -1.0 (n13) lands as ledger-act not emotional event
+
+## 2026-06-04 — /and-substance chapter b01c15 Phase 5 chunk review
+
+chapter: b01c15
+date: 2026-06-04
+dispatch_mode: three-card plan-review
+scenes_reviewed: [b01c15s01, b01c15s02, b01c15s03, b01c15s04]
+
+verdict_per_scene:
+  b01c15s01: SUBSTANCE-FELT
+  b01c15s02: SUBSTANCE-FELT
+  b01c15s03: SUBSTANCE-FELT
+  b01c15s04: SUBSTANCE-FELT
+
+chapter_verdict: SUBSTANCE-FELT
+hard_findings: none
+SUBSTANCE-FLAT: none
+SUBSTANCE-SUSPECT: none
+overall: ACCEPT
+
+### Canonicity findings
+
+**Aemond age/sapphire-eye:** "Aemond Targaryen, twelve years old" — born 110 AC, 122 AC = 12. TRACK. Sapphire eye for 122 AC is post-Driftmark (120 AC) and correct. The "Vhagar-behavioral-imprint-gait-read" annotation (wide ground-check, angle accounting for a body much larger than the boy's) is HotD/F&B consistent for Aemond's established physical imprinting from Vhagar-bonding. No flag.
+
+**Vhagar backgrounded:** Dragon never on-stage. Taylor reads it through thermal/pressure backwash via flight-musculature resistance in arch-flies. This is the same mechanism validated at book Phase 5 attempt 2 (CANON-CONSISTENT ruling). No regression. cond-dragon-proximity-122ac honored.
+
+**Earth-Bet noun fence:** CLEAN. Reviewed entire chunk. Mechanism language: "compound eyes," "flight-musculature," "thermal-resistance," "signal-interference," "insect-feed," "arch-fly density," "coverage map," "feed-disruption," "fringe-fly," "compound-eye fringe-degradation." All functional-descriptive, no parahuman jargon. No Khepri. No Gold Morning. No shard, no Manton, no trigger-event. The chunk's own constraint-check confirms this, and the review confirms the confirmation. FENCE CLEAN.
+
+**Insect-feed thermal detection:** Flies in warm airstream register it as motion-pressure (changed resistance in flight-musculature). This is mechanically correct for insect-biology: insects do not have mammal thermoreceptors; they read thermal differences as changed environmental resistance. The arch-fly density producing a differential read (bay-warm vs. hill-warm vs. dragon-added-weight) is consistent with how Taylor has always used density gradients — more insects = finer resolution on environmental differences. Two months of coverage at this margin earning this competency is the correct time-frame framing (coverage-as-procedure, not capability-as-broadcast). No range inflation: the passage-arch is physically proximate to the Red Keep outer court. TRACK.
+
+**Gap-as-negative-shape mechanism:** The mechanism builds on the canon-confirmed logic from book Phase 5 attempt 2: disruption creates contrast; contrast makes the structured absence perceptible. The specific execution here — fringe-flies have thermal-noise and resolution-dropout (known interference character); the gap's clean absence has no noise (different character); the figure-ground relationship makes the gap perceptible as a gap — is mechanically sound Worm-physics. Taylor reads the feed's texture as a data layer alongside its content-layer. This is established in canon. TRACK.
+
+**Social_tether-antag 9-LOCK via non-extractable confirmation:** The +1.5 draw across S2+S3 completes cl-antag-d03. The c14 confirmation (non-extractable structural fact) is the prior knowledge Taylor draws on in S2 when she names "the apparatus's awareness that the architecture exists." The c14 STM records confirm this as established operational knowledge (cl-antag-d10 COMPLETE at c14). This is not unmotivated knowledge — she knows because c14 established it. TRACK.
+
+**Political_register-prot +0.5 (S1):** Aemond through compound eyes, coercive register. The "grammar of receiving no-as-inadequate-theory" is a behavioral observation through the feed — Taylor reads posture and interpersonal geometry, which is established capability. The "Vhagar-behavioral-imprint-gait-read" mechanism is specific and functional. No inference leap that requires knowledge beyond what the feed returns and what prior context established. TRACK.
+
+### Axis-slug vocabulary (soft flag — canonical register concern)
+
+Two sentences in the chunk use axis-slug vocabulary in what reads as Taylor's observational register:
+- S1, chunk prose: "The political_register-prot entry does not change with what she is watching; the entry that was already there — the one that had the word in it by c13 — deepens by accumulation, not addition."
+- S3, chunk prose: "The relational_anchor_status advances: the exclusion is no longer something Taylor knows abstractly in the accounting..."
+
+Taylor's cold-utilitarian interior does not use axis-slug terminology. This language is planning-document self-commentary bleeding into what should be Taylor's POV. In prior chapters (c04, c05, c12), this pattern has been consistently stripped at the bones layer. The established pattern holds — at chunk stage this is an acceptable planning annotation; at /and-write this must be stripped and converted to physical enacted acts.
+
+SOFT FLAG: axis-slug vocabulary in two chunk paragraphs; must not survive to bones. Registered as SW-WCP-c15-1. Not a chunk-level block. The prior-chapter pattern provides the correct execution baseline: Taylor's interiority uses operative accounting language ("files it as," "notes in the record as," "does not open a ledger entry") never the slug names themselves.
+
+### Chapter goal coverage
+
+goal: Show Aemond through compound eyes (escalation engine in physical form), Vhagar proximity as full-load confirmation, gap-lane negative-shape as perceptual relational_anchor advance, tether at 9-LOCK. LAND on all four:
+- Aemond compound-eye read: S1 — LAND
+- Vhagar proximity / tether full-load: S2 — LAND
+- Gap-lane negative-shape / relational_anchor +1.5: S3 — LAND
+- Accounting close / cascade-space: S4 — LAND
+
+### Verdict
+
+SUBSTANCE-FELT — all four axes deliver within contract; canonicity findings clean; Earth-Bet fence clean; Aemond and Vhagar correctly handled per established project conditions; one soft flag on axis-slug vocabulary (bones-execution watch, not block).
+
+earth_bet_fence_verdict: CLEAN
+hard_findings: none
+SUBSTANCE-FLAT: none
+SUBSTANCE-SUSPECT: none
+
+soft_findings:
+  - SW-WCP-c15-1: axis-slug vocabulary in S1 chunk prose ("political_register-prot entry") and S3 chunk prose ("relational_anchor_status advances") — must not survive to bones; Taylor's interiority does not name axis slugs; bones-execution watch; not a chunk-level block
+  - SOFT (carried forward): b01c07 prose-burden — Halvard tether-gain; carries to b01c07 /and-write (unchanged from prior sessions)
+
+canonicity_findings:
+  - Aemond age/sapphire-eye: CLEAN — 12 in 122 AC (born 110 AC), sapphire post-Driftmark (120 AC), Vhagar-behavioral-imprint HotD-consistent
+  - Vhagar backgrounded: CLEAN — thermal/pressure backwash only; never on-stage; cond-dragon-proximity-122ac honored
+  - Earth-Bet noun fence: CLEAN — all mechanism language functional-descriptive; no parahuman jargon; fence respected throughout
+  - Thermal-detection mechanism: CANON-CONSISTENT — insect flight-musculature resistance model; arch-fly density gradient; two-month competency correctly framed as learned procedure; no range inflation
+  - Gap-negative-shape mechanism: CANON-CONSISTENT — disruption-creates-contrast logic validated at book Phase 5 attempt 2; specific fringe-character vs. absence-character execution is mechanically sound Worm-physics
+  - Non-extractable knowledge: CLEAN — c14 cl-antag-d10 established the operational fact; c15 draws on it correctly; no unmotivated knowledge
+  - Multi-shard fence: CLEAN — coverage reading and thermal detection; no body-direction; no nervous-system coordination

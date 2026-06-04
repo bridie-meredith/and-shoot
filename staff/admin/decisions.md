@@ -5380,3 +5380,24 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0087 | 2026-06-04 | FAST (user-proxy, RUNBOOK R1)
+
+question: b01c15 Phase 5.5 CHUNK-CLASS-B — disposition R (revise chunk) / P (proceed with risk recorded) / S (substance-contract redo). Back-to-back quiet chapter after c14 SHIPPED-WITH-CAVEATS: does the consecutive-quiet pattern change the call from the standard Class-B default?
+context: Cold-reader: event-poverty / no-jeopardy / "nothing delivered, nothing changes." Confusions mostly uninformedness (series context absent). Informed 3-of-3 audience SUBSTANCE-FELT; dramatist ACCEPT; auditor clean. Falling-arc dramatic_shape chapter; S4 plateau-close is architecturally required. c14 was also a Class-B SHIPPED-WITH-CAVEATS (DEC-0085); c15 is the second consecutive quiet chapter. Cold-reader complaints are execution-layer (event-poverty via abstraction), not chunk-design holes.
+options:
+  - R: revise chunk — inject on-page jeopardy/event beat
+  - P: proceed with risk recorded — carry execution watches into /and-write as HARD; arm stitch Phase 8.5 + Phase 9
+  - S: substance-contract redo — high cost, reserved for unacceptable P
+
+decision: P — proceed with risk recorded; carry the feed-texture contrast + S4 ledger-act-not-conclusion watches HARD into /and-write bones authoring; arm stitch Phase 8.5 + Phase 9.
+basis: DEC-0060/0062/0072/0074/0076/0078/0085 — seven consecutive Class-B chunk dispositions all went P; ruling is settled. The consecutive-quiet fatigue signal is real but the lever is execution concreteness (bones layer), not chunk design. R would inject events that break the falling-arc the dramatist + audience endorsed; the c14 lesson was exactly that de-abstraction at the bones layer resolves event-poverty on quiet chapters. S is wrong-layer + high cost.
+rationale: Informed reviewer consensus (3/3 SUBSTANCE-FELT + dramatist ACCEPT + auditor clean) outweighs the cold-reader's structural complaint. The cold-reader's confusions are uninformedness, not design holes. The back-to-back-quiet concern is addressed by making the bones-layer execution watches explicit and HARD entering /and-write — the same carry-forward applied to c14 at DEC-0085. Two consecutive SHIPPED-WITH-CAVEATS chapters do not warrant escalating the risk classification above Class-B; they warrant tighter watch specification at the bone-gate. Cumulative quiet is the designed scope for /and-cohere before book-close.
+trade-off: Two consecutive chapters with HARD execution watches entering /and-write. Fatigue accumulation handled at /and-cohere, not by breaking individual falling-arc chapters at the chunk layer.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no

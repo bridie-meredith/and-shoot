@@ -207,7 +207,7 @@ VERDICT: ACCEPT — the chunk set delivers all five axes with felt mechanisms, t
 - b01c04s01n05: KEEP — held: political_register-prot; feed-priority-over-eye enacted (feed returns Jarvis before eye-contact); this is the courier-tier discipline made physical, not narrated; no perception verb, canonical "returns" form; load-bearing for the register held across the exchange
 - b01c04s01n06: KEEP — moving: social_tether-antag +1.0; the acceptance; lever solidifies; dialogue-anchor: Taylor's voice-file utterances @6 land here; this is the chapter's first major event; irreversibility established in the speech-act
 - b01c04s01n07: KEEP — held: moral_framework; stillness-against-pressure of the irreversible act; covers [force: the knowledge that delivering the yes ends capacity to not-have-delivered-it]; body-part DO licensed; enacts the trap landing without narrating the rationalization — voice-load-bearing for the cold-utilitarian register
-- b01c04s01n08: KEEP — moving: position-prot-rise +1.0; Jarvis's routing-confirmation is the position-rise event; fixes the prior FAULT-BONE-DELTA-MALFORMED; dialogue-anchor; covers [mechanism: Jarvis receives as routing confirmation]; both Jarvis voice-file utterances (@n07 and @n10 in the c04 entries) are assigned to this speech bone; soft watch from chunk review RESOLVED (distinct position-event separate from the tether move)
+- b01c04s01n08: KEEP — moving: position-prot-rise +1.0; Jarvis's routing-confirmation is the position-rise event; fixes the prior FAULT-BONE-DELTA-MALFORMED; dialogue-anchor; covers [mechanism: Jarvis receives as routing confirmation]; both Jarvis voice-file utterances (@n07 and @n10 in the c04 entries) are assigned to this speech bone; soft watch from chunk review RESOLVED (distinct position-event separate from the tether-antag move at n06)
 - b01c04s01n09: KEEP — chatter; covers [event: leverage solidifies for Otto — the lever walks out with Jarvis]; departure enacts irreversibility physically; opposing_force_bone in scene_conflict; cost_ledger_anchor present
 - b01c04s01n10: KEEP — held: relational_anchor_status; Taylor's clean exit; held axis enacts that the acceptance was framed as being about Sera, not Wren — the un-priced item remains outside the pricing at the acceptance moment; load-bearing for the chapter's structural irony
 
@@ -549,3 +549,41 @@ notes:
   - s03: relational_anchor_status +1.0 not cheap-gain — the lane-refusal converts Wren from behavioral exclusion to structural architectural feature; the trap completing is not a reward; position-prot-rise +1.0 earned as third withhold entering channel record as named gap (structural, not behavioral); n04+n05 stopping-before-writing enacted as two physical acts; n12 lift-and-move close (no linger); reader sees the architecture using Wren as eastern boundary without Wren's knowledge
   - s04: moral_framework -1.0 earned — six accumulation bones build referent-weight before shape-word surfaces; harm-prevention column runs at n07 (rationalization active when threshold crossed); shape-word surfaces through accounting's own logic at n09, not through Taylor's introspection; suppression two physically distinct acts (n10/n11); breach column records cost-entry in same flat register as every other column (structural parallel = earned irony not asserted irony); capability +0.5 mechanically paired with moral_framework -1.0 as same deployment; Khepri-suppression earned not asserted
   - threshold_discipline: no fires across all four scenes; no established limits bypassed without cost; no unmotivated knowledge; no filler while plot is live; no fatigue triggers
+
+## b01c15 /and-substance chapter Phase 5 chunk review — 2026-06-04
+
+chapter: b01c15
+date: 2026-06-04
+scenes_reviewed: [b01c15s01, b01c15s02, b01c15s03, b01c15s04]
+
+verdict_per_scene:
+  b01c15s01: SUBSTANCE-FELT
+  b01c15s02: SUBSTANCE-FELT
+  b01c15s03: SUBSTANCE-FELT
+  b01c15s04: SUBSTANCE-FELT
+
+chapter_verdict: SUBSTANCE-FELT
+hard_findings: none
+SUBSTANCE-FLAT: none
+SUBSTANCE-SUSPECT: none
+overall: ACCEPT
+
+notes:
+  - s01: political_register-prot +0.5 as accumulation-not-addition is correct — a new specimen the contempt already fits; the coercive-grammar read (master-at-arms yields without being asked, boy does not accept the reduction) is the information-asymmetry-that-reshapes-the-board shape; reader sees the escalation engine before Taylor names it; routing-nothing-to-Jarvis is the right discipline enacted; no hot-button fires
+  - s02: Vhagar thermal/pressure-backwash mechanism earns social_tether-antag first half draw (+0.75 toward LOCK); this is not a victory-lap restatement — c14 confirmed the structural fact; c15 gives it physical-substrate form through the insect-body flight-musculature; the weight of the irreversible landing through the dragon's thermal residue is the correct distinction between knowing the trap and feeling its substrate
+  - s03: relational_anchor_status +1.5 is the chapter's centerpiece; the negative-shape mechanism (degraded fringe → clean absence → figure-ground readable as gap) is the physical forcing function; the world's physics make the gap visible, not Taylor's choice to look; the "person-shaped quality" must be executed at bones as a specific percept (what fringe-flies return vs. what gap returns) rather than as Taylor's interior labeling — bones-execution watch carried forward
+  - s04: zero-axis-movement accounting close is correct for a falling-arc chapter; "named absence with a shape" is the earned plateau image; not filler — structural requirement that the chapter be the space before the cascade, not the cascade itself
+  - contract-bleed soft flag: two instances of axis-slug vocabulary in chunk narrative prose (S1 lines 64-66: "The political_register-prot entry does not change..."; S3 lines 239-240: "The relational_anchor_status advances..."); acceptable at chunk stage; must not survive to bones; bones-execution watch carried forward
+  - no fatigue triggers: no filler while plot is live; no unmotivated knowledge (Vhagar thermal = world physics; gap-shape = feed contrast against degraded fringe); no established limits bypassed without cost; held axes read as load-bearing dormancy throughout
+
+threshold_discipline_check:
+  - "Character knowing something they haven't been told": no fire — Vhagar's thermal arrives through biological sensory relay; the gap's negative-shape is contrast against disrupted fringe; no unmotivated knowledge
+  - "Established limits bypassed without cost": no fire — compound-eye fringe-degradation and thermal-detection are within established capability physics; cl05 gain-side draw is properly anchored; no new mechanism invented
+  - "Canon or established fence violations": no fire — Aemond age/sapphire-eye correct for 122 AC; Vhagar backgrounded via thermal/pressure (not on-stage); Earth-Bet fence CLEAN throughout; no parahuman jargon
+  - "New character earning trust without cost": not applicable; no new characters
+  - "Slice-of-life filler when the plot is live": no fire — all four scenes are in the action; s04 plateau-close is architecturally required
+
+soft_bones_execution_watches:
+  SW-c15-1 (contract-bleed): two axis-slug sentences in S1 and S3 chunk prose must not survive to bones; bones-layer author must convert the self-commentary to enacted physical acts
+  SW-c15-2 (person-shaped percept): relational_anchor_status +1.5 hangs on whether bones execute "a person-shaped quality" as specific feed-texture (what fringe-flies return with noise vs. what gap returns as clean absence) rather than as Taylor's interior label; if bones abstract over the perceptual mechanism, the +1.5 loses its physical grounding
+  SW-c15-3 (S4 conclusion-language): "It is not invisible anymore. It is perceptible as a deliberate thing, a structure of not-covering" — bones must not render these as interior declarations; the accounting close must enact Taylor doing something with the feed, not drawing a conclusion about what she sees
