@@ -2524,3 +2524,40 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-06-05-c18-deptpass
+      created_at: 2026-06-05T06:20:00Z
+      created_by: "/and-stitch b01-c18 Phase 9 cold-read terminal gate"
+      label: depth-pass-required-before-book-close-b01c18
+      target:
+        command: /and-write
+        scope: b01c18
+        phase: null   # gates BOOK-CLOSE, NOT a chapter Phase 0 (does NOT add an unacknowledged-substantive aggregate-state entry)
+      severity: SOFT
+      description: |
+        b01c18 (the irrevocable-deployment climax) shipped SHIPPED-WITH-CAVEATS on a Class-B cold-read
+        (CONTINUE=no; central event RECOVERED + one-line summary maps to goal — "a spy runs their whole
+        network at maximum for two weeks to hand an enemy faction the intelligence they need, then shuts
+        it down and notes they'll get no credit"; cause = design-inherent interior-accounting-density /
+        no-dialogue / anti-climax (nothing-external-lands) / withheld prior-chapter motive (who is Wren/
+        Sera/Jarvis/Norren = Earth-Bet fence + c01-c17 reader context) / mechanism-opacity, ALL
+        pre-authorized in chunk_cold_read.cold_read_risk_carry per DEC-0096; auto-shipped terminal per the
+        Phase-9 SHIPPED-WITH-RISK-RECORDED coupling, mirroring c14 DEC-0085 / c15 DEC-0087 / c16 DEC-0090 /
+        c17 DEC-0094 — the FIFTH consecutive [PROP-0037 recurrence 5->6, DEC-0098]). Phase 8.5 coherence
+        PASS (central-event-muffle does-not-fire; the KHEPRI-REGISTER-SPLIT does not abstract the deployment
+        below legibility — exposition:2 @14 + before/after magnitude carry the event-weight). MANDATORY depth
+        pass before book-close (gates /and-substance book b02 Phase 0 + /and-review verdict b01). Consume via
+        /and-write b01c18 revise --from-signals + re-cascade; OR fold into /and-cohere b01 c13-c18 (the
+        now-SIX-consecutive Class-B accumulation c13-c18 — the cohere stretch handler is the named
+        accumulation lever per DEC-0095, and the more efficient path than per-chapter depth passes; DEC-0098
+        elevates PROP-0037 triage urgency to HIGH before /and-review verdict b01).
+      context_refs:
+        - active-project/staff/reviews/coldread-b01-c18-2026-06-05.md
+        - active-project/staff/reviews/coherence-b01-c18-2026-06-05.md
+        - active-project/staff/showrunner/memory.md  # chapters[b01c18].cold_read
+        - staff/admin/process-proposals.md  # PROP-0037 (depth-pass-before-book-close, open/untriaged; recurrence 6); DEC-0098
+      resolution_suggestion: "/and-cohere b01 c13-c18 (six-consecutive-Class-B accumulation handler, DEC-0095/0098) OR /and-write b01c18 revise --from-signals + re-cascade"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null

@@ -5071,7 +5071,20 @@ evidence_refs:
     poverty / interior-accounting-density / withheld-prior-chapter-motive / jargon-opacity — all
     pre-authorized at DEC-0094. Central event recovered; moral turn maps to goal. Mechanism
     functioning correctly; no argument for changing N=3 threshold."
-recurrence_count: 5
+  - "active-project/staff/reviews/coldread-b01-c18-2026-06-05.md + DEC-0098 (2026-06-05) —
+    fifth consecutive in the c14-c18 run (N=5 post-cohere-clearance; 6th data point overall
+    across both independent runs: c10/c11/c12 + c14/c15/c16/c17/c18). Cold-reader complaints:
+    event-poverty / no-dialogue / no-on-page-resistance / anti-climax-by-design — all
+    pre-authorized at DEC-0096. Central event recovered; climax shape affirmed by dramatist.
+    NEW signal vs. prior recurrences: c18 is the CLIMAX chapter; the 5th consecutive auto-ship
+    arriving at the climax intensifies the question of whether the /and-cohere b01 c13-c18 step
+    is correctly positioned as optional-before-book-close vs. a precondition. DEC-0098 (process-
+    critic) ruled: /and-cohere is correctly positioned — it is the accumulation handler, not a
+    per-chapter gate; the per-chapter coupling is functioning correctly; the depth-pass obligations
+    (c14+c18 mandatory, c15/c16/c17 Case 1 no mandatory pass) are the per-chapter layer. The
+    book-close enforcement surface belongs to /and-review verdict (the orchestrator-critic pass),
+    not a new HARD-abort. No threshold change warranted; N=3 remains correctly calibrated."
+recurrence_count: 6
 proposed_diff: |
   In .claude/commands/and-substance.md, Phase 0 — Validate + mode select, at the
   chapter b<NN>c<MM> invocation level, add a new numbered step after step 6 (Aggregate-

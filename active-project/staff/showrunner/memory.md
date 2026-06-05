@@ -10614,7 +10614,32 @@ books:
                 gate_verdict: {bonefide: true, flat: false, signals: []}
 
       - slug: b01c18
-        status: audited-r1   # /and-facets b01c18 COMPLETE 2026-06-05: 9 facets 3-of-3 ACCEPT (1 cycle); Earth-Bet fence CLEAN; FOLLOWABLE+ALIVE
+        status: drafted   # /and-stitch b01c18 COMPLETE: Phase 9 SHIPPED-WITH-CAVEATS (Class-B DEC-0096 coupling) + Phase 10; terminal deliverable draft/b01-c18.md (depth_pass before book-close)
+        stitched: true
+        draft_file: active-project/draft/b01-c18.md   # ~1025-word body; first-person past, voice-exemplar-primed (Robinson contemplative); italic preamble (exposition:1 @0); no scene-callout markers
+        coherence_review:   # /and-stitch Phase 8.5
+          reviewed_at: 2026-06-05T06:10:00Z
+          verdict: PASS
+          weave_gaps: 0
+          followability_breaks: 0
+          cold_read_risk_high: 0
+          cold_read_risk_advisory: 3   # @9 prior-architecture shape-language (fence working), @23/@27 refrain (cleared), P5 idiom-compression (self-disambiguating)
+          central_event_muffle: does-not-fire   # KHEPRI-REGISTER-SPLIT (architecture/count subject) does NOT muffle; exposition:2 @14 orient + before/after magnitude + adjacent first-person agency carry the event-weight
+          report_path: active-project/staff/reviews/coherence-b01-c18-2026-06-05.md
+        cold_read:   # /and-stitch Phase 9 terminal gate
+          read_at: 2026-06-05T06:15:00Z
+          verdict: SHIPPED-WITH-CAVEATS   # Class-B; DEC-0096 SHIPPED-WITH-RISK-RECORDED coupling auto-ship (mirrors c14 DEC-0085 / c15 DEC-0087 / c16 DEC-0090 / c17 DEC-0094 — 5th consecutive Class-B in c14-c18)
+          central_event_recovered: true   # cold-reader spine (demand->comply->deploy->court-surveil->deliver->Greens-move->shutdown->blank-ledger) + one-line summary map to goal
+          recovered_summary: "A spy runs their whole network at maximum for two weeks to hand an enemy faction the intelligence they need, then shuts it down and notes they'll get no credit for it."
+          continue: no   # pre-authorized categories: interior-accounting-density / no-dialogue / anti-climax (nothing-external-lands) / withheld prior-chapter motive (who is Wren/Sera/Jarvis/Norren = Earth-Bet fence + c01-c17 context) / mechanism-opacity (what the surveillance literally is)
+          fail_categories_all_preauthorized: true   # all complaint categories in chunk_cold_read.cold_read_risk_carry (DEC-0096); 0 NEW categories -> auto SHIPPED-WITH-CAVEATS, no retry consumed
+          report_path: active-project/staff/reviews/coldread-b01-c18-2026-06-05.md
+          readability_axis: {verdict: AIRLESS-with-caveat, basis: 'abstraction-density is the pre-authorized Class-B family risk; central event NOT-MUFFLED (Phase 8.5 PASS) + concretely oriented (exposition:2 @14 + before/after magnitude); READABLE for a c01-c17 reader; voice-embodiment person-first; fence CLEAN'}
+          depth_pass_required: true   # MANDATORY before book-close; gates /and-substance book b02 Phase 0 + /and-review verdict b01 via parking-lot (target book-close, NOT Phase 0); consume via /and-write b01c18 revise --from-signals OR fold into /and-cohere b01
+          depth_pass_resolved_at: null
+          signal_clusters: []   # no separate Step-3/3.5 staging dispatch under cascade-budget (c16/c17 precedent); DEC-0096 coupling ships SHIPPED-WITH-CAVEATS regardless; Phase 8.5 PASS + protected-patterns intact
+          stale_since: null
+        status_pre_stitch: audited-r1   # /and-facets b01c18 COMPLETE 2026-06-05: 9 facets 3-of-3 ACCEPT (1 cycle); Earth-Bet fence CLEAN; FOLLOWABLE+ALIVE
         bones_file: theater/bones/b01-c18.md
         bones_count: 46
         scene_map_file: theater/facets/scene-map-b01-c18.md

@@ -6305,3 +6305,144 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0098 | 2026-06-05 | SLOW (process-critic)
+
+mode: process-critic
+trigger:
+  reason: failure
+  source_report: active-project/staff/reviews/coldread-b01-c18-2026-06-05.md
+  source_verdict: |
+    SHIPPED-WITH-CAVEATS (Phase 9 cold-read CONTINUE=no; all complaint categories pre-authorized
+    in chunk_cold_read.cold_read_risk_carry per DEC-0096; auto-ship, no retry). Fifth consecutive
+    Class-B cold-read CONTINUE=no in the c14-c18 stretch (c14 DEC-0085 / c15 DEC-0087 /
+    c16 DEC-0090 / c17 DEC-0094 / c18 DEC-0096). Complaints: event-poverty / no-dialogue /
+    no-on-page-resistance / anti-climax-by-design. c18 is the CLIMAX chapter.
+  gate_path: .claude/commands/and-stitch.md#phase-9
+  secondary_gate_paths: [.claude/commands/and-write.md#phase-6]
+verdict: OK-MERGED-INTO PROP-0037 (recurrence_count 5->6)
+
+question: |
+  Two sub-questions from the trigger:
+  (a) Is the 5-consecutive-chapter Class-B accumulation across the collapse arc a signal that
+      the depth-pass-before-book-close mechanism needs strengthening, or that /and-cohere b01
+      c13-c18 (the accumulation handler per DEC-0095) should be elevated from optional to a
+      book-close precondition?
+  (b) Is shipping 5 consecutive chapters with CONTINUE=no — even pre-authorized — a quality-debt
+      accumulation the per-chapter Class-B disposition is structurally blind to (each chapter is
+      locally justified; the STRETCH is the problem /and-cohere is designed to catch)?
+
+decision: OK-MERGED-INTO PROP-0037 (recurrence_count 5->6). No new proposal. No threshold change.
+
+basis: |
+  Step 1 (proposals log):
+    PROP-0037 (status: open, recurrence_count: 5) targets /and-substance chapter Phase 0
+    HARD-abort at consecutive_shipped_with_caveats >= 3 without cohere_acknowledgment.
+    DEC-0095 merged c17 as count 4->5 for the second independent run. C18 is the fifth
+    consecutive in this run; recurrence_count increments to 6. No other open proposal
+    overlaps this target + change_type. No rejected proposal covers it.
+
+  Step 2 (question a — depth-pass-before-book-close mechanism):
+    Current per-chapter depth-pass obligations as of c18 ship:
+      - c10: PASS-WITH-DEPTH-PASS-REQUIRED (bone-level staging, from DEC-0066/0070)
+      - c14: mandatory per DEC-0085 (texture-level: courier-as-person, Sera-stake)
+      - c18: mandatory per DEC-0096 (HARD watches: enacted irrevocable-threshold physical act
+               + op-friction signal; SOFT accounting-close concreteness)
+      - c15/c16/c17: Case 1 SHIPPED-WITH-CAVEATS, no mandatory depth pass (all complaints
+               fully covered by design-inherent/cold-context carries; DEC-0087/0090/0095)
+    The per-chapter mechanism is correctly discriminating which chapters need depth passes
+    and which do not. The three mandatory passes (c10, c14, c18) are logged in the parking
+    lot; they are not invisible to the process — they are precisely tracked. The mechanism
+    is not blind to the stretch; the stretch has two distinct components:
+      (i) the design-inherent Class-B shipments (c11/c12/c15/c16/c17) which correctly carry
+          no depth-pass obligation because all complaints are covered by the substance contract
+      (ii) the tractable-residue chapters (c10/c14/c18) which correctly carry mandatory
+           depth passes because tractable gaps were identified
+    Strengthening the book-close mechanism would mean adding a gate that fires when these
+    mandatory depth passes remain unresolved at book-close. That gate already has a natural
+    home: /and-review verdict (the orchestrator-critic pass, which is the canonical
+    book-close command). The parking-lot items for c10/c14/c18 are the signal. No new
+    structural mechanism is needed — the existing /and-review verdict pass is the
+    enforcement surface, and PROP-0037's consecutive-counter gate fires the /and-cohere
+    obligation at chapter-start. The two-layer enforcement (PROP-0037 at chapter-start +
+    /and-review verdict at book-close) is already the correct architecture.
+
+  Step 3 (question b — is the stretch structurally invisible to the per-chapter disposition?):
+    No. The stretch is visible at two levels:
+      (i) PROP-0037 (open, untriaged) is exactly the gate that makes it visible at
+          chapter-start: consecutive_shipped_with_caveats >= 3 fires a HARD-abort unless
+          cohere_acknowledgment is present. This gate has been open since DEC-0079 (c12)
+          and is the correct enforcement surface for "the stretch is the problem."
+      (ii) The /and-cohere recommendation (run c13-c18 before book-close) has been named
+           as the accumulation handler in DEC-0087/0089/0093/0095. It is not a per-chapter
+           call; it is an explicit book-level obligation recorded in the decisions log.
+    The question "should /and-cohere be elevated from optional to book-close precondition"
+    is correctly answered: it is NOT optional under the current process. DEC-0080 established
+    that /and-cohere is required before the next chapter when consecutive count >= 3;
+    DEC-0095 names it as the mandatory accumulation handler before book-close. The process
+    already encodes the obligation; PROP-0037 is the gate that enforces it mechanically.
+    The gap is that PROP-0037 is untriaged and unimplemented — that is a triage-urgency
+    issue, not a new process-change proposal.
+
+  Step 4 (c18 climax chapter signal — does it change the analysis?):
+    c18 is the climax chapter. This is the highest-stakes ship in the stretch. However,
+    the climax PASSED every informed gate: 3/3 SUBSTANCE-FELT (Phase 5), dramatist ACCEPT
+    on correct climax shape, auditor 0-HARD on design/prose/thematic. The cold-reader's
+    CONTINUE=no is structurally identical to prior chapters — uninformed-reader artifact
+    on design-inherent causes (offstage antagonist, accounting-close IS the dramatized event,
+    Earth-Bet fence). DEC-0096 correctly identified the surviving tractable signals (items 1-3)
+    and wrote targeted cold_read_risk_carry. The climax chapter being the fifth consecutive
+    is evidence that PROP-0037 should be triaged urgently before book-close — not evidence
+    that a new proposal is needed. The right call is urgency escalation on existing open work,
+    not a new process-change proposal.
+
+  Step 5 (book-close enforcement surface question):
+    The trigger asks whether /and-cohere should become a "book-close precondition." The
+    correct book-close enforcement surface is /and-review verdict — the orchestrator-critic
+    pass. That command is the canonical checkpoint for "is the book ready to close." Adding
+    /and-cohere as a HARD-abort at /and-review verdict Phase 0 when the consecutive counter
+    is >= 3 AND no cohere_acknowledgment is present would be a clean, natural fit. However,
+    this would be a modify to /and-review verdict, and PROP-0037 is already the primary
+    enforcement proposal (targeting /and-substance chapter Phase 0). A companion proposal
+    targeting /and-review verdict is logically distinct but likely redundant with PROP-0037
+    if PROP-0037 is implemented — because PROP-0037 fires the HARD at chapter-start, which
+    means the consecutive counter cannot exceed 3 without an explicit bypass acknowledgment.
+    If PROP-0037 is not implemented, /and-review verdict is the correct fallback. But
+    authoring a second proposal now, before PROP-0037 is triaged, would add triage overhead
+    on an unsettled foundation. Hold: if PROP-0037 is rejected at triage, then a companion
+    /and-review verdict proposal becomes warranted. For now, the correct action is to surface
+    triage urgency on PROP-0037, not to author a new proposal.
+
+  Step 6 (recurrence and merge):
+    Sixth data point across two independent N=3+ runs. Merge mandatory (same target.path +
+    change_type, status: open). recurrence_count 5->6.
+
+rationale: |
+  The pre-authorization mechanism is functioning correctly for the fifth consecutive time.
+  The per-chapter coupling correctly discriminates design-inherent cold-reader artifacts from
+  delivery failures. The stretch is NOT structurally invisible — it is tracked at three levels:
+  (a) mandatory depth-pass obligations logged in the parking lot for c10/c14/c18,
+  (b) the /and-cohere accumulation handler explicitly named as a book-close obligation in
+      DEC-0087/0089/0093/0095, and (c) PROP-0037 (open, untriaged) as the mechanical gate.
+  The process gap is not that the mechanisms are absent — it is that PROP-0037 is untriaged.
+  The climax chapter being the fifth consecutive auto-ship is the strongest triage-urgency
+  signal yet for PROP-0037; it does not warrant a new proposal.
+
+  TRIAGE URGENCY NOTE for principal: PROP-0037 is the open proposal with the highest
+  accumulated evidence (recurrence_count: 6). c18 is the climax chapter. Book-close is the
+  next major milestone. PROP-0037 should be triaged before /and-review verdict b01 is invoked.
+  Companion consideration (adding a /and-review verdict Phase 0 check as a book-close fallback
+  if PROP-0037 is rejected) is noted here as a conditional follow-on, not a separate proposal.
+
+trade-off: |
+  Merging into PROP-0037 means no new triage item. The /and-cohere c13-c18 recommendation
+  and the conditional /and-review verdict fallback are operational calls living in this
+  decisions entry. If PROP-0037 is rejected at triage, the conditional follow-on surfaces
+  and a new proposal would be warranted.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
