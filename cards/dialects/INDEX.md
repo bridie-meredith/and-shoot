@@ -17,6 +17,8 @@ Schema: `schemas/card.schema.md` §behavior.
 
 ### planetos
 - [taylor-hebert-westeros](taylor-hebert-westeros.card.md) — per-character; Westeros 120 AC variant (eleven-year-old sept ward, doubled register); inherits taylor-hebert; references grrm-mannerisms + smallfolk + septon; full
+- [saerys-targaryen-behavior](saerys-targaryen-behavior.card.md) — per-character; cultivation-monologue register over courtly substrate; inherits westeros-noble-courtly; references westeros-grrm-mannerisms + comedy-register; hotd period; full
+- [comedy-register](comedy-register.card.md) — shared; cultivation-farce tonal overlay for and-experiment; inherits westeros-noble-courtly; references westeros-grrm-mannerisms; hotd period; full
 - [monument-cost-borne-by-the-unconsenting](monument-cost-borne-by-the-unconsenting.card.md) — per-character (taylor-hebert-kl-122ac); memory-monument family: Earth-Bet displacement, cost landing on unconsenting bearer; quiet-beat instrument; full
 - [monument-conquest-charter-language](monument-conquest-charter-language.card.md) — per-character (taylor-hebert-kl-122ac); memory-monument family: Westerosi-clamp, institutional language that outlives its author; quiet-beat instrument; full
 - [westeros-grrm-mannerisms](westeros-grrm-mannerisms.card.md) — shared; universal Westerosi prose eccentricities (time-keeping, X-and-twenty numbers, Anglo-Saxon morphology, universal monuments); full
@@ -34,6 +36,9 @@ Schema: `schemas/card.schema.md` §behavior.
 - [taylor-hebert](taylor-hebert.card.md) — base, library, earth-bet
 - [taylor-hebert-westeros](taylor-hebert-westeros.card.md) — variant, project, planetos; inherits taylor-hebert
 
+### saerys-targaryen
+- [saerys-targaryen-behavior](saerys-targaryen-behavior.card.md) — per-character; cultivation-monologue register; library; planetos; inherits westeros-noble-courtly
+
 ### taylor-hebert-kl-122ac
 - [monument-cost-borne-by-the-unconsenting](monument-cost-borne-by-the-unconsenting.card.md) — monument family; Earth-Bet displacement; library; planetos
 - [monument-conquest-charter-language](monument-conquest-charter-language.card.md) — monument family; Westerosi-clamp; library; planetos
@@ -48,6 +53,7 @@ Behavior pattern banks intended to be referenced by per-character cards via `inh
 
 **Universal overlay:**
 - [westeros-grrm-mannerisms](westeros-grrm-mannerisms.card.md) — composes with every Westerosi card: time-keeping (moons, name-days, fortnights), X-and-twenty numbers, *a-* prefix, Saxon compounds, recurring phrases, universal monuments (Aegon's Conquest, the Dance, etc.)
+- [comedy-register](comedy-register.card.md) — cultivation-farce tonal overlay (and-experiment); register-vs-stakes mismatch engine + gallows-voice transition; composes over westeros-noble-courtly + westeros-grrm-mannerisms
 
 **Class registers:**
 - [westeros-smallfolk](westeros-smallfolk.card.md) — baseborn; *m'lord*, double-negatives, collapsed-tense, Faith-conversational

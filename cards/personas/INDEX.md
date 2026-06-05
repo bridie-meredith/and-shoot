@@ -40,6 +40,11 @@ planetos:
   - aemond-targaryen
   - aemond-targaryen-122ac
   - alicent-hightower-122ac
+  - daenys-velaryon
+  - helaena-targaryen-122ac
+  - nymeria-summer-isles
+  - saerys-targaryen
+  - ser-harwin-the-patient
   - beric-dondarrion
   - census-officer
   - clerk
@@ -116,6 +121,11 @@ planetos:
 
 full:
   - alicent-hightower-122ac
+  - daenys-velaryon
+  - helaena-targaryen-122ac
+  - nymeria-summer-isles
+  - saerys-targaryen
+  - ser-harwin-the-patient
   - beric-dondarrion
   - mira-stonefield-dragon-gate
   - oc-apothecary-assistant
@@ -231,7 +241,7 @@ brutal-pragmatist: [lem-lemoncloak]
 dying-cause: [beric-dondarrion]
 faith-recovered: [thoros-of-myr]
 corrupt-official: [ser-harwick-plumm, oc-castellan-harrenhal, oc-watch-captain-dragon-gate, oc-rung3-steward]
-targaryen-era: [rhaenyra-targaryen, rhaenyra-targaryen-122ac, rhaenys-targaryen, viserys-i-targaryen, ser-edwyn-celtigar, aegon-ii-targaryen, aemond-targaryen, aemond-targaryen-122ac, alicent-hightower-122ac, criston-cole-122ac, otto-hightower, ulf-the-white, oc-vaegon-targaryen, oc-lyra-targaryen-ward, oc-maester-edwyn, sera-hightower-kl-122ac, wren-stitch-maker-flea-bottom-ward, gylda-saltwater-flea-bottom, coll-net-mender-flea-bottom, corvan-archmaester-retrospective-coda]
+targaryen-era: [rhaenyra-targaryen, rhaenyra-targaryen-122ac, rhaenys-targaryen, viserys-i-targaryen, ser-edwyn-celtigar, aegon-ii-targaryen, aemond-targaryen, aemond-targaryen-122ac, alicent-hightower-122ac, criston-cole-122ac, otto-hightower, ulf-the-white, oc-vaegon-targaryen, oc-lyra-targaryen-ward, oc-maester-edwyn, sera-hightower-kl-122ac, wren-stitch-maker-flea-bottom-ward, gylda-saltwater-flea-bottom, coll-net-mender-flea-bottom, corvan-archmaester-retrospective-coda, saerys-targaryen, helaena-targaryen-122ac, daenys-velaryon, ser-harwin-the-patient, nymeria-summer-isles]
 riverlands-power: [ser-aemon-bracken]
 faith-operator: [septon-rowan]
 hedge-knight: [rymer-hedge]

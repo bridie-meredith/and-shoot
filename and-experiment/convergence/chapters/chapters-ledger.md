@@ -84,6 +84,28 @@ Outlines: `round-01/gen-A.md` (comedy/pacing, 30ch), `gen-B.md` (emotional-arc, 
 
 ---
 
-## Round 2 — chapter fusion pass (running)
-One continuous 30-chapter (10/10/10) outline implementing critique.md §5 + the rulings (B-over-C
-fusion) → `round-02/fusion.md` → scoped critic re-validation.
+## Round 2 — chapter fusion pass · VERDICT: CONVERGED ✅
+
+Accepted chapter outline: `round-02/fusion.md`. Eval: `round-02/critique.md`.
+Realizes the §5 skeleton slug-for-slug (30ch, 10/10/10). All 7 chapter-level criteria PASS. Every
+required beat placed in a working named chapter (grind-and-swallow I.1 · DN-6 first-pest I.6 · T3
+agency-patch I.8 · three Locks each set up the chapter before · orphaned-seal I.9→III.1→III.10 ·
+four heist mechanisms pre-staged so III.10 invents nothing · betrothal retired III.1 · crew-retask
+planted III.4). T-β verified against the body (every casualty fires from a named gift plant AND has a
+warm present-tense chapter before its cold spend). T-α/T-γ/T4/DN-5 honored.
+
+**Correction:** the Round-0 shorthand above (T1 break at III.5/III.6) is the stale gen-B placement;
+§5 superseded it to **III.8 (absence) + III.9 (re-seal)**, and fusion.md correctly follows §5.
+
+**Drafting notes carried to the bones stage (calibration, not blockers — full list in round-02/critique.md):**
+the III.5–III.8 low-volume back-stretch (III.7 airless watch) · thicken Viserys's warmth so his spend
+lands · the gift→spend cadence reads as a chart (fix lives in prose register) · + the inherited DN-1..6.
+
+---
+
+## ★ ACCEPTED CHAPTER OUTLINE — `and-experiment/convergence/chapters/round-02/fusion.md`
+30 chapters, 10/10/10. Converged at chapter-R2. Realizes the accepted spine
+(`../round-03/fusion-v2.md`). This is the build target for the bones stage.
+
+**Chapter loop summary (2 rounds):** R1 diverge (3 lenses → ITERATE + 30ch skeleton) → R2 fuse
+(1 pass → CONVERGED). Process spec: `design/bones-first/convergence-process.md`. **CONVERGED.**

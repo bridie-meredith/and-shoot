@@ -57,10 +57,14 @@ series:
     and-experiment/convergence/round-03/fusion-v2.md  (supersedes design/bones-first/run-01/book-outlines.md).
     Unifying mechanism: the Cauldron-Belly (stomach-as-cauldron); power is poison + logistics, never martial.
     Convergence record: and-experiment/convergence/convergence-ledger.md.
+    CONVERGED CHAPTER OUTLINE (30ch, 10/10/10): and-experiment/convergence/chapters/round-02/fusion.md
+    (record: and-experiment/convergence/chapters/chapters-ledger.md). Gap cards provisioned by margit
+    (warehouse/ + library): saerys-targaryen(+behavior), viserys-i-targaryen, helaena-targaryen-122ac,
+    daenys-velaryon, ser-harwin-the-patient, nymeria-summer-isles, saerys-septa, comedy-register, loc-red-keep-interior.
   structure:
     book_count: 3
     book_length:
-      chapters_per_book: ~        # TBD at reverse-derivation
+      chapters_per_book: 10       # converged (10/10/10) — chapters/round-02/fusion.md
       scenes_per_chapter: ~
       bones_per_scene: ~
     cyclical: false
