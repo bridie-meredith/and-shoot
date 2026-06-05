@@ -6028,3 +6028,93 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0095 | 2026-06-05 | SLOW (process-critic)
+
+mode: process-critic
+trigger:
+  reason: failure
+  source_report: active-project/staff/reviews/coldread-b01-c17-2026-06-05.md
+  source_verdict: |
+    SHIPPED-WITH-CAVEATS (Class-B; DEC-0094 SHIPPED-WITH-RISK-RECORDED coupling auto-ship;
+    CONTINUE=no on event-poverty / interior-accounting-density / withheld-prior-chapter-motive /
+    jargon-opacity — all pre-authorized in cold_read_risk_carry per DEC-0094). Fourth
+    consecutive in the c14-c17 sequence; fifth data point overall across both independent runs
+    (c10/c11/c12 + c14/c15/c16/c17).
+  gate_path: .claude/commands/and-stitch.md#phase-9
+  secondary_gate_paths: [.claude/commands/and-write.md#phase-6]
+verdict: OK-MERGED-INTO PROP-0037 (recurrence_count 4->5)
+
+question: |
+  Four consecutive Class-B SHIPPED-WITH-CAVEATS (c14/c15/c16/c17) auto-shipping on the
+  same uninformed-reader-artifact family (event-poverty, interior-accounting-density,
+  withheld prior-chapter motive). Is this (a) a correctly-functioning pre-authorization
+  mechanism doing its job, or (b) a process gap where the auto-ship coupling is masking
+  accumulating real readability debt that /and-cohere should be catching at the stretch
+  level?
+
+decision: OK-MERGED-INTO PROP-0037 (recurrence_count 4->5). No new proposal.
+
+basis: |
+  Step 1 (proposals log):
+    PROP-0037 (status: open) targets /and-substance chapter Phase 0 HARD-abort at
+    consecutive_shipped_with_caveats >= 3 without cohere_acknowledgment. DEC-0093 merged
+    c16 as count 3->4 for the second independent run. C17 is the fourth consecutive in this
+    run; recurrence_count increments to 5. No other open proposal overlaps this target +
+    change_type. No rejected proposal covers it.
+
+  Step 2 (framing question — option A vs B):
+    Option A (mechanism working correctly): confirmed. The cold-reader's CONTINUE=No findings
+    map entirely to pre-authorized categories established at DEC-0094: (a) event-poverty /
+    interior-accounting-density = design-inherent multi-chapter falling arc contract
+    (series-audit-approved); (b) withheld prior-chapter motive = Earth-Bet fence + serial
+    mid-point context noise; (c) jargon opacity = design-inherent serial mid-point. The
+    cold-reader is structurally uninformed — no serial context, no prior chapters. The
+    coupling rule was designed to discriminate exactly this artifact from a genuine delivery
+    failure. The cold-read report confirms the central event was recovered (§6 summary
+    accurate) and the moral turn maps to goal. The coupling is doing its job.
+
+    Option B (masking accumulating debt): the accumulation handler is /and-cohere, not the
+    per-chapter coupling rule. The per-chapter depth passes (c14/c15/c16/c17) target bone-
+    level defects. /and-cohere is the cross-chapter accumulation handler. The correct
+    resolution sequence — mandatory depth passes per chapter, then /and-cohere c13-c17
+    before book-close — is identical to the DEC-0093 ruling at N=3 and DEC-0089 ruling at
+    N=2. Not a process gap; correct sequence already encoded in existing decisions.
+
+  Step 3 (book-structural question):
+    DEC-0089 ruled "adding a structural gate on 'no more than N consecutive falling chapters'
+    would be a taste-gate on architectural story structure, which is human-only territory."
+    DEC-0093 confirmed at N=3. N=4 does not change this ruling — the c14-c17 arc is
+    series-audit-approved with dramatist ACCEPT on each chapter. No escalation warranted.
+
+  Step 4 (recurrence and merge):
+    Fifth data point across two independent N=3+ runs. Merge mandatory (same target.path +
+    change_type, status: open). recurrence_count 4->5.
+
+  Step 5 (methodology):
+    Reversibility: merge into existing open proposal. Cost: S-cost append.
+    Optionality: /and-cohere c13-c17 before book-close named in DEC-0087/0089/0093 — no
+    additional process change needed to surface it.
+    Convention: DEC-0089 (N=2), DEC-0093 (N=3), this dispatch (N=4) — consistent hold.
+
+rationale: |
+  The pre-authorization mechanism is functioning correctly. The coupling correctly
+  discriminated uninformed-reader artifacts from genuine delivery failures. Auto-ship is
+  not masking debt — the debt is tracked via mandatory per-chapter depth-pass obligations
+  in the parking lot. /and-cohere is the named accumulation handler; the correct sequence
+  is: depth passes first, then /and-cohere c13-c17 before book-close.
+
+  PROP-0037 merge: second independent N=4 run confirms N=3 threshold is correctly
+  calibrated. No evidence for changing the threshold in either direction.
+
+trade-off: |
+  Merging into PROP-0037 keeps triage burden minimal. The /and-cohere c13-c17
+  recommendation is an operational call, not a process-change proposal — it lives in
+  this decisions entry and DEC-0087/0089/0093.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no

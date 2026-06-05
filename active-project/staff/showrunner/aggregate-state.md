@@ -1,7 +1,51 @@
 # Aggregate State — taylor-westeros-good-intentions
 
 # Rolling forward-feed channel for cross-chapter narrative continuity (schema: schemas/aggregate-state.schema.md).
-# Producer: /and-stitch Phase 10 (forward-thread). Consumer: /and-substance chapter b01c17 Phase 0.
+# Producer: /and-stitch Phase 10 (forward-thread). Consumer: /and-substance chapter b01c18 Phase 0.
+# Scoped through b01c17. c17 rolled (rising, d11; the COLLAPSE-ACTIVATION chapter — both collapse axes fire their first -1.0
+#   allocation; the use-vector intercept / false-attribution forge; from chapters[b01c17].substance_delta_measured):
+#   capability +1.0 (->8.5; the protection-deployment adds SCOPE — the network expands into deliberate record-MODIFICATION:
+#     Taylor routes a false attribution through the gap documentation to screen Wren from Otto's apparatus query; the
+#     architecture now does false-record-construction, not just observation; cl05-family gain-side at single-corridor scale.
+#     last_movement_at b01c17).
+#   moral_framework -1.0 (->-3; the THIRD material breach in the cascade — the forge is ENACTED: three false log-lines
+#     attributing Wren's east-of-water-gate signature to Elder Norren @11 ('the ledger that never carried names now carried
+#     one I had put there'); cl03a cost-side COMPLETES (intelligence-network-build cost rolls over to use-vector-deployment);
+#     the override architecture she came to retire, returned at the size of one corridor (@7 'identical in kind'). last_movement_at b01c17).
+#   relational_anchor_status +0.5 (->7.5; cl-d11 — Wren SCREENED, anchor rises; the gain (Wren safe) and the cost (an
+#     innocent man falsely placed) arrive as ONE event @13 'the gain and the cost arriving as one entry, Wren safe inside a
+#     record that was false'; the un-priced item the calculus comes for at d14. last_movement_at b01c17).
+#   position-prot-collapse -1.0 (->6; collapse axis ACTIVATED — FIRST downward allocation; cl07b: the false record makes the
+#     position-of-no-exit (named c14) DEEPER — '@11 Extraction would now mean resolving what was written; the false entry was
+#     a structural element of everything the tether stood on'; LATENT-ARMED -> ACTIVE/declining. last_movement_at b01c17).
+#   social_tether-prot-collapse -1.0 (->7; collapse axis ACTIVATED — FIRST downward allocation; cl07a: the false attribution
+#     is now STRUCTURAL to the tether — 'the protection and the trap were the same three lines' @11; LATENT-ARMED -> ACTIVE/
+#     declining. last_movement_at b01c17).
+#   HELD: moral_legibility_to_self 6.5 (the override-echo recognition SURFACED @7 — 'the screen-option read identical to the
+#     architecture I carried the prohibition against' — but explicitly NOT opened: '@7 I did not open the recognition the rest
+#     of the way... held it at the edge'; crack-level, full recognition deferred to d14). social_tether-prot-rise 8.5 (peak;
+#     rise complete, collapse now carries the arc), position-prot-rise 6.0, political_register-prot 5.5, social_tether-antag
+#     9.0 (9-LOCK), position-world 7, political_register-world 7.
+#   COLLAPSE-CASCADE OPENED: both collapse axes (social_tether-prot-collapse + position-prot-collapse) are now ACTIVE/declining
+#     — c16 armed them (arithmetic visible, rank unchanged), c17 FIRES them (first -1.0 each). The collapse arc's terminus is
+#     the d14 catastrophe; the un-priced relational_anchor (Wren at 7.5) is the item the calculus comes for.
+#   NEW hook-0017: a FALSE ATTRIBUTION now sits in Otto's apparatus intelligence picture (Elder Norren's name on Wren's
+#     east-of-water-gate gap-movements) — permanent structural feature of the record that will accumulate every future
+#     observation under Norren's name; structural RISK if discovered (extraction = resolving what was written). The c17 plant.
+#   hook-0008 (collapse-axis arming, c16 LATENT-ARMED) FIRED@c17 — the two collapse hooks are no longer latent but active
+#     declining arcs. NEW character Elder Norren (false-attribution placeholder, named-once-functional, not an on-page actor;
+#     his real twice-weekly east-of-water-gate corridor passage is the rationale that makes the forge plausible). Wren
+#     last_appearance ->b01c17 (named twice in active register; screened-but-safe; reader_legibility high). world_state:
+#     Otto's apparatus picture now carries a FALSE attribution (permanent structural feature); the-tallow-render-works
+#     (Taylor's rented room) + east-of-water-gate corridor consistent with c12/c15 geography.
+#   0 threading edits applied (every callback already on-page — the Norren attribution @9/@11, the Khepri-echo @7, the cost-
+#     ledger blank @15, the Wren second-step hesitation @3/@7/@13; the collapse-arithmetic on-page); STATE-DRIFT none;
+#     0 revision_layer entries (0 cosmetic + 0 presentation-reinforcement + 0 substantive + 0 uncertain); PASS-THREAD;
+#     0 substantive parking-lotted; 0 unacknowledged-substantive (b01c18 Phase 0 CLEAR).
+#   NOTE: the c17 cold-read SHIPPED-WITH-CAVEATS depth_pass_required:true (DEC-0094 Class-B pre-authorized event-poverty /
+#     interior-accounting-density / withheld prior-chapter motive (Earth-Bet fence + c01-c16 context) / jargon-opacity) gates
+#     BOOK-CLOSE via a parking-lot item (target /and-write book-close, NOT Phase 0); it is NOT a Phase-10 threading finding and
+#     does NOT add an unacknowledged-substantive revision_layer entry — c18's /and-substance chapter Phase 0 stays CLEAR.
 # Scoped through b01c16. c16 rolled (aftermath, precinct-scale; the Halvard walk-away / foreclosure-by-behavior chapter;
 #   from chapters[b01c16].substance_delta_measured):
 #   moral_legibility_to_self +0.5 (->6.5; the walk-away CRACK expressed as BEHAVIOR — Taylor walks away from Halvard
@@ -173,26 +217,26 @@ aggregate_state:
   version: 1
   project: taylor-westeros-good-intentions
   through_book: b01
-  through_chapter: b01c16
-  last_updated: 2026-06-04T17:00:00Z   # c16 aftermath/precinct-scale threaded (Halvard walk-away / foreclosure-by-behavior): 1 axis moved (moral_legibility_to_self +0.5 -> 6.5 — the walk-away crack expressed as BEHAVIOR, first movement since c14's suppressed @21 hold; @13 'Knowing what I did had never been the variable that stopped me'), all others HELD (moral_framework -2, capability 7.5, social_tether-prot-rise 8.5, position-prot-rise 6.0, relational_anchor_status 7.0, political_register-prot 5.5, social_tether-antag 9.0 9-LOCK, position-world 7, political_register-world 7). COLLAPSE-AXES dormant -> LATENT-ARMED (social_tether-prot-collapse 8 + position-prot-collapse 7; the position-arithmetic 'worth less to hold than it costs' became VISIBLE to Taylor at the fence-rail @7, RANK unchanged — c17 fires the collapse events at -1.0 each). hook-0007 (Halvard counter, paid/foreclosed@c13) RE-CONFIRMED FORECLOSED@c16 by behavior (the walk-away IS the foreclosure's payoff landing); no new hook. septon-halvard-flea-bottom ON-PAGE@c16 (last_appearance ->b01c16; reader_legibility high; counter foreclosed-by-behavior, functional exit). No new characters (old man/woman/child unnamed walk-ons). No new world_state (sept-corner = the-chandler-corner, established c07/c09/c13). No new open_hooks. 0 threading edits applied (every callback already on-page — 'third time he found me at this corner' @7, fence-rail position-arithmetic @7, moral_legibility behavior-crack @13-@15; eastern-gap/Wren + Otto-arrangement threads correctly ABSENT, precinct-scale not court/feed-routing, not a drop); STATE-DRIFT none; 0 revision_layer entries (0 cosmetic + 0 presentation-reinforcement); PASS-THREAD; 0 substantive parking-lotted; 0 unacknowledged-substantive (b01c17 Phase 0 CLEAR). NOTE: the c16 cold-read SHIPPED-WITH-CAVEATS depth_pass_required:true (DEC-0090 pre-authorized event-poverty/jeopardy-offstage/quiet-aftermath/argument-foreclosed-not-dramatized) gates BOOK-CLOSE via open pl-2026-06-04-c16-001 (target /and-write book-close, NOT Phase 0); NOT a Phase-10 threading finding; does NOT add an unacknowledged-substantive revision_layer entry.
+  through_chapter: b01c17
+  last_updated: 2026-06-05T01:00:00Z   # c17 = COLLAPSE-ACTIVATION chapter, threaded (the use-vector intercept / false-attribution forge): both collapse axes fire their FIRST -1.0 allocation (position-prot-collapse 7->6, social_tether-prot-collapse 8->7; LATENT-ARMED -> ACTIVE/declining — c16 armed, c17 fires). 5 axes moved: capability +1.0 ->8.5 (deployment adds scope — network expands into deliberate record-MODIFICATION/false-attribution), moral_framework -1.0 ->-3 (THIRD material breach — the forge ENACTED, cl03a cost-side completes; @11 'the ledger that never carried names now carried one I had put there'), relational_anchor_status +0.5 ->7.5 (cl-d11; Wren SCREENED, gain-and-cost one event @13), position-prot-collapse -1.0 ->6 (cl07b; the false record makes position-of-no-exit deeper), social_tether-prot-collapse -1.0 ->7 (cl07a; false attribution now structural to the tether — 'the protection and the trap were the same three lines'). HELD: moral_legibility_to_self 6.5 (override-echo recognition SURFACED @7 but explicitly NOT opened — 'I did not open the recognition the rest of the way... held it at the edge'; crack-level, full recognition deferred to d14), social_tether-prot-rise 8.5 (peak), position-prot-rise 6.0, political_register-prot 5.5, social_tether-antag 9.0 9-LOCK, position-world 7, political_register-world 7. NEW hook-0017 (false attribution — Elder Norren's name on Wren's gap-movements in Otto's apparatus picture; permanent, accumulating future observations; structural risk if discovered). hook-0008 (collapse arming, c16 LATENT-ARMED) FIRED@c17 -> active declining arcs (terminus d14 catastrophe). NEW character Elder Norren (false-attribution placeholder; named-once-functional; not on-page actor). Wren last_appearance ->b01c17 (screened-but-safe; named twice; reader_legibility high). world_state: Otto's apparatus picture now carries a FALSE attribution (permanent structural feature); the-tallow-render-works (Taylor's rented room) + east-of-water-gate corridor consistent with c12/c15 geography; cascade zone — both collapse axes in motion. 0 threading edits applied (every callback already on-page — Norren attribution @9/@11, Khepri-echo @7, cost-ledger blank @15, Wren second-step hesitation @3/@7/@13); STATE-DRIFT none; 0 revision_layer entries (0 cosmetic + 0 presentation-reinforcement + 0 substantive + 0 uncertain); PASS-THREAD; 0 substantive parking-lotted; 0 unacknowledged-substantive (b01c18 Phase 0 CLEAR). NOTE: the c17 cold-read SHIPPED-WITH-CAVEATS depth_pass_required:true (DEC-0094 Class-B pre-authorized event-poverty/interior-accounting-density/withheld prior-chapter motive (Earth-Bet fence + c01-c16 context)/jargon-opacity) gates BOOK-CLOSE via a parking-lot item (target /and-write book-close, NOT Phase 0); NOT a Phase-10 threading finding; does NOT add an unacknowledged-substantive revision_layer entry.
   last_updated_by: and-stitch-phase-10
 
   axis_state:
     - axis: moral_framework
-      rank: -2
+      rank: -3
       start_rank: 2
-      delta_since_start: -4
-      last_movement_at: b01c12
+      delta_since_start: -5
+      last_movement_at: b01c17
       last_updated_by: and-stitch-phase-10
-      notes: "monotonic collapse; c03 first price-tagged breach (-1.0, cl02) + c06 first named-person delivery (-1.0, cl-d06) + c10 -1.0 (cl03a cost side: Corwick body-map delivered and deployed against a named person now detained; systematic-override-rationalized threshold crossed) + c12 -1.0 (cl05 cost side: irrevocable-Khepri-repetition threshold crossed at full-feed scale @42; the internal accounting's natural shape-word is the Khepri name, surfaced for one count and SUPPRESSED — the suppression IS the breach-column ledger entry; systematic-override now irrevocable at full scale). rank -2 = prohibition fully a calculable variable + override systematic + the architecture now structurally irrevocable; c07/c08 HELD (consolidation + un-logged Oswyn integration); c09/c11 HELD"
+      notes: "monotonic collapse; c03 first price-tagged breach (-1.0, cl02) + c06 first named-person delivery (-1.0, cl-d06) + c10 -1.0 (cl03a cost side: Corwick body-map delivered and deployed against a named person now detained; systematic-override-rationalized threshold crossed) + c12 -1.0 (cl05 cost side: irrevocable-Khepri-repetition threshold crossed at full-feed scale @42; the internal accounting's natural shape-word is the Khepri name, surfaced for one count and SUPPRESSED — the suppression IS the breach-column ledger entry; systematic-override now irrevocable at full scale) + c17 -1.0 (->-3; the THIRD material breach in the cascade — the forge is ENACTED: Taylor writes three false log-lines attributing Wren's east-of-water-gate movement-signature to Elder Norren, an innocent man @11 'A presence in the corridor, the date, attributed to a body that had not been in it... the ledger that never carried names now carried one I had put there.' cl03a cost-side COMPLETES: the intelligence-network-build cost rolls over to use-vector-deployment — the override architecture she came here to retire returned at the size of one corridor, @7 'smaller in count, identical in kind.' Not delivery-of-a-true-name now but CONSTRUCTION-of-a-false-one against a person who had not chosen the corridor). rank -3 = prohibition fully a calculable variable + override systematic + architecture structurally irrevocable + now actively FALSIFYING records against innocents at single-person scale; c07/c08 HELD; c09/c11/c13/c14/c15/c16 HELD"
 
     - axis: capability
-      rank: 7.5
+      rank: 8.5
       start_rank: 2
-      delta_since_start: 5.5
-      last_movement_at: b01c15
+      delta_since_start: 6.5
+      last_movement_at: b01c17
       last_updated_by: and-stitch-phase-10
-      notes: "ESTIMATE-DIVERGENCE (pre-c12) — measured-delta path (c01 +1.0 / c04 +2.0 measured / c08 +0.5) = 5.5; handoff_out narratives carried 5.0 (stale lineage pre-c04 +1.5→+2.0 /and-write redo). c12 +1.0 (cl05 gain side, two tranches: s01 first ward-cluster +0.5 + s04 second ward-cluster +0.5 = full-deployment threshold crossed) -> 6.5; recorded at measured-authoritative 6.5. c12 = architecture complete in scope: all five wards + Flea Bottom approaches mapped simultaneous, the-muddy-way ward added (last cluster). c15 +1.0 (cl05 gain-side COMPLETE: the Aemond observation adds SCOPE — the passage-adjacent ward abutting the court's traffic returns a court-tier specimen the coverage reads behaviorally through compound eyes (specimen-accumulation, the two-runs-is-a-finding read @7); coverage acknowledged fully load-bearing. The cost-side moral_framework -1 was already paid c12, so c15 draws the gain-side only). c08 added Oswyn watcher-network integration (Khepri-echo in method); c02/c03/c05/c06/c07/c09/c10/c11/c13/c14 HELD"
+      notes: "ESTIMATE-DIVERGENCE (pre-c12) — measured-delta path (c01 +1.0 / c04 +2.0 measured / c08 +0.5) = 5.5; handoff_out narratives carried 5.0 (stale lineage pre-c04 +1.5→+2.0 /and-write redo). c12 +1.0 (cl05 gain side, two tranches: s01 first ward-cluster +0.5 + s04 second ward-cluster +0.5 = full-deployment threshold crossed) -> 6.5; recorded at measured-authoritative 6.5. c12 = architecture complete in scope: all five wards + Flea Bottom approaches mapped simultaneous, the-muddy-way ward added (last cluster). c15 +1.0 (cl05 gain-side COMPLETE: the Aemond observation adds SCOPE — the passage-adjacent ward abutting the court's traffic returns a court-tier specimen the coverage reads behaviorally through compound eyes (specimen-accumulation, the two-runs-is-a-finding read @7); coverage acknowledged fully load-bearing. The cost-side moral_framework -1 was already paid c12, so c15 draws the gain-side only). c17 +1.0 (->8.5; the protection-deployment adds SCOPE — the network expands beyond observation into deliberate record-MODIFICATION: Taylor routes a FALSE attribution through the gap documentation, writing three false log-lines @11 to screen Wren from Otto's apparatus query. The capability now constructs false records, not just reads true ones — a new operational register at single-corridor scale; the protection deployment IS the capability expansion). c08 added Oswyn watcher-network integration (Khepri-echo in method); c02/c03/c05/c06/c07/c09/c10/c11/c13/c14/c16 HELD"
 
     - axis: position-prot-rise
       rank: 6.0

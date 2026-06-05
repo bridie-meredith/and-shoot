@@ -9775,7 +9775,7 @@ books:
                 substance_delta: {axis_moves: [], axes_held: [{axis: capability, rationale: "feed returned to coverage density; circuit continues; architecture at routine operational state post-encounter; held at 7.5"}], cost_ledger_anchor: null}
 
       - slug: b01c17
-        status: bones-written   # /and-write b01c17 Phase 7 emit: 36 bones / 4 scenes; bone-gate PASS (0 HARD after fixer SVO-form pass); enactment-gate pl-c17-002 MET
+        status: drafted   # /and-stitch b01c17 COMPLETE: Phase 9 SHIPPED-WITH-CAVEATS (Class-B DEC-0094 coupling) + Phase 10; terminal deliverable draft/b01-c17.md (depth_pass before book-close)
         bones_file: theater/bones/b01-c17.md
         bones_count: 36
         scene_map_file: theater/facets/scene-map-b01-c17.md
@@ -9819,6 +9819,29 @@ books:
           bidirectional_loop: one-sided   # auditor 9 schema-form signals; audience 0 content callouts (disjoint); audience confirmed all 9 non-blocking
           voice_fixable_carry: ['data-return verb-variation @29/@32/@35/@36', 'hold-accounting-register at @12/@16 crack (RECOGNITION-AS-ARITHMETIC-NOT-FEELING)']   # -> /and-stitch Phase 4
           orchestrator_critic: {result: SUCCESS, note: '10/10 facets 3-of-3; 0 HARD; fence clean; FOLLOWABLE+ALIVE; metaphor refuse-by-default correct; the airless-risk (s02) resolved by grounding pair'}
+        draft_file: active-project/draft/b01-c17.md   # 933-word body; first-person past, voice-exemplar-primed; no preamble (exposition scene-anchored @21/@29)
+        coherence_review:   # /and-stitch Phase 8.5
+          reviewed_at: 2026-06-05T00:50:00Z
+          verdict: PASS
+          weave_gaps: 0
+          followability_breaks: 0
+          cold_read_risk_high: 0
+          cold_read_risk_advisory: 2   # @22 antecedent ambiguity (resolves in-para); jargon-opacity (pre-authorized DEC-0094 fence)
+          central_event_muffle: does-not-fire   # the forge lands as deliberate falsification, not muffled paperwork
+          report_path: active-project/staff/reviews/coherence-b01-c17-2026-06-05.md
+        cold_read:   # /and-stitch Phase 9 terminal gate
+          read_at: 2026-06-05T00:50:00Z
+          verdict: SHIPPED-WITH-CAVEATS   # Class-B; DEC-0094 SHIPPED-WITH-RISK-RECORDED coupling auto-ship (mirrors c14 DEC-0085 / c15 DEC-0087 / c16 DEC-0090)
+          central_event_recovered: true   # the false-attribution forge is in the cold-reader's events + one-line summary ('re-committed, small-scale, the sin they fled')
+          recovered_summary: "An unnamed surveillance operative recognizes a woman she has been secretly shielding in an apparatus query, then falsifies her own logbook to attribute the movements to an innocent man, and the deflection is accepted three days later."
+          continue: no   # pre-authorized categories: event-poverty / interior-accounting-density / withheld prior-chapter motive (Wren + override-architecture = Earth-Bet fence + c01-c16 context) / jargon-opacity
+          fail_categories_all_preauthorized: true   # all 3 FAIL reasons in chunk_cold_read.cold_read_risk_carry (DEC-0094); 0 NEW categories -> auto SHIPPED-WITH-CAVEATS, no retry consumed
+          report_path: active-project/staff/reviews/coldread-b01-c17-2026-06-05.md
+          readability_axis: {verdict: AIRLESS-with-caveat, basis: 'abstraction-density is the pre-authorized Class-B family risk; central event concretely staged + Phase 8.5 PASS; READABLE for a c01-c16 reader; voice-embodiment applied person-first'}
+          depth_pass_required: true   # MANDATORY before book-close; gates /and-substance book b02 Phase 0 + /and-review verdict b01; consume via /and-write b01c17 revise --from-signals
+          depth_pass_resolved_at: null
+          signal_clusters: []   # no separate Step-3/3.5 staging dispatch under cascade-budget (c16 precedent); DEC-0094 coupling ships SHIPPED-WITH-CAVEATS regardless; Phase 8.5 PASS + protected-patterns intact
+          stale_since: null
         chunk: |
           The use-vector intercept: d11. Otto's apparatus identifies a vector targeting Wren —
           not by name, but by pattern (a woman who moves through the east-of-water-gate

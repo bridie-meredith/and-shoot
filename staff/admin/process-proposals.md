@@ -5065,7 +5065,13 @@ evidence_refs:
     second independent N=3 run: c14/c15/c16 all SHIPPED-WITH-CAVEATS on quiet-falling-chapter
     pattern post-cohere-clearance. Consecutive count = 3 (matching c10/c11/c12 first run).
     DEC-0093 confirms N=3 threshold correctly calibrated; no argument for N=2 or N=4 change."
-recurrence_count: 4
+  - "active-project/staff/reviews/coldread-b01-c17-2026-06-05.md + DEC-0095 (2026-06-05) —
+    fourth consecutive in the c14-c17 run (N=4 post-cohere-clearance); fifth data point overall
+    across both independent runs (c10/c11/c12 + c14/c15/c16/c17). Cold-reader complaints: event-
+    poverty / interior-accounting-density / withheld-prior-chapter-motive / jargon-opacity — all
+    pre-authorized at DEC-0094. Central event recovered; moral turn maps to goal. Mechanism
+    functioning correctly; no argument for changing N=3 threshold."
+recurrence_count: 5
 proposed_diff: |
   In .claude/commands/and-substance.md, Phase 0 — Validate + mode select, at the
   chapter b<NN>c<MM> invocation level, add a new numbered step after step 6 (Aggregate-
