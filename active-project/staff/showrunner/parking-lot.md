@@ -2637,10 +2637,11 @@ parking_lot:
         chunk cold-read that is NOT auto-dispositioned at /and-stitch Phase 9 — it is
         tractable and must be staged concretely upstream.
       resolution_suggestion: "Phase 1 scene-decomposition: ensure s04 has a concrete central-event bone staging the shuttered-window/empty-corner instrument of the inference; Phase 6 verifies EVENT-NOT-CONCRETE clean on the s04 central event."
-      status: open
-      resolved_at: null
-      resolved_by: null
-      resolution_note: null
+      status: resolved
+      resolved_at: 2026-06-05T18:30:00Z
+      resolved_by: "/and-write b01c19 Phase 6 bone-gate (auditor EVENT-NOT-CONCRETE clean on s04)"
+      resolution_note: |
+        s04 witch-label-reach staged concretely on-page: @28 the second-bell passes the empty Tallow Croft corner, @29 the vat-house shutter closes the window (against forty-three prior-open approaches), @31 daven absents the corner, @34 the coverage-map drops the daven node. Auditor Phase 6 confirmed EVENT-NOT-CONCRETE does not fire; the inference is carried by physical instruments, not inferred-off-page abstraction. HARD watch satisfied. (Stitch must preserve LABEL-REACH-CONCRETE per scene-map protected-patterns; a stitch-layer revert to interior inference reopens this as a NEW non-auto-dispositioned Phase-9 finding per DEC-0099.)
 
     - id: pl-2026-06-05-c19-002
       created_at: 2026-06-05T00:00:00Z
@@ -2689,10 +2690,11 @@ parking_lot:
           not a resolution-beat — this is primarily a /and-stitch Phase 4 register
           concern (see pl-2026-06-05-c19-004) but the bones must not pre-resolve it.
       resolution_suggestion: "/and-write Phase 1 honors CFR-1 (enumeration-act bones) + CFR-2 (two-bone beside-distinction); Phase 6 verifies."
-      status: open
-      resolved_at: null
-      resolved_by: null
-      resolution_note: null
+      status: resolved
+      resolved_at: 2026-06-05T18:30:00Z
+      resolved_by: "/and-write b01c19 Phase 4+6 audience bone-gate (CFR-1 + CFR-2 CLOSED)"
+      resolution_note: |
+        SW-c19-CFR-1 CLOSED: s02 pattern-recognition lands as physical enumeration (@10 runs the factional-reading column / @11 the column repeats its shape / @13 marks the column entry), not an interior-state label. SW-c19-CFR-2 CLOSED: s03 beside-not-away is a two-bone-plus enacted distinction (@24 lifts the stylus -> @25 the stylus meets the ledger-edge -> @26 the ledger-edge receives the stylus). SW-c19-DFR-1 (s04 close horror-beat-not-resolution) carries to /and-stitch Phase 4 -> tracked at pl-2026-06-05-c19-004.
 
     - id: pl-2026-06-05-c19-004
       created_at: 2026-06-05T00:00:00Z

@@ -6547,3 +6547,116 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0100 | 2026-06-05 | FAST (process-critic)
+
+mode: process-critic
+trigger:
+  reason: signal-accepted
+  source_report: active-project/staff/auditor/write-b01c19-bone-gate.md
+  source_verdict: |
+    /and-write b01c19 Phase 6 bone-gate PASS — 0 HARD; 2 SIGNALs accepted-not-remediated:
+    signal-001 ABSTRACTION-DOMINANT (s02 grounding 22.2%, below 25% soft floor; chapter-wide
+    33% clean); signal-002 REGISTER-AS-MANNERISM ("opens" ×4 + "receives" ×4 chapter-wide).
+    Context: sixth consecutive Class-B interior chapter (c14-c19); pl-2026-06-05-c19-001
+    HARD watch (s04 concreteness) RESOLVED; pl-2026-06-05-c19-002 SOFT abstraction-muffle
+    already armed for /and-stitch Phase 8.5.
+  gate_path: .claude/commands/and-write.md#phase-6
+verdict: OK
+
+question: |
+  (A) Does signal-001 ABSTRACTION-DOMINANT (s02 grounding 22.2%) fire-and-accept on this
+  design-inherent recognition-naming scene warrant a process change — e.g., a scene-type
+  carve-out for the accounting-reads-its-own-pattern class, or a structural fix to the
+  bone-gate -> stitch-Phase-4 handoff for abstract design-inherent scenes?
+  (B) Does signal-002 REGISTER-AS-MANNERISM ("opens" ×4 + "receives" ×4) fire-and-accept
+  with distinct-SVOs-same-verb rationale warrant a process change — e.g., a gate criterion
+  for accounting-register-refrain, or a screen-writer-brief constraint for verb diversity
+  in accounting-intensive chapters?
+
+decision: OK — no process change proposed on either signal. Gate and carry mechanism are
+functioning as designed.
+
+basis: |
+  Step 1 (proposals log):
+    Searched for open proposals targeting ABSTRACTION-DOMINANT fire-and-accept disposition,
+    stitch-Phase-4/8.5 handoff structure, or REGISTER-AS-MANNERISM accept-and-carry. No
+    open proposal covers either signal class with the same target.path + change_type as
+    what either candidate would propose. No rejected proposal covers either target. No
+    deferred proposal is past its defer_until. No merge required.
+
+  Step 2 (question A — ABSTRACTION-DOMINANT s02 scene-type carve-out or handoff fix):
+    DEC-0073 is the controlling prior ruling, confirmed by DEC-0097. Both establish:
+    (1) The SIGNAL is load-bearing as the stitch-carry trigger. Removing or suppressing
+        it via a carve-out would remove the trigger that arms /and-stitch Phase 4/8.5
+        physical-materiality reinforcement — net-negative.
+    (2) Accept-with-rationale IS the structural fix for design-inherent abstraction. It
+        requires the rationale to license the abstract register explicitly. A gate carve-out
+        would remove the rationale-logging discipline.
+    (3) 3/3 SUBSTANCE-FELT confirms downstream delivery is landing on ABSTRACTION-DOMINANT
+        accepted chapters. No evidence of stitch-layer failure on any prior accepted carry.
+    (4) The chapter-wide count (33%) is clean. The s02 borderline (22.2%) is structural:
+        the accounting-reads-its-own-pattern scene (CFR-1 recognition-naming) is inherently
+        the most enumeration-dense, least place-situated scene in this chapter's design.
+    The c19 instance is less severe than c18 (which had multi-signal ABSTRACTION-DOMINANT
+    across two distinct scene types and a mover-level abstract-subject; DEC-0097, OK). A
+    single-scene borderline 3pp below threshold does not warrant a merge into PROP-0030/0031:
+    those proposals target chapter-wide apparatus-density accumulation across the collapse arc,
+    not per-scene soft-floor proximity.
+
+    Process discrimination: could a stricter gate have caught a process failure? No. The gate
+    fired correctly, rationale logged, stitch-carry (pl-2026-06-05-c19-002) was already armed
+    by the auditor. No process gap.
+
+  Step 3 (question B — REGISTER-AS-MANNERISM accept-and-carry):
+    DEC-0088 is the controlling prior ruling. It established:
+    (1) Accept-and-flag-to-stitcher is architecturally correct. The stitcher Phase 3/8
+        voice-embodiment + structural-variation directive is the only feasible resolution
+        point for verb-frequency artifacts arising from SVO discipline constraints.
+    (2) The SVO fence forces concrete transitive verbs. In an accounting-intensive chapter,
+        "opens" and "receives" are narrow-corridor compliant verbs for their respective object
+        classes — each instance in c19 is a structurally distinct concrete act (confirmed by
+        the auditor's own assessment). The repetition is the accounting register, not a tic.
+    (3) A screen-writer Phase 1 brief constraint would conflict with the SVO discipline fence
+        and would be upstream of the only feasible resolution surface.
+    (4) No stitch-layer failure has occurred on any prior REGISTER-AS-MANNERISM accepted carry.
+
+    The c19 pattern is accounting-register-refrain, the same architectural root as c12 ("closes"
+    x5, "reaches" x3 — accepted, DEC-0088's recurrence review) and c18 (signal-004 byte-identical
+    intentional refrain, DEC-0097). The standard hold: the appropriate trigger for a process
+    change is stitch-layer failure on a REGISTER-AS-MANNERISM accepted carry, not bone-gate
+    accept-and-carry recurrence.
+
+  Step 4 (recurrence count):
+    ABSTRACTION-DOMINANT fire-and-accept: ≥10 occurrences across the book, all
+    accepted-with-rationale; all delivered SUBSTANCE-FELT confirmed. REGISTER-AS-MANNERISM
+    accept-and-carry: ≥9 occurrences. Both have high recurrence counts but zero failure class
+    instances. Rule 11 promotion requires ≥3 recurrences as FAILURES, not as correct-gate-
+    firings. DEC-0088/0091 established this discrimination explicitly.
+
+  Step 5 (methodology):
+    Both candidates are gate-functioning-correctly situations. A process change would add
+    blast radius (modifying /and-write Phase 6 fires on every future chapter) for zero
+    catch-quality improvement. Reversibility: carve-out is lower-reversibility. Cost:
+    gate modification is M-cost, neither warranted. Blast radius: per-chapter SIGNAL carry
+    is chapter-scoped; gate modification is pipeline-wide. OK in both dimensions.
+
+rationale: |
+  Both signals are correctly dispositioned. DEC-0073 (ABSTRACTION-DOMINANT) and DEC-0088
+  (REGISTER-AS-MANNERISM) are the controlling rulings; c19 adds no evidence class that
+  changes either. The sixth consecutive Class-B interior chapter context is the accumulation
+  concern already tracked by PROP-0037 (DEC-0098, count 6); the /and-stitch Phase 9.5 dispatch
+  for c19 will handle that increment. This bone-gate dispatch produces no new proposal.
+
+trade-off: |
+  Holding means no additional gate protection against a future chapter where accept-with-rationale
+  discipline lapses. Mitigated by: the rationale-text requirement enforces explicit design-license
+  per accepted SIGNAL; stitcher Phase 4/8 carries are armed per-chapter. A failure of auditor
+  accept-with-rationale discipline is a gate-execution failure, not a gate-design gap.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no

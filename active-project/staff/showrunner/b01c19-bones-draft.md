@@ -100,18 +100,7 @@ substance_delta:
 
 ---
 
-**b01c19s01n06** (flat_id 6)
-svo: `the protection-line ratio runs`
-substance_delta:
-  axis_moves: []
-  axes_held:
-    - axis: position-prot-collapse
-      rationale: "collapse in motion from c18; held at this scene; no new position-risk event at request-receipt stage; the collapse fires in s04"
-    - axis: social_tether-prot-collapse
-      rationale: "collapse in motion from c18; held at this scene; severance fires in s04"
-  cost_ledger_anchor: null
-
----
+# b01c19s01n06 (flat_id 6) — TRIMMED at Phase 4 (audience 3-of-3 DELETE: "the protection-line ratio runs" administrative placeholder, zero contribution to s01 pol-reg-prot +0.5; held collapse-axis witnessing relocated to n07). Not emitted.
 
 **b01c19s01n07** (flat_id 7)
 svo: `the bottlefly nodes return the outer-ring feed`
@@ -120,6 +109,10 @@ substance_delta:
   axes_held:
     - axis: political_register-prot
       rationale: "the ambient feed returns court-content before the specific request executes; the contempt-color accumulates toward the first tranche; held — move fires at n08"
+    - axis: position-prot-collapse
+      rationale: "collapse in motion from c18; held at this scene; no new position-risk event at request-receipt stage; the collapse fires in s04 (witnessing relocated here on n06 trim)"
+    - axis: social_tether-prot-collapse
+      rationale: "collapse in motion from c18; held at this scene; severance fires in s04 (witnessing relocated here on n06 trim)"
   cost_ledger_anchor: null
 
 ---

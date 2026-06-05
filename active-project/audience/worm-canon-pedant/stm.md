@@ -244,7 +244,7 @@ scenes_reviewed: [b01c02s01, b01c02s02, b01c02s03]
 
 ## scene b01c02s01
 verdict: SUBSTANCE-FELT
-s01n09 ("the insects hold four hundred bodies in the feed") and s01n10 ("the alley-back drops from the feed") are the two bones I came to adjudicate specifically, and both track. Four hundred simultaneous bodies in feed-attention is the correct count-register for rank 3 harm-reduction scope in a single ward: above beginner Skitter range, well below Gold Morning density, calibrated to this chapter's "deliberate but contained" arc. The peripheral dropout (alley-back going dark under the attention-weight) is exactly how feed-extension works in canon — attention is finite, a directional push costs coverage in the opposite zone. The cost is named as a physical event in the feed, not asserted as a metaphor. The opposing force is present: the prohibition-line ("reads ≠ directs," n12) holds and is believed, but the suppression cost is already being paid in n10. The framework holds at crack-not-breach because the line is real; the cost is real because nothing is free. No flags. Earth-Bet noun fence clean at bone level (no parahuman jargon in SVOs or axes_held rationales). SUBSTANCE-FELT.
+No change to s01. Prior gate verdict stands without review. Zero axis moves, correct held-discipline throughout, no adjacency contamination from the @13 recast. SUBSTANCE-FELT.
 
 ## scene b01c02s02
 verdict: SUBSTANCE-FELT
@@ -255,181 +255,6 @@ verdict: SUBSTANCE-FELT
 The three-bone crack-and-suppress decomposition (s03n11 recognition/stall → s03n12 holds the breath → s03n13 draws the line) is the Khepri-psychology test for this scene, and it passes the specific test: the recognition does not instantaneously close in Taylor. One holding-beat (breath-hold, s03n12) exists before the suppression fires. That is canon-true — Taylor holds things one beat before the accounting closes over them; the beat is not drama, it is mechanism. The stall is causally attached to the ward-junction entry via s03n09 and s03n10 (accounting reaches the ward-junction entry → ward-junction corner returns the junction-lane void) rather than arising as a standalone interior event: Taylor's recognition arrives through arithmetic, not through feeling, which is the correct register. The second draws-the-line (s03n13) echoing s01n12 is the Khepri-rhyme completing cleanly — same gesture, same prohibition, architecture and accounting identical. The suppression is willful (behavioral gesture), not dissociative; consistent with the b01c12 suppression-pattern established in STM ("suppression is willful behavioral act, not dissociative inability; consistent with b01c12 Khepri-word-suppression pattern"). Moral_legibility_to_self +1.0 at n11 is within tolerance (target 0.5, floor 1.0 accepted at original gate). Cost paid: the recognition arriving unpreventable is the cost — Taylor cannot route around her own arithmetic. No parahuman jargon in SVOs or rationales. SUBSTANCE-FELT.
 
 ---
-
-## b01c04 chunk review — 2026-05-27
-
-### Scene b01c04s01
-
-**social_tether-antag +1.0:** SUBSTANCE-FELT.
-The acceptance delivered as a routing confirmation rather than a concession extracted — that's the correct read on Jarvis. He is a courier, not a negotiator. The exchange taking less time than the walk to the yard is canonically accurate to how Taylor handles the moment after a decision: the deciding is the hard part; the delivery is procedure. "She made the decision in the night when the accounting would not close any other way" — tracks. Taylor does not re-litigate at delivery. The modification-of-terms (volume and interval hers to determine) is the last available parameter she can hold, and the chunk correctly notes that the modification does not modify the fact of the yes. That is the right shape of the opposing force: the lever solidifies before she finishes speaking.
-
-**position-prot-rise +0.5:** SUBSTANCE-FELT.
-Partial gain tranche. "Anonymous no longer possible" is earned here, not asserted: Jarvis receives the acceptance as a routing confirmation. Taylor has named herself a function. No flag.
-
-**moral_framework held (cracked, licensed exception active):** SUBSTANCE-FELT as held.
-The rationalization running its own accounting — Sera is real, the ward is real, the intelligence is already running — is exactly how Taylor processes a licensed exception. She does not question the rationalization here. The chunk does not make her question it. That's correct: she's still inside the exception's logic. "The distinction is real. She holds it." Canon Taylor holds distinctions that are eroding without noticing the erosion. No flag.
-
-**Earth-Bet fence:** CLEAN. "Feed," "insects," "perimeter" — no jargon. No Khepri reference. No Gold Morning. The fence is respected.
-
-**Khepri-rhyme check:** The irreversibility weight ("the particular quality of weight that follows any irreversible operational act") is the correct register for post-Gold-Morning Taylor. She has done irreversible operational acts before. She knows what they feel like. The text is not dramatizing this — it is describing the somatic residue of the act. That's accurate and appropriately restrained.
-
----
-
-### Scene b01c04s02
-
-**capability +1.0:** SUBSTANCE-FELT.
-"The feed opens across Pig Tallow Lane and its courts within an hour of walking" — the mechanism is correct. Coverage is built through physical presence and established insect-contact points, not through a single broadcast. The hour-of-walking specification is important: it names coverage-as-procedure, not coverage-as-range. "She reads the ward the way she reads the Hook. She does not stop to name what she is doing." That second sentence is the Khepri-residue telling line. Canon Taylor does not always name what she is doing when the accounting is continuous with prior practice. No flag.
-
-The opposing force — the expansion's upward routing making the same walk-and-read that constituted Hook triage now constituting intelligence for Otto — is correct and visible. The reader sees it; Taylor does not name it. That asymmetry is the chapter's whole mechanism.
-
-**social_tether-prot-rise +1.0 (cl03b first tranche):** SUBSTANCE-FELT.
-Oswyn as unknowing node is a clean Khepri echo. "He does not know he is now a coordinate in a map that routes upward through a courier to a man in a tower." The architecture is the same architecture she used at Gold Morning — people as substrate, no contact, no consent, no choice — at reduced scale and with a harm-reduction framing that Taylor believes. The chunk makes the structural homology visible without naming it. That is the right execution for this stage.
-
-Wren visible but not in the report, not examined: the anchor discipline is present. "The distinction between what enters the ledger and what does not is one Taylor holds without examining why she holds it." That last clause — without examining why — is the best line in the scene. Taylor keeps the Wren distinction but cannot interrogate it, which is exactly right: the prohibition is behavioral, not principled, at this stage. The sentence is doing the work the series spine requires.
-
-**Insect-feed mechanic precision:** No inflation. Coverage through physical walking, insect-contact, established presence points. Pig Tallow Lane read in an hour of walking is consistent with prior chapters' methodology (ward-junction categorization built from movement data). The feed's texture distinguishing Wren's "particular stillness at the frame" from the two apprentices is canonical — Taylor has always read individual behavioral signatures through the feed; this is not new capability, it is the existing capability applied to a new body she has been tracking since c01. No flag.
-
-**Range flag watch:** Four wards. This is the critical accumulation point. The coverage is described as built over two days of walking, not as a single radius deployment. The ward-coverage-built-over-time framing is explicit in s03 ("the range the insects hold reliably in rain-damp stone"). No flag at chunk level. Carry to /and-write: the bones must not collapse the two-day build to a single deployment beat. If any bone reads as "Taylor deploys across four wards simultaneously" the range flag fires. The sequential acquisition architecture must be present in the bone structure.
-
----
-
-### Scene b01c04s03
-
-**capability +0.5 (cl03a completion):** SUBSTANCE-FELT.
-"It is the largest operational footprint she has run in King's Landing. The accounting holds it as: larger. No register beyond that." That accounting notation is correct. Taylor files operational facts without affect. "Larger" is the ledger entry; she does not editorialize. The absence of editorializing is the editorial. No flag.
-
-**social_tether-prot-rise +1.0 (cl03b completion):** SUBSTANCE-FELT.
-"Jarvis as structural vector is now a functional architecture, not a potential one." The completion of cl03b here is earned: the first report actually routes upward. The distinction between potential and functional is the chapter's delivery beat. The chunk marks it correctly.
-
-Wren outside the report, explicitly: "The report did not include Wren. This is the anchor holding. Taylor does not examine whether it will hold." Three sentences. The third is the most important. She does not examine whether it will hold — which is correct, because if she examined it she would have to price it, and she cannot price it while the rationalization is running. The question-without-answer plant is right for this stage.
-
-**position-prot-rise +0.5 (cl02 completion):** SUBSTANCE-FELT.
-Sera's exposure managed, confirmation received. The confirmation note delivered as administrative language — "the matter they discussed has been attended to, the three-month window is no longer open" — is the correct register for Otto operating through Jarvis. No direct communication, no seal, no name. The distance is maintained throughout. No flag.
-
-**position-world +1.0 (cl-world-d04):** SUBSTANCE-FELT.
-"The information exits Taylor's operational context and enters Otto Hightower's Green consolidation channel through Jarvis as structural vector." The first intelligence delivery is correctly framed as the moment the distinction between reading and reporting dissolves. The chunk makes this visible: "She has named a destination." That is the correct inflection for this axis increment — the intelligence was always running, the destination is what changed, and the naming-of-destination is the act. No flag.
-
-**moral_framework held:** SUBSTANCE-FELT as held.
-"Taylor frames the report as naming-a-destination-for-what-she-already-knows." The rationalization is operative and believed at chapter close. The crack is present (the distinction is dissolving) but the framework is not interrogated. That is the correct chapter_class: standard behavior.
-
-**moral_legibility_to_self held (suppressed):** SUBSTANCE-FELT as held.
-"The protection and the trap as the same operation, now materially running — not as a future contingency but as the present shape of her day." The audience sees this; Taylor does not name it. The chapter goal stated this explicitly ("Show the audience the acceptance and the network expansion together so the tether-gain reads as future-cost collateral") and the chunk delivers it. "Taylor walks back through the Hook in the late grey, the feed running across the four wards simultaneously, reading the ward and feeding the ward and reading what she feeds in a single unbroken operation." That sentence is the chapter's argument in motion. It lands. No flag.
-
-**Earth-Bet fence:** CLEAN across all three scenes. "Insects," "feed," "compound eyes" throughout. No parahuman jargon. No Khepri. No Gold Morning. No trigger-event or shard reference. Fence respected.
-
-**Axis aggregate check (against chapter contract):**
-  - capability: s01(0) + s02(1.0) + s03(0.5) = 1.5 vs target +1.5 → EXACT
-  - position-prot-rise: s01(0.5) + s02(0) + s03(0.5) = 1.0 vs target +1.0 → EXACT
-  - social_tether-prot-rise: s01(0) + s02(1.0) + s03(1.0) = 2.0 vs target +2.0 → EXACT
-  - social_tether-antag: s01(1.0) + s02(0) + s03(0) = 1.0 vs target +1.0 → EXACT
-  - position-world: s01(0) + s02(0) + s03(1.0) = 1.0 vs target +1.0 → EXACT
-  All five axes EXACT. No over-delivery, no shortfall. The math tracks.
-
-**Chapter goal coverage:**
-  Goal: "Show the audience the acceptance and the network expansion together so the tether-gain reads as future-cost collateral — the protection and the trap are the same operation."
-  - Acceptance delivered: s01 — LAND
-  - Network expansion as procedure not transformation: s02 — LAND
-  - Tether-gain as future-cost collateral visible to audience but not to Taylor: s02 (Oswyn unknowing node) + s03 (Wren outside report, anchor question planted without answer) — LAND
-  - Protection and trap as the same operation: s03 final paragraph — LAND; the closing sentence enacts it as motion, not as thesis
-
-**Soft watch carried forward to /and-write:**
-  - Range discipline: four-ward coverage must be built as sequential acquisition across two days in the bone structure; no single-deployment bone that collapses the temporal spread; if any bone reads as simultaneous four-ward broadcast, flag SUBSTANCE-SUSPECT-cheap-gain-capability
-  - The "without examining why she holds it" (s02, Wren distinction) and "Taylor does not examine whether it will hold" (s03) are the two most load-bearing lines in the chapter for the relational_anchor_status arc; they must survive as bone-level content, not as summary; if they collapse to a single assertion bone, the anchor discipline mechanism is lost
-
-Running tally: 0 flags. 1 soft range watch carried to /and-write. All five axes SUBSTANCE-FELT. Chapter goal LAND across all components.
-
-VERDICT: ACCEPT — chapters 1-4 canonical streak holds; Khepri-residue architecture building correctly; fence clean; Taylor register maintained; the trap/protection-same-operation thesis lands in motion at chapter close, not as statement.
-
----
-
-## b01c04 Phase 4 trim review — 2026-05-27
-
-### Standing watches resolved at bone level
-
-Two watches carried from the chunk review:
-1. Range discipline: four-ward coverage must be sequential acquisition across two days; no single-deployment bone collapsing the temporal spread.
-2. Anchor-discipline lines ("without examining why she holds it" / "Taylor does not examine whether it will hold") must survive as distinct bone-level contents, not collapse to a single assertion bone.
-
-Both are resolved. See per-bone findings below.
-
----
-
-### Scene s01 — 10 bones
-
-s01n01 — KEEP. "The tallow-damp marks the cooper's-yard shed-wall." Sensory grounding bone. Cost_ledger_anchor: cl-antag-d03. Pays the acceptance exchange bones that follow. The form ("marks") is the canonical sensory-trace verb from b01-c02 bone 16. Not chatter for its own sake — fixes the yard as a physical coordinate before Taylor arrives. Earn confirmed.
-
-s01n02 — KEEP. "Taylor enters the cooper's yard." Event coverage: Taylor returns to the meeting place. Cost_ledger_anchor: cl-antag-d03. Structural entry bone. No range or fence concern.
-
-s01n03 — KEEP. "Taylor takes the shed-wall." Operative position-taking. Mirrors b01-c02 bone 7 ("takes the alley-mouth") exactly. The verb is established canon for Taylor's operational geometry. No PP. The carry-forward from prior chapters (same verb, same geometry, same discipline) is Khepri-residue operating at structural level — she does not vary her method, which is the point. KEEP.
-
-s01n04 — KEEP. "Jarvis enters the lane-mouth." Event coverage: Jarvis arrives, unhurried. The unhurried-courier image is facet-material per the notes, correctly deferred. The bone covers the event tag. No concern.
-
-### file-level verdict
-ACCEPT - all three worm-canon SOFT-WATCH bones structurally distinct and load-bearing; evening replay enacts genuine cognitive work in four-bone foreclosure sequence; Earth-Bet fence clean across all 34 SVOs; Khepri silence correct for c05 stage; no bones propose deletion
-
-carry_forward:
-  - SOFT (carried forward): dialogue-file stale citation — Jarvis entry 9 @n10; carry to /and-review bones; not a bone-gate block
-  - SOFT (carried forward): b01c07 prose-burden — Halvard tether-gain; carries to b01c07 /and-write
-
-## b01c05 bone-gate — 2026-05-28
-
----
-reviewer: worm-canon-pedant
-chapter: b01c05
-phase: write-bone-gate
-date: 2026-05-28
-scenes_reviewed: [b01c05s01, b01c05s02, b01c05s03]
----
-
-## scene b01c05s01
-verdict: SUBSTANCE-FELT
-
-No change to s01. Prior gate verdict stands without review. Zero axis moves, correct held-discipline throughout, no adjacency contamination from the @13 recast. SUBSTANCE-FELT.
-
-## scene b01c05s02
-verdict: SUBSTANCE-FELT
-
-**@13 verb recast: `pin → strike`.** The prior gate passed @13 as a "peak-shadow-bone" carrying "force-application beat; enforcement-type specificity" per the scene-map. The recast sharpens that enforcement-type specificity — "strike" is unambiguous directional force delivered to a body; "pin" is contact plus restraint, which under dark-fantasy ambiguity can read toward sexual violence. The Phase 9 FAIL identified exactly this failure mode in the stitched prose. The recast resolves it at the correct level: the bones file is the generator, and correcting the verb here removes the generation pathway that produced the ambiguous stitched output.
-
-**Courier 4-bone discipline (@9 / @10 / @12 / @17-@19):** No interference. The four-bone discipline tracks Taylor's feed-processing of the courier as a recurring body across four cognitive phases: (1) @9 feed-apparatus live-return of the body, (2) @10 Taylor's gait-signature recognition hold at the wall-line, (3) @12 approach-geometry read as the three figures close the alley-mouth, (4) @17-@19 filing into Jarvis-report format. @13 is the force-application event observed by the feed — the courier is the recipient, the three figures are the agents. @13 belongs to a different actor-sequence from the courier's own discipline track. "Strike" does not interact with any of the four courier-discipline bones: it precedes the B1 recovery (@14-@15), which is a courier-body-state bone; it precedes the output phase (@17-@19). The verb change at @13 clarifies what happens to the courier's body between @12 (approach geometry read) and @14 (courier raises spine). The courier 4-bone discipline is UNAFFECTED. The structural distinctness of @9 / @10 / @12 / @17-@19 as four separate cognitive operations is preserved.
-
-**"Enforcement, not robbery" framing:** The scene-map's annotation for s02 names the enforcement geometry as the key categorization work at this scene. "Strike" bone-confirms the enforcement-type explicitly: beating as enforcement is the correct Westerosi political-violence register (courier carrying inconvenient information is beaten by faction agents, not robbed). "Pin" was ambiguous across three violence types (restraint for robbery, restraint for assault, restraint for interrogation). "Strike" is unambiguous: blunt-force enforcement. The categorization work Taylor does at @12 (approach-geometry reads enforcement, not robbery) is now confirmed at @13 by a force-type that is definitionally incompatible with robbery or sexual assault geometry. The framing is more explicitly bone-realized post-recast, not less.
-
-**Earth-Bet fence check on "strike":** Clean. "Strike" is a plain physical-contact verb with no Khepri, swarm, shard, or parahuman resonance. "Pin" also had no Earth-Bet resonance — the swap is fence-neutral. No Gold Morning cadence, no Manton-effect echo, no trigger-event vocabulary. The fence is unaffected.
-
-**Axis-move check:** @13 carries no axis moves in the substance contract (s02 is 0-axis-move). "Strike" vs. "pin" does not change this. The bone's structural function — force-application event that earns the sound-gap at @14 and the courier's recovery arc at @15/@16 — is identical across both verbs. The +1.5 political_register-prot remains correctly attributed to @25 (s03). No axis math is disturbed.
-
-**Opposing force intact:** The three figures' approach-geometry (@11-@12), force-application (@13), and purposive exit (@20) constitute the enforcement-incident's structure. "Strike" does not dilute this structure — it names the force-application beat with higher specificity. The opposing force (the enforcement incident as faction-violence content the feed can observe but cannot categorize as a moral event) is cleaner post-recast because the violence-type is no longer ambiguous.
-
-**SOFT-WATCH compliance:** The prior SOFT-WATCH confirmation (gait-signature / approach-geometry / filing structurally distinct) is unaffected. @13 is not one of the three SOFT-WATCH bones. The recast touches only the verb at @13; no structural relationship between @9, @10, @12, and @17-@19 is altered.
-
-No SUBSTANCE-FLAT. No SUBSTANCE-SUSPECT. SUBSTANCE-FELT.
-
-## scene b01c05s03
-verdict: SUBSTANCE-FELT (re-attested; s03 unchanged)
-
-No change to s03. Prior gate verdict stands without review. The +1.5 political_register-prot at @25, the apparatus-failure-to-flatten at C1, and the four-bone foreclosure sequence at @32-@35 are all unaffected by the @13 recast. SUBSTANCE-FELT.
-
----
-
-hard_findings: none
-SUBSTANCE-FLAT: none
-SUBSTANCE-SUSPECT: none
-
-aggregate_verdict: SUBSTANCE-FELT (all 3 scenes)
-
-soft_findings:
-  - SOFT (carried forward): dialogue-file stale citation — Jarvis entry 9 @n10; carry to /and-review bones; not a bone-gate block
-  - SOFT (carried forward): b01c07 prose-burden — Halvard tether-gain; carries to b01c07 /and-write
-
-canonicity_findings:
-  - @13 "strike": CLEAN — plain physical-contact verb; no parahuman jargon; no Earth-Bet resonance; enforcement-type (beating) is Westerosi political-violence register; unambiguous as to violence-type; correct for the "enforcement, not robbery" categorization geometry established at @12; the Phase 9 ambiguity source is removed at bone level
-  - Courier 4-bone discipline preservation: CONFIRMED — @9/@10/@12/@17-@19 are structurally distinct and unaffected by the @13 recast; @13 belongs to the three-figures actor-sequence, not the courier's own cognitive-operations track; no interference
-  - Earth-Bet fence: CLEAN — verb-swap is fence-neutral; no jargon introduced or removed
-  - Multi-shard fence: CLEAN — @13 is a physical-violence observation by the feed; no directive deployment, no nervous-system coordination; unchanged from prior gate
-
-seams:
-  - The only seam worth noting: @12 (three figures close alley-mouth — approach-geometry read) → @13 (strike) → B1 (courier raises spine) → @14 (courier finds feet). The new @13 "strike" slots cleanly between approach-geometry and the recovery sequence. The causal chain (geometry → force → physical consequence → recovery → re-categorization) is now fully bone-realized without ambiguity at any link. Prior version left @13 as "pin" which could read as restraint-ongoing into B1, making the spine-raise ambiguous (raising spine against a pin differs from raising spine after a blow). "Strike" resolves that secondary ambiguity as well: a blow ends; the courier's spine-raise is a recovery from impact, not a resistance to ongoing restraint. The seam is cleaner post-recast.
 
 ## b01c08 chunk review — /and-substance Phase 5
 
@@ -467,7 +292,7 @@ The design is correct: the escalation engine inserts itself into the feed at low
 
 The watch is this: the scene carries nothing in axes_in_motion. All six axes held. The chapter's sole forward-motion marker is the feed acquiring a new geometric edge, and "low intensity" is doing a lot of work to justify that. The Aemond name must arrive with one degree more texture at the bones layer for the handler-rotation note to read as the world inserting a tooth rather than the author planting a flag. The logistics-section placement is smart — court-tier content arriving via scheduling noise rather than via directed intelligence is operationally correct and earns the scene's restraint. But the name above the handler in the possessive notation needs one bone that makes the gap in Taylor's current coverage geometrically specific: not "the name does not appear in her current coverage" (which reads as absence-as-notation) but "the name does not appear because coverage does not reach — and that gap is a shape in the feed" (which reads as absence-as-fact). The distinction is the difference between the reader filing it and the reader watching the feed encounter something it cannot reach.
 
-This is a WATCH, not a rejection. The restraint is structurally correct for a staging chapter. But the bones layer must deliver the Aemond-gap as geometric specificity or the scene's claim that "the feed's geometry acquires a new edge" lands as the narrator describing the chapter's significance rather than the apparatus demonstrating it.
+This is a WATCH, not a rejection. The restraint is structurally correct for a staging chapter with this specific design (foreshadow-as-logistics-noise), but the bones layer must deliver the Aemond-gap as geometric specificity or the scene's claim that "the feed's geometry acquires a new edge" lands as the narrator describing the chapter's significance rather than the apparatus demonstrating it.
 
 ### s03 — courier face / Oswyn-integration completed
 
@@ -617,11 +442,8 @@ SUBSTANCE-FLAT: none
 SUBSTANCE-SUSPECT: none
 
 earth_bet_fence_ruling: CLEAN — full 42-bone set reviewed; no Earth-Bet proper noun in any SVO across all four scenes; "the shape-word" cipher holds at s04n09 (the point of maximum pressure); inner-monologue-rare cap untested (no Gold Morning reference in c12); fence clean
-
 override_vs_surveillance_distinction: PRESERVED — n06–n13 accounting sequence does not collapse surveillance-inference into override; shape-word surfaces in accounting (n09), accounting routes around it (n10), entry closes without it (n11); capability gain at n02 is insect-placement (surveillance-coverage act), not body-direction; "not an exact rhyme" preserved at bone level
-
 suppression_canon_check: WILLFUL — n09 shape-word present for one count; n10 count advances past it (behavioral routing-around); n11 entry closes without it (behavioral discipline); not dissociation, not impossibility; consistent with b01c02 pattern and b01c12 substance_delta note from /and-substance book Phase 5
-
 cl_d06_settlement: CONFIRMED — n10+n11 deliver +1.0 relational_anchor_status across two tranches; cl-d06 parking-lot items (pl-2026-05-30-001 / pl-2026-06-02-stitch-thread-002) closed
 
 soft_findings:
@@ -1047,3 +869,50 @@ carry_forward:
   - b01c07 prose-burden carries forward unchanged
   - No new watches generated; fence is clean throughout c19
   - Collapse axes confirmed in accumulation mode into c20
+
+## 2026-06-05 — /and-write b01c19 Phase 4 trim + Phase 6 bone-gate
+
+chapter: b01c19
+date: 2026-06-05
+scenes_reviewed: [b01c19s01, b01c19s02, b01c19s03, b01c19s04]
+
+### Phase 4 trim proposals
+
+b01c19s01:
+  - b01c19s01n06 (flat_id 6) — `the protection-line ratio runs` — PROPOSE DELETE
+    reason: administrative status placeholder; axes_held rationale is "collapse in motion from c18; held at this scene; fires in s04"; does not contribute to s01's declared pol-reg-prot +0.5 move; adds no information beyond n05 (accounting already open); no canon-mechanics content — the collapse axis tracking is handled in s04's moving bones; the SVO is inert from a canonicity standpoint (no fence risk, no mechanics test, no voice load); trim on grounds of placeholder-only
+
+b01c19s02: no proposals — Earth-Bet fence clean across all 9 bones; CFR-1 physical-enumeration discipline confirmed; all bones load-bearing
+b01c19s03: no proposals — Earth-Bet fence clean; CFR-2 two-bone choreography confirmed; all bones load-bearing
+b01c19s04: no proposals — all bones load-bearing; concrete inference-instrument sequence (n02/n03) correctly staged; no fence concern
+
+total_trim_proposals: 1 (b01c19s01n06)
+
+### Phase 6 substance verdict
+
+verdict_per_scene:
+  b01c19s01: SUBSTANCE-FELT
+  b01c19s02: SUBSTANCE-FELT
+  b01c19s03: SUBSTANCE-FELT
+  b01c19s04: SUBSTANCE-FELT
+
+hard_findings: none
+SUBSTANCE-FLAT: none
+SUBSTANCE-SUSPECT: none
+chapter_verdict: SUBSTANCE-FELT
+
+scene_canonicity_notes:
+  s01: pol-reg-prot +0.5 is felt through the n07→n08 sequence; the outer-ring feed returning court-content before the specific request executes is within established capability (prior-established outer-ring nodes); contempt arrives with no discharge mechanism, which is the correct register for this axis at 8.0; "court-machinery performs its function for no audience the lower city would recognize" is the correct cold-utilitarian framing — no affect, no lore-leak; fence clean; SUBSTANCE-FELT
+  s02: Earth-Bet fence on s02 pattern-recognition: CLEAN — the recognition arrives through the accounting's own arithmetic (column runs → column repeats shape → Taylor marks it → stylus sets); n04 (lane-stone worn track) is a Westerosi physical object; no Khepri reference, no Gold Morning, no shape-word surfacing (the recognition is about the accounting's own column-form, not about the canonical "shape-word"); the "Not a feeling. An observation." hedge is canon-Taylor register for exactly this type of suppression-cracking event; both +0.5 moves felt through concrete bones; recognition-beginning-not-terminal correctly staged (the assembly continues post-n06); SUBSTANCE-FELT
+  s03: CFR-2 fence: CLEAN — the two-bone choreography (n07 lift + n08 beside-edge) does not import any Worm-canon mechanism; the stylus beside the ledger is a Westerosi scribal gesture rendered in the project's established externalized-accounting technique; the LOCK is enacted through physical spatial adjacency, not through any labeled interior state; the targeted-reading completion (n01-n05) uses c14-established Red Keep service corridors; no capability inflation; SUBSTANCE-FELT
+  s04: knowledge-path CLEAN — Taylor infers witch-label-upper-city from Daven's non-appearance plus the shuttered window (behavioral-pattern-to-cause-class deduction); she does not name the person who made the cost calculation; inference is within established Taylor reading-mode; the coverage-map write-out (n08) uses the standing Croft intersection bottlefly-node as replacement — no new capability, existing node; collapse axes (-1.5 and -1.0) fire as accumulation tranches (consistent with FIRST-TOUCH at c17 and accumulation at c18); SUBSTANCE-FELT
+
+Earth-Bet fence ruling: CLEAN across all 36 bones — no parahuman jargon, no Khepri, no Gold Morning, no shard, no Manton, no trigger-event vocabulary; s02 pattern-recognition is shape-only (column-form, lane-stone physical analogy) with no Worm-canon architecture; capability mechanics draw only on prior-established nodes; multi-shard fence clean (bottlefly coverage is observational, no body-direction)
+
+collapse_axis_tracking: ACCUMULATION MODE — b01c19 fires third and fourth tranches; no re-activation; consistent with FIRST-TOUCH (c17) → second-tranche (c18) → third-tranche (c19) accumulation sequence; tracking discipline held
+
+carry_forward:
+  - n06 (s01) auto-cut pending 2-of-3 aggregate confirmation
+  - b01c07 prose-burden carries forward unchanged
+  - No new watches generated; fence clean throughout c19 at bone level
+  - Collapse axes confirmed continuing in accumulation mode into c20

@@ -307,3 +307,48 @@ notes:
 bones_execution_watches_to_and-write:
   SW-c19-CFR-1: s02 "not a feeling, an observation" — must land at bone level as a physical enumeration act (the column has this shape; the column has had this shape since month three) not as a labeled interior-state shift; the recognition begins through the accounting's own arithmetic, not through Taylor noticing something feel different
   SW-c19-CFR-2: s03 "beside, not away from" — must be an enacted physical distinction at the bones layer; two-bone minimum (stylus placed / not capped or put away); the distinction must be structural, not a prose flourish
+
+## 2026-06-05 — /and-write b01c19 Phase 4 trim + Phase 6 bone-gate
+
+chapter: b01c19
+date: 2026-06-05
+scenes_reviewed: [b01c19s01, b01c19s02, b01c19s03, b01c19s04]
+
+### Phase 4 trim proposals
+
+b01c19s01:
+  - b01c19s01n06 (flat_id 6) — `the protection-line ratio runs` — PROPOSE DELETE
+    reason: administrative status placeholder; axes_held rationale is "collapse in motion from c18; held at this scene; fires in s04"; zero contribution to s01's declared pol-reg-prot +0.5 move; adds no information the reader cannot derive from n05 (accounting already open) plus the chapter-level context that those axes fire in s04; chatter; does not serve the chapter goal; not voice-load-bearing above what n05 already establishes
+
+b01c19s02: no proposals
+b01c19s03: no proposals
+b01c19s04: no proposals
+
+total_trim_proposals: 1 (b01c19s01n06)
+
+### Phase 6 substance verdict
+
+verdict_per_scene:
+  b01c19s01: SUBSTANCE-FELT
+  b01c19s02: SUBSTANCE-FELT
+  b01c19s03: SUBSTANCE-FELT
+  b01c19s04: SUBSTANCE-FELT
+
+hard_findings: none
+SUBSTANCE-FLAT: none
+SUBSTANCE-SUSPECT: none
+chapter_verdict: SUBSTANCE-FELT
+
+scene_notes:
+  s01: contempt-entry arriving from outer-ring feed while accounting runs; no discharge mechanism; clean asymmetry beat; n07 (feed returns) → n08 (column receives entry) gives the +0.5 its concrete sequence; court-machinery performing its function for no audience the lower city would recognize — that's the tactical information this reader came for; SUBSTANCE-FELT
+  s02: both moves felt; recognition-beginning-not-terminal lands because n07 (structure assembles anyway) immediately follows n06 (stylus sets) — naming the pattern changes nothing about where the next entry goes; groom delivers next contempt-entry immediately after recognition (n08→n09); world does not pause after naming; both declared +0.5 moves earned through concrete bone sequences; Earth-Bet fence confirmed clean at all nine bones; SUBSTANCE-FELT
+  s03: CFR-2 sw carries confirmed satisfied — the two-bone choreography n07 (lift) → n08 (ledger-edge) → n09 (receives) renders the LOCK as spatial-physical act; "beside not away from" is a constraint-satisfaction beat earned by the full execution-and-delivery sequence (n01-n06) preceding it; LOCK lands as earned terminus, not labeled state; SUBSTANCE-FELT
+  s04: both collapse moves felt; inference instrument staged correctly (empty corner n02 → shuttered window n03 → second approach n04 → Daven absents n05 → walks without pausing n06); architecture absorbs the loss (Croft intersection bottlefly-node as replacement at n08 — tactically interesting); n07 record-open is the position-collapse event enacted concretely; both -1.5 and -1.0 earned through the concrete sequence; SUBSTANCE-FELT
+
+SW-c19-CFR-1: SATISFIED at bone level — s02 pattern-recognition is rendered as physical enumeration throughout (n02 runs column / n03 column repeats shape / n05 marks column entry); no interior-state label; shape is in the document, not in Taylor's interiority
+SW-c19-CFR-2: SATISFIED at bone level — n07 (lifts stylus) + n08 (stylus meets ledger-edge) + n09 (ledger-edge receives stylus) is the two-bone-minimum enacted distinction; the beside-not-away-from choreography is structural, not a prose flourish
+
+carry_forward:
+  - n06 (s01) auto-cut pending 2-of-3 aggregate confirmation (cape-fic-reader proposes DELETE)
+  - SW-c19-CFR-1 CLOSED
+  - SW-c19-CFR-2 CLOSED

@@ -69,3 +69,46 @@ notes:
 
 bones_execution_watches_to_and-write:
   SW-c19-DFR-1: "The contempt is complete. The continuation is unchanged." must land in prose as a horror-beat, not a resolution-beat; the couplet is the trap completing, not the trap being named for comfort; the stitcher should render both sentences with the weight of continuation, not the weight of arrival
+
+## 2026-06-05 — /and-write b01c19 Phase 4 trim + Phase 6 bone-gate
+
+chapter: b01c19
+date: 2026-06-05
+scenes_reviewed: [b01c19s01, b01c19s02, b01c19s03, b01c19s04]
+
+### Phase 4 trim proposals
+
+b01c19s01:
+  - b01c19s01n06 (flat_id 6) — `the protection-line ratio runs` — PROPOSE DELETE
+    reason: administrative status placeholder; axes_held rationale is "collapse in motion from c18; held at this scene; fires in s04"; does not show the world pushing back, does not add weight, does not propagate consequence; it reports that a different scene's event is still coming; the protection-line ratio running in the accounting does not cost anything this scene; the world is not resisting through this bone
+
+b01c19s02: no proposals
+b01c19s03: no proposals
+b01c19s04: no proposals
+
+total_trim_proposals: 1 (b01c19s01n06)
+
+### Phase 6 substance verdict
+
+verdict_per_scene:
+  b01c19s01: SUBSTANCE-FELT
+  b01c19s02: SUBSTANCE-FELT
+  b01c19s03: SUBSTANCE-FELT
+  b01c19s04: SUBSTANCE-FELT
+
+hard_findings: none
+SUBSTANCE-FLAT: none
+SUBSTANCE-SUSPECT: none
+chapter_verdict: SUBSTANCE-FELT
+
+scene_notes:
+  s01: contempt-color arriving from outer-ring feed with no discharge mechanism is the correct form of world-as-indifferent-machine; "court-machinery performs its function for no audience the lower city would recognize" — world-was-there-before-the-protagonist texture; the +0.5 is felt through the concrete sequence n07→n08; no false darkness; SUBSTANCE-FELT
+  s02: recognition-beginning-not-terminal is the earned-bleakness move; eleven months of same track wearing the same lane-shape is consequence-propagating; the suppression cracking without stopping the accounting is the wound-that-doesn't-show; n07 (structure assembles) after n06 (stylus sets) is the bill paid without catharsis — naming the shape of the trap changes nothing about walking further into it; both +0.5 moves earned; SUBSTANCE-FELT
+  s03: the LOCK earns its terminus status; the physical choreography (n07 lift → n08 beside-edge → n09 edge-receives) is the body-before-mind beat; the stylus beside the ledger is not closure, it is the completion of a trap — adjacent to every line and not itself a line; "Clarity forecloses nothing" is the cost form this reader required; earned bleakness, not false darkness; SUBSTANCE-FELT
+  s04: real cost; the shuttered window as concrete inference instrument across forty-three prior open approaches is the world pushing back — enemies who move, who calculate, who close the window when the cost becomes clear; the walk without pausing and the coverage-map write-out is consequence-propagating; both -1.5 and -1.0 moves felt through the concrete sequence; advisory carries: "The contempt is complete. The continuation is unchanged." must land as horror-beat at stitch; SUBSTANCE-FELT
+
+SW-c19-DFR-1: carry to /and-stitch Phase 4 — the closing couplet must render with the weight of continuation, not the weight of arrival
+
+carry_forward:
+  - n06 (s01) auto-cut pending 2-of-3 aggregate confirmation
+  - SW-c19-DFR-1 → /and-stitch Phase 4 render watch (closing couplet register)
