@@ -11530,7 +11530,7 @@ books:
             HARD-watch:enacted-irrevocable-threshold-physical-act; HARD-watch:op-friction-signal-at-least-one-scene; SOFT:accounting-close-s05-concrete-paired-physical-outcome
 
       - slug: b01c19
-        status: bones-written
+        status: audited-r1
         bones_file: theater/bones/b01-c19.md
         bones_count: 35
         substance_bone_gate_verdict: PASS   # /and-write Phase 6 (0 HARD; auditor CONTINUITY-OK+bone-gate PASS; dramatist ACCEPT; audience SUBSTANCE-FELT 3-of-3 all 4 scenes; pl-2026-06-05-c19-001 s04-concreteness HARD RESOLVED). 2 SIGNALs accepted+carried: ABSTRACTION-DOMINANT(s02 22.2%) + REGISTER-AS-MANNERISM(opens/receives x4) -> /and-stitch. Phase 6.5 process-critic OK (DEC-0100). Phase-4 audience 3-of-3 trim-cut s01n06 (collapse-held relocated to n07).
@@ -11636,6 +11636,24 @@ books:
           aliveness: BONES-AIRLESS-RISK   # advisory; covered by voice-risk carry pl-2026-06-05-c19-002 -> /and-stitch Phase 8.5 + Phase 4 voice-embodiment
           notes: "fidelity PASS-WITH-NOTES (NOTE-A shutter-contrast in rationale not SVO [overlaps pl-c19-001, resolved]; NOTE-B s04 off-page but chunk-faithful [DEC-0099 watch]; NOTE-C s01 event_map stale n06 ref FIXED). follow_check PASS (context-aware: central event + all 3 scene-handoffs recoverable; jargon is established register, defers to /and-facets Phase 2.5). No FAIL/FOLLOW-FAIL -> /and-facets cleared."
           stale_since: null
+        facets:
+          status: audited-r1
+          facets_path: active-project/theater/facets/
+          audit_path: active-project/staff/auditor/facets-final-audit-b01c19.md
+          audit_complete: true
+          audit_hard: 0
+          audit_signals: 6   # 3 freq-band (NI 28.6%/feeling 5.7%/exposition 8.6%, precedent-accepted) + mem:2 adjacency + state:7 transient + feel/NI shared-phrase (FIXED); all advisory
+          audience_gate_path: active-project/staff/auditor/facets-audience-gate-b01c19-r1.md
+          audience_gate_complete: true
+          audience_gate_cycles: 1
+          audience_gate_verdict: ACCEPT   # 9-of-9 facets 3-of-3, zero fixer dispatches
+          bidirectional_loop: validated
+          round_1_complete: true
+          round_2_complete: true
+          context_followability: {completeness: FOLLOWABLE, readability: ALIVE, context_ledger_open: 0, grounding_ledger_open: 0}
+          facet_counts: {location-state: 10, interest-narrator: 10, sensory: 4, state-updates: 17, memory: 4, feeling: 2, metaphor: 0, vibes: 6, exposition: 3}
+          stitch_carries: [pl-2026-06-05-c19-002, pl-2026-06-05-c19-004, pl-2026-06-05-c19-005]
+          orchestrator_critic_verdict: SUCCESS   # 7/7 criteria: 9 facet files exist; 0 HARD post-audit; per-facet 3-of-3 ACCEPT; memory current; bidirectional loop validated; process gaps captured (stitch carries); single-cycle (under budget). Phase 5c process-critic SKIPPED (clean ACCEPT, no cap-burn/WARN).
         scenes:
           - slug: b01c19s01
             status: scened

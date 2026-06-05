@@ -112,3 +112,27 @@ SW-c19-DFR-1: carry to /and-stitch Phase 4 — the closing couplet must render w
 carry_forward:
   - n06 (s01) auto-cut pending 2-of-3 aggregate confirmation
   - SW-c19-DFR-1 → /and-stitch Phase 4 render watch (closing couplet register)
+
+## 2026-06-05 — /and-facets Phase 5b adversarial gate — b01c19 — dark-fantasy-reader
+
+chapter: b01c19
+date: 2026-06-05
+
+### Per-facet verdicts
+
+- location-state (10): ACCEPT — every entry earns world-texture or evidentiary weight; the tallow-render-works entries carry the correct indifferent-world smell and floor; the outer-ring entries at @19/@20 render observed terrain (acceptable); loc-state:8/@29 (shuttered window) is the world pushing back through location-state — the most load-bearing single entry in the facet; Tallow Croft corner entries establish the physical lane before the cost happens in it
+- interest-narrator (10): ACCEPT — all 10 NI entries carry earned bleakness rather than naming it; "the color it carries arrives in the open column with no entry-format that can take it" (NI:1) is the undischargeable-contempt rendered without naming despair; "the shutter is not a wall, it is a number arriving down through the service-layers" (NI:8) is the world acting through arithmetic, not atmosphere; NI:10 "the running is the close, not the cost" lands as horror-without-catharsis correctly; NI:5 "the clarity forecloses nothing she does next" is the correct cold-bleak register; no NI entry names the darkness, they demonstrate it
+- sensory (4, 2 grounding-licensed): ACCEPT — grey-dark-reading-light (sensory:1) is the eleven-month-repetition sensory fact the indifferent world provides; cold-render-smell (sensory:4, licensed) establishes the physical lane before the absence registers against it; both tactile stylus entries (sensory:2, sensory:3) give the body-before-mind beats their physical form; no inert entry; the tallow-render smell encountered in the lane (sensory:4) — the same smell as Taylor's room — is the dark-fantasy world-texture I came for
+- state-updates (17): ACCEPT — the world keeps receipts; the vat-house-east-window: open-baseline-seven-months → shuttered (state:11 @29) is the world changing without Taylor's permission; the coverage-map.daven-node: present → dropped (state:16 @34) is consequence-propagating; the architecture-record lifecycle (states 14-17) correctly ends with the architecture still running, one node lighter; state:7 @25 superfluous intermediate confirmed but not a craft defect — stitch advisory
+- memory (4): ACCEPT — mem:1 @11 "for reasons that did not hold" names the prior failure without dramatizing it; the past is present and load-bearing; mem:3 @24 "the way a name stays in a count after the body is dead" is the earned accountant-register bleakness in its correct form; mem:4 @29 forty-three approaches makes the shutter's closing dangerous rather than atmospheric
+- feeling (2): ACCEPT — both "expressed: no"; feel:2 @32 (stride does not break) is the severance rendered as the body enacting the cost; the body not stopping IS the cost, not a suppression of feeling — the walk through the empty corner is what the tether-severs means physically; earned suppression, not evasion
+- metaphor (0): ACCEPT — zero entries; the refuse-by-default is the correct discipline; a metaphor at @32 (the falling close) would be "the text pleased with itself" at precisely the beat the scene-map warns about; the dead-name-in-ledger figure in memory:3 already carries the chapter's peak at s03; no additional figuration needed or wanted
+- vibes (6): ACCEPT — three vibe-keywords (contempt-without-refusal, cold-utilitarian-interiority, rising-entrapment) map correctly to the falling arc; vibes:5 @32 "the-cost-registers-with-no-discharge-point" is the dark-fantasy anti-catharsis correctly flagged; vibes:6 @35 "the-continuation-unchanged-as-horror-not-resolution" is the correct chapter-close atmosphere; "the-court-machinery-performing-for-no-audience-the-lower-city-would-recognize" (vibes:1) is world-texture, not set-dressing
+- exposition (3): ACCEPT — expo:1 @0 bridge "the contempt for it sits in me with nowhere to go — accurate, complete, and attached to nothing I do next" is the correct state-of-world refresh for a dark-fantasy reader; the witch-label traveling but not yet arrived is the enemy-who-moves; expo:3 @27 Daven orient gives the reciprocity-channel its structural rule before the rule breaks; "the cost of being one of them has been priced" is the world's cost-calculation landing correctly as Daven's rational decision, not as authorial contrivance
+
+### Aggregate: ALL 9 FACETS — ACCEPT
+
+### Notes for /and-stitch
+- SW-c19-DFR-1 carries forward: the closing couplet "The contempt is complete. The continuation is unchanged." must render with the weight of continuation; the continuation IS the horror; do not let cadence make it land as arrival
+- NI:10 @35 "the running is the close, not the cost" — this is the anti-resolution the chapter requires; stitch must honor this over any impulse toward satisfying close-cadence
+- The two tactile stylus entries (sensory:2 @24 stylus-lifted, sensory:3 @14 stylus-held-still) are the body-before-mind progression across s02 and s03; stitch should ensure the tactile registers remain distinct in execution (the hold is the suppression-crack; the lift is the lock; they are not the same moment)

@@ -2718,3 +2718,28 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-06-05-c19-005
+      created_at: 2026-06-05T00:00:00Z
+      created_by: "/and-facets b01c19 Phase 5b (audience-native soft flag, no auditor convergent)"
+      label: c19-expo3-conditional-framing
+      target:
+        command: /and-stitch
+        scope: "b01c19"
+        phase: Phase 3
+      severity: SOFT
+      description: |
+        exposition:3 @27 ("the cost of being one of them has been priced") approaches
+        present-tense certainty BEFORE the inference instruments (@28 empty corner /
+        @29 shuttered window / @31 Daven absents) confirm the break. /and-stitch must
+        render expo:3 as Taylor's operative inference-FRAMEWORK (what a contact-break
+        means given the witch-label traveling), NOT as confirmed knowledge at the moment
+        of scene-arrival. The @28/@29/@31 instrument sequence retains its evidentiary
+        force only if expo:3 reads as conditional framing, not established fact. Also
+        carries NI:3 @14 (flatten thesis-statement surface, preserve non-continuation
+        content) per the same audience-gate.
+      resolution_suggestion: "/and-stitch Phase 3 sequencing: expo:3 conditional, instruments evidentiary; NI:3 @14 flatten-explanatory."
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null

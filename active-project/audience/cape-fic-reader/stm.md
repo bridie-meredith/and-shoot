@@ -1,3 +1,12 @@
+---
+name: cape-fic-reader
+class: persona
+scope: library
+persona-purpose: [audience]
+quality: full
+origin: stripped from brighid-creative-writing/audience/cape-fic-reader/card.md — generalized for and-shoot
+---
+
 # Audience STM — cape-fic-reader
 STM:
 
@@ -352,3 +361,28 @@ carry_forward:
   - n06 (s01) auto-cut pending 2-of-3 aggregate confirmation (cape-fic-reader proposes DELETE)
   - SW-c19-CFR-1 CLOSED
   - SW-c19-CFR-2 CLOSED
+
+## 2026-06-05 — /and-facets Phase 5b adversarial gate — b01c19 — cape-fic-reader
+
+chapter: b01c19
+date: 2026-06-05
+
+### Per-facet verdicts
+
+- location-state (10): ACCEPT — every entry is tactically functional; loc-state:4/@19 and :5/@20 on observed outer-ring terrain are the shakiest but earn their place as the proof-geometry for the chamberlain surveillance pattern; loc-state:8/@29 (vat-house-east-window shuttered) is the strongest entry — the evidentiary shutter that makes the LABEL-REACH-CONCRETE pattern legible; no decorative fires
+- interest-narrator (10): ACCEPT — full entry-by-entry adversarial review: all 10 entries carry specific tactical or structural load that cannot be found elsewhere in the graph; soft flag on NI:3 @14 (approaches thesis-statement register — "the naming is not the stop, the entry going forward unchanged is") noted but not a reject; density justified by chapter class (silent solitary interior; narration IS the content); the auditor's signal-001 disposition question resolved: 28.6% ACCEPTED for this chapter class
+- sensory (4, 2 grounding-licensed): ACCEPT — both standard entries (sensory:1 @3 grey-dark, sensory:2 @24 stylus tactile) within band and load-bearing; both grounding-licensed entries attacked for craft quality only — sensory:3 @14 (stylus-held-still) gives the recognition-beginning peak its embodied form; sensory:4 @27 (cold-render-smell) establishes the physical container the empty corner and shuttered window register against; no craft defect in either licensed entry
+- state-updates (17): ACCEPT — 16 of 17 entries clean; state:7 @25 (approaching-ledger-edge intermediate) confirmed as auditor's signal-006 superfluous candidate — not wrong, excess density; stitch advisory
+- memory (4): ACCEPT — mem:1 @11 Earth-Bet fence holds under adversarial read ("a different accounting, in a different place, for reasons that did not hold" — no proper nouns); mem:4 @29 forty-three-approaches count earns the inference; signal-004 (NI adjacency gap mem:2/@9) is a stitch guidance note; facet clean
+- feeling (2): ACCEPT — both "expressed: no"; feel:1 @14 (hand holds stylus a beat past the mark) is the correct form for suppression-crack-without-breaking; feel:2 @32 (stride does not break, hands loose) earns its place as the tether-severs-in-the-walk somatic; shared phrase signal-005 is a stitch-layer advisory, not a facet structural defect
+- metaphor (0): ACCEPT — zero entries is the correct call; every candidate hinge-bone is governed by a HARD protected-pattern that prohibits the figurative-interiority layer; the refuse-by-default discipline is correct for this chapter's accounting register
+- vibes (6): ACCEPT — all 6 entries at peak or peak-shadow bones; contempt-without-refusal / cold-utilitarian-interiority / rising-entrapment keyword sequence maps correctly to the three-scene contempt escalation; vibes:6 @35 "the-continuation-unchanged-as-horror-not-resolution" is the correct close for the falling arc
+- exposition (3): ACCEPT with soft stitch note — expo:1 @0 bridge is correct and necessary at penultimate chapter context-load; expo:2 @3 chamberlain orient is precise (confirm/map/name deliverable legible); expo:3 @27 Daven orient lands correctly as inference-framework before the instruments arrive; SOFT STITCH NOTE: "the cost of being one of them has been priced" reads as present-tense certainty before @28/@29/@31 confirm the break; stitch should render expo:3 as operative inference-logic, not confirmed-certainty, to preserve the instrument sequence's evidentiary force
+
+### Aggregate: ALL 9 FACETS — ACCEPT
+
+### Notes for /and-stitch
+- NI:3 @14 prose register watch: "the naming is not the stop, the entry going forward unchanged is" risks landing as thesis-statement; stitch Phase 4 voice-embodiment pass should flatten the explanatory cadence while preserving the non-continuation content
+- state:7 @25 approach-ledger-edge: stitch should treat @24/@25/@26 as three distinct physical beats per DO-NOT-FUSE instruction without relying on the intermediate state:7 as a separate rendered beat; the choreography lands through @24 start + @26 end
+- expo:3 @27 "has been priced": render as Taylor's operative inference-framework (this is what a contact-break means given the label-traveling) not as confirmed knowledge; the instruments @28/@29/@31 deliver the evidence, not this exposition entry
+- Shared phrase signal-005 (feel:2 / NI:9 @32 "the lane runs on under her"): vary surface verb between feeling register (body/hands layer) and NI register (architecture/node layer)

@@ -916,3 +916,78 @@ carry_forward:
   - b01c07 prose-burden carries forward unchanged
   - No new watches generated; fence clean throughout c19 at bone level
   - Collapse axes confirmed continuing in accumulation mode into c20
+
+## 2026-06-05 — /and-facets Phase 5b adversarial gate — b01c19 — worm-canon-pedant
+
+chapter: b01c19
+date: 2026-06-05
+
+NOTE: This entry is an APPEND to stm.md — merge at end of file after the b01c19 /and-write Phase 6 bone-gate entry.
+
+### Earth-Bet fence FULL SCAN — 9 facets, all text fields
+
+Conducted full-file Earth-Bet fence scan across all 56 citations in the cite-index:
+
+LOCATION-STATE (10 entries): all location-names are KL-geography or project-internal (the-tallow-render-works, the-red-keep-outer-ring, the-tallow-croft-corner); descriptors ("tallow-smell-saturated," "bottlefly-routes," "pillar-junction," "service-gate," "vat-house") are all setting-consistent; "bottlefly" is the project-internal Westerosi-insect-analogue vocabulary, not shard/parahuman vocabulary. FENCE CLEAN.
+
+INTEREST-NARRATOR (10 entries): full text-field scan — "the court keeping itself for no one the lower city would name" (NI:1); "the way a track wears into a stone once enough feet have moved the same line" (NI:2); "there is a word for the shape and the accounting reaches it" (NI:3 — CRITICAL FENCE POINT: the word is NOT named, the recognition arrives but the prior is not named); "what she now sees the column to be makes no difference the column can register" (NI:4); "the lift is the act the lock fires on" (NI:5 — "lock" is ledger-register, not Worm shard-lock); "the distance it does not travel is the whole of the entry" (NI:6); "the empty corner is the first line of a reading she has not asked for" (NI:7); "the shutter is not a wall, it is a number arriving down through the service-layers" (NI:8); "the architecture does not register the gap the way the corner does" (NI:9 — "architecture" is coverage-network vocabulary, not shard-architecture); "the running is the close, not the cost" (NI:10). FENCE CLEAN across all 10.
+
+SENSORY (4 entries): all use setting-register vocabulary (grey-dark-reading-light, tallow-render-room-overnight-dark, stylus-in-use-factional-column, stylus-held-still, cost-ledger-open-column-work, stylus-in-hand-post-column-close, lane-night-ambient, tallow-croft-corner-cold-render-smell). No Earth-Bet terminology. FENCE CLEAN.
+
+STATE-UPDATES (17 entries): all field names are prop:oc-* (original-content props) or studio.* (world-state tracking). No parahuman tracking system vocabulary. The actor:taylor-hebert-kl-122ac.position entry at @32 tracks physical movement in-world. No Earth-Bet technical terms. FENCE CLEAN.
+
+MEMORY (4 entries): CRITICAL FENCE TEST on mem:1 @11:
+  Text: "the shape the column has worn is a shape she has set into a column before — a different accounting, in a different place, for reasons that did not hold — and the track is the same track whatever wears it -> cond-override-architecture-residue-122ac"
+  Fence check: No Khepri. No Gold Morning. No Brockton Bay. No parahuman. No shard. No trigger-event. "A different place" — unspecified geography. "For reasons that did not hold" — unspecified outcome. "A different accounting, in a different place" — architectural/geographical shape-language only. The condition tag "cond-override-architecture-residue-122ac" is character-internal condition vocabulary (the 122ac is KL-project designation, not a Worm-canon reference).
+  FENCE HOLDS. This is the chapter's hardest fence test and it passes.
+  
+  mem:3 @24: "the contempt comes to rest in the only form the ledger has ever let it take — alongside the line, never the line itself, the way a name stays in a count after the body is dead -> cond-kl-witch-label-formation-122ac" — ledger-register, "witch-label" is Taylor's Westerosi reputation-name. FENCE CLEAN.
+  
+  mem:4 @29: "the window has been open across forty-three prior approaches in seven months and she has the count of them; the open window was the constant and the count is what tells her the shutter is not weather -> cond-kl-witch-label-formation-122ac" — operational-counting vocabulary. FENCE CLEAN.
+  
+  MEMORY: FENCE CLEAN ACROSS ALL 4 ENTRIES.
+
+FEELING (2 entries): "the stylus stops above the column and her hand holds it there a beat past the mark | expressed: no" and "her stride does not break at the empty corner and her hands stay loose at her sides | expressed: no" — both are Westerosi-physical somatic vocabulary. No Earth-Bet somatic terms. FENCE CLEAN.
+
+METAPHOR (0 entries): trivially clean. FENCE CLEAN.
+
+VIBES (6 entries): full keyword-chain scan — "contempt-without-refusal," "cold-utilitarian interiority," "rising entrapment," "feed-content," "court-machinery," "entry-format," "naming-does-not-neutralize-it," "recognition-fires-as-an-observation-not-a-feeling," "accounting-reads-its-own-shape-through-the-arithmetic," "stylus-pauses-and-the-suppression-cracks-without-breaking," "LOCKED-at-the-ledger-final-form," "clarity-forecloses-nothing," "witch-label-has-reached-the-accessible-face-of-the-architecture," "tether-severs-in-the-walk," "architecture-still-running-one-node-lighter," "morning-count-in-no-record-she-has-written-today," "airless-precise-accounting-voice-closing-on-a-cost-it-does-not-discharge." No Worm-fandom vocabulary. No parahuman keywords. "Witch-label" = Westerosi reputation-name. "Architecture" = coverage-network in-world vocabulary. FENCE CLEAN across all 6.
+
+EXPOSITION (3 entries): "Otto's apparatus," "Jarvis," "Sera's parentage-question," "the witch-woman who maps Flea Bottom," "court-tier reading," "Red Keep's outer administrative ring," "chamberlain," "tallow-render hand," "lower Flea Bottom node," "availability-windows," "protection-reading," "witch-label." All KL-internal vocabulary. "Full scale" = counting-scale language. "The court at its own scale" = tier/scale language. No Earth-Bet proper nouns in any gloss-text. FENCE CLEAN.
+
+### AGGREGATE EARTH-BET FENCE VERDICT: CLEAN — 56 citations / 9 facets reviewed; no Khepri, no Gold Morning, no Skitter, no Brockton Bay, no Scion, no parahuman, no shard, no Manton effect, no trigger-event, no cape-rating vocabulary found in any text field.
+
+### Per-facet verdicts (worm-canon-pedant)
+
+- location-state (10): ACCEPT — KL-geography consistent; bottlefly-routes vocabulary is established project-internal insect-analogue; observed-terrain entries (outer-ring @19/@20) are within Taylor's established bottlefly-network coverage; loc-state:8/@29 shutter-state correctly records an observational fact within Taylor's physical-presence range at the approach; knowledge-path for all 10 entries clean; no Earth-Bet geography bleed
+- interest-narrator (10): ACCEPT — Earth-Bet fence CLEAN across all 10 text fields; critical fence test at NI:3 @14 PASSES (the accounting reaches a word for the shape; the word is NOT named in any NI entry; no proper noun surfaces); "the lock fires on" (NI:5) is ledger-register, not shard-mechanic; "the architecture does not register" (NI:9) is coverage-network register; voice register correct throughout — cold-utilitarian-flat, no optimism, no emotional self-labeling; "Not a feeling. An observation." is canon-Taylor register for suppression-cracking events; NI density at 28.6% ACCEPTED — silent-solitary-interior chapter class disposition; all 10 entries within scope of Taylor's established self-knowledge and operational-reading mode
+- sensory (4, 2 grounding-licensed): ACCEPT — fence trivially clean; no Earth-Bet sensory vocabulary; grounding-licensed entries @14 (stylus-held-still) and @27 (cold-render-smell) are Westerosi-world physical textures; the recognition-beginning peak at @14 has no power-register bleed in the sensory entry (the stylus is a ledger-instrument, not a power-artefact)
+- state-updates (17): ACCEPT — fence clean across all 17 entries; prop:oc-* and studio.* naming convention honored throughout; no parahuman tracking vocabulary; actor:taylor-hebert-kl-122ac.position at @32 (walking-lane-past-empty-corner) records physical movement within established scene context; state:7 @25 (approaching-ledger-edge) confirmed as auditor's superfluous-intermediate signal — not a canon error, excess density; stitch advisory only
+- memory (4): ACCEPT — Earth-Bet fence HARD test at mem:1 @11 PASSES under full adversarial scan; "a different accounting, in a different place, for reasons that did not hold" is shape-language-only; no proper noun; condition tag cond-override-architecture-residue-122ac is character-internal vocabulary; the doubled-register discipline (distinct anchors confirmed: mem:1/@11 + mem:2/@9 both use cond-override-architecture-residue-122ac but at distinct anchors; same for mem:3/@24 + mem:4/@29 with cond-kl-witch-label-formation-122ac); signal-004 (NI adjacency gap at mem:2/@9) is a stitch guidance note, not a fence or constraint violation; memory:3 @24 dead-name-in-ledger figure is Westerosi-ledger-register bleakness, no Earth-Bet reference
+- feeling (2): ACCEPT — fence trivially clean; two somatic-not-expressed entries in Westerosi-physical vocabulary; voice register correct (body-before-mind, not emotional-self-labeling); "expressed: no" is the correct suppression-discipline form for a chapter at this stage of Taylor's arc; canon-shape
+- metaphor (0): ACCEPT — fence trivially clean; zero entries correct per refuse-by-default discipline; the native dead-name-in-ledger figure is in memory:3 and carries the chapter's peak; no Earth-Bet figure-risk from zero-metaphor facet
+- vibes (6): ACCEPT — Earth-Bet fence CLEAN across all 6 keyword chains (full text-field scan above); "architecture" = coverage-network in-world vocabulary throughout; "witch-label" = Westerosi reputation; no Worm-fandom vocabulary; keywords map correctly to Taylor's established cold-utilitarian + contempt-without-refusal + rising-entrapment arc; vibes:4 @24 "LOCKED-at-the-ledger-final-form" — "lock" is axis-state vocabulary (political_register-prot LOCK), not Worm-shard-lock; no fence ambiguity
+- exposition (3): ACCEPT — Earth-Bet fence CLEAN on all three gloss-texts; "full scale" is counting-scale language with no parahuman-rating bleed; "the witch-woman who maps Flea Bottom" is Taylor's Westerosi reputation-label, not her cape-identity; expo:3 @27 Daven orient: "the witch-label has reached the people who know my accessible face" — "accessible face" is cover-exposure language, not a Worm power-concept; who-knows-what-when: CLEAN — the label-traveling is established at @0 bridge; Taylor's inference at @27 is conditional-framework (what a broken contact means), not confirmed knowledge (the instruments @28/@29/@31 confirm); soft flag: "the cost of being one of them has been priced" approaches present-tense certainty before the instruments land; classified as stitch advisory (render as inference-framework, not confirmed-certainty), not a facet structural error
+
+### Aggregate: ALL 9 FACETS — ACCEPT
+
+### Canonicity summary
+- Earth-Bet noun fence: CLEAN — full-text adversarial scan across 56 citations / 9 facets / all text fields
+- Voice register: CLEAN — cold-utilitarian-flat throughout; "Not a feeling. An observation." is canon-Taylor suppression-register; no optimism, no emotional self-labeling
+- Capability mechanics: CLEAN — outer-ring observation uses prior-established bottlefly nodes (c12/c14 established); s04 uses standing Croft intersection bottlefly-node; no range inflation; no new scope acquisition; no single-broadcast deployment
+- Knowledge-path: CLEAN — all inference within Taylor's established reading-mode; s04 inference is behavioral-pattern-to-cause-class deduction (forty-three prior approaches → shutter deviation → non-weather cause); no lore-leak
+- Suppression architecture: CANON-TRUE — s02 crack-not-broken pattern matches established c12/c17 suppression architecture; the recognition arrives and the assembly continues unchanged; non-terminal is correct
+- Multi-shard fence: CLEAN — bottlefly coverage is observational relay; no body-direction; no nervous-system coordination
+- Collapse-axis tracking: ACCUMULATION MODE confirmed (third/fourth tranches in c19 following FIRST-TOUCH c17 and second-tranche c18); no re-activation errors
+
+### Notes for /and-stitch
+- Earth-Bet fence at NI:3 @14 remains the critical stitch-layer fence test: "there is a word for the shape and the accounting reaches it" — the word must not be named in the stitched prose; the recognition is shape-only (the column's own form, the lane-stone analogy); if any stitched sentence names a prior-life identity (Khepri, Gold Morning, or any Earth-Bet proper noun), that is a FENCE VIOLATION at the prose layer
+- The condition tags (cond-override-architecture-residue-122ac at mem:1/@11, mem:2/@9) are for the impersonator's internal state-tracking; they must not appear as prose in the stitched draft
+- expo:3 @27 "has been priced" stitch advisory: render this as Taylor's operative inference-framework for what a contact-break means, not as a statement of confirmed knowledge; the inference instruments (@28/@29/@31) deliver the evidence after this exposition entry
+- Running tally through b01c19: 0 flags, 0 strong flags, 0 fence violations (full facet-layer review)
+
+carry_forward:
+  - b01c07 prose-burden carries forward unchanged
+  - No new watches generated; fence CLEAN throughout c19 facet layer
+  - Collapse axes confirmed in accumulation mode into c20
+  - Earth-Bet fence vigilance at NI:3 @14 for prose-layer execution at /and-stitch
