@@ -2264,10 +2264,18 @@ parking_lot:
         - active-project/staff/auditor/substance-b01c17-scenes.md  # fault-002
         - active-project/staff/showrunner/memory.md  # cl-d11 (~line 1402); chapters[b01c17s04].substance_delta
       resolution_suggestion: "b01c18 Phase 3 anchor remaining cl-d11 +0.5, or document cost-forward carry to d14"
-      status: open
-      resolved_at: null
-      resolved_by: null
-      resolution_note: null
+      status: resolved
+      resolved_at: 2026-06-05T02:30:00Z
+      resolved_by: "/and-substance chapter b01c18 Phase 3 (cost-forward carry to d14 documented)"
+      resolution_note: |
+        c18 holds relational_anchor_status flat at 7.5 (Wren screened throughout the full-coverage
+        deployment; her gap-lane held blank even at maximum density — structurally significant but not
+        a recognition event that moves the axis). The cl-d11 +0.5 2nd tranche is therefore NOT settled
+        at c18; it is documented as a cost-forward carry to the d14 collapse settlement (c20), where the
+        un-priced relational item the calculus comes for settles. The discipline is recorded in the
+        relational_anchor_status axes_held rationale at c18 scenes s01/s02/s03/s05 + the AUTHORING NOTES.
+        Auditor fault-004 (process-hygiene) requested this stamp to prevent spurious surfacing at b01c19
+        Phase 0. Confirmed by auditor substance-b01c18-scenes.md and dramatist ACCEPT.
 
     - id: pl-2026-06-04-c17-002
       created_at: 2026-06-04T23:10:00Z
@@ -2386,6 +2394,118 @@ parking_lot:
         - active-project/staff/showrunner/memory.md  # chapters[b01c17].cold_read
         - staff/admin/process-proposals.md  # PROP-0037 (depth-pass-before-book-close HARD-abort, open/untriaged)
       resolution_suggestion: "/and-cohere b01 c13-c17 (five-consecutive-quiet accumulation handler, DEC-0095) OR /and-write b01c17 revise --from-signals + re-cascade"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-05-c18-001
+      created_at: 2026-06-05T02:30:00Z
+      created_by: "/and-substance chapter b01c18 Phase 5 (audience trio converging — worm-canon-pedant HARD watch + cape-fic-reader + literary-snob)"
+      label: khepri-declarative-s02-enactment-gate-c18
+      target:
+        command: /and-write
+        scope: "b01c18"
+        phase: Phase 6
+      severity: HARD
+      description: |
+        ENACTMENT / EARTH-BET-FENCE GATE for /and-write b01c18 Phase 6 bone-gate.
+        b01c18s02 chunk prose contains the word "Khepri" in DECLARATIVE form: "the one piece of the
+        architecture that is not Khepri. Everything else is." This departs from the established
+        suppressed-shape-word form (c12: shape-word surfaces under pressure and is willfully suppressed)
+        and the cipher-only form (c17: shape-language without the proper noun). The audience trio
+        (worm-canon-pedant lead; cape-fic-reader SW-c18-CFR-1; literary-snob SW-c18-LS-1) converged:
+        FENCE-RISK-NOT-FENCE-VIOLATED at chunk level — the register the declarative lands in is a
+        BONE/PROSE decision, so the call moves to /and-write Phase 6.
+
+        RULING (worm-canon-pedant): If bones deliver the s02 phrase as the NARRATING register's
+        structural identification — subject = the architecture, NOT Taylor's interiority; the reader
+        sees the identification, Taylor's POV does not NAME herself — the fence holds and the s05 irony
+        is intact (the blank-column-where-full-recognition-would-go irony REQUIRES that Taylor is not
+        naming herself Khepri). If ANY bone gives Taylor the interior recognition "I am Khepri" or any
+        functional equivalent (Taylor naming herself = knowing what she is = collapses the suppression
+        architecture the whole chapter builds), that bone is a HARD finding at Phase 6 and blocks persist.
+        Two breaks fire simultaneously on violation: (1) Earth-Bet fence violated; (2) s05 irony collapses.
+
+        The c18 AUTHORING NOTES section (d) already names the correct mitigation: "enactment in the
+        physical act of opening the nodes + the count running past the threshold number, not in any
+        interior accounting Taylor runs about it." /and-write Phase 1 must brief the bone-author on the
+        register-split; Phase 6 verifies. Rest of chapter Earth-Bet fence is CLEAN (all other shape-
+        language — "a different architecture, in a different place," "a city before this one," "before
+        this city" — is suppressed cipher; s02 declarative is the ONLY fence-pressure point).
+      context_refs:
+        - active-project/audience/worm-canon-pedant/stm.md  # SW-c18-WCP-HARD-1 + explicit Khepri-fence ruling
+        - active-project/audience/cape-fic-reader/stm.md    # SW-c18-CFR-1
+        - active-project/audience/literary-snob/stm.md      # SW-c18-LS-1
+        - active-project/staff/showrunner/memory.md          # chapters[b01c18].scenes[b01c18s02].chunk
+      resolution_suggestion: "/and-write b01c18 Phase 1 brief bone-author on narrating-vs-interior register-split for the s02 Khepri identification; Phase 6 bone-gate verifies Taylor does not name herself"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-05-c18-002
+      created_at: 2026-06-05T02:30:00Z
+      created_by: "/and-substance chapter b01c18 Phase 5 (literary-snob + worm-canon-pedant soft watches) + Phase 5.5 admin DEC-0096 carry"
+      label: c18-bones-execution-watches
+      target:
+        command: /and-write
+        scope: "b01c18"
+        phase: null
+      severity: SOFT
+      description: |
+        Bones-execution watches for /and-write b01c18 Phase 1 scene-decomposition discipline (non-blocking;
+        carried from Phase 5 audience soft watches + the dramatist montage note + admin DEC-0096 op-friction):
+        (a) SW-c18-LS-2 / SW-c18-WCP-soft: s04 axis-slug language ("The position-world entry is:" /
+            "The political_register-world entry is:") is planning-document annotation bleeding into Taylor's
+            POV. MUST be stripped at bones — Taylor's ledger-consciousness uses operative accounting language
+            (margin cipher read, line written, record closed), NOT axis-slug labels.
+        (b) SW-c18-LS-3: s05 interior-accounting-density. Six distinct accounting entries in the closing
+            scene must be structurally distinct bones with DIFFERENT physical grounding, not sequential
+            iterations of the same ledger-closing weight. If collapsed, the c17 cold-read's interior-
+            accounting-density risk fires in stitched prose.
+        (c) dramatist montage note: s03 (six days) + s04 (nine days) span compressed time. Both must land as
+            SPECIFIC events through compound-eye imagery (s03: grooms/maids/knight/septa as system-embodiment;
+            s04: margin-cipher single-line confirmation), NOT as summary/montage narration.
+        (d) admin DEC-0096 op-friction-signal: at least one scene should carry operational friction so the
+            chapter is not a flawless-op-with-no-resistance (the surviving cold-read signal). A small
+            on-page friction beat (a node that returns noise, a corridor that reads wrong, a near-miss on
+            the Wren-screen) keeps the climax from reading as frictionless competence.
+      context_refs:
+        - active-project/audience/literary-snob/stm.md   # SW-c18-LS-2, SW-c18-LS-3
+        - active-project/audience/worm-canon-pedant/stm.md
+        - active-project/staff/reviews/chunk-coldread-b01c18-2026-06-05.md
+        - staff/admin/decisions.md  # DEC-0096
+      resolution_suggestion: "/and-write b01c18 Phase 1 decomposition honors (a)-(d); Phase 6/stitch verify"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-05-c18-003
+      created_at: 2026-06-05T02:30:00Z
+      created_by: "/and-substance chapter b01c18 Phase 5 (auditor fault-003)"
+      label: cl02-cost-side-completed-verification-c18
+      target:
+        command: /and-substance
+        scope: "book b02"
+        phase: Phase 0
+      severity: SOFT
+      description: |
+        Auditor fault-003 (FLAG, no criteria). b01c18s02 notes claim "cl02 cost side completed."
+        c18 handoff_in shows moral_framework aggregate at -3, which equals cl02's total declared cost
+        (moral_framework -3). If all prior -3 was drawn under cl02, the entry was exhausted before c18
+        and c18's draw would attribute to a zero-capacity anchor; if prior draws split across
+        cl03a/cl-d06/cl05, cl02 may still have had capacity for the c18 -1.0. The aggregate-state
+        moral_framework notes show the collapse distributed across cl02 (c03) + cl-d06 (c06) + cl03a
+        (c10/c12) + cl03a (c17) — suggesting cl02 was NOT the sole moral_framework anchor and the c18
+        -1.0 attribution to cl02 needs a clean continuity reconciliation. Non-blocking for c18 (the
+        magnitude and direction are correct; only the ledger-anchor attribution is in question).
+        Verify at /and-substance book b02 Phase 0 continuity check (or a dedicated cost-ledger audit).
+      context_refs:
+        - active-project/staff/auditor/substance-b01c18-scenes.md  # fault-003
+        - active-project/staff/showrunner/memory.md  # series.substance.cost_ledger cl02 (~line 1346); aggregate-state moral_framework notes
+      resolution_suggestion: "cost-ledger continuity reconciliation at /and-substance book b02 Phase 0"
       status: open
       resolved_at: null
       resolved_by: null

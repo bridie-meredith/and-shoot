@@ -209,3 +209,34 @@ bones_execution_watches_to_and-write:
 - SIGNAL-004 (scene-open-orient + loc-state co-fire): exposition schema condition (b) needs clarification for cases where loc-state doesn't carry time-passage content
 - NI-vibes DEDUP at @36: functional differentiation holds; known surface overlap
 - SIGNAL-005 (state:2 @21 NI co-cite adjacent): rubric-state-updates §3 cluster-vs-same-anchor clarification needed
+
+## 2026-06-05 — /and-substance chapter b01c18 Phase 5 chunk review
+
+chapter: b01c18
+date: 2026-06-05
+scenes_reviewed: [b01c18s01, b01c18s02, b01c18s03, b01c18s04, b01c18s05]
+
+verdict_per_scene:
+  b01c18s01: SUBSTANCE-FELT
+  b01c18s02: SUBSTANCE-FELT
+  b01c18s03: SUBSTANCE-FELT
+  b01c18s04: SUBSTANCE-FELT
+  b01c18s05: SUBSTANCE-FELT
+
+chapter_verdict: SUBSTANCE-FELT
+hard_findings: none
+SUBSTANCE-FLAT: none
+SUBSTANCE-SUSPECT: none
+overall: ACCEPT
+
+notes:
+  - s01: request-scope-naming setup lands as the correct information-asymmetry opening for a climax chapter; opposing force (structural inevitability from d03 acceptance) is concrete, not atmospheric; held axes are coiled spring, not slack; the shape-reference for what complying costs ("a number she has not counted since a different architecture") tells the reader what is coming without breaking the fence; precipice earns its held-axis discipline
+  - s02: irrevocable deployment lands as the genre's escalation payoff — all nodes simultaneously vs. ward-by-ward-cluster-at-a-time is the specific tactical distinction that makes the threshold real; Wren-gap-held-blank-amid-fullcoverage is the reader-asymmetry move of the chapter; the body-count crossing the prior number is a concrete quantity with a prior referent; moral_framework -1.0 enacted in the act of opening nodes (not in interiority); all three moving axes carry paid costs; no established limit bypassed without cost
+  - s03: contempt near-saturation earned by content not assertion — grooms/saddlebags/maids-who-are-not-maids/knight-grip/septa-timing are specific tactically-legible bodies; "+1.5 from six days at full coverage returning the system not samples of it" reads correctly; "reading it, for it, while it reads nothing of her at all" is the asymmetry that lands the contempt without Taylor's affect carrying it; no cheap-gain
+  - s04: world-axes advancing as direct causal products of the irrevocable deployment is sound; "does not write it into any record" gives the delivery the correct reader-asymmetry texture; the succession confirmation as irreversible world-state change is named explicitly ("whether Taylor names it there or not"); no filler, no bridging
+  - s05: ledger-closes-cleanly-and-both-facts-are-true lands as the chapter's culminating payoff at the correct explicitness level for a climax; the disposal-calculus visible in the accounting is the political coherence this reader wants; blank column held again is the correct close — no manufactured recognition; the contempt sitting in the same column as every other entry is the correct near-saturation form
+  - threshold_discipline_check: no fires; no unmotivated knowledge; no established limits bypassed without cost; no filler; no fence violations at chunk level
+  - SW-c17 carries verified: s02 irrevocable deployment is enacted in physical act (node-opening + body-count crossing), not narrated; asymmetry discipline maintained
+
+bones_execution_watches_to_and-write:
+  SW-c18-CFR-1: s02 Khepri-declarative POV-register — "the one piece of the architecture that is not Khepri. Everything else is." must land as narrating-register visible to reader, not as Taylor's interior recognition; if bones give Taylor the self-identification, the s05 blank-column irony collapses; coordinate with worm-canon-pedant HARD watch

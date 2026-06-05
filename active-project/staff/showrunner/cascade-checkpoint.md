@@ -8,8 +8,9 @@ cascade:
   root: b01c18
   invoked_at: 2026-06-05T02:00:00Z
   invoked_command: /and-substance chapter b01c18 --cascade
-last_completed: {level: null, slug: null, completed_at: null}
-next: {command: "/and-substance chapter b01c18 (Phase 2-3 scene chunks)", args: []}
+last_completed: {level: chapter, slug: b01c18, completed_at: 2026-06-05T02:30:00Z}
+next: {command: "/and-write b01c18", args: []}
+phase5: {audience: ACCEPT-3of3, dramatist: ACCEPT, auditor: 2-HARD-bookkeeping-corrected, chunk_cold_read: CHUNK-CLASS-B-disposition-P-DEC-0096}
 chapter: b01c18
 phase9_verdict: null
 phase10_verdict: null

@@ -6118,3 +6118,76 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+id: DEC-0096
+date: 2026-06-05
+mode: user-proxy
+track: FAST (RUNBOOK R1)
+question: |
+  b01c18 Phase 5.5 CHUNK-CLASS-B disposition: R (revise chunk), P (proceed with risk recorded),
+  or S (substance-contract revision)? Climax chapter — irrevocable-Khepri-repetition deployment
+  (Dance-pulse 2). Phase 5: 3/3 audience ACCEPT (SUBSTANCE-FELT; design enacts, not explains;
+  irrevocable threshold lands in physical action; contempt near-saturation earned; s05
+  accounting-close names catastrophe through form), dramatist ACCEPT (correct climax shape),
+  auditor 2 HARD bookkeeping-text faults being corrected. Cold-read CHUNK-CLASS-B: strict
+  CONTINUE=no on event-poverty/no-dialogue/no-on-page-resistance + anti-climax-by-design;
+  majority of no is uninformed-reader artifact (unknown characters, unknown insect-control
+  mechanism, unnamed prior-city). Surviving signals: (1) five scenes flawless-operator execution,
+  no antagonist on-page, no dialogue, no scene-level reversal; (2) ends on accounting-close
+  form, catastrophe asserted not dramatized.
+decision: P — proceed with risk recorded
+basis: prior-ruling (DEC-0094/0090/0087/0085 exact precedent family) + methodology-3b (cost) + methodology-3a (reversibility)
+rationale: |
+  Fifth consecutive Class-B P in the c14/c15/c16/c17/c18 sequence. Pattern identical each time:
+  uninformed-reader cold-read returns strict-no on (a) withheld serial context (Earth-Bet fence /
+  character/mechanism backstory) and (b) event-density / interior-accounting-dominant staging.
+  Both categories pre-dispositioned as design-inherent across the entire book.
+
+  Phase 5 signal is decisive and points opposite to revision: 3/3 SUBSTANCE-FELT across all 5
+  scenes, dramatist ACCEPT on correct climax shape (precipice → irrevocable act → consequence-
+  running → accounting close), auditor 0-HARD on design/prose/thematic. The "design enacts rather
+  than explains" and "the accounting-close names the catastrophe through form" verdicts are exactly
+  the test the substance contract sets for the climax chapter — the catastrophe-of-accuracy IS the
+  ledger closing cleanly. That IS the dramatized event. The informed reviewers returned a clean PASS.
+
+  The surviving cold-reader signals are both subcategories of event-poverty:
+  (1) No-dialogue / no-on-page-resistance is design-inherent on an irrevocable-deployment chapter
+  where the antagonist faction is OFFSTAGE and the opposition is the operator's own moral reckoning —
+  putting an antagonist on-page would falsify the substance contract.
+  (2) Anti-climax-by-design / catastrophe-asserted-not-dramatized — this is the c18 analog to
+  c17's "irony enacted not declared." The accounting close IS the dramatization; the cold-reader
+  cannot see this without 17 chapters of context establishing what "the ledger closes cleanly"
+  means for this character and this chapter's irrevocable threshold.
+
+  (R) is wrong layer — chunk design is not broken; it passed every informed gate.
+  (S) is wrong layer and wrong cost — substance contract passes all informed gates; auditor HARDs
+  are bookkeeping-text, not design.
+  (P) with cold_read_risk_carry is correct: preserve surviving signals as /and-write targeting
+  brief; arm /and-stitch Phase 8.5/9 for the same complaint class.
+
+  cold_read_risk_carry items for /and-write:
+    1. (HARD watch) Irrevocable-threshold moment must be ENACTED as a concrete physical act
+       (the deployment decision/action must be staged as something Taylor does with her hands/tools/
+       body at the moment of no-return), not solely rendered as interiority or ledger-accounting.
+    2. (HARD watch) At least one scene must carry a physical resistance signal — even if antagonist
+       is offstage, the op itself must encounter friction (technical, environmental, or self-imposed)
+       that makes the "flawless execution" read as chosen precision, not narrative convenience.
+    3. (SOFT) The accounting-close s05 form must make the "both facts are true" structure concrete
+       enough that a reader 17 chapters deep cannot miss it — pair it with at least one specific
+       physical outcome named in the scene (not abstract moral summary).
+    4. (design-inherent CONTINUE=No) Cold-reader strict-no on unknown characters (Otto/Sera/Wren/
+       Norren/Jarvis), insect-control mechanism opacity, unnamed prior-city (Earth-Bet fence) —
+       pre-authorized serial mid-point categories; stitch Phase 4+9 carry.
+
+trade-off: |
+  Only cost of P is forwarding the event-poverty risk to /and-write. The write-time carries
+  (items 1-3) directly target the diagnosable residue. No realistic scenario where R or S
+  produces a better climax chapter at lower total cost given the clean substance contract.
+  Climax chapters carry the highest substance-contract precision requirement; revising at chunk
+  layer against three full-pass informed reviewers risks false-repair that damages the contract.
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
