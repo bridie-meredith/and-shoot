@@ -1,5 +1,80 @@
 # studio state
 
+episode: b01c17
+last_updated: 2026-06-05
+action: location-state R2 endorsement + sensory R1 + state-updates-env R1 authoring — /and-facets b01-c17 Phase 1 (consolidated R1+R2)
+
+## Location-state R2 endorsed (b01c17) — 6 entries, 0 revision
+  loc-state:1 @1  — the-hook-lower-water-trough | dusk | none | trough-stone-open, count-sheet-under-stone, fishmonger-gate-approach-clear | the dead-drop trough (place-anchor; s01; dusk)
+  loc-state:2 @2  — the-hook-lower-water-trough | dusk | none | count-sheet-in-hand, trough-stone-bare | retrieval state-change (stone now bare)
+  loc-state:3 @8  — the-hook-lower-water-trough | dusk | none | count-sheet-refolded, trough-stone-vacant | fold-and-hold state at the precipice (ANSWER-BEFORE-DECISION load-bearing)
+  loc-state:4 @9  — the-hook-southern-edge | night | none | lane-open, ward-density-readable | Hook's southern edge at night (place-anchor; s02; dusk→night; physical container for interior pricing)
+  loc-state:5 @18 — the-tallow-render-works | night | none | rented-room-above-rendering, tallow-smell-saturated, coverage-log-at-hand | room above rendering works (place-anchor; s03; same night)
+  loc-state:6 @29 — the-gap-lanes-east-water-gate | morning | none | corridor-open, ward-foot-traffic-active | east-of-water-gate corridor (place-anchor; s04; three-day skip)
+  R2 verdict: ENDORSED — all 6 entries survive R2 strip / pointing / previous-entry / frugality tests; @8 frugality confirmed (count-sheet-refolded state distinct from @2 retrieval; ANSWER-BEFORE-DECISION load-bearing beats scene-map protected-pattern; entry kept)
+  File: theater/facets/location-state-b01-c17.md
+
+## Seams flagged for R2 (b01c17 location-state) — resolved at R2
+  SEAM-C17-LOC-001: the-hook-lower-water-trough slug — established in b01c13 loc-state:6 @24; consistent; no margit referral needed
+  SEAM-C17-LOC-002: the-hook-southern-edge slug — new slug; no prior loc-state entry; drawn from bones locations: field; margit referral recommended at R2
+  SEAM-C17-LOC-003: the-tallow-render-works slug — new slug; no prior loc-state entry; scene-map names "the room Taylor rents above the rendering works"; margit referral recommended
+  SEAM-C17-LOC-004: the-gap-lanes-east-water-gate slug — established in b01c14 loc-state:3 @32 and b01c15 SEAM-C15-LOC-003; consistent; no new margit referral
+
+## Current set (b01c17 chapter-close)
+  location: the-gap-lanes-east-water-gate (Taylor's body at morning ward-read; s04)
+  time_of_day: morning (three days after s03 night; s04 morning per scene-map)
+  weather: none
+  ambient_conditions:
+    - dead-drop-channel: quiet (apparatus query resolved against Norren; @29)
+    - apparatus-picture: norren-attribution resolved (Wren screened; @30)
+    - coverage-log: open-unreclosed (false attribution complete; @23; left open @28)
+    - cost-ledger protection-entry-column: blank-held (enacted absence @34)
+    - feed-density: routine-coverage (carry from b01c16; no change)
+    - Gold-Cloak-lane-junction-patrol: carry from b01c14 (unchanged)
+
+## Sensory facet filed (b01c17) — 4 entries (2 standard, 2 S02-EMBODIMENT grounding-ledger)
+  sensory:1 @2  — light: dusk-lane-ambient -> low-angle-grey-flat (s01; count-sheet in dusk light at trough; standard)
+  sensory:2 @18 — smell: hook-lane-night-ambient -> rendered-tallow-cool-pervasive (s03; room entry above rendering works; standard)
+  sensory:3 @9  — tactile: lane-stone-evening-ambient -> night-stone-cool-underfoot (s02-embodiment-grounding; Hook's southern edge night-walk; S02-EMBODIMENT grounding-ledger candidate)
+  sensory:4 @17 — sound: lane-ambient-night -> ward-density-low-distant-ember (s02-embodiment-grounding; extended walk; S02-EMBODIMENT grounding-ledger candidate)
+  Density: 4/36 = 11.1%; standard entries = 2/36 = 5.5% (within 3-6% band); S02-EMBODIMENT adds grounding-ledger licensed
+  Modalities: light + smell + tactile + sound (4; exceeds ≥2 floor)
+  Per-scene cap: s01=1 (@2), s02=2 (@9, @17), s03=1 (@18), s04=0 — all within ≤3
+  S02-EMBODIMENT entries: sensory:3 @9 + sensory:4 @17 (grounding-ledger candidates for /and-stitch Phase 4)
+  Files: theater/facets/sensory-b01-c17.md
+
+## State-updates-env filed (b01c17) — 13 entries, decisions-not-fire documented
+  state:1  @1  — studio.time_of_day: morning -> dusk
+  state:2  @1  — studio.location: oc-hook-precinct-circuit -> the-hook-lower-water-trough
+  state:3  @9  — studio.time_of_day: dusk -> night
+  state:4  @9  — studio.location: the-hook-lower-water-trough -> the-hook-southern-edge
+  state:5  @18 — studio.location: the-hook-southern-edge -> the-tallow-render-works
+  state:6  @22 — prop:oc-coverage-log.norren-attribution: absent -> first-line-written
+  state:7  @23 — prop:oc-coverage-log.norren-attribution: first-line-written -> complete-three-lines
+  state:8  @28 — prop:oc-coverage-log.condition: writing-active -> open-unreclosed
+  state:9  @29 — studio.time_of_day: night -> morning
+  state:10 @29 — studio.location: the-tallow-render-works -> the-gap-lanes-east-water-gate
+  state:11 @29 — studio.dead-drop-channel.query-status: active -> quiet
+  state:12 @30 — prop:apparatus-picture.norren-attribution: absent -> resolved
+  state:13 @34 — prop:cost-ledger.protection-entry-column: in-progress -> blank-held
+  Field-extensions (4 new): prop:oc-coverage-log (new; margit referral); prop:apparatus-picture (new; margit referral); prop:cost-ledger (new; margit referral — reconcile with prop:oc-feed-ledger); studio.dead-drop-channel.query-status (new sub-field)
+  Density: 13/36 = 36.1%; consistent with b01c13 (42%) / b01c14 (28%) precedent
+  Files: theater/facets/state-updates-env-b01-c17.md
+
+## Prop state at b01c17 chapter-close
+  - studio.time_of_day: morning (@9+@29; three days later morning)
+  - studio.location: the-gap-lanes-east-water-gate (@10; chapter-close)
+  - studio.dead-drop-channel.query-status: quiet (@11; permanent — query resolved)
+  - prop:oc-coverage-log.norren-attribution: complete-three-lines (@7; irreversible)
+  - prop:oc-coverage-log.condition: open-unreclosed (@8; readied for dead-drop as open segment)
+  - prop:apparatus-picture.norren-attribution: resolved (@12; Wren screened; permanent)
+  - prop:cost-ledger.protection-entry-column: blank-held (@13; the enacted absence; permanent)
+  - All b01c16 carry-forward unchanged: studio.fauna_sense_status.feed-density: routine-coverage; studio.fauna_sense_status.eastern-fringe-interference: cleared; studio.spatial_layout.lane-junction-patrol: Gold-Cloak-pair-posted; studio.fauna_sense_status.lower-gate-road-coverage: corwick-absent; prop:oc-ward-coverage-notes.content: hook-rushwick-oswyn-plus-south-plus-both-clusters; prop:oc-feed-ledger.condition: closed; prop:oc-feed-ledger.corwick-entry: written; studio.fauna_sense_status.coverage-scale: five-ward-plus-approaches
+
+---
+
+## Prior episode (b01c16)
+
 episode: b01c16
 last_updated: 2026-06-04
 action: location-state + sensory + state-updates-env R1 authoring — /and-facets b01-c16 Phase 1
