@@ -27,6 +27,7 @@ planetos:
   - loc-local-sept
   - loc-market-square
   - loc-miras-workshop
+  - loc-red-keep-interior
   - loc-red-keep-outer-ring
   - loc-river-ferry-dock
   - loc-river-market-town
@@ -101,3 +102,6 @@ full:
 
 scant:
   - loc-red-keep-outer-ring
+
+full (added):
+  - loc-red-keep-interior

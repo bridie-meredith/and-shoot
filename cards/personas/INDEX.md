@@ -285,6 +285,12 @@ prevention-tragedy: [taylor-hebert-flea-bottom-mirror, oc-vaegon-targaryen]
 
 OC slots for margit to construct at project activation when a generic role is selected from the candidate menu. Listed here after authoring.
 
+- saerys-targaryen (lead protagonist; original youngest daughter of Viserys I, cultivation-reincarnator; dragonless; full; authored and-experiment gap-card build 2026-06-05)
+- helaena-targaryen-122ac (supporting warm-spot; canon Helaena, 122 AC configuration, odd insect-princess; full; authored and-experiment gap-card build 2026-06-05)
+- daenys-velaryon (supporting lover/counter-thesis; base-born Velaryon dragonseed, OC; full; authored and-experiment gap-card build 2026-06-05)
+- ser-harwin-the-patient (supporting surrogate-father bodyguard; hedge knight, runs Saerys's entourage, dies Bk II; full; authored and-experiment gap-card build 2026-06-05)
+- nymeria-summer-isles (supporting conscience/witness; Summer Isles archer-guide, survives to the deck; full; authored and-experiment gap-card build 2026-06-05)
+
 - mira-stonefield (riverlands-smallfolk-woman slot; authored dead-capes-in-westeros activation 2026-05-03)
 - edric-cray (riverlands-smallfolk-man slot; authored dead-capes-in-westeros activation 2026-05-03)
 - ser-harwick-plumm (oc-corrupt-official slot; authored dead-capes-in-westeros activation 2026-05-03)
