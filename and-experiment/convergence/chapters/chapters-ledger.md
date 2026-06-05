@@ -1,7 +1,7 @@
 # Chapter-outline convergence ledger (run-01) — cumulative carry-forward
 
 Sub-loop: decompose the ACCEPTED three-book outline into a converged CHAPTER-level outline.
-Process spec: `design/bones-first/convergence-process.md` (fusion, not selection — all material forward).
+Process spec: `and-experiment/design/convergence-process.md` (fusion, not selection — all material forward).
 Parent convergence (the accepted spine): `and-experiment/convergence/convergence-ledger.md` ★.
 
 ---
@@ -12,7 +12,7 @@ Parent convergence (the accepted spine): `and-experiment/convergence/convergence
 - `and-experiment/convergence/round-03/fusion-v2.md` — the ACCEPTED 3-book outline (spine + the
   Cauldron-Belly mechanism + poison-path). Chapters MUST realize this; do not relitigate it.
 - `and-experiment/convergence/convergence-ledger.md` — FROZEN list, T1–T5 rulings, the cast, the DNs.
-- `design/bones-first/run-01/constraints.md` — canon/world grounding.
+- `and-experiment/design/run-01/constraints.md` — canon/world grounding.
 
 **Task:** produce a chapter-by-chapter outline for all three books. Target ~9–11 chapters/book
 (~27k each at ~2.5–3k/chapter), ~30 chapters total. Each chapter entry: slug/title · the book-movement
@@ -108,4 +108,4 @@ lands · the gift→spend cadence reads as a chart (fix lives in prose register)
 (`../round-03/fusion-v2.md`). This is the build target for the bones stage.
 
 **Chapter loop summary (2 rounds):** R1 diverge (3 lenses → ITERATE + 30ch skeleton) → R2 fuse
-(1 pass → CONVERGED). Process spec: `design/bones-first/convergence-process.md`. **CONVERGED.**
+(1 pass → CONVERGED). Process spec: `and-experiment/design/convergence-process.md`. **CONVERGED.**

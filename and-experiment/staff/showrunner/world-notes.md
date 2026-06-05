@@ -1,6 +1,6 @@
 # World Notes — Decided Constraints
 
-Full grounded bedrock: `design/bones-first/run-01/constraints.md`. Digest below.
+Full grounded bedrock: `and-experiment/design/run-01/constraints.md`. Digest below.
 
 ## Settings
 - King's Landing / Red Keep, reign of Viserys I, ~119–131 AC.

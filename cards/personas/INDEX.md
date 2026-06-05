@@ -40,11 +40,6 @@ planetos:
   - aemond-targaryen
   - aemond-targaryen-122ac
   - alicent-hightower-122ac
-  - daenys-velaryon
-  - helaena-targaryen-122ac
-  - nymeria-summer-isles
-  - saerys-targaryen
-  - ser-harwin-the-patient
   - beric-dondarrion
   - census-officer
   - clerk
@@ -121,11 +116,6 @@ planetos:
 
 full:
   - alicent-hightower-122ac
-  - daenys-velaryon
-  - helaena-targaryen-122ac
-  - nymeria-summer-isles
-  - saerys-targaryen
-  - ser-harwin-the-patient
   - beric-dondarrion
   - mira-stonefield-dragon-gate
   - oc-apothecary-assistant
@@ -241,7 +231,7 @@ brutal-pragmatist: [lem-lemoncloak]
 dying-cause: [beric-dondarrion]
 faith-recovered: [thoros-of-myr]
 corrupt-official: [ser-harwick-plumm, oc-castellan-harrenhal, oc-watch-captain-dragon-gate, oc-rung3-steward]
-targaryen-era: [rhaenyra-targaryen, rhaenyra-targaryen-122ac, rhaenys-targaryen, viserys-i-targaryen, ser-edwyn-celtigar, aegon-ii-targaryen, aemond-targaryen, aemond-targaryen-122ac, alicent-hightower-122ac, criston-cole-122ac, otto-hightower, ulf-the-white, oc-vaegon-targaryen, oc-lyra-targaryen-ward, oc-maester-edwyn, sera-hightower-kl-122ac, wren-stitch-maker-flea-bottom-ward, gylda-saltwater-flea-bottom, coll-net-mender-flea-bottom, corvan-archmaester-retrospective-coda, saerys-targaryen, helaena-targaryen-122ac, daenys-velaryon, ser-harwin-the-patient, nymeria-summer-isles]
+targaryen-era: [rhaenyra-targaryen, rhaenyra-targaryen-122ac, rhaenys-targaryen, viserys-i-targaryen, ser-edwyn-celtigar, aegon-ii-targaryen, aemond-targaryen, aemond-targaryen-122ac, alicent-hightower-122ac, criston-cole-122ac, otto-hightower, ulf-the-white, oc-vaegon-targaryen, oc-lyra-targaryen-ward, oc-maester-edwyn, sera-hightower-kl-122ac, wren-stitch-maker-flea-bottom-ward, gylda-saltwater-flea-bottom, coll-net-mender-flea-bottom, corvan-archmaester-retrospective-coda]
 riverlands-power: [ser-aemon-bracken]
 faith-operator: [septon-rowan]
 hedge-knight: [rymer-hedge]
@@ -284,12 +274,6 @@ prevention-tragedy: [taylor-hebert-flea-bottom-mirror, oc-vaegon-targaryen]
 ## original_characters
 
 OC slots for margit to construct at project activation when a generic role is selected from the candidate menu. Listed here after authoring.
-
-- saerys-targaryen (lead protagonist; original youngest daughter of Viserys I, cultivation-reincarnator; dragonless; full; authored and-experiment gap-card build 2026-06-05)
-- helaena-targaryen-122ac (supporting warm-spot; canon Helaena, 122 AC configuration, odd insect-princess; full; authored and-experiment gap-card build 2026-06-05)
-- daenys-velaryon (supporting lover/counter-thesis; base-born Velaryon dragonseed, OC; full; authored and-experiment gap-card build 2026-06-05)
-- ser-harwin-the-patient (supporting surrogate-father bodyguard; hedge knight, runs Saerys's entourage, dies Bk II; full; authored and-experiment gap-card build 2026-06-05)
-- nymeria-summer-isles (supporting conscience/witness; Summer Isles archer-guide, survives to the deck; full; authored and-experiment gap-card build 2026-06-05)
 
 - mira-stonefield (riverlands-smallfolk-woman slot; authored dead-capes-in-westeros activation 2026-05-03)
 - edric-cray (riverlands-smallfolk-man slot; authored dead-capes-in-westeros activation 2026-05-03)

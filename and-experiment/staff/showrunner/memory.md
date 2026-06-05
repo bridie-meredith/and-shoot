@@ -1,7 +1,7 @@
 # showrunner memory — schema: schemas/showrunner-memory.schema.md
 # WORKSPACE: and-experiment (bones-first prototype — NOT active-project)
 # This project was scaffolded by hand using /and-project as the structural model,
-# then SEEDED from design/bones-first/run-01/ (idea-board, constraints, treatment,
+# then SEEDED from and-experiment/design/run-01/ (idea-board, constraints, treatment,
 # book-outlines). Unlike a stock project it is authored bones-first: the bible
 # already exists; the apparatus is reverse-derived rather than top-down generated.
 
@@ -14,7 +14,7 @@ project:
     until the Dance of the Dragons hands her a sky full of corpses and takes everyone
     she refused to admit she loved.
   mode: bones-first-experiment
-  source_design: design/bones-first/run-01/
+  source_design: and-experiment/design/run-01/
   constraints:
     settings:
       - King's Landing / Red Keep, reign of Viserys I, ~119–131 AC (pre-Dance build-up → the Dance)
@@ -54,12 +54,12 @@ series:
     Meta-question: will the immortal ever come down and be mortal? She doesn't — she
     runs. A tragedy in a comedy's clothes.
     ACCEPTED OUTLINE (canonical build target, converged + enriched):
-    and-experiment/convergence/round-03/fusion-v2.md  (supersedes design/bones-first/run-01/book-outlines.md).
+    and-experiment/convergence/round-03/fusion-v2.md  (supersedes and-experiment/design/run-01/book-outlines.md).
     Unifying mechanism: the Cauldron-Belly (stomach-as-cauldron); power is poison + logistics, never martial.
     Convergence record: and-experiment/convergence/convergence-ledger.md.
     CONVERGED CHAPTER OUTLINE (30ch, 10/10/10): and-experiment/convergence/chapters/round-02/fusion.md
     (record: and-experiment/convergence/chapters/chapters-ledger.md). Gap cards provisioned by margit
-    (warehouse/ + library): saerys-targaryen(+behavior), viserys-i-targaryen, helaena-targaryen-122ac,
+    (and-experiment/warehouse, project-scoped): saerys-targaryen(+behavior), viserys-i-targaryen, helaena-targaryen-122ac,
     daenys-velaryon, ser-harwin-the-patient, nymeria-summer-isles, saerys-septa, comedy-register, loc-red-keep-interior.
   structure:
     book_count: 3
@@ -75,9 +75,9 @@ series:
     world_evolution: pre-Dance court farce → world-spanning adventure → the Dance as apocalypse/windfall
     series_end_shape: ambiguous — the unsanctioned bookkeeping-escape voyage; seeking or fleeing left open
   laws:
-    - source: design/bones-first/run-01/constraints.md §1   # canon ground-truth: cradle-egg custom + failure, septa-handler, Maegor's Holdfast, Dragonpit, incest-marriage norms, betrothal ~13
+    - source: and-experiment/design/run-01/constraints.md §1   # canon ground-truth: cradle-egg custom + failure, septa-handler, Maegor's Holdfast, Dragonpit, incest-marriage norms, betrothal ~13
   lore:
-    - source: design/bones-first/run-01/constraints.md      # full grounded bedrock (canon + the cage + the ship-heist toolkit + reuse map)
+    - source: and-experiment/design/run-01/constraints.md      # full grounded bedrock (canon + the cage + the ship-heist toolkit + reuse map)
   behaviors:
     - westeros-noble-courtly (inherit) + westeros-grrm-mannerisms (overlay) — re-toned for comedy
   substance: ~   # state-axes seed (transcendence↔attachment, agency↔duty, cost-ledger of mortal lives) — to reverse-derive

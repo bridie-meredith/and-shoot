@@ -1,6 +1,6 @@
 # Convergence ledger — run-01 outline (cumulative carry-forward)
 
-Process spec: `design/bones-first/convergence-process.md`. Every generator and the critic
+Process spec: `and-experiment/design/convergence-process.md`. Every generator and the critic
 re-reads THIS file each round. Fusion, not selection — all material is carried forward.
 
 ---
@@ -8,10 +8,10 @@ re-reads THIS file each round. Fusion, not selection — all material is carried
 ## Round 0 — seed
 
 **Bible (read these):**
-- `design/bones-first/run-01/idea-board.md` — concept, friction map, antics ladder, drama axes.
-- `design/bones-first/run-01/constraints.md` — canon ground-truth + the cage + the ship-heist toolkit.
-- `design/bones-first/run-01/treatment.md` — first concrete synthesis.
-- `design/bones-first/run-01/book-outlines.md` — current three-book structure (the incumbent).
+- `and-experiment/design/run-01/idea-board.md` — concept, friction map, antics ladder, drama axes.
+- `and-experiment/design/run-01/constraints.md` — canon ground-truth + the cage + the ship-heist toolkit.
+- `and-experiment/design/run-01/treatment.md` — first concrete synthesis.
+- `and-experiment/design/run-01/book-outlines.md` — current three-book structure (the incumbent).
 
 **Locked baseline (swappable knobs in `and-experiment/staff/showrunner/open-questions.md`):**
 Saerys Targaryen, youngest of Viserys I & Alicent (b.~116 AC); setting-blind reincarnator;
@@ -200,7 +200,7 @@ straight-man-absent scenes; **DN-6** calibrate the Bk I M3 "first pest" to ~¾ c
 ## ★ ACCEPTED OUTLINE — `and-experiment/convergence/round-03/fusion-v2.md`
 
 Converged at Round 2 (spine), enriched + re-validated at Round 3 (Cauldron-Belly + poison-path).
-This is the canonical story structure — it supersedes `design/bones-first/run-01/book-outlines.md`
+This is the canonical story structure — it supersedes `and-experiment/design/run-01/book-outlines.md`
 as the build target. **Drafting notes (calibration dials for the prose/bones stage, not blockers):**
 DN-1 absent-register break · DN-2 audible cost-ledger · DN-3 Saerys-warmth beats · DN-4 thicken the
 Yi Ti black-stone seed · DN-5 puncture the cauldron-frame in straight-man-absent scenes · DN-6
@@ -208,6 +208,6 @@ calibrate the first-pest beat.
 
 **Loop summary (3 rounds, cap 4):** R1 diverge (3 lenses → ITERATE, converged skeleton) → R2 fuse
 (1 pass → CONVERGED) → R3 enrich + re-validate (CONVERGED). Process spec + lessons:
-`design/bones-first/convergence-process.md`. **CONVERGENCE COMPLETE.**
+`and-experiment/design/convergence-process.md`. **CONVERGENCE COMPLETE.**
 
 **Open knob:** the Cauldron-Belly's in-world name (working: "Heavenly Demon Cauldron-Belly").

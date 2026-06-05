@@ -27,7 +27,7 @@
 
 ## Reused without modification (per REUSE MAP)
 
-Per `design/bones-first/run-01/constraints.md §4`:
+Per `and-experiment/design/run-01/constraints.md §4`:
 
 | slug | class | reuse action | source |
 |------|-------|--------------|--------|

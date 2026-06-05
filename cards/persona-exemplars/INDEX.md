@@ -12,16 +12,6 @@ Margit-maintained index. One row per exemplar. Schema: `schemas/persona-exemplar
 | dark-fantasy-reader | dark-fantasy-reader | high (generic grimdark battlefield aftermath) | claude (2026-05-26) | active |
 | worm-canon-pedant | worm-canon-pedant | high (generic Worm-fic with Lisa + Travelers OC) | claude (2026-05-26) | active |
 
-## Impersonator exemplars — and-experiment (project-bound)
-
-| slug | persona-ref | content-match | authored-by | dispatch-status |
-|------|-------------|---------------|-------------|-----------------|
-| saerys-targaryen | saerys-targaryen | high (Red Keep still-room, account-book reconciliation, Book I register) | claude (in-session, 2026-06-05) | active |
-
-*Location: `and-experiment/persona-exemplars/saerys-targaryen.md`*
-
----
-
 ## Impersonator exemplars — active-project (taylor-westeros-good-intentions)
 
 | slug | persona-ref | content-match | authored-by | dispatch-status |

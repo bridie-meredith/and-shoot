@@ -94,5 +94,5 @@ pov: <whose head we're in> | <1st|3rd> | <past|present>
   derived signature before spending on facets?
 
 ## Scratch project location
-Manual prototype runs under `design/bones-first/run-01/` — NOT `active-project/`
+Manual prototype runs under `and-experiment/design/run-01/` — NOT `active-project/`
 (which is live, b01 shipped through c16).
