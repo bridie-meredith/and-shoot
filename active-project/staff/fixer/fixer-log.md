@@ -1,3 +1,65 @@
+## SESSION-START — 2026-06-05T03:00:00Z — b01c20-chunk-audit-3-hard-faults-verify
+dispatch: resolve 3 HARD faults from b01c20-chunk-audit — fault-001 location drift scene 1, fault-002 elapsed-time drift scene 5, fault-003 moral_legibility_to_self over-draw (contract + per-scene + memory summary)
+target: active-project/staff/showrunner/b01c20-draft.md
+audit-report: active-project/staff/auditor/b01c20-chunk-audit.md (file absent on disk; fault details supplied via dispatch)
+findings-queued: 3 (fault-001, fault-002, fault-003)
+
+## fault-001 — RESOLVED — 2026-06-05T03:01:00Z
+fault: scene 1 chunk named Taylor's location as "a rented room above a chandler's off Visenya's Hill" — upper-city; contradicts established lower-city tallow-render geography
+scope: line
+change: b01c20-draft.md line 26 already reads "the room above the rendering works, lower city near the east-of-water-gate corridor"; applied by prior session 2026-06-05T02:01:00Z; verified in file — no further edit required
+criteria met: yes
+
+## fault-002 — RESOLVED — 2026-06-05T03:01:00Z
+fault: scene 5 chunk originally read "the architecture she built over three years of KL deployment" — established tenure is eleven months
+scope: line
+change: b01c20-draft.md line 250 already reads "over eleven months of KL deployment"; applied by prior session 2026-06-05T02:02:00Z; verified in file — no further edit required
+criteria met: yes
+
+## fault-003 — RESOLVED — 2026-06-05T03:02:00Z
+fault: moral_legibility_to_self chapter draw of +1.5 exceeded the cl07a gain cap; only +1.0 available through c20; contract/per-scene/memory summary all carried the wrong magnitude
+scope: line (4 magnitude fields in b01c20-draft.md + 1 magnitude field + 1 prose line in memory.md)
+change: all sub-edits applied by prior session 2026-06-05T02:03:00Z; verified current state in both files:
+  (a) b01c20-draft.md moral_legibility per-scene — scene 1: 0.2 (line 55), scene 2: 0.2 (line 102), scene 4: 0.5 (line 223), scene 5: 0.1 (line 285); sum = 1.0; scene 4 dominant — confirmed
+  (b) memory.md axes_in_motion moral_legibility_to_self target_delta_magnitude: 1.0 (line 12537); notes: "rank 8 LOCKED via +1.0; cl07a gain side completed at the +4 cap" (line 12539) — confirmed
+  (c) memory.md chunk prose summary lines 12513-12514: "+1.0 (recognition-too-late; rank 8 LOCKED)" — confirmed
+  (d) memory.md handoff_out character_state line 12588: "moral_legibility rank 8 LOCKED" — confirmed; no change needed
+criteria met: yes — allocations sum 0.2+0.2+0.5+0.1=1.0; contract 1.0; summary 1.0; handoff_out rank 8 LOCKED; no dependency conflicts
+
+## SESSION-END — 2026-06-05T03:03:00Z — b01c20-chunk-audit-3-hard-faults-verify
+findings-applied: 3 (all confirmed already in place from prior session; no new edits required)
+findings-skipped: 0
+exit: CLEAN
+
+## SESSION-START — 2026-06-05T02:00:00Z — b01c20-chunk-audit-3-hard-faults
+dispatch: resolve 3 HARD faults from b01c20-chunk-audit.md — location drift scene 1, elapsed-time drift scene 5, moral_legibility_to_self over-draw (contract + per-scene + memory summary)
+target: active-project/staff/showrunner/b01c20-draft.md
+audit-report: active-project/staff/auditor/b01c20-chunk-audit.md
+findings-queued: 3 (fault-001, fault-002, fault-003)
+
+## SESSION-END — 2026-06-05T02:04:00Z — b01c20-chunk-audit-3-hard-faults
+findings-applied: 3 (fault-001, fault-002, fault-003)
+findings-skipped: 0
+exit: CLEAN
+
+## fault-003 — RESOLVED — 2026-06-05T02:03:00Z
+fault: moral_legibility_to_self chapter draw of +1.5 in contract/per-scene/memory summary exceeds the cl07a gain cap (+4 total from start_rank 4); only +1.0 available (3.0 already drawn through c19); overshoots terminal rank 8 to 8.5
+scope: line (4 magnitude fields in b01c20-draft.md + 1 magnitude field in memory.md + 1 prose summary figure in memory.md)
+change: (a) b01c20-draft.md scene 1 moral_legibility target_delta_magnitude 0.3→0.2; scene 2 0.4→0.2; scene 4 0.6→0.5; scene 5 0.2→0.1; notes intact (none named magnitudes). (b) memory.md axes_in_motion moral_legibility_to_self target_delta_magnitude 1.5→1.0; notes updated to "rank 8 LOCKED via +1.0; cl07a gain side completed at the +4 cap". (c) memory.md chunk prose summary "+1.5 (recognition-too-late; rank 8 LOCKED)"→"+1.0 (recognition-too-late; rank 8 LOCKED)". (d) handoff_out character_state confirmed "moral_legibility rank 8 LOCKED" — no change needed.
+criteria met: yes — scene allocations sum 0.2+0.2+0.5+0.1=1.0; contract magnitude 1.0; prose summary 1.0; handoff_out rank 8 LOCKED; scene 4 remains dominant at 0.5; no dependency conflicts found (the 1.5 remaining in scene 4 relational_anchor_status is a separate axis, auditor pass-001 verified correct)
+
+## fault-002 — RESOLVED — 2026-06-05T02:02:00Z
+fault: scene 5 chunk (~line 250 b01c20-draft.md) reads "the architecture she built over three years of KL deployment" — established KL tenure is eleven months, not three years
+scope: line
+change: b01c20-draft.md line 250 — "three years" → "eleven months"; rest of clause unchanged
+criteria met: yes
+
+## fault-001 — RESOLVED — 2026-06-05T02:01:00Z
+fault: scene 1 chunk (~line 26 b01c20-draft.md) named "a rented room above a chandler's off Visenya's Hill" — Visenya's Hill is upper-city; contradicts established lower-city tallow-render geography
+scope: line
+change: b01c20-draft.md line 26 — replaced "a rented room above a chandler's off Visenya's Hill" with "the room above the rendering works, lower city near the east-of-water-gate corridor"; rest of sentence (feed-change arrival, no bell) unchanged
+criteria met: yes
+
 ## SESSION-START — 2026-06-05T01:00:00Z — write-b01c19-pass2-svo-recasts
 dispatch: repair 20 SVO-form faults (fault-001..fault-022, 8 passes) in b01c19-bones-draft.md — minimum-change recasts; PP-strip + grounding-preservation + non-action-verb recasts + interiority/abstraction recasts + structural event_map fix; 4 MOVING bones and grounding quota preserved
 target: active-project/staff/showrunner/b01c19-bones-draft.md

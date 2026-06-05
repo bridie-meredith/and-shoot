@@ -23,7 +23,7 @@ scenes:
 
   - index: 1
     chunk: |
-      [force: protagonist_force] Taylor is in a rented room above a chandler's off Visenya's Hill
+      [force: protagonist_force] Taylor is in the room above the rendering works, lower city near the east-of-water-gate corridor,
       when the feed-change arrives [event: viserys-death-in-feed] — not a messenger, not a cry
       from the street, but the pattern of movement in the Red Keep's servant passages shifting
       all at once, the usual late-night traffic ceasing, the wrong doors opening in the wrong
@@ -52,7 +52,7 @@ scenes:
           notes: succession angle locks as the Green move lands; first draw on political_register-world terminal gain
         - axis: moral_legibility_to_self
           direction: up
-          target_delta_magnitude: 0.3
+          target_delta_magnitude: 0.2
           cost_ledger_anchor: cl07a
           notes: the apparatus running without her signal is the first recognition-pressure of the chapter — the machine is hers and beyond her; ledger entry is clean and that cleanliness is pressure
       axes_held:
@@ -99,7 +99,7 @@ scenes:
           notes: patron channel begins structural dissolution as apparatus executes without active Taylor-delivery; first major draw on the collapse axis
         - axis: moral_legibility_to_self
           direction: up
-          target_delta_magnitude: 0.4
+          target_delta_magnitude: 0.2
           cost_ledger_anchor: cl07a
           notes: routes-become-roadmap recognition presses; the catalogue-as-map observation is the ledger becoming legible to Taylor in real time
         - axis: position-prot-collapse
@@ -220,7 +220,7 @@ scenes:
           notes: LOCK event — Wren dies in the coverage gap; relational_anchor_status → rank 9 LOCKED; the un-priced item is the one the calculus came for; HIGH=WORST; this is the chapter's recognition-event
         - axis: moral_legibility_to_self
           direction: up
-          target_delta_magnitude: 0.6
+          target_delta_magnitude: 0.5
           cost_ledger_anchor: cl07a
           notes: bulk of moral_legibility terminal draw lands here; the feed-signal loss IS the recognition event; recognition-too-late arrives at full force; ledger cannot contain it because Wren was never in the ledger
       axes_held:
@@ -247,7 +247,7 @@ scenes:
       Taylor closes the feed before she leaves the room. [event: feed-closed-before-departure]
       [mechanism: how-feed-closure-is-enacted] Not deactivation — the insects disperse to
       ambient range, below any useful surveillance threshold, the architecture she built
-      over three years of KL deployment returning to substrate. She does not hand it to
+      over eleven months of KL deployment returning to substrate. She does not hand it to
       anyone. The network the apparatus absorbed is theirs now; the coverage she held
       herself is no longer held. What disperses is what was hers.
       [force: opposing_force] [event: expulsion-final-departure] The departure from King's
@@ -282,7 +282,7 @@ scenes:
           notes: LOCK event — tether severed confirmed at departure; network transferred; patron dissolved; social_tether-prot-collapse → rank 1 LOCKED; cost cl07a completed
         - axis: moral_legibility_to_self
           direction: up
-          target_delta_magnitude: 0.2
+          target_delta_magnitude: 0.1
           cost_ledger_anchor: cl07a
           notes: terminal ledger-run at departure; recognition confirmed complete; moral_legibility_to_self → rank 8 LOCKED; the final accounting closes
         - axis: position-world

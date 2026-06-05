@@ -12510,7 +12510,7 @@ books:
           King's Landing with the contempt complete, the ledger accurate, and nothing to
           refuse. What shifts: relational_anchor_status +1.5 (rank 9 LOCKED; unprotected-at-
           burn); position-prot-collapse -3.0 (to rank 1; dead/expelled); social_tether-prot-
-          collapse -3.5 (to rank 1; severed); moral_legibility_to_self +1.5 (recognition-too-
+          collapse -3.5 (to rank 1; severed); moral_legibility_to_self +1.0 (recognition-too-
           late; rank 8 LOCKED); position-world +1.0 (LOCKED); political_register-world +1.0
           (LOCKED).
         structure:
@@ -12534,9 +12534,9 @@ books:
               notes: "tether severed; patron dissolved; network transferred; social_tether-prot-collapse rank 1 LOCKED; cl07a cost completed"
             - axis: moral_legibility_to_self
               direction: up
-              target_delta_magnitude: 1.5
+              target_delta_magnitude: 1.0
               cost_ledger_anchor: cl07a
-              notes: "recognition-too-late at full force; feed-signal loss from Wren's lanes is the recognition event; rank 8 LOCKED; cl07a gain side completed"
+              notes: "recognition-too-late at full force; feed-signal loss from Wren's lanes is the recognition event; rank 8 LOCKED via +1.0; cl07a gain side completed at the +4 cap"
             - axis: position-world
               direction: up
               target_delta_magnitude: 1.0
