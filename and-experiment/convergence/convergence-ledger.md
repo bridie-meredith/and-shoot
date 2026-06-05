@@ -99,6 +99,57 @@ conscience/witness **Nymeria of the Summer Isles** (survives, on the deck at the
 
 ---
 
-## Round 2 — fusion pass (running)
-One continuous outline implementing critique.md §3 + all T1–T5 rulings + writing the 5 BLOCKER
-beats → `round-02/fusion.md` → critic. The loop narrows: diverge (R1, 3 lenses) → fuse (R2).
+## Round 2 — fusion pass · VERDICT: CONVERGED ✅
+
+Accepted outline: `round-02/fusion.md`. Full eval: `round-02/critique.md`.
+All six criteria PASS (structure / drama / comedy / theme / canon-fit / three-rhymes). All 5
+BLOCKERS verified retired against the body, not just the checklist. All FROZEN honored, T1–T5
+obeyed. The comedy-surviving-the-curdle criterion — which A and B each individually FAILED —
+passes in fusion (renewable register engine + gallows handoff + the one break).
+
+**Drafting notes carried to the bones stage (calibration dials, NOT convergence blockers):**
+- DN-1 — the absent-register break (T1) is prose-execution.
+- DN-2 — keep the cost-ledger audible so the curdle doesn't lean solely on Harwin's death.
+- DN-3 — anti-out-charactering is one Bk I beat vs whole-arc-warm Daenys; add warmth beats if needed.
+- DN-4 (highest) — thicken the single Bk II oily-black-stone seed so the Tier-4 register-shift has
+  weight, WITHOUT reopening Yi-Ti-single-reach.
+
+Spine LOCKED at Round 2 (of 4 cap).
+
+---
+
+## Round 3 — principal enrichment integration (post-convergence)
+
+Principal added three elements after convergence. They ENRICH, not break, the spine — folded in as
+a bounded integration pass (with guards), not a re-open.
+
+### RATIFIED additions
+- **The Cauldron-Belly** — her cultivation cauldron is literally her STOMACH; she ingests reagents
+  and "refines" them within rather than in an external furnace. The missing unifying MECHANISM: it
+  retro-explains every eating antic as "tempering the cauldron," and upgrades the FROZEN inciting
+  grind to grind-AND-EAT. Working self-label: "the Heavenly Demon Cauldron-Belly" (name TBD).
+- **Poison-path + reverse-trope** — a Westeros girl who skips sword-training (the tomboy-knight arc)
+  and becomes a POISONER; removes "pests" via poison; the maester's apothecary is easy to raid. Her
+  power is never martial — apothecary + logistics. Poison and medicine = one supply chain (ties to
+  the trade empire + charity cover).
+- **Mithridatism** — she eats micro-doses of poison to "temper the cauldron" and really builds
+  immunity. Payoff: late-game assassination attempts on the princess simply fail.
+
+### GUARDS (the integration MUST preserve)
+- **Broken-clock guard** — the Cauldron-Belly does NOT make her cosmology true. Real = (a) mithridatism
+  (mundane pharmacology) + (b) occasional uncontrolled effects from genuinely-magical ingested
+  materials. Neither validates qi. Reader sees pharmacology + magic materials; she sees "my Cauldron
+  ascends a realm."
+- **Idiot-savant guard** — poison/chemistry competence is real and quietly lethal in the one domain
+  nobody watches (the gut, the still-room), while she stays a moron in the domains everyone cares
+  about (court, marriage, dragons, the war). Comedy-of-impotence stays where it matters.
+- **Curdle tie-in** — "de-pesting via poison" without registering the human weight is the same
+  coldness as filing a ward-child as "impure reagents"; it FEEDS the gain-then-lose curdle. The
+  cauldron reaching to EAT the oily black stone (Bk III) is the Tier-4 horror frontier — and thickens DN-4.
+
+→ Integration folds these into `round-03/fusion-v2.md`; critic then validates the six criteria still
+hold (esp. broken-clock + comedy-of-impotence balance).
+
+---
+
+## Round 3 — integration (running)

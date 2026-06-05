@@ -76,3 +76,10 @@ residual BLOCKERs for a human call rather than looping indefinitely.
 - **Ratify smuggled premises explicitly.** Generators will quietly introduce load-bearing premises
   (run-01: prior-death-as-wound). The critic must surface these as ratification gates so a premise
   isn't frozen by accident; the orchestrator (or principal) rules before the next round.
+- **Post-convergence principal enrichment → a bounded integration round, not a re-open.** When the
+  principal adds material AFTER CONVERGED (run-01 R3: the Cauldron-Belly + poison-path), don't throw
+  away the convergence. Ratify the addition, write explicit GUARDS (what the addition must not break),
+  run one integration pass that folds it into the accepted outline, and a single critic re-validation
+  scoped to "do the six criteria still hold + are the guards honored" — not a fresh divergent round.
+- **Convergence was fast (2 rounds) because the seed was a fully-developed bible.** The richer the
+  Round-0 seed (bible docs + KEEP/FIX ledger), the fewer rounds to converge.
