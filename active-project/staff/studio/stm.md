@@ -1,5 +1,17 @@
 # studio STM
 
+## 2026-06-05 — /and-facets b01-c18 Phase 1 consolidated R1+R2 authoring
+
+Chapter b01c18: 46 bones, 5 scenes. Solitary chapter — Taylor alone running the irrevocable Khepri-repetition deployment. Climax chapter. Fortnight timescale (s01 before-dawn day 0 → s02 deployment → s03 six days → s04 days 9-12 → s05 day 14 standdown).
+
+LOCATION-STATE (7 entries): place-anchor for each scene open + 2 state-change entries (cipher-bundle returned to floor @6; east-of-water-gate gap last to close @37). Margit referrals: oc-ward-network-full-coverage (new composite slug for s02 deployment spatial extent); oc-dead-drop-site (confirm vs. the-hook-lower-water-trough). Files: theater/facets/location-state-b01-c18.md.
+
+SENSORY (5 entries: 2 standard, 3 grounding-licensed): standard: @1 tactile (cipher-bundle paper cold-dry) + @10 light (outer-gate corridor pre-dawn grey). Grounding-licensed: @13 sound (smelt-fire interference grd-001) + @38 sound (moths settling grd-002) + @46 tactile (stylus beside closed ledger grd-003). Grounding-ledger filed: active-project/staff/showrunner/grounding-ledger-b01-c18.md. Files: theater/facets/sensory-b01-c18.md.
+
+STATE-UPDATES-ENV (14 entries): 2 scene-open resets (@1×2) + 2 time-of-day advances (@8, @36) + 2 coverage-scale flips (@8, @36) + 1 succession-document-status (@32) + 1 eastern-gap-status (@37) + 6 cost-ledger accounting fires (@39, @41-@44, @46). Notable: false attribution (prop:apparatus-picture.norren-attribution: resolved) persists from c17 — no new c18 change. Field-extensions: studio.succession-document-status + studio.fauna_sense_status.eastern-gap-status + studio.cost-ledger.* (6 sub-fields). MARGIT REFERRAL for all new fields + prop:oc-cost-ledger card. Files: theater/facets/state-updates-env-b01-c18.md.
+
+Chapter-close state: the-tallow-render-works | day-fourteen | cost-ledger closed | succession-document cleared | coverage-scale standdown-complete | eastern-gap closed-last | contempt-entry filed.
+
 ## 2026-06-03 — /and-facets b01-c13 Phase 1 R1 sensory authoring (BLIND)
 
 Chapter b01c13: 31 bones, 4 scenes. Two feed-observation scenes (s01/s02), one solo interior hinge (s03), one live-dialogue scene (s04). Four locations across the chapter.
