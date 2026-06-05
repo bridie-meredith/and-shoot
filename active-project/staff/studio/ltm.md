@@ -3,6 +3,93 @@
 
 ---
 
+## 2026-06-05 — b01c18 three-facet + grounding-ledger authoring at /and-facets Phase 1
+
+Chapter b01c18: 46 bones, 5 scenes. Climax chapter — irrevocable full-coverage deployment (KHEPRI-repetition). SOLITARY (Taylor alone). Fortnight arc: before-dawn day 0 (s01) → before-first-light deployment (s02) → six-day feed-observation (s03) → days 9-12 dead-drop / succession (s04) → day 14 standdown + accounting (s05). Signal dispositions: s04/s05 ABSTRACTION-DOMINANT ACCEPT-WITH-RATIONALE (DEC-0096). Earth-Bet fence hard throughout.
+
+LOCATION-STATE (7 entries, 0 cull):
+  Location arc: the-tallow-render-works (s01 dead-drop retrieval; before-dawn) → oc-ward-network-full-coverage (s02 deployment at full coverage; before-first-light) → the-gap-lanes-east-water-gate (s02 blank-lane node; WREN-GAP-HELD-BLANK) → oc-dead-drop-site (s04 succession document; day-nine) → the-tallow-render-works (s05 standdown control point; day-fourteen) → the-gap-lanes-east-water-gate (s05 gap closes last; blank-through-fortnight).
+  Entry log:
+    loc-state:1 @1  — tallow-render-works; before-dawn; dead-drop retrieval; rented-room floor-bare + tallow-smell. Chapter-open place-anchor. Time-of-day reset (morning→before-dawn).
+    loc-state:2 @6  — tallow-render-works; before-dawn; cipher-bundle returned to floor. State-change (PRECIPICE-NOT-INERTNESS grounding; peak-shadow @6).
+    loc-state:3 @8  — oc-ward-network-full-coverage; before-first-light; deployment opens; bottlefly-routes activating, outer-gate-corridors reaching. Place-anchor for s02 full-coverage operation. New slug; MARGIT REFERRAL (SEAM-C18-LOC-003).
+    loc-state:4 @11 — the-gap-lanes-east-water-gate; before-first-light; gap-lane-blank; surrounding-routes-at-maximum-density. State-change (WREN-GAP-HELD-BLANK protected-pattern).
+    loc-state:5 @28 — oc-dead-drop-site; day-nine; drop-clear; access-window-active. Place-anchor for s04. New slug; MARGIT REFERRAL — confirm vs. the-hook-lower-water-trough (SEAM-C18-LOC-004).
+    loc-state:6 @36 — tallow-render-works; day-fourteen; standdown-in-progress; cost-ledger-open. Place-anchor for s05. Time-of-day advance.
+    loc-state:7 @37 — the-gap-lanes-east-water-gate; day-fourteen; gap-lane-last-to-close; blank-through-the-fortnight. State-change (CL-D11-CARRY; east gap blank through full fortnight).
+  SEAM-C18-LOC-003: oc-ward-network-full-coverage — new slug, no warehouse card; MARGIT REFERRAL.
+  SEAM-C18-LOC-004: oc-dead-drop-site — new slug, no warehouse card; confirm vs. the-hook-lower-water-trough; MARGIT REFERRAL.
+  New slug notes: s03 (@18-@27) is feed-mediated (court + compound observation through architecture); no physical place-anchor warranted per loc-state rubric (all perception beats via architecture-feed, not physical locomotion).
+
+SENSORY (5 entries: 2 standard + 3 grounding-licensed; density 10.9%; standard-only 4.3%):
+  Modalities: tactile (sensory:1 @1, sensory:5 @46) + light (sensory:2 @10) + sound (sensory:3 @13, sensory:4 @38) — 3 distinct modalities; ≥2 floor met.
+  Per-scene caps: s01=1, s02=2, s03=0, s04=0, s05=2 — all within ≤3.
+
+  STANDARD ENTRIES:
+    sensory:1 @1 — tactile; tallow-render-room-floor-ambient → cipher-bundle-paper-cold-dry. Dead-drop retrieval; cold dry paper in the dark before dawn. Old-state from loc-state:1.
+    sensory:2 @10 — light; ward-ambient-full-dark → outer-gate-corridor-pre-dawn-grey. Before-first-light deployment; gate-mouth corridors in pre-dawn grey. Old-state from loc-state:3 time-of-day.
+
+  GROUNDING-LICENSED ENTRIES (grounding-ledger cross-refs):
+    sensory:3 @13 — sound spike (grd-001); moth-corridor-ambient-clear → smelt-fire-interference-low-register. Op-friction bone; chandler-quarter smelt-fire degrades moth-corridor feed. Makes op-friction physically real.
+    sensory:4 @38 — sound down (grd-002); chandler-quarter-deployment-active → moth-eaves-ambient-settling. Standdown grounding; moths returning to ambient density as architecture withdraws. The standdown's physical correlate.
+    sensory:5 @46 — tactile drop (grd-003); ledger-wax-working-rhythm → stylus-placed-beside-closed-ledger. Terminal accounting completion; stylus placed beside, not away; accounting-as-discipline completing.
+
+  Inflection-pair coherence: sensory:3 @13 (sound up/spike at deployment) + sensory:4 @38 (sound down at standdown) bracket the fortnight at the chandler-quarter moth-corridor.
+  Fauna-feed boundary: s03 (@18-@27) has zero fires — all perception through architecture-feed; same ruling as b01c11/c13. Confirmed fauna-feed-extension reject in abstraction-dominant feed-observation scenes.
+
+STATE-UPDATES-ENV (14 entries; density 30.4%):
+  Justified above band: 4 scene transitions × 2 structural fields + 2 coverage-scale flips + 1 succession-document + 1 eastern-gap-status + 6 cost-ledger accounting fires.
+  Density consistent with b01c13 (42%), b01c14 (28%), b01c17 (36%) precedent.
+
+  SCENE-TRANSITION BACKBONE (4 entries):
+    @1  studio.time_of_day: morning → before-dawn + studio.location: the-gap-lanes-east-water-gate → the-tallow-render-works
+    @8  studio.time_of_day: before-dawn → before-first-light
+    @36 studio.time_of_day: before-first-light → day-fourteen
+
+  COVERAGE-SCALE FIRES (2 entries):
+    @8  studio.fauna_sense_status.coverage-scale: five-ward-plus-approaches-routine → full-coverage-all-wards-simultaneous
+    @36 studio.fauna_sense_status.coverage-scale: full-coverage-all-wards-simultaneous → standdown-in-progress
+
+  WORLD-STATE FIRES (2 entries):
+    @32 studio.succession-document-status: pending → cleared-small-council-access-window (field-extension; MARGIT REFERRAL)
+    @37 studio.fauna_sense_status.eastern-gap-status: blank-through-fortnight → closed-at-standdown (field-extension; MARGIT REFERRAL)
+
+  COST-LEDGER ACCOUNTING FIRES (6 entries):
+    @39 studio.cost-ledger.condition: closed → open-accounting-in-progress
+    @41 studio.cost-ledger.protection-entry: in-progress → closed
+    @42 studio.cost-ledger.contempt-entry: absent → entered-complete
+    @43 studio.cost-ledger.standdown-line: absent → written
+    @44 studio.cost-ledger.disposal-calculus-entry: absent → closed
+    @46 studio.cost-ledger.condition: open-accounting-in-progress → closed-stylus-set-beside
+
+  KEY DECISION-NOT-FIRE:
+    @45 — recognition-column blank is PERSISTENCE, not state-change (anti-pattern #3); the blank-column-suppression significance carried by scene-map + stitcher rendering.
+    @38 — moth eaves settling is sensory territory (grounding-ledger grd-002), not a tracked env field-change.
+    False attribution carry (prop:apparatus-picture.norren-attribution: resolved) persists from c17 unchanged; no new entry (anti-pattern #3).
+
+  Prop-card referrals:
+    prop:oc-cost-ledger — no warehouse card confirmed; studio.cost-ledger.* form used per instructions (parking-lot pl-2026-06-05-c17-001(b) note); MARGIT REFERRAL.
+    studio.succession-document-status — new sub-field; first-touch; MARGIT REFERRAL.
+    studio.fauna_sense_status.eastern-gap-status — new sub-field; first-touch; MARGIT REFERRAL.
+    6 new studio.cost-ledger.* sub-fields: condition / protection-entry / contempt-entry / standdown-line / disposal-calculus-entry (all first-touch this chapter).
+
+GROUNDING-LEDGER (3 entries; file: active-project/staff/showrunner/grounding-ledger-b01-c18.md):
+  grd-001 (@13): s02 op-friction node; satisfied by sensory:3.
+  grd-002 (@38): s05 standdown grounding anchor (explicit scene-map); satisfied by sensory:4.
+  grd-003 (@46): s05 accounting-close terminal gesture (explicit scene-map); satisfied by sensory:5.
+  Licensed under DEC-0096 ACCEPT-WITH-RATIONALE; aliveness-reviewer authority.
+
+Chapter-close set state (day 14):
+  studio.location: the-tallow-render-works
+  studio.time_of_day: day-fourteen
+  studio.fauna_sense_status.coverage-scale: standdown-complete (baseline-restored implied; transition completed through @38)
+  studio.fauna_sense_status.eastern-gap-status: closed-at-standdown
+  studio.succession-document-status: cleared-small-council-access-window
+  studio.cost-ledger.condition: closed-stylus-set-beside
+  prop:apparatus-picture.norren-attribution: resolved (carry; no change)
+
+---
+
 ## 2026-06-03 — b01c13 state-updates-env R1 authoring at /and-facets Phase 1
 
 Chapter b01c13: 31 bones, 4 scenes. Sparse env/prop chapter — most substance is feed-observed (s01/s02) or interior (s03) with no props in Taylor's hands. State-updates correctly sparse; density is structural, not contaminated.

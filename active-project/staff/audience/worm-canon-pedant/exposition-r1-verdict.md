@@ -2,38 +2,24 @@
 reviewer: worm-canon-pedant
 facet: exposition
 cycle: 1
-episode: b01-c13
-date: 2026-06-03
+episode: b01-c18
+date: 2026-06-05
 verdict: ACCEPT
 earth_bet_fence_ruling: CLEAN
+signal_002_ruling: COMMENT-LAYER ACCEPTABLE — production-internal labels; no story-facing leak
 ---
 
-# Worm-Canon-Pedant — exposition adversarial read (b01-c13)
+3 entries. Full gloss-body fence scan + signal-002 ruling.
 
-Earth-Bet fence / character-knowledge accuracy / lore-leak prevention.
+SIGNAL-002 RULING: The auditor flagged "Khepri" appearing multiple times in the exposition file's COMMENT and rationale lines (not in numbered entry gloss bodies). The dispatch instructs me to give an explicit ruling.
 
-Two entries.
+Ruling: ACCEPTABLE. The numbered entry gloss bodies (exposition:1, :2, :3) are confirmed clean — no Earth-Bet proper nouns in any story-facing prose. The comment-layer occurrences are production-internal fence-holding labels (the exposition file explicitly declares "Fence CLEAN" for gloss-entry text and uses "Khepri" only as the name of the thing it is confirming is ABSENT). The stitcher and renderer-minimal consume the numbered entry bodies, not the comment-block rationale. "Khepri" in a comment that says "no Khepri in any gloss-text" is metalinguistic fence-maintenance, not a fence violation. The production-internal label convention is consistent with the pattern the auditor recognized as "clearly production-internal labels and fence-holding notes."
 
-**exposition:1 @0 — full fence scan:**
+Gloss body scan:
+exposition:1 @0: "The wards are mapped and the channel runs both ways now... East of the water-gate the one lane I have never covered is Wren's..." — full scan: no Earth-Bet proper nouns. "All of it" (scale language) and "my deliverables" are the only potentially sensitive phrases; both are operational Westerosi-register language. CLEAN.
+exposition:2 @14: "This time she opens all of it at once — not ward by ward, one cluster at a time the way she has run it for months, but every node together." — No Earth-Bet content. CLEAN. "All of it" / "every node" are operational scale descriptors.
+exposition:3 @30: "The document the Greens are moving needs a particular window open in the Small Council to pass — a specific composition sitting on a specific day; her fortnight-picture is what tells them the window is clear." — No Earth-Bet content. Westerosi political mechanism. CLEAN.
 
-"In the weeks since she began routing what her insects show her through Jarvis to Otto Hightower's people, Taylor Hebert has handed up the kind of intelligence the arrangement pays for — among it, at d06, a list of ward-elders in the lower precinct whose lane-contacts her pattern-reading marked as Black-faction-adjacent. She delivered it in plain functional description and did not watch where it went. This week she watches."
+Character-knowledge check: the @0 bridge correctly represents Taylor's state coming into c18 (she has made the arrangement, it operates on delivered intelligence, the eastern lane is Wren's). Information consistent with what a c01-c17 Taylor would carry.
 
-Running word-by-word: "insects" (functional, plain-English usage; not "swarm," not "bugs" in a power-sense), "routing," "Jarvis," "Otto Hightower's people," "intelligence," "d06," "ward-elders," "lane-contacts," "pattern-reading," "Black-faction-adjacent," "functional description." None of these are Worm proper nouns. "Pattern-reading" is a functional description of what Taylor's compound-eye network actually does — it is not "Thinker power" or any classification term. CLEAN.
-
-"She delivered it in plain functional description and did not watch where it went." This is the character-knowledge gate: she does not know what happened to the list after delivery. Canon-correct: Taylor's intelligence is delivered through Jarvis; she would not have direct visibility on what the apparatus does with it unless she specifically watches. "This week she watches" — she has deployed observation specifically for this. In-world path for the knowledge is correctly established: she is watching through her insects (the blowfly at the provisioning platform, the fly in the ceiling-corner of the magistrate-hall). She knows what she can observe through her feed. Canon-consistent.
-
-Earth-Bet fence: no Khepri, no Gold Morning, no Brockton Bay, no cape names, no parahuman jargon. CLEAN.
-
-**exposition:2 @12 — fence scan:**
-
-"Aldric: a ward-elder of the lower precinct — one of the men whose name was on the list — brought before the proceeding on a charge of receiving stolen cord."
-
-27 words. All Westerosi-register. "Ward-elder" is KL precinct vocabulary. "Lower precinct" is geographic. "The list" refers back to the @0 bridge's d06 list — the reference is correct and does not require Earth-Bet context. "Charge of receiving stolen cord" is the pretext charge. No Earth-Bet content. CLEAN.
-
-Character-knowledge check: Taylor knows Aldric's name is on the list (she made the list). She knows he's been brought before the proceeding (she's watching via the fly). The information the exposition supplies matches the information Taylor would have at this point. Canon-consistent.
-
-**Lore-leak check:** Does either entry introduce information that requires Earth-Bet knowledge to decode? No. "Pattern-reading" in exposition:1 is the closest: it describes what Taylor does with her insect-feed output. A non-Worm-canon reader reads this as "she observes patterns in what her insects show her." A canon-aware reader recognizes this as her power's standard operating mode. Neither reading produces a fence violation. The word does not name the power's Worm-canonical classification (Thinker/Shaker/etc.) or mechanics.
-
-Running tally: 2 entries, both CLEAN. No Worm proper noun. Character-knowledge consistent with canon Taylor's information sources.
-
-**VERDICT: ACCEPT**
+Running tally: 3 entries, all CLEAN. signal-002 ruled acceptable. Fence holds throughout.

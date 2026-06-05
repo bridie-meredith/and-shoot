@@ -1,5 +1,71 @@
 # studio state
 
+episode: b01c18
+last_updated: 2026-06-05
+action: location-state R1 + sensory R1 + state-updates-env R1 authoring — /and-facets b01-c18 Phase 1 (consolidated R1+R2 pass)
+
+## Location-state R1 authored (b01c18) — 7 entries
+  loc-state:1 @1  — the-tallow-render-works | before-dawn | none | rented-room-above-rendering, tallow-smell-saturated, floor-bare | before-dawn dead-drop retrieval (place-anchor; s01)
+  loc-state:2 @6  — the-tallow-render-works | before-dawn | none | rented-room-above-rendering, cipher-bundle-returned-to-floor | bundle returned to floor unanswered (state-change; PRECIPICE grounding)
+  loc-state:3 @8  — oc-ward-network-full-coverage | before-first-light | none | bottlefly-routes-activating, fishmonger-gate-approach-live, outer-gate-corridors-reaching | network at full-coverage before first light (place-anchor; s02; irrevocable deployment begins)
+  loc-state:4 @11 — the-gap-lanes-east-water-gate | before-first-light | none | gap-lane-blank, norren-attribution-screens-gap-figure, surrounding-routes-at-maximum-density | one blank lane in the maximum-density field (WREN-GAP-HELD-BLANK; state-change)
+  loc-state:5 @28 — oc-dead-drop-site | day-nine | none | drop-clear, access-window-active, three-drop-sequence-in-progress | dead-drop site (place-anchor; s04; S04-EMBODIMENT container)
+  loc-state:6 @36 — the-tallow-render-works | day-fourteen | none | rented-room-above-rendering, network-drawdown-in-progress, cost-ledger-open | day-14 standdown control point (place-anchor; s05)
+  loc-state:7 @37 — the-gap-lanes-east-water-gate | day-fourteen | none | gap-lane-last-to-close, blank-through-the-fortnight | east-of-water-gate gap closes last — held blank throughout (CL-D11-CARRY)
+  File: theater/facets/location-state-b01-c18.md
+  Margit referrals: oc-ward-network-full-coverage (new composite slug); oc-dead-drop-site (confirm vs. the-hook-lower-water-trough)
+
+## Sensory facet filed (b01c18) — 5 entries (2 standard, 3 grounding-licensed)
+  sensory:1 @1  — tactile: tallow-render-room-floor-ambient -> cipher-bundle-paper-cold-dry (s01; standard)
+  sensory:2 @10 — light: ward-ambient-full-dark -> outer-gate-corridor-pre-dawn-grey (s02; standard)
+  sensory:3 @13 — sound: moth-corridor-ambient-clear -> smelt-fire-interference-low-register (s02; GROUNDING-REQUIRED grd-001)
+  sensory:4 @38 — sound: chandler-quarter-deployment-active -> moth-eaves-ambient-settling (s05; GROUNDING-REQUIRED grd-002)
+  sensory:5 @46 — tactile: ledger-wax-working-rhythm -> stylus-placed-beside-closed-ledger (s05; GROUNDING-REQUIRED grd-003)
+  Density: 5/46 = 10.9%; standard-only = 2/46 = 4.3% (within band); grounding-licensed exempt from cap
+  Modalities: tactile + light + sound (3 distinct; ≥2 floor MET)
+  Per-scene caps: s01=1, s02=2, s03=0, s04=0, s05=2 — all ≤3
+  Grounding-ledger: active-project/staff/showrunner/grounding-ledger-b01-c18.md (3 entries: grd-001/002/003)
+  File: theater/facets/sensory-b01-c18.md
+
+## State-updates-env filed (b01c18) — 14 entries
+  state:1  @1  — studio.time_of_day: morning -> before-dawn
+  state:2  @1  — studio.location: the-gap-lanes-east-water-gate -> the-tallow-render-works
+  state:3  @8  — studio.time_of_day: before-dawn -> before-first-light
+  state:4  @8  — studio.fauna_sense_status.coverage-scale: five-ward-plus-approaches-routine -> full-coverage-all-wards-simultaneous
+  state:5  @32 — studio.succession-document-status: pending -> cleared-small-council-access-window
+  state:6  @36 — studio.time_of_day: before-first-light -> day-fourteen
+  state:7  @36 — studio.fauna_sense_status.coverage-scale: full-coverage-all-wards-simultaneous -> standdown-in-progress
+  state:8  @37 — studio.fauna_sense_status.eastern-gap-status: blank-through-fortnight -> closed-at-standdown
+  state:9  @39 — studio.cost-ledger.condition: closed -> open-accounting-in-progress
+  state:10 @41 — studio.cost-ledger.protection-entry: in-progress -> closed
+  state:11 @42 — studio.cost-ledger.contempt-entry: absent -> entered-complete
+  state:12 @43 — studio.cost-ledger.standdown-line: absent -> written
+  state:13 @44 — studio.cost-ledger.disposal-calculus-entry: absent -> closed
+  state:14 @46 — studio.cost-ledger.condition: open-accounting-in-progress -> closed-stylus-set-beside
+  Density: 14/46 = 30.4%; consistent with c13 (42%) / c14 (28%) / c17 (36%) precedent
+  Field-extensions: studio.succession-document-status (new); studio.fauna_sense_status.eastern-gap-status (new); studio.cost-ledger.* (6 new sub-fields); MARGIT REFERRAL RECOMMENDED for all new fields + prop:oc-cost-ledger card
+  File: theater/facets/state-updates-env-b01-c18.md
+
+## Current set (b01c18 chapter-close)
+  location: the-tallow-render-works (accounting closed; @46; the render room at chapter end)
+  time_of_day: day-fourteen (the fourteenth day of the fortnight)
+  weather: none
+  ambient_conditions:
+    - studio.fauna_sense_status.coverage-scale: standdown-complete (network returned to baseline by chapter-close)
+    - studio.fauna_sense_status.eastern-gap-status: closed-at-standdown (blank through fortnight; closed last)
+    - studio.succession-document-status: cleared-small-council-access-window (permanent; @32)
+    - studio.cost-ledger.condition: closed-stylus-set-beside (@46; chapter terminal state)
+    - studio.cost-ledger.protection-entry: closed (@41)
+    - studio.cost-ledger.contempt-entry: entered-complete (@42)
+    - studio.cost-ledger.standdown-line: written (@43)
+    - studio.cost-ledger.disposal-calculus-entry: closed (@44)
+    - prop:apparatus-picture.norren-attribution: resolved (carry from c17; unchanged through c18; false attribution persists)
+    - prop:oc-coverage-log.norren-attribution: complete-three-lines (carry from c17; unchanged)
+
+---
+
+## Prior episode (b01c17)
+
 episode: b01c17
 last_updated: 2026-06-05
 action: location-state R2 endorsement + sensory R1 + state-updates-env R1 authoring — /and-facets b01-c17 Phase 1 (consolidated R1+R2)

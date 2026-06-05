@@ -2,21 +2,11 @@
 reviewer: cape-fic-reader
 facet: metaphor
 cycle: 1
-episode: b01-c13
-date: 2026-06-03
+episode: b01-c18
+date: 2026-06-05
 verdict: ACCEPT
 ---
 
-# Cape-Fic-Reader — metaphor adversarial read (b01-c13)
+Zero entries. The refusal rationale is technically correct at each peak-zone. @14/@15 refused: KHEPRI-REGISTER-SPLIT — a metaphor at the threshold-crossing risks importing interiority into a bone that must fire through architecture-as-subject. @25 refused: CONTEMPT-AS-MECHANISM-NOT-AFFECT — figuration at the contempt-arrival would by definition route through Taylor's cognitive register when the chapter's design is to route through the feed returning the picture. @45 refused: BLANK-COLUMN-SUPPRESSION — figurative flourish at the terminal beat is the text pleased with itself over a close that works by physical observation alone.
 
-Zero entries. All 31 bones refused.
-
-The metaphor facet is a disciplined all-refuse. The refuse-log covers all four scenes with documented rationale per entry. My lens: is the all-refuse correct for this chapter, or is there a beat where a figure would have carried board-state I'm missing?
-
-The chapter's register is cold-utilitarian ledger: contempt-as-verdict, apparatus-as-mechanism, the foreclosure-as-walking. None of these admit figurative elaboration without softening the register. The board-state is exactly legible without figures — the d06-list→Aldric chain is mechanism, not metaphor; the contempt-naming is taxonomy, not image; the departure is a body event, not a symbol.
-
-The refuse log's dominant cause (AP7 peak-bone default-refuse) is correct. The only theoretical figure candidates are: @19 (the naming — memory-anchor exists in mem:2 @23, but mem:2 is post-hinge not co-located at @19; no feel/NI at the peak-bone that isn't already doing the naming's interior work); @28 (the Halvard peak — the memory/feel anchor at @31, not @28; multi-just gate fails). The refusals hold.
-
-Is the 0% band correct for entertainment? Yes. This is a chapter that earns its impact through the starkness of the accounting — no figurative decoration, no compression-of-complexity into image. The contempt-naming is the chapter's figure in the non-technical sense; the prose doesn't need a metaphor facet entry to add another.
-
-**VERDICT: ACCEPT**
+These are not aesthetic preferences — they are the correct tactical reasons for refusing metaphor at a chapter that earns its impact through ledger-entry precision. Zero is harder to justify than one; the refusal record justifies it.

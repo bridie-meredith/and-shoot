@@ -6118,3 +6118,331 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+id: DEC-0096
+date: 2026-06-05
+mode: user-proxy
+track: FAST (RUNBOOK R1)
+question: |
+  b01c18 Phase 5.5 CHUNK-CLASS-B disposition: R (revise chunk), P (proceed with risk recorded),
+  or S (substance-contract revision)? Climax chapter — irrevocable-Khepri-repetition deployment
+  (Dance-pulse 2). Phase 5: 3/3 audience ACCEPT (SUBSTANCE-FELT; design enacts, not explains;
+  irrevocable threshold lands in physical action; contempt near-saturation earned; s05
+  accounting-close names catastrophe through form), dramatist ACCEPT (correct climax shape),
+  auditor 2 HARD bookkeeping-text faults being corrected. Cold-read CHUNK-CLASS-B: strict
+  CONTINUE=no on event-poverty/no-dialogue/no-on-page-resistance + anti-climax-by-design;
+  majority of no is uninformed-reader artifact (unknown characters, unknown insect-control
+  mechanism, unnamed prior-city). Surviving signals: (1) five scenes flawless-operator execution,
+  no antagonist on-page, no dialogue, no scene-level reversal; (2) ends on accounting-close
+  form, catastrophe asserted not dramatized.
+decision: P — proceed with risk recorded
+basis: prior-ruling (DEC-0094/0090/0087/0085 exact precedent family) + methodology-3b (cost) + methodology-3a (reversibility)
+rationale: |
+  Fifth consecutive Class-B P in the c14/c15/c16/c17/c18 sequence. Pattern identical each time:
+  uninformed-reader cold-read returns strict-no on (a) withheld serial context (Earth-Bet fence /
+  character/mechanism backstory) and (b) event-density / interior-accounting-dominant staging.
+  Both categories pre-dispositioned as design-inherent across the entire book.
+
+  Phase 5 signal is decisive and points opposite to revision: 3/3 SUBSTANCE-FELT across all 5
+  scenes, dramatist ACCEPT on correct climax shape (precipice → irrevocable act → consequence-
+  running → accounting close), auditor 0-HARD on design/prose/thematic. The "design enacts rather
+  than explains" and "the accounting-close names the catastrophe through form" verdicts are exactly
+  the test the substance contract sets for the climax chapter — the catastrophe-of-accuracy IS the
+  ledger closing cleanly. That IS the dramatized event. The informed reviewers returned a clean PASS.
+
+  The surviving cold-reader signals are both subcategories of event-poverty:
+  (1) No-dialogue / no-on-page-resistance is design-inherent on an irrevocable-deployment chapter
+  where the antagonist faction is OFFSTAGE and the opposition is the operator's own moral reckoning —
+  putting an antagonist on-page would falsify the substance contract.
+  (2) Anti-climax-by-design / catastrophe-asserted-not-dramatized — this is the c18 analog to
+  c17's "irony enacted not declared." The accounting close IS the dramatization; the cold-reader
+  cannot see this without 17 chapters of context establishing what "the ledger closes cleanly"
+  means for this character and this chapter's irrevocable threshold.
+
+  (R) is wrong layer — chunk design is not broken; it passed every informed gate.
+  (S) is wrong layer and wrong cost — substance contract passes all informed gates; auditor HARDs
+  are bookkeeping-text, not design.
+  (P) with cold_read_risk_carry is correct: preserve surviving signals as /and-write targeting
+  brief; arm /and-stitch Phase 8.5/9 for the same complaint class.
+
+  cold_read_risk_carry items for /and-write:
+    1. (HARD watch) Irrevocable-threshold moment must be ENACTED as a concrete physical act
+       (the deployment decision/action must be staged as something Taylor does with her hands/tools/
+       body at the moment of no-return), not solely rendered as interiority or ledger-accounting.
+    2. (HARD watch) At least one scene must carry a physical resistance signal — even if antagonist
+       is offstage, the op itself must encounter friction (technical, environmental, or self-imposed)
+       that makes the "flawless execution" read as chosen precision, not narrative convenience.
+    3. (SOFT) The accounting-close s05 form must make the "both facts are true" structure concrete
+       enough that a reader 17 chapters deep cannot miss it — pair it with at least one specific
+       physical outcome named in the scene (not abstract moral summary).
+    4. (design-inherent CONTINUE=No) Cold-reader strict-no on unknown characters (Otto/Sera/Wren/
+       Norren/Jarvis), insect-control mechanism opacity, unnamed prior-city (Earth-Bet fence) —
+       pre-authorized serial mid-point categories; stitch Phase 4+9 carry.
+
+trade-off: |
+  Only cost of P is forwarding the event-poverty risk to /and-write. The write-time carries
+  (items 1-3) directly target the diagnosable residue. No realistic scenario where R or S
+  produces a better climax chapter at lower total cost given the clean substance contract.
+  Climax chapters carry the highest substance-contract precision requirement; revising at chunk
+  layer against three full-pass informed reviewers risks false-repair that damages the contract.
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
+## DEC-0097 | 2026-06-05 | SLOW (process-critic)
+
+mode: process-critic
+trigger:
+  reason: signal-accepted-at-emit
+  source_report: active-project/staff/auditor/write-b01c18-bone-gate.md
+  source_verdict: |
+    /and-write b01c18 Phase 6 bone-gate PASS — 0 HARD; 4 SIGNALs all accepted-not-remediated
+    (signal-001 s04 abstraction-dominance 1/8; signal-002 s05 abstraction-dominance 2/11 +
+    s03 movers non-grounding; signal-003 s03n09 "the contempt arrives" abstract-subject;
+    signal-004 s03n06/n10 byte-identical SVOs intentional-refrain).
+  gate_path: .claude/commands/and-write.md#phase-6
+verdict: OK
+
+question: |
+  (A) Is the recurring ABSTRACTION-DOMINANT fire-and-accept pattern for accounting/cipher chapters
+  (s04 cipher-delivery + s05 accounting-close in c18; cf. c17 s02, c11 s02/s03, c08/c16 airless-risk)
+  a signal that the bone-gate->stitch-Phase-4 handoff needs structural modification for
+  abstraction-heavy design-inherent chapters, or is per-chapter carry working as designed?
+  (B) Is the byte-identical intentional-refrain SVO pattern (s03n06/s03n10 "files the court-entry")
+  something the bone-gate needs a first-class disposition category for rather than per-chapter SIGNAL?
+
+decision: OK on both questions. No new proposal. No merge required.
+
+basis: |
+  Step 1 (proposals log):
+    Searched for open proposals targeting abstraction-dominance + stitch-Phase-4 handoff:
+    PROP-0023 (apparatus-dominant whole-chapter airlessness — bone-level cure; status: open)
+    PROP-0030/PROP-0031 (cross-chapter apparatus-register accumulation; status: open, both)
+    None of these has the same target + change_type as what this dispatch would propose.
+    No rejected proposal covers either candidate.
+
+  Step 2 (Question A — abstraction-dominance fire-and-accept structural fix):
+    DEC-0073 is the controlling prior ruling on this class. It established definitively:
+    (1) The SIGNAL is load-bearing as the stitch-carry trigger. A carve-out or mechanical
+        fix that eliminated the SIGNAL would remove that trigger — net-negative.
+    (2) The accept-with-rationale path is the designed handling when abstraction is
+        design-intrinsic. That path is functioning correctly.
+    (3) Cross-chapter accumulation is PROP-0030/PROP-0031's designed scope. Per-chapter
+        gates cannot see cross-chapter accumulation by construction.
+    (4) Audience 3-of-3 SUBSTANCE-FELT confirms downstream delivery is succeeding.
+
+    The b01c18 evidence is not meaningfully different from b01c11 (DEC-0073). The two
+    scenes (s04 cipher/packet, s05 accounting-close) are design-inherent: the intelligence-
+    delivery mechanism IS sparse ciphers and packets; the accounting-close IS the s05 form
+    by substance contract. The mover-level signal-003 (s03n09 "the contempt arrives") is
+    also earned (compound-eye n01-n04 supply the grounding; n09 is a synthesis vehicle).
+    All four signals carry appropriate stitch-Phase-4 obligations. The grounding-ledger (if
+    open from prior chapters) covers s05's accounting-close need. The existing mechanism
+    is doing its job.
+
+    Could a stricter version of the existing gate have caught a process failure? No — there
+    is no process failure. The gate fired correctly. The rationales are logged. The carries
+    are targeted. Audience confirmed delivery. Pure content-handling, not a process gap.
+
+    Discrimination: is the multi-point abstraction-dominance within a climax chapter a new
+    class? It is structurally denser than c11 (two distinct scene types + a mover-level
+    abstract-subject in the same chapter). However: (a) c18 is a PASS with 0 HARD and
+    audience 3/3 SUBSTANCE-FELT; (b) the multi-point fires are explained by distinct scene
+    designs (cipher-delivery = sparseness by design; accounting-close = ledger-register by
+    design; mover-level contempt-synthesis = upstream-grounded by n01-n04); (c) the stitch-
+    Phase-4 carries name each specific bone/scene. No pattern failure at gate level.
+
+    Cross-chapter accumulation data point: c18 is a climax chapter structurally distinct
+    from the apparatus-register-accumulation falling-arc stretch (c02-c17). Its abstract
+    register is the catastrophe-enacted-through-form; the cold-reader cannot see this
+    without the prior 17 chapters. Not a merge-qualifying recurrence for PROP-0030's
+    cross-chapter apparatus-density concern. Standard OK.
+
+  Step 3 (Question B — byte-identical intentional-refrain disposition category):
+    First occurrence of intentional verbatim SVO repetition as a design-refrain (below the
+    >=3 mannerism threshold). The gate caught it correctly (SIGNAL-004 with design-intent
+    rationale). The stitch-Phase-4 carry ("render as perceptibly-the-same-act, not
+    accidentally-repeated prose") is the correct downstream obligation. The pattern is
+    chapter-specific (s03 "seventh-day filing = first-day filing" contempt-as-form design);
+    not architectural to the project. No prior chapter has used byte-identical SVOs as a
+    design refrain.
+
+    A first-class disposition category would add specificity at the cost of modifying
+    /and-write.md Phase 6 for a first-occurrence chapter-specific pattern. The existing
+    SIGNAL path IS a disposition — it names the design intent, flags the stitch obligation,
+    and does not block. Standard first-occurrence hold per process-critic Rule step 4.
+
+  Step 4 (methodology):
+    Reversibility: per-chapter SIGNAL carry is reversible at stitch if it over-fires.
+    A new gate category is lower-reversibility (once added, always fires).
+    Cost: OK is S-cost; a gate modification on /and-write Phase 6 is M-cost at minimum.
+    Blast radius: per-chapter carry affects this chapter only; a gate modification
+    affects every future invocation of Phase 6. Methodology favors OK at N=1 on both.
+
+rationale: |
+  Both patterns are handled correctly by the existing process. The bone-gate->stitch-Phase-4
+  carry IS the structural fix — it is the designed handoff for accepted SIGNALs. Audience
+  3/3 SUBSTANCE-FELT confirms downstream delivery is landing. DEC-0073 is the controlling
+  ruling; b01c18 adds no new evidence class that would change it. The byte-identical-refrain
+  is a first-occurrence chapter-specific design choice; the gate caught it and named the
+  stitch obligation; no first-class disposition category is warranted at N=1.
+
+trade-off: |
+  Cost of OK on Question A: a future chapter where abstraction-dominance is NOT design-inherent
+  but the gate accepts it anyway would not be caught by a structural fix. However, the accept-
+  with-rationale discipline IS the structural fix; it requires the rationale to name the design
+  license. A failure of accept-with-rationale discipline is a gate-execution failure, not a
+  gate-design gap.
+  Cost of OK on Question B: a future intentional-refrain pair without clear design-rationale
+  would only be caught as a below-threshold advisory. Acceptable at N=1.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
+## DEC-0098 | 2026-06-05 | SLOW (process-critic)
+
+mode: process-critic
+trigger:
+  reason: failure
+  source_report: active-project/staff/reviews/coldread-b01-c18-2026-06-05.md
+  source_verdict: |
+    SHIPPED-WITH-CAVEATS (Phase 9 cold-read CONTINUE=no; all complaint categories pre-authorized
+    in chunk_cold_read.cold_read_risk_carry per DEC-0096; auto-ship, no retry). Fifth consecutive
+    Class-B cold-read CONTINUE=no in the c14-c18 stretch (c14 DEC-0085 / c15 DEC-0087 /
+    c16 DEC-0090 / c17 DEC-0094 / c18 DEC-0096). Complaints: event-poverty / no-dialogue /
+    no-on-page-resistance / anti-climax-by-design. c18 is the CLIMAX chapter.
+  gate_path: .claude/commands/and-stitch.md#phase-9
+  secondary_gate_paths: [.claude/commands/and-write.md#phase-6]
+verdict: OK-MERGED-INTO PROP-0037 (recurrence_count 5->6)
+
+question: |
+  Two sub-questions from the trigger:
+  (a) Is the 5-consecutive-chapter Class-B accumulation across the collapse arc a signal that
+      the depth-pass-before-book-close mechanism needs strengthening, or that /and-cohere b01
+      c13-c18 (the accumulation handler per DEC-0095) should be elevated from optional to a
+      book-close precondition?
+  (b) Is shipping 5 consecutive chapters with CONTINUE=no — even pre-authorized — a quality-debt
+      accumulation the per-chapter Class-B disposition is structurally blind to (each chapter is
+      locally justified; the STRETCH is the problem /and-cohere is designed to catch)?
+
+decision: OK-MERGED-INTO PROP-0037 (recurrence_count 5->6). No new proposal. No threshold change.
+
+basis: |
+  Step 1 (proposals log):
+    PROP-0037 (status: open, recurrence_count: 5) targets /and-substance chapter Phase 0
+    HARD-abort at consecutive_shipped_with_caveats >= 3 without cohere_acknowledgment.
+    DEC-0095 merged c17 as count 4->5 for the second independent run. C18 is the fifth
+    consecutive in this run; recurrence_count increments to 6. No other open proposal
+    overlaps this target + change_type. No rejected proposal covers it.
+
+  Step 2 (question a — depth-pass-before-book-close mechanism):
+    Current per-chapter depth-pass obligations as of c18 ship:
+      - c10: PASS-WITH-DEPTH-PASS-REQUIRED (bone-level staging, from DEC-0066/0070)
+      - c14: mandatory per DEC-0085 (texture-level: courier-as-person, Sera-stake)
+      - c18: mandatory per DEC-0096 (HARD watches: enacted irrevocable-threshold physical act
+               + op-friction signal; SOFT accounting-close concreteness)
+      - c15/c16/c17: Case 1 SHIPPED-WITH-CAVEATS, no mandatory depth pass (all complaints
+               fully covered by design-inherent/cold-context carries; DEC-0087/0090/0095)
+    The per-chapter mechanism is correctly discriminating which chapters need depth passes
+    and which do not. The three mandatory passes (c10, c14, c18) are logged in the parking
+    lot; they are not invisible to the process — they are precisely tracked. The mechanism
+    is not blind to the stretch; the stretch has two distinct components:
+      (i) the design-inherent Class-B shipments (c11/c12/c15/c16/c17) which correctly carry
+          no depth-pass obligation because all complaints are covered by the substance contract
+      (ii) the tractable-residue chapters (c10/c14/c18) which correctly carry mandatory
+           depth passes because tractable gaps were identified
+    Strengthening the book-close mechanism would mean adding a gate that fires when these
+    mandatory depth passes remain unresolved at book-close. That gate already has a natural
+    home: /and-review verdict (the orchestrator-critic pass, which is the canonical
+    book-close command). The parking-lot items for c10/c14/c18 are the signal. No new
+    structural mechanism is needed — the existing /and-review verdict pass is the
+    enforcement surface, and PROP-0037's consecutive-counter gate fires the /and-cohere
+    obligation at chapter-start. The two-layer enforcement (PROP-0037 at chapter-start +
+    /and-review verdict at book-close) is already the correct architecture.
+
+  Step 3 (question b — is the stretch structurally invisible to the per-chapter disposition?):
+    No. The stretch is visible at two levels:
+      (i) PROP-0037 (open, untriaged) is exactly the gate that makes it visible at
+          chapter-start: consecutive_shipped_with_caveats >= 3 fires a HARD-abort unless
+          cohere_acknowledgment is present. This gate has been open since DEC-0079 (c12)
+          and is the correct enforcement surface for "the stretch is the problem."
+      (ii) The /and-cohere recommendation (run c13-c18 before book-close) has been named
+           as the accumulation handler in DEC-0087/0089/0093/0095. It is not a per-chapter
+           call; it is an explicit book-level obligation recorded in the decisions log.
+    The question "should /and-cohere be elevated from optional to book-close precondition"
+    is correctly answered: it is NOT optional under the current process. DEC-0080 established
+    that /and-cohere is required before the next chapter when consecutive count >= 3;
+    DEC-0095 names it as the mandatory accumulation handler before book-close. The process
+    already encodes the obligation; PROP-0037 is the gate that enforces it mechanically.
+    The gap is that PROP-0037 is untriaged and unimplemented — that is a triage-urgency
+    issue, not a new process-change proposal.
+
+  Step 4 (c18 climax chapter signal — does it change the analysis?):
+    c18 is the climax chapter. This is the highest-stakes ship in the stretch. However,
+    the climax PASSED every informed gate: 3/3 SUBSTANCE-FELT (Phase 5), dramatist ACCEPT
+    on correct climax shape, auditor 0-HARD on design/prose/thematic. The cold-reader's
+    CONTINUE=no is structurally identical to prior chapters — uninformed-reader artifact
+    on design-inherent causes (offstage antagonist, accounting-close IS the dramatized event,
+    Earth-Bet fence). DEC-0096 correctly identified the surviving tractable signals (items 1-3)
+    and wrote targeted cold_read_risk_carry. The climax chapter being the fifth consecutive
+    is evidence that PROP-0037 should be triaged urgently before book-close — not evidence
+    that a new proposal is needed. The right call is urgency escalation on existing open work,
+    not a new process-change proposal.
+
+  Step 5 (book-close enforcement surface question):
+    The trigger asks whether /and-cohere should become a "book-close precondition." The
+    correct book-close enforcement surface is /and-review verdict — the orchestrator-critic
+    pass. That command is the canonical checkpoint for "is the book ready to close." Adding
+    /and-cohere as a HARD-abort at /and-review verdict Phase 0 when the consecutive counter
+    is >= 3 AND no cohere_acknowledgment is present would be a clean, natural fit. However,
+    this would be a modify to /and-review verdict, and PROP-0037 is already the primary
+    enforcement proposal (targeting /and-substance chapter Phase 0). A companion proposal
+    targeting /and-review verdict is logically distinct but likely redundant with PROP-0037
+    if PROP-0037 is implemented — because PROP-0037 fires the HARD at chapter-start, which
+    means the consecutive counter cannot exceed 3 without an explicit bypass acknowledgment.
+    If PROP-0037 is not implemented, /and-review verdict is the correct fallback. But
+    authoring a second proposal now, before PROP-0037 is triaged, would add triage overhead
+    on an unsettled foundation. Hold: if PROP-0037 is rejected at triage, then a companion
+    /and-review verdict proposal becomes warranted. For now, the correct action is to surface
+    triage urgency on PROP-0037, not to author a new proposal.
+
+  Step 6 (recurrence and merge):
+    Sixth data point across two independent N=3+ runs. Merge mandatory (same target.path +
+    change_type, status: open). recurrence_count 5->6.
+
+rationale: |
+  The pre-authorization mechanism is functioning correctly for the fifth consecutive time.
+  The per-chapter coupling correctly discriminates design-inherent cold-reader artifacts from
+  delivery failures. The stretch is NOT structurally invisible — it is tracked at three levels:
+  (a) mandatory depth-pass obligations logged in the parking lot for c10/c14/c18,
+  (b) the /and-cohere accumulation handler explicitly named as a book-close obligation in
+      DEC-0087/0089/0093/0095, and (c) PROP-0037 (open, untriaged) as the mechanical gate.
+  The process gap is not that the mechanisms are absent — it is that PROP-0037 is untriaged.
+  The climax chapter being the fifth consecutive auto-ship is the strongest triage-urgency
+  signal yet for PROP-0037; it does not warrant a new proposal.
+
+  TRIAGE URGENCY NOTE for principal: PROP-0037 is the open proposal with the highest
+  accumulated evidence (recurrence_count: 6). c18 is the climax chapter. Book-close is the
+  next major milestone. PROP-0037 should be triaged before /and-review verdict b01 is invoked.
+  Companion consideration (adding a /and-review verdict Phase 0 check as a book-close fallback
+  if PROP-0037 is rejected) is noted here as a conditional follow-on, not a separate proposal.
+
+trade-off: |
+  Merging into PROP-0037 means no new triage item. The /and-cohere c13-c18 recommendation
+  and the conditional /and-review verdict fallback are operational calls living in this
+  decisions entry. If PROP-0037 is rejected at triage, the conditional follow-on surfaces
+  and a new proposal would be warranted.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no

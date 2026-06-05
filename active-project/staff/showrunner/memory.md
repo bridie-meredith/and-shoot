@@ -10614,7 +10614,72 @@ books:
                 gate_verdict: {bonefide: true, flat: false, signals: []}
 
       - slug: b01c18
-        status: planned
+        status: drafted   # /and-stitch b01c18 COMPLETE: Phase 9 SHIPPED-WITH-CAVEATS (Class-B DEC-0096 coupling) + Phase 10; terminal deliverable draft/b01-c18.md (depth_pass before book-close)
+        stitched: true
+        draft_file: active-project/draft/b01-c18.md   # ~1025-word body; first-person past, voice-exemplar-primed (Robinson contemplative); italic preamble (exposition:1 @0); no scene-callout markers
+        coherence_review:   # /and-stitch Phase 8.5
+          reviewed_at: 2026-06-05T06:10:00Z
+          verdict: PASS
+          weave_gaps: 0
+          followability_breaks: 0
+          cold_read_risk_high: 0
+          cold_read_risk_advisory: 3   # @9 prior-architecture shape-language (fence working), @23/@27 refrain (cleared), P5 idiom-compression (self-disambiguating)
+          central_event_muffle: does-not-fire   # KHEPRI-REGISTER-SPLIT (architecture/count subject) does NOT muffle; exposition:2 @14 orient + before/after magnitude + adjacent first-person agency carry the event-weight
+          report_path: active-project/staff/reviews/coherence-b01-c18-2026-06-05.md
+        cold_read:   # /and-stitch Phase 9 terminal gate
+          read_at: 2026-06-05T06:15:00Z
+          verdict: SHIPPED-WITH-CAVEATS   # Class-B; DEC-0096 SHIPPED-WITH-RISK-RECORDED coupling auto-ship (mirrors c14 DEC-0085 / c15 DEC-0087 / c16 DEC-0090 / c17 DEC-0094 — 5th consecutive Class-B in c14-c18)
+          central_event_recovered: true   # cold-reader spine (demand->comply->deploy->court-surveil->deliver->Greens-move->shutdown->blank-ledger) + one-line summary map to goal
+          recovered_summary: "A spy runs their whole network at maximum for two weeks to hand an enemy faction the intelligence they need, then shuts it down and notes they'll get no credit for it."
+          continue: no   # pre-authorized categories: interior-accounting-density / no-dialogue / anti-climax (nothing-external-lands) / withheld prior-chapter motive (who is Wren/Sera/Jarvis/Norren = Earth-Bet fence + c01-c17 context) / mechanism-opacity (what the surveillance literally is)
+          fail_categories_all_preauthorized: true   # all complaint categories in chunk_cold_read.cold_read_risk_carry (DEC-0096); 0 NEW categories -> auto SHIPPED-WITH-CAVEATS, no retry consumed
+          report_path: active-project/staff/reviews/coldread-b01-c18-2026-06-05.md
+          readability_axis: {verdict: AIRLESS-with-caveat, basis: 'abstraction-density is the pre-authorized Class-B family risk; central event NOT-MUFFLED (Phase 8.5 PASS) + concretely oriented (exposition:2 @14 + before/after magnitude); READABLE for a c01-c17 reader; voice-embodiment person-first; fence CLEAN'}
+          depth_pass_required: true   # MANDATORY before book-close; gates /and-substance book b02 Phase 0 + /and-review verdict b01 via parking-lot (target book-close, NOT Phase 0); consume via /and-write b01c18 revise --from-signals OR fold into /and-cohere b01
+          depth_pass_resolved_at: null
+          signal_clusters: []   # no separate Step-3/3.5 staging dispatch under cascade-budget (c16/c17 precedent); DEC-0096 coupling ships SHIPPED-WITH-CAVEATS regardless; Phase 8.5 PASS + protected-patterns intact
+          stale_since: null
+        status_pre_stitch: audited-r1   # /and-facets b01c18 COMPLETE 2026-06-05: 9 facets 3-of-3 ACCEPT (1 cycle); Earth-Bet fence CLEAN; FOLLOWABLE+ALIVE
+        bones_file: theater/bones/b01-c18.md
+        bones_count: 46
+        scene_map_file: theater/facets/scene-map-b01-c18.md
+        substance_bone_gate_verdict: PASS   # auditor 0 HARD (Khepri-enactment gate MET -> pl-2026-06-05-c18-001 resolved; all Δ exact; continuity PASS) + audience 3-of-3 SUBSTANCE-FELT all 5 scenes; 4 SIGNALs (s04/s05 abstraction-dominance, s03n09 contempt-as-subject, s03n06/n10 refrain) accepted -> carry to /and-stitch Phase 4
+        substance_delta_measured:
+          axes_moved: [{axis: moral_framework, delivered: -1.0, target: -1.0}, {axis: political_register-prot, delivered: 2.0, target: 2.0}, {axis: position-world, delivered: 1.0, target: 1.0}, {axis: political_register-world, delivered: 1.0, target: 1.0}, {axis: position-prot-collapse, delivered: -1.0, target: -1.0}, {axis: social_tether-prot-collapse, delivered: -1.0, target: -1.0}]
+          density_measured: "s01 all-held (7 bones, precipice); s02 3 movers/10 (mf -1.0 dominant @ architecture-opens-nodes + both collapse -0.5 co-fire); s03 2 movers/10 (ppr +1.5 via 4 compound-eye grounding bodies); s04 2 movers/8 (pw+1.0/prw+1.0 succession-lands); s05 3 movers/11 (ppr+0.5 + both collapse -0.5, accounting-close). 0 chatter bones. Climax shape; abstraction-dominant tail (s04/s05) accepted-by-design."
+          felt_verdict: SUBSTANCE-FELT-3of3
+        bones_review:   # /and-review bones b01c18 — MANDATORY gate; /and-facets Phase 0 reads this
+          reviewed_at: 2026-06-05T05:00:00Z
+          report_path: active-project/staff/reviews/bones-b01c18-2026-06-05.md
+          verdict: PASS   # chunk->bones fidelity: full spine intact; no hollowing; REGISTER-REFRAIN-PAIR @23/@27 survives byte-identical
+          follow_check: PASS   # c01-c17 reader can follow central event + all 4 scene hand-offs; remaining opacity context-addable -> /and-facets Phase 2.5
+          dialogue_coverage: PASS   # N/A solitary chapter; 0 dialogue-anchor bones (Jarvis courier channel, Wren screened — both speechless)
+          aliveness: BONES-AIRLESS-RISK   # advisory; scoped s04/s05 abstraction-dominant (DEC-0096 Class-B accepted); s01-s03 grounded; S04/S05-EMBODIMENT carried to /and-stitch Phase 4
+          bones_file_mtime_at_review: 2026-06-05T04:45:00Z
+          stale_since: null
+        facets:   # /and-facets b01c18 (consolidated R1+R2 graph-aware pass under chapter-production budget, c15/c16/c17 precedent)
+          status: audited-r1
+          facets_path: active-project/theater/facets/
+          proto_lines: active-project/theater/proto-lines/b01-c18.md
+          cite_index: active-project/theater/facets/_cite-index.md
+          round_1_complete: true
+          round_2_complete: true   # consolidated into R1 graph-aware authoring
+          facet_entry_counts: {location-state: 7, interest-narrator: 11, sensory: 5, state-updates-env: 14, state-updates-taylor: 7, memory: 3, feeling: 1, metaphor: 0, vibes: 18, exposition: 3, dialogue: 0}
+          context_followability: {completeness_verdict: FOLLOWABLE, readability_verdict: ALIVE, context_ledger_open: 0, grounding_ledger_open: 0, report_path: active-project/staff/reviews/context-follow-r2-b01-c18-2026-06-05.md}
+          context_ledger: active-project/staff/showrunner/context-ledger-b01-c18.md   # ctx-001 @14 deployment-threshold, ctx-002 @30 succession-mechanism — both satisfied
+          grounding_ledger: active-project/staff/showrunner/grounding-ledger-b01-c18.md   # grd-001 @13, grd-002 @38, grd-003 @46 — all satisfied (s04/s05 abstraction-dominant grounding)
+          audit_path: active-project/staff/auditor/facets-final-audit.md
+          audit_complete: true
+          audit_hard_final: 0   # fault-001 (vibes:17 dangling peak-bone:48->46) fixed pre-gate
+          audit_signals: 5   # meta:0 id-convention, Khepri-in-comments (production-internal non-rendered), exposition 6.5% small-denominator (ctx-licensed exempt), exposition:1 @0 bridge, pile-ups @14/@25 (stitch redundancy-cull advisory)
+          audience_gate_path: active-project/staff/audience/   # 27 per-persona per-facet verdict files
+          audience_gate_complete: true
+          audience_gate_cycles: 1
+          audience_gate_result: ACCEPT   # ALL 9 facets 3-of-3 (cape-fic-reader + dark-fantasy-reader + worm-canon-pedant); Earth-Bet fence CLEAN across all gloss bodies; Khepri-register-split held in NI/vibes/memory; memory doubled-register MET
+          bidirectional_loop: validated   # convergence trace: signal-002 + fault-001 + pile-up @14 shared findings
+          voice_fixable_carry: ['@14 keep NI:3 adjacent to structural-fact subject (register-split protect)', '@25/@26 four-body compound-eye tethered to reading-consciousness for the for-it payoff', '@30-@33 render @32 person-first off NI:7 (no axis-slug)', '@39-@46 each accounting entry physically/cognitively distinct (ACCOUNTING-BONES-PHYSICALLY-DISTINCT, @45 blank-column peak)']   # -> /and-stitch Phase 4
+          margit_referrals: ['oc-dead-drop-site (confirm vs the-hook-lower-water-trough c13/c17)', 'oc-ward-network-full-coverage', 'prop:oc-cost-ledger (reconcile vs oc-feed-ledger)']   # carry to stitch Phase 0 pre-flight; non-blocking
+          orchestrator_critic: {result: SUCCESS, note: '9/9 facets 3-of-3; 0 HARD post-fix; fence CLEAN; FOLLOWABLE+ALIVE; metaphor refuse-by-default correct (0, cold-accounting climax); Khepri-register-split + Earth-Bet fence held across the facet layer; abstraction-dominant s04/s05 grounded via grounding-ledger'}
         chunk: |
           War-pressure on Sera's succession exposure — Dance-pressure pulse 2. A
           court-tier event: Viserys I's health deteriorates visibly; a succession question
@@ -10680,6 +10745,13 @@ books:
         goal: |
           Show the audience the irrevocable deployment at full scale — Khepri-architecture running at maximum density — and the court apparatus read through compound eyes until the contempt is as near-complete as the architecture it rides on.
         pov_narrator: taylor-hebert-kl-122ac
+        handoff_conflicts:
+          - detected_at: 2026-06-05T02:00:00Z
+            axis: capability
+            handoff_in_value: 8
+            aggregate_value: 8.5
+            resolution: aggregate-wins
+            note: "aggregate-state through c17 carries capability 8.5 (c17 +1.0: record-MODIFICATION/false-attribution register added scope). c18 handoff_in.character_state stated rank 8 (stale, pre-c17-measured). c18 holds capability flat per axes_held; the held rank is 8.5, not 8. Contract axes_held[capability] rationale updated to reflect the 8.5 baseline."
         handoff_in:
           open_threads:
             - "use-vector intercept: Wren screened; false attribution in Otto's picture"
@@ -10706,10 +10778,756 @@ books:
             - "cl06 opened: contempt without exit attached"
           world_state:
             - "KL 122 AC; Viserys I health in visible decline; Green succession move landed; political_register-world advancing toward lock"
-            - "position-world rank 9; political_register-world rank 9"
+            - "position-world rank 8; political_register-world rank 8"   # auditor fault-002 corrected: aggregate 7 + c18 FIRST-draw +1.0 = 8; cl07b/cl07c second +1.0 draws at c20 (was erroneously 9)
           character_state:
-            - "Taylor: political_register-prot rank 7.5 (near-saturation); moral_framework rank -4 (irrevocable); position-prot-collapse rank 5; social_tether-prot-collapse rank 6; capability rank 8; relational_anchor rank 7.5"
+            - "Taylor: political_register-prot rank 7.5 (near-saturation); moral_framework rank -4 (irrevocable); position-prot-collapse rank 5; social_tether-prot-collapse rank 6; capability rank 8.5; relational_anchor rank 7.5"   # capability 8.5 per Phase-0 handoff_conflict (was stale-8)
           target_chapter: b01c19
+        scenes:
+          - slug: b01c18s01
+            status: scened
+            chunk: |
+              The cipher-bundle arrives through Jarvis's dead drop with an
+              addendum outside the usual format: [event: otto-deployment-request-delivered]
+              not a single query but a scope specification, hand-notated in
+              the margin cipher Taylor and Jarvis established in the third
+              month — the notation that means the request originates above
+              Jarvis's tier. Full coverage. All wards. All channels. Every
+              movement corridor in Taylor's current map, every feed-node
+              active simultaneously, for a fortnight. [mechanism: request-scope-named]
+              The margin note names the purpose obliquely, in the faction's
+              preferred architecture of implication: [force: opposing] the King's
+              condition has become a question of timing rather than duration,
+              and a specific succession mechanism requires the lower-city
+              intelligence picture to be complete and current before a
+              particular document moves through the Small Council. The
+              request is not a question. The channel that makes Sera's
+              legitimacy-lever operational is the channel Taylor runs through
+              Jarvis; the addendum is the call on the arrangement at its
+              agreed scale. [image: margin-cipher-scope-notation] Taylor reads the scope
+              notation a second time. [force: protagonist] The fortnight window is not
+              negotiable — it is the period during which the succession
+              document's movement is at risk. She reads the note to its
+              end, folds the bundle, and sets it on the floor of the
+              tallow-render room without answering it. [event: scope-recognized-not-yet-executed]
+              The network is already running. What the addendum names is
+              a different thing: running it at the density she has never
+              deployed it, all at once, covering bodies in a number she
+              has not counted since a different architecture, in a
+              different place, for different reasons that did not hold.
+            scene_conflict:
+              protagonist_force: "Taylor reads Otto's full-coverage deployment request — the call on the arrangement at its maximum agreed scale — and names to herself what complying will cost"
+              opposing_force: "the arrangement's structural logic: the succession mechanism cannot proceed without the intelligence picture Taylor is positioned to provide; the request is structurally inevitable given what she accepted at d03"
+              stakes_axis: moral_framework
+            substance_delta:
+              axes_in_motion: []
+              axes_held:
+                - axis: moral_framework
+                  rationale: "the precipice only; the deployment has not yet been executed; the request names the cost but the irrevocable threshold fires at the act, not the receipt of the ask"
+                - axis: political_register-prot
+                  rationale: "no court feed-content has arrived yet; the contempt register has no material; the request is paper-and-cipher, not bodies through compound eyes"
+                - axis: position-world
+                  rationale: "the succession move has not yet landed; position-world is held until the intelligence operation produces the outcome; this scene names the precondition, not the result"
+                - axis: political_register-world
+                  rationale: "Green succession move not yet executed; held until s04"
+                - axis: position-prot-collapse
+                  rationale: "collapse in motion since c17; no additional allocation at the request-receipt stage; the deployment itself is the c18 collapse event"
+                - axis: social_tether-prot-collapse
+                  rationale: "tether collapse in motion since c17; held at this scene; collapse allocation fires in s02 when the deployment enacts"
+                - axis: relational_anchor_status
+                  rationale: "Wren in coverage during the deployment but SCREENED; the fortnight-window deployment scale increases structural risk but s01 is the request-receipt scene, not the deployment-execution; anchor held at 7.5. NOTE: the cl-d11 2nd tranche (+0.5 remaining from c17) is documented as a cost-forward carry to the d14 collapse settlement and is NOT settled here"
+                - axis: capability
+                  rationale: "held at 8.5 (aggregate-corrected from handoff_in stale-8); deployment runs at existing scope maximally; no new scope in this chapter"
+                - axis: moral_legibility_to_self
+                  rationale: "the cost is named in the counting but the full recognition event is still suppressed; deferred to d14"
+                - axis: social_tether-antag
+                  rationale: "locked at 9; the request through the established channel is Otto's leverage operating structurally, not a new leverage event"
+              density_target: 0.60-0.75
+            stale_since: null
+
+            event_map:
+              - event: otto-deployment-request-delivered
+                bones: [b01c18s01n01, b01c18s01n02]
+              - mechanism: request-scope-named
+                bones: [b01c18s01n02, b01c18s01n03]
+              - force: opposing-arrangement-structural-logic
+                bones: [b01c18s01n03, b01c18s01n04]
+              - image: margin-cipher-scope-notation
+                bones: [b01c18s01n02]
+              - force: protagonist-reads-to-end
+                bones: [b01c18s01n04]
+              - event: scope-recognized-not-yet-executed
+                bones: [b01c18s01n05, b01c18s01n06, b01c18s01n07]
+            bones:
+              - slug: b01c18s01n01
+                flat_id: 1
+                svo: taylor-hebert-kl-122ac lifts the cipher-bundle
+...
+                substance_delta: {axes_held: [{axis: moral_framework, rationale: 'delivery received; the ask names the precipice only; the irrevocable threshold fires at the act, not at the receipt'}, {axis: social_tether-antag, rationale: 'locked at 9; the bundle arriving through Jarvis''s dead drop is the structural leverage operating, not a new leverage event'}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s01n02
+                flat_id: 2
+                svo: taylor-hebert-kl-122ac lifts the margin-cipher addendum
+...
+                substance_delta: {axes_held: [{axis: moral_framework, rationale: the margin notation names the scope; Taylor reads the scope and identifies what it costs; the framework holds at precipice — the act has not begun}, {axis: political_register-prot, rationale: 'no court feed-content has arrived; the ask is paper-and-cipher, not bodies through compound eyes; contempt register has no material'}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s01n03
+                flat_id: 3
+                svo: the cipher addendum opens the succession-mechanism column
+...
+                substance_delta: {axes_held: [{axis: position-world, rationale: the succession move has not yet landed; position-world held until the intelligence operation produces the outcome; this scene names the precondition}, {axis: political_register-world, rationale: Green succession move not yet executed; held until s04}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s01n04
+                flat_id: 4
+                svo: taylor-hebert-kl-122ac reopens the addendum
+...
+                substance_delta: {axes_held: [{axis: moral_framework, rationale: 'second read is the precipice behavior: Taylor is holding the weight of the ask, not yet having acted; framework holds at the crack before the breach'}, {axis: relational_anchor_status, rationale: the fortnight window deployment scale increases structural risk to Wren but s01 is the request-receipt scene; anchor held at 7.5; the Wren-gap will be held blank through the deployment}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s01n05
+                flat_id: 5
+                svo: taylor-hebert-kl-122ac folds the cipher-bundle
+...
+                substance_delta: {axes_held: [{axis: moral_framework, rationale: the fold is not execution; Taylor closes the cipher without answering; the precipice held}, {axis: capability, rationale: held at 8.5; the request-receipt scene uses no capability deployment}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s01n06
+                flat_id: 6
+                svo: the tallow-render room floor receives the bundle
+...
+                substance_delta: {axes_held: [{axis: moral_framework, rationale: setting the bundle on the floor without executing is the precipice enactment — the ask sits unanswered in the tallow-render room; framework holds}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s01n07
+                flat_id: 7
+                svo: taylor-hebert-kl-122ac holds the feet
+...
+                substance_delta: {axes_held: [{axis: moral_framework, rationale: 'the naming enacts stillness-against-pressure: Taylor identifies that the density she has never simultaneously deployed is the thing the addendum calls; the moral_framework precipice is held at maximum compression before the breach; shape-language only — ''a count she has not reached since a different architecture in a different place'' — no interior recognition opens'}, {axis: moral_legibility_to_self, rationale: the cost is named in the counting but the full recognition event is suppressed; deferred to d14}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+          - slug: b01c18s02
+            status: scened
+            chunk: |
+              [event: deployment-activation-enacted] Before first light Taylor opens the network
+              at full coverage — not ward by ward the way she has run
+              it since c12, one cluster at a time, always with the
+              eastern gap held blank, but all of it simultaneously.
+              [mechanism: full-coverage-architecture-deployed] Every feed-node she has built across
+              the five wards and the Flea Bottom approaches and the
+              service corridors of the Red Keep's outer ring activates
+              at once: the bottlefly routes under the Fishmonger Gate,
+              the moth-corridor through the chandler quarter, the
+              feed-lines that run adjacent to the Gate of the Gods and
+              the Iron Gate and the River Gate, the ward-elder contacts
+              whose daily rhythms she has indexed to the hour for eleven
+              months. [image: network-full-open-before-dawn] The east-of-water-gate lanes come up
+              too — not the gap, because the gap is Wren, [force: protagonist]
+              and Wren moves through it the way she always does, second-step
+              hesitation at the scar-ankle interval, screened by Norren's
+              attribution in the record. Taylor does not open Wren's
+              corridor to the coverage. Everything around it runs at
+              maximum density. [image: wren-gap-held-blank-amid-fullcoverage] The blank lane
+              sits in the middle of the maximum-density field like the
+              hole in the map it has always been — the one piece of the
+              architecture that is not Khepri. [force: opposing] Everything else
+              is. [event: irrevocable-density-threshold-crossed] The body-count runs
+              past the number she last reached in a city before this
+              one — the count from the time before, the count she came
+              here to make impossible. [mechanism: khepri-scale-echo-landed]
+              She does not stop the count. She runs it forward into
+              the fortnight.
+            scene_conflict:
+              protagonist_force: "Taylor opens the full coverage network simultaneously at maximum density — the act that crosses the irrevocable threshold — and holds the one blank lane that is Wren's corridor"
+              opposing_force: "the irrevocable Khepri-echo: everything except the Wren-gap is the architecture she built her prohibition against, running at the scale she last used it for different reasons that did not hold; the body-count crosses its prior number"
+              stakes_axis: moral_framework
+            substance_delta:
+              axes_in_motion:
+                - axis: moral_framework
+                  direction: down
+                  target_delta_magnitude: 1.0
+                  cost_ledger_anchor: cl02
+                  notes: "irrevocable-Khepri-repetition threshold crossed: the full-network maximum-density activation is the act that removes the calibrated qualifier; the body-count runs past the number she last reached before this city; cl02 cost side completed; the deployment is enacted as a physical/structural change — the architecture now covers bodies in numbers that were previously impossible to claim as calibrated"
+                - axis: position-prot-collapse
+                  direction: down
+                  target_delta_magnitude: 0.5
+                  cost_ledger_anchor: cl07b
+                  notes: "collapse advancing: full deployment at irrevocable scale makes Taylor more load-bearing to the Green succession apparatus; the more load-bearing she becomes, the more precisely disposable she is post-need; collapse from 6 toward 5"
+                - axis: social_tether-prot-collapse
+                  direction: down
+                  target_delta_magnitude: 0.5
+                  cost_ledger_anchor: cl07a
+                  notes: "tether collapse advancing: the deployment at maximum density is the last act before the removal calculus completes; tether under maximum structural strain as the network runs at irrevocable scale; collapse from 7 toward 6"
+              axes_held:
+                - axis: capability
+                  rationale: "held at 8.5 (aggregate-corrected); the deployment runs the existing scope maximally — full simultaneous activation is a deployment-mode event, not a new scope acquisition; no new network nodes"
+                - axis: relational_anchor_status
+                  rationale: "Wren in coverage during the deployment but SCREENED; her gap-lane held blank precisely as before; the deployment scale is maximum everywhere except that lane; anchor held at 7.5; NOTE: cl-d11 +0.5 cost-forward-carry-to-d14 is not settled at this scene"
+                - axis: moral_legibility_to_self
+                  rationale: "the irrevocable threshold is crossed in the act but not yet in the full recognition event; suppression continues; the count runs forward without pause — the held-at-crack-level legibility persists through the act; deferred to d14"
+                - axis: political_register-prot
+                  rationale: "the network is open but the court feed has not yet returned its content; contempt register cannot advance on the deployment act itself — it advances on what the deployment reads; held until s03"
+                - axis: political_register-world
+                  rationale: "Green succession move not yet executed; held until s04"
+                - axis: position-world
+                  rationale: "intelligence operation in motion but outcome not yet produced; held until s04"
+                - axis: social_tether-antag
+                  rationale: "locked at 9; does not move further"
+                - axis: social_tether-prot-rise
+                  rationale: "rise axis at peak 8.5; collapse axis carries the chapter's motion on the tether dimension"
+              density_target: 0.70-0.85
+            stale_since: null
+
+            event_map:
+              - event: deployment-activation-enacted
+                bones: [b01c18s02n01, b01c18s02n02]
+              - mechanism: full-coverage-architecture-deployed
+                bones: [b01c18s02n02, b01c18s02n03]
+              - image: network-full-open-before-dawn
+                bones: [b01c18s02n01, b01c18s02n03]
+              - force: protagonist-wren-gap-held
+                bones: [b01c18s02n04, b01c18s02n05]
+              - image: wren-gap-held-blank-amid-fullcoverage
+                bones: [b01c18s02n05]
+              - force: opposing-khepri-echo
+                bones: [b01c18s02n06, b01c18s02n07]
+              - event: irrevocable-density-threshold-crossed
+                bones: [b01c18s02n07, b01c18s02n08]
+              - mechanism: khepri-scale-echo-landed
+                bones: [b01c18s02n08, b01c18s02n09]
+            bones:
+              - slug: b01c18s02n01
+                flat_id: 8
+                svo: taylor-hebert-kl-122ac opens the bottlefly routes
+...
+                substance_delta: {axes_held: [{axis: capability, rationale: deployment begins; capability runs at existing scope maximally — no new scope acquired; held at 8.5}, {axis: moral_framework, rationale: 'the deployment act begins; the framework cracks at the threshold but the move registers at the full-architecture-open, not at the single-gate activation'}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s02n02
+                flat_id: 9
+                svo: taylor-hebert-kl-122ac opens the moth-corridor
+...
+                substance_delta: {axes_held: [{axis: capability, rationale: 'second channel activated; deployment proceeds simultaneous across nodes; the architecture at full-open is the event, each node-activation is a building action toward it'}, {axis: social_tether-prot-rise, rationale: rise axis at peak 8.5; the collapse axis carries the tether motion; rise does not move}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s02n03
+                flat_id: 10
+                svo: the feed-lines activate the outer-gate corridors
+...
+                substance_delta: {axes_held: [{axis: capability, rationale: three-gate simultaneous activation — the architecture reaching the outer-ring corridors; the full-open is the event type; held through the activation sequence}, {axis: position-prot-collapse, rationale: collapse in motion since c17; the deployment scale is accruing the irrevocable-load weight that advances the collapse; held pending the architecture-threshold cross at n07/n08}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s02n04
+                flat_id: 11
+                svo: taylor-hebert-kl-122ac skips the east-of-water-gate lanes
+...
+                substance_delta: {axes_held: [{axis: relational_anchor_status, rationale: Wren's corridor held blank during maximum-density deployment; anchor held at 7.5; the Norren attribution screens the gap-figure from Otto's apparatus even as the surrounding lanes run at maximum density}, {axis: moral_framework, rationale: the blank-gap is the one piece that is not the prior architecture running; the framework holds until the full-architecture-open names itself in the count}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s02n05
+                flat_id: 12
+                svo: wren-stitch-maker-flea-bottom-ward crosses the lane
+...
+                substance_delta: {axes_held: [{axis: relational_anchor_status, rationale: Wren moves through her corridor screened — the un-priced anchor passes through the maximum-density field without entering it; anchor held at 7.5; the structural irony (the one blank lane in the architecture) is enacted in her crossing}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s02n06
+                flat_id: 13
+                svo: the moth-corridor feed returns noise
+...
+                substance_delta: {axes_held: [{axis: capability, rationale: 'op-friction bone: one of the newly-opened channels returns ambient noise rather than clean coverage on first activation — a corridor read degraded by a smelt-fire in the chandler quarter; the architecture recovers but the friction is present; capability held — the scope is established, the deployment mode encounters one imperfect node'}, {axis: moral_framework, rationale: the friction does not interrupt the deployment; the architecture routes around the noise; the breach is not paused by operational difficulty}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s02n07
+                flat_id: 14
+                svo: the architecture opens the nodes
+...
+                substance_delta: {axes_held: [], axis_moves: [{axis: moral_framework, direction: down, magnitude: 1.0}], cost_ledger_anchor: cl02}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s02n08
+                flat_id: 15
+                svo: the count crosses the threshold
+...
+                substance_delta: {axes_held: [], axis_moves: [{axis: position-prot-collapse, direction: down, magnitude: 0.5}], cost_ledger_anchor: cl07b}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s02n09
+                flat_id: 16
+                svo: taylor-hebert-kl-122ac extends the count
+...
+                substance_delta: {axes_held: [], axis_moves: [{axis: social_tether-prot-collapse, direction: down, magnitude: 0.5}], cost_ledger_anchor: cl07a}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s02n10
+                flat_id: 17
+                svo: the cipher-bundle drops
+...
+                substance_delta: {axes_held: [{axis: moral_framework, rationale: the bundle on the floor is the unanswered-ask from s01; now the deployment has begun and the ask is enacted; the framework has completed its c18 movement at n07; the bundle is the physical closing of the s01 precipice}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+          - slug: b01c18s03
+            status: scened
+            chunk: |
+              What the network returns over six days at maximum density:
+              [event: court-apparatus-read-at-scale] the court apparatus through compound
+              eyes at full range, the entire machinery of factional power
+              rendered in the only register Taylor's architecture provides.
+              Grooms who carry the same saddlebag at different hours for
+              different handlers. Maids who are not maids and whose
+              irregular corridor patterns the bottlefly routes have indexed
+              to three separate contact points, two of them Green and one
+              of them not. [image: court-bodies-at-compound-scale] A knight whose
+              left-hand grip on the pommel belongs to a style of
+              practice the Red Keep's tilting yard does not teach —
+              a method of holding a weapon in a small enclosed space.
+              A septa who crosses the outer court daily and whose
+              timing maps precisely to a handoff interval Taylor
+              recognizes from the Flea Bottom ward-elder circuits —
+              [mechanism: court-feed-returns-court-as-system] the same shape, only the
+              players are wearing different cloth. The feed runs at
+              this density for six days and what it produces is not
+              intelligence, or not only intelligence: [force: opposing] it is
+              the court apparatus rendered visible in its entirety,
+              every body performing its function for a faction that
+              has no more interest in the smallfolk in the streets
+              below than the smallfolk have in the stars. [event: contempt-near-saturation-arrives]
+              Taylor reads the feed and [force: protagonist] files each entry and
+              the filing does not produce distance. The contempt
+              has been articulate since c13. What maximum-density
+              returns is the completion of the picture: [image: full-court-machinery-in-compound-register]
+              the apparatus at every scale simultaneously, rendered
+              through insect-sense without mediation, and the recognition
+              that she is its instrument, reading it, for it, while
+              it reads nothing of her at all. [mechanism: contempt-saturation-mechanism]
+              The contempt arrives at the register cl06 names:
+              no exit attached. Clarity that forecloses nothing.
+              She files the seventh day's entry the same way she
+              filed the first.
+            scene_conflict:
+              protagonist_force: "Taylor reads the full court apparatus through compound eyes at maximum density across six days — every body performing its factional function — and the contempt arrives at near-saturation"
+              opposing_force: "the court apparatus itself: a machinery of factional power so total and self-enclosed that the feed renders it without mediation, and reading it changes nothing about what Taylor does next; contempt as trap, not exit"
+              stakes_axis: political_register-prot
+            substance_delta:
+              axes_in_motion:
+                - axis: political_register-prot
+                  direction: up
+                  target_delta_magnitude: 1.5
+                  cost_ledger_anchor: cl06
+                  notes: "court apparatus read at full scale through compound eyes; the feed returns not individual court-tier specimens but the machinery entire — every factional body performing its function simultaneously; contempt advances from 5.5 toward near-saturation; the feed-content is the mechanism (concrete bodies and their specific patterns), not Taylor's interior response; cl06 opens (contempt arrives with no exit attached)"
+              axes_held:
+                - axis: moral_framework
+                  rationale: "completed its c18 allocation at s02; the irrevocable deployment is done; the court-reading does not constitute a new moral_framework breach — it is the deployment's function running as designed; held at -4.0 aggregate"
+                - axis: position-world
+                  rationale: "intelligence is being gathered; the succession move outcome is not yet produced; held until s04"
+                - axis: political_register-world
+                  rationale: "Green succession document not yet through the Small Council; held until s04"
+                - axis: position-prot-collapse
+                  rationale: "partial collapse allocation already fired at s02 (-0.5); held at this scene; the remaining collapse allocation for c18 fires at s05"
+                - axis: social_tether-prot-collapse
+                  rationale: "partial collapse allocation already fired at s02 (-0.5); held; remaining allocation fires at s05"
+                - axis: relational_anchor_status
+                  rationale: "Wren screened; her gap-lane blank throughout the deployment; anchor held at 7.5; the deployment's scale is maximum everywhere except her corridor; NOTE: cl-d11 +0.5 carry to d14 not settled here"
+                - axis: moral_legibility_to_self
+                  rationale: "contempt arriving at near-saturation is directed outward at the apparatus; the recognition-of-repetition is not turned onto the ledger itself; legibility holds at crack-level; deferred to d14"
+                - axis: capability
+                  rationale: "held at 8.5; the reading operation uses existing capability at maximum deployment-mode; no scope expansion"
+                - axis: social_tether-antag
+                  rationale: "locked at 9; does not move further"
+              density_target: 0.75-0.90
+            stale_since: null
+
+            event_map:
+              - event: court-apparatus-read-at-scale
+                bones: [b01c18s03n01, b01c18s03n02, b01c18s03n03, b01c18s03n04]
+              - image: court-bodies-at-compound-scale
+                bones: [b01c18s03n01, b01c18s03n02, b01c18s03n03, b01c18s03n04]
+              - mechanism: court-feed-returns-court-as-system
+                bones: [b01c18s03n05, b01c18s03n06]
+              - force: opposing-court-machinery-self-enclosed
+                bones: [b01c18s03n05, b01c18s03n07]
+              - event: contempt-near-saturation-arrives
+                bones: [b01c18s03n08, b01c18s03n09]
+              - image: full-court-machinery-in-compound-register
+                bones: [b01c18s03n06]
+              - mechanism: contempt-saturation-mechanism
+                bones: [b01c18s03n09, b01c18s03n10]
+              - force: protagonist-files-each-entry
+                bones: [b01c18s03n07, b01c18s03n10]
+            bones:
+              - slug: b01c18s03n01
+                flat_id: 18
+                svo: the groom lifts the saddlebag
+...
+                substance_delta: {axes_held: [{axis: political_register-prot, rationale: 'first compound-eye specific: a groom whose saddlebag-timing mismatches the tilting-yard schedule — the court apparatus in its smallest unit; contempt register accumulates on specific bodies, not on a summary judgment'}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s03n02
+                flat_id: 19
+                svo: the maid crosses the corridor
+...
+                substance_delta: {axes_held: [{axis: political_register-prot, rationale: 'second compound-eye specific: the maid whose irregular corridor pattern indexes to three contact points, two Green and one not — the feed returns the factional machinery through a body that appears to be doing household work'}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s03n03
+                flat_id: 20
+                svo: the knight grips the pommel
+...
+                substance_delta: {axes_held: [{axis: political_register-prot, rationale: 'third compound-eye specific: the left-hand grip that belongs to a style the Red Keep''s tilting yard does not teach — a man trained for enclosed spaces, not the formal yard; the feed returns a specific physical tell in a body performing a factional function'}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s03n04
+                flat_id: 21
+                svo: the septa crosses the court
+...
+                substance_delta: {axes_held: [{axis: political_register-prot, rationale: 'fourth compound-eye specific: the septa whose daily timing maps precisely to the ward-elder circuit handoff interval Taylor knows from Flea Bottom — the court machinery using the same shape as the ward machinery; the contempt has its most precise object yet'}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s03n05
+                flat_id: 22
+                svo: the feed returns the court-pattern
+...
+                substance_delta: {axes_held: [{axis: political_register-prot, rationale: 'the four bodies resolve into a pattern: not four individuals but one machinery performing its factional function simultaneously in four registers; the feed returns the court-as-system, which is the contemplation-object the contempt has been accumulating toward'}, {axis: relational_anchor_status, rationale: Wren's blank lane holds through the s03 court-read; the apparatus returns court-tier bodies but not Wren; anchor held at 7.5}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s03n06
+                flat_id: 23
+                svo: taylor-hebert-kl-122ac files the court-entry
+...
+                substance_delta: {axes_held: [{axis: moral_framework, rationale: completed its c18 allocation at s02; the court-reading is the deployment's function running as designed; no new breach; held at -4.0 aggregate}, {axis: capability, rationale: held at 8.5; the reading operation uses existing capability at maximum deployment-mode}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: [REGISTER-REFRAIN-PAIR-s03n06n10]}
+              - slug: b01c18s03n07
+                flat_id: 24
+                svo: taylor-hebert-kl-122ac files the opening-entry
+...
+                substance_delta: {axes_held: [{axis: political_register-prot, rationale: 'filing the first-day entry with the same gesture as the seventh enacts the contempt''s quality: complete, named, and producing no difference in what happens next; the act is the same act each day; the contempt is the same contempt; the filing is the trap'}, {axis: moral_legibility_to_self, rationale: contempt arriving at near-saturation is directed outward at the apparatus; the recognition-of-repetition is not turned onto the ledger; legibility holds at crack-level; deferred to d14}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s03n08
+                flat_id: 25
+                svo: the insect-feed returns the apparatus
+...
+                substance_delta: {axes_held: [], axis_moves: [{axis: political_register-prot, direction: up, magnitude: 1.0}], cost_ledger_anchor: cl06}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s03n09
+                flat_id: 26
+                svo: the contempt arrives
+...
+                substance_delta: {axes_held: [], axis_moves: [{axis: political_register-prot, direction: up, magnitude: 0.5}], cost_ledger_anchor: cl06}
+                gate_verdict: {bonefide: true, flat: false, signals: [CONTEMPT-AS-SUBJECT-EMBODY-AT-STITCH]}
+              - slug: b01c18s03n10
+                flat_id: 27
+                svo: taylor-hebert-kl-122ac files the court-entry
+...
+                substance_delta: {axes_held: [{axis: political_register-prot, rationale: 'contempt-without-exit enacted: clarity forecloses nothing; the seventh-day filing identical to the first is the form the contempt takes — named, filed, without a mechanism for refusal attached; cl06 opened (no exit); held at new near-saturation level after n08/n09 moves'}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: [REGISTER-REFRAIN-PAIR-s03n06n10]}
+          - slug: b01c18s04
+            status: scened
+            chunk: |
+              On the ninth day [event: succession-document-moves] the intelligence product
+              reaches Jarvis — Taylor routes the compiled fortnight-picture
+              through the dead drop in three separate drops over twenty-four
+              hours, the format Jarvis specified: movement corridors, access
+              windows, contact intervals, each entry timestamped and
+              attributed. The succession document requires a specific
+              access window and a specific Small Council composition;
+              Taylor's picture names both. [mechanism: intelligence-product-delivered-to-channel]
+              Two days later Jarvis's counter-bundle returns a single
+              line in the margin cipher: [event: green-move-lands-confirmed]
+              the document has moved. The legitimacy question Sera's
+              exposure has been held against is resolved, for now, in
+              the Greens' favor. [force: protagonist] Taylor reads the line
+              and does not write it into any record. [image: margin-cipher-single-line-confirmation]
+              The succession move has landed. [force: opposing]
+              The position-world entry is: the Green faction's succession
+              architecture now holds the Small Council access it needed,
+              and Taylor's intelligence picture was the instrument that
+              cleared the window. [mechanism: position-world-advancement-mechanism] The
+              political_register-world entry is: a specific document
+              now exists, produced while Taylor's network ran at
+              maximum density, advancing the faction's succession
+              position as its direct product. [event: world-axes-advance-on-product-confirmation]
+              The ward is still running at maximum-density. The bodies
+              are still in the feed. The legitimate question at the
+              center of the arrangement — whether Sera survives the
+              succession question — has received its answer for the
+              season, through the network, through Taylor's hands,
+              through a fortnight of irrevocable-density coverage
+              that she does not name, in this record, as what it was.
+            scene_conflict:
+              protagonist_force: "Taylor delivers the intelligence product and receives confirmation the Green succession move has landed — the outcome the fortnight deployment was purchased to produce"
+              opposing_force: "the irreversibility of the world-state change: the succession document now exists as a direct product of the irrevocable deployment; what the arrangement bought is now in the record, permanently, whether Taylor names it there or not"
+              stakes_axis: position-world
+            substance_delta:
+              axes_in_motion:
+                - axis: position-world
+                  direction: up
+                  target_delta_magnitude: 1.0
+                  cost_ledger_anchor: cl07b
+                  notes: "Green succession move lands; position-world advances through the intelligence operation Taylor executes; the succession document moves through the Small Council access window Taylor's picture named; cl07b begins delivering its position-world gain"
+                - axis: political_register-world
+                  direction: up
+                  target_delta_magnitude: 1.0
+                  cost_ledger_anchor: cl07c
+                  notes: "Green succession move confirmed; political_register-world rises as direct product of the irrevocable deployment; a specific succession document now exists as a permanent record-entry produced by Taylor's fortnight-picture; cl07c begins"
+              axes_held:
+                - axis: political_register-prot
+                  rationale: "near-saturation already arrived in s03; the confirmation of the succession move's landing is an outcome-delivery, not a new court-feed event; contempt register held — the remaining +0.5 fires in s05 on the accounting close"
+                - axis: moral_framework
+                  rationale: "completed its c18 allocation at s02; the intelligence product delivery and outcome confirmation do not constitute a new breach; held at -4.0 aggregate"
+                - axis: position-prot-collapse
+                  rationale: "partial allocation fired at s02; remaining fires at s05; held at this scene"
+                - axis: social_tether-prot-collapse
+                  rationale: "partial allocation fired at s02; remaining fires at s05; held at this scene"
+                - axis: relational_anchor_status
+                  rationale: "Wren screened; gap-lane blank; anchor held at 7.5; the succession move's landing does not produce a Wren-recognition event; cl-d11 carry-to-d14 not settled here"
+                - axis: moral_legibility_to_self
+                  rationale: "the outcome is named in the accounting but the full recognition event is still suppressed; legibility held at crack-level; deferred to d14"
+                - axis: capability
+                  rationale: "held at 8.5; delivery and confirmation are the deployment's function completing; no scope change"
+                - axis: social_tether-antag
+                  rationale: "locked at 9; does not move further"
+              density_target: 0.65-0.80
+            stale_since: null
+
+            event_map:
+              - event: succession-document-moves
+                bones: [b01c18s04n01, b01c18s04n02]
+              - mechanism: intelligence-product-delivered-to-channel
+                bones: [b01c18s04n01]
+              - event: green-move-lands-confirmed
+                bones: [b01c18s04n03, b01c18s04n04]
+              - image: margin-cipher-single-line-confirmation
+                bones: [b01c18s04n03]
+              - force: protagonist-reads-line-writes-nothing
+                bones: [b01c18s04n04]
+              - force: opposing-succession-irreversible
+                bones: [b01c18s04n05]
+              - mechanism: position-world-advancement-mechanism
+                bones: [b01c18s04n05, b01c18s04n06]
+              - event: world-axes-advance-on-product-confirmation
+                bones: [b01c18s04n06, b01c18s04n07]
+            bones:
+              - slug: b01c18s04n01
+                flat_id: 28
+                svo: taylor-hebert-kl-122ac drops the intelligence-packet
+...
+                substance_delta: {axes_held: [{axis: capability, rationale: held at 8.5; the three-drop delivery sequence is the deployment's function completing; no scope change}, {axis: moral_framework, rationale: completed its c18 allocation at s02; the intelligence product delivery does not constitute a new breach; held at -4.0 aggregate}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s04n02
+                flat_id: 29
+                svo: jarvis-coin-kl-courier collects the access-window packet
+...
+                substance_delta: {axes_held: [{axis: social_tether-antag, rationale: locked at 9; Jarvis operating as structural conduit — the tether mechanism completing the delivery; no new leverage event}, {axis: political_register-world, rationale: Green succession document not yet through the Small Council; world-axis held until the counter-bundle confirms}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s04n03
+                flat_id: 30
+                svo: the counter-bundle returns the confirmation-line
+...
+                substance_delta: {axes_held: [{axis: position-world, rationale: the single line is the confirmation; the move has landed; position-world will move at n06 on the confirmation's content; this bone is the physical delivery}, {axis: political_register-world, rationale: the cipher line carries the succession outcome; world-axis will move at n07; this bone is the physical receipt}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s04n04
+                flat_id: 31
+                svo: taylor-hebert-kl-122ac lifts the cipher line
+...
+                substance_delta: {axes_held: [{axis: political_register-prot, rationale: 'near-saturation already arrived in s03; the confirmation is an outcome-delivery, not a new court-feed event; contempt register held — the remaining +0.5 fires in s05 on the accounting close'}, {axis: relational_anchor_status, rationale: Wren screened; gap-lane blank; the succession move's landing does not produce a Wren-recognition event; anchor held at 7.5}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s04n05
+                flat_id: 32
+                svo: the succession document clears the Small Council access window
+...
+                substance_delta: {axes_held: [], axis_moves: [{axis: position-world, direction: up, magnitude: 1.0}], cost_ledger_anchor: cl07b}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s04n06
+                flat_id: 33
+                svo: the Green faction secures the succession channel
+...
+                substance_delta: {axes_held: [], axis_moves: [{axis: political_register-world, direction: up, magnitude: 1.0}], cost_ledger_anchor: cl07c}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s04n07
+                flat_id: 34
+                svo: taylor-hebert-kl-122ac closes the record
+...
+                substance_delta: {axes_held: [{axis: moral_legibility_to_self, rationale: 'the outcome is named in the accounting but the full recognition event is suppressed; the not-writing-it-down enacts the crack-level legibility: she sees clearly and does not file; deferred to d14'}, {axis: moral_framework, rationale: completed its c18 allocation at s02; the intelligence delivery and outcome confirmation do not constitute a new breach; held at -4.0 aggregate}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s04n08
+                flat_id: 35
+                svo: the ward runs
+...
+                substance_delta: {axes_held: [{axis: capability, rationale: the deployment continues running on the fourteenth day; confirmation received but the architecture is still at full coverage; capability held at 8.5}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+          - slug: b01c18s05
+            status: scened
+            chunk: |
+              On the fourteenth day [event: deployment-stood-down] Taylor closes the network
+              down from full coverage back to the running baseline —
+              ward by ward, the way she built it, the east-of-water-gate
+              gap last, still blank. [image: network-standown-ward-by-ward]
+              The accounting runs with the drawdown. [mechanism: irrevocable-accounting-sequence]
+              The calibrated qualifier: gone. She has run the network
+              at this density before — before this city, before this
+              architecture was the thing she built for atonement —
+              and there is no version of the present record where
+              that prior run does not sit in the same column as this
+              one. [force: opposing] The fortnight has the shape she named
+              in the negative when she first held the insects back in
+              the alleys three weeks after she arrived: [event: irrevocable-threshold-named-in-accounting]
+              maximum density, unconsented observation, bodies in a
+              count that crosses the number she told herself was
+              the limit. [force: protagonist] Taylor runs the entry through
+              the cost-ledger and it closes cleanly: protection
+              delivered, Green succession move landed, Wren screened
+              through the fortnight, one ward-elder held in a false
+              record. [image: cost-ledger-closes-clean]
+              The ledger closes cleanly. The deployment was the
+              irrevocable one and the ledger closes cleanly and
+              both facts are true. [event: contempt-without-exit-final-register]
+              The contempt sits in the same column as every other
+              entry: complete, named, [mechanism: contempt-as-ledger-entry]
+              without a mechanism for refusal attached to it.
+              The court apparatus read through compound eyes at
+              full scale is in the record. The succession move
+              is in the record. The body-count is in the record.
+              [event: collapse-axes-deepen-in-accounting]
+              The network now covers more bodies than it covered
+              before this fortnight began and Taylor is more
+              load-bearing to the apparatus and therefore more
+              precisely the instrument that will be set aside when
+              the instrument is no longer needed. [mechanism: disposal-calculus-visible]
+              She knows the number. She files the entry.
+              The blank column where the full recognition would go
+              stays blank. [image: blank-column-held-again]
+              The suppression holds. What shifts is everything
+              else.
+            scene_conflict:
+              protagonist_force: "Taylor stands down the full-coverage deployment and closes the accounting — the irrevocable threshold named in the ledger, the contempt complete and filed without a refusal mechanism, the calibrated qualifier gone"
+              opposing_force: "the accounting itself: the ledger closes cleanly, which is the catastrophe; the clean closure of the irrevocable deployment is what the series spine names as the catastrophe of accuracy — the contempt arrives complete and changes nothing"
+              stakes_axis: political_register-prot
+            substance_delta:
+              axes_in_motion:
+                - axis: political_register-prot
+                  direction: up
+                  target_delta_magnitude: 0.5
+                  cost_ledger_anchor: cl06
+                  notes: "final +0.5 to reach near-saturation at 7.5; the accounting close is the form the contempt takes here — named, filed, without exit; the contempt-without-exit shape is enacted through the ledger's clean closure, not through Taylor's interior; c18's allocated +2.0 portion of cl06 complete (cl06 +5.0 total; remaining +1.5 drawn at c19 — cl06 NOT exhausted)"
+                - axis: position-prot-collapse
+                  direction: down
+                  target_delta_magnitude: 0.5
+                  cost_ledger_anchor: cl07b
+                  notes: "remaining c18 collapse allocation; Taylor's network now covers more bodies than before the fortnight; the disposal calculus is visible in the accounting — more load-bearing = more precisely disposable post-need; collapse from ~5.5 toward 5"
+                - axis: social_tether-prot-collapse
+                  direction: down
+                  target_delta_magnitude: 0.5
+                  cost_ledger_anchor: cl07a
+                  notes: "remaining c18 collapse allocation; the deployment is the last act before Otto's removal calculus completes; tether toward 6 as the accounting confirms the arrangement's logic has consumed the instrument"
+              axes_held:
+                - axis: moral_framework
+                  rationale: "completed its c18 allocation at s02; the accounting close at s05 names the irrevocable threshold but does not constitute a new breach; held at -4.0 aggregate through end of chapter"
+                - axis: moral_legibility_to_self
+                  rationale: "the blank column is held again — suppression continues exactly as through c12/c14/c16/c17; the full recognition event is deferred to d14; the enacted suppression is the ledger-column staying blank"
+                - axis: relational_anchor_status
+                  rationale: "Wren screened through the entire fortnight; east-of-water-gate gap held blank through maximum density; anchor held at 7.5 through chapter close; NOTE: cl-d11 +0.5 2nd tranche (c17 carry) is documented as cost-forward carry to d14 collapse settlement and is NOT settled in c18 — this note documents the discipline explicitly per contract instruction"
+                - axis: capability
+                  rationale: "held at 8.5; the drawdown completes the deployment cycle; network returns to baseline scope; no scope change at the close"
+                - axis: position-world
+                  rationale: "completed its c18 allocation at s04; the accounting close does not advance position-world further; held at 8 (aggregate 7 + s04 +1.0; cl07b second +1.0 draws at c20 — c18 is the FIRST draw, not the cap)"
+                - axis: political_register-world
+                  rationale: "completed its c18 allocation at s04; held at 8 (aggregate 7 + s04 +1.0; cl07c second +1.0 draws at c20 — c18 is the FIRST draw, not the cap)"
+                - axis: social_tether-antag
+                  rationale: "locked at 9; does not move further"
+                - axis: social_tether-prot-rise
+                  rationale: "rise axis at peak 8.5; collapse axis carries the tether motion; rise does not move"
+              density_target: 0.80-0.90
+            stale_since: null
+            event_map:
+              - event: deployment-stood-down
+                bones: [b01c18s05n01, b01c18s05n02, b01c18s05n03]
+              - image: network-standown-ward-by-ward
+                bones: [b01c18s05n01, b01c18s05n02]
+              - mechanism: irrevocable-accounting-sequence
+                bones: [b01c18s05n04]
+              - force: opposing-ledger-clean-close
+                bones: [b01c18s05n04, b01c18s05n05]
+              - event: irrevocable-threshold-named-in-accounting
+                bones: [b01c18s05n04, b01c18s05n05]
+              - force: protagonist-runs-entry-through-cost-ledger
+                bones: [b01c18s05n06]
+              - image: cost-ledger-closes-clean
+                bones: [b01c18s05n06]
+              - event: contempt-without-exit-final-register
+                bones: [b01c18s05n07, b01c18s05n08]
+              - mechanism: contempt-as-ledger-entry
+                bones: [b01c18s05n07]
+              - event: collapse-axes-deepen-in-accounting
+                bones: [b01c18s05n08, b01c18s05n09]
+              - mechanism: disposal-calculus-visible
+                bones: [b01c18s05n09]
+              - image: blank-column-held-again
+                bones: [b01c18s05n10]
+            bones:
+              - slug: b01c18s05n01
+                flat_id: 36
+                svo: taylor-hebert-kl-122ac closes the ward-elder routes
+...
+                substance_delta: {axes_held: [{axis: capability, rationale: standdown begins the way the build began — ward by ward; capability held at 8.5; the drawdown completes the deployment cycle}, {axis: moral_framework, rationale: completed its c18 allocation at s02; the accounting close at s05 names the threshold but does not constitute a new breach; held at -4.0 aggregate through end of chapter}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s05n02
+                flat_id: 37
+                svo: the east-of-water-gate gap closes
+...
+                substance_delta: {axes_held: [{axis: relational_anchor_status, rationale: Wren's corridor was held blank through the entire fortnight; the gap closes last in the standdown exactly as it was held blank during deployment; anchor held at 7.5 through chapter close; cl-d11 +0.5 2nd tranche is documented as cost-forward carry to d14 collapse settlement and is NOT settled in c18}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s05n03
+                flat_id: 38
+                svo: the chandler-quarter moths settle the eaves
+...
+                substance_delta: {axes_held: [{axis: capability, rationale: 'grounding bone: the moths returning to ambient density in the chandler-quarter eaves as the architecture pulls back to baseline — the physical fact of the network standing down into the buildings it lives in; capability held at 8.5; the standdown is a real physical change in the ward''s insect-density'}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s05n04
+                flat_id: 39
+                svo: taylor-hebert-kl-122ac opens the cost-ledger column
+...
+                substance_delta: {axes_held: [{axis: moral_framework, rationale: 'opening the accounting column with the same gesture she uses every time enacts the irrevocable threshold meeting its own discipline: the form is intact; the ledger runs; the calibrated qualifier is gone; framework held at -4.0'}, {axis: moral_legibility_to_self, rationale: the blank column that would hold full recognition stays blank; suppression continues exactly as through c12/c14/c16/c17; legibility held at crack-level through end of chapter}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s05n05
+                flat_id: 40
+                svo: the ledger entry records the threshold-crossing
+...
+                substance_delta: {axes_held: [{axis: moral_framework, rationale: the naming of the prior-number threshold in the ledger entry enacts the accounting's completeness without producing a new breach; the irrevocable threshold was crossed at s02; this bone is the documentation of what was crossed; held at -4.0}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s05n06
+                flat_id: 41
+                svo: taylor-hebert-kl-122ac closes the protection-entry line
+...
+                substance_delta: {axes_held: [], axis_moves: [{axis: political_register-prot, direction: up, magnitude: 0.5}], cost_ledger_anchor: cl06}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s05n07
+                flat_id: 42
+                svo: the column receives the contempt-entry
+...
+                substance_delta: {axes_held: [{axis: political_register-prot, rationale: 'contempt-without-exit enacted as ledger fact: the contempt is complete, named, filed without a refusal mechanism; cl06 opened at s03; the closing-scene enacts the contempt''s quality through its column-position — adjacent to the protection-delivered entry, no exit attached; held at near-saturation (7.5) after s06 move'}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s05n08
+                flat_id: 43
+                svo: taylor-hebert-kl-122ac writes the standdown line
+...
+                substance_delta: {axes_held: [], axis_moves: [{axis: position-prot-collapse, direction: down, magnitude: 0.5}], cost_ledger_anchor: cl07b}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s05n09
+                flat_id: 44
+                svo: the ledger closes the disposal-calculus entry
+...
+                substance_delta: {axes_held: [], axis_moves: [{axis: social_tether-prot-collapse, direction: down, magnitude: 0.5}], cost_ledger_anchor: cl07a}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s05n10
+                flat_id: 45
+                svo: taylor-hebert-kl-122ac passes the recognition column
+...
+                substance_delta: {axes_held: [{axis: moral_legibility_to_self, rationale: 'the blank column is the enacted form of suppression-continuing: the full recognition event is deferred to d14; she sees the shape of the act (the deployment that crossed the prior number, the contempt that changes nothing, the arrangement that consumes the instrument) and does not inscribe it; the accounting is honest and the blank column is the honest accounting''s most load-bearing entry'}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s05n11
+                flat_id: 46
+                svo: taylor-hebert-kl-122ac sets the stylus
+...
+                substance_delta: {axes_held: [{axis: moral_framework, rationale: 'the stylus set beside the ledger — not down-and-away but beside, as an act completed — enacts the accounting-as-discipline: the framework has not broken the form; the form is intact; the irrevocable deployment closed cleanly in the ledger the way everything else has closed; held at -4.0'}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+        chunk_cold_read:
+          reviewed_at: 2026-06-05T02:30:00Z
+          verdict: CHUNK-CLASS-B
+          classification: B
+          recovered_summary: "A bug-controlling spymaster is ordered to run total surveillance on a medieval city for two weeks, does it perfectly, helps a faction win, and quietly hates herself because she swore she'd never do this again."
+          intended_goal: "Show the audience the irrevocable deployment at full scale - Khepri-architecture running at maximum density - and the court apparatus read through compound eyes until the contempt is as near-complete as the architecture it rides on."
+          continue: no            # first-pass Q5
+          continue_strict: no     # Q7 re-answer (post no-charity confusion list); AUTHORITATIVE
+          report_path: active-project/staff/reviews/chunk-coldread-b01c18-2026-06-05.md
+          disposition: P
+          dispositioned_at: 2026-06-05T02:30:00Z
+          dispositioned_by: admin
+          decision_ref: DEC-0096   # DEC-0094/0090/0087/0085 precedent family (5th consecutive Class-B P, c14-c18)
+          map_to_goal: true        # recovered_summary maps to goal; design sound; risk is design-inherent CONTINUE-risk, not a cause-chain hole (Class B not A)
+          cold_read_risk_carry: |
+            event-poverty/no-dialogue/no-on-page-resistance (design-inherent - offstage antagonist),
+            anti-climax-by-design/catastrophe-asserted-not-dramatized (design-inherent - accounting-close IS dramatization),
+            unknown-characters/insect-mechanism-opacity/unnamed-prior-city (Earth-Bet fence + serial mid-point context noise - pre-authorized).
+            HARD-watch:enacted-irrevocable-threshold-physical-act; HARD-watch:op-friction-signal-at-least-one-scene; SOFT:accounting-close-s05-concrete-paired-physical-outcome
 
       - slug: b01c19
         status: planned
@@ -10779,9 +11597,9 @@ books:
             - "social_tether-prot-collapse declining (rank 6)"
             - "false attribution in Otto's picture"
           world_state:
-            - "KL 122 AC; Viserys I health in visible decline; position-world rank 9; political_register-world rank 9"
+            - "KL 122 AC; Viserys I health in visible decline; position-world rank 8; political_register-world rank 8"   # auditor fault-002 cascade-correct: c18 close 8/8 (first draw), not 9; c20 draws the second +1.0 each
           character_state:
-            - "Taylor: political_register-prot rank 7.5; moral_framework rank -4; position-prot-collapse rank 5; social_tether-prot-collapse rank 6; capability rank 8; relational_anchor rank 7.5"
+            - "Taylor: political_register-prot rank 7.5; moral_framework rank -4; position-prot-collapse rank 5; social_tether-prot-collapse rank 6; capability rank 8.5; relational_anchor rank 7.5"   # capability 8.5 (mirror c18 handoff_out correction)
           source_chapter: b01c18
         handoff_out:
           open_threads:
@@ -10796,7 +11614,7 @@ books:
           world_state:
             - "KL 122 AC; Viserys I death window approaching; Dance-ignition close; Green apparatus positioned to act on succession"
           character_state:
-            - "Taylor: political_register-prot rank 9 LOCKED; moral_legibility rank 7 (recognition beginning); social_tether-prot-collapse rank 4.5; position-prot-collapse rank 4; capability rank 8; relational_anchor rank 7.5; moral_framework rank -4"
+            - "Taylor: political_register-prot rank 9 LOCKED; moral_legibility rank 7 (recognition beginning); social_tether-prot-collapse rank 4.5; position-prot-collapse rank 4; capability rank 8.5; relational_anchor rank 7.5; moral_framework rank -4"   # capability 8.5 (c19 holds; mirror correction)
           target_chapter: b01c20
 
       - slug: b01c20
@@ -10885,9 +11703,9 @@ books:
             - "false attribution in Otto's picture"
           world_state:
             - "KL 122 AC entering Dance-ignition threshold; Viserys I death imminent; Green apparatus positioned"
-            - "position-world rank 9; political_register-world rank 9"
+            - "position-world rank 8; political_register-world rank 8"   # auditor fault-002 cascade-correct: c20 draws the second cl07b/cl07c +1.0 each (8 -> 9 LOCKED at series end); entering c20 the base is 8, not 9
           character_state:
-            - "Taylor: political_register-prot rank 9 LOCKED; moral_legibility rank 7; social_tether-prot-collapse rank 4.5; position-prot-collapse rank 4; capability rank 8; relational_anchor rank 7.5; moral_framework rank -4"
+            - "Taylor: political_register-prot rank 9 LOCKED; moral_legibility rank 7; social_tether-prot-collapse rank 4.5; position-prot-collapse rank 4; capability rank 8.5; relational_anchor rank 7.5; moral_framework rank -4"   # capability 8.5 (mirror correction)
           source_chapter: b01c19
         handoff_out:
           open_threads: []

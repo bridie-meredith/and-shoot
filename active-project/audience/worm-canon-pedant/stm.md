@@ -438,6 +438,7 @@ date: 2026-05-31
 chapter: b01c08
 scenes_reviewed: [b01c08s01, b01c08s02, b01c08s03]
 dispatch_mode: override — single-persona load
+
 context: staging chapter, rise-zone consolidation tail; three obligations: cf-d10-courier-face beat 1 / Aemond-foreshadow / Oswyn-watcher-network integration as Khepri-echo
 
 ---
@@ -855,3 +856,139 @@ carry_forward:
   - SIGNAL-008 (Wren ++ ops) flagged for verification before b01c18 vibes facet authoring
   - b01c07 prose-burden carries forward unchanged
   - Collapse-axis tracking: position_prot_collapse and social_tether_prot_collapse both now active (FIRST-TOUCH complete at b01c17); b01c18 facets should show these in accumulation mode
+
+## 2026-06-05 — /and-substance chapter b01c18 Phase 5 chunk review
+
+chapter: b01c18
+date: 2026-06-05
+scenes_reviewed: [b01c18s01, b01c18s02, b01c18s03, b01c18s04, b01c18s05]
+
+verdict_per_scene:
+  b01c18s01: SUBSTANCE-FELT
+  b01c18s02: SUBSTANCE-FELT
+  b01c18s03: SUBSTANCE-FELT
+  b01c18s04: SUBSTANCE-FELT
+  b01c18s05: SUBSTANCE-FELT
+
+chapter_verdict: SUBSTANCE-FELT
+hard_findings: none
+SUBSTANCE-FLAT: none
+SUBSTANCE-SUSPECT: none
+overall: ACCEPT
+
+### Earth-Bet fence ruling: FENCE-RISK-FLAGGED (not FENCE-VIOLATED) — see s02 Khepri-declarative below
+
+### Per-scene findings
+
+**s01:** FENCE CLEAN. "A different architecture, in a different place, for different reasons that did not hold" — shape-language. No proper noun. "Different place" suppresses the Earth-Bet geography. "Different reasons that did not hold" names the prior prohibition as failed without naming what it was. The margin-cipher mechanics and the axes_held rationale bookkeeping (cl-d11 cost-forward-carry documented correctly) are all clean. SUBSTANCE-FELT.
+
+**s02:** FENCE-RISK-FLAGGED — see ruling below. Axes in motion earn their Δ through physical enacted acts: moral_framework -1.0 fires on the physical act of opening all nodes simultaneously vs. ward-by-ward (concrete structural change, not interiority); both collapse axes fire on real structural consequences (more load-bearing = more precisely disposable). Wren's gap-lane correctly held blank. The cover-density architecture (five wards + Flea Bottom approaches + Red Keep outer ring simultaneously) is coverage-as-deployed-architecture, consistent with the established sequential-acquisition-then-simultaneous-activation form. No single-broadcast-deployment concern — the network was built over eleven months of walking; the simultaneous activation is a deployment-mode event, not a capability-creation event. The body-count mechanism ("runs past the number she last reached in a city before this one") uses only shape-language — "a city before this one" is the established KL-positional cipher. SUBSTANCE-FELT. FENCE-RISK on one phrase.
+
+**s03:** FENCE CLEAN. Court-apparatus read at scale — specific bodies with specific factional patterns (grooms/saddlebags, maids-who-are-not-maids, knight-grip-style, septa-timing). All KL-internal content. "The same shape, only the players are wearing different cloth" — the echo uses no Earth-Bet referent. The contempt arriving as structural fact ("no exit attached; clarity that forecloses nothing") is the cl06 form correctly enacted. SUBSTANCE-FELT.
+
+**s04:** FENCE CLEAN. Intelligence product delivery mechanics are KL-internal throughout. "Before this fortnight began" — KL temporal reference. "That she does not name, in this record, as what it was" — the "what it was" uses no proper noun. World-axes advancing as direct causal products: mechanically sound, no cheap-gain. NOTE: axis-slug language in chunk prose ("The position-world entry is: …" / "The political_register-world entry is: …") is planning-document annotation; must be stripped at bones. SUBSTANCE-FELT.
+
+**s05:** FENCE CLEAN. "Before this city, before this architecture was the thing she built for atonement" — shape-language throughout. "Maximum density, unconsented observation, bodies in a count that crosses the number she told herself was the limit" — no proper noun, no Worm-canon technical term. The accounting close uses Taylor's operative ledger-language correctly. The blank-column-held-again close enacts the suppression as willful behavioral discipline (consistent with c12 and c17 pattern). Collapse axes: both second tranches firing correctly in accumulation mode (not re-activation; FIRST-TOUCH was at c17; c18 is the accumulation-mode event per prior carry-forward). SUBSTANCE-FELT.
+
+### Khepri-fence ruling — s02 declarative
+
+**Phrase under review:** "the one piece of the architecture that is not Khepri. Everything else is."
+
+**Prior fence form (established c12 and c17):** The word "Khepri" surfaces under architectural pressure and is suppressed willfully (c12). Or: the shape-word is never named — only "the architecture she built her prohibition against" appears, using the established cipher (c17).
+
+**The s02 declarative:** "Khepri" is used as an active predicate descriptor, not as a suppressed shape-word under pressure. The construction asserts "everything else [is Khepri]" as a structural property of the architecture.
+
+**Ruling:** FENCE-RISK-NOT-FENCE-VIOLATED at chunk level.
+
+The risk is register ambiguity: this could land as the narrating consciousness making the structural identification visible to the reader (fence-clean — reader sees it, Taylor doesn't name it), or as Taylor's interior recognizing her own identity as Khepri (fence violation — the irony collapses if Taylor names herself). The surrounding prose context does not establish a register-shift signal. The authoring notes (section d) correctly identify the mitigation: the enactment must be in the physical act of node-opening and the body-count crossing the prior threshold, not in Taylor's interiority about what the architecture is. If bones execute this as narrating-register identification (subject is the architecture, not Taylor's recognition of it), the fence holds. If any bone gives Taylor the self-recognition, the fence is violated.
+
+**Classification:** HARD WATCH ITEM for /and-write. Not a chunk-level block — the bones and prose execution gate catches it.
+
+**Adjacent phrase check:** "The body-count runs past the number she last reached in a city before this one — the count from the time before, the count she came here to make impossible." — FENCE CLEAN. "A city before this one" = shape-language. "The time before" = established cipher. "The count she came here to make impossible" = project-internal vocabulary only.
+
+### Axis aggregate verification
+
+All 6 axes_in_motion sum to chapter contract (per roll-up table in authoring notes). EXACT on all six. Zero axes exceed ±1 tolerance. Math clean.
+
+### Collapse-axis accumulation mode confirmed
+
+Both position-prot-collapse and social_tether-prot-collapse fire second tranches (not re-activations) at s02 and s05. Consistent with carry-forward from b01c17 Phase 5b: FIRST-TOUCH complete at c17; c18 is accumulation mode. No FIRST-TOUCH re-designation. Tracking discipline held.
+
+### cl-d11 cost-forward-carry discipline
+
+The cl-d11 2nd tranche (+0.5 relational_anchor_status) is explicitly documented as cost-forward carry to d14 in the axes_held rationale for relational_anchor_status at s01, s02, s03, and s05. Wren screened throughout the deployment; gap-lane held blank at maximum density. The screening is structurally significant but does not constitute a recognition event that moves the relational_anchor axis. Carry discipline intact; four-scene documentation is adequate.
+
+earth_bet_fence_verdict: FENCE-RISK-FLAGGED-S02 (remainder CLEAN)
+hard_findings: none at chunk level
+SUBSTANCE-FLAT: none
+SUBSTANCE-SUSPECT: none
+
+soft_findings:
+  - s04 axis-slug language: "The position-world entry is:" and "The political_register-world entry is:" are planning-document annotations bleeding into what should be Taylor's ledger-consciousness; must be stripped at bones; not a chunk block
+  - b01c07 prose-burden carries forward unchanged
+
+hard_watch_items_to_and-write:
+  SW-c18-WCP-HARD-1: s02 Khepri-declarative — "the one piece of the architecture that is not Khepri. Everything else is." MUST land as narrating-register structural identification (subject is the architecture; reader sees it; Taylor does not name it in interiority). If any bone gives Taylor the self-recognition "I am Khepri" or any equivalent interior identification, the fence is violated. This is a HARD watch — at the /and-write Phase 6 bone-gate, if the Khepri-declarative has landed in Taylor's interiority, the bone is a HARD finding and blocks persist.
+
+carry_forward:
+  - SW-c18-WCP-HARD-1 to /and-write Phase 6 bone-gate
+  - s04 axis-slug language stripping watch to /and-write (soft)
+  - b01c07 prose-burden carries forward unchanged
+  - Collapse axes confirmed in accumulation mode; c19 should continue accumulation-mode tracking, not re-activation
+
+## 2026-06-05 — /and-write b01c18 Phase 6 bone-gate
+
+chapter: b01c18
+date: 2026-06-05
+scenes_reviewed: [b01c18s01, b01c18s02, b01c18s03, b01c18s04, b01c18s05]
+
+verdict_per_scene:
+  b01c18s01: SUBSTANCE-FELT
+  b01c18s02: SUBSTANCE-FELT
+  b01c18s03: SUBSTANCE-FELT
+  b01c18s04: SUBSTANCE-FELT
+  b01c18s05: SUBSTANCE-FELT
+
+chapter_aggregate: SUBSTANCE-FELT
+hard_findings: none
+SUBSTANCE-FLAT: none
+SUBSTANCE-SUSPECT: none
+
+### KHEPRI REGISTER-SPLIT EXPLICIT VERDICT (pl-2026-06-05-c18-001): PASS
+
+Per-bone fence check on all critical bones:
+
+1. b01c18s01n07 — SVO: "taylor-hebert-kl-122ac holds the feet." Rationale names "a count she has not reached since a different architecture in a different place — no interior recognition opens." Subject is Taylor in physical stillness; the count-threshold is referenced through spatial/architectural shape-language ("a different architecture, a different place") without naming Earth-Bet proper nouns. Taylor is not naming herself Khepri. FENCE HOLDS.
+
+2. b01c18s02n07 — SVO: "the architecture opens the nodes." Subject: THE ARCHITECTURE. The axis move (moral_framework -1.0) fires as the architecture's structural fact, not as Taylor's recognition of her own identity. This is the central Khepri register-split bone. FENCE HOLDS — architecture-as-subject confirmed.
+
+3. b01c18s02n08 — SVO: "the count crosses the threshold." Subject: THE COUNT. Rationale: "the prior number is not named as 'Khepri's number'; it is 'the prior number' — shape-language." The count exceeds a previously-established threshold without labeling its origin. FENCE HOLDS — count-as-subject confirmed.
+
+4. b01c18s02n09 — SVO: "taylor-hebert-kl-122ac extends the count." Action is "extends the count" — continues running the deployment. Not self-identification. FENCE HOLDS.
+
+5. b01c18s05n04 — SVO: "taylor-hebert-kl-122ac opens the cost-ledger column." Rationale: "the blank column that would hold full recognition stays blank; suppression continues exactly as through c12/c14/c16/c17; legibility held at crack-level." FENCE HOLDS — s05 blank-column suppression discipline intact.
+
+6. b01c18s05n10 — SVO: "taylor-hebert-kl-122ac passes the recognition column." Rationale: "the full recognition event is deferred to d14; she sees the shape of the act... and does not inscribe it." Taylor passes the column without writing the recognition. The word "Khepri" is not written. FENCE HOLDS — Taylor never names the full recognition.
+
+SW-c18-WCP-HARD-1 disposition: SATISFIED — the s02 Khepri-declarative ("the one piece of the architecture that is not Khepri. Everything else is.") is enacted at bone level through architecture-as-subject (n07) and count-as-subject (n08); no bone gives Taylor the self-recognition "I am Khepri" or any functional equivalent; the narrating-register makes the structural identification visible to the reader while Taylor's interiority continues running the count; the s05 blank-column suppression irony survives intact at bone level.
+
+earth_bet_fence_verdict: CLEAN — all 46 SVOs reviewed; functional descriptive language throughout: "bottlefly routes," "moth-corridor," "feed-lines," "insect-feed," "ward-elder routes," "chandler-quarter moths," "cost-ledger column," "protection-entry line," "recognition column"; no "parahuman," "shard," "Manton effect," "trigger-event," "power rating," "cluster trigger," or any parahuman jargon in any SVO; shape-language for prior-city/prior-architecture references uses "a different architecture, a different place, for different reasons that did not hold" — no Earth-Bet proper nouns; Gold Morning not named; inner-monologue-rare cap untested in bones SVOs; fence respected throughout all 46 bones
+
+per_scene_canonicity_notes:
+  - s01: capability hold at 8.5 correct (deployment runs existing scope at maximum, no new scope acquisition); "a different architecture, a different place" shape-language correct; moral_framework hold correct (delivery received, threshold fires at act not at receipt); SUBSTANCE-FELT
+  - s02: simultaneous full-open is deployment-mode event not capability-creation event — the network was built over eleven months of sequential walking; activating all nodes simultaneously is a configuration choice, not new-scope acquisition; capability-held-at-8.5 is mechanically sound; op-friction at n06 (smelt-fire degrades moth-corridor) is canon-consistent (thermal events degrade insect-feed signal); recovery (architecture routes around) is mechanically correct; the three axis-move bones confirmed fence-clean (architecture-as-subject, count-as-subject, Taylor-extends-count); SUBSTANCE-FELT
+  - s03: compound-eye reading at specificity (saddlebag timing, corridor patterns, pommel grip style, timing intervals) is within established capability range; Red Keep outer-ring service corridors are in-range (established c08); simultaneous maximum-density deployment means all previously-established coverage nodes are active simultaneously, no range inflation; n06/n10 byte-identical SVOs not a mechanics concern — the filing is a physical act performed identically each day; SUBSTANCE-FELT
+  - s04: intelligence product delivery mechanics KL-internal throughout; margin cipher confirmation is Westerosi political communication (not Earth-Bet); n05/n06 operative language confirmed (no axis slugs); succession document movement is Westerosi political mechanics; SUBSTANCE-FELT
+  - s05: standdown ward-by-ward mirrors build — correct operational discipline; chandler-quarter moths settling eaves (n03) is correct insect-behavior (return to ambient density when not concentrated by feed's attention); disposal-calculus at n09 ("more load-bearing = more precisely disposable post-need") is Taylor's accurate self-accounting; collapse-axis second tranches confirmed in accumulation mode (not re-activation per carry-forward from b01c17); cl-d11 cost-forward-carry documented across four scenes (s01/s02/s03/s05 held rationales), discipline intact; SUBSTANCE-FELT
+
+collapse_axis_accumulation_mode: CONFIRMED — both position-prot-collapse and social_tether-prot-collapse fire second tranches at s02 (-0.5 each) and s05 (-0.5 each) in accumulation mode, consistent with FIRST-TOUCH established at b01c17; no FIRST-TOUCH re-designation; tracking discipline held throughout all four tranches
+
+cl_d11_carry_discipline: CONFIRMED — relational_anchor_status +0.5 2nd tranche explicitly documented as NOT settled in c18 across s01/s02/s03/s05 axes_held rationales; deferred to d14 collapse settlement; Wren screened throughout fortnight; gap-lane held blank at maximum density; four-scene documentation adequate
+
+soft_findings:
+  - s03n06/s03n10 byte-identical SVOs: intentional refrain (same filing-act each day = same contempt each day = the trap); not a mechanics error; carry to /and-stitch Phase 4 for surface-verb differentiation while preserving structural identity
+
+carry_forward:
+  - SW-c18-WCP-HARD-1 CLOSED (disposition SATISFIED at bone level; Khepri register-split holds across all 6 critical bones)
+  - s03n06/s03n10 refrain → /and-stitch Phase 4 surface differentiation (advisory)
+  - b01c07 prose-burden carries forward unchanged
