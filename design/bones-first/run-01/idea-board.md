@@ -25,6 +25,16 @@ wants to **harvest and grind dragon resources** — eggs, scales, blood, bone �
 into cultivation elixirs. In a world where dragons are sacred dynastic objects,
 this is capital heresy played for laughs.
 
+**Zero setting knowledge `[STICKING]`.** She is NOT a Westeros-savvy reincarnator.
+She carries past-life *cultivation-genre* knowledge — tropes, cosmology, the will
+to cultivate — and ZERO knowledge of *this* world: not the houses, not the
+politics, not that a war is coming, not that dragons are anyone's sacred symbol.
+To her it's "some low-spiritual-density medieval fantasy world." All dramatic irony
+is the *reader's*: we know it's pre-Dance Westeros and her own family is the fuse;
+she has no idea — because she skipped the lessons to meditate. She does have
+*evidence magic is real* (dragons, wildfire, weirwood), which is exactly what keeps
+her conviction fed.
+
 **Chosen world:** Westeros, in the build-up to the Dance of the Dragons, while
 the key players are still **kids**. Comedy first. Then the cultivator **ages up**
 into the actual Dance — and the comedy darkens as the realm slides toward a real
@@ -114,13 +124,41 @@ loose eggs, molt, bone — the motherlode, and it bites back) · the Citadel
 The Dance of the Dragons is history's greatest dragon-death event. He spends the
 comedy childhood *starving* for material (everything guarded, Dragonpit locked,
 keepers chase him off Dragonmont). Then he ages up, the war comes, and **the sky
-starts raining dead dragons.** His chronic shortage is solved by a national
-catastrophe. The farce curdles exactly on the canon timeline — his windfall is
+starts raining dead dragons.** Her chronic shortage is solved by a national
+catastrophe. The farce curdles exactly on the canon timeline — her windfall is
 everyone else's apocalypse.
+
+## Antics ladder `[STICKING]` — escalating heresy, toddler → adolescent
+The comedy childhood is a ladder: each age, a bigger, more transgressive heist,
+more confounded adults. The reagents she can reach grow with her freedom.
+
+- **Toddler (2–4):** escapes handlers to *gnaw a dragon eggshell* (eat, not tame);
+  licks dragonglass; gums weirwood shavings off the Kingsguard's pale-weirwood
+  Round-Room table in the White Sword Tower (canon: AFFC). Survives things she
+  shouldn't — broken-clock magic — feeding the "blessed? cursed?" rumor mill.
+- **Child (5–8):** breaches the Dragonpit for dung & shed scale ("spirit-beast
+  essence"); raids the maester's apothecary; challenges a septon to "spar for
+  sect ranking"; **skips lessons to "meditate" — found asleep, insists she was
+  circulating her qi.** (Same joke as the POV: we hear the monologue, they see a
+  napping child.)
+- **Older child (9–12):** schemes an apprenticeship for *lab access*; black-market
+  trades for shade-of-the-evening; first failed Dragonmont expedition.
+- **Adolescent (13–16):** real expeditions; marriage pressure intensifies (she
+  rebuffs it as beneath an immortal); the Dance looms; the windfall arrives.
+
+## Confoundment engine `[STICKING]` — every faction misreads her
+We're locked inside her delusion; nobody else can agree what she is. Each faction
+reads the toddler-eating-rocks through its own frame, and the realm accretes a
+mythology around her:
+- **Maesters:** prodigy, or pica, or a case for the Citadel.
+- **The Faith:** something demonic; she eats holy things and lives.
+- **Otto Hightower:** a potential asset; files her, watches.
+- **Dragonkeepers:** a dragon-dreamer touched by the blood.
+- **Her septa:** simply, irredeemably *wicked*.
 
 ---
 
-## Protagonist `[OPEN]` — the decision everything keys off
+## Protagonist `[A CHOSEN]` — dragonless, setting-blind OC Targaryen girl
 
 Options on the table:
 
@@ -158,9 +196,91 @@ Alicent, Aemond, Rhaenyra, Criston Cole, Aegon II, Viserys I, Otto Hightower,
 Rhaenys, plus OC Targaryen wards (Lyra, Vaegon) and a whole Flea Bottom / KL
 location set. These are the grounded straight-man world our lunatic lands in.
 
+## Plot & drama `[STICKING]`
+
+**The good king is her FATHER: Viserys I `[leaning — confirm]`.** The genial,
+peace-loving, conflict-avoiding king whose well-meaning *avoidance* is the canonical
+cause of the Dance. She's an OC younger daughter: dragonless, marriage-refusing,
+rock-eating — the one child he can't fit into his peace. His flaw *scales*: he fails
+to understand his daughter the same way he fails to settle his succession. **His
+love is a cage** — every gift a leash, every kindness a marriage "for her own good."
+Not cruelty; affection that doesn't land. Family tragedy rhymes with realm tragedy.
+(Alt: grandfather — lower canon-stakes, grandchild-cohort wildcard.)
+
+She sits **on the fault line** — half-sister to both claimants (Rhaenyra/Black,
+Aegon II/Green), belonging to neither, beneath the succession, at the emotional
+center of the household. A neutral wildcard until the war forces sides.
+
+**She's gay `[STICKING]` — the real thing under the bit.** Her cultivation refusal
+of the marriage-piece role (*"I transcend the wheel of dynasty"*) is *also simply
+true* — she doesn't want the marriage. Comedy refusal and genuine refusal are the
+SAME words; we and she know why, everyone else hears nonsense. **Love interest
+(open):** strongest pitch = a **dragonrider girl** — she loves the embodiment of the
+one thing she failed at and calls "beneath her," and dragonriders *die* in the
+Dance. The heart the cultivation-armor can't meme away.
+
+**Throughline:** A dragonless princess — secretly a reincarnated cultivation addict
+— chases immortality by grinding the realm's sacred magic into reagents, while her
+loving, oblivious father tries to fold her into a dynasty he's failing to hold
+together. *She wants to transcend the world; he wants to settle her into it; the war
+he can't prevent forces the question for both.*
+
+**The curdle:** cultivation is her **armor against grief** — a refusal to be
+attached, to mourn, to be mortal. The Dance makes grief unavoidable: father dies
+(shelter gone), dragons die (windfall amid apocalypse), lover rides to war,
+bodyguards fall on her expeditions. The farce of harvesting dead dragons becomes
+horror. The war's question: *is ascending alone, over a field of corpses, worth
+anything?*
+
+**Drama axes (substance seeds):**
+1. Transcendence vs. attachment — rise above bonds / the bonds are the people she loves.
+2. Agency/heresy vs. belonging/duty — her freedom vs. the dynasty's claim on her body & the realm's claim on its sacred things.
+3. The good king's love as a cage — father/daughter; love that misunderstands; mirrors the macro failure.
+4. Faction crossfire — Green & Black each read her as asset-or-heretic; neutrality erodes.
+5. Grief, refused — the delusion as a way not to mourn; the Dance calls the bill.
+
+## Acquisition ladder & personal power `[STICKING]`
+
+Her selfish immortality quest forces a power base. To reach rare reagents the supply
+chains don't exist for, she **builds them** — accidentally revolutionizing trade and
+medicine across a medieval realm, purely to feed her addiction. By the war, the
+little immortal *owns the medicine and the trade*: real power with nothing to do
+with dragons. **The irony:** she thinks she's gaining *cultivation* might; actually
+she's becoming a logistics-and-medicine magnate with a mercenary retinue.
+
+**Tiers (map onto age-up + the comedy darkening):**
+- **Tier 0 — local scraps (childhood):** dung, eggshell, shed scale, Kingsguard
+  weirwood. Stolen. Pure farce.
+- **Tier 1 — KL guilds:** maester's apothecary (lab access), **wildfire** from the
+  Alchemists' Guild — state-controlled, catastrophic; a princess with wildfire
+  "gives someone fits." A rival furnace-sect she covets.
+- **Tier 2 — Essos (needs trade):** shade-of-the-evening (Qarth), Lysene poison-
+  craft; supply lines she has to build.
+- **Tier 3 — far reagents (needs the revolution + travel):** a **Yi Tish** herb (the
+  xianxia-adjacent golden empire — she'd feel at home); **Sothoryos** jungle
+  materials (basilisk blood, toxic flora, lethal expeditions).
+- **Tier 4 — forbidden / deep magic (comedy stops being safe):** the **oily black
+  stone** (Oldtown's Battle Isle, the Five Forts of Yi Ti, ruined Yeen — cosmic,
+  Deep-One-adjacent; her "heaven-defying demonic treasure"); **beyond-the-Wall**
+  ice-magic (extreme-yin / death-dao). Lands as the Dance breaks.
+
+**Travel ⇒ personal power ⇒ entourage `[STICKING]`.** Reaching Tiers 3–4 means
+*leaving*, and a dragonless alchemist can't fight across Sothoryos. So she needs
+muscle and means: **a bodyguard or three** — a found-family retinue babysitting a
+princess who keeps trying to eat dangerous things and walks into peril convinced
+she's invincible. They see the real danger; she sees "trivial mortal obstacles."
+They're mortal — they can *die* on her expeditions: the cost ledger made flesh.
+Seeds (open): a worn hedge-knight who just wants her to stop; a foreign warrior
+picked up abroad (Summer Islander archer, Braavosi water-dancer, Sothoryi guide).
+
 ## Open decisions
-- OD1 — protagonist (A/B/C above)
-- OD2 — how dim *exactly*? Pure idiot, or idiot-savant who's occasionally right?
-- OD3 — does anyone ELSE know he's a reincarnator, or is it fully solo delusion?
-- OD4 — POV: tight on the cultivator (we're inside the delusion), or split with a
-  straight-man foil who sees reality?
+- **OD1 RESOLVED** — protagonist: dragonless OC Targaryen girl, setting-blind. (A)
+- **OD3 RESOLVED** — solo delusion; nobody knows she's a reincarnator.
+- **OD4 RESOLVED** — locked-inside POV (we hear the monologue; the world sees the antics).
+- OD-king — father = Viserys I (leaning) vs grandfather. **Confirm?**
+- OD-love — the dragonrider-girl love interest: who is she exactly?
+- OD2 — how dim: lean **idiot-savant** (broken clock occasionally right). Confirm?
+- OD-name — her name (novel, NOT a reused library OC slug).
+- OD-slot — exact family slot + birth year (~113–116 AC) under Viserys.
+- OD-scope — what the FIRST prototype chapter covers (pitch: the toddler cold-open
+  heist) so we can actually start narrating bones and test the pipeline.
