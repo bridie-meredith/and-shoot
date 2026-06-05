@@ -2357,3 +2357,36 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-06-05-c17-001
+      created_at: 2026-06-05T01:00:00Z
+      created_by: "/and-stitch b01-c17 Phase 9 cold-read terminal gate"
+      target:
+        command: /and-write
+        scope: b01-c17
+        phase: null
+      severity: SOFT
+      description: |
+        b01c17 (the use-vector intercept / Wren-screening forge) shipped SHIPPED-WITH-CAVEATS on a
+        Class-B cold-read (CONTINUE=no; central event RECOVERED + summary maps to goal — "re-committed,
+        small-scale, the sin they fled"; cause = design-inherent event-poverty / interior-accounting-
+        density / withheld prior-chapter motive [Wren + override-architecture = Earth-Bet fence +
+        c01-c16 reader context] / jargon-opacity, ALL pre-authorized in chunk_cold_read.cold_read_risk_carry
+        per DEC-0094; auto-shipped terminal per the Phase-9 SHIPPED-WITH-RISK-RECORDED coupling, mirroring
+        c14 DEC-0085 / c15 DEC-0087 / c16 DEC-0090 — the FIFTH consecutive [DEC-0095/PROP-0037 recurrence
+        4->5]). Phase 8.5 coherence PASS (central-event-muffle does-not-fire; the forge lands as deliberate
+        falsification, not muffled paperwork). The withheld-motive opacity is the known uninformed-reader
+        artifact (the assembled book resolves it c01-c16). MANDATORY depth pass before book-close (gates
+        /and-substance book b02 Phase 0 + /and-review verdict b01). Consume via /and-write b01c17 revise
+        --from-signals + re-cascade; OR fold into /and-cohere b01 c13-c17 (the now-FIVE-consecutive-quiet
+        accumulation c13/c14/c15/c16/c17 — the cohere stretch handler is the named accumulation lever per
+        DEC-0095, and the more efficient path than per-chapter depth passes).
+      context_refs:
+        - active-project/staff/reviews/coldread-b01-c17-2026-06-05.md
+        - active-project/staff/showrunner/memory.md  # chapters[b01c17].cold_read
+        - staff/admin/process-proposals.md  # PROP-0037 (depth-pass-before-book-close HARD-abort, open/untriaged)
+      resolution_suggestion: "/and-cohere b01 c13-c17 (five-consecutive-quiet accumulation handler, DEC-0095) OR /and-write b01c17 revise --from-signals + re-cascade"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
