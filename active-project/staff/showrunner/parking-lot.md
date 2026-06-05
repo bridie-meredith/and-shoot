@@ -2361,10 +2361,16 @@ parking_lot:
         - active-project/theater/facets/vibes-b01-c17.md
         - active-project/theater/facets/state-updates-env-b01-c17.md
       resolution_suggestion: "verify Wren/Jarvis vibes pre-seed at /and-facets b01c18 Phase 1; margit prop-card referrals for coverage-log/apparatus/ledger"
-      status: open
-      resolved_at: null
-      resolved_by: null
-      resolution_note: null
+      status: resolved
+      resolved_at: 2026-06-05T00:00:00Z
+      resolved_by: "/and-facets b01c18 vibes authoring (showrunner)"
+      resolution_note: |
+        (a) signal-008 resolved: Wren vibes.md carries rising entrapment (pre-seed) and
+        tragic-causal (pre-seed); both ++ ops valid. Jarvis vibes.md carries rising entrapment
+        (pre-seed) and tragic-causal (pre-seed); ++ ops valid. Used ++ form for all Wren and
+        Jarvis entrapment/tragic-causal extensions in vibes-b01-c18.md. No fresh + misuse.
+        (b) signal-009 (prop cards for coverage-log/apparatus/ledger): carried forward — not
+        within scope of vibes authoring; margit referral still pending for future pass.
 
     - id: pl-2026-06-05-c17-001
       created_at: 2026-06-05T01:00:00Z
