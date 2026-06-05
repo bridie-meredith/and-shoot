@@ -6740,3 +6740,75 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0102 | 2026-06-05 | FAST (user-proxy, RUNBOOK R1)
+
+mode: user-proxy
+context: |
+  /and-substance chapter b01c20 Phase 5.5 chunk cold-read gate, Step 3 disposition.
+  b01c20 is the terminal chapter of the one-book series: catastrophe-climax, falling arc,
+  Dance ignites, Wren dies, Taylor expelled, ledger closes. CHUNK-CLASS-B: summary MAPS
+  to goal; CONTINUE=no on two grounds: (1) prior-investment dependency (Wren + ledger
+  conceit require 19 chapters the uninformed cold-reader lacks; Wren named only in scene 4);
+  (2) interiority/abstraction-density ("four of five scenes are one woman reading a feed
+  and declining to react, in dense abstract register"). Dramatist ACCEPTED structure.
+  Audience 3/3 SUBSTANCE-FELT on all five scenes including worm-canon-pedant confirming
+  affect-suppressed-not-absent. Causal ambiguity at expulsion trigger is deliberate
+  thematic ambiguity. Established precedent: c14-c19 all shipped as Class-B cohort
+  (DEC-0087/0090/0094/0096/0099), each SHIPPED-WITH-CAVEATS, each with depth-pass gated
+  to BOOK-CLOSE.
+
+question: |
+  Which disposition for b01c20 Phase 5.5 CHUNK-CLASS-B: (R) Revise chunk, (P) Proceed with
+  risk recorded [Class-B default], or (S) Substance-contract revision? If (P), which specific
+  cold-read findings go into cold_read_risk_carry for /and-stitch Phase 9?
+
+decision: P — Proceed with risk recorded. SHIPPED-WITH-RISK-RECORDED, depth-pass gated to
+BOOK-CLOSE (not per-chapter). Same disposition as c14-c19.
+
+cold_read_risk_carry (five items for /and-stitch Phase 9 to read as already-dispositioned):
+  1. HARD-WATCH | CONTINUE=NO: prior-investment dependency. Cold-reader lacks the 19-chapter
+     Wren investment + ledger conceit context by construction. Terminal chapter of a series
+     cannot supply that in-chapter. Pre-authorized as design-inherent Class-B cost.
+  2. HARD-WATCH | CONTINUE=NO: interiority/abstraction-density ("four of five scenes: one
+     woman reading a feed and declining to react, in dense abstract register"). Same interior-
+     accounting register as c14-c19; pre-authorized across that cohort. Stitch Phase 4
+     voice-embodiment is the carry layer, not chunk revise.
+  3. HARD-WATCH | Wren name-opacity (named only in scene 4; cold-reader has no context for
+     who she is or why her death matters). Same character-opacity pattern as every c14-c19
+     carry. Design-inherent: the insect-feed-mediated POV withholds affect because the
+     apparatus withholds affect.
+  4. SOFT | Escalation-in-kind flatness ("little escalation in kind" across five scenes).
+     Stitch Phase 4 + Phase 9 voice-embodiment target: c20 must register as breaking the
+     sameness of c14-c19, even within the affect-suppressed register. Not a chunk-design
+     hole (dramatist ACCEPT + 3/3 SUBSTANCE-FELT confirm structure and affect delivered at
+     substance layer); execution risk is stitch-layer. Phase 9 should enforce this scene-by-
+     scene and verify c20 registers the break.
+  5. DESIGN-INHERENT (no stitch fix required) | Expulsion-trigger ambiguity (discovered OR
+     no longer needed). Deliberate thematic ambiguity — the apparatus's indifference to
+     Taylor means even she gets no determinate cause. Pre-authorized. Phase 9 must NOT
+     attempt to clarify; flagged to prevent false-FAIL on this axis.
+
+basis: |
+  LTM (DEC-0087 through DEC-0099): 6 consecutive Class-B P dispositions on c14-c19.
+  All share the same two complaint categories: (a) prior-investment dependency and (b)
+  interior-abstraction-density. c20 is structurally identical to this cohort with three
+  additional factors that make Class-B even more expected:
+  (a) Series-terminal chapter: prior-investment dependency is maximal by design.
+  (b) Catastrophe-climax register-break is a stitch-layer execution challenge, not a
+      chunk-design hole. Substance confirmed delivered (3/3 SUBSTANCE-FELT).
+  (c) Dramatist ACCEPTED; audience confirmed Khepri-echo is shape-language-only.
+  (R): chunk design is not broken. (S): contract produced 3/3 SUBSTANCE-FELT; redo is
+  wrong layer. (P): exact precedent match for c14-c19.
+
+trade-off: |
+  Continues depth-pass debt accumulation. Mitigated by BOOK-CLOSE depth-pass obligation
+  and /and-cohere accumulation handler (DEC-0087/0089/0093/0095). PROP-0037 triage: HIGH
+  before /and-review verdict b01.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no

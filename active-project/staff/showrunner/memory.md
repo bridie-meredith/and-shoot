@@ -12489,7 +12489,7 @@ books:
             asserted-not-dramatized => tractable, route normally (carried HARD to /and-write per DEC-0099).
 
       - slug: b01c20
-        status: planned
+        status: scened
         chunk: |
           The Dance ignites. Viserys I dies. The Green faction moves within hours on the
           succession; the apparatus Taylor's intelligence has been feeding for months
@@ -12587,6 +12587,316 @@ books:
           character_state:
             - "Taylor: expelled/dead; moral_legibility rank 8 LOCKED (recognition-too-late); political_register-prot rank 9 LOCKED; social_tether-prot-collapse rank 1 LOCKED; position-prot-collapse rank 1 LOCKED; relational_anchor rank 9 LOCKED; moral_framework rank 8 LOCKED (consumed-as-compass); capability rank 8 LOCKED (network outlasts architect)"
           target_chapter: null
+        chunk_cold_read:
+          reviewed_at: 2026-06-05
+          verdict: SHIPPED-WITH-RISK-RECORDED
+          classification: B
+          recovered_summary: "A spymaster watches her own surveillance network become the roadmap for a civil war, then loses the one person she protected off-ledger, and walks away with a perfect accounting and nothing left to refuse."
+          intended_goal: "Show the audience the feed-signal loss from Wren's lanes as the recognition event — not a named loss, not a ledger entry, the absence of signal in the place Taylor held open — and close on the contempt complete, the ledger accurate, nothing remaining to refuse."
+          continue: yes            # first-pass Q5 (conditional yes)
+          continue_strict: no      # Q7 no-charity re-answer; AUTHORITATIVE for classification
+          report_path: active-project/staff/reviews/chunk-coldread-b01c20-2026-06-05.md
+          disposition: P
+          dispositioned_at: 2026-06-05
+          dispositioned_by: admin
+          decision: DEC-0102       # same disposition family as c14-c19 (DEC-0099 cohort)
+          cold_read_risk_carry: |
+            1. HARD-WATCH | CONTINUE=NO prior-investment dependency: cold-reader lacks 19-chapter Wren + ledger investment; series-terminal chapter cannot supply in-chapter; pre-authorized design-inherent Class-B; Phase 9 must not treat as tractable FAIL.
+            2. HARD-WATCH | CONTINUE=NO interiority/abstraction-density: four of five scenes one woman reading a feed and declining to react in dense abstract register; same interior register pre-authorized c14-c19; stitch Phase 4 voice-embodiment is the carry layer.
+            3. HARD-WATCH | Wren name-opacity: named only in scene 4; apparatus withholds affect, POV withholds in kind; same character-opacity pattern as c14-c19.
+            4. SOFT | escalation-in-kind flatness: little escalation in kind across five scenes; STITCH ENFORCEMENT TARGET — c20 must register as breaking the sameness of c14-c19 even within affect-suppressed register; Phase 9 scores scene-by-scene and verifies different-in-kind; the one item the stitch layer is actively responsible for delivering.
+            5. DESIGN-INHERENT no-stitch-fix | expulsion-trigger ambiguity: discovered-OR-no-longer-needed is deliberate thematic ambiguity (apparatus indifference); Phase 9 must NOT resolve/clarify; flagged to prevent false-FAIL.
+        scenes:
+          - slug: b01c20s01
+            chunk: |
+              [force: protagonist_force] Taylor is in the room above the rendering works, lower city near the east-of-water-gate corridor,
+              when the feed-change arrives [event: viserys-death-in-feed] — not a messenger, not a cry
+              from the street, but the pattern of movement in the Red Keep's servant passages shifting
+              all at once, the usual late-night traffic ceasing, the wrong doors opening in the wrong
+              sequence. She reads the death before any bell rings. Then [event: succession-move-in-feed]
+              the Holdfast access routes — the ones she mapped three months prior [mechanism: how-apparatus-executes]
+              and delivered through the Jarvis channel — show new traffic: the right people moving to
+              the right rooms at the right speed, a rehearsed sequence executing cleanly against a
+              cue only the apparatus was waiting for. Two facts, one feed-window: the king is dead,
+              and the machine she built into the succession is running. [image: two-facts-one-moment]
+              Taylor marks both in the ledger without pause — position-world entry, political-register
+              entry, cost on the appropriate lines — and the accounting is clean and correct.
+              [force: opposing_force] The correctness itself is the pressure: the apparatus required
+              no signal from her tonight. Her intelligence made this possible; it proceeds without
+              her present.
+            scene_conflict:
+              protagonist_force: Taylor reads the death and the succession-move through the feed simultaneously and enters both into the ledger accurately
+              opposing_force: the accuracy of the entries — the apparatus ran without her signal; the ledger confirms her work is complete and she is no longer necessary
+              stakes_axis: moral_legibility_to_self
+            substance_delta:
+              axes_in_motion:
+                - axis: position-world
+                  direction: up
+                  target_delta_magnitude: 0.5
+                  cost_ledger_anchor: cl07b
+                  notes: Green succession move executes; first draw on the final chapter's position-world gain; apparatus completes the transition Taylor's intelligence primed
+                - axis: political_register-world
+                  direction: up
+                  target_delta_magnitude: 0.5
+                  cost_ledger_anchor: cl07c
+                  notes: succession angle locks as the Green move lands; first draw on political_register-world terminal gain
+                - axis: moral_legibility_to_self
+                  direction: up
+                  target_delta_magnitude: 0.2
+                  cost_ledger_anchor: cl07a
+                  notes: the apparatus running without her signal is the first recognition-pressure of the chapter — the machine is hers and beyond her; ledger entry is clean and that cleanliness is pressure
+              axes_held:
+                - axis: moral_framework
+                  rationale: no new breach this scene — the Dance igniting is consequence of prior breaches arriving, not a breach event; framework consumed-as-compass state carries forward
+                - axis: capability
+                  rationale: full-deployment architecture active; network structural and running; no new deployment event in this scene, held at 8.5 load
+                - axis: political_register-prot
+                  rationale: contempt-without-refusal LOCKED rank 9; the apparatus executing correctly produces no new contempt, only confirmation; held
+                - axis: social_tether-antag
+                  rationale: LOCKED rank 9; Otto's leverage structurally maximal; no scene action changes it
+              density_target: "0.65-0.75"
+
+          - slug: b01c20s02
+            chunk: |
+              The succession announcement propagates through King's Landing by midmorning.
+              [event: succession-announcement-propagates] Taylor is running the lower-city feed —
+              Flea Bottom, the Hook, the ward-junction lanes between them — when the first factional
+              violence enters the lower city [event: factional-violence-enters-lower-city], not
+              as a single event but as a pattern: the wrong men moving too fast through the right
+              intersections. [image: routes-become-roadmap] [mechanism: how-routes-become-roadmap]
+              The ward junctions she catalogued, the flow-points she identified as high-value delivery
+              nodes, the passage-counts she entered into the Jarvis reports — these are the exact
+              points the violence orients toward. The catalogue is the map the factions are using.
+              [force: opposing_force] She watches her own record-keeping become the war's roadmap
+              through the feed, in real time, one intersection at a time. The ledger on social_tether
+              begins its descent — the patron channel is running a different sequence now, one that
+              does not require her active delivery. [force: protagonist_force] Taylor holds the feed
+              wide, reads everything, records the topology of the violence's movement. She does not
+              close coverage. She does not narrow. The discipline is the same discipline she has
+              kept since c01: information gathered is information owned. The fact that ownership
+              now means witnessing what her work enabled is an accounting item, not a stopping
+              condition.
+            scene_conflict:
+              protagonist_force: Taylor holds the feed wide and reads the violence moving through her own catalogue without closing coverage
+              opposing_force: the catalogue she built is the roadmap the factions are using; her record-keeping is the violence's infrastructure
+              stakes_axis: social_tether-prot-collapse
+            substance_delta:
+              axes_in_motion:
+                - axis: social_tether-prot-collapse
+                  direction: down
+                  target_delta_magnitude: 1.0
+                  cost_ledger_anchor: cl07a
+                  notes: patron channel begins structural dissolution as apparatus executes without active Taylor-delivery; first major draw on the collapse axis
+                - axis: moral_legibility_to_self
+                  direction: up
+                  target_delta_magnitude: 0.2
+                  cost_ledger_anchor: cl07a
+                  notes: routes-become-roadmap recognition presses; the catalogue-as-map observation is the ledger becoming legible to Taylor in real time
+                - axis: position-prot-collapse
+                  direction: down
+                  target_delta_magnitude: 0.7
+                  cost_ledger_anchor: cl07b
+                  notes: apparatus running without Taylor's active signal begins Taylor's structural decommission; position starts its terminal descent
+              axes_held:
+                - axis: moral_framework
+                  rationale: no new breach; the violence propagating through Taylor's mapped routes is consequence arriving, not a new decision by Taylor
+                - axis: capability
+                  rationale: full-deployment active; feed held wide; no new deployment event
+                - axis: political_register-prot
+                  rationale: LOCKED rank 9; contempt-without-refusal is the register Taylor witnesses this with; no new contempt-event, only the container it flows into
+                - axis: social_tether-antag
+                  rationale: LOCKED rank 9; Otto's structural leverage unchanged
+              density_target: "0.70-0.80"
+
+          - slug: b01c20s03
+            chunk: |
+              The burn reaches the outer wards by midday. [event: burn-reaches-outer-wards]
+              Taylor is still running coverage when the pattern in the feed makes the ward
+              positions legible: not just violence moving through her mapped routes, but fire
+              following them, the burn-line tracing the ward-junction catalogue like a hand
+              running down a list. [image: burn-line-traces-catalogue] [mechanism: how-coverage-becomes-violence-path]
+              She sees her own architecture in the movement of the fire: the gap-management
+              logic she used to create open corridors is the same logic the fire uses to move
+              unchecked. [force: opposing_force] The apparatus's decommission signal arrives
+              through a channel that is not the Jarvis route — [event: expulsion-mechanism-first-move]
+              [mechanism: how-expulsion-triggers] a message that does not address Taylor by name
+              but addresses the function she fills, informing the function that its reports are
+              no longer required, that the function's coverage will be absorbed into an existing
+              network, that the function should understand this as the conclusion of the arrangement.
+              The false attribution (Elder Norren's standing in Otto's picture) has either been
+              discovered and the picture corrected, or the picture simply no longer requires the
+              attributed node — the message does not distinguish, and Taylor does not request
+              clarification. [force: protagonist_force] She marks the decommission in the ledger.
+              Social_tether entry: patron channel closed, network transferred, tether severing.
+              Position entry: instrument confirmed expendable; position-of-no-exit became
+              position-of-no-use. The entries are accurate. She does not redraft them.
+            scene_conflict:
+              protagonist_force: Taylor receives the decommission and marks it accurately in the ledger without revision or redress
+              opposing_force: the expulsion-mechanism is indifferent to Taylor as a person; the apparatus absorbed her coverage and addressed only the function; the non-naming is the contempt's institutional form
+              stakes_axis: social_tether-prot-collapse
+            substance_delta:
+              axes_in_motion:
+                - axis: social_tether-prot-collapse
+                  direction: down
+                  target_delta_magnitude: 1.5
+                  cost_ledger_anchor: cl07a
+                  notes: decommission signal arrives; patron channel explicitly closed; network transferred; tether severs structurally; bulk of collapse axis draw lands here
+                - axis: position-prot-collapse
+                  direction: down
+                  target_delta_magnitude: 1.0
+                  cost_ledger_anchor: cl07b
+                  notes: expulsion mechanism's first move confirmed; instrument declared expendable; position-collapse accelerates
+                - axis: position-world
+                  direction: up
+                  target_delta_magnitude: 0.3
+                  cost_ledger_anchor: cl07b
+                  notes: apparatus absorbs Taylor's coverage into its own network — the network outlasts the architect; position-world draws continue
+                - axis: political_register-world
+                  direction: up
+                  target_delta_magnitude: 0.2
+                  cost_ledger_anchor: cl07c
+                  notes: Green-faction apparatus demonstrates it is self-sustaining; succession angle holds without Taylor active
+              axes_held:
+                - axis: moral_framework
+                  rationale: no new breach; the expulsion is consequence not a decision; framework consumed-as-compass state continues
+                - axis: capability
+                  rationale: feed still active and held wide during scene; full-deployment holds through the decommission receipt
+                - axis: political_register-prot
+                  rationale: LOCKED rank 9; contempt-without-refusal; the decommission arriving as a function-addressed message (no name, no rank, no acknowledgment of the person) is the contempt made institutional; held
+                - axis: social_tether-antag
+                  rationale: LOCKED rank 9; Otto's leverage no longer operative as leverage — the instrument is discarded, not escaped; axis state is terminal
+              density_target: "0.75-0.85"
+
+          - slug: b01c20s04
+            chunk: |
+              [PERCEPTUAL MECHANISM — hard requirement: staged exactly as specified]
+              The insect-feed is active in the lanes east of the water-gate. [event: feed-active-in-wren-lanes]
+              These are the lanes Taylor has held open — the coverage gap she maintained through
+              every ward-expansion, the exemption she never entered into any report, the absence
+              in the catalogue that was the only thing in the catalogue not accounted for.
+              [image: coverage-gap-held-open] [mechanism: how-coverage-gap-was-maintained] The
+              gap exists because Taylor moved coverage around it, every time, for months — not
+              a decision she made once, but a discipline she kept, report by report, the one
+              node that never appeared in a Jarvis transmission.
+              [force: protagonist_force] The feed is reading normally in those lanes when the
+              smoke arrives. [mechanism: how-smoke-and-heat-disperse-insects] [event: smoke-heat-disperses-insects]
+              Not a decision point — a physics: heat thin enough to read through for a moment,
+              then the insects lose orientation, then scatter, then the signal goes flat.
+              [image: feed-going-dark-in-wrens-lanes] [event: feed-signal-loss-from-wren-lanes]
+              The lanes east of the water-gate go blank in the feed. The signal was there;
+              it is not there.
+              [force: opposing_force] Taylor holds on the blank. The accounting does not open
+              a line for it. [mechanism: why-wren-cannot-be-entered-as-loss] Wren was not
+              in the ledger. The coverage gap was the protection — not the ledger, not the
+              calculus, the one thing she refused to price because pricing it would mean
+              Wren was a ward-resident-value-weighted against the architecture, and that
+              was the line she had not crossed. The gap was the line she had not crossed.
+              The gap is where the signal is not. [event: recognition-too-late-arrives]
+              [image: un-priced-item-is-the-one-the-calculus-came-for] The recognition
+              arrives in full: not as a named loss, not as a ledger entry, as the absence
+              of signal in the place she held open. The un-priced item is the one the
+              calculus came for. She knows what it means. She does not open a line in the
+              ledger. She does not close the feed.
+            scene_conflict:
+              protagonist_force: Taylor holds the feed open in the lanes she kept clear for Wren, receiving the blank signal without closing coverage or opening a ledger line
+              opposing_force: the feed-signal loss in those specific lanes — the physics of smoke and heat dispersing the insects in the gap she held open — is the recognition arriving; the un-priced item cannot be entered because it was never priced
+              stakes_axis: relational_anchor_status
+            substance_delta:
+              axes_in_motion:
+                - axis: relational_anchor_status
+                  direction: up
+                  target_delta_magnitude: 1.5
+                  cost_ledger_anchor: cl07c
+                  notes: LOCK event — Wren dies in the coverage gap; relational_anchor_status → rank 9 LOCKED; the un-priced item is the one the calculus came for; HIGH=WORST; this is the chapter's recognition-event
+                - axis: moral_legibility_to_self
+                  direction: up
+                  target_delta_magnitude: 0.5
+                  cost_ledger_anchor: cl07a
+                  notes: bulk of moral_legibility terminal draw lands here; the feed-signal loss IS the recognition event; recognition-too-late arrives at full force; ledger cannot contain it because Wren was never in the ledger
+              axes_held:
+                - axis: moral_framework
+                  rationale: framework consumed-as-compass; the recognition event is not a new framework decision — it is the consequence of the framework's final state arriving; held at terminal rank
+                - axis: capability
+                  rationale: feed active and held wide through the scene; the feed going blank in those specific lanes is physics (smoke/heat dispersion), not capability failure; capability held at full deployment
+                - axis: political_register-prot
+                  rationale: LOCKED rank 9; contempt-without-refusal; the recognition does not produce new contempt — it completes the ledger the contempt was already the form of; held
+                - axis: social_tether-antag
+                  rationale: LOCKED rank 9; leverage terminal; irrelevant to this scene's stakes
+                - axis: social_tether-prot-collapse
+                  rationale: tether already structurally severed in scene 3; held at post-severing state; this scene's stakes are on the relational_anchor axis, not the tether
+                - axis: position-prot-collapse
+                  rationale: expulsion mechanism already in motion from scene 3; held at current collapse state; scene 4's stakes are the recognition event, not the position mechanics
+              density_target: "0.80-0.90"
+
+          - slug: b01c20s05
+            chunk: |
+              Taylor closes the feed before she leaves the room. [event: feed-closed-before-departure]
+              [mechanism: how-feed-closure-is-enacted] Not deactivation — the insects disperse to
+              ambient range, below any useful surveillance threshold, the architecture she built
+              over eleven months of KL deployment returning to substrate. She does not hand it to
+              anyone. The network the apparatus absorbed is theirs now; the coverage she held
+              herself is no longer held. What disperses is what was hers.
+              [force: opposing_force] [event: expulsion-final-departure] The departure from King's
+              Landing does not require a gate-passage notification because the apparatus addressed
+              a function, not a person. The function has been declared concluded. The person leaving
+              through the south gate with a pack and no coin above subsistence is not on any record
+              the apparatus keeps. [image: departure-through-south-gate-unregistered]
+              [event: position-collapse-completes] Position-prot-collapse entry: rank 1. [event: social-tether-severed-confirmed]
+              Social_tether-prot-collapse entry: rank 1. [force: protagonist_force]
+              Taylor runs the ledger one more time in full as she passes through the gate —
+              not to find an error, because there is no error; the ledger is accurate and has
+              always been accurate; the accuracy is the record of what she did and what it cost
+              and what it bought and what she refused to price and what the refusal cost.
+              [image: ledger-accurate-nothing-to-refuse] The contempt is complete.
+              [event: contempt-complete] The ledger is complete. The recognition is complete.
+              There is nothing in the ledger to refuse. The atonement was the repetition; the
+              recognition arrived too late to be anything except what it is — contempt without
+              refusal, accurate and complete, the only thing remaining that is hers.
+              [image: closing-image-contempt-complete-ledger-accurate-nothing-to-refuse]
+              [event: chapter-close-nothing-remaining]
+            scene_conflict:
+              protagonist_force: Taylor closes the feed, runs the full ledger at the gate, and departs King's Landing with the accounting complete and accurate
+              opposing_force: the ledger's accuracy is the trap — there is nothing to refuse because the accuracy confirms the atonement was the repetition; the contempt complete; the recognition without remedy
+              stakes_axis: position-prot-collapse
+            substance_delta:
+              axes_in_motion:
+                - axis: position-prot-collapse
+                  direction: down
+                  target_delta_magnitude: 1.3
+                  cost_ledger_anchor: cl07b
+                  notes: LOCK event — Taylor expelled/departed; position-prot-collapse → rank 1 LOCKED; cost cl07b completed; instrument decommissioned and departed
+                - axis: social_tether-prot-collapse
+                  direction: down
+                  target_delta_magnitude: 1.0
+                  cost_ledger_anchor: cl07a
+                  notes: LOCK event — tether severed confirmed at departure; network transferred; patron dissolved; social_tether-prot-collapse → rank 1 LOCKED; cost cl07a completed
+                - axis: moral_legibility_to_self
+                  direction: up
+                  target_delta_magnitude: 0.1
+                  cost_ledger_anchor: cl07a
+                  notes: terminal ledger-run at departure; recognition confirmed complete; moral_legibility_to_self → rank 8 LOCKED; the final accounting closes
+                - axis: position-world
+                  direction: up
+                  target_delta_magnitude: 0.2
+                  cost_ledger_anchor: cl07b
+                  notes: LOCK confirmation — apparatus self-sustaining without Taylor; Green consolidation complete; position-world → rank 9 LOCKED
+                - axis: political_register-world
+                  direction: up
+                  target_delta_magnitude: 0.3
+                  cost_ledger_anchor: cl07c
+                  notes: LOCK confirmation — Green-faction succession position locked and held without Taylor active; political_register-world → rank 9 LOCKED
+              axes_held:
+                - axis: moral_framework
+                  rationale: framework consumed-as-compass; departure scene is not a new decision-point; terminal state carries forward to close
+                - axis: capability
+                  rationale: feed closure is the final capability act; the architecture returns to substrate below surveillance threshold; capability axis ends at its terminal state having been fully deployed to the last moment
+                - axis: political_register-prot
+                  rationale: LOCKED rank 9; contempt-without-refusal is the register the departure happens in; the ledger-run at the gate is the contempt's final form; nothing new to add; held and complete
+                - axis: social_tether-antag
+                  rationale: LOCKED rank 9; leverage terminal and now irrelevant — the instrument has left; the leverage was structural, not personal; axis ends at terminal state
+                - axis: relational_anchor_status
+                  rationale: LOCKED rank 9 from scene 4; the recognition-event has completed; no further movement possible or required; the un-priced item is what it is
+              density_target: "0.75-0.85"
 
 
   cast_roster:

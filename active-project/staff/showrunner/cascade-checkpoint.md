@@ -4,8 +4,9 @@ run: produce-chapter b01c20
 operator_protocol: RUNBOOK Producing-a-chapter (R1-R5)
 status: IN-PROGRESS
 outcome: null
+last_step: {command: "/and-substance chapter b01c20", verdict: "COMPLETE (Phase5 CLEAN post-3-fault-fix; cold-read CHUNK-CLASS-B P/DEC-0102); scenes s01-s05; axis sums match", at: "2026-06-05"}
 last_completed: {level: draft, slug: b01c19, completed_at: 2026-06-05T20:20:00Z}
-next: {command: "/and-substance chapter b01c20", args: []}
+next: {command: "/and-write b01c20", args: []}
 chapter: b01c20
 phase9_verdict: null
 phase10_verdict: null
