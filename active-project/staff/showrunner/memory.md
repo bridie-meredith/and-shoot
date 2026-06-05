@@ -9788,6 +9788,15 @@ books:
           - {id: signal-001, finding: 'ABSTRACTION-DOMINANT s02 (2 grounding/9 = 22%)', disposition: accepted, note: 'legitimately-interior pricing scene; grounding-ledger awareness to /and-stitch Phase 4'}
           - {id: signal-002, finding: 'STAKES-AXIS-NOT-DOMINANT s03 (capability +1.0 co-dominant with collapse -1.0 each)', disposition: accepted, note: 'co-dominance IS the chapter argument: protection and trap mechanically identical'}
           - {id: signal-003, finding: 'REGISTER-AS-MANNERISM returns-the-Norren-attribution x3', disposition: remediated, note: 'fixer differentiated verbs @25 carries / @30 resolves / @35 keeps'}
+        bones_review:   # /and-review bones b01c17 — MANDATORY gate; /and-facets Phase 0 reads this
+          reviewed_at: 2026-06-05T00:05:00Z
+          report_path: active-project/staff/reviews/bones-b01c17-2026-06-04.md
+          verdict: PASS   # chunk->bones fidelity: no hollowing; echo spine survives in compound objects @16/@27/@36
+          follow_check: PASS-WITH-NOTES   # central event + 4 scene hand-offs recoverable for c01-c16 reader; 2 context-addable -> /and-facets Phase 2.5 (s04 three-day-gap implied-not-stated; Norren-substitution rationale in chunk not bones)
+          dialogue_coverage: PASS   # N/A solitary chapter; 0 dialogue-anchor bones
+          aliveness: BONES-AIRLESS-RISK   # scoped to s02 only (pre-accepted ABSTRACTION-DOMINANT); s01/s03/s04 grounded; scene-map S02-EMBODIMENT carries to /and-stitch Phase 4
+          bones_file_mtime_at_review: 2026-06-04T23:55:24Z
+          stale_since: null
         chunk: |
           The use-vector intercept: d11. Otto's apparatus identifies a vector targeting Wren —
           not by name, but by pattern (a woman who moves through the east-of-water-gate
