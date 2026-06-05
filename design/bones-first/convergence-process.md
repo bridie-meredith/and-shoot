@@ -63,4 +63,16 @@ The accepted outline must satisfy ALL, with zero unresolved BLOCKER notes:
 residual BLOCKERs for a human call rather than looping indefinitely.
 
 ## Notes / lessons (append as we learn)
-- (run-01 lessons recorded here as the loop runs.)
+- **The loop narrows: diverge → fuse → stress-test.** Round 1 runs N divergent lensed generators;
+  once the critic produces a converged *skeleton*, Round 2+ is a single **fusion pass** (one
+  continuous draft implementing the skeleton + rulings), not another divergent round. Carrying ALL
+  candidates' material forward is precisely what makes the fusion possible.
+- **The critic should double as skeleton-author.** Having the critic emit the converged skeleton in
+  its synthesis turns "what's wrong" into "here's the thing to build" — the single highest-value
+  artifact of the round. (run-01 R1: critique.md §3.)
+- **Lensed generation is reliably convergent when the seed is rich.** With a strong shared ledger,
+  three independent lenses agreed on major decisions (run-01: Yi-Ti single-reach, the KEEP set), so
+  most Round-1 disagreement was about *emphasis*, which fuses cleanly.
+- **Ratify smuggled premises explicitly.** Generators will quietly introduce load-bearing premises
+  (run-01: prior-death-as-wound). The critic must surface these as ratification gates so a premise
+  isn't frozen by accident; the orchestrator (or principal) rules before the next round.
