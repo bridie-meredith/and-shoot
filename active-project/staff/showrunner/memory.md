@@ -12489,7 +12489,15 @@ books:
             asserted-not-dramatized => tractable, route normally (carried HARD to /and-write per DEC-0099).
 
       - slug: b01c20
-        status: scened
+        status: bones-written
+        bones_file: theater/bones/b01-c20.md
+        bones_count: 30
+        substance_bone_gate_verdict: PASS
+        substance_delta_measured:
+          axes_moved: [relational_anchor_status, position-prot-collapse, social_tether-prot-collapse, moral_legibility_to_self, position-world, political_register-world]
+          density_measured: "0.75-0.85 (est; 22/30 bones carry axis_moves; grounding distributed across all 5 scenes)"
+          felt_verdict: SUBSTANCE-FELT
+        downstream_stale: null  # no downstream artifacts exist (first time through b01c20)
         chunk: |
           The Dance ignites. Viserys I dies. The Green faction moves within hours on the
           succession; the apparatus Taylor's intelligence has been feeding for months
@@ -12655,6 +12663,64 @@ books:
                 - axis: social_tether-antag
                   rationale: LOCKED rank 9; Otto's leverage structurally maximal; no scene action changes it
               density_target: "0.65-0.75"
+            bones:
+              - slug: b01c20s01n01
+                flat_id: 1
+                svo: "the servant-passages empty"
+                substance_delta:
+                  axis_moves:
+                    - axis: position-world
+                      direction: up
+                      magnitude: 1
+                      cost_ledger_anchor: cl07b
+                  axes_held: []
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c20s01n02
+                flat_id: 2
+                svo: "the doors open"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: capability
+                      rationale: "the apparatus reading the door-sequence is full-deployment held; no new deployment event; capability at 8.5 load"
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c20s01n03
+                flat_id: 3
+                svo: "the Holdfast routes activate"
+                substance_delta:
+                  axis_moves:
+                    - axis: political_register-world
+                      direction: up
+                      magnitude: 1
+                      cost_ledger_anchor: cl07c
+                  axes_held: []
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c20s01n04
+                flat_id: 4
+                svo: "taylor-hebert-kl-122ac lifts the stylus"
+                substance_delta:
+                  axis_moves:
+                    - axis: moral_legibility_to_self
+                      direction: up
+                      magnitude: 1
+                      cost_ledger_anchor: cl07a
+                  axes_held:
+                    - axis: moral_framework
+                      rationale: "ledger entry is consequence of prior breaches arriving; no new breach decision in this scene; framework consumed-as-compass state carries forward"
+                    - axis: capability
+                      rationale: "full-deployment architecture active; network structural and running; no new deployment event; held at 8.5 load"
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c20s01n05
+                flat_id: 5
+                svo: "taylor-hebert-kl-122ac marks the ledger"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: political_register-prot
+                      rationale: "contempt-without-refusal LOCKED rank 9; apparatus executing correctly produces confirmation not new contempt; held"
+                    - axis: social_tether-antag
+                      rationale: "LOCKED rank 9; Otto's structural leverage maximal; no scene action changes it"
+                gate_verdict: {bonefide: true, flat: false, signals: []}
 
           - slug: b01c20s02
             chunk: |
@@ -12707,6 +12773,78 @@ books:
                 - axis: social_tether-antag
                   rationale: LOCKED rank 9; Otto's structural leverage unchanged
               density_target: "0.70-0.80"
+            bones:
+              - slug: b01c20s02n01
+                flat_id: 6
+                svo: "the succession bell rings"
+                substance_delta:
+                  axis_moves: []
+                  axes_held: []
+                  cost_ledger_anchor: cl07c
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c20s02n02
+                flat_id: 7
+                svo: "the men enter the ward junctions"
+                substance_delta:
+                  axis_moves:
+                    - axis: social_tether-prot-collapse
+                      direction: down
+                      magnitude: 2
+                      cost_ledger_anchor: cl07a
+                  axes_held: []
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c20s02n03
+                flat_id: 8
+                svo: "the patron channel shifts sequence"
+                substance_delta:
+                  axis_moves:
+                    - axis: social_tether-prot-collapse
+                      direction: down
+                      magnitude: 2
+                      cost_ledger_anchor: cl07a
+                  axes_held: []
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c20s02n04
+                flat_id: 9
+                svo: "the gate-side routes fill"
+                substance_delta:
+                  axis_moves:
+                    - axis: position-prot-collapse
+                      direction: down
+                      magnitude: 1
+                      cost_ledger_anchor: cl07b
+                  axes_held: []
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c20s02n05
+                flat_id: 10
+                svo: "taylor-hebert-kl-122ac opens the feed"
+                substance_delta:
+                  axis_moves:
+                    - axis: moral_legibility_to_self
+                      direction: up
+                      magnitude: 1
+                      cost_ledger_anchor: cl07a
+                  axes_held:
+                    - axis: capability
+                      rationale: "feed held wide; full-deployment active; holding the feed open is the discipline — no new deployment event, no narrowing"
+                    - axis: moral_framework
+                      rationale: "no new breach; the violence propagating through her mapped routes is consequence arriving, not a new decision"
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c20s02n06
+                flat_id: 11
+                svo: "the faction-movement follows the passage-counts"
+                substance_delta:
+                  axis_moves:
+                    - axis: position-prot-collapse
+                      direction: down
+                      magnitude: 1
+                      cost_ledger_anchor: cl07b
+                  axes_held:
+                    - axis: political_register-prot
+                      rationale: "LOCKED rank 9; contempt-without-refusal is the register Taylor witnesses this with; no new contempt-event, only the container it flows into"
+                    - axis: social_tether-antag
+                      rationale: "LOCKED rank 9; Otto's structural leverage unchanged"
+                gate_verdict: {bonefide: true, flat: false, signals: []}
 
           - slug: b01c20s03
             chunk: |
@@ -12766,6 +12904,85 @@ books:
                 - axis: social_tether-antag
                   rationale: LOCKED rank 9; Otto's leverage no longer operative as leverage — the instrument is discarded, not escaped; axis state is terminal
               density_target: "0.75-0.85"
+            bones:
+              - slug: b01c20s03n01
+                flat_id: 12
+                svo: "the burn reaches the outer wards"
+                substance_delta:
+                  axis_moves:
+                    - axis: social_tether-prot-collapse
+                      direction: down
+                      magnitude: 2
+                      cost_ledger_anchor: cl07a
+                  axes_held: []
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c20s03n02
+                flat_id: 13
+                svo: "the fire traces the ward-junction catalogue"
+                substance_delta:
+                  axis_moves:
+                    - axis: social_tether-prot-collapse
+                      direction: down
+                      magnitude: 2
+                      cost_ledger_anchor: cl07a
+                  axes_held: []
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c20s03n03
+                flat_id: 14
+                svo: "the decommission message arrives"
+                substance_delta:
+                  axis_moves:
+                    - axis: position-prot-collapse
+                      direction: down
+                      magnitude: 2
+                      cost_ledger_anchor: cl07b
+                  axes_held: []
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c20s03n04
+                flat_id: 15
+                svo: "the apparatus network absorbs the coverage"
+                substance_delta:
+                  axis_moves:
+                    - axis: position-world
+                      direction: up
+                      magnitude: 1
+                      cost_ledger_anchor: cl07b
+                    - axis: political_register-world
+                      direction: up
+                      magnitude: 1
+                      cost_ledger_anchor: cl07c
+                  axes_held: []
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c20s03n05
+                flat_id: 16
+                svo: "taylor-hebert-kl-122ac opens the ledger"
+                substance_delta:
+                  axis_moves:
+                    - axis: position-prot-collapse
+                      direction: down
+                      magnitude: 1
+                      cost_ledger_anchor: cl07b
+                  axes_held:
+                    - axis: moral_framework
+                      rationale: "expulsion is consequence not a decision; framework consumed-as-compass continues"
+                    - axis: capability
+                      rationale: "feed still active and held wide during scene; full-deployment holds through decommission receipt"
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c20s03n06
+                flat_id: 17
+                svo: "taylor-hebert-kl-122ac marks the social_tether entry"
+                substance_delta:
+                  axis_moves:
+                    - axis: social_tether-prot-collapse
+                      direction: down
+                      magnitude: 2
+                      cost_ledger_anchor: cl07a
+                  axes_held:
+                    - axis: political_register-prot
+                      rationale: "LOCKED rank 9; contempt-without-refusal; decommission arriving function-addressed (no name, no rank, no acknowledgment) is the contempt made institutional; held"
+                    - axis: social_tether-antag
+                      rationale: "LOCKED rank 9; Otto's leverage no longer operative as leverage — instrument discarded, not escaped; axis ends at terminal state"
+                gate_verdict: {bonefide: true, flat: false, signals: []}
 
           - slug: b01c20s04
             chunk: |
@@ -12827,6 +13044,92 @@ books:
                 - axis: position-prot-collapse
                   rationale: expulsion mechanism already in motion from scene 3; held at current collapse state; scene 4's stakes are the recognition event, not the position mechanics
               density_target: "0.80-0.90"
+            bones:
+              - slug: b01c20s04n01
+                flat_id: 18
+                svo: "the insect-feed runs in the east-of-water-gate lanes"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: capability
+                      rationale: "feed active and held wide in the lanes Taylor maintained open; the feed running normally in those lanes is the discipline confirmed — not a new deployment act but the held state visible"
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c20s04n02
+                flat_id: 19
+                svo: "the smoke fills the east-of-water-gate lanes"
+                substance_delta:
+                  axis_moves:
+                    - axis: relational_anchor_status
+                      direction: up
+                      magnitude: 2
+                      cost_ledger_anchor: cl07c
+                  axes_held: []
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c20s04n03
+                flat_id: 20
+                svo: "the heat disperses the insects"
+                substance_delta:
+                  axis_moves:
+                    - axis: relational_anchor_status
+                      direction: up
+                      magnitude: 2
+                      cost_ledger_anchor: cl07c
+                  axes_held: []
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c20s04n04
+                flat_id: 21
+                svo: "the insects scatter"
+                substance_delta:
+                  axis_moves:
+                    - axis: relational_anchor_status
+                      direction: up
+                      magnitude: 1
+                      cost_ledger_anchor: cl07c
+                  axes_held: []
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c20s04n05
+                flat_id: 22
+                svo: "the signal drops from the lanes"
+                substance_delta:
+                  axis_moves:
+                    - axis: moral_legibility_to_self
+                      direction: up
+                      magnitude: 2
+                      cost_ledger_anchor: cl07a
+                  axes_held:
+                    - axis: social_tether-prot-collapse
+                      rationale: "tether already structurally severed in s03; held at post-severing state; s04 stakes are on relational_anchor axis"
+                    - axis: position-prot-collapse
+                      rationale: "expulsion already in motion from s03; held at current collapse state; s04 stakes are the recognition event, not position mechanics"
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c20s04n06
+                flat_id: 23
+                svo: "the east-of-water-gate lanes go blank"
+                substance_delta:
+                  axis_moves:
+                    - axis: moral_legibility_to_self
+                      direction: up
+                      magnitude: 1
+                      cost_ledger_anchor: cl07a
+                  axes_held:
+                    - axis: moral_framework
+                      rationale: "framework consumed-as-compass; the recognition event is not a new framework decision — it is the consequence of the framework's final state arriving; held at terminal rank"
+                    - axis: political_register-prot
+                      rationale: "LOCKED rank 9; contempt-without-refusal; the recognition does not produce new contempt — it completes the ledger the contempt was already the form of; held"
+                    - axis: social_tether-antag
+                      rationale: "LOCKED rank 9; leverage terminal; irrelevant to this scene's stakes"
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c20s04n07
+                flat_id: 24
+                svo: "taylor-hebert-kl-122ac lifts the stylus"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: capability
+                      rationale: "feed going blank is physics not capability-failure; feed remains open; capability held at full deployment through the scene"
+                    - axis: relational_anchor_status
+                      rationale: "LOCK confirms at rank 9 — the recognition-event has arrived complete; held at terminal state"
+                gate_verdict: {bonefide: true, flat: false, signals: []}
 
           - slug: b01c20s05
             chunk: |
@@ -12897,6 +13200,91 @@ books:
                 - axis: relational_anchor_status
                   rationale: LOCKED rank 9 from scene 4; the recognition-event has completed; no further movement possible or required; the un-priced item is what it is
               density_target: "0.75-0.85"
+            bones:
+              - slug: b01c20s05n01
+                flat_id: 25
+                svo: "taylor-hebert-kl-122ac closes the feed"
+                substance_delta:
+                  axis_moves:
+                    - axis: position-prot-collapse
+                      direction: down
+                      magnitude: 2
+                      cost_ledger_anchor: cl07b
+                  axes_held:
+                    - axis: capability
+                      rationale: "feed closure is the final capability act; the architecture returns to substrate below surveillance threshold; capability axis ends at terminal state having been fully deployed to the last moment"
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c20s05n02
+                flat_id: 26
+                svo: "the insects disperse"
+                substance_delta:
+                  axis_moves:
+                    - axis: position-prot-collapse
+                      direction: down
+                      magnitude: 1
+                      cost_ledger_anchor: cl07b
+                  axes_held: []
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c20s05n03
+                flat_id: 27
+                svo: "the architecture releases the wards"
+                substance_delta:
+                  axis_moves:
+                    - axis: social_tether-prot-collapse
+                      direction: down
+                      magnitude: 2
+                      cost_ledger_anchor: cl07a
+                    - axis: position-world
+                      direction: up
+                      magnitude: 1
+                      cost_ledger_anchor: cl07b
+                  axes_held: []
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c20s05n04
+                flat_id: 28
+                svo: "taylor-hebert-kl-122ac lifts the pack"
+                substance_delta:
+                  axis_moves:
+                    - axis: social_tether-prot-collapse
+                      direction: down
+                      magnitude: 1
+                      cost_ledger_anchor: cl07a
+                  axes_held: []
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c20s05n05
+                flat_id: 29
+                svo: "taylor-hebert-kl-122ac runs the ledger"
+                substance_delta:
+                  axis_moves:
+                    - axis: moral_legibility_to_self
+                      direction: up
+                      magnitude: 1
+                      cost_ledger_anchor: cl07a
+                  axes_held:
+                    - axis: moral_framework
+                      rationale: "framework consumed-as-compass; departure scene is not a new decision-point; terminal state carries forward to close"
+                    - axis: relational_anchor_status
+                      rationale: "LOCKED rank 9 from s04; the recognition-event has completed; no further movement possible or required"
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c20s05n06
+                flat_id: 30
+                svo: "taylor-hebert-kl-122ac exits the south gate"
+                substance_delta:
+                  axis_moves:
+                    - axis: position-prot-collapse
+                      direction: down
+                      magnitude: 2
+                      cost_ledger_anchor: cl07b
+                    - axis: political_register-world
+                      direction: up
+                      magnitude: 2
+                      cost_ledger_anchor: cl07c
+                  axes_held:
+                    - axis: political_register-prot
+                      rationale: "LOCKED rank 9; contempt-without-refusal is the register the departure happens in; ledger-run at gate is the contempt's final form; nothing new to add; held and complete"
+                    - axis: social_tether-antag
+                      rationale: "LOCKED rank 9; leverage terminal and now irrelevant — the instrument has left; axis ends at terminal state"
+                gate_verdict: {bonefide: true, flat: false, signals: [ACCEPTED-signal-001-political-register-world-lock-skew]}
 
 
   cast_roster:
