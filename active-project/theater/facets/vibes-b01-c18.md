@@ -52,6 +52,6 @@ author: showrunner
 
 16 @45 actor:taylor-hebert-kl-122ac ++ atonement-as-repetition: [the-irrevocable-deployment-and-the-closed-ledger-both-true, the-accounting-closes-cleanly-and-that-is-the-catastrophe, the-recognition-column-blank-exactly-as-c17s-irony-named-it-would-be] | licensed-by: peak-bone:45, peak-bone:41, peak-bone:44
 
-17 @38 loc:the-chandler-quarter + network-returns-to-eaves: [moths-settling-back-into-the-buildings-they-live-in, the-infrastructure-of-the-architecture-is-the-district-itself, standdown-as-the-ward-absorbing-the-network-not-the-network-withdrawing, ambient-density-after-maximum-density] | licensed-by: peak-bone:38, peak-bone:48
+17 @38 loc:the-chandler-quarter + network-returns-to-eaves: [moths-settling-back-into-the-buildings-they-live-in, the-infrastructure-of-the-architecture-is-the-district-itself, standdown-as-the-ward-absorbing-the-network-not-the-network-withdrawing, ambient-density-after-maximum-density] | licensed-by: peak-bone:38, peak-bone:46
 
 18 @8 loc:the-fishmonger-gate + full-coverage-corridor: [bottlefly-routes-under-the-gate-as-the-first-channel-opened-at-irrevocable-scale, the-gate-at-maximum-density, the-entry-point-of-the-architecture-that-crossed-the-threshold] | licensed-by: peak-bone:8, peak-bone:10
