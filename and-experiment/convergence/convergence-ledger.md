@@ -184,3 +184,30 @@ micro-beat (Bk I M3 "first pest") sits on the pre-existing curdle ladder.
 (3) early lethality could front-load fear / dissolve impotence (mitigated — low-body-count, cold-not-
 flashy, never a win-condition vs a real antagonist, feeds the curdle ladder). DN-2 also re-honored
 (second visible balancing beat kept at Bk II M3). → ready for critic six-criteria re-validation.
+
+**Critic re-validation — VERDICT: CONVERGED (enrichment clean).** Eval: `round-03/critique.md`.
+All three guards HONORED on the page (broken-clock: only mithridatism + magic-material reactions
+work, fake effects fail on schedule, she stays wrong about why; idiot-savant: lethality walled to
+gut/still-room, moron everywhere that matters; curdle: first-pest beat one rung below the ward-child
+on the identical-shot ladder). Spine intact — every FROZEN element, all T1–T5, all 5 retired blockers
+preserved; the single licensed touch (grind→grind-AND-swallow) confirmed an upgrade not a replacement.
+All six criteria stay PASS (comedy + curdle arguably strengthened; DN-4 black-stone seed thickened by
+the cauldron's appetite). New drafting notes: **DN-5** keep the cauldron-frame punctured in
+straight-man-absent scenes; **DN-6** calibrate the Bk I M3 "first pest" to ~¾ comedy / ¼ chill.
+
+---
+
+## ★ ACCEPTED OUTLINE — `and-experiment/convergence/round-03/fusion-v2.md`
+
+Converged at Round 2 (spine), enriched + re-validated at Round 3 (Cauldron-Belly + poison-path).
+This is the canonical story structure — it supersedes `design/bones-first/run-01/book-outlines.md`
+as the build target. **Drafting notes (calibration dials for the prose/bones stage, not blockers):**
+DN-1 absent-register break · DN-2 audible cost-ledger · DN-3 Saerys-warmth beats · DN-4 thicken the
+Yi Ti black-stone seed · DN-5 puncture the cauldron-frame in straight-man-absent scenes · DN-6
+calibrate the first-pest beat.
+
+**Loop summary (3 rounds, cap 4):** R1 diverge (3 lenses → ITERATE, converged skeleton) → R2 fuse
+(1 pass → CONVERGED) → R3 enrich + re-validate (CONVERGED). Process spec + lessons:
+`design/bones-first/convergence-process.md`. **CONVERGENCE COMPLETE.**
+
+**Open knob:** the Cauldron-Belly's in-world name (working: "Heavenly Demon Cauldron-Belly").

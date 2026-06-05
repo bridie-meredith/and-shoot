@@ -52,7 +52,11 @@ series:
     (2) the family and chosen-family she gains in I–II are exactly who the war takes
     in III; (3) reagent tier ↔ geography ↔ tone climb in lockstep, farce → horror.
     Meta-question: will the immortal ever come down and be mortal? She doesn't — she
-    runs. A tragedy in a comedy's clothes. Full text: design/bones-first/run-01/book-outlines.md
+    runs. A tragedy in a comedy's clothes.
+    ACCEPTED OUTLINE (canonical build target, converged + enriched):
+    and-experiment/convergence/round-03/fusion-v2.md  (supersedes design/bones-first/run-01/book-outlines.md).
+    Unifying mechanism: the Cauldron-Belly (stomach-as-cauldron); power is poison + logistics, never martial.
+    Convergence record: and-experiment/convergence/convergence-ledger.md.
   structure:
     book_count: 3
     book_length:

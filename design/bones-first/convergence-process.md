@@ -83,3 +83,10 @@ residual BLOCKERs for a human call rather than looping indefinitely.
   scoped to "do the six criteria still hold + are the guards honored" — not a fresh divergent round.
 - **Convergence was fast (2 rounds) because the seed was a fully-developed bible.** The richer the
   Round-0 seed (bible docs + KEEP/FIX ledger), the fewer rounds to converge.
+- **run-01 shape (reference):** R1 diverge (3 lenses → ITERATE + skeleton) → R2 fuse (1 pass →
+  CONVERGED) → R3 principal-enrichment + scoped re-validation (CONVERGED). Total 3 rounds under a
+  4-cap; ~10 agent dispatches. The accepted artifact is one continuous outline, promoted in the
+  ledger with a ★ and pointed at from showrunner memory's `series.chunk`.
+- **Scoped re-validation beats full re-critique.** For the enrichment round, the critic was scoped to
+  "guards honored + did the six criteria regress" — NOT a fresh six-criteria essay. Cheaper, and it
+  resists goalpost-creep on an already-converged spine.
