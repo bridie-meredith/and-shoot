@@ -277,3 +277,33 @@ threshold_discipline_check: no fires; no established limits bypassed without cos
 carry_forward:
   - s03n06/s03n10 refrain differentiation → /and-stitch Phase 4 render watch
   - SW-c18-CFR-1 CLOSED (disposition SATISFIED at bone level)
+
+## 2026-06-05 — /and-substance chapter b01c19 Phase 5 chunk review
+
+chapter: b01c19
+date: 2026-06-05
+scenes_reviewed: [b01c19s01, b01c19s02, b01c19s03, b01c19s04]
+
+verdict_per_scene:
+  b01c19s01: SUBSTANCE-FELT
+  b01c19s02: SUBSTANCE-FELT
+  b01c19s03: SUBSTANCE-FELT
+  b01c19s04: SUBSTANCE-FELT
+
+chapter_verdict: SUBSTANCE-FELT
+hard_findings: none
+SUBSTANCE-FLAT: none
+SUBSTANCE-SUSPECT: none
+overall: ACCEPT
+
+notes:
+  - contempt-lock escalation across s01/s02/s03: three distinct mechanisms, not repetition; s01 contempt arrives with no discharge mechanism (tranche 1); s02 the accounting catches its own pattern and the contempt accumulates through a tool that can now see its own shape (tranche 2); s03 the ledger closes and the contempt sits adjacent with no entry-format (tranche 3 / lock); each tranche adds a layer the prior beat could not have; the "beside, not away from" close in s03 is the tactically precise terminus this reader requires
+  - s01: "accounting runs clean" is the established-limits-met beat working correctly — the accounting says yes, the contempt has no column; the asymmetry is live before anything acts; no filler, no unmotivated knowledge
+  - s02: lane-with-footfalls image is the mechanical analogy that makes pattern-recognition feel like discovery rather than explanation; "Not a feeling. An observation." is the correct hedge; the recognition begins, the request execution continues, the entry goes in the same column — does not overshoot into c20's terminal recognition; the constraint-tool that enables suppression is also what makes the pattern visible; irony structurally present, not asserted
+  - s03: "the way a person's name appears in a ledger after they are dead: complete and unreferenced, adjacent to every line but not itself a line" is the best image in the four scenes; earns the claimed state rather than asserting it; "Clarity forecloses nothing" is not comfort, it is cost; "beside, not away from" is the micro-distinction that makes the lock land as emotional terminus
+  - s04: shuttered-window-as-information is in Taylor's correct reading-mode; forty-three prior approaches gives the corner its weight; "a lane like any other lane" after the write-out is right for seven months' worth of reciprocity node; "the morning-count does not appear in any record she has written today" is the cost in the architecture's own language; Daven passes the minor-character-weight test — not Wren, explicitly not Wren, and the distinction is earned by the architecture-record framing; no unmotivated knowledge in the upper-city inference (deductive from pattern-break, no proper-noun leap)
+  - threshold_discipline_check: no fires; no established limits bypassed without cost; no unmotivated knowledge; no filler; political_register-prot LOCK at 9 is the correct established-rule payoff — no bypass, the accounting ran clean and the contempt had no column all along
+
+bones_execution_watches_to_and-write:
+  SW-c19-CFR-1: s02 "not a feeling, an observation" — must land at bone level as a physical enumeration act (the column has this shape; the column has had this shape since month three) not as a labeled interior-state shift; the recognition begins through the accounting's own arithmetic, not through Taylor noticing something feel different
+  SW-c19-CFR-2: s03 "beside, not away from" — must be an enacted physical distinction at the bones layer; two-bone minimum (stylus placed / not capped or put away); the distinction must be structural, not a prose flourish

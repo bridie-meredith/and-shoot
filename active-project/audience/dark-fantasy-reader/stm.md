@@ -41,3 +41,31 @@ STM:
 - SIGNAL-008 (Wren ++ ops): verify before next Wren-vibe chapter — the ++ ops do not affect the content quality, only schema correctness
 - The "blank IS the accounting" formulation (NI:8, vibes:10) is the strongest single dark-fantasy contribution in the facet graph — the un-entered cost as a positive state, not a void
 - Soft carry from prior chapters (SW-DFR-c12-2 and SW-DFR-c12-3) carry forward unchanged pending b01c12 stitch execution
+
+## 2026-06-05 — /and-substance chapter b01c19 Phase 5 chunk review
+
+chapter: b01c19
+date: 2026-06-05
+scenes_reviewed: [b01c19s01, b01c19s02, b01c19s03, b01c19s04]
+
+verdict_per_scene:
+  b01c19s01: SUBSTANCE-FELT
+  b01c19s02: SUBSTANCE-FELT
+  b01c19s03: SUBSTANCE-FELT
+  b01c19s04: SUBSTANCE-FELT
+
+chapter_verdict: SUBSTANCE-FELT
+hard_findings: none
+SUBSTANCE-FLAT: none
+SUBSTANCE-SUSPECT: none
+overall: ACCEPT
+
+notes:
+  - s01: "the machinery performing its function for no audience, for no purpose the lower city would recognize" is the correct atmospheric pressure — not labeled, not theatrical; the accounting running clean while the contempt has nowhere to go is the bill being run before it is paid; world-texture not set-dressing; dark-fantasy reader leans forward slightly
+  - s02: "Not a feeling. An observation." with the lane-with-footfalls follow lands the bill-naming correctly; eleven months of the same weight wearing the same track is consequence-that-propagates — the world changes the person who keeps moving through it; the suppression-still-running close is earned (she can see what she is doing and keeps doing it) not false darkness; no catharsis-before-weight
+  - s03: "the way a person's name appears in a ledger after they are dead: complete and unreferenced, adjacent to every line but not itself a line" is the earned accountant-register bleakness this reader required; "Clarity forecloses nothing" is the bill paid — not comfort, not resolution; "Taylor sets the stylus beside the ledger. Not away from it." is the body-before-mind beat that distinguishes suffering-that-changes from suffering-that-decorates; lock terminus: earned
+  - s04: the shuttered window doing the work of forty-three prior un-shuttered ones; "The morning-count does not appear in any record she has written today" is the sentence this reader wanted — the world is changing the person; she is the architect of her own erasure; the cost propagates; "The contempt is complete. The continuation is unchanged." does not read as catharsis — the continuation being unchanged is the horror, not the comfort; weight was built in s01-s03 before this sentence lands; Daven passes the minor-character-loss test via the forty-three prior approaches and the shuttered window (the corner that stays empty carries the weight)
+  - advisory (soft, not a block): "The contempt is complete. The continuation is unchanged." at s04's close risks reading as a wrap-up statement rather than a horror-beat if the stitcher renders it with too-clean a cadence; this is a register-execution concern for /and-stitch, not a substance-flat finding; the Δ is earned at chunk level
+
+bones_execution_watches_to_and-write:
+  SW-c19-DFR-1: "The contempt is complete. The continuation is unchanged." must land in prose as a horror-beat, not a resolution-beat; the couplet is the trap completing, not the trap being named for comfort; the stitcher should render both sentences with the weight of continuation, not the weight of arrival

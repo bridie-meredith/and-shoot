@@ -2616,3 +2616,103 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-06-05-c19-001
+      created_at: 2026-06-05T00:00:00Z
+      created_by: "/and-substance chapter b01c19 Phase 5.5 (admin user-proxy DEC-0099)"
+      label: c19-s04-label-reach-must-be-concrete
+      target:
+        command: /and-write
+        scope: "b01c19"
+        phase: Phase 6
+      severity: HARD
+      description: |
+        DEC-0099 cold-read carry. The s04 central event — the witch-label reaching
+        the upper city and reaching Daven's service-layer — was flagged at the chunk
+        cold-read as inferred-off-page / asserted-not-dramatized. /and-write MUST land
+        this as a concrete SVO bone on-page (the shuttered vat-house window, the empty
+        corner across forty-three prior approaches, Daven's non-appearance as the
+        readable instrument of the inference). An inferred-off-page arrival fires
+        EVENT-NOT-CONCRETE (HARD) at Phase 6. This is the ONE finding from the c19
+        chunk cold-read that is NOT auto-dispositioned at /and-stitch Phase 9 — it is
+        tractable and must be staged concretely upstream.
+      resolution_suggestion: "Phase 1 scene-decomposition: ensure s04 has a concrete central-event bone staging the shuttered-window/empty-corner instrument of the inference; Phase 6 verifies EVENT-NOT-CONCRETE clean on the s04 central event."
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-05-c19-002
+      created_at: 2026-06-05T00:00:00Z
+      created_by: "/and-substance chapter b01c19 Phase 5.5 (admin user-proxy DEC-0099)"
+      label: c19-voice-risk-abstraction-muffle
+      target:
+        command: /and-stitch
+        scope: "b01c19"
+        phase: Phase 8.5
+      severity: SOFT
+      description: |
+        DEC-0099 voice-risk carry (chunk_cold_read.voice_risk.triggered=true, signal B).
+        ABSTRACTION-DOMINANT: chunk cold-read flagged heavy proprietary vocabulary
+        ("the accounting", "bottlefly nodes", "contempt-color", "a different column")
+        as a central-event-muffle risk. /and-stitch Phase 8.5 Check 3 must verify the
+        s03 contempt-lock + s04 severance reach cold-reader legibility in assembled
+        prose; prefer person-first faithful rendering over apparatus-register within
+        the bone-faithfulness fence (PROP-0022 voice-embodiment). Also armed via the
+        chunk_cold_read.voice_risk block in memory (auto-read at Phase 8.5).
+      resolution_suggestion: "/and-stitch Phase 8.5 Check 3 central-event-muffle verification; Phase 4 voice-embodiment discipline."
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-05-c19-003
+      created_at: 2026-06-05T00:00:00Z
+      created_by: "/and-substance chapter b01c19 Phase 5 (audience trio bones-execution watches)"
+      label: c19-bones-execution-watches
+      target:
+        command: /and-write
+        scope: "b01c19"
+        phase: null
+      severity: SOFT
+      description: |
+        Three bones-execution watches the audience trio attached to their c19 3-of-3
+        SUBSTANCE-FELT ACCEPT, for /and-write Phase 1 scene-decomposition discipline:
+        (SW-c19-CFR-1, cape-fic-reader) s02 "not a feeling, an observation" must land
+          at bone level as a physical enumeration act through the accounting's own
+          arithmetic — NOT a labeled interior-state shift.
+        (SW-c19-CFR-2, cape-fic-reader) s03 "beside, not away from" (Taylor sets the
+          stylus beside the ledger, not away from it) must be an ENACTED physical
+          distinction at bones level; two-bone minimum; structural, not a prose flourish.
+        (SW-c19-DFR-1, dark-fantasy-reader) s04 "The contempt is complete. The
+          continuation is unchanged." must land as a HORROR-beat (the trap completing),
+          not a resolution-beat — this is primarily a /and-stitch Phase 4 register
+          concern (see pl-2026-06-05-c19-004) but the bones must not pre-resolve it.
+      resolution_suggestion: "/and-write Phase 1 honors CFR-1 (enumeration-act bones) + CFR-2 (two-bone beside-distinction); Phase 6 verifies."
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-05-c19-004
+      created_at: 2026-06-05T00:00:00Z
+      created_by: "/and-substance chapter b01c19 Phase 5 (dark-fantasy-reader SW-c19-DFR-1)"
+      label: c19-s04-close-horror-not-resolution
+      target:
+        command: /and-stitch
+        scope: "b01c19"
+        phase: Phase 4
+      severity: SOFT
+      description: |
+        SW-c19-DFR-1 (dark-fantasy-reader). The s04 close couplet "The contempt is
+        complete. The continuation is unchanged." must land in prose as a horror-beat
+        (the trap completing one chapter before the catastrophe), NOT as a wrap-up /
+        resolution-beat. The dramatist also flagged that these summary lines risk
+        becoming a tell that competes with the showing already in the scene. /and-stitch
+        Phase 4 voice-transform must render the close so the unchanged-continuation is
+        the horror, not the resolution.
+      resolution_suggestion: "/and-stitch Phase 4 register-execution: render the s04 close as horror-beat; avoid tell-competing-with-show on the summary couplet."
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null

@@ -992,3 +992,58 @@ carry_forward:
   - SW-c18-WCP-HARD-1 CLOSED (disposition SATISFIED at bone level; Khepri register-split holds across all 6 critical bones)
   - s03n06/s03n10 refrain → /and-stitch Phase 4 surface differentiation (advisory)
   - b01c07 prose-burden carries forward unchanged
+
+## 2026-06-05 — /and-substance chapter b01c19 Phase 5 chunk review
+
+chapter: b01c19
+date: 2026-06-05
+scenes_reviewed: [b01c19s01, b01c19s02, b01c19s03, b01c19s04]
+
+verdict_per_scene:
+  b01c19s01: SUBSTANCE-FELT
+  b01c19s02: SUBSTANCE-FELT
+  b01c19s03: SUBSTANCE-FELT
+  b01c19s04: SUBSTANCE-FELT
+
+chapter_verdict: SUBSTANCE-FELT
+hard_findings: none
+SUBSTANCE-FLAT: none
+SUBSTANCE-SUSPECT: none
+overall: ACCEPT
+
+### Earth-Bet fence ruling: CLEAN
+
+s02 is the primary fence test for this chapter. The shape-language passage: "a different accounting, in a different column, for reasons that did not hold — the same column's form, worn by the same kind of weight." No jargon. No Khepri. No Gold Morning. No parahuman, shard, trigger-event, or Manton vocabulary. "For reasons that did not hold" names the structural observation (the reasons the suppression used were insufficient) without importing any Earth-Bet interiority. The recognition arrives through the accounting's own arithmetic, not through a labeled interior-state. The fence holds throughout all four scenes.
+
+Voice register: all four scenes maintain cold-utilitarian Taylor register correctly.
+- s01: "runs the accounting" / "protection-line ratio holds" / "accounting runs clean" — standard Taylor pre-action ledger
+- s02: "Not a feeling. An observation." — canonical Taylor interiority hedge; this is the precise grammatical form of Taylor's self-deception from arc 4 onward; tracks
+- s03: "timestamped, attributed, factional-contact named" — three-item accounting enumeration; correct Taylor register
+- s04: "She does not need to complete the inference. The shuttered window has the shape of information." — inference-complete-before-sentence is canonical Taylor reading-mode; tracks
+
+Capability-mechanics: all four scenes draw on prior-established bottlefly nodes and corridor coverage. s01 uses c12-established outer-ring nodes. s03 uses c14-established Red Keep service-approach corridors (chamberlain reading completes in four hours — within scope of targeted-corridor observation, no capability expansion implied). s04 uses the standing Croft intersection node. No new reach. No single-broadcast-deployment bone risk.
+
+Knowledge-path check (s04 upper-city inference): Taylor infers the witch-label has reached the upper city from Daven's non-appearance plus the shuttered window across forty-three prior un-shuttered approaches. This is deductive inference from observable pattern-break. She does not claim to know who in the upper city named the network — "someone" with no attribution. The inference is within established Taylor reading-mode (behavioral-pattern-to-cause-class). No unmotivated knowledge.
+
+Suppression-management check (s02): "The suppression is not broken; it is not fully operational." This maps to canon-Taylor's suppression architecture correctly — at arc 18 especially, the accounting-language Taylor uses to describe her decisions is present in the source text. The crack is present; the request execution continues; the recognition does not complete. Does not overshoot into c20's terminal recognition. Canon-true for a Taylor at this stage.
+
+Collapse-axis accumulation mode: s04 social_tether-prot-collapse -1.5 and position-prot-collapse -1.0 fire as accumulation tranches (not re-activations). Consistent with FIRST-TOUCH at c17 and accumulation at c18. Tracking discipline held.
+
+Running tally: 0 flags, 0 strong flags, 0 fence violations.
+
+### Canonicity findings
+- Earth-Bet noun fence: CLEAN across all four scenes
+- Voice register: CLEAN; Taylor's cold-utilitarian interiority maintained throughout
+- Capability mechanics: CLEAN; no range inflation, no single-broadcast deployment, all nodes prior-established
+- Knowledge-path: CLEAN; s04 upper-city inference is deductive from pattern-break, no lore-leak
+- Suppression architecture: CANON-TRUE; s02 crack-not-broken is correct for this stage
+- Collapse-axis tracking: ACCUMULATION MODE confirmed; no re-activation errors
+- Multi-shard fence: CLEAN; bottlefly coverage is observational, no body-direction, no nervous-system coordination
+
+soft_findings:
+  - b01c07 prose-burden carries forward unchanged
+
+carry_forward:
+  - b01c07 prose-burden carries forward unchanged
+  - No new watches generated; fence is clean throughout c19
+  - Collapse axes confirmed in accumulation mode into c20

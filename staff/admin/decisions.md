@@ -6446,3 +6446,104 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+## DEC-0099 | 2026-06-05 | FAST (user-proxy, RUNBOOK R1)
+
+question: |
+  b01c19 Phase 5.5 chunk cold-read disposition. CHUNK-CLASS-B (summary maps to goal;
+  strict-continue=no). Three cold-reader complaints: (a) three-of-four scenes are the
+  same beat (emotional stasis / escalating abstraction), (b) heavy proprietary vocabulary
+  (the accounting / bottlefly nodes / contempt-color / a different column) — followability
+  risk, (c) s04 stakes-jump (label reaching upper city) is inferred off-page / asserted
+  not dramatized. Options: (R) revise chunk, (P) proceed with risk recorded, (S) substance
+  contract revision.
+
+context: |
+  b01c19 is the penultimate (falling) chapter of book 1. Thesis: contempt-without-refusal
+  at completion — register locked, continuation unchanged — and the first non-terminal
+  recognition event. Phase 5 PASSED cleanly: 3/3 SUBSTANCE-FELT (cape-fic, dark-fantasy,
+  worm-canon), dramatist ACCEPT (falling-arc sound; recognition correctly non-terminal —
+  does not steal c20's climax), auditor 0-HARD (axis sums exact; thesis axes declared).
+  Caller's recommended option: (P), arm voice-risk carry to /and-stitch Phase 8.5 + carry
+  s04-dramatization concern to /and-write.
+
+options:
+  R: Revise chunk. ~1 screen-writer cycle + re-review.
+  P: Proceed with risk recorded. SHIPPED-WITH-RISK-RECORDED; arm downstream carries.
+  S: Substance contract revision. High cost; reserved for unacceptable (P).
+
+decision: P — proceed with risk recorded, arm downstream carries.
+
+basis: |
+  Step 1 (LTM precedent + decisions log):
+    DEC-0090/0094/0095/0096 are the exact precedent family: c14/c15/c16/c17/c18 all disposed
+    P on CHUNK-CLASS-B with the same complaint categories (emotional stasis / abstraction-
+    dominant / jargon-opacity / event-poor). Every one passed Phase 5 3/3 SUBSTANCE-FELT +
+    dramatist ACCEPT + auditor 0-HARD. All complaints were pre-authorized as design-inherent
+    for the deliberate falling interior collapse architecture.
+
+  Step 2 (goals):
+    Goal:1 (pipeline correctness): the informed gates all PASSED — 3/3 SUBSTANCE-FELT,
+    dramatist ACCEPT, auditor 0-HARD on design. The uninformed cold-reader's CONTINUE=no is
+    explicitly authorized as design-inherent output on this book-level architecture. Chunk
+    revision would fight the substance contract the informed gates just endorsed.
+    Goal:2 (cost discipline): (R) burns ~1 screen-writer cycle against a non-defective chunk
+    and risks de-jargoning at the wrong layer. Jargon/abstraction handling belongs at
+    /and-write (concrete SVO bone-staging) + /and-stitch (voice-embodiment + grounding-ledger,
+    PROP-0022). (S) is high cost with no indication the contract is broken.
+
+  Three specific complaint dispositions:
+    (a) "Three of four scenes are the same beat (naming changed nothing)" — design-inherent.
+        The continuation IS unchanged; that is the contempt-without-refusal thesis. The
+        accounting-register sameness is the horror, per dark-fantasy-reader's endorsement.
+        cl06 cost-paid across four scenes is the structural achievement, not a repetition flaw.
+    (b) Proprietary vocabulary followability risk — exactly the recurring jargon-opacity risk
+        carried from c17 (DEC-0094). The chain's declared handling is /and-write Phase 6
+        (EVENT-NOT-CONCRETE / ABSTRACTION-DOMINANT SIGNAL) + /and-stitch Phase 4
+        (voice-embodiment discipline + grounding-ledger). This is NOT a chunk-layer fix.
+    (c) s04 stakes-jump (label reaching upper city) asserted not dramatized — this is
+        tractable and belongs in /and-write: s04 scene decomposition should include a
+        concrete SVO bone that makes the upper-city reach visible on-page rather than inferred.
+        This is a cold_read_risk_carry HARD watch into /and-write, not a chunk revision.
+
+  (S) is off the table: auditor 0-HARD + dramatist ACCEPT + 3/3 SUBSTANCE-FELT.
+  (R) is wrong-layer. Correct downstream carry:
+    — voice-risk carry (jargon/abstraction ABSTRACTION-DOMINANT → /and-stitch Phase 8.5
+       central-event-muffle, arm the check) per PROP-0019/CLAUDE.md Rule 17 precedent.
+    — s04-dramatization concern → /and-write cold_read_risk_carry HARD watch: s04 upper-city-
+       reach bone must be a concrete SVO (off-page landing is not a dramatized event bone).
+
+rationale: |
+  Sixth consecutive Class-B P in the c14-c19 stretch. All upstream informed gates passed.
+  Uninformed cold-reader's complaints are structurally identical to the pre-authorized
+  categories on every prior chapter. The "sameness" complaint is a feature of the thesis
+  (contempt-without-refusal = register unchanged, continuation unchanged); de-abstracting
+  at chunk layer would violate the endorsed substance contract. The two tractable items
+  (jargon-opacity and s04 off-page landing) are correctly staged to /and-write + /and-stitch,
+  not chunk revision. This is the penultimate chapter of the falling arc; the design-inherent
+  CONTINUE=no is load-bearing context for the terminal recognition at c20.
+
+trade-off: |
+  Shipping the cold_read_risk_carry intact: if the downstream /and-write + /and-stitch chain
+  fails to concretize s04 or fails to address jargon-opacity at the stitch layer, Phase 9
+  will fire. The coupling rule then applies: Phase 9 FAIL on these complaint categories is
+  pre-authorized as Class B and ships as SHIPPED-WITH-CAVEATS automatically if s04 carries
+  through. The risk is recorded, not ignored.
+
+downstream-arms:
+  - target: /and-write b01c19
+    arm: cold_read_risk_carry HARD watch — s04 upper-city-label-reach must be a concrete SVO
+         bone on-page; inferred-off-page is FAULT at Phase 6 (EVENT-NOT-CONCRETE).
+  - target: /and-stitch b01c19 Phase 8.5
+    arm: voice-risk carry — jargon/abstraction ABSTRACTION-DOMINANT SIGNAL from chunk cold-read;
+         arm central-event-muffle check per PROP-0019/CLAUDE.md Rule 17.
+  - target: Phase 9 coupling
+    arm: If Phase 9 FAIL fires and all complaint categories map to (a)+(b) (design-inherent
+         thesis sameness + jargon) without new complaint classes, auto-disposition as
+         SHIPPED-WITH-CAVEATS per the established coupling rule (DEC-0085/0090/0094/0096).
+         s04-concrete failure would be a tractable new finding — not auto-dispositioned.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
