@@ -47,3 +47,35 @@ All authored cards validated against `schemas/card.schema.md`:
 ### Preservation notes
 
 No pre-existing cards were overwritten. All new cards are net-new files. The existing `viserys-i-targaryen.card.md` (scant, library) was read but not modified; the project variant is stored separately under `and-experiment/warehouse/`. No destructive operations this session.
+
+---
+
+## Reference authoring session: 2026-06-05
+
+### Artifact authored
+
+| artifact | type | scope | path |
+|---|---|---|---|
+| cultivation-genre-reference.md | authoring substrate (reference doc) | project-scoped | `and-experiment/design/cultivation-genre-reference.md` |
+
+**What it is:** A catalogued cultivation (xianxia) genre conventions reference — the genre layer beneath `comedy-register.card.md` and `saerys-targaryen-behavior.card.md`. Covers 10 domains: (1) cosmology and realm ladder, (2) alchemy and pill refining, (3) spirit beasts, (4) resources and reagents, (5) social order, (6) sects, (7) moral axes and the Heavenly Demon title, (8) tribulations, (9) the detachment doctrine, (10) standard narrative tropes. Each domain carries a two-layer treatment: genre canon (A) + project broken-clock mapping (B). Closes with a precision-of-wrongness vocabulary bank, terminology reconciliations, candidate card flags, and principal tensions/gaps.
+
+**Terminology reconciliations made:**
+- Foundation Establishment confirmed at Stage 2 of the canonical realm ladder; consistent with behavior card usage
+- The seven emotions (七情) confirmed as real cultivation term; canonical list grounded
+- Outer disciples / sect hierarchy confirmed; consistent with behavior card vocabulary
+- Tier/grade usage documented as intentionally loose in the cards; prose authors may follow card convention
+
+**Candidate card flags (for principal triage; none built this session):**
+- `cond-inferior-path-doctrine.card.md`
+- `prop-dose-log.card.md`
+- `prop-harwins-list.card.md`
+- `cond-westeros-reagent-tier-map.card.md`
+- `cond-yi-ti-cultivation-milieu.card.md`
+
+**Principal tensions/gaps flagged:**
+1. Oily black stone actual properties — does the cauldron's appetite register anything real, or is the horror purely appetite?
+2. Realm-ladder vs project-tier-system reconciliation — formal mapping deferred to principal
+3. Human-cauldron trope legibility in prose — latent vs explicit; register decision for principal
+
+**Preservation:** net-new file; no existing files overwritten or modified.
