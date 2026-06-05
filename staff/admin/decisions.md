@@ -6812,3 +6812,48 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0103 | 2026-06-05 | FAST (process-critic)
+
+mode: process-critic
+trigger:
+  reason: failure (SIGNAL-accepted-not-remediated)
+  source_report: active-project/staff/auditor/write-b01c20-bone-gate.md
+  source_verdict: "PASS — 0 HARD, 1 SIGNAL (signal-001, b01c20s05n06, political_register-world magnitude ~1.1 units over strict scene proportionality; ACCEPT-WITH-RATIONALE)"
+  gate_path: .claude/commands/and-write.md#phase-6
+
+question: |
+  Does signal-001 ACCEPT-WITH-RATIONALE on b01c20s05n06 (dual-axis LOCK-confirmation bone:
+  position-prot-collapse LOCK + political_register-world LOCK at the same physical exit act)
+  reflect a recurring process gap worth a proposal? Or is it a structural artifact of
+  terminal-chapter LOCK bones?
+
+decision: OK — no process change proposed.
+
+basis: |
+  First-occurrence hold (non-catastrophic; methodology:3c). Content-vs-process
+  discrimination: pure structural artifact, not a gate failure.
+
+rationale: |
+  The gate worked correctly: it detected the per-scene proportional skew (~1.1 units
+  over strict proportionality), correctly classified it as SIGNAL not HARD, and the
+  ACCEPT-WITH-RATIONALE disposition is substantively sound. Both axes (position-prot-collapse
+  and political_register-world) lock at the same physical act — Taylor exits the south gate.
+  The departure IS both LOCKs simultaneously. Reducing political_register-world magnitude on
+  this bone would require a separate LOCK-confirmation bone, adding count without resolving
+  any substance problem. The chapter-level aggregate is correct; the per-scene skew is an
+  artifact of the 3-magnitude integer system combined with dual-axis LOCK coupling at a
+  terminal exit bone. No prior proposal covers this class. N=1, non-catastrophic. The series
+  is complete, so no future b01 chapter can produce recurrence evidence; any gate modification
+  would be purely speculative. First-occurrence hold is the correct calibration.
+
+trade-off: |
+  If a future project uses LOCK bones at series-terminal scale, this class could recur and
+  would be the first evidence for a gate carve-out proposal at that time.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
