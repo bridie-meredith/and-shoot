@@ -9797,6 +9797,28 @@ books:
           aliveness: BONES-AIRLESS-RISK   # scoped to s02 only (pre-accepted ABSTRACTION-DOMINANT); s01/s03/s04 grounded; scene-map S02-EMBODIMENT carries to /and-stitch Phase 4
           bones_file_mtime_at_review: 2026-06-04T23:55:24Z
           stale_since: null
+        facets:   # /and-facets b01c17 (consolidated R1+R2 graph-aware pass under chapter-production budget, per c15/c16 precedent)
+          status: audited-r1
+          facets_path: active-project/theater/facets/
+          proto_lines: active-project/theater/proto-lines/b01-c17.md
+          cite_index: active-project/theater/facets/_cite-index.md
+          round_1_complete: true
+          round_2_complete: true   # consolidated into R1 graph-aware authoring
+          facet_entry_counts: {location-state: 6, interest-narrator: 8, sensory: 4, state-updates-env: 13, state-updates-taylor: 7, memory: 3, feeling: 1, metaphor: 0, vibes: 17, exposition: 2, dialogue: 0}
+          context_followability: {completeness_verdict: FOLLOWABLE, readability_verdict: ALIVE, context_ledger_open: 0, grounding_ledger_open: 0, report_path: active-project/staff/reviews/context-follow-r2-b01-c17-2026-06-05.md}
+          context_ledger: active-project/staff/showrunner/context-ledger-b01-c17.md   # ctx-001 @29 three-day-gap, ctx-002 @21 Elder Norren — both satisfied
+          grounding_ledger: active-project/staff/showrunner/grounding-ledger-b01-c17.md   # grd-001 @9, grd-002 @17 (S02-EMBODIMENT) — both satisfied
+          audit_path: active-project/staff/auditor/facets-final-audit.md
+          audit_complete: true
+          audit_hard_final: 0
+          audit_signals: 9   # all schema-form/hygiene (vibes keyword-spacing, state namespace overlap, PILE-UP @22/@23/@29 justified, exposition header dash, memory monument-card free-text, prop-card seams); zero content callouts at audience-gate
+          audience_gate_path: active-project/staff/audience/   # per-persona STMs; consolidated verdict in task record
+          audience_gate_complete: true
+          audience_gate_cycles: 1
+          audience_gate_result: ACCEPT   # ALL 10 facets 3-of-3 (cape-fic-reader + dark-fantasy-reader + worm-canon-pedant); fence CLEAN across 61 entries
+          bidirectional_loop: one-sided   # auditor 9 schema-form signals; audience 0 content callouts (disjoint); audience confirmed all 9 non-blocking
+          voice_fixable_carry: ['data-return verb-variation @29/@32/@35/@36', 'hold-accounting-register at @12/@16 crack (RECOGNITION-AS-ARITHMETIC-NOT-FEELING)']   # -> /and-stitch Phase 4
+          orchestrator_critic: {result: SUCCESS, note: '10/10 facets 3-of-3; 0 HARD; fence clean; FOLLOWABLE+ALIVE; metaphor refuse-by-default correct; the airless-risk (s02) resolved by grounding pair'}
         chunk: |
           The use-vector intercept: d11. Otto's apparatus identifies a vector targeting Wren —
           not by name, but by pattern (a woman who moves through the east-of-water-gate

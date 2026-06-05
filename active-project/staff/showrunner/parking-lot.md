@@ -2325,3 +2325,35 @@ parking_lot:
             The interior-ledger-recalculation risk (the genuine cold-read signal) is targeted at
             bone level; remaining prose-render watches (s02 embodiment, returns-verb variation,
             leave-the-open-log not softened) carried to /and-stitch via scene-map protected-patterns.
+
+    - id: pl-2026-06-05-c17-001
+      created_at: 2026-06-05T00:30:00Z
+      created_by: "/and-facets b01c17 Phase 5 audit (signal-008 + signal-009)"
+      target:
+        command: /and-facets
+        scope: "b01c18"
+        phase: Phase 1
+      severity: SOFT
+      description: |
+        Two schema-hygiene carries from b01c17 facet authoring (audience-gate confirmed
+        non-blocking; both relevant to future chapters):
+        (a) signal-008: vibes-b01-c17 uses `++` ops on wren-stitch-maker-flea-bottom-ward
+            (rising entrapment, tragic-causal) and jarvis-coin-kl-courier — `++` requires the
+            keyword pre-seeded in the entity's vibes.md. Verify Wren's + Jarvis's vibes.md carry
+            these keywords before b01c18 vibes authoring (else use `+` fresh-keyword form).
+        (b) signal-009: five env state-update SEAMs touch props with no margit card —
+            prop:oc-coverage-log, prop:apparatus-picture, prop:cost-ledger (possible identity
+            with oc-feed-ledger), studio.dead-drop-channel.query-status. Margit referral pending;
+            these props recur (coverage-log especially) and warrant cards before they accrue more
+            state. Non-blocking for c17 (per-anchor resolution clean).
+        Also minor: vibes keyword-spacing (signal-001, spaces vs hyphenated handles) + exposition
+        header dash-form `b01-c17` vs undashed `b01c17` (signal-006) — normalize at next convenient pass.
+      context_refs:
+        - active-project/staff/auditor/facets-final-audit.md  # signals 001/006/008/009
+        - active-project/theater/facets/vibes-b01-c17.md
+        - active-project/theater/facets/state-updates-env-b01-c17.md
+      resolution_suggestion: "verify Wren/Jarvis vibes pre-seed at /and-facets b01c18 Phase 1; margit prop-card referrals for coverage-log/apparatus/ledger"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null

@@ -746,7 +746,7 @@ carry_forward:
   - No new soft findings from this gate; SW-WCP-c15-1 resolved at bone layer
   - b01c07 prose-burden carries forward unchanged
 
-## 2026-06-04 — /and-substance chapter b01c17 Phase 5 chunk review
+## 2026-06-04 — /and-substance chapter b01c17 Phase 5 review
 
 chapter: b01c17
 date: 2026-06-04
@@ -816,3 +816,42 @@ soft_findings:
 carry_forward:
   - Three new bones-execution watches for /and-write b01c17 (SW-c17-WCP-1, SW-c17-WCP-2, SW-c17-WCP-3)
   - b01c07 prose-burden carries forward unchanged
+
+## /and-facets Phase 5b adversarial gate — b01c17 — 2026-06-05
+
+### Per-facet verdicts (worm-canon-pedant)
+
+- location-state (6): ACCEPT — four locations are KL-geography consistent; the-hook-lower-water-trough, the-hook-southern-edge, the-tallow-render-works, and the-gap-lanes-east-water-gate are all project-established KL coordinates; no Earth-Bet geography bleeding in; loc-state:5 @18 (tallow-render works as act-site) is the correct indifferent-world texture; exclusion justifications per entry are mechanically sound; no fence concern across any of the 6 entries
+
+- interest-narrator (8): ACCEPT — Taylor's interiority in all 8 NI entries stays in the correct cold-utilitarian register; NI:3 ("a person who did not choose this corridor") uses the correct third-person-limited accounting phrasing without importing parahuman psychology; NI:6 ("the record stops being a thing she is doing and becomes a thing that sits") is the enacted-consequence register, not emotional vocabulary; the two override-architecture entries (NI:4/@16, NI:5/@22) reference the structural echo without naming Khepri or Earth-Bet architecture; the phrase "architecture she built her prohibition against" is the established project cipher, not a Worm canon term; NI:8 ("the blank column is the accounting") is pure ledger-logic in Taylor's register; no fence violation across all 8 entries; CHUNK-CLASS-B risk (four scenes of same accounting) attacked: each NI entry advances a distinct beat of the accounting (pricing → structural-match → cost-awareness → override-recognition → ledger-opening → consequence-propagation → gain-inside-false-record → blank-as-accounting); not the same recognition repeated
+
+- sensory (4, 2 grounding-licensed): ACCEPT — Earth-Bet fence clean across all 4 entries; sensory:1 (light, dusk-lane-ambient) and sensory:2 (smell, tallow) are Westerosi-world textures with no Earth-Bet bleed; sensory:3 (night-stone-cool-underfoot, grounding-licensed) and sensory:4 (ward-density-low-distant-ember, grounding-licensed) both use project-internal sensory vocabulary without importing anything from Brockton Bay or Earth-Bet city textures; the grounding-ledger licenses cannot be attacked on density grounds but CAN be failed for inert KL texture — both pass as non-inert (sensory:3 gives the night-walk a physical container; sensory:4 gives it an ambient sound-field); fence clean
+
+- state-updates-env (13): ACCEPT — no Worm-world instruments anywhere in the 13 entries; prop:oc-coverage-log is a Westerosi coverage-ledger, not a parahuman tracking system; prop:apparatus-picture is the Otto apparatus's intelligence product, entirely KL-internal; prop:cost-ledger is Taylor's own accounting ledger; prop lifecycle tracks pen-on-page, not swarm-deployment; the attribution-substitution mechanism (inserting Elder Norren's name into a coverage log) uses paper-and-ink as the instrument, not biological relay; SIGNAL-008 (Wren ++ ops) is schema-form concern only, not content; no fence violation; no Earth-Bet technical vocabulary in any state-field entry
+
+- state-updates-taylor (7): ACCEPT — axis mechanics are canon-consistent; moral_framework -2→-2.5 (@12) and -2.5→-3 (@22) are correctly staged as recognition-before-act and enacted-breach; capability 7.5→8.0 (@21) and 8.0→8.5 (@22) read as the false-attribution capability being exercised (information-architecture manipulation, not power inflation); position_prot_collapse FIRST-TOUCH (@23) and social_tether_prot_collapse FIRST-TOUCH (@23) correctly mark the chapter as the activation point for collapse axes; the FIRST-TOUCH designation is accurate — prior chapters had intelligence-gathering escalation that left direction ambiguous; this chapter's protection deployment makes direction explicit; relational_anchor_status +7.5 (@30) is the screened-Wren gain, correctly identified as cost-simultaneous; axis mechanics canon-sound throughout
+
+- memory (3): ACCEPT — Earth-Bet fence CLEAN on all 3 entries; mem:1 @6 (un-priced anchor) uses no proper noun; mem:2 @16 ("architecture-she-came-to-set-down, no proper noun" — the file itself flags this as fence-verified); mem:3 @36 ("prohibition-arrived-with: enacted-as-protection") is the structural echo stated through the prohibition's origin, not through Khepri's name; the Khepri-echo is shape-language-only across all three memory entries; no parahuman jargon; no Gold Morning reference; no trigger-event vocabulary; fence clean; no Earth-Bet content in any of the 3 entries
+
+- feeling (1): ACCEPT — single entry at @8 (hand flat on trough-stone, weight not shifting); expressed: no; somatic-tell form is in KL-register (stone, hand, weight — physical facts of a Westerosi setting); no Earth-Bet somatic vocabulary; the sparse discipline is correct for the chapter's RECOGNITION-AS-ARITHMETIC contract; Taylor's canon suppress-but-not-absent discipline honored; one somatic tell with no named recognition is the correct feeling-facet form for a chapter where the crack rides the accounting, not the affect; fence trivially clean (1 entry with no proper-noun risk)
+
+- metaphor (0): ACCEPT — zero entries; fence trivially clean; no metaphors to check for Earth-Bet bleed; the refuse-by-default discipline is the correct call for a chapter where the literal IS the Khepri-echo (the false attribution is already the repetition; figuration would reduce it); all 4 candidate refusals documented with rationale; the rationale at AP7 (peak-bone anti-form) and AP2 (double-fire) are mechanically correct; no fence concern
+
+- vibes (17): ACCEPT — keyword clouds reviewed for Earth-Bet jargon: CLEAN across all 17 entries; "cold-utilitarian interiority," "rising entrapment," "atonement-as-repetition," "tragic-causal," "protected-by-falsification," "collapse-cascade-begins" are all project-internal vibe-vocabulary or KL-register descriptors; no parahuman keywords; no Worm-fandom jargon; no Earth-Bet city/cape/power terminology; SIGNAL-001 (keyword spacing schema) and SIGNAL-008 (Wren ++ ops) are both schema-form concerns, not content violations; the Jarvis-channel vibes (@1, vibes:14) use the correct project-internal register for the apparatus-query event; vibes:2 @7 ("the-door-she-did-not-enter-opened-from-the-other-side") is world-acting-against-Wren without agency — KL-register correct; vibes:13 @36 ("the-quiet-of-an-irreversible-act-in-a-rented-room") is KL-world atmosphere with no Earth-Bet bleed; fence clean across all 17
+
+- exposition (2): ACCEPT — both entries are in KL-register with no Earth-Bet fence violation; exposition:1 @29 (three-day gap) delivers the interval without importing any Earth-Bet temporal-framing vocabulary; exposition:2 @21 (Elder Norren rationale) names his innocence in KL-social terms (a ward-elder with a legitimate claim on the covered area) without any parahuman-registry framing; the context-ledger licenses cannot be failed on exposition grounds (licensed past anti-exposition penalty) but CAN be failed if they over-explain or leave the reader confused; both pass: ctx-001 delivers the gap cleanly, ctx-002 delivers Norren's innocence as a stated fact without moral commentary; Earth-Bet fence: CLEAN on both entries; SW-c17-WCP-1 watch from chunk review is satisfied — exposition entries use KL-internal vocabulary throughout
+
+### Aggregate: ALL 10 FACETS — ACCEPT
+
+### Notes for future chapters (worm-canon-pedant)
+
+- Earth-Bet fence held across all 51 facet entries (exposition:2 + feel:1 + loc-state:6 + mem:3 + narrator:8 + sensory:4 + state:20 + vibes:17 = 61 total entries; metaphor:0 adds 0); this is the chapter's highest-fence-risk chapter in the arc to date (Khepri-echo as protection rather than intelligence); the fence held without requiring any hard correction
+- SIGNAL-008 (Wren ++ ops): the worm-canon-pedant registers this as a schema-form concern that should be verified in the vibes.md pre-seeded keyword architecture before b01c18; if Wren's vibes are tracked with ++ ops and those ops don't resolve to canonical state transitions, the tracking architecture could drift from the substance contract
+- The false-attribution mechanism (pen, log, three lines) is the chapter's fence test at its most literal: the instrument is paper-and-ink, not the swarm; the multi-shard fence is clean for exactly this reason; at b01c18 (full-coverage deployment), the instrument returns to biological relay and the fence test will require full coverage-as-sequential-acquisition discipline
+- Collapse-axis FIRST-TOUCH at b01c17 is the arc's structural inflection point; the next chapter's facet graph should not re-fire the FIRST-TOUCH designation; the collapse axes should now be in active accumulation mode, not activation mode
+- b01c07 prose-burden (Halvard tether-gain): still on record; still unresolved; carries forward
+
+carry_forward:
+  - SIGNAL-008 (Wren ++ ops) flagged for verification before b01c18 vibes facet authoring
+  - b01c07 prose-burden carries forward unchanged
+  - Collapse-axis tracking: position_prot_collapse and social_tether_prot_collapse both now active (FIRST-TOUCH complete at b01c17); b01c18 facets should show these in accumulation mode

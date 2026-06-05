@@ -5,11 +5,11 @@ operator_protocol: RUNBOOK Producing-a-chapter (R1-R5)
 cascade:
   root: b01c17
   last_completed: {level: bones, slug: b01c17, completed_at: 2026-06-04T23:55:00Z}
-  next: {command: /and-facets b01c17, args: [b01c17]}
+  next: {command: /and-stitch b01c17, args: [b01c17]}
   reason: continue
   failure: null
-current_step: 4-facets
-verdict: /and-review bones b01c17 PASS — /and-facets unblocked
+current_step: 5-stitch
+verdict: /and-facets b01c17 COMPLETE — 10/10 facets 3-of-3 ACCEPT
 write_summary:
   bone_gate: PASS (0 HARD after fixer cycle 1; 25 SVO-form + 3 residual PP + cl07a)
   audience: 3-of-3 SUBSTANCE-FELT all 4 scenes
