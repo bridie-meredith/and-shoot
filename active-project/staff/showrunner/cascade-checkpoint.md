@@ -4,8 +4,8 @@ run: produce-chapter b01c19
 operator_protocol: RUNBOOK Producing-a-chapter (R1-R5)
 status: IN-PROGRESS
 outcome: null
-last_completed: {level: bones, slug: b01c19, completed_at: 2026-06-05T18:35:00Z}
-next: {command: "/and-review bones b01c19", args: []}
+last_completed: {level: bones-review, slug: b01c19, completed_at: 2026-06-05T18:45:00Z}
+next: {command: "/and-facets b01c19", args: []}
 chapter: b01c19
 phase9_verdict: null
 phase10_verdict: null
@@ -18,4 +18,5 @@ chunk_cold_read: {verdict: SHIPPED-WITH-RISK-RECORDED, classification: B, dispos
 and_write: {bones_count: 35, scenes: 4, gate: PASS-0HARD, dramatist: ACCEPT, audience: SUBSTANCE-FELT-3of3, trim_cut: s01n06, signals_accepted: 2, process_critic: OK-DEC-0100, pl_c19_001_RESOLVED: true}
 carries: {and_stitch_voice_risk: pl-2026-06-05-c19-002, and_stitch_close: pl-2026-06-05-c19-004}
 depth_pass: {required: null, gates: null, item: null}
+bones_review: {verdict: PASS-WITH-NOTES, follow_check: PASS, aliveness: BONES-AIRLESS-RISK}
 process_critic: {phase6_5: OK-DEC-0100}

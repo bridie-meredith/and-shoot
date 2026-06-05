@@ -11627,6 +11627,15 @@ books:
           character_state:
             - "Taylor: political_register-prot rank 9 LOCKED; moral_legibility rank 7 (recognition beginning); social_tether-prot-collapse rank 4.5; position-prot-collapse rank 4; capability rank 8.5; relational_anchor rank 7.5; moral_framework rank -4"   # capability 8.5 (c19 holds; mirror correction)
           target_chapter: b01c20
+        bones_review:
+          reviewed_at: 2026-06-05T18:45:00Z
+          report_path: active-project/staff/reviews/bones-b01c19-2026-06-05.md
+          verdict: PASS-WITH-NOTES
+          follow_check: PASS
+          bones_file_mtime_at_review: 1780686143
+          aliveness: BONES-AIRLESS-RISK   # advisory; covered by voice-risk carry pl-2026-06-05-c19-002 -> /and-stitch Phase 8.5 + Phase 4 voice-embodiment
+          notes: "fidelity PASS-WITH-NOTES (NOTE-A shutter-contrast in rationale not SVO [overlaps pl-c19-001, resolved]; NOTE-B s04 off-page but chunk-faithful [DEC-0099 watch]; NOTE-C s01 event_map stale n06 ref FIXED). follow_check PASS (context-aware: central event + all 3 scene-handoffs recoverable; jargon is established register, defers to /and-facets Phase 2.5). No FAIL/FOLLOW-FAIL -> /and-facets cleared."
+          stale_since: null
         scenes:
           - slug: b01c19s01
             status: scened
@@ -11705,7 +11714,7 @@ books:
                 bones: [b01c19s01n04, b01c19s01n05]
               - entry: "force:protagonist — Taylor opens the cost-ledger and runs the accounting"
                 tag_source: "[force: protagonist] chunk"
-                bones: [b01c19s01n05, b01c19s01n06]
+                bones: [b01c19s01n05]
               - entry: "request-accounting-opens-contempt-color-arrives"
                 tag_source: "[event] chunk"
                 bones: [b01c19s01n07, b01c19s01n08]
