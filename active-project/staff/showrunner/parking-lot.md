@@ -2662,10 +2662,11 @@ parking_lot:
         the bone-faithfulness fence (PROP-0022 voice-embodiment). Also armed via the
         chunk_cold_read.voice_risk block in memory (auto-read at Phase 8.5).
       resolution_suggestion: "/and-stitch Phase 8.5 Check 3 central-event-muffle verification; Phase 4 voice-embodiment discipline."
-      status: open
-      resolved_at: null
-      resolved_by: null
-      resolution_note: null
+      status: resolved
+      resolved_at: 2026-06-05T20:05:00Z
+      resolved_by: "/and-stitch b01c19 Phase 8.5 coherence (central-event-muffle check)"
+      resolution_note: |
+        Voice-risk signal-B muffle NOT-MATERIALIZED. Phase 8.5 armed central-event-muffle check confirmed both spine events reach cold-reader legibility AS events (s3 contempt-lock via stylus-beside-not-into choreography + dead-name-in-ledger figure, high confidence; s4 severance via empty-corner + shutter-against-43-approaches + Daven absence, high confidence). label-reach-concrete HARD watch did not reopen. Voice-embodiment person-first throughout.
 
     - id: pl-2026-06-05-c19-003
       created_at: 2026-06-05T00:00:00Z
@@ -2714,10 +2715,11 @@ parking_lot:
         Phase 4 voice-transform must render the close so the unchanged-continuation is
         the horror, not the resolution.
       resolution_suggestion: "/and-stitch Phase 4 register-execution: render the s04 close as horror-beat; avoid tell-competing-with-show on the summary couplet."
-      status: open
-      resolved_at: null
-      resolved_by: null
-      resolution_note: null
+      status: resolved
+      resolved_at: 2026-06-05T20:05:00Z
+      resolved_by: "/and-stitch b01c19 Phase 4 voice-transform + Phase 8.5"
+      resolution_note: |
+        Render honored horror-beat-not-resolution: close couplet weighted to continuation ("The architecture is still running, one node lighter... and the count that took the node out sits in no record I have written today"). Not warmed, not resolved. Phase 8.5 flagged low-med residual resolution-reading risk, within pre-authorized Class-B category (a) per DEC-0099; accepted at SHIPPED-WITH-CAVEATS.
 
     - id: pl-2026-06-05-c19-005
       created_at: 2026-06-05T00:00:00Z
@@ -2739,6 +2741,32 @@ parking_lot:
         carries NI:3 @14 (flatten thesis-statement surface, preserve non-continuation
         content) per the same audience-gate.
       resolution_suggestion: "/and-stitch Phase 3 sequencing: expo:3 conditional, instruments evidentiary; NI:3 @14 flatten-explanatory."
+      status: resolved
+      resolved_at: 2026-06-05T20:05:00Z
+      resolved_by: "/and-stitch b01c19 Phase 3 sequencing"
+      resolution_note: |
+        expo:3 @27 rendered CONDITIONAL ("if the witch-label has reached the people who know my accessible face, then the cost... has been priced, and a closed shutter is what the price looks like from the lane") - inference-framework not confirmed-arrival; the @28/@29/@31 instruments retain evidentiary force. NI:3 @14 flattened from thesis-statement to enacted prose ("the naming was not the stop. The entry going forward unchanged was").
+
+    - id: pl-2026-06-05-c19-deptpass
+      created_at: 2026-06-05T20:05:00Z
+      created_by: "/and-stitch b01c19 Phase 9 cold-read terminal gate"
+      label: depth-pass-required-b01c19-book-close
+      target:
+        command: /and-write
+        scope: "book-close"
+        phase: null
+      severity: HARD
+      description: |
+        b01c19 shipped SHIPPED-WITH-CAVEATS (Phase 9 cold-read CONTINUE=no on pre-disposed
+        Class-B grounds: interior-sameness + abstraction-density; DEC-0099 coupling). The
+        mandatory depth-pass gates BOOK-CLOSE (NOT b01c20 Phase 0): before /and-review verdict
+        b01 / /and-postop b01c19 milestone / /and-substance book b02, this chapter (and the
+        c14-c18 cohort) needs the depth-pass resolution per the SHIPPED-WITH-CAVEATS contract.
+        6th consecutive Class-B (c14-c19). Candidate: /and-write b01c19 revise --from-signals
+        consuming the cold-read confusion log (chamberlain-half abstraction; the two-thread
+        structure reading theme-linked-not-causal). NOT a b01c20 Phase 0 blocker — c20 Phase 0
+        stays CLEAR.
+      resolution_suggestion: "book-close: /and-write b01c19 revise --from-signals + re-cascade, OR principal accepts the Class-B cohort caveat at /and-review verdict b01. Consider /and-cohere b01 c13-c19 for the accumulated Class-B stretch."
       status: open
       resolved_at: null
       resolved_by: null

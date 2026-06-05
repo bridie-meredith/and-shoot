@@ -11654,6 +11654,22 @@ books:
           facet_counts: {location-state: 10, interest-narrator: 10, sensory: 4, state-updates: 17, memory: 4, feeling: 2, metaphor: 0, vibes: 6, exposition: 3}
           stitch_carries: [pl-2026-06-05-c19-002, pl-2026-06-05-c19-004, pl-2026-06-05-c19-005]
           orchestrator_critic_verdict: SUCCESS   # 7/7 criteria: 9 facet files exist; 0 HARD post-audit; per-facet 3-of-3 ACCEPT; memory current; bidirectional loop validated; process gaps captured (stitch carries); single-cycle (under budget). Phase 5c process-critic SKIPPED (clean ACCEPT, no cap-burn/WARN).
+        stitched: true
+        draft_path: active-project/draft/b01-c19.md
+        cold_read:
+          read_at: 2026-06-05T20:00:00Z
+          verdict: SHIPPED-WITH-CAVEATS   # Phase 9 cold-read CONTINUE=no on PRE-DISPOSED Class-B grounds only (interior-sameness + abstraction-density); events+jeopardy RECOVERED; s04 Daven severance LANDED (shown-not-told) so the one non-auto-dispositioned category did NOT fire; auto-promoted via chunk_cold_read SHIPPED-WITH-RISK-RECORDED coupling (DEC-0099). 6th consecutive Class-B (c14-c19), matches c18/DEC-0096.
+          recovered_summary: "A surveillance-witch files a routine court report, then learns a contact has cut her off because the rumor that she is dangerous has finally reached the lanes she works."
+          continue: no
+          report_path: active-project/staff/reviews/coldread-b01c19-2026-06-05.md
+          coherence_review: {verdict: SOFT-BLOCK-RESOLVED, weave: PASS, followability: PASS, central_event_muffle: NOT-MATERIALIZED, report: active-project/staff/reviews/coherence-b01-c19-2026-06-05.md}
+          readability_axis: {verdict: AIRLESS-LEANING, basis: "chamberlain-half reads abstract (relentless-abstraction); Daven-half has a pulse (shown-not-told); pre-authorized Class-B density per DEC-0099; spine events register AS events per Phase 8.5 muffle-check"}
+          prose_rationale_audit: {covered_by: phase-8.5-coherence, central_event_muffle: NOT-MATERIALIZED}
+          signal_clusters: []
+          depth_pass_required: true
+          depth_pass_gates: book-close
+          depth_pass_item: pl-2026-06-05-c19-deptpass
+          stale_since: null
         scenes:
           - slug: b01c19s01
             status: scened
