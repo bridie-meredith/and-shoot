@@ -1,3 +1,50 @@
+## SESSION-START — 2026-06-05T04:00:00Z — write-b01c20-pass2-svo-recasts
+dispatch: repair 6 faults (fault-001..fault-006) in b01c20-bones-draft.md — 3 FAULT-FORM-MODIFIER, 2 CHATTER-UNPAID, 1 FAULT-FORM-INTERIORITY; minimum-change svo: recasts + substance_delta additions; event_map untouched
+target: active-project/staff/screen-writer/b01c20-bones-draft.md
+audit-report: active-project/staff/auditor/write-b01c20-pass2.md
+findings-queued: 6 (fault-001 through fault-006)
+
+## fault-001 — RESOLVED — 2026-06-05T04:01:00Z
+fault: s01n02 svo "the wrong doors open" — adjective modifier "wrong" on subject (FAULT-FORM-MODIFIER)
+scope: line
+change: svo "the wrong doors open" → "the doors open" (adjective stripped; physical event preserved)
+criteria met: yes
+
+## fault-003 — RESOLVED — 2026-06-05T04:01:00Z
+fault: s01n02 chatter bone (axis_moves:[], axes_held:[]) with no cost_ledger_anchor (CHATTER-UNPAID)
+scope: line
+change: added axes_held: [{axis: capability, rationale: "the apparatus reading the door-sequence is full-deployment held; no new deployment event; capability at 8.5 load"}]; bone converted from chatter to held-discipline; svo recast also applied (fault-001 co-resolved on same bone)
+criteria met: yes
+
+## fault-002 — RESOLVED — 2026-06-05T04:01:00Z
+fault: s02n02 svo "the wrong men enter the ward junctions" — adjective modifier "wrong" on subject (FAULT-FORM-MODIFIER)
+scope: line
+change: svo "the wrong men enter the ward junctions" → "the men enter the ward junctions" (adjective stripped); substance_delta unchanged (social_tether-prot-collapse −2 cl07a preserved)
+criteria met: yes
+
+## fault-004 — RESOLVED — 2026-06-05T04:02:00Z
+fault: s02n01 svo "the succession bell rings" — chatter bone with no cost_ledger_anchor field authored (CHATTER-UNPAID)
+scope: line
+change: added cost_ledger_anchor: cl07c to substance_delta block; svo and axis_moves/axes_held unchanged; comment updated to note cl07c anchor
+criteria met: yes
+
+## fault-005 — RESOLVED — 2026-06-05T04:02:00Z
+fault: s02n06 svo "the passage-counts fill the violence" — abstract noun "the violence" as object (FAULT-FORM-INTERIORITY)
+scope: line
+change: svo "the passage-counts fill the violence" → "the faction-movement follows the passage-counts" (subject/object swap; faction-movement is named event-class; passage-counts as concrete physical object); substance_delta unchanged (position-prot-collapse −1 cl07b + two axes_held preserved)
+criteria met: yes — no dependency conflict: the recast SVO (faction-movement follows passage-counts) plausibly causes the declared position-prot-collapse axis move; the faction-movement orienting to the passage-counts is the mechanism by which position-prot-collapse continues; event_map entries routes-become-roadmap and how-routes-become-roadmap both cite s02n06 and remain valid under the recast
+
+## fault-006 — RESOLVED — 2026-06-05T04:02:00Z
+fault: s05n03 svo "the architecture returns to substrate" — prepositional destination phrase "to substrate" (FAULT-FORM-MODIFIER)
+scope: line
+change: svo "the architecture returns to substrate" → "the architecture releases the wards" (transitive verb "releases" takes "the wards" as direct object; no prepositional phrase); substance_delta unchanged (social_tether-prot-collapse −2 cl07a + position-world +1 cl07b preserved)
+criteria met: yes — no dependency conflict: "releases the wards" (surveillance coverage letting go of the wards) plausibly causes both declared axis moves: social_tether-prot-collapse (tether severance confirmed as architecture releases) and position-world +1 (apparatus self-sustaining, coverage released to the world-apparatus); event_map entry social-tether-severed-confirmed cites s05n03 and remains valid
+
+## SESSION-END — 2026-06-05T04:03:00Z — write-b01c20-pass2-svo-recasts
+findings-applied: 6 (fault-001 through fault-006; fault-001+003 co-resolved on s01n02 in single edit)
+findings-skipped: 0
+exit: CLEAN
+
 ## SESSION-START — 2026-06-05T03:00:00Z — b01c20-chunk-audit-3-hard-faults-verify
 dispatch: resolve 3 HARD faults from b01c20-chunk-audit — fault-001 location drift scene 1, fault-002 elapsed-time drift scene 5, fault-003 moral_legibility_to_self over-draw (contract + per-scene + memory summary)
 target: active-project/staff/showrunner/b01c20-draft.md

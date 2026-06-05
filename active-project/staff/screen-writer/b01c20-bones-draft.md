@@ -33,20 +33,17 @@ scenes:
         # before any bell. Grounding bone: concrete, place-situated, names a physical space.
 
       - slug: b01c20s01n02
-        svo: "the wrong doors open"
+        svo: "the doors open"
         substance_delta:
           axis_moves: []
-          axes_held: []
+          axes_held:
+            - axis: capability
+              rationale: "the apparatus reading the door-sequence is full-deployment held; no new deployment event; capability at 8.5 load"
         grounding: true
-        # Chatter bone: the wrong-door sequence is the apparatus reading,
+        # HELD bone (was chatter): door-sequence is the apparatus reading,
         # physical concreteness of the succession-trigger moment.
-        # cost_ledger_anchor: null — pure transitional image; allowed as chatter
-        # because the grounding value is load-bearing for EVENT-NOT-CONCRETE.
-        # NOTE: strictly, no cost_ledger_anchor here; per rules chatter-bone
-        # must have cost_ledger_anchor paying a later gain. The gain is the
-        # position-world delta on n01 (already paid) and n04 (coming). This
-        # bone is the physical detail that makes n01 legible; treat as subordinate
-        # to n01's position-world move.
+        # capability axes_held: apparatus reading the door-sequence is held
+        # full-deployment; no new deployment event.
 
       - slug: b01c20s01n03
         svo: "the Holdfast routes activate"
@@ -140,14 +137,14 @@ scenes:
         substance_delta:
           axis_moves: []
           axes_held: []
+          cost_ledger_anchor: cl07c
         grounding: true
-        # Chatter bone with cost_ledger_anchor: the bell is the concrete physical event
-        # that propagates through King's Landing. Grounding: names a physical sound event,
-        # place-situated in the lower city. This bone anchors the scene to the midmorning
-        # announcement.
+        # Chatter bone with cost_ledger_anchor cl07c: the bell propagates the succession
+        # announcement, setting up political_register-world's succession-position lock.
+        # Grounding: names a physical sound event, place-situated in the lower city.
 
       - slug: b01c20s02n02
-        svo: "the wrong men enter the ward junctions"
+        svo: "the men enter the ward junctions"
         substance_delta:
           axis_moves:
             - axis: social_tether-prot-collapse
@@ -210,7 +207,7 @@ scenes:
         # legible in real time. capability-held: feed held wide is the discipline.
 
       - slug: b01c20s02n06
-        svo: "the passage-counts fill the violence"
+        svo: "the faction-movement follows the passage-counts"
         substance_delta:
           axis_moves:
             - axis: position-prot-collapse
@@ -609,7 +606,7 @@ scenes:
         # substrate of the feed; their dispersal IS the architecture returning to substrate.
 
       - slug: b01c20s05n03
-        svo: "the architecture returns to substrate"
+        svo: "the architecture releases the wards"
         substance_delta:
           axis_moves:
             - axis: social_tether-prot-collapse
