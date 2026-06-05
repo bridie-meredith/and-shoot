@@ -5716,3 +5716,127 @@ defer_until: null
 supersedes: null
 ```
 
+
+# NOTE: ported from claude/chapters-audit-hLABe; renumbered PROP-0041 -> PROP-0042 (main independently used PROP-0041). Source: c01-c15 chapters audit + c13-c15 cohere.
+## PROP-0042
+
+```yaml
+id: PROP-0042
+created_at: 2026-06-04T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: cohere-converged-caution
+  source_report: active-project/staff/reviews/cohere-b01-c13-c15-20260604T151735Z.md
+  source_verdict: CAUTION-COHERE (load_bearing_fails 0, iteration_count 1)
+target:
+  type: command
+  path: .claude/commands/and-substance.md
+  section: "Phase 5 — Chunk-quality review (book level)"
+change_type: add
+rationale: |
+  The protect-target (sera-hightower) has had no planned on-page appearance across 10
+  consecutive shipped chapters (c06-c15). This structural absence was flagged by TWO
+  consecutive /and-cohere runs — c06-c12 (pl-2026-06-03-006) and c13-c15 (confirms
+  existing) — both times as "not chapter-fixable" and routed to /and-review verdict b01.
+  By /and-review verdict b01 the fix is maximally expensive: the book is fully authored
+  and a protect-target on-page appearance requires retrofitting an existing chapter or
+  adding a new one.
+
+  The gap has no owning gate upstream of /and-cohere. The /and-substance book Phase 5
+  dramatist review checks cross-chapter handoff consistency but has no check for book-
+  level structural completeness of story promises — specifically, whether the declared
+  protect-target (the person the entire arrangement is owed against) appears on-page
+  before the climax that fires the protection guarantee.
+
+  This is a deterministic gap: every future book whose substance signature declares a
+  protect-target (or equivalent "person the stakes are owed to") faces the same risk —
+  the person can be planned absent for the entire book without any gate firing until
+  /and-review verdict catches it retrospectively. The Sera case is the first evidence;
+  the structure of the gap is project-independent.
+
+  The minimum-viable fix is a SOFT flag at /and-substance book Phase 5 (dramatist
+  review): when the book chapter plan is reviewed, the dramatist checks whether any
+  chapter in the plan provides the protect-target on-page. If no chapter does, the
+  dramatist flags it — not as a HARD block (because "never on-page" can be a deliberate
+  hollow-by-design irony choice) but as a surfacing that forces the authorial decision
+  at planning time rather than book-close time.
+evidence_refs:
+  - "active-project/staff/reviews/cohere-b01-c13-c15-20260604T151735Z.md — Group 3
+    structural holes: 'Sera never appears on-page (c06-c15). The entire arrangement is
+    owed against protecting her; the guarantee fires correctly as a structural node at
+    the c14 stylus-decision, but fires hollow — the protection object is a name in a
+    prologue, never a felt person. Requires a book-level authorial decision (hollow-by-
+    design irony vs. a prior/epilogue appearance). → /and-review verdict b01.'
+    Confirms existing: pl-2026-06-03-006."
+  - "active-project/staff/showrunner/parking-lot.md — pl-2026-06-03-006: Sera-never-
+    on-page + Otto-off-page structural holes confirmed by BOTH the c06-c12 cohere and
+    the c13-c15 cohere; routed to /and-review verdict b01 both times."
+  - ".claude/commands/and-substance.md — Phase 5 book-level dramatist check: cross-
+    chapter handoff consistency is the only structural completeness check; no protect-
+    target / story-promise on-page-presence check exists."
+  - "active-project/staff/showrunner/memory.md — series.substance.signature.cost_ledger:
+    protect-target declared as the structural anchor of the trades (the person the
+    arrangement is owed against keeping alive)."
+recurrence_count: 2
+proposed_diff: |
+  In .claude/commands/and-substance.md, Phase 5 — Chunk-quality review, book level,
+  in the dramatist reviewer row, add a new check alongside the existing cross-chapter
+  handoff check:
+
+  CURRENT dramatist review description (book level, partial):
+    "Book level additionally checks cross-chapter handoff: for every adjacent chapter
+    pair (N, N+1) under the book, chapters[N].handoff_out is consistent with
+    chapters[N+1].handoff_in. Mismatches HARD-fail and force revise on the offending
+    chapter chunks."
+
+  ADD after the handoff-consistency paragraph:
+
+    **Book-structural promise completeness (book level only — SOFT flag).** For each
+    declared protect-target or cost-bearer in
+    series.substance.signature.cost_ledger[] (any entry where the ledger trade names
+    a living character as the object of the structural guarantee), check whether at
+    least one chapter in the current book's chapter plan provides that entity on-page.
+    "On-page" = the chapter's substance_delta or dramatic_shape explicitly places the
+    entity in a scene as a participant, not merely referenced in interior accounting.
+
+    If no chapter in the plan provides the entity on-page:
+      Flag as PROTECT-TARGET-ABSENT-FROM-BOOK-PLAN (SOFT — does NOT block persist,
+      does NOT force a revise cycle). Output in the dramatist report:
+        "PROTECT-TARGET-ABSENT: <entity-slug> has no planned on-page appearance
+        in this book. The cost-ledger's structural guarantee fires on this entity
+        without the reader ever meeting them. Authorial options: (A) plan a chapter
+        that places <entity-slug> on-page before the climax, or (B) acknowledge
+        hollow-by-design as the intended irony (stamp
+        books[<slug>].protect_target_absent_acknowledged in showrunner memory)."
+
+    At Phase 7 (Persist): if the SOFT flag fired, write to showrunner memory:
+      books[<slug>].protect_target_absent_flag:
+        entity: <entity-slug>
+        flagged_at: <ISO>
+        acknowledged: false   # principal stamps true via option B
+    The flag surfaces in the Phase 7 print block and at /and-review verdict b01.
+    It does NOT trigger a revise loop in the Phase 5 accept/revise cycle.
+
+    Principal may acknowledge via one of:
+      (A) Revising the chapter plan to include the entity on-page (sets acknowledged
+          automatically when the entity appears in a chapter's substance_delta).
+      (B) Manually stamping books[<slug>].protect_target_absent_flag.acknowledged:
+          true with acknowledged_at + acknowledged_by + reason (e.g. 'hollow-by-
+          design irony: the unfelt protection object is the point').
+
+  SCHEMA COMPANION (S-cost, same implementation pass):
+    Add to schemas/showrunner-memory.schema.md, books[<slug>] block:
+      protect_target_absent_flag: null | {entity, flagged_at, acknowledged, [acknowledged_at,
+      acknowledged_by, reason]}
+    Field is optional; absent = not flagged or check not yet run.
+
+cost_estimate: S
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
+
