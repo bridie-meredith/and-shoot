@@ -1,15 +1,19 @@
 # cascade-checkpoint
 mode: unattended
-run: produce-chapter b01c17
+run: produce-chapter b01c18
 operator_protocol: RUNBOOK Producing-a-chapter (R1-R5)
-status: COMPLETE
-outcome: COMPLETED (chapter shipped terminal; SHIPPED-WITH-CAVEATS at Phase 9, PASS-THREAD at Phase 10)
-last_completed: {level: draft, slug: b01c17, completed_at: 2026-06-05T01:00:00Z}
-next: {command: "produce b01c18 (next chapter) OR /and-cohere b01 c13-c17 OR /and-postop b01c17 (optional)", args: []}
-chapter: b01c17
-phase9_verdict: SHIPPED-WITH-CAVEATS
-phase10_verdict: PASS-THREAD
-retries: {bones: 0, facet_cycles: 1, stitch_p9: 0}
-caps: {bones_retry: 0/1, facet_cycles: 1/3, stitch_p9_retry: 0/1}
+status: IN-PROGRESS
+outcome: null
+cascade:
+  root: b01c18
+  invoked_at: 2026-06-05T02:00:00Z
+  invoked_command: /and-substance chapter b01c18 --cascade
+last_completed: {level: null, slug: null, completed_at: null}
+next: {command: "/and-substance chapter b01c18 (Phase 2-3 scene chunks)", args: []}
+chapter: b01c18
+phase9_verdict: null
+phase10_verdict: null
+retries: {bones: 0, facet_cycles: 0, stitch_p9: 0}
+caps: {bones_retry: 0/1, facet_cycles: 0/3, stitch_p9_retry: 0/1}
 escalate_queue: []
 halt_reason: null

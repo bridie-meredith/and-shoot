@@ -10680,6 +10680,13 @@ books:
         goal: |
           Show the audience the irrevocable deployment at full scale — Khepri-architecture running at maximum density — and the court apparatus read through compound eyes until the contempt is as near-complete as the architecture it rides on.
         pov_narrator: taylor-hebert-kl-122ac
+        handoff_conflicts:
+          - detected_at: 2026-06-05T02:00:00Z
+            axis: capability
+            handoff_in_value: 8
+            aggregate_value: 8.5
+            resolution: aggregate-wins
+            note: "aggregate-state through c17 carries capability 8.5 (c17 +1.0: record-MODIFICATION/false-attribution register added scope). c18 handoff_in.character_state stated rank 8 (stale, pre-c17-measured). c18 holds capability flat per axes_held; the held rank is 8.5, not 8. Contract axes_held[capability] rationale updated to reflect the 8.5 baseline."
         handoff_in:
           open_threads:
             - "use-vector intercept: Wren screened; false attribution in Otto's picture"
