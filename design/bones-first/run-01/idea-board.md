@@ -124,15 +124,19 @@ everyone else's apocalypse.
 
 Options on the table:
 
-- **A — Dragonless OC Targaryen kid (leaning pick).** A trueborn-ish princeling
-  who *failed* to claim a dragon — a humiliation in a family that IS dragons — and
-  whose cultivation brain reframes the failure as enlightenment: *"Riding is the
-  inferior path. The mortal flies the beast; the immortal consumes it."*
-  Sour-grapes cosmology. Heresy from *inside the family* = maximally scandalous,
-  keeps him next to power and next to the ingredients. Max comedy freedom; real
-  cast stay sane straight-men; his existence is the canon-bender. Born ~113 AC →
-  ~16 at the Dance (129). Needs a genuinely novel name (NOT a reused library OC
-  name — see CLAUDE.md name-novelty note).
+- **A — Dragonless OC Targaryen GIRL `[STICKING — she]`.** A princess who
+  *failed* to claim a dragon — pointed humiliation in an era of celebrated female
+  dragonriders (Helaena, Baela, Rhaena) — whose cultivation brain reframes the
+  failure as enlightenment: *"Riding is the inferior path. The mortal flies the
+  beast; the immortal consumes it."* Sour-grapes cosmology. **Double heresy:**
+  blasphemy against the sacred dragons AND refusal of the marriage-piece role
+  she's groomed for (*"I will transcend the wheel of dynasty; I have no need of
+  your alliances"*). The cage is the engine — a princess can't just hike up
+  Dragonmont; she must scheme past septas, handmaids, and propriety to go bag
+  dragon dung. Heresy from *inside the family* = maximally scandalous; keeps her
+  next to power and next to the ingredients. Real cast stay sane straight-men; her
+  existence is the canon-bender. Born ~113–116 AC → ~13–16 at the Dance (129).
+  Needs a genuinely novel name (NOT a reused library OC name — CLAUDE.md note).
 - **B — Reincarnate into a REAL Dance kid (e.g. Aemond).** His canon intensity
   re-read as cultivation-protagonist seriousness: claiming Vhagar = "spirit-beast
   taming arc," the sapphire eye = "dao-eye won through tribulation." Very funny,
