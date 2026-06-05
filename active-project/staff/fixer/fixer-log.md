@@ -1,3 +1,176 @@
+## SESSION-START — 2026-06-04T00:00:00Z — write-b01c17-bone-gate-form-fixes
+dispatch: apply 26 Phase-2/6 findings (fault-001..fault-026) to b01c17-bones-draft.md — 25 SVO form rewrites (PP-strip / negation-to-positive / conjunction-strip / echo-compound) + 1 cost_ledger_anchor field addition (cl07a to s03n06) + 3 verb differentiations (signal-003 carry)
+target: active-project/staff/showrunner/b01c17-bones-draft.md
+audit-report: active-project/staff/auditor/write-b01c17-bone-gate.md
+findings-queued: 26 (fault-001..026)
+
+## fault-001 — RESOLVED — 2026-06-04T00:01:00Z
+fault: s01n03 "the query returns a height-and-gait pattern across six observation points" — PP of extent
+scope: line
+change: svo → "the query returns the height-and-gait pattern" (PP stripped)
+criteria met: yes
+
+## fault-002 — RESOLVED — 2026-06-04T00:01:00Z
+fault: s01n05 "taylor-hebert-kl-122ac stops at the water-trough" — intransitive + PP of place
+scope: line
+change: svo → "taylor-hebert-kl-122ac stills the body" (positive held-discipline; trough as environment in loc-state)
+criteria met: yes
+
+## fault-003 — RESOLVED — 2026-06-04T00:01:00Z
+fault: s01n06 "the feed returns the second-step hesitation across the east-of-water-gate interval" — PP of extent
+scope: line
+change: svo → "the feed returns the second-step hesitation" (PP stripped)
+criteria met: yes
+
+## fault-004 — RESOLVED — 2026-06-04T00:01:00Z
+fault: s01n07 "the coverage log matches the eleven-day interval to the stitch-house rotation" — PP of destination
+scope: line
+change: svo → "the coverage log matches the eleven-day interval" (PP stripped; stitch-house rotation routes to event_map)
+criteria met: yes
+
+## fault-005 — RESOLVED — 2026-06-04T00:02:00Z
+fault: s02n02 "the accounting prices the name-option to its terminus" — PP of destination
+scope: line
+change: svo → "the accounting prices the name-option" (PP stripped)
+criteria met: yes
+
+## fault-006 — RESOLVED — 2026-06-04T00:02:00Z
+fault: s02n03 "the ledger returns the exposure-entry for the name-option" — PP of purpose
+scope: line
+change: svo → "the ledger returns the exposure-entry" (PP stripped)
+criteria met: yes
+
+## fault-007 — RESOLVED — 2026-06-04T00:02:00Z
+fault: s02n05 "the accounting prices the false-attribution cost against the ward-elder" — PP of comparison
+scope: line
+change: svo → "the accounting prices the ward-elder-cost" (ward-elder folded into compound-noun object; false-attribution-cost-to-ward-elder preserved as compound)
+criteria met: yes
+
+## fault-008 — RESOLVED — 2026-06-04T00:02:00Z
+fault: s02n06 "the ledger returns no resolution across both entries" — negation + PP of extent (double fault)
+scope: line
+change: svo → "the ledger holds both entries open" (positive physical act — unresolved state as positive hold)
+criteria met: yes
+
+## fault-009 — RESOLVED — 2026-06-04T00:02:00Z
+fault: s02n08 "the accounting returns the screen-option shape against the override-architecture shape" — PP of comparison; irony load-bearing
+scope: line
+change: svo → "the accounting returns the screen-option-override-architecture-match" (comparison folded into compound-noun object; override-architecture irony preserved)
+criteria met: yes
+
+## fault-010 — RESOLVED — 2026-06-04T00:02:00Z
+fault: s02n09 "taylor-hebert-kl-122ac extends the walk along the Hook's edge" — PP of path
+scope: line
+change: svo → "taylor-hebert-kl-122ac extends the walk" (PP stripped; Hook's-edge routes to loc-state)
+criteria met: yes
+
+## fault-011 — RESOLVED — 2026-06-04T00:03:00Z
+fault: s03n02 "taylor-hebert-kl-122ac pulls the coverage log from the east-of-water-gate corridor" — PP of source
+scope: line
+change: svo → "taylor-hebert-kl-122ac pulls the coverage log" (PP stripped; source-location routes to loc-state)
+criteria met: yes
+
+## fault-012 — RESOLVED — 2026-06-04T00:03:00Z
+fault: s03n06 "the pen adds two supplementary observation lines to the Norren entry-cluster" — PP of destination
+scope: line
+change: svo → "the pen adds two supplementary observation lines" (PP stripped; Norren entry-cluster as target routes to event_map ward-elder-substitution entry)
+criteria met: yes
+
+## fault-013 — RESOLVED — 2026-06-04T00:03:00Z
+fault: s03n07 "taylor-hebert-kl-122ac sets the pen beside the coverage log" — PP of location
+scope: line
+change: svo → "taylor-hebert-kl-122ac sets the pen down" (PP stripped; spatial relationship routes to sensory/grounding facet)
+criteria met: yes
+
+## fault-014 — RESOLVED — 2026-06-04T00:03:00Z
+fault: s03n08 "the coverage log returns the Norren attribution across the east-of-water-gate interval" — PP of extent; also signal-003 verb-differentiation required
+scope: line
+change: svo → "the coverage log carries the Norren attribution" (PP stripped; verb differentiated to "carries" — attribution-now-sits-in-log sense)
+criteria met: yes
+
+## fault-015 — RESOLVED — 2026-06-04T00:03:00Z
+fault: s03n09 "taylor-hebert-kl-122ac slides the updated log segment toward the Jarvis drop-channel" — PP of direction
+scope: line
+change: svo → "taylor-hebert-kl-122ac readies the updated log segment" (PP stripped; Jarvis drop-channel destination routes to loc-state / event_map query-closure-prepared entry)
+criteria met: yes
+
+## fault-016 — RESOLVED — 2026-06-04T00:03:00Z
+fault: s03n10 "the coverage log returns the false-attribution shape against the override-architecture shape" — PP of comparison; override-architecture irony load-bearing
+scope: line
+change: svo → "the coverage log returns the false-attribution-override-architecture-match" (comparison preserved as compound-noun object; override-architecture irony survives in hyphenated form)
+criteria met: yes
+
+## fault-017 — RESOLVED — 2026-06-04T00:03:00Z
+fault: s04n01 "the dead drop returns the morning ward-read without a follow-up query" — negation-adjacent PP (records absence of query)
+scope: line
+change: svo → "the dead drop returns the quiet channel" (positive form — query-closure as channel going quiet; apparatus-query-closes event in event_map covers the query absence)
+criteria met: yes
+
+## fault-018 — RESOLVED — 2026-06-04T00:03:00Z
+fault: s04n02 "the apparatus picture returns the Norren attribution as the east-of-water-gate entry" — "as X" resultative complement; also signal-003 verb-differentiation required
+scope: line
+change: svo → "the apparatus picture resolves the Norren attribution" (complement stripped; verb differentiated to "resolves" — apparatus-closes-on-attribution sense; axis_moves relational_anchor_status +0.5 cl-d11 preserved unchanged)
+criteria met: yes
+
+## fault-019 — RESOLVED — 2026-06-04T00:03:00Z
+fault: s04n03 "wren crosses the morning ward-read through the east-of-water-gate corridor" — PP of path
+scope: line
+change: svo → "wren crosses the east-of-water-gate corridor" (corridor made direct object; morning ward-read routes to event_map wren-screened-confirmed entry)
+criteria met: yes
+
+## fault-020 — RESOLVED — 2026-06-04T00:03:00Z
+fault: s04n04 "the morning ward-read returns the second-step hesitation across the scar-tissue interval" — PP of extent
+scope: line
+change: svo → "the morning ward-read returns the second-step hesitation" (PP stripped; scar-tissue interval detail routes to event_map wren-second-step-interval entry)
+criteria met: yes
+
+## fault-021 — RESOLVED — 2026-06-04T00:03:00Z
+fault: s04n05 "taylor-hebert-kl-122ac lifts the pen from the cost-ledger page" — PP of source
+scope: line
+change: svo → "taylor-hebert-kl-122ac lifts the pen" (PP stripped; cost-ledger page as source-context routes to loc-state / grounding facet)
+criteria met: yes
+
+## fault-022 — RESOLVED — 2026-06-04T00:03:00Z
+fault: s04n06 "the cost-ledger page returns the entry-slot without an inscription" — negation (records absence of inscription) + PP modifier (double fault)
+scope: line
+change: svo → "the cost-ledger column holds the blank slot" (positive physical observation of blank column; enacted-absence preserved through positive form; n05 "lifts the pen" is the enacted-absence gate point per auditor pass)
+criteria met: yes
+
+## fault-023 — RESOLVED — 2026-06-04T00:03:00Z
+fault: s04n07 "the coverage log returns the Norren attribution as a permanent structural feature" — "as X" resultative complement + adjective-qualifier object; also signal-003 verb-differentiation required
+scope: line
+change: svo → "the coverage log keeps the Norren attribution" (complement stripped; verb differentiated to "keeps" — attribution-persists-permanently sense; distinct from s03n08 "carries" and s04n02 "resolves")
+criteria met: yes
+
+## fault-024 — RESOLVED — 2026-06-04T00:03:00Z
+fault: s04n08 "the accounting returns the override-architecture shape against the protection-delivered shape" — PP of comparison; irony load-bearing
+scope: line
+change: svo → "the accounting returns the protection-override-architecture-match" (comparison preserved as compound-noun object; protection-delivered parallel survives in hyphenated form; distinct from s03n10 false-attribution-override-architecture-match echo-bone)
+criteria met: yes
+
+## fault-025 — RESOLVED — 2026-06-04T00:03:00Z
+fault: s03n03 "the coverage log returns the entry-cluster across eleven days and six observation points" — FAULT-FORM-CONJUNCTION ("and") + FAULT-FORM-MODIFIER (PP "across eleven days")
+scope: line
+change: svo → "the coverage log returns the eleven-day entry-cluster" (conjunction and PP stripped; eleven-day qualifier folded into compound-adjective object; six-point detail routes to event_map / memory facet)
+criteria met: yes
+
+## fault-026 — RESOLVED — 2026-06-04T00:03:00Z
+fault: s03n06 cost_ledger_anchor field lists only "cl07b" — social_tether-prot-collapse DOWN 1.0 (cl07a) uncited; FAULT-COST-LEDGER-UNRESOLVED
+scope: line
+change: cost_ledger_anchor: cl07b → cost_ledger_anchor: [cl07b, cl07a]; both collapse axes' cost sides now cited in the delivering bone's anchor field
+criteria met: yes
+
+## signal-003 — RESOLVED — 2026-06-04T00:03:00Z
+fault: VERB+OBJECT "returns the Norren attribution" x3 bones (s03n08, s04n02, s04n07) — REGISTER-AS-MANNERISM; three identical VERB+OBJECT pairs
+scope: line (3 bones)
+change: s03n08 → "carries the Norren attribution"; s04n02 → "resolves the Norren attribution"; s04n07 → "keeps the Norren attribution". Three distinct verbs (carries / resolves / keeps). Differentiated during fault-014/018/023 form rewrites per auditor REMEDIATE-DURING-FAULT-PASS disposition.
+criteria met: yes
+
+## SESSION-END — 2026-06-04T00:04:00Z — write-b01c17-bone-gate-form-fixes
+findings-applied: 26 (fault-001 through fault-026; faults 001-010 were pre-applied in draft and confirmed; faults 011-026 applied this session) + signal-003 (3-verb differentiation applied during fault-014/018/023 rewrites)
+findings-skipped: 0
+exit: CLEAN
+
 ## SESSION-START — 2026-06-03T10:00:00Z — write-b01c12-pass2-bone-fixes
 dispatch: apply 19 Phase-2 faults (fault-001..fault-023) to b01c12-bones-draft.md — 15 unpaid-chatter recasts to held/chatter-with-anchor, 6 PP/form drops, 2 interiority SVO recasts; meta-rules override auditor on s01n02, s03n09, s03n12, s04n01; flag-003 s04n12 recast to held
 target: active-project/staff/screen-writer/b01c12-bones-draft.md

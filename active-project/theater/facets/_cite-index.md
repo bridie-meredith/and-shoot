@@ -1,29 +1,25 @@
-# Cite-Index — b01-c16
-generated: 2026-06-04
-source: active-project/theater/proto-lines/b01-c16.md + active-project/theater/facets/
-scope: 9 facet files + 1 dialogue file (septon-halvard-flea-bottom)
-totals: 36 facet/dialogue citations; 18/27 protolines decorated (66%)
-merge: hand-merged from R1 facet files (consolidated R1+R2 pass under chapter-production budget, per c15 precedent — _inflight machinery bypassed); body-integrity verified (proto SVO bodies byte-identical to bones file)
+# _cite-index — b01-c17
+# per-bone facet citation index (R1+R2 merged)
 
-## Per-facet entry counts
-| facet | entries | anchors |
-|-------|---------|---------|
-| location-state | 5 | @6 @9 @12 @22 @26 |
-| interest-narrator | 7 | @8 @10 @13 @17 @19 @20 @27 |
-| sensory | 2 | @6 @13 |
-| state-updates | 12 | env(3) + taylor(5) + halvard(4) |
-| memory | 1 | @10 |
-| feeling | 3 | @19 @15 @26 |
-| metaphor | 0 | (refused — DEC-0090 no-thesis-restatement + protected fence-grip specificity) |
-| vibes | 4 | @21 @23 @21 @27 |
-| exposition | 0 | (near-zero — chapter 16, established world) |
-| dialogue (septon-halvard-flea-bottom) | 2 | @10 @17 |
+# facet entry counts: exposition=2, feel=1, loc-state=6, mem=3, narrator=8, sensory=4, state=20, vibes=17
 
-## Density distribution (protolines by citation count)
-| cites/line | count |
-|------------|-------|
-| 0 | 9 |
-| 1 | 8 |
-| 2 | 4 |
-| 3 | 4 |
-| 4 | 2 |
+@1: loc-state:1, state:1, state:2, vibes:14
+@2: loc-state:2, sensory:1
+@6: mem:1, narrator:1, vibes:1
+@7: vibes:2
+@8: feel:1, loc-state:3
+@9: loc-state:4, sensory:3, state:3, state:4, vibes:15
+@11: narrator:2
+@12: narrator:3, state:1, vibes:3
+@16: mem:2, narrator:4, vibes:4
+@17: sensory:4
+@18: loc-state:5, sensory:2, state:5
+@21: exposition:2, state:2
+@22: narrator:5, state:3, state:4, state:6, vibes:5, vibes:7
+@23: narrator:6, state:5, state:6, state:7, vibes:6, vibes:8
+@27: vibes:9
+@28: state:8
+@29: exposition:1, loc-state:6, state:10, state:11, state:9, vibes:16, vibes:17
+@30: narrator:7, state:12, state:7, vibes:11
+@34: state:13, vibes:10
+@36: mem:3, narrator:8, vibes:12, vibes:13

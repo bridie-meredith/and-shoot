@@ -1,16 +1,15 @@
-cascade:
-  root: b01c16
-  invoked_at: 2026-06-04T15:10:00Z
-  invoked_command: /and-substance chapter b01c16 --cascade
-  mode: unattended
-  last_completed:
-    level: draft
-    slug: b01c16
-    completed_at: 2026-06-04T16:50:00Z   # chapter-production COMPLETE: Phase 9 SHIPPED-WITH-CAVEATS (Class-B DEC-0090 coupling) + Phase 10 PASS-THREAD
-  next:
-    command: null   # run complete
-    args: []
-  reason: complete
-  failure: null
-  pending_depth_passes: [b01c14, b01c15, b01c16]   # all three gate book-close (mandatory before /and-substance book b02 + /and-review verdict b01); c16 = pl-2026-06-04-c16-001
-  pending_threading_holds: []   # Phase 10 PASS-THREAD; b01c17 Phase 0 CLEAR (0 unack-substantive in aggregate-state through c16)
+# cascade-checkpoint
+mode: unattended
+run: produce-chapter b01c17
+operator_protocol: RUNBOOK Producing-a-chapter (R1-R5)
+status: COMPLETE
+outcome: COMPLETED (chapter shipped terminal; SHIPPED-WITH-CAVEATS at Phase 9, PASS-THREAD at Phase 10)
+last_completed: {level: draft, slug: b01c17, completed_at: 2026-06-05T01:00:00Z}
+next: {command: "produce b01c18 (next chapter) OR /and-cohere b01 c13-c17 OR /and-postop b01c17 (optional)", args: []}
+chapter: b01c17
+phase9_verdict: SHIPPED-WITH-CAVEATS
+phase10_verdict: PASS-THREAD
+retries: {bones: 0, facet_cycles: 1, stitch_p9: 0}
+caps: {bones_retry: 0/1, facet_cycles: 1/3, stitch_p9_retry: 0/1}
+escalate_queue: []
+halt_reason: null

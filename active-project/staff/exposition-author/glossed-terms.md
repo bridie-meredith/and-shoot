@@ -227,3 +227,23 @@ register removals required. Register entries below remain authoritative.
 # the small silent-chapter denominator). Both scene-orients are bones-review priority targets (the
 # followability reviewer checks they close) so neither is R1-cull-eligible; flagged for R2: if a lens
 # facet carries the @20 column-frame, exposition:2 DELETEs and sparsity drops to 4.3% (in-band).
+
+## Glossed in b01c17 (consolidated cascade pass; both entries bones-review CONTEXT-REQUIRED carries)
+
+- elder-norren | glossed-in: b01c17 | gloss-id: 2 | first-mention-anchor: @21 | qualifier: character first-mention (NEW; named individual entering narrator-prose for the first time at @21/@22 — the forged false-attribution subject); gloss orients WHO (a tanner's-ward contact) + WHY-plausible (his own legitimate, documented twice-weekly passage through the east-of-water-gate corridor makes the false attribution a believable read) so the forge does not read arbitrary; the apparatus-reasoning (the picture resolving against Norren) stays bone/lens-carried @30, NOT exposition; render-as post-bone-clause; licensed-context-exception ctx-002 (bones-review follow_check carry, /and-facets Phase 2.5 CONTEXT-REQUIRED — EXEMPT from anti-exposition penalty); future chapters may reference Norren as register-resident without re-glossing
+
+## Graph-resident from b01c17 (NOT exposition-glossed; recorded so future authors do not re-gloss)
+
+- three-day-gap-c17 | first-mention-anchor: exposition:1-scene-orient-@29-b01c17 (NOT a glossed-term — a scene-open-orient micro-bridge orienting the s04 three-day time-skip between the s03 night deployment and the s04 dead-drop quiet-return; licensed-context-exception ctx-001 [bones-review follow_check carry, EXEMPT from anti-exposition penalty]; time-passage orientation, not a term; recorded for completeness)
+- the-override-architecture-echo-c17 | first-mention-anchor: graph-resident-via-bones-16-27-36-b01c17 + scene-map-b01-c17 protected-patterns ECHO-AS-SHAPE-LANGUAGE / IRONY-AS-SHAPE-LANGUAGE-NOT-CELEBRATION (the chapter's central irony — the protection deployment is mechanically identical to the override architecture Taylor came to retire — is DELIBERATELY NOT exposition-glossed; it is carried in compound shape-language on-bone @16/@27/@36, HARD Earth-Bet fence [NO Khepri / Gold Morning / parahuman / shard], worm-canon-pedant fence-discipline; the override/Sera-protection architecture is itself c05:2-register-resident; recorded so future authors know the echo is bone/lens-carried shape-language, NEVER an exposition gloss)
+- the-false-attribution / the-norren-attribution-in-the-record | first-mention-anchor: graph-resident-via-bones-22-25-30-35-b01c17 + chunk-scenes-b01c17s03/s04 (the forged record — three false log-lines attributing Wren's east-of-water-gate movement-signature to Norren, sitting permanent in the coverage log and resolving in Otto's apparatus picture — is bone-body/lens-carried [@22 written / @25 carried / @30 resolves / @35 keeps]; the coverage-map-instrument-family is c02-register-resident; the substitution RATIONALE is glossed via exposition:2/ctx-002 but the false-record-as-object + its permanence are bone/lens-carried; recorded so future authors know the false attribution is reader-resident as the c17 forged-record, NOT a standalone first-mention-object)
+
+# NOTE b01c17: solitary chapter (Taylor alone; Jarvis a dead-drop courier channel, no on-page speech).
+# Exposition sparsity self-flag: 2 entries / 36 bones = 5.6% (top of / marginally above the 1-5% band;
+# structurally inflated by the small solitary-chapter denominator — same disposition as the c14 silent-chapter
+# self-flag). BOTH entries are bones-review CONTEXT-REQUIRED exceptions (ctx-001 @29 / ctx-002 @21) —
+# anti-exposition-penalty-EXEMPT and NOT R1-cull-eligible (followability reviewer checks both close).
+# Zero discretionary first-mention / scene-orient fired: the prohibition / apparatus / Jarvis / Otto /
+# Wren / stitch-house / east-of-water-gate / the coverage-log family are all c01-c16 reader-resident and
+# REFUSED (re-gloss PROHIBITED). Earth-Bet fence CLEAN (no Khepri / Gold Morning / shard / parahuman in
+# any gloss-text; the @16/@27/@36 override-architecture echo is bone/lens-only shape-language).

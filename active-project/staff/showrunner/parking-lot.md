@@ -2241,3 +2241,152 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-06-04-c17-001
+      created_at: 2026-06-04T23:10:00Z
+      created_by: "/and-substance chapter b01c17 Phase 5 (auditor fault-002)"
+      target:
+        command: /and-substance
+        scope: "chapter b01c18"
+        phase: Phase 3
+      severity: SOFT
+      description: |
+        cl-d11 in series.substance.cost_ledger declares gain "relational_anchor_status +1"
+        but b01c17 settles only +0.5 (anchored at b01c17s04 — apparatus-query closes / Wren
+        screened). The remaining +0.5 is named but not anchored downstream. Matches the
+        recurring worm-canon-pedant partial-settlement pattern (cf. pl-2026-05-25-001 /
+        pl-2026-05-30-001). c17 deliberately moves relational_anchor_status only +0.5 (Wren
+        held in coverage but screened); c18 holds the axis flat ("anchor holds at 7.5"), so the
+        cl-d11 2nd tranche is NOT settled at c18 either. Surface at b01c18 Phase 3: anchor the
+        remaining +0.5 to a later chapter, or document it as a cost-forward carry to the d14
+        collapse settlement. Non-blocking; the +0.5 c17 move is contract-honored.
+      context_refs:
+        - active-project/staff/auditor/substance-b01c17-scenes.md  # fault-002
+        - active-project/staff/showrunner/memory.md  # cl-d11 (~line 1402); chapters[b01c17s04].substance_delta
+      resolution_suggestion: "b01c18 Phase 3 anchor remaining cl-d11 +0.5, or document cost-forward carry to d14"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-04-c17-002
+      created_at: 2026-06-04T23:10:00Z
+      created_by: "/and-substance chapter b01c17 Phase 5 (auditor fault-001 + audience trio + admin DEC-0094)"
+      target:
+        command: /and-write
+        scope: "b01c17"
+        phase: Phase 6
+      severity: HARD
+      description: |
+        ENACTMENT GATE for /and-write b01c17. Three reviewers converged: the chapter's substance
+        is interior-accounting and must be ENACTED as physical staging at bone level, not narrated
+        as Taylor-interiority — or it risks SUBSTANCE-FLAT at Phase 6 bone-gate (esp. the two
+        collapse axes whose trap-tightening mechanism the auditor found living only in
+        substance_delta.notes, not chunk prose). Required bone-level enactment (consolidated):
+        1. (auditor fault-001) s03 collapse-axis activation must be a bone giving the collapse a
+           PHYSICAL form — what is structurally different in the architecture AFTER the writing
+           that was not before (extraction now requires resolving the false record; the tether
+           now carries the false attribution as a structural constraint). The trap made visible,
+           not interiority about the trap.
+        2. (audience watch 2) the Norren false-attribution staged as a present-tense physical
+           write-action (pen on log, the three specific lines), not a summarized decision/plan.
+        3. (audience watch 1) s01 wren-identification = feed-event bone (subject = the feed
+           returning the gait), not Taylor-cognition; s02 accounting-recognition arrives through
+           the pricing arithmetic (subject = the accounting), not Taylor's emotional register.
+        4. (audience watch 3 / WCP) echo-naming uses cipher/shape-language form and CLOSES — no
+           Taylor interiority after the shape-language statement (leave the pen, end the scene);
+           s04 blank-ledger close = ENACTED ABSENCE (hand not writing / stylus past the column),
+           not interior monologue about not writing.
+        Earth-Bet fence: Khepri-echo shape-language only; NO Khepri/Gold Morning/parahuman leak
+        (WCP Phase 5 CLEAN — keep clean). Chunk cold-read CHUNK-CLASS-B (DEC-0094 P); the genuine
+        non-uninformedness signal (ledger-recalc over physical staging) is what this gate targets.
+      context_refs:
+        - active-project/staff/auditor/substance-b01c17-scenes.md  # fault-001
+        - active-project/audience/cape-fic-reader/stm.md  # SW-c17-1..4
+        - active-project/audience/literary-snob/stm.md  # SW-c17-LS-1..3
+        - active-project/audience/worm-canon-pedant/stm.md  # SW-c17-WCP-1..3
+        - active-project/staff/showrunner/memory.md  # chapters[b01c17].chunk_cold_read.cold_read_risk_carry
+      resolution_suggestion: "/and-write b01c17 Phase 1 brief on enacted-not-narrated; Phase 6 bone-gate verifies"
+      status: resolved
+      resolved_at: 2026-06-04T23:55:00Z
+      resolved_by: "/and-write b01c17 Phase 6 bone-gate (auditor gate-001: enactment-gate MET)"
+      resolution_note: |
+        All four enactment points verified MET at bone level by the Phase 6 auditor:
+        (1) s03 collapse-axis physical form — @22 writes first Norren-attribution-line +
+            @23 pen adds two supplementary lines; the false record now sits in the log
+            (extraction requires resolving what is written). (2) Norren false-attribution as
+            present-tense physical write-action — @21/@22/@23, no future-tense/summary framing.
+            (3) s01 wren-identification as feed/log-event — @6 subject "the feed" / @7 subject
+            "the coverage log", not Taylor-cognition. (4) Echo-naming closes on shape-language
+            (@27 compound) + s03 leave-the-open-log (@28) + s04 enacted-absence positive-form
+            (@33 lifts the pen / @34 column holds the blank slot). Audience 3-of-3 SUBSTANCE-FELT
+            confirmed the enactment LANDS (the collapse axes felt as structural consequence, not
+            arithmetic; the pen-on-page the tactical high point). Earth-Bet fence CLEAN.
+            The interior-ledger-recalculation risk (the genuine cold-read signal) is targeted at
+            bone level; remaining prose-render watches (s02 embodiment, returns-verb variation,
+            leave-the-open-log not softened) carried to /and-stitch via scene-map protected-patterns.
+
+    - id: pl-2026-06-05-c17-001
+      created_at: 2026-06-05T00:30:00Z
+      created_by: "/and-facets b01c17 Phase 5 audit (signal-008 + signal-009)"
+      target:
+        command: /and-facets
+        scope: "b01c18"
+        phase: Phase 1
+      severity: SOFT
+      description: |
+        Two schema-hygiene carries from b01c17 facet authoring (audience-gate confirmed
+        non-blocking; both relevant to future chapters):
+        (a) signal-008: vibes-b01-c17 uses `++` ops on wren-stitch-maker-flea-bottom-ward
+            (rising entrapment, tragic-causal) and jarvis-coin-kl-courier — `++` requires the
+            keyword pre-seeded in the entity's vibes.md. Verify Wren's + Jarvis's vibes.md carry
+            these keywords before b01c18 vibes authoring (else use `+` fresh-keyword form).
+        (b) signal-009: five env state-update SEAMs touch props with no margit card —
+            prop:oc-coverage-log, prop:apparatus-picture, prop:cost-ledger (possible identity
+            with oc-feed-ledger), studio.dead-drop-channel.query-status. Margit referral pending;
+            these props recur (coverage-log especially) and warrant cards before they accrue more
+            state. Non-blocking for c17 (per-anchor resolution clean).
+        Also minor: vibes keyword-spacing (signal-001, spaces vs hyphenated handles) + exposition
+        header dash-form `b01-c17` vs undashed `b01c17` (signal-006) — normalize at next convenient pass.
+      context_refs:
+        - active-project/staff/auditor/facets-final-audit.md  # signals 001/006/008/009
+        - active-project/theater/facets/vibes-b01-c17.md
+        - active-project/theater/facets/state-updates-env-b01-c17.md
+      resolution_suggestion: "verify Wren/Jarvis vibes pre-seed at /and-facets b01c18 Phase 1; margit prop-card referrals for coverage-log/apparatus/ledger"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-05-c17-001
+      created_at: 2026-06-05T01:00:00Z
+      created_by: "/and-stitch b01-c17 Phase 9 cold-read terminal gate"
+      target:
+        command: /and-write
+        scope: b01-c17
+        phase: null
+      severity: SOFT
+      description: |
+        b01c17 (the use-vector intercept / Wren-screening forge) shipped SHIPPED-WITH-CAVEATS on a
+        Class-B cold-read (CONTINUE=no; central event RECOVERED + summary maps to goal — "re-committed,
+        small-scale, the sin they fled"; cause = design-inherent event-poverty / interior-accounting-
+        density / withheld prior-chapter motive [Wren + override-architecture = Earth-Bet fence +
+        c01-c16 reader context] / jargon-opacity, ALL pre-authorized in chunk_cold_read.cold_read_risk_carry
+        per DEC-0094; auto-shipped terminal per the Phase-9 SHIPPED-WITH-RISK-RECORDED coupling, mirroring
+        c14 DEC-0085 / c15 DEC-0087 / c16 DEC-0090 — the FIFTH consecutive [DEC-0095/PROP-0037 recurrence
+        4->5]). Phase 8.5 coherence PASS (central-event-muffle does-not-fire; the forge lands as deliberate
+        falsification, not muffled paperwork). The withheld-motive opacity is the known uninformed-reader
+        artifact (the assembled book resolves it c01-c16). MANDATORY depth pass before book-close (gates
+        /and-substance book b02 Phase 0 + /and-review verdict b01). Consume via /and-write b01c17 revise
+        --from-signals + re-cascade; OR fold into /and-cohere b01 c13-c17 (the now-FIVE-consecutive-quiet
+        accumulation c13/c14/c15/c16/c17 — the cohere stretch handler is the named accumulation lever per
+        DEC-0095, and the more efficient path than per-chapter depth passes).
+      context_refs:
+        - active-project/staff/reviews/coldread-b01-c17-2026-06-05.md
+        - active-project/staff/showrunner/memory.md  # chapters[b01c17].cold_read
+        - staff/admin/process-proposals.md  # PROP-0037 (depth-pass-before-book-close HARD-abort, open/untriaged)
+      resolution_suggestion: "/and-cohere b01 c13-c17 (five-consecutive-quiet accumulation handler, DEC-0095) OR /and-write b01c17 revise --from-signals + re-cascade"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
