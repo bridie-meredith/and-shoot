@@ -26,7 +26,7 @@
 ---
 
 **b01c19s01n01** (flat_id 1)
-svo: `taylor-hebert-kl-122ac lifts the cipher-bundle from the trough`
+svo: `the trough releases the cipher-bundle`
 substance_delta:
   axis_moves: []
   axes_held:
@@ -38,13 +38,25 @@ notes: GROUNDING bone — the trough is the named physical object of the dead-dr
 ---
 
 **b01c19s01n02** (flat_id 2)
-svo: `taylor-hebert-kl-122ac opens the sheet under the grey-dark`
+svo: `taylor-hebert-kl-122ac opens the sheet`
 substance_delta:
   axis_moves: []
   axes_held:
     - axis: moral_framework
       rationale: "eleven months of same-posture same-reading-light enacts the arrangement's consumption of the prohibition as compass: the form is intact because the framework that would resist it is not; the grey-dark reading-light is the repetition's sensory fact"
   cost_ledger_anchor: null
+
+---
+
+**b01c19s01n02b** (working slug; flat_id to be assigned at emit)
+svo: `the grey-dark covers the sheet`
+substance_delta:
+  axis_moves: []
+  axes_held:
+    - axis: moral_framework
+      rationale: "the grey-dark is the repetition's sensory fact — the same reading-light across eleven months is the moral_framework's physical anchor; companion grounding bone for the n02 strip"
+  cost_ledger_anchor: null
+notes: GROUNDING companion bone — added to preserve grey-dark as scene grounding element after PP strip on n02; c18 object-as-subject model
 
 ---
 
@@ -62,7 +74,7 @@ substance_delta:
 ---
 
 **b01c19s01n04** (flat_id 4)
-svo: `taylor-hebert-kl-122ac sets the sheet on the tallow-render room floor`
+svo: `the tallow-render room floor receives the sheet`
 substance_delta:
   axis_moves: []
   axes_held:
@@ -89,7 +101,7 @@ substance_delta:
 ---
 
 **b01c19s01n06** (flat_id 6)
-svo: `the protection-line ratio runs clean`
+svo: `the protection-line ratio runs`
 substance_delta:
   axis_moves: []
   axes_held:
@@ -102,7 +114,7 @@ substance_delta:
 ---
 
 **b01c19s01n07** (flat_id 7)
-svo: `the standing-coverage bottlefly nodes return the ambient outer-ring feed`
+svo: `the bottlefly nodes return the outer-ring feed`
 substance_delta:
   axis_moves: []
   axes_held:
@@ -113,7 +125,7 @@ substance_delta:
 ---
 
 **b01c19s01n08** (flat_id 8)
-svo: `the column stays open`
+svo: `the column receives the contempt-entry`
 substance_delta:
   axis_moves:
     - axis: political_register-prot
@@ -145,7 +157,7 @@ notes: MOVING bone — first +0.5 tranche toward contempt-lock; the feed returns
 ---
 
 **b01c19s02n01** (flat_id 9)
-svo: `the cost-ledger column holds eleven months of entries`
+svo: `the cost-ledger column runs eleven months of entries`
 substance_delta:
   axis_moves: []
   axes_held:
@@ -157,7 +169,7 @@ notes: GROUNDING bone — the cost-ledger is the named physical object; the elev
 ---
 
 **b01c19s02n02** (flat_id 10)
-svo: `taylor-hebert-kl-122ac counts the factional-reading entries`
+svo: `taylor-hebert-kl-122ac runs the factional-reading column`
 substance_delta:
   axis_moves: []
   axes_held:
@@ -182,7 +194,7 @@ substance_delta:
 ---
 
 **b01c19s02n04** (flat_id 12)
-svo: `the lane-shape wears into the stone`
+svo: `the lane-shape marks the stone`
 substance_delta:
   axis_moves: []
   axes_held:
@@ -194,7 +206,7 @@ notes: GROUNDING bone — the lane-stone surface is a concrete physical object o
 ---
 
 **b01c19s02n05** (flat_id 13)
-svo: `taylor-hebert-kl-122ac marks the recurrence`
+svo: `taylor-hebert-kl-122ac marks the column entry`
 substance_delta:
   axis_moves: []
   axes_held:
@@ -220,7 +232,7 @@ notes: MOVING bone — the set-stylus is the recognition's physical form: the ac
 ---
 
 **b01c19s02n07** (flat_id 15)
-svo: `the factional-reading structure continues to assemble`
+svo: `the factional-reading structure assembles`
 substance_delta:
   axis_moves: []
   axes_held:
@@ -273,7 +285,7 @@ notes: MOVING bone — second +0.5 tranche toward contempt-lock; the entry goes 
 | contempt-sits-alongside-not-inside | [mechanism] chunk | b01c19s03n08, b01c19s03n09 | — |
 | contempt-alongside-the-accounting | [image] chunk | b01c19s03n09 | — |
 | author-noticed: drop through Jarvis channel completes the request-loop | author | b01c19s03n05 | — |
-| author-noticed: CFR-2 stylus placement — beside not away from | author | b01c19s03n10 | — |
+| author-noticed: CFR-2 stylus placement — beside not away from | author | b01c19s03n07, b01c19s03n08 | — |
 
 ### bones
 
@@ -293,7 +305,7 @@ substance_delta:
 ---
 
 **b01c19s03n02** (flat_id 19)
-svo: `the chamberlain crosses the pillar junction before dawn`
+svo: `the chamberlain crosses the pillar junction`
 substance_delta:
   axis_moves: []
   axes_held:
@@ -307,7 +319,7 @@ notes: GROUNDING bone — the pillar junction is a named architectural feature o
 ---
 
 **b01c19s03n03** (flat_id 20)
-svo: `the courier goes east-by-service-gate`
+svo: `the courier exits the service-gate`
 substance_delta:
   axis_moves: []
   axes_held:
@@ -331,7 +343,7 @@ substance_delta:
 ---
 
 **b01c19s03n05** (flat_id 22)
-svo: `taylor-hebert-kl-122ac drops the compiled-reading through the Jarvis channel`
+svo: `the Jarvis channel receives the compiled-reading`
 substance_delta:
   axis_moves: []
   axes_held:
@@ -371,7 +383,7 @@ notes: MOVING bone — final +0.5 draws political_register-prot to rank 9 LOCK; 
 ---
 
 **b01c19s03n08** (flat_id 25)
-svo: `taylor-hebert-kl-122ac sets the stylus beside the ledger`
+svo: `the stylus meets the ledger-edge`
 substance_delta:
   axis_moves: []
   axes_held:
@@ -383,7 +395,7 @@ notes: CFR-2 compliance BONE 2 — the beside-placement is the enacted physical 
 ---
 
 **b01c19s03n09** (flat_id 26)
-svo: `the contempt occupies the column's edge`
+svo: `the ledger-edge receives the stylus`
 substance_delta:
   axis_moves: []
   axes_held:
@@ -419,7 +431,7 @@ substance_delta:
 ---
 
 **b01c19s04n01** (flat_id 27)
-svo: `taylor-hebert-kl-122ac takes the Tallow Croft corner position at the second-bell interval`
+svo: `taylor-hebert-kl-122ac takes the Tallow Croft corner position`
 substance_delta:
   axis_moves: []
   axes_held:
@@ -433,7 +445,7 @@ notes: GROUNDING bone — the Tallow Croft corner is the named physical location
 ---
 
 **b01c19s04n02** (flat_id 28)
-svo: `the Tallow Croft corner holds empty`
+svo: `the second-bell passes the Tallow Croft corner`
 substance_delta:
   axis_moves: []
   axes_held:
@@ -447,7 +459,7 @@ notes: per pl-2026-06-05-c19-001 — the empty corner is CONCRETE BONE 1 of the 
 ---
 
 **b01c19s04n03** (flat_id 29)
-svo: `the vat-house shutter closes the east-facing window`
+svo: `the vat-house shutter closes the window`
 substance_delta:
   axis_moves: []
   axes_held:
@@ -461,7 +473,7 @@ notes: GROUNDING bone — per pl-2026-06-05-c19-001 HARD watch: the shuttered wi
 ---
 
 **b01c19s04n04** (flat_id 30)
-svo: `taylor-hebert-kl-122ac holds the lane-position at the third-bell interval`
+svo: `taylor-hebert-kl-122ac takes the lane-position`
 substance_delta:
   axis_moves: []
   axes_held:
@@ -515,7 +527,7 @@ notes: MOVING bone — the architecture-record open is the position-risk named c
 ---
 
 **b01c19s04n08** (flat_id 34)
-svo: `taylor-hebert-kl-122ac writes daven out of the coverage-map`
+svo: `the coverage-map drops the daven node`
 substance_delta:
   axis_moves: []
   axes_held:
@@ -550,11 +562,11 @@ notes: GROUNDING bone — the coverage-record is the named physical document; th
 
 | scene | bone count | axis moves | grounding bones |
 |-------|-----------|-----------|----------------|
-| b01c19s01 | 8 | 1 (political_register-prot +0.5) | n01 (trough), n04 (tallow-render room floor) |
+| b01c19s01 | 9 (incl. n02b companion) | 1 (political_register-prot +0.5) | n01 (trough), n02b (grey-dark), n04 (tallow-render room floor) |
 | b01c19s02 | 9 | 2 (moral_legibility +0.5, political_register-prot +0.5) | n01 (cost-ledger), n04 (lane-stone) |
 | b01c19s03 | 9 | 2 (political_register-prot +0.5, +holds-at-LOCK) | n02 (pillar junction), n05 (Jarvis channel) |
 | b01c19s04 | 9 | 3 (social_tether-prot-collapse -1.5, position-prot-collapse -1.0 combined) | n01 (Tallow Croft corner), n03 (vat-house shutter), n08 (coverage-map) |
-| **TOTAL** | **35** | — | — |
+| **TOTAL** | **36** (incl. n02b companion; flat_id to be assigned at emit) | — | — |
 
 ## per-axis sum verification
 
@@ -585,19 +597,19 @@ ALL TAGS COVERED ✓
 
 **(ii) ≥1 grounding bone per scene:**
 
-- s01: n01 (trough), n04 (tallow-render room floor) — 2 grounding bones in 8 = 25% ✓
+- s01: n01 (trough), n02b (grey-dark), n04 (tallow-render room floor) — 3 grounding bones in 9 = 33% ✓
 - s02: n01 (cost-ledger document), n04 (lane-stone worn track) — 2 in 9 = 22% (borderline; both are concrete physical objects named in location) ✓
 - s03: n02 (pillar junction), n05 (Jarvis dead-drop channel) — 2 in 9 = 22% ✓
 - s04: n01 (Tallow Croft corner), n03 (vat-house shutter), n08 (coverage-map) — 3 in 9 = 33% ✓
 
-Non-chatter bone counts (all bones are non-chatter): 35 total; grounding-class: 11/35 = 31% across chapter — above 25% threshold ✓
+Non-chatter bone counts (all bones are non-chatter): 36 total (incl. n02b companion); grounding-class: 12/36 = 33% across chapter — above 25% threshold ✓
 
 **(iii) s04 label-reach staged concretely (pl-2026-06-05-c19-001):**
 
 CONCRETE INSTRUMENT BONES:
-- n02: `the Tallow Croft corner holds empty` — second-bell absence as physical location-state
-- n03: `the vat-house shutter closes the east-facing window` — the concrete inference instrument; the shutter is the information
-- n04: `taylor-hebert-kl-122ac holds the lane-position at the third-bell interval` — second approach confirmed
+- n02: `the second-bell passes the Tallow Croft corner` — second-bell absence as physical location-state
+- n03: `the vat-house shutter closes the window` — the concrete inference instrument; the shutter is the information
+- n04: `taylor-hebert-kl-122ac takes the lane-position` — second approach confirmed
 - n05: `daven absents the corner` — absence rendered as positive SVO (object-as-subject permitted per rule)
 
 The inference is not narrated interior — the physical instruments (empty corner, closed shutter at third-bell, forty-three-prior-approaches contrast) carry the inference. Taylor then walks (n06), opens the record (n07), writes Daven out (n08), closes the record (n09). Concrete sequence from inference-instrument → physical response throughout ✓
@@ -605,9 +617,9 @@ The inference is not narrated interior — the physical instruments (empty corne
 **(iv) CFR-1 honored (s02 pattern-recognition as physical enumeration):**
 
 CFR-1 requires: s02 "not a feeling, an observation" rendered as PHYSICAL ENUMERATION ACT through the accounting's arithmetic. Bones:
-- n02: `taylor-hebert-kl-122ac counts the factional-reading entries` — the counting act is the observation
+- n02: `taylor-hebert-kl-122ac runs the factional-reading column` — the column-run is the physical enumeration act
 - n03: `the column repeats its shape` — shape-recurrence as document-physical fact
-- n05: `taylor-hebert-kl-122ac marks the recurrence` — the marking is the accounting's own notation of the pattern
+- n05: `taylor-hebert-kl-122ac marks the column entry` — the marking is the accounting's own notation of the pattern
 
 No interior-state labels. The recognition fires through the arithmetic itself (counting → shape → marking). ✓
 
@@ -615,32 +627,33 @@ No interior-state labels. The recognition fires through the arithmetic itself (c
 
 CFR-2 requires: two-bone minimum physical distinction. Bones:
 - n07: `taylor-hebert-kl-122ac lifts the stylus` — BONE 1: the lift is the closing-gesture
-- n08: `taylor-hebert-kl-122ac sets the stylus beside the ledger` — BONE 2: the beside-placement is the enacted spatial distinction
+- n08: `the stylus meets the ledger-edge` — BONE 2: the physical contact with the ledger-edge is the enacted spatial adjacency (alongside, not away)
+- n09: `the ledger-edge receives the stylus` — image bone: the ledger-edge's receiving is the alongside-not-inside form
 
-The beside-placement (not down-and-away, not removed) is the form the contempt-alongside-not-inside image takes as choreography. Two-bone minimum met; the distinction is structural (the spatial relationship of stylus to ledger is the form the contempt-without-entry relationship takes). ✓
+The adjacency (not down-and-away, not removed) is the form the contempt-alongside-not-inside image takes as choreography. Two-bone minimum met; the distinction is structural (n07 lift → n08 ledger-edge contact → n09 ledger-edge receives). ✓
 
 **(vi) Zero speech bones:**
 
-All 35 bones are physical actions. No dialogue anchors, no speech-act SVOs. The chapter is silent and solitary throughout. ✓
+All 36 bones are physical actions (incl. n02b companion). No dialogue anchors, no speech-act SVOs. The chapter is silent and solitary throughout. ✓
 
 **(vii) Opposing-force visible per scene:**
 
-- s01: opposing force (arrangement's structural logic; access within existing architecture; accounting runs clean) — visible at n03 (sheet names chamberlain), n06 (protection-line runs clean)
+- s01: opposing force (arrangement's structural logic; access within existing architecture; accounting runs clean) — visible at n03 (sheet names chamberlain), n06 (protection-line ratio runs)
 - s02: opposing force (column's own structure; the discipline that makes suppression possible is what names the pattern) — visible at n01 (eleven months of entries), n03 (column repeats its shape)
-- s03: opposing force (contempt sits alongside; the closed ledger is the form the trap takes) — visible at n08 (beside-set), n09 (contempt occupies column's edge)
-- s04: opposing force (witch-label in upper city; contacts who can calculate the cost will) — visible at n02 (empty corner), n03 (vat-house shutter), n05 (Daven absents)
+- s03: opposing force (contempt sits alongside; the closed ledger is the form the trap takes) — visible at n08 (stylus meets ledger-edge), n09 (ledger-edge receives stylus)
+- s04: opposing force (witch-label in upper city; contacts who can calculate the cost will) — visible at n02 (second-bell passes corner), n03 (vat-house shutter), n05 (Daven absents)
 
 All four scenes have opposing-force visible in ≥1 bone ✓
 
 **(viii) Protagonist-force visible across multiple bones per scene:**
 
-- s01: n01 (lifts bundle), n02 (opens sheet), n05 (opens cost-ledger), n08 (column stays open) — 4 bones
-- s02: n02 (counts entries), n05 (marks recurrence), n06 (sets stylus), n09 (files entry) — 4 bones
-- s03: n01 (opens bottlefly routes), n05 (drops compiled-reading), n06 (closes ledger), n07 (lifts stylus), n08 (sets beside) — 5 bones
-- s04: n01 (takes corner position), n04 (holds lane-position), n06 (walks lane), n07 (opens record), n08 (writes out), n09 (closes record) — 6 bones
+- s01: n01 (trough releases), n02 (opens sheet), n05 (opens cost-ledger), n08 (column receives contempt-entry) — 4 bones
+- s02: n02 (runs column), n05 (marks column entry), n06 (sets stylus), n09 (files entry) — 4 bones
+- s03: n01 (opens bottlefly routes), n05 (Jarvis channel receives), n06 (closes ledger), n07 (lifts stylus), n08 (stylus meets ledger-edge) — 5 bones
+- s04: n01 (takes corner position), n04 (takes lane-position), n06 (walks lane), n07 (opens record), n08 (coverage-map drops node), n09 (closes record) — 6 bones
 
 All scenes have protagonist-force across multiple bones ✓
 
 **(ix) Earth-Bet fence:**
 
-No Khepri / Gold Morning / Skitter / Brockton Bay / cape lore in any bone. s02 pattern-recognition stays shape-only ("the column repeats its shape", "the lane-shape wears into the stone") — no naming of the prior city, no Earth-Bet proper nouns. The bones contain only Westerosi location names, physical objects, and the in-world accounting vocabulary. ✓
+No Khepri / Gold Morning / Skitter / Brockton Bay / cape lore in any bone. s02 pattern-recognition stays shape-only ("the column repeats its shape", "the lane-shape marks the stone") — no naming of the prior city, no Earth-Bet proper nouns. The bones contain only Westerosi location names, physical objects, and the in-world accounting vocabulary. ✓
