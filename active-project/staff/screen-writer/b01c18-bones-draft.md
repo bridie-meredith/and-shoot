@@ -27,7 +27,7 @@ scenes:
         dialogue_anchor: false
 
       - slug: b01c18s01n02
-        svo: "taylor-hebert-kl-122ac reads the margin-cipher addendum"
+        svo: "taylor-hebert-kl-122ac lifts the margin-cipher addendum"
         substance_delta:
           axis_moves: []
           axes_held:
@@ -40,7 +40,7 @@ scenes:
         dialogue_anchor: false
 
       - slug: b01c18s01n03
-        svo: "the cipher addendum names the succession-mechanism window"
+        svo: "the cipher addendum opens the succession-mechanism column"
         substance_delta:
           axis_moves: []
           axes_held:
@@ -53,7 +53,7 @@ scenes:
         dialogue_anchor: false
 
       - slug: b01c18s01n04
-        svo: "taylor-hebert-kl-122ac reads the addendum a second time"
+        svo: "taylor-hebert-kl-122ac reopens the addendum"
         substance_delta:
           axis_moves: []
           axes_held:
@@ -90,7 +90,7 @@ scenes:
         dialogue_anchor: false
 
       - slug: b01c18s01n07
-        svo: "taylor-hebert-kl-122ac names the count"
+        svo: "taylor-hebert-kl-122ac holds the feet"
         substance_delta:
           axis_moves: []
           axes_held:
@@ -114,7 +114,7 @@ scenes:
       - {tag: mechanism, name: khepri-scale-echo-landed, bones: [b01c18s02n08, b01c18s02n09]}
     bones:
       - slug: b01c18s02n01
-        svo: "taylor-hebert-kl-122ac opens the bottlefly routes under the Fishmonger Gate"
+        svo: "taylor-hebert-kl-122ac opens the bottlefly routes"
         substance_delta:
           axis_moves: []
           axes_held:
@@ -127,7 +127,7 @@ scenes:
         dialogue_anchor: false
 
       - slug: b01c18s02n02
-        svo: "taylor-hebert-kl-122ac opens the moth-corridor through the chandler quarter"
+        svo: "taylor-hebert-kl-122ac opens the moth-corridor"
         substance_delta:
           axis_moves: []
           axes_held:
@@ -140,7 +140,7 @@ scenes:
         dialogue_anchor: false
 
       - slug: b01c18s02n03
-        svo: "the feed-lines activate across the Gate of the Gods and the Iron Gate and the River Gate"
+        svo: "the feed-lines activate the outer-gate corridors"
         substance_delta:
           axis_moves: []
           axes_held:
@@ -153,7 +153,7 @@ scenes:
         dialogue_anchor: false
 
       - slug: b01c18s02n04
-        svo: "taylor-hebert-kl-122ac holds the east-of-water-gate lanes blank"
+        svo: "taylor-hebert-kl-122ac skips the east-of-water-gate lanes"
         substance_delta:
           axis_moves: []
           axes_held:
@@ -166,7 +166,7 @@ scenes:
         dialogue_anchor: false
 
       - slug: b01c18s02n05
-        svo: "wren-stitch-maker-flea-bottom-ward crosses the blank lane"
+        svo: "wren-stitch-maker-flea-bottom-ward crosses the lane"
         substance_delta:
           axis_moves: []
           axes_held:
@@ -177,7 +177,7 @@ scenes:
         dialogue_anchor: false
 
       - slug: b01c18s02n06
-        svo: "the moth-corridor feed returns noise on the chandler-quarter passage"
+        svo: "the moth-corridor feed returns noise"
         substance_delta:
           axis_moves: []
           axes_held:
@@ -190,7 +190,7 @@ scenes:
         dialogue_anchor: false
 
       - slug: b01c18s02n07
-        svo: "the architecture runs all nodes simultaneously"
+        svo: "the architecture opens the nodes"
         substance_delta:
           axis_moves:
             - axis: moral_framework
@@ -202,7 +202,7 @@ scenes:
         dialogue_anchor: false
 
       - slug: b01c18s02n08
-        svo: "the count crosses the prior number"
+        svo: "the count crosses the threshold"
         substance_delta:
           axis_moves:
             - axis: position-prot-collapse
@@ -214,7 +214,7 @@ scenes:
         dialogue_anchor: false
 
       - slug: b01c18s02n09
-        svo: "taylor-hebert-kl-122ac runs the count into the fortnight"
+        svo: "taylor-hebert-kl-122ac extends the count"
         substance_delta:
           axis_moves:
             - axis: social_tether-prot-collapse
@@ -226,7 +226,7 @@ scenes:
         dialogue_anchor: false
 
       - slug: b01c18s02n10
-        svo: "the tallow-render room floor holds the folded cipher-bundle"
+        svo: "the cipher-bundle drops"
         substance_delta:
           axis_moves: []
           axes_held:
@@ -248,7 +248,7 @@ scenes:
       - {tag: force, name: protagonist-files-each-entry, bones: [b01c18s03n07, b01c18s03n10]}
     bones:
       - slug: b01c18s03n01
-        svo: "the groom carries the saddlebag at the wrong hour"
+        svo: "the groom lifts the saddlebag"
         substance_delta:
           axis_moves: []
           axes_held:
@@ -259,7 +259,7 @@ scenes:
         dialogue_anchor: false
 
       - slug: b01c18s03n02
-        svo: "the maid crosses the corridor toward the third contact point"
+        svo: "the maid crosses the corridor"
         substance_delta:
           axis_moves: []
           axes_held:
@@ -270,7 +270,7 @@ scenes:
         dialogue_anchor: false
 
       - slug: b01c18s03n03
-        svo: "the knight grips the pommel in the small-space method"
+        svo: "the knight grips the pommel"
         substance_delta:
           axis_moves: []
           axes_held:
@@ -281,7 +281,7 @@ scenes:
         dialogue_anchor: false
 
       - slug: b01c18s03n04
-        svo: "the septa crosses the outer court at the handoff interval"
+        svo: "the septa crosses the court"
         substance_delta:
           axis_moves: []
           axes_held:
@@ -292,7 +292,7 @@ scenes:
         dialogue_anchor: false
 
       - slug: b01c18s03n05
-        svo: "the feed returns the court as system"
+        svo: "the feed returns the court-pattern"
         substance_delta:
           axis_moves: []
           axes_held:
@@ -305,7 +305,7 @@ scenes:
         dialogue_anchor: false
 
       - slug: b01c18s03n06
-        svo: "taylor-hebert-kl-122ac files the seventh-day entry"
+        svo: "taylor-hebert-kl-122ac files the court-entry"
         substance_delta:
           axis_moves: []
           axes_held:
@@ -318,7 +318,7 @@ scenes:
         dialogue_anchor: false
 
       - slug: b01c18s03n07
-        svo: "taylor-hebert-kl-122ac files the first-day entry"
+        svo: "taylor-hebert-kl-122ac files the opening-entry"
         substance_delta:
           axis_moves: []
           axes_held:
@@ -331,7 +331,7 @@ scenes:
         dialogue_anchor: false
 
       - slug: b01c18s03n08
-        svo: "the insect-feed returns the apparatus complete"
+        svo: "the insect-feed returns the apparatus"
         substance_delta:
           axis_moves:
             - axis: political_register-prot
@@ -343,7 +343,7 @@ scenes:
         dialogue_anchor: false
 
       - slug: b01c18s03n09
-        svo: "the contempt arrives at the register"
+        svo: "the contempt arrives"
         substance_delta:
           axis_moves:
             - axis: political_register-prot
@@ -355,7 +355,7 @@ scenes:
         dialogue_anchor: false
 
       - slug: b01c18s03n10
-        svo: "taylor-hebert-kl-122ac files the seventh-day entry the same way"
+        svo: "taylor-hebert-kl-122ac files the court-entry"
         substance_delta:
           axis_moves: []
           axes_held:
@@ -377,7 +377,7 @@ scenes:
       - {tag: event, name: world-axes-advance-on-product-confirmation, bones: [b01c18s04n06, b01c18s04n07]}
     bones:
       - slug: b01c18s04n01
-        svo: "taylor-hebert-kl-122ac drops the third packet at the dead drop"
+        svo: "taylor-hebert-kl-122ac drops the intelligence-packet"
         substance_delta:
           axis_moves: []
           axes_held:
@@ -403,7 +403,7 @@ scenes:
         dialogue_anchor: false
 
       - slug: b01c18s04n03
-        svo: "the counter-bundle returns the margin-cipher single line"
+        svo: "the counter-bundle returns the confirmation-line"
         substance_delta:
           axis_moves: []
           axes_held:
@@ -416,7 +416,7 @@ scenes:
         dialogue_anchor: false
 
       - slug: b01c18s04n04
-        svo: "taylor-hebert-kl-122ac reads the cipher line"
+        svo: "taylor-hebert-kl-122ac lifts the cipher line"
         substance_delta:
           axis_moves: []
           axes_held:
@@ -441,7 +441,7 @@ scenes:
         dialogue_anchor: false
 
       - slug: b01c18s04n06
-        svo: "the Green faction holds the succession mechanism"
+        svo: "the Green faction secures the succession channel"
         substance_delta:
           axis_moves:
             - axis: political_register-world
@@ -453,7 +453,7 @@ scenes:
         dialogue_anchor: false
 
       - slug: b01c18s04n07
-        svo: "taylor-hebert-kl-122ac writes nothing in the record"
+        svo: "taylor-hebert-kl-122ac closes the record"
         substance_delta:
           axis_moves: []
           axes_held:
@@ -466,7 +466,7 @@ scenes:
         dialogue_anchor: false
 
       - slug: b01c18s04n08
-        svo: "the ward runs at maximum density"
+        svo: "the ward runs"
         substance_delta:
           axis_moves: []
           axes_held:
@@ -492,7 +492,7 @@ scenes:
       - {tag: image, name: blank-column-held-again, bones: [b01c18s05n10]}
     bones:
       - slug: b01c18s05n01
-        svo: "taylor-hebert-kl-122ac closes the ward-elder routes ward by ward"
+        svo: "taylor-hebert-kl-122ac closes the ward-elder routes"
         substance_delta:
           axis_moves: []
           axes_held:
@@ -505,7 +505,7 @@ scenes:
         dialogue_anchor: false
 
       - slug: b01c18s05n02
-        svo: "the east-of-water-gate gap closes last"
+        svo: "the east-of-water-gate gap closes"
         substance_delta:
           axis_moves: []
           axes_held:
@@ -540,7 +540,7 @@ scenes:
         dialogue_anchor: false
 
       - slug: b01c18s05n05
-        svo: "the ledger entry names the deployment above the prior number"
+        svo: "the ledger entry records the threshold-crossing"
         substance_delta:
           axis_moves: []
           axes_held:
@@ -563,7 +563,7 @@ scenes:
         dialogue_anchor: false
 
       - slug: b01c18s05n07
-        svo: "the contempt sits in the same column as every other entry"
+        svo: "the column receives the contempt-entry"
         substance_delta:
           axis_moves: []
           axes_held:
@@ -598,7 +598,7 @@ scenes:
         dialogue_anchor: false
 
       - slug: b01c18s05n10
-        svo: "the blank column stays blank"
+        svo: "taylor-hebert-kl-122ac passes the recognition column"
         substance_delta:
           axis_moves: []
           axes_held:
@@ -609,7 +609,7 @@ scenes:
         dialogue_anchor: false
 
       - slug: b01c18s05n11
-        svo: "taylor-hebert-kl-122ac sets the stylus beside the closed ledger"
+        svo: "taylor-hebert-kl-122ac sets the stylus"
         substance_delta:
           axis_moves: []
           axes_held:

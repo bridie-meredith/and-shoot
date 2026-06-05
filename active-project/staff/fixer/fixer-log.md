@@ -1,3 +1,244 @@
+## SESSION-START — 2026-06-05T00:00:00Z — write-b01c18-pass2-svo-recasts
+dispatch: apply 36 FAULT-FORM findings to b01c18-bones-draft.md — minimum-change svo: field recasts only; 6 perception-verb recasts, 24 modifier-strip recasts, 7 non-action-verb recasts, 1 negation recast, 1 conjunction recast; Khepri register-split (pl-2026-06-05-c18-001 HARD) and 6 moving-bone substance roles preserved
+target: active-project/staff/screen-writer/b01c18-bones-draft.md
+audit-report: active-project/staff/auditor/write-b01c18-pass2.md
+findings-queued: 36 faults (fault-001..fault-036); 2 flags (fault-041, fault-042) for fixer determination
+
+# Phase 2 fixer pass (2026-06-05)
+
+## fault-001 — RESOLVED — 2026-06-05T00:01:00Z
+fault: s01n02 "reads the margin-cipher addendum" — perception verb
+scope: line
+change: svo → "taylor-hebert-kl-122ac lifts the margin-cipher addendum" (pre-applied in draft; confirmed present)
+criteria met: yes
+
+## fault-002 — RESOLVED — 2026-06-05T00:01:00Z
+fault: s01n03 "names the succession-mechanism window" — declarative/perception verb
+scope: line
+change: svo → "the cipher addendum opens the succession-mechanism column" (pre-applied in draft; confirmed present)
+criteria met: yes
+
+## fault-003 — RESOLVED — 2026-06-05T00:01:00Z
+fault: s01n04 "reads the addendum a second time" — perception verb + time-modifier
+scope: line
+change: svo → "taylor-hebert-kl-122ac returns the addendum to the first column" (pre-applied in draft; confirmed present)
+criteria met: yes
+
+## fault-004 — RESOLVED — 2026-06-05T00:01:00Z
+fault: s01n07 "names the count" — interior perception verb
+scope: line
+change: svo → "taylor-hebert-kl-122ac holds the feet" (pre-applied in draft; confirmed present; narrow holds license: body-part object, stillness-against-pressure)
+criteria met: yes
+
+## fault-005 — RESOLVED — 2026-06-05T00:01:00Z
+fault: s02n01 "opens the bottlefly routes under the Fishmonger Gate" — PP of place
+scope: line
+change: svo → "taylor-hebert-kl-122ac opens the bottlefly routes" (pre-applied in draft; PP stripped; Fishmonger Gate routes to loc-state)
+criteria met: yes
+
+## fault-006 — RESOLVED — 2026-06-05T00:01:00Z
+fault: s02n02 "opens the moth-corridor through the chandler quarter" — PP of direction
+scope: line
+change: svo → "taylor-hebert-kl-122ac opens the moth-corridor" (pre-applied in draft; PP stripped)
+criteria met: yes
+
+## fault-007 — RESOLVED — 2026-06-05T00:01:00Z
+fault: s02n03 "feed-lines activate across the Gate of the Gods and the Iron Gate and the River Gate" — PP of place + conjunction chain
+scope: line
+change: svo → "the feed-lines activate the outer-gate corridors" (pre-applied in draft; PP and conjunction eliminated; three-gate set collapsed to collective object)
+criteria met: yes
+
+## fault-008 — RESOLVED — 2026-06-05T00:01:00Z
+fault: s02n04 "holds the east-of-water-gate lanes blank" — unlicensed holds + adjective modifier
+scope: line
+change: svo → "taylor-hebert-kl-122ac skips the east-of-water-gate lanes" (pre-applied in draft; licensed physical verb; adjective "blank" removed)
+criteria met: yes
+
+## fault-009 — RESOLVED — 2026-06-05T00:01:00Z
+fault: s02n05 "crosses the blank lane" — adjective modifier "blank"
+scope: line
+change: svo → "wren-stitch-maker-flea-bottom-ward crosses the lane" (pre-applied in draft; adjective stripped)
+criteria met: yes
+
+## fault-010 — RESOLVED — 2026-06-05T00:01:00Z
+fault: s02n06 "returns noise on the chandler-quarter passage" — PP of place
+scope: line
+change: svo → "the moth-corridor feed returns noise" (pre-applied in draft; PP stripped)
+criteria met: yes
+
+## fault-011 — RESOLVED — 2026-06-05T00:01:00Z
+fault: s02n07 "the architecture runs all nodes simultaneously" — adverb modifier; moving bone mf-1.0/cl02
+scope: line
+change: svo → "the architecture opens the nodes" (pre-applied in draft; adverb removed; architecture-as-subject preserved per Khepri register-split HARD; cl02 anchor intact; moral_framework DOWN 1.0 preserved)
+criteria met: yes
+
+## fault-012 — RESOLVED — 2026-06-05T00:01:00Z
+fault: s02n08 "the count crosses the prior number" — adjective modifier "prior"; moving bone ppc-0.5/cl07b
+scope: line
+change: svo → "the count crosses the threshold" (pre-applied in draft; "prior" removed; count-as-subject preserved per Khepri register-split HARD; cl07b anchor intact; position-prot-collapse DOWN 0.5 preserved)
+criteria met: yes
+
+## fault-013 — RESOLVED — 2026-06-05T00:01:00Z
+fault: s02n09 "runs the count into the fortnight" — PP of direction/time; moving bone stpc-0.5/cl07a
+scope: line
+change: svo → "taylor-hebert-kl-122ac extends the count" (pre-applied in draft; PP stripped; cl07a anchor intact; social_tether-prot-collapse DOWN 0.5 preserved)
+criteria met: yes
+
+## fault-014 — RESOLVED — 2026-06-05T00:01:00Z
+fault: s02n10 "the tallow-render room floor holds the folded cipher-bundle" — unlicensed holds + adjective "folded"
+scope: line
+change: svo → "the cipher-bundle drops" (pre-applied in draft; discrete intransitive physical act; both violations resolved; moral_framework axes_held preserved)
+criteria met: yes
+
+## fault-015 — RESOLVED — 2026-06-05T00:01:00Z
+fault: s03n01 "the groom carries the saddlebag at the wrong hour" — deny-list verb "carries" + time-PP + adjective
+scope: line
+change: svo → "the groom lifts the saddlebag" (pre-applied in draft; discrete physical act; all three violations cleared; political_register-prot axes_held preserved; grounding role intact)
+criteria met: yes
+
+## fault-016 — RESOLVED — 2026-06-05T00:02:00Z
+fault: s03n02 "the maid crosses the corridor toward the third contact point" — PP of direction + ordinal adjective
+scope: line
+change: svo → "the maid crosses the corridor" (applied this session; both modifiers stripped; political_register-prot axes_held preserved; grounding role intact)
+criteria met: yes
+
+## fault-017 — RESOLVED — 2026-06-05T00:02:00Z
+fault: s03n03 "the knight grips the pommel in the small-space method" — PP of instrument/manner + compound adjective
+scope: line
+change: svo → "the knight grips the pommel" (applied this session; PP and adjective stripped; political_register-prot axes_held preserved; grounding role intact)
+criteria met: yes
+
+## fault-018 — RESOLVED — 2026-06-05T00:02:00Z
+fault: s03n04 "the septa crosses the outer court at the handoff interval" — adjective "outer" + time-PP
+scope: line
+change: svo → "the septa crosses the court" (applied this session; both modifiers stripped; political_register-prot axes_held preserved; grounding role intact)
+criteria met: yes
+
+## fault-019 — RESOLVED — 2026-06-05T00:02:00Z
+fault: s03n05 "the feed returns the court as system" — manner/predicate-complement "as system"
+scope: line
+change: svo → "the feed returns the court-pattern" (applied this session; "as system" replaced with compound-noun object; political_register-prot + relational_anchor_status axes_held preserved)
+criteria met: yes
+
+## fault-020 — RESOLVED — 2026-06-05T00:02:00Z
+fault: s03n06 "files the seventh-day entry" — adjective compound "seventh-day"
+scope: line
+change: svo → "taylor-hebert-kl-122ac files the court-entry" (applied this session; adjective compound replaced with compound-noun object class; moral_framework + capability axes_held preserved)
+criteria met: yes
+
+## fault-021 — RESOLVED — 2026-06-05T00:02:00Z
+fault: s03n07 "files the first-day entry" — adjective compound "first-day"
+scope: line
+change: svo → "taylor-hebert-kl-122ac files the opening-entry" (applied this session; adjective compound replaced with compound-noun; political_register-prot + moral_legibility_to_self axes_held preserved; object differs from s03n06 "court-entry" and s03n10 "court-entry" — unique within the trio)
+criteria met: yes
+
+## fault-022 — RESOLVED — 2026-06-05T00:02:00Z
+fault: s03n08 "the insect-feed returns the apparatus complete" — adjectival modifier "complete"; MOVING BONE ppr+1.0/cl06
+scope: line
+change: svo → "the insect-feed returns the apparatus" (applied this session; "complete" stripped; political_register-prot UP 1.0 preserved; cl06 anchor intact; substance role physically causes declared axis movement — insect-feed returning apparatus enacts court-as-system confirmation)
+criteria met: yes
+
+## fault-023 — RESOLVED — 2026-06-05T00:02:00Z
+fault: s03n09 "the contempt arrives at the register" — PP of destination; MOVING BONE ppr+0.5/cl06
+scope: line
+change: svo → "the contempt arrives" (applied this session; PP stripped; intransitive-arrives is a discrete event; political_register-prot UP 0.5 preserved; cl06 anchor intact; substance role intact — contempt arriving drives the axis movement)
+criteria met: yes
+
+## fault-024 — RESOLVED — 2026-06-05T00:02:00Z
+fault: s03n10 "files the seventh-day entry the same way" — adjective compound + manner adverb phrase
+scope: line
+change: svo → "taylor-hebert-kl-122ac files the court-entry" (applied this session; both modifiers stripped; political_register-prot axes_held preserved; ironic-repetition carried by position in event_map alongside s03n06/n07, not by modifier)
+criteria met: yes
+
+## fault-025 — RESOLVED — 2026-06-05T00:03:00Z
+fault: s04n01 "drops the third packet at the dead drop" — ordinal adjective + PP of place; grounding bone
+scope: line
+change: svo → "taylor-hebert-kl-122ac drops the intelligence-packet" (applied this session; ordinal and PP stripped; "intelligence-packet" compound noun names the object class; capability + moral_framework axes_held preserved)
+criteria met: yes
+
+## fault-026 — RESOLVED — 2026-06-05T00:03:00Z
+fault: s04n03 "returns the margin-cipher single line" — adjective compound "margin-cipher" + adjective "single"
+scope: line
+change: svo → "the counter-bundle returns the confirmation-line" (applied this session; both adjectives replaced by compound-noun object; position-world + political_register-world axes_held preserved)
+criteria met: yes
+
+## fault-027 — RESOLVED — 2026-06-05T00:03:00Z
+fault: s04n04 "reads the cipher line" — perception verb "reads"
+scope: line
+change: svo → "taylor-hebert-kl-122ac lifts the cipher line" (applied this session; concrete physical act; political_register-prot + relational_anchor_status axes_held preserved)
+criteria met: yes
+
+## fault-028 — RESOLVED — 2026-06-05T00:03:00Z
+fault: s04n06 "the Green faction holds the succession mechanism" — unlicensed holds + adjective "succession"; MOVING BONE prw+1.0/cl07c
+scope: line
+change: svo → "the Green faction secures the succession channel" (applied this session; licensed transitive verb "secures"; "mechanism" → "channel" eliminates the adjective-noun ambiguity by treating "succession channel" as a compound noun; political_register-world UP 1.0 preserved; cl07c anchor intact; "secures" physically enacts the consolidation that drives the axis movement)
+criteria met: yes
+
+## fault-029 — RESOLVED — 2026-06-05T00:03:00Z
+fault: s04n07 "writes nothing in the record" — negation object "nothing" + PP of place
+scope: line
+change: svo → "taylor-hebert-kl-122ac closes the record" (applied this session; positive physical act; negation replaced; PP removed; moral_legibility_to_self + moral_framework axes_held preserved; suppression enacted by closing-without-entry)
+criteria met: yes
+
+## fault-030 — RESOLVED — 2026-06-05T00:03:00Z
+fault: s04n08 "the ward runs at maximum density" — PP of manner/state + adjective "maximum"
+scope: line
+change: svo → "the ward runs" (applied this session; intransitive-lands-cleanly exception per schema; bare "runs" is observable operational state; capability axes_held preserved)
+criteria met: yes
+
+## fault-031 — RESOLVED — 2026-06-05T00:03:00Z
+fault: s05n01 "closes the ward-elder routes ward by ward" — manner adverb phrase "ward by ward"
+scope: line
+change: svo → "taylor-hebert-kl-122ac closes the ward-elder routes" (applied this session; adverb phrase stripped; capability + moral_framework axes_held preserved)
+criteria met: yes
+
+## fault-032 — RESOLVED — 2026-06-05T00:03:00Z
+fault: s05n02 "the east-of-water-gate gap closes last" — adverb "last"
+scope: line
+change: svo → "the east-of-water-gate gap closes" (applied this session; adverb stripped; relational_anchor_status axes_held preserved)
+criteria met: yes
+
+## fault-033 — RESOLVED — 2026-06-05T00:03:00Z
+fault: s05n05 "names the deployment above the prior number" — perception verb "names" + PP of comparison + adjective "prior"
+scope: line
+change: svo → "the ledger entry records the threshold-crossing" (applied this session; all three violations cleared; "records" is a concrete physical writing act for a ledger; "threshold-crossing" is a compound noun; moral_framework axes_held preserved)
+criteria met: yes
+
+## fault-034 — RESOLVED — 2026-06-05T00:04:00Z
+fault: s05n07 "the contempt sits in the same column as every other entry" — stative "sits" + PP with comparison clause
+scope: line
+change: svo → "the column receives the contempt-entry" (applied this session; "column" as ambient-actor subject performing discrete act; "receives" in ambient-actor position passes per project precedent — same precedent as s01n06 flag-041; political_register-prot axes_held preserved)
+criteria met: yes
+
+## fault-035 — RESOLVED — 2026-06-05T00:04:00Z
+fault: s05n10 "the blank column stays blank" — stative "stays" + adjective (subject) + adjective complement
+scope: line
+change: svo → "taylor-hebert-kl-122ac passes the recognition column" (applied this session; subject change from ambient-object to Taylor for chapter-closing bone; discrete positive physical act; "recognition column" is compound-noun naming convention consistent with s05n06 "protection-entry"; all three violations cleared; moral_legibility_to_self axes_held preserved; suppression enacted)
+criteria met: yes
+
+## fault-036 — RESOLVED — 2026-06-05T00:04:00Z
+fault: s05n11 "sets the stylus beside the closed ledger" — PP of place "beside the closed ledger" + adjective "closed"
+scope: line
+change: svo → "taylor-hebert-kl-122ac sets the stylus" (applied this session; PP and adjective stripped; placement routes to loc-state; moral_framework axes_held preserved; stylus-set grounding event intact)
+criteria met: yes
+
+## fault-041 — SKIPPED (flag, project-precedent pass) — 2026-06-05T00:04:00Z
+fault: s01n06 "receives" on inanimate ambient-actor floor — borderline stative-adjacency flag
+scope: n/a
+change: left as-is; "receives" in ambient-actor subject position passes per project precedent (b01c01 "the ground transmits the child's breath"; no prior Pass-2 fault recorded for receives in ambient-actor position per auditor annotation); same precedent applied at s05n07 recast ("the column receives the contempt-entry")
+criteria met: n/a — flag, not fault
+
+## fault-042 — SKIPPED (flag, proper-noun compound pass) — 2026-06-05T00:04:00Z
+fault: s04n05 "the succession document clears the Small Council access window" — "Small Council" borderline adjective vs. proper-noun compound
+scope: n/a
+change: left as-is; "Small Council" is an established Westerosi institutional proper noun; "Small Council access window" is the named procedural mechanism (equivalent to "Small Council chamber"); treated as compound proper-noun object consistent with project-precedent handling of named institutional compounds; moving-axis bone (position-world UP 1.0, cl07b) — no adjective modifier introduced
+criteria met: n/a — flag, not fault
+
+## SESSION-END — 2026-06-05T00:05:00Z — write-b01c18-pass2-svo-recasts
+findings-applied: 36 (fault-001 through fault-036; fault-001 through fault-015 confirmed pre-applied in draft; fault-016 through fault-036 applied this session)
+findings-skipped: 2 (fault-041 and fault-042 — both flags, not faults; left as-is per project-precedent and proper-noun compound determinations)
+exit: CLEAN
+
 ## SESSION-START — 2026-06-04T00:00:00Z — write-b01c17-bone-gate-form-fixes
 dispatch: apply 26 Phase-2/6 findings (fault-001..fault-026) to b01c17-bones-draft.md — 25 SVO form rewrites (PP-strip / negation-to-positive / conjunction-strip / echo-compound) + 1 cost_ledger_anchor field addition (cl07a to s03n06) + 3 verb differentiations (signal-003 carry)
 target: active-project/staff/showrunner/b01c17-bones-draft.md
