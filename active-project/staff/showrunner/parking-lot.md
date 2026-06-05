@@ -2439,10 +2439,18 @@ parking_lot:
         - active-project/audience/literary-snob/stm.md      # SW-c18-LS-1
         - active-project/staff/showrunner/memory.md          # chapters[b01c18].scenes[b01c18s02].chunk
       resolution_suggestion: "/and-write b01c18 Phase 1 brief bone-author on narrating-vs-interior register-split for the s02 Khepri identification; Phase 6 bone-gate verifies Taylor does not name herself"
-      status: open
-      resolved_at: null
-      resolved_by: null
-      resolution_note: null
+      status: resolved
+      resolved_at: 2026-06-05T04:30:00Z
+      resolved_by: "/and-write b01c18 Phase 6 bone-gate (auditor KHEPRI-ENACTMENT-GATE MET + audience 3-of-3 SATISFIED)"
+      resolution_note: |
+        KHEPRI-ENACTMENT-GATE MET. The s02 threshold is enacted at bone level through architecture-as-subject
+        (s02n07 "the architecture opens the nodes" — moral_framework -1.0 fires as the architecture's structural
+        fact) and count-as-subject (s02n08 "the count crosses the threshold"). The word "Khepri" appears in NO
+        SVO across all 46 bones; Earth-Bet hard-fence substring scan CLEAN. No bone gives Taylor the interior
+        self-recognition "I am Khepri" or any equivalent. The s05 blank-column suppression irony survives
+        (s05n10 "passes the recognition column" — full recognition deferred to d14). All three audience personas
+        converged: SW-c18-WCP-HARD-1 / SW-c18-CFR-1 / SW-c18-LS-1 all SATISFIED. Evidence:
+        active-project/staff/auditor/write-b01c18-bone-gate.md + the three audience STM Phase-6 blocks.
 
     - id: pl-2026-06-05-c18-002
       created_at: 2026-06-05T02:30:00Z

@@ -113,3 +113,43 @@ bones_execution_watches_to_and-write:
   SW-c18-LS-1: s02 Khepri-declarative register — "the one piece of the architecture that is not Khepri. Everything else is." must land as narrating-register identification for the reader, NOT as Taylor's interior recognition of her own identity; the suppression in Taylor's interiority must be holding while the reader sees what Taylor will not name; if bones give Taylor the self-recognition, the s05 irony collapses — this is the chapter's hardest prose execution requirement
   SW-c18-LS-2: s04 axis-slug language must be stripped at bones — "the position-world entry is" and "the political_register-world entry is" are planning-document self-annotation; Taylor's interiority uses operative accounting language (margin cipher read, line written, record closed), not axis-slug labels
   SW-c18-LS-3: s05 interior-accounting-density — six accounting entries must be structurally distinct bones with different physical grounding; not sequential iterations of the same ledger-closing weight; bones must distinguish the entries or the density fires as fatigue in stitched prose
+
+## 2026-06-05 — /and-write b01c18 Phase 6 bone-gate
+
+chapter: b01c18
+date: 2026-06-05
+scenes_reviewed: [b01c18s01, b01c18s02, b01c18s03, b01c18s04, b01c18s05]
+
+verdict_per_scene:
+  b01c18s01: SUBSTANCE-FELT
+  b01c18s02: SUBSTANCE-FELT
+  b01c18s03: SUBSTANCE-FELT
+  b01c18s04: SUBSTANCE-FELT
+  b01c18s05: SUBSTANCE-FELT
+
+chapter_verdict: SUBSTANCE-FELT
+hard_findings: none
+SUBSTANCE-FLAT: none
+SUBSTANCE-SUSPECT: none
+
+SW-c18-LS-1 disposition: SATISFIED — s02 Khepri-declarative lands as narrating-register, not Taylor's interiority; architecture-as-subject (n07: "the architecture opens the nodes") and count-as-subject (n08: "the count crosses the threshold") hold the register-split; Taylor's suppression in interiority confirmed by SVO form and axes_held rationales; "no interior recognition opens" explicit at n07; reader sees it; Taylor does not name it; s05 irony intact
+
+SW-c18-LS-2 disposition: SATISFIED — s04 bones use operative succession-mechanism language throughout: n05 "the succession document clears the Small Council access window" and n06 "the Green faction secures the succession channel" — no axis-slug vocabulary; planning-document annotations stripped at bone level; Taylor's record-close at n07 is a physical act ("taylor-hebert-kl-122ac closes the record"), not axis-labeling
+
+SW-c18-LS-3 disposition: SATISFIED — s05 eleven bones across eleven physically distinct objects confirmed: routes (n01), gap (n02), moths-in-eaves (n03), column-open (n04), entry-text/threshold-naming (n05), protection-entry-line (n06), column-position/contempt (n07), standdown-line (n08), disposal-calculus-entry (n09), blank-slot (n10), stylus (n11); six accounting entries at n04-n09 structurally distinct — different physical anchors, different axes_held witnesses; no sequential-iterations-of-same-weight failure
+
+notes:
+  - s01: held precipice carries loaded stillness; fold-and-set-on-floor (n05/n06) is the physical form of decision-deferred; n07 ("a count she has not reached since a different architecture in a different place — no interior recognition opens") names the cost through shape-language without Taylor naming it; theme is in the physical posture and the structural reference, not in interiority; no bone asserts-not-stages; this reader stays with the scene
+  - s02: SW-c18-LS-1 passes; the irrevocable threshold is enacted in physical/structural terms (architecture-as-subject opening all nodes simultaneously); Wren-gap-held-blank (n04/n05) is theme enacted through structural description, not announced; n06 op-friction (one imperfect node) is thematically load-bearing — the machinery is not perfect even at irrevocable scale; suppression holds in Taylor's interiority while reader sees what Taylor will not name; hardest prose execution requirement of the chapter satisfied at bone level
+  - s03: contempt arrives through mechanism (four specific bodies → one system) not through Taylor's affect; "she is its instrument, reading it, for it, while it reads nothing of her at all" is the structural asymmetry stated as fact; +1.5 is not SUBSTANCE-SUSPECT; the specificity of the four bodies earns the generalization; n06/n10 byte-identical SVOs read as intentional refrain (the form the contempt takes — same act, same contempt, same trap each day) but the stitch must make the repetition's intentionality felt in the prose surface
+  - s04: SW-c18-LS-2 passes; world-axes landing as consequence of irrevocable deployment is structurally correct; the succession document's irreversibility named as structural fact ("whether Taylor names it there or not") is the theme's physical form without announcement; spare scene reads correctly — the delivery is procedure; irony lives in the gap between what Taylor does not write and what exists permanently regardless
+  - s05: SW-c18-LS-3 passes; blank-column at n10 is the chapter's most weight-bearing bone: "the blank column is the honest accounting's most load-bearing entry" — the theme lives here without being announced; "she sees the shape of the act... and does not inscribe it" is the enacted suppression in physical form; n11 stylus-beside-not-away is the accounting-as-discipline completing cleanly; no fatigue; five scenes of accumulation are load-bearing at climax density
+
+advisory_trim_flags:
+  - s03n06/s03n10: byte-identical SVOs are INTENTIONAL REFRAIN (filing is the trap; the form enacts the argument); not a block; but the render MUST make the repetition's intentionality felt — if it reads as accidental repetition in stitched prose the refrain collapses to slippage; carry to /and-stitch Phase 4 as most important s03 render watch
+
+asserted_not_staged_flags: none — no bone in any scene asserts substance without staging it in physical/structural terms
+
+carry_forward:
+  - s03n06/s03n10 refrain intentionality → /and-stitch Phase 4 (most important render watch in s03)
+  - SW-c18-LS-1, SW-c18-LS-2, SW-c18-LS-3 all CLOSED (dispositions SATISFIED at bone level)

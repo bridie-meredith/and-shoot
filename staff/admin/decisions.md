@@ -6191,3 +6191,117 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0097 | 2026-06-05 | SLOW (process-critic)
+
+mode: process-critic
+trigger:
+  reason: signal-accepted-at-emit
+  source_report: active-project/staff/auditor/write-b01c18-bone-gate.md
+  source_verdict: |
+    /and-write b01c18 Phase 6 bone-gate PASS — 0 HARD; 4 SIGNALs all accepted-not-remediated
+    (signal-001 s04 abstraction-dominance 1/8; signal-002 s05 abstraction-dominance 2/11 +
+    s03 movers non-grounding; signal-003 s03n09 "the contempt arrives" abstract-subject;
+    signal-004 s03n06/n10 byte-identical SVOs intentional-refrain).
+  gate_path: .claude/commands/and-write.md#phase-6
+verdict: OK
+
+question: |
+  (A) Is the recurring ABSTRACTION-DOMINANT fire-and-accept pattern for accounting/cipher chapters
+  (s04 cipher-delivery + s05 accounting-close in c18; cf. c17 s02, c11 s02/s03, c08/c16 airless-risk)
+  a signal that the bone-gate->stitch-Phase-4 handoff needs structural modification for
+  abstraction-heavy design-inherent chapters, or is per-chapter carry working as designed?
+  (B) Is the byte-identical intentional-refrain SVO pattern (s03n06/s03n10 "files the court-entry")
+  something the bone-gate needs a first-class disposition category for rather than per-chapter SIGNAL?
+
+decision: OK on both questions. No new proposal. No merge required.
+
+basis: |
+  Step 1 (proposals log):
+    Searched for open proposals targeting abstraction-dominance + stitch-Phase-4 handoff:
+    PROP-0023 (apparatus-dominant whole-chapter airlessness — bone-level cure; status: open)
+    PROP-0030/PROP-0031 (cross-chapter apparatus-register accumulation; status: open, both)
+    None of these has the same target + change_type as what this dispatch would propose.
+    No rejected proposal covers either candidate.
+
+  Step 2 (Question A — abstraction-dominance fire-and-accept structural fix):
+    DEC-0073 is the controlling prior ruling on this class. It established definitively:
+    (1) The SIGNAL is load-bearing as the stitch-carry trigger. A carve-out or mechanical
+        fix that eliminated the SIGNAL would remove that trigger — net-negative.
+    (2) The accept-with-rationale path is the designed handling when abstraction is
+        design-intrinsic. That path is functioning correctly.
+    (3) Cross-chapter accumulation is PROP-0030/PROP-0031's designed scope. Per-chapter
+        gates cannot see cross-chapter accumulation by construction.
+    (4) Audience 3-of-3 SUBSTANCE-FELT confirms downstream delivery is succeeding.
+
+    The b01c18 evidence is not meaningfully different from b01c11 (DEC-0073). The two
+    scenes (s04 cipher/packet, s05 accounting-close) are design-inherent: the intelligence-
+    delivery mechanism IS sparse ciphers and packets; the accounting-close IS the s05 form
+    by substance contract. The mover-level signal-003 (s03n09 "the contempt arrives") is
+    also earned (compound-eye n01-n04 supply the grounding; n09 is a synthesis vehicle).
+    All four signals carry appropriate stitch-Phase-4 obligations. The grounding-ledger (if
+    open from prior chapters) covers s05's accounting-close need. The existing mechanism
+    is doing its job.
+
+    Could a stricter version of the existing gate have caught a process failure? No — there
+    is no process failure. The gate fired correctly. The rationales are logged. The carries
+    are targeted. Audience confirmed delivery. Pure content-handling, not a process gap.
+
+    Discrimination: is the multi-point abstraction-dominance within a climax chapter a new
+    class? It is structurally denser than c11 (two distinct scene types + a mover-level
+    abstract-subject in the same chapter). However: (a) c18 is a PASS with 0 HARD and
+    audience 3/3 SUBSTANCE-FELT; (b) the multi-point fires are explained by distinct scene
+    designs (cipher-delivery = sparseness by design; accounting-close = ledger-register by
+    design; mover-level contempt-synthesis = upstream-grounded by n01-n04); (c) the stitch-
+    Phase-4 carries name each specific bone/scene. No pattern failure at gate level.
+
+    Cross-chapter accumulation data point: c18 is a climax chapter structurally distinct
+    from the apparatus-register-accumulation falling-arc stretch (c02-c17). Its abstract
+    register is the catastrophe-enacted-through-form; the cold-reader cannot see this
+    without the prior 17 chapters. Not a merge-qualifying recurrence for PROP-0030's
+    cross-chapter apparatus-density concern. Standard OK.
+
+  Step 3 (Question B — byte-identical intentional-refrain disposition category):
+    First occurrence of intentional verbatim SVO repetition as a design-refrain (below the
+    >=3 mannerism threshold). The gate caught it correctly (SIGNAL-004 with design-intent
+    rationale). The stitch-Phase-4 carry ("render as perceptibly-the-same-act, not
+    accidentally-repeated prose") is the correct downstream obligation. The pattern is
+    chapter-specific (s03 "seventh-day filing = first-day filing" contempt-as-form design);
+    not architectural to the project. No prior chapter has used byte-identical SVOs as a
+    design refrain.
+
+    A first-class disposition category would add specificity at the cost of modifying
+    /and-write.md Phase 6 for a first-occurrence chapter-specific pattern. The existing
+    SIGNAL path IS a disposition — it names the design intent, flags the stitch obligation,
+    and does not block. Standard first-occurrence hold per process-critic Rule step 4.
+
+  Step 4 (methodology):
+    Reversibility: per-chapter SIGNAL carry is reversible at stitch if it over-fires.
+    A new gate category is lower-reversibility (once added, always fires).
+    Cost: OK is S-cost; a gate modification on /and-write Phase 6 is M-cost at minimum.
+    Blast radius: per-chapter carry affects this chapter only; a gate modification
+    affects every future invocation of Phase 6. Methodology favors OK at N=1 on both.
+
+rationale: |
+  Both patterns are handled correctly by the existing process. The bone-gate->stitch-Phase-4
+  carry IS the structural fix — it is the designed handoff for accepted SIGNALs. Audience
+  3/3 SUBSTANCE-FELT confirms downstream delivery is landing. DEC-0073 is the controlling
+  ruling; b01c18 adds no new evidence class that would change it. The byte-identical-refrain
+  is a first-occurrence chapter-specific design choice; the gate caught it and named the
+  stitch obligation; no first-class disposition category is warranted at N=1.
+
+trade-off: |
+  Cost of OK on Question A: a future chapter where abstraction-dominance is NOT design-inherent
+  but the gate accepts it anyway would not be caught by a structural fix. However, the accept-
+  with-rationale discipline IS the structural fix; it requires the rationale to name the design
+  license. A failure of accept-with-rationale discipline is a gate-execution failure, not a
+  gate-design gap.
+  Cost of OK on Question B: a future intentional-refrain pair without clear design-rationale
+  would only be caught as a below-threshold advisory. Acceptable at N=1.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no

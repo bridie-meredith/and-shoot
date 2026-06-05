@@ -240,3 +240,40 @@ notes:
 
 bones_execution_watches_to_and-write:
   SW-c18-CFR-1: s02 Khepri-declarative POV-register — "the one piece of the architecture that is not Khepri. Everything else is." must land as narrating-register visible to reader, not as Taylor's interior recognition; if bones give Taylor the self-identification, the s05 blank-column irony collapses; coordinate with worm-canon-pedant HARD watch
+
+## 2026-06-05 — /and-write b01c18 Phase 6 bone-gate
+
+chapter: b01c18
+date: 2026-06-05
+scenes_reviewed: [b01c18s01, b01c18s02, b01c18s03, b01c18s04, b01c18s05]
+
+verdict_per_scene:
+  b01c18s01: SUBSTANCE-FELT
+  b01c18s02: SUBSTANCE-FELT
+  b01c18s03: SUBSTANCE-FELT
+  b01c18s04: SUBSTANCE-FELT
+  b01c18s05: SUBSTANCE-FELT
+
+chapter_verdict: SUBSTANCE-FELT
+hard_findings: none
+SUBSTANCE-FLAT: none
+SUBSTANCE-SUSPECT: none
+
+SW-c18-CFR-1 disposition: SATISFIED — s02 Khepri-declarative lands at bone level as narrating-register identification: architecture-as-subject (n07: "the architecture opens the nodes") and count-as-subject (n08: "the count crosses the threshold"); Taylor does not name herself; suppression holding in Taylor's interiority confirmed by n07/n08 SVO form; s05 blank-column irony intact (n10 passes recognition column without inscribing)
+
+notes:
+  - s01: held precipice reads as loaded spring not inertness; fold-and-set-on-floor (n05/n06) is physical decision-deferred; "a count she has not reached since a different architecture in a different place" (n07 rationale) tells the reader what is coming without breaking the fence; reader-Taylor asymmetry operative throughout all 7 bones; no filler
+  - s02: irrevocable deployment lands as escalation payoff at bone scale — all-nodes-simultaneously vs. ward-by-ward is the specific tactical distinction; Wren-gap-held-blank (n04/n05) is the reader-asymmetry move; moral_framework -1.0 fires on the architecture's structural fact (n07 architecture-as-subject), not on Taylor's interiority; all three axis moves carry cost_ledger_anchors; costs paid; op-friction at n06 (moth-corridor noise from chandler-quarter smelt-fire) is present and architecturally honest — one degraded node the deployment routes around; thin but satisfies the minimum friction requirement
+  - s03: contempt +1.5 earned through four specific tactically-legible bodies (n01-n04: groom/saddlebag/timing-mismatch, maid/irregular-corridor/factional-contact-map, knight/pommel-grip/enclosed-space-training, septa/timing/ward-handoff-interval); "+1.5 from six days at maximum density returning the system not samples" is correct; "reading it, for it, while it reads nothing of her at all" carries the contempt asymmetry correctly; axis moves at n08/n09 land through feed-content mechanism, not Taylor's affect; no cheap-gain
+  - s04: world-axes advancing as direct causal products of the irrevocable deployment; n05/n06 use operative succession-mechanism language (not axis slugs), correct per prior parking-lot discipline; "does not write it into any record" gives the confirmation the reader-asymmetry texture the reader wants; succession move irreversibility named explicitly ("whether Taylor names it there or not")
+  - s05: eleven physically distinct bones across eleven different physical objects (routes/gap/moths/column/entry-text/protection-line/column-position/standdown-line/disposal-entry/blank-slot/stylus); six accounting entries structurally distinct; disposal-calculus visible in accounting (n09: more load-bearing = more precisely disposable post-need) is political coherence; blank-column close (n10) correct — no manufactured recognition; contempt-without-exit enacted through ledger position (adjacent to protection-delivered entry, no exit attached)
+
+advisory_trim_flags:
+  - s03n06/s03n10: byte-identical SVOs ("taylor-hebert-kl-122ac files the court-entry") with different axes_held witnesses — assessed as INTENTIONAL REFRAIN (filing is the same act each day; contempt is the same contempt; the filing is the trap); not cuttable at bone level; carry to /and-stitch Phase 4 for surface-verb differentiation while preserving structural identity
+  - s02n06 op-friction: present (moth-corridor noise from smelt-fire; architecture routes around); thin but satisfies minimum; advisory only, not a block
+
+threshold_discipline_check: no fires; no established limits bypassed without cost; no unmotivated knowledge; no filler; no fence violations
+
+carry_forward:
+  - s03n06/s03n10 refrain differentiation → /and-stitch Phase 4 render watch
+  - SW-c18-CFR-1 CLOSED (disposition SATISFIED at bone level)

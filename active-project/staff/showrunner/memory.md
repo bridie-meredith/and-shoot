@@ -10614,7 +10614,15 @@ books:
                 gate_verdict: {bonefide: true, flat: false, signals: []}
 
       - slug: b01c18
-        status: scened
+        status: bones-written   # /and-write b01c18 Phase 7 emit 2026-06-05: 46 bones / 5 scenes; bone-gate PASS
+        bones_file: theater/bones/b01-c18.md
+        bones_count: 46
+        scene_map_file: theater/facets/scene-map-b01-c18.md
+        substance_bone_gate_verdict: PASS   # auditor 0 HARD (Khepri-enactment gate MET -> pl-2026-06-05-c18-001 resolved; all Δ exact; continuity PASS) + audience 3-of-3 SUBSTANCE-FELT all 5 scenes; 4 SIGNALs (s04/s05 abstraction-dominance, s03n09 contempt-as-subject, s03n06/n10 refrain) accepted -> carry to /and-stitch Phase 4
+        substance_delta_measured:
+          axes_moved: [{axis: moral_framework, delivered: -1.0, target: -1.0}, {axis: political_register-prot, delivered: 2.0, target: 2.0}, {axis: position-world, delivered: 1.0, target: 1.0}, {axis: political_register-world, delivered: 1.0, target: 1.0}, {axis: position-prot-collapse, delivered: -1.0, target: -1.0}, {axis: social_tether-prot-collapse, delivered: -1.0, target: -1.0}]
+          density_measured: "s01 all-held (7 bones, precipice); s02 3 movers/10 (mf -1.0 dominant @ architecture-opens-nodes + both collapse -0.5 co-fire); s03 2 movers/10 (ppr +1.5 via 4 compound-eye grounding bodies); s04 2 movers/8 (pw+1.0/prw+1.0 succession-lands); s05 3 movers/11 (ppr+0.5 + both collapse -0.5, accounting-close). 0 chatter bones. Climax shape; abstraction-dominant tail (s04/s05) accepted-by-design."
+          felt_verdict: SUBSTANCE-FELT-3of3
         chunk: |
           War-pressure on Sera's succession exposure — Dance-pressure pulse 2. A
           court-tier event: Viserys I's health deteriorates visibly; a succession question
@@ -10779,6 +10787,62 @@ books:
               density_target: 0.60-0.75
             stale_since: null
 
+            event_map:
+              - event: otto-deployment-request-delivered
+                bones: [b01c18s01n01, b01c18s01n02]
+              - mechanism: request-scope-named
+                bones: [b01c18s01n02, b01c18s01n03]
+              - force: opposing-arrangement-structural-logic
+                bones: [b01c18s01n03, b01c18s01n04]
+              - image: margin-cipher-scope-notation
+                bones: [b01c18s01n02]
+              - force: protagonist-reads-to-end
+                bones: [b01c18s01n04]
+              - event: scope-recognized-not-yet-executed
+                bones: [b01c18s01n05, b01c18s01n06, b01c18s01n07]
+            bones:
+              - slug: b01c18s01n01
+                flat_id: 1
+                svo: taylor-hebert-kl-122ac lifts the cipher-bundle
+...
+                substance_delta: {axes_held: [{axis: moral_framework, rationale: 'delivery received; the ask names the precipice only; the irrevocable threshold fires at the act, not at the receipt'}, {axis: social_tether-antag, rationale: 'locked at 9; the bundle arriving through Jarvis''s dead drop is the structural leverage operating, not a new leverage event'}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s01n02
+                flat_id: 2
+                svo: taylor-hebert-kl-122ac lifts the margin-cipher addendum
+...
+                substance_delta: {axes_held: [{axis: moral_framework, rationale: the margin notation names the scope; Taylor reads the scope and identifies what it costs; the framework holds at precipice — the act has not begun}, {axis: political_register-prot, rationale: 'no court feed-content has arrived; the ask is paper-and-cipher, not bodies through compound eyes; contempt register has no material'}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s01n03
+                flat_id: 3
+                svo: the cipher addendum opens the succession-mechanism column
+...
+                substance_delta: {axes_held: [{axis: position-world, rationale: the succession move has not yet landed; position-world held until the intelligence operation produces the outcome; this scene names the precondition}, {axis: political_register-world, rationale: Green succession move not yet executed; held until s04}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s01n04
+                flat_id: 4
+                svo: taylor-hebert-kl-122ac reopens the addendum
+...
+                substance_delta: {axes_held: [{axis: moral_framework, rationale: 'second read is the precipice behavior: Taylor is holding the weight of the ask, not yet having acted; framework holds at the crack before the breach'}, {axis: relational_anchor_status, rationale: the fortnight window deployment scale increases structural risk to Wren but s01 is the request-receipt scene; anchor held at 7.5; the Wren-gap will be held blank through the deployment}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s01n05
+                flat_id: 5
+                svo: taylor-hebert-kl-122ac folds the cipher-bundle
+...
+                substance_delta: {axes_held: [{axis: moral_framework, rationale: the fold is not execution; Taylor closes the cipher without answering; the precipice held}, {axis: capability, rationale: held at 8.5; the request-receipt scene uses no capability deployment}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s01n06
+                flat_id: 6
+                svo: the tallow-render room floor receives the bundle
+...
+                substance_delta: {axes_held: [{axis: moral_framework, rationale: setting the bundle on the floor without executing is the precipice enactment — the ask sits unanswered in the tallow-render room; framework holds}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s01n07
+                flat_id: 7
+                svo: taylor-hebert-kl-122ac holds the feet
+...
+                substance_delta: {axes_held: [{axis: moral_framework, rationale: 'the naming enacts stillness-against-pressure: Taylor identifies that the density she has never simultaneously deployed is the thing the addendum calls; the moral_framework precipice is held at maximum compression before the breach; shape-language only — ''a count she has not reached since a different architecture in a different place'' — no interior recognition opens'}, {axis: moral_legibility_to_self, rationale: the cost is named in the counting but the full recognition event is suppressed; deferred to d14}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
           - slug: b01c18s02
             status: scened
             chunk: |
@@ -10851,6 +10915,84 @@ books:
               density_target: 0.70-0.85
             stale_since: null
 
+            event_map:
+              - event: deployment-activation-enacted
+                bones: [b01c18s02n01, b01c18s02n02]
+              - mechanism: full-coverage-architecture-deployed
+                bones: [b01c18s02n02, b01c18s02n03]
+              - image: network-full-open-before-dawn
+                bones: [b01c18s02n01, b01c18s02n03]
+              - force: protagonist-wren-gap-held
+                bones: [b01c18s02n04, b01c18s02n05]
+              - image: wren-gap-held-blank-amid-fullcoverage
+                bones: [b01c18s02n05]
+              - force: opposing-khepri-echo
+                bones: [b01c18s02n06, b01c18s02n07]
+              - event: irrevocable-density-threshold-crossed
+                bones: [b01c18s02n07, b01c18s02n08]
+              - mechanism: khepri-scale-echo-landed
+                bones: [b01c18s02n08, b01c18s02n09]
+            bones:
+              - slug: b01c18s02n01
+                flat_id: 8
+                svo: taylor-hebert-kl-122ac opens the bottlefly routes
+...
+                substance_delta: {axes_held: [{axis: capability, rationale: deployment begins; capability runs at existing scope maximally — no new scope acquired; held at 8.5}, {axis: moral_framework, rationale: 'the deployment act begins; the framework cracks at the threshold but the move registers at the full-architecture-open, not at the single-gate activation'}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s02n02
+                flat_id: 9
+                svo: taylor-hebert-kl-122ac opens the moth-corridor
+...
+                substance_delta: {axes_held: [{axis: capability, rationale: 'second channel activated; deployment proceeds simultaneous across nodes; the architecture at full-open is the event, each node-activation is a building action toward it'}, {axis: social_tether-prot-rise, rationale: rise axis at peak 8.5; the collapse axis carries the tether motion; rise does not move}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s02n03
+                flat_id: 10
+                svo: the feed-lines activate the outer-gate corridors
+...
+                substance_delta: {axes_held: [{axis: capability, rationale: three-gate simultaneous activation — the architecture reaching the outer-ring corridors; the full-open is the event type; held through the activation sequence}, {axis: position-prot-collapse, rationale: collapse in motion since c17; the deployment scale is accruing the irrevocable-load weight that advances the collapse; held pending the architecture-threshold cross at n07/n08}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s02n04
+                flat_id: 11
+                svo: taylor-hebert-kl-122ac skips the east-of-water-gate lanes
+...
+                substance_delta: {axes_held: [{axis: relational_anchor_status, rationale: Wren's corridor held blank during maximum-density deployment; anchor held at 7.5; the Norren attribution screens the gap-figure from Otto's apparatus even as the surrounding lanes run at maximum density}, {axis: moral_framework, rationale: the blank-gap is the one piece that is not the prior architecture running; the framework holds until the full-architecture-open names itself in the count}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s02n05
+                flat_id: 12
+                svo: wren-stitch-maker-flea-bottom-ward crosses the lane
+...
+                substance_delta: {axes_held: [{axis: relational_anchor_status, rationale: Wren moves through her corridor screened — the un-priced anchor passes through the maximum-density field without entering it; anchor held at 7.5; the structural irony (the one blank lane in the architecture) is enacted in her crossing}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s02n06
+                flat_id: 13
+                svo: the moth-corridor feed returns noise
+...
+                substance_delta: {axes_held: [{axis: capability, rationale: 'op-friction bone: one of the newly-opened channels returns ambient noise rather than clean coverage on first activation — a corridor read degraded by a smelt-fire in the chandler quarter; the architecture recovers but the friction is present; capability held — the scope is established, the deployment mode encounters one imperfect node'}, {axis: moral_framework, rationale: the friction does not interrupt the deployment; the architecture routes around the noise; the breach is not paused by operational difficulty}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s02n07
+                flat_id: 14
+                svo: the architecture opens the nodes
+...
+                substance_delta: {axes_held: [], axis_moves: [{axis: moral_framework, direction: down, magnitude: 1.0}], cost_ledger_anchor: cl02}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s02n08
+                flat_id: 15
+                svo: the count crosses the threshold
+...
+                substance_delta: {axes_held: [], axis_moves: [{axis: position-prot-collapse, direction: down, magnitude: 0.5}], cost_ledger_anchor: cl07b}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s02n09
+                flat_id: 16
+                svo: taylor-hebert-kl-122ac extends the count
+...
+                substance_delta: {axes_held: [], axis_moves: [{axis: social_tether-prot-collapse, direction: down, magnitude: 0.5}], cost_ledger_anchor: cl07a}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s02n10
+                flat_id: 17
+                svo: the cipher-bundle drops
+...
+                substance_delta: {axes_held: [{axis: moral_framework, rationale: the bundle on the floor is the unanswered-ask from s01; now the deployment has begun and the ask is enacted; the framework has completed its c18 movement at n07; the bundle is the physical closing of the s01 precipice}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
           - slug: b01c18s03
             status: scened
             chunk: |
@@ -10922,6 +11064,84 @@ books:
               density_target: 0.75-0.90
             stale_since: null
 
+            event_map:
+              - event: court-apparatus-read-at-scale
+                bones: [b01c18s03n01, b01c18s03n02, b01c18s03n03, b01c18s03n04]
+              - image: court-bodies-at-compound-scale
+                bones: [b01c18s03n01, b01c18s03n02, b01c18s03n03, b01c18s03n04]
+              - mechanism: court-feed-returns-court-as-system
+                bones: [b01c18s03n05, b01c18s03n06]
+              - force: opposing-court-machinery-self-enclosed
+                bones: [b01c18s03n05, b01c18s03n07]
+              - event: contempt-near-saturation-arrives
+                bones: [b01c18s03n08, b01c18s03n09]
+              - image: full-court-machinery-in-compound-register
+                bones: [b01c18s03n06]
+              - mechanism: contempt-saturation-mechanism
+                bones: [b01c18s03n09, b01c18s03n10]
+              - force: protagonist-files-each-entry
+                bones: [b01c18s03n07, b01c18s03n10]
+            bones:
+              - slug: b01c18s03n01
+                flat_id: 18
+                svo: the groom lifts the saddlebag
+...
+                substance_delta: {axes_held: [{axis: political_register-prot, rationale: 'first compound-eye specific: a groom whose saddlebag-timing mismatches the tilting-yard schedule — the court apparatus in its smallest unit; contempt register accumulates on specific bodies, not on a summary judgment'}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s03n02
+                flat_id: 19
+                svo: the maid crosses the corridor
+...
+                substance_delta: {axes_held: [{axis: political_register-prot, rationale: 'second compound-eye specific: the maid whose irregular corridor pattern indexes to three contact points, two Green and one not — the feed returns the factional machinery through a body that appears to be doing household work'}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s03n03
+                flat_id: 20
+                svo: the knight grips the pommel
+...
+                substance_delta: {axes_held: [{axis: political_register-prot, rationale: 'third compound-eye specific: the left-hand grip that belongs to a style the Red Keep''s tilting yard does not teach — a man trained for enclosed spaces, not the formal yard; the feed returns a specific physical tell in a body performing a factional function'}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s03n04
+                flat_id: 21
+                svo: the septa crosses the court
+...
+                substance_delta: {axes_held: [{axis: political_register-prot, rationale: 'fourth compound-eye specific: the septa whose daily timing maps precisely to the ward-elder circuit handoff interval Taylor knows from Flea Bottom — the court machinery using the same shape as the ward machinery; the contempt has its most precise object yet'}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s03n05
+                flat_id: 22
+                svo: the feed returns the court-pattern
+...
+                substance_delta: {axes_held: [{axis: political_register-prot, rationale: 'the four bodies resolve into a pattern: not four individuals but one machinery performing its factional function simultaneously in four registers; the feed returns the court-as-system, which is the contemplation-object the contempt has been accumulating toward'}, {axis: relational_anchor_status, rationale: Wren's blank lane holds through the s03 court-read; the apparatus returns court-tier bodies but not Wren; anchor held at 7.5}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s03n06
+                flat_id: 23
+                svo: taylor-hebert-kl-122ac files the court-entry
+...
+                substance_delta: {axes_held: [{axis: moral_framework, rationale: completed its c18 allocation at s02; the court-reading is the deployment's function running as designed; no new breach; held at -4.0 aggregate}, {axis: capability, rationale: held at 8.5; the reading operation uses existing capability at maximum deployment-mode}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: [REGISTER-REFRAIN-PAIR-s03n06n10]}
+              - slug: b01c18s03n07
+                flat_id: 24
+                svo: taylor-hebert-kl-122ac files the opening-entry
+...
+                substance_delta: {axes_held: [{axis: political_register-prot, rationale: 'filing the first-day entry with the same gesture as the seventh enacts the contempt''s quality: complete, named, and producing no difference in what happens next; the act is the same act each day; the contempt is the same contempt; the filing is the trap'}, {axis: moral_legibility_to_self, rationale: contempt arriving at near-saturation is directed outward at the apparatus; the recognition-of-repetition is not turned onto the ledger; legibility holds at crack-level; deferred to d14}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s03n08
+                flat_id: 25
+                svo: the insect-feed returns the apparatus
+...
+                substance_delta: {axes_held: [], axis_moves: [{axis: political_register-prot, direction: up, magnitude: 1.0}], cost_ledger_anchor: cl06}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s03n09
+                flat_id: 26
+                svo: the contempt arrives
+...
+                substance_delta: {axes_held: [], axis_moves: [{axis: political_register-prot, direction: up, magnitude: 0.5}], cost_ledger_anchor: cl06}
+                gate_verdict: {bonefide: true, flat: false, signals: [CONTEMPT-AS-SUBJECT-EMBODY-AT-STITCH]}
+              - slug: b01c18s03n10
+                flat_id: 27
+                svo: taylor-hebert-kl-122ac files the court-entry
+...
+                substance_delta: {axes_held: [{axis: political_register-prot, rationale: 'contempt-without-exit enacted: clarity forecloses nothing; the seventh-day filing identical to the first is the form the contempt takes — named, filed, without a mechanism for refusal attached; cl06 opened (no exit); held at new near-saturation level after n08/n09 moves'}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: [REGISTER-REFRAIN-PAIR-s03n06n10]}
           - slug: b01c18s04
             status: scened
             chunk: |
@@ -10991,6 +11211,72 @@ books:
               density_target: 0.65-0.80
             stale_since: null
 
+            event_map:
+              - event: succession-document-moves
+                bones: [b01c18s04n01, b01c18s04n02]
+              - mechanism: intelligence-product-delivered-to-channel
+                bones: [b01c18s04n01]
+              - event: green-move-lands-confirmed
+                bones: [b01c18s04n03, b01c18s04n04]
+              - image: margin-cipher-single-line-confirmation
+                bones: [b01c18s04n03]
+              - force: protagonist-reads-line-writes-nothing
+                bones: [b01c18s04n04]
+              - force: opposing-succession-irreversible
+                bones: [b01c18s04n05]
+              - mechanism: position-world-advancement-mechanism
+                bones: [b01c18s04n05, b01c18s04n06]
+              - event: world-axes-advance-on-product-confirmation
+                bones: [b01c18s04n06, b01c18s04n07]
+            bones:
+              - slug: b01c18s04n01
+                flat_id: 28
+                svo: taylor-hebert-kl-122ac drops the intelligence-packet
+...
+                substance_delta: {axes_held: [{axis: capability, rationale: held at 8.5; the three-drop delivery sequence is the deployment's function completing; no scope change}, {axis: moral_framework, rationale: completed its c18 allocation at s02; the intelligence product delivery does not constitute a new breach; held at -4.0 aggregate}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s04n02
+                flat_id: 29
+                svo: jarvis-coin-kl-courier collects the access-window packet
+...
+                substance_delta: {axes_held: [{axis: social_tether-antag, rationale: locked at 9; Jarvis operating as structural conduit — the tether mechanism completing the delivery; no new leverage event}, {axis: political_register-world, rationale: Green succession document not yet through the Small Council; world-axis held until the counter-bundle confirms}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s04n03
+                flat_id: 30
+                svo: the counter-bundle returns the confirmation-line
+...
+                substance_delta: {axes_held: [{axis: position-world, rationale: the single line is the confirmation; the move has landed; position-world will move at n06 on the confirmation's content; this bone is the physical delivery}, {axis: political_register-world, rationale: the cipher line carries the succession outcome; world-axis will move at n07; this bone is the physical receipt}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s04n04
+                flat_id: 31
+                svo: taylor-hebert-kl-122ac lifts the cipher line
+...
+                substance_delta: {axes_held: [{axis: political_register-prot, rationale: 'near-saturation already arrived in s03; the confirmation is an outcome-delivery, not a new court-feed event; contempt register held — the remaining +0.5 fires in s05 on the accounting close'}, {axis: relational_anchor_status, rationale: Wren screened; gap-lane blank; the succession move's landing does not produce a Wren-recognition event; anchor held at 7.5}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s04n05
+                flat_id: 32
+                svo: the succession document clears the Small Council access window
+...
+                substance_delta: {axes_held: [], axis_moves: [{axis: position-world, direction: up, magnitude: 1.0}], cost_ledger_anchor: cl07b}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s04n06
+                flat_id: 33
+                svo: the Green faction secures the succession channel
+...
+                substance_delta: {axes_held: [], axis_moves: [{axis: political_register-world, direction: up, magnitude: 1.0}], cost_ledger_anchor: cl07c}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s04n07
+                flat_id: 34
+                svo: taylor-hebert-kl-122ac closes the record
+...
+                substance_delta: {axes_held: [{axis: moral_legibility_to_self, rationale: 'the outcome is named in the accounting but the full recognition event is suppressed; the not-writing-it-down enacts the crack-level legibility: she sees clearly and does not file; deferred to d14'}, {axis: moral_framework, rationale: completed its c18 allocation at s02; the intelligence delivery and outcome confirmation do not constitute a new breach; held at -4.0 aggregate}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s04n08
+                flat_id: 35
+                svo: the ward runs
+...
+                substance_delta: {axes_held: [{axis: capability, rationale: the deployment continues running on the fourteenth day; confirmation received but the architecture is still at full coverage; capability held at 8.5}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
           - slug: b01c18s05
             status: scened
             chunk: |
@@ -11074,6 +11360,98 @@ books:
                   rationale: "rise axis at peak 8.5; collapse axis carries the tether motion; rise does not move"
               density_target: 0.80-0.90
             stale_since: null
+            event_map:
+              - event: deployment-stood-down
+                bones: [b01c18s05n01, b01c18s05n02, b01c18s05n03]
+              - image: network-standown-ward-by-ward
+                bones: [b01c18s05n01, b01c18s05n02]
+              - mechanism: irrevocable-accounting-sequence
+                bones: [b01c18s05n04]
+              - force: opposing-ledger-clean-close
+                bones: [b01c18s05n04, b01c18s05n05]
+              - event: irrevocable-threshold-named-in-accounting
+                bones: [b01c18s05n04, b01c18s05n05]
+              - force: protagonist-runs-entry-through-cost-ledger
+                bones: [b01c18s05n06]
+              - image: cost-ledger-closes-clean
+                bones: [b01c18s05n06]
+              - event: contempt-without-exit-final-register
+                bones: [b01c18s05n07, b01c18s05n08]
+              - mechanism: contempt-as-ledger-entry
+                bones: [b01c18s05n07]
+              - event: collapse-axes-deepen-in-accounting
+                bones: [b01c18s05n08, b01c18s05n09]
+              - mechanism: disposal-calculus-visible
+                bones: [b01c18s05n09]
+              - image: blank-column-held-again
+                bones: [b01c18s05n10]
+            bones:
+              - slug: b01c18s05n01
+                flat_id: 36
+                svo: taylor-hebert-kl-122ac closes the ward-elder routes
+...
+                substance_delta: {axes_held: [{axis: capability, rationale: standdown begins the way the build began — ward by ward; capability held at 8.5; the drawdown completes the deployment cycle}, {axis: moral_framework, rationale: completed its c18 allocation at s02; the accounting close at s05 names the threshold but does not constitute a new breach; held at -4.0 aggregate through end of chapter}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s05n02
+                flat_id: 37
+                svo: the east-of-water-gate gap closes
+...
+                substance_delta: {axes_held: [{axis: relational_anchor_status, rationale: Wren's corridor was held blank through the entire fortnight; the gap closes last in the standdown exactly as it was held blank during deployment; anchor held at 7.5 through chapter close; cl-d11 +0.5 2nd tranche is documented as cost-forward carry to d14 collapse settlement and is NOT settled in c18}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s05n03
+                flat_id: 38
+                svo: the chandler-quarter moths settle the eaves
+...
+                substance_delta: {axes_held: [{axis: capability, rationale: 'grounding bone: the moths returning to ambient density in the chandler-quarter eaves as the architecture pulls back to baseline — the physical fact of the network standing down into the buildings it lives in; capability held at 8.5; the standdown is a real physical change in the ward''s insect-density'}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s05n04
+                flat_id: 39
+                svo: taylor-hebert-kl-122ac opens the cost-ledger column
+...
+                substance_delta: {axes_held: [{axis: moral_framework, rationale: 'opening the accounting column with the same gesture she uses every time enacts the irrevocable threshold meeting its own discipline: the form is intact; the ledger runs; the calibrated qualifier is gone; framework held at -4.0'}, {axis: moral_legibility_to_self, rationale: the blank column that would hold full recognition stays blank; suppression continues exactly as through c12/c14/c16/c17; legibility held at crack-level through end of chapter}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s05n05
+                flat_id: 40
+                svo: the ledger entry records the threshold-crossing
+...
+                substance_delta: {axes_held: [{axis: moral_framework, rationale: the naming of the prior-number threshold in the ledger entry enacts the accounting's completeness without producing a new breach; the irrevocable threshold was crossed at s02; this bone is the documentation of what was crossed; held at -4.0}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s05n06
+                flat_id: 41
+                svo: taylor-hebert-kl-122ac closes the protection-entry line
+...
+                substance_delta: {axes_held: [], axis_moves: [{axis: political_register-prot, direction: up, magnitude: 0.5}], cost_ledger_anchor: cl06}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s05n07
+                flat_id: 42
+                svo: the column receives the contempt-entry
+...
+                substance_delta: {axes_held: [{axis: political_register-prot, rationale: 'contempt-without-exit enacted as ledger fact: the contempt is complete, named, filed without a refusal mechanism; cl06 opened at s03; the closing-scene enacts the contempt''s quality through its column-position — adjacent to the protection-delivered entry, no exit attached; held at near-saturation (7.5) after s06 move'}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s05n08
+                flat_id: 43
+                svo: taylor-hebert-kl-122ac writes the standdown line
+...
+                substance_delta: {axes_held: [], axis_moves: [{axis: position-prot-collapse, direction: down, magnitude: 0.5}], cost_ledger_anchor: cl07b}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s05n09
+                flat_id: 44
+                svo: the ledger closes the disposal-calculus entry
+...
+                substance_delta: {axes_held: [], axis_moves: [{axis: social_tether-prot-collapse, direction: down, magnitude: 0.5}], cost_ledger_anchor: cl07a}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s05n10
+                flat_id: 45
+                svo: taylor-hebert-kl-122ac passes the recognition column
+...
+                substance_delta: {axes_held: [{axis: moral_legibility_to_self, rationale: 'the blank column is the enacted form of suppression-continuing: the full recognition event is deferred to d14; she sees the shape of the act (the deployment that crossed the prior number, the contempt that changes nothing, the arrangement that consumes the instrument) and does not inscribe it; the accounting is honest and the blank column is the honest accounting''s most load-bearing entry'}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c18s05n11
+                flat_id: 46
+                svo: taylor-hebert-kl-122ac sets the stylus
+...
+                substance_delta: {axes_held: [{axis: moral_framework, rationale: 'the stylus set beside the ledger — not down-and-away but beside, as an act completed — enacts the accounting-as-discipline: the framework has not broken the form; the form is intact; the irrevocable deployment closed cleanly in the ledger the way everything else has closed; held at -4.0'}], axis_moves: [], cost_ledger_anchor: null}
+                gate_verdict: {bonefide: true, flat: false, signals: []}
         chunk_cold_read:
           reviewed_at: 2026-06-05T02:30:00Z
           verdict: CHUNK-CLASS-B
