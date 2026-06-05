@@ -18,6 +18,13 @@ died and woke up somewhere new and immediately declared "I'm gonna cultivate" �
 and just... does that. Confidently incompetent. Builds his whole life around
 tropes he half-remembers. Dunning-Kruger immortal-in-training.
 
+**Path = ALCHEMY, not beast-taming `[STICKING]`.** He is a pill-refining /
+elixir cultivator. In xianxia, beasts aren't companions — they're *ingredients*
+(cores, blood, bone, scale → pills). So he does NOT want to ride a dragon. He
+wants to **harvest and grind dragon resources** — eggs, scales, blood, bone —
+into cultivation elixirs. In a world where dragons are sacred dynastic objects,
+this is capital heresy played for laughs.
+
 **Chosen world:** Westeros, in the build-up to the Dance of the Dragons, while
 the key players are still **kids**. Comedy first. Then the cultivator **ages up**
 into the actual Dance — and the comedy darkens as the realm slides toward a real
@@ -48,7 +55,7 @@ cultivation-novel logic; Westeros answers in feudal blood-and-fire logic.
 ### Friction map (cultivation trope → Westeros reality)
 | He thinks it is... | It actually is... | Comedy |
 |---|---|---|
-| Spirit-beast contract | Bonding a dragon | Sometimes *works* — dragons are basically spirit beasts. Terrifying for everyone else. |
+| S-tier beast reagents to harvest | Grinding up dragon eggs / scale / blood / bone | Capital heresy. Everyone horrified. He thinks riding is the *inferior* path. |
 | Bloodline-purity cultivation | Targaryen incest dynasty | He *approves*, earnestly, of their "clan bloodline discipline." Everyone uncomfortable. (Keep light, played for cringe-comedy not leer.) |
 | Righteous sect | The Faith of the Seven | He keeps trying to "spar for sect ranking" with septons. |
 | Scholarly/alchemy sect | The Citadel / maesters | Maester potions = "pill refining." Leeches = "impurity expulsion." |
@@ -61,14 +68,71 @@ cultivation-novel logic; Westeros answers in feudal blood-and-fire logic.
 
 ---
 
+## Reagent table `[STICKING]` — what's actually harvestable
+
+**Design principle:** he may only misclassify things that are *real Westeros
+magic* in canon. The broken-clock gag only works if the reagents are genuinely
+mystical — so his elixirs occasionally *do* something, which keeps him deluded.
+No invented substances; everything below is canon material read through pill-brain.
+
+**Field sites:** Dragonpit (the locked pharmacy, guarded by Dragonkeepers) ·
+**Dragonmont** (the wild volcano above Dragonstone — feral dragons, old nests,
+loose eggs, molt, bone — the motherlode, and it bites back) · the Citadel
+(scholar-sect lab access) · the Alchemists' Guild / pyromancers (rival furnace).
+
+### Dragon-tier (S-rank, the obsession)
+- **Dragon eggs** — the dream score; sacred cradle-gifts; grinding one = heresy
+- **Shed scale / molt** — gettable from nests without killing anything
+- **Dragon blood** — "the blood of the dragon," which he takes *literally*
+- **Dragon bone** — canonically real material (black, strong, fire-resistant)
+- **Teeth / claws**
+- **Dragon dung & ash** — the pathetic early-game scraps he's reduced to
+- **Eggshell fragments** — from hatched eggs
+
+### Volcanic / fire-tier (Dragonmont & the guild)
+- **Dragonglass / obsidian** — "frozen fire," real magic; he reads it as spirit-stone
+- **Wildfire ("the substance")** — the pyromancers' alchemical fire; a literal
+  exploding furnace sect he desperately wants to join
+- **Sulfur / brimstone / hot-spring deposits** — Dragonmont "earth-fire essence"
+
+### Broader Westeros mystic seam (the real magic, misread)
+- **Weirwood** — heart-tree sap "red as blood," greenseer paste; "soul-wood"
+- **Shade of the evening** — Qartheen warlock drink from a tree; real magical
+  substance → his "enlightenment elixir"
+- **Glass candles** — obsidian, burn without flame, far-sight; "scrying treasure"
+- **Valyrian steel** — spell-forged, unforgeable; top-tier "treasure-grade ore"
+- **Basilisk blood, manticore venom, the strangler, tears of Lys** — Essosi /
+  poisoner alchemy, all canon; his "toxic-path refining"
+- **Maester's apothecary** — milk of the poppy, sweetsleep, moon tea, leeches
+  ("impurity-expulsion worms") — easy lab access if he apprentices
+
+### Mundane-misread (pure comedy, does nothing)
+- Sept incense ("spiritual offerings"), Arbor gold ("qi tonic"), a fever
+  ("tribulation"), sour Dornish food ("a trial of the body")
+
+## Structural payoff `[STICKING]` — the Dance is a reagent windfall
+The Dance of the Dragons is history's greatest dragon-death event. He spends the
+comedy childhood *starving* for material (everything guarded, Dragonpit locked,
+keepers chase him off Dragonmont). Then he ages up, the war comes, and **the sky
+starts raining dead dragons.** His chronic shortage is solved by a national
+catastrophe. The farce curdles exactly on the canon timeline — his windfall is
+everyone else's apocalypse.
+
+---
+
 ## Protagonist `[OPEN]` — the decision everything keys off
 
 Options on the table:
 
-- **A — Original Targaryen kid (OC prince/princess).** Max comedy freedom; real
-  cast become straight men; his very existence is a wildcard that bends the Dance.
-  Born ~113 AC → ~16 at the Dance (129). Needs a genuinely novel name (NOT a
-  reused library OC name — see CLAUDE.md name-novelty note).
+- **A — Dragonless OC Targaryen kid (leaning pick).** A trueborn-ish princeling
+  who *failed* to claim a dragon — a humiliation in a family that IS dragons — and
+  whose cultivation brain reframes the failure as enlightenment: *"Riding is the
+  inferior path. The mortal flies the beast; the immortal consumes it."*
+  Sour-grapes cosmology. Heresy from *inside the family* = maximally scandalous,
+  keeps him next to power and next to the ingredients. Max comedy freedom; real
+  cast stay sane straight-men; his existence is the canon-bender. Born ~113 AC →
+  ~16 at the Dance (129). Needs a genuinely novel name (NOT a reused library OC
+  name — see CLAUDE.md name-novelty note).
 - **B — Reincarnate into a REAL Dance kid (e.g. Aemond).** His canon intensity
   re-read as cultivation-protagonist seriousness: claiming Vhagar = "spirit-beast
   taming arc," the sapphire eye = "dao-eye won through tribulation." Very funny,
