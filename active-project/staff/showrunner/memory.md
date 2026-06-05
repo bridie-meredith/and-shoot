@@ -10623,6 +10623,15 @@ books:
           axes_moved: [{axis: moral_framework, delivered: -1.0, target: -1.0}, {axis: political_register-prot, delivered: 2.0, target: 2.0}, {axis: position-world, delivered: 1.0, target: 1.0}, {axis: political_register-world, delivered: 1.0, target: 1.0}, {axis: position-prot-collapse, delivered: -1.0, target: -1.0}, {axis: social_tether-prot-collapse, delivered: -1.0, target: -1.0}]
           density_measured: "s01 all-held (7 bones, precipice); s02 3 movers/10 (mf -1.0 dominant @ architecture-opens-nodes + both collapse -0.5 co-fire); s03 2 movers/10 (ppr +1.5 via 4 compound-eye grounding bodies); s04 2 movers/8 (pw+1.0/prw+1.0 succession-lands); s05 3 movers/11 (ppr+0.5 + both collapse -0.5, accounting-close). 0 chatter bones. Climax shape; abstraction-dominant tail (s04/s05) accepted-by-design."
           felt_verdict: SUBSTANCE-FELT-3of3
+        bones_review:   # /and-review bones b01c18 — MANDATORY gate; /and-facets Phase 0 reads this
+          reviewed_at: 2026-06-05T05:00:00Z
+          report_path: active-project/staff/reviews/bones-b01c18-2026-06-05.md
+          verdict: PASS   # chunk->bones fidelity: full spine intact; no hollowing; REGISTER-REFRAIN-PAIR @23/@27 survives byte-identical
+          follow_check: PASS   # c01-c17 reader can follow central event + all 4 scene hand-offs; remaining opacity context-addable -> /and-facets Phase 2.5
+          dialogue_coverage: PASS   # N/A solitary chapter; 0 dialogue-anchor bones (Jarvis courier channel, Wren screened — both speechless)
+          aliveness: BONES-AIRLESS-RISK   # advisory; scoped s04/s05 abstraction-dominant (DEC-0096 Class-B accepted); s01-s03 grounded; S04/S05-EMBODIMENT carried to /and-stitch Phase 4
+          bones_file_mtime_at_review: 2026-06-05T04:45:00Z
+          stale_since: null
         chunk: |
           War-pressure on Sera's succession exposure — Dance-pressure pulse 2. A
           court-tier event: Viserys I's health deteriorates visibly; a succession question
