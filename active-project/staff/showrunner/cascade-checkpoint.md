@@ -8,8 +8,10 @@ cascade:
   root: b01c18
   invoked_at: 2026-06-05T02:00:00Z
   invoked_command: /and-substance chapter b01c18 --cascade
-last_completed: {level: bones, slug: b01c18, completed_at: 2026-06-05T04:45:00Z}
-next: {command: "/and-review bones b01c18", args: []}
+last_completed: {level: facets, slug: b01c18, completed_at: 2026-06-05T05:45:00Z}
+next: {command: "/and-stitch b01c18", args: []}
+bones_review: {verdict: PASS, follow_check: PASS}
+facets: {result: ACCEPT-9of9-3of3, cycles: 1, fence: CLEAN, followable: true, alive: true, oc_critic: SUCCESS}
 phase5: {audience: ACCEPT-3of3, dramatist: ACCEPT, auditor: 2-HARD-bookkeeping-corrected, chunk_cold_read: CHUNK-CLASS-B-disposition-P-DEC-0096}
 write: {bones: 46, scenes: 5, phase2: 36-FAULT-FORM-fixed, bone_gate: PASS-0HARD, khepri_gate: MET, audience: SUBSTANCE-FELT-3of3, signals: 4-accepted-carry-to-stitch-P4, process_critic: OK-DEC-0097}
 chapter: b01c18

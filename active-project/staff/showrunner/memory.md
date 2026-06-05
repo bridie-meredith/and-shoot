@@ -10614,7 +10614,7 @@ books:
                 gate_verdict: {bonefide: true, flat: false, signals: []}
 
       - slug: b01c18
-        status: bones-written   # /and-write b01c18 Phase 7 emit 2026-06-05: 46 bones / 5 scenes; bone-gate PASS
+        status: audited-r1   # /and-facets b01c18 COMPLETE 2026-06-05: 9 facets 3-of-3 ACCEPT (1 cycle); Earth-Bet fence CLEAN; FOLLOWABLE+ALIVE
         bones_file: theater/bones/b01-c18.md
         bones_count: 46
         scene_map_file: theater/facets/scene-map-b01-c18.md
@@ -10632,6 +10632,29 @@ books:
           aliveness: BONES-AIRLESS-RISK   # advisory; scoped s04/s05 abstraction-dominant (DEC-0096 Class-B accepted); s01-s03 grounded; S04/S05-EMBODIMENT carried to /and-stitch Phase 4
           bones_file_mtime_at_review: 2026-06-05T04:45:00Z
           stale_since: null
+        facets:   # /and-facets b01c18 (consolidated R1+R2 graph-aware pass under chapter-production budget, c15/c16/c17 precedent)
+          status: audited-r1
+          facets_path: active-project/theater/facets/
+          proto_lines: active-project/theater/proto-lines/b01-c18.md
+          cite_index: active-project/theater/facets/_cite-index.md
+          round_1_complete: true
+          round_2_complete: true   # consolidated into R1 graph-aware authoring
+          facet_entry_counts: {location-state: 7, interest-narrator: 11, sensory: 5, state-updates-env: 14, state-updates-taylor: 7, memory: 3, feeling: 1, metaphor: 0, vibes: 18, exposition: 3, dialogue: 0}
+          context_followability: {completeness_verdict: FOLLOWABLE, readability_verdict: ALIVE, context_ledger_open: 0, grounding_ledger_open: 0, report_path: active-project/staff/reviews/context-follow-r2-b01-c18-2026-06-05.md}
+          context_ledger: active-project/staff/showrunner/context-ledger-b01-c18.md   # ctx-001 @14 deployment-threshold, ctx-002 @30 succession-mechanism — both satisfied
+          grounding_ledger: active-project/staff/showrunner/grounding-ledger-b01-c18.md   # grd-001 @13, grd-002 @38, grd-003 @46 — all satisfied (s04/s05 abstraction-dominant grounding)
+          audit_path: active-project/staff/auditor/facets-final-audit.md
+          audit_complete: true
+          audit_hard_final: 0   # fault-001 (vibes:17 dangling peak-bone:48->46) fixed pre-gate
+          audit_signals: 5   # meta:0 id-convention, Khepri-in-comments (production-internal non-rendered), exposition 6.5% small-denominator (ctx-licensed exempt), exposition:1 @0 bridge, pile-ups @14/@25 (stitch redundancy-cull advisory)
+          audience_gate_path: active-project/staff/audience/   # 27 per-persona per-facet verdict files
+          audience_gate_complete: true
+          audience_gate_cycles: 1
+          audience_gate_result: ACCEPT   # ALL 9 facets 3-of-3 (cape-fic-reader + dark-fantasy-reader + worm-canon-pedant); Earth-Bet fence CLEAN across all gloss bodies; Khepri-register-split held in NI/vibes/memory; memory doubled-register MET
+          bidirectional_loop: validated   # convergence trace: signal-002 + fault-001 + pile-up @14 shared findings
+          voice_fixable_carry: ['@14 keep NI:3 adjacent to structural-fact subject (register-split protect)', '@25/@26 four-body compound-eye tethered to reading-consciousness for the for-it payoff', '@30-@33 render @32 person-first off NI:7 (no axis-slug)', '@39-@46 each accounting entry physically/cognitively distinct (ACCOUNTING-BONES-PHYSICALLY-DISTINCT, @45 blank-column peak)']   # -> /and-stitch Phase 4
+          margit_referrals: ['oc-dead-drop-site (confirm vs the-hook-lower-water-trough c13/c17)', 'oc-ward-network-full-coverage', 'prop:oc-cost-ledger (reconcile vs oc-feed-ledger)']   # carry to stitch Phase 0 pre-flight; non-blocking
+          orchestrator_critic: {result: SUCCESS, note: '9/9 facets 3-of-3; 0 HARD post-fix; fence CLEAN; FOLLOWABLE+ALIVE; metaphor refuse-by-default correct (0, cold-accounting climax); Khepri-register-split + Earth-Bet fence held across the facet layer; abstraction-dominant s04/s05 grounded via grounding-ledger'}
         chunk: |
           War-pressure on Sera's succession exposure — Dance-pressure pulse 2. A
           court-tier event: Viserys I's health deteriorates visibly; a succession question
