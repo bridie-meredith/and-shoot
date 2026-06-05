@@ -1,3 +1,146 @@
+## SESSION-START — 2026-06-05T01:00:00Z — write-b01c19-pass2-svo-recasts
+dispatch: repair 20 SVO-form faults (fault-001..fault-022, 8 passes) in b01c19-bones-draft.md — minimum-change recasts; PP-strip + grounding-preservation + non-action-verb recasts + interiority/abstraction recasts + structural event_map fix; 4 MOVING bones and grounding quota preserved
+target: active-project/staff/showrunner/b01c19-bones-draft.md
+audit-report: active-project/staff/auditor/write-b01c19-pass2.md
+findings-queued: 22 (fault-001..fault-022; 8 passes; 20 actionable faults)
+
+## fault-001 — RESOLVED — 2026-06-05T01:01:00Z
+fault: s01n01 "lifts the cipher-bundle from the trough" — PP of source; trough load-bearing grounding
+scope: line
+change: pre-applied in draft — svo: "the trough releases the cipher-bundle" (object-as-subject; trough as grounding subject)
+criteria met: yes
+
+## fault-002 — RESOLVED — 2026-06-05T01:01:00Z
+fault: s01n02 "opens the sheet under the grey-dark" — PP of location; grey-dark load-bearing
+scope: line
+change: pre-applied in draft — svo: "taylor-hebert-kl-122ac opens the sheet"; companion bone b01c19s01n02b added: "the grey-dark covers the sheet" (object-as-subject; grey-dark preserved as grounding element)
+criteria met: yes
+
+## fault-003 — RESOLVED — 2026-06-05T01:01:00Z
+fault: s01n04 "sets the sheet on the tallow-render room floor" — PP of destination; floor load-bearing
+scope: line
+change: pre-applied in draft — svo: "the tallow-render room floor receives the sheet" (object-as-subject; floor as grounding subject)
+criteria met: yes
+
+## fault-004 — RESOLVED — 2026-06-05T01:02:00Z
+fault: s03n02 "the chamberlain crosses the pillar junction before dawn" — PP of time
+scope: line
+change: svo: "the chamberlain crosses the pillar junction" (time-PP stripped; pillar junction intact as grounding direct object)
+criteria met: yes
+
+## fault-005 — RESOLVED — 2026-06-05T01:02:00Z
+fault: s03n05 "drops the compiled-reading through the Jarvis channel" — PP of instrument/path; Jarvis channel load-bearing grounding
+scope: line
+change: svo: "the Jarvis channel receives the compiled-reading" (object-as-subject; Jarvis channel preserved as grounding subject; request-completion loop covered)
+criteria met: yes
+
+## fault-006 — RESOLVED — 2026-06-05T01:03:00Z
+fault: s03n08 "sets the stylus beside the ledger" — PP of location; CFR-2 BONE 2 spatial adjacency load-bearing
+scope: line
+change: svo: "the stylus meets the ledger-edge" (object-as-subject contact verb; "meets" encodes physical adjacency; beside-not-away-from recoverable from stylus making contact with ledger-edge; two-bone CFR-2 sequence preserved: n07 lift → n08 stylus-meets-ledger-edge → n09 ledger-edge-receives)
+criteria met: yes
+
+## fault-007 — RESOLVED — 2026-06-05T01:03:00Z
+fault: s04n01 "takes the Tallow Croft corner position at the second-bell interval" — PP of time
+scope: line
+change: svo: "taylor-hebert-kl-122ac takes the Tallow Croft corner position" (time-PP stripped; Tallow Croft corner preserved as named grounding object)
+criteria met: yes
+
+## fault-008 — RESOLVED — 2026-06-05T01:03:00Z
+fault: s04n04 "holds the lane-position at the third-bell interval" — double fault: unlicensed holds + PP of time
+scope: line
+change: svo: "taylor-hebert-kl-122ac takes the lane-position" (unlicensed holds → licensed transitive "takes"; time-PP stripped; second-approach physical act preserved)
+criteria met: yes
+
+## fault-009 — RESOLVED — 2026-06-05T01:03:00Z
+fault: s04n08 "writes daven out of the coverage-map" — PP of destination/source; coverage-map load-bearing grounding
+scope: line
+change: svo: "the coverage-map drops the daven node" (object-as-subject; coverage-map preserved as grounding subject; formal removal of Daven covered)
+criteria met: yes
+
+## fault-010 — RESOLVED — 2026-06-05T01:04:00Z
+fault: s01n06 "the protection-line ratio runs clean" — adverb modifier "clean"
+scope: line
+change: pre-applied in draft — svo: "the protection-line ratio runs" (adverb stripped; bare intransitive-lands-cleanly; without-anomaly meaning recoverable from context)
+criteria met: yes
+
+## fault-011 — RESOLVED — 2026-06-05T01:04:00Z
+fault: s01n07 "standing-coverage bottlefly nodes return the ambient outer-ring feed" — double adjective modifier
+scope: line
+change: pre-applied in draft — svo: "the bottlefly nodes return the outer-ring feed" (both adjectives stripped)
+criteria met: yes
+
+## fault-012 — RESOLVED — 2026-06-05T01:04:00Z
+fault: s04n03 "the vat-house shutter closes the east-facing window" — adjective modifier on object
+scope: line
+change: svo: "the vat-house shutter closes the window" ("east-facing" stripped; grounding event intact; shutter-closes-window remains the concrete inference instrument)
+criteria met: yes
+
+## fault-013 — RESOLVED — 2026-06-05T01:05:00Z
+fault: s01n08 "the column stays open" — stative verb; MOVING bone political_register-prot +0.5 cl06
+scope: line
+change: svo: "the column receives the contempt-entry" (stative "stays open" → discrete transitive physical act; "receives" in ambient-actor subject position per project precedent; column receiving the contempt-entry enacts the axis movement concretely; cl06 anchor unchanged)
+criteria met: yes
+
+## fault-014 — RESOLVED — 2026-06-05T01:05:00Z
+fault: s02n01 "the cost-ledger column holds eleven months of entries" — unlicensed containment holds; grounding bone
+scope: line
+change: svo: "the cost-ledger column runs eleven months of entries" ("holds" → licensed transitive "runs"; runs-the-column = physical processing act; eleven-month weight preserved as direct object of the transitive)
+criteria met: yes
+
+## fault-015 — RESOLVED — 2026-06-05T01:05:00Z
+fault: s02n07 "the factional-reading structure continues to assemble" — aspectual stative
+scope: line
+change: svo: "the factional-reading structure assembles" (aspectual "continues to [verb]" → discrete intransitive; "assembles" as bare intransitive-lands-cleanly; assembly event, not ongoing state)
+criteria met: yes
+
+## fault-016 — RESOLVED — 2026-06-05T01:06:00Z
+fault: s04n02 "the Tallow Croft corner holds empty" — unlicensed holds + predicate adjective; CONCRETE BONE 1 of pl-2026-06-05-c19-001
+scope: line
+change: svo: "the second-bell passes the Tallow Croft corner" (unlicensed holds → licensed transitive "passes"; absence expressed through positive physical action — the bell passes the corner without contact; no negation; Tallow Croft corner preserved as named object; opposing-force instrument intact)
+criteria met: yes
+
+## fault-017 — RESOLVED — 2026-06-05T01:06:00Z
+fault: s02n02 "counts the factional-reading entries" — perception verb; CFR-1 enumeration act
+scope: line
+change: svo: "taylor-hebert-kl-122ac runs the factional-reading column" ("counts" → "runs"; runs-the-column is a concrete non-perception accounting gesture; external observer sees the column being processed; CFR-1 physical enumeration act preserved)
+criteria met: yes
+
+## fault-018 — RESOLVED — 2026-06-05T01:06:00Z
+fault: s02n05 "marks the recurrence" — abstract noun as direct object; FAULT-FORM-INTERIORITY
+scope: line
+change: svo: "taylor-hebert-kl-122ac marks the column entry" ("the recurrence" → "the column entry"; concrete physical document element; marking act preserved; moral_legibility_to_self axes_held unchanged)
+criteria met: yes
+
+## fault-019 — RESOLVED — 2026-06-05T01:07:00Z
+fault: s03n09 "the contempt occupies the column's edge" — double fault: abstraction as subject + banned verb "occupies"
+scope: line
+change: svo: "the ledger-edge receives the stylus" (abstraction "the contempt" → concrete physical "the ledger-edge"; "occupies" → licensed "receives" per project precedent; alongside-not-inside image deliverable through ledger-edge receiving the stylus; political_register-prot axes_held (LOCKED at 9) and collapse axes_held unchanged)
+criteria met: yes
+
+## fault-020 — RESOLVED — 2026-06-05T01:07:00Z
+fault: s03n03 "the courier goes east-by-service-gate" — bare intransitive + directional PP compound
+scope: line
+change: svo: "the courier exits the service-gate" (bare intransitive "goes" → transitive "exits" taking service-gate as direct object; east-by-service-gate direction preserved via service-gate as named object; capability axis hold intact)
+criteria met: yes
+
+## fault-021 — RESOLVED — 2026-06-05T01:07:00Z
+fault: s02n04 "the lane-shape wears into the stone" — PP of destination; grounding bone
+scope: line
+change: svo: "the lane-shape marks the stone" (PP stripped; transitive taking stone as direct object; worn-track image preserved via marking = leaving physical impression; stone preserved as grounding object; moral_legibility_to_self axes_held unchanged)
+criteria met: yes
+
+## fault-022 — RESOLVED — 2026-06-05T01:07:00Z
+fault: s03 event_map row cites b01c19s03n10 (nonexistent); orphaned reference
+scope: line
+change: event_map row corrected from b01c19s03n10 → b01c19s03n07, b01c19s03n08 (CFR-2 coverage already present in n07/n08; no new bone authored)
+criteria met: yes
+
+## SESSION-END — 2026-06-05T01:08:00Z — write-b01c19-pass2-svo-recasts
+findings-applied: 22 (fault-001 through fault-022; fault-001/002/003/010/011 confirmed pre-applied in draft; fault-004 through fault-009, fault-012 through fault-022 applied this session)
+findings-skipped: 0
+exit: CLEAN
+
 ## SESSION-START — 2026-06-05T00:00:00Z — write-b01c18-pass2-svo-recasts
 dispatch: apply 36 FAULT-FORM findings to b01c18-bones-draft.md — minimum-change svo: field recasts only; 6 perception-verb recasts, 24 modifier-strip recasts, 7 non-action-verb recasts, 1 negation recast, 1 conjunction recast; Khepri register-split (pl-2026-06-05-c18-001 HARD) and 6 moving-bone substance roles preserved
 target: active-project/staff/screen-writer/b01c18-bones-draft.md

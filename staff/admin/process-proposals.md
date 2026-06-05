@@ -5084,7 +5084,21 @@ evidence_refs:
     (c14+c18 mandatory, c15/c16/c17 Case 1 no mandatory pass) are the per-chapter layer. The
     book-close enforcement surface belongs to /and-review verdict (the orchestrator-critic pass),
     not a new HARD-abort. No threshold change warranted; N=3 remains correctly calibrated."
-recurrence_count: 6
+  - "active-project/staff/reviews/coldread-b01c19-2026-06-05.md + DEC-0101 (2026-06-05) —
+    sixth consecutive in the c14-c19 run (N=6 post-cohere-clearance; 7th data point overall
+    across both independent runs: c10/c11/c12 + c14/c15/c16/c17/c18/c19). Cold-reader
+    complaints: interior-sameness (one filing action narrated five times) + abstraction-density
+    (relentless abstraction) — both pre-authorized at DEC-0099 as design-inherent thesis
+    (continuation-unchanged = the horror) + interior-collapse penultimate design. s04 Daven-
+    severance LANDED (shown not told) — the one non-auto-dispositioned category did NOT fire.
+    Phase 8.5 coherence confirmed central-event-muffle NOT-MATERIALIZED (both spine events
+    register as events). Chapter is genuinely well-executed within the Class-B interior-collapse
+    design. c19 is the PENULTIMATE chapter. DEC-0101 ruled: 6th consecutive Class-B is the
+    expected shape of the c14-c20 falling-collapse stretch; c20 is the catastrophe-climax that
+    breaks the interior-sameness; no new signal class beyond DEC-0098 (climax chapter); no
+    argument for threshold change or new proposal. PROP-0037 is the correct mechanical gate;
+    triage urgency remains HIGH before /and-review verdict b01."
+recurrence_count: 7
 proposed_diff: |
   In .claude/commands/and-substance.md, Phase 0 — Validate + mode select, at the
   chapter b<NN>c<MM> invocation level, add a new numbered step after step 6 (Aggregate-

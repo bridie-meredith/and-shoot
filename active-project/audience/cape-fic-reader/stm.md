@@ -1,3 +1,12 @@
+---
+name: cape-fic-reader
+class: persona
+scope: library
+persona-purpose: [audience]
+quality: full
+origin: stripped from brighid-creative-writing/audience/cape-fic-reader/card.md — generalized for and-shoot
+---
+
 # Audience STM — cape-fic-reader
 STM:
 
@@ -277,3 +286,103 @@ threshold_discipline_check: no fires; no established limits bypassed without cos
 carry_forward:
   - s03n06/s03n10 refrain differentiation → /and-stitch Phase 4 render watch
   - SW-c18-CFR-1 CLOSED (disposition SATISFIED at bone level)
+
+## 2026-06-05 — /and-substance chapter b01c19 Phase 5 chunk review
+
+chapter: b01c19
+date: 2026-06-05
+scenes_reviewed: [b01c19s01, b01c19s02, b01c19s03, b01c19s04]
+
+verdict_per_scene:
+  b01c19s01: SUBSTANCE-FELT
+  b01c19s02: SUBSTANCE-FELT
+  b01c19s03: SUBSTANCE-FELT
+  b01c19s04: SUBSTANCE-FELT
+
+chapter_verdict: SUBSTANCE-FELT
+hard_findings: none
+SUBSTANCE-FLAT: none
+SUBSTANCE-SUSPECT: none
+overall: ACCEPT
+
+notes:
+  - contempt-lock escalation across s01/s02/s03: three distinct mechanisms, not repetition; s01 contempt arrives with no discharge mechanism (tranche 1); s02 the accounting catches its own pattern and the contempt accumulates through a tool that can now see its own shape (tranche 2); s03 the ledger closes and the contempt sits adjacent with no entry-format (tranche 3 / lock); each tranche adds a layer the prior beat could not have; the "beside, not away from" close in s03 is the tactically precise terminus this reader requires
+  - s01: "accounting runs clean" is the established-limits-met beat working correctly — the accounting says yes, the contempt has no column; the asymmetry is live before anything acts; no filler, no unmotivated knowledge
+  - s02: lane-with-footfalls image is the mechanical analogy that makes pattern-recognition feel like discovery rather than explanation; "Not a feeling. An observation." is the correct hedge; the recognition begins, the request execution continues, the entry goes in the same column — does not overshoot into c20's terminal recognition; the constraint-tool that enables suppression is also what makes the pattern visible; irony structurally present, not asserted
+  - s03: "the way a person's name appears in a ledger after they are dead: complete and unreferenced, adjacent to every line but not itself a line" is the best image in the four scenes; earns the claimed state rather than asserting it; "Clarity forecloses nothing" is not comfort, it is cost; "beside, not away from" is the micro-distinction that makes the lock land as emotional terminus
+  - s04: shuttered-window-as-information is in Taylor's correct reading-mode; forty-three prior approaches gives the corner its weight; "a lane like any other lane" after the write-out is right for seven months' worth of reciprocity node; "the morning-count does not appear in any record she has written today" is the cost in the architecture's own language; Daven passes the minor-character-weight test — not Wren, explicitly not Wren, and the distinction is earned by the architecture-record framing; no unmotivated knowledge in the upper-city inference (deductive from pattern-break, no proper-noun leap)
+  - threshold_discipline_check: no fires; no established limits bypassed without cost; no unmotivated knowledge; no filler; political_register-prot LOCK at 9 is the correct established-rule payoff — no bypass, the accounting ran clean and the contempt had no column all along
+
+bones_execution_watches_to_and-write:
+  SW-c19-CFR-1: s02 "not a feeling, an observation" — must land at bone level as a physical enumeration act (the column has this shape; the column has had this shape since month three) not as a labeled interior-state shift; the recognition begins through the accounting's own arithmetic, not through Taylor noticing something feel different
+  SW-c19-CFR-2: s03 "beside, not away from" — must be an enacted physical distinction at the bones layer; two-bone minimum (stylus placed / not capped or put away); the distinction must be structural, not a prose flourish
+
+## 2026-06-05 — /and-write b01c19 Phase 4 trim + Phase 6 bone-gate
+
+chapter: b01c19
+date: 2026-06-05
+scenes_reviewed: [b01c19s01, b01c19s02, b01c19s03, b01c19s04]
+
+### Phase 4 trim proposals
+
+b01c19s01:
+  - b01c19s01n06 (flat_id 6) — `the protection-line ratio runs` — PROPOSE DELETE
+    reason: administrative status placeholder; axes_held rationale is "collapse in motion from c18; held at this scene; fires in s04"; zero contribution to s01's declared pol-reg-prot +0.5 move; adds no information the reader cannot derive from n05 (accounting already open) plus the chapter-level context that those axes fire in s04; chatter; does not serve the chapter goal; not voice-load-bearing above what n05 already establishes
+
+b01c19s02: no proposals
+b01c19s03: no proposals
+b01c19s04: no proposals
+
+total_trim_proposals: 1 (b01c19s01n06)
+
+### Phase 6 substance verdict
+
+verdict_per_scene:
+  b01c19s01: SUBSTANCE-FELT
+  b01c19s02: SUBSTANCE-FELT
+  b01c19s03: SUBSTANCE-FELT
+  b01c19s04: SUBSTANCE-FELT
+
+hard_findings: none
+SUBSTANCE-FLAT: none
+SUBSTANCE-SUSPECT: none
+chapter_verdict: SUBSTANCE-FELT
+
+scene_notes:
+  s01: contempt-entry arriving from outer-ring feed while accounting runs; no discharge mechanism; clean asymmetry beat; n07 (feed returns) → n08 (column receives entry) gives the +0.5 its concrete sequence; court-machinery performing its function for no audience the lower city would recognize — that's the tactical information this reader came for; SUBSTANCE-FELT
+  s02: both moves felt; recognition-beginning-not-terminal lands because n07 (structure assembles anyway) immediately follows n06 (stylus sets) — naming the pattern changes nothing about where the next entry goes; groom delivers next contempt-entry immediately after recognition (n08→n09); world does not pause after naming; both declared +0.5 moves earned through concrete bone sequences; Earth-Bet fence confirmed clean at all nine bones; SUBSTANCE-FELT
+  s03: CFR-2 sw carries confirmed satisfied — the two-bone choreography n07 (lift) → n08 (ledger-edge) → n09 (receives) renders the LOCK as spatial-physical act; "beside not away from" is a constraint-satisfaction beat earned by the full execution-and-delivery sequence (n01-n06) preceding it; LOCK lands as earned terminus, not labeled state; SUBSTANCE-FELT
+  s04: both collapse moves felt; inference instrument staged correctly (empty corner n02 → shuttered window n03 → second approach n04 → Daven absents n05 → walks without pausing n06); architecture absorbs the loss (Croft intersection bottlefly-node as replacement at n08 — tactically interesting); n07 record-open is the position-collapse event enacted concretely; both -1.5 and -1.0 earned through the concrete sequence; SUBSTANCE-FELT
+
+SW-c19-CFR-1: SATISFIED at bone level — s02 pattern-recognition is rendered as physical enumeration throughout (n02 runs column / n03 column repeats shape / n05 marks column entry); no interior-state label; shape is in the document, not in Taylor's interiority
+SW-c19-CFR-2: SATISFIED at bone level — n07 (lifts stylus) + n08 (stylus meets ledger-edge) + n09 (ledger-edge receives stylus) is the two-bone-minimum enacted distinction; the beside-not-away-from choreography is structural, not a prose flourish
+
+carry_forward:
+  - n06 (s01) auto-cut pending 2-of-3 aggregate confirmation (cape-fic-reader proposes DELETE)
+  - SW-c19-CFR-1 CLOSED
+  - SW-c19-CFR-2 CLOSED
+
+## 2026-06-05 — /and-facets Phase 5b adversarial gate — b01c19 — cape-fic-reader
+
+chapter: b01c19
+date: 2026-06-05
+
+### Per-facet verdicts
+
+- location-state (10): ACCEPT — every entry is tactically functional; loc-state:4/@19 and :5/@20 on observed outer-ring terrain are the shakiest but earn their place as the proof-geometry for the chamberlain surveillance pattern; loc-state:8/@29 (vat-house-east-window shuttered) is the strongest entry — the evidentiary shutter that makes the LABEL-REACH-CONCRETE pattern legible; no decorative fires
+- interest-narrator (10): ACCEPT — full entry-by-entry adversarial review: all 10 entries carry specific tactical or structural load that cannot be found elsewhere in the graph; soft flag on NI:3 @14 (approaches thesis-statement register — "the naming is not the stop, the entry going forward unchanged is") noted but not a reject; density justified by chapter class (silent solitary interior; narration IS the content); the auditor's signal-001 disposition question resolved: 28.6% ACCEPTED for this chapter class
+- sensory (4, 2 grounding-licensed): ACCEPT — both standard entries (sensory:1 @3 grey-dark, sensory:2 @24 stylus tactile) within band and load-bearing; both grounding-licensed entries attacked for craft quality only — sensory:3 @14 (stylus-held-still) gives the recognition-beginning peak its embodied form; sensory:4 @27 (cold-render-smell) establishes the physical container the empty corner and shuttered window register against; no craft defect in either licensed entry
+- state-updates (17): ACCEPT — 16 of 17 entries clean; state:7 @25 (approaching-ledger-edge intermediate) confirmed as auditor's signal-006 superfluous candidate — not wrong, excess density; stitch advisory
+- memory (4): ACCEPT — mem:1 @11 Earth-Bet fence holds under adversarial read ("a different accounting, in a different place, for reasons that did not hold" — no proper nouns); mem:4 @29 forty-three-approaches count earns the inference; signal-004 (NI adjacency gap mem:2/@9) is a stitch guidance note; facet clean
+- feeling (2): ACCEPT — both "expressed: no"; feel:1 @14 (hand holds stylus a beat past the mark) is the correct form for suppression-crack-without-breaking; feel:2 @32 (stride does not break, hands loose) earns its place as the tether-severs-in-the-walk somatic; shared phrase signal-005 is a stitch-layer advisory, not a facet structural defect
+- metaphor (0): ACCEPT — zero entries is the correct call; every candidate hinge-bone is governed by a HARD protected-pattern that prohibits the figurative-interiority layer; the refuse-by-default discipline is correct for this chapter's accounting register
+- vibes (6): ACCEPT — all 6 entries at peak or peak-shadow bones; contempt-without-refusal / cold-utilitarian-interiority / rising-entrapment keyword sequence maps correctly to the three-scene contempt escalation; vibes:6 @35 "the-continuation-unchanged-as-horror-not-resolution" is the correct close for the falling arc
+- exposition (3): ACCEPT with soft stitch note — expo:1 @0 bridge is correct and necessary at penultimate chapter context-load; expo:2 @3 chamberlain orient is precise (confirm/map/name deliverable legible); expo:3 @27 Daven orient lands correctly as inference-framework before the instruments arrive; SOFT STITCH NOTE: "the cost of being one of them has been priced" reads as present-tense certainty before @28/@29/@31 confirm the break; stitch should render expo:3 as operative inference-logic, not confirmed-certainty, to preserve the instrument sequence's evidentiary force
+
+### Aggregate: ALL 9 FACETS — ACCEPT
+
+### Notes for /and-stitch
+- NI:3 @14 prose register watch: "the naming is not the stop, the entry going forward unchanged is" risks landing as thesis-statement; stitch Phase 4 voice-embodiment pass should flatten the explanatory cadence while preserving the non-continuation content
+- state:7 @25 approach-ledger-edge: stitch should treat @24/@25/@26 as three distinct physical beats per DO-NOT-FUSE instruction without relying on the intermediate state:7 as a separate rendered beat; the choreography lands through @24 start + @26 end
+- expo:3 @27 "has been priced": render as Taylor's operative inference-framework (this is what a contact-break means given the label-traveling) not as confirmed knowledge; the instruments @28/@29/@31 deliver the evidence, not this exposition entry
+- Shared phrase signal-005 (feel:2 / NI:9 @32 "the lane runs on under her"): vary surface verb between feeling register (body/hands layer) and NI register (architecture/node layer)

@@ -6446,3 +6446,297 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+## DEC-0099 | 2026-06-05 | FAST (user-proxy, RUNBOOK R1)
+
+question: |
+  b01c19 Phase 5.5 chunk cold-read disposition. CHUNK-CLASS-B (summary maps to goal;
+  strict-continue=no). Three cold-reader complaints: (a) three-of-four scenes are the
+  same beat (emotional stasis / escalating abstraction), (b) heavy proprietary vocabulary
+  (the accounting / bottlefly nodes / contempt-color / a different column) — followability
+  risk, (c) s04 stakes-jump (label reaching upper city) is inferred off-page / asserted
+  not dramatized. Options: (R) revise chunk, (P) proceed with risk recorded, (S) substance
+  contract revision.
+
+context: |
+  b01c19 is the penultimate (falling) chapter of book 1. Thesis: contempt-without-refusal
+  at completion — register locked, continuation unchanged — and the first non-terminal
+  recognition event. Phase 5 PASSED cleanly: 3/3 SUBSTANCE-FELT (cape-fic, dark-fantasy,
+  worm-canon), dramatist ACCEPT (falling-arc sound; recognition correctly non-terminal —
+  does not steal c20's climax), auditor 0-HARD (axis sums exact; thesis axes declared).
+  Caller's recommended option: (P), arm voice-risk carry to /and-stitch Phase 8.5 + carry
+  s04-dramatization concern to /and-write.
+
+options:
+  R: Revise chunk. ~1 screen-writer cycle + re-review.
+  P: Proceed with risk recorded. SHIPPED-WITH-RISK-RECORDED; arm downstream carries.
+  S: Substance contract revision. High cost; reserved for unacceptable (P).
+
+decision: P — proceed with risk recorded, arm downstream carries.
+
+basis: |
+  Step 1 (LTM precedent + decisions log):
+    DEC-0090/0094/0095/0096 are the exact precedent family: c14/c15/c16/c17/c18 all disposed
+    P on CHUNK-CLASS-B with the same complaint categories (emotional stasis / abstraction-
+    dominant / jargon-opacity / event-poor). Every one passed Phase 5 3/3 SUBSTANCE-FELT +
+    dramatist ACCEPT + auditor 0-HARD. All complaints were pre-authorized as design-inherent
+    for the deliberate falling interior collapse architecture.
+
+  Step 2 (goals):
+    Goal:1 (pipeline correctness): the informed gates all PASSED — 3/3 SUBSTANCE-FELT,
+    dramatist ACCEPT, auditor 0-HARD on design. The uninformed cold-reader's CONTINUE=no is
+    explicitly authorized as design-inherent output on this book-level architecture. Chunk
+    revision would fight the substance contract the informed gates just endorsed.
+    Goal:2 (cost discipline): (R) burns ~1 screen-writer cycle against a non-defective chunk
+    and risks de-jargoning at the wrong layer. Jargon/abstraction handling belongs at
+    /and-write (concrete SVO bone-staging) + /and-stitch (voice-embodiment + grounding-ledger,
+    PROP-0022). (S) is high cost with no indication the contract is broken.
+
+  Three specific complaint dispositions:
+    (a) "Three of four scenes are the same beat (naming changed nothing)" — design-inherent.
+        The continuation IS unchanged; that is the contempt-without-refusal thesis. The
+        accounting-register sameness is the horror, per dark-fantasy-reader's endorsement.
+        cl06 cost-paid across four scenes is the structural achievement, not a repetition flaw.
+    (b) Proprietary vocabulary followability risk — exactly the recurring jargon-opacity risk
+        carried from c17 (DEC-0094). The chain's declared handling is /and-write Phase 6
+        (EVENT-NOT-CONCRETE / ABSTRACTION-DOMINANT SIGNAL) + /and-stitch Phase 4
+        (voice-embodiment discipline + grounding-ledger). This is NOT a chunk-layer fix.
+    (c) s04 stakes-jump (label reaching upper city) asserted not dramatized — this is
+        tractable and belongs in /and-write: s04 scene decomposition should include a
+        concrete SVO bone that makes the upper-city reach visible on-page rather than inferred.
+        This is a cold_read_risk_carry HARD watch into /and-write, not a chunk revision.
+
+  (S) is off the table: auditor 0-HARD + dramatist ACCEPT + 3/3 SUBSTANCE-FELT.
+  (R) is wrong-layer. Correct downstream carry:
+    — voice-risk carry (jargon/abstraction ABSTRACTION-DOMINANT → /and-stitch Phase 8.5
+       central-event-muffle, arm the check) per PROP-0019/CLAUDE.md Rule 17 precedent.
+    — s04-dramatization concern → /and-write cold_read_risk_carry HARD watch: s04 upper-city-
+       reach bone must be a concrete SVO (off-page landing is not a dramatized event bone).
+
+rationale: |
+  Sixth consecutive Class-B P in the c14-c19 stretch. All upstream informed gates passed.
+  Uninformed cold-reader's complaints are structurally identical to the pre-authorized
+  categories on every prior chapter. The "sameness" complaint is a feature of the thesis
+  (contempt-without-refusal = register unchanged, continuation unchanged); de-abstracting
+  at chunk layer would violate the endorsed substance contract. The two tractable items
+  (jargon-opacity and s04 off-page landing) are correctly staged to /and-write + /and-stitch,
+  not chunk revision. This is the penultimate chapter of the falling arc; the design-inherent
+  CONTINUE=no is load-bearing context for the terminal recognition at c20.
+
+trade-off: |
+  Shipping the cold_read_risk_carry intact: if the downstream /and-write + /and-stitch chain
+  fails to concretize s04 or fails to address jargon-opacity at the stitch layer, Phase 9
+  will fire. The coupling rule then applies: Phase 9 FAIL on these complaint categories is
+  pre-authorized as Class B and ships as SHIPPED-WITH-CAVEATS automatically if s04 carries
+  through. The risk is recorded, not ignored.
+
+downstream-arms:
+  - target: /and-write b01c19
+    arm: cold_read_risk_carry HARD watch — s04 upper-city-label-reach must be a concrete SVO
+         bone on-page; inferred-off-page is FAULT at Phase 6 (EVENT-NOT-CONCRETE).
+  - target: /and-stitch b01c19 Phase 8.5
+    arm: voice-risk carry — jargon/abstraction ABSTRACTION-DOMINANT SIGNAL from chunk cold-read;
+         arm central-event-muffle check per PROP-0019/CLAUDE.md Rule 17.
+  - target: Phase 9 coupling
+    arm: If Phase 9 FAIL fires and all complaint categories map to (a)+(b) (design-inherent
+         thesis sameness + jargon) without new complaint classes, auto-disposition as
+         SHIPPED-WITH-CAVEATS per the established coupling rule (DEC-0085/0090/0094/0096).
+         s04-concrete failure would be a tractable new finding — not auto-dispositioned.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
+## DEC-0100 | 2026-06-05 | FAST (process-critic)
+
+mode: process-critic
+trigger:
+  reason: signal-accepted
+  source_report: active-project/staff/auditor/write-b01c19-bone-gate.md
+  source_verdict: |
+    /and-write b01c19 Phase 6 bone-gate PASS — 0 HARD; 2 SIGNALs accepted-not-remediated:
+    signal-001 ABSTRACTION-DOMINANT (s02 grounding 22.2%, below 25% soft floor; chapter-wide
+    33% clean); signal-002 REGISTER-AS-MANNERISM ("opens" ×4 + "receives" ×4 chapter-wide).
+    Context: sixth consecutive Class-B interior chapter (c14-c19); pl-2026-06-05-c19-001
+    HARD watch (s04 concreteness) RESOLVED; pl-2026-06-05-c19-002 SOFT abstraction-muffle
+    already armed for /and-stitch Phase 8.5.
+  gate_path: .claude/commands/and-write.md#phase-6
+verdict: OK
+
+question: |
+  (A) Does signal-001 ABSTRACTION-DOMINANT (s02 grounding 22.2%) fire-and-accept on this
+  design-inherent recognition-naming scene warrant a process change — e.g., a scene-type
+  carve-out for the accounting-reads-its-own-pattern class, or a structural fix to the
+  bone-gate -> stitch-Phase-4 handoff for abstract design-inherent scenes?
+  (B) Does signal-002 REGISTER-AS-MANNERISM ("opens" ×4 + "receives" ×4) fire-and-accept
+  with distinct-SVOs-same-verb rationale warrant a process change — e.g., a gate criterion
+  for accounting-register-refrain, or a screen-writer-brief constraint for verb diversity
+  in accounting-intensive chapters?
+
+decision: OK — no process change proposed on either signal. Gate and carry mechanism are
+functioning as designed.
+
+basis: |
+  Step 1 (proposals log):
+    Searched for open proposals targeting ABSTRACTION-DOMINANT fire-and-accept disposition,
+    stitch-Phase-4/8.5 handoff structure, or REGISTER-AS-MANNERISM accept-and-carry. No
+    open proposal covers either signal class with the same target.path + change_type as
+    what either candidate would propose. No rejected proposal covers either target. No
+    deferred proposal is past its defer_until. No merge required.
+
+  Step 2 (question A — ABSTRACTION-DOMINANT s02 scene-type carve-out or handoff fix):
+    DEC-0073 is the controlling prior ruling, confirmed by DEC-0097. Both establish:
+    (1) The SIGNAL is load-bearing as the stitch-carry trigger. Removing or suppressing
+        it via a carve-out would remove the trigger that arms /and-stitch Phase 4/8.5
+        physical-materiality reinforcement — net-negative.
+    (2) Accept-with-rationale IS the structural fix for design-inherent abstraction. It
+        requires the rationale to license the abstract register explicitly. A gate carve-out
+        would remove the rationale-logging discipline.
+    (3) 3/3 SUBSTANCE-FELT confirms downstream delivery is landing on ABSTRACTION-DOMINANT
+        accepted chapters. No evidence of stitch-layer failure on any prior accepted carry.
+    (4) The chapter-wide count (33%) is clean. The s02 borderline (22.2%) is structural:
+        the accounting-reads-its-own-pattern scene (CFR-1 recognition-naming) is inherently
+        the most enumeration-dense, least place-situated scene in this chapter's design.
+    The c19 instance is less severe than c18 (which had multi-signal ABSTRACTION-DOMINANT
+    across two distinct scene types and a mover-level abstract-subject; DEC-0097, OK). A
+    single-scene borderline 3pp below threshold does not warrant a merge into PROP-0030/0031:
+    those proposals target chapter-wide apparatus-density accumulation across the collapse arc,
+    not per-scene soft-floor proximity.
+
+    Process discrimination: could a stricter gate have caught a process failure? No. The gate
+    fired correctly, rationale logged, stitch-carry (pl-2026-06-05-c19-002) was already armed
+    by the auditor. No process gap.
+
+  Step 3 (question B — REGISTER-AS-MANNERISM accept-and-carry):
+    DEC-0088 is the controlling prior ruling. It established:
+    (1) Accept-and-flag-to-stitcher is architecturally correct. The stitcher Phase 3/8
+        voice-embodiment + structural-variation directive is the only feasible resolution
+        point for verb-frequency artifacts arising from SVO discipline constraints.
+    (2) The SVO fence forces concrete transitive verbs. In an accounting-intensive chapter,
+        "opens" and "receives" are narrow-corridor compliant verbs for their respective object
+        classes — each instance in c19 is a structurally distinct concrete act (confirmed by
+        the auditor's own assessment). The repetition is the accounting register, not a tic.
+    (3) A screen-writer Phase 1 brief constraint would conflict with the SVO discipline fence
+        and would be upstream of the only feasible resolution surface.
+    (4) No stitch-layer failure has occurred on any prior REGISTER-AS-MANNERISM accepted carry.
+
+    The c19 pattern is accounting-register-refrain, the same architectural root as c12 ("closes"
+    x5, "reaches" x3 — accepted, DEC-0088's recurrence review) and c18 (signal-004 byte-identical
+    intentional refrain, DEC-0097). The standard hold: the appropriate trigger for a process
+    change is stitch-layer failure on a REGISTER-AS-MANNERISM accepted carry, not bone-gate
+    accept-and-carry recurrence.
+
+  Step 4 (recurrence count):
+    ABSTRACTION-DOMINANT fire-and-accept: ≥10 occurrences across the book, all
+    accepted-with-rationale; all delivered SUBSTANCE-FELT confirmed. REGISTER-AS-MANNERISM
+    accept-and-carry: ≥9 occurrences. Both have high recurrence counts but zero failure class
+    instances. Rule 11 promotion requires ≥3 recurrences as FAILURES, not as correct-gate-
+    firings. DEC-0088/0091 established this discrimination explicitly.
+
+  Step 5 (methodology):
+    Both candidates are gate-functioning-correctly situations. A process change would add
+    blast radius (modifying /and-write Phase 6 fires on every future chapter) for zero
+    catch-quality improvement. Reversibility: carve-out is lower-reversibility. Cost:
+    gate modification is M-cost, neither warranted. Blast radius: per-chapter SIGNAL carry
+    is chapter-scoped; gate modification is pipeline-wide. OK in both dimensions.
+
+rationale: |
+  Both signals are correctly dispositioned. DEC-0073 (ABSTRACTION-DOMINANT) and DEC-0088
+  (REGISTER-AS-MANNERISM) are the controlling rulings; c19 adds no evidence class that
+  changes either. The sixth consecutive Class-B interior chapter context is the accumulation
+  concern already tracked by PROP-0037 (DEC-0098, count 6); the /and-stitch Phase 9.5 dispatch
+  for c19 will handle that increment. This bone-gate dispatch produces no new proposal.
+
+trade-off: |
+  Holding means no additional gate protection against a future chapter where accept-with-rationale
+  discipline lapses. Mitigated by: the rationale-text requirement enforces explicit design-license
+  per accepted SIGNAL; stitcher Phase 4/8 carries are armed per-chapter. A failure of auditor
+  accept-with-rationale discipline is a gate-execution failure, not a gate-design gap.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
+## DEC-0101 | 2026-06-05 | FAST (process-critic)
+
+mode: process-critic
+trigger:
+  reason: failure (Phase 9 SHIPPED-WITH-CAVEATS, Class-B; CONTINUE=no on pre-disposed categories only)
+  source_report: active-project/staff/reviews/coldread-b01c19-2026-06-05.md
+  source_verdict: SHIPPED-WITH-CAVEATS (Class-B; auto-promoted via DEC-0099 coupling)
+  gate_path: .claude/commands/and-stitch.md#phase-9
+verdict: OK-MERGED-INTO PROP-0037 (recurrence_count confirmed at 7; evidence_ref pre-authored)
+
+question: |
+  Does the 6th consecutive Class-B chapter (c14-c19) warrant any new process change, or is it
+  the expected shape of the falling-collapse stretch (c14-c20, with c20 as catastrophe-climax
+  that breaks the interior-sameness)?
+
+decision: OK-MERGED-INTO PROP-0037 — no new proposal warranted. PROP-0037 recurrence_count
+already stamped at 7 (pre-authored in the proposals file with c19 evidence_ref). No amendment
+required.
+
+basis: |
+  Step 1 (proposals log):
+    PROP-0037 already contains the c19 evidence_ref and recurrence_count: 7 as pre-authored
+    at lines 5087-5101 of staff/admin/process-proposals.md. The DEC-0101 entry was anticipated
+    and pre-written into PROP-0037's evidence_refs block. No separate merge operation is needed;
+    the record is already consistent.
+
+  Step 2 (content vs. process discrimination):
+    The Phase 9 cold-read CONTINUE=no rested exclusively on the two pre-disposed categories:
+    (a) interior-sameness — "one filing action narrated five times" — pre-authorized as design-
+        inherent thesis (continuation-unchanged = the horror; DEC-0099 complaint disposition (a)).
+    (b) abstraction-density — "relentless abstraction" — pre-authorized as design-inherent for
+        the falling interior collapse penultimate (DEC-0099 complaint disposition (b)).
+    The one non-auto-dispositioned category (s04 label-reach-rendered-abstract / EVENT-NOT-
+    CONCRETE) did NOT fire: the Daven severance LANDED shown-not-told. Phase 8.5 coherence
+    confirmed central-event-muffle NOT-MATERIALIZED on both spine events.
+    No new complaint class emerged. This is correct gate behavior on a chapter the substance
+    contract intentionally made cold-reader-hostile.
+
+  Step 3 (c14-c20 arc context):
+    c19 is the penultimate chapter of the falling arc. c20 is the catastrophe-climax that
+    structurally breaks the interior-sameness and delivers the terminal recognition. The 6th
+    consecutive Class-B is the expected shape of this arc: each chapter in c14-c19 narrows the
+    register until c20 cracks it. DEC-0098 (c18 climax, 5th consecutive) already held: the
+    accumulation concern is correctly handled by /and-cohere as the accumulation handler and
+    /and-review verdict b01 as the book-close enforcement surface. That ruling stands unchanged.
+
+  Step 4 (PROP-0037 triage urgency):
+    PROP-0037 remains open, untriaged. Triage urgency: HIGH before /and-review verdict b01.
+    N=7 (6th consecutive in c14-c19 run; 7th data point overall across c10/c11/c12 +
+    c14/c15/c16/c17/c18/c19). Gate design correct; enforcement timing is the open triage question.
+    After c20 ships, /and-review verdict b01 is the natural triage moment.
+
+  Step 5 (methodology):
+    No new proposal: redundant proposal on a gate already correctly tracked. PROP-0037 is the
+    correct and only outstanding action item. N=3 threshold calibration confirmed correct at N=7
+    (DEC-0093 conclusion stands). No argument for threshold change.
+
+rationale: |
+  Pure recurrence-increment dispatch. The coupling rule (all Phase 9 CONTINUE=no categories
+  pre-authorized -> auto-ship SHIPPED-WITH-CAVEATS) functioned correctly. s04 — the only
+  tractable item — was delivered concretely, confirming the /and-write + /and-stitch chain
+  addressed the HARD watch from DEC-0099. The 6th consecutive Class-B is structural cost of
+  the deliberate falling-interior penultimate design, not a process failure.
+  PROP-0037 recurrence_count is already 7 in the file. No file changes needed beyond this
+  decisions log entry and the STM update.
+
+trade-off: |
+  No new proposal means PROP-0037 triage obligation continues to accumulate. Mitigated by:
+  (a) PROP-0037 is complete and pre-populated with c19 evidence; (b) c20 + /and-review verdict
+  b01 is the natural triage moment; (c) a new proposal would be redundant and add principal
+  triage overhead with no additional information.
+
+follows: DEC-0098 DEC-0100
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no

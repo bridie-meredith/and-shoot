@@ -1,5 +1,77 @@
 # studio state
 
+episode: b01c19
+last_updated: 2026-06-05
+action: location-state + sensory + state-updates authoring — /and-facets b01-c19 Phase 1 (studio facet authoring)
+
+## Location-state authored (b01c19) — 10 entries
+  loc-state:1  @1  — the-tallow-render-works | before-dawn | none | rented-room-above-rendering, tallow-smell-saturated, floor-bare, dead-drop-trough-accessible | before-dawn dead-drop retrieval (place-anchor; s01)
+  loc-state:2  @5  — the-tallow-render-works | before-dawn | none | request-sheet-on-floor, cost-ledger-not-yet-open | request-sheet on floor before accounting opens (state-change; PRECIPICE grounding)
+  loc-state:3  @6  — the-tallow-render-works | before-dawn | none | cost-ledger-column-open, bottlefly-routes-returning-feed | column opens, feed activates (state-change; accounting-container active)
+  loc-state:4  @19 — the-red-keep-outer-ring | four-days-targeted-read | none | chamberlain-corridor-live, pillar-junction-established | chamberlain crosses pillar junction — observed terrain (place-anchor; s03; feed-mediated; SEAM-C19-LOC-002)
+  loc-state:5  @20 — the-red-keep-outer-ring | four-days-targeted-read | none | service-gate-open-exit-confirmed | courier exits service-gate — contact-interval geometry confirmed (state-change; s03)
+  loc-state:6  @23 — the-tallow-render-works | after-four-days | none | cost-ledger-column-closing, compiled-reading-dropped | column closes at request-drop (state-change; s03 terminal)
+  loc-state:7  @27 — the-tallow-croft-corner | second-bell | none | corner-position-available, vat-house-east-window-open-across-seven-months | service-reciprocity approach — first position (place-anchor; s04; SEAM-C19-LOC-003)
+  loc-state:8  @29 — the-tallow-croft-corner | second-bell-passing | none | corner-empty, vat-house-east-window-shuttered | window shutter closes against seven-month open baseline — concrete inference instrument (state-change; LABEL-REACH-CONCRETE)
+  loc-state:9  @30 — the-tallow-croft-corner | third-bell | none | lane-position-taken, corner-empty, vat-house-east-window-shuttered-persists | lane-position at third-bell — shutter persists (state-change: Taylor repositions; window-shut accumulates)
+  loc-state:10 @33 — the-tallow-render-works | after-third-bell | none | running-architecture-record-open | render room as documentary control point (place-anchor; s04 close)
+  File: theater/facets/location-state-b01-c19.md
+  Margit referrals: the-red-keep-outer-ring (new slug; SEAM-C19-LOC-002); the-tallow-croft-corner (new slug; SEAM-C19-LOC-003)
+
+## Sensory facet filed (b01c19) — 4 entries (2 standard, 2 grounding-licensed; BONES-AIRLESS-RISK)
+  sensory:1 @3  — visual: tallow-render-room-overnight-dark -> grey-dark-reading-light (s01; standard)
+  sensory:2 @24 — tactile: cost-ledger-open-column-work -> stylus-in-hand-post-column-close (s03; standard; CFR-2 choreography grounding)
+  sensory:3 @14 — tactile: stylus-in-use-factional-column -> stylus-held-still (s02; GROUNDING-REQUIRED grd-c19-001; recognition-beginning peak grounding)
+  sensory:4 @27 — olfactory: lane-night-ambient -> tallow-croft-corner-cold-render-smell (s04; GROUNDING-REQUIRED grd-c19-002; severance-scene opening grounding)
+  Density: 4/35 = 11.4%; standard-only = 2/35 = 5.7% (within 3-6% band, upper-biased per AIRLESS brief)
+  Modalities: visual + tactile + olfactory (3 distinct; ≥2 floor MET)
+  Per-scene caps: s01=1, s02=1, s03=1, s04=1 — all ≤3
+  Grounding-ledger: grd-c19-001 (@14 stylus-held-still; s02 peak) + grd-c19-002 (@27 corner-cold-render-smell; s04 open) — to be created at /and-facets Phase 2.5
+  File: theater/facets/sensory-b01-c19.md
+
+## State-updates filed (b01c19) — 17 entries
+  state:1  @1  — studio.time_of_day: day-fourteen -> before-dawn
+  state:2  @5  — prop:oc-request-sheet.position: in-hand -> render-room-floor
+  state:3  @6  — studio.cost-ledger.condition: closed-stylus-set-beside -> open-chamberlain-column
+  state:4  @8  — studio.cost-ledger.contempt-entry-chamberlain: absent -> entered-first-tranche
+  state:5  @23 — studio.cost-ledger.condition: open-chamberlain-column -> closed-column-drop-complete
+  state:6  @24 — prop:oc-stylus.position: ledger-edge-beside -> in-hand-post-column-close
+  state:7  @25 — prop:oc-stylus.position: in-hand-post-column-close -> approaching-ledger-edge
+  state:8  @26 — prop:oc-stylus.position: approaching-ledger-edge -> beside-ledger-edge-closed-column
+  state:9  @27 — studio.time_of_day: after-four-days -> second-bell
+  state:10 @27 — studio.location: the-tallow-render-works -> the-tallow-croft-corner
+  state:11 @29 — studio.vat-house-east-window.status: open-baseline-seven-months -> shuttered
+  state:12 @30 — studio.time_of_day: second-bell-passing -> third-bell
+  state:13 @32 — actor:taylor-hebert-kl-122ac.position: lane-position-stationary -> walking-lane-past-empty-corner
+  state:14 @33 — studio.location: the-tallow-croft-corner -> the-tallow-render-works
+  state:15 @33 — prop:oc-running-architecture-record.condition: closed -> open-node-removal-in-progress
+  state:16 @34 — prop:oc-coverage-map.daven-node: present -> dropped
+  state:17 @35 — prop:oc-running-architecture-record.condition: open-node-removal-in-progress -> closed-daven-node-removed
+  Density: 17/35 = 48.6%; above precedent range; density-note in facet file
+  Field-extensions: prop:oc-request-sheet (new); prop:oc-stylus (new); studio.vat-house-east-window.status (new); prop:oc-running-architecture-record (new); prop:oc-coverage-map (new)
+  MARGIT REFERRAL RECOMMENDED for all 5 new fields/props
+  File: theater/facets/state-updates-b01-c19.md
+
+## Current set (b01c19 chapter-close)
+  location: the-tallow-render-works (architecture record closed; @35; render room at chapter end)
+  time_of_day: after-third-bell (s04; three days after the drop)
+  weather: none
+  ambient_conditions:
+    - studio.cost-ledger.condition: closed-column-drop-complete (@23; chamberlain-column closed)
+    - studio.cost-ledger.contempt-entry-chamberlain: entered-first-tranche (@8; partial; contempt lock completes across s01-s03)
+    - studio.vat-house-east-window.status: shuttered (@29; permanent within episode — Daven has made his calculation)
+    - prop:oc-stylus.position: beside-ledger-edge-closed-column (@26; beside, not away)
+    - prop:oc-running-architecture-record.condition: closed-daven-node-removed (@35; architecture one node lighter)
+    - prop:oc-coverage-map.daven-node: dropped (@34; permanent; Daven's lane runs through standing bottlefly-node only)
+    - prop:apparatus-picture.norren-attribution: resolved (carry from c17/c18; unchanged)
+    - prop:oc-coverage-log.norren-attribution: complete-three-lines (carry from c17/c18; unchanged)
+    - studio.fauna_sense_status.coverage-scale: standdown-complete (carry from c18; outer-ring bottlefly routes are existing architecture; no coverage-scale change this chapter)
+    - studio.succession-document-status: cleared-small-council-access-window (carry from c18; permanent)
+
+---
+
+## Prior episode (b01c18)
+
 episode: b01c18
 last_updated: 2026-06-05
 action: location-state R1 + sensory R1 + state-updates-env R1 authoring — /and-facets b01-c18 Phase 1 (consolidated R1+R2 pass)

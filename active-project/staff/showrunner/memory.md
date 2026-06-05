@@ -11530,7 +11530,18 @@ books:
             HARD-watch:enacted-irrevocable-threshold-physical-act; HARD-watch:op-friction-signal-at-least-one-scene; SOFT:accounting-close-s05-concrete-paired-physical-outcome
 
       - slug: b01c19
-        status: planned
+        status: audited-r1
+        bones_file: theater/bones/b01-c19.md
+        bones_count: 35
+        substance_bone_gate_verdict: PASS   # /and-write Phase 6 (0 HARD; auditor CONTINUITY-OK+bone-gate PASS; dramatist ACCEPT; audience SUBSTANCE-FELT 3-of-3 all 4 scenes; pl-2026-06-05-c19-001 s04-concreteness HARD RESOLVED). 2 SIGNALs accepted+carried: ABSTRACTION-DOMINANT(s02 22.2%) + REGISTER-AS-MANNERISM(opens/receives x4) -> /and-stitch. Phase 6.5 process-critic OK (DEC-0100). Phase-4 audience 3-of-3 trim-cut s01n06 (collapse-held relocated to n07).
+        substance_delta_measured:
+          axes_moved:
+            political_register-prot: 1.5     # cl06 LOCKED rank 9 (s01 +0.5 / s02 +0.5 / s03 +0.5)
+            moral_legibility_to_self: 0.5    # cl07a; recognition BEGINS non-terminal (s02)
+            social_tether-prot-collapse: -1.5  # cl07a; Daven severance (s04)
+            position-prot-collapse: -1.0     # cl07b; witch-label upper-city position-risk (s04)
+          density_measured: 0.74             # grounding 11/35=31% chapter-wide (s02 22.2% accepted-signal)
+          felt_verdict: SUBSTANCE-FELT       # audience 3-of-3 all 4 scenes
         chunk: |
           Contempt-without-refusal locks. A scene that is structurally simple but emotionally
           final: Taylor receives a new request from Jarvis. She runs the accounting. She
@@ -11616,6 +11627,866 @@ books:
           character_state:
             - "Taylor: political_register-prot rank 9 LOCKED; moral_legibility rank 7 (recognition beginning); social_tether-prot-collapse rank 4.5; position-prot-collapse rank 4; capability rank 8.5; relational_anchor rank 7.5; moral_framework rank -4"   # capability 8.5 (c19 holds; mirror correction)
           target_chapter: b01c20
+        bones_review:
+          reviewed_at: 2026-06-05T18:45:00Z
+          report_path: active-project/staff/reviews/bones-b01c19-2026-06-05.md
+          verdict: PASS-WITH-NOTES
+          follow_check: PASS
+          bones_file_mtime_at_review: 1780686143
+          aliveness: BONES-AIRLESS-RISK   # advisory; covered by voice-risk carry pl-2026-06-05-c19-002 -> /and-stitch Phase 8.5 + Phase 4 voice-embodiment
+          notes: "fidelity PASS-WITH-NOTES (NOTE-A shutter-contrast in rationale not SVO [overlaps pl-c19-001, resolved]; NOTE-B s04 off-page but chunk-faithful [DEC-0099 watch]; NOTE-C s01 event_map stale n06 ref FIXED). follow_check PASS (context-aware: central event + all 3 scene-handoffs recoverable; jargon is established register, defers to /and-facets Phase 2.5). No FAIL/FOLLOW-FAIL -> /and-facets cleared."
+          stale_since: null
+        facets:
+          status: audited-r1
+          facets_path: active-project/theater/facets/
+          audit_path: active-project/staff/auditor/facets-final-audit-b01c19.md
+          audit_complete: true
+          audit_hard: 0
+          audit_signals: 6   # 3 freq-band (NI 28.6%/feeling 5.7%/exposition 8.6%, precedent-accepted) + mem:2 adjacency + state:7 transient + feel/NI shared-phrase (FIXED); all advisory
+          audience_gate_path: active-project/staff/auditor/facets-audience-gate-b01c19-r1.md
+          audience_gate_complete: true
+          audience_gate_cycles: 1
+          audience_gate_verdict: ACCEPT   # 9-of-9 facets 3-of-3, zero fixer dispatches
+          bidirectional_loop: validated
+          round_1_complete: true
+          round_2_complete: true
+          context_followability: {completeness: FOLLOWABLE, readability: ALIVE, context_ledger_open: 0, grounding_ledger_open: 0}
+          facet_counts: {location-state: 10, interest-narrator: 10, sensory: 4, state-updates: 17, memory: 4, feeling: 2, metaphor: 0, vibes: 6, exposition: 3}
+          stitch_carries: [pl-2026-06-05-c19-002, pl-2026-06-05-c19-004, pl-2026-06-05-c19-005]
+          orchestrator_critic_verdict: SUCCESS   # 7/7 criteria: 9 facet files exist; 0 HARD post-audit; per-facet 3-of-3 ACCEPT; memory current; bidirectional loop validated; process gaps captured (stitch carries); single-cycle (under budget). Phase 5c process-critic SKIPPED (clean ACCEPT, no cap-burn/WARN).
+        stitched: true
+        draft_path: active-project/draft/b01-c19.md
+        cold_read:
+          read_at: 2026-06-05T20:00:00Z
+          verdict: SHIPPED-WITH-CAVEATS   # Phase 9 cold-read CONTINUE=no on PRE-DISPOSED Class-B grounds only (interior-sameness + abstraction-density); events+jeopardy RECOVERED; s04 Daven severance LANDED (shown-not-told) so the one non-auto-dispositioned category did NOT fire; auto-promoted via chunk_cold_read SHIPPED-WITH-RISK-RECORDED coupling (DEC-0099). 6th consecutive Class-B (c14-c19), matches c18/DEC-0096.
+          recovered_summary: "A surveillance-witch files a routine court report, then learns a contact has cut her off because the rumor that she is dangerous has finally reached the lanes she works."
+          continue: no
+          report_path: active-project/staff/reviews/coldread-b01c19-2026-06-05.md
+          coherence_review: {verdict: SOFT-BLOCK-RESOLVED, weave: PASS, followability: PASS, central_event_muffle: NOT-MATERIALIZED, report: active-project/staff/reviews/coherence-b01-c19-2026-06-05.md}
+          readability_axis: {verdict: AIRLESS-LEANING, basis: "chamberlain-half reads abstract (relentless-abstraction); Daven-half has a pulse (shown-not-told); pre-authorized Class-B density per DEC-0099; spine events register AS events per Phase 8.5 muffle-check"}
+          prose_rationale_audit: {covered_by: phase-8.5-coherence, central_event_muffle: NOT-MATERIALIZED}
+          signal_clusters: []
+          depth_pass_required: true
+          depth_pass_gates: book-close
+          depth_pass_item: pl-2026-06-05-c19-deptpass
+          stale_since: null
+        scenes:
+          - slug: b01c19s01
+            status: scened
+            stale_since: null
+            chunk: |
+              [event: new-request-arrives-via-dead-drop] The cipher-bundle comes through Jarvis's
+              dead drop — not the fortnight-weight of the last one but a single
+              folded sheet, lighter than the paper it is written on has any right
+              to feel. Taylor lifts it from the trough before dawn, in the same
+              posture she has used for every drop in eleven months, and opens it
+              under the same grey-dark that has been the reading-light for every
+              request she has accepted. The addendum hand is absent; this one is
+              Jarvis's own notation. [mechanism: request-scope-identified] The ask is
+              court-tier and specific: [force: opposing] a named target in the Red
+              Keep's outer administrative ring, a chamberlain whose corridor
+              patterns have been inconsistent with his stated duties for six
+              weeks. The request is not a surveillance extension but a reading —
+              confirm the role, map the contact interval, name the faction.
+              The form of the ask is different from any Taylor has received
+              through this channel; the content is not. [image: folded-sheet-lighter-than-its-weight]
+              Taylor sets the sheet on the tallow-render room floor.
+              [force: protagonist] She opens the cost-ledger column and runs the
+              accounting: the chamberlain's corridor is accessible from the
+              same bottlefly nodes she has held since she closed the coverage-map; the
+              factional reading will require two to four days of targeted
+              coverage; the protection-line ratio holds. The accounting
+              runs clean. [event: request-accounting-opens-contempt-color-arrives]
+              While she runs it, the court-content begins to arrive through
+              the feed — not the chamberlain yet, the ambient return from
+              the standing-coverage nodes in the outer ring — and what the
+              feed returns has the color the fortnight taught her to read
+              in it: the machinery performing its function for no audience,
+              for no purpose the lower city would recognize, for a register
+              Taylor has been naming in the accounting since the contempt first
+              took a word, and the naming does not neutralize it. The column stays open.
+              The sheet stays on the floor.
+            scene_conflict:
+              protagonist_force: "Taylor opens the accounting on a new specific court-tier request — reads the cost, confirms the access, and holds the ledger open while court-feed content arrives that carries contempt-color she cannot neutralize"
+              opposing_force: "the arrangement's structural logic: the request is within the agreed channel, the access is within her existing architecture, and the accounting runs clean — there is no accounting-mechanism by which the contempt produces refusal"
+              stakes_axis: political_register-prot
+            substance_delta:
+              axes_in_motion:
+                - axis: political_register-prot
+                  direction: up
+                  target_delta_magnitude: 0.5
+                  cost_ledger_anchor: cl06
+                  notes: "first contempt-tranche toward the lock: the court-feed returns contempt-color while the accounting is still open; the color arrives through the ambient standing-coverage nodes, not yet through the specific chamberlain-request execution; cl06 draws toward final lock; political_register-prot from 7.5 toward 8"
+              axes_held:
+                - axis: moral_framework
+                  rationale: "held at consumed-as-compass rank -4; the new request is within the established channel and the accounting runs clean; no new breach threshold at the request-receipt stage"
+                - axis: moral_legibility_to_self
+                  rationale: "the accounting column is open and the contempt-color arrives but the suppression is still fully operational at this scene; the pattern-recognition fires in s02; legibility held at existing rank"
+                - axis: relational_anchor_status
+                  rationale: "Wren in coverage; anchor holds at 7.5; the new request is not a Wren-adjacency event; the eastern gap is not touched by this request's access nodes"
+                - axis: social_tether-prot-collapse
+                  rationale: "collapse in motion from c18; held at this scene; the severance event fires in s04; no new tether disruption at request-receipt stage"
+                - axis: position-prot-collapse
+                  rationale: "collapse in motion; held at this scene; position-risk event fires in s04"
+                - axis: capability
+                  rationale: "full-deployment architecture holds at 8.5; the targeted reading draws on existing bottlefly nodes; no scope expansion"
+                - axis: social_tether-antag
+                  rationale: "locked at 9; the request through the established Jarvis channel is the social_tether-antag operating structurally; no new leverage event"
+              density_target: 0.65-0.80
+            event_map:
+              - entry: "new-request-arrives-via-dead-drop"
+                tag_source: "[event] chunk"
+                bones: [b01c19s01n01, b01c19s01n02]
+              - entry: "request-scope-identified"
+                tag_source: "[mechanism] chunk"
+                bones: [b01c19s01n03, b01c19s01n04]
+              - entry: "folded-sheet-lighter-than-its-weight"
+                tag_source: "[image] chunk"
+                bones: [b01c19s01n02, b01c19s01n03]
+              - entry: "force:opposing — arrangement structural logic; access within existing architecture"
+                tag_source: "[force: opposing] chunk"
+                bones: [b01c19s01n04, b01c19s01n05]
+              - entry: "force:protagonist — Taylor opens the cost-ledger and runs the accounting"
+                tag_source: "[force: protagonist] chunk"
+                bones: [b01c19s01n05]
+              - entry: "request-accounting-opens-contempt-color-arrives"
+                tag_source: "[event] chunk"
+                bones: [b01c19s01n07, b01c19s01n08]
+              - entry: "author-noticed: trough as physical dead-drop location; grounds the opening"
+                tag_source: "author"
+                bones: [b01c19s01n01]
+              - entry: "author-noticed: grey-dark reading-light — eleven months' repetition established"
+                tag_source: "author"
+                bones: [b01c19s01n02]
+            bones:
+              - slug: b01c19s01n01
+                flat_id: 1
+                svo: "the trough releases the cipher-bundle"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: social_tether-antag
+                      rationale: "the dead-drop trough is the structural conduit of Otto's leverage; the lift is the tether operating at its locked rank; enacted as location-grounded physical gesture"
+                  cost_ledger_anchor: null
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c19s01n02
+                flat_id: 2
+                svo: "taylor-hebert-kl-122ac opens the sheet"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: moral_framework
+                      rationale: "eleven months of same-posture same-reading-light enacts the arrangement's consumption of the prohibition as compass: the form is intact because the framework that would resist it is not; the grey-dark reading-light is the repetition's sensory fact"
+                  cost_ledger_anchor: null
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c19s01n02b
+                flat_id: 3
+                svo: "the grey-dark covers the sheet"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: moral_framework
+                      rationale: "the grey-dark is the repetition's sensory fact — the same reading-light across eleven months is the moral_framework's physical anchor; companion grounding bone for the n02 strip"
+                  cost_ledger_anchor: null
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c19s01n03
+                flat_id: 4
+                svo: "the sheet names the chamberlain's corridor"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: capability
+                      rationale: "the request is a targeted reading from existing bottlefly nodes; the architecture holds at 8.5; the scope is within the existing node-map; no expansion"
+                    - axis: political_register-prot
+                      rationale: "the ask arrives as paper-and-cipher, not bodies through compound eyes; contempt register has no material yet at this bone"
+                  cost_ledger_anchor: null
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c19s01n04
+                flat_id: 5
+                svo: "the tallow-render room floor receives the sheet"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: moral_framework
+                      rationale: "set-on-floor before execution: the precipice-posture enacted physically — the arrangement's ask sits unanswered in the room while the cost-accounting opens; the form of received-but-not-yet-executed is the moral_framework's operating shape"
+                    - axis: relational_anchor_status
+                      rationale: "eastern-gap is not touched by this request's bottlefly nodes; Wren in coverage; anchor holds at 7.5"
+                  cost_ledger_anchor: null
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c19s01n05
+                flat_id: 6
+                svo: "taylor-hebert-kl-122ac opens the cost-ledger column"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: moral_framework
+                      rationale: "opening the column with the same gesture as every prior ask enacts the consumed-as-compass state: the accounting form is intact; the prohibition is the most violated line in it; the column opens because there is no longer a threshold the framework resists at"
+                    - axis: moral_legibility_to_self
+                      rationale: "the accounting is open and running but the suppression is still fully operational at this scene; the pattern-recognition does not fire until s02; legibility held at existing rank"
+                  cost_ledger_anchor: null
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c19s01n07
+                flat_id: 7
+                svo: "the bottlefly nodes return the outer-ring feed"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: political_register-prot
+                      rationale: "the ambient feed returns court-content before the specific request executes; the contempt-color accumulates toward the first tranche; held — move fires at n08"
+                    - axis: position-prot-collapse
+                      rationale: "collapse in motion from c18; held at this scene; no new position-risk event at request-receipt stage; the collapse fires in s04 (witnessing relocated here on n06 trim)"
+                    - axis: social_tether-prot-collapse
+                      rationale: "collapse in motion from c18; held at this scene; severance fires in s04 (witnessing relocated here on n06 trim)"
+                  cost_ledger_anchor: null
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c19s01n08
+                flat_id: 8
+                svo: "the column receives the contempt-entry"
+                substance_delta:
+                  axis_moves:
+                    - axis: political_register-prot
+                      direction: up
+                      magnitude: 0.5
+                  axes_held: []
+                  cost_ledger_anchor: cl06
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+
+          - slug: b01c19s02
+            status: scened
+            stale_since: null
+            chunk: |
+              [event: accounting-catches-its-own-pattern] The accounting is still running when it
+              catches the thing it has been recording. Taylor has the cost-ledger
+              open and the feed arriving and the new request's factional-reading
+              structure half-assembled in the column beside the protection-line —
+              and the accounting, which she has run in this form for eleven months,
+              reads itself. [mechanism: pattern-recognition-in-the-ledger] Not a feeling.
+              An observation: the column has this shape. The column has had
+              this shape since the third month, since the first time the
+              arrangement paid a factional dividend and the contempt arrived
+              without a mechanism to discharge it. The column has this shape
+              the way a lane has a shape after enough footfalls wear the same
+              track — not because anyone chose the shape, because the weight
+              kept moving through the same line. [image: ledger-column-with-its-own-shape]
+              [force: opposing] There is a name for this shape. [force: protagonist]
+              Taylor names it. A different accounting,
+              in a different column, for reasons that did not hold — the same
+              column's form, worn by the same kind of weight. [event: suppression-no-longer-fully-operational]
+              The suppression that has kept this column blank for eleven months
+              is not broken; it is not fully operational.
+              [mechanism: recognition-beginning-not-terminal] The accounting sees the
+              pattern and names the pattern and does not stop.
+              The request is still on the floor.
+              The factional-reading structure continues to assemble in
+              the column beside the protection-line, which is where it has
+              always assembled, which is the shape the accounting has.
+              The court-feed returns another ambient reading from the
+              outer-ring nodes — a groom with a message-case whose interval
+              does not match the morning-rotation — and Taylor files it
+              in the same column she has always used, the column whose
+              shape she has now named, the naming having changed nothing
+              about where the entry goes.
+            scene_conflict:
+              protagonist_force: "Taylor's accounting sees its own pattern mid-run — names the shape the column has worn over eleven months — and does not stop; the recognition begins but does not complete; the request execution continues"
+              opposing_force: "the column's own structure: the shape is visible precisely because the accounting is honest and complete; the same discipline that makes the suppression possible is what allows the pattern to name itself; naming it changes nothing about what happens next"
+              stakes_axis: moral_legibility_to_self
+            substance_delta:
+              axes_in_motion:
+                - axis: moral_legibility_to_self
+                  direction: up
+                  target_delta_magnitude: 0.5
+                  cost_ledger_anchor: cl07a
+                  notes: "first movement of moral_legibility_to_self since c14's crack-level hold: the suppression is no longer fully operational; Taylor names the pattern the accounting has worn — shape-language only, no Khepri-naming, no interior-sentiment — and does not stop the request execution; recognition begins, does not complete; legibility from 6.5 toward 7; cl07a gain side opens; the terminal recognition is c20"
+                - axis: political_register-prot
+                  direction: up
+                  target_delta_magnitude: 0.5
+                  cost_ledger_anchor: cl06
+                  notes: "second contempt-tranche: as more court-content lands through the standing-coverage ambient return (the groom with the message-case) while the accounting catches its pattern, the contempt accumulates toward the lock; the contempt-color now accumulates through an accounting that can see its own shape; political_register-prot from 8 toward 8.5"
+              axes_held:
+                - axis: moral_framework
+                  rationale: "held at consumed-as-compass rank -4; naming the pattern is not a new breach — the framework already completed its c18 movement; the recognition that begins here does not push the framework to a new threshold; consumed-as-compass remains the framework's state"
+                - axis: relational_anchor_status
+                  rationale: "Wren in coverage; anchor holds at 7.5; the pattern-recognition is directed at the accounting's shape, not at the Wren-gap; the eastern gap remains distinct in the accounting"
+                - axis: social_tether-prot-collapse
+                  rationale: "collapse in motion; held at this scene; the severance event fires in s04"
+                - axis: position-prot-collapse
+                  rationale: "collapse in motion; held at this scene; position-risk event fires in s04"
+                - axis: capability
+                  rationale: "full-deployment architecture holds at 8.5; targeted chamberlain-reading assembles in the existing column; no scope expansion"
+                - axis: social_tether-antag
+                  rationale: "locked at 9; does not move"
+              density_target: 0.70-0.85
+            event_map:
+              - entry: "accounting-catches-its-own-pattern"
+                tag_source: "[event] chunk"
+                bones: [b01c19s02n01, b01c19s02n02, b01c19s02n03]
+              - entry: "pattern-recognition-in-the-ledger"
+                tag_source: "[mechanism] chunk"
+                bones: [b01c19s02n02, b01c19s02n03]
+              - entry: "ledger-column-with-its-own-shape"
+                tag_source: "[image] chunk"
+                bones: [b01c19s02n03, b01c19s02n04]
+              - entry: "force:opposing — there is a name for this shape"
+                tag_source: "[force: opposing] chunk"
+                bones: [b01c19s02n04]
+              - entry: "force:protagonist — Taylor names it"
+                tag_source: "[force: protagonist] chunk"
+                bones: [b01c19s02n05]
+              - entry: "suppression-no-longer-fully-operational"
+                tag_source: "[event] chunk"
+                bones: [b01c19s02n06, b01c19s02n07]
+              - entry: "recognition-beginning-not-terminal"
+                tag_source: "[mechanism] chunk"
+                bones: [b01c19s02n06, b01c19s02n07]
+              - entry: "author-noticed: groom with message-case (ambient court-feed entry that follows the naming)"
+                tag_source: "author"
+                bones: [b01c19s02n08, b01c19s02n09]
+            bones:
+              - slug: b01c19s02n01
+                flat_id: 9
+                svo: "the cost-ledger column runs eleven months of entries"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: moral_framework
+                      rationale: "the column's accumulated weight is the form the consumed-as-compass state takes physically: the framework's most violated line runs through every entry in the column; held at -4"
+                  cost_ledger_anchor: null
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c19s02n02
+                flat_id: 10
+                svo: "taylor-hebert-kl-122ac runs the factional-reading column"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: moral_legibility_to_self
+                      rationale: "the counting is the physical enumeration act that carries the CFR-1 requirement: not a feeling, an observation — the column repeats its shape through the arithmetic itself; the accounting sees its own pattern because Taylor runs the count and the count produces a shape; held at existing rank pending the recognition-move at n06"
+                  cost_ledger_anchor: null
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c19s02n03
+                flat_id: 11
+                svo: "the column repeats its shape"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: moral_legibility_to_self
+                      rationale: "the column-shape recurs as a physical observation through the ledger itself: the same entry-format, the same protection-line ratio, the same factional-reading structure in the same position — the shape is in the document, not in Taylor's interior; the accounting sees it because the document has it"
+                    - axis: moral_framework
+                      rationale: "the shape the column has worn is the consumed-as-compass form: the framework that would interrupt the pattern is the most violated entry in the column the pattern occupies; held at -4"
+                  cost_ledger_anchor: null
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c19s02n04
+                flat_id: 12
+                svo: "the lane-shape marks the stone"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: moral_legibility_to_self
+                      rationale: "the lane-track is the physical image of the column-shape: weight through the same line, not by choice, by repetition; this is the shape-language the chunk authorizes ('a lane has a shape after enough footfalls wear the same track') rendered as a concrete surface bone; the pattern names itself through material physics, not interiority"
+                  cost_ledger_anchor: null
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c19s02n05
+                flat_id: 13
+                svo: "taylor-hebert-kl-122ac marks the column entry"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: moral_legibility_to_self
+                      rationale: "marking the recurrence is the physical act the CFR-1 requires: Taylor marks in the column that the shape repeats — a concrete accounting act, not an interior naming; the marking is the recognition's physical form; the accounting sees and records without stopping"
+                    - axis: relational_anchor_status
+                      rationale: "the pattern-recognition is directed at the accounting's shape, not at the Wren-gap; the eastern gap remains distinct in the accounting; anchor holds at 7.5"
+                  cost_ledger_anchor: null
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c19s02n06
+                flat_id: 14
+                svo: "taylor-hebert-kl-122ac sets the stylus"
+                substance_delta:
+                  axis_moves:
+                    - axis: moral_legibility_to_self
+                      direction: up
+                      magnitude: 0.5
+                  axes_held: []
+                  cost_ledger_anchor: cl07a
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c19s02n07
+                flat_id: 15
+                svo: "the factional-reading structure assembles"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: moral_legibility_to_self
+                      rationale: "recognition-beginning-not-terminal: the assembly continues exactly as before the naming; the suppression is cracked but not broken; the naming changed nothing about where the next entry goes; legibility holds at 7 (s02n06 landing)"
+                    - axis: social_tether-prot-collapse
+                      rationale: "collapse in motion; severance fires in s04; held at this scene"
+                    - axis: position-prot-collapse
+                      rationale: "collapse in motion; position-risk fires in s04; held at this scene"
+                  cost_ledger_anchor: null
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c19s02n08
+                flat_id: 16
+                svo: "the groom lifts the message-case"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: political_register-prot
+                      rationale: "ambient outer-ring feed returns a specific body — a groom whose message-case interval does not match the morning-rotation; the contempt-register accumulates on the concrete body; held pending n09 move"
+                  cost_ledger_anchor: null
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c19s02n09
+                flat_id: 17
+                svo: "taylor-hebert-kl-122ac files the entry"
+                substance_delta:
+                  axis_moves:
+                    - axis: political_register-prot
+                      direction: up
+                      magnitude: 0.5
+                  axes_held: []
+                  cost_ledger_anchor: cl06
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+
+          - slug: b01c19s03
+            status: scened
+            stale_since: null
+            chunk: |
+              [event: request-execution-enacted] Taylor opens the specific bottlefly routes that serve
+              the outer administrative ring — not the full-coverage nodes but
+              the three targeted corridors she has maintained for months for
+              the Red Keep's service approaches — and the chamberlain's
+              corridor pattern returns within four hours. [mechanism: targeted-reading-completes]
+              He runs a contact interval in the pre-dawn that does not match
+              the administrative schedule: a courier hand-off at a pillar
+              junction, twenty minutes, the courier going east-by-service-gate
+              after. [image: chamberlain-corridor-in-compound-register] Two days later the pattern has
+              confirmed three repetitions. Taylor compiles the factional
+              reading: the chamberlain is a routing node, message-traffic
+              to a Black-faction contact in the harbor approaches, the
+              interval too regular and too consistent for accident.
+              She writes the entry, drops the compiled reading through
+              the Jarvis channel in the same format the arrangement uses —
+              timestamped, attributed, factional-contact named — and
+              the drop closes the request. [force: protagonist] She closes the
+              cost-ledger column. [event: contempt-without-refusal-locked]
+              The contempt does not enter the accounting. [force: opposing]
+              It sits alongside it, the way a person's name appears in a
+              ledger after they are dead: complete and unreferenced,
+              adjacent to every line but not itself a line, present in
+              the column's shape without occupying any of the column's
+              entries. [mechanism: contempt-sits-alongside-not-inside]
+              The column receives the protection-delivered entry
+              and the request-completion entry and closes with those two
+              things in it. The contempt is a third thing, adjacent,
+              with no entry-format, with no line.
+              [image: contempt-alongside-the-accounting]
+              Clarity forecloses nothing.
+              Taylor sets the stylus beside the ledger. Not away from it.
+            scene_conflict:
+              protagonist_force: "Taylor executes the chamberlain-reading, compiles the factional product, drops it through the Jarvis channel, and closes the cost-ledger — all in the same form the arrangement has always used"
+              opposing_force: "the contempt at lock: it arrives complete with no exit attached, sitting alongside the accounting as a third thing for which there is no entry-format; the closed ledger is the form the trap takes; cl06 is paid and clarity forecloses nothing"
+              stakes_axis: political_register-prot
+            substance_delta:
+              axes_in_motion:
+                - axis: political_register-prot
+                  direction: up
+                  target_delta_magnitude: 0.5
+                  cost_ledger_anchor: cl06
+                  notes: "final +0.5 draws political_register-prot to rank 9 LOCK; cl06 paid: contempt-without-refusal complete; the contempt sits alongside the accounting without entering it — the form cl06 names; the ledger closes and the contempt has no mechanism for refusal; cl06 cost-entry complete (remaining allocated draws exhausted for the series)"
+              axes_held:
+                - axis: moral_framework
+                  rationale: "held at consumed-as-compass rank -4; the execution and close do not constitute a new breach; the irrevocable threshold is c18's; c19 draws the contempt-lock through repetition-with-full-vision, not through a new threshold crossing"
+                - axis: moral_legibility_to_self
+                  rationale: "the recognition begun in s02 does not extend here; the suppression is not fully operational but the terminal recognition belongs to c20; the blank column holds alongside the contempt's adjacent-not-entered position; legibility holds at 7 (the s02 movement's landing)"
+                - axis: relational_anchor_status
+                  rationale: "Wren in coverage; anchor holds at 7.5; the execution involves no eastern-gap nodes; the chamberlain-reading draws on outer-ring administrative corridors only"
+                - axis: social_tether-prot-collapse
+                  rationale: "collapse in motion; held at this scene; severance fires in s04"
+                - axis: position-prot-collapse
+                  rationale: "collapse in motion; held at this scene; position-risk fires in s04"
+                - axis: capability
+                  rationale: "held at 8.5; the targeted chamberlain-reading completes within existing scope — three outer-ring corridor nodes, four-day window; no scope expansion"
+                - axis: social_tether-antag
+                  rationale: "locked at 9; the drop through the Jarvis channel is the structural leverage completing its current cycle; no new leverage event"
+              density_target: 0.70-0.85
+            event_map:
+              - entry: "request-execution-enacted"
+                tag_source: "[event] chunk"
+                bones: [b01c19s03n01, b01c19s03n02]
+              - entry: "targeted-reading-completes"
+                tag_source: "[mechanism] chunk"
+                bones: [b01c19s03n02, b01c19s03n03, b01c19s03n04]
+              - entry: "chamberlain-corridor-in-compound-register"
+                tag_source: "[image] chunk"
+                bones: [b01c19s03n02, b01c19s03n03]
+              - entry: "contempt-without-refusal-locked"
+                tag_source: "[event] chunk"
+                bones: [b01c19s03n07, b01c19s03n08]
+              - entry: "force:protagonist — Taylor closes the cost-ledger"
+                tag_source: "[force: protagonist] chunk"
+                bones: [b01c19s03n06, b01c19s03n07]
+              - entry: "force:opposing — contempt sits alongside not inside"
+                tag_source: "[force: opposing] chunk"
+                bones: [b01c19s03n08, b01c19s03n09]
+              - entry: "contempt-sits-alongside-not-inside"
+                tag_source: "[mechanism] chunk"
+                bones: [b01c19s03n08, b01c19s03n09]
+              - entry: "contempt-alongside-the-accounting"
+                tag_source: "[image] chunk"
+                bones: [b01c19s03n09]
+              - entry: "author-noticed: drop through Jarvis channel completes the request-loop"
+                tag_source: "author"
+                bones: [b01c19s03n05]
+              - entry: "author-noticed: CFR-2 stylus placement — beside not away from"
+                tag_source: "author"
+                bones: [b01c19s03n07, b01c19s03n08]
+            bones:
+              - slug: b01c19s03n01
+                flat_id: 18
+                svo: "taylor-hebert-kl-122ac opens the outer-ring bottlefly routes"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: capability
+                      rationale: "targeted reading uses the three existing outer-ring corridor nodes; deployment at existing scope maximally; no scope expansion; held at 8.5"
+                    - axis: moral_framework
+                      rationale: "the execution opens the targeted corridors the same way every prior reading has opened them; no new breach threshold; consumed-as-compass holds at -4"
+                  cost_ledger_anchor: null
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c19s03n02
+                flat_id: 19
+                svo: "the chamberlain crosses the pillar junction"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: capability
+                      rationale: "the pre-dawn courier hand-off is the targeted reading's first return: the chamberlain's corridor pattern resolves within four hours of node-activation; held at 8.5"
+                    - axis: political_register-prot
+                      rationale: "the chamberlain is one more body performing a factional function the lower city would not recognize; the contempt register accumulates on the specific body; held pending n07 move"
+                  cost_ledger_anchor: null
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c19s03n03
+                flat_id: 20
+                svo: "the courier exits the service-gate"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: capability
+                      rationale: "second reading confirming the contact interval's direction; the courier's east-by-service-gate exit is indexed to the bottlefly corridor's coverage zone; reading completes at three repetitions across two days; held at 8.5"
+                  cost_ledger_anchor: null
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c19s03n04
+                flat_id: 21
+                svo: "the chamberlain repeats the contact interval"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: capability
+                      rationale: "third repetition confirms the pattern — too regular and consistent for accident; the targeted-reading mechanism completes on this repetition; the factional contact is named"
+                    - axis: relational_anchor_status
+                      rationale: "the chamberlain-reading draws on outer-ring administrative corridors only; eastern gap not touched; Wren in coverage; anchor holds at 7.5"
+                  cost_ledger_anchor: null
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c19s03n05
+                flat_id: 22
+                svo: "the Jarvis channel receives the compiled-reading"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: social_tether-antag
+                      rationale: "locked at 9; the drop through the established Jarvis channel is the structural leverage completing its current cycle; no new leverage event"
+                    - axis: moral_framework
+                      rationale: "the drop format is identical to every prior delivery — timestamped, attributed, factional-contact named; consumed-as-compass holds; the execution-and-drop does not constitute a new breach"
+                  cost_ledger_anchor: null
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c19s03n06
+                flat_id: 23
+                svo: "taylor-hebert-kl-122ac closes the cost-ledger column"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: moral_legibility_to_self
+                      rationale: "the recognition begun in s02 does not extend here; the suppression is not fully operational but the terminal recognition belongs to c20; the blank column holds alongside the contempt's adjacent-not-entered position; legibility holds at 7"
+                    - axis: moral_framework
+                      rationale: "the column closes as it always closes — protection-delivered entry, request-completion entry; consumed-as-compass holds; no new threshold"
+                  cost_ledger_anchor: null
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c19s03n07
+                flat_id: 24
+                svo: "taylor-hebert-kl-122ac lifts the stylus"
+                substance_delta:
+                  axis_moves:
+                    - axis: political_register-prot
+                      direction: up
+                      magnitude: 0.5
+                  axes_held: []
+                  cost_ledger_anchor: cl06
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c19s03n08
+                flat_id: 25
+                svo: "the stylus meets the ledger-edge"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: political_register-prot
+                      rationale: "LOCKED at rank 9 after n07; the beside-placement is the physical enactment of the cl06 shape — beside, not away from; the stylus is adjacent to the accounting, not removed from it; the contempt occupies the same spatial register as the ledger without entering the ledger; the locked register does not move further"
+                  cost_ledger_anchor: null
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c19s03n09
+                flat_id: 26
+                svo: "the ledger-edge receives the stylus"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: political_register-prot
+                      rationale: "LOCKED at 9; the contempt-alongside image is the physical form the lock takes — complete, unreferenced, adjacent to every line but not itself a line; clarity forecloses nothing; the locked register is the column's permanent condition"
+                    - axis: social_tether-prot-collapse
+                      rationale: "collapse in motion; held at this scene; severance fires in s04"
+                    - axis: position-prot-collapse
+                      rationale: "collapse in motion; held at this scene; position-risk fires in s04"
+                  cost_ledger_anchor: null
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+
+          - slug: b01c19s04
+            status: scened
+            stale_since: null
+            chunk: |
+              [event: ward-contact-stops-responding] Three days after the Jarvis drop, Taylor runs
+              the routine service-reciprocity approach for Daven — a tallow-render
+              hand she has worked with for seven months, one of the lower Flea Bottom
+              nodes, a man who has passed her availability-windows twice a season
+              in exchange for a small protection-reading she has maintained on
+              his lane as standard coverage. [mechanism: reciprocity-channel-check-runs]
+              The approach uses the standing method: a specific positioning
+              at the Tallow Croft corner at the second-bell interval, visible
+              to anyone watching the lane from the east-facing window above
+              the vat-house. Daven does not appear. [image: empty-corner-second-bell]
+              [force: opposing] Taylor runs the approach a second time at the
+              third-bell interval. The corner stays empty. The window above
+              the vat-house is shuttered, which it has not been in any of
+              the forty-three prior approaches she has made at this node
+              in seven months. [event: witch-label-reached-upper-city-contact]
+              She does not need to complete the inference. The shuttered
+              window has the shape of information. Someone in the upper
+              city has named the witch-woman's network and the name has
+              traveled down through the service-layers faster than she
+              anticipated, and Daven has made the cost calculation that
+              anyone with a working accounting would make. [force: protagonist]
+              Taylor walks the lane without pausing at the corner.
+              [mechanism: position-risk-named-in-walking]
+              She returns to the tallow-render room and opens the
+              running-architecture record. [event: tether-node-removed-architecture-still-running]
+              She writes Daven out of the coverage-map: his lane
+              now runs through the standing bottlefly-node at the
+              Croft intersection without the reciprocity-layer,
+              a lane like any other lane. [image: coverage-map-with-node-written-out]
+              The witch-label is in the upper city.
+              The contact who knows the most accessible face of
+              the architecture has made himself unavailable in the
+              way that does not require explanation.
+              Taylor closes the coverage-record.
+              The contempt is complete. The continuation is unchanged.
+              The architecture is still running, and it is running
+              with one fewer node than it ran with this morning,
+              and the morning-count does not appear in any record
+              she has written today.
+            scene_conflict:
+              protagonist_force: "Taylor registers Daven's non-appearance through the shuttered vat-house window, writes him out of the coverage-map, and closes the record — the tether losing a node, the architecture continuing, the morning-count unrecorded"
+              opposing_force: "the witch-label in the upper city: the association has been identified and has traveled through the service-layers to the people who know Taylor's accessible face; the position-risk is now structural, not theoretical; the contacts who can calculate the cost will"
+              stakes_axis: social_tether-prot-collapse
+            substance_delta:
+              axes_in_motion:
+                - axis: social_tether-prot-collapse
+                  direction: down
+                  target_delta_magnitude: 1.5
+                  cost_ledger_anchor: cl07a
+                  notes: "Daven's reciprocity channel goes silent; the shuttered window is the tether-node's severance; Taylor writes him out of the coverage-map; cl07a cost side accelerating; social_tether-prot-collapse from 6 toward 4.5; the node was seven months' service-reciprocity — a structural tether-layer below the ward-elder circuit, above the ambient-coverage level; this is collateral severance beginning, not Wren"
+                - axis: position-prot-collapse
+                  direction: down
+                  target_delta_magnitude: 1.0
+                  cost_ledger_anchor: cl07b
+                  notes: "the witch-label has reached the upper city and attached to Taylor's association-layer; the position-risk is now named structurally — contacts who know the accessible face of the architecture are making cost calculations; position-prot-collapse from 5 toward 4; the identification is not yet the expulsion-event (that is c20) but it is the position-of-no-exit beginning its final movement"
+              axes_held:
+                - axis: political_register-prot
+                  rationale: "LOCKED at rank 9 after s03; contempt-without-refusal complete; the severance is registered in the architecture-record, not the contempt-column; the locked register does not move further"
+                - axis: moral_legibility_to_self
+                  rationale: "the recognition begun in s02 holds at its landing rank (7); the node-severance is recorded with the same accounting-discipline as everything else; it does not advance the legibility further in this scene; the terminal recognition is c20"
+                - axis: moral_framework
+                  rationale: "held at consumed-as-compass rank -4; the write-out of a reciprocity node is the architecture's operational response to a loss; no new breach threshold"
+                - axis: relational_anchor_status
+                  rationale: "Wren in coverage; anchor holds at 7.5; Daven is a service-reciprocity node, explicitly NOT Wren; the eastern gap is not touched by this severance; the un-priced cost-bearer is not this cost"
+                - axis: capability
+                  rationale: "held at 8.5; writing Daven out of the coverage-map is a scope-adjustment within the existing architecture, not a capability loss; the bottlefly-node at the Croft intersection holds the lane without the reciprocity layer"
+                - axis: social_tether-antag
+                  rationale: "locked at 9; does not move"
+              density_target: 0.75-0.90
+            event_map:
+              - entry: "ward-contact-stops-responding"
+                tag_source: "[event] chunk"
+                bones: [b01c19s04n01, b01c19s04n02, b01c19s04n03]
+              - entry: "reciprocity-channel-check-runs"
+                tag_source: "[mechanism] chunk"
+                bones: [b01c19s04n01, b01c19s04n02]
+              - entry: "empty-corner-second-bell"
+                tag_source: "[image] chunk"
+                bones: [b01c19s04n02]
+              - entry: "force:opposing — empty corner + shuttered window"
+                tag_source: "[force: opposing] chunk"
+                bones: [b01c19s04n02, b01c19s04n03, b01c19s04n04]
+              - entry: "witch-label-reached-upper-city-contact"
+                tag_source: "[event] chunk"
+                bones: [b01c19s04n04, b01c19s04n05]
+              - entry: "force:protagonist — Taylor walks the lane without pausing"
+                tag_source: "[force: protagonist] chunk"
+                bones: [b01c19s04n05, b01c19s04n06]
+              - entry: "position-risk-named-in-walking"
+                tag_source: "[mechanism] chunk"
+                bones: [b01c19s04n06]
+              - entry: "tether-node-removed-architecture-still-running"
+                tag_source: "[event] chunk"
+                bones: [b01c19s04n07, b01c19s04n08, b01c19s04n09]
+              - entry: "coverage-map-with-node-written-out"
+                tag_source: "[image] chunk"
+                bones: [b01c19s04n08, b01c19s04n09]
+              - entry: "author-noticed: pl-2026-06-05-c19-001 — the vat-house shutter is the concrete inference instrument; forty-three prior approaches must be enacted through the contrast-between-closed-and-historically-open"
+                tag_source: "author"
+                bones: [b01c19s04n03, b01c19s04n04]
+            bones:
+              - slug: b01c19s04n01
+                flat_id: 27
+                svo: "taylor-hebert-kl-122ac takes the Tallow Croft corner position"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: social_tether-antag
+                      rationale: "locked at 9; the routine service-reciprocity approach is the structural tether operating; Daven is a tether-node within Otto's architecture; no new leverage event"
+                    - axis: capability
+                      rationale: "the approach uses the standing method from existing node-map; no new scope; held at 8.5"
+                  cost_ledger_anchor: null
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c19s04n02
+                flat_id: 28
+                svo: "the second-bell passes the Tallow Croft corner"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: social_tether-prot-collapse
+                      rationale: "opposing-force enacted: the empty corner at second-bell is the first concrete signal of the tether-node's silence; collapse is in motion; the first approach completes without confirmation"
+                    - axis: position-prot-collapse
+                      rationale: "opposing-force co-enacted: the empty corner is also position-risk manifesting — the reciprocity channel silence is the first indication the position's accessible face has been identified"
+                  cost_ledger_anchor: null
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c19s04n03
+                flat_id: 29
+                svo: "the vat-house shutter closes the window"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: social_tether-prot-collapse
+                      rationale: "opposing-force deepens: the shuttered window is the concrete inference instrument per pl-2026-06-05-c19-001; it has been unshuttered across forty-three prior approaches in seven months; the closure IS the information; the shutter physically enacts the tether-node's severance"
+                    - axis: position-prot-collapse
+                      rationale: "opposing-force: the shuttered window is also the position-risk becoming structural; someone has made the cost calculation; the window that was always open is closed; the physical state of the shutter carries the inference without naming the inference interior"
+                  cost_ledger_anchor: null
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c19s04n04
+                flat_id: 30
+                svo: "taylor-hebert-kl-122ac takes the lane-position"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: social_tether-prot-collapse
+                      rationale: "protagonist-force enacted as held-discipline: Taylor runs the second approach — the lane-position held at third-bell is the methodical check against the first approach's absence; the tether-node's severance is confirmed through Taylor's own held position that returns nothing"
+                    - axis: moral_legibility_to_self
+                      rationale: "the recognition begun in s02 holds at 7; the node-severance is registered with the same accounting-discipline as everything else; the second approach does not advance legibility further; terminal recognition is c20"
+                  cost_ledger_anchor: null
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c19s04n05
+                flat_id: 31
+                svo: "daven absents the corner"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: social_tether-prot-collapse
+                      rationale: "Daven's absence is the concrete enactment of the witch-label-reached-upper-city event: his non-appearance at both second-bell and third-bell, read against the shuttered window, is the structural severance; collapse moves at n06"
+                    - axis: relational_anchor_status
+                      rationale: "Daven is explicitly NOT Wren; the eastern gap is not touched; anchor holds at 7.5; the un-priced cost-bearer is not this severance"
+                  cost_ledger_anchor: null
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c19s04n06
+                flat_id: 32
+                svo: "taylor-hebert-kl-122ac walks the lane"
+                substance_delta:
+                  axis_moves:
+                    - axis: social_tether-prot-collapse
+                      direction: down
+                      magnitude: 1.5
+                  axes_held: []
+                  cost_ledger_anchor: cl07a
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c19s04n07
+                flat_id: 33
+                svo: "taylor-hebert-kl-122ac opens the running-architecture record"
+                substance_delta:
+                  axis_moves:
+                    - axis: position-prot-collapse
+                      direction: down
+                      magnitude: 1.0
+                  axes_held: []
+                  cost_ledger_anchor: cl07b
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c19s04n08
+                flat_id: 34
+                svo: "the coverage-map drops the daven node"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: social_tether-prot-collapse
+                      rationale: "COLLAPSED this scene (-1.5 at n06); writing Daven out of the coverage-map is the tether-node's formal removal; the architecture continues; the tether is 1.5 lighter; held at new landing rank 4.5"
+                    - axis: capability
+                      rationale: "writing Daven out of the coverage-map is a scope-adjustment within the existing architecture, not a capability loss; the bottlefly-node at the Croft intersection holds the lane without the reciprocity layer; held at 8.5"
+                  cost_ledger_anchor: null
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+              - slug: b01c19s04n09
+                flat_id: 35
+                svo: "taylor-hebert-kl-122ac closes the coverage-record"
+                substance_delta:
+                  axis_moves: []
+                  axes_held:
+                    - axis: political_register-prot
+                      rationale: "LOCKED at rank 9; the contempt is complete; the continuation is unchanged; the closing of the coverage-record is the form the contempt-without-refusal takes in s04 — the morning-count does not appear in any record she writes today; the locked register does not move further"
+                    - axis: moral_framework
+                      rationale: "the write-out of a reciprocity node is the architecture's operational response to a loss; consumed-as-compass holds at -4; no new breach threshold"
+                    - axis: relational_anchor_status
+                      rationale: "Wren in coverage; anchor holds at 7.5; Daven is a service-reciprocity node, explicitly NOT Wren; the eastern gap is not touched by this severance"
+                  cost_ledger_anchor: null
+                gate_verdict: {bonefide: true, flat: false, signals: []}
+        chunk_cold_read:
+          reviewed_at: 2026-06-05T00:00:00Z
+          verdict: SHIPPED-WITH-RISK-RECORDED
+          classification: B
+          recovered_summary: "request to read a Red Keep chamberlain; mid-work Taylor names the shape her ledger has worn over eleven months (recognition begins, suppression weakens not breaks); she runs the surveillance, IDs the chamberlain as a courier-routing node, compiles and drops the report, closes the ledger; three days later a seven-month contact (Daven) no-shows behind a shuttered window and she infers the witch-label reached the upper city and writes him out of the coverage-map"
+          intended_goal: "contempt-without-refusal at its completion - the register locked, the continuation unchanged - and the first recognition event that is not fully suppressed, so the terminal recognition at d14 reads as arrival not revelation"
+          continue: yes
+          continue_strict: no
+          report_path: active-project/staff/reviews/chunk-coldread-b01c19-2026-06-05.md
+          disposition: P
+          dispositioned_at: 2026-06-05T00:00:00Z
+          dispositioned_by: admin
+          # admin user-proxy DEC-0099 (sixth consecutive Class-B; DEC-0090/0094/0095/0096 family). Summary maps to goal; strict-continue=no = design-inherent Class-B. Audience 3/3 SUBSTANCE-FELT + dramatist ACCEPT + auditor 0-HARD => (S) off the table, (R) would fight an endorsed contract at the wrong layer.
+          voice_risk:
+            triggered: true
+            signals: [B]
+            central_event: "Taylor executes the chamberlain-reading and closes the ledger with the contempt sitting alongside the accounting unreferenced (s03); the architecture continues with one fewer node after Daven severs (s04)"
+            voice_risk_carry: |
+              ABSTRACTION-DOMINANT SIGNAL from chunk cold-read: heavy proprietary vocabulary
+              ("the accounting", "bottlefly nodes", "contempt-color", "a different column")
+              risks muffling the central event below cold-reader legibility. /and-stitch Phase 8.5
+              Check 3: verify s03 contempt-lock + s04 severance are delivered at cold-reader
+              legibility in assembled prose; prefer person-first faithful rendering over
+              apparatus-register within the bone-faithfulness fence.
+          cold_read_risk_carry: |
+            (P/DEC-0099) Authorized known-risk categories for /and-stitch Phase 9 auto-disposition:
+            (a) interior-sameness / emotional-stasis (thesis: contempt-without-refusal, continuation unchanged);
+            (b) jargon/abstraction-density (recurring carry, c17 DEC-0094 family).
+            A Phase-9 FAIL-ClassB confined to (a)+(b) ships terminal SHIPPED-WITH-CAVEATS without re-prompt.
+            NEW finding NOT auto-dispositioned: s04 upper-city-label-reach rendered inferred-off-page /
+            asserted-not-dramatized => tractable, route normally (carried HARD to /and-write per DEC-0099).
 
       - slug: b01c20
         status: planned

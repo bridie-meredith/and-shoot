@@ -3,6 +3,46 @@
 
 ---
 
+## 2026-06-05 — b01c19 three-facet authoring at /and-facets Phase 1
+
+Chapter b01c19: 35 bones, 4 scenes. Penultimate chapter — contempt-without-refusal LOCK (political_register-prot LOCKS at rank 9; cl06 PAID) + first non-terminal recognition + Daven severance. SOLITARY (Taylor alone). BONES-AIRLESS-RISK active. Three locations: the-tallow-render-works (s01-s02 accounting container + s03 close + s04 architecture-record return), the-red-keep-outer-ring (s03 observed feed-terrain; pillar junction + service gate), the-tallow-croft-corner (s04 Daven approach; vat-house east window; lower Flea Bottom). Earth-Bet fence hard throughout.
+
+LOCATION-STATE (10 entries):
+  Location arc: tallow-render-works (before-dawn; s01 dead-drop retrieval + s02 accounting running) → the-red-keep-outer-ring (four-days-targeted-read; s03 observed corridors via feed) → tallow-render-works (after-four-days; s03 column-close) → the-tallow-croft-corner (second-bell + third-bell; s04 Daven approach) → tallow-render-works (after-third-bell; s04 architecture-record).
+  Notable: @29 LABEL-REACH-CONCRETE fire (vat-house-east-window: open-baseline-seven-months → shuttered; pl-2026-06-05-c19-001 RESOLVED at bone-gate). New slugs: the-red-keep-outer-ring (SEAM-C19-LOC-002; MARGIT REFERRAL) + the-tallow-croft-corner (SEAM-C19-LOC-003; MARGIT REFERRAL).
+  loc-state:1  @1  — tallow-render-works; before-dawn; dead-drop retrieval; floor-bare, tallow-smell.
+  loc-state:2  @5  — tallow-render-works; before-dawn; request-sheet-on-floor; precipice-of-receipt.
+  loc-state:3  @6  — tallow-render-works; before-dawn; cost-ledger-column-open; accounting-container active.
+  loc-state:4  @19 — the-red-keep-outer-ring; four-days-targeted-read; pillar-junction-established (feed-terrain).
+  loc-state:5  @20 — the-red-keep-outer-ring; four-days-targeted-read; service-gate-exit-confirmed.
+  loc-state:6  @23 — tallow-render-works; after-four-days; cost-ledger-column-closing.
+  loc-state:7  @27 — the-tallow-croft-corner; second-bell; corner-position-available.
+  loc-state:8  @29 — the-tallow-croft-corner; second-bell-passing; vat-house-east-window-shuttered (LABEL-REACH-CONCRETE).
+  loc-state:9  @30 — the-tallow-croft-corner; third-bell; lane-position-taken; window-shut-persists.
+  loc-state:10 @33 — tallow-render-works; after-third-bell; running-architecture-record-open.
+
+SENSORY (4 entries: 2 standard + 2 grounding-licensed; standard density 5.7%; BONES-AIRLESS-RISK active):
+  Modalities: visual (sensory:1 @3) + tactile (sensory:2 @24 + sensory:3 @14) + olfactory (sensory:4 @27) — 3 distinct; ≥2 floor met.
+  Per-scene caps: s01=1, s02=1, s03=1, s04=1 — all within ≤3.
+  STANDARD: @3 visual (grey-dark-reading-light; eleven-month-repetition sensory fact; s01). @24 tactile (stylus-in-hand-post-column-close; CFR-2 choreography grounding; s03).
+  GROUNDING-LICENSED: @14 tactile (stylus-held-still; s02 recognition-beginning peak; grd-c19-001). @27 olfactory (tallow-croft-corner-cold-render-smell; s04 severance-scene opening; grd-c19-002).
+  Grounding-ledger entries grd-c19-001 + grd-c19-002 to be created at /and-facets Phase 2.5.
+
+STATE-UPDATES (17 entries; density 48.6%):
+  Time resets: @1 (day-fourteen → before-dawn) + @27 (after-four-days → second-bell) + @30 (second-bell-passing → third-bell).
+  Location transitions: @27 (tallow-render-works → tallow-croft-corner) + @33 (tallow-croft-corner → tallow-render-works).
+  Cost-ledger: @6 (column opens) + @8 (contempt-entry-chamberlain first-tranche) + @23 (column closes).
+  Stylus CFR-2: @24 (lifted) + @25 (approaching-ledger-edge) + @26 (beside-ledger-edge; permanent).
+  Environmental: @29 (vat-house-east-window: open-baseline → shuttered; permanent within episode).
+  Actor-position: @32 (lane-position-stationary → walking-lane-past-empty-corner).
+  Architecture-record: @33 (record opens) + @34 (coverage-map.daven-node: present → dropped) + @35 (record closes-daven-node-removed).
+  Request-sheet: @5 (in-hand → render-room-floor).
+  New props/fields: prop:oc-request-sheet + prop:oc-stylus + studio.vat-house-east-window.status + prop:oc-running-architecture-record + prop:oc-coverage-map — all MARGIT REFERRAL.
+
+Chapter-close state: tallow-render-works | after-third-bell | cost-ledger closed-column-drop-complete | vat-house-east-window shuttered | stylus beside-ledger-edge | architecture-record closed-daven-node-removed | coverage-map.daven-node dropped | social_tether-prot-collapse -1.5 (cl07a @32) | position-prot-collapse -1.0 (cl07b @33) | political_register-prot LOCKED rank 9 (cl06 PAID @24).
+
+---
+
 ## 2026-06-05 — b01c18 three-facet + grounding-ledger authoring at /and-facets Phase 1
 
 Chapter b01c18: 46 bones, 5 scenes. Climax chapter — irrevocable full-coverage deployment (KHEPRI-repetition). SOLITARY (Taylor alone). Fortnight arc: before-dawn day 0 (s01) → before-first-light deployment (s02) → six-day feed-observation (s03) → days 9-12 dead-drop / succession (s04) → day 14 standdown + accounting (s05). Signal dispositions: s04/s05 ABSTRACTION-DOMINANT ACCEPT-WITH-RATIONALE (DEC-0096). Earth-Bet fence hard throughout.

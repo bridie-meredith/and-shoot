@@ -1,5 +1,17 @@
 # studio STM
 
+## 2026-06-05 — /and-facets b01-c19 Phase 1 studio facet authoring
+
+Chapter b01c19: 35 bones, 4 scenes. Solitary chapter — Taylor alone running the chamberlain accounting, catching the pattern, locking the contempt, then running the Daven severance approach. Three locations: the-tallow-render-works (s01-s03 control point + s04 return), the-red-keep-outer-ring (s03 observed feed-terrain), the-tallow-croft-corner (s04 approach). BONES-AIRLESS-RISK flag active. Silent chapter — 0 dialogue-anchor speakers.
+
+LOCATION-STATE (10 entries): place-anchors for each distinct location-open + state-changes at precipice-of-receipt (@5), column-open (@6), pillar-junction feed-terrain (@19/@20), column-close (@23), corner-approach (@27), LABEL-REACH-CONCRETE vat-house shutter (@29), lane-position (@30), architecture-record-open (@33). Margit referrals: the-red-keep-outer-ring (new slug); the-tallow-croft-corner (new slug). File: theater/facets/location-state-b01-c19.md.
+
+SENSORY (4 entries: 2 standard, 2 grounding-licensed; BONES-AIRLESS-RISK active): standard: @3 visual (grey-dark-reading-light; eleven-month-repetition sensory fact) + @24 tactile (stylus-in-hand-post-column-close; CFR-2 choreography grounding). Grounding-licensed: @14 tactile (stylus-held-still; recognition-beginning peak grounding; grd-c19-001) + @27 olfactory (tallow-croft-corner-cold-render-smell; severance-scene opening; grd-c19-002). Standard density 5.7% (upper-biased per AIRLESS brief). Modalities: visual + tactile + olfactory (3). Per-scene caps all ≤3. Grounding-ledger entries to be created at /and-facets Phase 2.5. File: theater/facets/sensory-b01-c19.md.
+
+STATE-UPDATES (17 entries): 1 time-of-day reset (@1) + 5 cost-ledger fires (@5/@6/@8/@23 + stylus at @24/@25/@26) + 2 scene-open structural fires (@27×2) + 1 time-advance (@30) + 1 LABEL-REACH-CONCRETE window-shutter (@29) + 1 actor-position (@32) + 1 location-return (@33) + 3 architecture-record/coverage-map fires (@33/@34/@35). Density 48.6% — above precedent; density-note in facet. New fields/props: prop:oc-request-sheet + prop:oc-stylus + studio.vat-house-east-window.status + prop:oc-running-architecture-record + prop:oc-coverage-map. All MARGIT REFERRAL. File: theater/facets/state-updates-b01-c19.md.
+
+Chapter-close state: the-tallow-render-works | after-third-bell | cost-ledger closed-column-drop-complete | contempt-entry-chamberlain entered-first-tranche | vat-house-east-window shuttered | stylus beside-ledger-edge | running-architecture-record closed-daven-node-removed | coverage-map.daven-node dropped.
+
 ## 2026-06-05 — /and-facets b01-c18 Phase 1 consolidated R1+R2 authoring
 
 Chapter b01c18: 46 bones, 5 scenes. Solitary chapter — Taylor alone running the irrevocable Khepri-repetition deployment. Climax chapter. Fortnight timescale (s01 before-dawn day 0 → s02 deployment → s03 six days → s04 days 9-12 → s05 day 14 standdown).

@@ -2616,3 +2616,158 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-06-05-c19-001
+      created_at: 2026-06-05T00:00:00Z
+      created_by: "/and-substance chapter b01c19 Phase 5.5 (admin user-proxy DEC-0099)"
+      label: c19-s04-label-reach-must-be-concrete
+      target:
+        command: /and-write
+        scope: "b01c19"
+        phase: Phase 6
+      severity: HARD
+      description: |
+        DEC-0099 cold-read carry. The s04 central event — the witch-label reaching
+        the upper city and reaching Daven's service-layer — was flagged at the chunk
+        cold-read as inferred-off-page / asserted-not-dramatized. /and-write MUST land
+        this as a concrete SVO bone on-page (the shuttered vat-house window, the empty
+        corner across forty-three prior approaches, Daven's non-appearance as the
+        readable instrument of the inference). An inferred-off-page arrival fires
+        EVENT-NOT-CONCRETE (HARD) at Phase 6. This is the ONE finding from the c19
+        chunk cold-read that is NOT auto-dispositioned at /and-stitch Phase 9 — it is
+        tractable and must be staged concretely upstream.
+      resolution_suggestion: "Phase 1 scene-decomposition: ensure s04 has a concrete central-event bone staging the shuttered-window/empty-corner instrument of the inference; Phase 6 verifies EVENT-NOT-CONCRETE clean on the s04 central event."
+      status: resolved
+      resolved_at: 2026-06-05T18:30:00Z
+      resolved_by: "/and-write b01c19 Phase 6 bone-gate (auditor EVENT-NOT-CONCRETE clean on s04)"
+      resolution_note: |
+        s04 witch-label-reach staged concretely on-page: @28 the second-bell passes the empty Tallow Croft corner, @29 the vat-house shutter closes the window (against forty-three prior-open approaches), @31 daven absents the corner, @34 the coverage-map drops the daven node. Auditor Phase 6 confirmed EVENT-NOT-CONCRETE does not fire; the inference is carried by physical instruments, not inferred-off-page abstraction. HARD watch satisfied. (Stitch must preserve LABEL-REACH-CONCRETE per scene-map protected-patterns; a stitch-layer revert to interior inference reopens this as a NEW non-auto-dispositioned Phase-9 finding per DEC-0099.)
+
+    - id: pl-2026-06-05-c19-002
+      created_at: 2026-06-05T00:00:00Z
+      created_by: "/and-substance chapter b01c19 Phase 5.5 (admin user-proxy DEC-0099)"
+      label: c19-voice-risk-abstraction-muffle
+      target:
+        command: /and-stitch
+        scope: "b01c19"
+        phase: Phase 8.5
+      severity: SOFT
+      description: |
+        DEC-0099 voice-risk carry (chunk_cold_read.voice_risk.triggered=true, signal B).
+        ABSTRACTION-DOMINANT: chunk cold-read flagged heavy proprietary vocabulary
+        ("the accounting", "bottlefly nodes", "contempt-color", "a different column")
+        as a central-event-muffle risk. /and-stitch Phase 8.5 Check 3 must verify the
+        s03 contempt-lock + s04 severance reach cold-reader legibility in assembled
+        prose; prefer person-first faithful rendering over apparatus-register within
+        the bone-faithfulness fence (PROP-0022 voice-embodiment). Also armed via the
+        chunk_cold_read.voice_risk block in memory (auto-read at Phase 8.5).
+      resolution_suggestion: "/and-stitch Phase 8.5 Check 3 central-event-muffle verification; Phase 4 voice-embodiment discipline."
+      status: resolved
+      resolved_at: 2026-06-05T20:05:00Z
+      resolved_by: "/and-stitch b01c19 Phase 8.5 coherence (central-event-muffle check)"
+      resolution_note: |
+        Voice-risk signal-B muffle NOT-MATERIALIZED. Phase 8.5 armed central-event-muffle check confirmed both spine events reach cold-reader legibility AS events (s3 contempt-lock via stylus-beside-not-into choreography + dead-name-in-ledger figure, high confidence; s4 severance via empty-corner + shutter-against-43-approaches + Daven absence, high confidence). label-reach-concrete HARD watch did not reopen. Voice-embodiment person-first throughout.
+
+    - id: pl-2026-06-05-c19-003
+      created_at: 2026-06-05T00:00:00Z
+      created_by: "/and-substance chapter b01c19 Phase 5 (audience trio bones-execution watches)"
+      label: c19-bones-execution-watches
+      target:
+        command: /and-write
+        scope: "b01c19"
+        phase: null
+      severity: SOFT
+      description: |
+        Three bones-execution watches the audience trio attached to their c19 3-of-3
+        SUBSTANCE-FELT ACCEPT, for /and-write Phase 1 scene-decomposition discipline:
+        (SW-c19-CFR-1, cape-fic-reader) s02 "not a feeling, an observation" must land
+          at bone level as a physical enumeration act through the accounting's own
+          arithmetic — NOT a labeled interior-state shift.
+        (SW-c19-CFR-2, cape-fic-reader) s03 "beside, not away from" (Taylor sets the
+          stylus beside the ledger, not away from it) must be an ENACTED physical
+          distinction at bones level; two-bone minimum; structural, not a prose flourish.
+        (SW-c19-DFR-1, dark-fantasy-reader) s04 "The contempt is complete. The
+          continuation is unchanged." must land as a HORROR-beat (the trap completing),
+          not a resolution-beat — this is primarily a /and-stitch Phase 4 register
+          concern (see pl-2026-06-05-c19-004) but the bones must not pre-resolve it.
+      resolution_suggestion: "/and-write Phase 1 honors CFR-1 (enumeration-act bones) + CFR-2 (two-bone beside-distinction); Phase 6 verifies."
+      status: resolved
+      resolved_at: 2026-06-05T18:30:00Z
+      resolved_by: "/and-write b01c19 Phase 4+6 audience bone-gate (CFR-1 + CFR-2 CLOSED)"
+      resolution_note: |
+        SW-c19-CFR-1 CLOSED: s02 pattern-recognition lands as physical enumeration (@10 runs the factional-reading column / @11 the column repeats its shape / @13 marks the column entry), not an interior-state label. SW-c19-CFR-2 CLOSED: s03 beside-not-away is a two-bone-plus enacted distinction (@24 lifts the stylus -> @25 the stylus meets the ledger-edge -> @26 the ledger-edge receives the stylus). SW-c19-DFR-1 (s04 close horror-beat-not-resolution) carries to /and-stitch Phase 4 -> tracked at pl-2026-06-05-c19-004.
+
+    - id: pl-2026-06-05-c19-004
+      created_at: 2026-06-05T00:00:00Z
+      created_by: "/and-substance chapter b01c19 Phase 5 (dark-fantasy-reader SW-c19-DFR-1)"
+      label: c19-s04-close-horror-not-resolution
+      target:
+        command: /and-stitch
+        scope: "b01c19"
+        phase: Phase 4
+      severity: SOFT
+      description: |
+        SW-c19-DFR-1 (dark-fantasy-reader). The s04 close couplet "The contempt is
+        complete. The continuation is unchanged." must land in prose as a horror-beat
+        (the trap completing one chapter before the catastrophe), NOT as a wrap-up /
+        resolution-beat. The dramatist also flagged that these summary lines risk
+        becoming a tell that competes with the showing already in the scene. /and-stitch
+        Phase 4 voice-transform must render the close so the unchanged-continuation is
+        the horror, not the resolution.
+      resolution_suggestion: "/and-stitch Phase 4 register-execution: render the s04 close as horror-beat; avoid tell-competing-with-show on the summary couplet."
+      status: resolved
+      resolved_at: 2026-06-05T20:05:00Z
+      resolved_by: "/and-stitch b01c19 Phase 4 voice-transform + Phase 8.5"
+      resolution_note: |
+        Render honored horror-beat-not-resolution: close couplet weighted to continuation ("The architecture is still running, one node lighter... and the count that took the node out sits in no record I have written today"). Not warmed, not resolved. Phase 8.5 flagged low-med residual resolution-reading risk, within pre-authorized Class-B category (a) per DEC-0099; accepted at SHIPPED-WITH-CAVEATS.
+
+    - id: pl-2026-06-05-c19-005
+      created_at: 2026-06-05T00:00:00Z
+      created_by: "/and-facets b01c19 Phase 5b (audience-native soft flag, no auditor convergent)"
+      label: c19-expo3-conditional-framing
+      target:
+        command: /and-stitch
+        scope: "b01c19"
+        phase: Phase 3
+      severity: SOFT
+      description: |
+        exposition:3 @27 ("the cost of being one of them has been priced") approaches
+        present-tense certainty BEFORE the inference instruments (@28 empty corner /
+        @29 shuttered window / @31 Daven absents) confirm the break. /and-stitch must
+        render expo:3 as Taylor's operative inference-FRAMEWORK (what a contact-break
+        means given the witch-label traveling), NOT as confirmed knowledge at the moment
+        of scene-arrival. The @28/@29/@31 instrument sequence retains its evidentiary
+        force only if expo:3 reads as conditional framing, not established fact. Also
+        carries NI:3 @14 (flatten thesis-statement surface, preserve non-continuation
+        content) per the same audience-gate.
+      resolution_suggestion: "/and-stitch Phase 3 sequencing: expo:3 conditional, instruments evidentiary; NI:3 @14 flatten-explanatory."
+      status: resolved
+      resolved_at: 2026-06-05T20:05:00Z
+      resolved_by: "/and-stitch b01c19 Phase 3 sequencing"
+      resolution_note: |
+        expo:3 @27 rendered CONDITIONAL ("if the witch-label has reached the people who know my accessible face, then the cost... has been priced, and a closed shutter is what the price looks like from the lane") - inference-framework not confirmed-arrival; the @28/@29/@31 instruments retain evidentiary force. NI:3 @14 flattened from thesis-statement to enacted prose ("the naming was not the stop. The entry going forward unchanged was").
+
+    - id: pl-2026-06-05-c19-deptpass
+      created_at: 2026-06-05T20:05:00Z
+      created_by: "/and-stitch b01c19 Phase 9 cold-read terminal gate"
+      label: depth-pass-required-b01c19-book-close
+      target:
+        command: /and-write
+        scope: "book-close"
+        phase: null
+      severity: HARD
+      description: |
+        b01c19 shipped SHIPPED-WITH-CAVEATS (Phase 9 cold-read CONTINUE=no on pre-disposed
+        Class-B grounds: interior-sameness + abstraction-density; DEC-0099 coupling). The
+        mandatory depth-pass gates BOOK-CLOSE (NOT b01c20 Phase 0): before /and-review verdict
+        b01 / /and-postop b01c19 milestone / /and-substance book b02, this chapter (and the
+        c14-c18 cohort) needs the depth-pass resolution per the SHIPPED-WITH-CAVEATS contract.
+        6th consecutive Class-B (c14-c19). Candidate: /and-write b01c19 revise --from-signals
+        consuming the cold-read confusion log (chamberlain-half abstraction; the two-thread
+        structure reading theme-linked-not-causal). NOT a b01c20 Phase 0 blocker — c20 Phase 0
+        stays CLEAR.
+      resolution_suggestion: "book-close: /and-write b01c19 revise --from-signals + re-cascade, OR principal accepts the Class-B cohort caveat at /and-review verdict b01. Consider /and-cohere b01 c13-c19 for the accumulated Class-B stretch."
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
