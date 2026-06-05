@@ -12627,7 +12627,7 @@ books:
             scene_conflict:
               protagonist_force: Taylor reads the death and the succession-move through the feed simultaneously and enters both into the ledger accurately
               opposing_force: the accuracy of the entries — the apparatus ran without her signal; the ledger confirms her work is complete and she is no longer necessary
-              stakes_axis: moral_legibility_to_self
+              stakes_axis: position-world   # corrected 2026-06-05 at /and-write Phase 0: chunk-authored stakes_axis was moral_legibility_to_self (+0.2) but it is dominated by position-world/political_register-world (+0.5 each); STAKES-AXIS-NOT-DOMINANT (HARD @ Phase 6) would fire. The bones-layer physical stakes of s01 is the succession executing = world-position consolidating ("the apparatus ran without her signal; her work is complete; she is no longer necessary"). moral_legibility recognition-pressure remains a secondary rider (aperture-opening per chunk-audit flag-002, peak at s04). position-world is now the (tied-)largest delivered delta; no non-stakes axis delivers larger.
             substance_delta:
               axes_in_motion:
                 - axis: position-world
