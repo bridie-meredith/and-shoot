@@ -153,3 +153,34 @@ hold (esp. broken-clock + comedy-of-impotence balance).
 ---
 
 ## Round 3 — integration (running)
+
+**Integration generator pass — DONE.** Enriched outline written to `round-03/fusion-v2.md` (bounded
+fold-in, not a rewrite). All three ratified additions woven into existing beats; one genuinely-new
+micro-beat (Bk I M3 "first pest") sits on the pre-existing curdle ladder.
+
+- **Cauldron-Belly** lands: Bk I M1 (FROZEN grind upgraded to grind-AND-swallow; self-label declared) →
+  retro-frames all eating antics M2–M3 → Bk II no-eat-list gag + first unnameable appetite (Yi Ti) →
+  Bk III M2 curdle-apex (reaches to eat the oily black stone; thickens DN-4 with *appetite*).
+- **Poison-path / reverse-trope** lands: Bk I M2 (skips sword-training vs Aemond's martial answer;
+  raids the easy apothecary; poison + medicine = one supply chain) → Bk I M3 first "pest" removed by
+  poison, filed cold (curdle seed) → Bk II trade-net shown as poison-net-with-charity-face → Bk III
+  never martial (whole climax is apothecary + logistics + paper).
+- **Mithridatism** lands: Bk I M2 (begins dosing; sick a week; dose-log planted) → Bk II M2 (Yi Tish
+  poison case; real thing works while she credits the imaginary thing) → Bk III M1 payoff (assassination
+  attempt simply fails; she's insulted by the grade).
+
+**GUARDS confirmed honored on-page** (see fusion-v2 Integration map):
+- Broken-clock: cauldron explains nothing it shouldn't; only real effects = mithridatism (mundane) +
+  magic-material reactions; fake effects (immortality herb) fail on schedule; she stays wrong about why.
+- Idiot-savant: lethality walled to gut + still-room; moron at court/marriage/dragons/war; comedy-of-
+  impotence intact.
+- Curdle: de-pesting-by-poison staged as the same coldness as the ward-child filing; cauldron is the
+  throughline carrying the one gesture from cradle-egg laugh to dead-dragon horror.
+
+**Residual tension flagged for critic:** (1) broken-clock balance in any straight-man-absent scene
+(mitigated — Daenys + Nymeria both name the gut as a gut, puncture-voice structurally available);
+(2) the FROZEN-grind → grind-AND-swallow upgrade is the one place integration touches a FROZEN beat
+(rationale on record: same inversion, one inch further into the body the mechanism requires);
+(3) early lethality could front-load fear / dissolve impotence (mitigated — low-body-count, cold-not-
+flashy, never a win-condition vs a real antagonist, feeds the curdle ladder). DN-2 also re-honored
+(second visible balancing beat kept at Bk II M3). → ready for critic six-criteria re-validation.
