@@ -2390,3 +2390,58 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-06-04-cohere-c1315-001
+      created_at: 2026-06-04T00:00:00Z
+      created_by: "/and-cohere b01 c13-c15 iteration-0 (naive Q6 borderline-high CAUTION)"
+      label: apparatus-register-closing-gesture-cadence-hardening
+      target: {command: /and-review, scope: "verdict b01", phase: null}
+      severity: SOFT
+      description: |
+        Across c13/c14/c15 every chapter closes on the identical gesture — a withheld/unwritten
+        ledger entry ("a finding... filed, held, walk on under it" c13 / "in the record without
+        being written" c14 / "set no name down" c15). Naive cold-read: closing beat predictable
+        by c15; a 4th consecutive chapter on this cadence would tip Q6 from CAUTION to FAIL (same
+        family as the c06-c12 load-bearing Q6 FAIL fixed via prologue-variation). NON-LOAD-BEARING
+        here. Partially addressed by the c15 depth-pass (vary the close). Watch the closing-gesture
+        cadence at b02 chapter authoring; consider a closing-move variation pass if it recurs.
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-04-cohere-c1315-002
+      created_at: 2026-06-04T00:00:00Z
+      created_by: "/and-cohere b01 c13-c15 iteration-0 (naive Q5 CAUTION)"
+      label: sensory-texture-thins-in-interior-accounting-centers
+      target: {command: /and-stitch, scope: "*", phase: null}
+      severity: SOFT
+      description: |
+        Sensory texture clusters at chapter openings + set-pieces (salt-fish brine, wax giving
+        under thumb, Vhagar-heat "like a hand near a wall in the dark") but thins markedly through
+        the long interior accounting passages (c14 middle, c15 closing third) where the world
+        recedes into column/figure/entry abstraction. Vivid at the edges, abstract in the centers.
+        NON-LOAD-BEARING. Grounding-ledger discipline already addresses this per-chapter; flagged as
+        a cross-stretch tendency for stitch voice-embodiment awareness at b02.
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-04-cohere-c1315-003
+      created_at: 2026-06-04T00:00:00Z
+      created_by: "/and-cohere b01 c13-c15 iteration-0 (naive Q4 + dramatist axis4 CAUTION)"
+      label: aemond-courier-atmospheric-walk-on-weighting
+      target: {command: /and-review, scope: "verdict b01", phase: null}
+      severity: SOFT
+      description: |
+        Aemond (c15) and the gap-lane courier (c14) each appear, do thematic work, exit within
+        their chapter — atmospheric/specimen weighting rather than accruing presences. DELIBERATE
+        (Aemond: "I routed nothing of him anywhere"; the apparatus brushing powers it cannot touch),
+        and both are open hooks (hook-0006 Aemond, future payoff), so not a drop. The courier leg
+        overlaps the pl-2026-06-04-002 depth-pass (courier-as-person). NON-LOAD-BEARING. Book-level
+        awareness for /and-review verdict b01.
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
