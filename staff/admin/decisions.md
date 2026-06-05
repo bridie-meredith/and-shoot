@@ -6660,3 +6660,83 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0101 | 2026-06-05 | FAST (process-critic)
+
+mode: process-critic
+trigger:
+  reason: failure (Phase 9 SHIPPED-WITH-CAVEATS, Class-B; CONTINUE=no on pre-disposed categories only)
+  source_report: active-project/staff/reviews/coldread-b01c19-2026-06-05.md
+  source_verdict: SHIPPED-WITH-CAVEATS (Class-B; auto-promoted via DEC-0099 coupling)
+  gate_path: .claude/commands/and-stitch.md#phase-9
+verdict: OK-MERGED-INTO PROP-0037 (recurrence_count confirmed at 7; evidence_ref pre-authored)
+
+question: |
+  Does the 6th consecutive Class-B chapter (c14-c19) warrant any new process change, or is it
+  the expected shape of the falling-collapse stretch (c14-c20, with c20 as catastrophe-climax
+  that breaks the interior-sameness)?
+
+decision: OK-MERGED-INTO PROP-0037 — no new proposal warranted. PROP-0037 recurrence_count
+already stamped at 7 (pre-authored in the proposals file with c19 evidence_ref). No amendment
+required.
+
+basis: |
+  Step 1 (proposals log):
+    PROP-0037 already contains the c19 evidence_ref and recurrence_count: 7 as pre-authored
+    at lines 5087-5101 of staff/admin/process-proposals.md. The DEC-0101 entry was anticipated
+    and pre-written into PROP-0037's evidence_refs block. No separate merge operation is needed;
+    the record is already consistent.
+
+  Step 2 (content vs. process discrimination):
+    The Phase 9 cold-read CONTINUE=no rested exclusively on the two pre-disposed categories:
+    (a) interior-sameness — "one filing action narrated five times" — pre-authorized as design-
+        inherent thesis (continuation-unchanged = the horror; DEC-0099 complaint disposition (a)).
+    (b) abstraction-density — "relentless abstraction" — pre-authorized as design-inherent for
+        the falling interior collapse penultimate (DEC-0099 complaint disposition (b)).
+    The one non-auto-dispositioned category (s04 label-reach-rendered-abstract / EVENT-NOT-
+    CONCRETE) did NOT fire: the Daven severance LANDED shown-not-told. Phase 8.5 coherence
+    confirmed central-event-muffle NOT-MATERIALIZED on both spine events.
+    No new complaint class emerged. This is correct gate behavior on a chapter the substance
+    contract intentionally made cold-reader-hostile.
+
+  Step 3 (c14-c20 arc context):
+    c19 is the penultimate chapter of the falling arc. c20 is the catastrophe-climax that
+    structurally breaks the interior-sameness and delivers the terminal recognition. The 6th
+    consecutive Class-B is the expected shape of this arc: each chapter in c14-c19 narrows the
+    register until c20 cracks it. DEC-0098 (c18 climax, 5th consecutive) already held: the
+    accumulation concern is correctly handled by /and-cohere as the accumulation handler and
+    /and-review verdict b01 as the book-close enforcement surface. That ruling stands unchanged.
+
+  Step 4 (PROP-0037 triage urgency):
+    PROP-0037 remains open, untriaged. Triage urgency: HIGH before /and-review verdict b01.
+    N=7 (6th consecutive in c14-c19 run; 7th data point overall across c10/c11/c12 +
+    c14/c15/c16/c17/c18/c19). Gate design correct; enforcement timing is the open triage question.
+    After c20 ships, /and-review verdict b01 is the natural triage moment.
+
+  Step 5 (methodology):
+    No new proposal: redundant proposal on a gate already correctly tracked. PROP-0037 is the
+    correct and only outstanding action item. N=3 threshold calibration confirmed correct at N=7
+    (DEC-0093 conclusion stands). No argument for threshold change.
+
+rationale: |
+  Pure recurrence-increment dispatch. The coupling rule (all Phase 9 CONTINUE=no categories
+  pre-authorized -> auto-ship SHIPPED-WITH-CAVEATS) functioned correctly. s04 — the only
+  tractable item — was delivered concretely, confirming the /and-write + /and-stitch chain
+  addressed the HARD watch from DEC-0099. The 6th consecutive Class-B is structural cost of
+  the deliberate falling-interior penultimate design, not a process failure.
+  PROP-0037 recurrence_count is already 7 in the file. No file changes needed beyond this
+  decisions log entry and the STM update.
+
+trade-off: |
+  No new proposal means PROP-0037 triage obligation continues to accumulate. Mitigated by:
+  (a) PROP-0037 is complete and pre-populated with c19 evidence; (b) c20 + /and-review verdict
+  b01 is the natural triage moment; (c) a new proposal would be redundant and add principal
+  triage overhead with no additional information.
+
+follows: DEC-0098 DEC-0100
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
