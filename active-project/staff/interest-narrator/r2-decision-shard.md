@@ -3,7 +3,7 @@ facet: interest-narrator
 episode: b01-c20
 layer: R2
 character: taylor-hebert-kl-122ac
-cite_index_hash: SHA-UNCOMPUTED-no-shell-in-env (source: active-project/theater/facets/_cite-index.md, generated 2026-06-06; harness must stamp the sha256 of that file's bytes at write time)
+cite_index_hash: c8122042f6ce615ef3c3c208bf56907d
 f-r2-counts: {f-r2-1: 0, f-r2-2: 0, f-r2-3: 0, f-r2-4: 0}
 band: 5 fires / 30 bones = 16.7% — in-band (15-25%, target 5-7); contrast preserved (25 non-fired bones)
 k-d-a: KEEP 4 (n2 @7, n4 @14, n5 @22, n6 @24) / DELETE 3 (n1 @4, n3 @11, n7 @29) / ADD 1 (n8 @30)

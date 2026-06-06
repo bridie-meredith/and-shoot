@@ -2,7 +2,7 @@
 facet: exposition
 episode: b01c20
 layer: R2
-cite_index_hash: 9e011e491957c9b8855b9a3582551286
+cite_index_hash: c8122042f6ce615ef3c3c208bf56907d
 f-r2-counts: {f-r2-1: 0, f-r2-2: 0, f-r2-3: 0, f-r2-4: 0}
 ---
 

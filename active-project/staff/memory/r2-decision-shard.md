@@ -3,7 +3,7 @@ facet: memory
 episode: b01-c20
 layer: R2
 character: taylor-hebert-kl-122ac
-cite_index_hash: c20-2026-06-06-67entries-28of31-90p3
+cite_index_hash: c8122042f6ce615ef3c3c208bf56907d
 f-r2-counts: {f-r2-1: 0, f-r2-2: 0, f-r2-3: 0, f-r2-4: 0}
 ---
 
