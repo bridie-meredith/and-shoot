@@ -6936,3 +6936,23 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0105 | 2026-06-06 | FAST (user-proxy)
+
+question: Before /and-review verdict b01: (A) run book-close depth-pass revise loop on Class-B cohort (c14-c19 +/- /and-cohere), or (B) accept the pre-authorized Class-B cohort caveat per DEC-0099 and run /and-review verdict b01 now, surfacing the caveat in the report?
+context: b01 COMPLETE (b01c20 SERIES-TERMINAL, shipped 2026-06-06). HARD parking-lot item pl-2026-06-05-c19-deptpass gates book-close on depth-pass resolution. DEC-0099 pre-authorized the Class-B disposition for c14-c19; DEC-0102 extended to c20. Option A (depth-pass before verdict) = ~50-90 dispatches for one chapter re-cascade; full c14-c19 cohort = 6x that. Option B = run /and-review verdict b01 now (read-only, non-blocking); orchestrator-critic judges the book with the caveat on record; depth-pass can follow if verdict FAILs on Class-B specifically.
+options:
+  A: book-close depth-pass revise loop before verdict (expensive, unsolicited, ~300-540 dispatches for cohort)
+  B: accept pre-authorized caveat, run /and-review verdict b01 now, surface caveat in report
+
+decision: B — accept the pre-authorized Class-B cohort caveat and run /and-review verdict b01 now.
+basis: methodology:human-only (spend commitments past routine) blocks option A; goal:2 (cost discipline) strongly favors B; methodology:3a (reversibility) favors B (verdict is read-only; depth-pass remains available post-verdict if critic FAILs on this axis); DEC-0099 + prior cohort authorizations are the explicit pre-authorization.
+rationale: Option A commits ~300-540 dispatches on a blind --from-signals sweep over 6 chapters the principal knowingly accepted with Class-B caveats. No new information has arrived since those acceptances to make the spend warranted. The verdict run IS the designated acceptance point — the parking lot item's own path (B) names it as such. If the orchestrator-critic PASS-WITH-NOTES or FAIL specifically calls out the Class-B stretch as degrading the book's verdict, THAT finding provides a targeted brief for depth-pass work; acting without it is uninformed expenditure. Option A's spend range (300-540 dispatches) qualifies as "meaningful slice of project budget on a single operation" and is explicitly human-only territory per methodology §spend-commitments-past-routine — absent an explicit principal request, admin cannot authorize it.
+trade-off: Option A risks nothing quality-wise but costs enormous model spend and defers the verdict; option B runs the verdict on a book with a known quality caveat in the record. If the critic FAILs hard on the Class-B cohort, depth-pass work will still be needed but at least it will be scoped by specific findings rather than a blind cohort sweep.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
