@@ -1,3 +1,50 @@
+## SESSION-END — 2026-06-06T23:10:00Z — cohere-b01-all-aggregate-audit-5-faults-pass2
+findings-applied: 2 (fault-004, fault-005); fault-001/002/003 confirmed already applied by prior session
+findings-skipped: 0
+exit: CLEAN
+
+## fault-005 — RESOLVED — 2026-06-06T23:08:00Z
+fault: .claude/commands/and-cohere.md Phase 4 defines only --dry-run as a skip path; the actual DEC-0108 path (principal-defer on finished+accepted book chapters) was undocumented; command body and schema diverged on the dismissed disposition
+scope: line (2 files)
+change: (a) and-cohere.md Phase 4 — added short labeled sub-step "Phase 4 pre-step — principal-defer check" before the existing per-chapter loop; documents the fire-vs-defer admin user-proxy route (Rule 13), DEFER → SKIPPED + dismissed + no dispatch sequence, and notes DEC-0108 as the deciding case and that the schema enums already permit this path; FIRE → proceeds to existing loop unchanged; (b) schemas/cohere-state.schema.md status: dismissed field description — added one-line note explicitly naming the Phase 4 principal-defer DEFER case alongside the existing /and-cut and --dry-run examples; revise_queue[].result: SKIPPED + deciding-DEC in result_note also noted
+criteria met: yes — minimum change; existing loop body unmodified; no schema structural change; command body and schema now agree on the dismissed disposition
+
+## fault-004 — RESOLVED — 2026-06-06T23:05:00Z
+fault: single parking-lot item (pl-2026-06-06-cohere-001, target b01c03) covered a two-chapter finding (c03 establish + c20 confirm); schema requires one item per atomic resolution; state file and report front-matter only listed b01c03
+scope: line (3 files)
+change: (1) parking-lot.md — added SPLIT note to pl-2026-06-06-cohere-001 description identifying this as the c03 establish-leg and pl-2026-06-06-cohere-002 as the confirm-leg companion; filed new item pl-2026-06-06-cohere-002 (scope b01c20, SOFT, status open, confirm-leg description, cross-ref to pl-2026-06-06-cohere-001, same context_refs, DEC-0108 reference, resolution_suggestion noting jointly-actionable dependency). (2) b01-all-state.md revise_queue — added second entry for b01c20 with parking_lot_items [pl-2026-06-06-cohere-002], same executed:false / result:SKIPPED / DEC-0108 dismissal disposition as the c03 entry. (3) cohere report front-matter — parking_lot_items updated to [pl-2026-06-06-cohere-001, pl-2026-06-06-cohere-002]; chapter_revise_queue updated to [b01c03, b01c20]
+criteria met: yes — one item per atomic resolution; both legs filed; state and report consistent
+
+## SESSION-START — 2026-06-06T23:00:00Z — cohere-b01-all-aggregate-audit-5-faults-pass2
+dispatch: resolve remaining faults from cohere-b01-all-aggregate-audit after prior session; fault-001/002/003 already applied; working fault-004 (parking-lot + state split) and fault-005 (Phase 4 defer path undocumented in and-cohere.md)
+target: active-project/staff/showrunner/parking-lot.md (primary); active-project/staff/cohere/b01-all-state.md; active-project/staff/reviews/cohere-b01-all-20260606T215813Z.md; .claude/commands/and-cohere.md; schemas/cohere-state.schema.md
+audit-report: active-project/staff/auditor/cohere-b01-all-aggregate-audit.md (criteria supplied inline)
+findings-queued: 2 remaining (fault-004, fault-005); fault-001/002/003 confirmed already applied by prior session
+
+## fault-003 — RESOLVED — 2026-06-06T22:48:00Z
+fault: schemas/parking-lot.schema.md ID format `pl-<YYYY-MM-DD>-<NNN>` does not permit the `<label>` infix used in established IDs (pl-2026-06-01-cohere-001..005, pl-2026-06-06-cohere-001/002); schema and practice diverged; existing items not renamed (PINNED)
+scope: line
+change: (a) inline YAML example line ~21: `pl-<YYYY-MM-DD>-<NNN>` → `pl-<YYYY-MM-DD>[-<label>]-<NNN>` with updated comment; (b) prose definition line ~43: rewrote `id` field definition to document optional label and (date, label)-pair counter uniqueness; no existing parking-lot item renamed
+criteria met: yes
+
+## fault-001 — RESOLVED — 2026-06-06T22:47:00Z
+fault: report front-matter triage_note and body "## Phase 3 triage → DROPPED" naive-q6 bullet both cited DEC-0105 as the cohere-axis authority; DEC-0105 actually authorized the depth-pass deferral before /and-review verdict b01 — a different scope
+scope: line
+change: (a) front-matter triage_note: replaced "design-inherent + principal-accepted at DEC-0105" with per-chapter DEC chain (DEC-0060/0062/0066/0072/0074/0085/0087/0090/0096/0099/0104) + DEC-0109 as authority; added clarification that DEC-0105 is book-close context not cohere-axis authority; (b) body DROPPED bullet: replaced "accepted at book-close per DEC-0105" with DEC-0060..0104 chain + DEC-0109 ratification; added parenthetical noting DEC-0105's actual scope; DEC-0105 remains mentioned as context only
+criteria met: yes — citation clauses rewritten; whole section not rewritten; DEC-0105 still present as context; DEC-0109 added as the run's process-critic ratification authority
+
+## fault-002 — RESOLVED — 2026-06-06T22:46:00Z
+fault: revise_queue[0] in b01-all-state.md declared `result:` twice (`result: null` line 27 + `result: SKIPPED` line 30) — duplicate YAML key
+scope: line
+change: removed `result: null` line from revise_queue[0]; the mapping now has exactly one `result: SKIPPED` key; result_ts and result_note untouched
+criteria met: yes
+
+## SESSION-START — 2026-06-06T22:45:00Z — cohere-b01-all-aggregate-audit-5-faults
+dispatch: resolve 5 faults from cohere-b01-all-aggregate-audit (flag-001 + flag-002 advisory — no action; fault-002 duplicate YAML key in state file; fault-001 over-cited DEC in report; fault-004 one parking-lot item covers two chapters; fault-003 schema ID format gap; fault-005 Phase 4 defer path undocumented)
+target: active-project/staff/cohere/b01-all-state.md (primary); active-project/staff/reviews/cohere-b01-all-20260606T215813Z.md; active-project/staff/showrunner/parking-lot.md; schemas/parking-lot.schema.md; .claude/commands/and-cohere.md; schemas/cohere-state.schema.md
+audit-report: (aggregate audit — criteria supplied inline by showrunner)
+findings-queued: 5 actionable (fault-001 through fault-005); 2 flags advisory — no action
+
 ## SESSION-START — 2026-06-05T04:00:00Z — write-b01c20-pass2-svo-recasts
 dispatch: repair 6 faults (fault-001..fault-006) in b01c20-bones-draft.md — 3 FAULT-FORM-MODIFIER, 2 CHATTER-UNPAID, 1 FAULT-FORM-INTERIORITY; minimum-change svo: recasts + substance_delta additions; event_map untouched
 target: active-project/staff/screen-writer/b01c20-bones-draft.md

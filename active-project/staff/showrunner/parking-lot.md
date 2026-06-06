@@ -2796,12 +2796,50 @@ parking_lot:
         accepted at DEC-0105. Fixing this requires a substantive revise mutating finished drafts
         (c03 establish + c20 confirm at minimum). Fire-vs-defer decision routed to principal per
         Rule 13; NOT auto-fired by /and-cohere Phase 4. Recorded primarily as analysis input.
+        SPLIT: this item = c03 ESTABLISH-leg only (add reader-facing Sera weight at introduction
+        point). The c20 CONFIRM-leg (decommission must confirm protect-target was actually shielded)
+        is tracked separately at pl-2026-06-06-cohere-002.
       context_refs:
         - active-project/staff/reviews/cohere-b01-all-20260606T215813Z.md
         - active-project/staff/reviews/cohere-dramatist-b01-all-20260606T215813Z.md
         - active-project/staff/showrunner/parking-lot.md  # pl-2026-05-28-002 (on-page non-naming = design)
         - staff/admin/decisions.md  # DEC-0105 (book-close Class-B cohort acceptance)
       resolution_suggestion: "principal decision: (a) accept as documented structural note on a finished book (fold into analysis); or (b) /and-write b01c03 revise --from-signals + c20 + re-cascade to add Sera reader-facing weight (substantive; mutates shipped drafts)"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-06-cohere-002
+      created_at: 2026-06-06T23:00:00Z
+      created_by: "fixer fault-004 (cohere-b01-all-aggregate-audit split; companion to pl-2026-06-06-cohere-001)"
+      label: sera-payoff-weight-drop-c20-confirm
+      target:
+        command: /and-write
+        scope: "b01c20"
+        phase: null
+      severity: SOFT
+      description: |
+        CONFIRM-leg companion to pl-2026-06-06-cohere-001 (c03 establish-leg). The c20
+        decommission scene (Taylor exits KL, the Otto arrangement ends) does not confirm
+        that the protect-target (Sera Hightower) was actually shielded — the reader never
+        receives a payoff signal that the arrangement achieved its stated purpose. The
+        moral engine's guarantee fires hollow at close: c03 introduced Sera as the cost-
+        justification, but c20 decommissions the architecture without confirming the
+        protection succeeded. Per the whole-book cohere (FAIL-COHERE,
+        dramatist-promise-payoff axis), this is the CONFIRM half of the two-chapter
+        repair: c03 establishes Sera as a felt person (establish-leg), c20 confirms the
+        protect-target was shielded (confirm-leg). NOTE: same constraints as c03 establish-
+        leg — book is complete + shipped + verdict-PASSED (PASS-WITH-NOTES) + principal-
+        accepted per DEC-0108. Any revise mutates a finished terminal draft. This item is
+        only actionable if the principal authorizes Phase 4 dispatch per DEC-0108's
+        fire-vs-defer decision. Recorded as analysis input.
+      context_refs:
+        - active-project/staff/reviews/cohere-b01-all-20260606T215813Z.md
+        - active-project/staff/reviews/cohere-dramatist-b01-all-20260606T215813Z.md
+        - active-project/staff/showrunner/parking-lot.md  # pl-2026-06-06-cohere-001 (establish-leg; this item is the confirm-leg)
+        - staff/admin/decisions.md  # DEC-0108 (phase 4 fire-vs-defer — defer accepted; revise-dismissal on finished+accepted book)
+      resolution_suggestion: "confirm-leg companion to pl-2026-06-06-cohere-001; only actionable jointly with that item if principal authorizes /and-write b01c03 + b01c20 revise + re-cascade"
       status: open
       resolved_at: null
       resolved_by: null

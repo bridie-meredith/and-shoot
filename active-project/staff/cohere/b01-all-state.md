@@ -24,9 +24,15 @@ cohere_state:
       parking_lot_items: [pl-2026-06-06-cohere-001]
       revise_mode: --from-signals
       executed: false
-      result: null
       result_ts: null
       result_note: "naive-q6 dropped at triage (DEC-0105 design-accepted); only Sera-payoff item survives; Phase 4 DEFERRED per DEC-0108 (accept-with-notes; book complete+accepted; surface as analysis input)"
+      result: SKIPPED
+    - chapter: b01c20
+      parking_lot_items: [pl-2026-06-06-cohere-002]
+      revise_mode: --from-signals
+      executed: false
+      result_ts: null
+      result_note: "Sera-payoff confirm-leg (c20 decommission does not confirm protect-target shielded); Phase 4 DEFERRED per DEC-0108 — same dismissal scope as b01c03 establish-leg; only actionable if principal authorizes Phase 4 on both legs jointly"
       result: SKIPPED
   status: dismissed
   final_verdict: null   # FAIL-COHERE on record, but principal-accepted-with-notes per DEC-0108 (not converged, not held — explicit revise-dismissal on a finished+accepted book)
