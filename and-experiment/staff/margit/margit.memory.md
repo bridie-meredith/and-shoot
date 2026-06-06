@@ -35,6 +35,7 @@ Gap-card build for the and-experiment project (cultivation-reincarnation comedy,
 - **Persona-exemplar for viserys-i-targaryen** — not authored; he is supporting, on-stage, and Tier-1 eligible but his scenes are warm-cage-comedy beats that are well-covered by the card alone at this stage. Flag for authoring when active.
 - **Persona-exemplar for helaena-targaryen-122ac, daenys-velaryon, ser-harwin-the-patient, nymeria-summer-isles, saerys-septa** — not authored; all five are supporting/minor tier. Per the gate, exemplars are required before `/and-cast` Phase 5 (if that gate fires for this project). Flag for authoring when cast is locked.
 - **Promotion of project-only cards to library** — `saerys-septa.card.md` and the Viserys project variant are candidates for library promotion if the characters recur in future projects. Flagged; no action this session.
+- ~~**Per-character behavior cards for daenys-velaryon and helaena-targaryen-122ac**~~ — **CLEARED 2026-06-06.** Both cards authored in the 2026-06-06 session below. Flag from original session note removed.
 
 ### Validation pass
 
@@ -219,3 +220,58 @@ All seven cards validated against `schemas/card.schema.md`:
 ### Preservation
 
 All seven cards are net-new files. No existing warehouse cards overwritten or modified. Persona card (`saerys-targaryen.card.md`) not touched.
+
+---
+
+## Per-character behavior build: 2026-06-06
+
+### Session scope
+
+Principal directive: author the two per-character behavior cards deferred in the original card-build session (2026-06-05) — flagged as "a per-character behavior card would add value before active shoot." Cards: `daenys-velaryon-behavior` and `helaena-targaryen-122ac-behavior`. Schema authority: `schemas/card.schema.md`. Both cards are `scope: both` — project copies in `and-experiment/warehouse/`, library copies in `cards/dialects/`.
+
+### Cards authored this session
+
+| slug | class | subclass | quality | scope | path (project copy) | path (library copy) |
+|------|-------|----------|---------|-------|---------------------|---------------------|
+| `daenys-velaryon-behavior` | behavior | per-character-behavior | full | both | `and-experiment/warehouse/daenys-velaryon-behavior.card.md` | `cards/dialects/daenys-velaryon-behavior.card.md` |
+| `helaena-targaryen-122ac-behavior` | behavior | per-character-behavior | full | both | `and-experiment/warehouse/helaena-targaryen-122ac-behavior.card.md` | `cards/dialects/helaena-targaryen-122ac-behavior.card.md` |
+
+### Scope decisions
+
+- **daenys-velaryon-behavior → both (project + library).** Daenys is an OC, but her persona card was already promoted to library in the prior session. The counter-thesis register she carries — mechanism-first puncture, deadpan warmth, living-louder vs. living-forever — has cross-project reuse value as an archetype. Consistent with the saerys-targaryen-behavior precedent. Library copy strips the project-specific `references:` entries (`saerys-targaryen-behavior`, `comedy-register`).
+- **helaena-targaryen-122ac-behavior → both (project + library).** Canon HOTD character; high cross-project reuse value across all Targaryen-era projects. The riddle-notation register is canon-stable and project-agnostic. Library copy generalizes the samples slightly (removes Saerys-specific framing where possible without losing the voice).
+
+### Register captured
+
+- **daenys-velaryon-behavior:** the counter-thesis register — blunt, warm, mechanism-first; goes to the dose-log before the cultivation gloss; uses apposition to name the accurate thing alongside the cosmological name; the pause before weight; the run-on for affection (the only place she lets the sentence accumulate); the flat-affect delivery of *I love you very much* in the same register as *your stomach is not a furnace.* Primary puncture cadence: deadpan, one saying, no repeat. Non-verbal: economic movement, mechanism-inquiry posture, physical stillness when delivering the load-bearing argument.
+- **helaena-targaryen-122ac-behavior:** the riddle-notation register — associative, prophetic non-sequiturs, observation-without-argument, the trailing incomplete sentence; the naturalist's long look before speaking; comfortable silence; follows her own observation track rather than the conversation's surface; finds unusual people simply interesting rather than alarming. Non-verbal: the specimen jar as ambient presence, the crouching attention, the pause before the trailing incomplete.
+
+### Signature lines / monuments anchored
+
+**daenys-velaryon-behavior:**
+- Anchor line: *"The dragon doesn't make me less going to die. It makes the dying worth watching. You want to never die. I want to have done something that doesn't need me to last. We are both wrong and both right and I love you very much and your stomach is not a furnace."* — placed in Direct samples as the counter-thesis, fully stated.
+- Monument: **the blank line** — named in Memory monuments as the reader's monument, not Daenys's; register-rule makes explicit that she never signals awareness of what she will become; she does not pre-mourn.
+
+**helaena-targaryen-122ac-behavior:**
+- Load-bearing sample: *"This one has been dead for a week but the pattern on the wing is the same. They always keep their patterns. I find that useful to remember."* — the pattern-persists monument in direct sample form.
+- Monument: **the observation of someone found ordinary** — generalized in library copy from Saerys-specific to the general pattern: there is usually one person Helaena is following closely who she finds interesting rather than alarming; demonstrated through follow-up questions (*"How did you know it would work?"*) and sustained presence.
+
+### Deferred flag cleared
+
+The original card-build session (2026-06-05) noted: "a per-character behavior card would add value before active shoot" for both characters. That flag is cleared. No remaining deferred behavior cards for the and-experiment project cast.
+
+### Index updates
+
+- `cards/dialects/INDEX.md` — added `saerys-targaryen-behavior`, `comedy-register`, `daenys-velaryon-behavior`, `helaena-targaryen-122ac-behavior` to `by_world/planetos` section; added all four to `by_character` section; added per-character (and-experiment) sub-list to `shared/inheritable` section. Note: `saerys-targaryen-behavior` and `comedy-register` were stored to library in the 2026-06-05 session but the INDEX.md had not been updated then; both were added in this session alongside the two new cards.
+
+### Validation pass
+
+Both cards validated against `schemas/card.schema.md`:
+- Frontmatter complete: `name`, `class`, `subclass`, `scope`, `project` (project copies), `world`, `character`, `inherits`, `references`, `period`, `region`, `social-class`, `origin`, `quality` all present and correct
+- Required body sections present: Direct samples (8 samples each, all tagged `synthesized`), Cadence, Vocabulary (reaches-for, refuses-to-say, register-markers), Syntax, Voice tells, Non-verbal tics, Memory monuments
+- Hard-fence compliance: neither card enters the cultivation-register; neither character is a cultivator or setting-blind; both are Westerosi natives
+- Canon compliance: Helaena's card consistent with HOTD canon (riddles, insects, prophetic non-sequiturs, gentle affect, no uninvited contact) and with her persona card; Daenys's card consistent with her OC persona card
+
+### Preservation
+
+Both cards are net-new files. No existing warehouse cards overwritten or modified. Persona cards for both characters not touched.

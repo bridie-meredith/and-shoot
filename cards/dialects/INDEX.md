@@ -19,6 +19,10 @@ Schema: `schemas/card.schema.md` §behavior.
 - [taylor-hebert-westeros](taylor-hebert-westeros.card.md) — per-character; Westeros 120 AC variant (eleven-year-old sept ward, doubled register); inherits taylor-hebert; references grrm-mannerisms + smallfolk + septon; full
 - [monument-cost-borne-by-the-unconsenting](monument-cost-borne-by-the-unconsenting.card.md) — per-character (taylor-hebert-kl-122ac); memory-monument family: Earth-Bet displacement, cost landing on unconsenting bearer; quiet-beat instrument; full
 - [monument-conquest-charter-language](monument-conquest-charter-language.card.md) — per-character (taylor-hebert-kl-122ac); memory-monument family: Westerosi-clamp, institutional language that outlives its author; quiet-beat instrument; full
+- [saerys-targaryen-behavior](saerys-targaryen-behavior.card.md) — per-character (saerys-targaryen); cultivation-monologue register + comedy overlay; hotd; noble; full
+- [comedy-register](comedy-register.card.md) — shared; tonal overlay for and-experiment (register-vs-stakes mismatch, farce→gallows arc); hotd; full
+- [daenys-velaryon-behavior](daenys-velaryon-behavior.card.md) — per-character (daenys-velaryon); counter-thesis register; blunt, warm, mechanism-first puncture voice; hotd; noble; full
+- [helaena-targaryen-122ac-behavior](helaena-targaryen-122ac-behavior.card.md) — per-character (helaena-targaryen-122ac); riddle-notation register; associative, prophetic non-sequiturs, naturalist warmth; hotd; noble; full
 - [westeros-grrm-mannerisms](westeros-grrm-mannerisms.card.md) — shared; universal Westerosi prose eccentricities (time-keeping, X-and-twenty numbers, Anglo-Saxon morphology, universal monuments); full
 - [westeros-smallfolk](westeros-smallfolk.card.md) — shared class; baseborn commoners; full
 - [westeros-noble-courtly](westeros-noble-courtly.card.md) — shared class; highborn / courtly; full
@@ -37,6 +41,15 @@ Schema: `schemas/card.schema.md` §behavior.
 ### taylor-hebert-kl-122ac
 - [monument-cost-borne-by-the-unconsenting](monument-cost-borne-by-the-unconsenting.card.md) — monument family; Earth-Bet displacement; library; planetos
 - [monument-conquest-charter-language](monument-conquest-charter-language.card.md) — monument family; Westerosi-clamp; library; planetos
+
+### saerys-targaryen
+- [saerys-targaryen-behavior](saerys-targaryen-behavior.card.md) — cultivation-monologue overlay; library; planetos; hotd
+
+### daenys-velaryon
+- [daenys-velaryon-behavior](daenys-velaryon-behavior.card.md) — counter-thesis overlay; library; planetos; hotd
+
+### helaena-targaryen-122ac
+- [helaena-targaryen-122ac-behavior](helaena-targaryen-122ac-behavior.card.md) — riddle-notation overlay; library; planetos; hotd
 
 ---
 
@@ -57,6 +70,14 @@ Behavior pattern banks intended to be referenced by per-character cards via `inh
 
 **Regional registers:**
 - [westeros-northern](westeros-northern.card.md) — North; old-gods, *aye*-preserved-across-class, understated punchline, weirwood-touch, the cold as actor
+
+**Per-character (and-experiment):**
+- [saerys-targaryen-behavior](saerys-targaryen-behavior.card.md) — saerys-targaryen; cultivation-monologue; inherits westeros-noble-courtly; references comedy-register
+- [daenys-velaryon-behavior](daenys-velaryon-behavior.card.md) — daenys-velaryon; counter-thesis puncture; inherits westeros-noble-courtly
+- [helaena-targaryen-122ac-behavior](helaena-targaryen-122ac-behavior.card.md) — helaena-targaryen-122ac; riddle-notation; inherits westeros-noble-courtly
+
+**Shared (and-experiment):**
+- [comedy-register](comedy-register.card.md) — tonal overlay; farce→gallows arc; inherits westeros-noble-courtly
 
 **Pending:**
 - westeros-dornish (regional; Rhoynar-influenced, soft drawl, direct register)
