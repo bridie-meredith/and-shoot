@@ -50,6 +50,9 @@ planetos:
   - stormlands-coastal-cliffs
   - westerosi-smallfolk-dwelling-interior
   - westerosi-smallfolk-village-common
+  - loc-still-room
+  - loc-maegors-holdfast
+  - loc-sick-house
 
 ---
 
@@ -98,6 +101,9 @@ full:
   - stormlands-coastal-cliffs
   - westerosi-smallfolk-dwelling-interior
   - westerosi-smallfolk-village-common
+  - loc-still-room
+  - loc-maegors-holdfast
+  - loc-sick-house
 
 scant:
   - loc-red-keep-outer-ring

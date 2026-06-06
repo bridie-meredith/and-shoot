@@ -109,6 +109,8 @@ planetos:
   - ulf-the-white
   - viserys-i-targaryen
   - westerosi-traveling-maester
+  - saerys-maester [and-experiment]
+  - the-factor [and-experiment]
 
 ---
 
@@ -197,6 +199,8 @@ full:
   - thoros-of-myr
   - thomas-calvert
   - westerosi-traveling-maester
+  - saerys-maester [and-experiment]
+  - the-factor [and-experiment]
 
 scant:
   - aegon-ii-targaryen
