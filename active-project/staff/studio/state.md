@@ -1,6 +1,24 @@
 # studio state
 
-episode: b01c19
+episode: b01c20
+last_updated: 2026-06-06
+action: sensory R1 authoring — /and-facets b01-c20 Phase 1 (studio sensory facet only; location-state + state-updates pending)
+
+## Sensory facet filed (b01c20) — 5 entries (2 standard, 3 grounding-licensed; BONES-AIRLESS-RISK)
+  sensory:1 @1  — visual: render-room-after-third-bell-dark -> grey-dark-reading-light (s01; standard)
+  sensory:2 @6  — sound: render-room-before-dawn-ambient -> succession-bell-toll (s02; standard; spike)
+  sensory:3 @12 — olfactory: ward-ambient-morning -> burn-smoke-onset (s03; GROUNDING-REQUIRED grd-c20-001)
+  sensory:4 @20 — thermal: east-of-water-gate-lanes-morning-cool -> smoke-fire-heat-dispersing (s04; GROUNDING-REQUIRED grd-c20-002; PHYSICS-CASCADE peak grounding)
+  sensory:5 @30 — light: south-gate-interior-grey -> open-dusk-sky-flat (s05; GROUNDING-REQUIRED grd-c20-003; terminal departure threshold)
+  Density: 5/30 = 16.7%; standard-only = 2/30 = 6.7% (marginally over 6% ceiling; authorized by BONES-AIRLESS-RISK upper-biasing per c19 precedent)
+  Modalities: visual + sound + olfactory + thermal + light (light and visual counted as same family; 4 distinct modalities; ≥2 floor MET)
+  Per-scene caps: s01=1, s02=1, s03=1, s04=1, s05=1 — all ≤3
+  Grounding-ledger: grd-c20-001 (@12 burn-smoke-onset; s03) + grd-c20-002 (@20 heat-arriving; s04 PHYSICS-CASCADE) + grd-c20-003 (@30 south-gate-exit; s05 terminal) — to be created at /and-facets Phase 2.5
+  File: theater/facets/sensory-b01-c20.md
+
+---
+
+## Prior episode (b01c19)
 last_updated: 2026-06-05
 action: location-state + sensory + state-updates authoring — /and-facets b01-c19 Phase 1 (studio facet authoring)
 
