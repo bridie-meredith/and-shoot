@@ -12503,7 +12503,7 @@ books:
           report_path: active-project/staff/reviews/bones-b01c20-2026-06-05.md
           verdict: PASS-WITH-NOTES
           follow_check: PASS-WITH-NOTES
-          bones_file_mtime_at_review: 1780702856
+          bones_file_mtime_at_review: 1780701656
           aliveness: BONES-AIRLESS-RISK   # advisory; S01-S03 apparatus-heavy; pre-authorized Class-B DEC-0102; -> /and-facets Phase 2.5 aliveness scrutiny + grounding-ledger + /and-stitch Phase 4 voice-embodiment priority
           notes: "fidelity PASS (no hollow scene; all event_map entries covered; S04 recognition spine + all 4 scene-handoffs recoverable). follow_check PASS-WITH-NOTES (context-aware: S04 feed-signal-loss reads AS Wren's death for c01-c19 reader via named east-of-water-gate lanes 18/19/23; flag-001 bone-24 stylus-lift suspended-gesture context-deferred to /and-facets Phase 2.5, NOT a FOLLOW-FAIL). dialogue-coverage PASS (0 anchors). No FAIL/FOLLOW-FAIL -> /and-facets cleared."
           stale_since: null
