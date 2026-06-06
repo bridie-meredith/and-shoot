@@ -7044,6 +7044,149 @@ ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
 
+## DEC-0109 | 2026-06-06 | SLOW (process-critic)
+
+mode: process-critic
+trigger:
+  reason: cohere-fail-but-design-accepted
+  source_report: active-project/staff/reviews/cohere-b01-all-20260606T215813Z.md
+  source_verdict: "FAIL-COHERE; load_bearing_fails=2 (naive-q6 dropped at triage as DEC-0105 design-accepted; dramatist-promise-payoff Sera-weight survives); iteration_count=1"
+  gate_path: .claude/commands/and-cohere.md#phase-2
+  secondary_gate_paths: [.claude/commands/and-review.md#cohere, .claude/commands/and-write.md#phase-6, .claude/commands/and-stitch.md#phase-9]
+
+question: |
+  Does the Sera Hightower payoff-weight drop — a whole-book-scope structural finding that
+  survived ~20 per-chapter ship-gates + a book-level orchestrator verdict + three sub-section
+  coheres and surfaced ONLY at the terminal full-book cohere — indicate a missing earlier
+  checkpoint? Candidates: (a) a payoff-inventory gate at book-substance time; (b) mandatory
+  full-book cohere before /and-review verdict rather than after; (c) working as intended —
+  no process change needed.
+
+context: |
+  First-ever whole-book /and-cohere (b01 all, 20 chapters) on a COMPLETE, shipped,
+  verdict-PASSED (PASS-WITH-NOTES; Class-B cohort accepted DEC-0105) book. Phase 3 triage
+  dropped naive-q6 (apparatus-register cumulative load) as design-inherent + principal-accepted
+  (DEC-0060/0062/0066/0072/0074/0085/0087/0090/0096/0099/0104/0105; OK-MERGED PROP-0030/0031).
+  Surviving fresh finding: dramatist-promise-payoff — Sera Hightower payoff-weight drop.
+  The finding: Sera is the cost-justification of the Otto arrangement (introduced c03),
+  the reader never feels her weight, she never appears as a person, her threat is never staged,
+  and the c20 decommission does not confirm she was protected. The moral engine's human face
+  is a ledger entry. Secondary: Norren c17 false-attribution consequence deferred-then-unpaid.
+  Audience fork PASSED (SUBSTANCE-FELT). This is distinct from the on-page non-naming design
+  decision (pl-2026-05-28-002, verified c05 — Taylor never articulates the Sera-link by design).
+
+decision: OK-MERGED-INTO PROP-0042 (recurrence_count 3 → 4; full-book-cohere evidence appended).
+  No new proposal. Mandatory-before-verdict sequencing rejected on current evidence.
+  /and-cohere is working as designed.
+
+basis: |
+  Step 1 (proposals log):
+    PROP-0042 (status: open, triaged_at: null, recurrence_count: 3) targets
+    .claude/commands/and-substance.md Phase 5 — Chunk-quality review (book level),
+    change_type: add — PROTECT-TARGET-ABSENT-FROM-BOOK-PLAN SOFT flag at the dramatist
+    review. PROP-0042 was authored at the c13-c15 cohere after two consecutive sub-section
+    coheres flagged "Sera never appears on-page (c06-c15); the guarantee fires hollow; the
+    protection object is a name in a prologue, never a felt person."
+    The current finding is the third independent /and-review cohere instance flagging Sera
+    absent-as-felt-person at a reader-reception/whole-book-payoff scope: the full-book cohere
+    (all 20 chapters) confirms what the sub-section coheres caught and routed to
+    /and-review verdict b01. Same target + change_type → merge, do not duplicate.
+
+  Step 2 (content vs. process discrimination):
+    Is this a process failure? Yes — structural: no gate at /and-substance book Phase 5 catches
+    protect-target absent from the book plan at planning time. The full-book cohere correctly
+    caught it retrospectively. The question is whether the class needed to reach terminal cohere,
+    or whether an earlier gate could have surfaced it without becoming a different kind of gate.
+    Answer: yes — /and-substance book Phase 5 dramatist review is the correct upstream catch
+    point. PROP-0042 already proposes it. The new evidence confirms the gap is structural and
+    project-independent (any book whose protect-target is planned absent will hit this).
+
+    Is the surviving finding different in kind from what PROP-0042 already covers?
+    No. PROP-0042 targets: "Sera never appears on-page as a participant in a scene; the
+    cost-ledger guarantee fires hollow." The current finding adds: "the reader never feels her
+    weight; the c20 decommission does not confirm protection." This is the same root — the
+    protect-target is a ledger entry, not a felt person — at the whole-book scope. The proposed
+    SOFT flag at /and-substance book Phase 5 would have surfaced this at planning time, forcing
+    an authorial decision (hollow-by-design irony vs. on-page appearance). That is exactly the
+    fix PROP-0042 proposes.
+
+  Candidate (b) — mandatory full-book cohere before /and-review verdict:
+    Rejected. Three reasons:
+    (i) /and-cohere is an ITERATION loop: it fires /and-review cohere, builds a chapter-revise
+        queue, and runs /and-write revise → bones → facets → stitch per chapter. Mandating it
+        before verdict means mandating either: (a) a full iteration loop (re-cascade cost equal
+        to producing several chapters) or (b) a read-only cohere pass (but that IS /and-review
+        cohere, which already runs inside /and-review verdict as supplementary input per the
+        /and-cohere relationship spec). A separate mandatory /and-cohere-converge-to-PASS gate
+        before verdict would be L-cost architectural gate sequencing — human-only territory.
+    (ii) The Sera finding is the kind of structural observation the analysis step is designed
+         to process (DEC-0108). The finding is a reader-reception payoff gap — not a bone-level
+         delivery failure and not fixable by the per-chapter re-cascade chain without an explicit
+         authorial decision to add Sera on-page. Mandating /and-cohere convergence before verdict
+         would require it to PASS on this finding, which it cannot (it cannot force Sera on-page
+         without a substantive new authoring decision).
+    (iii) The more upstream fix (PROP-0042) prevents the gap at planning time, which is strictly
+          better than mandating a terminal diagnostic that cannot itself author the fix.
+
+  Step 3 (is the per-chapter chain + sub-section cohere working as designed?):
+    Yes. The per-chapter gates (Phase 9 cold-read, audience SUBSTANCE-FELT, bone-gate, facets
+    Phase 5b) are not designed to catch whole-book payoff gaps. They gate per-chapter delivery.
+    The sub-section coheres (c01-c07, c06-c12, c13-c15) correctly flagged Sera's absence but
+    correctly noted it was "not chapter-fixable" and routed it to /and-review verdict b01.
+    The full-book cohere confirms and concretizes the finding at whole-book scope. This is
+    exactly what /and-cohere is designed to catch. The process worked correctly at every layer:
+    per-chapter gates protect chapter delivery; sub-section coheres surface cross-chapter arcs;
+    full-book cohere surfaces whole-book payoff gaps. The absence of a PLANNING-TIME gate is
+    the only structural gap — and PROP-0042 already proposes to fill it.
+
+  Step 4 (recurrence):
+    The Sera-absent finding has now appeared in THREE independent /and-review cohere runs:
+    (1) c06-c12 cohere → pl-2026-06-03-006 (first cohere flag)
+    (2) c13-c15 cohere → PROP-0042 authored (recurrence_count: 3 at authoring)
+    (3) b01-all cohere → this dispatch (recurrence_count: 4)
+    This is the recurrence class PROP-0042 was designed to track. The full-book scope adds
+    the terminal confirmation: the gap persisted to book-close despite three cohere runs.
+    PROP-0042's proposed SOFT flag at /and-substance book Phase 5 would have surfaced this
+    at book-authoring time, before any chapter was written.
+
+  Step 5 (methodology):
+    Reversibility: merging into PROP-0042 is reversible; a new proposal or a mandatory-before-
+    verdict gate is larger-blast-radius and lower-reversibility.
+    Cost: OK-MERGED is S-cost; mandatory-before-verdict sequencing is L-cost architectural.
+    Blast radius: PROP-0042 adds one SOFT check at /and-substance book Phase 5 (one gate, one
+    file); mandatory sequencing affects /and-review verdict + /and-cohere + their relationship.
+    Convention: PROP-0042 already tracks this class with correct change_type and proposed_diff;
+    merge is the mechanically required action.
+
+rationale: |
+  PROP-0042 is the correct and sufficient process response. The Sera payoff-weight finding at
+  the full-book cohere is the third independent cohere-run confirming the same root gap: no gate
+  at /and-substance book Phase 5 checks whether the book plan places a declared protect-target /
+  cost-bearer on-page as a participant before the climax fires the structural guarantee. The
+  full-book cohere performed exactly its designed function — it surfaced a whole-book payoff gap
+  that no per-chapter gate and no sub-section cohere (which correctly knew it was "not chapter-
+  fixable" and routed upstream) could see in full. This is not a sign the process failed; it is
+  the sign it worked. The only structural failure the evidence supports is the planning-time gap
+  PROP-0042 already targets. Mandatory-before-verdict sequencing would add large-blast-radius
+  architectural overhead for a finding class that (a) the cohere correctly caught and (b) cannot
+  be auto-fixed by the cohere loop without a new authoring decision.
+
+trade-off: |
+  Merging into PROP-0042 rather than proposing mandatory-before-verdict sequencing means the
+  Sera gap remains catchable only at /and-substance book Phase 5 (at planning) or retrospectively
+  at cohere. If the principal defers PROP-0042 triage, a future book can hit the same gap. The
+  cost of deferral is one /and-cohere run surfacing the same finding — exactly what happened here.
+  Mandatory-before-verdict would prevent the gap from surviving to book-close but at L-cost
+  architectural complexity and the structural problem that /and-cohere cannot self-fix protect-
+  target absences; it can only flag them for author action. PROP-0042 is the correct layer.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
 ## DEC-0108 | 2026-06-06 | SLOW (user-proxy)
 
 question: /and-cohere b01 all returned FAIL-COHERE. After Phase 3 triage, one actionable finding survives (Sera Hightower payoff-weight drop). Should I fire the Phase 4 revise queue on that one item — mutating finished, shipped drafts — or accept the book as cohesion-verified-with-documented-notes and fold the finding into the analysis the principal asked for next?

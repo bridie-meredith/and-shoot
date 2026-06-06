@@ -5813,7 +5813,18 @@ evidence_refs:
   - "active-project/staff/showrunner/memory.md — series.substance.signature.cost_ledger:
     protect-target declared as the structural anchor of the trades (the person the
     arrangement is owed against keeping alive)."
-recurrence_count: 3
+recurrence_count: 4
+recurrence_refs:
+  - "active-project/staff/reviews/cohere-b01-all-20260606T215813Z.md — DEC-0109 (2026-06-06)
+    whole-book /and-cohere (b01 all, c01-c20) dramatist-promise-payoff finding: Sera Hightower
+    payoff-weight drop. Sera introduced c03 as the cost-justification of the Otto arrangement;
+    never appears as a person across all 20 chapters; threat never staged; c20 decommission does
+    not confirm protection. Reader never feels her weight — the moral engine's human face is a
+    ledger entry. Third independent /and-review cohere run to flag the same root: protect-target
+    absent-as-felt-person across the full book. Confirms gap is structural and persisted to
+    book-close despite three sub-section coheres routing it 'not chapter-fixable → /and-review
+    verdict b01.' Full-book scope is the terminal confirmation of the gap PROP-0042 targets at
+    planning time."
 proposed_diff: |
   In .claude/commands/and-substance.md, Phase 5 — Chunk-quality review, book level,
   in the dramatist reviewer row, add a new check alongside the existing cross-chapter
