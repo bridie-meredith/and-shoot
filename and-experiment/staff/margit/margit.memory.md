@@ -454,3 +454,13 @@ Principal directive: author a comprehensive maester's cabinet glossary as the 8t
 ### Preservation
 
 `maesters-cabinet-glossary.md` is a net-new file. No existing library docs, warehouse cards, or persona files were modified. `INDEX.md` received additive edits only (new table row, reading-order note extension, canon-uncertain list extension, candidate-card list extension, footer update). `margit.memory.md` received additive log entry only.
+
+---
+
+## P1 card build — completion + cataloging (2026-06-06, principal-finished after agent stalls)
+
+The P1 build (coverage-audit manifest) was run as 5 parallel batches; 4 stalled mid-run. Recovery: a completion pass wrote the 5 missing warehouse cards then also stalled before library copies + cataloging. The principal finished the remainder directly in-session:
+
+- **All 18 P1 cards present in BOTH copies** (warehouse scope:both + cards/ scope:library). The 7 missing library copies were created by frontmatter transform (scope both→library, project field dropped; no design-path blocks present to strip).
+- **Cataloging done by hand:** added the 18 P1 cards to `cards/personas/INDEX.md` (saerys-maester, the-factor), `cards/props/INDEX.md` (cradle-egg, christening-spoon, kings-hand-note, bill-of-exchange, still-room-kit, wildfire-shard), `cards/conditions/INDEX.md` (reagent-tier-map, technique-hierarchy, formation-map-red-keep, heavenly-dao-calibration, heartless-dao-scripture, alchemists-guild-122ac, trade-network-formation, maesters-cabinet), `cards/locations/INDEX.md` (maegors-holdfast, sick-house). Registered the GRRM×cultivation grid as cultivation-library doc #9.
+- **FLAG — pre-existing INDEX gap discovered:** the and-experiment CAST persona library files (saerys-targaryen, helaena-targaryen-122ac, daenys-velaryon, ser-harwin-the-patient, nymeria-summer-isles) are ABSENT from `cards/personas/` on this branch (`claude/cool-feynman-gNpmm`), which is 38 commits behind origin/main. Likely they live on main; needs reconcile-with-main to confirm/restore. Not resolved here.

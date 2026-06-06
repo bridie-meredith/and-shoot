@@ -14,6 +14,12 @@ All prop cards. Maintained by margit — update on every card store or new autho
 - [prop-dose-log](prop-dose-log.card.md) — Saerys Targaryen's mithridatism record; cultivation-register technique manual; ~200 documented exposure events across 40+ substances; Book III broken-clock ring; full; world: planetos (and-experiment)
 - [prop-harwins-list](prop-harwins-list.card.md) — Ser Harwin Strong's running list of 44 prohibited mouth-items; running-gag instrument; love letter in incident-log form; final entry unfinished at his death; full; world: planetos (and-experiment)
 - [prop-account-book](prop-account-book.card.md) — ledger only Saerys can read; the trade-and-medicine network's formation eye; Inferior Path natal artifact; one blank line in Book III; full; world: planetos (and-experiment)
+- [prop-cradle-egg](prop-cradle-egg.card.md) — dead dragon egg ground with a christening spoon and swallowed (I.1); the inciting Cauldron-Belly prop; rhymes frame-for-frame with the dead-dragon field (R0→R4 curdle); full; world: planetos (and-experiment)
+- [prop-christening-spoon](prop-christening-spoon.card.md) — the grinding instrument (I.1 chapter slug); founding physical anchor of the Cauldron-Belly declaration; full; world: planetos (and-experiment)
+- [prop-kings-hand-note](prop-kings-hand-note.card.md) — the master key: verbal indulgence → standing license → sealed parchment → orphaned license → heist mechanism #3; the arc's most load-bearing prop; full; world: planetos (and-experiment)
+- [prop-bill-of-exchange](prop-bill-of-exchange.card.md) — first bill to the Braavosi drug-agent; fundamental paper instrument of the trade empire (authority rests on handwriting + relationship, not seal); full; world: planetos (and-experiment)
+- [prop-still-room-kit](prop-still-room-kit.card.md) — portable reagent kit re-established at each location (Essos, Yi Ti, the ship); the still-room made mobile; full; world: planetos (and-experiment)
+- [prop-wildfire-shard](prop-wildfire-shard.card.md) — fragment of real magic swallowed (I.5); three-day fever; the broken-clock's first genuine ring + the black-stone-precedent plant; full; world: planetos (and-experiment)
 
 ---
 
@@ -26,6 +32,12 @@ full:
   - prop-dose-log
   - prop-harwins-list
   - prop-account-book
+  - prop-cradle-egg
+  - prop-christening-spoon
+  - prop-kings-hand-note
+  - prop-bill-of-exchange
+  - prop-still-room-kit
+  - prop-wildfire-shard
 
 scant:
   - oc-fish-account-ledger
@@ -46,3 +58,9 @@ portable:
   - prop-dose-log
   - prop-harwins-list
   - prop-account-book
+  - prop-cradle-egg
+  - prop-christening-spoon
+  - prop-kings-hand-note
+  - prop-bill-of-exchange
+  - prop-still-room-kit
+  - prop-wildfire-shard

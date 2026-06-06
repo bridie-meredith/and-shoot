@@ -77,6 +77,14 @@ planetos:
   - cond-inferior-path-doctrine [and-experiment; saerys-keyed]
   - cond-westerosi-poison-pharmacology [and-experiment; saerys-keyed]
   - cond-transmigration-previous-life [and-experiment; saerys-keyed]
+  - cond-westeros-reagent-tier-map [and-experiment]
+  - cond-inferior-path-technique-hierarchy [and-experiment; saerys-keyed]
+  - cond-saerys-formation-map-red-keep [and-experiment; saerys-keyed]
+  - cond-heavenly-dao-calibration [and-experiment; saerys-keyed]
+  - cond-heartless-dao-scripture [and-experiment; saerys-keyed]
+  - cond-alchemists-guild-122ac [and-experiment]
+  - cond-trade-network-formation [and-experiment]
+  - cond-maesters-cabinet [and-experiment]
 
 tombstoned:
   - cond-reincarnation-rules  [superseded_by: cond-reincarnation-mechanics]
@@ -156,6 +164,14 @@ full:
   - cond-inferior-path-doctrine [and-experiment; saerys-keyed]
   - cond-westerosi-poison-pharmacology [and-experiment; saerys-keyed]
   - cond-transmigration-previous-life [and-experiment; saerys-keyed]
+  - cond-westeros-reagent-tier-map [and-experiment]
+  - cond-inferior-path-technique-hierarchy [and-experiment; saerys-keyed]
+  - cond-saerys-formation-map-red-keep [and-experiment; saerys-keyed]
+  - cond-heavenly-dao-calibration [and-experiment; saerys-keyed]
+  - cond-heartless-dao-scripture [and-experiment; saerys-keyed]
+  - cond-alchemists-guild-122ac [and-experiment]
+  - cond-trade-network-formation [and-experiment]
+  - cond-maesters-cabinet [and-experiment]
 
 ---
 
@@ -259,6 +275,10 @@ protagonist-rules:
   - cond-shard-deposit-mechanics-mirror [project: mirror-tragedy]
   - cond-inferior-path-doctrine [and-experiment; saerys-keyed]
   - cond-transmigration-previous-life [and-experiment; saerys-keyed]
+  - cond-inferior-path-technique-hierarchy [and-experiment; saerys-keyed]
+  - cond-saerys-formation-map-red-keep [and-experiment; saerys-keyed]
+  - cond-heavenly-dao-calibration [and-experiment; saerys-keyed]
+  - cond-heartless-dao-scripture [and-experiment; saerys-keyed]
 
 tone-law:
   - cond-taylor-pov-behavior [project: taylor-westeros-good-intentions]
@@ -290,6 +310,8 @@ institutional-behavior:
   - cond-maester-network-behavior
   - cond-suppression-policy-progression
   - cond-patron-amplification-theory-mirror [project: mirror-tragedy]
+  - cond-alchemists-guild-122ac [and-experiment]
+  - cond-trade-network-formation [and-experiment]
 
 lore-ambient:
   - cond-kl-court-state-122ac [project: taylor-westeros-good-intentions]
@@ -302,6 +324,8 @@ lore-ambient:
   - cond-dance-faction-state-previserys [project: mirror-tragedy]
   - cond-dragon-bonding-claiming-rules [project: mirror-tragedy]
   - cond-westerosi-poison-pharmacology [and-experiment; saerys-keyed]
+  - cond-westeros-reagent-tier-map [and-experiment]
+  - cond-maesters-cabinet [and-experiment]
 
 structural-chain:
   - cond-road-to-hell-chain-shape [project: taylor-westeros-good-intentions]
