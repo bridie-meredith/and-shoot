@@ -32,8 +32,8 @@ Gap-card build for the and-experiment project (cultivation-reincarnation comedy,
 
 - **saerys-septa library copy** — the Septa is a project-scoped OC without reuse potential outside and-experiment. Library copy deferred; project copy is in `and-experiment/warehouse/saerys-septa.card.md`.
 - **viserys-i-targaryen library upgrade** — the existing library card at `cards/personas/viserys-i-targaryen.card.md` remains scant. The and-experiment project variant is full-quality and lives at `and-experiment/warehouse/viserys-i-targaryen.card.md`. A formal library promotion (scant→full merge) was not executed because the project variant is tailored to comedy-tolerant tone and the generic library card serves other projects in different registers. Promotion flagged for principal triage.
-- **Persona-exemplar for viserys-i-targaryen** — not authored; he is supporting, on-stage, and Tier-1 eligible but his scenes are warm-cage-comedy beats that are well-covered by the card alone at this stage. Flag for authoring when active.
-- **Persona-exemplar for helaena-targaryen-122ac, daenys-velaryon, ser-harwin-the-patient, nymeria-summer-isles, saerys-septa** — not authored; all five are supporting/minor tier. Per the gate, exemplars are required before `/and-cast` Phase 5 (if that gate fires for this project). Flag for authoring when cast is locked.
+- ~~**Persona-exemplar for viserys-i-targaryen**~~ — **CLEARED 2026-06-06.** Authored and stored at `and-experiment/persona-exemplars/viserys-i-targaryen.md`. Voice demonstrated: indulgent-paternal register, spirited-child-filter conversion in live operation, the "within reason" dissolve.
+- ~~**Persona-exemplar for helaena-targaryen-122ac, daenys-velaryon, ser-harwin-the-patient, nymeria-summer-isles, saerys-septa**~~ — **CLEARED 2026-06-06.** All five authored. See persona-exemplar build session entry below.
 - **Promotion of project-only cards to library** — `saerys-septa.card.md` and the Viserys project variant are candidates for library promotion if the characters recur in future projects. Flagged; no action this session.
 - ~~**Per-character behavior cards for daenys-velaryon and helaena-targaryen-122ac**~~ — **CLEARED 2026-06-06.** Both cards authored in the 2026-06-06 session below. Flag from original session note removed.
 
@@ -275,3 +275,71 @@ Both cards validated against `schemas/card.schema.md`:
 ### Preservation
 
 Both cards are net-new files. No existing warehouse cards overwritten or modified. Persona cards for both characters not touched.
+
+---
+
+## Persona-exemplar build: 2026-06-06
+
+### Session scope
+
+Principal directive: "more cards" + "author the six actor-exemplars margit deferred in the original build session." Six project-bound persona-exemplars for the and-experiment cast. Schema authority: `schemas/persona-exemplar.schema.md`. Authoring process: `staff/margit/exemplar-authoring-process.md`. Model: `and-experiment/persona-exemplars/saerys-targaryen.md`.
+
+### Exemplars authored
+
+| slug | path | length | voice demonstrated |
+|------|------|--------|--------------------|
+| `viserys-i-targaryen` | `and-experiment/persona-exemplars/viserys-i-targaryen.md` | ~210 words | Indulgent-paternal register; spirited-child-filter converting alarming to charming in real time; the "within reason" caveat that always dissolves |
+| `helaena-targaryen-122ac` | `and-experiment/persona-exemplars/helaena-targaryen-122ac.md` | ~220 words | Riddle-notation register; observation-without-argument; trailing incomplete sentence; the naturalist's long look; comfortable silence; follow-up question as warmth |
+| `daenys-velaryon` | `and-experiment/persona-exemplars/daenys-velaryon.md` | ~230 words | Counter-thesis register; mechanism-first construction; data-before-interpretation; fond-amused lift; blunt warmth (precise emotional content, flat delivery register) |
+| `ser-harwin-the-patient` | `and-experiment/persona-exemplars/ser-harwin-the-patient.md` | ~215 words | Bone-dry incident-log register; the list as primary argument; the sigh as sentence-terminal punctuation; oblique approach to the thing he cannot say directly |
+| `nymeria-summer-isles` | `and-experiment/persona-exemplars/nymeria-summer-isles.md` | ~200 words | Flat-precise anthropological register; polite question that already knows; accurate-statement-once discipline; "all right" as full-acceptance closure; witness posture |
+| `saerys-septa` | `and-experiment/persona-exemplars/saerys-septa.md` | ~215 words | Formal-devout-courtly register; precision-under-alarm; register tightens as distress rises; Seven-invocation as distress signal; the correct report that will not land |
+
+### QC checklist (per `staff/margit/exemplar-authoring-process.md`)
+
+**Frontmatter validation — all six:**
+- [x] All required fields present: `name`, `persona-ref`, `class: persona-exemplar`, `purpose`, `content-match`, `authored-by`, `length`, `fences`
+- [x] Names are unique within `and-experiment/persona-exemplars/` and within `cards/persona-exemplars/`
+- [x] `persona-ref` resolves to existing project warehouse cards for all six
+- [x] `class: persona-exemplar` literal on all six
+- [x] `content-match: high` on all six (scene context is adjacent, period-appropriate, not from any active chapter)
+- [x] Length within 150-350 words for all six (200-230 word range)
+- [x] `fences` has two entries on all six: no-content-import + what-transfers-vs-what-doesn't
+- [x] No `dispatch-status: excluded` entries — all six are active
+
+**Body validation — all six:**
+- [x] Each opens with `# Exemplar — <persona display name>` header
+- [x] Each demonstrates 2-3 load-bearing voice features from the card + behavior card (where present)
+- [x] No content overlap with active-project theater/ or draft/ (no chapters exist yet for and-experiment)
+- [x] No violation of card hard fences:
+  - Viserys: does not discover the note's full scope; not a villain; comedy-tolerant — PASS
+  - Helaena: no faction-advocacy; no ambition; riddle-notation is direct not ironic — PASS
+  - Daenys: no cultivation-register; no pre-mourning; has own arc — PASS
+  - Harwin: no panic; no preachiness; no sycophancy; does not say the direct thing — PASS
+  - Nymeria: no cultivation-register; says the accurate thing once; not interrogative — PASS
+  - Septa: maintains register; does not lose composure; does not yet know she has lost — PASS
+- [x] No meta-commentary in any passage body
+- [x] Impersonator discipline: each opens with action or perception, not interior analysis
+
+**Surface-convention fence:**
+- [x] None of the six exemplars carry Saerys's cultivation-register, parenthetical-as-aside construction, or account-book cadence. The six are straight, grounded voices — the foils and witnesses. Register separation maintained throughout.
+- [x] Comedy register noted: these are the voices Saerys's register-vs-stakes mismatch produces comedy *against*. Each exemplar reads as the unmediated character, not as a straight-man performance.
+
+**Consumer-fit:**
+- [x] All six are Tier-1 impersonator targets; no Tier-2 or Tier-3 consumers involved
+
+### Scope decisions
+
+All six stored project-bound at `and-experiment/persona-exemplars/<slug>.md`. Not library-promoted, consistent with the saerys-targaryen precedent. Rationale:
+- `viserys-i-targaryen` — the project variant is comedy-tuned; the library card remains scant; library promotion of the exemplar requires library promotion of the card first (flagged for principal triage in prior session)
+- `helaena-targaryen-122ac` and `daenys-velaryon` — persona cards were library-promoted; behavior cards were library-promoted; exemplars *could* be library-promoted. However, both exemplars contain Saerys-adjacent scene-setting (the still-room smell, reagent-adjacent context) that gives them higher and-experiment content-match. Recommend library promotion on next pass if the project's voice register proves stable.
+- `ser-harwin-the-patient`, `nymeria-summer-isles` — library-promoted persona cards; exemplars are neutral enough to be library candidates. Deferred; project-bound for now.
+- `saerys-septa` — project-only OC (no library card); project-bound exemplar only by definition.
+
+### Index updates
+
+- `cards/persona-exemplars/INDEX.md` — added a new section "Impersonator exemplars — project-bound (and-experiment)" with all six entries; updated Coverage notes to record and-experiment 7/7 complete and deferred flags cleared.
+
+### Preservation
+
+All six exemplars are net-new files. No existing persona cards, behavior cards, or warehouse files modified. The saerys-targaryen exemplar at `and-experiment/persona-exemplars/saerys-targaryen.md` was read for format reference only; not modified.

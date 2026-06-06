@@ -42,9 +42,25 @@ Margit-maintained index. One row per exemplar. Schema: `schemas/persona-exemplar
 
 ---
 
+## Impersonator exemplars — project-bound (and-experiment)
+
+| slug | persona-ref | content-match | authored-by | dispatch-status |
+|------|-------------|---------------|-------------|-----------------|
+| viserys-i-targaryen | viserys-i-targaryen | high (small council anteroom, receiving steward's report on household expenditures) | claude (2026-06-06) | active |
+| helaena-targaryen-122ac | helaena-targaryen-122ac | high (Red Keep gardens, cataloguing a specimen while a companion describes recent events) | claude (2026-06-06) | active |
+| daenys-velaryon | daenys-velaryon | high (harbor district, discussing a plan; companion offers cosmological rationale) | claude (2026-06-06) | active |
+| ser-harwin-the-patient | ser-harwin-the-patient | high (household corridor, end of a day that has produced a new list item) | claude (2026-06-06) | active |
+| nymeria-summer-isles | nymeria-summer-isles | high (ship's deck, dawn, discussing previous port's events) | claude (2026-06-06) | active |
+| saerys-septa | saerys-septa | high (household consultation room, septa delivering incident report to steward) | claude (2026-06-06) | active |
+
+All six stored at `and-experiment/persona-exemplars/<slug>.md` (project-bound; not library-promoted; consistent with saerys-targaryen precedent).
+
+---
+
 ## Coverage notes
 
 - **Audience trio (3/3):** complete for the active-project audience selection. Library has 22 audience personas total; remaining 19 are uncovered. Author on demand when those personas activate in a project.
 - **Active-project impersonators (11/11):** complete for taylor-westeros-good-intentions cast. Other active-project actors that get added in revisions will need exemplars authored at /and-cast Phase 4.
+- **and-experiment impersonators (7/7 — saerys + six supporting cast):** complete. All seven stored project-bound at `and-experiment/persona-exemplars/`. Deferred flags from 2026-06-05 build session cleared.
 - **Library personas without active-project use:** uncovered. Author on demand.
 - **Voice exemplars:** one library entry (Robinson). Author additional library entries as voice registers become recurrent across projects; project-bound overrides live in `active-project/voice-exemplar.md`.
