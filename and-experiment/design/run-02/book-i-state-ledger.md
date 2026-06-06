@@ -6,6 +6,28 @@ rung), and the **blast radius** of each chapter (what downstream beats depend on
 chapter note arrives, this is the surface I edit: slot the change, recompute the downstream
 snapshots, flag any thread the change orphans.
 
+**Where this sits (uses existing machinery — does not replace it).** A chapter note is a
+*post-convergence principal enrichment* in the sense of `design/convergence-process.md` §Notes:
+ratify the addition → write GUARDS (what it must not break) → one integration pass → scoped
+re-validation. This ledger is the **state-tracking + blast-radius companion** to that loop; it is
+not a new process. Division of labor:
+- **Revision loop & criteria** → `design/convergence-process.md` (the six criteria, the
+  enrichment-round pattern). Outcomes append to `convergence/convergence-ledger.md`; a full
+  re-fuse, when wanted, writes `convergence/round-NN/`.
+- **Re-authoring affected chapters** → `screen-writer` agent. **Structural / orphan-thread /
+  dramatic-shape re-validation** → `dramatist`. **Taste** → `audience` (taste-judge). **State &
+  consistency drift across chapters** → `auditor`. (Same role→agent map as convergence-process.md.)
+- **Mechanical thread audit** → `scripts/check-threads.py` (NEW tool) with
+  `design/run-02/thread-config.txt`. Mechanizes the convergence criterion *"setups pay off; no
+  orphaned threads"* that the dramatist otherwise eyeballs. Run it on the canonical outline
+  (closure) after every edit.
+- **State home of record (production mode)** → `staff/showrunner/memory.md` + the substance
+  signature (`series.substance`, still `~`/to-derive). This ledger is the chapter-granularity
+  layer that memory/substance don't yet hold; promote upward when a revision stabilizes.
+- **Open cross-chunk watch-items (production mode)** → the parking-lot
+  (`schemas/parking-lot.schema.md`). A pending plant with no chosen payoff chapter is a
+  parking-lot-shaped item; track it here during design, promote on stabilization.
+
 **Baseline source (pre-change).** `convergence/chapters/round-02/fusion.md` (the converged
 10-chapter outline), framed by `design/restructured-books-two-desires.md` (the principal's
 **two-desires** re-axis: every book is *acquire resources* vs *be left alone*). Mechanics from
@@ -173,18 +195,34 @@ if an edit removes or alters the left column, the right column is the orphan lis
 
 ## Change-propagation protocol (the checklist I run when a note lands)
 
-When you give me notes for a chapter, I execute this and report back:
+Notes arrive **messy, fragmentary, and not necessarily cohesive** — that is expected and fine.
+Coherence is the ledger's job, not the input's. When you drop ideas, I execute this and report back:
 
-1. **Slot** — integrate the note into the target chapter's Beat + Deltas.
+0. **Intake / triage** — parse the dump: sort each fragment to the chapter(s) and entit(ies) it
+   touches; separate firm intent from loose musing; surface internal contradictions and gaps
+   *back to you as a short list*; and ask only the few questions that genuinely block integration
+   (everything else I resolve with a stated default you can override). Nothing is applied at this
+   step — triage is a read-back so you can confirm I caught your intent before I propagate.
+1. **Slot** — integrate the (triaged, confirmed) note into the target chapter's Beat + Deltas.
 2. **Recompute** — update that chapter's end-state vector, then ripple the recomputed state through every later chapter's vector (Book I, and into II/III where the bridge table connects).
-3. **Thread audit** — check the note against:
-   - **Plant/fire:** does it orphan a PLANT (setup with no payoff) or a FIRE (payoff with no setup)?
-   - **Gift/spend:** does it break a warm-before-cold pair?
-   - **Curdle ladder:** does it skip/duplicate a rung, or break the frame-for-frame rhyme?
-   - **Hard fences:** does it violate setting-blind / never-martial / clock-stays-broken / idiot-savant / one-crack / no-dragon?
-   - **The three Locks rhyme** + register sequence.
-4. **Flag** — surface every break with options: *re-plant elsewhere · re-route the payoff · accept the break (and what it costs) · escalate (FROZEN/fence touch)*.
-5. **Re-thread** — propose the minimal edits to following chapters that make the change consistent, and write them into this ledger on your go.
+3. **Thread audit** — two passes:
+   - **Mechanical:** run `python3 scripts/check-threads.py <outline> --config design/run-02/thread-config.txt`.
+     Catches orphaned plants, unplanted fires, gift→spend order violations, missing curdle rungs.
+     A note that introduces a NEW break makes it FAIL. (If a new token is by-design non-1:1, add it
+     to `thread-config.txt` with a reason — never to silence a real orphan.)
+   - **Judgment:** the checks the script can't make — does the change break a **gift→spend** warmth
+     beat, the **frame-for-frame** curdle rhyme, a **hard fence** (setting-blind / never-martial /
+     clock-stays-broken / idiot-savant / one-crack / no-dragon), a **FROZEN beat**, the **three-Locks
+     rhyme**, or the register sequence? For anything beyond a local fix, this is the `dramatist`'s
+     call (structure/shape) and `audience`'s (taste); `auditor` for state/consistency drift.
+4. **Flag** — surface every break with options: *re-plant elsewhere · re-route the payoff · accept
+   the break (and what it costs) · escalate (FROZEN/fence touch)*. Fence/FROZEN touches are ratified
+   explicitly (convergence-process.md: "ratify smuggled premises") with a written GUARD.
+5. **Re-thread** — propose the minimal **required** fixes + a separate **Opportunities** block
+   (ripple scope = opportunistic). On your go: write the changes into this ledger, append the
+   enrichment-round digest to `convergence/convergence-ledger.md`, and re-run the checker to confirm
+   clean. Dispatch `screen-writer` to re-author the affected chapter bodies + `dramatist` for scoped
+   re-validation when the change is more than a local touch.
 
 **Conventions:** I do not silently apply a change that breaks a hard fence or a FROZEN beat — I
 flag and ask. I keep this ledger as the single source of truth for the revised plot; the

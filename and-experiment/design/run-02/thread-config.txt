@@ -1,0 +1,33 @@
+# thread-config.txt — exceptions/aliases for check-threads.py
+# Seeded from the converged baseline (convergence/chapters/round-02/fusion.md), which
+# asserts "no orphans". These entries record the by-design non-1:1 tokens so the baseline
+# reads clean and only NEW breaks (introduced by a revision) surface as FAIL.
+#
+# Directives:
+#   ALIAS <sub-token> = <canonical-token>   sub-plant satisfied by the canonical's fire
+#   PLANT-ONLY <token>                       setup with no discrete FIRE token (diffuse/retired payoff)
+#   PAYOFF-ONLY <token>                      payoff with no single PLANT (aggregate of several, or a guard)
+
+# --- aliases: sub-plants that fire under a canonical token ---
+ALIAS HELAENA = GIFT:HELAENA          # the warm-spot bond fires as the Helaena gift->spend
+ALIAS HELAENA+ = GIFT:HELAENA         # I.4 deepening, same gift account
+ALIAS DAENYS-WATCHES = DAENYS         # II.7 plant fires as FIRE[DAENYS->knows] II.8
+
+# --- plant-only: setups whose payoff is diffuse or a retirement, not a FIRE token ---
+PLANT-ONLY BELOW-STAIRS               # the "little master" faction; ambient infrastructure
+PLANT-ONLY WARM                       # I.3 rootability; sustains reader investment, paid against I.7
+PLANT-ONLY HERB                       # the immortality-herb no-show gag; payoff = the broken clock (II.6)
+PLANT-ONLY PUNCTURE                   # straight-man puncture register device; recurs via DN-5 tags
+PLANT-ONLY YI-TI-BELIEF               # thematic rhyme to the III.8 break; no discrete fire
+PLANT-ONLY ASSASSIN-TARGET           # payoff is III.3 failed assassination (tagged FIRE[DOSE-LOG])
+PLANT-ONLY BETROTHAL                  # retired on-page III.1 (FIX-4: signer dead, match moot), not fired
+
+# --- payoff-only: aggregate or guard payoffs with no single plant ---
+PAYOFF-ONLY BROKEN-CLOCK              # broken-clock guard; the clock declines to pay out
+PAYOFF-ONLY BROKEN-CLOCK-A           # I.5 wildfire-shard genuine ring
+PAYOFF-ONLY BROKEN-CLOCK-B           # II.6 expensive-tea no-show
+PAYOFF-ONLY CURDLE-LADDER            # aggregate of PLANT[CAULDRON] + the rung beats
+PAYOFF-ONLY HEIST MECH 1 (A)         # laundered hull = aggregate of MANIFEST + ORPHAN-SEAL
+PAYOFF-ONLY HEIST MECH 2 (RE-TASKED CREW)  # crew obeys the paper = HEIST-KIT + FIX-5 crew plant
+PAYOFF-ONLY HEIST MECH 3             # the orphaned seal impression = ORPHAN-SEAL
+PAYOFF-ONLY HEIST MECH 4 (D)         # manufactured debt + marque = BROKEN-ROUTE
