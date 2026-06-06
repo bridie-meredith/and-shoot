@@ -5813,7 +5813,7 @@ evidence_refs:
   - "active-project/staff/showrunner/memory.md — series.substance.signature.cost_ledger:
     protect-target declared as the structural anchor of the trades (the person the
     arrangement is owed against keeping alive)."
-recurrence_count: 2
+recurrence_count: 3
 proposed_diff: |
   In .claude/commands/and-substance.md, Phase 5 — Chunk-quality review, book level,
   in the dramatist reviewer row, add a new check alongside the existing cross-chapter

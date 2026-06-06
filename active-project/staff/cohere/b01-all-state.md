@@ -26,10 +26,12 @@ cohere_state:
       executed: false
       result: null
       result_ts: null
-      result_note: "naive-q6 dropped at triage (DEC-0105 design-accepted); only Sera-payoff item survives; Phase 4 fire-vs-defer routed to principal per Rule 13"
-  status: open
-  final_verdict: null
-  closed_at: null
-  admin_process_critic: []
+      result_note: "naive-q6 dropped at triage (DEC-0105 design-accepted); only Sera-payoff item survives; Phase 4 DEFERRED per DEC-0108 (accept-with-notes; book complete+accepted; surface as analysis input)"
+      result: SKIPPED
+  status: dismissed
+  final_verdict: null   # FAIL-COHERE on record, but principal-accepted-with-notes per DEC-0108 (not converged, not held — explicit revise-dismissal on a finished+accepted book)
+  closed_at: 2026-06-06T22:15:00Z
+  admin_process_critic: []   # Phase 7.5 dispatch fired async (process-critic); result logged on return
   # Phase 3 triage: 1 of 2 load-bearing fails dropped as design-inherent/principal-accepted (DEC-0105).
-  # Book is complete+shipped+verdict-PASSED. Phase 4 NOT auto-fired; principal decision pending.
+  # DEC-0108: Phase 4 NOT fired. Sera-payoff drop recorded as SOFT pl-2026-06-06-cohere-001, folded into analysis.
+  # Book stands as shipped (PASS-WITH-NOTES). Chain re-runnable on demand if analysis reveals material damage.

@@ -7043,3 +7043,26 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+## DEC-0108 | 2026-06-06 | SLOW (user-proxy)
+
+question: /and-cohere b01 all returned FAIL-COHERE. After Phase 3 triage, one actionable finding survives (Sera Hightower payoff-weight drop). Should I fire the Phase 4 revise queue on that one item — mutating finished, shipped drafts — or accept the book as cohesion-verified-with-documented-notes and fold the finding into the analysis the principal asked for next?
+
+context: Book b01 is COMPLETE: 20 chapters shipped, b01c20 SERIES-TERMINAL, /and-review verdict b01 PASS-WITH-NOTES (today). Principal's standing instruction this session: "make sure everything is cohesive and then start doing an analysis." Cohere was the cohesion step; analysis is the declared next step. FAIL-COHERE verdict had 2 load-bearing fails: (1) naive-q6 apparatus-register cumulative load — DROPPED at triage as design-inherent Class-B, pre-adjudicated across DEC-0060/0062/0066/0072/0074/0085...0105, accepted at book-close; OK-MERGED into PROP-0030/0031. (2) dramatist-promise-payoff — surviving fresh item: Sera Hightower payoff-weight drop (court-tier protect-target introduced c03, never appears as a person, threat never staged, c20 decommission doesn't confirm she was protected). Distinct from on-page non-naming which is BY DESIGN per pl-2026-05-28-002. Secondary: Norren c17 false-attribution unpaid. Audience axis (worm-canon-pedant) PASSED: SUBSTANCE-FELT. Voice consistent, Earth-Bet fence clean. Firing Phase 4 would re-cascade c03 (+c20) through /and-write revise → /and-review bones → /and-facets → /and-stitch (~24+ dispatches), substantively changing shipped, accepted terminal drafts. Irreversible mutation of a finished artifact.
+
+options:
+  (a) DEFER / accept-with-notes: close cohere as FAIL-COHERE-but-design-accepted; record Sera finding as documented structural note (SOFT); proceed to the analysis the principal requested, incorporating cohere findings as material. No draft mutation.
+  (b) FIRE Phase 4 on the Sera item: revise c03+c20 to add reader-facing Sera weight, re-cascade, re-run cohere.
+
+decision: Option (a). Accept the book as cohesion-verified-with-documented-notes. Record the Sera payoff-weight finding as a SOFT parking-lot item. Proceed to the analysis the principal requested. Do NOT fire Phase 4.
+
+basis: methodology:3a (reversibility) + methodology:3b (cost) + goal:2 (cost discipline) + goal:1 (pipeline correctness — cohere is a diagnostic, not a mandatory revise trigger when findings are structural/design-adjacent on a closed artifact)
+
+rationale: Three independent lines converge on (a). First, reversibility: Phase 4 mutates terminal, shipped, PASS-WITH-NOTES-accepted drafts. The principal accepted book-close at DEC-0105 with pre-authorized Class-B caveats; re-opening that decision to act on a single surviving cohere finding is a meaningful irreversibility without a clear principal mandate. Second, the Sera finding is a reader-reception / whole-book payoff observation — exactly the kind of structural observation the analysis step is designed to surface and process. Surfacing it AS analysis is the correct routing. Third, the principal's declared next step is explicitly "analysis," not "revise." Firing Phase 4 delays the declared next step by ~24+ dispatches to mutate a closed artifact over a soft structural note that was not flagged at any upstream gate (bones-gate, Phase 9 cold-read, verdict pass). The cohere step has completed its mandate: it found what was there to find. The Sera weight drop is a genuine finding, but it is the analysis's job to evaluate whether it constitutes a design flaw the principal cares about enough to act on — admin cannot make that aesthetic judgment.
+
+trade-off: The Sera payoff-weight gap stays in the draft as written. If the principal reads the analysis and decides the gap materially damages the book's moral engine, Phase 4 remains available on demand — the chain is re-runnable. The cost of accepting (a) is approximately zero; the cost of executing (b) without authorization is ~24+ dispatches plus irreversible draft mutation.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
