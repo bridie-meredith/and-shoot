@@ -421,6 +421,12 @@ All library copies are net-new files. Project copies were edited only at the `sc
 
 ---
 
+## Coverage audit: 2026-06-06
+
+Full Axis-A + Axis-B coverage audit filed at `and-experiment/staff/margit/coverage-audit-2026-06-06.md`. 47 Axis-A entities audited (10 P1 gaps, 8 P2 gaps, 5 P3 gaps, 9 P4 skip/stub); 29 Axis-B candidates assessed (12 recommended build, 7 already built, 10 data-only, 2 ruling-blocked). P1 build manifest: 18 cards across 7 batches. Principal decisions needed on T-1 (oily black stone), T-2 (human-cauldron explicit/latent), unnamed Bk III entourage member, Daenys's dragon name, and Viserys library upgrade.
+
+---
+
 ## Cultivation library expansion: 2026-06-06
 
 ### Session scope
