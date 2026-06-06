@@ -157,3 +157,65 @@ YES — recommend adding a pointer to showrunner memory (`and-experiment/staff/s
 ### Preservation
 
 No existing files overwritten. INDEX.md is a net-new file. The seven docs were relocated into `cultivation-library/` via `git mv` (history preserved), executed by the principal right after this pass. No story cards were touched; the showrunner-memory routing pointer (recommended below) was added by the principal in the same step.
+
+---
+
+## Batch card build session: 2026-06-06
+
+### Session scope
+
+Principal directive: "more cards" — build the triaged subset of cultivation-library candidate cards that are genuinely card-worthy (real on-page objects + load-bearing world-state). Source material: seven cultivation-library docs + existing warehouse cards for consistency. Schema authority: `schemas/card.schema.md`. All cards are project-scoped; stored in `and-experiment/warehouse/`. No library promotions (same rationale as `saerys-septa` precedent — these are and-experiment-specific).
+
+### Cards authored this session
+
+| slug | class | path | one-line |
+|---|---|---|---|
+| `prop-dose-log` | prop | `and-experiment/warehouse/prop-dose-log.card.md` | Saerys's mithridatism record; simultaneously a poison-tolerance log and the Inferior Path's technique manual; 200 documented events across 40+ substances; the Book III broken-clock ring |
+| `prop-harwins-list` | prop | `and-experiment/warehouse/prop-harwins-list.card.md` | Ser Harwin's running list of prohibited mouth-items (44 entries + one unfinished); primary running-gag instrument; also a love letter in incident-log form; the last entry is item 44 |
+| `prop-account-book` | prop | `and-experiment/warehouse/prop-account-book.card.md` | The ledger only she can read; classified by her as Tier 2 dao-artifact approaching natal-artifact status; the network's formation eye; the one place deaths are entered; the blank line lives here |
+| `loc-still-room` | location | `and-experiment/warehouse/loc-still-room.card.md` | The Red Keep maester's still-room as Saerys's operational domain; fixed layout + portable kit section (re-established at each location, incl. Essos); nested under `loc-red-keep-interior` |
+| `cond-inferior-path-doctrine` | condition | `and-experiment/warehouse/cond-inferior-path-doctrine.card.md` | The codified cosmology as she believes it — realm ladder, cauldron method, heartless dao, karma accounting, the seven emotions classification; her subjective world-model with real-state column throughout; impersonator consistency anchor |
+| `cond-westerosi-poison-pharmacology` | condition | `and-experiment/warehouse/cond-westerosi-poison-pharmacology.card.md` | Real pharmacological truth for all substances she works with — actual mechanisms, dose→lethality windows, mithridatism efficacy, tolerance ceilings; alongside her cultivation-gloss; the broken clock's factual substrate |
+| `cond-transmigration-previous-life` | condition | `and-experiment/warehouse/cond-transmigration-previous-life.card.md` | The previous-life event — what she died doing (alone on a floor, reading), what carried over (the archive / incorrect maps / no-system condition), the wound the armor is built over; standalone card (see decision note in card body) |
+
+### Transmigration decision
+
+**Standalone condition card** — not folded into persona card. Rationale recorded in the card's Decision Note section. Summary: the persona card's Vibe Seeds already covers the previous life at the correct level of abstraction for a persona card; the condition card adds authoring-substrate depth (transmigrator sub-genre framing, no-system architecture, golden-finger analysis, wound structure) that belongs at the condition layer, not the persona layer. Persona card not modified.
+
+### Cross-references wired (internal coherence)
+
+- `prop-dose-log` ↔ `cond-inferior-path-doctrine` (the log is the doctrine's technique manual)
+- `prop-dose-log` ↔ `cond-westerosi-poison-pharmacology` (the log records what the pharmacology explains)
+- `prop-account-book` ↔ `cond-inferior-path-doctrine` (the account-book is where the doctrine meets the commercial network)
+- `prop-account-book` ↔ `loc-still-room` (cross-referenced as both are primary workspace instruments)
+- `loc-still-room` ↔ `loc-red-keep-interior` (nested reference; the still-room extends that card's Maester's Tower section)
+- `cond-inferior-path-doctrine` ↔ `cond-westerosi-poison-pharmacology` (doctrine is framing; pharmacology is truth; every substance entry in the doctrine has a real-state counterpart in the pharmacology card)
+- `cond-transmigration-previous-life` ↔ `cond-inferior-path-doctrine` (the doctrine is the previous life's archive, operationalized)
+- All seven cards ↔ `saerys-targaryen` (the persona card is the root reference for all)
+
+### Index updates
+
+No library index updates — all cards are project-scoped. No promotions to `cards/` library executed.
+
+### Validation pass
+
+All seven cards validated against `schemas/card.schema.md`:
+
+**Prop cards (3):**
+- Frontmatter complete: `name`, `class`, `scope`, `project`, `world`, `portability`, `origin`, `quality`, `references` all present and correct
+- Body sections present for all: Physical Description, Affordances / Uses, Sensory Hooks, Portability, Carry State, Functional State
+- `portability: portable` correct for all three (none are fixed architectural)
+
+**Location card (1):**
+- Frontmatter complete: `name`, `class`, `scope`, `project`, `world`, `origin`, `quality`, `references` all present
+- Body sections present: Geography, Layout, Sensory Vocabulary, Fixed Props, Exits, Hazards, Ambient Interruption Hooks
+- Portable-vs-fixed elements section integrated into Layout (folded still-room kit as directed; not a separate card)
+
+**Condition cards (3):**
+- Frontmatter complete: `name`, `class`, `scope`, `project`, `world`, `origin`, `quality`, `references` all present
+- Body sections present: Description, Sensory Impact, Duration, Interaction Notes
+- Hard-fence compliance verified: all three explicitly label Saerys's beliefs vs. real-state; no card asserts qi is real in-story
+
+### Preservation
+
+All seven cards are net-new files. No existing warehouse cards overwritten or modified. Persona card (`saerys-targaryen.card.md`) not touched.
