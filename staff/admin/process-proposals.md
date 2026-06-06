@@ -5098,7 +5098,19 @@ evidence_refs:
     breaks the interior-sameness; no new signal class beyond DEC-0098 (climax chapter); no
     argument for threshold change or new proposal. PROP-0037 is the correct mechanical gate;
     triage urgency remains HIGH before /and-review verdict b01."
-recurrence_count: 7
+  - "active-project/staff/reviews/coldread-b01c20-2026-06-06.md + DEC-0104 (2026-06-06) —
+    seventh consecutive in the c14-c20 run (N=7 post-cohere-clearance; 8th data point overall
+    across both independent runs: c10/c11/c12 + c14/c15/c16/c17/c18/c19/c20). Cold-reader
+    complaints: abstraction-density / does-not-land-emotionally / airless / tired-turning-page
+    — all pre-authorized at DEC-0102 as design-inherent (Class-B cohort extension; series-
+    terminal chapter). Central event RECOVERED (Wren's feed-blank). Completeness PASS.
+    Readability AIRLESS-leaning but pre-authorized. Prose-rationale-mute=1 (below soft-block).
+    2 non-spine NEEDS-BEAT signals (non-blocking). c20 is the SERIES-TERMINAL chapter — the
+    c14-c20 depth-pass cohort is NOW COMPLETE and DUE at book-close per PROP-0037 intent.
+    DEC-0104 ruled: 7th consecutive Class-B closes the cohort; no new signal class; PROP-0037
+    is the outstanding gate that enforces book-close depth-pass obligation. Triage urgency:
+    CRITICAL — book-close (/and-review verdict b01) is the next natural step."
+recurrence_count: 8
 proposed_diff: |
   In .claude/commands/and-substance.md, Phase 0 — Validate + mode select, at the
   chapter b<NN>c<MM> invocation level, add a new numbered step after step 6 (Aggregate-

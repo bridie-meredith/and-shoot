@@ -6857,3 +6857,82 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0104 | 2026-06-06 | FAST (process-critic)
+
+mode: process-critic
+trigger:
+  reason: failure (Phase 9 SHIPPED-WITH-CAVEATS; PASS-WITH-DEPTH-PASS-REQUIRED equivalent)
+  source_report: active-project/staff/reviews/coldread-b01c20-2026-06-06.md
+  source_verdict: SHIPPED-WITH-CAVEATS — completeness PASS; readability AIRLESS-leaning
+    (pre-authorized Class-B DEC-0102); 7th consecutive Class-B (c14-c20); prose-rationale-mute=1
+    (below soft-block); 2 non-spine NEEDS-BEAT signals.
+  gate_path: .claude/commands/and-stitch.md#phase-9
+verdict: OK-MERGED-INTO PROP-0037 (recurrence_count incremented 7->8; c20 evidence_ref appended)
+
+question: |
+  Does b01c20's 7th consecutive Class-B verdict (completing the c14-c20 cohort) warrant any
+  new process proposal, or is everything already captured by PROP-0037 (depth-pass-before-
+  book-close HARD-abort), DEC-0099 (cohort acceptance), and the PROP-0022 readability
+  machinery?
+
+decision: OK-MERGED-INTO PROP-0037 — no new proposal. c20 evidence_ref appended to
+PROP-0037's evidence_refs block; recurrence_count incremented from 7 to 8.
+
+basis: |
+  Step 1 (proposals log):
+    PROP-0037 is open, untriaged, with recurrence_count: 7. No other open or rejected
+    proposal covers this failure class. The c19 evidence_ref was pre-authored; c20 was not
+    (it was anticipated but the file was written before c20 shipped). Merge is the correct
+    operation.
+
+  Step 2 (content vs. process discrimination):
+    All cold-reader negatives map without remainder to DEC-0102 cold_read_risk_carry:
+    - "buried under abstraction / does not land emotionally / airless / tired turning page"
+      carry item #2 (interiority/abstraction-density), pre-authorized.
+    - "central mechanism took most of chapter to parse" carry item #1 (prior-investment
+      dependency), pre-authorized.
+    - "Wren's death implied, 80% sure" carry item #3 (Wren name-opacity-by-design; the
+      80%-inference IS the intended effect; goal reads "not a named loss").
+    No new complaint category emerged. PROP-0022 readability machinery fired correctly:
+    grounding-ledger + voice-embodiment discipline + separated completeness/readability
+    scoring all engaged. 2 non-spine NEEDS-BEAT signals are non-blocking. Prose-rationale-
+    mute=1 is below the soft-block threshold. Pure recurrence-increment dispatch.
+
+  Step 3 (c14-c20 arc closure):
+    c20 is the SERIES-TERMINAL chapter. The c14-c20 cohort is now complete. The 7th
+    consecutive Class-B is the expected terminus of the falling-interior-collapse arc:
+    DEC-0098 (c18 climax) and DEC-0101 (c19 penultimate) both confirmed this structural
+    logic. Cold-reader recovered the central event (Wren feed-blank), CONTINUE=yes,
+    JEOPARDY=yes. Chapter executed within its envelope.
+
+  Step 4 (PROP-0037 triage urgency — now CRITICAL):
+    PROP-0037 is now CRITICAL urgency. The c14-c20 cohort it was written to address is
+    complete. Depth-pass obligations (c14 mandatory, c18 mandatory, c20 mandatory as
+    series-terminal) are due at book-close. /and-review verdict b01 is the next natural
+    step and the designated triage moment. PROP-0037 cannot be deferred past book-close.
+
+  Step 5 (methodology):
+    No new proposal: redundant against PROP-0037. Recurrence increment is the correct
+    and only action.
+
+rationale: |
+  The Phase 9 SHIPPED-WITH-CAVEATS on b01c20 is structurally identical to c14-c19: all
+  complaints pre-authorized, no new complaint class, central event recovered, CONTINUE=yes.
+  The process worked correctly at every checkpoint. The 7th consecutive Class-B closes
+  the cohort rather than extending a concern. PROP-0037 is the mechanical enforcement
+  surface for the obligation that flows from this cohort; it needs only a triage decision
+  before /and-review verdict b01.
+
+trade-off: |
+  No new proposal means no new principal triage overhead. The only outstanding action is
+  PROP-0037 triage, now CRITICAL-urgency with the cohort complete. Deferring past
+  /and-review verdict b01 leaves the depth-pass obligation mechanically unenforced.
+
+follows: DEC-0101 DEC-0102 DEC-0103
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
