@@ -5,7 +5,7 @@
 **Hard fence (one line):** The broken clock stays broken — nothing in this library makes qi or cultivation magic real in the story; the only things that genuinely work in-story are mithridatism (mundane pharmacology) and uncontrolled ingestion of genuinely-magical Westerosi materials.
 
 **Authored:** 2026-06-05  
-**Cataloged/indexed:** 2026-06-05  
+**Cataloged/indexed:** 2026-06-05 · **Updated:** 2026-06-06 (doc #8 added)  
 **Subdirectory:** `and-experiment/design/cultivation-library/`
 
 ---
@@ -14,12 +14,13 @@
 
 **Doc #1 is foundational.** `cultivation-genre-reference.md` is the root document — it defines the realm ladder, alchemy, spirit beasts, resources, social order, sects, moral axes, tribulations, the detachment doctrine, standard tropes, and the precision-of-wrongness vocabulary bank. Every other document in the library extends or cross-references it; do not read any other doc without reading doc #1 first.
 
-**Docs #2–6 extend specific domains of doc #1** and are peer-level with each other. Each carries its own broken-clock mappings and candidate-card flags. Reading order within this tier:
+**Docs #2–7 extend specific domains of doc #1** and are peer-level with each other. Each carries its own broken-clock mappings and candidate-card flags. Reading order within this tier:
 
 - **#2 before #4 and #5:** Doc #2 (types/methods/phenomenology) covers the cultivation path taxonomy and body-tempering mechanics that docs #4 (techniques/artifacts) and #5 (cosmology/dark paths) assume.
 - **#3 can be read independently** after #1; it covers the Westerosi side of the register-collision rather than the cultivation genre's internal structure.
 - **#6 (metagenre/roots)** should be read after #1 and #2; it operates one level up from the in-world cosmology and requires familiarity with the genre conventions it taxonomizes.
 - **#7 (aphorisms)** is the most standalone; it can be consulted in isolation once the voice is understood from #1.
+- **#8 (maester's cabinet glossary)** is the granular apothecary-inventory layer — read #3 first for the load-bearing/magical substances; this doc is the exhaustive companion covering the full mundane and semi-magical cabinet. Standalone for any still-room / sick-house / poisoning scene; no prerequisite beyond knowing the broken-clock premise.
 
 ---
 
@@ -34,6 +35,7 @@
 | `cultivation-cosmology-dao-law-and-dark-paths.md` | Realm cosmology/geography, dao/heavenly-law/karma/luck metaphysics, the demonic/dark-cultivation cluster in full (blood sacrifice, corpse cultivation, ghost cultivation, soul refining, human-cauldron horror, devil transformation, soul-erosion, corruption mechanics) | Book III curdle beats; the killing-karma accounting she never runs; the escalation-trap structure across Bk I–III; the human-cauldron convergence beat; soul-erosion vs blank-line interpretive question; any scene requiring the Heavenly Dao as an active structural force |
 | `cultivation-metagenre-roots-and-archetypes.md` | Reincarnation/transmigration sub-genre (Saerys as meta-transmigrator), genre-family taxonomy (wuxia/xianxia/xuanhuan/xiuzhen/LitRPG), cultivation-comedy/deconstruction conventions, stock archetypes mapped to the project cast, real-world Daoist/Chinese roots | Scene calibration for register-mixing (which genre family is active at this moment); understanding which reader expectations are being refused and how; the cast-archetype table (Daenys as dao companion, Viserys as shizun, Aemond as deviant arrogant-young-master, etc.); the real-world roots section when authoring the gap between genuine Daoist doctrine and Saerys's misuse |
 | `cultivation-aphorisms-and-dao-sayings.md` | 100 original in-register aphorisms (12 themed groups, curdle-tagged, 8 signature lines) + public-domain Daoist/Buddhist/Confucian roots appendix | Any scene requiring Saerys to reach for a proverb; signature lines (H-02, D-01, D-02, D-07, D-14, R-02, P-02, X-01) for the three-deployment escalation arc; the Layer 2 misquote-well for classical-source warps; the farce→gallows tag as the deployment cue |
+| `maesters-cabinet-glossary.md` | **GRANULAR INVENTORY:** exhaustive apothecary glossary — 11 categories, ~90 substances; analgesics/sedatives, poisons, wound care, fever/infection, digestive/purgative, women's medicine, stimulants/tonics, minerals/chemical reagents, preparation bases/solvents, preparation forms, tools/equipment; real properties + Saerys's cultivation-tier gloss for each; cross-referenced to the poison card and the tier table | Any scene staging a still-room / sick-house / apothecary / poisoning event that requires a named, canon-checked, real substance; the full cabinet inventory backing `loc-still-room.card.md`; first stop for "what herb/mineral/preparation goes here" questions |
 
 **Vocabulary bank pointer:** Doc #1 (`cultivation-genre-reference.md`) holds the master precision-of-wrongness vocabulary bank at its close — the canonical term list for prose authors. Doc #7 (`cultivation-aphorisms-and-dao-sayings.md`) holds the aphorism bank with deployment notes.
 
@@ -74,7 +76,9 @@ Cards flagged across all seven docs as potentially warranting authoring if they 
 | `prop-still-room-kit` | prop | docs #2, #4 | The portable still-room kit — physical contents, portable vs. fixed elements, cultivation-register artifact-classification for each component |
 | `prop-still-room` | prop/location | doc #2 | The still-room as a named, described space with its formation layout and current reagent inventory — hybrid location-prop treatment |
 
-**Total flagged candidate cards: 28** (after merging the two Yi Ti candidates into one). All are project-scoped conditions or props; none are library-scope personas or locations.
+| `cond-maesters-cabinet` | condition | doc #8 | Condensed quick-ref of the 15–20 most frequently needed still-room substances (maester-register name + one-line real property + cultivation-gloss column), formatted as a bones-author's 60-second lookup; distilled from the full glossary in `maesters-cabinet-glossary.md` |
+
+**Total flagged candidate cards: 29** (after merging the two Yi Ti candidates into one, plus the new doc #8 entry). All are project-scoped conditions or props; none are library-scope personas or locations.
 
 ---
 
@@ -106,7 +110,15 @@ Every item flagged `[canon-uncertain]` across the seven docs. This is the workli
 22. The deep nature of R'hllor magic — whether a real entity answers prayers or practitioners access a technique independent of theology
 23. Weirwood magical alignment in Westeros (wood-attribute plausible but not canon-certain) — flagged in doc #6
 
-**Total `[canon-uncertain]` items: 23**
+**Added by doc #8 (maesters-cabinet-glossary.md):**
+
+24. The exact botanical composition of sweetsleep — whether it is named in canon as derived from a specific plant or presented as a Westerosi pharmaceutical with no identified source.
+25. Whether dreamwine is a named canon preparation or an inference from wine-with-soporific-properties references.
+26. Sweetgrass — whether the ASOIAF references establish specific medicinal properties or use it primarily as an aromatic/symbolic herb.
+27. The metal-to-discipline assignments for the maester's chain — most are canon, but the complete mapping has some ambiguity (particularly the advanced alchemical/fire disciplines).
+28. Whether "Myrish fire" as a wound-care antiseptic is confirmed canon or an inference from the Myrish glass/trade reputation.
+
+**Total `[canon-uncertain]` items: 28**
 
 ---
 
@@ -173,4 +185,4 @@ Did eating the powdered cradle-egg produce any real effect? If yes: what? If no:
 
 ---
 
-*Index authored by Margit — cataloging pass 2026-06-05. Library location: `and-experiment/design/cultivation-library/`. Seven docs moved here from `and-experiment/design/` by git mv (see notes in `and-experiment/staff/margit/margit.memory.md`).*
+*Index authored by Margit — cataloging pass 2026-06-05. Updated 2026-06-06 (doc #8 `maesters-cabinet-glossary.md` added; canon-uncertain count updated 23→28; candidate-card count updated 28→29). Library location: `and-experiment/design/cultivation-library/`. Seven foundation docs moved here from `and-experiment/design/` by git mv (see notes in `and-experiment/staff/margit/margit.memory.md`); doc #8 authored in-place.*

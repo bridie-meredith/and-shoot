@@ -343,3 +343,33 @@ All six stored project-bound at `and-experiment/persona-exemplars/<slug>.md`. No
 ### Preservation
 
 All six exemplars are net-new files. No existing persona cards, behavior cards, or warehouse files modified. The saerys-targaryen exemplar at `and-experiment/persona-exemplars/saerys-targaryen.md` was read for format reference only; not modified.
+
+---
+
+## Cultivation library expansion: 2026-06-06
+
+### Session scope
+
+Principal directive: author a comprehensive maester's cabinet glossary as the 8th document in the cultivation library. The doc is the exhaustive, breadth-first companion to `westeros-alchemy-substances-mystica.md` — the granular apothecary-inventory layer backing every still-room / sick-house / poisoning scene.
+
+### Artifact authored
+
+| # | filename | type | scope | path |
+|---|---|---|---|---|
+| 8 | maesters-cabinet-glossary.md | authoring substrate | project-scoped | `and-experiment/design/cultivation-library/maesters-cabinet-glossary.md` |
+
+**Summary:** 11 categories, approximately 90 substance entries plus 10 preparation-form entries and 7 tool/equipment entries. Categories: analgesics/sedatives, poisons/toxins, antiseptics/wound care, fever/inflammation/infection, digestive/purgative/emetic, women's medicine/reproductive, stimulants/tonics/restoratives, minerals/chemical reagents, preparation bases/solvents, preparation forms, tools/equipment. Each entry: name + canon-tag + real properties + dose/effect at a glance + Saerys's cultivation-tier note (pointing at the Tier 0–4 table in `cultivation-genre-reference.md` § Part IV.B without restating it). Includes an opening access-structure section (who controls Westerosi medicines; the gradient from freely accessible to locked cabinet to external sourcing). Consistent with `cond-westerosi-poison-pharmacology.card.md` (dose details deferred to that card), `loc-still-room.card.md` (reagent inventory cross-referenced), and `westeros-alchemy-substances-mystica.md` (magical substances cross-referenced, not duplicated).
+
+**Tag split (approximate):** ~25 `[canon]` or `[canon-uncertain]` entries; ~65 `[real-world / plausible in setting]` entries.
+
+**New canon-uncertain items:** 5 (items 24–28 in the consolidated worklist; see INDEX.md).
+
+**New candidate card flagged:** `cond-maesters-cabinet` — condensed 15–20 substance quick-ref for bones authors; see INDEX.md.
+
+### Index updates
+
+- `and-experiment/design/cultivation-library/INDEX.md` — added doc #8 to the doc table and "Use this when..." map; updated reading-order note to reflect 7 foundation docs + 1 apothecary doc; updated canon-uncertain count 23→28 (items 24–28 added); updated candidate-card list 28→29 (new `cond-maesters-cabinet` flag added); updated footer to record 2026-06-06 update.
+
+### Preservation
+
+`maesters-cabinet-glossary.md` is a net-new file. No existing library docs, warehouse cards, or persona files were modified. `INDEX.md` received additive edits only (new table row, reading-order note extension, canon-uncertain list extension, candidate-card list extension, footer update). `margit.memory.md` received additive log entry only.
