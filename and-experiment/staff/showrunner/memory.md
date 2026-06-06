@@ -135,4 +135,4 @@ routing:
   facets_dir: and-experiment/theater/facets/
   dialogue_dir: and-experiment/theater/dialogue/
   draft_dir: and-experiment/draft/
-  cultivation_library: and-experiment/design/cultivation-library/INDEX.md   # FIRST-STOP reference for any cultivation-register scene. 7 docs (genre/cosmology, types/methods/phenomenology, Westeros alchemy/substances/bestiary, techniques/artifacts/formations, dao-law/dark-paths, metagenre/roots/archetypes, aphorism bank). 28 candidate cards, 23 [canon-uncertain] items, 20 open rulings. BLOCKING for Bk II+: T-1 oily-black-stone disposition, T-2 human-cauldron explicit-vs-latent, T-3 Daenys-death vs dao-companion archetype.
+  cultivation_library: and-experiment/design/cultivation-library/INDEX.md   # FIRST-STOP reference for any cultivation-register / apothecary / substance scene. See INDEX for the full doc set + "use this when" map, the consolidated candidate-card list, [canon-uncertain] worklist, and open rulings. BLOCKING for Bk II+: T-1 oily-black-stone disposition, T-2 human-cauldron explicit-vs-latent, T-3 Daenys-death vs dao-companion archetype.
