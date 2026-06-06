@@ -12489,7 +12489,7 @@ books:
             asserted-not-dramatized => tractable, route normally (carried HARD to /and-write per DEC-0099).
 
       - slug: b01c20
-        status: faceted-r1
+        status: audited-r1
         bones_file: theater/bones/b01-c20.md
         bones_count: 30
         substance_bone_gate_verdict: PASS
@@ -12507,6 +12507,21 @@ books:
           aliveness: BONES-AIRLESS-RISK   # advisory; S01-S03 apparatus-heavy; pre-authorized Class-B DEC-0102; -> /and-facets Phase 2.5 aliveness scrutiny + grounding-ledger + /and-stitch Phase 4 voice-embodiment priority
           notes: "fidelity PASS (no hollow scene; all event_map entries covered; S04 recognition spine + all 4 scene-handoffs recoverable). follow_check PASS-WITH-NOTES (context-aware: S04 feed-signal-loss reads AS Wren's death for c01-c19 reader via named east-of-water-gate lanes 18/19/23; flag-001 bone-24 stylus-lift suspended-gesture context-deferred to /and-facets Phase 2.5, NOT a FOLLOW-FAIL). dialogue-coverage PASS (0 anchors). No FAIL/FOLLOW-FAIL -> /and-facets cleared."
           stale_since: null
+        facets:
+          status: audited-r1
+          facets_path: active-project/theater/facets/
+          audit_path: active-project/staff/auditor/facets-final-audit-b01c20.md
+          audit_complete: true
+          audit_findings: "1 HARD (mem:3 @29 spineless, narrator:7 deleted in R2) RESOLVED via narrator:9 @29 add; 7 SIGNAL accepted"
+          audience_gate_path: active-project/staff/auditor/facets-audience-gate-r1-b01c20.md
+          audience_gate_verdict: ACCEPT   # 9 of 9 facets 3-of-3, cycle 1, no fixer routing, no cap-burn
+          audience_gate_cycles: 1
+          bidirectional_loop: validated   # mem:3 @29 NI-spine seam converged from audit + audience paths
+          context_followability: {completeness_verdict: FOLLOWABLE, readability_verdict: ALIVE, context_ledger_open: 0, grounding_ledger_open: 0, report: active-project/staff/reviews/context-follow-r2-b01-c20-2026-06-06.md}
+          round_1_complete: true
+          round_2_complete: true
+          orchestrator_critic_verdict: SUCCESS   # 7/7 criteria; recommendation ship -> /and-stitch. Phase 5c SKIPPED (clean ACCEPT, no cap-burn/WARN).
+          stitch_carries: ["signal-005 scene-A NI-silence -> /and-stitch Phase 4 voice-embodiment (VOICE-FIXABLE)", "chunk-cold-read SOFT escalation-in-kind enforcement target -> Phase 9 scores c20 different-in-kind from c14-c19", "DEC-0102 Class-B cold_read_risk_carry 1-5 -> Phase 8.5/9 (pre-authorized; SHIPPED-WITH-CAVEATS auto-promote on matching categories)"]
         chunk: |
           The Dance ignites. Viserys I dies. The Green faction moves within hours on the
           succession; the apparatus Taylor's intelligence has been feeding for months
