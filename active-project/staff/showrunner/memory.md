@@ -12489,7 +12489,7 @@ books:
             asserted-not-dramatized => tractable, route normally (carried HARD to /and-write per DEC-0099).
 
       - slug: b01c20
-        status: bones-written
+        status: faceted-r1
         bones_file: theater/bones/b01-c20.md
         bones_count: 30
         substance_bone_gate_verdict: PASS

@@ -1,14 +1,26 @@
 # studio STM
 
-## 2026-06-06 — /and-facets b01-c20 Phase 1 sensory authoring (studio)
+## 2026-06-06 — /and-facets b01-c20 Phase 1 location-state R1 authoring (studio)
 
-Chapter b01c20: 30 bones, 5 scenes. Solitary/interior terminal chapter — Taylor alone running the final ledger accounting as the Green succession fires, watching the Wren-feed go blank, and walking out the south gate. BONES-AIRLESS-RISK flag active (S01-S03 apparatus-heavy per /and-review bones). Zero dialogue-anchor speakers.
+Chapter b01c20: 30 bones, 5 scenes. Solitary/interior TERMINAL chapter — Taylor alone running the final ledger accounting as the Green succession fires, watching the Wren-feed go blank, and walking out the south gate. BONES-AIRLESS-RISK flag active. Zero dialogue-anchor speakers.
 
-SENSORY (5 entries: 2 standard, 3 grounding-licensed; BONES-AIRLESS-RISK): standard: @1 visual (render-room grey-dark; S01 chapter-open grounding) + @6 sound (succession-bell-toll; S02 spike). Grounding-licensed: @12 olfactory (burn-smoke-onset; S03 AIRLESS-RISK + physics-cascade setup; grd-c20-001) + @20 thermal (smoke-fire-heat-dispersing; S04 PHYSICS-CASCADE peak grounding; grd-c20-002) + @30 light (south-gate-interior-grey → open-dusk-sky-flat; S05 terminal departure threshold; grd-c20-003). Standard density 6.7% (marginally over 6% ceiling; authorized by BONES-AIRLESS-RISK upper-biasing per c19 precedent). Total density 16.7%. Modalities: visual + sound + olfactory + thermal + light (4 distinct). Per-scene caps: all 1 per scene, all ≤3. Grounding-ledger entries (grd-c20-001/-002/-003) to be created at Phase 2.5. File: theater/facets/sensory-b01-c20.md.
+LOCATION-STATE (7 entries): Taylor's body remains at the-tallow-render-works through s01-s03 and s05 departure-prep; the gap-lanes-east-water-gate (east-of-water-gate-lanes per bones) are observed feed-terrain anchored by problem-brief authority as structurally load-bearing for the recognition event; south-gate is the terminal threshold. Time progression: before-dawn → morning → midday → afternoon → dusk.
 
-BONES-AIRLESS-RISK coverage: all five scenes carry at least one concrete sensory grounding. S04 PHYSICS-CASCADE (@19-@22: smoke-fills → heat-disperses → insects-scatter → signal-drops) anchored by thermal @20; the heat-arrival is the physical recognition fact the signal-drop plays against.
+  loc-state:1 @2 — the-tallow-render-works | before-dawn | place-anchor s01: doors open, succession-watch-active, time-advance from after-third-bell (c19 chapter-close)
+  loc-state:2 @6 — the-tallow-render-works | morning | place-anchor s02: succession bell reaches room through stone; time-advance
+  loc-state:3 @14 — the-tallow-render-works | midday | place-anchor s03: decommission message arrives; EXPULSION-AMBIGUITY-PRESERVED; time-advance
+  loc-state:4 @18 — the-gap-lanes-east-water-gate | afternoon | smoke-building | place-anchor s04: feed active in Wren's lanes before PHYSICS-CASCADE onset; observed feed-terrain (brief-authorized)
+  loc-state:5 @23 — the-gap-lanes-east-water-gate | afternoon | smoke-thick | state-change: lanes go blank (feed-active → feed-blank); RECOGNITION-HELD-BLANK terminal
+  loc-state:6 @28 — the-tallow-render-works | dusk | smoke-distant | place-anchor s05: pack lifted, departure-posture; time-advance
+  loc-state:7 @30 — oc-south-gate | dusk | smoke-distant | transitional threshold-crossing: Taylor exits KL; position-prot-collapse LOCK enacted; series terminal
+  File: theater/facets/location-state-b01-c20.md
+  Margit referrals: oc-south-gate (new slug; SEAM-C20-LOC-003)
 
-Location-state and state-updates: NOT YET AUTHORED (Phase 1 partial; sensory only).
+DESIGN NOTES: (1) Ward-junctions and holdfast-routes (bones locations field) are observed terrain accessed via Taylor's feed from the render-works control point; no body-location loc-state fires on those slugs. (2) Weather field used for "smoke-building/smoke-thick/smoke-distant" progression across s04-s05 — the fire tracing the ward-junction catalogue produces the physical environmental spine; documented in SEAM-C20-LOC-004. (3) @6 loc-state fires on "succession bell reaches room" — first beat of s02 satisfies non-movement-beat exception (first beat in new location-and-moment: same location, time advances from before-dawn to morning). (4) The gap-lanes entries (@18/@23) follow b01c18 loc-state:4/@11 precedent (gap-lane-blank fired as observed-terrain place-anchor at full-coverage deployment); problem-brief explicitly designates this terrain as "location-state-relevant."
+
+SENSORY (5 entries: 2 standard, 3 grounding-licensed; BONES-AIRLESS-RISK): standard: @1 visual (render-room grey-dark; S01 chapter-open grounding) + @6 sound (succession-bell-toll; S02 spike). Grounding-licensed: @12 olfactory (burn-smoke-onset; S03; grd-c20-001) + @20 thermal (smoke-fire-heat-dispersing; S04 PHYSICS-CASCADE peak; grd-c20-002) + @30 light (south-gate-interior-grey → open-dusk-sky-flat; S05 terminal; grd-c20-003). Standard density 6.7% (upper-biased per BONES-AIRLESS-RISK; c19 precedent). Total density 16.7%. Modalities: 4 distinct. Per-scene caps: all 1 per scene. File: theater/facets/sensory-b01-c20.md.
+
+State-updates: NOT YET AUTHORED (Phase 1 partial; location-state + sensory complete).
 
 ## 2026-06-05 — /and-facets b01-c19 Phase 1 studio facet authoring
 

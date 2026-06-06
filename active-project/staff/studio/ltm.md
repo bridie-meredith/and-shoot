@@ -3,6 +3,23 @@
 
 ---
 
+## 2026-06-06 — b01c20 location-state R1 authoring at /and-facets Phase 1 (TERMINAL CHAPTER)
+
+Chapter b01c20: 30 bones, 5 scenes. SERIES-TERMINAL chapter — Taylor alone watching the Green succession execute, the decommission message arrive, the Wren-feed go blank, and walking out the south gate. SOLITARY (Taylor alone; no on-stage actors). BONES-AIRLESS-RISK active. Five locations: the-tallow-render-works (s01-s03 control point + s05 departure-prep), the-gap-lanes-east-water-gate (s04 observed feed-terrain; PHYSICS-CASCADE + RECOGNITION-HELD-BLANK), oc-south-gate (s05 terminal departure). Weather field used to track smoke progression (smoke-building → smoke-thick → smoke-distant) across s04-s05. Earth-Bet fence hard throughout.
+
+LOCATION-STATE (7 entries):
+  Location arc: tallow-render-works (before-dawn; s01 succession-watch) → tallow-render-works (morning; s02 succession executes, faction-movement) → tallow-render-works (midday; s03 decommission arrives) → the-gap-lanes-east-water-gate (afternoon; s04 feed-active then blank; RECOGNITION) → tallow-render-works (dusk; s05 feed-closed, pack-lifted) → oc-south-gate (dusk; s05 terminal departure).
+  Notable: @18/@23 gap-lanes entries are observed feed-terrain (brief-authorized as location-state-relevant; PHYSICS-CASCADE mechanism + RECOGNITION-HELD-BLANK terminal). New slug: oc-south-gate (SEAM-C20-LOC-003; MARGIT REFERRAL). Series-terminal chapter: studio state is now DEPARTED — Taylor exited KL; no further location tracking.
+  loc-state:1  @2  — tallow-render-works; before-dawn; doors-open; succession-watch-active.
+  loc-state:2  @6  — tallow-render-works; morning; succession-bell-reaches-room; time-advance.
+  loc-state:3  @14 — tallow-render-works; midday; decommission-message-arrives; EXPULSION-AMBIGUITY-PRESERVED.
+  loc-state:4  @18 — the-gap-lanes-east-water-gate; afternoon; smoke-building; feed-active-in-gap-lanes (PHYSICS-CASCADE onset; place-anchor).
+  loc-state:5  @23 — the-gap-lanes-east-water-gate; afternoon; smoke-thick; feed-blank (state-change; RECOGNITION-HELD-BLANK terminal).
+  loc-state:6  @28 — tallow-render-works; dusk; smoke-distant; pack-at-hand; departure-posture.
+  loc-state:7  @30 — oc-south-gate; dusk; smoke-distant; threshold-crossing; position-prot-collapse LOCK. SERIES TERMINAL.
+
+---
+
 ## 2026-06-05 — b01c19 three-facet authoring at /and-facets Phase 1
 
 Chapter b01c19: 35 bones, 4 scenes. Penultimate chapter — contempt-without-refusal LOCK (political_register-prot LOCKS at rank 9; cl06 PAID) + first non-terminal recognition + Daven severance. SOLITARY (Taylor alone). BONES-AIRLESS-RISK active. Three locations: the-tallow-render-works (s01-s02 accounting container + s03 close + s04 architecture-record return), the-red-keep-outer-ring (s03 observed feed-terrain; pillar junction + service gate), the-tallow-croft-corner (s04 Daven approach; vat-house east window; lower Flea Bottom). Earth-Bet fence hard throughout.
