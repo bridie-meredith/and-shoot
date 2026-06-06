@@ -1,7 +1,19 @@
 facet: exposition
 episode: b01c20
 author: exposition-author
+r2-judge: complete (cite_index_hash 9e011e491957c9b8855b9a3582551286; 3 KEEP / 0 DELETE / 0 REWORD-this-pass / 0 ADD; @18 Wren KEPT; shard: staff/exposition-author/r2-decision-shard.md)
 ---
+
+# R2 GRAPH-AWARE JUDGE DISPOSITION (all lens facets locked; cite-index in hand):
+#   exposition:1 @0  prior-episode-bridge          → KEEP (terminal entering-state refresh no c20 lens carries;
+#                                                      NI:7/mem:3 @29 are the enacted-close, not the entering refresh)
+#   exposition:2 @18 wren-orientation               → KEEP — Wren named in ZERO bones / ZERO other facets; NI:5 @22
+#                                                      carries the un-priced-POSITION but never the PERSON; LOAD-BEARING
+#   exposition:3 @14 decommission-off-jarvis-channel → KEEP (R1→R2 REWORD already done: NI:4 @14 now carries the
+#                                                      non-naming register + trigger-ambiguity; gloss retains ONLY the
+#                                                      off-Jarvis-channel + @15 absorption-mechanism NI is blind to;
+#                                                      trigger-ambiguity PRESERVED; no further reword)
+#   ADDs: 0 (context-ledger empty / 0 CONTEXT-REQUIRED; PHYSICS-CASCADE bare-lines design-protected). All bodies R1-identical.
 
 # Exposition facet — b01c20 (audience-modeled-by-construction; SERIES-TERMINAL chapter; silent solitary interior; falling)
 #
