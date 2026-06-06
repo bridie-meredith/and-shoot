@@ -2,7 +2,35 @@
 
 episode: b01c20
 last_updated: 2026-06-06
-action: sensory R1 authoring — /and-facets b01-c20 Phase 1 (studio sensory facet only; location-state + state-updates pending)
+action: location-state R1 + sensory R1 authoring — /and-facets b01-c20 Phase 1 (studio; state-updates pending)
+
+## Location-state authored (b01c20) — 7 entries
+  loc-state:1  @2  — the-tallow-render-works | before-dawn | none | rented-room-above-rendering, feed-running-standby, succession-watch-active | servant-passage doors open; succession enacts without Taylor's signal (place-anchor; s01)
+  loc-state:2  @6  — the-tallow-render-works | morning | none | feed-at-full-coverage-standby, ledger-open-succession-column | succession bell reaches render room through stone; morning confirmed (place-anchor; s02; time-advance)
+  loc-state:3  @14 — the-tallow-render-works | midday | none | decommission-message-present, ledger-open-recording-posture | decommission message arrives; apparatus addresses function-slot (place-anchor; s03; time-advance; EXPULSION-AMBIGUITY-PRESERVED)
+  loc-state:4  @18 — the-gap-lanes-east-water-gate | afternoon | smoke-building | feed-active-in-gap-lanes, gap-maintained-blank-in-record | feed runs in Wren's lanes; smoke building at ward edges (place-anchor; s04; observed feed-terrain; PHYSICS-CASCADE onset)
+  loc-state:5  @23 — the-gap-lanes-east-water-gate | afternoon | smoke-thick | feed-blank, signal-absent | lanes go blank; recognition-event spatial form (state-change; feed-active -> feed-blank; RECOGNITION-HELD-BLANK terminal)
+  loc-state:6  @28 — the-tallow-render-works | dusk | smoke-distant | feed-closed, ledger-run-complete, pack-at-hand | pack lifted; room shifts to vacated-space (place-anchor; s05; time-advance; departure-posture)
+  loc-state:7  @30 — oc-south-gate | dusk | smoke-distant | gate-threshold-open, ledger-accurate-nothing-to-refuse | Taylor exits south gate; threshold-crossing (transitional; s05 terminal; position-prot-collapse LOCK)
+  File: theater/facets/location-state-b01-c20.md
+  Margit referrals: oc-south-gate (new slug; SEAM-C20-LOC-003)
+
+## Current set (b01c20 chapter-close — TERMINAL CHAPTER)
+  location: oc-south-gate (departed; @30; Taylor exits KL; series-terminal)
+  time_of_day: dusk
+  weather: smoke-distant
+  ambient_conditions:
+    - studio.fauna_sense_status.coverage-scale: dispersed-to-ambient (feed closed @25; insects returned to substrate; architecture no longer held)
+    - studio.cost-ledger.condition: closed-final-run-at-gate (@29; ledger run one last time at the south gate; nothing to revise)
+    - studio.gap-lanes-east-water-gate.feed-status: blank-permanent (@23; signal did not return; recognition-event terrain frozen at blank)
+    - prop:apparatus-picture.norren-attribution: resolved (carry; permanent; Wren screened throughout)
+    - studio.succession-document-status: cleared-small-council-access-window (carry; permanent)
+    - studio.position-prot-collapse.rank: 1-locked (Taylor expelled/departed; @30)
+    - studio.social_tether-prot-collapse.rank: 1-locked (tether severed, patron dissolved, network transferred; @17)
+    - studio.political_register-prot.rank: 9-locked (contempt-without-refusal; carry from c19)
+    - studio.relational_anchor_status.rank: 9-locked (recognition complete; un-priced item confirmed; @22-@23)
+
+---
 
 ## Sensory facet filed (b01c20) — 5 entries (2 standard, 3 grounding-licensed; BONES-AIRLESS-RISK)
   sensory:1 @1  — visual: render-room-after-third-bell-dark -> grey-dark-reading-light (s01; standard)

@@ -1,5 +1,15 @@
 # studio STM
 
+## 2026-06-06 — /and-facets b01-c20 Phase 1 sensory authoring (studio)
+
+Chapter b01c20: 30 bones, 5 scenes. Solitary/interior terminal chapter — Taylor alone running the final ledger accounting as the Green succession fires, watching the Wren-feed go blank, and walking out the south gate. BONES-AIRLESS-RISK flag active (S01-S03 apparatus-heavy per /and-review bones). Zero dialogue-anchor speakers.
+
+SENSORY (5 entries: 2 standard, 3 grounding-licensed; BONES-AIRLESS-RISK): standard: @1 visual (render-room grey-dark; S01 chapter-open grounding) + @6 sound (succession-bell-toll; S02 spike). Grounding-licensed: @12 olfactory (burn-smoke-onset; S03 AIRLESS-RISK + physics-cascade setup; grd-c20-001) + @20 thermal (smoke-fire-heat-dispersing; S04 PHYSICS-CASCADE peak grounding; grd-c20-002) + @30 light (south-gate-interior-grey → open-dusk-sky-flat; S05 terminal departure threshold; grd-c20-003). Standard density 6.7% (marginally over 6% ceiling; authorized by BONES-AIRLESS-RISK upper-biasing per c19 precedent). Total density 16.7%. Modalities: visual + sound + olfactory + thermal + light (4 distinct). Per-scene caps: all 1 per scene, all ≤3. Grounding-ledger entries (grd-c20-001/-002/-003) to be created at Phase 2.5. File: theater/facets/sensory-b01-c20.md.
+
+BONES-AIRLESS-RISK coverage: all five scenes carry at least one concrete sensory grounding. S04 PHYSICS-CASCADE (@19-@22: smoke-fills → heat-disperses → insects-scatter → signal-drops) anchored by thermal @20; the heat-arrival is the physical recognition fact the signal-drop plays against.
+
+Location-state and state-updates: NOT YET AUTHORED (Phase 1 partial; sensory only).
+
 ## 2026-06-05 — /and-facets b01-c19 Phase 1 studio facet authoring
 
 Chapter b01c19: 35 bones, 4 scenes. Solitary chapter — Taylor alone running the chamberlain accounting, catching the pattern, locking the contempt, then running the Daven severance approach. Three locations: the-tallow-render-works (s01-s03 control point + s04 return), the-red-keep-outer-ring (s03 observed feed-terrain), the-tallow-croft-corner (s04 approach). BONES-AIRLESS-RISK flag active. Silent chapter — 0 dialogue-anchor speakers.
