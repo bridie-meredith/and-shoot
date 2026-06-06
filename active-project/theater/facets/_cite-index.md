@@ -2,7 +2,7 @@
 generated: 2026-06-06
 source: active-project/theater/proto-lines/b01-c20.md + active-project/theater/facets/
 scope: 9 facet files + 1 proto-lines file
-totals: 63 facet entries; 27/31 protolines decorated (87.1%)
+totals: 64 facet entries; 27/31 protolines decorated (87.1%)
 
 ## Density distribution (protolines by citation count)
 
@@ -11,8 +11,8 @@ totals: 63 facet entries; 27/31 protolines decorated (87.1%)
 | 0 (bare)   | 4 |
 | 1          | 9 |
 | 2          | 7 |
-| 3          | 8 |
-| 4          | 1 |
+| 3          | 7 |
+| 4          | 2 |
 | 6          | 2 |
 
 ## Per-facet entries
@@ -26,12 +26,13 @@ totals: 63 facet entries; 27/31 protolines decorated (87.1%)
   loc-state:6 @28 back=Y co=[state:30]
   loc-state:7 @30 back=Y co=[narrator:8, sensory:5, state:25, state:32, vibes:6]
 
-### narrator (5 entries)
+### narrator (6 entries)
   narrator:2 @7 back=Y co=[vibes:3]
   narrator:4 @14 back=Y co=[exposition:3, feel:2, loc-state:3, state:12, state:26]
   narrator:5 @22 back=Y co=[state:18, vibes:5]
   narrator:6 @24 back=Y co=[feel:3, mem:2, state:28]
   narrator:8 @30 back=Y co=[loc-state:7, sensory:5, state:25, state:32, vibes:6]
+  narrator:9 @29 back=Y co=[mem:3, state:24, state:31]
 
 ### sensory (5 entries)
   sensory:1 @1 back=Y co=[state:1]
@@ -64,19 +65,19 @@ totals: 63 facet entries; 27/31 protolines decorated (87.1%)
   state:21 @25 back=Y co=[state:20, state:29]
   state:22 @27 back=Y co=[state:23]
   state:23 @27 back=Y co=[state:22]
-  state:24 @29 back=Y co=[mem:3, state:31]
+  state:24 @29 back=Y co=[mem:3, narrator:9, state:31]
   state:25 @30 back=Y co=[loc-state:7, narrator:8, sensory:5, state:32, vibes:6]
   state:26 @14 back=Y co=[exposition:3, feel:2, loc-state:3, narrator:4, state:12]
   state:27 @17 back=Y co=[state:15, vibes:4]
   state:28 @24 back=Y co=[feel:3, mem:2, narrator:6]
   state:29 @25 back=Y co=[state:20, state:21]
   state:30 @28 back=Y co=[loc-state:6]
-  state:31 @29 back=Y co=[mem:3, state:24]
+  state:31 @29 back=Y co=[mem:3, narrator:9, state:24]
   state:32 @30 back=Y co=[loc-state:7, narrator:8, sensory:5, state:25, vibes:6]
 
 ### mem (2 entries)
   mem:2 @24 back=Y co=[feel:3, narrator:6, state:28]
-  mem:3 @29 back=Y co=[state:24, state:31]
+  mem:3 @29 back=Y co=[narrator:9, state:24, state:31]
 
 ### feel (3 entries)
   feel:1 @4 back=Y co=[state:3, vibes:1]
