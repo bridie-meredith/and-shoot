@@ -1,8 +1,7 @@
 ---
 name: ser-harwin-the-patient
 class: persona
-scope: both
-project: and-experiment
+scope: library
 world: planetos
 persona-purpose: [on-stage-character]
 aliases: [harwin, ser-harwin, the-patient, ser-harwin-the-patient]

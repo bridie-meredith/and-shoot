@@ -1,8 +1,7 @@
 ---
 name: helaena-targaryen-122ac
 class: persona
-scope: both
-project: and-experiment
+scope: library
 world: planetos
 persona-purpose: [on-stage-character]
 aliases: [helaena, the-odd-sister, the-warm-spot, helaena-the-insect-princess]

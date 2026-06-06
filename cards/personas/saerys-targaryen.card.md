@@ -1,8 +1,7 @@
 ---
 name: saerys-targaryen
 class: persona
-scope: both
-project: and-experiment
+scope: library
 world: planetos
 persona-purpose: [on-stage-character]
 aliases: [saerys, the-heavenly-demon-cauldron-belly, the-little-master, the-inferior-path]

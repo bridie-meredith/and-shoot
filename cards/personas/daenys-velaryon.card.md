@@ -1,8 +1,7 @@
 ---
 name: daenys-velaryon
 class: persona
-scope: both
-project: and-experiment
+scope: library
 world: planetos
 persona-purpose: [on-stage-character]
 aliases: [daenys, the-dragonrider, the-lover, the-counter-thesis]

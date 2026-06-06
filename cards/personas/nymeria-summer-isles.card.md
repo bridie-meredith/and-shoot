@@ -1,8 +1,7 @@
 ---
 name: nymeria-summer-isles
 class: persona
-scope: both
-project: and-experiment
+scope: library
 world: planetos
 persona-purpose: [on-stage-character]
 aliases: [nymeria, the-archer, the-conscience, the-witness]
