@@ -6936,3 +6936,83 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0105 | 2026-06-06 | FAST (user-proxy)
+
+question: Before /and-review verdict b01: (A) run book-close depth-pass revise loop on Class-B cohort (c14-c19 +/- /and-cohere), or (B) accept the pre-authorized Class-B cohort caveat per DEC-0099 and run /and-review verdict b01 now, surfacing the caveat in the report?
+context: b01 COMPLETE (b01c20 SERIES-TERMINAL, shipped 2026-06-06). HARD parking-lot item pl-2026-06-05-c19-deptpass gates book-close on depth-pass resolution. DEC-0099 pre-authorized the Class-B disposition for c14-c19; DEC-0102 extended to c20. Option A (depth-pass before verdict) = ~50-90 dispatches for one chapter re-cascade; full c14-c19 cohort = 6x that. Option B = run /and-review verdict b01 now (read-only, non-blocking); orchestrator-critic judges the book with the caveat on record; depth-pass can follow if verdict FAILs on Class-B specifically.
+options:
+  A: book-close depth-pass revise loop before verdict (expensive, unsolicited, ~300-540 dispatches for cohort)
+  B: accept pre-authorized caveat, run /and-review verdict b01 now, surface caveat in report
+
+decision: B — accept the pre-authorized Class-B cohort caveat and run /and-review verdict b01 now.
+basis: methodology:human-only (spend commitments past routine) blocks option A; goal:2 (cost discipline) strongly favors B; methodology:3a (reversibility) favors B (verdict is read-only; depth-pass remains available post-verdict if critic FAILs on this axis); DEC-0099 + prior cohort authorizations are the explicit pre-authorization.
+rationale: Option A commits ~300-540 dispatches on a blind --from-signals sweep over 6 chapters the principal knowingly accepted with Class-B caveats. No new information has arrived since those acceptances to make the spend warranted. The verdict run IS the designated acceptance point — the parking lot item's own path (B) names it as such. If the orchestrator-critic PASS-WITH-NOTES or FAIL specifically calls out the Class-B stretch as degrading the book's verdict, THAT finding provides a targeted brief for depth-pass work; acting without it is uninformed expenditure. Option A's spend range (300-540 dispatches) qualifies as "meaningful slice of project budget on a single operation" and is explicitly human-only territory per methodology §spend-commitments-past-routine — absent an explicit principal request, admin cannot authorize it.
+trade-off: Option A risks nothing quality-wise but costs enormous model spend and defers the verdict; option B runs the verdict on a book with a known quality caveat in the record. If the critic FAILs hard on the Class-B cohort, depth-pass work will still be needed but at least it will be scoped by specific findings rather than a blind cohort sweep.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
+## DEC-0106 | 2026-06-06 | FAST (process-critic)
+
+mode: process-critic
+trigger:
+  reason: failure
+  source_report: active-project/staff/reviews/verdict-b01-2026-06-06T04-08-37Z.md
+  source_verdict: "PASS-WITH-NOTES — 4 open HARD caveats (Class-B depth-pass cohort c14/c15/c16/c19) accepted-as-caveat per DEC-0105; dominant note: 7-consecutive SHIPPED-WITH-CAVEATS (c14-c20)"
+gate_path: .claude/commands/and-review.md#verdict
+secondary_gate_paths: [.claude/commands/and-stitch.md#phase-9, .claude/commands/and-substance.md#phase-0]
+
+question: Does the book-close outcome (7 consecutive SHIPPED-WITH-CAVEATS, c14-c20, pre-authorized chapter-by-chapter and accepted at book-close per DEC-0105) warrant a NEW process-change proposal, or does it merge into the existing PROP-0037? Judge whether the existing pre-authorization + book-close-acceptance machinery is the correct handling or whether the process itself has a gap.
+
+context: /and-review verdict b01 returned PASS-WITH-NOTES (series-terminal, sole book). Substance trajectory and cost ledger delivered strongly (all 12 axes to designed close-states). Back-third Class-B cohort (c14-c20): 7 consecutive SHIPPED-WITH-CAVEATS on design-inherent grounds (interior-sameness + accounting-abstraction-density + event-poverty/jeopardy-offstage). Each chapter pre-authorized at its own DEC (DEC-0085 through DEC-0104). Cohort accepted at book-close per DEC-0105. Orchestrator-critic B2 finding explicitly named PROP-0037 as the correct gate for this class of behavior. An earlier 3-consecutive run (c10-c12) was interrupted by /and-cohere before c13 → clean PASS; the back-third run was not interrupted — it was knowingly accepted chapter by chapter. PROP-0037 is open (status: open, untriaged) with recurrence_count already updated to 8 (evidence_refs through DEC-0104 pre-authored, including the DEC-0106 reference pre-written into the block).
+
+decision: OK-MERGED-INTO PROP-0037 — evidence already pre-authored into PROP-0037 at lines 5113-5122 of staff/admin/process-proposals.md; recurrence_count confirmed at 8; no new proposal needed.
+basis: methodology:step-1-proposals-log-precedent (open proposal with same target + change_type)
+rationale: |
+  Step 1 (proposals log check): PROP-0037 is open (status: open, triaged_at: null), targets
+  .claude/commands/and-substance.md Phase 0, change_type: modify, and was authored precisely
+  to enforce a HARD-abort when consecutive_shipped_with_caveats >= 3 without a cohere
+  acknowledgment stamp. The DEC-0106 evidence_ref was pre-authored into PROP-0037's
+  evidence_refs block during c20 processing (DEC-0104), recurrence_count already reads 8.
+  The proposals-log matching rule (open proposal with same target + change_type → merge,
+  do not duplicate) applies without ambiguity. No new operation on PROP-0037 is required
+  beyond confirming that the pre-authored entry is accurate.
+
+  Step 2 (content vs. process discrimination): The 7-consecutive run is NOT a pure content
+  failure that the process could not have caught. The orchestrator-critic's verdict
+  (report line 168: "Process signal: the 7-consecutive Class-B chain is the empirical case
+  PROP-0037 wants hard-gated") confirms this is exactly the class PROP-0037 targets. The
+  process gap that let the run go uninterrupted is the absence of the PROP-0037 gate in
+  /and-substance chapter Phase 0. The per-chapter DEC-acknowledgments (DEC-0085 through
+  DEC-0104) are precisely the "path b: one-chapter-at-a-time acknowledgment" that
+  PROP-0037's proposed_diff licenses — the book's behavior is confirmatory of the
+  proposal's design, not contradictory to it.
+
+  The pre-authorization + book-close-acceptance machinery (DEC chain + DEC-0105) worked
+  correctly as the MANUAL bypass of what PROP-0037 would enforce mechanically. This is
+  not a case where the process handled the situation correctly and no change is needed:
+  the correct handling was manual and expensive (10 individual DEC entries, explicit
+  chapter-by-chapter acknowledgment). PROP-0037's value is making that obligation surface
+  automatically at the right phase. The book's outcome is strong evidence FOR triage,
+  not evidence that the existing machinery is sufficient.
+
+  No new proposal class: the evidence is purely confirmatory of the existing proposal.
+  Triage urgency shifts from CRITICAL (pre-verdict) to GENERAL-PIPELINE-RULE — applies
+  to any future book/project with a falling-arc back third. b01 is closed.
+trade-off: A new proposal would duplicate PROP-0037 with no additional specificity. OK would
+  misrepresent the finding — the process gap is real and evidenced by 8 data points across
+  two independent runs. OK-MERGED correctly records the book-close confirmation without
+  adding noise to the proposals log.
+
+follows: DEC-0104 DEC-0105
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no

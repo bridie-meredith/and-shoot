@@ -5110,6 +5110,16 @@ evidence_refs:
     DEC-0104 ruled: 7th consecutive Class-B closes the cohort; no new signal class; PROP-0037
     is the outstanding gate that enforces book-close depth-pass obligation. Triage urgency:
     CRITICAL — book-close (/and-review verdict b01) is the next natural step."
+  - "active-project/staff/reviews/verdict-b01-2026-06-06T04-08-37Z.md + DEC-0106
+    (2026-06-06) — /and-review verdict b01 PASS-WITH-NOTES (series-terminal). Book-close
+    confirmation: orchestrator-critic B2 finding explicitly names PROP-0037 as the correct
+    gate ('Process signal: the 7-consecutive Class-B chain is the empirical case PROP-0037
+    wants hard-gated'). The c14-c20 cohort's per-chapter DEC-acknowledgments (DEC-0085 through
+    DEC-0104) are exactly the manual bypass PROP-0037's proposed_diff licenses (path b:
+    one-chapter-at-a-time acknowledgment, counter does not reset). b01 is now closed.
+    Triage urgency shifts from CRITICAL (pre-verdict) to GENERAL-PIPELINE-RULE (applies
+    to b02+ and to any future project with a falling-arc back third). No new proposal
+    class: the book's behavior is confirmatory, not novel. DEC-0106 ruled: OK-MERGED."
 recurrence_count: 8
 proposed_diff: |
   In .claude/commands/and-substance.md, Phase 0 — Validate + mode select, at the
