@@ -119,3 +119,21 @@ CARRIES CONFIRMED:
   s05 cold-close: LANDED [L42]-[L44] — ledger accurate, contempt beside the line, nothing to refuse, no catharsis/redemption beat; terminal departure as not-stopping.
   EXPULSION-AMBIGUITY-PRESERVED @14: HELD ([L19] "found out, or finished with — did not come down through the wording") — NOT resolved.
   Earth-Bet fence: CLEAN (Khepri-echo SHAPE-LANGUAGE only, never named).
+
+---
+
+## Phase 10 — Forward-thread edits
+
+PASS-THREAD. 0 threading edits applied (0 cosmetic + 0 presentation-reinforcement + 0 substantive + 0 uncertain). No rev-NNNN entries this chapter.
+
+Fork report: active-project/staff/reviews/forward-thread-b01-c20-2026-06-06.md
+
+- UNPAID-HOOK: 0 requiring edit. hook-0009 (collapse-trap d14/c20 terminus) + hook-0018 (witch-label / Wren un-priced cost-bearer) + cl-d11 +0.5 2nd tranche all PAID on-page via the physics-cascade feed-blank (@18-@24, Wren's death). hook-0017 (Norren false-attribution) + hook-0019 (harbor Black-faction contact) close book-end-open by design (the @14 protected expulsion-ambiguity + the Dance-ignition war-map; resolving either = forbidden substantive add).
+- MISSED-CALLBACK: 0. Every prior element (Wren-frame @11/@18, Otto/Jarvis preamble+@5+@14, witch-label preamble, Khepri-shape-only @11/@24, east-of-water-gate @11) already on-page; Phase 8.5 coherence 0 weave_gaps.
+- STATE-DRIFT: 0. The c19-close baseline carried clean into the c20 climax.
+
+Consistent with the c14-c19 0-1-edit pattern; the upstream chain (Phase 8.5 coherence + the cold_read carry layer) wove every callback on-page, so no connective tissue needed.
+
+aggregate-state.md updated: through_chapter -> b01c20; 6 axes moved to LOCK close-states + capability 8.5->8.0 LOCKED; hook-0009/0018 paid@c20, hook-0017/0019 abandoned-book-end-open; Wren + Taylor last_appearance -> b01c20 (Wren dies / Taylor expelled-departed); 6 new world_state keys (Viserys dead / Dance ignited / Green succession complete / Flea Bottom burning / Green apparatus post-Taylor / Taylor expelled-departed); books[b01] archive appended (book-close = series-end; axis_state_at_close + open_hooks_at_close). 0 revision_layer entries added. Schema-validated (through_chapter monotonic; all 12 axes land on their series end_rank; paid_at/introduced_at ordering OK).
+
+VERDICT: PASS-THREAD. SERIES-TERMINAL — NO next chapter to gate. Book-close depth-pass cohort (pl-2026-06-05-c19-deptpass) remains the live gate before /and-review verdict b01 (independent of this pass).
