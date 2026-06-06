@@ -31,7 +31,12 @@ cohere_state:
   status: dismissed
   final_verdict: null   # FAIL-COHERE on record, but principal-accepted-with-notes per DEC-0108 (not converged, not held — explicit revise-dismissal on a finished+accepted book)
   closed_at: 2026-06-06T22:15:00Z
-  admin_process_critic: []   # Phase 7.5 dispatch fired async (process-critic); result logged on return
+  admin_process_critic:
+    - iteration: 0
+      verdict: OK-MERGED
+      proposal_id: PROP-0042
+      summary: "Sera payoff-weight finding merges into PROP-0042 (recurrence 3→4); /and-cohere working as designed; mandatory-before-verdict sequencing rejected; planning-time SOFT flag (PROP-0042) is the strictly-better fix. DEC-0109."
+      ts: 2026-06-06T22:30:00Z
   # Phase 3 triage: 1 of 2 load-bearing fails dropped as design-inherent/principal-accepted (DEC-0105).
   # DEC-0108: Phase 4 NOT fired. Sera-payoff drop recorded as SOFT pl-2026-06-06-cohere-001, folded into analysis.
   # Book stands as shipped (PASS-WITH-NOTES). Chain re-runnable on demand if analysis reveals material damage.
