@@ -10,6 +10,7 @@ Format per entry:
 
 ---
 
+[2026-06-06] DEC-0107 | "Next chapter" on a COMPLETE series (20/20 shipped, b01c20 SERIES-TERMINAL, verdict PASS-WITH-NOTES today) → ESCALATE to human for directional call (b02 / new project / cohere+postop / archive) | Do NOT auto-produce c21; report completion + surface menu; direction is a strategic-priorities human-only call.
 [2026-06-06] DEC-0106 | process-critic: /and-review verdict b01 PASS-WITH-NOTES (7-consecutive SHIPPED-WITH-CAVEATS c14-c20; PROP-0037 explicitly named by orchestrator-critic) → OK-MERGED-INTO PROP-0037 (evidence pre-authored at lines 5113-5122; recurrence_count confirmed 8) | Open proposal with same target + change_type; no new proposal class; book-close confirmation only; triage urgency shifts CRITICAL→GENERAL-PIPELINE-RULE.
 [2026-06-06] DEC-0105 | book-close: (A) depth-pass revise loop c14-c19 cohort before verdict vs. (B) accept pre-authorized Class-B caveat + run /and-review verdict b01 now → B | 300-540 dispatch cohort sweep is human-only spend territory; DEC-0099 pre-authorized cohort; verdict is the designated acceptance point; depth-pass available post-verdict if critic FAILs on this axis.
 [2026-06-06] DEC-0104 | process-critic: b01c20 Phase 9 SHIPPED-WITH-CAVEATS (7th consecutive Class-B; c14-c20 cohort COMPLETE) → OK-MERGED-INTO PROP-0037 (count 7->8; c20 evidence_ref appended) | All complaints map to DEC-0102 cold_read_risk_carry; no new class; central event recovered; CONTINUE=yes; cohort closed; PROP-0037 triage now CRITICAL before /and-review verdict b01.

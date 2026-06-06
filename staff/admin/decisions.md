@@ -7016,3 +7016,30 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0107 | 2026-06-06 | SLOW (user-proxy)
+
+question: Principal said "Next chapter." Series is COMPLETE (20/20 chapters shipped, b01c20 SERIES-TERMINAL, /and-review verdict b01 PASS-WITH-NOTES today). No "next chapter" exists in the pipeline. What do they actually want, and is there a sensible default to execute?
+
+context: Single-book series (book_count:1). All 20 chapters b01-c01 through b01-c20 on disk as terminal drafts. b01c20 is the designed series-terminal (Dance ignites, Flea Bottom burns, cost-bearer dies; d14 burn from series-trajectory.md). Chapter count 20 within declared 18-22 band. Book/series close-out verdict ran today: PASS-WITH-NOTES. Most recent commits: verdict + admin DEC-0105/0106 process-critic merges. "Next chapter" appears to be reflex/momentum at series close.
+
+options:
+  (a) Report completion, surface post-completion option menu — reversible, zero cost, pipeline-correct
+  (b) Extend series to b02 — irreversible architectural + scope change; requires reopening series structure (book_count:1, series designed to terminate at burn); human-only strategic priority call
+  (c) New project/series (/and-project) — irreversible new scope; human-only strategic priority
+  (d) Depth-pass / revise on existing late chapters — reversible; several open SOFT parking-lot items for Class-B back-third c14-c20 cohort; could execute without human input, but "which chapter(s)" is still a choice
+
+decision: Execute option (a) — report completion, surface the option menu. ESCALATE the directional question of what post-completion step the principal actually wants, because options (b)/(c)/(d-scoped) are each a strategic priority call that goals + methodology cannot resolve without the principal's direction. Do NOT auto-produce c21 (violates series-terminal design regardless of reflex phrasing).
+
+basis: goal:1 (pipeline correctness — c21 violates series-terminal design contract) + goal:2 (cost discipline — executing an irreversible scope extension on ambiguous phrasing is maximum-cost error) + methodology:human-only (strategic priorities + spend commitments) + methodology:3a (reversibility — option (a) is fully reversible; all alternatives are not)
+
+rationale: "Next chapter" against a series-terminal state has no pipeline-correct interpretation that produces a chapter. The default the caller proposed (report completion, do not auto-produce c21) is the only non-destructive answer and is clearly authorized by goal:1 + goal:2. The follow-on directional question (b02 vs. new project vs. cohere/postop vs. archive) is a strategic-priorities call per methodology §human-only — admin cannot rank those options without the principal's expressed intent. One human question costs less than any of the irreversible alternatives executed without authorization.
+
+trade-off: One human round-trip. Accepted: cost of proceeding on any of (b)/(c)/(d) without direction would either extend the series beyond its designed terminus or commit spend on depth-passes the principal may not want now.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
