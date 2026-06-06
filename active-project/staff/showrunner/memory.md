@@ -12522,6 +12522,24 @@ books:
           round_2_complete: true
           orchestrator_critic_verdict: SUCCESS   # 7/7 criteria; recommendation ship -> /and-stitch. Phase 5c SKIPPED (clean ACCEPT, no cap-burn/WARN).
           stitch_carries: ["signal-005 scene-A NI-silence -> /and-stitch Phase 4 voice-embodiment (VOICE-FIXABLE)", "chunk-cold-read SOFT escalation-in-kind enforcement target -> Phase 9 scores c20 different-in-kind from c14-c19", "DEC-0102 Class-B cold_read_risk_carry 1-5 -> Phase 8.5/9 (pre-authorized; SHIPPED-WITH-CAVEATS auto-promote on matching categories)"]
+        stitched: true
+        draft_file: active-project/draft/b01-c20.md
+        draft_words: 1042   # preamble 128 + body 914
+        coherence_review: {verdict: PASS, weave_gaps: 0, followability_breaks: 0, cold_read_risk_high: 0, central_event_muffle: NOT-MATERIALIZED, report: active-project/staff/reviews/coherence-b01-c20-2026-06-06.md}
+        cold_read:
+          read_at: 2026-06-06
+          verdict: SHIPPED-WITH-CAVEATS   # PASS-WITH-DEPTH-PASS-REQUIRED equivalent; completeness PASS (central event RECOVERED, continue=yes, jeopardy=yes — no Step 2 FAIL) + readability AIRLESS-leaning (pre-authorized Class-B). 7th consecutive Class-B (c14-c20). DEC-0102 coupling: all cold-reader negatives map to cold_read_risk_carry 1-4, NO new category -> ships terminal without re-asking principal.
+          recovered_summary: "A spymaster whose insect-surveillance map of the city becomes the blueprint for a coup and a citywide fire watches the one child they refused to track vanish in the blaze, then packs up and walks away."
+          intended_goal: "feed-signal loss from Wren's lanes as the recognition event (not a named loss); close on contempt complete, ledger accurate, nothing remaining to refuse"
+          continue: yes   # "barely yes" — wants to know if Wren is dead + what happens on the road
+          report_path: active-project/staff/reviews/coldread-b01c20-2026-06-06.md
+          staging_signals: 2   # finding-3-001 NEEDS-BEAT @8, finding-3-002 NEEDS-BEAT @27 — both non-spine, SIGNAL
+          staging_report_path: active-project/staff/reviews/staging-b01-c20-2026-06-06.md
+          signal_clusters: []   # no cluster fired (same-pattern<5, no adjacent-peak>=3, no axis-move>=3, no spine-staging-gap)
+          prose_rationale_audit: {count: 1, soft_block: false, finding: PROSE-RATIONALE-MUTE-b01c20s03n05}
+          readability_axis: {verdict: AIRLESS-LEANING, basis: "cold-reader: buried under heavy abstraction / does not land emotionally / barely-continue; pre-authorized Class-B per DEC-0102; central event RECOVERED so not a central-event AIRLESS FAIL; spine concrete per Phase 8.5 + Step 3 (0 spine-staging-gap)"}
+          depth_pass: {required: true, gates: book-close, note: "7th consecutive Class-B (c14-c20); depth-pass gated to BOOK-CLOSE (NOT a next-chapter blocker — c20 is series-terminal); resolve before /and-review verdict b01"}
+          stale_since: null
         chunk: |
           The Dance ignites. Viserys I dies. The Green faction moves within hours on the
           succession; the apparatus Taylor's intelligence has been feeding for months
