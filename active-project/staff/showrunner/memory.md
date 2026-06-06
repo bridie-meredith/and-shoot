@@ -1510,6 +1510,14 @@ books:
       recognition that the atonement was the repetition). The contempt arrives
       accurate and complete and without exit. The trades worked. The accuracy
       was the catastrophe.
+    orchestrator_critic_verdict:
+      ruling: PASS-WITH-NOTES
+      report_path: active-project/staff/reviews/verdict-b01-2026-06-06T04-08-37Z.md
+      verdict_at: 2026-06-06T04:08:37Z
+      stale_since: null
+      disposition_authority: DEC-0105   # Class-B cohort caveat accepted at this verdict (admin user-proxy)
+      notes_summary: "full 14-delta trajectory + settled cost-ledger delivered (strong substance); back-third Class-B cohort (c14-c20, 7 consecutive SHIPPED-WITH-CAVEATS) + Sera payoff-hole + unresolved SOFT card-slugs accepted as caveats of record"
+      open_hard_caveats: [pl-2026-06-04-002, pl-2026-06-04-c15-004, pl-2026-06-04-c16-001, pl-2026-06-05-c19-deptpass]   # accepted-as-caveat per DEC-0105, NOT cleared
     structure:
       chapter_count: 20
       # Rationale: midpoint of 18-22 hard-fenced range. Distribution: chapters 1-9 absorb
