@@ -1,0 +1,109 @@
+---
+report: cohere-audience
+persona: worm-canon-pedant
+book: b01
+range: all
+verdict: SUBSTANCE-FELT
+generated: 2026-06-06T215813Z
+source: active-project/staff/reviews/cohere-b01-all-20260606T215813Z.combined.md
+mode: cumulative cross-chapter read (20 chapters, single book)
+---
+
+# Worm Canon Pedant — cumulative cross-chapter read, b01 all (c01–c20)
+
+I read the whole stretch the way I read anything with the source open in the back of my head: looking for the line that breaks the rule and the place the rule quietly stops being a rule. I will say first what I do not usually say, because the cumulative case is the case worth making — the architecture holds across all twenty chapters, the fence holds across all twenty chapters, and the one reference that could have been a tribute act is handled with more discipline than the plan-stage chunks promised. This is not a piece that knows the wiki. This is a piece that understands the *mechanism* the wiki is a record of. That is the harder thing and it is the thing that earns the verdict.
+
+verdict: **SUBSTANCE-FELT**
+
+---
+
+## Axis 1 — Cross-chapter substance accumulation: COMPOUNDS (does not reset)
+
+The test I run on a 20-chapter arc is whether chapter N would read differently if you deleted chapters 1 through N-1. If each chapter resets, the deletion costs nothing. Here the deletion costs everything, and I can name the load-bearing chain.
+
+**The Khepri-architecture rebuild accumulates as physical coverage, not as asserted power.** Track the coverage radius as a single line across the book: c01 holds the feed at subsistence range, a quarter of capacity, paid for every morning ("the holding cost a quarter of me at the count's edge"). c02 establishes the 400-body ceiling and the dropout-as-bill mechanic ("I had not yet decided to push the range, and the dropout was already the bill for it"). c04 walks the count outward ward by ward — Hook, stitch-house frames, waste-middens, Roper's Court — and is explicit that this is *built over time by physical presence*, not a single broadcast: "a single read held across the four footprints together." c12 closes the fifth-ward circuit and returns "all five wards … the whole architecture returned simultaneous and complete." c18 opens "all of it at once … every node together," the fortnight at full density. c20 is the architecture running the war off her own catalogue. This is the capability arc the plan promised and it reads, at every step, as *surveillance architecture being assembled*, not power being inflated. The c12 full-circuit return only lands as a threshold because c02 paid for the ceiling and c04 paid for each ward. That is accumulation. A chapter-resetting piece could not have earned the c12 line.
+
+**Contempt-without-refusal is built as a *named distinction that sharpens*, not a repeated note.** This was the axis I watched most closely because it is the easiest to flatten into "she feels bad and keeps going" twenty times. It does not flatten. The progression is real: c07 is the Halvard argument *engaged and unresolved* — she stays, she pays the cost of staying, she does not rebut, the road-not-taken named and left available. c13 is where the word arrives: "The word was contempt. Not resentment." And the chapter does the work of *distinguishing the two* — "Resentment is diffuse; resentment files as temperament … This was a verdict about quality." c16 escalates correctly: she does not suppress recognition, she *forecloses Halvard as its external mirror* — "I turned. Not away from the argument — away from the man." c19 locks the final shape: "The contempt does not go into the accounting. It comes to rest … alongside the line and never the line itself, the way a person's name stays in a count after the body it belonged to is dead." c20 carries that exact image to the terminal page. The contempt does not merely recur — it gets a name (c13), gets a structural position relative to the ledger (c19), and the position is held to the end. That is a compounding moral object, not a reset.
+
+**The cost-bearer arc — Wren and the un-priced ledger item — is the spine, and it is the cleanest accumulation in the book.** This is where a lesser piece resets and this piece does not. The mechanism is laid down as a single unbroken thread: c01 plants Wren as a smell-and-a-look not filed in the ledger ("the same fold where I kept the things that did not enter the ledger"). c04 is the first explicit *omission*: "she would not be written down." c09 indexes her route as waypoints — "a thing with waypoints is no longer a body that happens to be in range." c11/c12 hold the eastern gap open *on purpose* and name it as the load-bearing unwritten cost — "the boundary was load-bearing now, and the thing that held it had never been priced." c17 is the irrevocable move: she fabricates Norren's entries to screen Wren, and the chapter names exactly what that is — "the shape I had carried the refusal of across into this place — smaller in count, identical in kind." c20 pays the bill: the smoke disperses the insects in the one gap she kept open, the feed returns nothing, "the one position I never costed was the position the calculus walked into." That is the un-priced item being paid, by the architecture, in the exact location she protected. It lands because seventeen chapters built the gap. This is the strongest structural achievement of the book and it is pure accumulation.
+
+**The terminal burn earns itself.** c20's "the catalogue I built is about to become the war's map" is not a sudden tonal jump — it is the discharge of a charge laid in across the whole book. The "atonement-as-repetition" frame I accepted at plan stage delivers in prose: the architecture outlasts the architect, the decommission message "named a function and decommissioned it; no person was addressed," and the network is absorbed into the apparatus's. She is set down the way she set down others. The c18 line "the more weight I carried in the work, the more cleanly I could be set down when the work was done" is the disposal-calculus stated before it executes in c20. That is a plant and a payoff across two chapters. The moral trajectory does not just accumulate toward the burn — the burn is the accounting closing on its own keeper, which is the Taylor-true ending.
+
+Cross-chapter on this axis: **COMPOUNDS.** No reset detected. The four claimed substances all build.
+
+---
+
+## Axis 2 — Threshold discipline (cumulative): HOLDS across all twenty chapters
+
+This is my persona-specific gate and it is where I expected to find the leak, because twenty chapters is a long time to hold a noun fence. It holds.
+
+**Earth-Bet proper-noun fence — CLEAN across all 20.** Zero parahuman jargon anywhere. No "shard," no "Manton," no "Endbringer," no "cape," no "trigger event," no "Brockton Bay," no character names from canon spoken or thought. The capability is carried entirely in functional descriptive language that a Westerosi-embedded narrator would actually use: "the feed," "the count," "compound eyes," "the network," "the architecture," "the coverage map," insects/flies/beetles/blowfly/bottlefly/moth by ordinary names. The dialogue is even cleaner — Jarvis, Halvard, Oswyn, the agent never produce a single anachronistic term; Halvard's whole counter-argument is rendered in period-plausible moral idiom ("a thing built crooked doesn't come straight because you lean on it gently"). The fence is not just respected per-chapter; it does not *erode* cumulatively, which is the harder test. By c18–c20, when the prose is at maximum density and would most tempt a jargon-shortcut to convey scale, it still reaches for "the configuration changed from a thing I carried to a thing that held the city." No leak.
+
+**Khepri / Gold Morning reference — DISCIPLINED, and tighter in prose than the plan promised.** I flagged at plan stage a once-per-chapter analytical-comparison ceiling and watched whether it would accumulate into mythologizing. It does not. The word "Khepri" appears *nowhere in the prose* — the plan chunks named it; the rendered text never does. Every reference to the prior life is held at *deliberate namelessness*, which is the correct register for a narrator suppressing it: c02 "from another accounting under another architecture"; c12 "the shape of the thing I did when the world was ending, the one this rhymes with … built in a different city"; c14 "a war whose dates I carry and do not say aloud"; c17 "The work I had built once at scale and named the thing I would not do again"; c18 "the count ran past the number I had reached once before, in a different architecture, in a different place, for reasons that did not hold"; c19 "a different accounting in a different place"; c20 "a shape I had stood inside before … in a different place for reasons that did not hold." This is the *opposite* of a leak. The suppression is willful and consistent, and the refusal to name "Gold Morning" or "Khepri" even in inner monologue is exactly the once-rare-and-deflected discipline the fence asks for. I note specifically that the plan-stage worry about a literal "covering bodies in numbers she has not tracked since Gold Morning" line (which I'd accepted as a once-per-book functional density reference) was rendered even *more* conservatively — c18 gives "a size I had held in my hand before" and "the count ran past the number I had reached once before." The named-Gold-Morning reference was dropped in favor of namelessness. That is a tightening, not a regression. No flag.
+
+**Dormant magic / KL court layer — HOLDS.** The rule is rumor-permitted, not narrator-confirmed. The witch-label is the test and it is handled correctly throughout: c01 Oswyn "composing a category" he has no word for yet; the label forms from *observable evidence only* (she knew without touching, moved the crowd with no visible mechanism) — no Worm-internal logic is required of or available to the Flea Bottom witnesses, so there is no lore-leak vector. c12 "the word these streets keep for women like me … I know the word. I let the placement stand anyway." c19 the witch-label has reached the service-layers and cost her a contact. c20 "the name they put to the witch-woman who maps Flea Bottom." At no point does the narrator confirm magic; the label is consistently *other people's superstition adhering to an unexplained capability*, which is precisely rumor-permitted-not-confirmed. The court layer (Aemond, Vhagar, Otto, Sera, the Dance, Rhaenyra at Dragonstone) is all mundane-political; no dormant-magic claim is ever narrator-asserted. Holds cumulatively.
+
+Cross-chapter on this axis: **HOLDS.** No single chapter trips the fence and no leak accumulates across the twenty. This is the strongest fence-discipline I have read in this project.
+
+---
+
+## Axis 3 — Rule-coherence: COHERENT (no unacknowledged break)
+
+I tracked the established in-world rules across all twenty and looked for the contradiction nobody acknowledges. I found none that breaks. The mechanics are *consistent with themselves and with Worm physics*.
+
+- **Apparatus mechanics (range / ceiling / cost).** The 400-body ceiling set in c02 is never silently exceeded by a single broadcast deployment — the expansion is always physical, ward-by-ward, presence-built (c04, c12, c18). The dropout-as-bill mechanic (c02) recurs consistently. The full-density fortnight in c18 is the *aggregate of built nodes*, not a range-inflation. No 400m+ single-radius deployment. Consistent. Worm-correct: this is how the swarm actually scales — coverage built by physical insect distribution, not a magic radius.
+
+- **The Vhagar thermal-backwash (c15) — the single most technically demanding canonicity test in the book — PASSES.** The mechanism as rendered: Vhagar's resting mass radiates heat into the eastern-slope stone; the warm stone radiates into the gutter-flies; the flies "labored in the changed air" and dropped image-resolution at the fringe; the backwash made the eastern *gap* (which she keeps deliberately blank for Wren) perceptible by contrast — "the feed-noise framed the gap the way a lit wall frames a shadow." This is correct insect-network physics. Thermal and pressure events degrade biological sensory relay at the affected boundary — consistent with fire/blast disruption of Taylor's feed in canon. The "negative shape" perception is also correct: she reads feed *texture* as well as content, so a consistently empty zone adjacent to disrupted-but-present coverage reads as structured absence. No range inflation, no cross-shard interaction, no mythology. And critically, c15 explicitly cross-references c14: "the channel had found the architecture on its own, last chapter, from the far side." That is the rule being *built on*, not contradicted. Clean.
+
+- **Insect-feed capability (read-not-direct fence).** The c01 crowd-clearing is instinctive deployment under threat (canon-true: Taylor cannot fully suppress when a life is on the line) and is correctly framed as the gap propagating *outward from the child* — c01 "The nearest dozen bodies yielded. The gap propagated outward." This is the directionality the plan-stage soft-watch flagged, and it is rendered correctly: insects move perimeter bodies *away*, not bodies *toward* the child. The override-architecture fence is respected. After c01, the capability is *read-only* until the protection deployments (c17, c20) — and those are *insect-network screening / coverage at single-person scale*, never coordination of human bodies. The multi-shard hijack fence is clean across all twenty: she never controls a person. The thing the apparatus does to bodies, she does to bodies *only through information*, never through bodily override. That distinction is the whole moral engine and it never slips.
+
+- **The Otto arrangement (the channel logic).** The escalation is monotonic and acknowledged at each step: c03 proposal (patterns, frequency hers, routed through Jarvis); c04 acceptance with the two-change modification (patterns not persons, interval/volume hers); c06 the first form-break (names asked, the four ward-elders — and the prose *marks* it as a break: "It did not ask for movement-patterns … It asked for names"); c10 the arrangement named outright as an ongoing function, deniability spent; c18 the full-scale fortnight call. The Sera-consideration (protection bought by deliverables) is consistent from c03 through c20 and is correctly the lever that distinguishes the two roads at every withhold-or-deliver fork (explicit at c14 "only Sera's guarantee turns on which path I take" and c17). No silent change to the arrangement's terms. The decommission in c20 — by a channel the arrangement never used, naming a function not a person — is consistent with an apparatus that always treated her as an instrument. Coherent.
+
+- **The ledger logic (un-priced-item discipline).** This is the rule the book is *about*, and it is enforced with total consistency. The blank source-field / un-entered cost is rendered the same way every time: the hand comes up off the surface before the field is filled (c11, c12, c15, c17, c19). The c15 relational-anchor weight that I flagged at plan stage as a null-anchor soft finding — resolved: the c12→c15 gap-mechanism chain anchors it (the eastern gap held for Wren is the cost that the c15 backwash makes perceptible; the weight is earned by the architecture's own logic, not free-floating). The terminal c20 discharge ("the one position I never costed was the position the calculus walked into") is the ledger logic completing on itself. No rule break.
+
+Cross-chapter on this axis: **COHERENT.** No established rule is broken without acknowledgment. Where a rule is built on across chapters (c14→c15 the both-ends channel; c12→c20 the gap), the building is explicit.
+
+---
+
+## Per-axis call (chapter-referenced)
+
+| Axis | Call | Key evidence |
+|------|------|--------------|
+| Substance accumulation (does it compound to the burn?) | **COMPOUNDS** | coverage arc c01→c02→c04→c12→c18→c20; contempt-distinction c07→c13→c16→c19→c20; Wren-spine c01→c04→c09→c11/12→c17→c20; disposal-calculus plant c18 → payoff c20 |
+| Threshold discipline — Earth-Bet noun fence | **HOLDS (clean)** | zero parahuman jargon in 20ch; functional register sustained at max density c18–c20 |
+| Threshold discipline — Khepri/Gold Morning | **HOLDS (tightened)** | nameless deflection every instance c02/c12/c14/c17/c18/c19/c20; plan-stage literal "Gold Morning" line rendered as "a size I had held in my hand before" c18 |
+| Threshold discipline — dormant-magic/court layer | **HOLDS** | witch-label always observable-evidence-only / superstition-adhering, never narrator-confirmed c01/c12/c19/c20 |
+| Rule-coherence — apparatus/range/ceiling | **COHERENT** | 400-ceiling never silently broken; expansion always physical c02/c04/c12/c18 |
+| Rule-coherence — Vhagar backwash (hardest test) | **COHERENT** | correct biological-relay disruption + contrast-gap perception, no range/mythology; c14→c15 cross-ref explicit |
+| Rule-coherence — read-not-direct / multi-shard fence | **COHERENT (clean)** | no human-body override anywhere; protection = information-screening only c17/c20 |
+| Rule-coherence — Otto arrangement | **COHERENT** | monotonic acknowledged escalation c03→c04→c06→c10→c18; Sera-lever consistent throughout |
+| Rule-coherence — ledger / un-priced item | **COHERENT** | identical blank-field gesture c11/c12/c15/c17/c19; null-anchor soft finding resolved by c12→c15 chain; terminal discharge c20 |
+
+---
+
+## Findings
+
+**hard_findings:** none. Nothing blocks.
+
+**soft_findings:**
+- **c07 Halvard-encounter tether-gain (carried forward from plan stage):** at plan review I flagged the social_tether-prot-rise through the Halvard argument as the weakest tether-beat in the book, prose burden high — it had to read as *tether-building* rather than just conversation. Cumulative verdict: the burden is *met but barely*. c07 reads as genuine engagement that deepens her embedding in the precinct's moral fabric (she stays, she pays the cost of staying, the argument becomes a recurring fixture across c13/c16). It works because it *recurs* — the c07 conversation is load-bearing precisely because Halvard comes back. In isolation c07 is the softest chapter; in the cumulative read it is justified by what it sets up. Downgrade to closed-on-accumulation. No action required.
+- **No new soft findings surfaced in the cumulative read.** The plan-stage b01c15 null cost_ledger_anchor finding is confirmed RESOLVED in prose (the c12 gap-mechanism is the anchor and it is explicitly the same mechanism that makes the c15 backwash perceptible).
+
+**canonicity_findings:**
+- Aemond at twelve with Vhagar, sapphire/blue stone in the left socket (c08 names him twelve; c15 "the blue stone in the left socket") — within the HotD framework for a post-eye-loss, post-Driftmark Aemond; behavioral characterization ("the boy accommodated the master-at-arms the way an animal accommodates weather," the oversized reach trained for a body not on the court, the world adjusting to his reset) is HotD-consistent for the boy-with-the-largest-dragon. No flag. (Minor note for the record, not a finding: c08 narration gives "twelve years old," c15 narration gives "twelve" — internally consistent. The plan chunks at one point said thirteen; the prose settled on twelve consistently. The prose's internal consistency is what I gate on, and it is consistent.)
+- Rhaenyra/Dragonstone kept at correct remove throughout (cloth-merchant burn c11, the merchant's flight c14, the Black-faction inferences) — never on-page, never directly contacted, structural pressure only. Correct distance for a book where Rhaenyra is force, not actor. No flag.
+- The Dance / succession timing (c20 the old king dying, the apparatus pre-positioned, the catalogue becoming the war's map) is consistent with a pre-Dance King's Landing under a still-living Viserys with Otto dismissed-but-working. No timeline contradiction. No flag.
+
+**fatigue check:** not triggered. The error-count never reached the threshold where I stop tracking emotionally and read at arm's length. I tracked this one to the end as a piece that knows what it is doing.
+
+---
+
+## Notes
+
+The cumulative case is stronger than any single chapter. The three structural high points hold from the plan through to prose: c06 (the four ward-elder names dispatched while Wren's field stays blank — the un-priced shadow made structurally visible), c12 (the eastern gap made load-bearing, the never-named older shape held for one count and closed without it), and c20 (the feed-signal loss in the one gap she protected — the un-priced item paid by the architecture in the exact place she kept open). Those three are the spine and they are correctly spaced — opening, mid, terminal — so the burn at c20 is the discharge of a charge laid across the whole book.
+
+What I will say that I do not usually say: the discipline on the prior-life reference is *better than the plan*. The plan named Khepri and Gold Morning; the prose refuses both and holds the suppression in nameless deflection at every instance. That is the harder and more correct choice for a narrator who has built her whole identity on not-doing the thing again, and the text understood that. The track-worn-into-stone image at c19, the "different place, for reasons that did not hold" refrain — these are a piece that grasps the residue without mythologizing it.
+
+The atonement-as-repetition frame is Taylor-true and it delivers: she does the accounting accurately, prices each exception, and the ledger itself is the catastrophe. She is not wrong about the trades. She is wrong about the frame. That is canon, and the twenty chapters earn the right to end on it.
+
+**Verdict: SUBSTANCE-FELT.** Compounds across the book, fence holds cumulatively, rules cohere. No block.

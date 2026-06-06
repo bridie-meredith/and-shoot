@@ -2771,3 +2771,38 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-06-06-cohere-001
+      created_at: 2026-06-06T22:00:00Z
+      created_by: "/and-review cohere b01 all (dramatist promise/payoff REVISE)"
+      label: sera-payoff-weight-drop-whole-book
+      target:
+        command: /and-write
+        scope: "b01c03"
+        phase: null
+      severity: SOFT
+      description: |
+        Whole-book cohere (FAIL-COHERE) load-bearing finding on the dramatist promise/payoff axis,
+        surviving Phase 3 triage as the one item NOT already principal-accepted at book scope.
+        Sera Hightower is the entire cost-justification of the Otto arrangement (introduced c03,
+        the court-tier [protect-target] whose quiet Taylor buys) but the reader never feels her
+        weight: she never appears as a person, her threat is never staged, and the c20 decommission
+        does not confirm she was protected. The moral engine's human face reads as a ledger entry.
+        DISTINCT from the on-page non-naming, which is BY DESIGN (pl-2026-05-28-002, verified c05 —
+        Taylor never articulates the Sera-link; it lives at the facet layer). This finding is at the
+        reader-reception / whole-book payoff layer, not the on-page-articulation layer. Secondary:
+        Norren's c17 false-attribution consequence is deferred-then-unpaid (series-HOLD / book-DROP).
+        NOTE: the book is complete + shipped + verdict-PASSED (PASS-WITH-NOTES) + Class-B cohort
+        accepted at DEC-0105. Fixing this requires a substantive revise mutating finished drafts
+        (c03 establish + c20 confirm at minimum). Fire-vs-defer decision routed to principal per
+        Rule 13; NOT auto-fired by /and-cohere Phase 4. Recorded primarily as analysis input.
+      context_refs:
+        - active-project/staff/reviews/cohere-b01-all-20260606T215813Z.md
+        - active-project/staff/reviews/cohere-dramatist-b01-all-20260606T215813Z.md
+        - active-project/staff/showrunner/parking-lot.md  # pl-2026-05-28-002 (on-page non-naming = design)
+        - staff/admin/decisions.md  # DEC-0105 (book-close Class-B cohort acceptance)
+      resolution_suggestion: "principal decision: (a) accept as documented structural note on a finished book (fold into analysis); or (b) /and-write b01c03 revise --from-signals + c20 + re-cascade to add Sera reader-facing weight (substantive; mutates shipped drafts)"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
