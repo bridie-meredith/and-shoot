@@ -1,8 +1,7 @@
 ---
 name: prop-account-book
 class: prop
-scope: both
-project: and-experiment
+scope: library
 world: planetos
 portability: portable
 origin: authored

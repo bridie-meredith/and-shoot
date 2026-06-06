@@ -165,7 +165,7 @@ No existing files overwritten. INDEX.md is a net-new file. The seven docs were r
 
 ### Session scope
 
-Principal directive: "more cards" — build the triaged subset of cultivation-library candidate cards that are genuinely card-worthy (real on-page objects + load-bearing world-state). Source material: seven cultivation-library docs + existing warehouse cards for consistency. Schema authority: `schemas/card.schema.md`. All cards are project-scoped; stored in `and-experiment/warehouse/`. No library promotions (same rationale as `saerys-septa` precedent — these are and-experiment-specific).
+Principal directive: "more cards" — build the triaged subset of cultivation-library candidate cards that are genuinely card-worthy (real on-page objects + load-bearing world-state). Source material: seven cultivation-library docs + existing warehouse cards for consistency. Schema authority: `schemas/card.schema.md`. All cards initially stored `scope: project` in `and-experiment/warehouse/`. **Promoted to `scope: both` on 2026-06-06** — see library-promotion pass entry. Library copies now live in `cards/<class>/`.
 
 ### Cards authored this session
 
@@ -196,7 +196,7 @@ Principal directive: "more cards" — build the triaged subset of cultivation-li
 
 ### Index updates
 
-No library index updates — all cards are project-scoped. No promotions to `cards/` library executed.
+No library index updates at initial authoring — all cards were project-scoped at the time. **Updated on 2026-06-06 promotion pass** — see library-promotion pass entry for full index update log.
 
 ### Validation pass
 
@@ -343,6 +343,81 @@ All six stored project-bound at `and-experiment/persona-exemplars/<slug>.md`. No
 ### Preservation
 
 All six exemplars are net-new files. No existing persona cards, behavior cards, or warehouse files modified. The saerys-targaryen exemplar at `and-experiment/persona-exemplars/saerys-targaryen.md` was read for format reference only; not modified.
+
+---
+
+## Library-promotion pass: 2026-06-06
+
+### Standing policy (new — record for future card work)
+
+**Cards authored for and-experiment default to `scope: both`** — a library copy in `cards/<class>/` PLUS a project working copy in `and-experiment/warehouse/` (or `and-experiment/persona-exemplars/` for exemplars). Exceptions only when a card genuinely cannot have a library home (e.g. an exemplar whose persona has no library card, such as `saerys-septa`). This matches how persona + behavior cards were already stored. Effective 2026-06-06 per principal directive.
+
+### Cards promoted this pass (7 cards + 6 exemplars)
+
+#### Props (project → library)
+
+| slug | class | project copy scope update | library path |
+|------|-------|---------------------------|--------------|
+| prop-dose-log | prop | `scope: project` → `scope: both` | `cards/props/prop-dose-log.card.md` |
+| prop-harwins-list | prop | `scope: project` → `scope: both` | `cards/props/prop-harwins-list.card.md` |
+| prop-account-book | prop | `scope: project` → `scope: both` | `cards/props/prop-account-book.card.md` |
+
+#### Location (project → library)
+
+| slug | class | project copy scope update | library path |
+|------|-------|---------------------------|--------------|
+| loc-still-room | location | `scope: project` → `scope: both` | `cards/locations/loc-still-room.card.md` |
+
+#### Conditions (project → library)
+
+| slug | class | project copy scope update | library path |
+|------|-------|---------------------------|--------------|
+| cond-inferior-path-doctrine | condition | `scope: project` → `scope: both` | `cards/conditions/cond-inferior-path-doctrine.card.md` |
+| cond-westerosi-poison-pharmacology | condition | `scope: project` → `scope: both` | `cards/conditions/cond-westerosi-poison-pharmacology.card.md` |
+| cond-transmigration-previous-life | condition | `scope: project` → `scope: both` | `cards/conditions/cond-transmigration-previous-life.card.md` |
+
+#### Persona-exemplars (project-bound → library-promoted)
+
+| slug | persona-ref | project path | library path |
+|------|-------------|--------------|--------------|
+| saerys-targaryen | saerys-targaryen | `and-experiment/persona-exemplars/saerys-targaryen.md` | `cards/persona-exemplars/saerys-targaryen.md` |
+| viserys-i-targaryen | viserys-i-targaryen | `and-experiment/persona-exemplars/viserys-i-targaryen.md` | `cards/persona-exemplars/viserys-i-targaryen.md` |
+| helaena-targaryen-122ac | helaena-targaryen-122ac | `and-experiment/persona-exemplars/helaena-targaryen-122ac.md` | `cards/persona-exemplars/helaena-targaryen-122ac.md` |
+| daenys-velaryon | daenys-velaryon | `and-experiment/persona-exemplars/daenys-velaryon.md` | `cards/persona-exemplars/daenys-velaryon.md` |
+| ser-harwin-the-patient | ser-harwin-the-patient | `and-experiment/persona-exemplars/ser-harwin-the-patient.md` | `cards/persona-exemplars/ser-harwin-the-patient.md` |
+| nymeria-summer-isles | nymeria-summer-isles | `and-experiment/persona-exemplars/nymeria-summer-isles.md` | `cards/persona-exemplars/nymeria-summer-isles.md` |
+
+#### Not promoted
+
+| slug | reason |
+|------|--------|
+| saerys-septa (exemplar) | persona `saerys-septa` is a project-only OC with no library card; exemplar has no library home; stays at `and-experiment/persona-exemplars/saerys-septa.md` permanently unless persona is promoted |
+
+### Library-copy discipline applied
+
+- Props: all three library copies have `scope: library`; `project:` field omitted (not project-scoped). `references:` entries are all library-resident cards so no stripping was needed.
+- Location: library copy has `scope: library`; `project:` field omitted. References to `loc-red-keep-interior`, `saerys-targaryen`, `prop-account-book`, `prop-dose-log`, `cond-inferior-path-doctrine` are all library-resident; no stripping needed.
+- Conditions: library copies have `scope: library`; `project:` field omitted. `cond-inferior-path-doctrine` library copy strips the `and-experiment/design/` cross-references from the project copy (those pointed at cultivation-library design docs that are project-scoped); the project-copy references those docs by path; the library copy relies on its own body text and the card's substance only.
+- Exemplars: library copies are identical to project copies (no project-specific scene content in the exemplar bodies; fences cover content isolation). Project copies remain at `and-experiment/persona-exemplars/` as working copies.
+
+### Index updates
+
+- `cards/props/INDEX.md` — added `prop-dose-log`, `prop-harwins-list`, `prop-account-book` to `by_world/planetos`, `by_quality/full`, `by_type/portable`.
+- `cards/locations/INDEX.md` — added `loc-still-room` to `by_world/planetos` and `by_quality/full`.
+- `cards/conditions/INDEX.md` — added `cond-inferior-path-doctrine`, `cond-westerosi-poison-pharmacology`, `cond-transmigration-previous-life` to `by_world/planetos`, `by_quality/full`, and appropriate `by_type` categories (`protagonist-rules` for doctrine + transmigration; `lore-ambient` for pharmacology).
+- `cards/persona-exemplars/INDEX.md` — added new "Impersonator exemplars — library (planetos / and-experiment cast)" section with all six promoted exemplars + saerys-targaryen; collapsed project-bound section to saerys-septa only with clear non-promotion rationale; updated coverage notes; recorded standing policy.
+
+### Validation
+
+All library copies validated against their respective schemas:
+- 3 prop cards: `class: prop`, `scope: library`, `portability:` set, all required body sections present (Physical Description, Affordances / Uses, Sensory Hooks, Portability, Carry State, Functional State). PASS.
+- 1 location card: `class: location`, `scope: library`, all required sections present (Geography, Layout, Sensory Vocabulary, Fixed Props, Exits, Hazards, Ambient Interruption Hooks). PASS.
+- 3 condition cards: `class: condition`, `scope: library`, all required sections present (Description, Sensory Impact, Duration, Interaction Notes). PASS.
+- 6 exemplars: `class: persona-exemplar`, `persona-ref` resolves to existing library cards, `dispatch-status: active`, lengths within 150-350 range, fences declared, no `excluded-by`/`excluded-reason` needed. PASS.
+
+### Preservation
+
+All library copies are net-new files. Project copies were edited only at the `scope:` field (one line each). No destructive overwrites. Exemplar project copies untouched (library copies are additions, not replacements).
 
 ---
 

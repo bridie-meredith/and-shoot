@@ -1,8 +1,7 @@
 ---
 name: cond-transmigration-previous-life
 class: condition
-scope: both
-project: and-experiment
+scope: library
 world: planetos
 origin: authored
 quality: full
@@ -23,7 +22,7 @@ The foundational event. What she died doing. What carried over. The wound the ar
 
 ## Description
 
-Saerys Targaryen is a meta-transmigrator of the specific sub-type documented in `cultivation-metagenre-roots-and-archetypes.md § Part I`: a person who died in the previous world having read cultivation novels extensively, and who was reborn (or had their soul transmigrated) into Westeros with that genre-knowledge intact. Her cheat — the transmigrator's golden finger — is a comprehensive archive of cultivation-fiction knowledge that is internally consistent, technically sophisticated, and entirely inapplicable to the rules of the world she now inhabits.
+Saerys Targaryen is a meta-transmigrator of the specific sub-type documented in cultivation-fiction metagenre: a person who died in the previous world having read cultivation novels extensively, and who was reborn (or had their soul transmigrated) into Westeros with that genre-knowledge intact. Her cheat — the transmigrator's golden finger — is a comprehensive archive of cultivation-fiction knowledge that is internally consistent, technically sophisticated, and entirely inapplicable to the rules of the world she now inhabits.
 
 Her previous life is not a resource. It is a wound that arrived already closed.
 
@@ -50,7 +49,7 @@ The "floor" detail is not sentimentalized. It is a data-point. It confirms that 
 
 ## What Carried Over
 
-**The archive:** The complete working knowledge of cultivation-fiction conventions — realm ladders, sect structures, pill grades, artifact classifications, the heartless dao, the detachment doctrine, the body-tempering paths, the gluttony path, the demonic-path taxonomy, standard tropes, anti-tropes, the face-slap structure, the ring-grandpa mechanic, the dao-companion archetype. Every document in `and-experiment/design/cultivation-library/` exists because she carried this archive into Westeros and has been implementing it there.
+**The archive:** The complete working knowledge of cultivation-fiction conventions — realm ladders, sect structures, pill grades, artifact classifications, the heartless dao, the detachment doctrine, the body-tempering paths, the gluttony path, the demonic-path taxonomy, standard tropes, anti-tropes, the face-slap structure, the ring-grandpa mechanic, the dao-companion archetype. Every document in the cultivation library exists because she carried this archive into Westeros and has been implementing it there.
 
 **The golden finger is a library of incorrect maps.** Other transmigrators arrive knowing the plot of the novel they've entered. She arrived knowing the plot and the power system and the valuable herbs of a *different genre*. Every time the golden finger fires, it misfires. The comedy is the precision of the misfire; the tragedy is that she is genuinely trying to use the only equipment she has.
 
@@ -66,7 +65,7 @@ The "floor" detail is not sentimentalized. It is a data-point. It confirms that 
 
 **The armor's specific shape:** She does not grieve the previous life. She references it as context. The references are never dwelling. "Before my current cultivation journey" is the longest she goes. She does not miss the previous world. She does not wonder about the people in it. She does not try to recover anything she lost. This is not suppression — it is the genuine structure of someone for whom the genre was already doing the emotional management before the death occurred. The fiction had already told her that nothing from the previous life would follow her. Nothing did. This was not a surprise. The surprise would have been the opposite.
 
-**The relevant quote from the metagenre document:** *"She arrived already knowing this because she arrived already severed. The genre gave her the words for what she had already done to herself."* This is the precise architecture. The heartless-dao doctrine is not something she learned in the new world and applied to manage grief. It is the doctrine she arrived with — the template that fit because she had already practiced it on the most extreme case available.
+**The relevant architectural reading:** *"She arrived already knowing this because she arrived already severed. The genre gave her the words for what she had already done to herself."* This is the precise architecture. The heartless-dao doctrine is not something she learned in the new world and applied to manage grief. It is the doctrine she arrived with — the template that fit because she had already practiced it on the most extreme case available.
 
 ---
 

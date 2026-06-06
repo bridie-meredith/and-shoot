@@ -74,6 +74,9 @@ planetos:
   - condition-swarm-in-foreign-ecology
   - condition-targaryen-claim-disputed
   - condition-war-of-five-kings-riverlands
+  - cond-inferior-path-doctrine [and-experiment; saerys-keyed]
+  - cond-westerosi-poison-pharmacology [and-experiment; saerys-keyed]
+  - cond-transmigration-previous-life [and-experiment; saerys-keyed]
 
 tombstoned:
   - cond-reincarnation-rules  [superseded_by: cond-reincarnation-mechanics]
@@ -150,6 +153,9 @@ full:
   - condition-swarm-in-foreign-ecology
   - condition-targaryen-claim-disputed
   - condition-war-of-five-kings-riverlands
+  - cond-inferior-path-doctrine [and-experiment; saerys-keyed]
+  - cond-westerosi-poison-pharmacology [and-experiment; saerys-keyed]
+  - cond-transmigration-previous-life [and-experiment; saerys-keyed]
 
 ---
 
@@ -251,6 +257,8 @@ protagonist-rules:
   - cond-fauna-control-rules-125ac-addendum
   - cond-flicker-discipline-mirror [project: mirror-tragedy]
   - cond-shard-deposit-mechanics-mirror [project: mirror-tragedy]
+  - cond-inferior-path-doctrine [and-experiment; saerys-keyed]
+  - cond-transmigration-previous-life [and-experiment; saerys-keyed]
 
 tone-law:
   - cond-taylor-pov-behavior [project: taylor-westeros-good-intentions]
@@ -293,6 +301,7 @@ lore-ambient:
   - cond-kl-witch-label-formation [project: mirror-tragedy]
   - cond-dance-faction-state-previserys [project: mirror-tragedy]
   - cond-dragon-bonding-claiming-rules [project: mirror-tragedy]
+  - cond-westerosi-poison-pharmacology [and-experiment; saerys-keyed]
 
 structural-chain:
   - cond-road-to-hell-chain-shape [project: taylor-westeros-good-intentions]

@@ -1,8 +1,7 @@
 ---
 name: cond-inferior-path-doctrine
 class: condition
-scope: both
-project: and-experiment
+scope: library
 world: planetos
 origin: authored
 quality: full
@@ -21,8 +20,6 @@ The codified cosmology as Saerys Targaryen believes it. The cultivation-register
 
 **Hard fence:** this entire document describes *her belief*. It is not the truth of the story's world. The real-state column (labeled clearly below) is what is actually occurring. The broken clock stays broken.
 
-**Cross-reference for depth:** `and-experiment/design/cultivation-library/cultivation-genre-reference.md` (realm ladder, alchemy, tropes, moral axes, detachment doctrine), `cultivation-types-methods-phenomenology.md` (paths, body tempering, gluttony path), `cultivation-metagenre-roots-and-archetypes.md` (transmigrator frame, previous-life wound, no-system condition).
-
 ---
 
 ## Description
@@ -33,7 +30,7 @@ A complete subjective cosmology built by Saerys Targaryen from her previous life
 
 ## The Realm Ladder (Her Version)
 
-She uses the canonical cultivation realm ladder (from `cultivation-genre-reference.md`) with project-specific mappings:
+She uses the canonical cultivation realm ladder with project-specific mappings:
 
 | Her realm name | Her claim | What is actually happening |
 |---|---|---|

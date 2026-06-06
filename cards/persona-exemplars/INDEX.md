@@ -12,6 +12,17 @@ Margit-maintained index. One row per exemplar. Schema: `schemas/persona-exemplar
 | dark-fantasy-reader | dark-fantasy-reader | high (generic grimdark battlefield aftermath) | claude (2026-05-26) | active |
 | worm-canon-pedant | worm-canon-pedant | high (generic Worm-fic with Lisa + Travelers OC) | claude (2026-05-26) | active |
 
+## Impersonator exemplars — library (planetos / and-experiment cast)
+
+| slug | persona-ref | content-match | authored-by | dispatch-status |
+|------|-------------|---------------|-------------|-----------------|
+| saerys-targaryen | saerys-targaryen | high (Red Keep still-room, accounting and reagent narration, Book I register) | claude (2026-06-06) | active |
+| viserys-i-targaryen | viserys-i-targaryen | high (small council anteroom, receiving steward's report on household expenditures) | claude (2026-06-06) | active |
+| helaena-targaryen-122ac | helaena-targaryen-122ac | high (Red Keep gardens, cataloguing a specimen while a companion describes recent events) | claude (2026-06-06) | active |
+| daenys-velaryon | daenys-velaryon | high (harbor district, discussing a plan; companion offers cosmological rationale) | claude (2026-06-06) | active |
+| ser-harwin-the-patient | ser-harwin-the-patient | high (household corridor, end of a day that has produced a new list item) | claude (2026-06-06) | active |
+| nymeria-summer-isles | nymeria-summer-isles | high (ship's deck, dawn, discussing previous port's events) | claude (2026-06-06) | active |
+
 ## Impersonator exemplars — active-project (taylor-westeros-good-intentions)
 
 | slug | persona-ref | content-match | authored-by | dispatch-status |
@@ -42,18 +53,13 @@ Margit-maintained index. One row per exemplar. Schema: `schemas/persona-exemplar
 
 ---
 
-## Impersonator exemplars — project-bound (and-experiment)
+## Impersonator exemplars — project-bound (and-experiment; cannot promote)
 
-| slug | persona-ref | content-match | authored-by | dispatch-status |
-|------|-------------|---------------|-------------|-----------------|
-| viserys-i-targaryen | viserys-i-targaryen | high (small council anteroom, receiving steward's report on household expenditures) | claude (2026-06-06) | active |
-| helaena-targaryen-122ac | helaena-targaryen-122ac | high (Red Keep gardens, cataloguing a specimen while a companion describes recent events) | claude (2026-06-06) | active |
-| daenys-velaryon | daenys-velaryon | high (harbor district, discussing a plan; companion offers cosmological rationale) | claude (2026-06-06) | active |
-| ser-harwin-the-patient | ser-harwin-the-patient | high (household corridor, end of a day that has produced a new list item) | claude (2026-06-06) | active |
-| nymeria-summer-isles | nymeria-summer-isles | high (ship's deck, dawn, discussing previous port's events) | claude (2026-06-06) | active |
-| saerys-septa | saerys-septa | high (household consultation room, septa delivering incident report to steward) | claude (2026-06-06) | active |
+| slug | persona-ref | content-match | authored-by | dispatch-status | note |
+|------|-------------|---------------|-------------|-----------------|------|
+| saerys-septa | saerys-septa | high (household consultation room, septa delivering incident report to steward) | claude (2026-06-06) | active | project-only OC; no library persona card; exemplar cannot promote |
 
-All six stored at `and-experiment/persona-exemplars/<slug>.md` (project-bound; not library-promoted; consistent with saerys-targaryen precedent).
+Stored at `and-experiment/persona-exemplars/saerys-septa.md`. The persona card `saerys-septa` is a project-scoped OC (no library card) so this exemplar has no library home and stays project-bound permanently unless/until the persona is promoted.
 
 ---
 
@@ -61,6 +67,7 @@ All six stored at `and-experiment/persona-exemplars/<slug>.md` (project-bound; n
 
 - **Audience trio (3/3):** complete for the active-project audience selection. Library has 22 audience personas total; remaining 19 are uncovered. Author on demand when those personas activate in a project.
 - **Active-project impersonators (11/11):** complete for taylor-westeros-good-intentions cast. Other active-project actors that get added in revisions will need exemplars authored at /and-cast Phase 4.
-- **and-experiment impersonators (7/7 — saerys + six supporting cast):** complete. All seven stored project-bound at `and-experiment/persona-exemplars/`. Deferred flags from 2026-06-05 build session cleared.
+- **and-experiment impersonators (7/7 — saerys + six supporting cast):** 6/7 promoted to library as of 2026-06-06. `saerys-septa` remains project-bound (project-only OC). Library copies at `cards/persona-exemplars/<slug>.md` for saerys-targaryen, viserys-i-targaryen, helaena-targaryen-122ac, daenys-velaryon, ser-harwin-the-patient, nymeria-summer-isles. Project copies at `and-experiment/persona-exemplars/<slug>.md` remain as working copies.
 - **Library personas without active-project use:** uncovered. Author on demand.
 - **Voice exemplars:** one library entry (Robinson). Author additional library entries as voice registers become recurrent across projects; project-bound overrides live in `active-project/voice-exemplar.md`.
+- **Standing policy (2026-06-06):** cards authored for and-experiment default to `scope: both` with a library copy in `cards/<class>/`, unless a card genuinely cannot have a library home (e.g. an exemplar whose persona has no library card).

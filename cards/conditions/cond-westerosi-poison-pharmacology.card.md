@@ -1,8 +1,7 @@
 ---
 name: cond-westerosi-poison-pharmacology
 class: condition
-scope: both
-project: and-experiment
+scope: library
 world: planetos
 origin: authored
 quality: full
@@ -17,8 +16,6 @@ references:
 The real pharmacology of the substances Saerys works with. World-truth: what these things actually do, how mithridatism actually works, what she has actually built. The broken clock depends on this being accurate — prose must keep the pharmacology consistent across scenes so that the broken-clock comedy lands precisely and the Book III payoff (dose-log as evidence; legitimate ring) is earned.
 
 **Hard fence:** this card records actual mechanisms, not Saerys's cultivation-register framing. The two-column format below shows her framing alongside the real state, but the real state is the authoritative column for prose consistency. When her cultivation-register calls something a "Tier 1 Water-attribute qi-disruptor," the actual pharmacological mechanism in this card is what the scene must honor.
-
-**Cross-reference:** `and-experiment/design/cultivation-library/westeros-alchemy-substances-mystica.md` § The Poison Catalogue and § Part II for extended coverage of each substance and three-register cross-map. `cultivation-types-methods-phenomenology.md` § Part I.2 (Poison Cultivation) and § Part III (body tempering deep-dive) for the mithridatism genre-frame. This card consolidates the prose-production-critical subset.
 
 ---
 

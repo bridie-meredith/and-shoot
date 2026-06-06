@@ -1,8 +1,7 @@
 ---
 name: loc-still-room
 class: location
-scope: both
-project: and-experiment
+scope: library
 world: planetos
 origin: authored
 quality: full
