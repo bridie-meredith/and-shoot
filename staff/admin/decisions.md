@@ -7345,6 +7345,107 @@ methodology-update-proposed: no
 
 ---
 
+## DEC-0114 | 2026-06-07 | SLOW (user-proxy)
+
+question: |
+  Four disposition questions for a finalize-&-export pass on completed Book 1 (taylor-westeros-good-intentions,
+  20 chapters, ~23k words, verdict-PASS-WITH-NOTES, accepted Class-B caveats):
+  (1) TRIM AGGRESSIVENESS: (a) conservative / (b) moderate voice-preserving / (c) aggressive de-density
+  (2) EDITING MECHANISM: editor agent on a derived export COPY vs. re-cascading canonical draft/ + bones chain
+  (3) COMPLETED-WORKS DIR NAME: `completed-works/` with per-work subdir
+  (4) EXPORT FORMAT: Markdown + .txt (no pandoc) vs. .docx requirement
+
+context: |
+  Book is SERIES-TERMINAL, verdict-PASS-WITH-NOTES (DEC-0105/DEC-0106). Back-third cold-reads
+  logged AIRLESS as DESIGN-INHERENT across DEC-0060/0062/0066/0072/0074/0078/0085/0087/0090/0094/
+  0096/0098/0100/0101/0102/0104. Class-B caveats accepted at book-close. Principal just authorized
+  a terminal export-polish pass — "take existing best drafts and review, edit, revise, polish, format
+  to docs." This is an explicit terminal export, not a per-chapter chain re-run. Principal also
+  authorized archive of active-project to projects/ and harvest of new personas/exemplars to card
+  library. No pandoc installed. Principal's standard posture: lean architecture, cost discipline,
+  preserve signed-off design decisions.
+
+options:
+  Q1: (a) conservative (cut true redundancy only; preserve all density)
+      (b) moderate (cut redundancy + compress independently-flagged airless stretches; keep cold ledger voice)
+      (c) aggressive (de-density for accessibility)
+  Q2: (A) editor on export COPY — derived terminal artifact, canonical draft/ + bones unchanged
+      (B) update canonical per-chapter drafts too (would require chain re-cascade to keep bones/facets coherent)
+  Q3: `completed-works/` dir proposed
+  Q4: Markdown + .txt via Google Docs paste-from-Markdown; or .docx requiring pandoc install
+
+decision: |
+  Q1: (b) MODERATE — trim redundancy + compress draggiest independently-flagged stretches; never flatten
+      the cold ledger voice or touch design-inherent density that upstream gates pre-authorized.
+  Q2: Option (A) — editor operates on the export COPY only. Canonical draft/ and bones are untouched.
+      The export is a derived terminal artifact. No re-cascade.
+  Q3: `completed-works/` confirmed. Subdir: `completed-works/taylor-westeros-good-intentions/`.
+  Q4: Markdown + .txt is acceptable. No .docx required. Google Docs paste-from-Markdown is the delivery
+      mechanism.
+
+basis: |
+  Q1: methodology:3a (reversibility — moderate is the only reversible path: conservative risks
+      shipping flagged drag, aggressive risks overwriting accepted design decisions; only moderate
+      is scoped to independently-evidenced findings); DEC-0058 (principal explicitly ruled
+      "residual airlessness is contract-origin" and endorsed the cold-utilitarian voice — aggressive
+      de-density would reverse that ruling); DEC-0048/DEC-0066/DEC-0085 chain (AIRLESS as Class-B
+      pre-authorized — trim only what cold-readers independently flag as drag, never the
+      design-inherent density).
+  Q2: methodology:3a (reversibility) + methodology:3b (cost) + goal:1 (pipeline correctness —
+      re-cascading 20 chapters to keep bones/facets coherent with export-level edits is a ~600+
+      dispatch commitment; the export is a derived artifact, not the canonical source of truth).
+      methodology §human-only (spend commitments past routine) further blocks option (B) without
+      explicit principal authorization of a full 20-chapter re-cascade.
+  Q3: methodology:3e (convention — no prior completed-works dir exists; `completed-works/` is
+      the most obvious naming convention for a top-level per-project archive of finished books).
+      goal:4 (lean architecture — no added abstraction).
+  Q4: methodology:3b (cost — pandoc install is unnecessary friction; Google Docs paste-from-Markdown
+      meets the stated need of "docs-ready" without toolchain changes); methodology:3d (optionality —
+      Markdown + .txt is more universally portable than .docx; the principal can convert later if needed).
+
+rationale: |
+  Q1: The critical constraint is DEC-0058 — the principal already ruled that "residual airlessness
+  is contract-origin (offstage victims + no-choice thesis + ledger register)" and that "the accuracy
+  is the catastrophe." Aggressive de-density would undo that ruling on the export artifact. Conservative
+  risks shipping the specific drag stretches the cold-readers independently flagged (Class-B caveats
+  were accepted on substance grounds, not as a blanket license on every slow passage). Moderate is
+  the only option scoped to the actual finding: cut what is actually redundant or independently
+  evidenced as drag, and leave the design-inherent cold density alone. "Independently flagged" =
+  multiple cold-read forks concur, not a single reviewer objection.
+
+  Q2: The export is a new derived artifact — it is not the canonical draft/. The canonical draft/
+  + theater/ are the source of truth per project architecture. Re-cascading 20 chapters to sync
+  bones/facets/state with export-level edits would be ~600+ dispatches for a book already
+  verdict-PASS-WITH-NOTES; this falls squarely in methodology §human-only spend territory. There
+  is no architectural requirement that the export be bones-coherent — it is a reader-facing document,
+  not a pipeline artifact. Option (A) keeps the chains clean and the export as a separate product.
+
+  Q3: No prior ruling; `completed-works/` is unambiguous and matches the stated intent ("completed
+  works from any project"). Subdir per project is the correct structure for multi-project use.
+
+  Q4: The stated use case is "paste into Google Docs." Markdown paste-from-Markdown satisfies that
+  directly. Pandoc would add a toolchain dependency for no improvement in the delivery scenario
+  described.
+
+trade-off: |
+  Q1: Moderate trim may occasionally compress a passage that would have been accepted as pure design-
+      inherent density. Mitigation: trim rule requires independent cold-reader convergence, not single-
+      reviewer flag. Low false-positive risk.
+  Q2: The export will have editorial changes the canonical draft/ does not reflect. This creates a
+      divergence between the export artifact and the bones-tracked source. Accepted: the export is
+      explicitly declared as a "derived terminal artifact" — the bones remain authoritative for any
+      future re-runs or archive work; the export is the reader-facing product.
+  Q3: None meaningful.
+  Q4: No .docx. If the principal later needs .docx for a publisher submission or similar, pandoc
+      can be installed then. Deferred, not foreclosed.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
 ## DEC-0113 | 2026-06-07 | FAST (user-proxy)
 
 question: Sera arc revision (c03 + c20): full re-cascade through /and-facets + /and-stitch, or surgical re-stitch of affected passages only?

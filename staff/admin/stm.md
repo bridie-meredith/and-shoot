@@ -10,6 +10,7 @@ Format per entry:
 
 ---
 
+[2026-06-07] DEC-0114 | Export-pass dispositions (4 Qs): trim=(b) moderate voice-preserving; mechanism=(A) editor on export COPY only (no re-cascade); dir=`completed-works/taylor-westeros-good-intentions/`; format=Markdown+.txt (no .docx/pandoc) | DEC-0058 governs trim ceiling; ~600d re-cascade blocked by methodology §human-only; `completed-works/` matches stated intent; paste-from-Markdown meets the doc need.
 [2026-06-07] DEC-0113 | Sera arc revision c03+c20: full re-cascade vs. surgical re-stitch → (b) surgical re-stitch | DEC-0065 controlling; ~5 vs ~35 dispatches; fence-threading is stitch-layer judgment; (a) displaces theater/ working state + out-of-order archival risk; proportionality rules.
 [2026-06-07] DEC-0112 | "begin revisions" after b01 consolidation — fire Sera queue now vs. confirm-first → (c) present manuscript + queue, confirm target before firing | methodology:3a+3b+§human-only: 140-180 dispatches irreversible on shipped drafts; "begin revisions" un-defers DEC-0108 posture but does NOT name Sera as first target; one turn confirm cheaper than wrong-order spend.
 [2026-06-07] DEC-0111 | STRUCT-025: exposition facet references nonexistent rubric-exposition.md → (b) de-reference: edit and-facets.md item 10 to name real authority sources (schema §exposition + audience-gap test + context-ledger + glossed-terms.md); remove dead pointer | goal:2+4 + methodology:3a+3b — b01 SERIES-TERMINAL, no b02 authorized, no quality failure in 20 chapters; (a) is M-cost speculative authoring; (c) leaves dangling pointer unfixed.
