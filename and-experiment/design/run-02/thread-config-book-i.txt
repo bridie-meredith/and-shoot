@@ -1,0 +1,14 @@
+# thread-config-book-i.txt — exceptions/aliases for the re-fused run-02 Book-I outline
+# (book-i-outline.md). The outline carries forward-bridge stubs so most threads close in-file;
+# only genuine non-1:1 tokens are declared here.
+
+# --- aliases: the warm-spot bond fires as the Helaena gift->spend ---
+ALIAS HELAENA = GIFT:HELAENA
+ALIAS HELAENA+ = GIFT:HELAENA
+
+# --- plant-only: setups whose payoff is diffuse, not a discrete FIRE ---
+PLANT-ONLY BELOW-STAIRS        # the "little master" faction; ambient infrastructure
+PLANT-ONLY WARM                # I.4 rootability; sustains investment, paid against I.8 (no FIRE token)
+
+# --- payoff-only: guard/aggregate payoffs with no single plant ---
+PAYOFF-ONLY BROKEN-CLOCK-A     # I.6 wildfire-shard: the genuine ring that isn't funny

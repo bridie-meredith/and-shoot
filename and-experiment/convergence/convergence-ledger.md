@@ -211,3 +211,191 @@ calibrate the first-pest beat.
 `and-experiment/design/convergence-process.md`. **CONVERGENCE COMPLETE.**
 
 **Open knob:** the Cauldron-Belly's in-world name (working: "Heavenly Demon Cauldron-Belly").
+
+---
+
+## Round 4 — run-02 principal enrichment (chapter-note revision; CHAPTER I.1)
+
+*Process: post-convergence principal enrichment per `design/convergence-process.md` §Notes — ratify
++ GUARDS + scoped integration, NOT a re-open. Working surface: `design/run-02/book-i-state-ledger.md`
+(staging layer; the ★ accepted outline above is preserved untouched until a re-fuse). Re-axis frame:
+`design/restructured-books-two-desires.md`.*
+
+**Principal note (I.1 rewrite):** the egg is NOT given dead. Saerys is a dying reincarnated infant
+(mind/brain incompatibility, seizures); her mother Alicent slips her a *living* dragon egg without
+the King's blessing to save her life; feeling the warm egg + clocking impossible silver/purple
+physiognomy she deduces a magical world and tries to cultivate; can't sense energy, needs a baseline;
+mimics the egg (fails), tries to ingest it (can't), chips a fragment with a smuggled toy and swallows
+it (a real flicker, gone fast); discovers sympathetic resonance (a chip + her blood stands for the
+whole); it takes — a formless real frequency seeds in her; the egg goes cold (drained) and is taken;
+the infant lives, "touched in the head."
+
+**Ratifications (3 GUARDS — see ledger §Ratified premise changes):**
+- **GUARD-1 — cultivation is REAL but inert-to-the-world** (supersedes the broken-clock guard). The
+  energy is genuine but yields no martial/external/transferable/arena-relevant power; its only real
+  products are her own durability/slow un-aging + an appetite; it fires only on genuinely-magical
+  materials; mithridatism stays mundane and *masks* the real durability. She's right it's real, wrong
+  about everything else. Plot power stays poison+logistics+paper; cultivation never saves anyone she
+  loves; the un-aging makes the ending meta-question literal, not resolved. *(A mix of "it works" +
+  "it's delusion" per the principal.)*
+- **GUARD-2 — inciting inversion re-framed heal→fuel** (supersedes pray→desecrate; the FROZEN opener).
+  Same gesture (living/sacred thing → fuel for the self) carried one inch further — she drains a
+  *living* beast. III.5 frame-rhyme updated (one living beast → a sky of dead ones).
+- **GUARD-3 — curdle R0 stays a laugh at the time.** Egg drained dead, but staged so neither infant
+  nor reader registers a kill (adults read a dud = canon dragonless); horror is retroactive after III.5.
+
+**Six-criteria scoped re-validation (do they still hold? — judgment pass; full dramatist/audience
+re-validation deferred to re-fuse):** Structure ✔ (NOTE re-homed to I.1 aftermath, not orphaned; new
+plants SYMPATHETIC-RESONANCE + REINCARNATION-SICKNESS scheduled). Drama ✔↑ (death-refusal now literal
+from frame one; GIFT:VISERYS gains a real tender hook — addresses residual-risk #4). Comedy ✔
+(register held SPIKE; ordinary "tempering" still does nothing = antics stay funny). Theme ✔↑ (real
+un-aging makes "will the immortal come down" literal). Canon-fit ✔ (drained egg reads externally as a
+dud — canon dragonless; silver/purple read as "spiritual physiognomy," NOT named Targaryen — setting-
+blind intact). Rhymes ✔↑ (curdle R0 living→dead strengthens the III.5 apex; locks/gift→spend intact).
+
+**Status:** GUARD-1 supersedes a foundational fence — flagged to the next dramatist/audience re-
+validation and to `saerys-targaryen.card.md` §Hard Fences #3 (to be updated at promotion). Integration
+staged in the run-02 ledger (CL-001); the ★ accepted outline is unchanged pending a re-fuse.
+
+---
+
+## Round 5 — run-02 principal enrichment (era + cultivation; CL-002)
+
+*Process: post-convergence principal enrichment per `design/convergence-process.md` §Notes (ratify +
+GUARDS + scoped integration, NOT a re-open). New authority file: `design/run-02/timeline-and-family-
+tree.md`. The ★ accepted outline above is preserved untouched pending a re-fuse.*
+
+**Principal note:** (a) **Era → Jaehaerys I's reign.** "Jaehaerys and Alicent" = the royal couple:
+**Jaehaerys = King + Saerys's father** (the warm cage), **Alicent = Queen + mother**. **Viserys**
+demoted to a young **nephew** ("less of a deal at that time"). (b) **Cultivation works.** Magic /
+blood magic / dragon-and-fire magic are real. No ambient qi to farm, but **objects, people, and some
+substances radiate** it; internalizing + refining **tempers the body**; she *could* fight / spend
+energy for "crazy effects," but expenditure slows the already-slow growth, so she **hoards it
+internal**; her blood-medium founding + living sources make her an **unintentional blood-cultivator**.
+
+**Ratifications:**
+- **GUARD-1 rev-2** (supersedes rev-1 "real-but-inert" and the original broken-clock): cultivation is
+  **real, powerful, hoarded by choice, and framework-wrong**. She's right it's real, wrong about WHAT
+  it is (a past-life xianxia model — dao/realms/tribulations — laid over canon blood/fire/death
+  magic; she gains despite mis-modeling). The "never martial" fence becomes **non-combatant by
+  choice** (capacity real and growing; restraint is economics + blood-magic secrecy). Plot power
+  still poison + logistics + paper; she never fights on the page; longevity makes the ending
+  meta-question literal.
+- **GUARD-4** (era + family tree fixed): Jaehaerys I reign; Saerys b. ~84 AC; Book I 84–93 AC;
+  Jaehaerys d. 103 AC; Dance 129 AC. AU divergence flagged explicitly: Alicent stands where canon
+  has Alysanne; Helaena recast as Saerys's sister; Viserys/Aemond/Otto demoted/recast.
+
+**Six-criteria scoped re-validation (judgment pass; full dramatist/audience re-validation deferred to
+re-fuse):** Structure ✔ (new tokens BLOOD-PATH scheduled; father-king spend re-homed Viserys→
+Jaehaerys, not orphaned). Drama ✔↑ (real power + abhorred-blood-magic secrecy adds genuine stakes;
+the longevity-to-the-Dance option deepens the immortality tragedy). Comedy ✔ (broken clock survives
+as framework-error; mundane "tempering" still fails, magical items faintly work). Theme ✔↑ (real
+un-aging → "will the immortal come down" fully literal). Canon-fit ✔ with one declared AU pivot
+(Alicent↔Alysanne); dates pinned against Fire & Blood; Saerys stays setting-blind. Rhymes ✔ (curdle
+ladder now her *actual* cultivation path: drains living things to grow; III.5 dragon-blood feast is
+the apex).
+
+**Open structural fork (flagged for principal):** series end-date — **Dance 129 AC (recommended;**
+Saerys ~45 but unaged, III.5 = a battlefield of dragon-corpses) vs a tighter AU dragon-death ~110s.
+This is the only genuinely-open call from this round.
+
+**Status:** GUARD-1 rev-2 supersedes a foundational fence (again) — flagged to the next dramatist/
+audience re-validation and to `saerys-targaryen.card.md` §Hard Fences (to update at promotion).
+Integration staged in the run-02 ledger (CL-002) + the new timeline file; the ★ accepted outline is
+unchanged pending a re-fuse.
+
+---
+
+## Round 6 — run-02 principal enrichment (insert toddler chapter; CL-003)
+
+*Working surface: `design/run-02/book-i-state-ledger.md`. The ★ accepted outline keeps its 10-ch
+Book I numbering (frozen); run-02 Book I is now 11 chapters.*
+
+**Principal note:** infancy→age-6 is too big a jump ("halfway to adulthood in Westeros"). Add a
+**toddler-stage** chapter — a planned raid on the maester's pantry, structured **sight → plan →
+implement → reward**, ending on an **"oh shit"** breakthrough (uncontrolled, nearly fatal/exposing).
+
+**Integration:** inserted as **I.2 `the-pantry-heist`**; old run-02 I.2–I.10 renumbered +1 to
+I.3–I.11 (II./III. refs verified intact). Plants **HEIST-METHOD** (sight→plan→implement→reward — the
+three Locks I.11/II.10/III.10 now have a toddler origin) and **MAESTER-MARK** (pre-loads the I.3
+keystone sick-house takeover). Demonstrates the GUARD-1 rev-2 mechanic live (a magical source
+radiates among inert jars → ingest → real breakthrough). Sits **off the curdle ladder** (a stolen
+jar, no living victim — R0 egg stays first rung). Register SPIKE→CHILL — the *private* rehearsal of
+the I.6 furnace-sect *public* scare. Lands the toddler motor-comedy (DN-7) that the I.1 open item
+flagged.
+
+**Six-criteria (judgment pass):** Structure ✔↑ (fixes the age-gap; new spine thread HEIST-METHOD
+scheduled). Drama ✔↑ (breakthroughs now visibly have teeth + near-exposure stakes). Comedy ✔↑
+(immortal mind vs. traitorous baby hands running an Ocean's-Eleven op). Theme ✔ (RESOURCE/SOLITUDE
+desires both seeded in miniature). Canon-fit ✔ (toddler princess, maester's stores — all in-world).
+Rhymes ✔↑ (first heist → the three Locks).
+
+**Status:** no fence touched. Book I 11-ch divergence from the frozen baseline noted; final integer
+numbering settled at re-fuse.
+
+---
+
+## Round 7 — run-02 principal enrichment (step back from charity + retract blood-path; CL-004)
+
+*Working surface: `design/run-02/book-i-state-ledger.md` + `timeline-and-family-tree.md`.*
+
+**Principal note:** (a) **step back from charity** — she worries less about the masses she can't see
+(the "mortals" of a cultivation novel); no charity sick-house as her engine. (b) She keeps **chasing
+resources** — next targets **weirwood** and **pyromancers**, plus a broad **tour of materials** to
+find what registers. (c) **She is not a demonic cultivator — she does not cultivate people.**
+
+**Ratification — GUARD-1 rev-3 (supersedes rev-2's blood-path):** cultivation is real, powerful,
+hoarded by choice, framework-wrong, and fuelled by **magical objects + substances ONLY** (dragon
+eggs, weirwood, dragonglass, Valyrian steel, wildfire/pyromancer-craft, reagents). **People are never
+a source; she is never demonic/blood.** Her I.1 own-blood was a one-off sympathetic catalyst on an
+object, firewalled. Added to the hard fences: *materials-only / never-cultivates-people*. Her engine
+is re-cast as **acquisition** — an empirical materials-hunter, indifferent to smallfolk, forever
+chasing the next rarer reagent; her procurement network becomes the seed of the II.1 *reagent*
+multinational (a cleaner "she chose it").
+
+**Integration:** I.3 re-conceived `the-charitable-princess` → `the-collector-princess` (charity
+sick-house → workshop + procurement apparatus; same downstream instruments — LEDGER/FACTOR/
+BELOW-STAIRS/DOSE-LOG — re-homed onto materials-acquisition). Named targets land at I.5 (weirwood +
+materials tour) and I.6 (pyromancers/wildfire). I.1 BLOOD-PATH seed → ACQUISITION-DRIVE. Curdle
+ladder unaffected (it runs on cold poison-kills + consuming magical *creatures*, never people — the
+retraction cleans it up).
+
+**Flagged for principal (not silently changed):** the two charity-dependent warm beats — I.4
+laundress's-boy (WARM root + HINGE) and I.8 ward-child (R1 + GRIEF-REFUSAL → III.8). Recommend KEEP,
+re-homed off the charity ward to her household/workshop orbit; sits in mild friction with "indifferent
+to mortals" (resolved by framing it as the single exception that proves she's human, which she lies to
+herself about).
+
+**Six-criteria (judgment pass):** Structure ✔ (instruments preserved, re-homed; ACQUISITION-DRIVE
+scheduled). Drama ✔ (acquisitive-cold protagonist is sharper; warm-thread flagged to protect
+sympathy). Comedy ✔↑ (the assay/broken-clock — poisons that don't register — is good material).
+Theme ✔ (RESOURCE desire now the literal engine). Canon-fit ✔ (weirwood/pyromancers are canon
+magic; no demonic blood-magic needed). Rhymes ✔ (curdle intact; first-heist → Locks intact).
+
+**Status:** GUARD-1 superseded again (rev-2 → rev-3); one fence added. I.4/I.8 warm-thread re-home is
+the open call. Baseline ★ outline untouched.
+
+---
+
+## Round 8 — run-02 principal enrichment (no healing hand; CL-005)
+
+*Working surface: `design/run-02/book-i-outline.md` + `book-i-state-ledger.md` + `timeline-and-family-tree.md`.*
+
+**Principal note:** "no healing hand — that would require an external energy application." Correct
+catch: under GUARD-1 the power is **hoarded** (any expenditure sets back internal growth), so a
+magical heal is a *fence breach*, not a flavour option.
+
+**Ratification — GUARD-1 rev-3 strengthened:** **no external energy application of any kind, including
+NO magical healing.** Hoarding is absolute — no fighting, no healing, no outward effects on the page.
+Added to the hard fences. Any mending she ever does is **mundane apothecary craft** (medicine,
+antidotes, nursing), never cultivation.
+
+**Integration:** I.4 recast — the WARM root survives (she still can't let the one child in front of
+her die) but the save is mundane apothecary craft; the **HINGE** is recast from "healing-hand =
+killing-hand" to **"the craft cuts both ways"** (the same still-room knowledge that mended the boy is
+what quietly kills the pest at I.7). Mundane, rules-clean, and the I.7 curdle pivot is preserved. The
+PLANT[HINGE] I.4 → FIRE[HINGE→R2] I.7 token graph is unchanged → outline re-checked PASS. GUARD-2's
+"heal→fuel" (the egg given to save the infant) is a different sense and untouched.
+
+**Status:** no new structural change; a fence clarified + one motif de-magicked. Baseline ★ outline
+untouched.
