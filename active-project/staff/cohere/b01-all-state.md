@@ -34,9 +34,10 @@ cohere_state:
       result_ts: 2026-06-07T03:30:00Z
       result_note: "Sera confirm-leg DONE via surgical re-stitch (DEC-0113). Payoff decision (principal): OVERTAKEN BY EVENTS — three spare sentences woven into the c20 decommission paragraph: the arrangement's purpose (silence around a girl's parentage, held against a council that could rule on it) is moot because that council is filing into the junctions to take the crown; the question has nowhere left to be asked. Not kept, not broken — overtaken. No-accounting (sits outside the ledger mark); fence held (no motive, 'a girl's parentage' function-framed); minor-key and pre-Wren so it does not rival the Wren-blank climax. Re-cohere confirm next."
       result: PASS-SURGICAL
-  status: revising
-  final_verdict: null   # re-opened 2026-06-07 from dismissed (DEC-0108) per principal go on the Sera arc; executing the revise queue
-  closed_at: null
+  status: converged
+  final_verdict: PASS-COHERE   # Sera arc revised both legs (c03 establish + c20 confirm) + dramatist re-cohere ACCEPT (cohere-confirm-sera-20260607.md, no residue); naive-q6 was design-dropped at triage (DEC-0109); both load-bearing fails now resolved
+  closed_at: 2026-06-07T03:45:00Z
+  confirm_report: active-project/staff/reviews/cohere-confirm-sera-20260607.md
   admin_process_critic:
     - iteration: 0
       verdict: OK-MERGED

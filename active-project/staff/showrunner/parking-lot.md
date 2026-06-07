@@ -2805,10 +2805,10 @@ parking_lot:
         - active-project/staff/showrunner/parking-lot.md  # pl-2026-05-28-002 (on-page non-naming = design)
         - staff/admin/decisions.md  # DEC-0105 (book-close Class-B cohort acceptance)
       resolution_suggestion: "principal decision: (a) accept as documented structural note on a finished book (fold into analysis); or (b) /and-write b01c03 revise --from-signals + c20 + re-cascade to add Sera reader-facing weight (substantive; mutates shipped drafts)"
-      status: open
-      resolved_at: null
-      resolved_by: null
-      resolution_note: null
+      status: resolved
+      resolved_at: 2026-06-07T03:45:00Z
+      resolved_by: "surgical re-stitch (DEC-0113) — c03 establish-leg integrated to draft/b01-c03.md; confirmed ACCEPT by dramatist re-cohere (cohere-confirm-sera-20260607.md)"
+      resolution_note: "c03 cooper's-yard passage revised: Jarvis stages Sera's concrete fate (put out / record does not reopen) in courier register; Taylor's stakes-beat lands the human fact BARE (principal note 'no accounting' — ledger-framing removed); grounding beat (boy at hoop-stack) added; fence held (Taylor names no motive). Dramatist confirm Q1+Q4: reader-facing weight CLOSES, no residue."
 
     - id: pl-2026-06-06-cohere-002
       created_at: 2026-06-06T23:00:00Z
@@ -2840,10 +2840,10 @@ parking_lot:
         - active-project/staff/showrunner/parking-lot.md  # pl-2026-06-06-cohere-001 (establish-leg; this item is the confirm-leg)
         - staff/admin/decisions.md  # DEC-0108 (phase 4 fire-vs-defer — defer accepted; revise-dismissal on finished+accepted book)
       resolution_suggestion: "confirm-leg companion to pl-2026-06-06-cohere-001; only actionable jointly with that item if principal authorizes /and-write b01c03 + b01c20 revise + re-cascade"
-      status: open
-      resolved_at: null
-      resolved_by: null
-      resolution_note: null
+      status: resolved
+      resolved_at: 2026-06-07T03:45:00Z
+      resolved_by: "surgical re-stitch (DEC-0113) — c20 confirm-leg integrated to draft/b01-c20.md; confirmed ACCEPT by dramatist re-cohere (cohere-confirm-sera-20260607.md)"
+      resolution_note: "c20 decommission paragraph: payoff confirmed as OVERTAKEN BY EVENTS (principal decision) — the council that could rule on Sera's parentage is filing into the junctions to take the crown; the question has nowhere left to be asked. No-accounting, fence held, minor-key (pre-Wren). Dramatist confirm Q2+Q3: payoff lands + stays subordinate to Wren climax, CLOSES."
 
     - id: pl-2026-06-07-pipeline-001
       created_at: 2026-06-07T01:15:00Z
