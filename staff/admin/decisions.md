@@ -7187,6 +7187,89 @@ methodology-update-proposed: no
 
 ---
 
+## DEC-0110 | 2026-06-07 | SLOW (process-critic)
+
+mode: process-critic
+trigger:
+  reason: principal-initiated-retro
+  source_report: active-project/staff/auditor/cohere-b01-all-aggregate-audit.md
+  source_verdict: retro (session retrospective on the /and-cohere b01 all cycle, 2026-06-06)
+  gate_path: N/A (retro-initiated, not a gate-fired trigger)
+
+question: |
+  Formalize three process-change candidates from the /and-cohere b01 all session retro.
+  All share root cause TRUST-WITHOUT-VERIFY. Author as separate proposals or merge/reject
+  per the normal process-critic procedure.
+  (A) Subagent output-persistence check — dispatcher never checks that a contracted emit
+      artifact was actually written to disk; auditor returned findings in-message only,
+      file absent until principal reconstructed it.
+  (B) Post-async-agent shared-state read-back — admin DEC-0108 edit introduced a duplicate
+      YAML result: key into cohere-state; dispatcher committed without reading the diff.
+  (C) Pre-commit self-check on hand-authored aggregates — cohere aggregate shipped with
+      citation error (fault-001), self-contradictory parking-lot item (fault-004), and
+      systematic schema-id format drift (fault-003); all visible at authoring time.
+
+decision: |
+  PROCESS-CHANGE-PROPOSED PROP-0043 (Candidate A — subagent output-persistence check)
+  PROCESS-CHANGE-PROPOSED PROP-0044 (Candidate B — post-async-agent shared-state read-back)
+  PROCESS-CHANGE-PROPOSED PROP-0045 (Candidate C — pre-commit RECONCILE on hand-authored aggregates)
+
+basis: |
+  Step 1 (proposals log scan): Grepped for: output-persistence, existence-check, file emitter,
+  subagent write, emit verify (Candidate A); shared-state diff, async agent edit, YAML duplicate
+  (Candidate B); pre-commit, self-check, hand-authored, rollup audit, citation check, DEC citation
+  (Candidate C). No open proposal with matching target.path + change_type for any of the three.
+  No rejected proposal materially covering any of the three. No deferred proposal past its
+  defer_until. All three warrant new entries.
+
+  Step 2 (content vs. process): All three are process failures, not content failures:
+    (A) No gate exists for the dispatcher→filesystem persistence check class. The auditor's
+        in-message return was consumed as authoritative; the absent file would have been
+        permanent data loss at the next context window boundary. Gate absence: change_type add.
+        Target: CLAUDE.md §Rules (new Rule 19 — applies across all commands and dispatches).
+    (B) No rule requires the dispatcher to read-back shared state after async agent mutation.
+        The admin Edit/Write dispatch mutated cohere-state; the committed result had a duplicate
+        YAML key. Gate absence: change_type add. Target: CLAUDE.md §Rules (new Rule 20 — applies
+        wherever async agents have Edit/Write to shared state).
+    (C) No pre-commit self-check sub-step exists at /and-cohere Phase 3/4 or /and-review verdict.
+        Three simultaneously present defects (citation error, self-contradiction, schema-id drift)
+        all visible at authoring time. Gate absence: change_type add. Target: and-cohere.md Phase
+        3/4 (RECONCILE sub-step); secondary: and-review.md verdict subcommand.
+
+  Step 3 (first-occurrence overrides): All three propose at N=1. Override rationale per standard:
+    (A) Failure mode is silent data loss (permanent, no gate fires). Fix is trivially cheap (stat/ls).
+        First-occurrence hold does not apply under catastrophic/silent-loss conditions.
+    (B) Failure is silent (defect shipped committed). Fix is trivially cheap (read). Same rationale.
+    (C) Three defects simultaneously in one artifact (structural pattern, not isolated slip).
+        Fault-003 is systematic across 6 items (not a one-off). Fix is near-zero cost (read + assert).
+        Principal cited this explicitly as a formalization candidate in the retro dispatch.
+
+  Step 4 (methodology): All three: S or M cost, low blast radius, high reversibility, no
+  methodology contradiction. Cost estimates: A=S (one CLAUDE.md rule), B=S (one CLAUDE.md rule),
+  C=M (two command body edits: and-cohere.md + and-review.md). Ordered by value: A > B > C
+  (A closes the most dangerous class; B closes the next; C closes the authoring-discipline gap).
+
+rationale: |
+  Three structurally distinct TRUST-WITHOUT-VERIFY instances, each with a precise gate absence
+  and a cheap fix. Filing atomically as the dispatch requested: each covers a different
+  execution layer (dispatcher→filesystem, dispatcher→shared-state, author→aggregate-content)
+  and a different target file. No overlaps, no merges warranted. All three pass the standard
+  first-occurrence-override criteria for non-catastrophic-but-cheap-to-close gaps.
+
+trade-off: |
+  All three at N=1: cost is three triage decisions. Benefit is closing three silent-loss classes
+  before a second project begins. The alternative (hold for recurrence) risks a second instance
+  of silent data loss (A), a second defective committed state (B), or a continued pattern of
+  visible-at-authoring-time defects shipping to the auditor layer (C). All three costs exceed
+  one triage decision per proposal.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
 ## DEC-0108 | 2026-06-06 | SLOW (user-proxy)
 
 question: /and-cohere b01 all returned FAIL-COHERE. After Phase 3 triage, one actionable finding survives (Sera Hightower payoff-weight drop). Should I fire the Phase 4 revise queue on that one item — mutating finished, shipped drafts — or accept the book as cohesion-verified-with-documented-notes and fold the finding into the analysis the principal asked for next?
