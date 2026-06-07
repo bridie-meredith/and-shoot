@@ -1,5 +1,12 @@
 # Book I — State Ledger & Change-Propagation Instrument (run-02)
 
+> **CANONICAL BOOK-I STRUCTURE (re-fused 2026-06-07, CL-001→004) now lives in
+> `book-i-outline.md`** — a clean 11-chapter outline, thread-checked PASS against
+> `thread-config-book-i.txt`. *This ledger is retained as the change-history + state/blast-radius
+> working memory (the CL log, the GUARDS, the entity registry, the bridge). On any future note: edit
+> the ledger, then re-fuse into the outline.*
+
+
 **Purpose.** The working instrument for *revising* Book I. It tracks character-state and
 world-state at every chapter boundary, the causal threads (plant→fire, gift→spend, curdle
 rung), and the **blast radius** of each chapter (what downstream beats depend on it). When a
