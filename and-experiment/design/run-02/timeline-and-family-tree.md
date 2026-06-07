@@ -63,7 +63,7 @@ away.
 |---|---|---|
 | **Jaehaerys I** | the **King and Saerys's father** — the *warm cage*: a beloved, all-powerful, benevolent king = an inescapable golden cage (the SOLITUDE antagonist). Indulges the "miracle child." | Canon king of the era ✔; canon queen was **Alysanne**, not Alicent — **AU substitution**. |
 | **Alicent** | the **Queen and Saerys's mother**. Saves the dying infant with an unsanctioned egg (I.1); love curdles toward horror as the child returns "wrong" *(default — OPEN)*. | Canon: a Hightower, **Viserys I's** 2nd wife, mother of the Greens. Here moved up a generation + married to Jaehaerys. |
-| **Saerys Targaryen** | protagonist; trueborn princess; blood-cultivator-by-accident. | Original SI character. |
+| **Saerys Targaryen** | protagonist; trueborn princess; materials-cultivator (acquisitive, never demonic). | Original SI character. |
 | **Helaena** | Saerys's **younger sister**; warm-spot / riddle-twin → [Bk III: broken]. | Canon: Alicent's *daughter* (Viserys I's). Recast as Saerys's sister. |
 | **Viserys** | Saerys's **nephew** (son of her elder brother the crown prince) — a young, minor warm relation. *(DEFAULT; OPEN — principal offered brother / cousin / nephew.)* | Canon: Jaehaerys's *grandson*, the future Viserys I. Demoted from baseline's father-king role. |
 | **Aemond** | a young relative + **martial foil**: bonds a great dragon, takes the warrior path Saerys declines. | Canon: Alicent's son, claimed Vhagar (120 AC). Recast generic; drop Dance specifics. |
@@ -79,40 +79,50 @@ young "Viserys" keeps only a minor warm-relation function.
 
 ## 3. HOW magic works (the real rules — Saerys is partly wrong about them)
 
-Per the principal: **cultivation works.** This supersedes the earlier "real-but-inert" ruling.
+Per the principal: **cultivation works** (supersedes "real-but-inert"), but it is fuelled by
+**materials, not people** — she is **NOT** a blood / demonic cultivator (CL-004 retracts the
+rev-2 blood-path).
 
-1. **No ambient qi.** The atmosphere is nearly inert to her sense — there is no free energy to farm
-   from the air. (This is why she always needs *sources*, which drives the RESOURCE desire.)
-2. **Energy radiates from SOURCES.** Three kinds, all canon-magical:
-   - **Magical objects** — dragon eggs, Valyrian steel, dragonglass, weirwood.
-   - **Magical substances** — wildfire, dragon blood, and certain reagents.
-   - **Living beings** — people radiate life; **blood is concentrated life-radiance** (the richest
-     accessible source).
-   *Mundane matter is inert* (a plain rock, dung, an ordinary toy give nothing — preserves the
-   comedy of failed "tempering" antics).
-3. **Cultivation = internalize + refine.** She draws radiance into her body and refines it. Slow.
-   It **tempers the body**: durability, resilience, slow un-aging, eventually a superhuman frame.
-4. **It CAN be spent.** With technique she *could* externalize it — fight, throw fire, "crazy
+1. **No ambient qi.** The atmosphere is nearly inert to her sense — no free energy to farm from the
+   air. (This is why she always needs *sources*, which drives the RESOURCE desire — her whole life
+   is acquisition.)
+2. **Energy radiates from SOURCES — magical objects + magical substances ONLY:**
+   - **Magical objects** — dragon eggs, weirwood, dragonglass, Valyrian steel.
+   - **Magical substances** — wildfire and the pyromancers' fire-craft, dragon blood, and assorted
+     reagents.
+   - **NOT living people.** People are not a cultivation source for her. (Different magical
+     *traditions* — old-gods/green vs. fire vs. death — behave differently, a nuance she misfiles.)
+   *Mundane matter is inert* (a plain rock, dung, an ordinary toy give nothing — preserves the comedy
+   of failed "tempering" antics).
+3. **She does NOT cultivate people. Not demonic, not a blood-cultivator.** Her I.1 founding used a
+   smear of *her own* blood as a one-off sympathetic catalyst on an object — that is the extent of
+   "blood," and it is not a path. The line she will not cross is people; the curdle ladder runs on
+   her cold instrumentalism (killing with *poison*, consuming magical *creatures* like dragons), not
+   on harvesting human life.
+4. **Cultivation = internalize + refine.** She draws radiance from materials into her body and
+   refines it. Slow. It **tempers the body**: durability, resilience, slow un-aging, eventually a
+   superhuman frame.
+5. **It CAN be spent.** With technique she *could* externalize it — fight, throw fire, "crazy
    effects." **But spending sets back the slow internal growth.** So she **hoards**: keeps it
-   internal, maximizes accumulation, refuses expenditure. → She reads to the world as a
-   non-combatant. **The capacity is real and growing; the restraint is a choice, not a limit.**
-5. **Accidental blood-cultivator.** Her founding act used her own **blood** as the sympathetic
-   medium and drained a **living** source (I.1); her richest ongoing sources are living/blood
-   (people, the sick-house, eventually dragons). So without ever choosing the label she walks the
-   **blood-cultivation path** — which in Westeros is *abhorred* magic. **Secrecy is therefore also
-   survival**, not only modesty: a discovered blood-sorcerer-princess burns.
-6. **The new broken clock — right that it's real, wrong about WHAT it is.** She imports a past-life
+   internal. → She reads to the world as a non-combatant. **The capacity is real and growing; the
+   restraint is a choice, not a limit.**
+6. **Her drive is ACQUISITION.** An empirical materials-hunter: get a thing, test whether it
+   *registers*, log it, chase the next rarer one — indifferent to the smallfolk ("mortals," beneath
+   notice). Her procurement network is the seed of the II.1 reagent multinational. Named early
+   targets: **weirwood** (I.5) and the **pyromancers' wildfire** (I.6).
+7. **The broken clock — right that it's real, wrong about WHAT it is.** She imports a past-life
    **xianxia framework** (dao, realms, tribulations, meridians/dantian, "breakthroughs"). That model
-   is *wrong*: this world runs on canon **blood / fire / death magic**, not a cultivation ladder. She
-   gains power *despite* mis-modeling it — attributing to "realm breakthroughs" what is really
-   blood-magic accumulation. The dramatic irony shifts from "it's fake" (old clock) to "it's real,
-   but not the system she thinks." The comedy survives; the delusion survives; the gap survives.
+   is *wrong*: this world runs on canon **fire / death / old-gods magic**, not a cultivation ladder.
+   She gains power *despite* mis-modeling it (e.g. she ingests poisons expecting them to "register" —
+   they don't; she builds real mundane immunity and files it "tempering"). The dramatic irony shifts
+   from "it's fake" (old clock) to "it's real, but not the system she thinks."
 
 **What this preserves:** idiot-savant (genius at cultivation/poison/logistics, hopeless at the court
 arenas that decide her fate); the plot still runs on **poison + logistics + paper** (because she
 *deliberately* doesn't lean on flashy magic); she never throws fire on the page; the ending
-meta-question ("will the immortal come down") goes fully **literal**; the curdle ladder becomes the
-spine of her *actual* cultivation (she grows by draining living things), not a side effect.
+meta-question ("will the immortal come down") goes fully **literal**; the curdle ladder runs on her
+rising cold instrumentalism (killing with poison; consuming magical *creatures* — eggs, dragons —
+never people), not on harvesting human life.
 
 ---
 
@@ -121,8 +131,9 @@ spine of her *actual* cultivation (she grows by draining living things), not a s
 | Fence | Status after this ruling |
 |---|---|
 | setting-blind | **HELD** (unchanged — she never names Westeros/Targaryen). |
-| ~~never martial~~ → **non-combatant by choice** | **REVISED.** The capacity is real and could fight; she withholds it (hoarding economics + blood-magic secrecy). She still never fights on the page. |
-| ~~clock stays broken~~ → ~~real-but-inert~~ → **real-but-hoarded + framework-wrong** | **REVISED (GUARD-1 rev-2).** Magic is real and powerful; she's right it's real, wrong about the framework; she hoards it internal. |
+| ~~never martial~~ → **non-combatant by choice** | **REVISED.** The capacity is real and could fight; she withholds it (hoarding economics + staying unseen). She still never fights on the page. |
+| ~~clock stays broken~~ → ~~real-but-inert~~ → **real-but-hoarded + framework-wrong** | **REVISED (GUARD-1 rev-3).** Magic is real and powerful; she's right it's real, wrong about the framework; she hoards it internal. |
+| **materials-only — never cultivates people / never demonic** | **NEW (GUARD-1 rev-3, CL-004).** Sources are magical objects + substances; people are not fuel; the rev-2 blood-path is retracted. |
 | idiot-savant boundary | **HELD.** |
 | armor cracks exactly once (III.8) | **HELD.** |
 | no dragon | **HELD** (she bonds/rides none — she *ate* her egg; dragons are now fuel, not mounts). |
@@ -135,7 +146,7 @@ spine of her *actual* cultivation (she grows by draining living things), not a s
 real dragon-death event.
 
 - **RECOMMENDED — span to the Dance (129 AC).** Longevity is now explicit and load-bearing, so
-  Saerys reaching the Dance as a decades-old, unaged blood-cultivator is the strongest possible
+  Saerys reaching the Dance as a decades-old, unaged cultivator is the strongest possible
   payoff: the patient immortal who hoarded power all through the golden age is *there*, curdled and
   ancient-behind-a-young-face, when the dragons devour each other — and III.5 becomes her drinking a
   battlefield of dragon-corpses. Books II–III then cover the long quiet accumulation 93→129.

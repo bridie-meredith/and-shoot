@@ -332,3 +332,45 @@ Rhymes ✔↑ (first heist → the three Locks).
 
 **Status:** no fence touched. Book I 11-ch divergence from the frozen baseline noted; final integer
 numbering settled at re-fuse.
+
+---
+
+## Round 7 — run-02 principal enrichment (step back from charity + retract blood-path; CL-004)
+
+*Working surface: `design/run-02/book-i-state-ledger.md` + `timeline-and-family-tree.md`.*
+
+**Principal note:** (a) **step back from charity** — she worries less about the masses she can't see
+(the "mortals" of a cultivation novel); no charity sick-house as her engine. (b) She keeps **chasing
+resources** — next targets **weirwood** and **pyromancers**, plus a broad **tour of materials** to
+find what registers. (c) **She is not a demonic cultivator — she does not cultivate people.**
+
+**Ratification — GUARD-1 rev-3 (supersedes rev-2's blood-path):** cultivation is real, powerful,
+hoarded by choice, framework-wrong, and fuelled by **magical objects + substances ONLY** (dragon
+eggs, weirwood, dragonglass, Valyrian steel, wildfire/pyromancer-craft, reagents). **People are never
+a source; she is never demonic/blood.** Her I.1 own-blood was a one-off sympathetic catalyst on an
+object, firewalled. Added to the hard fences: *materials-only / never-cultivates-people*. Her engine
+is re-cast as **acquisition** — an empirical materials-hunter, indifferent to smallfolk, forever
+chasing the next rarer reagent; her procurement network becomes the seed of the II.1 *reagent*
+multinational (a cleaner "she chose it").
+
+**Integration:** I.3 re-conceived `the-charitable-princess` → `the-collector-princess` (charity
+sick-house → workshop + procurement apparatus; same downstream instruments — LEDGER/FACTOR/
+BELOW-STAIRS/DOSE-LOG — re-homed onto materials-acquisition). Named targets land at I.5 (weirwood +
+materials tour) and I.6 (pyromancers/wildfire). I.1 BLOOD-PATH seed → ACQUISITION-DRIVE. Curdle
+ladder unaffected (it runs on cold poison-kills + consuming magical *creatures*, never people — the
+retraction cleans it up).
+
+**Flagged for principal (not silently changed):** the two charity-dependent warm beats — I.4
+laundress's-boy (WARM root + HINGE) and I.8 ward-child (R1 + GRIEF-REFUSAL → III.8). Recommend KEEP,
+re-homed off the charity ward to her household/workshop orbit; sits in mild friction with "indifferent
+to mortals" (resolved by framing it as the single exception that proves she's human, which she lies to
+herself about).
+
+**Six-criteria (judgment pass):** Structure ✔ (instruments preserved, re-homed; ACQUISITION-DRIVE
+scheduled). Drama ✔ (acquisitive-cold protagonist is sharper; warm-thread flagged to protect
+sympathy). Comedy ✔↑ (the assay/broken-clock — poisons that don't register — is good material).
+Theme ✔ (RESOURCE desire now the literal engine). Canon-fit ✔ (weirwood/pyromancers are canon
+magic; no demonic blood-magic needed). Rhymes ✔ (curdle intact; first-heist → Locks intact).
+
+**Status:** GUARD-1 superseded again (rev-2 → rev-3); one fence added. I.4/I.8 warm-thread re-home is
+the open call. Baseline ★ outline untouched.

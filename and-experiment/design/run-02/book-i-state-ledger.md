@@ -42,20 +42,21 @@ This ledger reflects the CURRENT canonical state; notes mutate it from here.
 - **RESOURCE** — reagent tier accessible + supply-line reach (the first desire).
 - **SOLITUDE** — autonomy / ungovernability: how subtractable her watchers are (the second desire).
 - **ARMOR** — grief-armor integrity (transcendence↔attachment); + whether the wound is *visible to the reader* this chapter.
-- **CAPABILITY-real** — actual competence on TWO real strands now (GUARD-1 rev-2): (a) mundane poison/mithridatism/logistics and (b) **real, hoarded cultivation** (internalized blood/source-radiance → body-tempering, growing but deliberately un-spent). The broken-clock TRUE channel.
+- **CAPABILITY-real** — actual competence on TWO real strands now (GUARD-1 rev-3): (a) mundane poison/mithridatism/logistics and (b) **real, hoarded cultivation** (source-radiance internalized from magical *materials* → body-tempering, growing but deliberately un-spent). The broken-clock TRUE channel.
 - **TIER-self** — her *framework-wrong* self-assessment (the broken-clock FALSE channel): she's right the power is real, wrong about what it is — a xianxia model (realms/tribulations) laid over canon blood/fire/death magic. The gap between her model and the real mechanism is the comedy engine.
 - **WARMTH** — live rootable bonds open (the reader's investment; the gift accounts).
 
 **World / apparatus (the machine she builds):**
-- **APPARATUS** — sick-house → network stage.
+- **APPARATUS** — workshop + procurement network → realm-spanning reagent network (was "sick-house"; CL-004).
 - **NOTE** — the master-key lifecycle: *verbal indulgence → standing license → sealed grant → Lock I → (Bk III: orphaned seal)*.
 - **DOSE-LOG / FACTOR / BELOW-STAIRS / LEDGER** — the four instruments, with their growth state.
 - **POLITICAL CLOCK** — **Jaehaerys I's long peace** (Book I: dormant; Saerys setting-blind throughout). The Dance is the *far-future* series climax (129 AC) reached via her longevity — OPEN; see `timeline-and-family-tree.md` §5.
 
 **Hard fences (never violated by any edit):** setting-blind · **non-combatant by choice** (was
-"never martial" — the power is real and could fight; she hoards it: GUARD-1 rev-2) · **cultivation
-is real-but-hoarded + framework-wrong** (GUARD-1 rev-2 — supersedes "real-but-inert" and the old
-"clock stays broken") · idiot-savant boundary · armor cracks exactly once (III.8) · no dragon (she
+"never martial" — the power is real and could fight; she hoards it: GUARD-1 rev-3) · **cultivation
+is real-but-hoarded + framework-wrong** (GUARD-1 rev-3 — supersedes "real-but-inert" and the old
+"clock stays broken") · **materials-only cultivation — never cultivates people / never demonic**
+(GUARD-1 rev-3) · idiot-savant boundary · armor cracks exactly once (III.8) · no dragon (she
 ate her egg; dragons are fuel, not mounts). See `saerys-targaryen.card.md` §Hard Fences, the run-02
 GUARDS below, and `timeline-and-family-tree.md` (era + family tree + magic rules). *Any note that
 breaks a fence gets flagged, not silently applied.*
@@ -68,23 +69,26 @@ breaks a fence gets flagged, not silently applied.*
 `convergence-process.md` ("ratify smuggled premises explicitly"); mirrored to
 `convergence/convergence-ledger.md`.*
 
-**GUARD-1 (rev-2) — Cultivation is REAL and powerful, but HOARDED by choice, and she's wrong about
-WHAT it is** (supersedes rev-1 "real-but-inert" and the original "clock stays broken"; full rules in
-`timeline-and-family-tree.md` §3). The magic works. No ambient qi — energy radiates from *sources*:
-magical objects (dragon eggs, Valyrian steel, dragonglass, weirwood), magical substances (wildfire,
-dragon blood, reagents), and **living beings (blood = concentrated life-radiance)**; mundane matter
-is inert. She internalizes + refines it → her body is **tempered** (durability, slow un-aging,
-eventually superhuman). She **could** spend it — fight, throw fire, crazy effects — **but spending
-sets back the slow internal growth, so she hoards it internal.** The capacity is real and growing;
-the restraint is a *choice*, not a limit → she reads as a non-combatant and the plot still runs on
-poison + logistics + paper. Because her founding act used her own **blood** + a **living** source,
-and her richest ongoing sources are living/blood, she is an **accidental blood-cultivator** — abhorred
-magic in Westeros, so secrecy is also survival. **The new broken clock:** she's RIGHT it's real and
-WRONG about the framework — she runs a past-life *xianxia* model (dao/realms/tribulations/dantian)
-on a world that actually runs canon **blood/fire/death magic**, and gains *despite* mis-modeling it.
-The mithridatism is now *both* mundane dosing AND real tempering, each masking the other.
-*Must-not-break:* she never fights on the page; cultivation never saves anyone she loves; the real
-un-aging makes the ending meta-question LITERAL, not resolved; she stays blind to the true system.
+**GUARD-1 (rev-3) — Cultivation is REAL and powerful, hoarded by choice, framework-wrong, and
+fuelled by MATERIALS not people** (supersedes rev-2's blood-path; full rules in
+`timeline-and-family-tree.md` §3). The magic works. No ambient qi — energy radiates from *sources*,
+and the sources are **magical objects + magical substances ONLY**: dragon eggs, weirwood, dragonglass,
+Valyrian steel, wildfire and the pyromancers' fire-craft, and assorted reagents. **Living people are
+NOT a source — she does not cultivate people. She is NOT a demonic/blood cultivator.** (Her own
+blood in I.1 was a one-off sympathetic-resonance catalyst on an object, not a path she walks.)
+Mundane matter is inert. She internalizes + refines source-radiance → her body is **tempered**
+(durability, slow un-aging, eventually superhuman). She **could** spend it — fight, throw fire, crazy
+effects — **but spending sets back the slow internal growth, so she hoards it internal.** The capacity
+is real and growing; the restraint is a *choice* → she reads as a non-combatant and the plot still
+runs on poison + logistics + paper. **Her actual drive is acquisition:** she is an empirical
+materials-hunter, systematically getting and testing things to find what *registers* (radiates) —
+indifferent to the common people ("mortals," beneath her notice), forever chasing the next, rarer
+reagent. **The broken clock:** she's RIGHT it's real and WRONG about the framework — a past-life
+*xianxia* model (dao/realms/tribulations/dantian) over canon **fire/death/old-gods magic**, and she
+gains *despite* mis-modeling it (e.g. she ingests poisons hoping they'll register; they don't — but
+she builds real mundane immunity and files it as "tempering"). *Must-not-break:* she never fights on
+the page; she never cultivates people / is never demonic; cultivation never saves anyone she loves;
+the real un-aging makes the ending meta-question LITERAL; she stays blind to the true system.
 
 **GUARD-2 — Inciting inversion re-framed: heal→fuel** (ratified; supersedes pray→desecrate). The
 FROZEN opener is now "given a living egg to save her dying life → she taps it for fuel." The
@@ -124,7 +128,7 @@ date anchors, and the one open fork (series end-date: Dance 129 AC recommended) 
 | **Aemond** | foil (offstage-ish) | the *martial* answer to dragonlessness (bonds a great dragon); the warrior road she **declines** (she could fight — chooses to hoard) | referenced I.5 |
 | **The laundress's boy** | rootability anchor | dying child she nurses for nothing; proof the armor is armor; lives | I.4 (→ echo I.8) |
 | **The pest** (under-septa / rival's man) | first poison victim | moves to expose her; removed by lingering flux; never knows | I.7 |
-| **The Braavosi factor** | first remote agent | first bill of exchange; medicine+poison one supply chain → [Bk II: the network] | I.3 (→ I.9) |
+| **The Braavosi factor** | first remote agent | first bill of exchange; exotic-materials/reagent (incl. poison) import line → [Bk II: the network] | I.3 (→ I.9) |
 
 ### Apparatus / props
 | Entity | State at Book I close | Cross-book fate |
@@ -136,7 +140,8 @@ date anchors, and the one open fork (series end-date: Dance 129 AC recommended) 
 | **The account-book / LEDGER** | unreadable-by-others; now a steering wheel (I.9) | → II.1 owned empire |
 | **The NOTE** | sealed grant, fires as Lock I (I.11); kept on person | → III.1 orphaned license → III.10 heist seal |
 | **The DOSE-LOG** | mithridatism underway; ~3 yrs of dosing | → II.6 deepened → III.3 failed assassination |
-| **The sick-house** | running ~3 yrs; public piety cover | → II.1 realm-spanning network |
+| **The workshop + procurement network** *(was "the sick-house" — CL-004)* | running ~3 yrs; cover = the eccentric scholar-princess; import lines + agents fetching & testing materials | → II.1 realm-spanning *reagent* network |
+| **The materials assay / collection** *(new — CL-004)* | her logged survey of what registers (weirwood, wildfire, dragonglass…) vs. what's inert | → the forever-chase; III.5 dragon-corpse feast is the apex |
 | **The wildfire-shard** | eaten (I.6); the first genuine ring the *adults witness and fear* (the private founding ring was I.1) | → I.6 is the precedent template for III.5 black-stone reach |
 
 ---
@@ -153,11 +158,11 @@ date anchors, and the one open fork (series end-date: Dance 129 AC recommended) 
 > **Blast radius** (downstream beats that depend on this chapter — what breaks if it changes).
 
 ### I.1 · a-baseline  *(was: the-christening-spoon; alt title: the-frequency)*  `[REWRITTEN · CL-001]`
-- **Beat:** A dying reincarnated **infant** — mind/brain incompatibility, seizures. Her mother **Alicent the Queen**, against the withheld blessing of **the King (her father, Jaehaerys)**, slips a **living, warm dragon egg** into the cradle to save her. *Feeling the egg radiate* — and clocking the impossible silver hair / purple eyes around her — Saerys concludes she's in a *magical world* and must cultivate. The air is dead to her sense; she needs a **source** — a **baseline**. She mimics the egg (days; nothing), tries to ingest it whole (can't crack it), then **chips a fragment** with a smuggled hard toy and swallows it — a real flicker, gone in a flash. Insight: **energy is sympathetic** — a chip can stand for the whole. Another chip, **a smear of her own blood**, *willing the part to be the whole* — and **it takes**: real source-radiance seeds in her body (she calls it a "frequency"; no dantian), and she pulls in more. The egg **goes cold** (drained dead; staged as a failed egg — GUARD-3) and is taken away. The infant lives — serious, and "a bit touched in the head." *(Unknowingly, with blood + a living source, she has founded the blood-cultivation path — GUARD-1 rev-2.)*
-- **Deltas:** ARMOR established as **active death-refusal** (a 2nd death, clawed back on-page — the armor is literal from frame one). Cultivation **founded** — real and growing, hoarded internal (GUARD-1 rev-2): the genuine founding ring that makes her believe forever, and the accidental first step of the **blood path**. Cauldron principle **conceived** (body-as-vessel; grandiose label crystallizes by I.5). Dragonlessness **originated** (she consumed her own cradle-hatchling; hidden, reads as a dud). SYMPATHETIC-RESONANCE discovered. Alicent (Queen): life-saving mother-love *(default: curdles toward horror as the saved child returns "wrong" — OPEN)*. Jaehaerys (King/father): indulgence re-homed to the **aftermath** (he dotes on the miracle child who should have died).
-- **End-state vector:** age **~infant–1yr** · RESOURCE T0 (the egg, now spent) · SOLITUDE: none (fully watched) · ARMOR: sealed, **death-refusal active** · CAPABILITY-real: **real cultivation seeded** (blood path; body-tempering begins; hoarded, never spent) · TIER-self: "Foundation established — the dao is real" *(framework-wrong: it's blood magic, not a realm-ladder)* · WARMTH: Alicent (open→cooling), Jaehaerys (open, via the miracle) · NOTE: *verbal indulgence (aftermath)* · DOSE-LOG: none.
-- **Threads:** PLANT[NOTE] (re-homed to aftermath), PLANT[CAULDRON], PLANT[SYMPATHETIC-RESONANCE] *(new)*, PLANT[REINCARNATION-SICKNESS] *(new)*, PLANT[BLOOD-PATH seed] *(new — accidental dark path)*, PLANT[GRIEF-REFUSAL seed] *(re-flavored: death-refusal)*, PLANT[GIFT:JAEHAERYS seed] *(miracle-child tenderness; was GIFT:VISERYS)*. Rung **R0** (laugh now / horror retroactive — GUARD-3). Register **SPIKE** held (the infant lecturing itself on sympathetic resonance — keep at full grandiosity so III.8's silence still calibrates; texture is uncanny-funny, not pure zany). DN-1 armed. **Ratifies GUARD-1 rev-2 / 2 / 3 / 4.**
-- **Blast radius:** ENORMOUS. Feeds NOTE arc (I.3/I.10/I.11/III.1/III.10), CAULDRON arc (I.5/III.5), GIFT:JAEHAERYS (the father-king spend), BLOOD-PATH (I.3 sick-house living-sources → III.5 dragon-feast), the **death-refusal** motif (I.8/III.8 — now *literal*: at III.8 cultivation cannot out-refine Daenys's death). SYMPATHETIC-RESONANCE → III.5 (she needn't take the whole field, but does = curdle) + broken-clock recurrences (I.6/III.5). The drained-living-egg gesture re-rhymes III.5 (living→dead at scale), strengthening the curdle apex. Register here remains the calibration reference for the III.8 break. **HELAENA gift no longer seeded here → first planted I.5** (still fires III.7; optional cradle-witness Helaena beat — OPEN).
+- **Beat:** A dying reincarnated **infant** — mind/brain incompatibility, seizures. Her mother **Alicent the Queen**, against the withheld blessing of **the King (her father, Jaehaerys)**, slips a **living, warm dragon egg** into the cradle to save her. *Feeling the egg radiate* — and clocking the impossible silver hair / purple eyes around her — Saerys concludes she's in a *magical world* and must cultivate. The air is dead to her sense; she needs a **source** — a **baseline**. She mimics the egg (days; nothing), tries to ingest it whole (can't crack it), then **chips a fragment** with a smuggled hard toy and swallows it — a real flicker, gone in a flash. Insight: **energy is sympathetic** — a chip can stand for the whole. Another chip, **a smear of her own blood** *(her OWN — a one-off sympathetic-resonance catalyst on an object, NOT the demonic/people-harvesting path she never walks; GUARD-1 rev-3)*, *willing the part to be the whole* — and **it takes**: real source-radiance seeds in her body (she calls it a "frequency"; no dantian), and she pulls in more. The egg **goes cold** (drained dead; staged as a failed egg — GUARD-3) and is taken away. The infant lives — serious, and "a bit touched in the head."
+- **Deltas:** ARMOR established as **active death-refusal** (a 2nd death, clawed back on-page — the armor is literal from frame one). Cultivation **founded** — real and growing, hoarded internal (GUARD-1 rev-3): the genuine founding ring that makes her believe forever. The **acquisition drive** is born here too (she will spend her life chasing the next source). Cauldron principle **conceived** (body-as-vessel; grandiose label crystallizes by I.5). Dragonlessness **originated** (she consumed her own cradle-hatchling; hidden, reads as a dud). SYMPATHETIC-RESONANCE discovered. Alicent (Queen): life-saving mother-love *(default: curdles toward horror as the saved child returns "wrong" — OPEN)*. Jaehaerys (King/father): indulgence re-homed to the **aftermath** (he dotes on the miracle child who should have died).
+- **End-state vector:** age **~infant–1yr** · RESOURCE T0 (the egg, now spent) · SOLITUDE: none (fully watched) · ARMOR: sealed, **death-refusal active** · CAPABILITY-real: **real cultivation seeded** (body-tempering begins; hoarded, never spent) · TIER-self: "Foundation established — the dao is real" *(framework-wrong: it's fire/death/old-gods magic, not a realm-ladder)* · WARMTH: Alicent (open→cooling), Jaehaerys (open, via the miracle) · NOTE: *verbal indulgence (aftermath)* · DOSE-LOG: none.
+- **Threads:** PLANT[NOTE] (re-homed to aftermath), PLANT[CAULDRON], PLANT[SYMPATHETIC-RESONANCE] *(new)*, PLANT[REINCARNATION-SICKNESS] *(new)*, PLANT[ACQUISITION-DRIVE seed] *(new — the forever-chase for sources)*, PLANT[GRIEF-REFUSAL seed] *(re-flavored: death-refusal)*, PLANT[GIFT:JAEHAERYS seed] *(miracle-child tenderness; was GIFT:VISERYS)*. Rung **R0** (laugh now / horror retroactive — GUARD-3). Register **SPIKE** held (the infant lecturing itself on sympathetic resonance — keep at full grandiosity so III.8's silence still calibrates; texture is uncanny-funny, not pure zany). DN-1 armed. **Ratifies GUARD-1 rev-3 / 2 / 3 / 4.**
+- **Blast radius:** ENORMOUS. Feeds NOTE arc (I.3/I.10/I.11/III.1/III.10), CAULDRON arc (I.5/III.5), GIFT:JAEHAERYS (the father-king spend), ACQUISITION-DRIVE (I.2/I.3/I.5/I.6 → III.5 dragon-feast), the **death-refusal** motif (I.8/III.8 — now *literal*: at III.8 cultivation cannot out-refine Daenys's death). SYMPATHETIC-RESONANCE → III.5 (she needn't take the whole field, but does = curdle) + broken-clock recurrences (I.6/III.5). The drained-living-egg gesture re-rhymes III.5 (living→dead at scale), strengthening the curdle apex. Register here remains the calibration reference for the III.8 break. **HELAENA gift no longer seeded here → first planted I.5** (still fires III.7; optional cradle-witness Helaena beat — OPEN).
 
 ### I.2 · the-pantry-heist  *(NEW · CL-003 — toddler bridge chapter)*
 - **Beat:** A toddler, barely walking, betrayed by her own baby hands. Her cultivation-sense (sources radiate; the air is dead) snags on the **one thing in the maester's still-room that glows to her** among a wall of inert jars — a genuinely-magical reagent. Her first **heist, in four beats**: **SIGHT** (she clocks the source — *and* that no one in the world guards anything against a two-year-old) → **PLAN** (an immortal mind drawing up an op around toddler assets: the maester's rounds, the cover of clumsiness, the perfect alibi of being underestimated) → **IMPLEMENT** (she toddles in during the gap and takes it — by climbing, toppling, sheer nerve) → **REWARD** (she gets it down and ingests the source). Then the **OH SHIT**: it is far more potent than she gauged — an uncontrolled **breakthrough** tears through a body too small to hold it. It nearly kills her; it nearly flares into the open. She scrambles, genuinely frightened for the first time, to bury it before anyone sees.
@@ -166,31 +171,32 @@ date anchors, and the one open fork (series end-date: Dance 129 AC recommended) 
 - **Threads:** PLANT[HEIST-METHOD] *(new — sight/plan/implement/reward)*, PLANT[MAESTER-MARK] *(new)*, FIRE[death-refusal re-fire]. Rung **off-ladder** (no living victim — a stolen jar, not a drained life; the curdle ladder stays clean). Register **SPIKE→CHILL** (toddler-heist comedy collapsing into the oh-shit breakthrough — the *private* rehearsal of the I.6 furnace-sect *public* scare). DN-7 (toddler motor-comedy: the immortal mind vs. the traitorous baby hands).
 - **Blast radius:** HIGH. HEIST-METHOD → I.11 Lock I (rung 1) → II.10 → III.10 — the three Locks now have a toddler origin. MAESTER-MARK pre-loads I.3 (out-administering a man she has robbed since she could walk lands harder). The "a breakthrough has teeth, and stays secret" beat is the private rehearsal the I.6 public scare escalates. **Bridges the infancy→childhood gap — the structural fix this chapter exists to make.**
 
-### I.3 · the-charitable-princess `[KEYSTONE]`
-- **Beat:** Founds the charity sick-house (unattackable piety); out-administers the maester into dependency for still-room access; raids the still-room for poisons and begins micro-dosing.
-- **Deltas:** APPARATUS born (sick-house). Maester → dependent. LEDGER born (account-book only she can read). FACTOR opened (first bill to Braavosi drug-agent). BELOW-STAIRS opened ("the little master"). DOSE-LOG opened (sick a week, "first tribulation," continues). *BLOOD-PATH undertone (GUARD-1 rev-2): the sick-house is a standing supply of living/blood radiance — the charity cover is, unknowing, also a feeding ground. Handle as quiet menace, not yet stated.*
-- **End-state vector:** age ~6 · RESOURCE T0–1 (still-room poisons + first import line) · SOLITUDE: *low-rising* (sick-house launders unsupervised hours) · ARMOR: sealed · CAPABILITY-real: poison-handling begun, immunity rising · TIER-self: "tempering against the ten thousand toxins" · WARMTH: +maester(adversarial-dependent) · NOTE: *standing license* (indulgence formalized) · DOSE-LOG: active.
-- **Threads:** PLANT[LEDGER], PLANT[FACTOR], PLANT[BELOW-STAIRS], PLANT[DOSE-LOG]. FIRE[NOTE→license]. Rung R0. Register HOLD→SPIKE. DN-2 opens.
-- **Blast radius:** LARGE. Keystone — APPARATUS feeds II.1 (owned empire); DOSE-LOG feeds II.6/III.3; FACTOR feeds I.9/II.1/II.9/III.10; LEDGER feeds I.9. Removing the sick-house collapses the entire empire spine.
+### I.3 · the-collector-princess `[KEYSTONE]`  *(was: the-charitable-princess — re-conceived CL-004)*
+- **Beat:** Indifferent to the smallfolk (mere "mortals," beneath her notice), she pours her princess-privilege into the only thing that matters: **getting materials**. She founds her **acquisition apparatus** — a private workshop/collection (cover: the eccentric, indulged scholar-princess) and her first **import line** — and brings the maester (her mark since she could walk) to heel as supplier and screen. She begins a systematic **assay**: get a thing, test whether it *registers* (radiates), log it — including dosing herself with poisons (they don't register; she builds real immunity anyway and files it "tempering"). Top of the want-list: **weirwood** and the **pyromancers' fire-craft**.
+- **Deltas:** APPARATUS born — a workshop + procurement network (NOT a charity). Maester → dependent supplier/screen. LEDGER born (acquisition account-book only she can read). FACTOR opened (first bill of exchange — to *import exotic materials*). BELOW-STAIRS opened (agents who fetch & test; "the little master"). DOSE-LOG opened (self-assay of poisons → mundane immunity, mis-filed as tempering). ACQUISITION-DRIVE becomes the engine of the book.
+- **End-state vector:** age ~6 · RESOURCE T0–1 (local stores + first import line) · SOLITUDE: *low-rising* (the workshop + requisitions launder unsupervised hours) · ARMOR: sealed · CAPABILITY-real: poison-handling begun, immunity rising; real cultivation off acquired materials · TIER-self: "assembling the thousand reagents — tempering against the ten thousand toxins" *(framework-wrong)* · WARMTH: +maester (adversarial-dependent) · NOTE: *standing license* (indulgence formalized) · DOSE-LOG: active.
+- **Threads:** PLANT[LEDGER], PLANT[FACTOR], PLANT[BELOW-STAIRS], PLANT[DOSE-LOG]. FIRE[ACQUISITION-DRIVE], FIRE[MAESTER-MARK→dependent], FIRE[NOTE→license]. Rung R0. Register HOLD→SPIKE. DN-2 opens.
+- **Blast radius:** LARGE. Keystone — APPARATUS (the procurement network) feeds II.1 (the owned multinational — now a *reagent* empire); DOSE-LOG feeds II.6/III.3; FACTOR feeds I.9/II.1/II.9/III.10; LEDGER feeds I.9. The acquisition framing makes the empire a *side effect of her hunger* — a cleaner "she chose it" for II.1. Targets named here pay out at I.5 (weirwood / materials tour) + I.6 (pyromancers / wildfire). Removing it collapses the empire spine. *Cover (scholar vs. devotional vs. bare privilege) — OPEN, CL-004.*
 
-### I.4 · the-laundress's-boy
+### I.4 · the-laundress's-boy  `[CHARITY-DEPENDENT — re-home, CL-004 OPEN]`
+> **Tension w/ CL-004:** she's now indifferent to the masses + runs no sick-house. This beat survives as the *exception that proves she's human* — the ONE child in front of her she can't let die — but it must re-home off the charity-ward context (→ a sick child in her household/workshop orbit), and it now sits in slight friction with "worry less about mortals." It is the load-bearing WARM root + the HINGE (healing-hand = killing-hand → I.7). **Recommend KEEP (re-homed); do not delete silently.**
 - **Beat:** Nurses a dying boy (no cover, no reagent value) three sleepless nights, certain it's karmic hygiene. He lives. She files it as cultivation merit; the reader sees she just couldn't watch a child die.
 - **Deltas:** WARMTH +rootability anchor (the 80k root). HINGE established: poison-hand and healing-hand are the *same hand*.
 - **End-state vector:** age ~6 · RESOURCE unchanged · SOLITUDE unchanged · ARMOR: sealed but reader sees the human under it · CAPABILITY-real: gut now framed as healing instrument too · WARMTH: **peak rootability** · DOSE-LOG: active.
 - **Threads:** PLANT[WARM], PLANT[HINGE]. PAYOFF: dose-log gut re-cast as healing. Rung **off-ladder** (the warm floor horror is measured against). Register **RECOVER** (lowest-volume scene). DN-3.
 - **Blast radius:** MEDIUM-HIGH. The HINGE is the curdle's pivot (fires I.7: same hand now kills). The WARM root keeps Daenys from out-charactering the lead (Bk II). Echoed I.8. Remove it and I.7/I.8 lose their hinge and the reader loses the lead.
 
-### I.5 · tempering-the-cauldron
-- **Beat:** Months of eating antics, each "tempering the cauldron" — the anti-Arya reveal (poison & pills, never a sword). The joke now has a TRUE floor (GUARD-1 rev-2): the genuinely-magical items **faintly work** (dragonglass, weirwood = real sources), the mundane ones (dung, a plain pebble) give **nothing** — and she draws the *wrong lesson* from which is which (mis-reads it as "ingredient grade / purity," not "is it canon-magical"). Helaena bond deepens; riddle-twins as equals.
-- **Deltas:** CAULDRON retro-frames all antics. HELAENA bond deepened (toward Bk III spend). No-eat behavior pre-justified (Harwin's future list). The source/non-source split established (real radiance from magical matter; inert mundane matter).
+### I.5 · tempering-the-cauldron  *(the materials TOUR — CL-004)*
+- **Beat:** Her **assay in full swing** — a systematic tour of every material she can get her hands on, each "tempering the cauldron" (the anti-Arya reveal: poison & pills, never a sword). The joke has a TRUE floor (GUARD-1 rev-3): genuinely-magical items **work** (a chip of **weirwood** smuggled from a godswood = a real, *strange* source; dragonglass faintly), mundane ones (dung, a plain pebble) give **nothing** — and she draws the *wrong lesson* from which is which (mis-reads it as "ingredient grade / purity," not "is it actually magical"). The **weirwood** get is a small heist of its own (HEIST-METHOD); old-gods matter behaves *differently* from fire-matter — a clue she misfiles. Helaena bond deepens; riddle-twins as equals.
+- **Deltas:** CAULDRON retro-frames all antics. WEIRWOOD acquired + logged (old-gods/green magic registers, behaves oddly). HELAENA bond deepened (toward Bk III spend). No-eat behavior pre-justified (Harwin's future list). The source/non-source split established (real radiance from magical matter; inert mundane matter).
 - **End-state vector:** age ~6–7 · RESOURCE T0 broadened · SOLITUDE unchanged · ARMOR sealed · CAPABILITY-real rising (real immunity + faint real cultivation off magical items, still hoarded) · TIER-self "cauldron tempering across antics" *(framework-wrong)* · WARMTH: Helaena **deepened** · 
 - **Threads:** PLANT[NO-EAT], PLANT[HELAENA+]. FIRE[CAULDRON]. Rung R0 sustained. Register SPIKE (comic high of early Bk I). DN-5 (Helaena names a swallowed thing as a thing).
 - **Blast radius:** MEDIUM. NO-EAT feeds II.2 (Harwin's list). HELAENA+ feeds III.7 spend. CAULDRON feeds III.5. Aemond-foil referenced here (the road-not-taken contrast).
 
-### I.6 · the-furnace-sect
-- **Beat:** Reads the Alchemists' Guild as "a furnace sect"; gets wildfire; something nearly burns; eats a shard of *real* magic → 3-day "tribulation" fever → surfaces uncannily *changed*. Adults **scared, not charmed** for the first time.
-- **Deltas:** WILDFIRE-SHARD eaten — the first genuine ring the *adults witness and fear* (the private founding ring was I.1; per GUARD-1 the real strand activates on genuinely-magical materials). Household sentiment turns (charmed → wary). The warm cage shows its bars.
-- **End-state vector:** age ~7 · RESOURCE T1 (guild contact, wildfire) · SOLITUDE: *threatened* (the turn that triggers the septa's escalation) · ARMOR sealed · CAPABILITY-real: +1 real (a potent source ingested — wildfire is real magic; the gain is real, still hoarded; GUARD-1 rev-2) · TIER-self "realm breakthrough via tribulation" *(framework-wrong — it was a strong source, not a realm)* · 
+### I.6 · the-furnace-sect  *(the PYROMANCERS — CL-004)*
+- **Beat:** The named target lands: she reads the Alchemists' Guild — the **pyromancers** — as "a furnace sect," and goes after their **fire-craft / wildfire**. Something nearly burns; she eats a shard of *real* magic → 3-day "tribulation" fever → surfaces uncannily *changed*. Adults **scared, not charmed** for the first time.
+- **Deltas:** WILDFIRE-SHARD eaten — the first genuine ring the *adults witness and fear* (the private founding ring was I.1, the private breakthrough was I.2; per GUARD-1 rev-3 the real strand activates on genuinely-magical materials). Pyromancer contact opened (a guild she'll keep tapping). Household sentiment turns (charmed → wary). The warm cage shows its bars.
+- **End-state vector:** age ~7 · RESOURCE T1 (guild contact, wildfire) · SOLITUDE: *threatened* (the turn that triggers the septa's escalation) · ARMOR sealed · CAPABILITY-real: +1 real (a potent source ingested — wildfire is real magic; the gain is real, still hoarded; GUARD-1 rev-3) · TIER-self "realm breakthrough via tribulation" *(framework-wrong — it was a strong source, not a realm)* · 
 - **Threads:** PLANT[BLACK-STONE-PRECEDENT] (the "ingest real magic → real wrong effect" template). FIRE[broken-clock-A] (pays out, isn't funny). Rung first **CHILL** (recovers but marked). Register SPIKE→CHILL.
 - **Blast radius:** HIGH. The fever-fallout *is the cause* of I.10/I.11 (the septa's move to cloister → the note cashed). The precedent template looms over III.5 (black-stone reach). Remove/alter the wildfire incident and Lock I loses its trigger.
 
@@ -201,7 +207,8 @@ date anchors, and the one open fork (series end-date: Dance 129 AC recommended) 
 - **Threads:** PLANT[de-pesting reflex] (rhymes to II.8 Harwin balanced). FIRE[HINGE→R2] (the I.4 healing hand is now demonstrably the killing hand). Rung **R2** (¾ comedy / ¼ chill). DN-6; DN-5 staging (no straight-man; prose shows the flux plainly).
 - **Blast radius:** HIGH. R2 is the curdle ladder's load-bearing middle rung — sits between I.8's R1 (ward-child) and II.8's R3 (Harwin). Depends on I.4's HINGE. If removed, the curdle ladder loses a rung and the "same coldness, rising scale" engine skips.
 
-### I.8 · impure-reagents
+### I.8 · impure-reagents  `[CHARITY-DEPENDENT — re-home "ward", CL-004 OPEN]`
+> **Tension w/ CL-004:** "in her own ward" assumed the sick-house. Re-home to a sick child in her household/workshop orbit (e.g., the laundress's-boy echo). The R1 rung + GRIEF-REFUSAL seam are CRITICAL (→ III.8) and survive the re-home unchanged.
 - **Beat:** A sick child *in her own ward* dies despite her elixir. She files it "impure reagents" — and the locked POV lets one un-meme-able image slip: *she remembers being the one who died, once* — then buries it.
 - **Deltas:** ARMOR: **first visible seam** (the wound shows through to the reader). The literal account-book established as the one place a death is ever *entered*.
 - **End-state vector:** age ~7 · RESOURCE unchanged · SOLITUDE unchanged · ARMOR: **cracked-visible-to-reader** (still sealed to her) · CAPABILITY-real unchanged · WARMTH: the I.4 warmth paid against (we see the wound she doesn't).
@@ -225,7 +232,7 @@ date anchors, and the one open fork (series end-date: Dance 129 AC recommended) 
 ### I.11 · paper-wins `[LOCK I · rung 1]`
 - **Beat:** Septa holds a true accusation; Saerys produces the sealed parchment; the master key overrules every chaperone below the King. **Paper wins.** Legally ungovernable; thinks she achieved a breakthrough.
 - **Deltas:** SOLITUDE → **won at local scale** (legal ungovernability). Septa folded into Lock I (defeated; no standalone saga). The mechanism's audit-rung-1 cleared.
-- **End-state vector (BOOK I CLOSE):** age ~9 · RESOURCE T1 (KL-bounded) · SOLITUDE: **ungovernable in the Red Keep** · ARMOR sealed (descent not yet begun — book boundary holds) · CAPABILITY-real: lethal-in-the-unwatched-domain, immunity well underway · TIER-self "breakthrough achieved" · WARMTH: Helaena + Viserys open (gifts banked); maester dependent · NOTE: Lock I fired, kept · APPARATUS: sick-house mature, network compounding.
+- **End-state vector (BOOK I CLOSE):** age ~9 · RESOURCE T1 (KL-bounded) · SOLITUDE: **ungovernable in the Red Keep** · ARMOR sealed (descent not yet begun — book boundary holds) · CAPABILITY-real: lethal-in-the-unwatched-domain, immunity well underway; real cultivation compounding off acquired materials · TIER-self "breakthrough achieved" · WARMTH: Helaena + Jaehaerys open (gifts banked); maester dependent · NOTE: Lock I fired, kept · APPARATUS: workshop + procurement network mature, compounding.
 - **Threads:** FIRE[NOTE→Lock I]. Rung R0 (triumphant farce; T4 boundary holds). Register SPIKE (comic apex + mechanism dress-rehearsal #1). DN-2.
 - **Handoff → Book II:** the note can't reach past King's Landing; rarer reagents/poisons need her own supply lines → the roads open. Instrument: the I.3 bill of exchange. Appetite: the cauldron, always wanting a higher grade.
 - **Blast radius:** Sets Bk II's opening state (owned-but-undiscovered network, ungovernable-locally, gifts banked). Raises the mechanism to rung-2 (an ocean).
@@ -241,11 +248,11 @@ if an edit removes or alters the left column, the right column is the orphan lis
 |---|---|---|
 | PLANT[NOTE] I.1 *(aftermath)*→I.3→I.10 | III.1 (orphaned seal), III.10 (heist mech #3) | the entire ending heist loses its seal |
 | PLANT[HEIST-METHOD] I.2 *(new — sight→plan→implement→reward)* | I.11 (Lock I, rung 1), II.10 (Lock II), III.10 (Lock III) | the three Locks lose their origin / the "she's always run heists" through-line |
-| PLANT[MAESTER-MARK] I.2 *(new)* | I.3 (out-administers a man she's robbed for years) | the keystone sick-house maester-takeover loses its head-start |
+| PLANT[MAESTER-MARK] I.2 *(new)* | I.3 (out-administers a man she's robbed for years) | the keystone maester-takeover loses its head-start |
+| PLANT[ACQUISITION-DRIVE] I.1→I.2→I.3 *(new — replaces BLOOD-PATH)* | I.5 (weirwood/tour), I.6 (pyromancers), II.1 (reagent multinational), III.5 (dragon-corpse feast) | the engine of the whole book (and the "she chose it" empire) loses its motor |
 | PLANT[CAULDRON] I.1 | III.5 (curdle apex / black-stone reach) | the curdle ladder loses its frame-for-frame top |
 | PLANT[SYMPATHETIC-RESONANCE] I.1 *(new)* | III.5 (she needn't take the whole field — but does) | the curdle apex loses its "didn't have to" knife |
 | PLANT[REINCARNATION-SICKNESS] I.1 *(new)* | soft: I.6 fever / III.3 immunity | the death-refusal origin + immunity rhyme thin |
-| PLANT[BLOOD-PATH] I.1→I.3 *(new)* | III.5 (dragon-blood feast), III.3 (real tempering masks the poison-immunity) | the accidental dark-path + the "abhorred magic, must hide" stakes vanish |
 | PLANT[DOSE-LOG] I.3 | II.6 (deepened), III.3 (failed assassination) | III.3 "she's immune" payoff is unearned |
 | PLANT[FACTOR] I.3 | II.1, II.9, III.10 | factor-and-paper engine has no origin |
 | PLANT[LEDGER]+EMPIRE I.3/I.9 | II.1 (owns a multinational) | II.1 discovery and "she chose it" both collapse |
@@ -336,3 +343,13 @@ independently of the required fixes.
 - **OPEN (defaulted, overridable):** the stolen item's identity (a genuinely-magical reagent in the maester's stores — pick at draft); exact toddler age (~2–3); how visible the near-exposure gets; chapter title (`the-pantry-heist` vs `the-first-job`).
 - **Mechanical re-check:** ledger-internal only (baseline `convergence/` outline keeps 10-ch numbering; final integer numbering settled at re-fuse). New tokens HEIST-METHOD/MAESTER-MARK pre-scheduled in the bridge.
 - **Ratification mirrored to:** `convergence/convergence-ledger.md` (Round 6).
+
+### CL-004 · step back from charity + retract the blood-path (2026-06-07)
+- **Note:** (a) **step back from charity** — she's indifferent to the masses she can't see ("mortals," beneath her); no charity sick-house as her engine. (b) Her real drive is **acquisition** — chasing other resources; next targets **weirwood** + **pyromancers**, plus a broad **tour of materials** to find what registers. (c) **She is NOT a demonic/blood cultivator — she does not cultivate people** (retracts the CL-002 blood-path).
+- **Rulings → GUARDS:** **GUARD-1 rev-3** (supersedes rev-2): cultivation is fuelled by **magical objects + substances ONLY**; people are never a source; *materials-only / never-demonic* added to the hard fences. Her own I.1 blood = a one-off catalyst on an object, firewalled. New broken-clock example: she ingests poisons expecting them to register; they don't → real mundane immunity, mis-filed as tempering.
+- **Applied to ledger:** GUARD-1 rewritten rev-3; fences + APPARATUS axis + CAPABILITY-real updated; **I.3 re-conceived** `the-charitable-princess` → `the-collector-princess` (charity sick-house → workshop + procurement network; acquisition keystone; maester from mark → dependent supplier); I.1 (BLOOD-PATH seed → **ACQUISITION-DRIVE** seed; blood-catalyst firewalled); I.5 (weirwood + the materials tour foregrounded); I.6 (pyromancers foregrounded); apparatus/props (sick-house → workshop + materials-assay rows); bridge (BLOOD-PATH row → **ACQUISITION-DRIVE**); Braavosi-factor + I.11 close de-charity'd; timeline §3/§4 magic rules rewritten (materials-only, not demonic); curdle framing corrected (cold instrumentalism + consuming magical *creatures*, never people).
+- **FLAGGED, not silently changed:** **I.4 (laundress's-boy)** + **I.8 (ward-child)** are `[CHARITY-DEPENDENT]` — both carry the load-bearing **WARM root + HINGE + GRIEF-REFUSAL** (→ III.8). Recommend KEEP, re-homed off the charity ward to her household/workshop orbit. **Needs a principal call.**
+- **OPEN (defaulted, overridable):** the new keystone's **cover** (scholar-princess *default* / devotional-relics / bare princess-privilege); the I.4/I.8 warm-thread re-home (keep-recommended); the I.3 title (`the-collector-princess` vs `the-magpie` / `the-acquisitions`).
+- **Curdle ladder:** unaffected — it was never about cultivating people (R0 egg + R4 dragons = magical *creatures*; the pest/Harwin rungs = cold *poison* kills). The retraction actually cleans it up.
+- **Mechanical re-check:** ledger-internal (baseline outline untouched; ACQUISITION-DRIVE pre-scheduled in the bridge). 
+- **Ratification mirrored to:** `convergence/convergence-ledger.md` (Round 7).
