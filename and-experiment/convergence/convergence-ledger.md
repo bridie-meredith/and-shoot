@@ -303,3 +303,32 @@ This is the only genuinely-open call from this round.
 audience re-validation and to `saerys-targaryen.card.md` §Hard Fences (to update at promotion).
 Integration staged in the run-02 ledger (CL-002) + the new timeline file; the ★ accepted outline is
 unchanged pending a re-fuse.
+
+---
+
+## Round 6 — run-02 principal enrichment (insert toddler chapter; CL-003)
+
+*Working surface: `design/run-02/book-i-state-ledger.md`. The ★ accepted outline keeps its 10-ch
+Book I numbering (frozen); run-02 Book I is now 11 chapters.*
+
+**Principal note:** infancy→age-6 is too big a jump ("halfway to adulthood in Westeros"). Add a
+**toddler-stage** chapter — a planned raid on the maester's pantry, structured **sight → plan →
+implement → reward**, ending on an **"oh shit"** breakthrough (uncontrolled, nearly fatal/exposing).
+
+**Integration:** inserted as **I.2 `the-pantry-heist`**; old run-02 I.2–I.10 renumbered +1 to
+I.3–I.11 (II./III. refs verified intact). Plants **HEIST-METHOD** (sight→plan→implement→reward — the
+three Locks I.11/II.10/III.10 now have a toddler origin) and **MAESTER-MARK** (pre-loads the I.3
+keystone sick-house takeover). Demonstrates the GUARD-1 rev-2 mechanic live (a magical source
+radiates among inert jars → ingest → real breakthrough). Sits **off the curdle ladder** (a stolen
+jar, no living victim — R0 egg stays first rung). Register SPIKE→CHILL — the *private* rehearsal of
+the I.6 furnace-sect *public* scare. Lands the toddler motor-comedy (DN-7) that the I.1 open item
+flagged.
+
+**Six-criteria (judgment pass):** Structure ✔↑ (fixes the age-gap; new spine thread HEIST-METHOD
+scheduled). Drama ✔↑ (breakthroughs now visibly have teeth + near-exposure stakes). Comedy ✔↑
+(immortal mind vs. traitorous baby hands running an Ocean's-Eleven op). Theme ✔ (RESOURCE/SOLITUDE
+desires both seeded in miniature). Canon-fit ✔ (toddler princess, maester's stores — all in-world).
+Rhymes ✔↑ (first heist → the three Locks).
+
+**Status:** no fence touched. Book I 11-ch divergence from the frozen baseline noted; final integer
+numbering settled at re-fuse.

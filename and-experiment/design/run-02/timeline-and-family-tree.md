@@ -33,7 +33,9 @@ away.
 
 ### Saerys's life on the canon clock (PINNED)
 - **Born ~84 AC** (mid-late Jaehaerys peace; dragons abundant).
-- **Book I = ~84–93 AC** (infant → age 9). Childhood entirely inside the long peace.
+- **Book I = ~84–93 AC** (infant → age 9). Childhood entirely inside the long peace. Now **11
+  chapters** (CL-003): I.1 infancy (~0–1) → **I.2 toddler pantry-heist (~2–3)** → I.3 onward (age
+  ~6→9). The toddler chapter bridges the infancy→childhood gap.
 - Jaehaerys dies **103 AC** → Saerys **~19**.
 - Dance **129 AC** → Saerys **~45 — but looks far younger** (cultivation un-aging, GUARD-1).
 
