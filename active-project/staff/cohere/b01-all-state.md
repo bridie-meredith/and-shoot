@@ -22,11 +22,11 @@ cohere_state:
   revise_queue:
     - chapter: b01c03
       parking_lot_items: [pl-2026-06-06-cohere-001]
-      revise_mode: --from-signals
-      executed: false
-      result_ts: null
-      result_note: "Sera establish-leg. UN-DEFERRED 2026-06-07: principal directed 'begin revisions' → AskUserQuestion 'Sera arc (/and-cohere)' (reverses DEC-0108; DEC-0112 confirm-first satisfied by principal answer). Now EXECUTING. Intent: give Sera reader-facing stakes-weight at her c03 introduction (currently a leverage-token, lines 53-56) WITHOUT Taylor naming the Sera-link as motive (fence pl-2026-05-28-002)."
-      result: IN-PROGRESS
+      revise_mode: surgical-re-stitch
+      executed: true
+      result_ts: 2026-06-07T03:00:00Z
+      result_note: "Sera establish-leg DONE via surgical re-stitch (DEC-0113). Phase 1 re-decompose b01c03s02 (screen-writer) → surgical render of 4 spots → integrated to draft/b01-c03.md. Jarvis's line now stages Sera's concrete fate (put out / record does not reopen) in courier register; the stakes beat lands the human fact BARE per principal note 'no accounting' (removed the ledger-framing — the cost the accounting refuses to absorb); grounding beat (boy at hoop-stack) added; fence held (Taylor names no motive). Re-cohere confirm pending after c20."
+      result: PASS-SURGICAL
     - chapter: b01c20
       parking_lot_items: [pl-2026-06-06-cohere-002]
       revise_mode: --from-signals
