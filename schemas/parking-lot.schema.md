@@ -18,7 +18,7 @@ Cross-chunk watch-items that span multiple commands or chunks. Authored by any c
 parking_lot:
   version: 1
   items:
-    - id: pl-<YYYY-MM-DD>-<NNN>           # ISO date of creation + monotonic counter; uniqueness scoped to date
+    - id: pl-<YYYY-MM-DD>[-<label>]-<NNN>  # ISO date of creation + optional lowercase-hyphenated label (e.g. `cohere`) + 3-digit counter; uniqueness scoped to (date, label) pair
       created_at: <ISO timestamp>
       created_by: <command + phase>       # e.g. "/and-substance chapter b01c01 Phase 5 (fixer fault-001)"
       target:                             # who resolves
@@ -40,7 +40,7 @@ parking_lot:
 
 ## Field semantics
 
-**`id`** — `pl-<YYYY-MM-DD>-<NNN>` where `NNN` is a 3-digit counter unique within the day. Stable forever — never reused even after resolution.
+**`id`** — `pl-<YYYY-MM-DD>[-<label>]-<NNN>` where `<label>` is an OPTIONAL lowercase-hyphenated tag identifying the originating command or context (e.g. `cohere`, `write`, `substance`), and `<NNN>` is a 3-digit counter unique within the `(date, label)` pair — or within the day when no label is used. Stable forever — never reused even after resolution.
 
 **`target.command`** — bare command name including leading slash (`/and-substance`, `/and-write`, etc.).
 

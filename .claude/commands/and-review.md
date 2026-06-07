@@ -271,6 +271,8 @@ On pass, dispatches the critic against:
 
 Verdict: PASS / PASS-WITH-NOTES / FAIL.
 
+**Pre-commit RECONCILE (CLAUDE.md Rule 21; PROP-0045).** Before persisting the verdict rollup: (1) **citation resolution** — every `DEC-`/`PROP-`/`pl-` id the rollup cites exists and adjudicates the claim attached to it; each finding bullet that attributes itself to a prior decision names a DEC-id that actually exists; (2) **field-equality** — the verdict report's front-matter ruling/counts equal what `books[<slug>].orchestrator_critic_verdict` records. Any FAIL blocks persist until corrected.
+
 Persisted to:
 - `books[<slug>].orchestrator_critic_verdict.{ruling, report_path, verdict_at, stale_since: null}`.
 - Report at `staff/reviews/verdict-<book-slug>-<timestamp>.md`.
@@ -406,6 +408,8 @@ Non-load-bearing axes (FAIL surfaces but does not block; sets `CAUTION-COHERE` a
 For `CAUTION-COHERE` runs, parking-lot items are SOFT — they advise rather than block. `/and-cohere --strict` promotes SOFT cohere items to HARD on the next iteration's read.
 
 **Phase 4 — Persist.**
+
+**Pre-commit RECONCILE (CLAUDE.md Rule 21; PROP-0045).** Before persisting the aggregate report + parking-lot items, run the three blocking checks: (1) **citation resolution** — every cited `DEC-`/`PROP-`/`pl-` id exists and the aggregate's claim about it matches what it actually adjudicates; every generated `pl-` id matches `schemas/parking-lot.schema.md`; (2) **report↔state field-equality** — front-matter `load_bearing_fails`/`failed_axes`/`caution_axes`/`chapter_revise_queue` equal what the cohere-state and parking-lot items record; (3) **self-contradiction scan** — a finding naming N atomic resolution points is filed as N parking-lot items. Emit a three-line CHECK 1/2/3 summary; any FAIL blocks persist until corrected.
 
 - `active-project/staff/reviews/cohere-<book>-<range>-<timestamp>.md` — the full verdict + evidence + chapter-revise queue. YAML-front-mattered:
 

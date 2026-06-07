@@ -18,6 +18,8 @@ Read these in order; stop when you have enough state to act:
 
 If `active-project/` is empty: no project active. Tell the user and ask whether to activate a new one (`/and-project`) or restore a shelved one from `projects/`.
 
+**Book-complete check (do this before treating any forward-motion trigger as "produce a chapter").** If memory.md shows the active book is **complete** — every planned chapter shipped AND the last chapter is series-terminal (e.g. `b01c20` carries `SERIES-TERMINAL`) AND `/and-review verdict b<NN>` has issued (PASS / PASS-WITH-NOTES) — then there is **no next chapter**. "Write" / "continue" / "next" do NOT mean chapter-production. Route to **Producing revisions — book-complete protocol** below, or print the post-completion menu (revise · archive to `projects/` · extend to b<NN+1> · new project). Do not engage the chapter-production protocol against a nonexistent chapter.
+
 ---
 
 ## Pipeline state machine
@@ -54,7 +56,9 @@ If `active-project/` is empty: no project active. Tell the user and ask whether 
 | User says | Do this |
 |---|---|
 | "produce c<MM>" / "do chapter X" / "write the next chapter" / "walk away while you do c<MM>" / any phrasing meaning "give me a finished chapter" | **Engage the chapter-production protocol below.** This is the canonical operation. |
-| "write" / "continue" / "next" / "go" | Read memory.md. If a chapter is mid-chain (some phases done, some not), resume from the next phase. If the most recent chapter shipped through Phase 10, engage chapter-production for the next chapter. |
+| "write" / "continue" / "next" / "go" | Read memory.md. **First run the book-complete check (above).** If the book is complete: there is no next chapter — print the post-completion menu or, if revisions are in progress, resume the revisions protocol. Otherwise: if a chapter is mid-chain (some phases done, some not), resume from the next phase; if the most recent chapter shipped through Phase 10, engage chapter-production for the next chapter. |
+| "revise" / "begin revisions" / "fix the book" / "revise c<MM>" | **Engage the revisions protocol below.** Works on a complete (or any shipped) book — picks revision scope from the cohere/parking-lot queue + postop + your direction, then re-cascades the affected chapters. |
+| "consolidate" / "single file" / "assemble the manuscript" | Build/refresh `active-project/draft/b<NN>-manuscript.md` (concatenated chapter drafts with dividers). The revision read-surface. |
 | "ship it" / "stitch" | If facets are done: `/and-stitch <slug>` (will include Phase 10). Else: figure out what's missing and route there. |
 | "review the chapter" | `/and-review verdict b<NN>` (book-level) or `/and-postop b<NN>c<MM>` (chapter-level depth-of-quality). |
 | "cohere" / "check the stretch" / "is the book hanging together" | `/and-cohere b<NN> [<from>-<to>]`. Opt-in cross-chapter loop. |
@@ -196,6 +200,45 @@ While the chain runs:
 
 ---
 
+## Producing revisions — book-complete protocol
+
+When the book is shipped and the user asks to revise it, this is the operation. Revisions **mutate already-shipped drafts** — that is irreversible relative to the terminal deliverable, so the discipline below is mandatory. Unlike chapter-production, revisions are *targeted*: you change named chapters for named reasons, not the whole book on spec.
+
+### Where revision scope comes from (in priority order)
+
+1. **The cohere / parking-lot revise queue.** `active-project/staff/showrunner/parking-lot.md` items with `created_by: /and-review cohere` (or any `target.command: /and-write` revise item) are the pre-identified, evidence-backed revision targets. The b01 standing queue: `pl-2026-06-06-cohere-001` (c03 Sera establish-leg) + `pl-2026-06-06-cohere-002` (c20 Sera confirm-leg) — both SOFT, principal-deferred per DEC-0108.
+2. **`/and-postop` findings** on shipped chapters (depth-of-quality calls).
+3. **Principal direction** — a specific concern the user names ("the middle sags", "Sera never lands"). Read the consolidated manuscript (below) to ground it.
+4. **A fresh `/and-cohere` run** if the book hasn't been cohered recently or the revision question is cross-chapter.
+
+Do NOT invent revision targets the queue and the principal did not name. A complete book is the deliverable; the bar for re-opening it is an evidence-backed finding, not a vibe.
+
+### The two revision mechanisms
+
+- **Per-chapter re-cascade (the workhorse).** For a finding localized to one chapter's bones: `/and-write b<NN>c<MM> revise [--from-signals]` → `/and-review bones` → `/and-facets` → `/and-stitch` (through Phase 9, and Phase 10 re-thread if the change is substantive). This is the same chain as chapter-production, run in `revise` mode against an existing chapter. Cap-bounded gates (R2) apply identically.
+- **Cross-chapter cohere loop.** For a finding that spans chapters (a setup/payoff that crosses chapter boundaries, like the Sera arc): `/and-cohere b<NN> [<from>-<to>]`, which consumes the revise queue and re-cascades each affected chapter until `PASS-COHERE` or convergence cap. `--strict` promotes SOFT queue items to HARD.
+
+### Mandatory discipline
+
+- **Archive before mutating.** Before any chapter re-cascade, copy the current `active-project/draft/b<NN>-c<MM>.md` into `active-project/draft/_archive/<date>-pre-revise-<reason>/`. The shipped version is the baseline you must be able to diff against and restore.
+- **Rules 19/20/21 apply to every dispatch** (verify emitted artifacts exist on disk; read-back any async agent's shared-state edits before committing; RECONCILE hand-authored aggregates before commit).
+- **One revision reason at a time.** Don't bundle the Sera fix with an unrelated prose pass — each revision should be traceable to its queue item / DEC.
+- **Re-thread and re-consolidate after.** A substantive change ripples: run `/and-stitch` Phase 10 forward-thread for downstream chapters if continuity moved, then refresh the consolidated manuscript (below). Stamp the resolved parking-lot item (`resolved_at` / `resolved_by` / `resolution_note`).
+- **Re-cohere to confirm.** After applying a cohere-queue revision, re-run `/and-cohere` (or `/and-review cohere`) on the affected range to confirm the finding closed and nothing regressed.
+
+### Consolidated manuscript (the revision read-surface)
+
+Keep a single assembled file at `active-project/draft/b<NN>-manuscript.md` — the 20 chapter drafts concatenated with chapter dividers. This is what you read to decide and judge revisions (not 20 separate files). Rebuild it after any chapter re-cascade so it never lies. It is a *derived* artifact — never hand-edit it; edit the per-chapter drafts via the chain and regenerate.
+
+### What NOT to do during revisions
+
+- Do NOT hand-edit `draft/b<NN>-c<MM>.md` or the consolidated manuscript directly to "just fix a line." Prose changes go through `/and-write revise` → chain, so bones/facets/state stay coherent. (Polish-layer direct prose editing is `/and-wrap`, still deferred.)
+- Do NOT mutate a shipped draft without archiving the baseline first.
+- Do NOT re-open chapters the queue and principal did not name.
+- Do NOT skip the re-thread / re-cohere confirmation after a substantive change.
+
+---
+
 ## Common gotchas (check before advancing)
 
 - **`project.series_audit.stale_since` is set** → `/and-substance book` HARD-aborts. Series-level audit needs re-approval at `/and-cast` Phase 5.
@@ -203,6 +246,7 @@ While the chain runs:
 - **Parking-lot HARD item matching current phase** → must resolve at this run, not later.
 - **`aggregate-state.md` has unacknowledged substantive revision-layer entries** → `/and-substance chapter` Phase 0 HARD-aborts. Principal must acknowledge each entry (or upstream-rerun) before producing the next chapter.
 - **PROP-0002 (em-dash-fold caps) and PROP-0004 (exposition surface field) are in queue, not implemented.** Don't pretend the gates exist.
+- **Rules 19/20/21 are LIVE (PROP-0043/44/45, implemented 2026-06-07).** Every dispatch: (19) verify a Write-capable agent's contracted artifact is on disk before consuming/committing — an in-message-only result is NOT delivered; (20) read-back any async agent's edits to shared state (parking-lot / memory / decisions / cohere-state / proposals) before committing on top; (21) RECONCILE hand-authored cohere/verdict aggregates (citation resolution + report↔state field-equality + self-contradiction split) before commit. These are not optional.
 - **PROP-0003-A voice exemplar at `active-project/voice-exemplar.md`** is optional but recommended for `/and-stitch`. Absence is fine; just note `voice-exemplar: ABSENT` in pre-flight.
 - **PROP-0005 persona-exemplars auto-resolve at agent dispatch.** Tier-1 agents (impersonator, audience) self-load from `cards/persona-exemplars/` or `active-project/persona-exemplars/` — no dispatcher action needed.
 - **Polish / `/and-wrap` is deferred.** `draft/<book>-<chapter>.md` is the terminal deliverable. Don't try to author polish.

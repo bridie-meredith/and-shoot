@@ -219,6 +219,8 @@ series:
         class: plot
         notes: "monotonic rise; mirrors political_register-prot rise — Taylor despises what she is consolidating; world benefits in exact proportion to her contempt growing"
 
+    # communication_class_axes (custom-signature ruling, 2026-05-30): relational_anchor_status + social_tether-* family serve as this project's communication/relational-class axes for bones.schema.md § Dialogue-anchor bones; auditors must NOT slug-match against the universal questionnaire taxonomy (community/knowledge/reputation/trust) — those slugs do not exist in this signature.
+
     # actor_baselines: authored 2026-05-24 at Step 4d (post-cast); 132 cells (11 actors × 12 axes).
     # Admin DEC-0002 ACCEPT (basis: ltm:2026-05-24 handle-routine + methodology:3a reversibility + 3b cost).
     # Draft archived: active-project/staff/showrunner/_drafts/actor-baselines-draft-2026-05-24.md
@@ -1462,7 +1464,7 @@ series:
         # rise-phase chapters allocate Δ on the -rise axis; collapse-phase chapters allocate Δ on the -collapse axis.
       chapter: { delta_per_signature_axis: 0.5-1.5, density_target: 0.5-0.9, bone_count: 15-75 }
       scene:   { delta_per_signature_axis: 0-1.5,   density_target: 0.6-0.9, bone_count: 5-15 }
-      bone:    { delta_per_axis: 1-3, axes_per_bone: 1-2 }
+      bone:    { delta_per_axis: 1-3, axes_per_bone: 1-2 }  # 1-3 floor applies when scene_target_delta_magnitude >= 1.0; when scene_target_delta_magnitude < 1.0, magnitude = scene_target_delta_magnitude is accepted (see showrunner-memory.schema.md bone conditional; precedent DEC-0002)
 
     # Phase 4b verdict (pulp-enthusiast taste-judge): ACCEPT (v1 substance; carried to v2).
     # Phase 5 attempt 1 aggregate: REVISE (audience SUBSTANCE-FLAT-antagonist_pressure;

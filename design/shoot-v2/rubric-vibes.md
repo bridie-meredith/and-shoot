@@ -32,7 +32,7 @@ This is the loosest facet to date by sparsity (no upper ceiling). It is also the
   - `memory:<id>` (callback/recognition as licensing event)
   - `feeling:<id>` (somatic tell as licensing event)
   - `proto:<id>` (direct beat reference when no upstream facet captures)
-  - `tens:<reading>` (peak-tension as supporting licensing)
+  - `peak-bone:<flat-id>` (scene-map peak-bones membership as supporting licensing; pre-overhaul `tens:<reading>` retired under URI-SUBSTANCE-OVERHAUL)
   - `canon:<gloss>` (off-screen / pre-episode canon context)
   - `world-build:<gloss>` (series-baseline / world-build context)
 
@@ -57,7 +57,7 @@ Multi-source allowed and encouraged. ≥1 source required (no unlicensed entries
 
 ## Anti-patterns
 
-- **AP1 transient-as-vibe.** Mood / weather / scene-tone / momentary feeling. These belong to sensory / feeling / tens facets. Vibes are permanent. Test: would this still be true at s01e02 open? If no, refuse.
+- **AP1 transient-as-vibe.** Mood / weather / scene-tone / momentary feeling. These belong to sensory / feeling facets. Vibes are permanent. Test: would this still be true at s01e02 open? If no, refuse.
 - **AP2 state-restated-as-vibe.** Canonical state-update or condition-card content restated as vibe. State-updates writes facts; vibes derive *qualitative consequences* from facts. Example: state-updates fires `taylor.administrative-status: child-or-ward → provisional-labor-eligible`. Vibes does NOT write `+provisional-labor-eligible`. Vibes writes `+the-naming: [function-given-aloud, irrevocable, no-going-back-in-this-direction, the-form-fits]` — the *qualitative-consequence* layer.
 - **AP3 feeling-as-vibe.** Somatic tells (`+heart-racing`, `+breath-held`) are feeling-flags, not vibes. Vibes are durable; somatic tells are momentary.
 - **AP4 unlicensed-vibe.** No `licensed-by:` source. Refuse.
@@ -112,7 +112,7 @@ The mechanic does not score register-fit per se; it checks that *some* downstrea
 - `memory:<id>` — callbacks/recognitions trigger vibe-fires (a recognition is itself a memorable event-class).
 - `feeling:<id>` — somatic costs accumulate as vibes (e.g., `+cost-made-visible` after a feeling-fire that exposes interior cost).
 - `proto:<id>` — direct beat citation when no upstream facet captures.
-- `tens:<reading>` — supporting; peak-tension co-cites tighten licensing.
+- `peak-bone:<flat-id>` — supporting; scene-map peak-bones membership as supporting licensing (pre-overhaul `tens:<reading>` retired under URI-SUBSTANCE-OVERHAUL).
 - `canon:<gloss>` — off-screen / pre-episode events.
 - `world-build:<gloss>` — series-baseline; rare during episode authoring.
 

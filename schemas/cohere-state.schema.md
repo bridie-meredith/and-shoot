@@ -108,7 +108,7 @@ cohere_state:
 - `converged` — `PASS-COHERE` reached; `final_verdict: PASS-COHERE`; `closed_at` stamped.
 - `cap-hit` — `iteration_count >= max_iter` without `PASS-COHERE`; `final_verdict: CAP-HIT`; admin process-critic escalation logged.
 - `held` — a `revise_queue[].result == FAIL` or `HELD` bubbled up; principal triage required before next iteration; `final_verdict: HELD` until triaged.
-- `dismissed` — principal explicit dismissal (e.g. `/and-cut` on a cohere run, or a `--dry-run` exit); `closed_at` stamped, `final_verdict: null`.
+- `dismissed` — principal explicit dismissal (e.g. `/and-cut` on a cohere run, or a `--dry-run` exit, or a DEFER answer at Phase 4's principal-defer check when all queue targets are finished+accepted chapters); `closed_at` stamped, `final_verdict: null`. In the defer case, `revise_queue[].result: SKIPPED` with `result_note` naming the deciding DEC.
 
 **`final_verdict`** — set only on `status` transitions away from `open`. Distinct from `verdict_trace[-1].verdict` — `final_verdict` is the loop outcome, not the most-recent review verdict.
 

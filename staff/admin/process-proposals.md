@@ -5813,7 +5813,18 @@ evidence_refs:
   - "active-project/staff/showrunner/memory.md — series.substance.signature.cost_ledger:
     protect-target declared as the structural anchor of the trades (the person the
     arrangement is owed against keeping alive)."
-recurrence_count: 2
+recurrence_count: 4
+recurrence_refs:
+  - "active-project/staff/reviews/cohere-b01-all-20260606T215813Z.md — DEC-0109 (2026-06-06)
+    whole-book /and-cohere (b01 all, c01-c20) dramatist-promise-payoff finding: Sera Hightower
+    payoff-weight drop. Sera introduced c03 as the cost-justification of the Otto arrangement;
+    never appears as a person across all 20 chapters; threat never staged; c20 decommission does
+    not confirm protection. Reader never feels her weight — the moral engine's human face is a
+    ledger entry. Third independent /and-review cohere run to flag the same root: protect-target
+    absent-as-felt-person across the full book. Confirms gap is structural and persisted to
+    book-close despite three sub-section coheres routing it 'not chapter-fixable → /and-review
+    verdict b01.' Full-book scope is the terminal confirmation of the gap PROP-0042 targets at
+    planning time."
 proposed_diff: |
   In .claude/commands/and-substance.md, Phase 5 — Chunk-quality review, book level,
   in the dramatist reviewer row, add a new check alongside the existing cross-chapter
@@ -5871,6 +5882,365 @@ status: open
 triaged_at: null
 triaged_by: null
 disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
+
+---
+
+## PROP-0043
+
+```yaml
+id: PROP-0043
+created_at: 2026-06-07T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: principal-initiated-retro
+  source_report: active-project/staff/auditor/cohere-b01-all-aggregate-audit.md
+  source_verdict: retro (session retrospective on the /and-cohere b01 all cycle, 2026-06-06; no gate verdict)
+target:
+  type: agent-card
+  path: CLAUDE.md
+  section: "Rules — dispatch-discipline (new rule, candidate Rule 19)"
+change_type: add
+rationale: |
+  During the /and-cohere b01 all session (2026-06-06), the auditor was dispatched to
+  produce and persist `active-project/staff/auditor/cohere-b01-all-aggregate-audit.md`.
+  The auditor returned its full classified findings report in its final message but never
+  wrote the file. The dispatcher (the main session) consumed the in-message result without
+  noticing the artifact was absent. The gap was caught ONLY by a post-session `git log
+  -- <path>` + `ls` check; the report was one step from permanent loss. The principal had
+  to reconstruct and persist it from the agent's return text.
+
+  This is a structural dispatch-discipline gap, not a one-off execution error: any
+  Write-capable agent contracted to emit a file can return its complete result in-message
+  and never touch the filesystem, and no existing rule or convention requires the dispatcher
+  to check. The check is trivially cheap (single stat/ls call), but it is not currently
+  mandated anywhere in the pipeline. The failure class is silent — there is no error, no
+  FAIL verdict, no gate that fires. The dispatcher treats in-message content as delivered;
+  the filesystem does not.
+
+  There is no existing gate, command phase, or CLAUDE.md rule that covers this class.
+  First occurrence, but: (a) the mechanism is structurally generic — applies to every
+  Write-capable agent across every command; (b) the consequence is permanent data loss on
+  the next context window boundary; (c) the fix is S-cost (one mandated existence check
+  per contracted emit path); (d) the check is a single stat/ls — no false positives, no
+  blast radius. The first-occurrence hold does not apply when the failure mode is silent
+  data loss and the fix is trivially cheap. Proposing at first occurrence.
+
+  change_type: add — no existing rule covers this; the check is a new dispatch-discipline
+  requirement, not a modification of an existing one.
+evidence_refs:
+  - "active-project/staff/auditor/cohere-b01-all-aggregate-audit.md — full audit classified
+    and filed (by principal reconstruction) 2026-06-06; the original agent dispatch returned
+    findings in-message only; the file did not exist until the principal manually persisted
+    from the return text; confirmed by git log -- active-project/staff/auditor/cohere-b01-
+    all-aggregate-audit.md showing no auditor-authored commit"
+  - "CLAUDE.md §Agent routing table — auditor row: declares that auditor emits to
+    active-project/staff/auditor/ but specifies no dispatcher existence-check obligation"
+  - "CLAUDE.md §Rules — no existing rule requires dispatchers to verify file persistence
+    after a Write-capable agent returns; Rule 4 ('Nothing moves without being recorded')
+    is the closest existing principle but applies to story-state, not dispatch artifacts"
+recurrence_count: 1
+proposed_diff: |
+  In CLAUDE.md, §Rules, add a new dispatch-discipline rule (next available number after
+  Rule 18; candidate Rule 19):
+
+  **Rule 19. Subagent output-persistence check (TRUST-WITHOUT-VERIFY gate).** Any
+  command body or main-session dispatch that sends work to a Write-capable agent contracted
+  to emit one or more specific artifacts MUST existence-check each declared output path on
+  disk BEFORE consuming the in-message result or building on it in subsequent phases.
+
+  Enforcement:
+    1. After the agent returns, stat or ls each declared output path.
+    2. If the file exists on disk: proceed normally.
+    3. If the file does NOT exist on disk (in-message-only result):
+       (a) Treat the artifact as NOT DELIVERED.
+       (b) Persist the artifact from the in-message return text to the declared path, OR
+           re-dispatch the agent with an explicit write instruction.
+       (c) Confirm existence before proceeding.
+
+  Application scope: any agent dispatched with a contracted emit path. The contracted
+  emit path is determinable from:
+    - The agent routing table (e.g., auditor → active-project/staff/auditor/<scope>-audit.md;
+      screen-writer, studio, margit, renderer, editor, fixer similarly).
+    - Explicit path declarations in the command phase brief sent to the agent.
+
+  This check is always cheap (one stat/ls). It is never optional.
+
+  OPTIONAL COMPANION (same implementation pass, cost S):
+    In command bodies that fan out to Write-capable emitters (/and-write, /and-facets,
+    /and-review, /and-stitch, /and-cohere Phase 2-3), add a per-phase existence-check
+    note in the phase's closing step:
+
+      "**Emit verify:** before reading this phase's output for downstream use, confirm
+      the emitter's declared artifact is on disk at the expected path. If absent, persist
+      from in-message return or re-dispatch."
+
+    This companion is low-value if Rule 19 is implemented in CLAUDE.md (both enforce the
+    same discipline); include only if the principal wants belt-and-suspenders per command body.
+
+cost_estimate: S
+status: implemented
+triaged_at: 2026-06-07
+triaged_by: principal (session)
+disposition_note: "ACCEPTED + IMPLEMENTED as CLAUDE.md Rule 19 (2026-06-07). Optional per-command companion NOT added — Rule 19 enforces the discipline globally."
+pr_ref: null
+defer_until: null
+supersedes: null
+```
+
+---
+
+## PROP-0044
+
+```yaml
+id: PROP-0044
+created_at: 2026-06-07T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: principal-initiated-retro
+  source_report: active-project/staff/auditor/cohere-b01-all-aggregate-audit.md
+  source_verdict: retro (session retrospective on the /and-cohere b01 all cycle, 2026-06-06; no gate verdict)
+target:
+  type: agent-card
+  path: CLAUDE.md
+  section: "Rules — dispatch-discipline (new rule, candidate Rule 20)"
+change_type: add
+rationale: |
+  During the /and-cohere b01 all session (2026-06-06), an admin user-proxy dispatch
+  (DEC-0108) was given Edit/Write access to `active-project/staff/cohere/b01-all-state.md`
+  and mutated that file after the main session's own write. The admin edit introduced a
+  duplicate YAML `result:` key (a `result: null` initial value coexisting with a
+  `result: SKIPPED` stamp in the same mapping node — schema-invalid per audit fault-002).
+  The main session committed on top of the mutated file without reading the diff;
+  the defect was caught only by the subsequent auditor pass. This is the class of failure
+  where an async agent with Edit/Write access modifies shared state, and the dispatcher
+  treats the state as settled based on its own prior version rather than the mutated result.
+
+  The gap is distinct from PROP-0043 (output-persistence): PROP-0043 targets agents that
+  FAIL to write a file; this proposal targets agents that SUCCESSFULLY mutate a shared file
+  in ways the dispatcher does not review before committing. The failure mode is: dispatcher
+  writes state → dispatches async agent with Edit/Write to same state → agent mutates state
+  → dispatcher commits without reading the resulting diff → defect ships.
+
+  The affected shared state surfaces are: cohere-state files; parking-lot.md; showrunner
+  memory.md; decisions.md; process-proposals.md; and any other file written by BOTH the
+  main session and an async agent in the same invocation. The fix is a single read-back
+  of the mutated file (or equivalent diff) after the async agent returns, before the
+  dispatcher treats the state as settled. This is cheap, targeted, and structurally prevents
+  the entire class.
+
+  First occurrence at the explicit-defect-introduction level. Proposing at first occurrence
+  because: (a) any async agent with Edit/Write dispatched to a shared state file can
+  introduce schema-invalid edits, and the failure is silent (no gate fires on a committed
+  defect until a downstream auditor reads the file); (b) the check is trivially cheap;
+  (c) the affected surfaces include `decisions.md` and `process-proposals.md` — the admin
+  agent's own shared-state output — making the gap self-referential and worth closing early.
+
+  change_type: add — no existing CLAUDE.md rule or dispatch-discipline convention
+  requires a post-agent-mutation read-back before committing shared state. Rule 4
+  ("Nothing moves without being recorded") governs story-state authorship; it does not
+  govern dispatch-state review. PROP-0043's output-persistence check is orthogonal
+  (existence vs. content integrity). A separate rule is warranted.
+evidence_refs:
+  - "active-project/staff/auditor/cohere-b01-all-aggregate-audit.md — fault-002: state file
+    b01-all-state.md revise_queue[0] — duplicate result key (result: null AND result: SKIPPED);
+    'Introduced by the admin DEC-0108 edit'; resolution: RESOLVED (fixer pass)"
+  - "staff/admin/decisions.md — DEC-0108 (the admin user-proxy dispatch that held Edit/Write
+    to active-project/staff/cohere/b01-all-state.md; the duplicate key was introduced in that
+    dispatch's edit)"
+  - "CLAUDE.md §Rules — no existing rule requires the dispatcher to read-back shared state
+    files after an async agent with Edit/Write returns, before committing or building on
+    those files"
+  - ".claude/commands/and-cohere.md — Phase 3 triage step + admin dispatch protocol:
+    admin is dispatched with Edit/Write to cohere-state; no post-dispatch diff-check step"
+recurrence_count: 1
+proposed_diff: |
+  In CLAUDE.md, §Rules, add a new dispatch-discipline rule (next available number after
+  Rule 19 / PROP-0043; candidate Rule 20):
+
+  **Rule 20. Post-async-agent shared-state read-back.** When an async agent is dispatched
+  with Edit or Write access to a SHARED state file — any file the main session has also
+  written or will write in the same invocation — the session MUST read the resulting state
+  of the touched paths BEFORE treating that state as settled or committing on top of it.
+
+  The check applies to: cohere-state files; parking-lot.md; showrunner memory.md;
+  decisions.md; process-proposals.md; and any other path the dispatcher names in the agent
+  brief as a target for agent mutation.
+
+  Procedure:
+    1. Agent dispatch returns.
+    2. Before proceeding: read the current state of every shared path the agent was
+       authorized to touch (read the file or run git diff HEAD -- <path>).
+    3. If the result is as expected: proceed.
+    4. If the result introduces schema violations, duplicate keys, unexpected field
+       mutations, or content the dispatcher did not authorize: correct before committing.
+       Do NOT commit on top of an unreviewed agent mutation.
+
+  Application scope: admin user-proxy + admin process-critic dispatches (both write to
+  decisions.md and process-proposals.md), showrunner dispatches (write to memory.md and
+  parking-lot.md), margit dispatches, fixer dispatches (write to cohere-state and facet
+  files), and any other async dispatch with Edit/Write to shared state.
+
+  DISTINCTION FROM PROP-0043 (Rule 19):
+    Rule 19 addresses the case where an agent FAILS to write a contracted file (missing
+    artifact). Rule 20 addresses the case where an agent SUCCESSFULLY mutates a shared file
+    in an unreviewed way (defective content). Both rules apply independently; neither
+    subsumes the other.
+
+cost_estimate: S
+status: implemented
+triaged_at: 2026-06-07
+triaged_by: principal (session)
+disposition_note: "ACCEPTED + IMPLEMENTED as CLAUDE.md Rule 20 (2026-06-07)."
+pr_ref: null
+defer_until: null
+supersedes: null
+```
+
+---
+
+## PROP-0045
+
+```yaml
+id: PROP-0045
+created_at: 2026-06-07T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: principal-initiated-retro
+  source_report: active-project/staff/auditor/cohere-b01-all-aggregate-audit.md
+  source_verdict: retro (session retrospective on the /and-cohere b01 all cycle, 2026-06-06; no gate verdict)
+target:
+  type: command
+  path: .claude/commands/and-cohere.md
+  section: "Phase 3 — Triage / Phase 4 — aggregate authoring (pre-commit RECONCILE sub-step)"
+change_type: add
+rationale: |
+  During the /and-cohere b01 all session (2026-06-06), the principal hand-authored the
+  cohere aggregate (rolled-up verdict + Phase 3 triage + parking-lot item + state write).
+  The subsequent auditor pass found three independently-authored defects that a brief
+  structured self-check at authoring time would have caught:
+
+  (1) fault-001 — citation error: the aggregate's triage note cited DEC-0105 as the
+  authority for treating naive-q6 as design-accepted at whole-book cohere scope. DEC-0105's
+  actual subject was the depth-pass deferral (skip the depth-pass revise loop before
+  /and-review verdict b01); it says nothing about the cohere-axis naive-q6 acceptance.
+  The real authority was the per-chapter DEC chain (DEC-0060/0062/0066/0072/0074/0085/
+  0087/0090/0096/0099/0104) plus DEC-0109 (the process-critic dispatch authored by the
+  same run). The citation was imprecise/circular and visible in the output at authoring time.
+
+  (2) fault-004 — self-contradiction: the aggregate's parking-lot item text described a
+  TWO-point fix (c03 establish + c20 confirm), but target.scope named only b01c03 — the
+  c20 confirm-leg was untracked. The item's own description named both points; the
+  target.scope omitted one. This contradiction was visible in the output at authoring time.
+
+  (3) fault-003 — schema-id format drift: the cohere parking-lot items used the convention
+  `pl-<YYYY-MM-DD>-cohere-<NNN>` (cohere- infix). The parking-lot schema at authoring
+  time specified `pl-<YYYY-MM-DD>-<NNN>` (no infix). SYSTEMATIC deviation across ~6 items
+  (pl-2026-06-01-cohere-001..005 + the b01-all item). Root-fixed by amending the schema
+  this session (the established convention was legitimate; the schema was wrong). A
+  citation-format check at authoring time would have detected the drift.
+
+  All three are visible-at-authoring-time defects on hand-authored rollup artifacts — the
+  exact class a structured pre-commit self-check catches. The class generalizes: any
+  /and-cohere aggregate or /and-review verdict rollup hand-authored by the orchestrating
+  session faces citation-accuracy, report-to-state field-equality, and self-contradiction
+  risks that no downstream gate is specifically designed to catch at the authoring layer
+  (the auditor catches them post-hoc, not pre-commit).
+
+  This is an add (change_type: add) — no pre-commit self-check sub-step exists in
+  /and-cohere Phase 3/4 or in /and-review (verdict/cohere subcommands). The closest
+  existing mechanism is the post-hoc auditor pass (not always invoked; separate dispatch;
+  costs model tokens to find defects that are free to catch at authoring time).
+
+  Proposing at first explicit-fault-instance. Rationale for first-occurrence proposal:
+  (a) fault-001 and fault-004 are simultaneously present in the same artifact — a
+  structural pattern, not a one-off; (b) fault-003 is a systematic drift across multiple
+  items; (c) the check is mechanizable at near-zero cost; (d) the target command body is
+  the natural home — the check belongs at the phase that authors the aggregate, not at a
+  separate auditor dispatch; (e) /and-review verdict rollups face the same citation-accuracy
+  risk and benefit from the same sub-step.
+
+  Distinct from PROP-0043 (output-persistence) and PROP-0044 (async-agent shared-state
+  read-back): those proposals target dispatch execution; this proposal targets the authoring
+  discipline of the hand-authored aggregates those dispatches produce.
+evidence_refs:
+  - "active-project/staff/auditor/cohere-b01-all-aggregate-audit.md — fault-001: triage
+    cites DEC-0105 as naive-q6 cohere-scope authority; DEC-0105's actual scope is depth-pass
+    deferral; correct authority is per-chapter DEC chain (DEC-0060/0062/0066/0072/0074/0085/
+    0087/0090/0096/0099/0104) + DEC-0109"
+  - "active-project/staff/auditor/cohere-b01-all-aggregate-audit.md — fault-004:
+    pl-2026-06-06-cohere-001 item text names two resolution points (c03 establish + c20
+    confirm); target.scope filed as b01c03 only; c20 confirm-leg untracked; criteria:
+    'file a second item targeting b01c20'"
+  - "active-project/staff/auditor/cohere-b01-all-aggregate-audit.md — fault-003:
+    pl-<YYYY-MM-DD>-cohere-<NNN> id format violates schemas/parking-lot.schema.md
+    pl-<YYYY-MM-DD>-<NNN> spec at authoring time; ~6 items; root-fixed by schema amendment
+    this session to permit optional [-<label>] infix"
+  - "schemas/parking-lot.schema.md — id format specification (post-session-fix: now permits
+    optional [-<label>] infix per the established convention; fault-003 drove the schema
+    amendment)"
+  - ".claude/commands/and-cohere.md — Phase 3 (triage) and Phase 4 (aggregate authoring):
+    no pre-commit self-check sub-step; post-hoc process-critic dispatch at Phase 4.5 fires
+    after commit, not before"
+  - ".claude/commands/and-review.md — verdict subcommand aggregate authoring: no citation-
+    resolution or report-to-state field-equality check step; same risk class"
+recurrence_count: 1
+proposed_diff: |
+  PRIMARY TARGET — .claude/commands/and-cohere.md, Phase 3 (triage) and Phase 4
+  (aggregate authoring), add a pre-commit RECONCILE sub-step immediately before the
+  phase's output is written to disk:
+
+  **Pre-commit self-check (RECONCILE).** Before committing the cohere aggregate (triage
+  note, state write, parking-lot items), run the following three checks in order:
+
+    CHECK 1 — CITATION RESOLUTION.
+    For every DEC-<NNNN>, PROP-<NNNN>, or pl-<date>-<NNN> id cited in the aggregate:
+      (a) Confirm the id exists in its owning file (decisions.md, process-proposals.md,
+          parking-lot.md). If absent, mark as MISSING-CITATION.
+      (b) Confirm the claim the aggregate makes about that id matches what the id actually
+          says. Specifically: if a DEC is cited as "the authority for X," read the DEC's
+          decision/rationale and confirm it adjudicates X. If it does not, replace the
+          citation with the correct id(s) or correct the claim.
+    Also confirm that any generated parking-lot item id matches schemas/parking-lot.schema.md
+    id pattern (pl-<YYYY-MM-DD>[-<label>]-<NNN>).
+    Blocking: any MISSING-CITATION, citation-mismatch, or id-format violation blocks commit.
+
+    CHECK 2 — REPORT-TO-STATE FIELD-EQUALITY.
+    Compare the aggregate's front-matter axes/queue against the state file's corresponding
+    fields. Specifically:
+      (a) load_bearing_fails count in the report = load_bearing_fails count in the state.
+      (b) failed_axes list in the report matches failed_axes list in the state.
+      (c) caution_axes, revise_queue[*].chapter, and revise_queue[*].result in the state
+          match the aggregate's triage disposition.
+    Blocking: any mismatch blocks commit.
+
+    CHECK 3 — SELF-CONTRADICTION SCAN (judgement check; not fully mechanizable).
+    For each parking-lot item in the aggregate:
+      (a) Count the number of atomic resolution points named in the item's text
+          (e.g., "c03 establish AND c20 confirm" = two points).
+      (b) Confirm that the number of filed items for this finding equals the number of
+          atomic resolution points. If the text describes N points but only 1 item is filed,
+          flag as RESOLUTION-COUNT-MISMATCH and split the item before committing.
+    Blocking: RESOLUTION-COUNT-MISMATCH blocks commit.
+
+  Output of the RECONCILE sub-step: a three-line check summary inline before the commit
+  block (CHECK 1: PASS/N-issues, CHECK 2: PASS/N-mismatches, CHECK 3: PASS/N-splits).
+  All three PASS → proceed to commit. Any FAIL → correct before committing.
+
+  SECONDARY TARGET — .claude/commands/and-review.md, verdict subcommand aggregate
+  authoring: add the same CHECK 1 (citation resolution + id-format validation) and
+  CHECK 2 (verdict report front-matter vs. state field-equality). CHECK 3 adapted to:
+  "each finding bullet matched to a DEC-id that exists and adjudicates that finding."
+  Same blocking semantics.
+
+cost_estimate: M
+status: implemented
+triaged_at: 2026-06-07
+triaged_by: principal (session)
+disposition_note: "ACCEPTED + IMPLEMENTED as CLAUDE.md Rule 21 + RECONCILE sub-steps in and-cohere.md Phase 7 and and-review.md (cohere Phase 4 + verdict persist), 2026-06-07."
 pr_ref: null
 defer_until: null
 supersedes: null

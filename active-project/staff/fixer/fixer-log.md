@@ -1,3 +1,111 @@
+## SESSION-END — 2026-06-07T03:13:00Z — pipeline-legs23-tensometer-residue-5-findings
+findings-applied: 5 (STRUCT-017, STRUCT-019, STRUCT-026 co-resolved on rubric-metaphor.md; STRUCT-018 on rubric-vibes.md; STRUCT-020 on rubric-feeling.md)
+findings-skipped: 0
+exit: CLEAN
+
+## STRUCT-020 — RESOLVED — 2026-06-07T03:12:00Z
+fault: rubric-feeling.md retained tensometer vocabulary in 4 locations: (a) §"Curve-shape rubric (tens-independent)" section title and body referenced t=1/t=2/t=3 tensometer scalars; (b) §"Cross-facet contract / Tensometer" subsection listed tensometer as active cross-facet consideration; (c) sparsity table row "Tens distribution | distribute across t=1, t=2, t=3 | soft"; (d) anti-pattern #10 "Density-on-flat-tens" named the tensometer concept
+scope: line (rubric-feeling.md, 4 targeted locations)
+change: (a) section title "Curve-shape rubric (tens-independent)" -> "Curve-shape rubric (pressure-zone-independent)"; body rule rewritten from tensometer-gating to scene-map zone-distribution; t=1/t=2/t=3 -> flat-low/rising/peak-bones; retirement note added; (b) "Tensometer (observation-only, like sensory)" subsection title -> "Scene-map (observation-only, like sensory)"; body updated to reference scene-map rhythm-shape + peak-bones with retirement note; (c) sparsity table row: "Tens distribution | distribute across t=1, t=2, t=3" -> "Zone distribution | distribute across scene-map zones (flat-low / rising / peak-bones)"; (d) anti-pattern #10: "Density-on-flat-tens. Fires concentrated at peaks only; tens-monoculture." -> "Zone-monoculture. Fires concentrated at peak-bones zones only; distribute across scene-map zones"
+criteria met: yes — tensometer vocabulary removed from all 4 locations; semantic intent preserved (do not concentrate fires at peaks; distribute across zones); scene-map rhythm-shape + peak-bones vocabulary substituted throughout; no gate was removed (all were observation-only / soft)
+
+## STRUCT-018 — RESOLVED — 2026-06-07T03:08:00Z
+fault: rubric-vibes.md §"Cross-facet contract — Read side" listed tens:<reading> as a valid licensed-by source type; schema content-shape <source> enumeration also listed tens:<reading> as a valid source; both retired under URI-SUBSTANCE-OVERHAUL; schema live form uses peak-bone:<flat-id>; AP1 also referenced "tens facets" (dropped facet type)
+scope: line (rubric-vibes.md, 3 targeted locations)
+change: (a) schema content shape <source> enumeration: tens:<reading> line replaced with peak-bone:<flat-id> line including retirement note; (b) Cross-facet contract Read side: tens:<reading> bullet replaced with peak-bone:<flat-id> bullet with "scene-map peak-bones membership as supporting licensing" description and retirement note; (c) AP1: "sensory / feeling / tens facets" -> "sensory / feeling facets" (tens facet dropped)
+criteria met: yes — source enumeration now matches facet.schema.md live form (peak-bone:<flat-id>); description updated to "(scene-map peak-bones membership as supporting licensing)"; tens:<reading> retired throughout
+
+## STRUCT-017+019+026 — RESOLVED — 2026-06-07T03:05:00Z
+fault: rubric-metaphor.md retained tensometer vocabulary in 6 locations after URI-SUBSTANCE-OVERHAUL retired tens:<reading>: (017) multi-justification gate enumerated {memory,feeling,tens}; support layers listed tens:<reading>; (019) schema-content-shape section framed as "proposed/pending Phase 5 ship" when already shipped, with tens still in enumeration; (026) AP7 trigger expressed as "tens=3" (unevaluable without dropped tensometer), calibration anchors C1/C3 used tens=3/tens=1 scalars, beat table had tens column, file-shape audit item 5 had {memory,feeling,tens}, Notes section framed revision as future-pending
+scope: line (rubric-metaphor.md, 6 targeted locations)
+change: (a) header line 6: "content-shape revision pending Phase 5 ship (proposed...)" -> "content-shape SHIPPED 2026-05-07 (... peak-bone:<flat-id> replaces retired tens:<reading> support type)"; (b) file-shape audit item 5: {memory,feeling,tens} -> {memory,feeling,peak-bone}; (c) beat-eligibility table: tens column replaced with scene-map zone column; scalar readings (1/2/3) replaced with zone names (flat-low/rising/peak (peak-bones)/flat-low/rising/flat-low); "tens=3 peak; AP7 default-refuse" note -> "AP7 default-refuse (bone in peak-bones array)"; (d) calibration anchors: C1 "AP7 tens=3 peak" -> "AP7: bone in peak-bones array"; C2 "tens=1 quiet" -> "flat-low quiet zone"; C3 "triple-anchor (memory + feeling + tens=1)" -> "triple-anchor: memory + feeling + peak-bone support"; (e) "Notes on schema-revision-at-ship" section: retitled "Notes on schema-revision — SHIPPED 2026-05-07"; body replaced with confirmed-ship statement; tens:<reading> retirement confirmed; peak-bone:<flat-id> named as current pressure-signal support type; pending-revision framing removed
+criteria met: yes — {memory,feeling,peak-bone} is the shipped enumeration; AP7 restated using peak-bones membership (peak-bones array = high-magnitude/top-75th-percentile bones, which corresponded to tensometer intensity-3 peaks per schema note in AP7 clause already present); "proposed/pending" framing removed; support enumeration matches facet.schema.md live form throughout
+
+## SESSION-START — 2026-06-07T03:00:00Z — pipeline-legs23-tensometer-residue-5-findings
+dispatch: close STRUCT-017/019/026 (HARD, rubric-metaphor.md tensometer residue), STRUCT-018 (HARD, rubric-vibes.md Cross-facet contract tens source), STRUCT-020 (SIGNAL, rubric-feeling.md tensometer vocabulary) — minimum-change replacement with peak-bone per shipped facet.schema.md
+target: design/shoot-v2/rubric-metaphor.md (primary); design/shoot-v2/rubric-vibes.md; design/shoot-v2/rubric-feeling.md
+audit-report: active-project/staff/reviews/pipeline-legs23-20260607T010305Z.md
+findings-queued: 5 actionable findings across 3 rubric files
+
+## SESSION-START — 2026-06-07T02:00:00Z — pipeline-legs23-tensometer-residue-5-findings
+dispatch: close STRUCT-017/019/026 (HARD, rubric-metaphor.md tensometer residue), STRUCT-018 (HARD, rubric-vibes.md Cross-facet contract tens source), STRUCT-020 (SIGNAL, rubric-feeling.md tensometer vocabulary) — minimum-change replacement with peak-bone per shipped facet.schema.md
+target: design/shoot-v2/rubric-metaphor.md (primary); design/shoot-v2/rubric-vibes.md; design/shoot-v2/rubric-feeling.md
+audit-report: active-project/staff/reviews/pipeline-legs23-20260607T010305Z.md
+findings-queued: 5 actionable findings across 3 rubric files
+
+## SESSION-START — 2026-06-07T01:00:00Z — pipeline-20260607-struct-006-007
+dispatch: close HARD pipeline findings STRUCT-006 (bones.schema.md speech-bone axis generalization) and STRUCT-007 (showrunner-memory.schema.md delta_per_axis sub-1.0 conditional) by formalizing standing admin precedent; stamp pl-2026-05-30-003 and pl-2026-05-31-003 resolved
+target: schemas/bones.schema.md (STRUCT-006); schemas/showrunner-memory.schema.md (STRUCT-007); active-project/staff/showrunner/memory.md (STRUCT-006 annotation + STRUCT-007 inline note); active-project/staff/showrunner/parking-lot.md (stamp both items)
+audit-report: active-project/staff/reviews/pipeline-20260607T004417Z.md
+findings-queued: 2 (STRUCT-006, STRUCT-007)
+
+## STRUCT-006 — WORKING — 2026-06-07T01:01:00Z
+note: bones.schema.md lines 140+165 already contain the generalized custom-signature clause (applied during URI-WRITE-DIALOGUE-COBONDED, 2026-05-25); bones.schema.md part complete; proceeding to memory.md part (b) — communication-class annotation in series.substance.state_axes block
+
+## STRUCT-006 — RESOLVED — 2026-06-07T01:02:00Z
+fault: bones.schema.md §Dialogue-anchor bones stated communication-class axis requirement as universal questionnaire taxonomy only (community/knowledge/reputation/trust); no custom-signature carve-out; every speech bone in a custom-signature project would fault a literal slug-match auditor; memory.md had no annotation naming this project's communication-class axes
+scope: line (2 files)
+change: (a) bones.schema.md lines 140+165 — confirmed already carry the generalized custom-signature clause from URI-WRITE-DIALOGUE-COBONDED (2026-05-25); no further edit required; (b) active-project/staff/showrunner/memory.md — added communication_class_axes comment after state_axes list (after "political_register-world" axis notes, before actor_baselines comment) naming relational_anchor_status + social_tether-* as this project's communication/relational-class axes and instructing auditors not to slug-match against the universal taxonomy
+criteria met: yes — bones.schema.md has the generalized text; memory.md now carries the project-specific annotation so each Phase-2 auditor dispatch resolves from memory, not from parking-lot precedent
+
+## STRUCT-007 — RESOLVED — 2026-06-07T01:03:00Z
+fault: showrunner-memory.schema.md chunk_targets.bone.delta_per_axis stated flat "1-3" with no sub-1.0 exception; project shipped sub-1.0 bone deltas at c07 + c08 under DEC-0002 admin override with no schema backing; each new /and-write Phase 2 auditor would re-flag sub-1.0 deltas as HARD findings
+scope: line (2 files)
+change: (a) schemas/showrunner-memory.schema.md line ~144 — extended bone: comment to add the sub-1.0 conditional: "1-3 when scene_target_delta_magnitude >= 1.0; magnitude = scene_target_delta_magnitude when scene_target_delta_magnitude < 1.0 (fractional sub-scene moves permitted at sub-1.0 scene targets; Phase 6 gate accepts magnitude == scene_target_delta_magnitude in these cases). Precedent: DEC-0002 (c07 + c08 sub-1.0 bone deltas accepted)."; (b) active-project/staff/showrunner/memory.md line ~1465 — added inline comment to bone: field noting 1-3 floor applies >= 1.0 scene targets; sub-1.0 magnitude = scene_target accepted; see schema + DEC-0002
+criteria met: yes — option (a) from pl-2026-05-31-003; 1-3 floor preserved for normal scenes; sub-1.0 exception carved with DEC-0002 citation
+
+## SESSION-END — 2026-06-07T01:03:00Z — pipeline-20260607-struct-006-007
+findings-applied: 2 (STRUCT-006, STRUCT-007)
+findings-skipped: 0
+exit: CLEAN
+
+## SESSION-END — 2026-06-06T23:10:00Z — cohere-b01-all-aggregate-audit-5-faults-pass2
+findings-applied: 2 (fault-004, fault-005); fault-001/002/003 confirmed already applied by prior session
+findings-skipped: 0
+exit: CLEAN
+
+## fault-005 — RESOLVED — 2026-06-06T23:08:00Z
+fault: .claude/commands/and-cohere.md Phase 4 defines only --dry-run as a skip path; the actual DEC-0108 path (principal-defer on finished+accepted book chapters) was undocumented; command body and schema diverged on the dismissed disposition
+scope: line (2 files)
+change: (a) and-cohere.md Phase 4 — added short labeled sub-step "Phase 4 pre-step — principal-defer check" before the existing per-chapter loop; documents the fire-vs-defer admin user-proxy route (Rule 13), DEFER → SKIPPED + dismissed + no dispatch sequence, and notes DEC-0108 as the deciding case and that the schema enums already permit this path; FIRE → proceeds to existing loop unchanged; (b) schemas/cohere-state.schema.md status: dismissed field description — added one-line note explicitly naming the Phase 4 principal-defer DEFER case alongside the existing /and-cut and --dry-run examples; revise_queue[].result: SKIPPED + deciding-DEC in result_note also noted
+criteria met: yes — minimum change; existing loop body unmodified; no schema structural change; command body and schema now agree on the dismissed disposition
+
+## fault-004 — RESOLVED — 2026-06-06T23:05:00Z
+fault: single parking-lot item (pl-2026-06-06-cohere-001, target b01c03) covered a two-chapter finding (c03 establish + c20 confirm); schema requires one item per atomic resolution; state file and report front-matter only listed b01c03
+scope: line (3 files)
+change: (1) parking-lot.md — added SPLIT note to pl-2026-06-06-cohere-001 description identifying this as the c03 establish-leg and pl-2026-06-06-cohere-002 as the confirm-leg companion; filed new item pl-2026-06-06-cohere-002 (scope b01c20, SOFT, status open, confirm-leg description, cross-ref to pl-2026-06-06-cohere-001, same context_refs, DEC-0108 reference, resolution_suggestion noting jointly-actionable dependency). (2) b01-all-state.md revise_queue — added second entry for b01c20 with parking_lot_items [pl-2026-06-06-cohere-002], same executed:false / result:SKIPPED / DEC-0108 dismissal disposition as the c03 entry. (3) cohere report front-matter — parking_lot_items updated to [pl-2026-06-06-cohere-001, pl-2026-06-06-cohere-002]; chapter_revise_queue updated to [b01c03, b01c20]
+criteria met: yes — one item per atomic resolution; both legs filed; state and report consistent
+
+## SESSION-START — 2026-06-06T23:00:00Z — cohere-b01-all-aggregate-audit-5-faults-pass2
+dispatch: resolve remaining faults from cohere-b01-all-aggregate-audit after prior session; fault-001/002/003 already applied; working fault-004 (parking-lot + state split) and fault-005 (Phase 4 defer path undocumented in and-cohere.md)
+target: active-project/staff/showrunner/parking-lot.md (primary); active-project/staff/cohere/b01-all-state.md; active-project/staff/reviews/cohere-b01-all-20260606T215813Z.md; .claude/commands/and-cohere.md; schemas/cohere-state.schema.md
+audit-report: active-project/staff/auditor/cohere-b01-all-aggregate-audit.md (criteria supplied inline)
+findings-queued: 2 remaining (fault-004, fault-005); fault-001/002/003 confirmed already applied by prior session
+
+## fault-003 — RESOLVED — 2026-06-06T22:48:00Z
+fault: schemas/parking-lot.schema.md ID format `pl-<YYYY-MM-DD>-<NNN>` does not permit the `<label>` infix used in established IDs (pl-2026-06-01-cohere-001..005, pl-2026-06-06-cohere-001/002); schema and practice diverged; existing items not renamed (PINNED)
+scope: line
+change: (a) inline YAML example line ~21: `pl-<YYYY-MM-DD>-<NNN>` → `pl-<YYYY-MM-DD>[-<label>]-<NNN>` with updated comment; (b) prose definition line ~43: rewrote `id` field definition to document optional label and (date, label)-pair counter uniqueness; no existing parking-lot item renamed
+criteria met: yes
+
+## fault-001 — RESOLVED — 2026-06-06T22:47:00Z
+fault: report front-matter triage_note and body "## Phase 3 triage → DROPPED" naive-q6 bullet both cited DEC-0105 as the cohere-axis authority; DEC-0105 actually authorized the depth-pass deferral before /and-review verdict b01 — a different scope
+scope: line
+change: (a) front-matter triage_note: replaced "design-inherent + principal-accepted at DEC-0105" with per-chapter DEC chain (DEC-0060/0062/0066/0072/0074/0085/0087/0090/0096/0099/0104) + DEC-0109 as authority; added clarification that DEC-0105 is book-close context not cohere-axis authority; (b) body DROPPED bullet: replaced "accepted at book-close per DEC-0105" with DEC-0060..0104 chain + DEC-0109 ratification; added parenthetical noting DEC-0105's actual scope; DEC-0105 remains mentioned as context only
+criteria met: yes — citation clauses rewritten; whole section not rewritten; DEC-0105 still present as context; DEC-0109 added as the run's process-critic ratification authority
+
+## fault-002 — RESOLVED — 2026-06-06T22:46:00Z
+fault: revise_queue[0] in b01-all-state.md declared `result:` twice (`result: null` line 27 + `result: SKIPPED` line 30) — duplicate YAML key
+scope: line
+change: removed `result: null` line from revise_queue[0]; the mapping now has exactly one `result: SKIPPED` key; result_ts and result_note untouched
+criteria met: yes
+
+## SESSION-START — 2026-06-06T22:45:00Z — cohere-b01-all-aggregate-audit-5-faults
+dispatch: resolve 5 faults from cohere-b01-all-aggregate-audit (flag-001 + flag-002 advisory — no action; fault-002 duplicate YAML key in state file; fault-001 over-cited DEC in report; fault-004 one parking-lot item covers two chapters; fault-003 schema ID format gap; fault-005 Phase 4 defer path undocumented)
+target: active-project/staff/cohere/b01-all-state.md (primary); active-project/staff/reviews/cohere-b01-all-20260606T215813Z.md; active-project/staff/showrunner/parking-lot.md; schemas/parking-lot.schema.md; .claude/commands/and-cohere.md; schemas/cohere-state.schema.md
+audit-report: (aggregate audit — criteria supplied inline by showrunner)
+findings-queued: 5 actionable (fault-001 through fault-005); 2 flags advisory — no action
+
 ## SESSION-START — 2026-06-05T04:00:00Z — write-b01c20-pass2-svo-recasts
 dispatch: repair 6 faults (fault-001..fault-006) in b01c20-bones-draft.md — 3 FAULT-FORM-MODIFIER, 2 CHATTER-UNPAID, 1 FAULT-FORM-INTERIORITY; minimum-change svo: recasts + substance_delta additions; event_map untouched
 target: active-project/staff/screen-writer/b01c20-bones-draft.md

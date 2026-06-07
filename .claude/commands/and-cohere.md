@@ -107,6 +107,27 @@ If `flags.dry_run == true`, skip Phase 4 and proceed directly to Phase 7. State 
 
 ## Phase 4 — Execute revises (re-cascade per chapter)
 
+### Phase 4 pre-step — principal-defer check
+
+Before dispatching any chapter revise, evaluate whether ALL chapters in the revise queue target chapters that are already verdict-PASSED + principal-accepted (i.e. the book is complete, shipped, and the surviving cohere findings concern finished drafts whose mutation would be irreversible). If so:
+
+Route the fire-vs-defer decision to admin user-proxy per CLAUDE.md Rule 13 **before** dispatching any revise. Supply:
+- the revise queue (chapter list + parking-lot ids + failing axes)
+- the book's close state (shipped, verdict-PASSED, principal-accepted per DEC chain)
+- the estimated cascade cost per chapter
+- options: (a) FIRE — dispatch the revise queue; (b) DEFER — accept the book as cohesion-verified-with-documented-notes; findings stay in parking-lot as SOFT open items + fold into analysis
+
+On a **DEFER** answer from admin:
+- Stamp each `revise_queue[].result: SKIPPED`, `result_ts: <ISO>`, `result_note: "<deciding DEC>: principal-deferred on finished+accepted book"`
+- Set `status: dismissed`, `final_verdict: null`, `closed_at: <ISO>`
+- Skip Phase 4 dispatch entirely
+- Record the deciding DEC in the state file comment block
+- Proceed directly to Phase 7 (persist) → Phase 7.5 (admin process-critic) → Phase 8 (summary)
+
+On a **FIRE** answer: proceed with the per-chapter dispatch loop below as normal.
+
+This path documents the disposition taken under DEC-0108 (/and-cohere b01 all, 2026-06-06) and the schema's `revise_queue[].result: SKIPPED` + `status: dismissed` enum values already permit.
+
 For each chapter in the ordered queue (sequential, NOT parallel — downstream chapters may depend on upstream revise output):
 
 1. **`/and-write <chapter> revise --from-signals`** (or `--cohere-driven` once that mode lands; until then, `--from-signals` with the cohere-authored signal cluster passed as the bones-revise input).
@@ -255,6 +276,8 @@ Per PROP-0031 Amendment 1, on cohere convergence to PASS-COHERE this command wal
 ---
 
 ## Phase 7 — Persist
+
+**Pre-commit RECONCILE (CLAUDE.md Rule 21; PROP-0045).** Before writing/committing the aggregate (triage note, state file, parking-lot items), run the three blocking checks: **(1) Citation resolution** — every cited `DEC-`/`PROP-`/`pl-` id exists in its owning file AND the claim matches what the id actually adjudicates; every generated parking-lot id matches `schemas/parking-lot.schema.md`. **(2) Report↔state field-equality** — `load_bearing_fails` / `failed_axes` / `caution_axes` / `revise_queue[*]` in the report equal the state file. **(3) Self-contradiction scan** — an item naming N atomic resolution points is filed as N items (split on RESOLUTION-COUNT-MISMATCH). Emit a three-line check summary (CHECK 1/2/3: PASS or N-issues) inline; any FAIL blocks the persist until corrected. (See Rule 21 for the full spec.)
 
 1. **State file.** Final write to `active-project/staff/cohere/<book>-<range>-state.md`. All fields current per `schemas/cohere-state.schema.md`.
 2. **Iteration log.** `active-project/staff/cohere/<book>-<range>-<invocation-ts>/iteration-log.md` — append-only per-iteration narrative log. One section per iteration:

@@ -137,7 +137,7 @@ A bone with no citations is valid; it means the beat is bone-only and the stitch
 
 A **dialogue-anchor bone** is a bone that carries spoken content. Two forms:
 
-1. **Canonical speech form** — `<speaker-slug> speaks to <listener-slug>`. Required substance_delta: ≥1 communication-class axis (community / knowledge / reputation / trust).
+1. **Canonical speech form** — `<speaker-slug> speaks to <listener-slug>`. Required substance_delta: ≥1 communication/relational-class axis per the active signature (universal questionnaire: community / knowledge / reputation / trust; custom signature: the axis or axes the series.substance.state_axes block designates as relational/communicative per the signature note).
 2. **Licensed action form** — a bone whose SVO is a concrete physical action AND whose `substance_delta.axis_moves[]` declares a communication-class axis movement AND whose scene chunk text licenses a speech-act at that bone (parking-lot disposition pl-2026-05-25-004 routing (a) is the canonical example: `taylor raises the voice` anchoring three utterances in c01 b01).
 
 Dialogue-anchor bones carry `[<character-slug>:<id>, ...]` citation tokens at bones-write time (emitted by `/and-write` Phase 7 Step 3a, NOT accrued at facet-author time). These citations resolve into the per-character dialogue files at `theater/dialogue/<character-slug>.md` per `schemas/dialogue.schema.md`.
@@ -162,4 +162,4 @@ For dialogue beats, the bone shape is:
 ```
 <flat_id> <speaker-slug> speaks to <listener-slug-or-group>
 ```
-The dialogue file carries content + objective and cites the bone by flat_id. The bone itself does **not** carry a forward-anchor to the dialogue entry — citations accrue at facet-authoring time, not at bone extraction time. Speech bones must move at least one communication-class axis (community / knowledge / reputation / trust) per the substance bone-gate; speech bones whose substance_delta lists only physical-action axes are malformed.
+The dialogue file carries content + objective and cites the bone by flat_id. The bone itself does **not** carry a forward-anchor to the dialogue entry — citations accrue at facet-authoring time, not at bone extraction time. Speech bones must move at least one communication/relational-class axis per the active signature (universal questionnaire: community / knowledge / reputation / trust; custom signature: the axis or axes the series.substance.state_axes block designates as relational/communicative per the signature note) per the substance bone-gate; speech bones whose substance_delta lists only physical-action axes are malformed.

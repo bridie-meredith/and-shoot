@@ -7016,3 +7016,370 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0107 | 2026-06-06 | SLOW (user-proxy)
+
+question: Principal said "Next chapter." Series is COMPLETE (20/20 chapters shipped, b01c20 SERIES-TERMINAL, /and-review verdict b01 PASS-WITH-NOTES today). No "next chapter" exists in the pipeline. What do they actually want, and is there a sensible default to execute?
+
+context: Single-book series (book_count:1). All 20 chapters b01-c01 through b01-c20 on disk as terminal drafts. b01c20 is the designed series-terminal (Dance ignites, Flea Bottom burns, cost-bearer dies; d14 burn from series-trajectory.md). Chapter count 20 within declared 18-22 band. Book/series close-out verdict ran today: PASS-WITH-NOTES. Most recent commits: verdict + admin DEC-0105/0106 process-critic merges. "Next chapter" appears to be reflex/momentum at series close.
+
+options:
+  (a) Report completion, surface post-completion option menu — reversible, zero cost, pipeline-correct
+  (b) Extend series to b02 — irreversible architectural + scope change; requires reopening series structure (book_count:1, series designed to terminate at burn); human-only strategic priority call
+  (c) New project/series (/and-project) — irreversible new scope; human-only strategic priority
+  (d) Depth-pass / revise on existing late chapters — reversible; several open SOFT parking-lot items for Class-B back-third c14-c20 cohort; could execute without human input, but "which chapter(s)" is still a choice
+
+decision: Execute option (a) — report completion, surface the option menu. ESCALATE the directional question of what post-completion step the principal actually wants, because options (b)/(c)/(d-scoped) are each a strategic priority call that goals + methodology cannot resolve without the principal's direction. Do NOT auto-produce c21 (violates series-terminal design regardless of reflex phrasing).
+
+basis: goal:1 (pipeline correctness — c21 violates series-terminal design contract) + goal:2 (cost discipline — executing an irreversible scope extension on ambiguous phrasing is maximum-cost error) + methodology:human-only (strategic priorities + spend commitments) + methodology:3a (reversibility — option (a) is fully reversible; all alternatives are not)
+
+rationale: "Next chapter" against a series-terminal state has no pipeline-correct interpretation that produces a chapter. The default the caller proposed (report completion, do not auto-produce c21) is the only non-destructive answer and is clearly authorized by goal:1 + goal:2. The follow-on directional question (b02 vs. new project vs. cohere/postop vs. archive) is a strategic-priorities call per methodology §human-only — admin cannot rank those options without the principal's expressed intent. One human question costs less than any of the irreversible alternatives executed without authorization.
+
+trade-off: One human round-trip. Accepted: cost of proceeding on any of (b)/(c)/(d) without direction would either extend the series beyond its designed terminus or commit spend on depth-passes the principal may not want now.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+## DEC-0109 | 2026-06-06 | SLOW (process-critic)
+
+mode: process-critic
+trigger:
+  reason: cohere-fail-but-design-accepted
+  source_report: active-project/staff/reviews/cohere-b01-all-20260606T215813Z.md
+  source_verdict: "FAIL-COHERE; load_bearing_fails=2 (naive-q6 dropped at triage as DEC-0105 design-accepted; dramatist-promise-payoff Sera-weight survives); iteration_count=1"
+  gate_path: .claude/commands/and-cohere.md#phase-2
+  secondary_gate_paths: [.claude/commands/and-review.md#cohere, .claude/commands/and-write.md#phase-6, .claude/commands/and-stitch.md#phase-9]
+
+question: |
+  Does the Sera Hightower payoff-weight drop — a whole-book-scope structural finding that
+  survived ~20 per-chapter ship-gates + a book-level orchestrator verdict + three sub-section
+  coheres and surfaced ONLY at the terminal full-book cohere — indicate a missing earlier
+  checkpoint? Candidates: (a) a payoff-inventory gate at book-substance time; (b) mandatory
+  full-book cohere before /and-review verdict rather than after; (c) working as intended —
+  no process change needed.
+
+context: |
+  First-ever whole-book /and-cohere (b01 all, 20 chapters) on a COMPLETE, shipped,
+  verdict-PASSED (PASS-WITH-NOTES; Class-B cohort accepted DEC-0105) book. Phase 3 triage
+  dropped naive-q6 (apparatus-register cumulative load) as design-inherent + principal-accepted
+  (DEC-0060/0062/0066/0072/0074/0085/0087/0090/0096/0099/0104/0105; OK-MERGED PROP-0030/0031).
+  Surviving fresh finding: dramatist-promise-payoff — Sera Hightower payoff-weight drop.
+  The finding: Sera is the cost-justification of the Otto arrangement (introduced c03),
+  the reader never feels her weight, she never appears as a person, her threat is never staged,
+  and the c20 decommission does not confirm she was protected. The moral engine's human face
+  is a ledger entry. Secondary: Norren c17 false-attribution consequence deferred-then-unpaid.
+  Audience fork PASSED (SUBSTANCE-FELT). This is distinct from the on-page non-naming design
+  decision (pl-2026-05-28-002, verified c05 — Taylor never articulates the Sera-link by design).
+
+decision: OK-MERGED-INTO PROP-0042 (recurrence_count 3 → 4; full-book-cohere evidence appended).
+  No new proposal. Mandatory-before-verdict sequencing rejected on current evidence.
+  /and-cohere is working as designed.
+
+basis: |
+  Step 1 (proposals log):
+    PROP-0042 (status: open, triaged_at: null, recurrence_count: 3) targets
+    .claude/commands/and-substance.md Phase 5 — Chunk-quality review (book level),
+    change_type: add — PROTECT-TARGET-ABSENT-FROM-BOOK-PLAN SOFT flag at the dramatist
+    review. PROP-0042 was authored at the c13-c15 cohere after two consecutive sub-section
+    coheres flagged "Sera never appears on-page (c06-c15); the guarantee fires hollow; the
+    protection object is a name in a prologue, never a felt person."
+    The current finding is the third independent /and-review cohere instance flagging Sera
+    absent-as-felt-person at a reader-reception/whole-book-payoff scope: the full-book cohere
+    (all 20 chapters) confirms what the sub-section coheres caught and routed to
+    /and-review verdict b01. Same target + change_type → merge, do not duplicate.
+
+  Step 2 (content vs. process discrimination):
+    Is this a process failure? Yes — structural: no gate at /and-substance book Phase 5 catches
+    protect-target absent from the book plan at planning time. The full-book cohere correctly
+    caught it retrospectively. The question is whether the class needed to reach terminal cohere,
+    or whether an earlier gate could have surfaced it without becoming a different kind of gate.
+    Answer: yes — /and-substance book Phase 5 dramatist review is the correct upstream catch
+    point. PROP-0042 already proposes it. The new evidence confirms the gap is structural and
+    project-independent (any book whose protect-target is planned absent will hit this).
+
+    Is the surviving finding different in kind from what PROP-0042 already covers?
+    No. PROP-0042 targets: "Sera never appears on-page as a participant in a scene; the
+    cost-ledger guarantee fires hollow." The current finding adds: "the reader never feels her
+    weight; the c20 decommission does not confirm protection." This is the same root — the
+    protect-target is a ledger entry, not a felt person — at the whole-book scope. The proposed
+    SOFT flag at /and-substance book Phase 5 would have surfaced this at planning time, forcing
+    an authorial decision (hollow-by-design irony vs. on-page appearance). That is exactly the
+    fix PROP-0042 proposes.
+
+  Candidate (b) — mandatory full-book cohere before /and-review verdict:
+    Rejected. Three reasons:
+    (i) /and-cohere is an ITERATION loop: it fires /and-review cohere, builds a chapter-revise
+        queue, and runs /and-write revise → bones → facets → stitch per chapter. Mandating it
+        before verdict means mandating either: (a) a full iteration loop (re-cascade cost equal
+        to producing several chapters) or (b) a read-only cohere pass (but that IS /and-review
+        cohere, which already runs inside /and-review verdict as supplementary input per the
+        /and-cohere relationship spec). A separate mandatory /and-cohere-converge-to-PASS gate
+        before verdict would be L-cost architectural gate sequencing — human-only territory.
+    (ii) The Sera finding is the kind of structural observation the analysis step is designed
+         to process (DEC-0108). The finding is a reader-reception payoff gap — not a bone-level
+         delivery failure and not fixable by the per-chapter re-cascade chain without an explicit
+         authorial decision to add Sera on-page. Mandating /and-cohere convergence before verdict
+         would require it to PASS on this finding, which it cannot (it cannot force Sera on-page
+         without a substantive new authoring decision).
+    (iii) The more upstream fix (PROP-0042) prevents the gap at planning time, which is strictly
+          better than mandating a terminal diagnostic that cannot itself author the fix.
+
+  Step 3 (is the per-chapter chain + sub-section cohere working as designed?):
+    Yes. The per-chapter gates (Phase 9 cold-read, audience SUBSTANCE-FELT, bone-gate, facets
+    Phase 5b) are not designed to catch whole-book payoff gaps. They gate per-chapter delivery.
+    The sub-section coheres (c01-c07, c06-c12, c13-c15) correctly flagged Sera's absence but
+    correctly noted it was "not chapter-fixable" and routed it to /and-review verdict b01.
+    The full-book cohere confirms and concretizes the finding at whole-book scope. This is
+    exactly what /and-cohere is designed to catch. The process worked correctly at every layer:
+    per-chapter gates protect chapter delivery; sub-section coheres surface cross-chapter arcs;
+    full-book cohere surfaces whole-book payoff gaps. The absence of a PLANNING-TIME gate is
+    the only structural gap — and PROP-0042 already proposes to fill it.
+
+  Step 4 (recurrence):
+    The Sera-absent finding has now appeared in THREE independent /and-review cohere runs:
+    (1) c06-c12 cohere → pl-2026-06-03-006 (first cohere flag)
+    (2) c13-c15 cohere → PROP-0042 authored (recurrence_count: 3 at authoring)
+    (3) b01-all cohere → this dispatch (recurrence_count: 4)
+    This is the recurrence class PROP-0042 was designed to track. The full-book scope adds
+    the terminal confirmation: the gap persisted to book-close despite three cohere runs.
+    PROP-0042's proposed SOFT flag at /and-substance book Phase 5 would have surfaced this
+    at book-authoring time, before any chapter was written.
+
+  Step 5 (methodology):
+    Reversibility: merging into PROP-0042 is reversible; a new proposal or a mandatory-before-
+    verdict gate is larger-blast-radius and lower-reversibility.
+    Cost: OK-MERGED is S-cost; mandatory-before-verdict sequencing is L-cost architectural.
+    Blast radius: PROP-0042 adds one SOFT check at /and-substance book Phase 5 (one gate, one
+    file); mandatory sequencing affects /and-review verdict + /and-cohere + their relationship.
+    Convention: PROP-0042 already tracks this class with correct change_type and proposed_diff;
+    merge is the mechanically required action.
+
+rationale: |
+  PROP-0042 is the correct and sufficient process response. The Sera payoff-weight finding at
+  the full-book cohere is the third independent cohere-run confirming the same root gap: no gate
+  at /and-substance book Phase 5 checks whether the book plan places a declared protect-target /
+  cost-bearer on-page as a participant before the climax fires the structural guarantee. The
+  full-book cohere performed exactly its designed function — it surfaced a whole-book payoff gap
+  that no per-chapter gate and no sub-section cohere (which correctly knew it was "not chapter-
+  fixable" and routed upstream) could see in full. This is not a sign the process failed; it is
+  the sign it worked. The only structural failure the evidence supports is the planning-time gap
+  PROP-0042 already targets. Mandatory-before-verdict sequencing would add large-blast-radius
+  architectural overhead for a finding class that (a) the cohere correctly caught and (b) cannot
+  be auto-fixed by the cohere loop without a new authoring decision.
+
+trade-off: |
+  Merging into PROP-0042 rather than proposing mandatory-before-verdict sequencing means the
+  Sera gap remains catchable only at /and-substance book Phase 5 (at planning) or retrospectively
+  at cohere. If the principal defers PROP-0042 triage, a future book can hit the same gap. The
+  cost of deferral is one /and-cohere run surfacing the same finding — exactly what happened here.
+  Mandatory-before-verdict would prevent the gap from surviving to book-close but at L-cost
+  architectural complexity and the structural problem that /and-cohere cannot self-fix protect-
+  target absences; it can only flag them for author action. PROP-0042 is the correct layer.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
+## DEC-0110 | 2026-06-07 | SLOW (process-critic)
+
+mode: process-critic
+trigger:
+  reason: principal-initiated-retro
+  source_report: active-project/staff/auditor/cohere-b01-all-aggregate-audit.md
+  source_verdict: retro (session retrospective on the /and-cohere b01 all cycle, 2026-06-06)
+  gate_path: N/A (retro-initiated, not a gate-fired trigger)
+
+question: |
+  Formalize three process-change candidates from the /and-cohere b01 all session retro.
+  All share root cause TRUST-WITHOUT-VERIFY. Author as separate proposals or merge/reject
+  per the normal process-critic procedure.
+  (A) Subagent output-persistence check — dispatcher never checks that a contracted emit
+      artifact was actually written to disk; auditor returned findings in-message only,
+      file absent until principal reconstructed it.
+  (B) Post-async-agent shared-state read-back — admin DEC-0108 edit introduced a duplicate
+      YAML result: key into cohere-state; dispatcher committed without reading the diff.
+  (C) Pre-commit self-check on hand-authored aggregates — cohere aggregate shipped with
+      citation error (fault-001), self-contradictory parking-lot item (fault-004), and
+      systematic schema-id format drift (fault-003); all visible at authoring time.
+
+decision: |
+  PROCESS-CHANGE-PROPOSED PROP-0043 (Candidate A — subagent output-persistence check)
+  PROCESS-CHANGE-PROPOSED PROP-0044 (Candidate B — post-async-agent shared-state read-back)
+  PROCESS-CHANGE-PROPOSED PROP-0045 (Candidate C — pre-commit RECONCILE on hand-authored aggregates)
+
+basis: |
+  Step 1 (proposals log scan): Grepped for: output-persistence, existence-check, file emitter,
+  subagent write, emit verify (Candidate A); shared-state diff, async agent edit, YAML duplicate
+  (Candidate B); pre-commit, self-check, hand-authored, rollup audit, citation check, DEC citation
+  (Candidate C). No open proposal with matching target.path + change_type for any of the three.
+  No rejected proposal materially covering any of the three. No deferred proposal past its
+  defer_until. All three warrant new entries.
+
+  Step 2 (content vs. process): All three are process failures, not content failures:
+    (A) No gate exists for the dispatcher→filesystem persistence check class. The auditor's
+        in-message return was consumed as authoritative; the absent file would have been
+        permanent data loss at the next context window boundary. Gate absence: change_type add.
+        Target: CLAUDE.md §Rules (new Rule 19 — applies across all commands and dispatches).
+    (B) No rule requires the dispatcher to read-back shared state after async agent mutation.
+        The admin Edit/Write dispatch mutated cohere-state; the committed result had a duplicate
+        YAML key. Gate absence: change_type add. Target: CLAUDE.md §Rules (new Rule 20 — applies
+        wherever async agents have Edit/Write to shared state).
+    (C) No pre-commit self-check sub-step exists at /and-cohere Phase 3/4 or /and-review verdict.
+        Three simultaneously present defects (citation error, self-contradiction, schema-id drift)
+        all visible at authoring time. Gate absence: change_type add. Target: and-cohere.md Phase
+        3/4 (RECONCILE sub-step); secondary: and-review.md verdict subcommand.
+
+  Step 3 (first-occurrence overrides): All three propose at N=1. Override rationale per standard:
+    (A) Failure mode is silent data loss (permanent, no gate fires). Fix is trivially cheap (stat/ls).
+        First-occurrence hold does not apply under catastrophic/silent-loss conditions.
+    (B) Failure is silent (defect shipped committed). Fix is trivially cheap (read). Same rationale.
+    (C) Three defects simultaneously in one artifact (structural pattern, not isolated slip).
+        Fault-003 is systematic across 6 items (not a one-off). Fix is near-zero cost (read + assert).
+        Principal cited this explicitly as a formalization candidate in the retro dispatch.
+
+  Step 4 (methodology): All three: S or M cost, low blast radius, high reversibility, no
+  methodology contradiction. Cost estimates: A=S (one CLAUDE.md rule), B=S (one CLAUDE.md rule),
+  C=M (two command body edits: and-cohere.md + and-review.md). Ordered by value: A > B > C
+  (A closes the most dangerous class; B closes the next; C closes the authoring-discipline gap).
+
+rationale: |
+  Three structurally distinct TRUST-WITHOUT-VERIFY instances, each with a precise gate absence
+  and a cheap fix. Filing atomically as the dispatch requested: each covers a different
+  execution layer (dispatcher→filesystem, dispatcher→shared-state, author→aggregate-content)
+  and a different target file. No overlaps, no merges warranted. All three pass the standard
+  first-occurrence-override criteria for non-catastrophic-but-cheap-to-close gaps.
+
+trade-off: |
+  All three at N=1: cost is three triage decisions. Benefit is closing three silent-loss classes
+  before a second project begins. The alternative (hold for recurrence) risks a second instance
+  of silent data loss (A), a second defective committed state (B), or a continued pattern of
+  visible-at-authoring-time defects shipping to the auditor layer (C). All three costs exceed
+  one triage decision per proposal.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
+## DEC-0111 | 2026-06-07 | FAST (user-proxy)
+
+question: STRUCT-025 — exposition facet (and-facets Phase 1 item 10) references `design/shoot-v2/rubric-exposition.md` which does not exist. Close via (a) author rubric-exposition.md, (b) de-reference it / point at the real authority sources already in use, or (c) park as known-debt to b02-activation?
+
+context: The exposition facet is active and has shipped all 20 b01 chapters without rubric-exposition.md. Its actual operating authority is: schema §exposition + audience-gap test + context-ledger discipline + staff/exposition-author/glossed-terms.md. b01 is COMPLETE and SERIES-TERMINAL. No b02 is currently authorized. The rubric reference is a dangling pointer — a nonexistent file named in a command body — but has not caused a quality failure in 20 chapters. (a) is M-cost speculative authoring on a complete book with no b02 and no observed exposition-quality failure. (b) is S-cost, edits and-facets.md item 10 to name the real authority sources, removes the dead path, trivially reversible. (c) defers via parking-lot note.
+
+options:
+  (a) Author rubric-exposition.md now — M-cost speculative authoring
+  (b) De-reference: edit and-facets.md item 10 to name the actual authority sources; remove dead rubric pointer — S-cost, reversible
+  (c) Park as known-debt to b02-activation — do nothing now
+
+decision: Option (b): de-reference. Edit and-facets.md Phase 1 item 10 to name the actual authority sources (schema §exposition + audience-gap test + context-ledger + glossed-terms.md). Remove the dead rubric-exposition.md pointer. Optionally add a one-line comment noting rubric-exposition.md is deferred to b02-activation if it would aid future readers.
+
+basis: goal:2 (cost discipline) + goal:4 (lean architecture) + methodology:3a (reversibility) + methodology:3b (cost)
+
+rationale: The dangling pointer is the actual defect: a command body citing a nonexistent file. Option (b) fixes that defect at S-cost by naming what the facet has actually operated on for 20 chapters — which is already the ground truth. Option (a) authors a rubric the facet has demonstrably not needed, on a series that is SERIES-TERMINAL with no authorized b02; this is the anti-pattern goal:4 warns against. Option (c) leaves the dead pointer in the command body, which means every future pipeline-review or STRUCT-scan continues to fire STRUCT-025. (b) closes the finding, matches reality, and is trivially reversible — if b02 is activated and the team wants a formal rubric, rubric-exposition.md can be authored then with 20 chapters of actual exposition behavior as evidence.
+
+trade-off: A formal rubric-exposition.md would provide a more complete design surface and could catch future exposition-quality failures mechanically. That value is deferred to b02-activation at zero cost: the facet has shipped 20 chapters on its existing authority and the sources being named in the de-reference (schema + ledger + glossed-terms + audience-gap test) are functional.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
+## DEC-0108 | 2026-06-06 | SLOW (user-proxy)
+
+question: /and-cohere b01 all returned FAIL-COHERE. After Phase 3 triage, one actionable finding survives (Sera Hightower payoff-weight drop). Should I fire the Phase 4 revise queue on that one item — mutating finished, shipped drafts — or accept the book as cohesion-verified-with-documented-notes and fold the finding into the analysis the principal asked for next?
+
+context: Book b01 is COMPLETE: 20 chapters shipped, b01c20 SERIES-TERMINAL, /and-review verdict b01 PASS-WITH-NOTES (today). Principal's standing instruction this session: "make sure everything is cohesive and then start doing an analysis." Cohere was the cohesion step; analysis is the declared next step. FAIL-COHERE verdict had 2 load-bearing fails: (1) naive-q6 apparatus-register cumulative load — DROPPED at triage as design-inherent Class-B, pre-adjudicated across DEC-0060/0062/0066/0072/0074/0085...0105, accepted at book-close; OK-MERGED into PROP-0030/0031. (2) dramatist-promise-payoff — surviving fresh item: Sera Hightower payoff-weight drop (court-tier protect-target introduced c03, never appears as a person, threat never staged, c20 decommission doesn't confirm she was protected). Distinct from on-page non-naming which is BY DESIGN per pl-2026-05-28-002. Secondary: Norren c17 false-attribution unpaid. Audience axis (worm-canon-pedant) PASSED: SUBSTANCE-FELT. Voice consistent, Earth-Bet fence clean. Firing Phase 4 would re-cascade c03 (+c20) through /and-write revise → /and-review bones → /and-facets → /and-stitch (~24+ dispatches), substantively changing shipped, accepted terminal drafts. Irreversible mutation of a finished artifact.
+
+options:
+  (a) DEFER / accept-with-notes: close cohere as FAIL-COHERE-but-design-accepted; record Sera finding as documented structural note (SOFT); proceed to the analysis the principal requested, incorporating cohere findings as material. No draft mutation.
+  (b) FIRE Phase 4 on the Sera item: revise c03+c20 to add reader-facing Sera weight, re-cascade, re-run cohere.
+
+decision: Option (a). Accept the book as cohesion-verified-with-documented-notes. Record the Sera payoff-weight finding as a SOFT parking-lot item. Proceed to the analysis the principal requested. Do NOT fire Phase 4.
+
+basis: methodology:3a (reversibility) + methodology:3b (cost) + goal:2 (cost discipline) + goal:1 (pipeline correctness — cohere is a diagnostic, not a mandatory revise trigger when findings are structural/design-adjacent on a closed artifact)
+
+rationale: Three independent lines converge on (a). First, reversibility: Phase 4 mutates terminal, shipped, PASS-WITH-NOTES-accepted drafts. The principal accepted book-close at DEC-0105 with pre-authorized Class-B caveats; re-opening that decision to act on a single surviving cohere finding is a meaningful irreversibility without a clear principal mandate. Second, the Sera finding is a reader-reception / whole-book payoff observation — exactly the kind of structural observation the analysis step is designed to surface and process. Surfacing it AS analysis is the correct routing. Third, the principal's declared next step is explicitly "analysis," not "revise." Firing Phase 4 delays the declared next step by ~24+ dispatches to mutate a closed artifact over a soft structural note that was not flagged at any upstream gate (bones-gate, Phase 9 cold-read, verdict pass). The cohere step has completed its mandate: it found what was there to find. The Sera weight drop is a genuine finding, but it is the analysis's job to evaluate whether it constitutes a design flaw the principal cares about enough to act on — admin cannot make that aesthetic judgment.
+
+trade-off: The Sera payoff-weight gap stays in the draft as written. If the principal reads the analysis and decides the gap materially damages the book's moral engine, Phase 4 remains available on demand — the chain is re-runnable. The cost of accepting (a) is approximately zero; the cost of executing (b) without authorization is ~24+ dispatches plus irreversible draft mutation.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
+## DEC-0112 | 2026-06-07 | SLOW (user-proxy)
+
+question: b01 manuscript consolidated into a single file. Principal says "begin revisions." What is the FIRST revision target + method? Standing evidence-backed queue: pl-2026-06-06-cohere-001 (c03 Sera establish-leg) + pl-2026-06-06-cohere-002 (c20 Sera confirm-leg), both SOFT, deferred by DEC-0108 when principal's next step was "analysis." "Begin revisions" appears to un-defer DEC-0108. Options: (a) fire Sera queue now via /and-cohere b01 cross-chapter loop; (b) fire Sera queue via two per-chapter re-cascades; (c) present manuscript + queue, confirm target before firing.
+
+options:
+  (a) Fire Sera queue now via /and-cohere b01 — cross-chapter loop, c03+c20, re-coheres to confirm; ~140-180 dispatches, irreversible draft mutation; pre-queued, evidence-backed
+  (b) Fire Sera queue via two per-chapter re-cascades — c03 then c20; same irreversibility + cost; mechanism different from (a)
+  (c) Present consolidated manuscript + standing queue; confirm principal's first target before spending — one conversation turn, fully reversible, preserves all options
+
+decision: Option (c). Present the consolidated manuscript and the Sera queue to the principal. Confirm which revision target they want to lead with — the pre-queued Sera arc vs. their own reading-driven findings — before firing any re-cascade on shipped drafts.
+
+basis: methodology:3a (reversibility) + methodology:3b (cost) + methodology §human-only (spend commitments past routine) + DEC-0108 (partial reversal — posture has shifted from "analysis" to "revisions," but the specific first target + mechanism is genuinely ambiguous)
+
+rationale: "Begin revisions" reverses DEC-0108's analysis-posture deferral — that much is clear. What it does NOT specify: (1) whether the principal wants to lead with the Sera arc specifically vs. targets they identify from reading the consolidated manuscript, and (2) which mechanism (cohere loop vs. per-chapter re-cascade) they prefer for the Sera arc if it IS the first target. The instruction sequence was consolidate-first, which implies a reading intent — the principal may have their own manuscript-read findings that rank ahead of Sera in their judgment. Firing 140-180 dispatches irreversibly on shipped drafts without knowing which finding the principal wants addressed first violates methodology §human-only (spend commitments past routine) and methodology:3a (prefer reversible when uncertain). Option (c) costs one conversation turn and preserves full optionality. If the principal confirms "yes, Sera first," option (a) is the correct mechanism (cross-chapter Sera arc favors the cohere loop over two sequential per-chapter re-cascades). If the principal has read the manuscript and has different targets, the queue can be re-ordered accordingly.
+
+trade-off: One human round-trip delayed at the start of revision work. Accepted: the cost of firing 140-180 dispatches in the wrong order on finished shipped drafts is materially higher than the cost of a single confirm. Sera remains fully available as the first target the moment the principal confirms it.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
+## DEC-0113 | 2026-06-07 | FAST (user-proxy)
+
+question: Sera arc revision (c03 + c20): full re-cascade through /and-facets + /and-stitch, or surgical re-stitch of affected passages only?
+context: |
+  Phase 1 re-decomposition of c03s02 is done: ~6 revised/inserted bones (concrete Sera stakes-weight,
+  fence preserved — Taylor never names Sera as motive). Analogous terminal beat in c20. Operational
+  discovery: theater/facets/ and theater/dialogue/ hold c20 working set only; c03's are in _archive.
+  Full re-cascade would regenerate all 10 facets (~30-40 dispatches/chapter), displace current theater/
+  working state, and require manual archive management for out-of-order revision. Surgical re-stitch
+  would re-author one Jarvis dialogue line + integrate revised/inserted bones into the affected passage
+  of the shipped draft, ~3-5 dispatches/chapter. Drafts (draft/b01-c*.md) are persistent either way.
+options: |
+  (a) FULL RE-CASCADE: restore c03 archive, run /and-write Phase 1.5-7 + /and-review bones +
+      /and-facets (10-facet regen) + /and-stitch. ~30-40 dispatches/chapter. Displaces theater/ state.
+  (b) SURGICAL RE-STITCH: re-author the affected dialogue line + integrate revised bones into draft
+      at stitch-level only. ~3-5 dispatches/chapter. Does not touch theater/ current state.
+
+decision: (b) Surgical re-stitch. Principal's stated default confirmed.
+basis: ltm:DEC-0065 + goal:2 + methodology:3b + methodology:3a
+rationale: |
+  DEC-0065 is directly controlling: on a shipped terminal chapter, a surgical inline bolt-on is
+  preferred over full re-stitch at 10x cost + seed-variance risk. The current case is a smaller
+  intervention (6-bone stakes-weight insertion in one scene vs. a slug rename affecting a named
+  character). Goal 2 (cost discipline) strongly favors (b): ~5 dispatches vs. ~30-40, with no
+  meaningful quality delta on the targeted change. The fence-threading quality — "keep Taylor from
+  naming Sera as motive" — is a stitch-layer rendering judgment; facet regeneration does not improve
+  it. Methodology 3a (reversibility) also favors (b): option (a) displaces the c20 theater/ working
+  set and requires out-of-order archival management; (b) touches only the affected passage.
+trade-off: |
+  (b) yields lower render fidelity on the new/revised bones (they don't get full memory/feeling/
+  metaphor/sensory facet treatment). Accepted: the change is deliberate stakes-weight insertion, and
+  the facet layer's marginal contribution on a 6-bone localized passage doesn't justify 35+ additional
+  dispatches plus archival disruption risk.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no

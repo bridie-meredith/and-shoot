@@ -141,7 +141,7 @@ series:
       book:    { delta_per_signature_axis: <range>, density_target: <range>, bone_count: <range> }
       chapter: { delta_per_signature_axis: <range>, density_target: <range>, bone_count: <range> }
       scene:   { delta_per_signature_axis: <range>, density_target: <range>, bone_count: <range> }
-      bone:    { delta_per_axis: <range>, axes_per_bone: <range> }   # typical 1-axis ±1 rank; occasionally 2-axis
+      bone:    { delta_per_axis: <range>, axes_per_bone: <range> }   # typical 1-axis ±1 rank; occasionally 2-axis; conditional: 1-3 when scene_target_delta_magnitude >= 1.0; magnitude = scene_target_delta_magnitude when scene_target_delta_magnitude < 1.0 (fractional sub-scene moves permitted at sub-1.0 scene targets; Phase 6 gate accepts magnitude == scene_target_delta_magnitude in these cases). Precedent: DEC-0002 (c07 + c08 sub-1.0 bone deltas accepted).
   vibe_cloud:                              # series-level vibe-cloud, authored by /and-series
     keys: [...]
 

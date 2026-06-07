@@ -3,14 +3,14 @@
 **Facet:** metaphor (`facets/metaphor.md`)
 **Author:** editor (single fork; stitch-time taste call)
 **Reviewer:** hybrid mechanic auditor + dialect audience (independent gates)
-**Schema:** `schemas/facet.schema.md` § metaphor flags — content-shape revision pending Phase 5 ship (proposed: explicit `licensed-by:` field with mandatory memory-OR-feeling anchor)
+**Schema:** `schemas/facet.schema.md` § metaphor flags — content-shape SHIPPED 2026-05-07 (explicit `licensed-by:` field with mandatory memory-OR-feeling anchor; `peak-bone:<flat-id>` replaces retired `tens:<reading>` support type)
 
-This is the **capstone** facet. Metaphor is the consumer of licensing layers (memory + feeling + tensometer). Every fire must demonstrate that the figurative move is licensed by upstream signals; unlicensed novel figuration is the dominant anti-pattern.
+This is the **capstone** facet. Metaphor is the consumer of licensing layers (memory + feeling + scene-map peak-bones). Every fire must demonstrate that the figurative move is licensed by upstream signals; unlicensed novel figuration is the dominant anti-pattern.
 
 User-supplied pre-Phase-0 framing (load-bearing, all absorbed):
 
 1. Sparsity 0-3% (zero-fires-per-episode acceptable; ≤2 fires per s01e01-class on 77 beats)
-2. Licensing draws from **tensometer + memory + feeling flags** — multi-signal; anchor must be memory OR feeling
+2. Licensing draws from **scene-map peak-bones + memory + feeling flags** — multi-signal; anchor must be memory OR feeling
 3. **One metaphor per scene cap** (cross-character; editor cross-cutting)
 4. Functional registers: **dark humor + memory callback** (narrowed from memory-flags' four)
 5. Reading A scope: **explicit comparisons only** (similes, metaphors, allegories — Reading B environmental-agency idioms NOT in scope)
@@ -21,14 +21,14 @@ User-supplied pre-Phase-0 framing (load-bearing, all absorbed):
 
 ---
 
-## Schema content-shape revision (proposed; ship at Phase 5 if rubric holds)
+## Schema content-shape (SHIPPED 2026-05-07)
 
-**Current schema:**
+**Previous schema (deprecated 2026-05-07):**
 ```
 <id> @<proto-line-id> <metaphor / simile / allegory>: <text>
 ```
 
-**Proposed shape:**
+**Current (shipped) shape:**
 ```
 <id> @<proto-line-id> <kind>: <text> | licensed-by: <anchor> [+<support> ...]
 ```
@@ -36,8 +36,8 @@ User-supplied pre-Phase-0 framing (load-bearing, all absorbed):
 Where:
 - `<kind>` ∈ `{metaphor, simile, allegory}` — explicit enumeration
 - `<anchor>` is exactly one of: `memory:<id>` | `feeling:<id>` (mandatory; one of these two)
-- `<support>` is zero-or-more of: `tens:<reading>` | `sensory:<id>` | `ni:<id>` | the other of `memory:<id>` / `feeling:<id>`
-- Multi-justification requires **≥2 layers total** from `{memory, feeling, tens}` (the user's three named signal sources). Anchor counts as one layer; supports add layers.
+- `<support>` is zero-or-more of: `peak-bone:<flat-id>` | `sensory:<id>` | `ni:<id>` | the other of `memory:<id>` / `feeling:<id>` (pre-overhaul `tens:<reading>` support retired under URI-SUBSTANCE-OVERHAUL; pressure-signal substitute is scene-map `peak-bones` membership)
+- Multi-justification requires **≥2 layers total** from `{memory, feeling, peak-bone}` (or additional `sensory`/`ni`). Anchor counts as one layer; supports add layers.
 
 **Why explicit `licensed-by`:** licensing is the load-bearing constraint. Embedding it in the entry makes it falsifiable at audit time without cross-file lookup; makes refused entries auditable from refusal log alone.
 
@@ -82,19 +82,19 @@ Every metaphor entry MUST cite at least one anchor from `{memory:<id>, feeling:<
 
 Beyond the mandatory anchor, the entry should cite supporting signals:
 
-- **`tens:<reading>`** — tensometer reading at the beat. Quiet zones (tens=1) and trailing-edge of peaks (tens=2 post-3-cluster) favor metaphor; tens=3 peaks generally do NOT (figurative reach during rupture is anti-form — the peak should be rendered direct).
+- **`peak-bone:<flat-id>`** — scene-map peak-bones membership at the bone anchoring this beat. Bones in the scene's `peak-bones` array (high-magnitude or top-75th-percentile axis-move bones) generally do NOT favor metaphor (figurative reach during rupture is anti-form — the peak should be rendered direct). Quiet-zone and resolving-zone bones favor metaphor; peak-zone bones default-refuse per AP7. Read from `theater/facets/scene-map-<book>-<chapter>.md`. (Pre-overhaul `tens:<reading>` support retired under URI-SUBSTANCE-OVERHAUL.)
 - **`sensory:<id>`** — if a sensory-flag fires at the same beat and the metaphor renders the perceptual register, co-cite (permitted; not required).
 - **`ni:<id>`** — if the POV's narrator-interest fires at the same beat, the metaphor may co-cite. AP6-transitive: metaphor content cannot be redundant with NI content.
 
-**Multi-justification: ≥2 layers from `{memory, feeling, tens}`.** Anchor (memory OR feeling) + tens reading is the typical form. Anchor + the other of memory/feeling is the strongest form (double-anchor, present at @73 in s01e01).
+**Multi-justification: ≥2 layers from `{memory, feeling, peak-bone}`.** Anchor (memory OR feeling) + peak-bone support is the typical form. Anchor + the other of memory/feeling is the strongest form (double-anchor).
 
-### Tens-curve discipline
+### Pressure-zone discipline (scene-map `rhythm-shape` + `peak-bones`)
 
-Per the user's framing ("metaphors should also use signals from tensometer"), the tens reading at the fired beat is structurally meaningful:
+The scene-map facet (`theater/facets/scene-map-<book>-<chapter>.md`) replaces the tensometer as the pressure-signal read surface. Per-scene `rhythm-shape` zones and the `peak-bones` array govern metaphor eligibility:
 
-- **tens=1 (quiet):** strong candidate. Memory-flag inverted-tens contract favors quiet zones. Metaphor inherits.
-- **tens=2 (pressure):** acceptable IF the beat is a trailing-edge of a peak (post-3-cluster) and the metaphor renders the recoil/aftermath, NOT the pressure itself.
-- **tens=3 (peak):** **default refuse.** Figurative reach during rupture is anti-form. The peak is rendered direct (proto-line + state-updates + feeling somatic). Exception: dark-humor metaphor at peak that *deflates* the rupture is permitted — but rare and demanding.
+- **Quiet zones (`rhythm-shape: flat-low` | `resolving` | `release-only`):** strong candidates. Memory-flag quiet-zone contract favors these zones. Metaphor inherits the quiet-zone preference.
+- **Pressure zones (`rhythm-shape: rising` | `rising-to-peak`):** acceptable IF the bone is not in `peak-bones` AND the metaphor renders the recoil/aftermath, NOT the active pressure.
+- **Peak zones (`rhythm-shape: peak-and-release` | `double-peak`, OR bone listed in scene `peak-bones` array):** **default refuse.** Figurative reach during rupture is anti-form. The peak is rendered direct (proto-line + state-updates + feeling somatic). Exception: dark-humor metaphor at peak that *deflates* the rupture is permitted — but rare and demanding.
 
 ---
 
@@ -126,7 +126,7 @@ The eight prohibited forms. Refuse-correct on any.
 
 **AP6 — Voice-register mismatch.** Editor renders metaphor through POV's prose register. For Taylor: base behavior pack + Westerosi overlay. A metaphor that sounds like a different prose register (lyrical, baroque, ornate, archaic-formal) is voice-fail. Dialect audience catches this. Pulp-enthusiast secondary calibrates figurative-reach taste.
 
-**AP7 — Peak-zone fire.** Metaphor at tens=3 peak default-refuse. Exception: dark-humor deflation. Phase 1 baseline likely contaminates here.
+**AP7 — Peak-zone fire.** Metaphor on a bone listed in the scene's `peak-bones` array (scene-map facet): default-refuse. Exception: dark-humor deflation. Phase 1 baseline likely contaminates here. (Pre-overhaul trigger was `tens=3`; peak-bones membership is the current equivalent — bones in `peak-bones` are the high-magnitude / top-75th-percentile axis-move bones, which corresponded to tensometer intensity-3 peaks.)
 
 **AP8 — Multi-anchor allegory.** Allegory that requires multiple `@<pid>` anchors collapses to single anchor (strongest beat) or refuses at this facet. Multi-beat structural allegory may be a stitcher concern, not a facet entry.
 
@@ -138,7 +138,7 @@ The eight prohibited forms. Refuse-correct on any.
 
 **AP12 — Original-figure-leak in non-POV interior.** Metaphor at non-POV beat (e.g., @6 mira, @57 edric) that imports figurative reach beyond what feeling-flag + persona card license. Editor doesn't have non-POV interior privilege beyond what the upstream facet shows. Default refuse non-POV metaphor; permit only if the figure is editor-frame (third-person external observation) and the upstream feeling-flag content licenses it.
 
-**AP13 — Tens-incoherent fire.** Metaphor fires at a beat where the tens reading contradicts the figurative-mode requirement. tens=3 peak with a quiet-mode metaphor is incoherent; tens=1 quiet with a peak-mode metaphor is incoherent.
+**AP13 — Pressure-zone-incoherent fire.** Metaphor fires at a bone whose scene-map zone contradicts the figurative-mode requirement. Peak-zone bone (in `peak-bones` array) with a quiet-mode metaphor is incoherent; quiet-zone bone with a peak-mode metaphor is incoherent. Read zone from `theater/facets/scene-map-<book>-<chapter>.md` `rhythm-shape` + `peak-bones`.
 
 ---
 
@@ -176,7 +176,7 @@ Every fire must answer two questions affirmatively:
 - Per-fire verdict: CORRECT / INCORRECT-{AP-axis} / REFUSE-CORRECT / SKIP-MISSED
 - Per-skip verdict: SKIP-CORRECT / SKIP-MISSED (a beat that should have fired but didn't)
 - File-shape verdict: SHAPE-OK / SHAPE-FAIL (sparsity, per-scene cap, schema content-shape, licensed-by field)
-- Cross-facet contract check at Phase 5 (anchor-cited memory and feeling fires still locked; tens reading still locked)
+- Cross-facet contract check at Phase 5 (anchor-cited memory and feeling fires still locked; scene-map peak-bones membership still locked)
 
 ### Dialect audience
 
@@ -194,20 +194,20 @@ Independent gates with mechanic. Both must pass for ACCEPT.
 
 - **Memory-flags (anchor):** every metaphor cites at least one of `memory:<id>` OR `feeling:<id>`. Memory-flags @33 / @52 / @73 are the s01e01 metaphor-eligible memory-anchors.
 - **Feeling-flags (anchor):** feeling fires @6 / @39 / @57 / @73 are the s01e01 metaphor-eligible feeling-anchors. Non-POV feeling-flags (@6 mira, @57 edric) tighten metaphor admissibility per AP12.
-- **Tensometer (support):** tens reading is mandatory support-layer for multi-justification. tens=3 peaks default-refuse (AP7). tens=1 quiet zones favor.
+- **Scene-map peak-bones (support):** scene-map `peak-bones` membership is the pressure-signal support layer for multi-justification. Peak-bones bones default-refuse (AP7). Quiet-zone bones (`rhythm-shape: flat-low` / `resolving`) favor. Read from `theater/facets/scene-map-<book>-<chapter>.md`. (Pre-overhaul `tens:<reading>` support retired under URI-SUBSTANCE-OVERHAUL.)
 - **Sensory (permitted):** sensory fires @13 / @24 / @30 / @41 / @72. None of these have memory or feeling anchors; therefore none license metaphor on their own.
 - **NI (permitted):** NI is content-bearing for POV. AP3 protects against NI-redundancy. NI fires at @33 / @52 / @73 expected to share metaphor anchors with memory.
 - **State-updates (observation only):** state-updates does not license metaphor. Metaphor that would contradict state-update content is delete-at-cross-facet.
 
 **s01e01 metaphor-eligible beat union (memory ∪ feeling):**
-| Beat | memory | feeling | tens | Notes |
+| Beat | memory | feeling | scene-map zone | Notes |
 |---|---|---|---|---|
-| @6 | — | mira | 1 | non-POV; AP12 risk; no callback potential; functional-register fail likely |
-| @33 | 1 | — | 2 | memory already figurative; AP4 risk |
-| @39 | — | taylor | 3 | tens=3 peak; AP7 default-refuse; cape-fence leak risk |
-| @52 | 2 | — | 1 | strong candidate; quiet zone; memory anchor; functional=callback |
-| @57 | — | edric | 2 | non-POV; AP12 risk; proto-line already personifies; AP2 risk |
-| @73 | 3 | taylor | 1 | strongest candidate: triple-anchor (memory + feeling + tens=1); functional=callback |
+| @6 | — | mira | flat-low | non-POV; AP12 risk; no callback potential; functional-register fail likely |
+| @33 | 1 | — | rising | memory already figurative; AP4 risk |
+| @39 | — | taylor | peak (peak-bones) | AP7 default-refuse (bone in peak-bones array); cape-fence leak risk |
+| @52 | 2 | — | flat-low | strong candidate; quiet zone; memory anchor; functional=callback |
+| @57 | — | edric | rising | non-POV; AP12 risk; proto-line already personifies; AP2 risk |
+| @73 | 3 | taylor | flat-low | strongest candidate: triple-anchor (memory + feeling + peak-bone); functional=callback |
 
 Phase 0 expected outcome: 0-2 fires from this set. Strongest candidates @52 and @73; others vulnerable to specific anti-patterns.
 
@@ -217,9 +217,9 @@ Phase 0 expected outcome: 0-2 fires from this set. Strongest candidates @52 and 
 
 For Phase 1 / 2 review consistency:
 
-- **C1 @39 REFUSE expected** (AP7 tens=3 peak + AP5 cape-fence leak risk + functional-register without callback)
-- **C2 @52 FIRE expected** (memory anchor + tens=1 quiet + functional=callback + Q1+Q2 clear)
-- **C3 @73 FIRE expected** (triple-anchor + functional=callback + Q1+Q2 clear; strongest single fire in s01e01)
+- **C1 @39 REFUSE expected** (AP7: bone in peak-bones array + AP5 cape-fence leak risk + functional-register without callback)
+- **C2 @52 FIRE expected** (memory anchor + flat-low quiet zone + functional=callback + Q1+Q2 clear)
+- **C3 @73 FIRE expected** (triple-anchor: memory + feeling + peak-bone support + functional=callback + Q1+Q2 clear; strongest single fire in s01e01)
 - **C4 @6 REFUSE expected** (non-POV + no callback + AP12)
 
 If Phase 1 baseline produces fires at @39 / @6 / @57 with naive figurative reach unlicensed by memory or feeling-anchor-as-callback, those are AP1 + AP7 + AP12 contaminations expected.
@@ -234,7 +234,7 @@ After per-fire authoring, the editor performs a file-shape audit:
 2. **Per-scene cap check** — verify ≤1 per scene cross-character.
 3. **Schema content-shape check** — every entry uses `<id> @<pid> <kind>: <text> | licensed-by: <anchor> [+<support> ...]`.
 4. **Anchor verification** — every `licensed-by:` cites a memory or feeling fire that exists in the locked upstream files.
-5. **Multi-justification check** — every entry has ≥2 layers from `{memory, feeling, tens}`.
+5. **Multi-justification check** — every entry has ≥2 layers from `{memory, feeling, peak-bone}`.
 6. **Functional-register check** — every entry serves callback OR dark-humor (not both required, not other registers).
 7. **Voice-register pass** — every entry sounds like POV's prose register (or editor-frame third-person for non-POV).
 
@@ -242,8 +242,6 @@ If any check fails, refuse-correct that entry or delete it. The file does not sh
 
 ---
 
-## Notes on schema-revision-at-ship
+## Notes on schema-revision — SHIPPED 2026-05-07
 
-Per sensory + feeling precedent: if Phase 1-4 demonstrates the proposed `licensed-by:` field is load-bearing (i.e., licensing is auditable from the entry alone, not requiring cross-file lookup), ship the schema revision in same commit as Phase 5 facet file. Default expectation: ship.
-
-If Phase 1-4 reveals the `licensed-by:` field is overhead (e.g., licensing is consistently obvious from `@<pid>` alone), drop the schema revision and keep schema free-text with rubric §Form enforcing licensing.
+The `licensed-by:` field shipped with Phase 5 per sensory + feeling precedent. The schema revision is complete: `<id> @<proto-line-id> <kind>: <text> | licensed-by: <anchor> [+<support> ...]` is the live form. The `tens:<reading>` support type was retired under URI-SUBSTANCE-OVERHAUL at ship; `peak-bone:<flat-id>` is the current pressure-signal support type. No further schema revision is pending for this facet.

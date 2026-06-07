@@ -905,10 +905,10 @@ parking_lot:
         - schemas/bones.schema.md  # §Dialogue-anchor bones, lines ~140 + ~165
         - active-project/staff/auditor/write-b01c06-pass2.md  # fault-002
         - active-project/staff/showrunner/memory.md  # series.substance.state_axes
-      status: open
-      resolved_at: null
-      resolved_by: null
-      resolution_note: null
+      status: resolved
+      resolved_at: 2026-06-07T01:00:00Z
+      resolved_by: "fixer (STRUCT-006; /and-review pipeline 20260607T004417Z)"
+      resolution_note: "bones.schema.md §Dialogue-anchor bones lines 140+165 generalized this session (STRUCT-006) to '≥1 communication/relational-class axis per the active signature' with an explicit custom-signature clause; memory.md series.substance block now has communication_class_axes comment naming relational_anchor_status + social_tether-* as this project's communication/relational-class axes."
 
     - id: pl-2026-05-30-004
       created_at: 2026-05-30T00:00:00Z
@@ -1034,10 +1034,10 @@ parking_lot:
         - staff/admin/decisions.md  # DEC-0002 override rationale
         - active-project/staff/showrunner/_drafts/b01c07-bones-draft-2026-05-30-rev2.md  # precedent lines 402, 430, 544, 632
       resolution_suggestion: "/and-review pipeline at next pass; (a) preferred"
-      status: open
-      resolved_at: null
-      resolved_by: null
-      resolution_note: null
+      status: resolved
+      resolved_at: 2026-06-07T01:00:00Z
+      resolved_by: "fixer (STRUCT-007; /and-review pipeline 20260607T004417Z)"
+      resolution_note: "option (a) conditional now in showrunner-memory.schema.md chunk_targets.bone line ~144 and inline note at memory.md chunk_targets.bone line ~1465, both citing DEC-0002 as precedent."
 
     - id: pl-2026-05-31-002
       created_at: 2026-05-31T00:00:00Z
@@ -2767,6 +2767,110 @@ parking_lot:
         structure reading theme-linked-not-causal). NOT a b01c20 Phase 0 blocker — c20 Phase 0
         stays CLEAR.
       resolution_suggestion: "book-close: /and-write b01c19 revise --from-signals + re-cascade, OR principal accepts the Class-B cohort caveat at /and-review verdict b01. Consider /and-cohere b01 c13-c19 for the accumulated Class-B stretch."
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-06-cohere-001
+      created_at: 2026-06-06T22:00:00Z
+      created_by: "/and-review cohere b01 all (dramatist promise/payoff REVISE)"
+      label: sera-payoff-weight-drop-whole-book
+      target:
+        command: /and-write
+        scope: "b01c03"
+        phase: null
+      severity: SOFT
+      description: |
+        Whole-book cohere (FAIL-COHERE) load-bearing finding on the dramatist promise/payoff axis,
+        surviving Phase 3 triage as the one item NOT already principal-accepted at book scope.
+        Sera Hightower is the entire cost-justification of the Otto arrangement (introduced c03,
+        the court-tier [protect-target] whose quiet Taylor buys) but the reader never feels her
+        weight: she never appears as a person, her threat is never staged, and the c20 decommission
+        does not confirm she was protected. The moral engine's human face reads as a ledger entry.
+        DISTINCT from the on-page non-naming, which is BY DESIGN (pl-2026-05-28-002, verified c05 —
+        Taylor never articulates the Sera-link; it lives at the facet layer). This finding is at the
+        reader-reception / whole-book payoff layer, not the on-page-articulation layer. Secondary:
+        Norren's c17 false-attribution consequence is deferred-then-unpaid (series-HOLD / book-DROP).
+        NOTE: the book is complete + shipped + verdict-PASSED (PASS-WITH-NOTES) + Class-B cohort
+        accepted at DEC-0105. Fixing this requires a substantive revise mutating finished drafts
+        (c03 establish + c20 confirm at minimum). Fire-vs-defer decision routed to principal per
+        Rule 13; NOT auto-fired by /and-cohere Phase 4. Recorded primarily as analysis input.
+        SPLIT: this item = c03 ESTABLISH-leg only (add reader-facing Sera weight at introduction
+        point). The c20 CONFIRM-leg (decommission must confirm protect-target was actually shielded)
+        is tracked separately at pl-2026-06-06-cohere-002.
+      context_refs:
+        - active-project/staff/reviews/cohere-b01-all-20260606T215813Z.md
+        - active-project/staff/reviews/cohere-dramatist-b01-all-20260606T215813Z.md
+        - active-project/staff/showrunner/parking-lot.md  # pl-2026-05-28-002 (on-page non-naming = design)
+        - staff/admin/decisions.md  # DEC-0105 (book-close Class-B cohort acceptance)
+      resolution_suggestion: "principal decision: (a) accept as documented structural note on a finished book (fold into analysis); or (b) /and-write b01c03 revise --from-signals + c20 + re-cascade to add Sera reader-facing weight (substantive; mutates shipped drafts)"
+      status: resolved
+      resolved_at: 2026-06-07T03:45:00Z
+      resolved_by: "surgical re-stitch (DEC-0113) — c03 establish-leg integrated to draft/b01-c03.md; confirmed ACCEPT by dramatist re-cohere (cohere-confirm-sera-20260607.md)"
+      resolution_note: "c03 cooper's-yard passage revised: Jarvis stages Sera's concrete fate (put out / record does not reopen) in courier register; Taylor's stakes-beat lands the human fact BARE (principal note 'no accounting' — ledger-framing removed); grounding beat (boy at hoop-stack) added; fence held (Taylor names no motive). Dramatist confirm Q1+Q4: reader-facing weight CLOSES, no residue."
+
+    - id: pl-2026-06-06-cohere-002
+      created_at: 2026-06-06T23:00:00Z
+      created_by: "fixer fault-004 (cohere-b01-all-aggregate-audit split; companion to pl-2026-06-06-cohere-001)"
+      label: sera-payoff-weight-drop-c20-confirm
+      target:
+        command: /and-write
+        scope: "b01c20"
+        phase: null
+      severity: SOFT
+      description: |
+        CONFIRM-leg companion to pl-2026-06-06-cohere-001 (c03 establish-leg). The c20
+        decommission scene (Taylor exits KL, the Otto arrangement ends) does not confirm
+        that the protect-target (Sera Hightower) was actually shielded — the reader never
+        receives a payoff signal that the arrangement achieved its stated purpose. The
+        moral engine's guarantee fires hollow at close: c03 introduced Sera as the cost-
+        justification, but c20 decommissions the architecture without confirming the
+        protection succeeded. Per the whole-book cohere (FAIL-COHERE,
+        dramatist-promise-payoff axis), this is the CONFIRM half of the two-chapter
+        repair: c03 establishes Sera as a felt person (establish-leg), c20 confirms the
+        protect-target was shielded (confirm-leg). NOTE: same constraints as c03 establish-
+        leg — book is complete + shipped + verdict-PASSED (PASS-WITH-NOTES) + principal-
+        accepted per DEC-0108. Any revise mutates a finished terminal draft. This item is
+        only actionable if the principal authorizes Phase 4 dispatch per DEC-0108's
+        fire-vs-defer decision. Recorded as analysis input.
+      context_refs:
+        - active-project/staff/reviews/cohere-b01-all-20260606T215813Z.md
+        - active-project/staff/reviews/cohere-dramatist-b01-all-20260606T215813Z.md
+        - active-project/staff/showrunner/parking-lot.md  # pl-2026-06-06-cohere-001 (establish-leg; this item is the confirm-leg)
+        - staff/admin/decisions.md  # DEC-0108 (phase 4 fire-vs-defer — defer accepted; revise-dismissal on finished+accepted book)
+      resolution_suggestion: "confirm-leg companion to pl-2026-06-06-cohere-001; only actionable jointly with that item if principal authorizes /and-write b01c03 + b01c20 revise + re-cascade"
+      status: resolved
+      resolved_at: 2026-06-07T03:45:00Z
+      resolved_by: "surgical re-stitch (DEC-0113) — c20 confirm-leg integrated to draft/b01-c20.md; confirmed ACCEPT by dramatist re-cohere (cohere-confirm-sera-20260607.md)"
+      resolution_note: "c20 decommission paragraph: payoff confirmed as OVERTAKEN BY EVENTS (principal decision) — the council that could rule on Sera's parentage is filing into the junctions to take the crown; the question has nowhere left to be asked. No-accounting, fence held, minor-key (pre-Wren). Dramatist confirm Q2+Q3: payoff lands + stays subordinate to Wren climax, CLOSES."
+
+    - id: pl-2026-06-07-pipeline-001
+      created_at: 2026-06-07T01:15:00Z
+      created_by: "/and-review pipeline legs23 (STRUCT-025) + admin DEC-0111"
+      label: rubric-exposition-deferred-to-b02
+      target:
+        command: /and-substance
+        scope: "b02"
+        phase: null
+      severity: SOFT
+      description: |
+        STRUCT-025 (pipeline legs23) found .claude/commands/and-facets.md Phase 1 item 10
+        named a nonexistent design/shoot-v2/rubric-exposition.md as the exposition facet's
+        authority. The exposition facet shipped all 20 b01 chapters WITHOUT that rubric,
+        operating off schema § exposition + the union-of-audience-personas gap test +
+        the context-ledger discipline + glossed-terms.md. DEC-0111 resolved the HARD by
+        DE-REFERENCING (and-facets.md item 10 now names the real authority sources; dead
+        pointer removed). A dedicated rubric-exposition.md is DEFERRED to b02-activation:
+        if a second book is authorized, author rubric-exposition.md (REJECT / anti-pattern /
+        cross-facet-contract sections, matching the other 9 rubric-*.md) using 20 chapters
+        of real exposition-author behavior as evidence. No action while b01 is the only book.
+      context_refs:
+        - active-project/staff/reviews/pipeline-legs23-20260607T010305Z.md  # STRUCT-025
+        - .claude/commands/and-facets.md  # Phase 1 item 10 (de-referenced)
+        - schemas/facet.schema.md  # §exposition (the operating authority)
+        - staff/admin/decisions.md  # DEC-0111
+      resolution_suggestion: "at b02-activation (/and-substance book b02 or first b02 /and-facets): author design/shoot-v2/rubric-exposition.md from schema §exposition + b01 exposition-author corpus, then restore the rubric reference in and-facets.md item 10"
       status: open
       resolved_at: null
       resolved_by: null
