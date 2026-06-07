@@ -211,3 +211,48 @@ calibrate the first-pest beat.
 `and-experiment/design/convergence-process.md`. **CONVERGENCE COMPLETE.**
 
 **Open knob:** the Cauldron-Belly's in-world name (working: "Heavenly Demon Cauldron-Belly").
+
+---
+
+## Round 4 — run-02 principal enrichment (chapter-note revision; CHAPTER I.1)
+
+*Process: post-convergence principal enrichment per `design/convergence-process.md` §Notes — ratify
++ GUARDS + scoped integration, NOT a re-open. Working surface: `design/run-02/book-i-state-ledger.md`
+(staging layer; the ★ accepted outline above is preserved untouched until a re-fuse). Re-axis frame:
+`design/restructured-books-two-desires.md`.*
+
+**Principal note (I.1 rewrite):** the egg is NOT given dead. Saerys is a dying reincarnated infant
+(mind/brain incompatibility, seizures); her mother Alicent slips her a *living* dragon egg without
+the King's blessing to save her life; feeling the warm egg + clocking impossible silver/purple
+physiognomy she deduces a magical world and tries to cultivate; can't sense energy, needs a baseline;
+mimics the egg (fails), tries to ingest it (can't), chips a fragment with a smuggled toy and swallows
+it (a real flicker, gone fast); discovers sympathetic resonance (a chip + her blood stands for the
+whole); it takes — a formless real frequency seeds in her; the egg goes cold (drained) and is taken;
+the infant lives, "touched in the head."
+
+**Ratifications (3 GUARDS — see ledger §Ratified premise changes):**
+- **GUARD-1 — cultivation is REAL but inert-to-the-world** (supersedes the broken-clock guard). The
+  energy is genuine but yields no martial/external/transferable/arena-relevant power; its only real
+  products are her own durability/slow un-aging + an appetite; it fires only on genuinely-magical
+  materials; mithridatism stays mundane and *masks* the real durability. She's right it's real, wrong
+  about everything else. Plot power stays poison+logistics+paper; cultivation never saves anyone she
+  loves; the un-aging makes the ending meta-question literal, not resolved. *(A mix of "it works" +
+  "it's delusion" per the principal.)*
+- **GUARD-2 — inciting inversion re-framed heal→fuel** (supersedes pray→desecrate; the FROZEN opener).
+  Same gesture (living/sacred thing → fuel for the self) carried one inch further — she drains a
+  *living* beast. III.5 frame-rhyme updated (one living beast → a sky of dead ones).
+- **GUARD-3 — curdle R0 stays a laugh at the time.** Egg drained dead, but staged so neither infant
+  nor reader registers a kill (adults read a dud = canon dragonless); horror is retroactive after III.5.
+
+**Six-criteria scoped re-validation (do they still hold? — judgment pass; full dramatist/audience
+re-validation deferred to re-fuse):** Structure ✔ (NOTE re-homed to I.1 aftermath, not orphaned; new
+plants SYMPATHETIC-RESONANCE + REINCARNATION-SICKNESS scheduled). Drama ✔↑ (death-refusal now literal
+from frame one; GIFT:VISERYS gains a real tender hook — addresses residual-risk #4). Comedy ✔
+(register held SPIKE; ordinary "tempering" still does nothing = antics stay funny). Theme ✔↑ (real
+un-aging makes "will the immortal come down" literal). Canon-fit ✔ (drained egg reads externally as a
+dud — canon dragonless; silver/purple read as "spiritual physiognomy," NOT named Targaryen — setting-
+blind intact). Rhymes ✔↑ (curdle R0 living→dead strengthens the III.5 apex; locks/gift→spend intact).
+
+**Status:** GUARD-1 supersedes a foundational fence — flagged to the next dramatist/audience re-
+validation and to `saerys-targaryen.card.md` §Hard Fences #3 (to be updated at promotion). Integration
+staged in the run-02 ledger (CL-001); the ★ accepted outline is unchanged pending a re-fuse.
