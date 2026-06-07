@@ -52,3 +52,14 @@ still PASS. Baseline status: **PASS** (35 plants / 36 fires; R0–R4 all present
 - **Fences & FROZEN beats are never silently broken** — flagged, ratified with a written GUARD.
 - **Promotion** — when a revised arc stabilizes, push it up into `convergence/` (re-fuse) and
   `showrunner/memory.md` (book deltas), and derive the substance signature from the state vectors.
+
+## Re-baselining around a new outline
+
+`idea-inbox.md` is the **small-grain** front door (one chapter note). When the principal brings a
+whole **tentative outline** that should adapt-or-retire this planning wholesale, that's a
+**re-baseline** — use the scaffold at **`../../intake/`** (run `../../intake/INTAKE-RUNBOOK.md`, or
+`/and-reoutline`). It produces the next `design/run-NN/` from the adopted outline, carries over the
+GUARDS + thread-config, archives superseded artifacts (never deletes), and re-checks PASS.
+
+**Canonical run-02 Book I structure** now lives in `book-i-outline.md` (re-fused, thread-checked
+PASS); `book-i-state-ledger.md` is the change-history + GUARDS + state/blast-radius working memory.
