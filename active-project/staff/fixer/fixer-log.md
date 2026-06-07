@@ -1,3 +1,38 @@
+## SESSION-END — 2026-06-07T03:13:00Z — pipeline-legs23-tensometer-residue-5-findings
+findings-applied: 5 (STRUCT-017, STRUCT-019, STRUCT-026 co-resolved on rubric-metaphor.md; STRUCT-018 on rubric-vibes.md; STRUCT-020 on rubric-feeling.md)
+findings-skipped: 0
+exit: CLEAN
+
+## STRUCT-020 — RESOLVED — 2026-06-07T03:12:00Z
+fault: rubric-feeling.md retained tensometer vocabulary in 4 locations: (a) §"Curve-shape rubric (tens-independent)" section title and body referenced t=1/t=2/t=3 tensometer scalars; (b) §"Cross-facet contract / Tensometer" subsection listed tensometer as active cross-facet consideration; (c) sparsity table row "Tens distribution | distribute across t=1, t=2, t=3 | soft"; (d) anti-pattern #10 "Density-on-flat-tens" named the tensometer concept
+scope: line (rubric-feeling.md, 4 targeted locations)
+change: (a) section title "Curve-shape rubric (tens-independent)" -> "Curve-shape rubric (pressure-zone-independent)"; body rule rewritten from tensometer-gating to scene-map zone-distribution; t=1/t=2/t=3 -> flat-low/rising/peak-bones; retirement note added; (b) "Tensometer (observation-only, like sensory)" subsection title -> "Scene-map (observation-only, like sensory)"; body updated to reference scene-map rhythm-shape + peak-bones with retirement note; (c) sparsity table row: "Tens distribution | distribute across t=1, t=2, t=3" -> "Zone distribution | distribute across scene-map zones (flat-low / rising / peak-bones)"; (d) anti-pattern #10: "Density-on-flat-tens. Fires concentrated at peaks only; tens-monoculture." -> "Zone-monoculture. Fires concentrated at peak-bones zones only; distribute across scene-map zones"
+criteria met: yes — tensometer vocabulary removed from all 4 locations; semantic intent preserved (do not concentrate fires at peaks; distribute across zones); scene-map rhythm-shape + peak-bones vocabulary substituted throughout; no gate was removed (all were observation-only / soft)
+
+## STRUCT-018 — RESOLVED — 2026-06-07T03:08:00Z
+fault: rubric-vibes.md §"Cross-facet contract — Read side" listed tens:<reading> as a valid licensed-by source type; schema content-shape <source> enumeration also listed tens:<reading> as a valid source; both retired under URI-SUBSTANCE-OVERHAUL; schema live form uses peak-bone:<flat-id>; AP1 also referenced "tens facets" (dropped facet type)
+scope: line (rubric-vibes.md, 3 targeted locations)
+change: (a) schema content shape <source> enumeration: tens:<reading> line replaced with peak-bone:<flat-id> line including retirement note; (b) Cross-facet contract Read side: tens:<reading> bullet replaced with peak-bone:<flat-id> bullet with "scene-map peak-bones membership as supporting licensing" description and retirement note; (c) AP1: "sensory / feeling / tens facets" -> "sensory / feeling facets" (tens facet dropped)
+criteria met: yes — source enumeration now matches facet.schema.md live form (peak-bone:<flat-id>); description updated to "(scene-map peak-bones membership as supporting licensing)"; tens:<reading> retired throughout
+
+## STRUCT-017+019+026 — RESOLVED — 2026-06-07T03:05:00Z
+fault: rubric-metaphor.md retained tensometer vocabulary in 6 locations after URI-SUBSTANCE-OVERHAUL retired tens:<reading>: (017) multi-justification gate enumerated {memory,feeling,tens}; support layers listed tens:<reading>; (019) schema-content-shape section framed as "proposed/pending Phase 5 ship" when already shipped, with tens still in enumeration; (026) AP7 trigger expressed as "tens=3" (unevaluable without dropped tensometer), calibration anchors C1/C3 used tens=3/tens=1 scalars, beat table had tens column, file-shape audit item 5 had {memory,feeling,tens}, Notes section framed revision as future-pending
+scope: line (rubric-metaphor.md, 6 targeted locations)
+change: (a) header line 6: "content-shape revision pending Phase 5 ship (proposed...)" -> "content-shape SHIPPED 2026-05-07 (... peak-bone:<flat-id> replaces retired tens:<reading> support type)"; (b) file-shape audit item 5: {memory,feeling,tens} -> {memory,feeling,peak-bone}; (c) beat-eligibility table: tens column replaced with scene-map zone column; scalar readings (1/2/3) replaced with zone names (flat-low/rising/peak (peak-bones)/flat-low/rising/flat-low); "tens=3 peak; AP7 default-refuse" note -> "AP7 default-refuse (bone in peak-bones array)"; (d) calibration anchors: C1 "AP7 tens=3 peak" -> "AP7: bone in peak-bones array"; C2 "tens=1 quiet" -> "flat-low quiet zone"; C3 "triple-anchor (memory + feeling + tens=1)" -> "triple-anchor: memory + feeling + peak-bone support"; (e) "Notes on schema-revision-at-ship" section: retitled "Notes on schema-revision — SHIPPED 2026-05-07"; body replaced with confirmed-ship statement; tens:<reading> retirement confirmed; peak-bone:<flat-id> named as current pressure-signal support type; pending-revision framing removed
+criteria met: yes — {memory,feeling,peak-bone} is the shipped enumeration; AP7 restated using peak-bones membership (peak-bones array = high-magnitude/top-75th-percentile bones, which corresponded to tensometer intensity-3 peaks per schema note in AP7 clause already present); "proposed/pending" framing removed; support enumeration matches facet.schema.md live form throughout
+
+## SESSION-START — 2026-06-07T03:00:00Z — pipeline-legs23-tensometer-residue-5-findings
+dispatch: close STRUCT-017/019/026 (HARD, rubric-metaphor.md tensometer residue), STRUCT-018 (HARD, rubric-vibes.md Cross-facet contract tens source), STRUCT-020 (SIGNAL, rubric-feeling.md tensometer vocabulary) — minimum-change replacement with peak-bone per shipped facet.schema.md
+target: design/shoot-v2/rubric-metaphor.md (primary); design/shoot-v2/rubric-vibes.md; design/shoot-v2/rubric-feeling.md
+audit-report: active-project/staff/reviews/pipeline-legs23-20260607T010305Z.md
+findings-queued: 5 actionable findings across 3 rubric files
+
+## SESSION-START — 2026-06-07T02:00:00Z — pipeline-legs23-tensometer-residue-5-findings
+dispatch: close STRUCT-017/019/026 (HARD, rubric-metaphor.md tensometer residue), STRUCT-018 (HARD, rubric-vibes.md Cross-facet contract tens source), STRUCT-020 (SIGNAL, rubric-feeling.md tensometer vocabulary) — minimum-change replacement with peak-bone per shipped facet.schema.md
+target: design/shoot-v2/rubric-metaphor.md (primary); design/shoot-v2/rubric-vibes.md; design/shoot-v2/rubric-feeling.md
+audit-report: active-project/staff/reviews/pipeline-legs23-20260607T010305Z.md
+findings-queued: 5 actionable findings across 3 rubric files
+
 ## SESSION-START — 2026-06-07T01:00:00Z — pipeline-20260607-struct-006-007
 dispatch: close HARD pipeline findings STRUCT-006 (bones.schema.md speech-bone axis generalization) and STRUCT-007 (showrunner-memory.schema.md delta_per_axis sub-1.0 conditional) by formalizing standing admin precedent; stamp pl-2026-05-30-003 and pl-2026-05-31-003 resolved
 target: schemas/bones.schema.md (STRUCT-006); schemas/showrunner-memory.schema.md (STRUCT-007); active-project/staff/showrunner/memory.md (STRUCT-006 annotation + STRUCT-007 inline note); active-project/staff/showrunner/parking-lot.md (stamp both items)

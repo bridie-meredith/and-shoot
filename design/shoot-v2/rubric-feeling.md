@@ -108,11 +108,11 @@ POV gets ≤1 per scene like every other character (≤4 per episode given 4 sce
 
 ---
 
-## Curve-shape rubric (tens-independent)
+## Curve-shape rubric (pressure-zone-independent)
 
-Feeling-flags fire across the tens curve, not concentrated at peaks. Some fires are quiet-beat (assessment stillness, refusal-to-look-extended, threshold-cross before-the-act); some are peak-beat (commit-stance, retreat, rupture-bearing).
+Feeling-flags fire across all scene-map pressure zones, not concentrated at peaks. Some fires are quiet-beat (assessment stillness, refusal-to-look-extended, threshold-cross before-the-act); some are peak-beat (commit-stance, retreat, rupture-bearing).
 
-**Tens-independence rule:** feeling-flags do NOT gate on tensometer ≥ 2 (sensory precedent). Correlation-only observation. The expected file-shape distributes fires across t=1, t=2, t=3 per the natural distribution of somatic-show in the episode.
+**Pressure-zone-independence rule:** feeling-flags do NOT gate on scene-map zone (sensory precedent). Correlation-only observation. The expected file-shape distributes fires across `flat-low`, `rising`, and peak-bones zones per the natural distribution of somatic-show in the episode. (Pre-overhaul: "Tens-independence rule" referencing tensometer t=1/t=2/t=3 — tensometer retired under URI-SUBSTANCE-OVERHAUL; pressure-signal substitute is scene-map `rhythm-shape` + `peak-bones`.)
 
 ---
 
@@ -139,9 +139,9 @@ Scene boundaries inherited from loc-state. Feeling-flag respects scene boundarie
 
 A memory-flag (POV monument trigger) may correlate with a POV feeling-flag (the trigger produces a somatic tell). Neither requires the other. Co-citation permitted.
 
-### Tensometer (observation-only, like sensory)
+### Scene-map (observation-only, like sensory)
 
-Independent. Tens-correlation observed at audit but never gated.
+Independent. Zone-correlation (scene-map `rhythm-shape` + `peak-bones`) observed at audit but never gated. (Pre-overhaul: "Tensometer" section — tensometer retired under URI-SUBSTANCE-OVERHAUL; pressure-signal substitute is scene-map.)
 
 ---
 
@@ -172,7 +172,7 @@ Two-pass authoring per fork:
 7. **Vocabulary saturation.** Same somatic-tell verb across multiple fires (everyone "goes still", everyone "drops eyes").
 8. **Per-scene cap violation.** Two fires for one character in one scene.
 9. **Single-justification fire.** Fewer than 3 of 5 multi-justification slots filled.
-10. **Density-on-flat-tens.** Fires concentrated at peaks only; tens-monoculture.
+10. **Zone-monoculture.** Fires concentrated at peak-bones zones only; distribute across scene-map zones (flat-low / rising / peak-bones).
 11. **Direct interior-narration ("she felt").** Form violation.
 12. **Hedged feeling vocabulary** ("a kind of sadness", "something like resolve"). Hedged ≠ unnamed; refuse.
 13. **Idiomatic feeling-naming** ("his face fell", "her heart sank"). Idiom names through metaphor; refuse.
@@ -218,7 +218,7 @@ A writer-fork passing all four anchors has the rubric internalized.
 | Per-episode sparsity | 2-5% | target (3-6 fires on 77 beats) |
 | Per-season character distribution | ≥3 distinct character-slugs across e01-e06 | advisory tracking |
 | Vocabulary distinctness (per-character) | each character's tells use that character's card vocabulary | hard |
-| Tens distribution | distribute across t=1, t=2, t=3 | soft |
+| Zone distribution | distribute across scene-map zones (flat-low / rising / peak-bones) | soft |
 | Functional-register | ≥2 of 4 per fire | hard |
 
 ---
