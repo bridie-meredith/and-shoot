@@ -29,11 +29,11 @@ cohere_state:
       result: PASS-SURGICAL
     - chapter: b01c20
       parking_lot_items: [pl-2026-06-06-cohere-002]
-      revise_mode: --from-signals
-      executed: false
-      result_ts: null
-      result_note: "Sera confirm-leg. UN-DEFERRED 2026-06-07 (same principal go). Queued behind c03 establish-leg. Intent: at/near the c20 decommission (line 9, currently 'no person was addressed'), confirm whether the price paid off — Sera's parentage-question status as the arrangement ends — in flat ledger register, fence-respecting."
-      result: PENDING
+      revise_mode: surgical-re-stitch
+      executed: true
+      result_ts: 2026-06-07T03:30:00Z
+      result_note: "Sera confirm-leg DONE via surgical re-stitch (DEC-0113). Payoff decision (principal): OVERTAKEN BY EVENTS — three spare sentences woven into the c20 decommission paragraph: the arrangement's purpose (silence around a girl's parentage, held against a council that could rule on it) is moot because that council is filing into the junctions to take the crown; the question has nowhere left to be asked. Not kept, not broken — overtaken. No-accounting (sits outside the ledger mark); fence held (no motive, 'a girl's parentage' function-framed); minor-key and pre-Wren so it does not rival the Wren-blank climax. Re-cohere confirm next."
+      result: PASS-SURGICAL
   status: revising
   final_verdict: null   # re-opened 2026-06-07 from dismissed (DEC-0108) per principal go on the Sera arc; executing the revise queue
   closed_at: null
