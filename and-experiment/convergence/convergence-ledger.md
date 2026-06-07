@@ -256,3 +256,50 @@ blind intact). Rhymes ✔↑ (curdle R0 living→dead strengthens the III.5 apex
 **Status:** GUARD-1 supersedes a foundational fence — flagged to the next dramatist/audience re-
 validation and to `saerys-targaryen.card.md` §Hard Fences #3 (to be updated at promotion). Integration
 staged in the run-02 ledger (CL-001); the ★ accepted outline is unchanged pending a re-fuse.
+
+---
+
+## Round 5 — run-02 principal enrichment (era + cultivation; CL-002)
+
+*Process: post-convergence principal enrichment per `design/convergence-process.md` §Notes (ratify +
+GUARDS + scoped integration, NOT a re-open). New authority file: `design/run-02/timeline-and-family-
+tree.md`. The ★ accepted outline above is preserved untouched pending a re-fuse.*
+
+**Principal note:** (a) **Era → Jaehaerys I's reign.** "Jaehaerys and Alicent" = the royal couple:
+**Jaehaerys = King + Saerys's father** (the warm cage), **Alicent = Queen + mother**. **Viserys**
+demoted to a young **nephew** ("less of a deal at that time"). (b) **Cultivation works.** Magic /
+blood magic / dragon-and-fire magic are real. No ambient qi to farm, but **objects, people, and some
+substances radiate** it; internalizing + refining **tempers the body**; she *could* fight / spend
+energy for "crazy effects," but expenditure slows the already-slow growth, so she **hoards it
+internal**; her blood-medium founding + living sources make her an **unintentional blood-cultivator**.
+
+**Ratifications:**
+- **GUARD-1 rev-2** (supersedes rev-1 "real-but-inert" and the original broken-clock): cultivation is
+  **real, powerful, hoarded by choice, and framework-wrong**. She's right it's real, wrong about WHAT
+  it is (a past-life xianxia model — dao/realms/tribulations — laid over canon blood/fire/death
+  magic; she gains despite mis-modeling). The "never martial" fence becomes **non-combatant by
+  choice** (capacity real and growing; restraint is economics + blood-magic secrecy). Plot power
+  still poison + logistics + paper; she never fights on the page; longevity makes the ending
+  meta-question literal.
+- **GUARD-4** (era + family tree fixed): Jaehaerys I reign; Saerys b. ~84 AC; Book I 84–93 AC;
+  Jaehaerys d. 103 AC; Dance 129 AC. AU divergence flagged explicitly: Alicent stands where canon
+  has Alysanne; Helaena recast as Saerys's sister; Viserys/Aemond/Otto demoted/recast.
+
+**Six-criteria scoped re-validation (judgment pass; full dramatist/audience re-validation deferred to
+re-fuse):** Structure ✔ (new tokens BLOOD-PATH scheduled; father-king spend re-homed Viserys→
+Jaehaerys, not orphaned). Drama ✔↑ (real power + abhorred-blood-magic secrecy adds genuine stakes;
+the longevity-to-the-Dance option deepens the immortality tragedy). Comedy ✔ (broken clock survives
+as framework-error; mundane "tempering" still fails, magical items faintly work). Theme ✔↑ (real
+un-aging → "will the immortal come down" fully literal). Canon-fit ✔ with one declared AU pivot
+(Alicent↔Alysanne); dates pinned against Fire & Blood; Saerys stays setting-blind. Rhymes ✔ (curdle
+ladder now her *actual* cultivation path: drains living things to grow; III.5 dragon-blood feast is
+the apex).
+
+**Open structural fork (flagged for principal):** series end-date — **Dance 129 AC (recommended;**
+Saerys ~45 but unaged, III.5 = a battlefield of dragon-corpses) vs a tighter AU dragon-death ~110s.
+This is the only genuinely-open call from this round.
+
+**Status:** GUARD-1 rev-2 supersedes a foundational fence (again) — flagged to the next dramatist/
+audience re-validation and to `saerys-targaryen.card.md` §Hard Fences (to update at promotion).
+Integration staged in the run-02 ledger (CL-002) + the new timeline file; the ★ accepted outline is
+unchanged pending a re-fuse.
