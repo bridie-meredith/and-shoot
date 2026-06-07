@@ -2844,3 +2844,34 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-06-07-pipeline-001
+      created_at: 2026-06-07T01:15:00Z
+      created_by: "/and-review pipeline legs23 (STRUCT-025) + admin DEC-0111"
+      label: rubric-exposition-deferred-to-b02
+      target:
+        command: /and-substance
+        scope: "b02"
+        phase: null
+      severity: SOFT
+      description: |
+        STRUCT-025 (pipeline legs23) found .claude/commands/and-facets.md Phase 1 item 10
+        named a nonexistent design/shoot-v2/rubric-exposition.md as the exposition facet's
+        authority. The exposition facet shipped all 20 b01 chapters WITHOUT that rubric,
+        operating off schema § exposition + the union-of-audience-personas gap test +
+        the context-ledger discipline + glossed-terms.md. DEC-0111 resolved the HARD by
+        DE-REFERENCING (and-facets.md item 10 now names the real authority sources; dead
+        pointer removed). A dedicated rubric-exposition.md is DEFERRED to b02-activation:
+        if a second book is authorized, author rubric-exposition.md (REJECT / anti-pattern /
+        cross-facet-contract sections, matching the other 9 rubric-*.md) using 20 chapters
+        of real exposition-author behavior as evidence. No action while b01 is the only book.
+      context_refs:
+        - active-project/staff/reviews/pipeline-legs23-20260607T010305Z.md  # STRUCT-025
+        - .claude/commands/and-facets.md  # Phase 1 item 10 (de-referenced)
+        - schemas/facet.schema.md  # §exposition (the operating authority)
+        - staff/admin/decisions.md  # DEC-0111
+      resolution_suggestion: "at b02-activation (/and-substance book b02 or first b02 /and-facets): author design/shoot-v2/rubric-exposition.md from schema §exposition + b01 exposition-author corpus, then restore the rubric reference in and-facets.md item 10"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
