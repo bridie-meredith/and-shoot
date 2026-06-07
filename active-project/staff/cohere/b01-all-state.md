@@ -25,18 +25,18 @@ cohere_state:
       revise_mode: --from-signals
       executed: false
       result_ts: null
-      result_note: "naive-q6 dropped at triage (DEC-0105 design-accepted); only Sera-payoff item survives; Phase 4 DEFERRED per DEC-0108 (accept-with-notes; book complete+accepted; surface as analysis input)"
-      result: SKIPPED
+      result_note: "Sera establish-leg. UN-DEFERRED 2026-06-07: principal directed 'begin revisions' → AskUserQuestion 'Sera arc (/and-cohere)' (reverses DEC-0108; DEC-0112 confirm-first satisfied by principal answer). Now EXECUTING. Intent: give Sera reader-facing stakes-weight at her c03 introduction (currently a leverage-token, lines 53-56) WITHOUT Taylor naming the Sera-link as motive (fence pl-2026-05-28-002)."
+      result: IN-PROGRESS
     - chapter: b01c20
       parking_lot_items: [pl-2026-06-06-cohere-002]
       revise_mode: --from-signals
       executed: false
       result_ts: null
-      result_note: "Sera-payoff confirm-leg (c20 decommission does not confirm protect-target shielded); Phase 4 DEFERRED per DEC-0108 — same dismissal scope as b01c03 establish-leg; only actionable if principal authorizes Phase 4 on both legs jointly"
-      result: SKIPPED
-  status: dismissed
-  final_verdict: null   # FAIL-COHERE on record, but principal-accepted-with-notes per DEC-0108 (not converged, not held — explicit revise-dismissal on a finished+accepted book)
-  closed_at: 2026-06-06T22:15:00Z
+      result_note: "Sera confirm-leg. UN-DEFERRED 2026-06-07 (same principal go). Queued behind c03 establish-leg. Intent: at/near the c20 decommission (line 9, currently 'no person was addressed'), confirm whether the price paid off — Sera's parentage-question status as the arrangement ends — in flat ledger register, fence-respecting."
+      result: PENDING
+  status: revising
+  final_verdict: null   # re-opened 2026-06-07 from dismissed (DEC-0108) per principal go on the Sera arc; executing the revise queue
+  closed_at: null
   admin_process_critic:
     - iteration: 0
       verdict: OK-MERGED
@@ -44,5 +44,6 @@ cohere_state:
       summary: "Sera payoff-weight finding merges into PROP-0042 (recurrence 3→4); /and-cohere working as designed; mandatory-before-verdict sequencing rejected; planning-time SOFT flag (PROP-0042) is the strictly-better fix. DEC-0109."
       ts: 2026-06-06T22:30:00Z
   # Phase 3 triage: 1 of 2 load-bearing fails dropped as design-inherent/principal-accepted (DEC-0105).
-  # DEC-0108: Phase 4 NOT fired. Sera-payoff drop recorded as SOFT pl-2026-06-06-cohere-001, folded into analysis.
-  # Book stands as shipped (PASS-WITH-NOTES). Chain re-runnable on demand if analysis reveals material damage.
+  # DEC-0108: Phase 4 deferred (analysis posture). REVERSED 2026-06-07: principal directed revisions; AskUserQuestion → "Sera arc (/and-cohere)".
+  # Baselines archived: active-project/draft/_archive/2026-06-07-pre-revise-sera/ (c03 + c20).
+  # Execution: targeted re-cascade of c03 then c20, then re-thread + re-consolidate + re-cohere c03-c20 to confirm payoff lands.
