@@ -1,3 +1,29 @@
+## SESSION-START — 2026-06-07T01:00:00Z — pipeline-20260607-struct-006-007
+dispatch: close HARD pipeline findings STRUCT-006 (bones.schema.md speech-bone axis generalization) and STRUCT-007 (showrunner-memory.schema.md delta_per_axis sub-1.0 conditional) by formalizing standing admin precedent; stamp pl-2026-05-30-003 and pl-2026-05-31-003 resolved
+target: schemas/bones.schema.md (STRUCT-006); schemas/showrunner-memory.schema.md (STRUCT-007); active-project/staff/showrunner/memory.md (STRUCT-006 annotation + STRUCT-007 inline note); active-project/staff/showrunner/parking-lot.md (stamp both items)
+audit-report: active-project/staff/reviews/pipeline-20260607T004417Z.md
+findings-queued: 2 (STRUCT-006, STRUCT-007)
+
+## STRUCT-006 — WORKING — 2026-06-07T01:01:00Z
+note: bones.schema.md lines 140+165 already contain the generalized custom-signature clause (applied during URI-WRITE-DIALOGUE-COBONDED, 2026-05-25); bones.schema.md part complete; proceeding to memory.md part (b) — communication-class annotation in series.substance.state_axes block
+
+## STRUCT-006 — RESOLVED — 2026-06-07T01:02:00Z
+fault: bones.schema.md §Dialogue-anchor bones stated communication-class axis requirement as universal questionnaire taxonomy only (community/knowledge/reputation/trust); no custom-signature carve-out; every speech bone in a custom-signature project would fault a literal slug-match auditor; memory.md had no annotation naming this project's communication-class axes
+scope: line (2 files)
+change: (a) bones.schema.md lines 140+165 — confirmed already carry the generalized custom-signature clause from URI-WRITE-DIALOGUE-COBONDED (2026-05-25); no further edit required; (b) active-project/staff/showrunner/memory.md — added communication_class_axes comment after state_axes list (after "political_register-world" axis notes, before actor_baselines comment) naming relational_anchor_status + social_tether-* as this project's communication/relational-class axes and instructing auditors not to slug-match against the universal taxonomy
+criteria met: yes — bones.schema.md has the generalized text; memory.md now carries the project-specific annotation so each Phase-2 auditor dispatch resolves from memory, not from parking-lot precedent
+
+## STRUCT-007 — RESOLVED — 2026-06-07T01:03:00Z
+fault: showrunner-memory.schema.md chunk_targets.bone.delta_per_axis stated flat "1-3" with no sub-1.0 exception; project shipped sub-1.0 bone deltas at c07 + c08 under DEC-0002 admin override with no schema backing; each new /and-write Phase 2 auditor would re-flag sub-1.0 deltas as HARD findings
+scope: line (2 files)
+change: (a) schemas/showrunner-memory.schema.md line ~144 — extended bone: comment to add the sub-1.0 conditional: "1-3 when scene_target_delta_magnitude >= 1.0; magnitude = scene_target_delta_magnitude when scene_target_delta_magnitude < 1.0 (fractional sub-scene moves permitted at sub-1.0 scene targets; Phase 6 gate accepts magnitude == scene_target_delta_magnitude in these cases). Precedent: DEC-0002 (c07 + c08 sub-1.0 bone deltas accepted)."; (b) active-project/staff/showrunner/memory.md line ~1465 — added inline comment to bone: field noting 1-3 floor applies >= 1.0 scene targets; sub-1.0 magnitude = scene_target accepted; see schema + DEC-0002
+criteria met: yes — option (a) from pl-2026-05-31-003; 1-3 floor preserved for normal scenes; sub-1.0 exception carved with DEC-0002 citation
+
+## SESSION-END — 2026-06-07T01:03:00Z — pipeline-20260607-struct-006-007
+findings-applied: 2 (STRUCT-006, STRUCT-007)
+findings-skipped: 0
+exit: CLEAN
+
 ## SESSION-END — 2026-06-06T23:10:00Z — cohere-b01-all-aggregate-audit-5-faults-pass2
 findings-applied: 2 (fault-004, fault-005); fault-001/002/003 confirmed already applied by prior session
 findings-skipped: 0

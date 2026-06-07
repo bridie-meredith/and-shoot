@@ -905,10 +905,10 @@ parking_lot:
         - schemas/bones.schema.md  # §Dialogue-anchor bones, lines ~140 + ~165
         - active-project/staff/auditor/write-b01c06-pass2.md  # fault-002
         - active-project/staff/showrunner/memory.md  # series.substance.state_axes
-      status: open
-      resolved_at: null
-      resolved_by: null
-      resolution_note: null
+      status: resolved
+      resolved_at: 2026-06-07T01:00:00Z
+      resolved_by: "fixer (STRUCT-006; /and-review pipeline 20260607T004417Z)"
+      resolution_note: "bones.schema.md §Dialogue-anchor bones lines 140+165 generalized this session (STRUCT-006) to '≥1 communication/relational-class axis per the active signature' with an explicit custom-signature clause; memory.md series.substance block now has communication_class_axes comment naming relational_anchor_status + social_tether-* as this project's communication/relational-class axes."
 
     - id: pl-2026-05-30-004
       created_at: 2026-05-30T00:00:00Z
@@ -1034,10 +1034,10 @@ parking_lot:
         - staff/admin/decisions.md  # DEC-0002 override rationale
         - active-project/staff/showrunner/_drafts/b01c07-bones-draft-2026-05-30-rev2.md  # precedent lines 402, 430, 544, 632
       resolution_suggestion: "/and-review pipeline at next pass; (a) preferred"
-      status: open
-      resolved_at: null
-      resolved_by: null
-      resolution_note: null
+      status: resolved
+      resolved_at: 2026-06-07T01:00:00Z
+      resolved_by: "fixer (STRUCT-007; /and-review pipeline 20260607T004417Z)"
+      resolution_note: "option (a) conditional now in showrunner-memory.schema.md chunk_targets.bone line ~144 and inline note at memory.md chunk_targets.bone line ~1465, both citing DEC-0002 as precedent."
 
     - id: pl-2026-05-31-002
       created_at: 2026-05-31T00:00:00Z
