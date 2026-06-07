@@ -7318,3 +7318,27 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0112 | 2026-06-07 | SLOW (user-proxy)
+
+question: b01 manuscript consolidated into a single file. Principal says "begin revisions." What is the FIRST revision target + method? Standing evidence-backed queue: pl-2026-06-06-cohere-001 (c03 Sera establish-leg) + pl-2026-06-06-cohere-002 (c20 Sera confirm-leg), both SOFT, deferred by DEC-0108 when principal's next step was "analysis." "Begin revisions" appears to un-defer DEC-0108. Options: (a) fire Sera queue now via /and-cohere b01 cross-chapter loop; (b) fire Sera queue via two per-chapter re-cascades; (c) present manuscript + queue, confirm target before firing.
+
+options:
+  (a) Fire Sera queue now via /and-cohere b01 — cross-chapter loop, c03+c20, re-coheres to confirm; ~140-180 dispatches, irreversible draft mutation; pre-queued, evidence-backed
+  (b) Fire Sera queue via two per-chapter re-cascades — c03 then c20; same irreversibility + cost; mechanism different from (a)
+  (c) Present consolidated manuscript + standing queue; confirm principal's first target before spending — one conversation turn, fully reversible, preserves all options
+
+decision: Option (c). Present the consolidated manuscript and the Sera queue to the principal. Confirm which revision target they want to lead with — the pre-queued Sera arc vs. their own reading-driven findings — before firing any re-cascade on shipped drafts.
+
+basis: methodology:3a (reversibility) + methodology:3b (cost) + methodology §human-only (spend commitments past routine) + DEC-0108 (partial reversal — posture has shifted from "analysis" to "revisions," but the specific first target + mechanism is genuinely ambiguous)
+
+rationale: "Begin revisions" reverses DEC-0108's analysis-posture deferral — that much is clear. What it does NOT specify: (1) whether the principal wants to lead with the Sera arc specifically vs. targets they identify from reading the consolidated manuscript, and (2) which mechanism (cohere loop vs. per-chapter re-cascade) they prefer for the Sera arc if it IS the first target. The instruction sequence was consolidate-first, which implies a reading intent — the principal may have their own manuscript-read findings that rank ahead of Sera in their judgment. Firing 140-180 dispatches irreversibly on shipped drafts without knowing which finding the principal wants addressed first violates methodology §human-only (spend commitments past routine) and methodology:3a (prefer reversible when uncertain). Option (c) costs one conversation turn and preserves full optionality. If the principal confirms "yes, Sera first," option (a) is the correct mechanism (cross-chapter Sera arc favors the cohere loop over two sequential per-chapter re-cascades). If the principal has read the manuscript and has different targets, the queue can be re-ordered accordingly.
+
+trade-off: One human round-trip delayed at the start of revision work. Accepted: the cost of firing 140-180 dispatches in the wrong order on finished shipped drafts is materially higher than the cost of a single confirm. Sera remains fully available as the first target the moment the principal confirms it.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
