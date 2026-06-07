@@ -7270,6 +7270,32 @@ methodology-update-proposed: no
 
 ---
 
+## DEC-0111 | 2026-06-07 | FAST (user-proxy)
+
+question: STRUCT-025 — exposition facet (and-facets Phase 1 item 10) references `design/shoot-v2/rubric-exposition.md` which does not exist. Close via (a) author rubric-exposition.md, (b) de-reference it / point at the real authority sources already in use, or (c) park as known-debt to b02-activation?
+
+context: The exposition facet is active and has shipped all 20 b01 chapters without rubric-exposition.md. Its actual operating authority is: schema §exposition + audience-gap test + context-ledger discipline + staff/exposition-author/glossed-terms.md. b01 is COMPLETE and SERIES-TERMINAL. No b02 is currently authorized. The rubric reference is a dangling pointer — a nonexistent file named in a command body — but has not caused a quality failure in 20 chapters. (a) is M-cost speculative authoring on a complete book with no b02 and no observed exposition-quality failure. (b) is S-cost, edits and-facets.md item 10 to name the real authority sources, removes the dead path, trivially reversible. (c) defers via parking-lot note.
+
+options:
+  (a) Author rubric-exposition.md now — M-cost speculative authoring
+  (b) De-reference: edit and-facets.md item 10 to name the actual authority sources; remove dead rubric pointer — S-cost, reversible
+  (c) Park as known-debt to b02-activation — do nothing now
+
+decision: Option (b): de-reference. Edit and-facets.md Phase 1 item 10 to name the actual authority sources (schema §exposition + audience-gap test + context-ledger + glossed-terms.md). Remove the dead rubric-exposition.md pointer. Optionally add a one-line comment noting rubric-exposition.md is deferred to b02-activation if it would aid future readers.
+
+basis: goal:2 (cost discipline) + goal:4 (lean architecture) + methodology:3a (reversibility) + methodology:3b (cost)
+
+rationale: The dangling pointer is the actual defect: a command body citing a nonexistent file. Option (b) fixes that defect at S-cost by naming what the facet has actually operated on for 20 chapters — which is already the ground truth. Option (a) authors a rubric the facet has demonstrably not needed, on a series that is SERIES-TERMINAL with no authorized b02; this is the anti-pattern goal:4 warns against. Option (c) leaves the dead pointer in the command body, which means every future pipeline-review or STRUCT-scan continues to fire STRUCT-025. (b) closes the finding, matches reality, and is trivially reversible — if b02 is activated and the team wants a formal rubric, rubric-exposition.md can be authored then with 20 chapters of actual exposition behavior as evidence.
+
+trade-off: A formal rubric-exposition.md would provide a more complete design surface and could catch future exposition-quality failures mechanically. That value is deferred to b02-activation at zero cost: the facet has shipped 20 chapters on its existing authority and the sources being named in the de-reference (schema + ledger + glossed-terms + audience-gap test) are functional.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
 ## DEC-0108 | 2026-06-06 | SLOW (user-proxy)
 
 question: /and-cohere b01 all returned FAIL-COHERE. After Phase 3 triage, one actionable finding survives (Sera Hightower payoff-weight drop). Should I fire the Phase 4 revise queue on that one item — mutating finished, shipped drafts — or accept the book as cohesion-verified-with-documented-notes and fold the finding into the analysis the principal asked for next?
