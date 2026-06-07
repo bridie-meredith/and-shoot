@@ -7342,3 +7342,44 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0113 | 2026-06-07 | FAST (user-proxy)
+
+question: Sera arc revision (c03 + c20): full re-cascade through /and-facets + /and-stitch, or surgical re-stitch of affected passages only?
+context: |
+  Phase 1 re-decomposition of c03s02 is done: ~6 revised/inserted bones (concrete Sera stakes-weight,
+  fence preserved — Taylor never names Sera as motive). Analogous terminal beat in c20. Operational
+  discovery: theater/facets/ and theater/dialogue/ hold c20 working set only; c03's are in _archive.
+  Full re-cascade would regenerate all 10 facets (~30-40 dispatches/chapter), displace current theater/
+  working state, and require manual archive management for out-of-order revision. Surgical re-stitch
+  would re-author one Jarvis dialogue line + integrate revised/inserted bones into the affected passage
+  of the shipped draft, ~3-5 dispatches/chapter. Drafts (draft/b01-c*.md) are persistent either way.
+options: |
+  (a) FULL RE-CASCADE: restore c03 archive, run /and-write Phase 1.5-7 + /and-review bones +
+      /and-facets (10-facet regen) + /and-stitch. ~30-40 dispatches/chapter. Displaces theater/ state.
+  (b) SURGICAL RE-STITCH: re-author the affected dialogue line + integrate revised bones into draft
+      at stitch-level only. ~3-5 dispatches/chapter. Does not touch theater/ current state.
+
+decision: (b) Surgical re-stitch. Principal's stated default confirmed.
+basis: ltm:DEC-0065 + goal:2 + methodology:3b + methodology:3a
+rationale: |
+  DEC-0065 is directly controlling: on a shipped terminal chapter, a surgical inline bolt-on is
+  preferred over full re-stitch at 10x cost + seed-variance risk. The current case is a smaller
+  intervention (6-bone stakes-weight insertion in one scene vs. a slug rename affecting a named
+  character). Goal 2 (cost discipline) strongly favors (b): ~5 dispatches vs. ~30-40, with no
+  meaningful quality delta on the targeted change. The fence-threading quality — "keep Taylor from
+  naming Sera as motive" — is a stitch-layer rendering judgment; facet regeneration does not improve
+  it. Methodology 3a (reversibility) also favors (b): option (a) displaces the c20 theater/ working
+  set and requires out-of-order archival management; (b) touches only the affected passage.
+trade-off: |
+  (b) yields lower render fidelity on the new/revised bones (they don't get full memory/feeling/
+  metaphor/sensory facet treatment). Accepted: the change is deliberate stakes-weight insertion, and
+  the facet layer's marginal contribution on a 6-bone localized passage doesn't justify 35+ additional
+  dispatches plus archival disruption risk.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
