@@ -277,6 +277,8 @@ Per PROP-0031 Amendment 1, on cohere convergence to PASS-COHERE this command wal
 
 ## Phase 7 — Persist
 
+**Pre-commit RECONCILE (CLAUDE.md Rule 21; PROP-0045).** Before writing/committing the aggregate (triage note, state file, parking-lot items), run the three blocking checks: **(1) Citation resolution** — every cited `DEC-`/`PROP-`/`pl-` id exists in its owning file AND the claim matches what the id actually adjudicates; every generated parking-lot id matches `schemas/parking-lot.schema.md`. **(2) Report↔state field-equality** — `load_bearing_fails` / `failed_axes` / `caution_axes` / `revise_queue[*]` in the report equal the state file. **(3) Self-contradiction scan** — an item naming N atomic resolution points is filed as N items (split on RESOLUTION-COUNT-MISMATCH). Emit a three-line check summary (CHECK 1/2/3: PASS or N-issues) inline; any FAIL blocks the persist until corrected. (See Rule 21 for the full spec.)
+
 1. **State file.** Final write to `active-project/staff/cohere/<book>-<range>-state.md`. All fields current per `schemas/cohere-state.schema.md`.
 2. **Iteration log.** `active-project/staff/cohere/<book>-<range>-<invocation-ts>/iteration-log.md` — append-only per-iteration narrative log. One section per iteration:
    ```

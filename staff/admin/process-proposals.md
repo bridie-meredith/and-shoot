@@ -5982,10 +5982,10 @@ proposed_diff: |
     same discipline); include only if the principal wants belt-and-suspenders per command body.
 
 cost_estimate: S
-status: open
-triaged_at: null
-triaged_by: null
-disposition_note: null
+status: implemented
+triaged_at: 2026-06-07
+triaged_by: principal (session)
+disposition_note: "ACCEPTED + IMPLEMENTED as CLAUDE.md Rule 19 (2026-06-07). Optional per-command companion NOT added — Rule 19 enforces the discipline globally."
 pr_ref: null
 defer_until: null
 supersedes: null
@@ -6091,10 +6091,10 @@ proposed_diff: |
     subsumes the other.
 
 cost_estimate: S
-status: open
-triaged_at: null
-triaged_by: null
-disposition_note: null
+status: implemented
+triaged_at: 2026-06-07
+triaged_by: principal (session)
+disposition_note: "ACCEPTED + IMPLEMENTED as CLAUDE.md Rule 20 (2026-06-07)."
 pr_ref: null
 defer_until: null
 supersedes: null
@@ -6237,10 +6237,10 @@ proposed_diff: |
   Same blocking semantics.
 
 cost_estimate: M
-status: open
-triaged_at: null
-triaged_by: null
-disposition_note: null
+status: implemented
+triaged_at: 2026-06-07
+triaged_by: principal (session)
+disposition_note: "ACCEPTED + IMPLEMENTED as CLAUDE.md Rule 21 + RECONCILE sub-steps in and-cohere.md Phase 7 and and-review.md (cohere Phase 4 + verdict persist), 2026-06-07."
 pr_ref: null
 defer_until: null
 supersedes: null
