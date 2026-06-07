@@ -1,7 +1,8 @@
 ---
 name: cond-cost-bearer-scene-frequency
 class: condition
-scope: library
+scope: project
+project: taylor-westeros-good-intentions
 world: planetos
 origin: authored
 quality: full

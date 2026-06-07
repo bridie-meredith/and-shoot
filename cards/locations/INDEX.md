@@ -46,6 +46,7 @@ planetos:
   - oc-rushwick
   - oc-sept-corner
   - oc-soap-rendering-lane
+  - oc-stitch-house-lane
   - reach-smallfolk-village
   - stormlands-coastal-cliffs
   - westerosi-smallfolk-dwelling-interior
@@ -107,3 +108,4 @@ full:
 
 scant:
   - loc-red-keep-outer-ring
+  - oc-stitch-house-lane

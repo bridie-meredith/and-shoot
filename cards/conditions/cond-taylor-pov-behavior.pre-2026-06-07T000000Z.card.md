@@ -1,7 +1,8 @@
 ---
 name: cond-taylor-pov-behavior
 class: condition
-scope: library
+scope: project
+project: taylor-westeros-good-intentions
 world: planetos
 origin: authored
 quality: full
@@ -70,7 +71,5 @@ Persistent across all chapters.
 ## Interaction Notes
 
 **With `cond-earth-bet-noun-fence`:** That card governs what vocabulary Taylor may and may not use (Earth-Bet proper nouns). This card governs the register and structure of her POV. Both must be loaded for any scene-level authoring review of Taylor's voice.
-
-**With `cond-shard-behavioral-weight`:** The escalation bias the Shard imparts is felt in the moral accounting — the consistent slight over-weighting of confrontational options. Taylor's moral accounting is explicit (this card); the Shard makes the accounting reliable but biased (that card). Both must be loaded for scene-level decision-making beats.
 
 **For auditor use:** Flag any chapter not marked interlude whose **rendered draft** (the `/and-stitch` output at `draft/<book>-<chapter>.md`) is not in Taylor's first-person. Do NOT flag scene chunks or bones files for being in third-person named-subject form — this is pipeline convention at the planning and bone-authoring layers; the first-person transformation happens at `/and-stitch`. The auditor's POV check applies to the rendered draft layer only. Flag any extended interior sequence (more than a paragraph) with no external action anchor. Flag any moment where Taylor's inner monologue states or approaches the thematic irony as a generalization about her choices. Flag any scene where affect is absent rather than suppressed — Taylor with no emotional signal in a high-stakes scene is a register violation in the other direction.

@@ -1,7 +1,8 @@
 ---
 name: cond-kl-witch-label-formation-122ac
 class: condition
-scope: library
+scope: project
+project: taylor-westeros-good-intentions
 world: planetos
 origin: authored
 quality: full

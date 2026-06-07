@@ -12,19 +12,19 @@ planetos:
   - monument-conquest-charter-institutional-self-restraint-122ac
   - cond-khepri-residue-122ac [project: taylor-westeros-good-intentions; superseded by cond-override-architecture-residue-122ac]
   - cond-override-architecture-residue-122ac [supersedes: cond-khepri-residue-122ac]
-  - cond-earth-bet-noun-fence [project: taylor-westeros-good-intentions]
-  - cond-westerosi-magic-dormant-122ac [project: taylor-westeros-good-intentions]
-  - cond-dragon-proximity-122ac [project: taylor-westeros-good-intentions]
-  - cond-kl-court-state-122ac [project: taylor-westeros-good-intentions]
-  - cond-kl-geography-122ac [project: taylor-westeros-good-intentions]
-  - cond-kl-social-physics-122ac [project: taylor-westeros-good-intentions]
-  - cond-taylor-pov-behavior [project: taylor-westeros-good-intentions]
-  - cond-westerosi-witness-vocabulary [project: taylor-westeros-good-intentions]
-  - cond-maester-chronicler-voice [project: taylor-westeros-good-intentions]
+  - cond-earth-bet-noun-fence
+  - cond-westerosi-magic-dormant-122ac
+  - cond-dragon-proximity-122ac
+  - cond-kl-court-state-122ac
+  - cond-kl-geography-122ac
+  - cond-kl-social-physics-122ac
+  - cond-taylor-pov-behavior
+  - cond-westerosi-witness-vocabulary
+  - cond-maester-chronicler-voice
   - cond-nessa-scene-frequency (superseded) [project: taylor-westeros-good-intentions]
-  - cond-cost-bearer-scene-frequency [project: taylor-westeros-good-intentions]
-  - cond-road-to-hell-chain-shape [project: taylor-westeros-good-intentions]
-  - cond-kl-witch-label-formation-122ac [project: taylor-westeros-good-intentions]
+  - cond-cost-bearer-scene-frequency
+  - cond-road-to-hell-chain-shape
+  - cond-kl-witch-label-formation-122ac
   - cond-clinical-self-erasure
   - cond-dragon-gate-arrival-and-witch-label [project: dragon-gate-foreclosure — warehouse only]
   - cond-fauna-control-rules-dragon-gate-addendum [project: dragon-gate-foreclosure — warehouse only]
@@ -99,19 +99,19 @@ full:
   - monument-conquest-charter-institutional-self-restraint-122ac
   - cond-khepri-residue-122ac [project: taylor-westeros-good-intentions; superseded by cond-override-architecture-residue-122ac]
   - cond-override-architecture-residue-122ac [supersedes: cond-khepri-residue-122ac]
-  - cond-earth-bet-noun-fence [project: taylor-westeros-good-intentions]
-  - cond-westerosi-magic-dormant-122ac [project: taylor-westeros-good-intentions]
-  - cond-dragon-proximity-122ac [project: taylor-westeros-good-intentions]
-  - cond-kl-court-state-122ac [project: taylor-westeros-good-intentions]
-  - cond-kl-geography-122ac [project: taylor-westeros-good-intentions]
-  - cond-kl-social-physics-122ac [project: taylor-westeros-good-intentions]
-  - cond-taylor-pov-behavior [project: taylor-westeros-good-intentions]
-  - cond-westerosi-witness-vocabulary [project: taylor-westeros-good-intentions]
-  - cond-maester-chronicler-voice [project: taylor-westeros-good-intentions]
+  - cond-earth-bet-noun-fence
+  - cond-westerosi-magic-dormant-122ac
+  - cond-dragon-proximity-122ac
+  - cond-kl-court-state-122ac
+  - cond-kl-geography-122ac
+  - cond-kl-social-physics-122ac
+  - cond-taylor-pov-behavior
+  - cond-westerosi-witness-vocabulary
+  - cond-maester-chronicler-voice
   - cond-nessa-scene-frequency (superseded) [project: taylor-westeros-good-intentions]
-  - cond-cost-bearer-scene-frequency [project: taylor-westeros-good-intentions]
-  - cond-road-to-hell-chain-shape [project: taylor-westeros-good-intentions]
-  - cond-kl-witch-label-formation-122ac [project: taylor-westeros-good-intentions]
+  - cond-cost-bearer-scene-frequency
+  - cond-road-to-hell-chain-shape
+  - cond-kl-witch-label-formation-122ac
   - cond-dragon-gate-arrival-and-witch-label [project: dragon-gate-foreclosure — warehouse only]
   - cond-fauna-control-rules-dragon-gate-addendum [project: dragon-gate-foreclosure — warehouse only]
   - cond-kl-authority-dragon-gate-129ac [project: dragon-gate-foreclosure — warehouse only]
@@ -198,8 +198,8 @@ power-mechanics:
   - cond-shard-behavioral-weight
   - cond-khepri-residue-122ac [project: taylor-westeros-good-intentions; superseded]
   - cond-override-architecture-residue-122ac
-  - cond-westerosi-magic-dormant-122ac [project: taylor-westeros-good-intentions]
-  - cond-dragon-proximity-122ac [project: taylor-westeros-good-intentions]
+  - cond-westerosi-magic-dormant-122ac
+  - cond-dragon-proximity-122ac
 
 political-ambient:
   - condition-targaryen-claim-disputed
@@ -211,19 +211,19 @@ environmental:
 
 project-constraint:
   - cond-khepri-residue-122ac [project: taylor-westeros-good-intentions]
-  - cond-earth-bet-noun-fence [project: taylor-westeros-good-intentions]
-  - cond-westerosi-magic-dormant-122ac [project: taylor-westeros-good-intentions]
-  - cond-dragon-proximity-122ac [project: taylor-westeros-good-intentions]
-  - cond-kl-court-state-122ac [project: taylor-westeros-good-intentions]
-  - cond-kl-geography-122ac [project: taylor-westeros-good-intentions]
-  - cond-kl-social-physics-122ac [project: taylor-westeros-good-intentions]
-  - cond-taylor-pov-behavior [project: taylor-westeros-good-intentions]
-  - cond-westerosi-witness-vocabulary [project: taylor-westeros-good-intentions]
-  - cond-maester-chronicler-voice [project: taylor-westeros-good-intentions]
+  - cond-earth-bet-noun-fence
+  - cond-westerosi-magic-dormant-122ac
+  - cond-dragon-proximity-122ac
+  - cond-kl-court-state-122ac
+  - cond-kl-geography-122ac
+  - cond-kl-social-physics-122ac
+  - cond-taylor-pov-behavior
+  - cond-westerosi-witness-vocabulary
+  - cond-maester-chronicler-voice
   - cond-nessa-scene-frequency (superseded) [project: taylor-westeros-good-intentions]
-  - cond-cost-bearer-scene-frequency [project: taylor-westeros-good-intentions]
-  - cond-road-to-hell-chain-shape [project: taylor-westeros-good-intentions]
-  - cond-kl-witch-label-formation-122ac [project: taylor-westeros-good-intentions]
+  - cond-cost-bearer-scene-frequency
+  - cond-road-to-hell-chain-shape
+  - cond-kl-witch-label-formation-122ac
   - cond-clinical-self-erasure
   - cond-crownlands-superstition-frame-125ac
   - cond-dance-faction-state-previserys [project: mirror-tragedy]
@@ -262,8 +262,8 @@ project-constraint:
 protagonist-rules:
   - cond-khepri-residue-122ac [project: taylor-westeros-good-intentions; superseded]
   - cond-override-architecture-residue-122ac
-  - cond-earth-bet-noun-fence [project: taylor-westeros-good-intentions]
-  - cond-taylor-pov-behavior [project: taylor-westeros-good-intentions]
+  - cond-earth-bet-noun-fence
+  - cond-taylor-pov-behavior
   - cond-no-parahuman-infrastructure
   - cond-reincarnation-mechanics
   - cond-reincarnation-mechanics-84ac
@@ -281,15 +281,15 @@ protagonist-rules:
   - cond-heartless-dao-scripture [and-experiment; saerys-keyed]
 
 tone-law:
-  - cond-taylor-pov-behavior [project: taylor-westeros-good-intentions]
-  - cond-maester-chronicler-voice [project: taylor-westeros-good-intentions]
+  - cond-taylor-pov-behavior
+  - cond-maester-chronicler-voice
   - cond-series-tone-constraints
   - cond-series-tone-constraints-84ac
   - cond-series-tone-constraints-125ac
   - cond-series-tone-mirror [project: mirror-tragedy]
 
 social-physics:
-  - cond-kl-social-physics-122ac [project: taylor-westeros-good-intentions]
+  - cond-kl-social-physics-122ac
   - cond-westerosi-customary-authority
   - cond-westerosi-customary-authority-125ac
   - cond-westerosi-customary-authority-jaehaerys
@@ -301,9 +301,9 @@ social-physics:
   - cond-smallfolk-court-access-mirror [project: mirror-tragedy]
 
 witness-behavior:
-  - cond-westerosi-witness-vocabulary [project: taylor-westeros-good-intentions]
-  - cond-maester-chronicler-voice [project: taylor-westeros-good-intentions]
-  - cond-earth-bet-noun-fence [project: taylor-westeros-good-intentions]
+  - cond-westerosi-witness-vocabulary
+  - cond-maester-chronicler-voice
+  - cond-earth-bet-noun-fence
 
 institutional-behavior:
   - cond-faith-of-seven-jaehaerys
@@ -314,9 +314,9 @@ institutional-behavior:
   - cond-trade-network-formation [and-experiment]
 
 lore-ambient:
-  - cond-kl-court-state-122ac [project: taylor-westeros-good-intentions]
-  - cond-kl-geography-122ac [project: taylor-westeros-good-intentions]
-  - cond-kl-witch-label-formation-122ac [project: taylor-westeros-good-intentions]
+  - cond-kl-court-state-122ac
+  - cond-kl-geography-122ac
+  - cond-kl-witch-label-formation-122ac
   - cond-riverlands-84ac-state
   - cond-westerosi-superstition-frame
   - cond-crownlands-superstition-frame-125ac
@@ -328,6 +328,6 @@ lore-ambient:
   - cond-maesters-cabinet [and-experiment]
 
 structural-chain:
-  - cond-road-to-hell-chain-shape [project: taylor-westeros-good-intentions]
-  - cond-nessa-scene-frequency (superseded) [project: taylor-westeros-good-intentions]
-  - cond-cost-bearer-scene-frequency [project: taylor-westeros-good-intentions]
+  - cond-road-to-hell-chain-shape
+  - cond-nessa-scene-frequency (superseded) [originated: taylor-westeros-good-intentions]
+  - cond-cost-bearer-scene-frequency
