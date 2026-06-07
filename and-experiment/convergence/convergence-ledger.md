@@ -374,3 +374,28 @@ magic; no demonic blood-magic needed). Rhymes ✔ (curdle intact; first-heist �
 
 **Status:** GUARD-1 superseded again (rev-2 → rev-3); one fence added. I.4/I.8 warm-thread re-home is
 the open call. Baseline ★ outline untouched.
+
+---
+
+## Round 8 — run-02 principal enrichment (no healing hand; CL-005)
+
+*Working surface: `design/run-02/book-i-outline.md` + `book-i-state-ledger.md` + `timeline-and-family-tree.md`.*
+
+**Principal note:** "no healing hand — that would require an external energy application." Correct
+catch: under GUARD-1 the power is **hoarded** (any expenditure sets back internal growth), so a
+magical heal is a *fence breach*, not a flavour option.
+
+**Ratification — GUARD-1 rev-3 strengthened:** **no external energy application of any kind, including
+NO magical healing.** Hoarding is absolute — no fighting, no healing, no outward effects on the page.
+Added to the hard fences. Any mending she ever does is **mundane apothecary craft** (medicine,
+antidotes, nursing), never cultivation.
+
+**Integration:** I.4 recast — the WARM root survives (she still can't let the one child in front of
+her die) but the save is mundane apothecary craft; the **HINGE** is recast from "healing-hand =
+killing-hand" to **"the craft cuts both ways"** (the same still-room knowledge that mended the boy is
+what quietly kills the pest at I.7). Mundane, rules-clean, and the I.7 curdle pivot is preserved. The
+PLANT[HINGE] I.4 → FIRE[HINGE→R2] I.7 token graph is unchanged → outline re-checked PASS. GUARD-2's
+"heal→fuel" (the egg given to save the infant) is a different sense and untouched.
+
+**Status:** no new structural change; a fence clarified + one motif de-magicked. Baseline ★ outline
+untouched.

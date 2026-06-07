@@ -67,9 +67,12 @@ she builds real immunity anyway and files it "tempering"). Top of the want-list:
 ### I.4 · the-laundress's-boy  *(warm root — re-homed off charity)*
 **Age:** ~6. **Beat:** A servant's child is dying. She runs no charity and tells herself she cares
 nothing for mortals — yet *this* one is in front of her, and she finds she cannot watch a child die.
-Three sleepless nights; he lives; she files it "karmic hygiene / cultivation merit." The reader sees
-the human under the armor — the single exception that proves the rule, which she lies to herself about.
-**HINGE established:** the healing-hand and the poison-hand are the *same* hand (same gut, same craft).
+Three sleepless nights of **mundane apothecary craft** — the right tisane, an antidote, cool cloths;
+*not* cultivation (she never spends energy outward, GUARD-1 rev-3) — and he lives. She files it
+"karmic hygiene / cultivation merit." The reader sees the human under the armor — the single exception
+that proves the rule, which she lies to herself about.
+**HINGE established:** her craft **cuts both ways** — the same still-room knowledge that mended this
+child is the knowledge that quietly kills (mundane, not a "healing hand"). Pays at I.7.
 **Register:** RECOVER (lowest-volume scene — the warm floor the horror is measured against).
 **Rung:** off-ladder. **Plants:** PLANT[WARM] (rootability anchor) · PLANT[HINGE].
 
@@ -96,7 +99,8 @@ the adults are **scared, not charmed** — the warm cage shows its bars.
 ### I.7 · the-impurity-expelled  `[FIRST-PEST]`
 **Age:** ~6–7. **Beat:** A meddler moves to expose her workshop raids. He doesn't die loudly — a
 lingering flux, slow recovery, a posting far from court, and he **never knows**. Saerys files him "an
-impurity the cauldron expelled." The healing hand is now, demonstrably, the killing hand.
+impurity the cauldron expelled." The craft that kept the laundress's-boy alive (I.4) is now,
+demonstrably, the craft that kills — the same still-room, turned.
 **Register:** the prose shows the flux plainly (no straight-man). **Rung:** R2 (¾ comedy / ¼ chill).
 **Plants:** PLANT[DE-PESTING] (the cold de-pesting reflex; rhymes to II.8).
 **Fires:** FIRE[HINGE→R2].

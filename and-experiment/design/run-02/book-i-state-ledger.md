@@ -59,11 +59,12 @@ This ledger reflects the CURRENT canonical state; notes mutate it from here.
 - **DOSE-LOG / FACTOR / BELOW-STAIRS / LEDGER** — the four instruments, with their growth state.
 - **POLITICAL CLOCK** — **Jaehaerys I's long peace** (Book I: dormant; Saerys setting-blind throughout). The Dance is the *far-future* series climax (129 AC) reached via her longevity — OPEN; see `timeline-and-family-tree.md` §5.
 
-**Hard fences (never violated by any edit):** setting-blind · **non-combatant by choice** (was
-"never martial" — the power is real and could fight; she hoards it: GUARD-1 rev-3) · **cultivation
-is real-but-hoarded + framework-wrong** (GUARD-1 rev-3 — supersedes "real-but-inert" and the old
-"clock stays broken") · **materials-only cultivation — never cultivates people / never demonic**
-(GUARD-1 rev-3) · idiot-savant boundary · armor cracks exactly once (III.8) · no dragon (she
+**Hard fences (never violated by any edit):** setting-blind · **non-combatant by choice + no
+external energy spend** (was "never martial" — the power is real and could fight, but she hoards it
+absolutely: no fighting, **no healing**, no outward effects on the page: GUARD-1 rev-3) ·
+**cultivation is real-but-hoarded + framework-wrong** (GUARD-1 rev-3 — supersedes "real-but-inert"
+and the old "clock stays broken") · **materials-only cultivation — never cultivates people / never
+demonic** (GUARD-1 rev-3) · idiot-savant boundary · armor cracks exactly once (III.8) · no dragon (she
 ate her egg; dragons are fuel, not mounts). See `saerys-targaryen.card.md` §Hard Fences, the run-02
 GUARDS below, and `timeline-and-family-tree.md` (era + family tree + magic rules). *Any note that
 breaks a fence gets flagged, not silently applied.*
@@ -85,17 +86,20 @@ NOT a source — she does not cultivate people. She is NOT a demonic/blood culti
 blood in I.1 was a one-off sympathetic-resonance catalyst on an object, not a path she walks.)
 Mundane matter is inert. She internalizes + refines source-radiance → her body is **tempered**
 (durability, slow un-aging, eventually superhuman). She **could** spend it — fight, throw fire, crazy
-effects — **but spending sets back the slow internal growth, so she hoards it internal.** The capacity
-is real and growing; the restraint is a *choice* → she reads as a non-combatant and the plot still
-runs on poison + logistics + paper. **Her actual drive is acquisition:** she is an empirical
+effects — **but spending sets back the slow internal growth, so she hoards it internal.** **No
+external energy application of any kind — including NO magical healing** (a "healing hand" is exactly
+the expenditure she refuses); any mending she ever does is *mundane apothecary craft*, not
+cultivation. The capacity is real and growing; the restraint is a *choice* → she reads as a
+non-combatant and the plot still runs on poison + logistics + paper. **Her actual drive is acquisition:** she is an empirical
 materials-hunter, systematically getting and testing things to find what *registers* (radiates) —
 indifferent to the common people ("mortals," beneath her notice), forever chasing the next, rarer
 reagent. **The broken clock:** she's RIGHT it's real and WRONG about the framework — a past-life
 *xianxia* model (dao/realms/tribulations/dantian) over canon **fire/death/old-gods magic**, and she
 gains *despite* mis-modeling it (e.g. she ingests poisons hoping they'll register; they don't — but
 she builds real mundane immunity and files it as "tempering"). *Must-not-break:* she never fights on
-the page; she never cultivates people / is never demonic; cultivation never saves anyone she loves;
-the real un-aging makes the ending meta-question LITERAL; she stays blind to the true system.
+the page; she never cultivates people / is never demonic; **she never spends energy outward — no
+healing, no external effects** (hoarding is absolute); cultivation never saves anyone she loves; the
+real un-aging makes the ending meta-question LITERAL; she stays blind to the true system.
 
 **GUARD-2 — Inciting inversion re-framed: heal→fuel** (ratified; supersedes pray→desecrate). The
 FROZEN opener is now "given a living egg to save her dying life → she taps it for fuel." The
@@ -186,11 +190,11 @@ date anchors, and the one open fork (series end-date: Dance 129 AC recommended) 
 - **Blast radius:** LARGE. Keystone — APPARATUS (the procurement network) feeds II.1 (the owned multinational — now a *reagent* empire); DOSE-LOG feeds II.6/III.3; FACTOR feeds I.9/II.1/II.9/III.10; LEDGER feeds I.9. The acquisition framing makes the empire a *side effect of her hunger* — a cleaner "she chose it" for II.1. Targets named here pay out at I.5 (weirwood / materials tour) + I.6 (pyromancers / wildfire). Removing it collapses the empire spine. *Cover (scholar vs. devotional vs. bare privilege) — OPEN, CL-004.*
 
 ### I.4 · the-laundress's-boy  `[CHARITY-DEPENDENT — re-home, CL-004 OPEN]`
-> **Tension w/ CL-004:** she's now indifferent to the masses + runs no sick-house. This beat survives as the *exception that proves she's human* — the ONE child in front of her she can't let die — but it must re-home off the charity-ward context (→ a sick child in her household/workshop orbit), and it now sits in slight friction with "worry less about mortals." It is the load-bearing WARM root + the HINGE (healing-hand = killing-hand → I.7). **Recommend KEEP (re-homed); do not delete silently.**
+> **Tension w/ CL-004 + CL-005:** she's now indifferent to the masses + runs no sick-house, AND there is **no healing hand** (energy-spend is forbidden — GUARD-1 rev-3). This beat survives as the *exception that proves she's human* — the ONE child in front of her she can't let die — but (a) it re-homes off the charity-ward context (→ a sick child in her household orbit), and (b) whatever she does for him is **mundane apothecary craft** (nursing, the right tisane, an antidote), NOT cultivation. The load-bearing pieces are the WARM root + the HINGE — now recast as **the craft cuts both ways** (the same still-room knowledge that kept the boy alive will quietly kill → I.7). **KEEP (re-homed, de-magicked).**
 - **Beat:** Nurses a dying boy (no cover, no reagent value) three sleepless nights, certain it's karmic hygiene. He lives. She files it as cultivation merit; the reader sees she just couldn't watch a child die.
-- **Deltas:** WARMTH +rootability anchor (the 80k root). HINGE established: poison-hand and healing-hand are the *same hand*.
-- **End-state vector:** age ~6 · RESOURCE unchanged · SOLITUDE unchanged · ARMOR: sealed but reader sees the human under it · CAPABILITY-real: gut now framed as healing instrument too · WARMTH: **peak rootability** · DOSE-LOG: active.
-- **Threads:** PLANT[WARM], PLANT[HINGE]. PAYOFF: dose-log gut re-cast as healing. Rung **off-ladder** (the warm floor horror is measured against). Register **RECOVER** (lowest-volume scene). DN-3.
+- **Deltas:** WARMTH +rootability anchor (the 80k root). HINGE established: her **mundane apothecary craft cuts both ways** — the still-room that mends is the still-room that kills (NOT a magical healing hand; GUARD-1 rev-3).
+- **End-state vector:** age ~6 · RESOURCE unchanged · SOLITUDE unchanged · ARMOR: sealed but reader sees the human under it · CAPABILITY-real: poison-craft shown as dual-use (mundane medicine, NOT cultivation/energy) · WARMTH: **peak rootability** · DOSE-LOG: active.
+- **Threads:** PLANT[WARM], PLANT[HINGE]. Rung **off-ladder** (the warm floor horror is measured against). Register **RECOVER** (lowest-volume scene). DN-3.
 - **Blast radius:** MEDIUM-HIGH. The HINGE is the curdle's pivot (fires I.7: same hand now kills). The WARM root keeps Daenys from out-charactering the lead (Bk II). Echoed I.8. Remove it and I.7/I.8 lose their hinge and the reader loses the lead.
 
 ### I.5 · tempering-the-cauldron  *(the materials TOUR — CL-004)*
@@ -211,7 +215,7 @@ date anchors, and the one open fork (series end-date: Dance 129 AC recommended) 
 - **Beat:** A meddler moves to expose the still-room raids; he doesn't die loudly — a lingering flux, slow recovery, posted far from court, **never knows.** Saerys files him "an impurity the cauldron expelled."
 - **Deltas:** PEST removed (first poison victim). The cold de-pesting reflex established.
 - **End-state vector:** age ~6 (concurrent M3) · RESOURCE unchanged · SOLITUDE: *defended* (a threat to the machine removed) · ARMOR sealed · CAPABILITY-real: **first lethal use** of poison competence · TIER-self "qi-field purified" · WARMTH unchanged.
-- **Threads:** PLANT[de-pesting reflex] (rhymes to II.8 Harwin balanced). FIRE[HINGE→R2] (the I.4 healing hand is now demonstrably the killing hand). Rung **R2** (¾ comedy / ¼ chill). DN-6; DN-5 staging (no straight-man; prose shows the flux plainly).
+- **Threads:** PLANT[de-pesting reflex] (rhymes to II.8 Harwin balanced). FIRE[HINGE→R2] (the I.4 craft that kept the boy alive now quietly kills — same still-room, mundane). Rung **R2** (¾ comedy / ¼ chill). DN-6; DN-5 staging (no straight-man; prose shows the flux plainly).
 - **Blast radius:** HIGH. R2 is the curdle ladder's load-bearing middle rung — sits between I.8's R1 (ward-child) and II.8's R3 (Harwin). Depends on I.4's HINGE. If removed, the curdle ladder loses a rung and the "same coldness, rising scale" engine skips.
 
 ### I.8 · impure-reagents  `[CHARITY-DEPENDENT — re-home "ward", CL-004 OPEN]`
@@ -360,3 +364,11 @@ independently of the required fixes.
 - **Curdle ladder:** unaffected — it was never about cultivating people (R0 egg + R4 dragons = magical *creatures*; the pest/Harwin rungs = cold *poison* kills). The retraction actually cleans it up.
 - **Mechanical re-check:** ledger-internal (baseline outline untouched; ACQUISITION-DRIVE pre-scheduled in the bridge). 
 - **Ratification mirrored to:** `convergence/convergence-ledger.md` (Round 7).
+
+### CL-005 · no healing hand — energy is never spent outward (2026-06-07)
+- **Note:** "no healing hand. that would require an external energy application." A magical heal is *expenditure*, which the hoarding rule forbids — so it's a fence breach, not a flavour choice.
+- **Ruling:** GUARD-1 rev-3 strengthened — **no external energy application of any kind, including NO magical healing**; hoarding is absolute (no fighting, no healing, no outward effects on the page). Added to the hard fences. Any mending she does is **mundane apothecary craft** (medicine/antidotes/nursing), never cultivation.
+- **Applied:** GUARD-1 + fences + timeline §3 updated. **I.4** recast — the warm root survives but the save is **mundane apothecary craft**, not a healing hand; the HINGE recast from "healing-hand = killing-hand" to **"the craft cuts both ways"** (same still-room mends and kills). **I.7** + I.4 deltas/CAPABILITY updated to match. (Token HINGE unchanged → thread graph intact.)
+- **Note:** GUARD-2's "heal→fuel" is a *different* sense (the egg given to save the infant, which she taps for fuel) — untouched.
+- **Mechanical re-check:** `book-i-outline.md` re-checked → PASS (HINGE I.4→I.7 still closes).
+- **Ratification mirrored to:** `convergence/convergence-ledger.md` (Round 8).

@@ -102,10 +102,13 @@ rev-2 blood-path).
 4. **Cultivation = internalize + refine.** She draws radiance from materials into her body and
    refines it. Slow. It **tempers the body**: durability, resilience, slow un-aging, eventually a
    superhuman frame.
-5. **It CAN be spent.** With technique she *could* externalize it — fight, throw fire, "crazy
-   effects." **But spending sets back the slow internal growth.** So she **hoards**: keeps it
-   internal. → She reads to the world as a non-combatant. **The capacity is real and growing; the
-   restraint is a choice, not a limit.**
+5. **It CAN be spent — so she NEVER spends it.** With technique she *could* externalize it — fight,
+   throw fire, "crazy effects." **But any expenditure sets back the slow internal growth.** So she
+   **hoards**: keeps it wholly internal. → She reads to the world as a non-combatant. **The capacity
+   is real and growing; the restraint is a choice, not a limit.** *Crucially this means **no healing**
+   — applying energy to mend someone is an external spend she refuses; there is no "healing hand."
+   Any mending she does is **mundane apothecary craft** (medicine, antidotes, nursing), never
+   cultivation.*
 6. **Her drive is ACQUISITION.** An empirical materials-hunter: get a thing, test whether it
    *registers*, log it, chase the next rarer one — indifferent to the smallfolk ("mortals," beneath
    notice). Her procurement network is the seed of the II.1 reagent multinational. Named early
