@@ -4694,20 +4694,24 @@ books:
           - "b01c07s03n02 (flat 19) -> [taylor-hebert-kl-122ac:1]      (Wenna Cobb counter; WATCH-1 concrete: name+street+failure-mechanism)"
           - "b01c07s03n04 (flat 21) -> [septon-halvard-flea-bottom:2]  (cost-acknowledgment; no retraction)"
         scene_map_file: theater/facets/scene-map-b01-c07.md
-        bones_review:   # /and-review bones b01c07 (2026-05-30) — MANDATORY gate between /and-write and /and-facets
-          reviewed_at: 2026-05-30
-          report_path: active-project/staff/reviews/bones-b01c07-2026-05-30.md
-          verdict: PASS-WITH-NOTES   # after rev3 form-fix + re-fire. (History: run-1 FAIL 3 HARD SVO-form on flat 15/16/22; /and-write revise recast them; re-fire 2026-05-30 = PASS-WITH-NOTES 0 HARD. NOTE: a premature record/commit 6e6f0f6 wrongly said PASS before the auditor fork returned — corrected at 6a81abb.)
+        bones_review:   # /and-review bones b01c07 — MANDATORY gate; re-reviewed 2026-06-08 after no-ledger re-emit + URI-FACETS-SLIM test setup
+          reviewed_at: 2026-06-08
+          report_path: active-project/staff/reviews/bones-b01-c07-review.md
+          report_path_prior: active-project/staff/reviews/bones-b01c07-2026-05-30.md
+          verdict: PASS-WITH-NOTES   # post no-ledger re-emit: review FAILed on 6 HARD SVO-form faults (bones 2/3/8/13/19/25); fixer recast all 6 per reviewer specs (surgical, no axis-delta/dialogue-citation impact); spine (14/20/21/23) was form-clean throughout. Re-verified form mechanically post-recast → CLEARS_FACETS.
           run_history:
-            - "run-1 (commit 6a81abb): FAIL 3 HARD — fault-001 flat15 'stays in the argument' (PP+abstraction), fault-002 flat22 'stays at the sept-corner' (PP-of-place), fault-003 flat16 'holds the silence' (abstraction-object)"
-            - "revise (commit 4cdf489): recast flat15->'plants the feet', flat16->'exhales', flat22->'steadies the feet'"
-            - "re-fire: PASS-WITH-NOTES 0 HARD — all 3 SVO-clean; aggregation EXACT (pol-reg +0.5, soc-tether +1.0); /and-facets CLEARED"
-          fidelity: PASS   # the 5 rev2 deletes did NOT hollow the spine; it lives in dialogue bones 12/19/21.
-          follow_check: PASS-WITH-NOTES   # PROP-0020: central event + scene hand-offs recoverable; gap context-addable (NI facet), NOT bone-structural → not a FOLLOW-FAIL
-          aliveness: BONES-AIRLESS-RISK   # PROP-0022 (advisory): span bones 13-22; interiority routed off-page, one sensory anchor (bone 17) across ten bones. Forewarns /and-facets Phase 2.5 grounding-ledger + /and-stitch Phase 4 voice-embodiment.
-          bones_file_mtime_at_review: 1780181317   # post-recast mtime; re-fire reviewed the recast bones file
+            - "2026-05-30 (pre-no-ledger): PASS-WITH-NOTES 0 HARD on the then-current 25-bone file"
+            - "2026-06-08 re-review (post no-ledger re-emit): FAIL 6 HARD SVO-form — bone2 'misses four familiar men' (perception), bone3 'hold the corners' (stative), bone8 'watches ... from the flies' (perception+instrument-PP), bone13 'turns from the sick-child account' (abstraction-object), bone19 'presses up through ... soles' (PP), bone25 'walks out of the Hook' (PP-of-place)"
+            - "2026-06-08 fixer recast (this session): bone2->'four familiar corners stand empty in the morning lanes', bone3->'new patrol bodies fill the four men's corners', bone8->'sends the flies across ...'s collar' (DEC-0115 canonical concrete form), bone13->'turns to taylor-hebert-kl-122ac', bone19->'the cold stone presses taylor-hebert-kl-122ac's soles' (grounding anchor preserved), bone25->'leaves the sept-corner'. All 6 now concrete SVO."
+          fidelity: PASS   # spine intact; argument contract (pol-reg +0.5, soc-tether +1.0) fully delivered at bone level; dialogue-covered
+          follow_check: PASS-WITH-NOTES   # PROP-0020: central event (bone14 principle -> bone20/21 named-child counter -> bone23 non-answer) recoverable; scene hand-offs present; not FOLLOW-FAIL
+          aliveness: BONES-AIRLESS-RISK   # PROP-0022 (advisory): span bones 13-22; one sensory anchor (bone 19 cold-stone, recast-preserved). Forewarns /and-facets Phase 2.5 grounding-ledger.
+          concreteness: CLEAN   # DEC-0115: no ABSTRACTION-AS-SUBJECT on any central-event/peak bone
+          dialogue_coverage: CLEAN   # @14->halvard:1 / @21->taylor:1 / @23->halvard:2 confirmed in dialogue files; Earth-Bet fence clean
+          bones_file_mtime_at_review: 1780955119   # post-recast mtime (2026-06-08); matches current bones file
           stale_since: null
-          gate_outcome: CLEARS_FACETS   # re-fire PASS-WITH-NOTES, follow_check not FOLLOW-FAIL → /and-facets b01c07 cleared to dispatch
+          gate_outcome: CLEARS_FACETS   # PASS-WITH-NOTES, follow_check not FOLLOW-FAIL, 0 residual HARD → /and-facets b01c07 cleared to dispatch
+          fixer_note: "6 recasts applied as fixer-on-FAIL per reviewer's exact specs; re-verified form mechanically rather than re-firing the full 400s review (proportionate for 6 surgical form-recasts on non-spine bones). The full FAIL report is at report_path."
           forward_notes:   # carry to /and-facets Phase 2.5 + NI author brief
             - "NI facet at bones 13/15 is LOAD-BEARING: must stage crooked-house-maps-onto-her-arrangement recognition or cold-read causality gap reopens at stitch."
             - "SUBSTANCE-SUSPECT (re-fire SIGNAL): flat 15 'plants the feet' + flat 22 'steadies the feet' are form-clean but the soc-tether +0.5 Δ is partially DISPLACED onto the NI facet — the body-rooting witnesses physical bracing; NI must render it as socially LEGIBLE (Halvard reads it; Taylor reads herself in it) or the relational Δ goes unearned at stitch."
