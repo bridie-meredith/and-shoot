@@ -7484,3 +7484,80 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0115 | 2026-06-08 14:00 | SLOW (principal directive, in-session)
+
+reverses: DEC-0105, DEC-0114
+overrides: the standing "AIRLESS = DESIGN-INHERENT" disposition line carried across DEC-0060/0062/0066/0072/0074/0078/0085/0087/0090/0094/0096/0098/0100/0101/0102/0104
+
+question: |
+  Principal read the completed Book 1 (taylor-westeros-good-intentions) end-to-end and reported it
+  "doesn't flow ... doesn't make sense ... jarring ... not sure what's happening," and called it
+  indicative of a systemic problem. Asked: diagnose root cause, confirm against the text, and propose
+  fixes/new processes. On follow-up: (1) scope = "all" (formalize proposals + implement gate fixes +
+  revise the book); (2) on the cold "ledger register" itself — "no ledger at all."
+
+context: |
+  Diagnosis (evidence-grounded, this session):
+  - The book narrates nearly every event as bookkeeping ("the count let him go," "I closed the entry,"
+    "the node foreclosed," "the gap propagated," "I held the feet"). Literal action is replaced by its
+    accounting-trace, so a reader cannot reconstruct what physically happens.
+  - The abstraction originates AT THE BONES LAYER: b01-c01 bones read "the insects propagate / the
+    nearest dozen bodies yield / the gap propagates" — never "Taylor uses the insects to push the crowd
+    apart so the child can breathe." /and-stitch faithfully rendered abstract bones into abstract prose;
+    the Phase-4 person-first lever (PROP-0022) had no concrete content to promote to and logged
+    EMBODIMENT-BLOCKED rather than fail.
+  - Staccato one-line paragraphs (bones-leak) survive intact into the terminal draft, esp. c01-c02.
+  - Structural repetition across c10-c19 (packet arrives -> fill a column -> leave one field blank ->
+    lift the stylus -> "the hand came off the surface" -> "contempt beside the line, not in it").
+  - Every quality gate was instructed to treat this as the book's intended SIGNATURE. The verdict
+    report names the disease precisely ("accounting-abstraction-density + event-poverty + interior-
+    sameness," a 7-chapter "Class-B cohort") and dispositions it as design-inherent (DEC-0105). The
+    recurring AIRLESS finding was classified design-inherent ~16 times with NO circuit breaker.
+  - The most readable chapters (c07/c13/c16/c20) are the dialogue-heavy ones, proving the story is
+    sound and the register is the strangler — confirmed by the project's own voice-exemplar.md
+    (Marilynne-Robinson "dense-but-breathing"), which the delivered prose looks nothing like.
+
+options: |
+  (a) Keep the ledger register, add a readability/concreteness counterweight floor (F7-soft).
+  (b) Retire the ledger/accounting/apparatus register as a prose mode entirely; render events
+      concretely and human-first (the voice-exemplar's breathing mode). Tragic substance arc unchanged;
+      only the narration register changes.
+
+decision: (b) — NO LEDGER. The cold ledger/accounting/apparatus register is RETIRED as a prose mode,
+  project-wide and forward. Prose renders concrete physical/human action first; the apparatus (feed,
+  count, ledger, column, insect-network) is a lens the narrator perceives through, never the grammatical
+  subject or the unit of narration. Coldness/control-instinct survive as character, not as bookkeeping
+  vocabulary. The underlying substance arc (Taylor's tragic instrumentalization) is NOT changed.
+
+basis: principal directive (explicit, in-session) — supersedes admin user-proxy disposition authority for this question; goal:1 (the deliverable must actually read); methodology:3a — the register defect is the root cause, not a polish-layer symptom.
+
+rationale: |
+  The "signature" was a single-axis optimization target ("coldness") with no opposing term, so the
+  pipeline drove it to the wall and every gate that could have caught the unreadability had been told the
+  unreadability was the point. The principal — the reader the book is for — could not follow it. That is
+  dispositive. "No ledger at all" is the cleanest cure: it removes the thing the optimizer ran to its
+  breaking point rather than negotiating a dose. It also fixes the next book, not just this one.
+
+trade-off: |
+  Re-cascading 20 shipped chapters to convert the register is expensive and mutates the terminal
+  deliverable (baselines archived first per the revisions protocol). Accepted: the deliverable does not
+  currently function as fiction, so the spend is warranted (this is the explicit principal request that
+  DEC-0105 said was required before such spend). Some readers might have valued the extreme register as
+  an artifact; the principal does not, and the principal's read governs.
+
+downstream: |
+  - Implemented this session: CLAUDE.md Rule 22 (no-ledger fence + naive-follow readability gate);
+    /and-stitch Phase 4 (ledger-register prohibition) + Phase 9 (naive-follow gate); /and-write Phase 6
+    (concreteness floor + EMBODIMENT-BLOCKED promoted to routing).
+  - Recorded as PROP-0046..0050 (stamped accepted, this session/branch).
+  - Book revision: baselines archived; voice target locked via a no-ledger re-render of the c01 opening
+    (revision plan at staff/admin/no-ledger-revision-plan-2026-06-08.md). Full 20-chapter re-cascade is
+    staged as a separate long unattended run.
+
+stm-written: yes
+ltm-written: yes
+goals-update-proposed: no
+methodology-update-proposed: no
