@@ -99,6 +99,56 @@ not as ledger grammar. ~440 words from the same 27 bones.
 
 ---
 
+## LOCKED voice target — c02, the hardest case (re-rendered no-ledger)
+
+c02 shipped as nearly pure bookkeeping — *"Four hundred bodies sat in the feed at once. The ceiling."* /
+*"The accounting closed the count, reached the ward-junction entry, returned the junction-lane void. The
+count stalled."* A solo interior chapter where Taylor builds a surveillance map and recognizes what it
+is. This demonstration renders the new concrete bones (`theater/bones/b01-c02.md`, 51 bones) in the
+no-ledger voice. Bone-faithful — no content imported from later chapters.
+
+> I woke against the drain angle with the flies already out. They had spread down the lane in the night
+> the way they spread every night now, and the beetles had run the threshold-stones, and two alleys east
+> three bodies were running a heat I could feel through them — close together, not moving, the particular
+> stillness of the sick. I could not see the alley from where I lay. I did not need to. I sent the flies
+> toward the warmth and let them bring me the shape of it.
+>
+> Then I got up.
+>
+> I had told myself, the first week, that reading was not directing — that a woman who lay still in a
+> drain and let the insects bring her the city was doing nothing a sharp-eared beggar did not do with her
+> ears. The line was real. I drew it carefully every morning, and every morning it sat a little further
+> out than it had the day before.
+>
+> I took the alley-mouth with the wall at my shoulder and pushed the insects wide. They crossed the
+> threshold-stones and filled the Hook lane by lane and found their count: four hundred people, give or
+> take, as far as I could hold them before the far edge began to thin and drop. An alley went empty as I
+> reached it — the bodies gone, only cold stone left — and I pulled back from that edge and held the rest.
+>
+> [*...the recognition, that evening:*]
+>
+> By dark I had the whole of it. I sat against the drain angle with the shadow filling it and walked the
+> corners one at a time, the way you count coin you already know the sum of. Three bodies still running
+> hot in the fever corner. The dark-junction corner gone quiet under its shadow. Forty-three people, each
+> one fixed by where they slept and who they crossed and when — none of whom had ever seen my face.
+>
+> I reached the ward-junction lane last, where the stitch-maker walked, and my hand stopped.
+>
+> It stopped the way a hand stops over a page when the next word is one you did not mean to write. I held
+> the breath. Then I closed against the wall and went on — past the fever corner, past the dark-junction,
+> past the ward-junction lane and the woman in it — not slowing at any of them, because slowing was the
+> thing I could not afford. I let the breath out. The insects settled back into the angle around me. I had
+> a map now, and no name to put on it, and I did not look at the shape of what the map was, because looking
+> was a door and I had already decided not to open it.
+
+**Why this is the proof:** the surveillance-mapping content renders fully legible and *felt* — you can
+see Taylor building the thing and flinching from it — with zero ledger grammar. The recognition beat that
+shipped as *"the accounting reached the ward-junction entry"* is now *"my hand stopped... the way a hand
+stops over a page when the next word is one you did not mean to write."* Coldness and dread intact, as
+character. This is the hardest chapter in the book; if it converts, they all do.
+
+---
+
 ## Re-cascade plan (STAGED — separate run)
 
 **Mechanism:** per-chapter re-cascade in `revise` mode (RUNBOOK § Producing revisions). Restore the
