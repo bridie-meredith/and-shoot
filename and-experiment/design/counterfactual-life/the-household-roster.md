@@ -18,6 +18,14 @@ referencing `westeros-smallfolk` + `westeros-grrm-mannerisms` (register) + `saer
 `loc-maegors-holdfast`. Names are era-plausible smallfolk names chosen not to collide with existing
 cards; they remain overridable (INDEX OQ-CL3).
 
+> **⚠ Era-casting hazard.** These servant cards are correctly **Jaehaerys-era (~84–95 AC)** and
+> era-clean. But the **family/court cards already in `warehouse/` are still stamped 122 AC / Viserys-I**
+> (e.g. `helaena-targaryen-122ac` says b.109, daughter of Viserys I, Gael's *elder* sister — wrong era
+> AND wrong sibling-order vs GUARD-4). **Do not co-cast a servant here with an un-migrated family card
+> as-is** (you'd put an 84 AC nursery next to a sister not born until 109). Read the family cards
+> through GUARD-4 + `design/time-anchor.md`, or wait for the run-03 migration to re-derive them. See
+> `time-anchor.md` §5.
+
 ---
 
 ## A. Wet-nurses — the infant's whole diet (phase 0, age 0–2)

@@ -464,3 +464,66 @@ The P1 build (coverage-audit manifest) was run as 5 parallel batches; 4 stalled 
 - **All 18 P1 cards present in BOTH copies** (warehouse scope:both + cards/ scope:library). The 7 missing library copies were created by frontmatter transform (scope both→library, project field dropped; no design-path blocks present to strip).
 - **Cataloging done by hand:** added the 18 P1 cards to `cards/personas/INDEX.md` (saerys-maester, the-factor), `cards/props/INDEX.md` (cradle-egg, christening-spoon, kings-hand-note, bill-of-exchange, still-room-kit, wildfire-shard), `cards/conditions/INDEX.md` (reagent-tier-map, technique-hierarchy, formation-map-red-keep, heavenly-dao-calibration, heartless-dao-scripture, alchemists-guild-122ac, trade-network-formation, maesters-cabinet), `cards/locations/INDEX.md` (maegors-holdfast, sick-house). Registered the GRRM×cultivation grid as cultivation-library doc #9.
 - **FLAG — pre-existing INDEX gap discovered:** the and-experiment CAST persona library files (saerys-targaryen, helaena-targaryen-122ac, daenys-velaryon, ser-harwin-the-patient, nymeria-summer-isles) are ABSENT from `cards/personas/` on this branch (`claude/cool-feynman-gNpmm`), which is 38 commits behind origin/main. Likely they live on main; needs reconcile-with-main to confirm/restore. Not resolved here.
+
+---
+
+## Card build session: 2026-06-08 (household-servant roster — session-authored, not margit-dispatched)
+
+Authored directly in-session (not via a margit dispatch) per principal request: "what sorts of maids /
+nannies / wet-nurses would be around Gael; reasonable profile for each; create cards for multiple
+people of each category." Built to the **live Gael layer** (Jaehaerys's peace, ~84–95 AC per
+`design/time-anchor.md`; card bodies use "Gael" though the protagonist card slug remains
+`saerys-targaryen`). Design + per-category profiles + maid-candidate menu:
+`design/counterfactual-life/the-household-roster.md`.
+
+### Cards authored (10 personas — all project-scope, warehouse-only)
+
+| slug | category | quality | tier | scope | maid-candidate |
+|------|----------|---------|------|-------|----------------|
+| mella-wet-nurse | wet-nurse (primary) | full | minor | project | — |
+| bessa-wet-nurse | wet-nurse (second) | full | minor | project | — |
+| mistress-bryony | nursemaid (head nan) | full | minor | project | — |
+| cissa-nursemaid | nursemaid (under) | full | minor | project | LOW |
+| wenda-the-rocker | nursemaid (rocker) | full | minor | project | — |
+| nona-chambermaid | chamber-maid (steady) | full | minor | project | LOW |
+| pella-chambermaid | chamber-maid (clever) | full | minor | project | **HIGH** |
+| marra-chambermaid | chamber-maid (timid) | full | minor | project | MED/CAUTION |
+| mistress-orla-wardrobe | tiring-woman (wardrobe) | full | minor | project | — |
+| nesta-tiring-girl | tiring-woman (hairdresser) | full | minor | project | — |
+
+All reference `westeros-smallfolk` + `westeros-grrm-mannerisms` + `saerys-targaryen` +
+`loc-maegors-holdfast` (marra also `westeros-septon`). Verified era-clean: **no servant card references
+a stale `-122ac` / Viserys-era card.**
+
+### Index updates / scope decision
+
+- **NOT added to `cards/personas/INDEX.md`, and NOT library-promoted** — deliberate, per the
+  `saerys-septa` precedent: project-only OCs with no cross-project reuse value are not catalogued in or
+  copied to the library. (Standing policy from the 2026-06-06 library-promotion pass defaults new cards
+  to `scope: both`; these are the documented exception — background household OCs specific to Gael's
+  era and household, no reuse value, exactly like the septa.)
+- `design/counterfactual-life/INDEX.md` — servant-cards section flipped to BUILT; the
+  `the-head-nursemaid` candidate resolved → `mistress-bryony`.
+- `staff/margit/card-build-manifest.md` — appended "Batch: household-servants" (#12–21).
+- **This entry is the canonical project-inventory record for these 10 cards.**
+
+### Open flags
+
+- **OQ-CL2 (Book II maid):** built as a *menu* (Pella HIGH / Marra MED-cautionary / Nona LOW); NOT
+  committed. On commit: promote the chosen card to `tier: supporting` + author a persona-exemplar.
+- **OQ-CL3 (names):** all servant names overridable.
+- **⚠ ERA-CASTING HAZARD (cross-card, pre-existing):** these servants are correctly Jaehaerys-era
+  (~84–95 AC), but the **family/court cards they'd share scenes with are still hard-stamped to 122 AC /
+  Viserys-I** — `helaena-targaryen-122ac` literally states b.109, daughter of Viserys I, Saerys's
+  **elder** sister, span 119–131, married Aegon II. That is the wrong era AND the wrong sibling-order
+  vs GUARD-4 (Helaena = Gael's *younger* sister, Jaehaerys's daughter). Do NOT co-cast the servants
+  with the un-migrated family cards as-is; read the family cards through GUARD-4 / `time-anchor.md`, or
+  wait for the run-03 migration to re-derive them. Flagged in `time-anchor.md` §5; not fixed here
+  (migration's job).
+- **Next batch (not built):** the maester, the masters of accomplishments, the companion girls/ladies.
+
+### Preservation
+
+All 10 are net-new files; no pre-existing card or memory was overwritten. Schema-validated against
+`schemas/card.schema.md` (frontmatter complete; persona core sections + Fiction-role overlay present;
+typography-checked — only intended em/en-dashes, middot, ellipsis, arrow; no stray glyphs).
