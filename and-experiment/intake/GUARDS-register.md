@@ -33,7 +33,11 @@ cultivates people / never demonic** · idiot-savant boundary · **armor cracks e
 - **POV locked-inside Saerys.**
 
 ## Open forks (not yet ratified — a new outline may settle these)
-- Series **end-date**: Dance 129 AC (recommended) vs a tighter AU dragon-death.
+- Series **end-date / span**: ⭐ now tracked authoritatively in `design/time-anchor.md` §4. The
+  tentative outline rescoped to a **childhood-escape ending (~age 11 / ~95 AC; span A)**, which is the
+  working default; the old "Dance 129 AC (span B)" is the alternative. Adopting span A retires the
+  Dance finale + curdle R4 + the longevity payoff + the Jaehaerys-death father-spend — **needs a
+  principal ruling.** (Era + birth-year in GUARD-4 are settled; only the *span* is open.)
 - I.4/I.8 **warm thread**: kept + re-homed + de-magicked (current) vs dropped (Helaena-only).
 - Keystone **cover**: scholar-princess (current) vs devotional vs bare privilege.
 - Viserys exact relation (nephew default); Alicent arc (love→horror default); titles.

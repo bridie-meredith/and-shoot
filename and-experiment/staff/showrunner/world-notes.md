@@ -3,6 +3,8 @@
 Full grounded bedrock: `and-experiment/design/run-01/constraints.md`. Digest below.
 
 ## Settings
+> ⚠ STALE ERA — the line below is the retired Viserys-I framing. The ratified era is **Jaehaerys I's
+> long peace**; the series spans **~84 → ~95 AC** (Gael age 0 → ~11). Authority: `design/time-anchor.md`.
 - King's Landing / Red Keep, reign of Viserys I, ~119–131 AC.
 - Maegor's Holdfast (12-ft walls, spiked dry moat, single drawbridge, nursery within) = home/cage.
 - The Dragonpit (Rhaenys's Hill, Dragonkeeper-guarded) — a dragonless princess MAY visit it.

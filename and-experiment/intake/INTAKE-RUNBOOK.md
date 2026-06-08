@@ -129,6 +129,8 @@ new GUARD IDs) · checker PASS/FAIL · open forks still pending · suggested nex
 | `design/run-01/*`, `design/cultivation-library/*` | bible / source material | **KEEP** (reference) |
 | `design/counterfactual-life/*` | exterior-well source material (Gael's ordinary princess life — servants / day / expectation-script + the seam map) | **KEEP** (reference; additive — carry forward frozen) |
 | `design/counterfactual-baseline-process.md` | reusable negative-space-worldbuilding process | **KEEP** (process doc) |
+| `design/time-anchor.md` | THE story-time authority (era + age formula + per-book/chapter AC table + drift table + the open span fork) | **ADAPT** (this run's migration *settles* the §4 span fork + re-derives §3 onto final run-03 numbering; update the §5 drift table as ❌/⚠ rows are rolled forward) |
+| `staff/showrunner/project-history.md` | production-time chronology (the 8 layers + drift) | **ADAPT** (append the run-03 migration as L8; mark the retired rows done) |
 | `scripts/check-threads.py` | mechanical thread checker | **KEEP** (tool) |
 
 *(Refresh this table at the start of each intake; the repo may have moved on.)*
