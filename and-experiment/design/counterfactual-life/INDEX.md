@@ -111,7 +111,17 @@ feel the normal day the strange day is wearing as a disguise).
 
 ---
 
-## Candidate cards (for principal triage — none built)
+## Servant cards (BUILT) — the women around Gael
+
+The body/nursery servant **personas are now authored** (2026-06-08) — 10 cards across four categories
+(wet-nurses, nursemaids/nannies, chamber-maids, tiring-women), with reasonable per-category profiles
+and a maid-candidate menu (OQ-CL2). Roster + profiles: **`the-household-roster.md`**. Cards live in
+`and-experiment/warehouse/` (`mella-wet-nurse`, `bessa-wet-nurse`, `mistress-bryony`,
+`cissa-nursemaid`, `wenda-the-rocker`, `nona-chambermaid`, `pella-chambermaid`, `marra-chambermaid`,
+`mistress-orla-wardrobe`, `nesta-tiring-girl`). The septa is already carded (`saerys-septa`). Still
+unbuilt (future batch): the **maester**, the **masters of accomplishments**, the **companion girls**.
+
+## Candidate cards (for principal triage — conditions/remaining personas)
 
 Flagged where this library's content might warrant a card if a beat makes it load-bearing. All
 project-scoped; none are library-scope personas/locations.
@@ -123,8 +133,8 @@ project-scoped; none are library-scope personas/locations.
 | `cond-court-calendar-jaehaerys-peace` | condition | the-day | The annual cycle (name-days, the seven feast-days, court occasions, seasonal provisioning) — the rhythm beats must place themselves against. |
 | `cond-good-princess-rubric` | condition | the-script | The deportment/Faith/dynasty expectation-set as the explicit standard the compliance mask performs against — auditor calibration for "is she on-mask here." |
 | `cond-betrothal-machinery` | condition | the-script | How a match is actually made (who decides, the steps, the clock) — production reference for the betrothal-clock beats. |
-| `persona: the-head-nursemaid` | persona | the-household | If the nursery handler gets on-stage lines in I.1–I.2, she needs a card (currently a function). |
-| `persona: the-grand-maester` | persona | the-household | The household maester (era-correct; see canon-uncertain #1) — likely load-bearing by I.2 (the heist target). |
+| ~~`persona: the-head-nursemaid`~~ | persona | the-household | ✅ BUILT as `mistress-bryony` (+ the full nursery/body-servant roster — see above). |
+| `persona: the-grand-maester` | persona | the-household | The household maester (era-correct; see canon-uncertain #1) — likely load-bearing by I.2 (the heist target). NOT YET BUILT (next batch). |
 
 The **Book II maid** is deliberately NOT listed as a candidate here: she is a principal-naming
 decision still open, and she is a co-protagonist, not household furniture. This library only describes
