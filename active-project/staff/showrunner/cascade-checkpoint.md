@@ -2,10 +2,19 @@
 mode: attended-revision
 run: no-ledger-revision b01 (DEC-0115 / PROP-0046-0050)
 operator_protocol: RUNBOOK Producing-revisions (book-complete) + worst-first batches
-status: IN-PROGRESS
+status: COMPLETE
 scope: full-book register conversion (ledger -> concrete/human-first)
 order: [c01, c02, c10, c11, c12, c13, c14, c15, c16, c17, c18, c19, c03, c04, c05, c06, c07, c08, c09, c20]
-batch: proof (c01, c02) — verify new gates produce the locked voice before full spend
+batch: ALL 20 chapters converted + rendered (bones concrete, drafts no-ledger, manuscript + export rebuilt)
+completed_at: 2026-06-08
+outcome: |
+  All 20 chapters re-authored concrete (every ABSTRACTION-AS-SUBJECT bone eliminated; ~330 across the
+  book) and re-rendered no-ledger. Final residual ledger-subject sweep across all 20 drafts: CLEAN.
+  Consolidated manuscript (active-project/draft/b01-manuscript.md) + reader export
+  (completed-works/.../book-one.md + .txt, pure ASCII) rebuilt + colophon updated.
+  NOT YET RUN (optional follow-ups): full /and-facets + /and-stitch pipeline per chapter (this was a
+  combined revise+render pass, not the 10-facet/8-phase chain); /and-cohere cross-chapter pass on the
+  c10-c19 stretch to break any residual structural repetition; /and-review verdict re-judge.
 baseline_archive: active-project/draft/_archive/2026-06-08-pre-no-ledger-revise/
 voice_target: staff/admin/no-ledger-revision-plan-2026-06-08.md (locked c01-opening re-render) + active-project/voice-exemplar.md
 current: {chapter: b01c01, step: "/and-write b01c01 revise", verdict: null}
