@@ -1,0 +1,13 @@
+---
+facet: feeling
+episode: b01c06
+layer: R2.wren
+character: wren-stitch-maker-flea-bottom-ward
+cite_index_hash: 21eb9718d8526f3ef58f0c4ed394e62ac25f1927de7f5e1003f8b23fa91c3db2
+f-r2-counts: {f-r2-1: 0, f-r2-2: 0, f-r2-3: 0, f-r2-4: 0}
+---
+
+feel:1 @3 wren-stitch-maker-flea-bottom-ward: her eyes find Taylor in the press before her feet turn toward her — I covered the next bone with my hand and read just this one against the crossing: eyes finding Taylor first, the body following after. What I'm being shown is the selection — she has located the person before she has committed the walk, and the order is the whole of it. The bone @3 only says she crosses the crowd; that gives me motion, not the eye-leads-body sequence. The dialogue at @4 gives me the route and the plain voice — checked-and-found-true, no waiting to watch it used — and the vibes carry the practical register, but none of those render the thing this entry renders: that her looking precedes her moving. That is the exact tell her card §Look names — her eyes go to things before her head does, the observation habit working as a physical fact — and it is the one place in her single spoken scene where the trained-attention-before-action that makes her who she is gets bodied rather than described. So the interior here is not readable off the crossing-bone plus the speech; the entry licenses what the rendered prose would otherwise leave invisible. On form: the second clause's subject is her feet — her body — turning toward Taylor, a clean body-action sequenced after the first by "before." That is body-ordering, eyes-then-feet, not the latency-gloss the REJECT signature catches, where the second clause hangs a timing-observation off an abstraction-noun (the turn, the moment, the gap came late). There is no abstraction-noun subject and no comment about lateness; "before" here is sequence, not latency-commentary. The "press" is the crowd already established at the bone @2 sensory fire, so the locator is grounded. Cap is one fire in scene-A, the only Wren scene; she is non-POV so the NI-redundancy contract does not bind; the multi-justification stacks card-match, Q1, Q2-structural, scene-eligible, and painting-characterization, well over the floor. It earns its place cold.
+VERDICT: KEEP
+
+PATTERN-SCAN: Single Wren entry in scope; nothing to pattern against within the character. Across the facet the only other fire is Taylor's @20 hand-stills, a different body (gaze-selection vs. hand-arrest) and a different register (a child's outward attention vs. the POV's interior cost-arrest), so no somatic-tell repetition or vocabulary saturation between the two. Nothing patterned.

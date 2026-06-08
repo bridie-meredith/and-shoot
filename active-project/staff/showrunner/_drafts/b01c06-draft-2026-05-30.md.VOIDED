@@ -1,0 +1,382 @@
+# b01c06 scene chunks — /and-substance chapter b01c06 Phase 2+3 draft
+# Authored: 2026-05-30
+# Schema: schemas/showrunner-memory.schema.md (scenes[] block)
+# Chapter: b01c06 — "a request becomes a precedent"
+# Replaces planned chunk in memory (named-person ward-elder delivery + brief Wren encounter)
+# with new chapter concept per task brief: Wren's ask + directed feed + first self-authored exception.
+#
+# Chapter substance_delta (from task brief — to be rolled up across scenes):
+#   axes_in_motion:
+#     - moral_framework:         direction: down, target_delta_magnitude: 1.0, anchor: cl06a
+#     - social_tether-prot-rise: direction: up,   target_delta_magnitude: 1.0, anchor: cl06b
+#     - capability:              direction: up,    target_delta_magnitude: 1.0, anchor: cl06a
+#   axes_held:
+#     - position-prot-rise        (no new formalization event)
+#     - relational_anchor_status  (Wren contact is the tether move, not anchor-weight move)
+#     - moral_legibility_to_self  (the recording is honest; crack does not deepen here)
+#     - political_register-prot   (no court-tier feed content this chapter)
+#
+# Roll-up arithmetic — per-scene allocation:
+#   s01: social_tether-prot-rise +1.0  (first spoken exchange; Wren asks, Taylor answers in words)
+#   s02: capability +1.0, moral_framework -0.5  (yes + directed feed; girl found)
+#   s03: moral_framework -0.5  (recording the exception; the prohibition authored, not merely permitted)
+#   TOTAL: moral_framework -1.0 EXACT; social_tether-prot-rise +1.0 EXACT; capability +1.0 EXACT ✓
+
+---
+
+# Note on new cost_ledger entries required (not yet in memory):
+#   cl06a:
+#     gain: "capability +1 | moral_framework -1" (same event: directed reading at Wren's ask)
+#     cost: "opportunity-missed: the prohibition now has an author-sanctioned exception on the books —
+#             Taylor wrote it herself, for a good reason, in clean daylight; the road's first paving-stone
+#             laid gently; the next exception will reference this one"
+#     anchor: { book: b01, chapter: b01c06, scene: null }
+#   cl06b:
+#     gain: "social_tether-prot-rise +1"
+#     cost: "journey-required: cl06a (same Wren-ask event; tether deepening is the other face of the
+#             spoken exchange — Wren is now a person Taylor has answered in words, not a ward-in-coverage)"
+#     anchor: { book: b01, chapter: b01c06, scene: b01c06s01 }
+#
+# These entries should be appended to series.substance.cost_ledger[] at /and-substance chapter Phase 6 persist.
+
+---
+
+scenes:
+  - slug: b01c06s01
+    chunk: |
+      [force: Taylor's ward-coverage discipline — reading the Hook's morning as she has read
+      every Hook morning; bodies, junction-traffic, the particular stillness of a stitch-house
+      in the pre-work hour before the thread gets threaded]. She is at the drain-angle near
+      Butcher's Lane when [event: Wren finds Taylor and addresses her directly, the first spoken
+      exchange between them]. Not a summons. Not a greeting. Wren steps in front of her in the
+      lane with the particular body-carriage of someone who has been composing what to say and
+      has decided to say it now.
+
+      [image: Wren — hands at her sides, not fidgeting; the stitch-maker's ward stillness that is
+      attentiveness holding itself still, not nerves; the peripheral-tracking eyes that Taylor has
+      read in the insect-feed before now seeing Taylor directly for the first time with something
+      specific to say]. Wren says: there is a girl who comes to the stitch-house for trim-work,
+      a day-labor child from the lower lane. She has not come in three days. The stitch-maker will
+      not note it; ward-children who miss work get replaced, not searched for. Wren has no standing
+      to search. She has no coin. But she has noticed the foreign woman can find things. [mechanism:
+      Wren's ask in plain Flea Bottom form — she names the girl ("Liss, she's nine, she does the
+      trim-ends on the same form I use"), the last-seen location (the lower lane junction, morning
+      before last), the absence-duration (three days), and then stops; she does not add anything;
+      she does not explain what she wants done with the finding].
+
+      [force: the ask's specific moral weight — small, named, clean; no faction logic; no patron
+      backing; a child who stops coming to work is either moved on or in trouble, and both are
+      findable with the architecture Taylor runs; the ask does not cost the prohibition anything
+      except the prohibition itself]. [event: Taylor goes still in the lane]. The feed is already
+      running; the stitch-house is in range; the lane junction is in range; she has been reading
+      both since this morning without finding anything anomalous. She has not run the feed at a
+      named person. She has run the feed at the ward. The distinction is one she has held since
+      b01c01. [force: the ask's refusal-terms — if she says no, she says no to a child, for a
+      reason she cannot name to Wren, for a prohibition whose explanation would require an
+      accounting she has not given to anyone]. She looks at Wren's hands. They are held still.
+      Not requesting anything beyond what was said.
+
+      [event: Taylor answers Wren in words — the first spoken exchange; she says she will look].
+      She does not say how. [event: social_tether-prot-rise: Wren moves from ward-in-coverage to
+      person-who-asked-and-was-answered; cl06b gain side; the tether deepens through the spoken
+      exchange itself, not through any operational consequence]. Wren nods once — the economical
+      acknowledgment of someone who asked something real and got a real answer — and turns back
+      toward the stitch-house lane.
+
+    substance_delta:
+      axes_in_motion:
+        - axis: social_tether-prot-rise
+          direction: up
+          target_delta_magnitude: 1.0
+          cost_ledger_anchor: cl06b
+          notes: "first spoken Wren-Taylor exchange; Wren names the ask, Taylor answers in words;
+                  ward-in-coverage becomes person-who-asked-and-was-answered; the tether deepens
+                  not through network architecture but through the spoken response; cl06b gain side.
+                  This is the scene that must carry the dialogue-cobonded anchor — /and-write must
+                  treat the Wren ask and Taylor answer as dialogue-anchor bones with [wren-stitch-maker-flea-bottom-ward:N]
+                  and [taylor-hebert-kl-122ac:N] citations."
+      axes_held:
+        - axis: moral_framework
+          rationale: "Taylor has not said yes to the directed reading yet — she has said she will look,
+                      which is engagement but not the crossing; the prohibition is still the operative
+                      fence at scene-close; the decision is made but the act is not yet performed"
+        - axis: capability
+          rationale: "no feed deployment yet; Taylor is processing the ask; capability moves in s02
+                      when the feed is pointed at a named person"
+        - axis: relational_anchor_status
+          rationale: "the spoken exchange deepens the tether (social_tether-prot-rise) but does not
+                      yet add operational weight to the anchor (that would require Wren entering a
+                      protection calculus); anchor holds at rank 2 through scene-close"
+        - axis: political_register-prot
+          rationale: "no court-tier content; the exchange is ward-layer, child-register; resentment
+                      has no material to form on in this scene"
+        - axis: moral_legibility_to_self
+          rationale: "Taylor's accounting has not run yet on what she is about to do; self-accounting
+                      runs after the act, not before; legibility holds"
+      density_target: 0.6-0.75
+
+    scene_conflict:
+      protagonist_force: "Taylor's discipline of ward-reading as coverage-not-targeting — she has
+                          run the feed at the ward, never at a named person; Wren's ask is the first
+                          time the distinction has been handed to her as a question rather than a rule"
+      opposing_force: "the ask's specific moral cleanness — small, named, helpable; the child is
+                       nine, the absence is three days, Wren has no standing to search; the
+                       prohibition's refusal would require an accounting Taylor cannot give to Wren
+                       without naming what the architecture is"
+      stakes_axis: social_tether-prot-rise
+    stale_since: null
+
+
+  - slug: b01c06s02
+    chunk: |
+      She does not go back to the drain-angle. [force: Taylor's operational discipline — she runs
+      the find in the same ward-walk register she uses for coverage maintenance; nothing about her
+      movement announces a search]. [event: Taylor points the insect-feed at a named person for
+      the first time at another's explicit request — the directed reading begins]. The feed opens
+      on the lower lane junction, widens to the three connecting courts, begins the kind of
+      body-differential read she has only ever run on classes of bodies — the sick, the
+      agitated, the moving-against-pattern — now run on a specific body by name. Liss.
+      [image: the feed narrowing to a child-sized signature — nine years old, trim-work calluses,
+      the particular body-chemistry of someone who does close sewing work; distinguishable in the
+      feed as a type, not yet found as an individual]. She runs the lower lane. She runs the
+      three courts. The stitch-house is in the north court; she reads it without finding the
+      girl's signature in it.
+
+      [mechanism: the directed reading as a new class of feed-deployment — not coverage-maintenance
+      (ambient, ward-wide) but targeting (specific body, specific name, active search); the
+      feed has been running the ward for four months and Taylor has never pointed it at a person;
+      she is pointing it now, at Wren's ask, and the distinction between reading-the-ward and
+      reading-a-person-in-the-ward is one she is crossing in the act of looking]. Two courts
+      clear. She extends to the adjacent ward. The feed opens on Tickler's Lane and its
+      tributaries — a ward she has mapped but not covered as densely. [event: Taylor finds the
+      girl — Liss is in a room off Tickler's Lane, alive, with three other children and an adult
+      woman who reads in the feed as a kin-signature, not a threat-signature; the girl has gone to
+      a cousin two wards over]. The find takes less than an hour. The feed returns the girl
+      upright and in shelter. Taylor reads: alive. Present. Not in danger.
+
+      [force: the relief that arrives before the accounting — the girl is found, the ask is
+      answered, and what arrives first in Taylor's chest is the particular quality of a good
+      outcome before the ledger opens on how the outcome was produced]. [event: capability
+      +1.0 — directed reading at a named person's request; the feed pointed, not ambient;
+      cl06a gain side]. The accounting begins now, but it begins in the aftermath of already
+      knowing the girl is alive. [force: the moral_framework breach completing in the act of
+      having-done-it — the prohibition's first directed exception is behind Taylor; she cannot
+      un-have-pointed-the-feed]. [event: moral_framework -0.5 — the directed reading is the
+      crossing; cl06a cost side partial]. The feed resolves: Liss, alive, with a cousin in the
+      lane two wards over. The result is clean. The architecture worked exactly as it should.
+
+    substance_delta:
+      axes_in_motion:
+        - axis: capability
+          direction: up
+          target_delta_magnitude: 1.0
+          cost_ledger_anchor: cl06a
+          notes: "directed reading at a named person's request; feed pointed at a specific body
+                  rather than run at ambient ward-coverage; this is the first targeting deployment
+                  (as distinct from coverage-maintenance); cl06a gain side"
+        - axis: moral_framework
+          direction: down
+          target_delta_magnitude: 0.5
+          cost_ledger_anchor: cl06a
+          notes: "the directed reading is the crossing — the prohibition's first directed exception
+                  performed and completed; the breach is not rationalized away mid-scene, it arrives
+                  as fact; cl06a cost side partial (remaining -0.5 lands in s03 when Taylor records
+                  and authors the exception)"
+      axes_held:
+        - axis: social_tether-prot-rise
+          rationale: "the tether move happened in s01 (spoken exchange); the find itself does not
+                      further deepen the tether — it is operational consequence, not relational event"
+        - axis: relational_anchor_status
+          rationale: "Wren is not present in this scene; the find is about Liss; Wren does not
+                      enter Taylor's protection calculus here; anchor holds at rank 2"
+        - axis: political_register-prot
+          rationale: "the find is ward-layer, child-register; no court-tier content; resentment
+                      has no material to form on"
+        - axis: moral_legibility_to_self
+          rationale: "the accounting begins but does not complete in this scene — the recognition
+                      that the exception has been authored lands in s03; legibility holds at s02-close"
+        - axis: position-prot-rise
+          rationale: "the find is between Taylor and Wren; no patron-tier visibility; no position event"
+      density_target: 0.65-0.8
+
+    scene_conflict:
+      protagonist_force: "Taylor running the directed read with the same operational precision she
+                          runs coverage-maintenance — the discipline that makes the find successful
+                          is the same discipline that makes it a breach; the architecture works"
+      opposing_force: "the distinction between reading-the-ward and reading-a-person-in-the-ward
+                       — the prohibition's line is the line she crosses in the act of looking for
+                       Liss; the opposition is not external pressure but the rule she set herself,
+                       meeting the act she chose to perform"
+      stakes_axis: moral_framework
+    stale_since: null
+
+
+  - slug: b01c06s03
+    chunk: |
+      She sends word the way she sends any ward-level message — through no channel that belongs
+      to Jarvis, through no route that touches the arrangement. [event: Taylor returns the
+      finding to Wren — she finds Wren at the stitch-house lane, tells her where the girl is,
+      names the cousin and the lane]. The exchange takes thirty seconds. Wren takes the
+      information with the same economy she brought to the ask — receives it, nods, does not
+      add anything. [image: Wren's face at receipt — the specific quality of a child who asked
+      something real and is getting a real answer; not gratitude-performance, just the expression
+      of a person who can now act on what they needed to know]. She goes. Taylor watches her
+      go. [force: the relief completing — the girl is alive, the ask is answered, Wren now
+      knows where to look; the architecture delivered exactly what it was asked to deliver and
+      the outcome is clean].
+
+      [force: the accounting that follows the relief — Taylor's ledger opens on the directed
+      reading now that there is no operational frame to hold it at a managed distance]. She
+      runs the accounting explicitly and in order. First: the ask was clean. It was a child,
+      a named person, a specific fear, and no faction logic anywhere in it. The ask was the
+      cleanest she has received since arriving in King's Landing. Second: she said yes. Third:
+      she pointed the feed at a named person for the first time in four months of running
+      coverage, in the first time since arriving in this city. Fourth: the girl is alive.
+      The outcome is good. Fifth: this happened. [event: Taylor records the exception in her
+      internal ledger — she writes the accounting herself, in her own register, in the specific
+      form of a ledger entry she is choosing to make rather than receiving as a conclusion].
+
+      [mechanism: the difference between this exception and the prior ones — the Jarvis
+      deliveries were rationalizations arrived at under pressure, accounting that needed
+      Sera's weight on the other side of the balance to close; this one was authored without
+      pressure, chosen in daylight, for a reason she still believes was good; and the specific
+      weight of that is that she cannot claim duress; the exception was hers to write; she
+      wrote it]. [event: moral_framework -0.5 — the recording of the exception completes the
+      breach; what was a crossing in s02 becomes a precedent in s03; cl06a cost side completes].
+      She does not sit with this. She does not not-sit with it. She records it: first directed
+      reading at a named person's request. Ask clean. Outcome clean. Exception authored.
+      [image: the ledger entry with no clause about regret — it names what happened, it names
+      the reason, it names the result; the absence of regret is not absence of recognition;
+      she knows what she has written; she has written it anyway; the road's first paving-stone,
+      laid gently, with the best of intentions, at no one's demand but her own].
+
+    substance_delta:
+      axes_in_motion:
+        - axis: moral_framework
+          direction: down
+          target_delta_magnitude: 0.5
+          cost_ledger_anchor: cl06a
+          notes: "Taylor records the exception in her own ledger, in her own words, without duress —
+                  the crossing (s02) becomes a precedent (s03) in the act of authoring rather than
+                  merely permitting; cl06a cost side completes; the road's first paving-stone is now
+                  on the books with Taylor's hand on it"
+      axes_held:
+        - axis: social_tether-prot-rise
+          rationale: "tether move completed in s01; s03 is aftermath and recording; no new relational
+                      event with Wren deepens the tether further at scene level"
+        - axis: capability
+          rationale: "capability moved in s02; the ledger entry is accounting for what was done,
+                      not a new deployment"
+        - axis: relational_anchor_status
+          rationale: "Wren receives the information and goes; no protection calculus is opened for
+                      Wren in this scene; the ledger entry does not include Wren's name in any
+                      deliverable accessible to Jarvis; anchor holds at rank 2 through chapter close"
+        - axis: moral_legibility_to_self
+          rationale: "Taylor's accounting is honest and complete — she knows what she did; but the
+                      recognition does not crack deeper here than the chapter contract requires; she
+                      records and continues; legibility holds at its entry rank (not a recognition-
+                      suppression event; the recognition runs clean and gets filed as information)"
+        - axis: political_register-prot
+          rationale: "the find and the recording are ward-layer, no court-tier content; resentment
+                      has no material here"
+        - axis: position-prot-rise
+          rationale: "the exception is between Taylor and Wren; nothing reaches the patron-tier;
+                      position holds"
+      density_target: 0.65-0.8
+
+    scene_conflict:
+      protagonist_force: "the accounting that must be run — Taylor does not avoid the ledger; she
+                          opens it on the directed reading after the outcome is known, runs it
+                          explicitly, and authors the exception entry herself; the discipline that
+                          makes her honest makes the breach legible"
+      opposing_force: "the good outcome — the girl is alive, the ask was clean, Wren's face at
+                       receipt; the relief is real; the good outcome is what makes the accounting
+                       unrefusable and the exception unreturnable; there is no clause to void the
+                       entry on grounds that the result justified the crossing, because the crossing
+                       is already in the ledger and the result does not change the entry"
+      stakes_axis: moral_framework
+    stale_since: null
+
+---
+# PER-SCENE → CHAPTER DELTA ROLL-UP PROOF
+#
+#   Scene        moral_framework    social_tether-prot-rise    capability
+#   ──────────   ───────────────    ───────────────────────    ──────────
+#   b01c06s01    HELD               +1.0 (cl06b)               HELD
+#   b01c06s02    -0.5 (cl06a)       HELD                       +1.0 (cl06a)
+#   b01c06s03    -0.5 (cl06a)       HELD                       HELD
+#   ──────────   ───────────────    ───────────────────────    ──────────
+#   CHAPTER Σ   -1.0               +1.0                       +1.0
+#   TARGET       -1.0               +1.0                       +1.0
+#   STATUS       EXACT              EXACT                      EXACT
+#
+#   Held axes per task brief — rationale carried in each scene's axes_held:
+#     position-prot-rise:      no patron-tier formalization event in any scene
+#     relational_anchor_status: Wren contact deepens tether (social_tether-prot-rise) but does
+#                                not yet add operational weight to the anchor; anchor holds at 2
+#     moral_legibility_to_self: recording is honest but does not crack deeper than chapter requires;
+#                                recognition runs clean and is filed; legibility holds
+#     political_register-prot:  no court-tier feed content in any scene; resentment has no material
+
+---
+# SCENE LIST (for report-back)
+#
+#   slug       conflict (one line)                                           shape
+#   b01c06s01  Ward-coverage vs. first named ask — the ask that requires a   rising
+#              spoken answer rather than a coverage-maintenance non-act
+#   b01c06s02  Directed reading vs. the prohibition's directed-exception     climax
+#              line — the feed is pointed at a named person for the first time
+#   b01c06s03  Good outcome vs. the ledger that records what a good outcome  falling
+#              cost the prohibition — the exception is authored, not merely done
+#
+# Wren first-dialogue-beat: b01c06s01. The spoken exchange (Wren names the ask;
+#   Taylor answers "I will look") is the social_tether-prot-rise +1.0 delivery.
+#   The dialogue-cobonded path (/and-write Phase 1.5) must anchor
+#   [wren-stitch-maker-flea-bottom-ward:N] and [taylor-hebert-kl-122ac:N] citations
+#   on the bones carrying the ask and the answer. The exchange is structurally load-
+#   bearing for the social_tether move; /and-write must not bury it.
+
+---
+# CONTRACT TENSIONS RESOLVED
+#
+# (1) moral_framework DIRECTION: the task specifies "+1.0" for moral_framework but in the
+#     series substance schema, moral_framework going from rank 2 toward rank 8 is coded as
+#     "direction: down" (the prohibition degrades). The "+1.0" in the task brief is magnitude
+#     notation. This draft uses direction: down, target_delta_magnitude: 1.0 per schema.
+#     Cost_ledger cl06a uses negative sign: "cost: moral_framework -1" consistent with prior
+#     entries (cl-d06 cost: "moral_framework -1").
+#
+# (2) relational_anchor_status vs. social_tether-prot-rise: the task holds relational_anchor_status
+#     and advances social_tether-prot-rise +1.0. This is correct — the Wren first-spoken exchange
+#     deepens Taylor's *tether* (she has answered Wren in words; Wren is now a person she has
+#     responded to directly) without adding *operational weight to the un-priced anchor* (which
+#     would require Wren entering a protection calculus). The existing b01c06 memory entry had
+#     relational_anchor_status +1.0, but the task's chapter concept replaces that contract.
+#     The new chapter's handoff_out must reflect: social_tether-prot-rise advances to rank 4
+#     (entry rank 3 + 1.0); relational_anchor_status holds at rank 2 (no anchor-weight event).
+#     (Note: the existing memory b01c06 handoff_out shows relational_anchor_status rank 3 and
+#     social_tether-prot-rise at rank 3. The new concept shifts the axis allocation; the
+#     handoff_out values must be reconciled at /and-substance chapter Phase 6 persist.)
+#
+# (3) cl06a dual-anchor: the task assigns both moral_framework -1.0 and capability +1.0 to cl06a.
+#     This matches cost_ledger semantics — a single event can produce one gain and one cost. The
+#     gain is capability +1 (directed reading works); the cost is moral_framework -1 (the prohibition
+#     has its first directed exception). This is structurally parallel to cl02 (position-prot-rise
+#     +4 gain / moral_framework -3 cost) and cl03a (capability +3 gain / moral_framework -2 cost).
+#
+# (4) Three scenes vs. chapter density target: the task brief sets chunk_targets.chapter at
+#     scenes_per_chapter 3-5 bones_per_scene note as /and-write target. Three scenes at 0.65-0.8
+#     density satisfies the chapter density_target 0.6-0.8 range. The scenes are substantial and
+#     the arc (ask → find → record) requires all three; a two-scene version would collapse either
+#     the crossing and the recording into a single scene, losing the structural separation between
+#     the act (s02) and the authoring of the precedent (s03).
+#
+# (5) Wren fence compliance: Wren asks the question (she has standing to ask Taylor to find things)
+#     but does not ask what Taylor is. Per card fence-2: "Scenes where Wren presses Taylor for
+#     explanation are a fence violation." The scene designs Wren's ask as a named concrete request
+#     (a missing girl; a specific location; an absence-duration) with no explanation-request attached.
+#     She does not ask how Taylor will find the girl. This is inside the fence.
+#
+# (6) Earth-Bet noun fence: no parahuman jargon appears in any chunk text. Inner-monologue references
+#     to the prior life are present in s03 only, as shape-language ("the architecture") — within the
+#     once-or-twice-per-chapter cap and the oblique-reference discipline.
