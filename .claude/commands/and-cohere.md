@@ -132,7 +132,7 @@ For each chapter in the ordered queue (sequential, NOT parallel — downstream c
 
 1. **`/and-write <chapter> revise --from-signals`** (or `--cohere-driven` once that mode lands; until then, `--from-signals` with the cohere-authored signal cluster passed as the bones-revise input).
 2. **`/and-review bones <chapter>`** — mandatory gate per the existing chain. FAIL routes to `/and-write revise` re-fire (one re-fire allowed; second FAIL escalates to `result: HELD`).
-3. **`/and-facets <chapter>`** — re-cascade. Phase 5b audience-gate FAIL → `result: HELD`.
+3. **`/and-facets <chapter>`** — re-cascade (slim, DEC-0116). Phase 4 auditor HARD-persist (past 2 internal passes) or a NOT-SUCCESSFUL Phase 5 orchestrator-critic verdict → `result: HELD`. (The Phase 5b audience-gate is retired; the facet-layer gate is the Phase 4 mechanical auditor.)
 4. **`/and-stitch <chapter>`** — re-cascade. Phase 9 cold-read FAIL → `result: HELD`.
 
 Per-chapter outcome stamps to state file `revise_queue[].result`:
@@ -348,7 +348,7 @@ Print to user:
 [On status: cap-hit]
   Next: principal triage. Inspect unresolved queue; decide between --restart with revised max-iter, dismiss specific items, or escalate to upstream command-body / rubric revision per admin's proposal.
 [On status: held]
-  Next: principal triage of held sub-phase. Resolve the failure cause (cold-read FAIL, audience-gate FAIL, etc.) then --restart.
+  Next: principal triage of held sub-phase. Resolve the failure cause (cold-read FAIL, facet-audit HARD-persist, etc.) then --restart.
 ```
 
 ---

@@ -81,8 +81,10 @@ When the user asks for a chapter, this is the operation. It is silent, disciplin
 | Gate | Auto-action on FAIL | Cap |
 |------|---------------------|-----|
 | `/and-review bones` FOLLOW-FAIL or fidelity-FAIL | `/and-write <slug> revise` + re-run `/and-review bones` | 1 retry |
-| `/and-facets` Phase 5b adversarial audience-gate FAIL | Re-cycle (existing cap; no principal prompt between cycles) | 3 cycles total |
+| `/and-facets` Phase 4 mechanical auditor HARD | fixer + re-audit (internal; no principal prompt) | 2 passes (internal) |
 | `/and-stitch` Phase 9 cold-read FAIL | `/and-write <slug> revise --from-signals` + re-run `/and-facets` + `/and-stitch` | 1 retry |
+
+(The `/and-facets` Phase 5b adversarial audience-gate cycle is RETIRED under DEC-0116. The facet layer's gate is now the Phase 4 mechanical auditor, which self-remediates ≤2 passes internally; HARD-persist past that surfaces as a NOT-SUCCESSFUL Phase 5 verdict and halts per R5, not a principal-facing cycle loop.)
 
 Cap exhaustion → HALT cleanly with checkpoint.
 
@@ -126,10 +128,10 @@ Voice exemplar     : PRESENT  |  ABSENT
 Disk paths         : OK  |  <which path failed>
 ----------------------------------------------------------------
 Scope              : b<NN>c<MM>  (single chapter end-to-end)
-Cap-bound gates    : bones (1 retry) / facet-audience (3 cycles) / stitch P9 (1 retry)
+Cap-bound gates    : bones (1 retry) / facet-audit (2 internal passes) / stitch P9 (1 retry)
 Expected halts on  : cap exhaustion, P10 HOLD-THREAD (gates next chapter, not this one)
-Estimated cost     : ~70-90 dispatches typical; up to ~140 with full cap-iteration
-Estimated runtime  : ~25-45 minutes
+Estimated cost     : ~35-55 dispatches typical; up to ~90 with full cap-iteration (DEC-0116 slim /and-facets: ~10-12, was ~60-100)
+Estimated runtime  : ~20-35 minutes
 ================================================================
 Going silent. End-of-run summary will be the next message.
 ================================================================
@@ -144,7 +146,7 @@ Sequence — no principal output between steps:
 1. **`/and-substance chapter b<NN>c<MM>`** (mode: cascade-implicit; Phase 0 reads aggregate-state.md and HARD-aborts on unacknowledged substantive entries — caught at pre-flight, but re-verified at Phase 0).
 2. **`/and-write b<NN>c<MM>`** (decomposition + bones + per-character dialogue + scene-map).
 3. **`/and-review bones b<NN>c<MM>`** (mandatory gate; on FOLLOW-FAIL or fidelity-FAIL → R2 auto-iterate).
-4. **`/and-facets b<NN>c<MM>`** (ten facets + scene-map validation + adversarial audience-gate; cycle cap 3, no principal prompt between cycles).
+4. **`/and-facets b<NN>c<MM>`** (slim — DEC-0116: single R1 authoring round + context/aliveness review + Phase 4 mechanical auditor as the facet-layer gate; the R2 round and Phase 5b audience-gate are retired; the auditor self-remediates ≤2 passes, no principal prompt).
 5. **`/and-stitch b<NN>c<MM>`** through Phase 9 (cold-read terminal gate; on FAIL → R2 auto-iterate).
 6. **`/and-stitch b<NN>c<MM>` Phase 10 FORWARD-THREAD** (reads aggregate-state.md / prior drafts; threading-review fork; classify-and-apply; emit/update aggregate-state.md; PASS-THREAD or HOLD-THREAD).
 
@@ -186,7 +188,7 @@ While the chain runs:
 - All admin dispatches use `subagent_type: admin`, `mode: user-proxy` per CLAUDE.md Rule 13.
 - Admin OK/disposition → apply silently.
 - Admin ESCALATE → append to `active-project/staff/showrunner/escalate-queue-<ts>.md`; do NOT prompt; continue the chain with admin's tentative disposition or the chain's default.
-- Process-critic dispatches at chain tail-steps (URI-ADMIN-PROCESS-CRITIC; `/and-write` Phase 6.5, `/and-facets` Phase 5c, `/and-stitch` Phase 9.5, etc.) fire as documented; outputs are logged to the proposals log; not surfaced mid-run.
+- Process-critic dispatches at chain tail-steps (URI-ADMIN-PROCESS-CRITIC; `/and-write` Phase 6.5, `/and-facets` Phase 4.5 (renamed from the retired Phase 5c under DEC-0116), `/and-stitch` Phase 9.5, etc.) fire as documented; outputs are logged to the proposals log; not surfaced mid-run.
 - Tool failures: retry once with backoff. If still failing, R5 hard halt.
 
 ### What NOT to do during chapter production

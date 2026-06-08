@@ -60,7 +60,7 @@ supersedes: PROP-<NNNN> | null            # set when this proposal replaces an e
 
 **`id`** — `PROP-<NNNN>` monotonic. Allocate by reading the file tail. Stable forever; never reused.
 
-**`trigger.reason`** — `failure` (auto-fired on FAIL/REVISE/PASS-WITH-DEPTH-PASS-REQUIRED from `/and-review`, `/and-write` bone-gate, `/and-facets` Phase 5b, `/and-stitch` Phase 9) or `postop` (auto-fired after `/and-postop` convergence write). On-demand invocation (future `/and-review process`) uses `reason: on-demand`.
+**`trigger.reason`** — `failure` (auto-fired on FAIL/REVISE/PASS-WITH-DEPTH-PASS-REQUIRED from `/and-review`, `/and-write` bone-gate, the `/and-facets` Phase 5 orchestrator-critic verdict — the Phase 5b audience-gate trigger is retired under DEC-0116, `/and-stitch` Phase 9) or `postop` (auto-fired after `/and-postop` convergence write). On-demand invocation (future `/and-review process`) uses `reason: on-demand`.
 
 **`target.type`** —
 - `command` — change a command body in `.claude/commands/`.

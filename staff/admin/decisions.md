@@ -7561,3 +7561,67 @@ stm-written: yes
 ltm-written: yes
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0116 | 2026-06-08 | SLOW (user-proxy)
+
+question: |
+  GO + shape decision on /and-facets simplification. Four options:
+  (A) Slim: keep load-bearing R1 authors + Phase 2.5 + Phase 5 mechanical auditor; drop R2 judging
+      round (Phase 3/4/4.5/4.6) and Phase 5b adversarial audience-gate; demote exposition
+      per PROP-0004; ~60-100 dispatches → ~10-12.
+  (B) Aggressive: fold surviving facets into /and-write emit set; remove /and-facets as a chain step.
+  (C) Conservative: drop only Phase 5b (adversarial audience-gate); keep R2 judging.
+  (D) Defer: book already rebuilt; wait for next live chapter run.
+
+context: |
+  Evidence pack: ablation studies (12/15-variant cold reads) prove facet stack adds value but
+  concentrated in 3 facets (memory, location-state, state-updates); R2 optimizes for density that
+  ablation shows hurts pacing; Phase 5b (the adversarial audience-gate) demonstrably FAILED to
+  catch the book's central readability defect (DEC-0115: 16 consecutive AIRLESS dispositions "by
+  signature"); the no-ledger re-cascade bypassing the full chain produced the now-shipped clean
+  drafts. DEC-0033 (2026-05-27) justified full process because prior cascade-budget compressions
+  cost more to remediate — but that rationale was premised on bones-quality being the risk; since
+  then, /and-write Phase 6 bone-gate + five-pass SVO + /and-review bones + DEC-0115 no-ledger
+  fence cover that surface upstream and downstream of facets.
+
+options: (A) slim / (B) fold+remove / (C) Phase-5b-only drop / (D) defer
+
+decision: GO — Option A. Surgical single-command-body edit per the scope described above.
+
+basis: goal:1 (removes a gate that demonstrably failed), goal:2 (6-8x dispatch reduction on
+  costliest chain step), goal:4 (lean architecture — remove what isn't working), methodology:3a
+  (reversible single-file change), methodology:3c (B crosses into chain-architecture change =
+  human-only per methodology §human-only), DEC-0115 (direct prior ruling: Phase 5b failed its
+  purpose), DEC-0033 superseded (rationale for full-process was bones-quality risk; that risk is now
+  covered upstream).
+
+rationale: |
+  The ablation evidence and DEC-0115 together make the case: Phase 5b reviewed an intermediate
+  artifact the reader never sees, told the pipeline 16 consecutive abstract chapters were fine, and
+  the reader found the book unreadable. That is the worst possible outcome from the most expensive
+  gate in the chain. R2's judging round optimizes for facet density, and density is what the
+  ablation showed was hurting pacing. Both belong to the same failure class — they drove the
+  pipeline toward the wrong target. Removing them is not compression (the DEC-0033 concern) — it
+  is removing gates that were producing harmful signal. The load-bearing gates (Phase 5 mechanical
+  auditor, Phase 2.5 aliveness/context review, R1 authors for the substance-facing facets) stay.
+  Option B is an architectural change (removes a chain step, reshapes RUNBOOK + chain diagram +
+  schemas) — that crosses the methodology §human-only line on architectural direction changes.
+  Option C under-achieves: the ablation evidence points at R2 density-optimization as net-negative
+  too, not just Phase 5b. Option D is non-starter: the very next chapter production run hits this
+  again at full cost.
+
+trade-off: |
+  Drops the R2 judging round entirely, including the R2 dialogue judge (the locked-graph pass that
+  survived from URI-WRITE-DIALOGUE-COBONDED per CLAUDE.md Rule 15). The R2 dialogue judge is
+  the "KEEP/DELETE/REWRITE against the facet graph the upstream author was blind to" pass. Verify
+  whether this pass has demonstrated independent catch value (not covered by Phase 5) before
+  dropping it wholesale — if it has, it can be retained as a single cheap pass within the slimmed
+  pipeline without bringing back the full R2 round. This is a scoping question for the implementer,
+  not a blocker on GO.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
