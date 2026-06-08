@@ -2875,3 +2875,33 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-06-08-slimfacets-001
+      created_at: 2026-06-08T00:00:00Z
+      created_by: "/and-facets b01-c07 slim-pipeline live test (DEC-0116 validation)"
+      target:
+        command: /and-facets
+        scope: "*"
+        phase: Phase 4
+      severity: SOFT
+      description: |
+        During the URI-FACETS-SLIM live test on b01-c07, the Phase 4 auditor returned
+        2 false-positive HARD findings ("feeling files absent", "actor state-update files
+        absent") because it searched for ABBREVIATED actor slugs (feeling-taylor-b01-c07.md)
+        instead of the full per-character slug filenames that exist on disk
+        (feeling-taylor-hebert-kl-122ac-b01-c07.md). Caught by the Rule-19 on-disk verify;
+        no real defect. Root cause: the test skipped the Phase 2 cite-index merge, which in
+        production consolidates per-character slices into feeling.md / state-updates.md with
+        a manifest the auditor reads — so this class does NOT arise in a normal run. BUT it
+        is a real robustness gap: the auditor brief should resolve per-character slice files
+        by GLOBBING the full actor slug (feeling-*-<book>-<chapter>.md), not by reconstructing
+        an abbreviated name, so a partial/merge-skipped run cannot produce phantom-absent HARDs.
+      context_refs:
+        - active-project/staff/reviews/slim-facets-test-b01-c07.md  # caveat 1
+        - active-project/staff/auditor/facets-final-audit.md  # FIXER RESOLUTION + CORRECTION addendum
+        - .claude/commands/and-facets.md  # Phase 4 auditor read-inputs (slice file resolution)
+      resolution_suggestion: "harden the /and-facets Phase 4 auditor read-inputs brief: enumerate per-character slice facets by glob over the full actor slug (feeling-*-<chapter>.md, state-updates-*-<chapter>.md) and treat a STRUCTURAL absent-file finding as valid only after a glob confirms absence — never from a reconstructed abbreviated filename."
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null

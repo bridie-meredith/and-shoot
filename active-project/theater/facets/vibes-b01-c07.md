@@ -14,7 +14,7 @@ author: showrunner
 # loc:oc-sept-corner — card VIBES section has raw tags only; no formal vibe-cloud entries; fresh + valid
 # episode — no prior episode-scope vibe-cloud; fresh + valid
 
-1 @2 actor:taylor-hebert-kl-122ac ++ rising entrapment: [familiar-corners-replaced-without-notice, arrangement-self-revising-while-she-watches, network-change-legible-but-not-stoppable] | licensed-by: proto:2, proto:3, peak-bone:scene-A-2
+1 @2 actor:taylor-hebert-kl-122ac ++ rising entrapment: [familiar-corners-replaced-without-notice, arrangement-self-revising-while-she-watches, network-change-legible-but-not-stoppable] | licensed-by: proto:2, proto:3
 
 2 @14 actor:taylor-hebert-kl-122ac ++ contempt-without-refusal: [argument-met-not-dismissed, naming-the-dead-child-as-answer, engagement-not-concession, still-not-refusal] | licensed-by: proto:14, proto:20, proto:21, peak-bone:scene-C-20
 
