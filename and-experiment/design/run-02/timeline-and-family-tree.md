@@ -11,9 +11,19 @@ the divergences explicit and FIXED so every downstream chapter stays consistent.
 **setting-blind**: in her POV the people below are a sect/clan, the king her sect-master father, the
 dragons spirit-beasts. The reader sees Westeros; she never names it.
 
+> **⚠ TIME SUPERSEDED (2026-06-08).** This file predates the Saerys→**Gael** rename and the outline
+> intake's span rescope. **§1 (WHEN) below is superseded by `design/time-anchor.md`** — that file is
+> now THE authority for era/age/span on the live Gael layer. In particular: §1's "Book I = 84–93 AC
+> (age 0–9, 11 ch)" reflects the *pre-intake* 11-chapter Book I (the intake consolidated it to 5 ch +
+> interlude, ending ~age 6), and §5's "span to the Dance (recommended)" is the **span-B** option the
+> intake rescoped away from (now the one open fork — see time-anchor §4). **§2 (WHO / family tree),
+> §3 (HOW magic works), and §4 (fences) are NOT superseded — they remain authoritative** (read "Saerys"
+> as "Gael" throughout until the run-03 migration). Use this file for who/magic; use time-anchor.md
+> for when.
+
 ---
 
-## 1. WHEN — the era anchor
+## 1. WHEN — the era anchor   ·   ⚠ SUPERSEDED by `design/time-anchor.md` (see header note)
 
 We are set in the reign of **Jaehaerys I "the Old King" / "the Conciliator"** — the long peace, the
 height of Targaryen dragon-numbers. **Not** Viserys I's reign; **not** the Dance lead-up. Viserys is

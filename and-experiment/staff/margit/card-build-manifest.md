@@ -77,3 +77,41 @@ All 11 items validated against `schemas/card.schema.md` before storage:
 - Persona-exemplar: frontmatter per `schemas/persona-exemplar.schema.md`; length ~230 words (within range); fences declared; dispatch-status: active
 
 No pre-existing cards were overwritten. All cards are net-new files. Preservation discipline honored.
+
+---
+
+## Batch: household-servants (2026-06-08, session-authored)
+
+Per principal request ("what sorts of maids / nannies / wet-nurses would be around her; create cards
+for multiple people of each category"). Built to the **live Gael layer** (protagonist card slug remains
+`saerys-targaryen`; card bodies use "Gael"). Design + reasonable per-category profiles + maid-candidate
+menu (OQ-CL2): `and-experiment/design/counterfactual-life/the-household-roster.md`. All reference
+`westeros-smallfolk` + `westeros-grrm-mannerisms` + `saerys-targaryen` + `loc-maegors-holdfast`.
+
+| # | slug | category | quality | tier | scope | maid-candidate |
+|---|------|----------|---------|------|-------|----------------|
+| 12 | mella-wet-nurse | wet-nurse (primary) | full | minor | project | — |
+| 13 | bessa-wet-nurse | wet-nurse (second) | full | minor | project | — |
+| 14 | mistress-bryony | nursemaid (head nan) | full | minor | project | — |
+| 15 | cissa-nursemaid | nursemaid (under) | full | minor | project | LOW |
+| 16 | wenda-the-rocker | nursemaid (rocker) | full | minor | project | — |
+| 17 | nona-chambermaid | chamber-maid (steady) | full | minor | project | LOW |
+| 18 | pella-chambermaid | chamber-maid (clever) | full | minor | project | **HIGH** |
+| 19 | marra-chambermaid | chamber-maid (timid) | full | minor | project | MED/CAUTION |
+| 20 | mistress-orla-wardrobe | tiring-woman (wardrobe mistress) | full | minor | project | — |
+| 21 | nesta-tiring-girl | tiring-woman (hairdresser) | full | minor | project | — |
+
+**Total: 10 persona cards (net-new; warehouse-only, project-scoped).** No persona-exemplars authored
+(minor tier; defer until/if a card is promoted toward the maid role at cast-equivalent). No library
+copies (project-only, no cross-project reuse value — same call as `saerys-septa`). All validated
+against `schemas/card.schema.md`: frontmatter complete; required persona sections present
+(Description/Voice/Taste/Pet Peeves + Stats/Relationships); Fiction-role overlay present
+(Thematic Purpose/Look/Hard Fences/Default Stance/Off-Screen Cadence). No pre-existing cards
+overwritten.
+
+**Open flags:**
+- **OQ-CL2 (the Book II maid):** built as a *menu* — Pella (HIGH), Marra (MED/cautionary), Nona (LOW).
+  Not committed; principal chooses. If chosen, promote that card to `tier: supporting` + author an
+  exemplar.
+- **OQ-CL3 (names):** all servant names overridable.
+- **Next batch (not built):** the maester, the masters of accomplishments, the companion girls/ladies.
