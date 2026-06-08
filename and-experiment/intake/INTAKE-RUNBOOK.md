@@ -127,6 +127,8 @@ new GUARD IDs) · checker PASS/FAIL · open forks still pending · suggested nex
 | `design/run-02/idea-inbox.md` | small-grain chapter-note front door | **KEEP** (still the note loop) |
 | `intake/GUARDS-register.md` | ratified-premise snapshot | **ADAPT** (update as GUARDs change) |
 | `design/run-01/*`, `design/cultivation-library/*` | bible / source material | **KEEP** (reference) |
+| `design/counterfactual-life/*` | exterior-well source material (Gael's ordinary princess life — servants / day / expectation-script + the seam map) | **KEEP** (reference; additive — carry forward frozen) |
+| `design/counterfactual-baseline-process.md` | reusable negative-space-worldbuilding process | **KEEP** (process doc) |
 | `scripts/check-threads.py` | mechanical thread checker | **KEEP** (tool) |
 
 *(Refresh this table at the start of each intake; the repo may have moved on.)*

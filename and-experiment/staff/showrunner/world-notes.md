@@ -26,3 +26,15 @@ Full grounded bedrock: `and-experiment/design/run-01/constraints.md`. Digest bel
 - Incest-marriage norm (Faith tolerates per Jaehaerys's compromise); betrothed in childhood, married ~13.
 - The cage = the attendant, not the door. The six loopholes (charity keystone, king's-note master key,
   performed illness, eccentric-royal latitude, below-stairs faction, stewardship-foothold) are canon-real.
+
+## Lived texture (the exterior well) — counterfactual-life library
+The institutional bedrock above (offices, laws, loopholes) is rendered as *lived, day-by-day* detail —
+the ordinary princess life Gael deviates from — in `and-experiment/design/counterfactual-life/`
+(INDEX + the-household / the-day / the-script). Reach for it for "who is in the room," the hour-by-hour
+timetable, and the expectation-script the compliance mask performs against; the INDEX **seam map** is
+the production table (every ordinary element → the deviation already in the outline). Authored to the
+**live Gael / Jaehaerys-as-father layer** (the cards/this digest's Viserys-I-era framing is stale,
+pending run-03). NB: this digest's "Settings" block above still names the Viserys-I era; the ratified
+era is Jaehaerys's long peace (~84–93 AC for Book I) per `intake/GUARDS-register.md` GUARD-4 +
+`design/run-02/timeline-and-family-tree.md`. The reusable derivation process:
+`design/counterfactual-baseline-process.md`.
