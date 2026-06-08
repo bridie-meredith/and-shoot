@@ -10,9 +10,11 @@
 
 A one-book tragedy. Taylor Hebert -- after Gold Morning -- wakes in another body in King's Landing, 122 AC, the year before the year before the Dance of the Dragons. She comes to atone for Khepri by being useful without taking control. A courtier, Otto Hightower, identifies what she can do and offers her a function: read the city through her insects, route information, keep one protected person safe. The trades are accurate. The accuracy is the catastrophe. The road to hell is paved with good intentions, in the literal, instrumental sense -- every step is correct, and the sum is the war she was trying to prevent, with Flea Bottom among the first wards to burn.
 
-First-person throughout, single POV. The narrator's voice is deliberately cold and analytical -- a moral "ledger" register that accounts for every cost except the one it refuses to price. That coldness is the book's signature, not a flaw to be warmed over.
+First-person throughout, single POV. The narrator's voice is cold and analytical -- Taylor keeps a moral accounting in her head and refuses to let one cost into it. That coldness is carried as **character** (what she notices, how little she lets herself feel), rendered through concrete physical and human action. (The original export narrated events *as* their bookkeeping -- "the count let him go," "I wrote him into the ledger as a closed entry" -- to the point a first-time reader could not follow what physically happened. That ledger/apparatus register was retired in the **no-ledger revision** of 2026-06-08; see the colophon below.)
 
-20 chapters  -  ~21,900 words.
+20 chapters  -  ~25,900 words (no-ledger revision, 2026-06-08).
+
+> **No-ledger revision (2026-06-08).** The reader reported the original export did not flow -- jarring, hard to follow what was happening. Root cause (diagnosed + recorded as DEC-0115 / PROP-0046-0050): the cold "ledger" register had metastasized into the *grammar of narration* -- nearly every event was rendered as its accounting-trace ("the gap propagated," "the accounting closed the count," "the ledger closes the dark-junction entry"), so events dissolved into bookkeeping and a naive reader could not reconstruct the scene. The whole book was re-cascaded under a new fence: the apparatus (the insect-feed, the count, the ledger) is a *lens* Taylor perceives through, never the grammatical subject; events render as concrete physical/human action; the coldness survives as character. All 20 chapters' bones were re-authored concrete (every `ABSTRACTION-AS-SUBJECT` bone eliminated, ~330 across the book) and re-rendered. The tragic arc, the substance contract, and every plot event are unchanged -- only the prose register. This file is that revision.
 
 ## Files
 

@@ -1,0 +1,1 @@
+[2026-05-24] PROVISIONED: actor directory created at /and-cast Phase 4; project taylor-hebert-westeros-road-to-hell | margit-fork authored as 122 AC variant of base card rhaenyra-targaryen; world-embodiment:black-faction-claimant slot; dragonstone-distance hard fence; active-agenda-pressure carry-forward

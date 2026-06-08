@@ -6246,3 +6246,222 @@ defer_until: null
 supersedes: null
 ```
 
+
+## PROP-0046
+
+```yaml
+id: PROP-0046
+created_at: 2026-06-08T14:05:00Z
+created_by: admin process-critic
+trigger:
+  reason: failure
+  source_report: staff/reviews/verdict-b01-2026-06-06T04-08-37Z.md
+  source_verdict: PASS-WITH-NOTES (principal-rejected on read; DEC-0115)
+target:
+  type: schema
+  path: schemas/bones.schema.md + schemas/facet.schema.md + .claude/commands/and-stitch.md + .claude/commands/and-write.md + audience persona cards (Threshold Discipline)
+  section: "prose register fence (cross-surface)"
+change_type: add
+rationale: |
+  Book 1 narrated nearly every event as bookkeeping ("the count let him go," "the gap propagated,"
+  "I closed the entry," "I held the feet"), replacing literal action with its accounting-trace until a
+  reader could not reconstruct the scene. The abstraction originates at the bones layer (b01-c01 bones:
+  "the insects propagate / the nearest dozen bodies yield / the gap propagates") and is faithfully
+  carried through stitch. No surface in the chain prohibits register-as-narration; the project's
+  "signature" actively licensed it. Per DEC-0115 the ledger/accounting/apparatus register is retired as a
+  prose mode. This requires a fence that exists at every authoring surface, not a single gate.
+evidence_refs:
+  - completed-works/taylor-westeros-good-intentions/book-one.md (whole, esp. c10-c19)
+  - projects/taylor-westeros-good-intentions/theater/bones/b01-c01.md (abstract bones origin)
+  - .claude/commands/and-stitch.md Phase 4 (PROP-0022 person-first lever; insufficient — fence not ban)
+  - projects/taylor-westeros-good-intentions/voice-exemplar.md (the breathing target the prose ignored)
+recurrence_count: 1
+proposed_diff: |
+  NO-LEDGER FENCE (cross-surface). The apparatus a narrator perceives through (feed/count/ledger/
+  column/network/sense-power) may be a LENS but may NOT be the grammatical subject of narration nor the
+  unit by which events are reported. Events render as concrete physical/human action first.
+  - bones.schema.md: SVO bones must name a concrete actor + concrete action; "the gap propagates" /
+    "the count closes" class subjects (abstraction-as-subject) are REJECT.
+  - and-write Phase 6: ABSTRACTION-AS-SUBJECT becomes a HARD bone-gate finding (see PROP-0049).
+  - and-stitch Phase 4: ledger/accounting/apparatus register is PROHIBITED, not merely de-preferred
+    (see PROP-0047). LEDGER-REGISTER findings re-render concretely or route upstream.
+  - audience cards: add a Threshold-Discipline clause that a reviewer may NOT excuse opacity as
+    "signature/intended register"; followability is judged against a naive reader.
+  Authoritative home: CLAUDE.md Rule 22.
+cost_estimate: M
+status: accepted
+triaged_at: 2026-06-08
+triaged_by: principal (session)
+disposition_note: "ACCEPTED per DEC-0115 ('no ledger at all'). CLAUDE.md Rule 22 + stitch/write edits this session; schema + card edits staged."
+pr_ref: claude/optimistic-newton-YCnTC
+defer_until: null
+supersedes: null
+```
+
+## PROP-0047
+
+```yaml
+id: PROP-0047
+created_at: 2026-06-08T14:06:00Z
+created_by: admin process-critic
+trigger:
+  reason: failure
+  source_report: staff/reviews/verdict-b01-2026-06-06T04-08-37Z.md
+  source_verdict: PASS-WITH-NOTES (principal-rejected on read)
+target:
+  type: command
+  path: .claude/commands/and-stitch.md
+  section: "Phase 9 — cold-read terminal gate; Phase 4 — voice transform"
+change_type: modify
+rationale: |
+  The Phase-4 voice-embodiment lever (PROP-0022) only *preferred* person-first where both renderings were
+  bone-faithful, and fell back to apparatus-register (logging EMBODIMENT-BLOCKED) whenever the bones were
+  abstract — which, in this book, was nearly everywhere. The Phase-9 cold-read ran per-chapter and was
+  calibrated to the chapter's own signature, so it normalized the register instead of failing it. Neither
+  gate ever asked the only question that matters: "can a naive reader say what physically happens here?"
+evidence_refs:
+  - .claude/commands/and-stitch.md Phase 4 (URI-STITCH-VOICE-EMBODIMENT) + Phase 9
+  - staff/reviews/verdict-b01-2026-06-06T04-08-37Z.md (B1: "abstraction-muffle ... events stayed legible" — false-negative)
+recurrence_count: 1
+proposed_diff: |
+  (1) Phase 4: upgrade the person-first preference to a PROHIBITION on ledger/accounting/apparatus
+      register (VOICE-APPARATUS-DEFAULT -> LEDGER-REGISTER, HARD within-stitch; re-render concrete or
+      route to /and-write revise as EMBODIMENT-BLOCKED).
+  (2) Phase 9: add a NAIVE-FOLLOW sub-gate. A fork holding NO signature/contract context renders a
+      one-paragraph plain-English "what physically happens" summary per scene. If it cannot, FOLLOW-FAIL
+      (blocking; routes to /and-write revise). This fork may not be told the register is intentional.
+cost_estimate: S
+status: accepted
+triaged_at: 2026-06-08
+triaged_by: principal (session)
+disposition_note: "ACCEPTED per DEC-0115. Implemented this session."
+pr_ref: claude/optimistic-newton-YCnTC
+defer_until: null
+supersedes: null
+```
+
+## PROP-0048
+
+```yaml
+id: PROP-0048
+created_at: 2026-06-08T14:07:00Z
+created_by: admin process-critic
+trigger:
+  reason: failure
+  source_report: staff/reviews/verdict-b01-2026-06-06T04-08-37Z.md
+  source_verdict: PASS-WITH-NOTES (Class-B cohort accepted as design-inherent)
+target:
+  type: command
+  path: .claude/commands/and-review.md + .claude/commands/and-stitch.md
+  section: "verdict disposition rules / per-chapter caveat-ship disposition"
+change_type: modify
+rationale: |
+  The dominant disposition problem (schema anti-pattern: "the gate caught it but the author shipped
+  anyway"). The recurring AIRLESS finding was classified DESIGN-INHERENT ~16 consecutive times
+  (DEC-0060..0104) and 7 consecutive chapters shipped SHIPPED-WITH-CAVEATS with no circuit breaker.
+  A defect class that recurs is, at some count, no longer "design-inherent" — it is an unaddressed
+  systemic defect wearing that label.
+evidence_refs:
+  - staff/admin/decisions.md DEC-0060/0062/0066/0072/0074/0078/0085/0087/0090/0094/0096/0098/0100/0101/0102/0104/0105
+  - staff/reviews/verdict-b01-2026-06-06T04-08-37Z.md (A2 Class-B cohort: 7 consecutive)
+recurrence_count: 16
+proposed_diff: |
+  Add a CONSECUTIVE-CAVEAT CIRCUIT BREAKER: the same defect class may be dispositioned
+  "design-inherent / accepted-caveat" at most N consecutive chapters (default N=2). The (N+1)th
+  occurrence auto-promotes the finding from NOTE to BLOCKING and forces a depth-pass or an explicit
+  principal escalation BEFORE further ships — it may no longer be auto-accepted under the standing
+  disposition. Wire the counter into aggregate-state and check it at /and-stitch Phase 9.5 and
+  /and-review verdict.
+cost_estimate: M
+status: accepted
+triaged_at: 2026-06-08
+triaged_by: principal (session)
+disposition_note: "ACCEPTED per DEC-0115. Command-body wiring staged; recorded as binding policy now."
+pr_ref: claude/optimistic-newton-YCnTC
+defer_until: null
+supersedes: null
+```
+
+## PROP-0049
+
+```yaml
+id: PROP-0049
+created_at: 2026-06-08T14:08:00Z
+created_by: admin process-critic
+trigger:
+  reason: failure
+  source_report: staff/reviews/verdict-b01-2026-06-06T04-08-37Z.md
+  source_verdict: PASS-WITH-NOTES (event-poverty)
+target:
+  type: command
+  path: .claude/commands/and-write.md
+  section: "Phase 6 — substance bone-gate"
+change_type: modify
+rationale: |
+  The unreadability begins in the bones: events were authored as abstract nominalizations
+  ("the gap propagates," "the count closes") rather than concrete actor+action. The existing
+  EVENT-NOT-CONCRETE gate fires only on the single central-event bone, so a scene built almost entirely
+  of abstract bones passes. The stitcher cannot un-abstract what the bones never made concrete.
+evidence_refs:
+  - projects/taylor-westeros-good-intentions/theater/bones/b01-c01.md (bones 12-14, 18-27)
+  - .claude/commands/and-write.md Phase 6 (EVENT-NOT-CONCRETE / ABSTRACTION-DOMINANT)
+recurrence_count: 1
+proposed_diff: |
+  (1) ABSTRACTION-AS-SUBJECT: a bone whose grammatical subject is the apparatus/an abstraction rather
+      than a concrete actor is a HARD bone-gate finding (was: SIGNAL ABSTRACTION-DOMINANT).
+  (2) CONCRETENESS FLOOR: each scene must hold a minimum ratio of concrete-SVO bones to
+      accounting/abstract bones (default >= 0.6 concrete). Below floor -> SCENE-ABSTRACT-DOMINANT HARD.
+  (3) Promote EMBODIMENT-BLOCKED: when /and-stitch returns >=K EMBODIMENT-BLOCKED on a chapter, it
+      routes to /and-write revise (the fix is content bones must supply), not a silent ship.
+cost_estimate: M
+status: accepted
+triaged_at: 2026-06-08
+triaged_by: principal (session)
+disposition_note: "ACCEPTED per DEC-0115. Phase 6 edit this session."
+pr_ref: claude/optimistic-newton-YCnTC
+defer_until: null
+supersedes: null
+```
+
+## PROP-0050
+
+```yaml
+id: PROP-0050
+created_at: 2026-06-08T14:09:00Z
+created_by: admin process-critic
+trigger:
+  reason: failure
+  source_report: staff/reviews/verdict-b01-2026-06-06T04-08-37Z.md
+  source_verdict: PASS-WITH-NOTES (interior-sameness across c10-c19)
+target:
+  type: command
+  path: RUNBOOK.md + .claude/commands/and-substance.md
+  section: "Producing a chapter protocol (mandatory cohere cadence) / series signature authoring"
+change_type: add
+rationale: |
+  The interior-sameness/repetition cluster (c10-c19: same scene shape every chapter) is invisible to
+  every per-chapter gate by construction, and /and-cohere — the one cross-chapter gate that catches it —
+  was opt-in and its standing queue items were principal-deferred. Separately, the root enabler was a
+  single-axis "signature" with no readability counterweight, allowing register to be optimized to
+  unreadability.
+evidence_refs:
+  - completed-works/taylor-westeros-good-intentions/book-one.md c10-c19
+  - RUNBOOK.md ("/and-cohere is ... NOT in this chain ... opt-in")
+  - staff/showrunner/memory.md substance.state_axes (single-axis register-as-signature)
+recurrence_count: 1
+proposed_diff: |
+  (1) Make /and-cohere MANDATORY at book-thirds (~1/3 and 2/3 of planned chapters) in the
+      chapter-production protocol, not opt-in. A FAIL-COHERE on interior-sameness blocks further ships
+      until addressed.
+  (2) /and-substance series: a substance signature may NOT be satisfiable by a prose register, and must
+      declare a readability/concreteness floor as a non-negotiable constraint the register coexists with
+      (prevents register-as-substance single-axis optimization).
+cost_estimate: M
+status: accepted
+triaged_at: 2026-06-08
+triaged_by: principal (session)
+disposition_note: "ACCEPTED per DEC-0115. Wiring staged; binding policy recorded now."
+pr_ref: claude/optimistic-newton-YCnTC
+defer_until: null
+supersedes: null
+```
