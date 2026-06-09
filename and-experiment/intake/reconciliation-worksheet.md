@@ -131,6 +131,19 @@ being walked item-by-item (principal chose deliberation over batch-ratify).*
 - **Destination:** I.5 no longer locks NORTH; open destination → reagent-map (Book II) → SOUTH (epilogue). North = betrothal-dread only. (Purification down-plant + S2 resolved.)
 - **The "one crack":** III.5 tempering is the anti-curdle break (the give); it no longer caps the ladder.
 
+### D-comedy. Comedy architecture — five running gags (principal directive 2026-06-09: "have a setup build over time")
+*The tone frame's two engines, implemented as recurring gags — each SEEDED early, ESCALATING across books, PAYING OFF on a heavy beat. The point: by III.6 every laugh has a paper trail, so the same devices that earned three books of comedy deliver the apex horror without the tone breaking. Phase-4: fold into the `comedy-register` card + per-chapter run-03 notes as PLANT/FIRE threads.*
+
+| # | Gag | Seed → build → payoff |
+|---|---|---|
+| ① | **Title collector** | Treats Westerosi slurs as earned cultivation epithets. Seed I.1 ("Dragonbane" = proud first title-unlock) → I.2 "Poison-Eater," collects + ranks them → pays off late: her "reputation" (all misunderstandings she was proud of) does her intimidation for her (factor / escape). Fail-upward on a résumé of slurs. |
+| ② | **Genre critic / trope-dodger** | Keeps a do-not-do trope list (I.1); rates her grimdark life like a jaded reader ("derivative, two stars") → dodges real dangers on genre principle (I.4 nopes out of Daemon = "enemy-to-lovers with a cousin, two tropes stacked") → capstone: refuses to dignify the betrothal as her Tragic Bride Arc; she quits the genre (= the ending). Right for the wrong reasons, every time. |
+| ③ | **The bestiary** | Cultivation journal: reagents/beasts get reverent entries, humans logged by function ("Hands," "Obstacle (large)," "Vendor"). Seed early Bk I → I.5 a solemn rite for the dead dragon while the executed servants never make the log (the dark undertow) → maid enters "Asset (hands/legs)," accrues crossed-out upgrades, finally earns a **name** (the emotional turn = a bookkeeping promotion) → apex: the one human she promoted from NPC is the tool that kills for her. ⚠ **Rule-22 guardrail:** the journal is a CHARACTER PROP / occasional running bit — NOT the prose narration register. Events are still narrated as concrete action; we *cut to* the journal for the joke, we do not narrate the world in ledger-voice. |
+| ④ | **Corporate euphemism** | Bk II startup → she thinks in margins/KPIs/stakeholders (a 7-y-o MBA) → creeps the vocabulary onto court politics → R2/R3 deeds arrive in HR-speak ("offboarding a contractor," "mitigating a single point of failure"); rule: *blander jargon = darker deed*, peaking at the apex ("the asset performed to spec"). |
+| ⑤ | **Misread indifference** (fuses both tone-engines) | Her genuine not-caring (she's leaving) reads to Westeros as VIRTUE (pious serenity) or MENACE (inhuman calm) — both wrong. Seed I.1 (the omen) → builds every book → pays off at the betrothal (takes the worst news without a flicker; court splits "what grace!" / "what ice!"; nobody guesses she has other plans). Her blankness writes its own legend. |
+
+**Per-beat payoff map (which gag fires where):** I.1 → ①+⑤ · I.4 → ② · I.5 → ③ (dark undertow) · II.4 → ⑤ + ② capstone · II.7/III.3 → ④ · III.6 apex → ③+④ converge (the named entry "performs to spec"; the kill files under her oldest maxim, *waste nothing, everything has a use*).
+
 ---
 
 ## E. Migration checklist (Phase 4–5) — NOT STARTED
