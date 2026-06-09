@@ -8,8 +8,10 @@ doc is the *decisions record*). Phase-4 (`/and-reoutline` migration) tokenizes t
 
 **Gael Targaryen** — a reincarnated **nerd** who went on a cultivation-novel bender right before dying,
 now crammed into a Targaryen infant · setting-blind (knows she's isekai'd; blind to *Westeros*) ·
-Jaehaerys I's long peace, **84 → ~95 AC**, Gael age 0 → ~11 · **POV locked-inside Gael** (one external
-interlude). Span: **HYBRID** — this series ends on the escape; the Dance is parked for a later book.
+**somewhat simple-minded — a monomaniac focused solely on cultivation and tropes** (her "genius" is the
+world's misread; the empire is incidental, and Wylla runs it on the ground) · Jaehaerys I's long peace,
+**84 → ~95 AC**, Gael age 0 → ~11 · **POV locked-inside Gael** (one external interlude). Span: **HYBRID** —
+this series ends on the escape; the Dance is parked for a later book.
 
 ---
 
@@ -39,13 +41,23 @@ interlude. Each chapter below carries: **Inside** (Gael) · **Reverse-angle** (�
 - **⑤ Misread indifference** — her not-caring reads as virtue (piety) or menace (inhuman calm); both wrong; her blankness writes its own legend.
 - **⑥ Self-audit ("am I the villain?")** — runs moral self-audits vs cultivation-novel ethics, clears herself on technicalities while being the realm's apex predator; pities the "real" villains.
 
-### Recurring straight-men (the foils that power "everyone scratching their heads")
-- **Maester** — horrified-fascinated; tries to *study* her, gets maneuvered into *helping*; writes unhinged Citadel letters nobody believes.
-- **Septa** — scandalized; flips demonic/saintly by the day; takes credit for Gael's "piety"; compliance-mask turned against her.
-- **Alicent** — the *tragic* straight-man: loves her, closest to the truth, most unsettled; every tender normal-mother read is hopelessly wrong.
-- **The maid** — the only relationship that EVOLVES, not loops: awe stays, competence grows; the one true (partial) read who stays anyway.
-- **Jaehaerys** — powerful man failing to control one small girl; files the failure under "useless."
-- **⭐ The Cassandra witness** — the guard/still-room boy who keeps *accurately* seeing the truth (the jewelry-biting, the wall-climbing) and is **never believed.** "The boy who cried demon" — twice, correctly. His arc: be right, be ignored, stop reporting, transfer as far from her as he can get. The human form of "truth surfaces, the explanation never does."
+### Recurring foil gags (audience-funny; every chapter)
+Beyond Gael's six, the foils carry their own recurring **audience-funny** beats (the reader laughs; the character suffers), each **escalating** rather than repeating:
+- **Alicent's "what the hell"** — every chapter and every interlude (in person, or via the reverse-angle channel when she's offstage): she frets at the wrong target — catastrophizing the harmless or serenely missing the catastrophe — climbing to the terminal WTH when she reads her own bestiary entry.
+- **The antagonist faces breaking** — Jaehaerys's control-plays dissolve into her freedom; Otto's schemes slide off a target he can't name; Barth's grand theories collapse one fact short. The environment comically, constantly failing to close its hand on a simple, obsessive child.
+
+### The cast that powers "everyone scratching their heads"
+**The antagonist is Westeros itself — three faces** (full profiles: `intake/character-profiles.md`). The world claims Gael through *institutions, predators, and minds,* and its horrors double as her cheat codes, so it is forever, comically failing to close its hand on her:
+- **Jaehaerys — the institutional face.** Powerful man failing to control one small girl; files the failure under "useless"; his disposal-betrothal is the clock — and the plan that frees her.
+- **Otto — the predatory face.** The asset-filer; reads the bestiary as a *weapon* and makes the maid the lever (the leak); the scheme that won't close.
+- **Septon Barth — the intellectual face.** Hand of the King (82–98 AC) and author of *Unnatural History* — the realm's one genius equipped to theorize what Gael is, who gets *closest to the truth and still misses;* the theory that collapses. Realm-tier to the maester's household-tier (he alone takes the maester's mad letters seriously, and even he fails).
+
+The straight-men the antics escape:
+- **Maester (Lorren)** — horrified-fascinated; tries to *study* her, gets maneuvered into *helping*; writes unhinged Citadel letters (which travel up to Barth).
+- **Septa (Aldith)** — scandalized; flips demonic/saintly by the day; takes credit for Gael's "piety"; hoist by her own endorsement.
+- **Alicent — the fretting straight-man** (and interlude narrator): loves her, closest to the truth, most unsettled; **babied Gael hard** (armed her with the egg; smothers her — the surveillance obstacle; blinds herself), and every tender normal-mother read is hopelessly wrong. Her "what the hell" is the per-chapter gag above.
+- **Wylla (the maid) — the convert.** The one relationship that EVOLVES: starts as the *what-the-hell* sane outsider, then is **converted by the madness** into a true-believing **junior sister cultivator** of the great sect they will found — a sect that never happens in the inevitable future (two girls, a boat, a dao that doesn't work). The tempering "proves" it to her. She stays.
+- **⭐ The Cassandra witness (Hobb)** — the still-room boy → watchman who keeps *accurately* seeing the truth (the jewelry-biting, the wall-climbing) and is **never believed.** "The boy who cried demon" — twice, correctly. Be right, be ignored, stop reporting, transfer away. The human form of "truth surfaces, the explanation never does."
 
 ---
 
@@ -133,6 +145,7 @@ interlude. Each chapter below carries: **Inside** (Gael) · **Reverse-angle** (�
 **Reverse-angle / the bestiary read by an authority:** the journal is **the one document that tells the truth about Gael.** Read accurately, it still can't yield "reincarnated cultivator," so it's misfiled into the nearest grimdark frame:
 - 😱 *Alicent (if she reads it):* breaks — finds **her own entry** ("Mother — sentimental, useful for egg-procurement, low threat").
 - 🧊 *Otto (RECOMMENDED reader):* doesn't recoil — sees a weapon, and the maid as the lever. **This is the leak.**
+- 🤨 *Septon Barth (the near-miss):* reads it as a *cosmology,* not a weapon — the one mind that brushes the truth (a child consuming dragon-essence; a source, not a pool) and **cannot connect it to the girl,** because the connecting step is a story he's never read. The closest the realm ever comes; his theory collapses one fact short.
 - ⚔ *Jaehaerys (if he reads it):* sees a kinslayer-in-waiting → accelerates the betrothal as *disposal.*
 - 😂 *Gael's lens:* not embarrassed by the content — annoyed at the **opsec failure** ("left my notes out — sloppy"), mildly offended they filed her as a *poisoner* (she's obviously a *cultivator*). Thereafter keeps a **decoy diary** of performed-normal-girl entries for them to find. (Relieves the straight-men; own running bit.)
 **Gags:** ③ (escalated to plot spine) · ④ + ⑤ (she's briefly *proud* her best asset got headhunted before remembering it's a crisis).
