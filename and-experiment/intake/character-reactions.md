@@ -34,7 +34,7 @@ Five reusable comic levers this produces:
    room reduced to changing locks at midnight, counting jars, re-reading a child's diary for cover-tells.
    (Jaehaerys, maester, Otto.)
 4. **Intimacy amplifies wrongness** — the closer the read, the more specifically, painfully wrong it is.
-   The tragic engine. (Alicent, the maid.)
+   (Alicent, Wylla.)
 5. **Right and punished for it** — accuracy earns ridicule; the only sane witness is the one removed.
    (The Cassandra witness.)
 
@@ -44,6 +44,42 @@ self-audit — through a lens that *deflates* Westeros because she's not playing
 react to the gags; they react to the *deflation* — to a child on whom their entire cultural apparatus
 (fear, faith, authority, love, strategy) **slides off.** That's the thing none of them can forgive or
 explain.
+
+---
+
+## Anti-sameness: vary the *tempo*, not just the cope (comedy-review correction, 2026-06-09)
+
+The unifying mechanism above is an engine, not a guarantee. A three-lens comedy review
+(`staff/reviews/comedy-angles-review-2026-06-09.md`) flagged its biggest risk: if every foil runs the
+*same* cope→incriminates shape at the *same* slow, cerebral tempo, the jokes rhyme, the reader learns the
+algorithm by the third foil, and the comedy flattens (worst in Book II). The fix is not fewer copes — it's
+a different **comic register/tempo** per foil, so the *rhythm* surprises even when the *shape* repeats:
+
+| Foil | Tempo / register | The joke is funny because it's… |
+|---|---|---|
+| Maester | **slow grind → metastasis** | the bureaucracy itself swells into the monster |
+| Septa | **one-way ratchet** | a single endorsement, amplified, tightens on her |
+| Jaehaerys | **cold deadpan symmetry** | two people congratulate themselves on one deal |
+| Hobb | **attrition / flattening** | the register goes dead by degrees — a build, not a loop |
+| Daemon | **silence / unspeakability** | the menace gagged; the funny is what he *can't* say |
+| Alicent | **tragic near-miss** | the closeness is the wound; slow and quiet |
+| Wylla | **affectionate deadpan** | the only un-deflatable read; warmth, not irony |
+| Otto | **chess-player sliding off** | strategy applied to a game that isn't being played |
+| Quint / banker / agent | **fast farce + a betrayed virtue** | a *quick* bit with a cost underneath |
+
+**Three standing rules the review added (apply everywhere below):**
+- **Escalation, not recurrence.** A gag that recurs at constant amplitude is a metronome, not a joke. Each
+  deployment must *raise the stakes of the next* (the Tanya ratchet). Today only the bestiary (③) and Hobb
+  truly build — every other recurring gag must earn its repeats by climbing.
+- **④ corporate-euphemism — blander as darker.** HR-speak-for-murder is the genre's most played-out bit;
+  run flat it is dead on arrival. The only fresh move is *escalation by under-statement* — the euphemism
+  gets **blander as the deed gets darker**, so the apex killing is reported in the most boring word in the
+  book (a line-item, "the account is closed"), not a colourful "offboarded." Never *state the rule*; let
+  the flattest possible word do the work.
+- **Every weightless mark gets a virtue or a love to betray.** Greed punctured costs nothing; *care*
+  punctured costs everything. The Book-III marks (Quint, banker, agent) each get one human thing the cold
+  resolution then violates — that is what turns a dial into a character. Distributing real *cost* across
+  these foils also de-leverages the curdle from resting almost entirely on the bestiary.
 
 ---
 
@@ -79,16 +115,18 @@ and "her little grace" in the same breath as "cursed."
 corpse practicing." Bloodied gums mouthing the egg "like she means to eat it." The omen frame snaps shut:
 *cursed.* Two nurses quit.
 
-**The tweak (uncomfortable for them · funny for the reader).** Make their fear **mundane, practical, and
-self-fulfilling.** They don't flee in gothic terror — they *negotiate the rota* in flat smallfolk
-register: won't take the night shift, swap away the dawn watch, find reasons to be elsewhere. The cosmic
-horror is processed as a **staffing problem**, and the staffing problem *thins the watch* — which is
-exactly the solitude a cultivator needs (because-Westeros: superstition → solitude, firing in I.1). The
-discomfort is theirs (they know something is wrong and can do nothing but back away); the comedy is the
-collision of apocalyptic dread with "I'd rather not, if it's all the same, Mistress." Cissa is the
-counter-note: her *incuriosity* is the loudest joke — she alone is unbothered, narrates the most damning
-afternoon as "good as gold the whole while," and is *wrong about the hours and doesn't know it.* Keep
-Cissa as the gentle, never-seeing watcher whose gap the plot moves through.
+**The tweak (uncomfortable for them · funny for the reader).** **Stage the cosmic horror as a *staffing
+problem* — one concrete beat, not a described register.** A new under-nurse takes the rota: she'll take
+the dawn watch but not the dead hours, on account of the babe. *What about the babe?* The babe watches
+her back. *All babes watch.* This one, she says — and then looks horrified at herself, because she
+doesn't know where the word came from and can't read — *takes notes.* She takes the dawn watch; she does
+not take the dead hours. Within a fortnight nobody takes the dead hours, and the rota has a hole in it
+shaped exactly like solitude, and not one of them ever says *cursed* out loud — because saying it would
+mean filing a report, and filing a report would mean staying late. (because-Westeros: superstition →
+solitude, fired on the page, not summarised.) Cissa is the counter-note: her *incuriosity* is the
+loudest joke — unbothered, she narrates the most damning afternoon as "good as gold the whole while,"
+*wrong about the hours and not knowing it.* Keep her the gentle, never-seeing watcher the plot moves
+through.
 
 **Channel:** gossip (😱).
 
@@ -126,7 +164,13 @@ research notes he's been keeping on her — his proudest instinct — constitute
 his own meticulous archive is the paper trail of an empire he's funding. The Valyrian-steel beat is his
 purest comic-horror: *steel that cannot be destroyed or reforged cannot have been eaten — so it wasn't
 — so where is it?* The contradiction breaks him a little, *in writing,* and he files the letter anyway.
-He never warms to her, never names the dependency, never stops needing her. The maester is the reader's
+Third turn (the *funny*, not just the clever — the syllogism above lands as comic-horror, so give it a
+laugh too): escalate the **bureaucracy itself** into the monster. His correspondence on her grows an
+index; the index grows an index; he drafts a cover-letter to explain the index and, read back, the
+cover-letter is the most alarming document of all. He files it under *Miscellaneous, Pending Review.* That
+folder becomes the largest object in the still-room. He requests a second cabinet and does not examine why
+he phrased the request as *urgent.* His coping mechanism literally eats the room. He never warms to her,
+never names the dependency, never stops needing her. The maester is the reader's
 in-world surrogate: the only one keeping an accurate record, and the proof that an accurate record
 changes nothing.
 
@@ -161,17 +205,18 @@ she's most alarmed she becomes most courtly — the polish climbs as the situati
 **Baseline reaction.** Scandalized. A girl who accepts doubled lessons *without a flicker of complaint*
 — "unnatural in a child." She files reports. The reports are right. Nothing happens.
 
-**The tweak (uncomfortable for them · funny for the reader).** **Deny her a stable verdict, then trap
-her in her own endorsement.** Gael's blank compliance (gag ⑤, misread indifference) gives the septa no
-footing: the *same serenity* reads as saintly piety one day and demonic calm the next, so she **flips
-daily** — and the flips are *public.* The screw: this makes **the septa** look unstable while **Gael**
-stays glassy and composed; the woman whose entire identity is composure is the one visibly cracking,
-next to a child who never does. Second, deadlier turn: she **takes credit for the princess's "piety"** to
-her superiors (the trance-as-devotion misread — because-Westeros: the Faith → cover). She has now
-*publicly vouched for* the thing she fears, and cannot later denounce the demon-child without retracting
-her own praise. She is hoist by her own endorsement. Keep her HARD fence: **she is genuinely right, never
-a fool** — the comedy is structural (the realm cannot hear her), the dignity is intact. The reader laughs
-and *also knows she was right.*
+**The tweak (uncomfortable for them · funny for the reader).** **Kill the daily flip (it's a metronome);
+stage one endorsement that ratchets her in.** Asked by the Queen whether the girl is devout, the Septa —
+choosing the kindest *true* thing she can say — answers that the princess achieves a stillness in
+contemplation she has not seen in grown septas. The Queen repeats it to the King; the King to the High
+Septon's envoy; by the time it comes back round it is *the princess kneels in trance for hours, untaught,*
+and there is talk of a visiting blessing. The Septa, who came to **warn** them, is now the realm's chief
+witness *for the defense* — and every alarming thing the girl does next is filed under the holiness the
+Septa personally vouched for. She cannot ring the alarm without first confessing she rang the bell for
+sainthood. She stops writing reports. She starts praying she was right the first time. (One statement,
+amplified through the realm's telephone game, tightening one notch at a time — the ratchet, not the
+oscillation; the misread *escalates* instead of repeating.) Keep her HARD fence: **genuinely right, never
+a fool** — the comedy is structural, the dignity intact; the reader laughs and *also knows she was right.*
 
 **Channel:** witnessed reactions + her reports (😱 ↔ 😇, flipping).
 
@@ -276,8 +321,11 @@ pities, and lock him out of his own story.** The realm's deadliest figure is red
 his head" — and *he cannot contradict it* (because-Westeros: scandal-burying launders the crime; a prince
 can't be admitted to a child's room). His discomfort is the **unspeakable diminishment**: he knows
 something took something from him, has no words for it, and every word he *could* say convicts him.
-Gael's lens makes it funnier and colder: she files him as a **②-dodge** ("enemy-to-lovers with a cousin,
-two tropes stacked — absolutely not") and feels guilty *only about the dragon,* never the man. The
+Gael's lens makes it funnier and colder: appraised by the realm's deadliest man, her whole reaction is a
+bored two-star review — *"enemy-to-lovers with a cousin, two tropes stacked, absolutely not"* — and she
+turns back to her work, guilty *only about the dragon,* never the man. (Stage the line as a reaction in
+the moment with a consequence; don't *label* it "a ②-dodge" — the played-out move is naming the trope,
+the fresh one is dismissing the apex predator as derivative and going back to your reading.) The
 investigators chase a *phantom master-thief* (locked-room theft, no thief, a *shrinking* timeline); the
 realm's theory is "a Faceless Man, a rival, a poison" — anything but four feet tall and a bit guilty.
 Daemon is the dark-comedy proof that in Westeros even the apex predator can be *unmade and gagged by the
@@ -393,6 +441,15 @@ named-entry promotion in the bestiary is *why she's endangered*; the tempering i
 kill*) long before she does. She is the spine's one **un-deflatable** read: the lens slides off everyone
 *except* her, and she stays.
 
+**The one the doc nearly forgot — the witness to the silence.** The comedy-register's deepest idea is that
+the tragedy is signalled by the *monologue failing to arrive* — the joke that can't be told. Wylla is the
+foil built for that moment: at the apex, when Gael's breezy register finally *doesn't come,* Wylla is the
+only person who has known her long enough to notice the absence — not the deed, the *quiet.* She doesn't
+understand it; she registers that the noise that always fills the space is gone, keeps her face still, and
+that stillness is the reader's cue. She is the seismograph for the break the whole series is built toward
+— the un-deflatable read is also the only witness to the deflection finally failing. (Seeds her III.5/III.6
+weight; gives the apex a foil, instead of seeding the jokes and forgetting to seed the silence.)
+
 **Channel:** her own POV-adjacent observations (🤨, choosing not to follow them).
 
 ---
@@ -410,7 +467,17 @@ are correct.** The signature is genuine. He did not know what he was signing for
 files nothing, *because the records are correct.* The discomfort is total and entirely self-administered;
 the comedy is the professional's horror at being defeated by his own impeccable bookkeeping. He is the
 foil for the septa: she was right and fought with authority and lost; he is right and is defeated by
-*dependency.* Two defeat mechanisms; both work.
+*dependency.* (Two defeat mechanisms, deliberately *different in tempo* — the septa is a fast public
+ratchet, the maester a slow private grind — so the Book-II foils don't rhyme.)
+
+**The source-reveal turn (the empire had no purpose).** When the supply is cut and Gael *doesn't* weaken
+(II.6: the egg was a reactor, not a battery — she never needed any of it), the bleakest, funniest
+cope-incrimination lands on the maester, the one man who can read the *whole* ledger: it now says the
+six-year network he half-built served **no purpose** — a multinational of poison and paper assembled to
+feed a hunger that was always self-fed. He checks it twice (of course he does); the books are correct; it
+was all unnecessary. He cannot decide whether that makes it better or worse, and files nothing. (Fixes the
+logic gap where the source reveal lived only in Gael's head — the acquisition-empire's punchline must
+incriminate a *coper,* not just deflate privately.)
 
 **Channel:** the long pause; the silent review.
 
@@ -459,12 +526,16 @@ knowing a game was on.
 a figure of speech; it is not one) and assume they're dealing with a clever commoner. Prepared for a
 grizzled factor in a back room; get an out-managed afternoon instead.
 
-**The tweak (uncomfortable for them · funny for the reader).** **Professional pride punctured by a
-child, then *complicit in pretending it didn't happen.*** A banker out-negotiated by a girl will not
-*tell* anyone — admitting it costs him more than the seventeen-percent it cost his purse — so the marks
-**launder their own humiliation,** which protects Gael's veil for free (because-Westeros: their dignity
-needs her to stay invisible). The comedy is the polished adult deciding the safest story is the one where
-the child wasn't really running it. Discomfort: a man recalculating his own competence on the walk home.
+**The tweak (uncomfortable for them · funny for the reader).** **Run the cope to its monstrous, funny
+conclusion — don't stop at "he won't admit it."** (Child-out-negotiates-merchant is the most done beat in
+business-isekai; the only way through is to *overshoot* it.) The banker walks home having concluded, on
+reflection, that he was *not* out-negotiated by a child — absurd — but had generously *mentored* a
+promising factor's girl, and resolves to mention the kindness. By the third telling it is a kindness he
+did; by the tenth, the cornerstone of his reputation for nurturing local talent. He endows a scholarship.
+The scholarship's first recipient, through four layers of paper, is Gael — who logs the windfall in the
+bestiary under **"Vendor (self-funding)."** The mark's face-saving story becomes a real institution that
+*funds her*: the laundered humiliation, the sexism-veil, and the bestiary land in one stroke, instead of
+settling into "a man recalculating his competence on the walk home."
 
 **Channel:** their figure-of-speech praise (🤨, meant literally without knowing).
 
@@ -498,14 +569,19 @@ combination spells profit. His foible: he has *no idea he's poking a dragon-eati
 
 **Vibes.** Smug, escalating, aggressive as he senses he's close.
 
-**The tweak (uncomfortable for them · funny for the reader).** **Pure dramatic-irony deflation:** he is
-"certain he's the smartest man in the room" — *and he is not the smartest thing within fifty feet of the
-maid.* The reader holds the gap the whole scene; his confidence rises as his danger rises, in lockstep.
-Gael handles him **colder than R2/R3** and files it as **④ corporate euphemism** — "a vendor dispute,
-resolved"; he is "let go," "offboarded," never seen again, *no one can say quite why.* The discomfort
-(his) is brief and total; the comedy (ours) is the long fall before it — a man negotiating hard against a
-counterparty whose actual nature would stop his heart. His ① cameo: by now her *reputation* does some of
-the intimidating before she lifts a finger.
+**The tweak (uncomfortable for them · funny for the reader).** **Give the dial a heartbeat, then stage the
+cold the heartbeat makes possible.** Pure dramatic-irony deflation ("he's certain he's the smartest man in
+the room; he is not the smartest thing within fifty feet of the maid") is the *most* generic beat in the
+genre — so make Quint not purely greedy: a cautious man clawing a family out of debt, and the lean on the
+maid is the one reckless gamble of an otherwise-careful life, so the resolution violates a *love,* not just
+a vice. The staged beat: he leans across the table and explains, savouring it, exactly how badly the
+little maid will suffer if his cut doesn't double. Gael listens with the patient courtesy of a woman
+watching a man fill out his own incident report — doesn't threaten him, just asks, mildly, which of two
+suppliers he'd recommend for quicklime, takes the tip, thanks him sincerely, notes it in a small book.
+(⑥ fires silently: she was *polite,* so she's not the villain.) The ④ payoff obeys the blander-as-darker
+rule — not a colourful "offboarded" but the flattest word available: *the account is closed.* Hobb, three
+streets over and off-duty, will later decline to report the smell. The comedy (ours) is the long fall;
+because we were shown the family, the laugh costs us the comfort of thinking the mark deserved it.
 
 **Channel:** the factor's certainty (😂) → his quiet ruin (😱).
 
@@ -516,13 +592,15 @@ the intimidating before she lifts a finger.
 **History & vibes.** Commissions a custom ocean-capable vessel for a phantom buyer through too many
 intermediaries — **delighted by coin that clears, incurious about whose it is.**
 
-**The tweak (uncomfortable for them · funny for the reader).** The benign mirror of the factor: where the
-factor's greed makes him *pry* (and die), the agent's greed makes him *not pry* (and prosper).
-because-Westeros: nobody imagines a child, so the impossible buyer is simply *good business.* The comedy
-is the cheerful professionalism of a man building a little girl's getaway ship and congratulating himself
-on a discreet client. No discomfort for him — he's the control case proving the others' discomfort is
-*self-inflicted by curiosity.* (He is the reader's reminder that the realm's incuriosity is the
-real cheat code.)
+**The tweak (uncomfortable for them · funny for the reader).** **Give the incuriosity a virtue to corrode**
+(a "control case" is an essay paragraph, not a character — so make him one). The agent is a craftsman who
+genuinely *loves* this commission — the most beautiful hull of his career — and never lets himself ask who
+it's for, because asking would mean not building it. The benign mirror of Quint: the factor's greed makes
+him *pry* (and the account is closed); the agent's love-of-the-work makes him *not pry* (and prosper). The
+comedy stays cheerful — a man congratulating himself on a discreet client while he builds a child's escape
+from a forced marriage — but now it *costs:* when the realm later calls him complicit, he'll never know
+whether his finest work was a good deed or an unwitting crime. (because-Westeros: nobody imagines a child,
+so the impossible buyer is simply good business — but the joke now has a body under it.)
 
 **Channel:** his cheerful discretion (🤨).
 
@@ -534,14 +612,15 @@ real cheat code.)
 the Red Keep." Mothers warn children. They can't catch it, can't map its routes, add patrols, achieve
 nothing.
 
-**The tweak (uncomfortable for them · funny for the reader).** **Westeros benefits from being haunted by
-a truant princess.** The "ghost" is *great for discipline* — the watch is sharper than it's been in
-years; the captain is *commended.* The comedy is the realm extracting genuine value from the wrong
-explanation: they've improved themselves chasing a phantom that is a bored child climbing walls. Reprise
-the **Cassandra witness** here as a watchman who *actually saw her* and is ignored — and, having learned
-his Book-I lesson, **doesn't bother to report it.** Discomfort (the watch's) is the low-grade unease of a
-post that knows it's being beaten and can't say how; comedy is the commendation pinned on top of the
-failure.
+**The tweak (uncomfortable for them · funny for the reader).** **Collapse the section *into* Hobb — make
+the institution rewarded for not listening to its one honest man** (the standalone "lovable menace
+improves the guards" bit is cozy and weightless; routed through Hobb it pays off two books). The "ghost of
+the Red Keep" is great for discipline; the watch is sharper than it's been in years; the captain is
+*commended* — and the captain commended is the very one who, years back, mocked Hobb's report and had him
+transferred. The system metabolises its own deafness into a virtue: decorated for the alertness it only
+has because it refuses to hear the man who could explain it. Hobb, now on that same watch, sees the
+rooftop figure plainly and **says nothing** — he learned. The comedy (a commendation pinned on a failure)
+now carries the full weight of his arc — *truth surfaces; the explanation never does.*
 
 **Channel:** the ghost legend (😂) + the Cassandra silence (🤨).
 
@@ -549,13 +628,16 @@ failure.
 
 ## The escape post-mortem — the realm *(III.6)*
 
-**The tweak.** The realm's final theory of the escape is **incoherent on purpose**: survivors' stories
-don't agree; it's quietly filed as an embarrassment no one wants explained. The realm reaches for "a
-foreign prince, a god, a conspiracy" — *anything* but "she built a boat and left," because **a princess
-with agency is the one thing they cannot imagine** (sexism: the last cheat code). The discomfort is
-institutional (a great house preferring a comfortable lie to an unbearable truth); the comedy is the
-*scale* of the cope — an entire realm's worth of motivated reasoning deployed against a thirteen-year-old
-with correct paper.
+**The tweak.** **Stage the cope as three documents, not a summary** (and don't simply re-run the I.5
+"anything but the truth" beat at series scale — escalate it into specific, named absurdity). The inquiry
+produces three reports. The first concludes a Faceless Man was hired by a rival house, names the house,
+and recommends war. The second concludes the princess was abducted by a foreign prince and is, even now, a
+hostage requiring rescue — funds are allocated. The third, by a junior clerk who simply read the harbor
+ledgers, concludes that a ship was commissioned, paid in cleared coin over three years, and sailed on the
+morning tide with two passengers, one of them small. The third report is marked *insufficiently serious*
+and not entered into the record — because by then the realm has decided it *prefers the war.* (because-
+Westeros: a princess with agency is the one thing it cannot imagine, so the boring true report is binned
+for being boring — sexism as the last cheat code, staged, not stated.)
 
 ---
 
@@ -614,8 +696,20 @@ These reactions are written to the **live span-A spine**; the warehouse cards ar
   (`the-factor` card exists but is span-B; re-derive as Lothar Quint.)
 - **Still role-labels by design (minor marks — no name required):** the Braavosi banker / buyers, the
   shipwright's agent, the Watch captain. Name on demand if any graduates to a recurring beat.
+- **Gag ① (title-collector) is POV-layer, not a foil reaction.** Its real joke is the *ranking* — Gael
+  collecting slurs like gacha pulls, disappointed by a weak epithet, coveting a better one — which lives
+  in her narration, not in a foil's reaction. The per-arc roll-up should not credit ① as a foil beat;
+  stage the ranking in Gael-POV prose, and pay off "the reputation does the intimidating" only after the
+  reader has watched the collection grow. (Likewise note: ⑥ self-audit is under-used — fold it in wherever
+  cheap, as in the Quint "polite, so not the villain" beat.)
 
 *Authored 2026-06-09 as a companion to `intake/spine.md`. Implements the spine's reverse-angle device as
 per-character reaction design: history · foibles · vibes · baseline · the tweak (their discomfort = the
 reader's comedy). Built on the coping-loop-that-incriminates-the-coper mechanism; keyed to the six gags
 and the because-Westeros cheat-code table.*
+
+**Revised 2026-06-09** after a three-lens comedy review (`staff/reviews/comedy-angles-review-2026-06-09.md`):
+added the tempo map (anti-monotony); staged the previously-asserted beats (nursery, septa, banker,
+post-mortem); gave the Book-III marks a virtue to betray (Quint, agent); added the apex-silence witness
+(Wylla) and the source-reveal cope-incrimination (maester); applied the ④ blander-as-darker and
+escalation-not-recurrence rules; demoted gag ① to POV-layer.
