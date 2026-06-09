@@ -1,0 +1,308 @@
+# CHARACTER PROFILES — the four load-bearing roles
+
+**Companion to `intake/spine.md` + `intake/character-reactions.md`.** Full profiles for the four roles
+that carry the series: **protagonist** (Gael), **supporting protagonist / deuteragonist** (Wylla),
+**antagonist** (Otto Hightower — the active opposing intelligence; Jaehaerys is the structural secondary,
+noted below), and the **interlude narrator** (Alicent).
+
+Written to **live span-A canon** (b.84 AC · Jaehaerys father · Alicent mother · escape ~95 AC · the maid =
+Wylla). These are the live-canon source for the Phase-4 card derivation; the warehouse cards are stale
+(Saerys / Viserys-father / span-B) and will be re-derived from these. AU-seating caveats (Otto's age;
+Alicent as Jaehaerys's queen) are flagged per-profile and inherit the worksheet's Phase-4 cleanup.
+
+---
+
+## 1. GAEL TARGARYEN — *protagonist*
+
+**Role:** POV-locked protagonist (one external interlude). The deflecting lens the whole comedy runs
+through. Age 0 → ~11 across the three books.
+
+### Identity / history
+Youngest daughter of King Jaehaerys I and Queen Alicent, born **84 AC** — canon's "Winter Child" slot,
+here **reincarnated and entirely different from canon Gael.** Her previous life was a **nerd who went on a
+cultivation-novel bender right before dying** — two distinct past-life layers that both stay load-bearing:
+
+- **The nerd** — broad, general modern competence (chemistry, accounting, business logic, basic physics).
+  This is the *unfair advantage* that founds the Book II startup. Quiet, real, reliable.
+- **The recent cultivation bender** — a *fresh enthusiasm,* not a lifelong identity. It's why she instantly
+  recognizes magic, tries to cultivate, and thinks in genre tropes — and why she gets the cosmology
+  **wrong.** She is an over-confident new fan running on recently-binged novels.
+
+She is setting-blind to Westeros (no houses, no factions, no war) but **genre-aware** (knows she's
+isekai'd; thinks in cultivation tropes). She recognizes the gift-egg radiates *something,* concludes she's
+reincarnated, and decides to cultivate; in I.1 the egg **hatches,** she kills the hatchling and eats a
+claw. The egg was a **reactor, not a battery** — she has generated her own qi since birth (a fact she
+doesn't learn until II.6). Her power is real; her *explanation* for it is wrong. The clock stays broken.
+
+### Voice
+Breezy, deflecting **cultivation-monologue** over an ASOIAF substrate — grandiose, precise, and
+wrong-about-everything-except-the-chemistry. She narrates as if dictating to posterity; she does not
+register dramatic irony, the reader does. The register *deflates* grimdark Westeros: dynastic doom is a
+logistics footnote, the betrothal is "super not ideal; also I'm bailing, so — whatever."
+
+**Hard voice rule (Rule 22):** she narrates the world in **concrete physical/human action,** never in
+ledger/accounting register. The bestiary is a *prop we cut to for the joke,* not the prose voice. Coldness
+and control-instinct survive as *character,* not as bookkeeping vocabulary.
+
+The six gags live in her POV: ① title-collector (the *ranking* — slurs as earned epithets, disappointed by
+a weak one), ② genre-critic/trope-dodger, ③ the bestiary (humans logged by function — the one document
+that tells the truth about her), ④ corporate euphemism (blander as darker), ⑤ misread indifference, ⑥
+self-audit ("am I the villain?" — clears herself on technicalities).
+
+### Wants
+The **two desires,** which only the ship aligns: **infinite resources** (the appetite for things that
+radiate) + **absolute solitude** (to be beyond every claim — marriage, dynasty, the Faith). Beneath both:
+to never be *claimed.* (Lesbian; modern-revolted by the incest custom; gut-revulsion at the Faith as
+gender-role enforcer.)
+
+### Foibles / the engine underneath
+- **Greed cosplaying as survival.** The frantic acquisition was never necessary (source-not-pool); she
+  reframes it instantly ("expanding the source is still valuable") and keeps going. The acquisition drive
+  loses its excuse and survives anyway.
+- **The register is grief-armor.** The cultivation cosmology is the scar tissue of someone mortality already
+  took everything from once. Dropping the register would mean going back to that — so it never drops. (In
+  span-A it cracks once, at the apex silence — witnessed by Wylla.)
+- **Files humans by function** and clears herself on technicalities — the apex predator who pities the
+  "real" villains for being more obviously evil than humble her.
+- **The one thing the cauldron can't refine:** Wylla. The bond she cannot file.
+
+### Hard fences
+1. **Setting-blind** — no meta-knowledge of Westeros, houses, factions, or the war; reads all of it as
+   cultivation cosmology.
+2. **Never martial** — no blades, no combat skill; her domains are poison, logistics, and correct paper —
+   the unwatched ones.
+3. **The clock stays broken** — cultivation is WRONG; what works is (a) genuinely magical Westeros
+   materials and (b) mundane mithridatism. Every fake effect fails on schedule; she reads each as a
+   breakthrough.
+4. **Can-spend-but-won't** — the power to spend qi outward is real and growing, but she refuses on
+   principle after R1. **Exactly three outward spends, all defensible:** I.1 (infant survival reflex),
+   I.5 (the demonic drain she recoils from + rejects), III.5 (the deliberate gift — tempering Wylla). **No
+   relapse at the apex** (the apex cost is displaced onto Wylla).
+5. **No dragon** — she ate it; never bonds, never rides.
+6. **Idiot-savant boundary** — catastrophically incompetent at court politics / her own marriage-market
+   position / reading social rooms; quietly lethal only in the unwatched domain. A competent
+   power-fantasy protagonist is a structural violation.
+
+### Arc across the books
+**I:** R0 (the kill) → the heist-method (Lock I) → the cage revealed → the demonic drain (R1) and the
+pivot from reactive thief to **operator.** **II:** the scholar-princess cover → the startup empire
+(through Wylla) → the world map → the betrothal clock → the bestiary leak → the source reveal (it was all
+unnecessary) → "nothing here is mine" → the ship ordered. **III:** the commission → the excursions →
+Quint (R3) → the deadline → the tempering (the one gift; she chose to be weaker) → the narrow escape (the
+apex; she keeps her hands clean only by putting the cost on the girl she loves). Ends free, on the ship,
+with one person — and the ledger she won't keep, which the reader does.
+
+### Comic function
+The constant every foil reacts to. They don't react to her gags; they react to the **deflation** — to a
+child on whom their entire cultural apparatus (fear, faith, authority, love, strategy) **slides off.**
+
+---
+
+## 2. WYLLA — *supporting protagonist / deuteragonist*
+
+**Role:** the warm thread; the one relationship that **evolves** rather than loops; the only **un-deflatable
+read.** The second girl on the ship. *(Name = working pick; swappable — alts Pia / Nella / Maris.)*
+
+### Identity / history
+Smallfolk of King's Landing, a Keep servant family. Assigned to Gael's household in the post-Daemon
+reshuffle (**II.1**), mid-teens at first. Begins as an errand-runner ("bring me this herb, this sample,
+this book") and becomes — *without quite noticing* — a businesswoman: she walks the market, talks to
+buyers, recruits a cousin, makes decisions, and **owns the operation on the ground.** By Book III she
+carries the ship's secret to the shipwright's agent, covers Gael's night excursions, faces Lothar Quint,
+is tempered, and walks out of the Keep forever. She is the bravest person in the story and she has no
+cultivation, no past life, no sealed paper.
+
+### Voice
+Plain, warm Common Tongue. **Deadpan management of impossible things as if they were logistics.** Awe
+underneath, never spoken. Where the nursery chorus *can't* see, Wylla *won't* — her register is the flat
+competence of someone who has decided not to ask.
+
+### Personality / the central foible
+**Deliberately incurious as a survival skill.** She learns early that wondering about the princess is
+dangerous, so she gets *better at the work* and *more disciplined about not asking* — the gap between her
+growing acuity and her trained blindness is her whole comic engine. Her coping line: **"some doors you
+don't open."** She notices the princess never eats, never tires, sails through a winter fever that fells
+half the Keep — and *decides not to think about it.* The discomfort is the **active labor of
+not-knowing**; the comedy is her graciously accepting a powerful friend's strange gift "without reading
+the label."
+
+### Wants
+At first: to do the work well and keep her place (and her neck). Across II–III: **Gael** — pre-romantic in
+text; the reader infers the future. The specific fury when someone threatens her; the way Gael's absence
+would hit harder than a lost supply line should.
+
+### Fears
+What her princess *is* (briefly, at the tempering — warmth pouring in, a glow under the skin, her body
+*changing*). The danger of knowing. The drop (every excursion bets her life; helping a princess flee a
+royal betrothal is treason — death, not exile — and she does it anyway).
+
+### Key relationships
+- **Gael** — the bond the cauldron can't refine. In the bestiary, Wylla is the one entry **promoted from
+  "Asset (hands/legs)" to a *name*** — the emotional turn rendered as a bookkeeping upgrade, and the very
+  anomaly Otto spots (the leak). She is **the one Gael spends power on** (III.5), **the witness to Gael's
+  register-silence** at the apex, and **the one who kills** the pursuer to get them out.
+- **Her cousin** — recruited into the startup; the operation's growth made flesh.
+- **The exploiter** (II.5/II.7) — squeezes her as the lever; Gael's R2 removes him.
+- **Lothar Quint** (III.3) — leans on her as the visible end of the payment chain.
+
+### Hard fences
+1. **Smallfolk POV** — no cultivation knowledge or vocabulary; she *won't* look (vs the nursery who
+   *can't*). Tempered ≠ cultivator — she's made durable, not a practitioner.
+2. **Pre-romantic in text** — the bond is the person; the future is the reader's to infer.
+3. **She stays** — the one true (partial) read who does not leave. The relationship's awe is constant; her
+   competence is what grows.
+4. **The apex cost lands on her** — she boards a killer; Gael's hands stay clean because she put the cost
+   on Wylla. She survives (epilogue is fixed: two girls on the ship).
+
+### Comic function & the silence
+Affectionate deadpan — the lens slides off everyone *except* her. She is also the foil the design nearly
+forgot: **the witness to the silence.** At the apex, when Gael's breezy register finally *doesn't arrive,*
+Wylla is the only one who has known her long enough to notice the *quiet,* keep her face still, and let
+that stillness be the reader's cue. The un-deflatable read is also the only witness to the deflection
+finally failing.
+
+---
+
+## 3. OTTO HIGHTOWER — *antagonist* (the active opposing intelligence)
+
+**Role:** the strategic reader; the **bestiary leak**; the apex pursuit-vector. The recurring human
+antagonist across the books. *(Structural secondary antagonist: **Jaehaerys** — see note. AU-seating
+caveat: canon Otto b.77 AC would be young in span-A; here he is the Otto-archetype Hand-class operator —
+Phase-4 to settle seating/name.)*
+
+### Identity / history
+The **asset-filer.** A Hightower strategist / Hand-class operator at Jaehaerys's court — the one adult who
+looks at people and sees *function and leverage.* He is never the most alarmed person in the room, which
+is exactly why his alarm matters when it comes.
+
+### Voice
+Quiet, exact, unhurried. **Strategic framing** — every actor is a piece with a motive he can model. He
+states conclusions plainly and rarely raises his voice; certainty is his register.
+
+### Personality / the foible that makes him funny and dangerous
+Cold, clear-eyed, and **proud of seeing clearly.** His coping mechanism is the strategic frame; his foible
+is that **his accurate read is still a misfile.** Reading the bestiary, he does *not* recoil — he sees a
+weapon, and clocks the single anomaly in a ledger of pure function (the servant entry quietly upgraded to
+a name). He can reach "cold cataloguing intelligence, poisoner, **Maegor-in-the-making**" — the nearest
+grimdark frame — but **never** "reincarnated cultivator," because that frame does not exist in his world.
+*The most damning evidence still never yields the truth.* His specific discomfort: the only clear-eyed man
+**feels himself sliding off** — he's playing chess against a player who isn't in the game, and a
+strategist's worst feeling is *an opponent whose objective he cannot name.* The decoy diary Gael plants
+leaves him unable to decide cover-or-genuine; he wins every move and loses the game without knowing a game
+was on.
+
+### Wants
+Control. To **contain or deploy** the weapon he's identified; advantage for his house/faction. Where the
+other foils want their world to stay legible, Otto wants to *operate* the illegible thing.
+
+### The antagonism (what he actually does)
+- **II.5 — the leak.** Reads the bestiary accurately; identifies Wylla as **the single lever that moves an
+  unmovable girl**; begins pressuring her.
+- **Arms the cage.** Confirms to Jaehaerys "useless *and* dangerous" → the king **accelerates the
+  betrothal as disposal.** The cage tightens *because the truth half-surfaced.*
+- **III.6 — the apex.** Connects the vanished factor (Quint), the ship payments, and the maid's movements,
+  and moves to intercept. **The pursuer Wylla kills is Otto's man.** His accurate-but-wrong read is what
+  forces the one death that lands on the person Gael loves — so the apex cost traces straight back to the
+  one warm thing she allowed herself (the name in the bestiary). *The one warm correction dooms the person
+  it warmed.*
+
+### Key relationships
+- **Gael** — the weapon he can read but cannot name or operationalize. The well with no bottom *of the
+  kind he knows.*
+- **Wylla** — the lever. The whole tragedy is that he's *right* about her importance and *wrong* about why.
+- **Jaehaerys** — he arms the king's disposal; the two cold men converge on the same wrong file.
+
+### Hard fences
+1. **He never reaches the truth.** The most accurate reader in the realm still misfiles her into the
+   nearest grimdark frame. This is non-negotiable — it preserves the engine.
+2. **Not cartoonishly evil** — a competent strategist *correctly* alarmed; the horror is that clarity in
+   his hands is more dangerous than panic.
+3. **AU-seating** to settle in Phase-4 (age/name); keep the *archetype* (the asset-filer Hand-class
+   operator) regardless of how the seating resolves.
+
+### Structural note — the two antagonists
+**Otto = the active human antagonist** (schemes, leaks, pursues). **Jaehaerys = the structural
+antagonist / the cage itself** — the cold control-authority whose **disposal-betrothal is the clock** that
+drives Books II–III, and whose "files her under *useless*" is the misread that frees her even as it cages
+her. If you'd rather center Jaehaerys as *the* antagonist, the profile pivots cleanly — say the word and I
+build him out at this depth. (His foible: governance — every Talk "works," so his competence guarantees he
+never looks again.)
+
+---
+
+## 4. ALICENT — *the interlude narrator* (the one camera outside Gael's head)
+
+**Role:** Gael's mother and queen; the **tragic straight-man**; the POV of the single external-POV chapter
+(the Interlude between Books I and II). *(AU-seating caveat: Alicent as Jaehaerys's queen is the deliberate
+span-A AU per GUARD-4; canon she is Viserys I's queen — Phase-4 cleanup. The warm-cage energy is
+reassigned to her from the stale `viserys-i` card.)*
+
+### Identity / history
+Queen to Jaehaerys; mother to Gael. The one who **bullied past Jaehaerys's misogyny to give the sickly
+babe the dragon egg** (the inciting gift — GIFT:ALICENT; she fought *for* the egg). Her love is real,
+boundless, and structurally a leash: she gives Gael what she finds *charming,* never what she *needs,*
+because she never asks.
+
+### Voice — and the voice *as narrator*
+Warm, anxious, articulate, observant. Her misreads are **better written than the truth** — she is a fine
+narrator of a child who isn't present ("She's contemplative. A philosopher, perhaps." "A refined palate
+and a scholar's curiosity."). **As the Interlude POV,** her literate maternal voice carries the *chill*
+the farce has been sitting on top of — the comedy goes quiet, and the prose is hers, not Gael's
+cultivation register. This is the chapter that **recontextualizes the reader** (we rooted for Gael inside;
+from outside she is *unnerving* — too still, too perfect, eyes that don't track like a child's).
+
+### Personality / the central foible
+Her pride and her wound are the same: **she is a good mother.** Her coping mechanism is **a mother's
+narrative,** authored over the top of the daughter who is actually there. She is **closest to the truth
+and therefore the most unsettled** — and she keeps choosing the story over the evidence. The signature
+beat: a **near-miss per arc** where she gets *almost all the way there* (the dead dragon nobody can
+explain; the performed politeness) and **flinches away,** because the alternative is unbearable. The
+flinch is the part that hurts.
+
+### Wants
+A daughter who receives her love in the currency she's offering it. To protect Gael — specifically from
+the *cheap* betrothal (a princess sold to a minor lord to buy his loyalty: beneath her; a revelation of
+what Gael is *worth* to Jaehaerys). And, beneath it all, **to not see what she half-sees.**
+
+### Fears
+What Gael is. Losing her — to something that has no name. Being *right* about the dread.
+
+### The Interlude's structural job
+1. **Recontextualize** — from outside, Gael is frightening; the reader's relationship to the protagonist
+   is reset.
+2. **Arm Book II** — Alicent learns (and the reader learns through her) that **Jaehaerys is arranging the
+   pacification betrothal to Lord Errold Slate of Blackpool.** *The clock starts.*
+3. **The rift** — utility (Jaehaerys) vs affection (Alicent) over how to handle their daughter.
+
+### The bestiary apex (if she reads it)
+She **breaks.** The gut-punch-laugh: she finds **her own entry** — *"Mother — sentimental, useful for
+egg-procurement, low threat."* The best love in Gael's life, filed under function.
+
+### Hard fences
+1. **She never reaches the truth either** — her love is the most poignant misread in the cast; not a fool,
+   the *tragic* straight-man.
+2. **The Interlude is the one external-POV chapter** — POV is otherwise locked inside Gael. Alicent does
+   not become a second running POV.
+3. **Arc-question (open slot): does she ever *act* on what the Interlude knows?** Recommended: **she
+   knows and does not act** — the love that sees and still cannot move. (Confirm or override.)
+
+### Comic function
+Tragic near-miss — intimacy amplifies wrongness. The bathos of maternal pride attached to monstrous facts;
+the discomfort of a mother loving a daughter she is losing to something she cannot name.
+
+---
+
+## Cross-profile consistency notes
+- **The bestiary is the spine connecting all four:** Gael writes it (③); Wylla is its one *named* entry
+  (the warm anomaly); Otto reads it and leaks (the antagonism); Alicent finds *her own* entry (the
+  gut-punch). One prop, four roles.
+- **The apex (III.6) closes the quartet:** Otto's accurate-wrong read forces the kill; Wylla performs it
+  and witnesses Gael's register-silence; Gael keeps her hands clean by spending the person she loves;
+  Alicent (offstage) is the love that could not move. The one warm correction dooms the person it warmed.
+- **Phase-4 card derivation:** these four profiles supersede the stale warehouse cards
+  (`saerys-targaryen` → Gael; build Wylla; `viserys-i` warm-cage DNA → Alicent + the cold-authority DNA →
+  a new Jaehaerys card; build Otto to the live canon). Carry the foible/voice DNA, reseat the canon facts.
+
+*Authored 2026-06-09. Live span-A canon. Sources: `intake/spine.md`, `intake/character-reactions.md`,
+`reconciliation-worksheet.md` §D. Antagonist centered on Otto (active) with Jaehaerys flagged as the
+structural secondary; interlude narrator = Alicent. Two profiles carry AU-seating caveats for Phase-4.*

@@ -215,13 +215,37 @@ for the Dance.)*
 
 ## Open slots (creative-fill — see worksheet)
 ~~maid's name~~ → **Wylla** · ~~the Northern betrothal lord~~ → **Lord Errold Slate of Blackpool** ·
-R2 method (II.7) · R3 method (III.3) · Helaena's role · Alicent's arc (does she ever act on the
-interlude's knowledge?) · the apex specifics (who the maid kills; how discovery happens).
+~~R2 method (II.7)~~ · ~~R3 method (III.3)~~ · ~~the apex specifics (who the maid kills; how discovery
+happens)~~ → **all resolved 2026-06-09 (below)** · Helaena's role · Alicent's arc (does she ever act on
+the interlude's knowledge?).
 
 **Names assigned 2026-06-09** (primary cast — full rationale in `intake/character-reactions.md` §Appendix):
 the maid → **Wylla** · the Septa → **Septa Aldith** (Gael's POV still says "the Septa") · the Cassandra
 witness (still-room boy → watchman, one recurring figure) → **Hobb** · the greedy factor → **Lothar
 Quint** · the Northern betrothal lord → **Lord Errold Slate of Blackpool**.
+
+### Resolved creative-fill (2026-06-09)
+- **R2 method (II.7) — the first death she *means*.** Gael's first *premeditated* human removal, executed
+  entirely through the apparatus — the still-room (mithridatism/pharmacology turned outward) + the
+  maester's supply chain + a bill of exchange routed through the network — producing a death that reads as
+  natural (a "lingering flux" that doesn't lift). Colder than the Daemon drain because it is *chosen and
+  planned,* not a survival reflex. Target: the **exploiter** who leaned on Wylla (a Hightower client /
+  court factioneer), NOT the oblivious family member (who is unaddressable — that's the point). She tells
+  herself it protects the apparatus; the reader sees it's for Wylla. Filed ④ "a vendor dispute, resolved";
+  ⑥ clears her ("removing an impurity to the sect's qi-field is hygiene, not murder").
+- **R3 method (III.3) — the casual repeat.** Lothar Quint, handled colder than R2 precisely by being
+  *casual:* she takes his quicklime tip first, thanks him, then — ④ blander-as-darker — *the account is
+  closed.* Premeditated, deniable, barely breaking stride. The escalation is in *register,* not gore:
+  reactive animal-death (R1) → premeditated human death (R2) → casual human death (R3) → outsourced to
+  Wylla (apex).
+- **The apex (III.6) — discovery + who the maid kills.** Discovery pays off the **bestiary leak**: **Otto**
+  — who spotted the one anomaly (Wylla's *name*) and has watched her as the lever — connects the vanished
+  factor (Quint), the ship payments, and the maid's movements, and moves to intercept. He never reaches
+  "cultivator"; his accurate-but-wrong read is enough to *act.* The pursuer **Wylla kills** (tempered,
+  able) is **Otto's man** — so the apex cost traces straight back to the one warm thing Gael allowed
+  herself: the name in the bestiary is what Otto saw. **The one warm correction dooms the person it
+  warmed.** Counterpoint: **Hobb,** on the watch, sees them go and *says nothing* — the man who could have
+  caught them deliberately doesn't, while the man who reads her wrong nearly does.
 
 ---
 
