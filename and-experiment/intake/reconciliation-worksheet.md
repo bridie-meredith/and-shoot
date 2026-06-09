@@ -142,7 +142,37 @@ being walked item-by-item (principal chose deliberation over batch-ratify).*
 | ④ | **Corporate euphemism** | Bk II startup → she thinks in margins/KPIs/stakeholders (a 7-y-o MBA) → creeps the vocabulary onto court politics → R2/R3 deeds arrive in HR-speak ("offboarding a contractor," "mitigating a single point of failure"); rule: *blander jargon = darker deed*, peaking at the apex ("the asset performed to spec"). |
 | ⑤ | **Misread indifference** (fuses both tone-engines) | Her genuine not-caring (she's leaving) reads to Westeros as VIRTUE (pious serenity) or MENACE (inhuman calm) — both wrong. Seed I.1 (the omen) → builds every book → pays off at the betrothal (takes the worst news without a flicker; court splits "what grace!" / "what ice!"; nobody guesses she has other plans). Her blankness writes its own legend. |
 
-**Per-beat payoff map (which gag fires where):** I.1 → ①+⑤ · I.4 → ② · I.5 → ③ (dark undertow) · II.4 → ⑤ + ② capstone · II.7/III.3 → ④ · III.6 apex → ③+④ converge (the named entry "performs to spec"; the kill files under her oldest maxim, *waste nothing, everything has a use*).
+**Per-beat payoff map (which gag fires where):** I.1 → ①+⑤+⑥ · I.4 → ②+⑥ · I.5 → ③ (dark undertow) +⑥ · II.4 → ⑤ + ② capstone · II.5 → ④+⑤ · II.6 → ②+⑥ · II.7/III.3 → ④ · III.4 → ⑤ · III.6 apex → ③+④ converge (the named entry "performs to spec"; the kill files under her oldest maxim, *waste nothing, everything has a use*).
+
+#### D-comedy.1 — the fail-upward ENGINE (principal directive 2026-06-09, "keep refining"): **not "despite Westeros" — "because Westeros."**
+Her schemes must NOT pan out by luck (cheap) or competence (she's a setting-blind nerd who plans clumsily). They pan out **because every grimdark feature of Westeros is a cheat code for an oblivious cultivator** — the grit is the *mechanism* of her success, not the backdrop. The running promise: *the worse Westeros behaves, the better it works for her.* The reader gets the grim joke that this hellscape is easy mode for the one person not playing its game. This makes the darkness **load-bearing for the comedy** (ties the gritty-world directive to the fail-upward directive). Cheat-code table:
+| Grimdark feature | Becomes her cheat code |
+|---|---|
+| superstition (cursed/ill-omen child) | everyone recoils → **solitude** (the cultivator's #1 need) — I.1 |
+| scandal-burying (a prince can't be admitted to a child's room) | **launders her crimes** ("he tripped") — I.5 |
+| sexism (no one credits a girl) | **free corporate veil** — she never builds cover; the realm refuses to see her — Bk II |
+| cruelty / underestimation (servants = furniture, children = pawns) | **no one conceives of a child mastermind** → they watch the wrong hand — Bk III |
+| the Faith (stillness = piety) | **misreads her cultivation-trance as devotion** → cover writes itself — ③/⑤ |
+**Phase-4:** make every chapter's scheme resolve through a Westerosi grimdark feature, not luck; log each as a FIRE on the relevant feature.
+
+#### D-comedy.2 — gag ⑥ added: **the self-audit ("am I the villain?")**
+Seed I.1 (frets she's the villain-reincarnator, vows to be a righteous cultivator) → builds: periodic moral self-audits vs cultivation-novel ethics, clears herself on technicalities while being the realm's apex predator → pays off at dark beats ("drained Daemon only once and swore it off — that's *growth*"); even **pities the scheming lords** for being more obviously evil than humble her. The gap between self-image (modest protagonist) and reality (the eldritch thing the realm prays about). Inward twin of the baffled-Westeros engine.
+
+#### D-comedy.3 — recurring straight-men (the foils that power "everyone scratching their heads")
+- **Maester** — horrified-fascinated; tries to *study* her, gets maneuvered into *helping*; running bit = unhinged Citadel letters rationalizing each impossibility (a one-man Greek chorus nobody believes).
+- **Septa** — scandalized; flips demonic/saintly by the day; **takes credit for Gael's "piety"** (dedicated victim of ⑤); compliance-mask turned against her.
+- **Alicent** — the *tragic* straight-man: loves her, closest to the truth, most unsettled; every tender normal-mother read is hopelessly wrong; we watch her refuse to see (interlude = peak).
+- **Maid** — the only relationship that EVOLVES (not loops): awe stays, competence grows; the one true (partial) read who stays anyway.
+- **Jaehaerys** — powerful man failing to control one small girl; files failure under "useless" (no frame-slot for what she is); his Talks land on a child planning a heist.
+
+#### D-comedy.4 — gag ③ ESCALATED: the bestiary is read by an authority (principal example 2026-06-09)
+The bestiary is **the one document in the series that tells the truth about Gael** (everything else about her is misread in her favour). When an authority finds + reads it, for once Westeros sees her clearly — a cold cataloguing intelligence that files its own family under "Obstacle" — and is *correctly* terrified. **Engine-preserving twist:** even read accurately, they can't reach "reincarnated cultivator," so they misfile her into the nearest grimdark frame (poisoner / madwoman / possessed / **Maegor-in-the-making**). The most damning evidence still never yields the truth.
+- **Differentiated readers (changes the downstream — and settles an open slot):**
+  - **Alicent (tragic):** breaks; confirmation of every refused fear. Gut-punch-laugh = she finds **her own entry** ("Mother — sentimental, useful for egg-procurement, low threat").
+  - **Otto (strategic) — RECOMMENDED reader:** the asset-filer doesn't recoil; sees a weapon to control/deploy, and clocks the one anomaly in a ledger of pure function — a servant entry quietly upgraded from "Asset (hands)" to a **name**. He understands instantly that the maid is the single lever that moves an unmovable girl. **THIS IS THE LEAK** → resolves the open-Q "who figures out the maid matters / who compromises the maid" (II.5/II.7): it's not operational spying, it's the bestiary betraying the one warm thing Gael allowed herself.
+  - **Jaehaerys (disposal):** sees a kinslayer-in-waiting (dragons, stolen heirloom, kin as "Obstacle") → confirms "useless *and* dangerous" → **accelerates the betrothal as disposal**; the cage tightens because the truth half-surfaced.
+- **Plot promotion:** the bestiary graduates from gag to **back-half spine** — the named entry is the vulnerability the coldest catalogue in Westeros accidentally exposes; it drives the maid-threat (II.7), motivates the III.5 tempering, and lands the III.6 apex (the one warm correction dooms the person it warmed). Connect ③ → II.5/II.7 → III.5/III.6 in run-03 with PLANT[BESTIARY-NAMED-ENTRY] / FIRE chain.
+- **Gael's lens reaction:** not embarrassed by content — annoyed at the **opsec failure** ("left my notes out — sloppy"), mildly offended they filed her as a *poisoner* (she's obviously a *cultivator*), reassures herself (⑥) a real villain would've been caught with worse. **Opsec upgrade gag:** thereafter keeps a **decoy diary** of performed-normal-girl entries for them to find — relieves the straight-men, becomes its own running bit.
 
 ---
 
