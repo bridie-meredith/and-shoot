@@ -131,6 +131,20 @@ being walked item-by-item (principal chose deliberation over batch-ratify).*
 - **Destination:** I.5 no longer locks NORTH; open destination → reagent-map (Book II) → SOUTH (epilogue). North = betrothal-dread only. (Purification down-plant + S2 resolved.)
 - **The "one crack":** III.5 tempering is the anti-curdle break (the give); it no longer caps the ladder.
 
+### D-slots. Open-slot resolutions (2026-06-09 — proposed, vetoable)
+*The remaining creative-fill slots, resolved as recommendations the principal can override. Recorded here
+(the decisions log) and reflected in `spine.md` Open-slots + the per-character cards' seating caveats. None
+requires the Phase-4 migration; all de-risk it.*
+
+| Slot | Resolution (recommended) | Note |
+|---|---|---|
+| **Otto + Daemon age-seating** | **Deliberate AU-aging — keep both names; declare them era-appropriate adults in span-A.** | Canon Otto (b.77) / Daemon (b.81) are too young as the adult predator/operator the roles need. The premise is *already* heavily AU (Jaehaerys+Alicent as parents; a reincarnated Gael), so AU-aging two figures is consistent. **Most worth a veto:** if canon-cleanliness on names outranks the named figures, the fallback is to rename them to original Jaehaerys-era figures (the predatory asset-filer → an original Hightower kinsman; the drained relative → an era-appropriate adult dragon-rider prince) — the *archetypes* are load-bearing, not the names. **Barth needs no such fix** (cleanly seated, Hand 82–98 AC). |
+| **Helaena's role** | **Park her for this series.** | A HotD-era figure; the warm thread is Wylla, and a second warm-sister would dilute it. Hold Helaena for the parked Dance book (consistent with the "park, don't drop" cast ruling). Any cameo stays tiny and non-competing. |
+| **Alicent's arc-question** | **Knows-and-does-not-act.** | The love that sees and cannot move — the most tragic, least contrived option; keeps the interlude's dread live without giving Alicent plot-agency that competes with Jaehaerys (the cage-authority) or the maid-spine. Her terminal beat stays the bestiary-entry break. |
+
+**Net:** the only slot still genuinely open after this is the *fallback choice* on Otto/Daemon (AU-age vs
+rename) — a single principal call. Everything else in the character layer is settled.
+
 ### D-comedy. Comedy architecture — five running gags (principal directive 2026-06-09: "have a setup build over time")
 *The tone frame's two engines, implemented as recurring gags — each SEEDED early, ESCALATING across books, PAYING OFF on a heavy beat. The point: by III.6 every laugh has a paper trail, so the same devices that earned three books of comedy deliver the apex horror without the tone breaking. Phase-4: fold into the `comedy-register` card + per-chapter run-03 notes as PLANT/FIRE threads.*
 

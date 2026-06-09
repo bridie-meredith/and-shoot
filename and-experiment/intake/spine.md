@@ -259,8 +259,9 @@ for the Dance.)*
 ## Open slots (creative-fill — see worksheet)
 ~~maid's name~~ → **Wylla** · ~~the Northern betrothal lord~~ → **Lord Errold Slate of Blackpool** ·
 ~~R2 method (II.7)~~ · ~~R3 method (III.3)~~ · ~~the apex specifics (who the maid kills; how discovery
-happens)~~ → **all resolved 2026-06-09 (below)** · Helaena's role · Alicent's arc (does she ever act on
-the interlude's knowledge?).
+happens)~~ → **all resolved 2026-06-09 (below)** · ~~Helaena's role~~ → **parked to the Dance book** ·
+~~Alicent's arc~~ → **knows-and-does-not-act** *(both per worksheet §D-slots)*. **Only remaining call:**
+Otto/Daemon seating — **AU-age (recommended)** vs rename to original era-appropriate figures.
 
 **Names assigned 2026-06-09** (primary cast — full rationale in `intake/character-reactions.md` §Appendix):
 the maid → **Wylla** · the Septa → **Septa Aldith** (Gael's POV still says "the Septa") · the Cassandra
