@@ -345,6 +345,25 @@ read it as a *cosmology* (what is this child doing to the fabric of the world) �
 *use* her, the scholar wants to *understand* her, and the scholar gets nearer the truth and is the safer
 man for it.
 
+### The scholar ladder (Barth ↔ the Maester) — the near-miss thread, book by book
+The intellectual-antagonist thread is a **two-man relay that sharpens toward the truth and never arrives.**
+**Maester Lorren** is the eyes on the ground (he documents the impossible and writes it up); his letters
+travel *up* to **Septon Barth,** the one mind that takes them seriously and *theorizes.* Each rung: Lorren
+documents → Barth builds a framework → it **collapses on one more fact** (or the Faith / the throne / his
+own age diverts him) → he gets *closer* than last time and still misses. The comedy is the genius crossing
+out a theory that was nearer than anyone else will ever get; the dark note is that the realm's one capable
+mind is kept too busy to finish the thought.
+
+| Rung | Lorren documents (ground) | Barth's theory (realm) | Why it collapses / how close |
+|---|---|---|---|
+| **0 · I.1** | the trance-state — "deep study or a greyscale stupor, yet in rude health; no diagnosis; I have requested more parchment" | an anomalous infant constitution; a curiosity | nothing to collapse yet — he shelves it as one odd data point. *Far.* |
+| **1 · I.2** | she chose the one lethal jar and got *healthier* — "either she cannot be poisoned, or she should not exist" | a natural immunity; some fire-and-blood resistance | immunity can't explain her *improving,* and it's one child, not a lineage trait. Troubled. *A real anomaly, wrong frame.* |
+| **2 · I.4** | Valyrian steel that can't be destroyed or reforged is simply *gone,* and she's transformed | **his own domain** (*Unnatural History*): something is *consuming* sorcerous material | the connecting agent is a six-year-old, which his frame can't accept; the Faith already eyes his work. He brushes "consumption of dragon-essence" and **recoils from his own conclusion.** *Close.* |
+| **3 · I.5** | a dragon dead with no wound, the hour "Dragonbane" was alone with a now-diminished man | a *severing* of the dragon-bond — sorcery at a distance | Jaehaerys redirects his Hand's genius to statecraft; the Faith presses; the one actor who fits is unthinkable. **The closest theory yet, shelved by throne and Faith.** *Closer.* |
+| **4 · II.5** | *(the bestiary, read directly)* | reads it as a **cosmology** — "what is this child doing to the fabric of the world?" | he has the journal, the sorcery framework, and the pattern — and the connecting step (a reincarnated cultivator) is a story he's never read. He reaches "something unnatural and systematic" and **cannot name it.** *Closest the truth ever comes.* |
+| **5 · II.6** | "she never weakens though her supply is cut" | a **source, not a pool** — self-generating | he articulates nearly the true *mechanism,* in the abstract, and still cannot attach it to the girl. *Nearly the answer, no subject.* |
+| **6 · III.6** | — | — | he is the mind that could have caught them, **kept too busy** (statecraft, the Faith, age — he dies 98 AC). The realm's post-mortem is incoherent; the one man who could have written the true account never does. **The ladder ends one rung short, forever.** |
+
 ### 🎭 Running gag — *the grand unified theory that collapses* (audience-funny, every appearance)
 Barth's recurring beat: he assembles a brilliant, almost-right framework for the anomaly-child — and it
 **collapses on contact with one more fact.** He brushes the truth (sorcery; consumed essence; a source,
