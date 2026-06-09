@@ -61,6 +61,36 @@ The straight-men the antics escape:
 
 ---
 
+### Per-chapter running-gag map
+*Every chapter (and the interlude) lands an Alicent **"what the hell"** beat; the antagonist **faces break**
+where present. Both **escalate** — Alicent climbs fret → near-break → grief; the faces' failures climb
+toward the apex misfire. Audience-funny: the reader laughs, the character suffers.*
+
+| Chapter | Alicent's "what the hell" (audience-funny) | Antagonist face breaking |
+|---|---|---|
+| **I.1 dragonbane** | terror at the dead hatchling + blood → flips to proud "she's *strong*" | **Jaehaerys:** his "no egg for a girl" is overruled (Alicent's gift) — first thing he can't control · *Barth (offstage):* the maester's first baffled letter reaches him |
+| **I.2 the-heist** | "she ate poison and *thrived* — a refined palate!" → rewards her with a tutor | **Barth:** forms his first theory (immune? blessed?); it won't hold |
+| **I.3 the-cage** | frets at her solemn quiet ("is she *well?*") while the King calls her corrected | **Jaehaerys:** the Talk "works," changes nothing; doubled lessons become her cover — the plan that frees her (first instance) |
+| **I.4 valyrian-beauty** | *proud* of the uncanny beauty (finally a normal thing!) → WTH as Daemon circles and the misread curdles | **Barth:** the Valyrian-steel contradiction ("can't be eaten — so where is it?") collapses his framework |
+| **I.5 the-bond-breaker** | half-sees something monstrous around the dead dragon → **flinches:** "my frightened girl defended herself" | **Barth:** the no-wound dragon-death is the realm's puzzle; he gets closest, is diverted · *Jaehaerys:* "Dragonbane + dead dragon" hardens the "useless **and** dangerous" file |
+| **Interlude (Alicent POV)** | the sustained WTH — *what is my daughter?* — from outside; the chill | **Jaehaerys:** the disposal-betrothal revealed (the clock starts); the rift |
+| **II.1 the recluse** | relief-WTH: "thank the Seven, she's taken up *reading*" (the cover, donated) | *Barth:* charmed by the scholar-princess (a soft near-miss) |
+| **II.2 the startup** | proud "she has a head for *sums!*" (a mark at one remove) | *Otto (proto):* unusual money he can't yet trace |
+| **II.3 the world map** | "such a curious mind — *geography!*" (it's the reagent atlas / a ship's course) | **Barth:** delighted she studies the wide world; never sees the voyage |
+| **II.4 the betrothal** | **the righteous WTH** — furious he's selling their daughter cheap to a minor lord; aimed right, powerless | **Jaehaerys:** the betrothal he's *proud* of is the clock — cold deadpan symmetry (he solves a problem; she's relieved) |
+| **II.5 the compromise** | reads the bestiary → finds **her own entry** — the WTH escalation peak (near-break) | **all three converge:** *Otto* reads it as a weapon (the leak) · *Barth* as a cosmology (near-miss, collapses) · *Jaehaerys* armed → accelerates |
+| **II.6 the source** | "she sailed through the fever that felled half the Keep — such *strong blood!*" | **Barth:** "she never weakens though her supply's cut" — another collapsing theory · *(the maester's empty-purpose cope)* |
+| **II.7 the threat** | the exploiter's quiet ruin → "how *unlucky* for that man" (serenely misses it) | **Otto:** his lever (the maid) provokes Gael's R2 — his scheme yields a corpse he never predicted |
+| **II.8 nothing here is mine** | "she's become so *content* about the wedding!" (the eeriest misread) | — *(Gael's internal pivot)* |
+| **III.1 the commission** | *(letter)* content, planning so diligently — mistakes the ship-money for trousseau care | — *(the shipwright's agent, not a face)* |
+| **III.2 the excursions** | "the ghost of the Red Keep — how *dreadful;* thank the Seven my Gael's safe abed meditating" | — *(Hobb's Cassandra reprise)* |
+| **III.3 the greedy factor** | *(report)* Quint "let go" → another "how unlucky" gloss | **Otto:** surveillance tightens toward the apex misfire |
+| **III.4 the deadline** | "my poor *delicate* girl, too ill to travel north" — she campaigns for the delay, buying the escape unknowing (the babying weaponized one last time) | **Jaehaerys:** he accelerates; her stalling vs his push |
+| **III.5 the tempering** | *(letter)* a maternal gift "for the journey north," grotesquely mistimed — funny and aching | — *(the private anti-curdle scene)* |
+| **III.6 the narrow escape** | the **terminal WTH** — her daughter simply *gone;* the last "what the hell" is grief | **Otto (the catastrophic break):** his one correct deduction forces the interception; his man is the one Wylla kills; wins every move, loses the game · *Barth:* the mind that could've caught them, kept too busy · *Jaehaerys:* the realm's incoherent post-mortem (it *prefers the war*) |
+
+---
+
 ## BOOK I — *the cage* · age 0–6 · the nursery → the Red Keep · broad farce
 *Scale: her own body. Lock I: the heist-method is born. Cost: R0 → R1.*
 
