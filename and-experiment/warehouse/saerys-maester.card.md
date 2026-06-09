@@ -1,7 +1,8 @@
 ---
 name: saerys-maester
 class: persona
-scope: both
+scope: tombstone
+superseded_by: maester-lorren
 project: and-experiment
 world: planetos
 persona-purpose: [on-stage-character]
