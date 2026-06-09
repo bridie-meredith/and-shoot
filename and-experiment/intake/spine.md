@@ -214,9 +214,14 @@ R0 (I.1 kill) → R1 (I.5 Daemon drain) → R2 (II.7) → R3 (III.3) → **apex 
 for the Dance.)*
 
 ## Open slots (creative-fill — see worksheet)
-maid's name · the Northern betrothal lord · R2 method (II.7) · R3 method (III.3) · Helaena's role ·
-Alicent's arc (does she ever act on the interlude's knowledge?) · the apex specifics (who the maid kills;
-how discovery happens).
+~~maid's name~~ → **Wylla** · ~~the Northern betrothal lord~~ → **Lord Errold Slate of Blackpool** ·
+R2 method (II.7) · R3 method (III.3) · Helaena's role · Alicent's arc (does she ever act on the
+interlude's knowledge?) · the apex specifics (who the maid kills; how discovery happens).
+
+**Names assigned 2026-06-09** (primary cast — full rationale in `intake/character-reactions.md` §Appendix):
+the maid → **Wylla** · the Septa → **Septa Aldith** (Gael's POV still says "the Septa") · the Cassandra
+witness (still-room boy → watchman, one recurring figure) → **Hobb** · the greedy factor → **Lothar
+Quint** · the Northern betrothal lord → **Lord Errold Slate of Blackpool**.
 
 ---
 

@@ -134,7 +134,10 @@ changes nothing.
 
 ---
 
-## The Septa — the straight-man the antics escape *(I.3 forward; recurs)*
+## Septa Aldith — the straight-man the antics escape *(I.3 forward; recurs)*
+
+**Name.** **Septa Aldith.** (Gael's locked-POV still *calls* her "the Septa" in narration — the
+namelessness was a POV convention, not a gap; the card now carries the name for everyone else's mouths.)
 
 **History.** Godsworn handler — tutor, governess, chaperone — assigned from early childhood. Devout (the
 Seven, genuinely), competent, increasingly alarmed. Card-DNA: she is **right about everything except
@@ -212,10 +215,15 @@ truth half-surfaced**, and the man who files everything has, characteristically,
 
 ---
 
-## The Cassandra witness — the still-room boy / the guard *(I.2, I.4, reprised III.2)*
+## Hobb — the Cassandra witness — the still-room boy → the guard *(I.2, I.4, reprised III.2)*
 
-**History.** A low servant — the still-room boy who keeps the maester's inventory; later (or also) a
-guard. The realm's least-credited eyes. ⭐ The spine's designated truth-teller: he keeps *accurately*
+**Name.** **Hobb.** One recurring figure, which lets the continuity do the work: the still-room boy who
+is mocked and "transferred" (I.2/I.4) is *transferred into the City Watch* — so the watchman who clocks
+the rooftop "ghost" in III.2 and **doesn't bother to report it** is the same Hobb, who learned his lesson.
+The transfer IS the bridge between his Book-I and Book-III appearances.
+
+**History.** A low servant — the still-room boy who keeps the maester's inventory; later (by way of the
+transfer) a City Watch guardsman. The realm's least-credited eyes. ⭐ The spine's designated truth-teller: he keeps *accurately*
 seeing the impossible (the jewelry-biting, the wall-climbing, the dropped poison-levels) and is **never
 believed** — "the boy who cried demon," twice, correctly.
 
@@ -344,12 +352,14 @@ that will hurt.
 
 ---
 
-## The Maid — the only read that evolves *(II.1 forward; the warm thread)*
+## Wylla — the Maid — the only read that evolves *(II.1 forward; the warm thread)*
 
-> **Open slot — name.** Spine lists the maid's name unfilled. Working name **"Wylla"** (smallfolk-plain,
-> KL); alternatives: Pia, Jeyne, Elinor. The cissa-nursemaid card hints a gentle under-servant could grow
-> into this role, but the spine assigns a *new* maid in II.1 — recommend a fresh entity. **Principal pick
-> pending.** I use *Wylla* below as a placeholder.
+> **Name — assigned: Wylla.** Smallfolk-plain, King's Landing; warm; distinct from the nursery-servant
+> cluster (Cissa/Bessa/Mella/Wenda/Marra/Nona/Pella/Nesta). The name is load-bearing: it is the human
+> fact that replaces **"Asset (hands)"** when the bestiary promotes her to a name (the emotional turn =
+> a bookkeeping upgrade). Easy to swap if you'd rather — alternatives: Pia, Nella, Maris. The
+> cissa-nursemaid card hints a gentle under-servant *could* grow into this role, but the spine assigns a
+> **new** maid in II.1 — Wylla is a fresh entity (card to build; tier supporting, arguably lead-adjacent).
 
 **History.** Smallfolk, assigned to Gael's household in the post-Daemon reshuffle. Starts as an
 errand-runner ("bring me this herb, this sample, this book"). Becomes — without quite noticing — a
@@ -474,7 +484,9 @@ true thing.*
 
 ---
 
-## The greedy factor — certain he's the smartest man in the room *(III.3)*
+## Lothar Quint — the greedy factor — certain he's the smartest man in the room *(III.3)*
+
+**Name.** **Lothar Quint**, a King's Landing factor in the ship's payment chain.
 
 **History.** A factor in the ship's payment chain who smells money, can't produce the phantom buyer, and
 leans on the maid (the visible end of the chain). He can sell the information, demand a bigger cut, or
@@ -589,10 +601,19 @@ These reactions are written to the **live span-A spine**; the warehouse cards ar
   the worksheet's "park, don't drop" cast ruling).
 - **`cissa-nursemaid` card → keep as nursery-chorus (Book I).** Already carries live Gael/Jaehaerys
   naming. The "easy gap / never cross-references" function is exactly right for I.1.
-- **The Maid → new entity, needs a card + a name.** Working name *Wylla* (placeholder). Tier: supporting
-  (arguably lead-adjacent — she's the spine of II–III). Principal pick pending (spine open slot).
-- **Otto, Daemon, the Cassandra witness, the greedy factor, the shipwright's agent → cards to build** to
-  the live span-A canon. (`the-factor` card exists but is span-B; re-derive.)
+- **The Maid → Wylla** (new entity; card to build). Tier: supporting (arguably lead-adjacent — she's the
+  spine of II–III).
+- **Names assigned 2026-06-09** (resolving spine open slots / role-labels):
+  - the Maid → **Wylla**
+  - the Septa → **Septa Aldith** (narration may still say "the Septa" per Gael's POV convention)
+  - the Cassandra witness (still-room boy → watchman) → **Hobb** (one recurring figure)
+  - the greedy factor → **Lothar Quint**
+  - the Northern betrothal lord → **Lord Errold Slate of Blackpool** (named offstage-pressure — a bleak,
+    obscure minor Northern house; the dreaded destination, not an on-page character)
+- **Otto, Daemon, Hobb, Lothar Quint, the shipwright's agent → cards to build** to the live span-A canon.
+  (`the-factor` card exists but is span-B; re-derive as Lothar Quint.)
+- **Still role-labels by design (minor marks — no name required):** the Braavosi banker / buyers, the
+  shipwright's agent, the Watch captain. Name on demand if any graduates to a recurring beat.
 
 *Authored 2026-06-09 as a companion to `intake/spine.md`. Implements the spine's reverse-angle device as
 per-character reaction design: history · foibles · vibes · baseline · the tweak (their discomfort = the
