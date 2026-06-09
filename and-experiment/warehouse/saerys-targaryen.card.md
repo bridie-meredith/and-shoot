@@ -1,7 +1,8 @@
 ---
 name: saerys-targaryen
 class: persona
-scope: project
+scope: tombstone
+superseded_by: gael-targaryen
 project: and-experiment
 world: planetos
 persona-purpose: [on-stage-character]
