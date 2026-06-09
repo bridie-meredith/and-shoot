@@ -177,7 +177,11 @@ The bestiary is **the one document in the series that tells the truth about Gael
 ---
 
 ## E. Migration checklist (Phase 4–5) — NOT STARTED
-- [ ] `design/run-03/` created; adopted outline tokenized as the canonical 3-book outline
+> **Adopted-spine source:** `intake/spine.md` — the consolidated 3-book narrative + tone/comedy
+> architecture + per-chapter reverse-angle (Westeros-native) format. This is the artifact Phase-4
+> tokenizes into `design/run-03/`. (Incoming raw outline: `intake/tentative-outline.md`; gate rulings
+> + comedy defs: this worksheet §C/§D.)
+- [ ] `design/run-03/` created; **`spine.md`** tokenized as the canonical 3-book outline
 - [ ] KEEP/ADAPT artifacts carried over (GUARDS register, thread-config, timeline/family, ledger)
 - [ ] RETIRE/SUPERSEDE artifacts archived to `intake/retired/<date>-<name>/` with tombstones
 - [ ] state-ledger re-founded on the 3-book structure; change-log started at the intake entry
