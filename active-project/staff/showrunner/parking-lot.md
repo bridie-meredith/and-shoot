@@ -2937,3 +2937,36 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-06-08-formdebt-001
+      created_at: 2026-06-08T00:00:00Z
+      created_by: "cross-chapter bones form-scan (post-no-ledger-rebuild certification)"
+      target:
+        command: /and-write
+        scope: "b01 (perception-heavy chapters: c03 c04 c06 c07 c08 c09 c12 c14 c18)"
+        phase: null
+      severity: SOFT
+      description: |
+        The no-ledger rebuild re-emitted all 20 b01 chapters' bones via a render shortcut that SKIPPED
+        the bones-gate. Cross-chapter form-scan (bones-formscan-b01-2026-06-08.md) found SYSTEMIC SVO-form
+        debt: ~95 fault instances across 19 of 20 chapters (only c01/c02 near-clean). BUT severity is
+        mostly beneath-the-prose hygiene, NOT reader-facing:
+          - ABSTRACTION-AS-SUBJECT (the DEC-0115 no-ledger fence — the thing that mattered): only 1-2
+            instances book-wide. The rebuild HIT its primary target. The single clean fence violation is
+            c19:25 "the contempt rests beside the work" (highest-priority single fix).
+          - PERCEPTION-VERB (~46, "watches X"): dominant debt; partially reader-facing (cold-distance);
+            the stitcher rendered past these (why the prose cold-read still PASSED — verdict-rebuilt-b01).
+            Worst pocket: c18.
+          - STATIVE (~28, "holds the feet" motif): hygiene only + design-intentional; does not survive to prose.
+          - ABSTRACTION-OBJECT (~18): hygiene.
+        The reader-facing PROSE passes (PASS-WITH-NOTES re-certification, verdict-rebuilt-b01-2026-06-08).
+        This is bone-layer hygiene debt, logged as b01 known-debt — it does NOT block forward motion.
+      context_refs:
+        - active-project/staff/reviews/bones-formscan-b01-2026-06-08.md
+        - active-project/staff/reviews/verdict-rebuilt-b01-2026-06-08.md  # process caveat (form-scan resolution)
+        - staff/admin/decisions.md  # DEC-0115 (no-ledger fence — the axis the rebuild cleared)
+      resolution_suggestion: "OPTIONAL + principal-gated (mutates shipped drafts via re-cascade). Minimum: fix the single DEC-0115 fence fault c19:25 (1 bone + re-stitch c19). Fuller: a fixer-class /and-write revise form-pass on the 9 perception-heavy chapters (~45 bone-line edits, no substance-arc change) -> re-cascade. Tolerate-to-b02 is defensible: the prose cold-read passed; this is hygiene beneath alive prose."
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null

@@ -71,10 +71,21 @@ that mattered, and the rebuild delivered it.
 The rebuilt chapters were produced by a **render shortcut that skipped the per-chapter gates** (no
 `/and-review bones`, `/and-facets`, or `/and-stitch` Phase 9 on the rebuilt drafts). Spot-check
 evidence: a fresh `/and-review bones b01-c07` this session FAILed the rebuilt c07 bones on **6 SVO-form
-faults** that had passed before the rebuild. So the underlying bones carry form debt the cold-read
-prose papers over. A cheap cross-chapter bones form-scan (recommended) would quantify the spread. This
-does not change the narrative ruling — the *reader-facing prose* passes — but it means the artifact is
-not gate-certified beneath the prose.
+faults** that had passed before the rebuild.
+
+**Form-scan resolution (completed 2026-06-08; `bones-formscan-b01-2026-06-08.md`).** The cross-chapter
+scan confirms the debt is **SYSTEMIC in count but mostly beneath-the-prose hygiene**: ~95 form-fault
+instances across 19 of 20 chapters (c07 was representative, not an outlier). BUT the breakdown is
+reassuring on the axis that matters: **ABSTRACTION-AS-SUBJECT (the DEC-0115 no-ledger fence) is only
+1–2 instances book-wide** — the rebuild genuinely hit its primary target. The dominant debt is
+PERCEPTION-VERB wrappers (~46, "watches X") that the stitcher rendered past (this is *why* the prose
+reads alive despite the debt); STATIVE (~28, the design-intentional "holds the feet" motif) and
+ABSTRACTION-OBJECT (~18) are hygiene-only. The single genuinely-worth-fixing fence violation is
+**c19:25 ("the contempt rests beside the work")**. Logged as known-debt `pl-2026-06-08-formdebt-001`;
+targeted remediation (a fixer-class form-pass on the 9 perception-heavy chapters, ~45 edits, no
+substance change) is OPTIONAL and principal-gated, and tolerate-to-b02 is defensible since the prose
+cold-read passed. The bone-form debt does NOT change the narrative ruling — the reader-facing prose
+passes.
 
 ## RULING
 
