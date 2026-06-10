@@ -88,12 +88,12 @@ Barth's framework brushes "consumed sorcerous material" and recoils. **Register:
 ### I.5 · the-bond-breaker *(~6)*
 **Beat:** files the king's heirloom with her cultivated jaw (servants blamed — collateral). Daemon corners
 her, pressing a gross "special blood" pass dressed as bloodline-mysticism; Gael **misreads it as an offer of
-platonic dual-cultivation** and runs it then and there — the demonic drain. **Carthanax dies** (no wound, at
+platonic dual-cultivation** and runs it then and there — the demonic drain. **Caraxes dies** (no wound, at
 distance); Daemon is left near bed-ridden. Unsure whether that was a demonic-path deviation, she resolves on
 closed-door meditation — and the terrified realm obliges, **confining her to her chambers** (quarantine for a
 feared contagion) which she reads as the caring sect granting secluded cultivation. The no-wound dragon-death
 + the uncanny beauty + "Dragonbane" **seed the realm's mirror-flip**. **Register:** CHILL. **Rung:** R1.
-**Genre-misreads (②/⑥; the one chapter the horror is real):** Daemon's predatory "special blood" pass read as an offer of **platonic dual-cultivation** — she runs it and accidentally guts him (the atrocity is itself a misread); "was that the demonic path?" left unresolved → `PLANT[CLEAN-HANDS-DOCTRINE]` (the line drawn at the *technique,* not the harm — the license the ladder runs on, fires II.7 + III.6); near-bedridden Daemon read as "an elder who lost his cultivation base" (a stat-change, not a man — completes GIFT:DAEMON); Carthanax mourned as kindred spirit-beast while the executed servants never register (③); the quarantine read as the sect granting secluded cultivation (`COURT-AS-EVIL-SECT`).
+**Genre-misreads (②/⑥; the one chapter the horror is real):** Daemon's predatory "special blood" pass read as an offer of **platonic dual-cultivation** — she runs it and accidentally guts him (the atrocity is itself a misread); "was that the demonic path?" left unresolved → `PLANT[CLEAN-HANDS-DOCTRINE]` (the line drawn at the *technique,* not the harm — the license the ladder runs on, fires II.7 + III.6); near-bedridden Daemon read as "an elder who lost his cultivation base" (a stat-change, not a man — completes GIFT:DAEMON); Caraxes mourned as kindred spirit-beast while the executed servants never register (③); the quarantine read as the sect granting secluded cultivation (`COURT-AS-EVIL-SECT`).
 **Plants:** PLANT[DEMONIC-PATH] · PLANT[DRAGON-DEATH-UNEXPLAINED] · PLANT[SYMPATHETIC-KILL-AT-DISTANCE] · PLANT[PLAYING-SMART] · PLANT[HIDEY-HOLE] · PLANT[BODY-TEMPERING-CONCEALED] · PLANT[COLLATERAL-DAMAGE] · PLANT[PROPHESIED-LEGEND] · PLANT[CLEAN-HANDS-DOCTRINE]
 **Fires:** FIRE[DAEMON-THREAT] · FIRE[UNCANNY-BEAUTY] · FIRE[VALYRIAN-STEEL-COMPATIBLE] · FIRE[THEFT-ESCALATION] · FIRE[GIFT:DAEMON] (the favor repaid — she took his gift, then his dragon-bond, never reading him)
 
