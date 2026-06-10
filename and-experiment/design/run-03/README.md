@@ -7,6 +7,9 @@ retained as provenance.
 ## What's canonical here
 - **`series-outline.md`** — the tokenized, thread-checkable 3-book span-A outline (19 beats). The
   structural spine; full prose/comedy detail lives in `intake/spine.md`.
+- **`chapters/`** — per-chapter **detailed summaries** (scene-by-scene treatments off the spine beats,
+  grounded in the live character layer + cultivation substrate; the layer between the spine beat and bones).
+  Authored so far: `chapters/i1-dragonbane.md`.
 - **`thread-config.txt`** — checker exceptions (parked/diffuse PLANT-ONLY + the SLATE-MATCH alias).
   `python3 scripts/check-threads.py design/run-03/series-outline.md --config design/run-03/thread-config.txt` → **PASS**.
 
@@ -40,6 +43,10 @@ foil/comedy notes as PLANT/FIRE threads).
   antagonist faces (settle the Otto/Daemon AU-age vs rename call).
 - `staff/showrunner/memory.md` + `project-history.md` → roll forward to span-A (L8); replace the stale
   Saerys/Viserys/Dance framing in `project.brief` + `themes_as_bounds`.
+- **`warehouse/prop-cradle-egg.card.md` re-derive** (surfaced by `chapters/i1-dragonbane.md`) → the card
+  encodes the superseded Saerys/christening-spoon/dud-egg version; the live span-A I.1 is the *living
+  gift-egg that hatches and is killed*. Roll GUARD-2/3 framing forward likewise (dud → visible-but-misread
+  hatchling-kill; R0-stays-a-laugh intent intact). **Blocking for `/and-write` I.1.**
 
 ## Open principal call (does not block)
 Otto/Daemon seating — **AU-age (recommended)** vs rename to original era-appropriate figures. See
