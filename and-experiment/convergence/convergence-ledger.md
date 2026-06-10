@@ -435,3 +435,47 @@ memory.md + project-history roll-forward (tracked in `design/run-03/README.md`).
 
 **Status:** new working layer **run-03** established; canonical outline tokenized + PASS; the heavier
 state/memory carry-overs staged as the next pass.
+
+---
+
+## Round 10 — run-04 Book-I revision (REVISION; /and-reoutline)
+
+*Working surface: `design/run-04/series-outline.md` + `thread-config.txt`. Source: `intake/spine.md`
+(run-04 amendment). Triggered by the 2026-06-10 principal session on Book-I structure.*
+
+**Branch:** REVISION — premises held; **no GUARD contradicted.** Hard-fence-1 **ADAPTed** (Wylla
+"smallfolk POV" → "minor-noble POV"). Setting-blind + broken-clock HONORED (the prophecy-casting is the
+observers', Gael stays oblivious; the awe is real, the reading wrong). Curdle ladder R0–R4 intact (the
+new acolyte→Wall cost is OFF-ladder collateral).
+
+**The seven-item Book-I delta set:** (1) c02 dangling-reward **resolution** — she breaks the mold by
+taking what she wants under the misfile (thief, neither hero nor prize); (2) the **acolyte→Wall**
+displaced cost (Maester Lorren's acolyte; Barth-as-Hand signs; first displaced-cost rung;
+`PLANT[ACOLYTE-WALL]` I.2 → `FIRE` I.3); (3) **Wylla planted early** (I.2, slow-burn) — II.1 "new maid
+assigned" retired to "the maid she has steps up"; (4) Wylla reclassed **smallfolk → minor noble**
+(bedmaid → lady-in-waiting; three-tier org: Gael source / Wylla manager-lever / smallfolk chambermaid
+hands); (5) **chambermaid tier featured** (`PLANT[CHAMBERMAID-HANDS]` II.2, ambient); (6) Wylla enters
+**ancillary to the c02 scandal** (proto-complicity; `PLANT[WYLLA-COMPLICIT]` I.2 → `FIRE` III.2); (7)
+the Book-I payout button — the **sealed mirror-flip** (the realm halos her as the prophesied one while
+she files herself the prize + the King discards her; she never learns; `GENRE-CASTING` I.1→I.2/Interlude,
+`PLANT[PROPHESIED-LEGEND]` I.5 → `FIRE` III.6). Plus the **c03 reshape** — "both girls discover the bars"
+(`PLANT[WYLLA-CAGED]` I.3 → `FIRE` III.6).
+
+**Dispositions:** ADAPT (series-outline → run-04; thread-config; spine.md Book I + cast; character-profiles
+§2 Wylla; warehouse/wylla-maid card) · KEEP (Books II–III structure largely intact; state-ledger +
+family-tree carried; convergence baseline frozen) · SUPERSEDE (run-03/series-outline → run-04/series-outline,
+tombstoned, run-03 left in place as provenance).
+
+**Checker:** `check-threads.py run-04/series-outline.md --config run-04/thread-config.txt` → **PASS**
+(66 plants / 54 fires; rungs R0–R4 present, R4 = III.6 apex; 12 PLANT-ONLY incl. new CHAMBERMAID-HANDS;
+SLATE-MATCH aliased).
+
+**Retired/archived:** run-03 series outline → tombstone at
+`intake/retired/2026-06-10-run03-series-outline/TOMBSTONE.md` (run-03 left in place; frozen `convergence/`
+untouched).
+
+**Open fork (non-blocking, carried):** Otto/Daemon seating (RULED in run-03 cutover: court-transposition,
+Otto = Gael's grandfather).
+
+**Status:** working layer **run-04** established; canonical outline tokenized + PASS; narrative spine + cast
++ Wylla card updated; memory pointer rolled forward to run-04.

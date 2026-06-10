@@ -11,7 +11,7 @@ quality: full
 tier: lead
 references:
   - gael-targaryen
-  - westeros-smallfolk
+  - westeros-lesser-nobility
   - westeros-grrm-mannerisms
   - comedy-register
 ---
@@ -23,9 +23,12 @@ Pia / Nella / Maris). Full profile: `intake/character-profiles.md` §2.*
 
 ## Description
 
-Smallfolk of King's Landing, assigned to Gael's household in the post-Daemon reshuffle (II.1). The
-audience-surrogate who **gets converted.** She begins as the sane outsider going *what in the seven hells,*
-becomes the businesswoman who actually runs Gael's empire on the ground, and ends a true believer — a
+A **minor-noble** girl — a daughter of a small house, placed with Gael as a **companion / bedmaid** (to make
+court connections and age into a lady-in-waiting), planted **early (I.2,** ancillary to the still-room
+scandal**)** and slow-burned through Book I. The audience-surrogate who **gets converted.** She begins as the
+sane outsider going *what in the seven hells,* becomes the **trusted manager who runs Gael's empire on the
+ground** (directing the smallfolk chambermaids who are the market-facing hands; she does not hawk goods
+herself — beneath her station and it would blow the cover), and ends a true believer — a
 self-styled **junior sister cultivator** of the great sect they will surely found. The reader holds the
 irony she can't: there is no sect in the inevitable future, only two girls on a boat and a dao that doesn't
 work. The bravest person in the story, with no past life, no real cultivation, no sealed paper — only
@@ -66,10 +69,11 @@ hates letting the fear reach her face, and mostly wins. **Severity:** soft.
 
 ## Stats
 
-- **age:** mid-teens at II.1, older across II–III
-- **origin:** smallfolk, a Keep servant family, King's Landing
-- **status:** errand-runner → on-the-ground operator of the trade empire → co-conspirator → tempered →
-  killer → the second girl on the ship
+- **age:** a child companion at I.2 (a few years older than Gael), mid-teens by Book III
+- **origin:** **minor nobility** — a daughter of a small house, sent to court as a companion/bedmaid to the
+  princess (connections + a future lady-in-waiting post)
+- **status:** child companion → on-the-ground **manager** of the trade empire (directs the smallfolk
+  chambermaid hands) → co-conspirator → tempered → killer → the second girl on the ship
 - **cultivation:** **none real.** Tempered by Gael's qi (III.5) = made durable, not a practitioner. She
   believes she has begun to cultivate; she never will. The clock stays broken for her too.
 
@@ -79,7 +83,9 @@ hates letting the fear reach her face, and mostly wins. **Severity:** soft.
   (sealing her faith); the one whose register-silence she alone notices at the apex. In the bestiary, Wylla
   is the one entry promoted from "Asset (hands/legs)" to a *name* — the emotional turn as a bookkeeping
   upgrade, and the anomaly Otto exploits.
-- **Her cousin** — recruited into the startup; perhaps the sect's "second disciple" (more irony).
+- **The chambermaid operator** (smallfolk) — the market-facing hand she recruits and runs (the "clever
+  commoner" the buyers think they deal with); perhaps the sect's "second disciple" (more irony). *(Absorbs
+  the old "her cousin" role under the run-04 reclass.)*
 - **Otto** — reads the bestiary and makes her the lever; pressures her (II.5).
 - **Lothar Quint** — leans on her as the visible end of the payment chain (III.3).
 
@@ -92,11 +98,11 @@ and ache *under* it: a foundational disciple devoted to a faith with no future, 
 does to the people in its orbit — it converts them.
 
 ### Look
-Plain, work-strong, smallfolk-clean; a face that learns to stay still under pressure; after the tempering, a
-faint glow under the skin that fades, and a body that no longer tires.
+Plain but well-kept, minor-gentry tidy rather than smallfolk-rough; a face that learns to stay still under
+pressure; after the tempering, a faint glow under the skin that fades, and a body that no longer tires.
 
 ### Hard Fences
-1. **Smallfolk POV; not actually a cultivator.** Tempered ≠ practitioner; she believes, she never cultivates.
+1. **Minor-noble POV; not actually a cultivator.** Tempered ≠ practitioner; she believes, she never cultivates. *(Reclassed smallfolk → minor noble in run-04; fleeing risks her house's name + attainder, not just her neck.)*
 2. **Pre-romantic in text** — the bond is the person; the future is the reader's to infer.
 3. **She stays** — the one who does not leave (now for the dao as well as the person).
 4. **The apex cost lands on her** — she kills; she survives (epilogue is fixed: two girls on the ship).
@@ -128,8 +134,9 @@ the empty meditation-room; being terrified and practical at once.
 
 **Accumulated history to register:**
 - She started by saying *this is insane* out loud, and meant it, and was right.
-- The tempering changed her body in front of her own eyes; for a smallfolk girl, that is proof. Her faith is
-  not stupidity — it is the only honest conclusion from the evidence she was given.
+- The tempering changed her body in front of her own eyes; for a girl raised on the Faith and maester-sense,
+  that is proof past arguing. Her faith is not stupidity — it is the only honest conclusion from the evidence
+  she was given.
 - She has chosen Gael over the crown — treason, death if caught — and done it again and again, for the dao
   and for the person, unable to fully separate the two.
 

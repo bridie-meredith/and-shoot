@@ -4,9 +4,14 @@
 # then SEEDED from and-experiment/design/run-01/. Authored bones-first: the bible
 # exists; the apparatus is reverse-derived rather than top-down generated.
 #
-# ROLLED FORWARD 2026-06-09 to LIVE SPAN-A canon (the Gael intake / run-03 migration).
-# Canonical outline: design/run-03/series-outline.md (tokenized; check-threads PASS) +
-# intake/spine.md (narrative/comedy). Cast: intake/character-profiles.md + warehouse/*.card.md.
+# ROLLED FORWARD 2026-06-10 to run-04 (Book-I REVISION of run-03; /and-reoutline Round 10).
+# Canonical outline: design/run-04/series-outline.md (tokenized; check-threads PASS) +
+# intake/spine.md (narrative/comedy; run-04 amendment at the foot). Cast: intake/character-profiles.md
+# + warehouse/*.card.md (Wylla reclassed minor-noble). run-03 retained as provenance (tombstoned).
+# run-04 Book-I deltas: c02 dangling-reward resolution (thief breaks the mold) · acolyte→Wall displaced
+# cost (Barth-as-Hand signs) · Wylla planted early (I.2) + reclassed minor noble (bedmaid→lady-in-waiting)
+# · smallfolk chambermaid tier featured (three-tier triple-blind) · the Book-I sealed mirror-flip button
+# (the realm halos her prophesied; she never learns) · c03 = "both girls discover the bars".
 # The prior Saerys / Viserys-father / span-B (Dance) framing is RETIRED to provenance
 # (run-02 + tombstones); span-B (the Dance) is PARKED for a later installment, not deleted.
 
@@ -23,7 +28,7 @@ project:
     breezy POV deflating it, and the realm's every horror is an oblivious cultivator's
     cheat code. (The Dance — span B — is parked for a later book; her longevity is intact.)
   mode: bones-first-experiment
-  source_design: and-experiment/design/run-01/   # bible (reference); live structure = design/run-03/
+  source_design: and-experiment/design/run-01/   # bible (reference); live structure = design/run-04/
   constraints:
     settings:
       - King's Landing / the Red Keep, reign of Jaehaerys I (the long peace), ~84–95 AC
@@ -64,10 +69,10 @@ series:
     cage her. Meta-question: will the immortal ever come down and be mortal? She
     doesn't — she runs, and puts the one cost she can't pay on the girl she loves.
     A tragedy in a comedy's clothes; the clothes are Gael's breezy, simple, deflecting POV.
-    ACCEPTED OUTLINE (canonical build target): and-experiment/design/run-03/series-outline.md
+    ACCEPTED OUTLINE (canonical build target): and-experiment/design/run-04/series-outline.md
     (tokenized; check-threads PASS) + and-experiment/intake/spine.md (full narrative + the
-    per-chapter running-gag map). Decisions: intake/reconciliation-worksheet.md §A/§B/§D/§D-slots.
-    Convergence record: and-experiment/convergence/convergence-ledger.md (Round 9 = this migration).
+    per-chapter running-gag map; run-04 amendment at the foot). Decisions: intake/reconciliation-worksheet.md §A/§B/§D/§D-slots.
+    Convergence record: and-experiment/convergence/convergence-ledger.md (Round 10 = the run-04 Book-I revision).
     Frozen baselines (provenance, never edit): convergence/round-03/fusion-v2.md (span-B),
     convergence/chapters/round-02/fusion.md (30-ch span-B). run-02 = retired span-B layer.
   structure:
@@ -116,7 +121,7 @@ series:
 books:
   - id: b01
     title_slug: the-cage
-    delta: "age 0–6 · the nursery → the Red Keep · BROAD FARCE. 5 ch + the Alicent interlude. R0 (I.1 hatchling kill) → R1 (I.5 Daemon drain); the heist-method born; she becomes ungovernable. See run-03/series-outline.md + spine.md Book I."
+    delta: "age 0–6 · the nursery → the Red Keep · BROAD FARCE. 5 ch + the Alicent interlude. R0 (I.1 hatchling kill) → R1 (I.5 Daemon drain); the heist-method born; she becomes ungovernable. run-04 Book-I deltas: c02 dangling-reward resolution (thief breaks the mold) · acolyte→Wall displaced cost · Wylla planted early (I.2) + minor-noble reclass · chambermaid tier · the sealed mirror-flip Book-I button · c03 'both girls discover the bars'. See run-04/series-outline.md + spine.md Book I."
     status: outlined
   - id: b02
     title_slug: the-blind-machine
@@ -137,8 +142,9 @@ routing:
   staleness_log: and-experiment/staff/showrunner/staleness-log.md
   cascade_checkpoint: and-experiment/staff/showrunner/cascade-checkpoint.md
   reviews: and-experiment/staff/reviews/
-  run_03: and-experiment/design/run-03/   # LIVE working layer — series-outline.md (canonical, tokenized, PASS) + thread-config.txt + README (migration status). Supersedes run-02 (span-B, retired).
-  spine: and-experiment/intake/spine.md   # the full narrative + tone/comedy architecture + per-chapter running-gag map (the source run-03 tokenizes)
+  run_04: and-experiment/design/run-04/   # LIVE working layer — series-outline.md (canonical, tokenized, PASS) + thread-config.txt + README + state-ledger + family-tree. Book-I REVISION of run-03 (2026-06-10, Round 10).
+  run_03: and-experiment/design/run-03/   # SUPERSEDED by run-04 (provenance; tombstoned at intake/retired/2026-06-10-run03-series-outline/). Left in place; Books II–III carried forward intact.
+  spine: and-experiment/intake/spine.md   # the full narrative + tone/comedy architecture + per-chapter running-gag map (the source run-04 tokenizes; run-04 Book-I amendment at the foot)
   character_layer: and-experiment/intake/CHARACTER-LAYER-INDEX.md   # front door to profiles / cards / exemplars / reactions / comedy review
   bones_dir: and-experiment/theater/bones/
   facets_dir: and-experiment/theater/facets/
@@ -147,5 +153,6 @@ routing:
   cultivation_library: and-experiment/design/cultivation-library/INDEX.md   # FIRST-STOP for any cultivation-register / apothecary / substance scene.
   counterfactual_life: and-experiment/design/counterfactual-life/INDEX.md   # FIRST-STOP for the EXTERIOR well — the ordinary princess life Gael deviates from. Authored to the live Gael/Jaehaerys layer.
   time_anchor: and-experiment/design/time-anchor.md   # story-time authority — era (Jaehaerys peace), age formula (Gael age = year_AC − 84, b.84), span A (84→~95 AC). §4 span fork SETTLED to span-A this migration (Dance parked). ⚠ timeline-and-family-tree.md §2 family tree still PENDING re-derive (Gael/Jaehaerys/Alicent + antagonist faces) — staged cutover item.
-  project_history: and-experiment/staff/showrunner/project-history.md   # production-time chronology (layers L1–L8; L8 = the run-03 span-A migration).
-  # ✅ run-03 cutover COMPLETE (2026-06-09): time-anchor §4 ruled (HYBRID) · family-tree re-derived (run-03/family-tree.md) · state-ledger re-founded (run-03/state-ledger.md) · memory + project-history rolled forward. Otto/Daemon seating RULED (court-transposition; Otto = Gael's grandfather). Residual: per-chapter state vectors accrue during production.
+  project_history: and-experiment/staff/showrunner/project-history.md   # production-time chronology (layers L1–L8; L8 = the run-03 span-A migration; run-04 Book-I revision = Round 10).
+  # ✅ run-03 cutover COMPLETE (2026-06-09): time-anchor §4 ruled (HYBRID) · family-tree re-derived · state-ledger re-founded · memory + project-history rolled forward. Otto/Daemon seating RULED (court-transposition; Otto = Gael's grandfather).
+  # ✅ run-04 Book-I REVISION (2026-06-10, Round 10): 7-item delta set folded — c02 dangling-reward resolution · acolyte→Wall cost · Wylla planted-early + minor-noble reclass · chambermaid tier · sealed mirror-flip button · c03 "both girls discover the bars". No GUARD contradicted; hard-fence-1 ADAPTed. check-threads PASS. Residual: per-chapter state vectors accrue during production.

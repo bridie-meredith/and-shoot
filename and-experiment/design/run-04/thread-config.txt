@@ -1,0 +1,23 @@
+# thread-config.txt — exceptions/aliases for the run-04 span-A series outline (series-outline.md).
+# Run-04 = Book-I REVISION of run-03. The outline closes most threads in-file (plant -> fire);
+# only genuine non-1:1 tokens are declared here.
+
+# --- aliases: the Northern lord is the betrothal clock made a name ---
+ALIAS SLATE-MATCH = BETROTHAL-CLOCK
+
+# --- plant-only: setups whose payoff is parked for the Dance book, or is diffuse/ambient ---
+# (parked for the Dance — established-then-rejected or scales later)
+PLANT-ONLY DEMONIC-PATH                  # I.5 line she swears off; NOT re-crossed this series (Dance)
+PLANT-ONLY SYMPATHETIC-KILL-AT-DISTANCE  # scales terrifyingly; parked for the Dance
+PLANT-ONLY DRAGON-DEATH-UNEXPLAINED      # the realm never lands the true explanation (payoff diffuse)
+PLANT-ONLY LONGEVITY-OPEN                # epilogue door to the parked Dance installment
+
+# (diffuse/ambient — sustained texture, no discrete FIRE token)
+PLANT-ONLY ISEKAI-AWARENESS             # her genre-brain; ambient throughout
+PLANT-ONLY ANTI-FAITH                   # gut revulsion at the Faith; ambient
+PLANT-ONLY SCHOLAR-PRINCESS             # the donated cover; ambient infrastructure (Books II–III)
+PLANT-ONLY PAST-LIFE-COVER              # high-school chemistry = Westerosi genius; ambient
+PLANT-ONLY TRIPLE-BLIND                 # everyone wrong about who runs the empire; ambient
+PLANT-ONLY SEPTA-ENDORSEMENT            # the endorsement-trap running gag; diffuse Book-I payoff
+PLANT-ONLY SKULLS-INACCESSIBLE          # power she can't reach this series (proximity != access)
+PLANT-ONLY CHAMBERMAID-HANDS            # run-04: the smallfolk operator tier; ambient enterprise infrastructure

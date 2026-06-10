@@ -1,3 +1,8 @@
+> **⚠ SUPERSEDED 2026-06-10 by `design/run-04/`** (a Book-I REVISION; `/and-reoutline` Round 10). This
+> layer is retained as **provenance** — Books II–III were carried forward largely intact, but the canonical
+> tokenized outline is now `design/run-04/series-outline.md`. Tombstone:
+> `intake/retired/2026-06-10-run03-series-outline/TOMBSTONE.md`. Do not build from this file.
+
 # design/run-03/ — the span-A working layer (the Gael intake)
 
 Created by the **OUTLINE-INTAKE migration** (2026-06-09; `/and-reoutline`), re-baselining the planning

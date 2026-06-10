@@ -58,7 +58,8 @@ The straight-men the antics escape:
 - **Maester (Lorren)** — horrified-fascinated; tries to *study* her, gets maneuvered into *helping*; writes unhinged Citadel letters (which travel up to Barth).
 - **Septa (Aldith)** — scandalized; flips demonic/saintly by the day; takes credit for Gael's "piety"; hoist by her own endorsement.
 - **Alicent — the fretting straight-man** (and interlude narrator): loves her, closest to the truth, most unsettled; **babied Gael hard** (armed her with the egg; smothers her — the surveillance obstacle; blinds herself), and every tender normal-mother read is hopelessly wrong. Her "what the hell" is the per-chapter gag above.
-- **Wylla (the maid) — the convert.** The one relationship that EVOLVES: starts as the *what-the-hell* sane outsider, then is **converted by the madness** into a true-believing **junior sister cultivator** of the great sect they will found — a sect that never happens in the inevitable future (two girls, a boat, a dao that doesn't work). The tempering "proves" it to her. She stays.
+- **Wylla (the bed-maid) — the convert.** A **minor-noble** girl (bedmaid → lady-in-waiting, sent to court for connections; a few years older than Gael), **planted early (I.2, ancillary to the still-room scandal)** and slow-burned. The one relationship that EVOLVES: starts as the *what-the-hell* sane outsider, then is **converted by the madness** into a true-believing **junior sister cultivator** of the great sect they will found — a sect that never happens in the inevitable future (two girls, a boat, a dao that doesn't work). The tempering "proves" it to her. She stays. **Her tier in the machine:** the noble **trusted manager / social cover / the lever Otto spots** — never the market hands (those are the smallfolk chambermaids below).
+- **The chambermaids (smallfolk) — the hands.** The servant tier (Pella, Nona, Marra et al.). In Book II they are the **market-facing operators of the enterprise** — the "clever commoner" buyers think they deal with — directed by Wylla, sourced by Gael. Featured texture + the third tier of the triple-blind.
 - **⭐ The Cassandra witness (Hobb)** — the still-room boy → watchman who keeps *accurately* seeing the truth (the jewelry-biting, the wall-climbing) and is **never believed.** "The boy who cried demon" — twice, correctly. Be right, be ignored, stop reporting, transfer away. The human form of "truth surfaces, the explanation never does."
 
 ---
@@ -75,7 +76,7 @@ toward the apex misfire. Audience-funny: the reader laughs, the character suffer
 | **I.3 the-cage** | frets at her solemn quiet ("is she *well?*") while the King calls her corrected | **Jaehaerys:** the Talk "works," changes nothing; doubled lessons become her cover — the plan that frees her (first instance) |
 | **I.4 valyrian-beauty** | *proud* of the uncanny beauty (finally a normal thing!) → WTH as Daemon circles and the misread curdles | **Barth:** the Valyrian-steel contradiction ("can't be eaten — so where is it?") collapses his framework |
 | **I.5 the-bond-breaker** | half-sees something monstrous around the dead dragon → **flinches:** "my frightened girl defended herself" | **Barth:** the no-wound dragon-death is the realm's puzzle; he gets closest, is diverted · *Jaehaerys:* "Dragonbane + dead dragon" hardens the "useless **and** dangerous" file |
-| **Interlude (Alicent POV)** | the sustained WTH — *what is my daughter?* — from outside; the chill | **Jaehaerys:** the disposal-betrothal revealed (the clock starts); the rift |
+| **Interlude (Alicent POV)** | the sustained WTH — *what is my daughter?* — from outside; the chill | **Jaehaerys:** the disposal-betrothal revealed (the clock starts); the rift · **the realm (the sealed mirror-flip / payout button):** gobsmacked, it halos her as *the prophesied one* in the very beat the King discards her as worthless and she files herself the *prize* — three wrong readings, and she never learns of the realm's awe |
 | **II.1 the recluse** | relief-WTH: "thank the Seven, she's taken up *reading*" (the cover, donated) | *Barth:* charmed by the scholar-princess (a soft near-miss) |
 | **II.2 the startup** | proud "she has a head for *sums!*" (a mark at one remove) | *Otto (proto):* unusual money he can't yet trace |
 | **II.3 the world map** | "such a curious mind — *geography!*" (it's the reagent atlas / a ship's course) | **Barth:** delighted she studies the wide world; never sees the voyage |
@@ -147,19 +148,26 @@ not hers.
 ### I.2 · the-heist *(~2–3)*
 **Inside:** plateaued, under-stimulated; runs her first proper **heist** (SIGHT→PLAN→IMPLEMENT→REWARD) on the maester's still-room, eats a compatible reagent. › **Lock I established.**
 **Genre-casting (②, theme 1) — C02's contribution: *"Too easy → I'm not the protagonist; I'm the dangling reward."*** The heist goes off without a hitch — no one guards a thing against a toddler, she picks the *one lethal jar* and *thrives,* she fails upward into a tutor. But a cultivation protagonist **struggles;** her life is frictionless, every "trial" a gift. Genre-logic verdict: **she isn't the hero.** She must be the **dangling reward** — the kept jade-beauty / **damsel in the evil sect** that the *real* protagonist will someday fight his way in to claim (even her hidden power came *easy* — set dressing, not earned). The heist still installs as **Lock I** (her method), but she reframes herself from "rising disciple" to **well-kept prize, quietly plotting not to be won.** This is the comedy of theme 2 — *she independently casts herself as the object to be claimed,* which is exactly what the realm is already doing to her. Pecking order: the **maester = a low guardian-elder** (first villain-leaderboard entry, a storehouse mook). *because-Westeros:* no one guards a medicine cabinet against a toddler — and the very ease is her "evidence." **Arms I.4** (Daemon circling = "a protagonist/rival come for the reward") and the betrothal (being "won").
+**The resolution — she breaks the mold (theme 2).** The "dangling reward" verdict is the *joke;* the plot truth is its underside. She is neither hero nor prize — she's the **thief who just takes what she wants,** and she lets the realm misfile her as the passive reward and uses *exactly that cover* to be the most active person in the room. (Agency reclaimed not by struggling like a hero, but by helping herself while everyone files her as set dressing — theme 2 landing as a laugh, not a lecture.)
+**The displaced cost — the acolyte → the Wall.** The heist isn't free; it just doesn't cost *her.* The theft reads as **thieving from the king;** a fresh **acolyte of Maester Lorren's** takes the fall → the black cells → **the Wall** (the sentence handed down through royal justice — **Barth, as Hand, signs it**). She fails upward into a tutor; an innocent's life is destroyed for her crime. The first rung of the **displaced-cost ladder** (it escalates to the executed servant at I.5 — Wall here, the block there), and the chapter that was the lightest, most frictionless in Book I now carries the reader's ledger underneath the farce (theme 4).
+**Wylla enters — ancillary to the scandal.** The newly-placed minor-noble companion (a few years older; sent to court for connections, to age into lady-in-waiting) arrives **adjacent to the still-room business:** around the maester's domain for lessons and health, she half-sees the toddler princess where she shouldn't be, and her proximity is part of why the *acolyte,* not another, is blamed. She doesn't understand what she saw. She **buries it.** The eventual convert who will cover Gael's every crime starts her arc standing next to the first one — and Gael, oblivious, files her into the bestiary as "Asset (hands/legs)," never clocking that Wylla saw anything.
 **Reverse-angle:**
 - 😱 *Maester:* she chose the *one* lethal jar in a room of harmless ones and got *healthier.* "Either she cannot be poisoned, or she should not exist."
 - 🤨 *Still-room boy (Cassandra):* swears he counted right; the levels are down; the child glows; nobody believes him; he takes up drinking.
+- 😱 *The acolyte (the cost):* protests his innocence to no one who'll hear; thieving from the king's own house is the Wall if you're lucky. He's marched out; the household closes over the gap; nobody connects the toddler to the missing reagent.
 - 😂 *Alicent:* diagnoses "a refined palate and a scholar's curiosity," assigns her a tutor — *the maester.* The punishment is the prize. (Fail-upward.)
-**Gags:** ① ("Poison-Eater," title #2) · ② (casting: *too easy → not the hero → the dangling reward / damsel in the evil sect*; the pill-storehouse robbery; the maester = a low guardian-elder) · ④ proto (the heist as a repeatable "process") · ⑥ (resigns herself to "prize" billing — and is quietly relieved it lets her off the hero's hook) · the **because-Westeros** engine (underestimation → access; the ease itself is her "evidence").
+**Gags:** ① ("Poison-Eater," title #2) · ② (casting: *too easy → not the hero → the dangling reward / damsel in the evil sect* — **resolved:** she breaks the mold by taking what she wants under the misfile; the maester = a low guardian-elder) · ④ proto (the heist as a repeatable "process") · ⑥ (resigns herself to "prize" billing — and is quietly relieved it lets her off the hero's hook) · ⑦ (the acolyte's fall — the realm's lethality collects another) · the **because-Westeros** engine (underestimation → access; the ease itself is her "evidence").
 
-### I.3 · the-cage *(~3–5)*
+### I.3 · the-cage *(~3–5)* — *both girls discover the bars*
 **Inside:** tracks the throne-room dragon skulls (proximity ≠ access; foiled, caught). Jaehaerys's Famous Talk → the relationship is transactional; doubled septa lessons reveal the *real* cage (marriage, dynasty, the Faith). Outward yes, inward absolutely not.
+**The acolyte aftermath (the ledger thread).** The c02 cost has a wake here — the empty place at the maester's, the household's hush, **Wylla having stood near it.** It binds Wylla to Gael's first crime: adjacent to the cost, she stays anyway — the faint first rung of the complicity that becomes devotion. *Comedy on top; the reader keeps the ledger,* and now the ledger carries Wylla's fingerprint from the start.
+**The cage is a two-girl cage (the foil).** The chapter reveals Gael's cage and quietly shows **Wylla shares a smaller one:** a minor-noble daughter placed at court for connections, her marriage and her post arranged by other people. This is the structural seed that makes the finale a *two-person* want ("two girls on a ship") rather than a princess dragging a servant — they are both pieces being moved; they both get out. **Lever (set):** the mirror stays in the **reverse-angle** — Gael *misses* that Wylla is caged too (she files her "Asset," consistent with theme 1's role-blindness), so the reader sees the parallel Gael can't. It pays off devastatingly later (III.6).
 **Reverse-angle:**
 - 🤨 *Throne-room guards:* a small child found communing with the skulls — unsure whether to be alarmed or amused.
 - 😂 *Jaehaerys:* delivers his Talk to a solemn, nodding child and leaves satisfied he's corrected her. (She filed the skull locations and is planning the next attempt.)
 - 😱 *Septa:* the girl accepts doubled lessons without a flicker of complaint — "unnatural in a child."
-**Gags:** ⑤ (compliance-mask read as chastened obedience) · ② (rates the Faith's worldbuilding poorly).
+- 🤨 *Wylla (the foil's first rung):* runs the small errands, watches the strange princess, and says nothing about the still-room — to anyone. Privately she knows her own future is already drawn for her too; she just hasn't a word for the kinship yet.
+**Gags:** ⑤ (compliance-mask read as chastened obedience) · ② (rates the Faith's worldbuilding poorly) · ③ (Wylla logged "Asset (hands/legs)" — the entry that misses the caged girl beside her).
 
 ### I.4 · valyrian-beauty *(~5–6)*
 **Inside:** IDs Valyrian steel as dragon-kin, steals + eats it, smashes the plateau. The glow-up reads as impossible Valyrian perfection → an appraising older **Daemon** circles → she learns the family-incest custom and is modern-nerd revolted.
@@ -178,7 +186,13 @@ not hers.
 **Gags:** ③ (she performs a reverent cultivator's rite for the dead dragon; the executed servants never make the journal — the dark undertow) · ⑥ ("drained him only once and swore it off — that's *growth*") · ② (the investigation, two stars). · **because-Westeros:** scandal-burying launders "he tripped."
 
 ### Interlude · alicent *(external POV — the one camera outside her head)*
-**This chapter IS the reverse-angle, sustained.** From outside, Gael is *unnerving* — too still, too perfect, eyes that don't track. Alicent loves a daughter she's losing to something she can't name; the rift with Jaehaerys (utility vs affection); the dead dragon nobody can explain. **Arms Book II:** Jaehaerys is quietly arranging a **pacification betrothal to a minor Northern lord** — selling his baffling daughter cheap. **The clock starts.**
+**This chapter IS the reverse-angle, sustained.** From outside, Gael is *unnerving* — too still, too perfect, eyes that don't track. Alicent loves a daughter she's losing to something she can't name; the rift with Jaehaerys (utility vs affection); the dead dragon nobody can explain. **Arms Book II:** Jaehaerys is quietly arranging a **pacification betrothal to a minor Northern lord (Lord Errold Slate of Blackpool)** — selling his baffling daughter cheap. **The clock starts.**
+
+**The Book-I payout button — the sealed mirror-flip (the gobsmack).** Book I closes on three corners staring straight past one another, every one of them wrong:
+- **Gael** has filed *herself* the **dangling reward** (I.2) — a side-character prize, quietly plotting not to be won.
+- **Jaehaerys** files her **worthless** and moves to *give her away* — a pacification-bribe to a nobody.
+- **The wider realm,** gobsmacked by the no-wound dragon-death + the uncanny Valyrian beauty + "Dragonbane," independently halos her as **the prophesied one** — something out of legend (blood-of-the-dragon incarnate; a promised figure; an omen-child). The court reels that the King would *throw away* a girl the realm is starting to whisper about.
+The engine is the **asymmetry, sealed:** the observers think she's awesome, and **Gael never finds out.** She stays oblivious to their reverence and keeps building her *own* delusions (the prize self-cast, the cultivation cosmology). The two casting-engines run parallel and never touch. The legend grows entirely without her — which is exactly the thing that, in Book III, does her intimidating *for* her while she remains clueless about why everyone defers. *(Broken clock stays broken: the awe is real, the reading is wrong; she is no prophet. Setting-blind holds — the prophecy frame is the natives', never hers.)*
 
 ---
 
@@ -186,7 +200,7 @@ not hers.
 *Scale: the Keep, through one pair of hands. Lock II: remote acquisition perfected. Cost: R2.*
 
 ### II.1 · the recluse *(~6–7)*
-**Inside:** trades sulking for the **scholar-princess cover** (library, correspondence, harbor records — paper maps the world she can't touch). A new **maid** is assigned; relationship starts as errand-running.
+**Inside:** trades sulking for the **scholar-princess cover** (library, correspondence, harbor records — paper maps the world she can't touch). **The maid she already has — Wylla — steps up:** the childhood errand-running formalizes into the single channel (no new assignment; she's been here since I.2).
 **Reverse-angle:**
 - 😂 *The household:* relieved the strange one finally took up a *seemly* hobby (reading). The cover is donated, not built. (because-Westeros.)
 - 🤨 *The maid:* wonders why a princess wants harbor records and trade logs — and is paid not to wonder.
@@ -195,7 +209,7 @@ not hers.
 ### II.2 · the startup *(~7)*
 **Inside:** walks the maid through past-life chemistry — soap, dyes that set, preservatives, spirits — accidentally founding the most profitable little enterprise in King's Landing; incoming materials assayed, radiant ones kept.
 **Reverse-angle:**
-- 😂 *The triple-blind:* buyers think they deal with a clever commoner; the maid thinks Gael's the greatest mind in Westeros; Gael thinks it's high-school chemistry. Everyone's wrong; it prints money.
+- 😂 *The triple-blind (three real tiers):* the buyers think they deal with a **clever commoner** (the smallfolk chambermaids who walk the market); **Wylla** the noble lady-in-waiting thinks Gael's the greatest mind in Westeros and quietly *manages* it; Gael thinks it's high-school chemistry. Everyone's wrong about who runs it; it prints money. (A noble can't hawk soap in the market — so the chambermaids are the hands, Wylla the manager, Gael the invisible source.)
 - 🤨 *Buyers:* praise her "supernatural eye for goods." (They mean it as a figure of speech. It is not one.)
 - 😂 *Nobody audits a girl's pin-money hobby.* Sexism = the perfect veil. (because-Westeros.)
 **Gags:** ④ (a 7-y-o thinking in margins/KPIs) · ③ (assay) · ①.
@@ -338,3 +352,14 @@ Quint** · the Northern betrothal lord → **Lord Errold Slate of Blackpool**.
 *Authored 2026-06-09 from the intake refinement session. Companion: `reconciliation-worksheet.md`
 (gate rulings + comedy architecture + provenance). Reverse-angle pass + the Cassandra witness folded
 in per the principal's "save this as part of the spine."*
+
+*__Run-04 Book-I revision (2026-06-10).__ Folded the seven-item Book-I delta set: (1) c02 dangling-reward
+resolution — she breaks the mold by taking what she wants under the misfile; (2) the acolyte→Wall displaced
+cost (Maester Lorren's acolyte; Barth-as-Hand signs; first displaced-cost rung); (3) Wylla planted early
+(I.2, slow-burn) — II.1 "new maid assigned" retired to "the maid she has steps up"; (4) Wylla reclassed
+smallfolk → **minor noble** (bedmaid → lady-in-waiting); (5) the smallfolk **chambermaid** tier featured as
+the enterprise's market hands (three-tier triple-blind); (6) Wylla enters ancillary to the c02 scandal
+(proto-complicity seed); (7) the Book-I payout button — the **sealed mirror-flip** (the realm halos her as
+the prophesied one; she never learns). c03 reshaped to "both girls discover the bars." Canonical tokenized
+spine: `design/run-04/series-outline.md` (check-threads PASS). No GUARD contradicted; hard-fence-1 ADAPTed
+(smallfolk → minor-noble POV).*

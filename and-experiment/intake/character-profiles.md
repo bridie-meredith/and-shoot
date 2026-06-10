@@ -145,13 +145,16 @@ Maris.)*
 ### The arc that defines her — *what the hell → true believer → junior sister cultivator*
 This is her spine and her comedy:
 
-1. **"What the hell" (early Book II).** Assigned to the strange princess, Wylla is the **sane outsider** —
-   the audience surrogate. Skeptical, alarmed, muttering *what in the seven hells.* The princess eats
-   rocks, never tires, says mad serene things; Wylla's whole register is the reader's own disbelief.
+1. **"What the hell" (seeded I.2, foregrounds early Book II).** Placed with the strange princess as a child
+   companion (I.2, ancillary to the still-room scandal), Wylla is the **sane outsider** — the audience
+   surrogate. Skeptical, alarmed, muttering *what in the seven hells.* The princess eats rocks, never tires,
+   says mad serene things; Wylla's whole register is the reader's own disbelief. (She has known Gael since
+   the toddler heist — she is no Book II stranger; the *register* foregrounds when the channel formalizes.)
 2. **Conversion by the madness (mid Book II onward).** The impossibilities pile up; Gael's serene certainty
    never wavers; and then — the clincher — **the tempering (III.5),** where the "magic" visibly, bodily
-   works *on Wylla* (warmth, a glow, her body changed). For a smallfolk girl, that is proof. She crosses
-   over: Gael is a genuine immortal master, and Wylla is **a disciple.**
+   works *on Wylla* (warmth, a glow, her body changed). For a girl raised on the Faith and maester-sense —
+   one who *knows* the realm's "magic" is mummery, with priors to overcome — that is proof past arguing. She
+   crosses over: Gael is a genuine immortal master, and Wylla is **a disciple.**
 3. **Junior sister cultivator of the sect that never is.** She throws herself in — adopts the lingo (half
    wrong; Gael never corrects her because Gael barely notices), keeps a disciple's diligence, refers to
    herself as a junior sister, plans for the great cultivation **sect** they will surely found. **The
@@ -161,13 +164,18 @@ This is her spine and her comedy:
    half — and quietly heartbreaking.
 
 ### Identity / history
-Smallfolk of King's Landing, a Keep servant family. Assigned to Gael's household in the post-Daemon
-reshuffle (**II.1**), mid-teens at first. Begins as an errand-runner and becomes — *without quite noticing*
-— the businesswoman who actually **runs the empire on the ground** (Gael barely supervises it): walks the
-market, talks to buyers, recruits a cousin, makes the calls. By Book III she carries the ship's secret,
-covers Gael's night excursions, faces Lothar Quint, is tempered, kills to get them out, and walks onto the
-deck. The bravest person in the story — and she has no past life, no real cultivation, no sealed paper.
-What she has is **faith.**
+**Minor nobility** — a daughter of a small house, sent to court as a **companion / bedmaid to the princess,**
+placed to make connections and age into a **lady-in-waiting** (and, off the back of it, a good marriage).
+A few years older than Gael; placed with her household **early (I.2,** ancillary to the still-room scandal**)**
+and slow-burned through Book I as a child companion. Menial work was never hers — that is the smallfolk
+chambermaid tier beneath her. She does not personally hawk goods in the market (beneath her station, and it
+would blow the cover); instead she becomes — *without quite noticing* — **the trusted manager who runs the
+empire on the ground** (Gael barely supervises it): she carries the secret, gives the social cover, makes the
+calls, and **directs the smallfolk chambermaids** who are the market-facing hands (she recruits and runs the
+operator who buyers think is the "clever commoner"). By Book III she carries the ship's secret, covers Gael's
+night excursions, faces Lothar Quint, is tempered, kills to get them out, and walks onto the deck — **leaving
+her house, her name, and a respectable lady-in-waiting's future behind.** The bravest person in the story —
+and she has no past life, no real cultivation, no sealed paper. What she has is **faith.**
 
 ### Voice
 Plain, warm Common Tongue — *plus* a layer of **half-understood cultivation lingo** she's adopted as a
@@ -194,13 +202,17 @@ death, not exile — and she does it anyway, *for the sect*).
   bookkeeping upgrade) — and the anomaly **Otto** spots (the leak). She is **the one Gael spends power on**
   (III.5 — which seals her faith), **the witness to Gael's register-silence** at the apex, and **the one
   who kills** the pursuer (framed, by her, as defending the sect).
-- **Her cousin** — recruited into the startup; later, perhaps, the sect's "second disciple" (more irony).
+- **The chambermaid operator** (smallfolk) — the market-facing hand Wylla recruits and runs (the "clever
+  commoner" the buyers think they deal with); later, perhaps, the sect's "second disciple" (more irony).
+  *(Absorbs the old "her cousin" role under the reclass — the hands are smallfolk, not Wylla's noble kin.)*
 - **The exploiter / Lothar Quint** — squeeze her as the visible lever; Gael's R2/R3 remove them.
 
 ### Hard fences
-1. **Smallfolk POV; not actually a cultivator.** Tempered ≠ cultivator — she's been made durable by Gael's
+1. **Minor-noble POV; not actually a cultivator.** Tempered ≠ cultivator — she's been made durable by Gael's
    real qi, not by any practice of her own. She *believes* she has begun to cultivate; she never will. The
-   clock stays broken for her too.
+   clock stays broken for her too. *(Reclassed smallfolk → minor noble in run-04; the stakes of fleeing now
+   include her house's name and attainder, not just her neck — she gives up a respectable future, which makes
+   "she stays / two girls on a ship" land harder.)*
 2. **Pre-romantic in text** — the bond is the person; the future is the reader's to infer.
 3. **She stays** — the one who does not leave. (Now *more* so: she stays for the dao as well as the person.)
 4. **The apex cost lands on her** — she boards a killer; Gael's hands stay clean because she put the cost on
