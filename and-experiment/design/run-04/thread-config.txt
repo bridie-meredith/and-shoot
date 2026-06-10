@@ -21,3 +21,4 @@ PLANT-ONLY TRIPLE-BLIND                 # everyone wrong about who runs the empi
 PLANT-ONLY SEPTA-ENDORSEMENT            # the endorsement-trap running gag; diffuse Book-I payoff
 PLANT-ONLY SKULLS-INACCESSIBLE          # power she can't reach this series (proximity != access)
 PLANT-ONLY CHAMBERMAID-HANDS            # run-04: the smallfolk operator tier; ambient enterprise infrastructure
+PLANT-ONLY COURT-AS-EVIL-SECT           # run-04: her operating lens — the court read as an evil cultivation sect; ambient (she's pleased by elders' cold "favor" and abuses it)

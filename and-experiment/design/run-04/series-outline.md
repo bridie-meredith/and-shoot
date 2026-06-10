@@ -73,16 +73,16 @@ threads through as the quiet ledger (the empty place, the household's unease, Wy
 the first faint rung of the complicity that becomes devotion. **The cage is a two-girl cage:** Wylla, a
 minor-noble daughter placed for connections and an arranged future, shares a smaller one — surfaced in the
 reverse-angle (Gael **misses** it, files her "Asset"), seeding the two-person want. **Register:** CHILL→HOLD. **Rung:** off-ladder.
-**Genre-misreads (⑤/⑦):** the summons read as a Sect-Master's test; the acolyte's empty place as the inner court culling a weak disciple (paranoia, not guilt → she tempers colder); Wylla's attention as a planted monitor-disciple. She sees every beat and reads each one wrong.
-**Plants:** PLANT[JAEHAERYS-TRANSACTIONAL] · PLANT[SEPTA-ENDORSEMENT] · PLANT[METHOD-LIMIT] · PLANT[ANTI-FAITH] · PLANT[MARRIAGE-THREAT] · PLANT[OUTWARD-COMPLIANCE] · PLANT[SKULLS-INACCESSIBLE] · PLANT[WYLLA-CAGED] · PLANT[SPY-MISREAD]
+**Genre-misreads (⑤/⑦) — lens: the court is an evil cultivation sect (`COURT-AS-EVIL-SECT`, ambient).** The king's cold audience read as an evil-sect patriarch's *calibrated favor* — she leaves **pleased,** "patronage secured" (an evil elder doing warmth would be suspect); the acolyte's empty place as the inner court culling a weak disciple (paranoia, not guilt → she tempers colder); Wylla's attention as a planted monitor-disciple. She sees every beat and reads each one wrong — and is flattered by the cold ones.
+**Plants:** PLANT[JAEHAERYS-TRANSACTIONAL] · PLANT[SEPTA-ENDORSEMENT] · PLANT[METHOD-LIMIT] · PLANT[ANTI-FAITH] · PLANT[MARRIAGE-THREAT] · PLANT[OUTWARD-COMPLIANCE] · PLANT[SKULLS-INACCESSIBLE] · PLANT[WYLLA-CAGED] · PLANT[SPY-MISREAD] · PLANT[COURT-AS-EVIL-SECT]
 **Fires:** FIRE[SURVEILLANCE-PRESSURE] · FIRE[ACOLYTE-WALL] (the cost's wake — the reader's ledger)
 
 ### I.4 · valyrian-beauty *(~5–6)*
 **Beat:** IDs Valyrian steel as dragon-kin (the compatible source), eats it, breaks the plateau; the glow-up
 reads as impossible perfection → an appraising **Daemon** circles → modern-revulsion at the incest custom.
 Barth's framework brushes "consumed sorcerous material" and recoils. **Register:** SPIKE→CHILL. **Rung:** off-ladder.
-**Genre-misreads (②/⑤/⑥):** the glow-up read as a post-breakthrough body-refinement (proud, but frets it breaks concealment — she arms against the wrong, cultivation threat); "Dragonbane" spreading read as her dao-name preceding her (pleased; misses the realm means omen-child — seeds the mirror-flip); the maester's anomaly read as an expert closing in (none is — the realm's incompetence covers her). Daemon: she nopes the romance, has **no trope** for the creepy affection, files him under "evil sects are full of weirdos," ignores it — and cheerfully **abuses** his indulgence as access/cover, never clocking the danger. Ditzy and exposed; diligent about the wrong threat, blind to the real one.
-**Plants:** PLANT[VALYRIAN-STEEL-COMPATIBLE] · PLANT[UNCANNY-BEAUTY] · PLANT[DAEMON-THREAT] · PLANT[THEFT-ESCALATION] · PLANT[BARTH-NEAR-MISS]
+**Genre-misreads (②/⑤/⑥):** the glow-up read as a post-breakthrough body-refinement (proud, but frets it breaks concealment — she arms against the wrong, cultivation threat); "Dragonbane" spreading read as her dao-name preceding her (pleased; misses the realm means omen-child — seeds the mirror-flip); the maester's anomaly read as an expert closing in (none is — the realm's incompetence covers her). Daemon: she nopes the romance, has **no trope** for the creepy affection, files him under "evil sects are full of weirdos," ignores it — and cheerfully **abuses** his indulgence as access/cover. He slips her a cultivation-useful Valyrian **trinket**; she takes it as free material AND as **the favor of the evil sect** (appropriate patronage — so, like the king's audience, *pleased,* not wary), and angles for more. `PLANT[GIFT:DAEMON]` → repaid at I.5. Ditzy and exposed; diligent about the wrong threat, blind to the real one.
+**Plants:** PLANT[VALYRIAN-STEEL-COMPATIBLE] · PLANT[UNCANNY-BEAUTY] · PLANT[DAEMON-THREAT] · PLANT[THEFT-ESCALATION] · PLANT[BARTH-NEAR-MISS] · PLANT[GIFT:DAEMON]
 **Fires:** FIRE[COMPATIBLE-SOURCES] · FIRE[METHOD-LIMIT]
 
 ### I.5 · the-bond-breaker *(~6)*
@@ -91,7 +91,7 @@ her; she drains + severs his living dragon-bond; a distant dragon dies. Horror �
 swears off it; pivots thief → **operator**. The no-wound dragon-death + the uncanny beauty + "Dragonbane"
 **seed the realm's mirror-flip** (it starts casting her as something out of legend). **Register:** CHILL. **Rung:** R1.
 **Plants:** PLANT[DEMONIC-PATH] · PLANT[DRAGON-DEATH-UNEXPLAINED] · PLANT[SYMPATHETIC-KILL-AT-DISTANCE] · PLANT[PLAYING-SMART] · PLANT[HIDEY-HOLE] · PLANT[BODY-TEMPERING-CONCEALED] · PLANT[COLLATERAL-DAMAGE] · PLANT[PROPHESIED-LEGEND]
-**Fires:** FIRE[DAEMON-THREAT] · FIRE[UNCANNY-BEAUTY] · FIRE[VALYRIAN-STEEL-COMPATIBLE] · FIRE[THEFT-ESCALATION]
+**Fires:** FIRE[DAEMON-THREAT] · FIRE[UNCANNY-BEAUTY] · FIRE[VALYRIAN-STEEL-COMPATIBLE] · FIRE[THEFT-ESCALATION] · FIRE[GIFT:DAEMON] (the favor repaid — she took his gift, then his dragon-bond, never reading him)
 
 ### Interlude · Alicent *(external POV — the one camera outside her head)*
 **Beat:** from outside, Gael is unnerving; Alicent loves a daughter she's losing; the rift with Jaehaerys.
