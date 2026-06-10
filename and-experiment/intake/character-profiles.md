@@ -220,10 +220,11 @@ lets that stillness be the reader's cue.
 
 **Role:** the strategic reader; the **bestiary leak**; the apex pursuit-vector — Westeros's *cruelty and
 scheming court* made one cold man. The **active** human antagonist (he moves against her directly).
-*(AU-seating caveat: canon Otto b.77 AC would be young in span-A; here he is the Otto-archetype Hand-class
-operator — Phase-4 to settle seating/name. **Barth (§3c) eases this:** if we'd rather not lean on an
-ill-seated Otto, Barth absorbs the realm-tier intelligence functions and Otto can shrink to a lesser
-court-predator or be re-aged.)*
+*(Seating **RULED 2026-06-09 — court-transposition:** Otto is **Queen Alicent's father / Gael's maternal
+grandfather**, transposed onto the long-peace frame *with* Alicent (the HotD-adjacent court re-seated, not
+a canon-dated figure aged in isolation). The predatory antagonist face is therefore Gael's own **blood** —
+cold father, warm mother, predatory grandfather all inside her house. Barth (§3c) remains the cleanly-seated
+realm-tier scholar.)*
 
 ### Identity / voice
 The **asset-filer** — a Hightower strategist who looks at people and sees *function and leverage.* Quiet,
