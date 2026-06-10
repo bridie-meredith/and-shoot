@@ -18,10 +18,11 @@ references:
 
 # Daemon Targaryen — the appraising predator who becomes prey
 
-*Live span-A canon. The relative Gael drains (I.4 circles → I.5 the bond-breaker). **AU-seating caveat:**
-canon Daemon (b.81 AC) would be a child in span-A and cannot be the adult appraising-predator the role
-needs — Phase-4 to settle (an AU-aged Daemon, or a differently-named older dragon-bonded relative). Keep the
-*role* regardless. Full profile context: `intake/character-profiles.md` §Daemon / spine I.4–I.5.*
+*Live span-A canon. The relative Gael drains (I.4 circles → I.5 the bond-breaker). **Seating RULED
+2026-06-09 — court-transposition:** an adult dragon-bonded Targaryen kinsman (with an **expendable** dragon
+— the one that dies at I.5) of the transposed HotD-adjacent court; name kept, seated onto the long-peace
+frame (not a canon-dated figure aged in isolation). Full profile context: `intake/character-profiles.md`
+§Daemon / spine I.4–I.5.*
 
 ## Description
 

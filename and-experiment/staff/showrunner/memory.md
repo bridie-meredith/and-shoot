@@ -97,13 +97,13 @@ series:
     - {slug: gael-targaryen, role: PROTAGONIST (simple-minded reincarnated cultivator), source: built, tier: lead}
     - {slug: wylla-maid, role: deuteragonist / the maid → convert junior-sister cultivator, source: built, tier: lead}   # name working-pick (swappable)
     - {slug: jaehaerys-i-targaryen, role: father / institutional antagonist face (the cage; the betrothal), source: built, tier: supporting}
-    - {slug: otto-hightower, role: predatory antagonist face / the bestiary leak, source: built, tier: supporting}   # AU-seating: AU-aged adult (vetoable; vs rename) — §D-slots
+    - {slug: otto-hightower, role: predatory antagonist face / the bestiary leak / Queen Alicent's father = Gael's maternal grandfather, source: built, tier: supporting}   # seating RULED: court-transposition (§D-slots)
     - {slug: septon-barth, role: intellectual antagonist face / Hand 82–98 AC / closest-miss, source: built, tier: supporting}
     - {slug: alicent-hightower, role: mother / fretting straight-man / interlude narrator, source: built, tier: supporting}
     - {slug: maester-lorren, role: out-administered household maester / scholar-ladder ground tier, source: built, tier: supporting}
     - {slug: septa-aldith, role: the handler / right-except-why straight-man, source: built, tier: supporting}
     - {slug: hobb, role: the Cassandra witness (still-room boy → watchman), source: built, tier: supporting}
-    - {slug: daemon-targaryen, role: appraising relative drained at I.5, source: built, tier: supporting}   # AU-seating caveat (§D-slots)
+    - {slug: daemon-targaryen, role: appraising relative drained at I.5 (adult dragon-bonded kinsman, expendable dragon), source: built, tier: supporting}   # seating RULED: court-transposition (§D-slots)
     - {slug: cissa-nursemaid / bessa-wet-nurse / wenda-the-rocker, role: nursery chorus (Book I), source: built (era-clean), tier: minor}
     # PARKED for the Dance book (not this series): daenys-velaryon, ser-harwin-the-patient, nymeria-summer-isles
     # tombstoned (superseded): saerys-targaryen→gael-targaryen, saerys-maester→maester-lorren, saerys-septa→septa-aldith
@@ -148,4 +148,4 @@ routing:
   counterfactual_life: and-experiment/design/counterfactual-life/INDEX.md   # FIRST-STOP for the EXTERIOR well — the ordinary princess life Gael deviates from. Authored to the live Gael/Jaehaerys layer.
   time_anchor: and-experiment/design/time-anchor.md   # story-time authority — era (Jaehaerys peace), age formula (Gael age = year_AC − 84, b.84), span A (84→~95 AC). §4 span fork SETTLED to span-A this migration (Dance parked). ⚠ timeline-and-family-tree.md §2 family tree still PENDING re-derive (Gael/Jaehaerys/Alicent + antagonist faces) — staged cutover item.
   project_history: and-experiment/staff/showrunner/project-history.md   # production-time chronology (layers L1–L8; L8 = the run-03 span-A migration).
-  # ⏳ STAGED cutover items still pending (see design/run-03/README.md + worksheet §E): timeline-and-family-tree §2 re-derive · state-ledger re-found on the 3-book structure. Open call: Otto/Daemon AU-age (default) vs rename.
+  # ✅ run-03 cutover COMPLETE (2026-06-09): time-anchor §4 ruled (HYBRID) · family-tree re-derived (run-03/family-tree.md) · state-ledger re-founded (run-03/state-ledger.md) · memory + project-history rolled forward. Otto/Daemon seating RULED (court-transposition; Otto = Gael's grandfather). Residual: per-chapter state vectors accrue during production.

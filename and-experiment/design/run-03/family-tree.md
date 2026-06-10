@@ -8,9 +8,10 @@ Cast detail: `intake/character-profiles.md` + `warehouse/*.card.md`.*
 ## The tree
 
 ```
-        Jaehaerys I  ══════  Alicent           ← the reigning King + his Queen
-        (King / father)      (Queen / mother)     [AU: Alicent stands where canon has Alysanne]
-        the COLD cage         the WARM cage
+        Jaehaerys I  ══════  Alicent  ◄── her father: OTTO HIGHTOWER
+        (King / father)      (Queen / mother)      (Gael's maternal grandfather; the PREDATOR)
+        the COLD cage         the WARM cage      [AU: the Hightower unit (Alicent + Otto) transposed
+                 │                                 onto the long-peace frame; canon has Alysanne here]
                  │
         ┌────────┴─────────┐
      [Helaena]           GAEL  ◄── protagonist (b. 84 AC); reincarnated nerd-cultivator;
@@ -25,8 +26,8 @@ Cast detail: `intake/character-profiles.md` + `warehouse/*.card.md`.*
 | **Jaehaerys I** | King and **father** — the **institutional antagonist face** / the *cold* cage: governance, dynasty, the Faith; arranges the disposal-betrothal (the clock). **Not warm.** | Canon king of the era ✔; canon queen was Alysanne — AU substitution (Alicent). His 103 AC death is **after** the escape → parked (Dance). |
 | **Alicent** | Queen and **mother** — the **warm cage** + fretting straight-man + interlude narrator. Babied Gael hard (armed her with the egg; smothers her; can't see the predator for the baby). | Canon: Hightower, Viserys I's 2nd wife. Here moved up a generation, married to Jaehaerys (deliberate AU per GUARD-4). Card `alicent-hightower`. |
 | **Helaena** | **PARKED for this series** (not seated). The warm thread is Wylla, not a sister. | Held for the parked Dance book (§D-slots). Stale card `helaena-targaryen-122ac` (span-B). |
-| **Daemon** | the **appraising relative drained at I.5** → diminished, silenced. | ⚠ **AU-seating (default: AU-aged adult; vetoable — vs rename).** Canon Daemon b.81 is a child in span-A. Card `daemon-targaryen` carries the caveat. |
-| **Otto Hightower** | the **predatory antagonist face** / the asset-filer / the bestiary leak (clocks the maid as the lever). | ⚠ **AU-seating (default: AU-aged Hand-class operator; vetoable — vs rename to an original Hightower kinsman).** Canon Otto b.77 too young as an adult here. Card `otto-hightower`. |
+| **Daemon** | the **appraising relative drained at I.5** → diminished, silenced; an adult dragon-bonded Targaryen kinsman (expendable dragon). | ✅ **Seated via court-transposition** (the HotD court re-seated onto the long-peace frame; name kept). |
+| **Otto Hightower** | **Queen Alicent's father / Gael's maternal grandfather** + the **predatory antagonist face** / asset-filer / the bestiary leak (clocks the maid as the lever). The predator is *family*. | ✅ **Seated via court-transposition** — transposed *with* Alicent (his canonical relation to her, kept). Card `otto-hightower`. |
 | **Septon Barth** | the **intellectual antagonist face** — Hand of the King, author of *Unnatural History*; the realm's one genius who gets closest to the truth and still misses. | **Cleanly seated** (Hand 82–98 AC — across the whole span; no AU caveat). Card `septon-barth`. |
 | **Wylla** | not family — the **maid / deuteragonist**; errand-runner → empire-on-the-ground → convert "junior sister cultivator" → tempered → on the ship. | Smallfolk; card `wylla-maid`. Name working-pick. |
 | **Maester Lorren · Septa Aldith · Hobb** | household foils — the out-administered maester (scholar-ladder ground tier) · the right-except-why handler · the Cassandra witness. | Cards built; supersede the saerys-* foils. |
@@ -39,9 +40,12 @@ Cast detail: `intake/character-profiles.md` + `warehouse/*.card.md`.*
   **Septon Barth** (the cleanly-seated genius), with the household-tier **Maester Lorren** beneath Barth.
 - The warm thread → **Wylla** (the maid), not Helaena (parked).
 
-## The one open call (gates two AU rows above)
-**Otto/Daemon seating — AU-age (recommended/default, used here) vs rename** to original era-appropriate
-figures (predatory asset-filer → an original Hightower kinsman; the drained relative → an era-appropriate
-adult dragon-rider prince). The *archetypes* are load-bearing, not the names. Ruling stub: worksheet §D-slots.
+## Seating — RULED 2026-06-09 (no longer open)
+**Wholesale court-transposition; keep both names.** The HotD-adjacent court is transposed onto the
+long-peace frame: Alicent (queen), **Otto (her father / Gael's grandfather; the predatory face)**, and a
+Daemon-figure (adult dragon-bonded kinsman, expendable dragon) are the same displaced unit — not
+canon-dated figures aged in isolation. **Septon Barth** is natively seated (Hand 82–98 AC). Story upgrade:
+making Otto *family* puts three of the antagonist-environment's faces inside Gael's own house (cold father,
+warm mother, predatory grandfather). Decisions record: worksheet §D-slots.
 
 *Re-derived 2026-06-09 (run-03 cutover). Supersedes run-02 timeline-and-family-tree.md §2.*

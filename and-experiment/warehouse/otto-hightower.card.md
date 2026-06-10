@@ -22,9 +22,11 @@ references:
 # Otto Hightower — the predatory face of Westeros
 
 *Live span-A canon. One of the three antagonist faces (the **predatory** one). Full profile:
-`intake/character-profiles.md` §3. **AU-seating caveat:** canon Otto b.77 AC would be young in span-A;
-here he is the Otto-archetype Hand-class operator — Phase-4 to settle seating/name. Septon Barth (§3c)
-eases reliance on this seating.*
+`intake/character-profiles.md` §3. **Seating RULED 2026-06-09 — court-transposition:** Otto is **Queen
+Alicent's father / Gael's maternal grandfather** (his canonical relation to Alicent, transposed onto the
+long-peace frame *with* her — the HotD-adjacent court re-seated a generation earlier, not a canon-dated
+figure aged in isolation). Story weight: the predatory antagonist face is Gael's own **blood** — three of
+the environment's faces sit inside her house (cold father · warm mother · predatory grandfather).*
 
 ## Description
 
