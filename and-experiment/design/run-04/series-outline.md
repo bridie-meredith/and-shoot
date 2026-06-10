@@ -73,7 +73,7 @@ threads through as the quiet ledger (the empty place, the household's unease, Wy
 the first faint rung of the complicity that becomes devotion. **The cage is a two-girl cage:** Wylla, a
 minor-noble daughter placed for connections and an arranged future, shares a smaller one — surfaced in the
 reverse-angle (Gael **misses** it, files her "Asset"), seeding the two-person want. **Register:** CHILL→HOLD. **Rung:** off-ladder.
-**Genre-misreads (②/⑤/⑦):** the summons read as a Sect-Master's test; the cage-reveal as "the system assigning a love interest"; the acolyte's empty place as the inner court culling a weak disciple (paranoia, not guilt → she tempers colder); Wylla's attention as a planted monitor-disciple. She sees every beat and reads each one wrong.
+**Genre-misreads (⑤/⑦):** the summons read as a Sect-Master's test; the acolyte's empty place as the inner court culling a weak disciple (paranoia, not guilt → she tempers colder); Wylla's attention as a planted monitor-disciple. She sees every beat and reads each one wrong.
 **Plants:** PLANT[JAEHAERYS-TRANSACTIONAL] · PLANT[SEPTA-ENDORSEMENT] · PLANT[METHOD-LIMIT] · PLANT[ANTI-FAITH] · PLANT[MARRIAGE-THREAT] · PLANT[OUTWARD-COMPLIANCE] · PLANT[SKULLS-INACCESSIBLE] · PLANT[WYLLA-CAGED] · PLANT[SPY-MISREAD]
 **Fires:** FIRE[SURVEILLANCE-PRESSURE] · FIRE[ACOLYTE-WALL] (the cost's wake — the reader's ledger)
 
