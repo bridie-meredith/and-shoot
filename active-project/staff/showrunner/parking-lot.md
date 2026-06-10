@@ -2933,10 +2933,20 @@ parking_lot:
         - active-project/staff/reviews/sameness-scan-b01-c08-c20.md
         - staff/admin/process-proposals.md  # PROP-0052
       resolution_suggestion: "principal greenlight -> /and-cohere b01 c11-c19 (light, 3-chapter structural pass per the scan's cheapest-fix list); archive draft baselines first; re-run the sameness detector + /and-review cohere on c11-c19 to confirm the run broke"
-      status: open
-      resolved_at: null
-      resolved_by: null
-      resolution_note: null
+      status: resolved
+      resolved_at: 2026-06-10
+      resolved_by: "light 3-chapter structural pass (principal-approved via AskUserQuestion; DEC-0117/0118 resolution)"
+      resolution_note: |
+        Revised c11/c15/c18 (surgical structural re-render; events + substance deltas + the
+        withhold-the-protected-name invariant all preserved; baselines archived at
+        active-project/draft/_archive/20260610-pre-sameness-cohere/). Detector re-scan
+        (sameness-rescan-b01-c10-c19-2026-06-10.md) confirms: SAMENESS-HIGH -> SAMENESS-MODERATE;
+        the c17->c18->c19 tail run BROKE (three distinct exits); c11/c12 head-mirror BROKE;
+        terminal-tic 6 -> 4 (non-adjacent); longest unbroken same-shape run 3 -> 1 (below the FLAG
+        threshold). Derived manuscripts (b01-manuscript.md + completed-works/book-one.{md,txt})
+        regenerated from the updated drafts (diff-verified: only c11/c15/c18 changed). Residual
+        (non-blocking): c12/c14 are the two most similar surviving desk-tic closings — next
+        candidates if a further pass is ever wanted; not required (verdict below FLAG threshold).
 
     - id: pl-2026-06-08-formdebt-001
       created_at: 2026-06-08T00:00:00Z

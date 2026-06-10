@@ -103,3 +103,17 @@ bounded structural-monotony weakness with a cheap remediation path.
 ---
 
 VERDICT: PASS-WITH-NOTES — register failure CLEARED (rebuild succeeded on the DEC-0115 target; reads alive + followable); back-third structural sameness NOT cleared (non-fatal, c20 vindicates; remediation pl-2026-06-08-sameness-001) + residual plot-report ledger-creep; Sera promise-payoff deferred (DEC-0108); rebuilt bones not gate-certified (6 SVO faults found in c07 spot-check — form-scan recommended).
+
+---
+
+## Reservation #1 (back-third structural sameness) — REMEDIATED (2026-06-10)
+
+The principal greenlit (AskUserQuestion; DEC-0117/0118 resolution) the light 3-chapter structural pass.
+Revised c11/c15/c18 (surgical structural re-render — varied scene entry/exit framing + the terminal
+desk-tic; preserved all events, substance deltas, voice, and the withhold-the-name invariant; baselines
+archived). Detector re-scan (`sameness-rescan-b01-c10-c19-2026-06-10.md`): **SAMENESS-HIGH → SAMENESS-MODERATE**
+— the c17→c18→c19 tail run BROKE (three distinct exits), the c11/c12 head-mirror BROKE, terminal-tic 6→4
+(non-adjacent), longest unbroken same-shape run 3→1 (below the FLAG threshold). Derived manuscripts
+regenerated from the updated drafts (diff-verified: only c11/c15/c18 changed). **Ruling unchanged:
+PASS-WITH-NOTES** — the book was already passing; this lifted the one substantive reservation. Remaining
+open: Sera promise-payoff (DEC-0108, deferred) + form-debt (pl-2026-06-08-formdebt-001, banked hygiene).
