@@ -1514,12 +1514,14 @@ books:
       was the catastrophe.
     orchestrator_critic_verdict:
       ruling: PASS-WITH-NOTES
-      report_path: active-project/staff/reviews/verdict-b01-2026-06-06T04-08-37Z.md
-      verdict_at: 2026-06-06T04:08:37Z
+      report_path: active-project/staff/reviews/verdict-rebuilt-b01-2026-06-08.md
+      verdict_at: 2026-06-08
       stale_since: null
-      disposition_authority: DEC-0105   # Class-B cohort caveat accepted at this verdict (admin user-proxy)
-      notes_summary: "full 14-delta trajectory + settled cost-ledger delivered (strong substance); back-third Class-B cohort (c14-c20, 7 consecutive SHIPPED-WITH-CAVEATS) + Sera payoff-hole + unresolved SOFT card-slugs accepted as caveats of record"
-      open_hard_caveats: [pl-2026-06-04-002, pl-2026-06-04-c15-004, pl-2026-06-04-c16-001, pl-2026-06-05-c19-deptpass]   # accepted-as-caveat per DEC-0105, NOT cleared
+      supersedes: active-project/staff/reviews/verdict-b01-2026-06-06T04-08-37Z.md   # VOID per DEC-0115 (masked the register failure as design-inherent signature)
+      disposition_authority: DEC-0115   # re-certification of the rebuilt (no-ledger) artifact; the DEC-0105 Class-B cohort acceptance is REVERSED — the rebuild FIXED the register those caveats flagged
+      notes_summary: "REBUILT/no-ledger re-certification. Register failure CLEARED (naive cold-read: a person is present, FOLLOW strong, ending lands — the DEC-0115 target delivered). Reservations (non-fatal): (1) back-third structural sameness NOT cleared (SAMENESS-HIGH, 8/10 mid-book chapters one template, c17-c19 run; c20 vindicates; remediation pl-2026-06-08-sameness-001); (2) residual ledger-creep on plot-reporting (render-layer); (3) Sera promise-payoff still deferred (DEC-0108). Process: rebuilt bones NOT gate-certified — c07 spot-check FAILed bones-gate on 6 SVO faults; cheap form-scan recommended."
+      open_soft_caveats: [pl-2026-06-08-sameness-001, pl-2026-06-06-cohere-002]   # structural-sameness remediation + Sera deferral (both SOFT, principal-gated)
+      superseded_register_caveats: [pl-2026-06-04-002, pl-2026-06-04-c15-004, pl-2026-06-04-c16-001, pl-2026-06-05-c19-deptpass]   # the old DEC-0105 airless/Class-B caveats: RESOLVED-BY-REBUILD (the register they flagged is fixed); retained for trace, no longer open
     structure:
       chapter_count: 20
       # Rationale: midpoint of 18-22 hard-fenced range. Distribution: chapters 1-9 absorb
