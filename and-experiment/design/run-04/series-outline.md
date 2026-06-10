@@ -86,11 +86,15 @@ Barth's framework brushes "consumed sorcerous material" and recoils. **Register:
 **Fires:** FIRE[COMPATIBLE-SOURCES] · FIRE[METHOD-LIMIT]
 
 ### I.5 · the-bond-breaker *(~6)*
-**Beat:** files the king's heirloom with her cultivated jaw (servants blamed — collateral); Daemon corners
-her; she drains + severs his living dragon-bond; a distant dragon dies. Horror — the demonic path — she
-swears off it; pivots thief → **operator**. The no-wound dragon-death + the uncanny beauty + "Dragonbane"
-**seed the realm's mirror-flip** (it starts casting her as something out of legend). **Register:** CHILL. **Rung:** R1.
-**Plants:** PLANT[DEMONIC-PATH] · PLANT[DRAGON-DEATH-UNEXPLAINED] · PLANT[SYMPATHETIC-KILL-AT-DISTANCE] · PLANT[PLAYING-SMART] · PLANT[HIDEY-HOLE] · PLANT[BODY-TEMPERING-CONCEALED] · PLANT[COLLATERAL-DAMAGE] · PLANT[PROPHESIED-LEGEND]
+**Beat:** files the king's heirloom with her cultivated jaw (servants blamed — collateral). Daemon corners
+her, pressing a gross "special blood" pass dressed as bloodline-mysticism; Gael **misreads it as an offer of
+platonic dual-cultivation** and runs it then and there — the demonic drain. **Carthanax dies** (no wound, at
+distance); Daemon is left near bed-ridden. Unsure whether that was a demonic-path deviation, she resolves on
+closed-door meditation — and the terrified realm obliges, **confining her to her chambers** (quarantine for a
+feared contagion) which she reads as the caring sect granting secluded cultivation. The no-wound dragon-death
++ the uncanny beauty + "Dragonbane" **seed the realm's mirror-flip**. **Register:** CHILL. **Rung:** R1.
+**Genre-misreads (②/⑥; the one chapter the horror is real):** Daemon's predatory "special blood" pass read as an offer of **platonic dual-cultivation** — she runs it and accidentally guts him (the atrocity is itself a misread); "was that the demonic path?" left unresolved → `PLANT[CLEAN-HANDS-DOCTRINE]` (the line drawn at the *technique,* not the harm — the license the ladder runs on, fires II.7 + III.6); near-bedridden Daemon read as "an elder who lost his cultivation base" (a stat-change, not a man — completes GIFT:DAEMON); Carthanax mourned as kindred spirit-beast while the executed servants never register (③); the quarantine read as the sect granting secluded cultivation (`COURT-AS-EVIL-SECT`).
+**Plants:** PLANT[DEMONIC-PATH] · PLANT[DRAGON-DEATH-UNEXPLAINED] · PLANT[SYMPATHETIC-KILL-AT-DISTANCE] · PLANT[PLAYING-SMART] · PLANT[HIDEY-HOLE] · PLANT[BODY-TEMPERING-CONCEALED] · PLANT[COLLATERAL-DAMAGE] · PLANT[PROPHESIED-LEGEND] · PLANT[CLEAN-HANDS-DOCTRINE]
 **Fires:** FIRE[DAEMON-THREAT] · FIRE[UNCANNY-BEAUTY] · FIRE[VALYRIAN-STEEL-COMPATIBLE] · FIRE[THEFT-ESCALATION] · FIRE[GIFT:DAEMON] (the favor repaid — she took his gift, then his dragon-bond, never reading him)
 
 ### Interlude · Alicent *(external POV — the one camera outside her head)*
@@ -151,7 +155,7 @@ no purpose. **Register:** HOLD. **Rung:** off-ladder.
 **Beat:** a family member casually endangers Wylla; the exploiter squeezes. Gael acts — the first
 *premeditated* human removal, via paper + the still-room, deniable ("a vendor dispute, resolved"). Otto's
 lever yields a corpse he didn't predict. **Register:** CHILL→SPIKE. **Rung:** R2.
-**Fires:** FIRE[COMPROMISED-CHANNEL] · FIRE[COLLATERAL-DAMAGE]
+**Fires:** FIRE[COMPROMISED-CHANNEL] · FIRE[COLLATERAL-DAMAGE] · FIRE[CLEAN-HANDS-DOCTRINE] (the first "clean" kill — paper + poison; "not the demonic path, therefore fine")
 
 ### II.8 · nothing here is mine *(~9)*
 **Beat:** to own a thing you must be beyond reach — a **ship**. Lock II perfected; the ship ordered through
@@ -198,7 +202,7 @@ payments + the maid's movements; the pursuer **Wylla kills** is his man — the 
 it warmed). Wylla leaves her house and name behind to board; the realm's post-mortem reaches for any
 explanation — a foreign prince, a god, the prophecy — anything but a princess with **agency**. The ship sails
 south. **Register:** SPIKE (loudest since Book I). **Rung:** R4 (the apex).
-**Fires:** FIRE[SHIP] · FIRE[MAID-TEMPERED] · FIRE[EXCURSION-RISK] · FIRE[CITY-KNOWLEDGE] · FIRE[GHOST-LEGEND] · FIRE[CLOCK-CONCRETE] · FIRE[WARM-DESTINATIONS] · FIRE[BESTIARY-NAMED-ENTRY] · FIRE[OTTO-LEAK] · FIRE[WYLLA-CAGED] (she gives up her noble future — the two-girl cage opens) · FIRE[PROPHESIED-LEGEND] (the realm prefers the legend to her agency, sealed; she never learns) · FIRE[SPY-MISREAD] (the monitor-disciple she feared at I.3 is the one who kills for her — the misread inverted at the apex)
+**Fires:** FIRE[SHIP] · FIRE[MAID-TEMPERED] · FIRE[EXCURSION-RISK] · FIRE[CITY-KNOWLEDGE] · FIRE[GHOST-LEGEND] · FIRE[CLOCK-CONCRETE] · FIRE[WARM-DESTINATIONS] · FIRE[BESTIARY-NAMED-ENTRY] · FIRE[OTTO-LEAK] · FIRE[WYLLA-CAGED] (she gives up her noble future — the two-girl cage opens) · FIRE[PROPHESIED-LEGEND] (the realm prefers the legend to her agency, sealed; she never learns) · FIRE[SPY-MISREAD] (the monitor-disciple she feared at I.3 is the one who kills for her — the misread inverted at the apex) · FIRE[CLEAN-HANDS-DOCTRINE] ("clean hands" at last means the blood is on Wylla — the I.5 doctrine carried to its endpoint)
 
 ### Epilogue
 Two girls on a ship, the continent behind, the warm south ahead. Both desires satisfied; one of them now a
