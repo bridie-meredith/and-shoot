@@ -17,6 +17,7 @@ span-B Dance) are tombstoned/superseded, not deleted.
 | `intake/spine.md` | The 3-book outline + tone/comedy architecture + reverse-angle format. Carries: Gael's six gags · the **recurring foil gags** (Alicent's per-chapter "what the hell"; the antagonist faces breaking) · the **three-faces antagonist** framing · the **per-chapter running-gag map** · resolved R2/R3/apex. |
 | `intake/character-profiles.md` | Full profiles for the load-bearing roles (see below) + the **scholar ladder** (Barth ↔ the Maester near-miss relay). |
 | `intake/character-reactions.md` | Per-foil comedy design (history · foibles · vibes · the tweak) on the coping-loop mechanism; revised after the 3-lens comedy review. |
+| `intake/character-arc-ledger.md` | **Motivation (want + need) · state-axes · the growth/setback turn** for every load-bearing role, with per-entry fence-checks. The completeness guarantee: no role is a flat loop; the two designed non-growth roles (Gael's refusal, Jaehaerys's blindness) are dramatized, not absent. Seeds the substance state-axes / run-03 state-ledger. |
 | `intake/reconciliation-worksheet.md` | The decisions record (gate rulings §D, comedy architecture §D-comedy, KEEP/ADAPT/SUPERSEDE dispositions §A, Phase-4 checklist §E). |
 | `staff/reviews/comedy-angles-review-2026-06-09.md` | The three-lens comedy review (Youjo-Senki / progression-isekai / literary-snob) + the corrections applied. |
 

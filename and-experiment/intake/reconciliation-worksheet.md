@@ -210,7 +210,12 @@ The bestiary is **the one document in the series that tells the truth about Gael
 - [x] `design/run-03/` created; **`spine.md`** tokenized as the canonical 3-book outline (`series-outline.md`)
 - [~] KEEP/ADAPT artifacts carried over — thread-config ✅ (new run-03 config); GUARDs ✅ (carried into the outline header); **timeline/family ⏳ pending**; **state-ledger ⏳ pending**
 - [x] RETIRE/SUPERSEDE artifacts archived — run-02 Book-I outline → `intake/retired/2026-06-09-run02-book-i-outline/` (tombstone; original banner-marked); saerys-* cards/exemplar tombstoned
-- [ ] state-ledger re-founded on the 3-book structure ⏳ **pending (next pass)**
+- [ ] state-ledger re-founded on the 3-book structure ⏳ **pending (next pass)** — **seed authored
+  2026-06-10:** `intake/character-arc-ledger.md` captures, per load-bearing role, motivation (want + need) +
+  state-axes + the growth/setback turn, with fence-checks. Audit guarantee: every major character has a
+  captured motivation and a moving axis (no flat loops); the two designed non-growth roles (Gael's
+  refusal-arc; Jaehaerys's blindness) are dramatized via one explicit movement each (Gael's apex
+  register-silence; Jaehaerys's involuntary cooling reflexes) — both folded back into `character-profiles.md`.
 - [x] family/court cards re-derived to Gael/Jaehaerys — 10 live span-A cards + 2 lead exemplars; Saerys→Gael done
 - [ ] `time-anchor.md` §4 span fork settled; §5 drift rows rolled forward ⏳ **pending (settle to span-A)**
 - [x] `check-threads.py` on the new outline → **PASS** (R0–R4 present; 60 plants/49 fires)

@@ -129,6 +129,13 @@ tempering (the one gift; she chose to be weaker) → the narrow escape (the apex
 only by putting the cost on the girl she loves). Ends free, on the ship, with one person — and the ledger
 she won't keep, which the reader does.
 
+**The shape of the arc — a *refusal*, with one crack.** Read as state-change, Gael's is a deliberate
+**anti-arc**: across three books the walls *rise* (transcendence-refusal, the cost-ledger R0→R4) and she
+**does not come down.** Her single interior state-change in the whole series is the **apex register-silence**
+(III.6) — the breezy deflection finally failing to arrive over what Wylla has become, the one crack in the
+bond she cannot file — **and she does not act on it. She runs.** Growth is the reader's to feel; her own arc
+is the cost of refusing one. (Full per-axis trajectory + fence-check: `intake/character-arc-ledger.md`.)
+
 ### Comic function
 The constant every foil reacts to. They don't react to her gags; they react to the **deflation** — to a
 *simple, obsessive* child on whom their entire cultural apparatus (fear, faith, authority, love, strategy,
@@ -303,6 +310,14 @@ congratulates himself on solving a problem; she congratulates herself on the sam
 opposite reason; **two people pleased with one deal, each thinking they won, the king having lost.** The
 dignity-failure escalates: the more decisively he acts, the more precisely he frees her, and a king cannot
 even *perceive* that he is the architect of her escape.
+
+### The one thing that moves (so he isn't literally static)
+His **control-illusion holds intact the entire span** — by design; he never perceives the failure. The only
+state-change we are allowed to show is an **involuntary tell**: a flicker of unease he **refuses to dignify**
+(a king does not fear a child), surfacing only as colder, more administrative reflexes. That single
+micro-movement is what keeps his arc a *dramatized* setback — objective-total defeat (he is the unwitting
+architect of her escape), subjective-zero recognition — rather than a flat obstacle. (Per-axis +
+fence-check: `intake/character-arc-ledger.md`.)
 
 ### Hard fences
 1. **Cold, not warm** (warmth is Alicent's). 2. **Never reaches the truth** ("useless/dangerous," never

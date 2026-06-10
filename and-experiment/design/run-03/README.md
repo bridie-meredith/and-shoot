@@ -14,6 +14,7 @@ retained as provenance.
 - **Narrative + comedy architecture + per-chapter gag map:** `intake/spine.md`
 - **Cast profiles + scholar ladder:** `intake/character-profiles.md`
 - **Per-foil comedy design (reviewed):** `intake/character-reactions.md`
+- **Motivation + state-axes + growth/setback per role (state-ledger seed):** `intake/character-arc-ledger.md`
 - **Live cards (10) + tombstones:** `and-experiment/warehouse/` (Gael, Wylla, Jaehaerys, Otto, Barth,
   Alicent, Maester Lorren, Septa Aldith, Hobb, Daemon)
 - **Lead voice exemplars:** `and-experiment/persona-exemplars/{gael-targaryen,wylla-maid}.md`
@@ -33,7 +34,8 @@ foil/comedy notes as PLANT/FIRE threads).
 **Pending (tracked — heavier ADAPT carry-overs; staged for adaptiveness):**
 - `time-anchor.md` §4 span fork → settle to span-A; roll §5 drift rows forward.
 - state-ledger → re-found on the 3-book structure (adapt `run-02/book-i-state-ledger.md`; carry the
-  entity registry + GUARDs).
+  entity registry + GUARDs). **Seed now available:** `intake/character-arc-ledger.md` provides the
+  per-character motivation + state-axes + growth/setback trajectory the re-founded ledger builds on.
 - `timeline-and-family-tree.md` → re-derive §2 family tree to Gael/Jaehaerys/Alicent + seat the
   antagonist faces (settle the Otto/Daemon AU-age vs rename call).
 - `staff/showrunner/memory.md` + `project-history.md` → roll forward to span-A (L8); replace the stale
