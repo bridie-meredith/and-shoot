@@ -33,13 +33,14 @@ the maester's Citadel letters (the Greek chorus), witnessed reactions, rumor/epi
 interlude. Each chapter below carries: **Inside** (Gael) · **Reverse-angle** (😱 horror / 🤨 confounding
 / 😂 comedy, with the native + channel) · **Gags** firing.
 
-### The six running gags (legend — full defs in worksheet §D-comedy)
+### The seven running gags (legend — full defs in worksheet §D-comedy)
 - **① Title collector** — treats Westerosi slurs ("Dragonbane," "Poison-Eater") as earned cultivation epithets; collects + ranks them; her reputation (all misunderstandings) eventually does her intimidation for her.
 - **② Genre critic / trope-dodger** — keeps a do-not-do trope list; rates her grimdark life like a jaded reader ("derivative, two stars"); dodges real dangers on genre principle.
 - **③ The bestiary** — journal: reagents/beasts get reverent entries, humans logged by function ("Hands," "Obstacle," "Vendor"). **The one document that tells the truth about her.** Escalates to a plot spine (see Book II).
 - **④ Corporate euphemism** — thinks in margins/KPIs/stakeholders; grimdark deeds arrive in HR-speak ("offboarding a contractor"); blander jargon = darker deed.
 - **⑤ Misread indifference** — her not-caring reads as virtue (piety) or menace (inhuman calm); both wrong; her blankness writes its own legend.
 - **⑥ Self-audit ("am I the villain?")** — runs moral self-audits vs cultivation-novel ethics, clears herself on technicalities while being the realm's apex predator; pities the "real" villains.
+- **⑦ Death flags** — genre-poisoned, Gael dreads *death flags* (the fictional omens that precede a death — "when this is over I'll wed my sweetheart," a sudden kindness, a shown keepsake, talk of going home). She tracks them and quietly manages people by flag-risk. The dark joke: **grimdark Westeros keeps proving her right** — flag-raisers here genuinely die (the realm is a meat-grinder), so a paranoia that would be pure delusion anywhere else is relentlessly *validated,* right for entirely the wrong reasons. Sibling to ②. Builds her terror that the people she likes are flagged → pays off on **Wylla** (she watches her for flags; it helps drive the III.5 tempering — "clearing" the flag) and darkens the apex.
 
 ### Recurring foil gags (audience-funny; every chapter)
 Beyond Gael's six, the foils carry their own recurring **audience-funny** beats (the reader laughs; the character suffers), each **escalating** rather than repeating:

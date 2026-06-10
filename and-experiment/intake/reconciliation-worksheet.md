@@ -145,6 +145,18 @@ requires the Phase-4 migration; all de-risk it.*
 **Net:** the only slot still genuinely open after this is the *fallback choice* on Otto/Daemon (AU-age vs
 rename) — a single principal call. Everything else in the character layer is settled.
 
+#### D-comedy.5 — gag ⑦ added: **death flags** (principal directive 2026-06-09)
+Gael is genre-poisoned about **death flags** — the fictional omens that precede a character's death ("when
+this is over I'll wed my sweetheart," a sudden kindness, a shown keepsake, talk of going home). She tracks
+them and manages people by flag-risk. **The engine: grimdark Westeros reinforces the paranoia** — flag-raisers
+in this realm genuinely *do* die (it's a meat-grinder), so a delusion that would be pure comedy anywhere else
+is relentlessly *validated,* and she's proved right for entirely the wrong reasons (ties to the because-Westeros
+fail-upward engine: the realm's lethality validates her trope-brain). Sibling to gag ②. **Build → payoff:**
+seed early (minor figures raise flags and die, reinforcing her) → escalates to dread that the people she
+*likes* are flagged → pays off on **Wylla** (she watches Wylla for flags; the III.5 tempering doubles as
+"clearing the flag") and darkens the III.6 apex. **Phase-4 / run-03 action:** add ⑦ to the per-chapter gag
+notes; propagate to `gael-targaryen` card (done) + profile; mark which chapters fire a death-flag observation.
+
 ### D-comedy. Comedy architecture — five running gags (principal directive 2026-06-09: "have a setup build over time")
 *The tone frame's two engines, implemented as recurring gags — each SEEDED early, ESCALATING across books, PAYING OFF on a heavy beat. The point: by III.6 every laugh has a paper trail, so the same devices that earned three books of comedy deliver the apex horror without the tone breaking. Phase-4: fold into the `comedy-register` card + per-chapter run-03 notes as PLANT/FIRE threads.*
 

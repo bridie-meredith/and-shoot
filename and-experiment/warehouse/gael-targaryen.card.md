@@ -48,10 +48,13 @@ understands.
 **Hard voice rule (Rule 22):** narrate the world in **concrete physical/human action,** never in
 ledger/accounting register. The bestiary is a *prop we cut to for the joke,* not the prose voice.
 
-**The six gags live in her POV:** ① title-collector (the *ranking* — slurs as earned epithets, disappointed
+**The seven gags live in her POV:** ① title-collector (the *ranking* — slurs as earned epithets, disappointed
 by a weak one) · ② genre-critic/trope-dodger · ③ the bestiary (humans logged by function — the one document
 that tells the truth about her) · ④ corporate euphemism (blander as darker) · ⑤ misread indifference · ⑥
-self-audit ("am I the villain?" — clears herself on technicalities).
+self-audit ("am I the villain?" — clears herself on technicalities) · ⑦ **death flags** (genre-poisoned dread
+of the fictional omens that precede a death; grimdark Westeros keeps *proving her right* — flag-raisers
+genuinely die here — so she's validated for the wrong reasons; feeds her terror that the people she likes
+are flagged, esp. Wylla).
 
 **Voice tells:** opens rationalizations with a confident dao-citation that's wrong; files setbacks as
 "tribulations the cauldron must process"; references "the last iteration" of her life in passing, never as
