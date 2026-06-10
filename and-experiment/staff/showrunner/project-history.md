@@ -120,6 +120,22 @@ Authoring forward on the live Gael layer while the migration is pending.
 
 ---
 
+### L8 — run-03 intake migration (span-A REBOOT) · 2026-06-09 (`/and-reoutline`; merged to main)
+The re-baseline ran. The Gael intake (`intake/spine.md` + the full character layer) became live canon;
+span-B (Saerys / Viserys-father / the Dance) retired to provenance (parked, not deleted).
+- **Character layer (authored + merged to main):** 5 profiles · 10 live span-A cards + 2 lead exemplars ·
+  the 3-lens comedy review · the reframed spine (three-faces antagonist, per-chapter running-gag map,
+  scholar ladder, gag ⑦ death-flags, Gael simple-minded, Wylla's conversion) · open slots resolved.
+- **Phase-4:** `design/run-03/series-outline.md` (tokenized; check-threads PASS, R0–R4) · run-02 Book-I
+  outline archived w/ tombstone · convergence-ledger Round 9 · saerys-* cards/exemplar tombstoned.
+- **Cutover:** `memory.md` rolled forward to span-A · `time-anchor.md` §4 span fork **RULED HYBRID**
+  (span A now, the Dance parked).
+- **Still pending (staged):** `timeline-and-family-tree.md` §2 family-tree re-derive · state-ledger
+  re-found on the 3-book structure. Open call: Otto/Daemon AU-age (default) vs rename.
+- **Time-assumption:** Gael, Jaehaerys, **span A (84→95)** — now ruled, not flagged.
+
+---
+
 ## Where the truth currently lives (quick map)
 
 | Question | Authority |
@@ -127,7 +143,7 @@ Authoring forward on the live Gael layer while the migration is pending.
 | When / age / span (story time) | **`design/time-anchor.md`** |
 | Who's who (family tree) + how magic works | `design/run-02/timeline-and-family-tree.md` §2–4 |
 | Ratified premises (the GUARDS) | `intake/GUARDS-register.md` |
-| The current story structure (chapters/beats) | `intake/tentative-outline.md` |
+| The current story structure (chapters/beats) | **`design/run-03/series-outline.md`** (tokenized) + `intake/spine.md` (narrative) |
 | Ordinary-life texture (servants/day/expectations) | `design/counterfactual-life/` |
 | Per-chapter state vectors + blast radius | `design/run-02/book-i-state-ledger.md` (⚠ pre-intake: Saerys/11-ch/span-B) |
 | The frozen pre-change baseline | `convergence/**` (❄ never edit) |
@@ -135,17 +151,18 @@ Authoring forward on the live Gael layer while the migration is pending.
 
 ---
 
-## The pending event that retires the drift
+## The migration that retired the drift — DONE 2026-06-09 (L8)
 
-Everything marked ❌/⚠ in `time-anchor.md` §5 — the Viserys-I cards, the Saerys naming, the 11-ch
-Book I, the span-B invariants — is waiting on **one event: the run-03 migration** via
-`/and-reoutline` (`intake/INTAKE-RUNBOOK.md`). That migration is a **REBOOT** (the intake re-opens
-GUARD-1 and GUARD-3, per the tentative-outline header) and has not started (the reconciliation
-worksheet is blank). When it runs, it will: create `design/run-03/` from the intake; carry the GUARDS +
-timeline (ADAPTed to Gael/span-A); re-found the state-ledger on the 3-book structure; archive the
-superseded run-02/Saerys artifacts to `intake/retired/` (never delete); and fix the card naming. Until
-then, `time-anchor.md` is the bridge that lets work continue on the live layer without first paying for
-the whole migration.
+The run-03 migration (`/and-reoutline`, a REBOOT) **ran and merged to main.** It created
+`design/run-03/` from the intake (tokenized outline, check-threads PASS); carried the GUARDS + settled
+the span fork (HYBRID); archived the superseded run-02 Book-I outline + the saerys-* cards/exemplar to
+tombstones (never deleted); built the 10 live span-A cards; and rolled `memory.md` + this file forward.
+
+**Residual (staged, tracked in `design/run-03/README.md` + worksheet §E):** two ADAPT carry-overs
+remain — `timeline-and-family-tree.md` §2 family-tree re-derive (Gael/Jaehaerys/Alicent + seat the
+antagonist faces) and the state-ledger re-found on the 3-book structure. One open creative call gates
+the family tree: **Otto/Daemon seating — AU-age (default/recommended) vs rename.** Everything else is
+on the live span-A layer.
 
 ---
 

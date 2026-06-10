@@ -111,7 +111,7 @@ overlap** (the apparent overlap in the stale memory.md book-deltas is the retire
 
 ---
 
-## 4. The one open fork — the series SPAN (needs a principal ruling)
+## 4. The series SPAN — RULED 2026-06-09: HYBRID (span A now, the Dance parked)
 
 This is the single genuine time-contradiction left by the layering, and it is a **story decision, not
 a reconciliation** — so it is flagged, not silently resolved (per the project's "ratify smuggled
@@ -131,18 +131,19 @@ premises" rule). The two newest authoritative layers disagree:
 whole structure (3 books, the maid, the ship, the ages above) only closes on span A, and it silently
 drops span B's R4 apex, the dead-dragon finale, the longevity payoff, and the Jaehaerys-death spend.
 
-**Working default (this file): span A (short / escape), as tabled in §3.** Rationale: the intake is
-the latest ratified layer; the active scaffolding (the counterfactual-life library; this anchoring) is
-all on the Gael/intake track; and span A is internally complete while span B is now orphaned by the
-intake's structure.
+**RULED 2026-06-09 — HYBRID (span A now, span B parked).** Span A (the short / escape span, §3) is
+THIS 3-book series' span: the narrow escape, ~age 11 / ~95 AC, two girls on a ship. Span B (the Dance)
+is **PARKED for a future installment, NOT retired** — the longevity premise stays alive, so the escape
+ending deliberately leaves the door open to reach 129 AC. Adopting span A therefore **defers** (does not
+delete): the Dance finale, curdle rung **R4 as the dead-dragon field** (this series' R4 is the III.6
+escape-apex instead), the longevity tragedy, and Jaehaerys's 103 AC death as the father-king gift→spend
+— all preserved as the parked-book material in the frozen `convergence/` outline + the run-02 ledger
+(provenance, never edited). The run-03 migration tokenizes span A as canonical
+(`design/run-03/series-outline.md`, check-threads PASS). Decisions record:
+`intake/reconciliation-worksheet.md` §D #1.
 
-**⚠ Principal ruling required to make it official.** Adopting span A formally **retires**: the
-Dance-of-the-Dragons finale, curdle rung **R4** (dead-dragon field), the "will the immortal come down
-at 45" longevity tragedy, and Jaehaerys's 103 AC death as the father-king gift→spend. Those were
-"RECOMMENDED" by the old timeline and are load-bearing in the frozen `convergence/` outline and the
-run-02 ledger's cross-book invariants. If the principal wants span B (or a hybrid — escape now, Dance
-in a later book), §3 changes wholesale. **Until ruled: §3 is the working assumption; do not build
-late-series beats that depend on the Dance without confirming.**
+**This fork is CLOSED.** Build span-A late-series beats freely; span-B (Dance) beats belong to the
+parked book, not this series.
 
 ---
 
@@ -157,7 +158,9 @@ to keep — these are preserved history; they just must **defer to this file** o
 | `timeline-and-family-tree.md` §1 | Jaehaerys; b.84; **Book I 84–93**; span B recommended | ⚠ PARTLY STALE | §1 superseded here (Book-I end-date + span); §2–6 still good. Header note added. |
 | `intake/tentative-outline.md` | Jaehaerys (era intact); **Gael**; span A | ✅ CURRENT (story) | the structure §3 is derived from |
 | `intake/GUARDS-register.md` GUARD-4 | Jaehaerys; b.84; "Dance = candidate climax" | ⚠ PARTLY STALE | era/birth current; the "Dance candidate" clause is span B — defer to §4. |
-| `staff/showrunner/memory.md` | **Viserys I, ~119–131 AC**; Saerys; old book-deltas | ❌ STALE | constraints.settings + book-deltas predate CL-002 + the intake. Defer-note added (routing). Full fix = run-03 migration. |
+| `staff/showrunner/memory.md` | Jaehaerys; Gael; span A (84–95); 3-book (5/8/6) | ✅ CURRENT | rolled forward 2026-06-09 (run-03 migration) — brief / settings / fences / cast / books all span-A. |
+| `design/run-03/series-outline.md` | Jaehaerys; Gael; span A (84–95); 3-book | ✅ CURRENT | the canonical tokenized outline (check-threads PASS). |
+| `timeline-and-family-tree.md` §2 (family tree) | Viserys-father seating (span-B) | ⚠ PENDING | re-derive to Gael/Jaehaerys/Alicent + seat the antagonist faces (Otto/Daemon AU-age) — staged cutover item. |
 | `staff/showrunner/world-notes.md` "Settings" | **Viserys I, ~119–131 AC** | ❌ STALE | already flagged in the counterfactual-life edit; defer-note here. |
 | `design/run-01/constraints.md` | **Viserys I**; Saerys b.~116 | ❌ STALE (era) | frozen bedrock — KEEP as historical; the *institutions* (offices/loopholes) are era-agnostic and still good; only its dates/era are retired. |
 | `convergence/**` (fusion-v2, ledger, chapters) | Viserys-I-implicit → CL-002 Jaehaerys; **span B** | ❄ FROZEN | never edited (baseline record). Reads as span B. Superseded by the intake; carried as history. |
