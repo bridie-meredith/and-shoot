@@ -208,13 +208,13 @@ The bestiary is **the one document in the series that tells the truth about Gael
 > tokenizes into `design/run-03/`. (Incoming raw outline: `intake/tentative-outline.md`; gate rulings
 > + comedy defs: this worksheet §C/§D.)
 - [x] `design/run-03/` created; **`spine.md`** tokenized as the canonical 3-book outline (`series-outline.md`)
-- [~] KEEP/ADAPT artifacts carried over — thread-config ✅ (new run-03 config); GUARDs ✅ (carried into the outline header); **timeline/family ⏳ pending**; **state-ledger ⏳ pending**
+- [x] KEEP/ADAPT artifacts carried over — thread-config ✅; GUARDs ✅; timeline/family ✅ (`run-03/family-tree.md`); state-ledger ✅ (`run-03/state-ledger.md`)
 - [x] RETIRE/SUPERSEDE artifacts archived — run-02 Book-I outline → `intake/retired/2026-06-09-run02-book-i-outline/` (tombstone; original banner-marked); saerys-* cards/exemplar tombstoned
-- [ ] state-ledger re-founded on the 3-book structure ⏳ **pending (next pass)**
+- [x] state-ledger re-founded on the 3-book structure → `run-03/state-ledger.md`
 - [x] family/court cards re-derived to Gael/Jaehaerys — 10 live span-A cards + 2 lead exemplars; Saerys→Gael done
-- [ ] `time-anchor.md` §4 span fork settled; §5 drift rows rolled forward ⏳ **pending (settle to span-A)**
+- [x] `time-anchor.md` §4 span fork settled (**HYBRID** — span A now / Dance parked); §5 drift rows rolled forward
 - [x] `check-threads.py` on the new outline → **PASS** (R0–R4 present; 60 plants/49 fires)
 - [x] convergence-ledger Round 9 digest appended
-- [ ] `memory.md` + `project-history.md` rolled forward (L8) ⏳ **pending (replace stale Saerys/Viserys/Dance framing)**
+- [x] `memory.md` + `project-history.md` rolled forward (L8) — stale Saerys/Viserys/Dance framing replaced
 - [x] exit summary delivered (Phase 6) — in chat 2026-06-09
 - **Open fork (non-blocking):** Otto/Daemon seating — AU-age (recommended) vs rename (§D-slots)

@@ -25,14 +25,16 @@ retained as provenance.
 **Done:** run-03 created · spine tokenized as canonical outline · checker PASS · run-02 Book-I outline
 archived (tombstone) · convergence-ledger Round 9 appended · live cast carded (Gael/Jaehaerys/span-A).
 
-**Pending (tracked — heavier ADAPT carry-overs; staged for adaptiveness):**
-- `time-anchor.md` §4 span fork → settle to span-A; roll §5 drift rows forward.
-- state-ledger → re-found on the 3-book structure (adapt `run-02/book-i-state-ledger.md`; carry the
-  entity registry + GUARDs).
-- `timeline-and-family-tree.md` → re-derive §2 family tree to Gael/Jaehaerys/Alicent + seat the
-  antagonist faces (settle the Otto/Daemon AU-age vs rename call).
-- `staff/showrunner/memory.md` + `project-history.md` → roll forward to span-A (L8); replace the stale
-  Saerys/Viserys/Dance framing in `project.brief` + `themes_as_bounds`.
+**Cutover — DONE 2026-06-09 (all staged ADAPT carry-overs completed):**
+- ✅ `time-anchor.md` §4 span fork **RULED HYBRID** (span A now / Dance parked); §5 drift rows rolled.
+- ✅ state-ledger re-founded on the 3-book structure → `state-ledger.md`.
+- ✅ family tree re-derived to Gael/Jaehaerys/Alicent + the three antagonist faces → `family-tree.md`
+  (supersedes run-02 §2; Otto/Daemon seated AU-aged per the default).
+- ✅ `staff/showrunner/memory.md` + `project-history.md` (L8) rolled forward to span-A; stale
+  Saerys/Viserys/Dance framing replaced.
+
+**Only residual:** per-chapter state vectors (accrue as chapters are produced) + the one principal call
+below.
 
 ## Open principal call (does not block)
 Otto/Daemon seating — **AU-age (recommended)** vs rename to original era-appropriate figures. See

@@ -55,7 +55,12 @@ away.
 
 ---
 
-## 2. WHO — the AU family tree (FIXED)
+## 2. WHO — the AU family tree (FIXED)   ·   ⚠ SUPERSEDED by `design/run-03/family-tree.md`
+
+> The §2 below carries the **span-B / Saerys** seating (Viserys-as-nephew, Helaena-as-sister,
+> warm-Jaehaerys, Otto-as-courtier). The **live span-A** seating — Gael / cold-Jaehaerys /
+> warm-Alicent / the three antagonist faces (Otto predatory, Barth intellectual) / Daemon drained /
+> Helaena parked — is in `design/run-03/family-tree.md` (2026-06-09 cutover). This stays as provenance.
 
 ```
         Jaehaerys I  ══════  Alicent          ← the reigning King + his Queen
