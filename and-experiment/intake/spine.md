@@ -35,7 +35,7 @@ interlude. Each chapter below carries: **Inside** (Gael) · **Reverse-angle** (�
 
 ### The seven running gags (legend — full defs in worksheet §D-comedy)
 - **① Title collector** — treats Westerosi slurs ("Dragonbane," "Poison-Eater") as earned cultivation epithets; collects + ranks them; her reputation (all misunderstandings) eventually does her intimidation for her.
-- **② Genre critic / trope-dodger** — keeps a do-not-do trope list; rates her grimdark life like a jaded reader ("derivative, two stars"); dodges real dangers on genre principle.
+- **② Genre critic / trope-dodger** — keeps a do-not-do trope list; rates her grimdark life like a jaded reader ("derivative, two stars"); dodges real dangers on genre principle. **Sub-thread — *casting the world* (the control ritual):** she reads Westeros as a cultivation novel and assigns roles — **hunts the protagonist** (is it *her* — the reincarnator / jade beauty — or is she a side-character, or ⑥ the villainess?), keeps a **big-bad pecking order** (a ranked villain-leaderboard: who's the final boss?), and watches for the **first-fodder young master** (the arrogant rival genre says dies early to set the stakes). Westeros subverts every casting — people die off-script (⑦), the "big bad" is *structural,* not a boss, and she files real people as roles and misses them. Seeded I.1; curdles through Book I (see §Themes).
 - **③ The bestiary** — journal: reagents/beasts get reverent entries, humans logged by function ("Hands," "Obstacle," "Vendor"). **The one document that tells the truth about her.** Escalates to a plot spine (see Book II).
 - **④ Corporate euphemism** — thinks in margins/KPIs/stakeholders; grimdark deeds arrive in HR-speak ("offboarding a contractor"); blander jargon = darker deed.
 - **⑤ Misread indifference** — her not-caring reads as virtue (piety) or menace (inhuman calm); both wrong; her blankness writes its own legend.
@@ -93,17 +93,56 @@ toward the apex misfire. Audience-funny: the reader laughs, the character suffer
 
 ---
 
+## Themes (Book I) — and how the plot plays them
+*Four themes; each is **plot,** not garnish — a chapter advances by playing one. Built in 2026-06-09 per
+the principal's "go deeper on themes."*
+
+**1 · "What story am I in?" — narrative imposition vs a storyless world.** Gael *needs* Westeros to be a
+cultivation novel, because a story has rules, roles, and plot-armor — and a story is survivable in a way
+random grimdark death is not. So she **casts** it (gag ②): hunts the protagonist, ranks the big-bads,
+spots the fodder young master. The comedy is how wrong the casting is; the theme is that *casting the world
+is a control ritual* — the same grief-armor as the cultivation cosmology, in narrative form. The tragedy is
+the world won't hold the cast: people die off-script (⑦ death flags), the "big bad" is structural, and she
+files real people as roles and misses them (Wylla logged "Asset" before "person"; her mother's love
+unseen). **Through-line:** I.1 she opens the cast list → I.2–I.3 refines it on court data (the King reads
+"sect-master / final boss"; the Faith a "righteous-sect" antagonist) → I.4 Daemon is a textbook arrogant
+young master (she files + ②-dodges) → I.5 the "young master" *does* fall early — but by her hand and the
+realm's laundering, not genre logic, and the nameless executed "fodder" troubles even her frame →
+Interlude the casting collapses from outside: there is no protagonist plot, only a child and a grim world.
+
+**2 · The cage — agency vs being-claimed.** The title theme. The cage is physical (surveillance),
+ideological (Faith / dynasty / gender), and bodily (marriage). She casts herself the *protagonist*
+(agency); the realm casts her a *marriage-piece* (claimed); the collision is the engine. She never breaks
+it by force (never martial) — she routes around it (the heist-method = Lock I) and will ultimately *exit*
+(the ship): agency reclaimed by leaving the story written for her. Played hardest at I.3 (the cage
+revealed) and the Interlude (the betrothal makes it concrete).
+
+**3 · Family is the environment (the antagonist is the house).** When the big-bad pecking order finally
+resolves, it points **inward** — not an external sect-master but the family/realm that claims her: the
+**cold father** (Jaehaerys, the cage), the **warm mother** (Alicent, the trap), the **predatory
+grandfather** (Otto, at court). The horror under the farce: the people who love her *are* the antagonist.
+Seeded across Book I; named in the Interlude.
+
+**4 · Comedy is armor; the reader keeps the ledger.** The deflecting lens — casting horror as genre beats,
+the breezy cultivation-monologue — is how she survives a world that already killed her once. The reader
+carries the weight she waves off: the dead hatchling, the executed servants, the diminished man, the
+mother's grief. Every chapter: the laugh on top, the ledger (the curdle R0→R1) underneath — the reader's,
+not hers.
+
+---
+
 ## BOOK I — *the cage* · age 0–6 · the nursery → the Red Keep · broad farce
 *Scale: her own body. Lock I: the heist-method is born. Cost: R0 → R1.*
 
 ### I.1 · dragonbane *(infant)*
 **Inside:** adult-nerd brain in a sick newborn, bored stiff; recognizes the gift-egg radiates *something*, concludes she's isekai'd, decides (on recently-binged novel logic) to cultivate. Resonates with the egg, bleeds on a chip, swallows → qi. Draws harder → it **hatches** → "a monster's in the crib with a baby" → she fights, kills it (scar, blood), eats a claw. › **R0.**
+**Genre-casting begins (②, theme 1):** even mid-grind she is *casting the story she's in.* She auditions herself for **protagonist material** (the reincarnator? the jade-beauty? or — ⑥ — the villainess-reincarnator she vows *not* to be), files the hatchling as her **first trial-beast** (genre-correct protagonist origin: power grows from the first kill), opens a **big-bad pecking order** on the few powers she can sense (the egg/beast; the unseen authority whose comings-and-goings *radiate* "sect-master / final boss"), and resolves to spot the realm's **first-fodder young master** (the arrogant rival genre says dies early) — she has no candidate yet and mis-pegs a preening guard on no evidence. She is days old and already drawing the cast list; the reader sees a newborn staring too hard at the ceiling.
 **Reverse-angle:**
 - 😱 *Wet-nurse (gossip):* a babe that never cries, lies open-eyed and rigid half the day "like a little corpse practicing"; won't take the night shift.
 - 😱 *Nanny:* finds her with bloodied gums mouthing the egg "like she means to eat it," cooing; later — a comatose babe, a dead hatchling, blood. Only frame that fits: *cursed.* Two nurses quit.
 - 🤨 *Maester (letter):* "A trance-state I can compare only to deep study or a greyscale stupor, yet she is in rude health. No diagnosis. I have requested more parchment."
 - 😂 *A practical guard:* "Good. One fewer dragon for the stables to feed." (Shushed.) · *Alicent:* "She's *contemplative.* A philosopher, perhaps."
-**Gags:** ① (her proud first title-unlock: "Dragonbane") · ⑤ (the omen) · ⑥ (frets she's the villain-reincarnator, vows to be righteous).
+**Gags:** ① (her proud first title-unlock: "Dragonbane") · ② (casting opens — protagonist-hunt + the villain-leaderboard + fodder-young-master watch; hatchling = first trial-beast) · ⑤ (the omen) · ⑥ (frets she's the villain-reincarnator, vows to be righteous) · ⑦ (seeded — she starts watching for death flags).
 
 ### I.2 · the-heist *(~2–3)*
 **Inside:** plateaued, under-stimulated; runs her first proper **heist** (SIGHT→PLAN→IMPLEMENT→REWARD) on the maester's still-room, eats a compatible reagent. › **Lock I established.**
