@@ -6465,3 +6465,122 @@ pr_ref: claude/optimistic-newton-YCnTC
 defer_until: null
 supersedes: null
 ```
+
+---
+
+## PROP-0051
+
+```yaml
+id: PROP-0051
+created_at: 2026-06-08T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: on-demand
+  source_report: active-project/staff/reviews/ablation-b01-c01-2026-05-26T000543Z.md
+  source_verdict: principal-directive (DEC-0116) — "consider if and-facets is adding value; find the cheapest way to simplify yet improve"
+target:
+  type: command
+  path: .claude/commands/and-facets.md
+  section: "Phase 3 (R2 fanout) + Phase 4 (R2 fanin) + Phase 4.5 + Phase 4.6 + Phase 5b (audience-gate)"
+change_type: delete
+rationale: |
+  /and-facets was the single most expensive step in chapter production (~60-100 dispatches typical, up
+  to ~180), dominated by two review layers whose value the evidence does not justify: (1) the R2 facet-
+  judging round (5-6 parallel judges re-culling R1) and (2) the Phase 5b per-facet 3-of-3 adversarial
+  audience-gate (up to (9+speakers)x3 dispatches/cycle x 3 cycles + cap-burn). The b01-c01 ablation
+  studies prove the facet STACK adds aggregate value (bones-only ranked last; full ranked #2/#5) but it
+  concentrates in 3 facets (memory, location-state, state-updates); the biggest quality mover across all
+  variants was pacing/whitespace/voice (a /and-stitch concern); and removing density facets sometimes
+  IMPROVED rank ("room to breathe"). R2 optimizes for exactly the density the ablation shows hurts.
+  DEC-0115 is dispositive on Phase 5b: the audience-gate reviewed an intermediate artifact the reader
+  never sees and blessed ~16 consecutive AIRLESS chapters "by signature" while the reader found the book
+  unreadable — the worst outcome from the most expensive gate. DEC-0033's "skipping facets costs more
+  downstream" rationale was premised on bones-quality being the risk; since then /and-write Phase 6 bone-
+  gate + five-pass SVO + /and-review bones + the DEC-0115 no-ledger fence at write/stitch cover that
+  surface upstream and downstream of facets. The live proof: the no-ledger re-cascade bypassed the full
+  chain and produced the now-shipped drafts, which read better than the originals that went through it.
+evidence_refs:
+  - "active-project/staff/reviews/ablation-b01-c01-2026-05-26T000543Z.md — bones-only ranked 12/12 and 15/15; full ranked #2/#5; value concentrated in memory/location-state/state-updates; pacing/whitespace outranked sensory/metaphor/interior"
+  - "active-project/staff/ablation/b01-c01-2026-05-26T000543Z/cold-read-report-15variant.md — whitespace/cadence outranked sensory richness, metaphor variation, interior depth"
+  - "staff/admin/decisions.md DEC-0115 — Phase 5b (and every facet gate) instructed to bless the unreadable signature; 16 AIRLESS dispositions with no circuit breaker"
+  - "staff/admin/decisions.md DEC-0033 — full-process rationale was bones-quality risk, now covered upstream by /and-write Phase 6 + /and-review bones"
+  - "staff/admin/decisions.md DEC-0116 — GO Option A (slim) with the R2 dialogue judge left to implementer"
+  - ".claude/commands/and-facets.md — Phase 3/4/4.5/4.6 (R2 round) + Phase 5b (audience-gate) + cap-burn semantics"
+recurrence_count: 2
+proposed_diff: |
+  Rewrite .claude/commands/and-facets.md to the slim flow: Phase 0 validate -> Phase 1 single R1
+  authoring round (the facets; exposition surface:reference by default per PROP-0004) -> Phase 2 fanin
+  (cite-index) -> Phase 2.5 context/aliveness review (writes context + grounding ledgers) -> Phase 3
+  CONDITIONAL spine-hole remediation (slimmed descendant of the old 4.6, fired off 2.5; 0 dispatches
+  common case) -> Phase 4 single mechanical auditor (12 classes; THE facet-layer gate; absorbs scene-map
+  coverage + dialogue dedup/coverage sanity + the per-facet caps R2 enforced) -> Phase 4.5 admin process-
+  critic (renamed from 5c) -> Phase 5 persist + orchestrator-critic verdict. DROP the R2 round
+  (Phase 3/4/4.5/4.6 in old numbering) including the R2 dialogue judge (its dedup concern -> Phase 4
+  auditor DEDUP class), and DROP Phase 5b + its cap-burn cycle. The adversarial prose read moves to the
+  existing /and-stitch Phase 9 cold-read + naive-follow (DEC-0115-hardened). Net ~60-100 -> ~10-12
+  dispatches. Coupled doc updates: CLAUDE.md Rules 11/13/15/17/18 + commands table + routing table +
+  primary pattern; RUNBOOK pre-flight cap + R2 table + chain step 4; schemas/showrunner-memory.schema.md
+  status table (faceted-r2 retired); staff/audience/and-facets-orchestrator-critic/card.md acceptance
+  criteria + hot_buttons (criterion 4 audience-gate -> Phase 2.5/auditor).
+cost_estimate: M
+status: accepted
+triaged_at: 2026-06-08
+triaged_by: principal (session, via admin user-proxy DEC-0116)
+disposition_note: "ACCEPTED + IMPLEMENTED this session per DEC-0116 (Option A). R2 dialogue judge dropped (implementer call); its dedup concern folded into Phase 4 auditor DEDUP."
+pr_ref: claude/ecstatic-volta-14ixm1
+defer_until: null
+supersedes: null
+```
+
+---
+
+## PROP-0052
+
+```yaml
+id: PROP-0052
+created_at: 2026-06-08T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: on-demand
+  source_report: active-project/staff/reviews/sameness-scan-b01-c08-c20.md
+  source_verdict: SAMENESS-HIGH (8 of 10 mid-book chapters run one scene template; longest unbroken run fails the >=4 threshold at c17-c19)
+target:
+  type: command
+  path: .claude/commands/and-review.md
+  section: "cohere subcommand (add a cheap structural-sameness pre-scan) OR a new cross-chapter check"
+change_type: add
+rationale: |
+  The cohesion machinery has a real gap (confirmed this session): NOTHING detects cross-chapter
+  STRUCTURAL SAMENESS — N consecutive chapters running the same scene-move template. Per-chapter
+  Phase 9 cold-read cannot see it (each chapter reads fine alone); /and-cohere is opt-in, post-ship,
+  and oriented to setup/payoff + register, not scene-shape repetition. The b01 mid-book (c10-c19) was
+  diagnosed with this exact problem; the no-ledger rebuild fixed the register but left the structure,
+  making the sameness MORE legible. A prototype detector (run this session on the rebuilt drafts)
+  mechanically confirmed it: 8/10 mid-book chapters run TEMPLATE-T (packet-arrives -> transcribe ->
+  withhold-the-protected-name -> lift-stylus -> hand-off-surface), with an unbroken run at c17-c19.
+  The detector is CHEAP because it reads STRUCTURE (bones / scene-maps / dramatic_shape), not prose —
+  ~1 dispatch over a chapter range, no re-render. It is the structural-layer analogue of CLAUDE.md
+  Rule 22's "N=2 consecutive" circuit-breaker.
+evidence_refs:
+  - "active-project/staff/reviews/sameness-scan-b01-c08-c20.md — SAMENESS-HIGH; Template-T cluster c08-c19; 8/10 mid-book; breaks at c13/c16; threshold rule proposed"
+  - "staff/admin/decisions.md DEC-0115 — no-ledger overhaul fixed register but preserved structure (rebuild rendered faithful-to-existing-structure)"
+  - ".claude/commands/and-cohere.md + .claude/commands/and-review.md (cohere subcommand) — opt-in, post-ship; no scene-shape-repetition lens"
+recurrence_count: 2
+proposed_diff: |
+  Add a cheap structural-sameness pre-scan as a sub-step of /and-review cohere (or a standing flag at
+  /and-stitch Phase 10 forward-thread, which already reads accumulated past): over a chapter range,
+  compute a per-chapter scene-shape signature (dramatic_shape + central scene-move template, derived
+  from bones/scene-map — no prose read) and flag when >= 4 consecutive chapters share a signature OR
+  >= 2 consecutive are interchangeable instances (the invariant beat does not change meaning). Emit a
+  SOFT parking-lot flag suggesting a light /and-cohere structural pass; do NOT block. Threshold:
+  accretion is licensed if longest unbroken run <= 3 AND the repeated beat changes meaning each time.
+  ~1 dispatch per range; off the per-chapter critical path.
+cost_estimate: S
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```

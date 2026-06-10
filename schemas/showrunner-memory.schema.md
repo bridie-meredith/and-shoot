@@ -362,10 +362,10 @@ Monotonic state machine; status only ever moves forward within a fresh authoring
 | `planned` | `/and-substance book` Phase 6 | Chapter chunk + per-chapter Δ written; scenes not yet authored. |
 | `scened` | `/and-substance chapter` Phase 6 | Scenes + per-scene `substance_delta` + `scene_conflict` + `pov_narrator` + `dramatic_shape` + `goal` + `handoff_in/out` populated; bones not yet authored. |
 | `bones-written` | `/and-write` Phase 7 (post-bone-gate PASS) | Bones authored across all scenes; bones file + scene-map facet emitted. |
-| `faceted-r1` | `/and-facets` R1 fanin | R1 facet rubrics applied. |
-| `audited-r1-mechanical` | `/and-facets` mechanical-audit pass | Citation accrual + body-integrity + slice consolidation passed. |
-| `audited-r1` | `/and-facets` audience-gate verdict PASS | URI-DIALOGUE-COVERAGE-GATE + URI-SCENE-WINDOW + audience-gate re-verified. |
-| `faceted-r2` | `/and-facets` R2 fanin | R2 facets applied. |
+| `faceted-r1` | `/and-facets` Phase 2 fanin | Single R1 authoring round merged; cite-index built. |
+| `audited-r1-mechanical` | `/and-facets` Phase 4 audit pass (0 HARD) | Mechanical auditor clean — the facet-layer gate (URI-FACETS-SLIM / DEC-0116). |
+| `audited-r1` | `/and-facets` Phase 5 persist | URI-SCENE-WINDOW + dialogue-coverage sanity + orchestrator-critic verdict cleared. Facet layer done. |
+| `faceted-r2` | RETIRED (URI-FACETS-SLIM / DEC-0116) | Legacy value from the pre-slim two-round pipeline; the R2 judging round is retired. New runs never set it; treat as `faceted-r1` on resume. |
 | `stitched` | `/and-stitch` Phase 8 finalize | `draft/<book>-<chapter>.md` (clean) + `draft/<book>-<chapter>.annotated.md` emitted. |
 
 **Partial-revise rule (G1):** any bone change drops `status` back to `bones-written` on Phase 7 emit, regardless of how many scenes were touched. Downstream facet outputs + draft are stale-marked.

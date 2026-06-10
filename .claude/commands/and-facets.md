@@ -1,113 +1,77 @@
 ---
-description: Unified facet pipeline for one chapter. Single command, six phases — R1 fanout → R1 fanin → R2 fanout → R2 fanin → audit (mechanical) → audience-gate (adversarial, blocking). Tensometer dropped under the substance overhaul; scene-map facet is upstream-emitted by /and-write Phase 7 (Phase 4d here is validation, not derivation). Output - active-project/theater/facets/ + active-project/theater/dialogue/ + audit report + audience-gate verdict. Usage - /and-facets <book>-<chapter>
+description: Slim facet pipeline for one chapter. Single command, one authoring round + one mechanical audit — R1 fanout → fanin → context/aliveness review → (conditional) remediation → audit → persist. The R2 judging round and the Phase 5b adversarial audience-gate are RETIRED under URI-FACETS-SLIM (DEC-0116). Output - active-project/theater/facets/ + audit report + orchestrator-critic verdict. Usage - /and-facets <book>-<chapter>
 ---
 
-Unified facet pipeline. One chapter in, audited + audience-accepted graph out. The four legacy sub-commands (-r1, -r2, -r3, -audit) are folded into this command; R3 is retired. Phase 5b — audience adversarial gate — is the final blocking gate; the auditor's mechanical scan and the audience's adversarial reading must BOTH come back clean before /and-facets is "done." **Dialogue** is folded in alongside exposition — R1 author + R2 judge + audit-class additions + audience-gate inclusion. Discipline lifts from v1 round-trip work (`design/shoot-v2/round-trip-method.md`, `dialogue-corpus.md`) via the locked rubric at `staff/dialogue-writer/rubric-dialogue.md`.
+Slim facet pipeline. One chapter in, mechanically-audited facet graph out. **The facet layer authors once and audits once.** The expensive second-look machinery — the R2 facet-judging round and the per-facet 3-of-3 adversarial audience-gate — is retired (DEC-0116). The adversarial reading of the *actual prose a reader sees* now lives where it belongs: `/and-stitch` Phase 9 cold-read + naive-follow gate (hardened under DEC-0115). The facet-layer's own gate is the single mechanical auditor (Phase 4): schema/constraint/cap/fence-clean before persist.
 
-**URI-SUBSTANCE-OVERHAUL (2026-05-17) mutations:**
-- Tensometer facet **removed** from R1/R2 fanout. R1 rubric input lists no longer read `tensometer.md`. Where pressure-signal is needed, rubrics consult `series.substance.*` + per-chapter `substance_delta` from showrunner memory instead.
-- Phase 4d scene-map **downgraded from derivation to validation**. `/and-write` Phase 7 emits the scene-map facet directly from `chapters[].scenes[]` in memory; Phase 4d confirms its presence + runs the URI-SCENE-WINDOW coverage check.
-- Phase 0 input-path renamed: `theater/proto-lines/<slug>.md` → `theater/bones/<book>-<chapter>.md`. Slug-arg shape: `<book>-<chapter>` (e.g. `b01-c01`).
-- Phase 0 step 4 tens-precondition abort **removed** as dead code.
-- Facet output-path convention: flat naming under `theater/facets/` — `<facet>-<book>-<chapter>.md`, `<facet>-<book>-<chapter>-<character>.md`, `_cite-index-<book>-<chapter>.md`, `scene-map-<book>-<chapter>.md`.
+**URI-FACETS-SLIM (2026-06-08, DEC-0116) mutations — the simplification this command was rebuilt around:**
+- **R2 judging round RETIRED.** The old Phase 3 (R2 fanout) + Phase 4 (R2 fanin) + Phase 4.5 (post-R2 re-review) are removed. R1's per-author cull + the Phase 4 mechanical auditor's DEDUP / SUPERFLUOUS / FREQUENCY-BAND classes do the culling the R2 judges used to do — and they do it as 1 auditor dispatch instead of ~6 judge dispatches. The R2 dialogue judge (the locked-graph KEEP/DELETE/REWRITE pass that survived URI-WRITE-DIALOGUE-COBONDED) is retired too; its one non-mechanical concern — dialogue duplicating a lens facet at the same anchor — is the Phase 4 auditor's DEDUP class.
+- **Phase 5b adversarial audience-gate RETIRED.** The per-facet 3-of-3 audience reviewers + the 3-cycle remediation loop + cap-burn DELETE semantics are removed in full. Evidence (DEC-0115): the audience-gate reviewed an intermediate artifact the reader never sees and blessed 16 consecutive AIRLESS chapters "by signature" while the reader found the book unreadable. The gate's real-prose equivalent is `/and-stitch` Phase 9. The auditor (Phase 4) remains the facet-layer gate; the orchestrator-critic verdict (Phase 5) remains the facet-layer success standard.
+- **Exposition demoted to consulted-by-stitcher (PROP-0004 / DEC-0014).** Exposition is still authored at Phase 1 (the union-of-personas gap test is the c05 followability content source), but its entries default to `surface: reference` — the stitcher and facet authors consult them for world-grounding; they are NOT folded inline as prose unless a context-ledger license fires. The em-dash inline-gloss fold-in that the ablation showed crushes pacing is off by default.
+- **Conditional remediation preserved (the c05 + readability fix).** Phase 2.5's context-weave (PROP-0020) and readability-twin (PROP-0022) survive. The old Phase 4.6 remediation is now Phase 3, fired directly off Phase 2.5's open ledger holes (there is no Phase 4.5 to gate it anymore). Common case: 0 dispatches.
+- Dispatch cost: ~60-100 → ~10-12 typical. The cut is entirely in the retired review rounds; the R1 author set and the mechanical auditor are unchanged.
 
-You are the orchestrator. Six phases run in strict sequence:
+**Carried forward from URI-SUBSTANCE-OVERHAUL (2026-05-17):**
+- Tensometer facet removed; pressure-signal sourced from `series.substance.*` + per-chapter `substance_delta`.
+- Scene-map facet is upstream-emitted by `/and-write` Phase 7; the Phase 4 auditor validates coverage (does not derive).
+- Dialogue is upstream-emitted by `/and-write` Phase 7 (URI-WRITE-DIALOGUE-COBONDED, 2026-05-25); Phase 0 verifies presence, does not author.
+- Facet output-path convention: flat naming under `theater/facets/` — `<facet>-<book>-<chapter>.md`, `_cite-index-<book>-<chapter>.md`, `scene-map-<book>-<chapter>.md`.
+
+You are the orchestrator. The phases run in strict sequence:
 
 ```
-theater/bones/<book>-<chapter>.md  (bones; upstream from /and-write Phase 7)
-theater/facets/scene-map-<book>-<chapter>.md  (scene-map; upstream from /and-write Phase 7)
+theater/bones/<book>-<chapter>.md          (bones; upstream from /and-write Phase 7)
+theater/facets/scene-map-<book>-<chapter>.md (scene-map; upstream from /and-write Phase 7)
         │
         ▼
    PHASE 1 — FANOUT (R1 parallel authoring)
-            8 facet authors in one Agent block; each writes its
-            own facet file (or per-character slice) + its own
-            annotated proto-lines copy under _inflight/.
+            Facet authors in one Agent block; each writes its own
+            facet file (or per-character slice) + its own annotated
+            proto-lines copy under _inflight/. Exposition authored
+            with surface:reference default (PROP-0004).
         │
         ▼
    PHASE 2 — FANIN (merge + cite-index)
-            build_cite_index.py:
-              - body-integrity check
-              - citation union → canonical proto-lines
-              - slice consolidation (feeling, state-updates)
-              - stale-citation check
-              - cite-index build
+            build_cite_index.py: body-integrity → citation union →
+            slice consolidation → stale-citation check → cite-index.
         │
         ▼
-   PHASE 2.5 — CONTEXT-FOLLOWABILITY REVIEW (post-R1)   ← PROP-0020
-            Series-context-aware reviewer reads the merged R1 graph
-            + scene chunks + handoff_in. Flags FOLLOW-GAPs and
-            classifies each CONTEXT-REQUIRED / WEAVE-FIXABLE / OK.
-            CONTEXT-REQUIRED gaps are written to the context-ledger
-            as LICENSED exposition exceptions (exempt downstream from
-            add-cap + new-plot-content + over-explain penalties).
-            Findings feed Phase 3.
+   PHASE 2.5 — CONTEXT + ALIVENESS REVIEW   ← PROP-0020 / PROP-0022
+            Series-context-aware reviewer reads the merged R1 graph.
+            Writes the context-ledger (CONTEXT-REQUIRED) + the
+            grounding-ledger (GROUNDING-REQUIRED). Non-blocking;
+            feeds Phase 3.
         │
         ▼
-   PHASE 3 — FANOUT (R2 parallel judging)
-            4 midband judges in one Agent block, full graph in each
-            payload. Each writes its own mutated facet file +
-            decision-log shard + its own annotated proto-lines copy
-            under _inflight-r2/. Self-scoped delete only;
-            citation cascade on the author's copy.
+   PHASE 3 — CONDITIONAL REMEDIATION        ← PROP-0020 / PROP-0022
+            Fires ONLY if Phase 2.5 left open ledger holes on the
+            spine (central event / load-bearing stake / causal
+            hand-off, or an AIRLESS hole on a peak). Targeted
+            exposition/sensory add round → re-cite-index → fixer or
+            WARN. Common case: skipped (0 dispatches).
         │
         ▼
-   PHASE 4 — FANIN (decision-log consolidate + merge + cite-index)
-            build_cite_index.py rerun against _inflight-r2/;
-            decision-log shards concatenated to .r2-decisions.md;
-            arbiter glue (T1/T4 interventions) runs over shards.
-        │
-        ▼
-   PHASE 4.5 — CONTEXT-FOLLOWABILITY REVIEW (post-R2)   ← PROP-0020
-            Re-run the reviewer on the R1+R2 graph (with R2's
-            licensed context-adds). Verdict FOLLOWABLE → Phase 5.
-            GLARING-HOLE → Phase 4.6 (conditional R3). This is
-            "where it should be ending" in the common case.
-        │
-        ▼
-   PHASE 4.6 — CONDITIONAL R3 (context remediation)     ← PROP-0020
-            Fires ONLY on a Phase 4.5 GLARING-HOLE. Targeted
-            exposition/facet add round against the named holes →
-            final followability review → fixer manually edits to
-            close, or WARNS (records unresolved hole; non-blocking).
-        │
-        ▼
-   PHASE 5 — AUDIT (single auditor dispatch, mechanical)
-            Flag-only cross-cutting graph audit.
-            Output: active-project/staff/auditor/facets-final-audit.md.
+   PHASE 4 — AUDIT (single auditor dispatch, mechanical)
+            Flag-only cross-cutting graph audit. Twelve classes incl.
+            scene-map coverage, Earth-Bet fence, dialogue dedup +
+            coverage sanity, the per-facet caps R2 used to enforce.
+            Output: staff/auditor/facets-final-audit.md.
             HARD findings remediate via fixer; re-audit until 0 HARD.
+            THIS IS THE FACET-LAYER GATE.
         │
         ▼
-   PHASE 5b — AUDIENCE-GATE (adversarial, BLOCKING)
-            Per-facet audience adversarial dispatches reading the
-            annotated proto-lines + facet graph + cite-index.
-            Specialists fire for facets that have them
-            (e.g. sensory); active project audience falls back for
-            the rest. Per-facet aggregate verdict (accept / revise
-            / fail). Any revise/fail routes to fixer; re-audit
-            (Phase 5) + re-fire 5b. Cycle cap: 3.
+   PHASE 4.5 — Admin process-critic (non-blocking, conditional)
         │
         ▼
-   PHASE 6 — PERSIST + orchestrator-critic verdict
-            (only after Phase 5 = 0 HARD AND Phase 5b = ACCEPT)
+   PHASE 5 — PERSIST + orchestrator-critic verdict
+            (only after Phase 4 = 0 HARD)
 ```
 
-R1 is **blind**: each author reads only its rubric + non-facet upstreams (cards/state/vibes) + base bones. R2 is **graph-aware**: every judge gets all R1 facet outputs (facet files + per-character dialogue files) + the cite-index. The audit is **cross-cutting**: one fork, full graph. The audience-gate is **adversarial-graph-aware**: per-facet adversarial reviewers attack the locked graph the way the auditor's mechanical scan cannot.
+R1 is **blind**: each author reads only its rubric + non-facet upstreams (cards/state/vibes) + base bones. The audit is **cross-cutting**: one fork, full graph, mechanical. There is no second authoring round and no adversarial reviewer layer — the facet graph is locked by R1 + audit, and the prose-level adversarial read happens downstream at `/and-stitch` Phase 9 against rendered prose, not against this intermediate graph.
 
-**Context-weave track (PROP-0020 / URI-FACETS-CONTEXT-WEAVE, 2026-05-29).** The b01-c05 three-FAIL trace's root cause was diagnosed as a *context gap* surfaced too late — only at `/and-stitch` Phase 9, by a cold-reader who lacked the series context a real reader would carry. The fix moves followability/context review *upstream and progressive*, so the reviewer sees how the chapter comes together as facets accumulate rather than at the very end:
+**Context-weave track (PROP-0020).** The b01-c05 three-FAIL trace's root cause was a context gap surfaced too late. Phase 2.5 reads the assembled R1 graph as a reader who has read prior chapters and identifies where context is genuinely required vs. where a lens facet already carries it. Required context is recorded as a **licensed exception** in the context-ledger (`active-project/staff/showrunner/context-ledger-<book>-<chapter>.md`) — exempt downstream from the anti-exposition penalty. Phase 3 authors the licensed adds (conditionally); the Phase 4 auditor honors the exemption.
 
-1. **Before `/and-facets`** — `/and-review bones` includes a followability pre-check: the bones must be *at least somewhat followable as-is* before facet authoring spends on them (FAIL → `/and-write revise`).
-2. **After R1 (Phase 2.5)** — identify where additional context is *required*. Because adding context is embedding exposition (normally penalized), these are recorded as **licensed exceptions** in the context-ledger and noted to the R2 + audience reviewers' working memory so the rest of `/and-facets` does not penalize them. Findings feed R2.
-3. **After R2 (Phase 4.5)** — followability re-checked on the richer graph. Normally terminal; a *glaring hole* rolls into a conditional R3 (Phase 4.6).
-4. **End of R3 (Phase 4.6)** — final review; **fixer manually edits** content to resolve flagged problems, or warns. Then Phase 5 / 5b / 6 and `/and-stitch` proceed as before.
-
-**The context-ledger** lives at `active-project/staff/showrunner/context-ledger-<book>-<chapter>.md` (lightweight; schema inline in Phase 2.5). It is the canonical record of sanctioned context-adds and is read by the R2 exposition judge (Phase 3), the auditor (Phase 5), and the audience-gate (Phase 5b) to suppress the anti-exposition penalty *only* for ledger-licensed entries.
-
-**Readability twin (PROP-0022 / URI-READABILITY-TWIN, 2026-05-29).** The context-weave track above fixes *completeness* (can a reader follow the plot/scene). Its mirror image fixes *readability* (is there a person to follow, or only an apparatus reporting — the c05 "abstracted into feed and count, dense to the point of obscurity" failure). It rides the SAME checkpoints with a SECOND axis and a mirror ledger:
-
-- The bones pre-check, Phase 2.5, and Phase 4.5 each answer the cold-reader's *other* question alongside followability: **aliveness** — does this breathe? Flagged stretches classify `OK` / `VOICE-FIXABLE` (embodied content rendered apparatus-first → a stitch render-choice fix) / `GROUNDING-REQUIRED` (bones genuinely lack body → grounding must be added).
-- `GROUNDING-REQUIRED` writes the **grounding-ledger** (`active-project/staff/showrunner/grounding-ledger-<book>-<chapter>.md`) — exact mirror of the context-ledger. A grounding-ledger entry is the authority that lets a sensory add **escape the frequency-band cap** (Phase 5 auditor + Phase 5b audience-gate exemption), just as a context-ledger entry escapes the anti-exposition penalty. This is the symmetric fix to the problem that *the grounding which makes dense prose breathe is exactly what the sensory cap trims away.*
-- Phase 4.5 and the `/and-stitch` Phase 9 terminal gate score the two axes **separately** and require BOTH — a chapter cannot ship "clean" by being maximally complete-and-economical while reading airless.
-- `VOICE-FIXABLE` findings (and the airless-voice problem generally) route to the `/and-stitch` Phase 4 **voice-embodiment discipline** (URI-STITCH-VOICE-EMBODIMENT) — the render-time rule that, within the bone-faithfulness fence, prefers the embodied faithful rendering of a bone over the apparatus-register one. The series voice-exemplar (`active-project/voice-exemplar.md`) is its calibration anchor.
+**Readability twin (PROP-0022).** The same Phase 2.5 reviewer answers a second question — *is there a person to follow, or only an apparatus reporting?* AIRLESS stretches on the spine write `GROUNDING-REQUIRED` lines to the **grounding-ledger** (`active-project/staff/showrunner/grounding-ledger-<book>-<chapter>.md`), which license a sensory add past the frequency-band cap. `VOICE-FIXABLE` findings (embodied content rendered apparatus-first) carry to `/and-stitch` Phase 4 voice-embodiment discipline — calibrated against `active-project/voice-exemplar.md`. This is the upstream half of the DEC-0115 no-ledger fence; the downstream half is `/and-stitch` Phase 4 + Phase 9 naive-follow.
 
 ## Args
 
@@ -120,15 +84,15 @@ R1 is **blind**: each author reads only its rubric + non-facet upstreams (cards/
 1. Resolve chapter slug. Normalize to `<book>-<chapter>` form for file paths and to `b<NN>c<MM>` for showrunner-memory lookup.
 2. Read `active-project/staff/showrunner/memory.md`. Determine resume point from `chapters[<slug>].status`:
    - `bones-written` — fresh run; start at Phase 1.
-   - `faceted-r1` — partial-run resume; skip Phase 1+2, start at Phase 3.
-   - `faceted-r2` — partial-run resume; skip Phase 1–4, start at Phase 5.
-   - `audited-r1-mechanical` — Phase 5 cleared (0 HARD) but audience-gate not yet run or in mid-cycle. Resume at Phase 5b.
-   - `audited-r1` — both Phase 5 + Phase 5b cleared; already done. Print "already audited; re-run requires explicit re-audit" and exit unless re-audit is wanted.
+   - `faceted-r1` — R1 authored + merged; skip Phase 1+2, start at Phase 2.5.
+   - `audited-r1-mechanical` — Phase 4 cleared (0 HARD); skip to Phase 5 persist.
+   - `audited-r1` — already done. Print "already audited; re-run requires explicit re-audit" and exit unless re-audit is wanted.
+   - (Legacy `faceted-r2` from pre-slim runs: treat as `faceted-r1` for resume — start at Phase 2.5. The R2 round no longer exists.)
 3. Read the bones file at `active-project/theater/bones/<book>-<chapter>.md`. Lift the seven extended-header fields: `episode`, `narrator`, `goal`, `cast`, `locations`, `prior_episode`, `aggregate_range`. (The field name `episode:` is preserved for downstream-compatibility; value is the chapter slug.)
 4. **Upstream scene-map precondition.** Confirm `active-project/theater/facets/scene-map-<book>-<chapter>.md` exists (emitted by `/and-write` Phase 7). Abort if missing — `/and-write` must be re-run.
-4a. **Anchor-refresh gate (URI-FACETS-ANCHOR-REFRESH, A1 — 2026-05-21).** HARD-ABORT (not warn) if the bones file is newer than any pre-existing facet for this chapter OR if any pre-existing facet contains anchor IDs that no longer resolve in the current bones file. Run two checks:
-    - **mtime check:** `mtime(theater/bones/<book>-<chapter>.md)` vs `mtime(theater/facets/<facet>-<book>-<chapter>.md)` for every facet file at this chapter (excluding `scene-map-<book>-<chapter>.md`, which is bones-co-emitted by `/and-write` Phase 7). If bones is newer than ANY facet, HARD-ABORT.
-    - **anchor-resolution check:** scan every pre-existing facet file for `@<flat_id>` anchors and `[<facet>:<flat_id>]` citations. Build the set of bone flat_ids in the current bones file. Any anchor whose flat_id is not in the current bones file (deletion gap OR id-space shift from `/and-write redo`) is a `STALE-ANCHOR` HARD finding.
+4a. **Anchor-refresh gate (URI-FACETS-ANCHOR-REFRESH, A1).** HARD-ABORT (not warn) if the bones file is newer than any pre-existing facet for this chapter OR if any pre-existing facet contains anchor IDs that no longer resolve in the current bones file. Two checks:
+    - **mtime check:** `mtime(theater/bones/<book>-<chapter>.md)` vs `mtime(theater/facets/<facet>-<book>-<chapter>.md)` for every facet file at this chapter (excluding `scene-map-<book>-<chapter>.md`, which is bones-co-emitted). If bones is newer than ANY facet, HARD-ABORT.
+    - **anchor-resolution check:** scan every pre-existing facet file for `@<flat_id>` anchors and `[<facet>:<flat_id>]` citations. Any anchor whose flat_id is not in the current bones file (deletion gap OR id-space shift from `/and-write redo`) is a `STALE-ANCHOR` HARD finding.
     On HARD-ABORT, print:
     ```
     /and-facets Phase 0 HARD-ABORT (anchor-refresh): bones file at <path> is newer than existing facets, OR existing facets cite anchors that no longer resolve in the current bones.
@@ -136,38 +100,34 @@ R1 is **blind**: each author reads only its rubric + non-facet upstreams (cards/
     Stale anchors: <list of [<facet>:<flat_id>]>
     Resolution: archive existing facet files to active-project/theater/_archive/<timestamp>-stale-from-rewrite/ and re-run /and-facets <chapter> for a clean traversal.
     ```
-    The user re-archives stale facets manually before re-invocation. The check protects against the b01c01 cap-burn root cause where `/and-write redo` shifted bone IDs and stale facets pointed at dead anchors at `/and-stitch` Phase 0.5.
-4b. **Bones-review precondition (URI-WRITE-BONES-REVIEW-GATE — HARD-ABORT).** Confirm `chapters[<slug>].bones_review` is present in showrunner memory AND fresh. Fresh means `bones_review.bones_file_mtime_at_review` equals the current `mtime(theater/bones/<book>-<chapter>.md)` (the bones file has not been re-emitted since the review ran) AND `bones_review.stale_since` is null. If `bones_review` is absent or stale, HARD-ABORT:
+4b. **Bones-review precondition (URI-WRITE-BONES-REVIEW-GATE — HARD-ABORT).** Confirm `chapters[<slug>].bones_review` is present in showrunner memory AND fresh. Fresh means `bones_review.bones_file_mtime_at_review` equals the current `mtime(theater/bones/<book>-<chapter>.md)` AND `bones_review.stale_since` is null. If absent or stale, HARD-ABORT:
     ```
     /and-facets Phase 0 HARD-ABORT (bones-review): chapter <slug> has no fresh /and-review bones record.
-    The chunk→bones decomposition is the highest-consequence step in the chain and must be independently
-    reviewed before facet authoring proceeds.
     Resolution: run /and-review bones <slug>, then re-invoke /and-facets <slug>.
     ```
-    `/and-review bones` is the mandatory step between `/and-write` and `/and-facets`. A `bones_review.verdict: FAIL` does not by itself abort `/and-facets` (the user may knowingly proceed past notes), but absence or staleness does. **PROP-0020 addition:** `bones_review.follow_check: FOLLOW-FAIL` DOES HARD-ABORT — gross un-followability at the bone layer (central event unrecoverable, or a scene-to-scene causal hand-off absent) must be fixed at `/and-write <slug> revise` before any facet spend. This is checkpoint 1 of the context-weave track and is a hard gate, unlike the advisory fidelity verdict:
+    A `bones_review.verdict: FAIL` does not by itself abort (the user may knowingly proceed past notes), but absence or staleness does. **`bones_review.follow_check: FOLLOW-FAIL` DOES HARD-ABORT** — gross un-followability at the bone layer must be fixed at `/and-write <slug> revise` before any facet spend:
     ```
     /and-facets Phase 0 HARD-ABORT (followability): chapter <slug> bones_review.follow_check = FOLLOW-FAIL.
     The bones are not followable as-is; facet skin cannot rescue a bone-level coherence gap.
     Resolution: run /and-write <slug> revise to close the gap, re-run /and-review bones, then re-invoke /and-facets.
     ```
-5. **Facet-namespace clearance (URI-FACETS-CROSS-CHAPTER-ARCHIVE, 2026-05-21).** The facet pipeline writes to chapter-unnamespaced shared paths — `theater/facets/<facet>.md`, `theater/facets/_cite-index.md`, `theater/facets/.r2-decisions.md`, `theater/proto-lines/<slug>.md`, `theater/dialogue/<character-slug>.md`, `staff/<facet>/r2-decision-shard*.md`, `staff/auditor/facets-*.md`, `staff/audience/<persona>/*verdict*.md`. Two distinct cases:
-
-    - **Prior-chapter facet output present (cross-chapter collision).** Scan `theater/facets/*.md` (excluding `scene-map-<book>-<chapter>.md` for the current chapter). Read each facet file's `episode:` header. If ANY facet file, the `_cite-index.md` header, or `theater/proto-lines/*.md` belongs to a **different** chapter than the current run, AUTO-ARCHIVE the entire prior-chapter working set (do not abort, do not require manual intervention). Archive procedure:
+5. **Facet-namespace clearance (URI-FACETS-CROSS-CHAPTER-ARCHIVE).** The facet pipeline writes to chapter-unnamespaced shared paths — `theater/facets/<facet>.md`, `theater/facets/_cite-index.md`, `theater/proto-lines/<slug>.md`, `theater/dialogue/<character-slug>.md`, `staff/auditor/facets-*.md`. Two cases:
+    - **Prior-chapter facet output present (cross-chapter collision).** Scan `theater/facets/*.md` (excluding `scene-map-<current-chapter>.md`). Read each facet file's `episode:` header. If ANY facet file, the `_cite-index.md` header, or `theater/proto-lines/*.md` belongs to a **different** chapter, AUTO-ARCHIVE the entire prior-chapter working set:
       1. `mkdir -p active-project/theater/_archive/<UTC-timestamp>-<prior-chapter>-facets/`.
-      2. `git mv` (fallback `mv`) into it, mirroring paths relative to `active-project/`: all of `theater/facets/*` except `scene-map-<current-chapter>.md`; `theater/facets/_inflight*/`; `theater/proto-lines/<prior-slug>.md`; all `theater/dialogue/*.md`; `staff/auditor/facets-*.md`; every `staff/<facet>/r2-decision-shard*.md`; `staff/dialogue-writer/*.drafts.md`; `staff/fixer/{and-facets,facets}-*.md`; `staff/showrunner/and-facets-<prior-chapter>-summary.md`; all `staff/audience/<persona>/*verdict*.md`; assorted cycle-N ratification / monument-referral files. **Do NOT archive** cross-chapter persistent files: `staff/exposition-author/glossed-terms.md`, all persona/agent `card.md` files, `theater/bones/`.
+      2. `git mv` (fallback `mv`) into it, mirroring paths relative to `active-project/`: all of `theater/facets/*` except `scene-map-<current-chapter>.md`; `theater/facets/_inflight*/`; `theater/proto-lines/<prior-slug>.md`; all `theater/dialogue/*.md`; `staff/auditor/facets-*.md`; `staff/fixer/{and-facets,facets}-*.md`; `staff/showrunner/and-facets-<prior-chapter>-summary.md`. **Do NOT archive** cross-chapter persistent files: `staff/exposition-author/glossed-terms.md`, all persona/agent `card.md` files, `theater/bones/`.
       3. Write a `MANIFEST.md` into the archive root recording timestamp, reason, contents, and the restore command (`cp -rn` from the archive back into `active-project/`).
-      Print the archive root path and the moved-file count. The prior chapter's facets are preserved and restorable (e.g. before `/and-stitch` consumes them). Continue the run.
-    - **Current-chapter facet output present (re-run case).** If facet files for the *current* chapter exist, abort with paths printed; the user re-archives manually before re-running (a current-chapter re-run is an explicit `revise`/`redo` decision, not an auto-archive case). (Skip this check on partial-run resume.)
+      Print the archive root path and the moved-file count. Continue the run.
+    - **Current-chapter facet output present (re-run case).** If facet files for the *current* chapter exist, abort with paths printed; the user re-archives manually before re-running. (Skip this check on partial-run resume.)
 
-    Confirm `active-project/theater/dialogue/` holds no `<character-slug>.md` files after clearance, or `mkdir -p` is clean.
+    Confirm `active-project/theater/dialogue/` holds no stray `<character-slug>.md` files belonging to a prior chapter after clearance.
 6. Confirm warehouse loc cards for every slug in `locations:` resolve. Confirm every `cast:` slug resolves under `active-project/actors/<slug>/`.
 7. Read `schemas/facet.schema.md`, `schemas/bones.schema.md`, `schemas/audit-report.schema.md`, `schemas/dialogue.schema.md` once (orchestrator reference).
-8. Create `active-project/theater/facets/_inflight/` and `active-project/theater/facets/_inflight-r2/`.
-9. **Speaking-character + speech-bone inventory (URI-DIALOGUE-COVERAGE-GATE — verification only under URI-WRITE-DIALOGUE-COBONDED 2026-05-25).** Grep the canonical bones file for dialogue-anchor bones (speech-form `speaks to` AND licensed action-form bones carrying `[<character-slug>:<id>]` citation tokens). Record:
+8. Create `active-project/theater/facets/_inflight/`.
+9. **Speaking-character + speech-bone inventory (verification only under URI-WRITE-DIALOGUE-COBONDED).** Grep the canonical bones file for dialogue-anchor bones (speech-form `speaks to` AND licensed action-form bones carrying `[<character-slug>:<id>]` citation tokens). Record:
    - `speech_bones`: the full list of bone flat_ids where the SVO is `<X> speaks to <Y>`.
    - `speakers`: the distinct set of subject slugs across those bones.
-   If `speech_bones` is non-empty, dialogue files are **mandatory and upstream** under URI-WRITE-DIALOGUE-COBONDED (2026-05-25): the per-character dialogue files at `theater/dialogue/<speaker-slug>.md` are co-emitted by `/and-write` Phase 7 alongside the bones file, and the bones file already carries `[<speaker-slug>:<id>]` citation tokens on every dialogue-anchor bone. **Phase 0 verifies (does not author) dialogue presence** — if any expected speaker file is missing or any dialogue-anchor bone has no citation, abort `/and-facets` and route back to `/and-write` (the gate that should have caught this was `/and-write` Phase 7 downstream-gate pre-verify). The Phase 1 dialogue R1 author is **removed** under URI-WRITE-DIALOGUE-COBONDED; dialogue is upstream input to facet authoring, not a sibling facet authored here.
-10. **Parking-lot scan (Rule 14).** Read `active-project/staff/showrunner/parking-lot.md`. Items matching this invocation (`target.command: /and-facets` + `target.scope` = `<book>-<chapter>` or `*` wildcard + `status: open`): HARD → abort unless this run resolves; SOFT → carry to the Phase 5 audit report + final summary. Resolving phase stamps `resolved_at` + `resolved_by` + `resolution_note`; never delete.
+   Dialogue files are **mandatory and upstream**: the per-character files at `theater/dialogue/<speaker-slug>.md` are co-emitted by `/and-write` Phase 7, and the bones file already carries `[<speaker-slug>:<id>]` citation tokens on every dialogue-anchor bone. **Phase 0 verifies (does not author) dialogue presence** — if any expected speaker file is missing or any dialogue-anchor bone has no citation, abort and route back to `/and-write` (the gate that should have caught this is `/and-write` Phase 7 downstream-gate pre-verify). There is no dialogue author in this command.
+10. **Parking-lot scan (Rule 14).** Read `active-project/staff/showrunner/parking-lot.md`. Items matching this invocation (`target.command: /and-facets` + `target.scope` = `<book>-<chapter>` or `*` + `status: open`): HARD → abort unless this run resolves; SOFT → carry to the Phase 4 audit report + final summary. Resolving phase stamps `resolved_at` + `resolved_by` + `resolution_note`; never delete.
 
 Print:
 ```
@@ -179,7 +139,7 @@ Locations: <slug>, ...
 Bones: <path>  (<count> bones)
 Scene-map: <path>  (<S> scenes covering 1-<N>)
 Speech bones: <count>  (speakers: <slug>, <slug>, ...)
-Starting phase: <Phase 1 | Phase 3 | Phase 5>
+Starting phase: <Phase 1 | Phase 2.5 | Phase 5>
 ```
 
 ---
@@ -189,38 +149,38 @@ Starting phase: <Phase 1 | Phase 3 | Phase 5>
 **Dispatch discipline:**
 
 - **One parallel Agent block.** All R1 authors fire in a single message with concurrent Agent tool calls. Sequential dispatch is a build defect.
-- **No shared-file race.** Each author writes (i) its facet file (or per-character slice — distinct paths) and (ii) an annotated proto-lines copy under `_inflight/proto-lines-<facet>.md` (or `_inflight/proto-lines-<facet>-<slug>.md` for per-character). The base proto-lines file is **not** mutated during R1.
-- **Citation write-back on the author's copy.** Each author copies the base proto-lines file to its `_inflight/` path and appends `[<facet-prefix>:<id>]` to every proto-line it decorated. Prefixes: `loc-state`, `narrator`, `sensory`, `state`, `mem`, `feel`, `meta`, `vibes`. **Dialogue authors append `[<character-slug>:<id>]` instead of a facet-prefix token** (per `schemas/dialogue.schema.md` § Stitch interface — the citation IS the character slug, no `dialogue:` namespace). (Pre-overhaul `tens:` citation preservation is dropped under URI-SUBSTANCE-OVERHAUL 2026-05-17 — new-chain bones files carry no `tens:` citations; legacy pre-overhaul projects in `projects/` archives may; the merge tool ignores them on legacy reads.)
-- **Forbid loading other R1 facet files.** Each author reads only its rubric + the inputs the rubric names + the base proto-lines. No cross-R1-facet peeking. Tens reads are dropped under the substance overhaul; where pressure-signal is needed, the per-chapter `substance_delta` from showrunner memory is the substitute.
-- **Per-file cull is the author's last act.** Per `schemas/facet.schema.md` § "Per-file cull" — delete-only, one pass.
+- **No shared-file race.** Each author writes (i) its facet file (or per-character slice — distinct paths) and (ii) an annotated proto-lines copy under `_inflight/proto-lines-<facet>.md`. The base proto-lines file is **not** mutated during R1.
+- **Citation write-back on the author's copy.** Each author copies the base proto-lines file to its `_inflight/` path and appends `[<facet-prefix>:<id>]` to every proto-line it decorated. Prefixes: `loc-state`, `narrator`, `sensory`, `state`, `mem`, `feel`, `meta`, `vibes`, `exposition`. (Dialogue authors do not exist here — dialogue citations `[<character-slug>:<id>]` are already on the bones from `/and-write` Phase 7.)
+- **Forbid loading other R1 facet files.** Each author reads only its rubric + the inputs the rubric names + the base proto-lines. No cross-R1-facet peeking. Where pressure-signal is needed, the per-chapter `substance_delta` from showrunner memory is the substitute.
+- **Per-file cull is the author's last act.** Per `schemas/facet.schema.md` § "Per-file cull" — delete-only, one pass. (Under the slim pipeline there is no R2 judge to do a second cull, so the R1 author's own cull is the only per-facet self-review; the cross-facet cull is the Phase 4 auditor's DEDUP/SUPERFLUOUS pass.)
 - **Body integrity.** Authors append citations only; SVO bodies in `_inflight/` must be byte-identical to the base. Merge tool aborts the run if any body diverges.
 - **Each dispatch returns:** path to written facet file, path to `_inflight/` proto-lines copy, entry count, cull count, any flagged seams.
 
-### R1 authors (nine in the parallel block)
+### R1 authors (in the parallel block)
 
-**1. location-state (studio)** — base proto-lines; all loc cards named in `locations:`; schema § location-state; `design/shoot-v2/rubric-location-state.md`; movement-verb gate; per-chapter `substance_delta` from showrunner memory (pressure-signal substitute). Forbid: other facet rubrics, vibes. Out: `location-state.md` + `_inflight/proto-lines-loc-state.md`.
+**1. location-state (studio)** — base proto-lines; all loc cards named in `locations:`; schema § location-state; `design/shoot-v2/rubric-location-state.md`; movement-verb gate; per-chapter `substance_delta`. Out: `location-state.md` + `_inflight/proto-lines-loc-state.md`.
 
-**2. narrator-interest (POV impersonator)** — POV stack (card + behavior cards + LTM + STM + state); base proto-lines; per-chapter `substance_delta` from showrunner memory; `rubric-narrator-interest.md`; schema § interest flags — narrator. Override impersonator: facet-authoring (no show.md, no action costs). Forbid: other characters' cards, audience personas, source prose. Out: `interest-narrator.md` + `_inflight/proto-lines-narrator.md`.
+**2. narrator-interest (POV impersonator)** — POV stack (card + behavior cards + LTM + STM + state); base proto-lines; per-chapter `substance_delta`; `rubric-narrator-interest.md`; schema § interest flags — narrator. Override impersonator: facet-authoring (no show.md, no action costs). Out: `interest-narrator.md` + `_inflight/proto-lines-narrator.md`.
 
-**3. sensory (studio — fresh fork)** — base proto-lines; per-chapter `substance_delta` from showrunner memory (pressure-signal substitute); all loc cards; `rubric-sensory.md`; disambiguation gate; per-scene cap ≤3; sparsity 3-6%; modality ≥2 per episode. Out: `sensory.md` + `_inflight/proto-lines-sensory.md`.
+**3. sensory (studio — fresh fork)** — base proto-lines; per-chapter `substance_delta`; all loc cards; `rubric-sensory.md`; disambiguation gate; per-scene cap ≤3; sparsity 3-6%; modality ≥2 per episode. Out: `sensory.md` + `_inflight/proto-lines-sensory.md`.
 
-**4. state-updates env (studio — fresh fork)** — base proto-lines; per-chapter `substance_delta` from showrunner memory; all loc + prop cards; `rubric-state-updates.md`; schema § state updates (`<target>.<field>: <old> -> <new>`, `target` ∈ {`studio`, `prop:<slug>`}). Scope: environmental + location + prop only. Out: `state-updates-env.md` + `_inflight/proto-lines-state-env.md`.
+**4. state-updates env (studio — fresh fork)** — base proto-lines; per-chapter `substance_delta`; all loc + prop cards; `rubric-state-updates.md`; schema § state updates (`<target>.<field>: <old> -> <new>`, `target` ∈ {`studio`, `prop:<slug>`}). Scope: environmental + location + prop only. Out: `state-updates-env.md` + `_inflight/proto-lines-state-env.md`.
 
-**5. state-updates actor (per-character impersonators ×N)** — for each `cast:` slug, one impersonator dispatch in the same parallel block. Character stack + base proto-lines + per-chapter `substance_delta` from showrunner memory + `rubric-state-updates.md` § actor-state. Override impersonator: facet-authoring. Out: `state-updates-<slug>.md` + `_inflight/proto-lines-state-<slug>.md`.
+**5. state-updates actor (per-character impersonators ×N)** — for each `cast:` slug, one impersonator dispatch in the same parallel block. Character stack + base proto-lines + per-chapter `substance_delta` + `rubric-state-updates.md` § actor-state. Override impersonator: facet-authoring. Out: `state-updates-<slug>.md` + `_inflight/proto-lines-state-<slug>.md`.
 
-**6. memory (POV impersonator — fresh fork; do not re-use NI fork's STM)** — POV stack; base proto-lines; per-chapter `substance_delta` from showrunner memory (substance-density substitute); `rubric-memory-flags.md`; schema § memory flags. NI co-citation is a R2 concern. Override impersonator: facet-authoring. Out: `memory.md` + `_inflight/proto-lines-mem.md`.
+**6. memory (POV impersonator — fresh fork; do not re-use NI fork's STM)** — POV stack; base proto-lines; per-chapter `substance_delta`; `rubric-memory-flags.md`; schema § memory flags. Override impersonator: facet-authoring. Out: `memory.md` + `_inflight/proto-lines-mem.md`.
 
-**7. feeling (per-character impersonators ×N)** — for each `cast:` slug, one impersonator dispatch in the same parallel block. Character stack + base proto-lines + per-chapter `substance_delta` from showrunner memory + `rubric-feeling.md`; schema § feeling flags — per-character per-scene cap ≤1 hard; sparsity 2-5%; multi-justification ≥3 of 5. Forbid: named-feeling vocabulary, hedges, similes. Override impersonator: facet-authoring. NI non-redundancy is a R2 concern. Out: `feeling-<slug>.md` + `_inflight/proto-lines-feel-<slug>.md`.
+**7. feeling (per-character impersonators ×N)** — for each `cast:` slug, one impersonator dispatch in the same parallel block. Character stack + base proto-lines + per-chapter `substance_delta` + `rubric-feeling.md`; schema § feeling flags — per-character per-scene cap ≤1 hard; sparsity 2-5%; multi-justification ≥3 of 5. Forbid: named-feeling vocabulary, hedges, similes. Override impersonator: facet-authoring. Out: `feeling-<slug>.md` + `_inflight/proto-lines-feel-<slug>.md`.
 
-**8. metaphor (editor)** — base proto-lines; per-chapter `substance_delta` from showrunner memory (curve-discipline substitute; AP7 default-refuse on bones outside hinge-magnitude band); `rubric-metaphor.md`; schema § metaphor flags; sparsity 0-3%; per-scene cap ≤1 cross-character. R1 metaphor entries may carry **provisional** `licensed-by:` notes naming the intended anchor by description; resolution to machine-readable `<prefix>:<id>` form happens in R2. Forbid: vibes, audience personas, behavior cards. Out: `metaphor.md` + `_inflight/proto-lines-meta.md`.
+**8. metaphor (editor)** — base proto-lines; per-chapter `substance_delta` (curve-discipline substitute; AP7 default-refuse on bones outside hinge-magnitude band); `rubric-metaphor.md`; schema § metaphor flags; sparsity 0-3%; per-scene cap ≤1 cross-character. Metaphor entries carry `licensed-by:` notes naming the anchor by `<prefix>:<id>` form, resolved against the merged graph at Phase 2 (no R2 resolution pass exists — author must anchor cleanly or cull). Forbid: vibes, audience personas, behavior cards. Out: `metaphor.md` + `_inflight/proto-lines-meta.md`. (Metaphor is sparse-by-design and the lightest R1 author; the Phase 4 auditor enforces its 0-3% band and `licensed-by:` resolution. Retained under DEC-0116 as a single cheap R1 author with no separate judge.)
 
-**9. vibes-updates (showrunner)** — base proto-lines; per-chapter `substance_delta` from showrunner memory; all actor vibes files; all loc card VIBES sections; `staff/studio/vibes.md`; `rubric-vibes.md` + `rubric-vibes-v1.1-patch.md`; schema § vibes-updates (entity-target-primary form; `licensed-by:` mandatory; R1 provisional anchor-hints OK, resolution in R2). Showrunner-as-author is the one exception to the "showrunner does not author" rule. Out: `vibes.md` + `_inflight/proto-lines-vibes.md`.
+**9. vibes-updates (showrunner)** — base proto-lines; per-chapter `substance_delta`; all actor vibes files; all loc card VIBES sections; `staff/studio/vibes.md`; `rubric-vibes.md` + `rubric-vibes-v1.1-patch.md`; schema § vibes-updates (entity-target-primary form; `licensed-by:` mandatory and must resolve against the merged graph). Showrunner-as-author is the one exception to the "showrunner does not author" rule. Out: `vibes.md` + `_inflight/proto-lines-vibes.md`.
 
-**10. exposition (exposition-author)** — base proto-lines; per-chapter `substance_delta` from showrunner memory (peak/transitional gate substitute for which anchors warrant heavier render-as); audience persona cards `active-project/audience/*/`; series-plan; world-build cards; condition cards; character cards (for series-specific objects); `active-project/staff/showrunner/memory.md` (for `prior_episode`); cross-episode register `active-project/staff/exposition-author/glossed-terms.md` (if exists); schema § exposition. **Authoring authority:** schema § exposition + the union-of-audience-personas gap test + the context-ledger discipline (Phase 2.5) — there is no standalone `rubric-exposition.md` (a dedicated exposition rubric is deferred to b02-activation per DEC-0111; the facet has shipped 20 chapters on these sources). Audience-modeled-by-construction: the union-of-audience-personas gap test is the central authoring discipline. Forbid: lens facet rubrics (R1 stays blind), source prose. Out: `exposition-<slug>.md` + `_inflight/proto-lines-exposition.md` + register write-back annotated. The exposition author DOES NOT read other R1 facet outputs at R1 (audience-pure gap-identification); the cross-check against lens facets is the R2 judge's job.
+**10. exposition (exposition-author) — surface:reference default (PROP-0004 / DEC-0014).** base proto-lines; per-chapter `substance_delta`; audience persona cards `active-project/audience/*/`; series-plan; world-build cards; condition cards; character cards (for series-specific objects); `active-project/staff/showrunner/memory.md` (for `prior_episode`); cross-episode register `active-project/staff/exposition-author/glossed-terms.md` (if exists); schema § exposition. **Authoring authority:** schema § exposition + the union-of-audience-personas gap test + the context-ledger discipline (Phase 2.5). The union-of-audience-personas gap test is the central authoring discipline — it is the c05 followability content source, which is why exposition stays authored even though it is no longer inline-rendered by default. **Surface default:** every exposition entry is authored with `surface: reference` UNLESS it satisfies a context-ledger `CONTEXT-REQUIRED` license written at Phase 2.5 (in which case Phase 3 stamps it `surface: render` with the `licensed-context-exception` token). `surface: reference` entries are consulted by the stitcher and facet authors for world-grounding but are NOT folded inline as prose — the em-dash inline-gloss fold-in that the ablation showed crushes pacing is off by default. Out: `exposition-<slug>.md` + `_inflight/proto-lines-exposition.md` + register write-back annotated.
 
-**11. dialogue (dialogue-writer) — REMOVED under URI-WRITE-DIALOGUE-COBONDED (2026-05-25).** Dialogue authoring moved upstream to `/and-write` Phase 1.5; per-character dialogue files are co-emitted with the bones file at `/and-write` Phase 7. `/and-facets` Phase 0 verifies their presence (HARD-aborts if missing). The Phase 1 R1 fanout drops from eleven authors to ten. The previous dispatch spec is preserved below for archival reference until the URI-WRITE-DIALOGUE-COBONDED lift is fully stable; ignore at run time. — Per-behavior-card fanout (archived) — for each distinct behavior card present in the cast (resolved by reading `cards/dialects/<character-slug>.card.md` for every `cast:` slug and grouping by card), one fork in the parallel block. Each fork authors all speakers sharing that card. Reads: behavior card stack (margit-composed: leaf → `inherits:` parent → universal overlay → `references:` adjacent cards); speaker persona + ltm + stm + state for every speaker the fork covers; base proto-lines (the speaking-beat anchors are proto-lines where this card's speakers appear as subject of a `speaks` SVO); per-chapter `substance_delta` from showrunner memory (peak anchors pressure register state); `staff/dialogue-writer/rubric-dialogue.md`; schema `schemas/dialogue.schema.md`. Discipline: eight v1 round-trip writer patterns (per-card forks, card-stack load order, blind to originals, intent-as-state, multi-draft + chosen-mark, affirmative card-signature citation, anti-patterns explicit, calibration anchor) — all load-bearing per the rubric. Forbid: other R1 facet outputs (R1 stays blind), show files / source prose, behavior cards not in this fork's domain. Out: per-character dialogue files at `active-project/theater/dialogue/<character-slug>.md` per `schemas/dialogue.schema.md` (file location is outside `theater/facets/` per existing schema); drafts sidecar at `active-project/staff/dialogue-writer/<character-slug>.drafts.md` (multi-draft + chosen-mark + card-signature citations); annotated proto-lines copy at `_inflight/proto-lines-dialogue-<character-slug>.md` with `[<character-slug>:<id>]` citations on speaking-beat anchors. (Filename uses the CHARACTER slug, not the card slug: `build_cite_index.py` `_facet_prefix_from_inflight_name()` derives the citation prefix from the filename tail after `dialogue-`, and the dialogue citation token is the character slug per `schemas/dialogue.schema.md`. A card-slug filename makes the tool derive the wrong prefix and drop the dialogue tokens from the merge — URI-FACETS-B01C02-PROCESS-GAPS gap 2.)
+**Dialogue — NOT authored here.** Per-character dialogue files are co-emitted with the bones by `/and-write` Phase 7 (URI-WRITE-DIALOGUE-COBONDED); the bones already carry `[<character-slug>:<id>]` tokens. Phase 0 verified their presence. The Phase 4 auditor sanity-checks dialogue coverage + dedup; it does not author.
 
-(Ten authors under URI-WRITE-DIALOGUE-COBONDED. State-updates-actor and feeling each fan out further by cast size, making the parallel block larger by cast count; exposition adds a single dispatch. Dialogue R1 author is removed — dialogue files are upstream input from `/and-write` Phase 7.)
+(State-updates-actor and feeling each fan out by cast size, making the parallel block larger by cast count.)
 
 ---
 
@@ -230,289 +190,148 @@ Starting phase: <Phase 1 | Phase 3 | Phase 5>
 python3 active-project/staff/cite-index/build_cite_index.py <episode-slug>
 ```
 
-Five sub-phases inside the tool (see its module docstring):
+Five sub-phases inside the tool:
 
 1. **Body-integrity check.** Every `_inflight/proto-lines-*.md` SVO body must match base byte-for-byte. Divergence → abort.
 2. **Citation union.** Per proto-line ID, merge `[<prefix>:<id>]` tokens across base + all author copies. Deterministic order. Write canonical `theater/proto-lines/<slug>.md`.
-3. **Slice consolidation.** `feeling-<slug>.md` → `feeling.md`; `state-updates-env.md` + `state-updates-<slug>.md` → `state-updates.md`. IDs renumbered monotonically; per-source `# source: <slug>` markers preserved. **Dialogue files are NOT consolidated** — per `schemas/dialogue.schema.md`, ID space is per-character and `theater/dialogue/<character-slug>.md` is the canonical per-character location. The cite-index builder treats per-character dialogue file IDs as a distinct citation namespace (`<character-slug>:<id>`) from the facet prefixes.
+3. **Slice consolidation.** `feeling-<slug>.md` → `feeling.md`; `state-updates-env.md` + `state-updates-<slug>.md` → `state-updates.md`. IDs renumbered monotonically; per-source `# source: <slug>` markers preserved. **Dialogue files are NOT consolidated** — per `schemas/dialogue.schema.md`, ID space is per-character. The cite-index builder treats per-character dialogue file IDs as a distinct citation namespace (`<character-slug>:<id>`).
 4. **Stale-citation check.** Every `[<prefix>:<id>]` on canonical proto-lines must resolve to a facet-file entry. Unresolved → abort.
 5. **Cite-index build.** `theater/facets/_cite-index.md` derived from canonical merged state.
 
-If sub-phases 1 or 4 abort, fix the offending author (re-dispatch the responsible R1 author with a clarifying brief) and re-run. Phase 5 cannot run on a non-clean merge.
+If sub-phases 1 or 4 abort, fix the offending author (re-dispatch the responsible R1 author with a clarifying brief) and re-run. Phase 4 cannot run on a non-clean merge.
 
-Set status `protolined` → `faceted-r1` in showrunner memory.
+Set status `bones-written` → `faceted-r1` in showrunner memory.
 
 ---
 
-## Phase 2.5 — CONTEXT-FOLLOWABILITY REVIEW (post-R1) (PROP-0020 / URI-FACETS-CONTEXT-WEAVE; 2026-05-29)
+## Phase 2.5 — CONTEXT + ALIVENESS REVIEW (PROP-0020 / PROP-0022)
 
-**Why this exists.** See the context-weave track note above. This is checkpoint 2 of 4 — the first read of the assembled-so-far graph, performed by a reviewer who *has* the series context (the inverse of the `/and-stitch` Phase 9 cold-reader). It answers: *with R1 facets in, where would a reader who has read prior chapters still lose the thread — and is that gap something a later lens facet will carry, or something that genuinely needs context embedded?*
+**Why this exists.** The b01-c05 three-FAIL trace's root cause was a context gap surfaced too late — only at `/and-stitch` Phase 9, by a cold-reader who lacked the series context a real reader carries. This is the first (and now only) read of the assembled graph by a reviewer who *has* the series context (the inverse of the `/and-stitch` Phase 9 cold-reader). It answers two questions: *where would a reader who has read prior chapters still lose the thread?* (completeness) and *is there a person to follow, or only an apparatus reporting?* (readability).
 
 **Dispatch.** ONE `general-purpose` agent, context-aware (NOT a cold read).
 
 Inputs (read-only):
 - The canonical merged proto-lines/bones graph `theater/proto-lines/<slug>.md` (R1-annotated with `[<facet>:<id>]` citations) + the R1 facet files.
 - `chapters[<slug>].{goal, dramatic_shape, scenes[].chunk, scenes[].scene_conflict}`.
-- `chapters[<slug>].handoff_in` (the series-so-far capsule — open threads, world-state, character-state the reader carries into this chapter).
+- `chapters[<slug>].handoff_in` (the series-so-far capsule).
 - The cite-index.
 
-Mandate: read the graph in order as a reader who has read to chapter N-1. For each place the narrative is not followable, emit a `FOLLOW-GAP @<bone>` finding and classify it:
+### Axis 1 — completeness (context-weave)
+
+Read the graph in order as a reader who has read to chapter N-1. For each place the narrative is not followable, emit a `FOLLOW-GAP @<bone>` finding and classify:
 
 | Class | Meaning | Routing |
 |---|---|---|
 | `OK` | followable as-is | none |
-| `WEAVE-FIXABLE @<bone>` | a lens facet (NI / memory / loc-state / feeling) can carry this in R2 | note to Phase 3 as a steering hint for the named facet judge; NOT a ledger entry |
+| `WEAVE-FIXABLE @<bone>` | a lens facet (NI / memory / loc-state / feeling) already carries this | note in the report; no ledger entry (no R2 judge to action it — the facet that carries it is already present) |
 | `CONTEXT-REQUIRED @<bone>` | genuinely needs context embedded (a term/person/stake/causal link the reader cannot recover from prior chapters + current graph) | write a **licensed exception** to the context-ledger |
 
-**Output 1 — the report** at `active-project/staff/reviews/context-follow-r1-<book>-<chapter>-<timestamp>.md` (FOLLOW-GAP findings + per-finding class + rationale).
+**Output 1 — the report** at `active-project/staff/reviews/context-follow-<book>-<chapter>-<timestamp>.md` (FOLLOW-GAP + AIRLESS findings + per-finding class + rationale).
 
-**Output 2 — the context-ledger** at `active-project/staff/showrunner/context-ledger-<book>-<chapter>.md`. Create if absent; append for re-runs (never delete entries — stamp superseded ones). Schema (inline):
+**Output 2 — the context-ledger** at `active-project/staff/showrunner/context-ledger-<book>-<chapter>.md`. Create if absent; append for re-runs (never delete; stamp superseded). Schema (inline):
 
 ```yaml
 # context-ledger — <book>-<chapter> — PROP-0020
 chapter: <slug>
 entries:
   - id: ctx-<NNN>
-    anchor: "@<bone>"            # where the context is needed
+    anchor: "@<bone>"
     gap: <one line — what the reader cannot follow without it>
     needed_context: <one line — the term/person/stake/link to orient>
-    license: CONTEXT-REQUIRED     # this is what exempts the downstream exposition add
-    licensed_at: 2.5 | 4.5 | 4.6  # which checkpoint sanctioned it
+    license: CONTEXT-REQUIRED
+    licensed_at: 2.5
     licensed_by: context-follow-reviewer
     status: open | satisfied | superseded
-    satisfied_by: <exposition entry id, once R2/R3 adds it>
+    satisfied_by: <exposition entry id, once Phase 3 adds it>
+    spine: true | false   # true = touches central event / load-bearing stake / causal hand-off
 ```
 
-**Feed to Phase 3.** The CONTEXT-REQUIRED set + the WEAVE-FIXABLE steering hints are passed into the Phase 3 R2 dispatch payloads (see Phase 3 § Context-ledger coupling). A ledger entry is the authority that lets the R2 exposition judge ADD the orienting gloss **beyond its normal add-cap and exempt from the new-plot-content / over-explain penalties**.
+### Axis 2 — readability / aliveness
 
-**Second axis — readability / aliveness (PROP-0022 / URI-READABILITY-TWIN; 2026-05-29).** The same reviewer, in the same pass, also answers the cold-reader's *other* question — not "can I follow it" but "is there a person to follow, or only an apparatus reporting?" For each stretch that reads airless (events reaching the reader only through instrument/process register; no body, no sensory anchor, no one to inhabit), emit `AIRLESS @<bone>` and classify:
+In the same pass, for each stretch that reads airless (events reaching the reader only through instrument/process register; no body, no sensory anchor, no one to inhabit), emit `AIRLESS @<bone>` and classify:
 
 | Class | Meaning | Routing |
 |---|---|---|
 | `OK` | a person is present / it breathes | none |
-| `VOICE-FIXABLE @<bone>` | the bone content IS embodied but is being rendered apparatus-first; a stitch render-choice fixes it | note to `/and-stitch` Phase 4 voice-embodiment discipline; NOT a ledger entry |
+| `VOICE-FIXABLE @<bone>` | the bone content IS embodied but is being rendered apparatus-first; a stitch render-choice fixes it | list in the Output-1 report; carries to `/and-stitch` Phase 4 voice-embodiment discipline; NOT a ledger entry |
 | `GROUNDING-REQUIRED @<bone>` | the bones genuinely lack body/sensory material here; grounding must be ADDED, and the sensory frequency-band cap would normally block it | write a **licensed exception** to the grounding-ledger |
 
-**Output 3 — the grounding-ledger** at `active-project/staff/showrunner/grounding-ledger-<book>-<chapter>.md` — exact mirror of the context-ledger schema, with `id: grd-<NNN>`, `license: GROUNDING-REQUIRED`, `licensed_by: aliveness-reviewer`, `satisfied_by: <sensory entry id>`, and an extra `airless_symptom:` one-liner. A `GROUNDING-REQUIRED` entry is the authority that lets a sensory add **escape the frequency-band cap** at Phase 5 / 5b (mirror of the context exemption). `VOICE-FIXABLE` findings are listed in the Output-1 report and carry forward to `/and-stitch` (render-discipline, not facet content). Grounding adds themselves are authored at Phase 4.6 (sensory is not an R2 judge, so unlike the exposition path the grounding-ledger is consumed at the remediation round, not at Phase 3); R2 judges are told only NOT to DELETE a sensory entry that satisfies an open grounding-ledger line.
+**Output 3 — the grounding-ledger** at `active-project/staff/showrunner/grounding-ledger-<book>-<chapter>.md` — mirror of the context-ledger schema, with `id: grd-<NNN>`, `license: GROUNDING-REQUIRED`, `licensed_by: aliveness-reviewer`, `satisfied_by: <sensory entry id>`, an `airless_symptom:` one-liner, and the same `spine:` flag.
 
-**Non-blocking.** Phase 2.5 never aborts the run — it produces both ledgers and proceeds to Phase 3. (The bones-level "is this even followable / alive at all" stop already happened upstream at `/and-review bones`.)
+**Non-blocking.** Phase 2.5 never aborts. It produces both ledgers and proceeds. (The bones-level "is this even followable / alive at all" stop already happened upstream at `/and-review bones`.) The reviewer's verdict — `FOLLOWABLE`/`GLARING-HOLE` × `ALIVE`/`AIRLESS-HOLE` — is recorded in `chapters[<slug>].context_followability` and decides whether Phase 3 fires.
 
----
-
-## Phase 3 — FANOUT: R2 parallel judging
-
-**R2 stale-shard pre-check (URI-FACETS-R2-STALE-SHARD, A6 — 2026-05-21).** Before dispatching the R2 fanout, verify that any pre-existing R2 decision shards under `staff/<facet>/r2-decision-shard.md` (and `staff/feeling/r2-decision-shard-<slug>.md`) reflect the current R1 cite-index — NOT a prior session's. The check:
-
-1. Each shard's frontmatter must carry `cite_index_hash: <sha>` (the SHA of `theater/facets/_cite-index.md` at the time the shard was authored). The R2 judges write this field at shard authoring time.
-2. Compute the current `_cite-index.md` SHA. For each pre-existing shard, compare to the shard's recorded `cite_index_hash`.
-3. **If mismatch (cite-index changed since the shard was written):** HARD-ABORT with:
-   ```
-   /and-facets Phase 3 HARD-ABORT (R2 stale shard): <list of shards> were authored against cite-index <prior-sha> but current cite-index is <current-sha>.
-   Resolution: archive stale shards to staff/<facet>/_archive/<timestamp>/ and let R2 re-author against the current R1 graph.
-   ```
-4. **If shard is missing `cite_index_hash` field entirely (pre-A6 shards from prior sessions):** HARD-ABORT with: `R2 shards lack cite_index_hash provenance; cannot verify freshness. Archive shards and let R2 re-author.`
-5. **If shards are absent entirely (fresh Phase 3 run):** no-op; proceed to dispatch.
-
-Per the postmortem: "The R2 shards from one session were re-used in a different session against changed R1 content." The b01c01 cap-burn didn't surface this directly but the pattern is documented as a process gap. This check makes the cross-session shard-staleness mechanically detectable.
-
-**Dispatch discipline:**
-
-- **One parallel Agent block.** All six midband judges (NI, memory, feeling-per-character, metaphor, exposition, dialogue-per-character) fire concurrently. Each judge sees the locked R1 graph; none sees the others' R2 mutations.
-- **Full nine-facet graph + per-character dialogue files + cite-index in every dispatch payload.** Non-negotiable. Dialogue judges additionally receive the drafts sidecars for their characters (card-signature + facet-license citations on chosen drafts).
-- **No shared-file race.** Each judge writes (i) its mutated facet file (deletes leave gaps; adds take next-available ID) and (ii) an annotated proto-lines copy under `_inflight-r2/proto-lines-<facet>.md` (or per-character for feeling) reflecting its citation cascades + adds. The base canonical proto-lines file is **not** mutated during R2.
-- **Self-scoped deletion only.** A judge may delete only its own facet's entries. Cross-facet deletion authority is reserved for Phase 5 audit.
-- **Citation cascade on the author's proto-lines copy.** When the judge deletes `<own>:<id>`, it strips `[<own>:<id>]` from every proto-line in its `_inflight-r2/` copy. The cite-index makes affected proto-lines cheap to identify.
-- **Add-cap ≤5 per judge per run** (metaphor ≤3 per its refuse-by-default discipline). Cap-refusals logged.
-- **No reordering of existing IDs.** Deleted IDs leave gaps. New entries get next-available IDs per facet.
-- **Provisional-anchor binding.** R1 metaphor / vibes entries with descriptive `licensed-by:` hints get resolved here. A judge whose hint cannot resolve cleanly against the locked graph deletes the entry as unanchorable.
-- **Locked-rubric + arbiter discipline.** Every judge dispatch carries `design/shoot-v2/r2-judge-tuning/B-locked-rubric.md` (gates G1–G5 as taste-questions) and `design/shoot-v2/r2-judge-tuning/C-arbiter-protocol.md` (T1, T4 only). The §Form re-test before every KEEP / DELETE / REVISE verdict is the operationalisation of G1.
-- **Position-gate (G5) on adds.** Every add carries a position-category note in its decision-shard justification (approach-zone / peak / trailing-edge / post-peak / quiet-beat / denouement). At the final 5-10% of the stream, if any other touched entry at the same anchor closes in archival/accounting/filing register, at least one entry at that anchor must hold the prior peak's consequence live.
-
-### R2 judges (five in the parallel block)
-
-**R2.1 narrator-interest (POV impersonator, judge mode)** — POV stack + behavior cards + nine R1 facet files + cite-index + `rubric-narrator-interest.md`. Override impersonator: facet-judge mode. Decide per existing NI entry: KEEP / DELETE-<reason>. Adds: peak-bones and rising-zone anchors with memory/feeling but no NI, or lonely-entry adjacency where NI would license co-location. Add-cap 5. Out: mutated `interest-narrator.md` + `_inflight-r2/proto-lines-narrator.md` + decision-shard `staff/interest-narrator/r2-decision-shard.md`.
-
-**R2.2 memory (POV impersonator, fresh fork)** — POV stack + nine R1 facet files + cite-index + warehouse cond-* cards (monuments) + `rubric-memory.md`. Decide per existing memory: KEEP (monument-grade callback, NI-spine co-cited, target reference resolvable) / DELETE (functional callback, NI-spine missing without defense, unresolvable target reference). Adds: rhythm-shape transitions and peak-bones without memory; NI-present + memory-absent. Hard fences: no Earth-Bet proper nouns. Add-cap 5. Out: mutated `memory.md` + `_inflight-r2/proto-lines-mem.md` + decision-shard `staff/memory/r2-decision-shard.md`.
-
-**R2.3 feeling (per-character impersonators ×N, judge mode)** — for each `cast:` slug, one impersonator dispatch in the same parallel block (POV and non-POV both eligible). Character stack + nine R1 facet files + cite-index + `rubric-feeling.md`. Decide per existing feeling entry for that character: KEEP (somatic-tell card-matched, multi-justification ≥3 of 5, scene cap ≤1) / DELETE (duplicates POV NI register, forbidden vocabulary, multi-justification fail, cap breach). Adds: memory or NI co-cite where somatic register would land. Add-cap 5 per character. Out: mutated `feeling-<slug>.md` slice + `_inflight-r2/proto-lines-feel-<slug>.md` + decision-shard `staff/feeling/r2-decision-shard-<slug>.md`.
-
-**R2.4 metaphor (editor, judge mode)** — nine R1 facet files + cite-index + `rubric-metaphor.md`. Decide per existing metaphor: KEEP (anchor resolves post-cascade, magnitude-band discipline holds — bone fires in hinge-magnitude-class zone per rubric AP7, equivalent to scene-map `peak-bones` membership; register is callback or dark-humor) / DELETE (anchor unresolvable, AP3 anti-duplication, AP7 default-refuse for bones outside hinge-magnitude band — i.e. bones not in `peak-bones` AND with low `axis_moves[].magnitude`). Resolve any provisional `licensed-by:` hints from R1 — KEEP-with-anchor-rewrite if it resolves, DELETE-unanchorable otherwise. Adds: ≥2 supporting layers cleanly clear; refuse-by-default. Add-cap 3. Out: mutated `metaphor.md` + `_inflight-r2/proto-lines-meta.md` + decision-shard `staff/metaphor/r2-decision-shard.md`.
-
-**R2.5 exposition (exposition-author, judge mode)** — all R1 facet files (including the now-locked lens facets) + cite-index + audience persona cards + cross-episode register + `rubric-exposition.md`. Override exposition-author: facet-judge mode. The R2 judge is the critical pass that converts the audience-pure R1 output into graph-trusted final state. Decide per existing exposition entry: KEEP (gap still real after lens-facets reviewed; no other facet covers it; sources still resolve) / DELETE (lens facet covers — NI established the term in body, mem carries the callback, loc-state covered the scene-orient) / REWORD (gap is real but surface chose heavy render-as where lighter would do; or anti-jargon list growth in R1 cull mandates re-rendering). Adds: rare — when R1 lens-facet author chose NOT to cover a register exposition can pick up. Add-cap 3. **Context-ledger coupling (PROP-0020):** additionally read `active-project/staff/showrunner/context-ledger-<book>-<chapter>.md`. For every `status: open` entry with `license: CONTEXT-REQUIRED`, author the orienting exposition gloss at the entry's `anchor`. **Ledger-licensed adds do NOT count against the Add-cap 3** and are NOT subject to the "rare" discipline — they are sanctioned by an upstream followability reviewer. Stamp the ledger entry `status: satisfied` + `satisfied_by: exposition:<id>`. Mark each such entry in the exposition file with `licensed-context-exception: ctx-<NNN>` in its frontmatter so the auditor (Phase 5) and audience-gate (Phase 5b) recognize it as exempt. WEAVE-FIXABLE steering hints from Phase 2.5 are routed to the named lens-facet judge as add-suggestions (still subject to that facet's normal cap). Provisional-anchor resolution: R1 entries with descriptive anchor-hints get bound to actual proto-line IDs via cite-index walk. Scene-open-orient fire-rule re-validated against locked graph (the s01e01 dogfood lesson: Phase 2 exposition refused 11 of 11 scene-orient entries that Phase 1 had authored, because NI/loc-state covered them; R2 enforces this routing). Out: mutated `exposition-<slug>.md` + `_inflight-r2/proto-lines-exposition.md` + decision-shard `staff/exposition-author/r2-decision-shard.md`.
-
-**R2.6 dialogue (dialogue-writer, judge mode, per-character ×N speaking characters)** — for each speaking character in the cast, one fork in the same parallel block (judge mode). Reads: the dialogue file under judgment + its drafts sidecar; all nine other R1 facet files + cite-index; behavior card stack (re-loaded); speaker persona + ltm + stm + state; `staff/dialogue-writer/rubric-dialogue.md`. **Graph payload filtering (rubric § contamination disciplines):** facet entries passed as facts-not-prose (somatic-tell text / monument-name / interest-focus / vibe-target fields only, stripped of rationale); speaker's own slices (`feeling-<speaker>`, `state-updates-<speaker>`, NI iff speaker is POV) first-class; other characters' slices as one-line abstracts. Decide per existing dialogue entry: KEEP (card signature affirmatively demonstrated; facet-license citations resolve in locked graph; somatic-tell / monument adjacency claimed by chosen draft is structurally present; no hard-fence violation; behavior monument rules respected) / DELETE-<reason> (card signature missing — inoffensive ≠ on-card; forbidden vocabulary; facet-license citation does not resolve; hard-fence proper-noun hit; DEDUP with NI / feeling / memory rendering same content) / REWRITE (internal mini-V3 surfaces closable seam; delete + new ID with revised draft citing different §-section or different facet license). Add-cap: 3 per character (adds are exceptional — R1 covers speaking beats; R2 adds only when a beat is genuinely silent that card + graph license a line for). Out: mutated `theater/dialogue/<character-slug>.md` + `_inflight-r2/proto-lines-dialogue-<character>.md` + decision-shard `staff/dialogue-writer/r2-decision-shard-<character>.md`.
-
-Vibes is not re-judged in R2; the showrunner-authored R1 vibes facet stands as-is unless the audit flags it. (R2 vibes judging is a future extension.)
+Record `chapters[<slug>].context_followability.{completeness_verdict, readability_verdict, report_path, reviewed_at, context_ledger_open, grounding_ledger_open}` in showrunner memory.
 
 ---
 
-## Phase 4 — FANIN: decision-log consolidate + merge + cite-index
+## Phase 3 — CONDITIONAL REMEDIATION (PROP-0020 / PROP-0022)
 
-### 4a. Decision-log consolidation
+**Fires ONLY if Phase 2.5 left an open ledger hole on the spine** — a `CONTEXT-REQUIRED` entry with `spine: true` (a `GLARING-HOLE` on the central event / a load-bearing stake / a scene-to-scene causal hand-off) OR a `GROUNDING-REQUIRED` entry with `spine: true` (an `AIRLESS-HOLE` on the central event / a peak). **Skipped otherwise** (the common case: off-spine ledger entries are advisory inputs to `/and-stitch`, not blockers). This is the slimmed descendant of the old Phase 4.6 — fired directly off Phase 2.5 (there is no Phase 4.5 re-review gate anymore).
 
-Concatenate the six layer shards (R2.1 NI, R2.2 memory, R2.3 feeling — all per-character shards merged in `cast:` order, R2.4 metaphor, R2.5 exposition, R2.6 dialogue — all per-character shards merged in `cast:` order) into `active-project/theater/facets/.r2-decisions.md` under one `## <facet-slug>` heading per shard. Sum the per-shard `f-r2-counts:` into a single top-of-file frontmatter block per `schemas/audit-report.schema.md` § Consolidated file:
-
-```yaml
----
-report: r2-decisions-consolidated
-episode: <slug>
-date: <ISO date>
-shards: [<list of source shard paths>]
-f-r2-counts: {f-r2-1: <sum>, f-r2-2: <sum>, f-r2-3: <sum>, f-r2-4: <sum>}
-discipline-fails: <count>
----
-```
-
-The consolidated frontmatter is what `staff/orchestrator-critic/card.md` Phase 6 verdict reads (A2 F7 emission contract; `f-r2-1 > 0` is HARD trips F7-r2; `f-r2-2 + f-r2-3 + f-r2-4 > 2` is SIGNAL B7).
-
-### 4b. Arbiter glue (T1 / T4 over shards)
-
-Main session is the arbiter (per `design/shoot-v2/r2-judge-tuning/C-arbiter-protocol.md`). Read each shard end-to-end and run the two retained triggers:
-
-- **T1 — Rubric-label-heavy, entry-specific-light.** Verdict justification is primarily rubric citations without naming concrete entry content. Intervention: re-dispatch the layer's author with — "What specifically in this entry produced that verdict? Quote the phrase." Fresh fork; rewrites the verdict's justification only.
-- **T4 — Niche-driven add justification.** Add-justification works backward from "the graph reveals a niche" rather than forward from "the at-rest reading wants this entry." Intervention: re-dispatch with — "Set aside the cite-index. Read the proto-line. Does it want this entry?"
-
-T2 / T3 / T5 / T6 are deferred until B2a evidence supports them. **Bound:** ≤2 intervention rounds per verdict. After two interventions without a non-mechanical justification, log as **DISCIPLINE-FAIL** in the shard and surface in Phase 6. **No interventions on hard-fence violations.** Append per-shard arbiter trace inline beneath the affected verdict.
-
-### 4c. Merge + cite-index rebuild
-
-```bash
-python3 active-project/staff/cite-index/build_cite_index.py <episode-slug>
-```
-
-The tool reads `_inflight-r2/` instead of `_inflight/` on the second invocation. (Implementation: the tool reads any `_inflight*/proto-lines-*.md` files present; both directories are consumed if both exist. After Phase 4 the `_inflight/` directory may be pruned; `_inflight-r2/` is the live working set.)
-
-Body-integrity, citation union, slice consolidation, stale-citation check, cite-index rebuild — same five sub-phases as Phase 2. The R2 facet files are already mutated in place by the R2 judges; this run merges their proto-lines copies into the canonical and refreshes the cite-index against R2's KEEP / DELETE / ADD outcome.
-
-Set status `faceted-r1` → `faceted-r2` in showrunner memory.
-
-### 4d. Scene-map validation (URI-SCENE-WINDOW, downgraded from derivation under URI-SUBSTANCE-OVERHAUL 2026-05-17)
-
-Under the substance overhaul, `/and-write` Phase 7 emits the scene-map facet directly from `chapters[].scenes[]` in showrunner memory. Phase 4d **no longer derives** — it validates.
-
-**Validation procedure:**
-1. Confirm `active-project/theater/facets/scene-map-<book>-<chapter>.md` exists (it should — Phase 0 step 4 already pre-checked). If absent at this point, abort.
-2. Read the scene-map. Validate the URI-SCENE-WINDOW coverage check: every bone in `theater/bones/<book>-<chapter>.md` lands in exactly one scene's `@<start>-@<end>` range; no gaps; no overlaps; no dangling anchors; no duplicate scene labels; frontmatter `total-scenes` / `total-bones` match body.
-3. Validate the tens-aware fields (`rhythm-shape`, `peak-bones`, `peak-shadow-bones`, `fusion-eligible-runs`, `protected-patterns`) are populated per `schemas/scene-map.schema.md` if the facet was emitted with them. Under the substance overhaul these fields are derived from the per-bone `substance_delta.axis_moves.magnitude` (treated as the new pressure-signal) instead of tensometer entries; `/and-write` Phase 7 computes them at emit time.
-4. **Coverage failures HARD-fault** and surface to Phase 5 audit. The orchestrator does not derive a fallback — under the new chain, scene-map emission is `/and-write`'s job, and a missing/broken scene-map indicates upstream did not run cleanly.
-
-The tensometer-fallback path (which previously parsed `tensometer-<slug>.md`'s scene-footer when the scene-map facet was missing) is removed as dead code.
-
----
-
-## Phase 4.5 — CONTEXT-FOLLOWABILITY REVIEW (post-R2) (PROP-0020 / URI-FACETS-CONTEXT-WEAVE; 2026-05-29)
-
-**Why this exists.** Checkpoint 3 of 4. R2 has now run — the lens facets are locked and the R2 exposition judge has added the ledger-licensed orienting glosses. This re-reads the richer graph to confirm the context gaps Phase 2.5 found are actually closed, and to catch any that R2 missed or newly exposed. In the common case this is where the context-weave track ENDS.
-
-**Dispatch.** ONE `general-purpose` agent, context-aware (same stance as Phase 2.5). Inputs: the post-R2 canonical proto-lines/bones graph + R1+R2 facet files (incl. the exposition adds) + `chapters[<slug>].{goal, scenes[].chunk}` + `handoff_in` + the **context-ledger** (so it can verify each `open`/`satisfied` entry).
-
-Mandate: re-read in order as a series reader at chapter N. For each ledger entry, confirm `satisfied` adds actually close the gap. Surface any remaining `FOLLOW-GAP`. Then return ONE verdict:
-
-Return TWO verdicts, scored separately (PROP-0022 separated-scoring — a chapter must pass BOTH; completeness cannot mask airlessness):
-
-**Axis 1 — completeness:**
-
-| Verdict | Trigger | Routing |
-|---|---|---|
-| `FOLLOWABLE` | no remaining FOLLOW-GAP touching the central event / its causality / its payoff; any residual gaps are minor | completeness axis clear |
-| `GLARING-HOLE` | a remaining FOLLOW-GAP on the central event, a load-bearing stake, or a scene-to-scene causal hand-off — the kind a series reader still cannot follow | fire Phase 4.6; write unclosed gaps to the context-ledger as `license: CONTEXT-REQUIRED, licensed_at: 4.5` |
-
-**Axis 2 — readability / aliveness (PROP-0022):**
-
-| Verdict | Trigger | Routing |
-|---|---|---|
-| `ALIVE` | a person is present across the chapter; no airless stretch on the spine | readability axis clear |
-| `AIRLESS-HOLE` | an `AIRLESS` finding on the central event / a peak / a load-bearing beat survives — the chapter reads as apparatus reporting itself at the points that should land | fire Phase 4.6; write `GROUNDING-REQUIRED` lines to the grounding-ledger AND list `VOICE-FIXABLE` findings for `/and-stitch` Phase 4 |
-
-**Combined gate:** proceed to Phase 5 only if `FOLLOWABLE` AND `ALIVE`. If EITHER axis holes, Phase 4.6 fires (handling whichever ledger(s) have open lines). 
-
-Persist report to `active-project/staff/reviews/context-follow-r2-<book>-<chapter>-<timestamp>.md`. Record `chapters[<slug>].context_followability.{completeness_verdict, readability_verdict, report_path, reviewed_at, context_ledger_open, grounding_ledger_open}` in showrunner memory.
-
-**Non-blocking by itself** — a clear pass proceeds; a hole on either axis escalates to the conditional R3 (which has its own terminal handling), it does NOT abort.
-
----
-
-## Phase 4.6 — CONDITIONAL R3: context remediation (PROP-0020 / URI-FACETS-CONTEXT-WEAVE; 2026-05-29)
-
-**Fires on a Phase 4.5 `GLARING-HOLE` (completeness axis) OR `AIRLESS-HOLE` (readability axis).** Skipped otherwise. This is the revived-on-demand R3 (the default-retired relaxation round, repurposed as a targeted remediation round for both tracks). Checkpoint 4 of 4.
-
-**Step 1 — Targeted add round (handles whichever ledger has open lines).**
-- *Context (completeness):* for each `open` `CONTEXT-REQUIRED @<bone>` context-ledger entry, dispatch the exposition-author (judge/add mode) — or, where a WEAVE-FIXABLE route is better, the named lens-facet author — to author the orienting content at the anchor. Ledger-licensed; exempt from add-cap + anti-exposition penalties (same exemption as Phase 3).
-- *Grounding (readability):* for each `open` `GROUNDING-REQUIRED @<bone>` grounding-ledger entry, dispatch the **sensory-author** (add mode) to author the concrete body/sensory grounding at the anchor. Ledger-licensed; **exempt from the sensory frequency-band cap** (the whole point — the grounding that breathes is the grounding the cap would trim). `VOICE-FIXABLE` findings are NOT authored here — they are render-discipline and carry to `/and-stitch` Phase 4.
+**Step 1 — Targeted add round (handles whichever ledger has open spine lines).**
+- *Context (completeness):* for each open `CONTEXT-REQUIRED @<bone>` with `spine: true`, dispatch the **exposition-author** (add mode) to author the orienting gloss at the anchor, stamped `surface: render` + `licensed-context-exception: ctx-<NNN>`. Ledger-licensed; exempt from add-cap + anti-exposition penalties. (Off-spine `CONTEXT-REQUIRED` entries stay `surface: reference` for the stitcher to consult; they do not get a forced inline render.)
+- *Grounding (readability):* for each open `GROUNDING-REQUIRED @<bone>` with `spine: true`, dispatch the **sensory-author** (add mode) to author the concrete body/sensory grounding at the anchor, stamped `licensed-grounding-exception: grd-<NNN>`. Ledger-licensed; exempt from the sensory frequency-band cap. `VOICE-FIXABLE` findings are NOT authored here — they are render-discipline and carry to `/and-stitch` Phase 4.
 
 Re-run `build_cite_index.py`. Stamp each satisfied ledger entry `satisfied` + `satisfied_by`.
 
-**Step 2 — Final followability review.** Re-dispatch the context-aware reviewer (one `general-purpose`) on the post-R3 graph. Return `FOLLOWABLE` or `RESIDUAL-HOLE`.
+**Step 2 — Verify (one reviewer).** Re-dispatch the context-aware reviewer (one `general-purpose`) on the post-add graph, scoped to the satisfied entries only. Return `CLOSED` or `RESIDUAL-HOLE`.
 
 **Step 3 — Fixer or warn (terminal).**
-- `FOLLOWABLE` → done; proceed to Phase 5.
-- `RESIDUAL-HOLE` → dispatch **fixer** with the named residual gaps + the context-ledger + the relevant facet/exposition rubrics. The fixer **manually edits the facet/exposition content** to close the gap (the one place in this track a human-style targeted edit lands, not just an author re-dispatch). After the fixer pass, re-run the reviewer ONCE more.
-  - If now `FOLLOWABLE` → proceed to Phase 5.
-  - If still holed → **WARN**: write the unresolved gaps to `chapters[<slug>].context_followability.unresolved[]` + surface in the Phase 6 master summary + Phase 5c admin process-critic dispatch. **Non-blocking** — the chapter proceeds to Phase 5 / 5b / 6 / `/and-stitch` carrying a logged context-debt caveat (analogous to the `/and-stitch` cold-read SHIPPED-WITH-CAVEATS path). The warn is the honest "we could not close this within the cap" signal; it does NOT silently ship clean.
+- `CLOSED` → proceed to Phase 4.
+- `RESIDUAL-HOLE` → dispatch **fixer** with the named residual gaps + the ledgers + the relevant facet/exposition rubrics; the fixer manually edits the facet/exposition content to close. Re-run the reviewer ONCE more. If now `CLOSED` → Phase 4. If still holed → **WARN**: write the unresolved gaps to `chapters[<slug>].context_followability.unresolved[]` + surface in the Phase 5 summary + the Phase 4.5 admin process-critic dispatch. **Non-blocking** — the chapter proceeds carrying a logged context-debt caveat. `/and-stitch` Phase 9 naive-follow remains the terminal backstop.
 
-**Cap.** Phase 4.6 runs at most ONE add-round + ONE fixer pass (mirrors the Phase 5b 1-pass remediation budget). It is not a convergence loop. The `/and-stitch` Phase 9 cold-read remains the terminal backstop for anything that slips through.
+**Cap.** Phase 3 runs at most ONE add-round + ONE fixer pass. It is not a convergence loop.
 
 ---
 
-## Phase 5 — AUDIT: single auditor dispatch
+## Phase 4 — AUDIT: single auditor dispatch (the facet-layer gate)
 
-Dispatch **auditor** (fork) with the full graph:
+Dispatch **auditor** (fork) with the full graph. **This is the facet-layer's terminal gate** — with the R2 round and the Phase 5b audience-gate retired, the mechanical auditor is the sole check between R1 authoring and persist. The adversarial reading of rendered prose happens downstream at `/and-stitch` Phase 9 (cold-read + naive-follow), not here.
 
 **Read inputs:**
-- Proto-lines: `active-project/theater/proto-lines/<slug>.md` (canonical, post-R2).
-- All nine facet files at `active-project/theater/facets/` (`location-state`, `interest-narrator`, `sensory`, `state-updates`, `memory`, `feeling`, `metaphor`, `vibes`, `exposition-<slug>`).
-- Scene-map: `active-project/theater/facets/scene-map-<book>-<chapter>.md` (upstream-emitted by `/and-write` Phase 7; validated at Phase 4d).
-- All per-character dialogue files at `active-project/theater/dialogue/<character-slug>.md` (one per speaking character).
-- All per-character dialogue drafts sidecars at `active-project/staff/dialogue-writer/<character-slug>.drafts.md` (for CONSTRAINT § citation-completeness).
-- Cite-index: `_cite-index.md` (post-R2).
-- R2 decision-log: `.r2-decisions.md`.
-- All active warehouse cards (`active-project/warehouse/*.card.md`) — for constraint checks against cond-* and loc-* cards.
-- All behavior cards in scope (`cards/dialects/<character-slug>.card.md` and composition stack via margit) for every speaking character — for CONSTRAINT § behavior-card-compliance checks.
+- Proto-lines: `active-project/theater/proto-lines/<slug>.md` (canonical, post-remediation).
+- All facet files at `active-project/theater/facets/` (`location-state`, `interest-narrator`, `sensory`, `state-updates`, `memory`, `feeling`, `metaphor`, `vibes`, `exposition-<slug>`).
+- Scene-map: `active-project/theater/facets/scene-map-<book>-<chapter>.md` (upstream-emitted; validated here).
+- All per-character dialogue files at `active-project/theater/dialogue/<character-slug>.md`.
+- Cite-index: `_cite-index.md`.
+- All active warehouse cards (`active-project/warehouse/*.card.md`) — for constraint checks.
+- All behavior cards in scope (`cards/dialects/<character-slug>.card.md` + composition stack via margit) for every speaking character — for behavior-card-compliance checks.
 - Series plans (showrunner memory: `series.chunk`, `series.substance`, `series.laws`, `series.lore`, `series.behaviors`) — for series-law constraint checks.
 - Schemas: `facet.schema.md`, `dialogue.schema.md`, `audit-report.schema.md`.
-- **Context-ledger (PROP-0020):** `active-project/staff/showrunner/context-ledger-<book>-<chapter>.md` if present — the authority for which exposition entries are sanctioned context-exceptions.
-- **Grounding-ledger (PROP-0022):** `active-project/staff/showrunner/grounding-ledger-<book>-<chapter>.md` if present — the authority for which sensory entries are sanctioned grounding-exceptions (exempt from the FREQUENCY-BAND cap).
+- **Context-ledger** (if present) — the authority for which exposition entries are sanctioned context-exceptions.
+- **Grounding-ledger** (if present) — the authority for which sensory entries are sanctioned grounding-exceptions (exempt from FREQUENCY-BAND).
 
-**Forbid loading:** behavior cards, vibes-as-bias, audience personas (except for exposition CONSTRAINT § license-completeness check, which requires loading the persona slugs to verify `licensed-by:` references resolve — load names only, not content), source prose. The auditor reads the graph mechanically against constraints, not aesthetically.
+**Forbid loading:** vibes-as-bias, audience personas (except loading persona slugs by name to verify exposition `licensed-by:` references resolve), source prose. The auditor reads the graph mechanically against constraints, not aesthetically.
 
-**Mode: flag-only.** Until the auditor itself is tuned for delete-authority, findings are routed back to facet authors as flags. Once tuned (separate work), HARD findings will be executed as deletes (with citation cascade).
+**Mode: flag-only.** Findings route back to facet authors / fixer as flags. (Auditor delete-authority is deferred to a separate tuning effort.)
 
-**Licensed-context-exception exemption (PROP-0020 / URI-FACETS-CONTEXT-WEAVE).** An exposition entry carrying `licensed-context-exception: ctx-<NNN>` in its frontmatter, where `ctx-<NNN>` resolves to a `license: CONTEXT-REQUIRED` entry in the context-ledger, is **exempt from the following findings**: AP-SCAN `new-plot-content` (the content is sanctioned orientation, not new plot), FREQUENCY-BAND exposition over-count contribution (licensed exceptions do not count toward the 1-5% / episode-open / first-mention caps), and SUPERFLUOUS/`rare`-add scrutiny. It is **NOT exempt** from STRUCTURAL integrity, CONSTRAINT source-traceability, CONSTRAINT license-completeness, re-gloss check, or anti-jargon/hollow-prose AP-SCAN — a sanctioned exception must still be well-formed, sourced, and cleanly written. A `licensed-context-exception` whose `ctx-<NNN>` does NOT resolve in the ledger → HARD `FAULT-CONTEXT-LICENSE-DANGLING` (someone claimed an exemption without a ledger entry).
+**Licensed-context-exception exemption.** An exposition entry carrying `licensed-context-exception: ctx-<NNN>` resolving to a `CONTEXT-REQUIRED` ledger entry is **exempt from**: AP-SCAN `new-plot-content`, FREQUENCY-BAND exposition over-count contribution, and SUPERFLUOUS/`rare`-add scrutiny. NOT exempt from STRUCTURAL, CONSTRAINT source-traceability/license-completeness, re-gloss check, or anti-jargon/hollow-prose AP-SCAN. A `licensed-context-exception` whose `ctx-<NNN>` does NOT resolve → HARD `FAULT-CONTEXT-LICENSE-DANGLING`.
 
-**Licensed-grounding-exception exemption (PROP-0022 / URI-READABILITY-TWIN).** The exact mirror for the readability axis. A sensory entry carrying `licensed-grounding-exception: grd-<NNN>` in its frontmatter, where `grd-<NNN>` resolves to a `license: GROUNDING-REQUIRED` entry in the grounding-ledger, is **exempt from the sensory FREQUENCY-BAND cap** (the 3-6% / ≤3-per-scene band — licensed grounding does not count toward it) and from SUPERFLUOUS/lonely-entry scrutiny (an aliveness reviewer sanctioned it). It is **NOT exempt** from STRUCTURAL integrity, the sensory old-state anchor rubric, CONTRADICTION, or DEDUP — sanctioned grounding must still be well-formed and non-duplicative. A `licensed-grounding-exception` whose `grd-<NNN>` does NOT resolve in the grounding-ledger → HARD `FAULT-GROUNDING-LICENSE-DANGLING`.
+**Licensed-grounding-exception exemption.** A sensory entry carrying `licensed-grounding-exception: grd-<NNN>` resolving to a `GROUNDING-REQUIRED` ledger entry is **exempt from the sensory FREQUENCY-BAND cap** and from SUPERFLUOUS/lonely-entry scrutiny. NOT exempt from STRUCTURAL, the sensory old-state anchor rubric, CONTRADICTION, or DEDUP. A dangling `grd-<NNN>` → HARD `FAULT-GROUNDING-LICENSE-DANGLING`.
 
-### Audit classes (twelve; with exposition-specific rules layered into FREQUENCY-BAND, CONSTRAINT, RUBRIC-FIDELITY, and AP-SCAN)
+### Audit classes (twelve)
 
-1. **STRUCTURAL** — schema/format/integrity (headers, line shape, ID monotonicity, anchor resolution, bidirectional citation, proto-body integrity). **Dialogue-specific:** every dialogue entry's `@<proto-line-id>` resolves; every `<character-slug>:<id>` citation in proto-lines resolves to an existing dialogue entry; entry-ID monotonicity per-character (`schemas/dialogue.schema.md` § Entry fields); behavior-card slug in dialogue file header matches a real card.
-2. **FREQUENCY-BAND** — per-rubric quantitative gates (sensory 3-6%; memory 5-12%; feeling 2-5%/char; metaphor 0-3%; NI 15-25%; **exposition 1-5% per episode, episode-open ≤4 entries, first-mention ≤12 entries, scene-open-orient ≤1 per scene**; **dialogue sparsity unconstrained — content-driven, not flag-driven — but per-anchor cap ≤3 utterances and ≤1 utterance per speaker per anchor unless deliberate single-turn split documented in drafts sidecar**).
-3. **METADATA-INCONSISTENCY** — file headers / round-notes / r1_to_r2 summary lines that contradict actual content.
-4. **CURVE-SHAPE** — evaluates the chapter's pressure-signal curve against the `dramatic_shape` declaration in showrunner memory + per-scene `rhythm-shape` from the scene-map. SHAPE-OK when scene-level `rhythm-shape` values are coherent with the chapter-level `dramatic_shape` (e.g., a `hinge` chapter shows scene-level `flat-low` zones building toward a `peak-bones` hinge beat with `resolving` afterward; a `rising` chapter shows ascending `rhythm-shape` values across scenes; a `falling` chapter shows predominantly `resolving` and `release-only` scenes). SHAPE-FAIL when the scene-map's rhythm-shape sequence contradicts the declared dramatic_shape (e.g., a `hinge` chapter with no `peak-bones`-class bone anywhere, or a `rising` chapter that begins with `resolving` scenes). (`dramatic_shape` enum is `rising | climax | falling | hinge` per `schemas/showrunner-memory.schema.md`; the pre-2026-05-21 audit text used `denouement` which is not in the enum.)
+1. **STRUCTURAL** — schema/format/integrity (headers, line shape, ID monotonicity, anchor resolution, bidirectional citation, proto-body integrity). **Dialogue-specific:** every dialogue entry's `@<proto-line-id>` resolves; every `<character-slug>:<id>` citation in proto-lines resolves to an existing dialogue entry; entry-ID monotonicity per-character; behavior-card slug in dialogue file header matches a real card.
+2. **FREQUENCY-BAND** — per-rubric quantitative gates (sensory 3-6%; memory 5-12%; feeling 2-5%/char; metaphor 0-3%; NI 15-25%; **exposition `surface: render` entries 1-5% per episode, episode-open ≤4, first-mention ≤12, scene-open-orient ≤1 per scene** — `surface: reference` entries do not count toward the render band; **dialogue per-anchor cap ≤3 utterances, ≤1 per speaker per anchor unless documented split**).
+3. **METADATA-INCONSISTENCY** — file headers / round-notes that contradict actual content.
+4. **CURVE-SHAPE** — evaluates the chapter's pressure-signal curve against the `dramatic_shape` declaration + per-scene `rhythm-shape` from the scene-map. SHAPE-OK when scene-level rhythm-shape values cohere with chapter-level dramatic_shape. SHAPE-FAIL when the rhythm-shape sequence contradicts the declared shape (e.g., a `hinge` chapter with no `peak-bones`-class bone anywhere). (`dramatic_shape` enum is `rising | climax | falling | hinge`.)
 5. **CONTRADICTION** — two facet entries set incompatible state on the same anchor; both flagged.
-6. **DEDUP** — cross-facet-same-anchor / within-facet-different-anchor / within-facet-same-anchor. **Dialogue-specific:** utterance content rendered by NI / feeling / memory at the same anchor (the speaker says aloud what another facet already shows — one yields; default is the lens facet yields to dialogue when the speaker uses the same phrasing the lens would, since dialogue is verbatim render and lens is render-as signal).
-7. **SUPERFLUOUS** — lonely entries that don't survive rubric scrutiny. Convention: bones in `rhythm-shape: flat-low` zones and off-anchor vibes are never superfluous. SUPERFLUOUS evaluation must run the rubric's own three-axis test (necessity / interestingness / frugality) on the entry's own merits — displacement-logic ("entry-X passes because it displaced entry-Y") is not a valid SUPERFLUOUS defense.
-8. **CONSTRAINT** — cross-facet contract violations: memory without NI-spine; metaphor without resolvable `licensed-by:` anchor; feeling duplicating POV NI; vibes with unresolvable or forward-citing `licensed-by:`; state-updates `<old>` contradicting prior state; POV-perceptual access on NI; **exposition source-traceability (every claim in `<gloss-text>` must trace to a `<sources>` entry; unresolvable claim → HARD); exposition license-completeness (every entry's `<licensed-by>` field must name ≥1 persona-card slug + a specific gap-claim — missing/malformed → SIGNAL); exposition scene-orient fire-rule (`scene-open-orient` entries must satisfy (a) time-skip-blank-precedes + (b) loc-state-silent-at-anchor + (c) NI-silent-on-time-or-place-in-first-2-anchors-of-new-scene; any violation → HARD because the entry fires when lens should carry); exposition re-gloss check (cross-reference `<key>` against `active-project/staff/exposition-author/glossed-terms.md`; hit → HARD); exposition first-mention-character coverage (walk proto-lines and identify every named individual appearing in narrator-prose for the first time — by definite description like `the carter` / `the dock-runner` / `the lord's-man` / `the maester` or by name like `Tom` / `Ben`. For each, verify a `first-mention-character` exposition entry exists keyed to that anchor. POV character excluded — covered in episode-open preamble. Dialogue-only mentions excluded — a name uttered by a speaker is the speaker's reference, not a prose introduction. Missing entry → HARD: `[exposition:--] @<anchor> — first-mention-character-coverage — no gloss for <character-noun-phrase> on first prose mention`)**; **dialogue behavior-card-compliance (every utterance respects the speaker's behavior card §hard fences, §forbidden vocabulary, §monument rules; violation → HARD); dialogue citation-completeness (every chosen-mark entry in the drafts sidecar has both card-signature §-cite AND facet-license citation post-R2; missing one axis → SIGNAL; missing both → HARD); dialogue objective-anchoring (every entry's `<objective>` field is non-empty and matches a speech-act the proto-line bone licenses — missing/unmatched → SIGNAL); dialogue-coverage (URI-DIALOGUE-COVERAGE-GATE — MOVED UPSTREAM under URI-WRITE-DIALOGUE-COBONDED 2026-05-25. The authoritative gate lives at `/and-write` Phase 7 downstream-gate pre-verify. Phase 5 auditor here re-verifies as a sanity check only — same checks, but a miss here is a `FAULT-UPSTREAM-LEAK` HARD against `/and-write`, not a Phase 5 authoring concern: every Phase 0 dialogue-anchor bone is cited by ≥1 `<character-slug>:<id>` token on the canonical bones, AND every Phase 0 `speakers` slug has a non-empty `theater/dialogue/<slug>.md` file. Any miss → HARD per occurrence: emit `[upstream-leak:--] @<bone> — dialogue-coverage-upstream-leak — bare dialogue-anchor bone: <subject> ...` and `[upstream-leak:--] @-- — dialogue-coverage-upstream-leak — missing speaker file: <slug>`. The auditor's job here is to catch upstream regressions; the fix routes back to `/and-write revise`, not to a `/and-facets` dialogue author (no longer exists).)**; **scene-map coverage (URI-SCENE-WINDOW, 2026-05-13 — every bone in `proto-lines/<slug>.md` MUST fall inside exactly one scene's `@<start>-@<end>` range in `theater/facets/scene-map-<slug>.md`. Uncovered bone → HARD `[scene-map:--] @<id> — scene-map-coverage — gap`. Double-covered bone → HARD `[scene-map:--] @<id> — scene-map-coverage — overlap with scene-<labels>`. Dangling anchor (scene's `@<start>` or `@<end>` does not match any proto-line ID) → HARD `[scene-map:--] scene-<label> @<id> — scene-map-coverage — dangling-anchor`. Duplicate scene-label → HARD. Frontmatter `total-scenes` / `total-bones` mismatch with body → HARD. Per the schema's coverage validation table.)**; **scene-map per-scene caps (URI-SCENE-WINDOW — sensory ≤3 per scene, feeling ≤1 per character per scene, metaphor ≤1 cross-character per scene, exposition `scope: scene-open-orient` ≤1 per scene. Per-scene boundaries read from `scene-map-<slug>.md`'s ranges, not inferred from prose. Breach → HARD per facet type with scene-label cited in the finding: `[<facet>:<count>] scene-<label> @<bone-range> — per-scene-cap — <count> entries exceed cap of <N>`.)**; **loc-state transition-run continuity-license (URI-SCENE-RHYTHM, 2026-05-13 — per `design/shoot-v2/rubric-location-state.md § Transition-run continuity license`. Continuity-carry entry (loc-state entry whose sensory note begins `continuity-from <prior-loc-state-id>:`) is valid only when (a) the entry's anchor bone is inside a scene-map `fusion-eligible-runs` range AND (b) the scene's `rhythm-shape` is `flat-low` / `resolving` / `release-only` AND (c) the `<prior-loc-state-id>` resolves to an earlier loc-state entry in the file AND (d) no other continuity-carry entry exists in the same fusion-eligible-run. Violations: (a) → HARD `FAULT-LOC-STATE-CONTINUITY-MISPLACED`; (c) → HARD `FAULT-LOC-STATE-CONTINUITY-DANGLING`; (d) → HARD `FAULT-LOC-STATE-CONTINUITY-OVERPACK`; (b) is enforced by the licensing rule (entry should not have been authored on a momentum scene; flagged at audit as HARD-misplaced). Carry-note duplicating prior loc-state's sensory note verbatim → SIGNAL `WARN-LOC-STATE-CONTINUITY-NO-INCREMENT`.)**.
+6. **DEDUP** — cross-facet-same-anchor / within-facet-different-anchor / within-facet-same-anchor. **Dialogue-specific (absorbs the retired R2 dialogue-judge's dedup concern):** utterance content rendered by NI / feeling / memory at the same anchor (the speaker says aloud what another facet already shows — one yields; default is the lens facet yields to dialogue, since dialogue is verbatim render and lens is render-as signal). This is the home of the "dialogue vs. the facet graph the upstream author was blind to" check that the R2 dialogue judge used to hold.
+7. **SUPERFLUOUS** — lonely entries that don't survive rubric scrutiny. Bones in `rhythm-shape: flat-low` zones and off-anchor vibes are never superfluous. Runs the rubric's own three-axis test (necessity / interestingness / frugality) on the entry's own merits — displacement-logic is not a valid defense. (With no R2 judge, SUPERFLUOUS is the cross-facet cull the R2 round used to perform; the auditor flags, the fixer culls on HARD.)
+8. **CONSTRAINT** — cross-facet contract violations: memory without NI-spine; metaphor without resolvable `licensed-by:` anchor; feeling duplicating POV NI; vibes with unresolvable or forward-citing `licensed-by:`; state-updates `<old>` contradicting prior state; POV-perceptual access on NI; **exposition source-traceability (every claim in `<gloss-text>` traces to a `<sources>` entry; unresolvable → HARD); exposition license-completeness (every entry's `<licensed-by>` names ≥1 persona-card slug + a specific gap-claim — missing/malformed → SIGNAL); exposition scene-orient fire-rule (`scene-open-orient` entries must satisfy time-skip-blank-precedes + loc-state-silent-at-anchor + NI-silent-on-time-or-place-in-first-2-anchors; violation → HARD); exposition re-gloss check (cross-reference `<key>` against `glossed-terms.md`; hit → HARD); exposition first-mention-character coverage (every named individual on first prose mention has a `first-mention-character` entry keyed to that anchor; POV excluded; dialogue-only mentions excluded; missing → HARD)**; **dialogue behavior-card-compliance (every utterance respects the speaker's behavior card §hard fences / §forbidden vocabulary / §monument rules; violation → HARD); dialogue-coverage sanity (URI-WRITE-DIALOGUE-COBONDED upstream-leak check — every Phase 0 dialogue-anchor bone is cited by ≥1 `<character-slug>:<id>` token, AND every `speakers` slug has a non-empty dialogue file; any miss → HARD `FAULT-UPSTREAM-LEAK` routing to `/and-write revise`, not a facets concern)**; **scene-map coverage (URI-SCENE-WINDOW — every bone in `proto-lines/<slug>.md` falls inside exactly one scene's `@<start>-@<end>` range; uncovered → HARD gap; double-covered → HARD overlap; dangling anchor → HARD; duplicate scene-label → HARD; frontmatter `total-scenes`/`total-bones` mismatch → HARD)**; **scene-map per-scene caps (sensory ≤3, feeling ≤1/char, metaphor ≤1 cross-character, exposition `scope: scene-open-orient` ≤1 — per scene; breach → HARD with scene-label cited)**; **loc-state transition-run continuity-license (per `rubric-location-state.md § Transition-run continuity license` — misplaced/dangling/overpacked continuity-carry entries → HARD)**.
 
-   **Earth-Bet hard-fence proper-noun scan (URI-AUDITOR-CONSTRAINT-CALIBRATION, 2026-05-11; dialogue extension 2026-05-12):** case-insensitive substring scan against the Earth-Bet proper-noun list across **every text field** of every facet entry **AND every dialogue utterance** — including but not limited to: NI free-text rationale, memory target-reference glosses (the parenthetical `(earth-bet: ...)` and the `s<NN>e<NN>:<id>` slug components alike), metaphor `licensed-by:` notes and figure text, vibes entity-target-primary fields, feeling somatic-tell text, state-updates field names AND `<old>` / `<new>` values, sensory disambiguation notes, loc-state composite-state and observable-affordance fields, **dialogue `<utterance>` text and `<objective>` text**. Slug components matter: a margit-referral slug embedding `khepri-` or `gold-morning-` is a hard-fence violation even when no full English phrase is rendered. Names to scan (non-exhaustive starter list — refresh against the canonical Earth-Bet hard-fence list at every audit): Brockton Bay, Skitter, Lung, Khepri, Bakuda, PRT, Endbringer, Gold Morning, Scion, Echidna, Behemoth, Leviathan, Simurgh, Cauldron, Coil, Tattletale, Bitch, Grue, Regent, Imp, Aisha, Glaive, Glory Girl, Panacea. Any hit is HARD; emit `[<facet>:<id>] @<proto> — earth-bet-hard-fence — <name> at <field>: "<surrounding-text>"`.
-9. **AP-SCAN** — per-rubric anti-pattern mechanical scan (memory AP-functional-callback, feeling AP-named-feeling-vocab, metaphor AP3 / AP7 / AP12, vibes AP-multi-source / AP8 sentence-parsability, etc.). **Dialogue anti-patterns (v1 round-trip findings, lifted from `rubric-dialogue.md`):** AP-chassis-contamination (em-dash + semicolon spine on non-Taylor speakers — Taylor's chassis bleeding across cards); AP-modern-hr-speak (procedural/compliance-English in Westerosi register: "labor-eligibility," "procedural grounds," etc.); AP-deposition-cadence (legalistic Q-and-A cadence in non-administrative speakers); AP-nominalization-substituting-plain-English (compound noun-phrases where colloquial register's card calls for verb-driven clauses).
-
-   **Severity calibration (URI-AP-SCAN-SATURATION, 2026-05-19).** An AP-SCAN hit is normally SIGNAL. It escalates to HARD when the per-template / per-construction hit count reaches saturation in a sparse-by-design facet — specifically, when `hits / total-entries ≥ 0.40` in a facet whose FREQUENCY-BAND ceiling is ≤ 25%. Rationale: a 3-of-7 template repetition in a 15-25%-density facet is template-saturation (not isolated misfire) and produces the "reading the construction before the content" failure mode the b01c01 audience flagged on narrator-interest. Threshold pinned at 40% to keep 2-of-7 (29%) advisory and 3-of-7 (43%) blocking. Emit `[<facet>:--] AP<N> <name> — saturation: <hits>/<total> in sparse-by-design facet (band ≤ 25%)`.
-10. **TASTE-FLAG** — audience-attack-anticipation candidates: atmosphere-thin / momentum-stall / voice-fidelity. Signal-only; feeds bidirectional tuning loop.
-11. **PILE-UP REVIEW** — proto-lines with >4 co-located facets; verdict per pile-up: warranted | over-decoration.
-12. **RUBRIC-FIDELITY** (URI-RUBRIC-FIDELITY, 2026-05-19) — per-facet rubric-fidelity mechanical scan. For each facet's authored entries, verify against the facet's rubric's enumerated ACCEPT / REJECT signatures, anti-patterns, file-level shape gates, and cross-facet co-citation requirements. The audience-gate fired faults the auditor's mechanical scan missed in b01c01; this class closes the gap by reading the rubrics' REJECT-signature enumerations as auditor rules rather than as audience-only taste calls. Four scan dimensions:
-
-    (a) **Per-entry signature scan.** Verb-class / value-class / field-class checks against the rubric's enumerated ACCEPT and REJECT signatures. Example: loc-state entry's anchor proto-line verb must be in `rubric-location-state.md § ACCEPT signatures` (transitional/positioning verbs); anchor verb in the REJECT enumeration (stillness/hold beats: `the cart sits`, `threads the needle`, persistence-of-condition) → HARD `[<facet>:<id>] @<anchor> — rubric-fidelity-verb-class — anchor verb '<verb>' fails rubric-<facet>.md ACCEPT enumeration`. Similarly: state-updates `<new>` value containing registration vocabulary (`noticed`, `registered`, `awareness`, `baseline-new-faces`) on an actor extension-field → HARD `[<facet>:<id>] @<anchor> — rubric-fidelity-anti-pattern — registration-as-state (rubric § anti-pattern #1)`.
-
-    (b) **Per-facet file-level shape gate.** Each rubric's "Curve-shape rubric (file-level)" section enumerates file-level requirements distinct from the run-level CURVE-SHAPE class. Examples: memory-flags doubled-register test (at least one Earth-Bet displacement fire AND at least one Westerosi-monument clamp fire; single-register file → HARD `[memory:--] file — rubric-fidelity-doubled-register — single register only`); state-updates file-level POV co-citation completeness (every `actor:<POV>.*` entry pairs with a narrator-interest entry on the same beat; total-coverage gate fires HARD when ≥1 entry is uncovered); sensory modality distribution (modality floor: ≥2 distinct modalities; dominance ceiling: no single modality ≥ 67% of fires when total ≥ 3); per-facet quiet-beat / peak-beat distribution against scene-map fields (memory-flags concentrate in `flat-low`/`resolving` zones, forbidden by default on `peak-bones` except under displacement-clamp; NI concentrates on `peak-bones` and `rising` zones).
-
-    (c) **Per-entry cross-facet co-citation symmetric checks.** Augments CONSTRAINT's existing checks with the symmetric pairs each rubric explicitly names. The pre-overhaul CONSTRAINT class enumerated `memory without NI-spine` but did not enumerate the symmetric `state-updates actor:<POV>.* without NI co-citation` even though `rubric-state-updates.md § Cross-facet contract` states the same REQUIRED / REJECT rule. RUBRIC-FIDELITY reads the rubric's cross-facet contract sections and enforces every named co-citation. Each missing co-citation → HARD `[<facet>:<id>] @<anchor> — rubric-fidelity-cross-facet-co-citation — <rule-citation>`.
-
-    (d) **Card-resolution checks on target / licensed-by / slug fields.** Every facet entry that names a card slug (memory `target-reference`, metaphor `licensed-by`, vibes `licensed-by`, state-updates `target` for prop/condition refs) must resolve to an existing card in `cards/` or `active-project/warehouse/`. Free-text glosses with no resolvable slug → HARD `[<facet>:<id>] @<anchor> — rubric-fidelity-card-resolution — <field> missing margin monument card`. Auditor appends a margit-referral candidate slug to the finding (mechanism-descriptive form derived from the gloss).
-
-    **Severity:** HARD by default for rubric-enumerated REJECT signatures, named anti-patterns, named file-level gate failures, named cross-facet co-citation gaps, and unresolved card slug references. SIGNAL for borderline cases the rubric leaves explicitly unspecified or marks "exceptional with documented author defense" (when defense is absent, escalate to HARD; when defense is present in the entry's notes, accept as SIGNAL).
-
-    **Source enumeration.** Seeded from each facet rubric's §"Anti-patterns" + §"Curve-shape rubric (file-level)" + §"Cross-axis tests" + §"ACCEPT signatures" + §"REJECT signatures" + §"Cross-facet contract" sections of: `rubric-memory-flags.md`, `rubric-sensory.md`, `rubric-state-updates.md`, `rubric-narrator-interest.md`, `rubric-location-state.md`, `rubric-feeling.md`, `rubric-metaphor.md`, `rubric-vibes.md`, `rubric-exposition.md`, `rubric-dialogue.md`. The auditor enumerates these sections at audit time and applies each rule as a mechanical check. New rubric rules added later get picked up automatically by the next audit.
-
-    **Relationship to other classes.** RUBRIC-FIDELITY is distinct from CONSTRAINT (which holds pipeline-level / cross-document contracts: schema integrity, EARTH-BET fence, scene-map coverage, exposition source-traceability) and from AP-SCAN (which holds lexical anti-pattern scans without rubric-grounded REJECT enumeration). When a check appears in both CONSTRAINT and a rubric's REJECT section, CONSTRAINT takes precedence (older citation). When a check appears in a rubric's REJECT section without CONSTRAINT enumeration, RUBRIC-FIDELITY fires it.
+   **Earth-Bet hard-fence proper-noun scan:** case-insensitive substring scan against the Earth-Bet proper-noun list across **every text field** of every facet entry **AND every dialogue utterance** — NI rationale, memory target-reference glosses (incl. `s<NN>e<NN>:<id>` slug components), metaphor `licensed-by:` notes + figure text, vibes target fields, feeling somatic-tell text, state-updates field names + `<old>`/`<new>` values, sensory disambiguation notes, loc-state fields, dialogue `<utterance>` + `<objective>` text. Slug components matter (a referral slug embedding `khepri-` or `gold-morning-` is a hit even without a full English phrase). Names (non-exhaustive — refresh against the canonical list): Brockton Bay, Skitter, Lung, Khepri, Bakuda, PRT, Endbringer, Gold Morning, Scion, Echidna, Behemoth, Leviathan, Simurgh, Cauldron, Coil, Tattletale, Bitch, Grue, Regent, Imp, Aisha, Glaive, Glory Girl, Panacea. Any hit is HARD; emit `[<facet>:<id>] @<proto> — earth-bet-hard-fence — <name> at <field>: "<surrounding-text>"`.
+9. **AP-SCAN** — per-rubric anti-pattern mechanical scan (memory AP-functional-callback, feeling AP-named-feeling-vocab, metaphor AP3/AP7/AP12, vibes AP-multi-source/AP8, etc.). **Dialogue anti-patterns (from `rubric-dialogue.md`):** AP-chassis-contamination (em-dash + semicolon spine on non-Taylor speakers); AP-modern-hr-speak (procedural/compliance-English in Westerosi register); AP-deposition-cadence; AP-nominalization-substituting-plain-English. **Severity calibration (URI-AP-SCAN-SATURATION):** an AP-SCAN hit is normally SIGNAL; escalates to HARD when `hits / total-entries ≥ 0.40` in a facet whose FREQUENCY-BAND ceiling is ≤ 25% (template-saturation → the "reading the construction before the content" failure). Emit `[<facet>:--] AP<N> <name> — saturation: <hits>/<total>`.
+10. **TASTE-FLAG** — atmosphere-thin / momentum-stall / voice-fidelity candidates. Signal-only; feeds tuning. (Under the slim pipeline these are advisory notes for the principal / next-cycle rubric tuning — there is no audience-gate to escalate them to. A recurring TASTE-FLAG pattern graduates into a RUBRIC-FIDELITY check by editing the relevant facet rubric's REJECT section, per CLAUDE.md Rule 11.)
+11. **PILE-UP REVIEW** — proto-lines with >4 co-located facets; verdict per pile-up: warranted | over-decoration. (With no R2 density-judge, PILE-UP is the auditor's over-decoration check — flag over-decoration HARD-to-fixer when a pile-up fails the warranted test.)
+12. **RUBRIC-FIDELITY** (URI-RUBRIC-FIDELITY) — per-facet rubric-fidelity mechanical scan. For each facet's authored entries, verify against the facet's rubric's enumerated ACCEPT / REJECT signatures, anti-patterns, file-level shape gates, and cross-facet co-citation requirements. Four scan dimensions:
+    (a) **Per-entry signature scan** — verb-class / value-class / field-class checks against the rubric's ACCEPT/REJECT enumerations. (e.g. loc-state anchor verb must be in `rubric-location-state.md § ACCEPT signatures`; state-updates `<new>` containing registration vocabulary → HARD anti-pattern.)
+    (b) **Per-facet file-level shape gate** — each rubric's "Curve-shape rubric (file-level)" requirements (memory doubled-register test; state-updates POV co-citation completeness; sensory modality distribution floor ≥2 / dominance ceiling; per-facet quiet/peak distribution against scene-map fields).
+    (c) **Per-entry cross-facet co-citation symmetric checks** — every co-citation each rubric's "Cross-facet contract" names (e.g. `state-updates actor:<POV>.* without NI co-citation` → HARD).
+    (d) **Card-resolution checks** — every facet entry naming a card slug (memory `target-reference`, metaphor/vibes `licensed-by`, state-updates `target`) must resolve to an existing card; free-text glosses with no resolvable slug → HARD (auditor appends a margit-referral candidate slug).
+    **Severity:** HARD by default for rubric-enumerated REJECT signatures / named anti-patterns / file-level gate failures / cross-facet co-citation gaps / unresolved card slugs. SIGNAL for borderline cases the rubric marks "exceptional with documented author defense" (defense absent → escalate to HARD).
+    **Source enumeration.** Seeded from each facet rubric's §Anti-patterns + §Curve-shape (file-level) + §Cross-axis tests + §ACCEPT/REJECT signatures + §Cross-facet contract of: `rubric-memory-flags.md`, `rubric-sensory.md`, `rubric-state-updates.md`, `rubric-narrator-interest.md`, `rubric-location-state.md`, `rubric-feeling.md`, `rubric-metaphor.md`, `rubric-vibes.md`, `rubric-exposition.md`, `rubric-dialogue.md`. The auditor enumerates these at audit time; new rubric rules get picked up automatically.
+    **Relationship to other classes.** Distinct from CONSTRAINT (pipeline-level contracts: schema, EARTH-BET, scene-map coverage, exposition source-traceability) and AP-SCAN (lexical anti-patterns without rubric-grounded REJECT enumeration). When a check appears in both CONSTRAINT and a rubric REJECT, CONSTRAINT takes precedence.
 
 ### Audit output
 
@@ -527,282 +346,70 @@ status: <CLEAN | FINDINGS-PRESENT>
 totals: <count> findings across <count> facets
 
 ---
-
 ## STRUCTURAL findings (<count>)
-- [facet:id] — <kind> — <description>.
-
 ## FREQUENCY-BAND findings (<count>)
-- <facet>: actual <n%>; band <range>%; <within | breach-low | breach-high>.
-
 ## METADATA-INCONSISTENCY findings (<count>)
-- <file>: <header-claim> contradicts <file-content-fact>.
-
 ## CURVE-SHAPE verdict
-- Episode-level: <SHAPE-OK | SHAPE-FAIL with named failure mode>.
-- Per-scene: scene-1 <peak-present | no-peak>, ...
-- Adjacency: <count> 1→3 jumps; <count> 3→3 sequences.
-- Flatlining: <count> stretches of 30+ contiguous beats.
-
 ## CONTRADICTION findings (<count>)
-- [facet:id] @<proto> — paired with [facet:id] @<proto>.
-
 ## DEDUP findings (<count>)
-- [facet:id] @<proto> — duplicates [facet:id]; type: <kind>.
-
 ## SUPERFLUOUS findings (<count>)
-- [facet:id] @<proto> — lonely; rubric scrutiny: <pass | fail with rationale>.
-
 ## CONSTRAINT findings (<count>)
-- [facet:id] @<proto> — <constraint name> — <violation>.
-
 ## AP-SCAN findings (<count>)
-- [facet:id] @<proto> — AP<N> <name> — candidate violation.
-- (Exposition AP-SCAN entries: anti-jargon-hit / hollow-prose-hit / asinine-pattern-hit / new-plot-content / author-meta / voice-fault.)
-
 ## TASTE-FLAG findings (<count>)
-- [facet:id] @<proto> — <atmosphere-thin | momentum-stall | voice-fidelity> — <rationale>.
-
 ## PILE-UP REVIEW (<count>)
-- @<proto> (<n> facets) — verdict: <warranted | over-decoration> — <rationale>.
-
 ## RUBRIC-FIDELITY findings (<count>)
-- [facet:id] @<proto> — rubric-fidelity-<verb-class | anti-pattern | doubled-register | cross-facet-co-citation | card-resolution> — <rubric § citation> — <description>.
-
 ---
-
 ## Audit summary
 - Total entries reviewed: <count>
-- HARD classes: STRUCTURAL <n>, CONTRADICTION <n>, DEDUP <n>, SUPERFLUOUS <n>, CONSTRAINT <n>, RUBRIC-FIDELITY <n>
-- SIGNAL classes: FREQUENCY-BAND, METADATA-INCONSISTENCY, AP-SCAN, TASTE-FLAG, PILE-UP REVIEW (AP-SCAN escalates to HARD on saturation per URI-AP-SCAN-SATURATION; RUBRIC-FIDELITY borderline-with-defense remains SIGNAL)
+- HARD classes: STRUCTURAL <n>, CONTRADICTION <n>, DEDUP <n>, SUPERFLUOUS <n>, CONSTRAINT <n>, RUBRIC-FIDELITY <n>, PILE-UP(over-decoration) <n>
+- SIGNAL classes: FREQUENCY-BAND, METADATA-INCONSISTENCY, AP-SCAN, TASTE-FLAG (AP-SCAN escalates to HARD on saturation)
 - CURVE-SHAPE: <verdict>
-
 ## Routing
 For each finding, name the facet author. Flag-only: no executes.
 ```
 
 **Auditor return to orchestrator:** path to report; finding counts per class; one-line headline (CLEAN | FINDINGS-PRESENT with count).
 
-**Phase 5 gate:** HARD = 0 required before Phase 5b fires. SIGNAL findings are advisory (do not block Phase 5b). If HARD > 0, dispatch fixer with the audit report; re-fire Phase 5 until HARD = 0 or remediation budget (1 pass) exhausts. Remediation cap-burn at HARD > 0 escalates to orchestrator-critic NOT-SUCCESSFUL.
+**Phase 4 gate (the facet-layer gate).** HARD = 0 required before persist. SIGNAL findings are advisory. If HARD > 0, dispatch **fixer** with the audit report; re-fire Phase 4 until HARD = 0 or remediation budget (2 passes) exhausts. If HARD persists past 2 passes, the orchestrator-critic verdict (Phase 5) goes NOT-SUCCESSFUL and the chapter does NOT flip to `audited-r1` — it ships its facets carrying named HARD debt only on explicit principal override (out-of-band, recorded). On Phase 4 clean, set showrunner-memory status: `faceted-r1` → `audited-r1-mechanical`.
 
-On Phase 5 clean, set showrunner-memory status: `faceted-r2` → `audited-r1-mechanical`. The episode is NOT done until Phase 5b also clears.
-
----
-
-## Phase 5b — AUDIENCE-GATE: per-facet adversarial reviewers (BLOCKING)
-
-The final gate. The auditor's mechanical scan caught what mechanical scans can catch; Phase 5b is where adversarial readers attack the locked graph through their lenses and the pipeline either earns ACCEPT or routes back to fixer for another cycle.
-
-### Reviewer assembly (variable per facet)
-
-For each of the ten facets **plus dialogue (per-character)**, the orchestrator picks the reviewer set:
-
-1. **Specialist personas** — if `staff/audience/<slug>/card.md` files exist with `target-facet: <facet>` in frontmatter, those specialists fire as the reviewer set for that facet. Example: the `sensory` facet currently has `sensory-disambiguation-pedant`, `sensory-modality-coverage`, `sensory-old-state-reader`.
-2. **Active project audience (fallback)** — for facets without specialists, the 3 active personas under `active-project/audience/<slug>/card.md` fire in graph-aware adversarial mode (NOT prose mode). Each persona reads the facet entries through its own lens (atmosphere / register / source-fidelity / etc.).
-
-Reviewer membership is recorded in the verdict file. New specialist personas authored later get picked up automatically by the next /and-facets run.
-
-### Dispatch shape
-
-One parallel Agent block per facet, all facets fired concurrently. For nine facets + dialogue-per-character at three reviewers each (specialists or fallback), that is up to (9 + N speaking characters) × 3 concurrent audience dispatches in a single message. (`vibes` may run with a single reviewer dispatch if the audience cards do not yet hold facet-attack rubrics for it; verdict notes which facets ran undermanned. Dialogue per-character runs with full 3-reviewer dispatch using the active-project audience until specialist dialogue personas are authored — see open question in `design/shoot-v2/dialogue-tuning-v2.md`.)
-
-### Dialogue reviewer protocol (V2 + V3, per `staff/dialogue-writer/rubric-dialogue.md`)
-
-Dialogue's audience-gate inherits v1 round-trip tuning. Per reviewer per character file, **two stages** in the same verdict file:
-
-**Stage 1 — V2 strict affirmative-demonstration.** Per entry: ACCEPT (Q1 — line affirmatively demonstrates ≥1 card signature with §-citation; Q2 — line does not violate any card §forbidden vocabulary / §forbidden cadence / §hard fence) / REVISE / FAIL. Inoffensive lines fail Q1. On-card-but-violating fails Q2.
-
-**Stage 2 — V3 adversarial seam-finding.** For every line, accepts included, this persona produces its strongest hostile counter-argument from its lens (atmosphere / board-move / voice-precision — or facet-equivalents from the active audience). Persona-distinct constraint: seams must differ by lens, not generic craft-criticism. Facet evidence is fair attack surface: the chosen draft cites facet-licenses; the seam may attack those citations directly ("the slip claims `feeling-taylor:7` as license, but that entry is a held-breath tell that doesn't carry register-slip in stitch").
-
-Aggregation: strict 3-of-3 ACCEPT per character (URI-AUDIENCE-AGGREGATION-RULE). Single dissent fails the character. Convergence on failure: fixer dispatches dialogue-writer in **defense-or-revise mode** — defended accepts stay; revisions get multi-draft + chosen-mark + rejection-notes treatment per the rubric.
-
-**Exposition is the canonical audience-gate test.** Because the exposition-author IS audience-modeled by construction (the union-of-personas gap test is its central authoring discipline), the audience-gate reviewers have a stronger relationship to exposition than to any other facet. The three personas each read the exposition entries against their own reading-experience and answer:
-- Did the gloss successfully orient me to the term/object/place/circumstance?
-- Or did it leave me still confused or, conversely, over-explain in a way that disrupted the prose?
-Reviewers may also propose ADDS: "I'm cape-fic; I needed a gloss for `kingsguard` at @<N> and there isn't one." This audience-side ADD-surfacing is unique to exposition; for other facets, ADDs from reviewers are exceptional. The exposition author has final call on the ADD's gloss content but cannot refuse an audience-flagged ADD without escalating via TASTE-FLAG → AP-SCAN promotion. Single dissent blocks: 3-of-3 ACCEPT required to clear.
-
-**Licensed-context-exception handling at the gate (PROP-0020).** The reviewers read the context-ledger (`active-project/staff/showrunner/context-ledger-<book>-<chapter>.md`) alongside the exposition facet. For an exposition entry carrying `licensed-context-exception: ctx-<NNN>`, a reviewer **may NOT REVISE/FAIL it on the ground that it is exposition / over-explains / disrupts the prose** — an upstream followability reviewer determined the orientation is required, and that judgment is binding at the gate. The reviewer MAY still flag it for "the gloss as written still left me confused" or "this is a craft-defective rendering" — that routes to *improving* the gloss (REWORD), never to deleting the sanctioned context. The reviewer's audience-side ADD power is unchanged. This is the gate-side half of resolving the original c05 tension: the context the cold-reader needed can now be added without the very reviewers who'd have wanted it then penalizing it as an info-dump.
-
-**Licensed-grounding-exception handling at the gate (PROP-0022 — the readability mirror).** Sensory-facet reviewers read the grounding-ledger alongside the sensory facet. For a sensory entry carrying `licensed-grounding-exception: grd-<NNN>`, a reviewer **may NOT REVISE/FAIL it on density grounds** ("too much sensory here" / "over the band") — an upstream aliveness reviewer determined the grounding is required to keep the passage from reading airless, and that judgment is binding at the gate. The reviewer MAY still flag it for craft ("this image is inert / mixed-modality-confusing / contradicts prior state") — that routes to *improving* the grounding, never to deleting it for being over-cap. Same principle as the exposition exemption above: the breathing-room the cold-reader needed can be added without the density-watchdog reviewers cutting it back out.
-
-### Read inputs per reviewer
-
-- The facet file under review (`<facet>.md` or per-character slice for `feeling`/`state-updates`).
-- The canonical proto-lines file `active-project/theater/proto-lines/<slug>.md` (already annotated with `[<facet>:<id>]` citations from R1+R2 merges — this is the working "stitcher preview" the audience attacks).
-- The cite-index `active-project/theater/facets/_cite-index.md`.
-- The facet's own rubric (e.g. `design/shoot-v2/rubric-memory-flags.md`).
-- The auditor's Phase 5 report (so the audience knows what the mechanical scan caught and can deliberately attack the seams the auditor cannot articulate).
-- The reviewer's own persona card.
-
-### Forbidden inputs
-
-- Other facet rubrics not relevant to the under-review facet.
-- Source prose / draft stitch (Phase 5b reads the graph layer, not generated prose).
-- Other reviewers' verdicts (each reviewer attacks independently; cross-reviewer cross-talk happens at aggregation time, not at reading time).
-
-### Per-reviewer output
-
-Each reviewer produces a single short verdict file under `active-project/staff/audience/<persona-slug>/<facet>-r<N>-verdict.md`:
-
-```yaml
----
-reviewer: <persona-slug>
-facet: <facet>
-cycle: <N>           # 1, 2, or 3
-episode: <slug>
-date: <YYYY-MM-DD>
-verdict: <accept | revise | fail>
----
-
-# Verdict reasoning
-
-<1-3 sentences of direct adversarial reading — what the entries (or the graph) actually do or fail to do through this reviewer's lens. Do not primarily cite rubric clauses; primary attacks are direct readings.>
-
-# Entry-level callouts (revise / fail only)
-
-- [<facet>:<id>] @<proto> — <direct reading attack — what specifically lands wrong, in this reviewer's voice>.
-- ...
-
-# Convergence trace (orchestrator-critic input)
-
-<For each callout, note whether the Phase 5 auditor independently flagged the same entry. List the auditor finding IDs that overlap. This is what closes the bidirectional-loop criterion structurally.>
-```
-
-### Aggregation
-
-Per facet:
-- **3-of-3 accept** → facet passes.
-- **any revise / fail** → facet fails this cycle; route callouts to fixer (or facet author, if cross-cutting rewrite is needed).
-
-**Strict-aggregation enforcement (URI-AUDIENCE-AGGREGATION-RULE, 2026-05-11).** Aggregation is performed by the orchestrator from the per-reviewer verdict files on disk. The orchestrator does NOT delegate aggregation to an audience-subagent. The 2-of-3 majority rule that applies to line and plan review (`.claude/agents/audience.md`) does NOT apply here — a single dissenting persona fails the facet. An audience-subagent that returns a single aggregated verdict instead of writing per-reviewer files has drifted; re-dispatch with explicit "write one verdict file per persona under `active-project/staff/audience/<persona-slug>/`; do not aggregate" instructions.
-
-Across all facets:
-- **all 9 facets + all per-character dialogue files pass** → Phase 5b passes. Proceed to Phase 6.
-- **any facet or any character dialogue fails** → enter remediation cycle.
-
-### Remediation cycle
-
-1. Aggregate revise/fail callouts across all reviewers. Dedupe by `[<facet>:<id>]`.
-2. Dispatch **fixer** with the consolidated callouts + the facet rubrics. Fixer routes per-entry — small revisions to the facet file directly; cross-facet conflicts to the responsible author via Agent.
-
-   **Cycle-N ADD pre-validation (URI-FACETS-CYCLE-N-ADD, A3 — 2026-05-21).** If the fixer's response includes any ADD operation (a new facet entry that did not exist in the prior cycle), the ADD MUST pre-validate against the full per-entry rubric BEFORE the fixer commits it. The fixer dispatches per-ADD a brief self-audit pass: load the relevant facet rubric (e.g. `design/shoot-v2/rubric-sensory.md`); walk every REJECT signature / anti-pattern; for cross-facet anchor rubrics (sensory old-state, memory NI co-citation, metaphor licensed-by, etc.), validate that the required anchor exists in its upstream artifact (loc-state, narrator-interest, memory) BEFORE the ADD writes. If any pre-validation fails:
-   - **Cycle 1 or 2 ADD pre-validation fail:** the fixer must FIRST land the upstream artifact edit (e.g. add the missing loc-state baseline before the sensory ADD) and only then commit the ADD; the upstream edit lands as its own fixer entry in the consolidated callouts.
-   - **Cycle 3 ADD pre-validation fail (the cap-burn case):** REFUSE the ADD entirely. Cycle 3 has no remediation budget (this is the last cycle before cap); an ADD that fails pre-validation at cycle 3 would land a new HARD that the cycle-3 audit catches with no slot to remediate. The fixer instead recommends DELETE-on-cycle-3 of the entries that drove the original callout (per the cap-burn ship-anyway semantics in Phase 5b/cap-burn handling); the user is notified the ADD path was refused.
-
-   The fixer logs every ADD attempt + pre-validation result to `staff/fixer/and-facets-cycle<N>-fixes.md` with verdict (`ADD-LANDED` / `ADD-LANDED-AFTER-UPSTREAM-EDIT` / `ADD-REFUSED-CYCLE-3`). Promotes the rubric-side enforcement in `rubric-sensory.md` anti-pattern #14 to a process-side enforcement at orchestration time. (Promoted from b01c01 cycle-3 cap-burn: sensory:3 @17 cycle-3 ADD by fixer introduced unanchored-old-state HARD on the modality-floor-fix path; no cycle remained to remediate.)
-3. Re-fire Phase 5 (auditor, full eleven-class scan) — fixer changes may surface new mechanical findings.
-4. Re-fire Phase 5b (audience, all facets that did not 3-of-3 accept in the prior cycle; facets that passed do not re-fire).
-5. Increment cycle counter.
-
-### Reviewer-stall handling (URI-AUDIENCE-CYCLE-2-MEMORY-STALL, 2026-05-11)
-
-A reviewer dispatch may stall at the 600s agent-watchdog with no verdict file written. When it does:
-
-1. **Do not re-dispatch the same prompt blindly.** Stalls correlate with payload size (memory facet on cycle 2 is the known case — full nine-facet graph + cite-index + Phase 5 report + cycle-1 verdicts adds up). First re-dispatch trims payload to the reviewer's persona card + the facet under review + the prior-cycle verdict for this same persona + the fixer-pass diff (only what changed since the prior cycle).
-2. **If the trimmed re-dispatch also stalls**, write a `mechanical-inference` verdict file at `active-project/staff/audience/<persona-slug>/<facet>-r<N>-verdict.md` containing: the persona-slug, facet, cycle, episode, date, an explicit `verdict: revise` (default-conservative) OR `verdict: accept` only if the fixer diff intersected every cycle-1 callout from this persona AND no new entries were added. Include a clearly marked `# mechanical-inference` block explaining the input set used. Log the stall + inference path in the consolidated audience-gate report.
-3. **Default-conservative** — when uncertain, the inferred verdict is `revise`. Audience adversarial mode is hostile by construction; silence under load should not flip to ACCEPT.
-4. **Stall pattern surfaces in the orchestrator-critic report** as a process gap entry, not a finding. The pattern is a tooling-bound problem (watchdog interaction with payload) and gets traced to the same URI on every re-encounter.
-
-### Cycle cap
-
-Cap: **3 audience cycles** (pre-overhaul `/and-season` audience-loop convention; carried forward into `/and-facets` Phase 5b under URI-FACETS-CAP-BURN-SEMANTICS, A2 — 2026-05-21). On cap-burn (3 cycles without 3-of-3 accept across all facets), the canonical resolution path is **(a) automatic DELETE of offending entries with logged tradeoffs**.
-
-**Codified cap-burn semantics (canonical path = automatic DELETE):**
-
-1. Identify offending entries — the set of `[<facet>:<flat_id>]` callouts that drove the final-cycle revise/fail aggregation. Dedupe.
-2. Dispatch **fixer** in **cap-burn DELETE mode** with the offending entries + the chapter's substance contracts + every relevant facet rubric. Fixer's only allowed operation is DELETE — no revise, no ADD (ADD is structurally banned at cap-burn per the A3 cycle-3 rule above). Per offending entry:
-   - DELETE the entry from its facet file.
-   - Write a canonical deletion marker in place of the entry (A5, 2026-05-21):
-     ```
-     # DELETED <prefix>:<id> @<anchor> - <reason> (cap-burn cycle <N>, <YYYY-MM-DD>)
-     ```
-     The cite-index builder reads this marker, auto-strips stale `[<prefix>:<id>]` tokens from proto-lines, and surfaces the deletion in the `# DELETED ENTRIES` section of `_cite-index.md`. **No hand-editing of `_cite-index.md` is required** — `build_cite_index.py` does the cascade automatically.
-   - If the DELETE leaves a file-level shape gap (modality-floor breach, doubled-register breach, density floor breach), record the trade-off in the cap-burn report — do NOT chase it with an ADD.
-3. Write the cap-burn report to `staff/auditor/facets-cap-burn-<chapter>-<timestamp>.md` documenting:
-   - Each deleted entry with its callout chain.
-   - Each file-level shape gap the DELETE introduced, with explicit "ACCEPTED-AT-CAP-BURN" annotation and the substance trade-off (e.g. "deleted mem:1 @9; file goes single-register Westerosi-only; doubled-register file-level shape fail accepted at cap-burn — rationale: NI ceiling collision blocks spine-fix path; see URI-FACETS-V3-FEEL-AS-SPINE for the rubric-side resolution lifted into c02").
-   - Pointer to the orchestrator-critic verdict that codifies the trade-off in showrunner memory.
-4. Set `chapters[<slug>].audience_gate_cap_burned: true` AND `chapters[<slug>].cap_burn_deletions: [<list of deleted entries>]` in showrunner memory.
-5. The orchestrator-critic verdict goes **NOT-SUCCESSFUL** with the failing facets + cap-burn deletions named in the verdict body. NOT-SUCCESSFUL is recorded but is NOT a HARD-BLOCK against `/and-stitch` — the chapter ships as-is with the deletions, the cap-burn report attached. The downstream chapters do not inherit the cap-burn debt; each chapter's audience-gate runs fresh.
-6. Status flip: `audited-r1-mechanical` → `audited-r1` (cap-burn DELETE is treated as a resolution path; the status reflects that the audience-gate has been resolved, even if NOT-SUCCESSFULly). `audience_gate_cap_burned: true` is the audit trail.
-
-**Why DELETE is canonical:** (a) is what the b01c01 user-directive resolution did in practice, codifying that user judgment as the default; (b) "automatic rubric-authority-ruling mini-phase" is heavyweight (needs a separate command + ruling protocol) and is the deferred path under URI-FACETS-RUBRIC-RULING; (c) "hard stop / `/and-stitch` refuses" would block all chain progress on any cap-burn, which is too conservative given that cap-burn debt is chapter-local. Rubric-side resolution of recurring cap-burn root causes is the long-term fix; see CLAUDE.md rule 11 (TASTE-FLAG → RUBRIC-FIDELITY promotion via rubric REJECT-section edit auto-promotes to mechanical check next cycle). The b01c01 → V3 rubric pipeline is the worked example.
-
-**ADD ban at cap-burn (cross-reference to A3 above).** The fixer's cap-burn dispatch is DELETE-only. ADD operations at cap-burn would either (1) require a remediation budget the cap doesn't provide, or (2) introduce new HARDs that no slot can catch. The A3 cycle-3 ADD pre-validation rule above bans ADDs in cycle 3; this A2 rule bans ADDs at cap-burn (which IS cycle 3 cleanup); the two rules are co-deployed.
-
-**Escalation path.** If the user wants to attempt a fourth-cycle escalation (against the canonical DELETE path), the override is explicit: the user must (a) name the specific offending entries, (b) propose the structural fix (rubric edit / upstream artifact edit), (c) re-fire Phase 5b for the named facet only. The override is an out-of-band intervention recorded in `staff/auditor/facets-cap-burn-<chapter>-<timestamp>.md` § escalation; the run does not auto-extend the cycle cap.
-
-### Output to disk
-
-- Per-reviewer verdict files under `active-project/staff/audience/<persona-slug>/`.
-- Consolidated audience-gate report at `active-project/staff/auditor/facets-audience-gate-r<N>.md` summarizing per-facet aggregate + convergence trace.
-- Showrunner-memory status: on accept, `audited-r1-mechanical` → `audited-r1`. On cap-burn, status stays at `audited-r1-mechanical` with `audience_gate_cap_burned: true`.
-
-### Convergence trace (closes criterion 4)
-
-The aggregate audience-gate report includes a convergence trace section:
-
-```
-# Convergence trace
-- Auditor findings: <count> (HARD <n>, SIGNAL <n>)
-- Audience callouts (across all reviewers, deduped): <count>
-- Shared findings (audience + auditor both flagged the same entry): <list of [<facet>:<id>]>
-- Audience-only findings: <count>
-- Auditor-only findings: <count>
-- Bidirectional loop verdict: <validated | one-sided | not-validated>
-```
-
-A `validated` verdict requires at least one shared finding across the two paths. `one-sided` means both paths fired but produced disjoint findings — surface as a TASTE-FLAG for next-cycle calibration. `not-validated` means one path fired empty — typically signals reviewer underpowering for the relevant facet.
+**Fixer-ADD pre-validation (URI-FACETS-CYCLE-N-ADD, A3).** If a fixer remediation includes any ADD, the ADD must pre-validate against the full per-entry rubric BEFORE commit: load the relevant facet rubric; walk every REJECT signature / anti-pattern; for cross-facet anchor rubrics validate the required anchor exists in its upstream artifact. On pre-validation fail, land the upstream artifact edit first, then commit the ADD. Log each ADD attempt + result to `staff/fixer/and-facets-fixes.md`.
 
 ---
 
-## Phase 5c — Admin process-critic dispatch (URI-ADMIN-PROCESS-CRITIC, 2026-05-25; non-blocking)
+## Phase 4.5 — Admin process-critic dispatch (URI-ADMIN-PROCESS-CRITIC; non-blocking)
 
 Fire on any of:
-- Any REVISE verdict in the final-cycle Phase 5b audience-gate report (3-of-3 ACCEPT not achieved on any facet)
-- Any cap-burn DELETE applied to satisfy a Phase 5b gate (URI-FACETS-CAP-BURN-SEMANTICS used — a sign that the chain shipped by deleting evidence rather than fixing the facet)
-- Any Phase 4.6 context-remediation **WARN** (`chapters[<slug>].context_followability.unresolved[]` non-empty — a context gap that survived the conditional R3 + fixer pass; the chapter ships carrying context-debt, a signal the upstream chunk/bones may be under-orienting by design)
+- A Phase 5 orchestrator-critic verdict of **NOT-SUCCESSFUL** or **SHIPPABLE-WITH-CAVEATS**.
+- A Phase 4 HARD-persist-past-2-passes (the auditor could not clear within budget).
+- A Phase 3 context-remediation **WARN** (`chapters[<slug>].context_followability.unresolved[]` non-empty).
 
-Non-blocking — Phase 6 persist proceeds.
-
-Dispatch:
+Non-blocking — Phase 5 persist proceeds. Dispatch:
 - `subagent_type: admin`
-- prompt carries:
-  - `mode: process-critic`
-  - `trigger.reason: failure`
-  - `trigger.source_report: active-project/staff/auditor/facets-audience-gate-r<N>.md` (final cycle)
-  - `trigger.source_verdict: <REVISE-facet-list / cap-burn summary>`
-  - `gate_path: .claude/commands/and-facets.md#phase-5b`
-  - Optional: `secondary_gate_paths: [<facet-rubric-path>, ...]` for rubric-level proposals
+- prompt carries: `mode: process-critic`; `trigger.reason: failure`; `trigger.source_report: active-project/staff/auditor/facets-final-audit.md`; `trigger.source_verdict: <Phase 5 verdict / WARN summary>`; `gate_path: .claude/commands/and-facets.md#phase-4`.
 
-Admin's return logged in the Phase 5b report tail under `## admin-process-critic`. New proposals land in `staff/admin/process-proposals.md`. See CLAUDE.md Rules §13.
-
-If final-cycle Phase 5b is clean ACCEPT 3-of-3 across all facets AND no cap-burns were used, skip the dispatch.
+Admin's return logged in the Phase 5 summary tail under `## admin-process-critic`. New proposals land in `staff/admin/process-proposals.md`. See CLAUDE.md Rule 13. If the Phase 5 verdict is SUCCESS and no WARN fired, skip the dispatch.
 
 ---
 
-## Phase 6 — Persist + orchestrator-critic verdict
+## Phase 5 — Persist + orchestrator-critic verdict
 
-### 6a. Persist
+### 5a. Persist
 
-**Precondition:** Phase 5 = 0 HARD AND Phase 5b = ACCEPT (3-of-3 per facet, all nine facets including exposition, AND 3-of-3 per character dialogue file under content review) AND scene-map coverage gate clean (URI-SCENE-WINDOW — `theater/facets/scene-map-<book>-<chapter>.md` exists, every bone in the bones file lands in exactly one scene, no dangling anchors, no duplicate labels). Dialogue-coverage gate (URI-DIALOGUE-COVERAGE-GATE) is upstream under URI-WRITE-DIALOGUE-COBONDED — `/and-write` Phase 7 owns the structural gate; Phase 5 auditor sanity-check above catches regressions. If any of the gates is unclean, do not persist — return to the appropriate phase. Scene-map gate non-bypassable: a chapter without a clean scene-map breaks scene-window stitcher dispatch. Dialogue regressions route to `/and-write revise`, not facets.
+**Precondition:** Phase 4 = 0 HARD AND scene-map coverage gate clean (URI-SCENE-WINDOW). Dialogue-coverage sanity (Phase 4 CONSTRAINT) clean — regressions route to `/and-write revise`, not facets. If any gate is unclean, do not persist — return to the appropriate phase.
 
-1. Confirm `facets-final-audit.md` (final-cycle Phase 5 report) and `facets-audience-gate-r<N>.md` (final-cycle Phase 5b report) both written.
-1a. Re-verify dialogue-coverage from Phase 0 inventory (URI-WRITE-DIALOGUE-COBONDED upstream-leak sanity check). For each `speakers` slug, stat `active-project/theater/dialogue/<slug>.md` and confirm non-empty body. For each dialogue-anchor bone, grep the canonical bones for at least one `[<character-slug>:<id>]` citation token. Any miss → abort and route to `/and-write <chapter> revise` — `/and-facets` no longer fixes dialogue gaps (no dialogue author in this pipeline post-2026-05-25). Cap-burn DELETE of dialogue files at this phase is also retired — dialogue cap-burn must happen at `/and-write` if at all.
+1. Confirm `facets-final-audit.md` (final-cycle) written.
+1a. Re-verify dialogue-coverage from Phase 0 inventory. For each `speakers` slug, stat `active-project/theater/dialogue/<slug>.md` and confirm non-empty body. For each dialogue-anchor bone, grep the canonical bones for ≥1 `[<character-slug>:<id>]` token. Any miss → abort and route to `/and-write <chapter> revise`.
 2. Update `active-project/staff/showrunner/memory.md`:
    - Status: `audited-r1-mechanical` → `audited-r1`.
-   - `audit_path: active-project/staff/auditor/facets-final-audit.md`.
-   - `audit_complete: true`.
-   - `audit_findings: <count>` if non-zero.
-   - `audience_gate_path: active-project/staff/auditor/facets-audience-gate-r<N>.md`.
-   - `audience_gate_complete: true`.
-   - `audience_gate_cycles: <count>` (1, 2, or 3).
-   - `bidirectional_loop: <validated | one-sided | not-validated>` from the convergence trace.
+   - `audit_path: active-project/staff/auditor/facets-final-audit.md`; `audit_complete: true`; `audit_findings: <count>` if non-zero.
    - `facets_path: active-project/theater/facets/`.
-   - `round_1_complete: true`, `round_2_complete: true`.
+   - `round_1_complete: true`.
+   - `context_followability.{...}` from Phase 2.5/3 (incl. any `unresolved[]`).
+   - (No `audience_gate_*` fields — the audience-gate is retired. Legacy chapters may carry them; new runs do not set them.)
 
-`_inflight/` and `_inflight-r2/` may be retained for forensic review or pruned. The canonical proto-lines + facet files + `_cite-index.md` are the source of truth.
+`_inflight/` may be retained for forensic review or pruned. The canonical proto-lines + facet files + `_cite-index.md` are the source of truth.
 
-### 6b. Master summary
+### 5b. Master summary
 
 ```
 ========================================================
@@ -810,101 +417,68 @@ If final-cycle Phase 5b is clean ACCEPT 3-of-3 across all facets AND no cap-burn
 ========================================================
 
 Phase 1 — R1 fanout:
-  9 facet files authored + <count> per-character dialogue files
-  <count> total facet entries + <count> dialogue utterances; <count>/<count> protolines decorated
-  Exposition: <count> entries (episode-open=<n>, first-mention=<n>, scene-open-orient=<n>)
-  Dialogue: <count> entries across <count> characters / <count> behavior cards
+  9 facet files authored (exposition surface:reference unless ledger-licensed)
+  <count> total facet entries; <count>/<count> protolines decorated
+  Exposition: <count> entries (render=<n>, reference=<n>; episode-open=<n>, first-mention=<n>)
 
-Phase 2 — R1 fanin (merge):
+Phase 2 — fanin (merge):
   <count> _inflight/ copies merged; canonical proto-lines written
-  Slices consolidated: feeling (<count> slices), state-updates (<count> slices + env)
-  Stale-cite check: <CLEAN | <n> errors>
-  Cite-index built
+  Slices consolidated: feeling (<count>), state-updates (<count> + env)
+  Stale-cite check: <CLEAN | <n> errors>; cite-index built
 
-Phase 3 — R2 fanout (judge):
-  6 midband facets judged in parallel
-  R1 → R2 deltas:
-    narrator-interest:    K=<n> D=<n> A=<n>  (cap-refusals: <n>)
-    memory:               K=<n> D=<n> A=<n>  (cap-refusals: <n>)
-    feeling:              K=<n> D=<n> A=<n>  (per-character: <slug>=K<n>/D<n>/A<n>, ...)
-    metaphor:             K=<n> D=<n> A=<n>  (cap-refusals: <n>)
-    exposition:           K=<n> D=<n> A=<n>  (scene-orient-refusals-via-fire-rule: <n>)
-    dialogue:             K=<n> D=<n> A=<n> R=<n>  (per-character: <slug>=K<n>/D<n>/A<n>/R<n>, ...)
+Phase 2.5 — context + aliveness review:
+  Completeness: <FOLLOWABLE | GLARING-HOLE>  (context-ledger: <n> open, <n> spine)
+  Readability:  <ALIVE | AIRLESS-HOLE>  (grounding-ledger: <n> open, <n> spine)
+  VOICE-FIXABLE → /and-stitch Phase 4: <count>
 
-Phase 4 — R2 fanin (consolidate + merge):
-  Decision-log: .r2-decisions.md (f-r2-counts: F1=<n> F2=<n> F3=<n> F4=<n>)
-  Arbiter interventions: <count>; discipline-fails: <count>
-  Citation accrual: R1 <count> → R2 <count>
-  Cite-index rebuilt
-  Scene-map validated: <N> scenes covering <N> bones (source: /and-write Phase 7 emission from substance_delta)
+Phase 3 — conditional remediation:
+  Fired: <yes (spine holes: <n>) | no (skipped)>
+  Adds: context <n>, grounding <n>; verdict: <CLOSED | WARN (<n> unresolved)>
 
-Phase 5 — Audit (mechanical):
+Phase 4 — Audit (mechanical; THE facet-layer gate):
   Mode: flag-only
-  HARD: STRUCTURAL=<n> CONTRADICTION=<n> DEDUP=<n> SUPERFLUOUS=<n> CONSTRAINT=<n>
-  SIGNAL: FREQ-BAND=<n> META=<n> AP-SCAN=<n> TASTE-FLAG=<n> PILE-UP=<warranted>/<over>
+  HARD: STRUCTURAL=<n> CONTRADICTION=<n> DEDUP=<n> SUPERFLUOUS=<n> CONSTRAINT=<n> RUBRIC-FIDELITY=<n> PILE-UP(over)=<n>
+  SIGNAL: FREQ-BAND=<n> META=<n> AP-SCAN=<n> TASTE-FLAG=<n>
   CURVE-SHAPE: <verdict>
   Report: active-project/staff/auditor/facets-final-audit.md
-  Remediation cycles: <count>; final HARD: 0
-
-Phase 5b — Audience-gate (adversarial):
-  Cycles: <count> / 3
-  Per-facet aggregate (final cycle):
-    location-state:    <accept | revise | fail>
-    interest-narrator: <accept | revise | fail>
-    sensory:           <accept | revise | fail>
-    state-updates:     <accept | revise | fail>
-    memory:            <accept | revise | fail>
-    feeling:           <accept | revise | fail>
-    metaphor:          <accept | revise | fail>
-    vibes:             <accept | revise | fail>
-    exposition:        <accept | revise | fail>  (audience-side adds: <n>)
-    dialogue:          <accept | revise | fail>  (per-character: <slug>=<accept|revise|fail>, ...; cycle-3 seam-defensibility rate: <%>)
-  Reviewers fired: <count> dispatches (specialists: <n>; fallback active-audience: <n>)
-  Convergence trace: <count> shared / <count> audience-only / <count> auditor-only findings
-  Bidirectional loop: <validated | one-sided | not-validated>
-  Report: active-project/staff/auditor/facets-audience-gate-r<N>.md
+  Remediation passes: <count>; final HARD: 0
 
 Status: <slug> audited-r1
 ```
 
-### 6c. Orchestrator-critic verdict (mandatory)
+### 5c. Orchestrator-critic verdict (mandatory)
 
-Read `staff/audience/and-facets-orchestrator-critic/card.md`. The critic evaluates the run's 7 acceptance criteria (synopsis: 9 facet files exist; 0 HARD findings post-audit; per-facet pass rate ≥75% clean; Phase 5b audience-gate ACCEPT 3-of-3 per facet; showrunner memory current; process gaps captured; wall-clock budget stated). Produce verdict appended to the master summary:
+Read `staff/audience/and-facets-orchestrator-critic/card.md`. The critic evaluates the slim run's acceptance criteria (9 facet files exist; 0 HARD post-audit within budget; Phase 2.5 FOLLOWABLE+ALIVE or any holes ledger-licensed/remediated; showrunner memory current; process gaps captured; dispatch budget stated). Produce verdict appended to the master summary:
 
 ```
 /and-facets orchestrator-critic verdict — <episode-slug>:
   Result: <SUCCESS | SHIPPABLE-WITH-CAVEATS | NOT-SUCCESSFUL>
-  Criteria met: <count> / 7
-  Cap-refusals: <count> (<%> of seams)
+  Criteria met: <count> / <total>
   HARD findings post-audit: <count>
-  Audience-gate: <ACCEPT (all 9 facets 3-of-3) | PARTIAL (<n> facets short) | CAP-BURNED>
-  Audience-gate cycles: <count> / 3
-  Bidirectional loop (convergence trace): <validated | one-sided | not-validated>
-  Wall-clock: <stated budget | overrun>
+  Phase 2.5: completeness <FOLLOWABLE|hole-status>, readability <ALIVE|hole-status>
+  Dispatch count: <stated budget | overrun>
   Caveats (if any): <list>
   Recommendation: <ship | iterate | escalate>
 ```
 
-**Decision rule:** SUCCESS (all 7 met) → downstream may proceed. SHIPPABLE-WITH-CAVEATS (exactly 1 missed) → caveat named; missed criterion queued. NOT-SUCCESSFUL (2+ missed) → remediate; do not flip status to `audited-r1`.
+**Decision rule:** SUCCESS (all met) → downstream may proceed. SHIPPABLE-WITH-CAVEATS (exactly 1 missed) → caveat named + queued; fire Phase 4.5. NOT-SUCCESSFUL (2+ missed) → remediate; do not flip status to `audited-r1`; fire Phase 4.5.
 
-The critic does NOT mutate facets or cancel the run. It produces the standard; orchestrator + user respond.
+The critic does NOT mutate facets or cancel the run. It produces the standard; orchestrator + principal respond.
 
 ---
 
 ## Convergence and refusal handling
 
-- **R1 is single-pass per author.** No retry loop. Faults discovered post-hoc surface in R2 or audit.
-- **R2 is single-pass per judge.** No mid-layer rebuild (judges run in parallel, blind to each other's mutations). The post-R2 cite-index reflects the union; cross-judge interaction effects (e.g., R2.2 deleting memory:N while R2.4 metaphor keeps a `licensed-by: mem:N` reference) surface in Phase 5 as CONSTRAINT findings.
+- **R1 is single-pass per author.** No retry loop. Faults discovered post-hoc surface in the Phase 4 audit (there is no R2 round to catch them mid-stream — the auditor is the catch).
 - **Merge-tool aborts (body-integrity / stale-citation) are build defects.** Re-dispatch the responsible author with a clarifying brief; re-run the tool. Subsequent phases cannot proceed on a non-clean merge.
-- **Soft refusals** (rubric gap, structural fault, blocking input missing) log under `active-project/staff/<author>/` and the orchestrator continues. The summary lists refusals; the episode is not blocked.
+- **Soft refusals** (rubric gap, structural fault, blocking input missing) log under `active-project/staff/<author>/`; the orchestrator continues. The summary lists refusals.
 
 ---
 
 ## Notes
 
-- **Scene-map is upstream-only** — emitted by `/and-write` Phase 7 from `chapters[].scenes[].bones[].substance_delta.axis_moves.magnitude` in showrunner memory; `/and-facets` Phase 4d validates only. There is no in-pipeline scene-map authoring.
-- **R3 retired.** The relaxation pass was default-skipped in the prior chain (s01e01 produced a fixed point under R2). The fanout-fanin-fanout-fanin-audit shape replaces the four sub-commands; R3's behavior — "repeat the judge round" — is recoverable as a re-run of the command with `faceted-r2` already on disk, but is not the default flow.
-- **Audience interest-flags are skipped.** When tuned, it joins the R1 parallel block (one dispatch per persona).
-- **Vibe-cloud write-back is deferred.** Post-author propagation of vibe deltas to actor/loc/studio files happens in and-wrap or a follow-on showrunner dispatch.
-- **Cross-facet deletion authority** belongs to the audit only. Once auditor is tuned for delete-authority, HARD findings execute as deletes with cascade. Until then, audit is flag-only and remediation routes back to authors as a separate work cycle (re-run /and-facets after fixes land, or fire targeted author dispatches).
-- **Shared reviewer assets** (audience persona `Threshold Discipline` body sections; auditor class library — `CURVE-SHAPE` / `AP-SCAN` / `FREQUENCY-BAND` / `RUBRIC-FIDELITY` definitions) are authored once and consumed from both `/and-write` and `/and-facets`. Patterns the audience flags at `/and-write` Phase 6 bone-gate (per-scene audience coverage review) graduate into AP-SCAN entries via the auditor's TASTE-FLAG → AP-SCAN promotion path. Patterns the audience flags at `/and-facets` Phase 5b graduate into RUBRIC-FIDELITY entries by adding the rule to the relevant facet rubric's REJECT / anti-pattern / cross-facet contract section.
+- **The R2 round and the Phase 5b audience-gate are retired (DEC-0116).** This is the central simplification. Do NOT reintroduce a second facet-authoring round or a per-facet adversarial reviewer layer without a fresh principal decision — the evidence (ablation density-harm + DEC-0115 audience-gate failure) is the basis for their removal. The cross-facet culling the R2 round did is the Phase 4 auditor's DEDUP/SUPERFLUOUS/PILE-UP job; the adversarial reading the audience-gate did is `/and-stitch` Phase 9's job (against real prose).
+- **Scene-map is upstream-only** — emitted by `/and-write` Phase 7 from `substance_delta.axis_moves.magnitude`; the Phase 4 auditor validates coverage only. There is no in-pipeline scene-map authoring.
+- **Exposition is consulted-by-stitcher by default** (PROP-0004) — authored for followability (the c05 content source) but `surface: reference` unless a context-ledger license fires; the inline em-dash fold-in is off by default.
+- **Cross-facet deletion authority** belongs to the audit only (flag-only until the auditor is tuned for delete-authority; until then remediation routes back to authors / fixer).
+- **Shared reviewer assets** (auditor class library — `CURVE-SHAPE` / `AP-SCAN` / `FREQUENCY-BAND` / `RUBRIC-FIDELITY` definitions) are authored once and consumed from both `/and-write` and `/and-facets`. Patterns the audience flags at `/and-write` Phase 6 bone-gate graduate into AP-SCAN entries via the auditor's TASTE-FLAG → AP-SCAN promotion path. Patterns worth promoting at `/and-facets` graduate into RUBRIC-FIDELITY by adding the rule to the relevant facet rubric's REJECT / anti-pattern / cross-facet contract section (the auditor enumerates those at audit time).

@@ -2875,3 +2875,98 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-06-08-slimfacets-001
+      created_at: 2026-06-08T00:00:00Z
+      created_by: "/and-facets b01-c07 slim-pipeline live test (DEC-0116 validation)"
+      target:
+        command: /and-facets
+        scope: "*"
+        phase: Phase 4
+      severity: SOFT
+      description: |
+        During the URI-FACETS-SLIM live test on b01-c07, the Phase 4 auditor returned
+        2 false-positive HARD findings ("feeling files absent", "actor state-update files
+        absent") because it searched for ABBREVIATED actor slugs (feeling-taylor-b01-c07.md)
+        instead of the full per-character slug filenames that exist on disk
+        (feeling-taylor-hebert-kl-122ac-b01-c07.md). Caught by the Rule-19 on-disk verify;
+        no real defect. Root cause: the test skipped the Phase 2 cite-index merge, which in
+        production consolidates per-character slices into feeling.md / state-updates.md with
+        a manifest the auditor reads — so this class does NOT arise in a normal run. BUT it
+        is a real robustness gap: the auditor brief should resolve per-character slice files
+        by GLOBBING the full actor slug (feeling-*-<book>-<chapter>.md), not by reconstructing
+        an abbreviated name, so a partial/merge-skipped run cannot produce phantom-absent HARDs.
+      context_refs:
+        - active-project/staff/reviews/slim-facets-test-b01-c07.md  # caveat 1
+        - active-project/staff/auditor/facets-final-audit.md  # FIXER RESOLUTION + CORRECTION addendum
+        - .claude/commands/and-facets.md  # Phase 4 auditor read-inputs (slice file resolution)
+      resolution_suggestion: "harden the /and-facets Phase 4 auditor read-inputs brief: enumerate per-character slice facets by glob over the full actor slug (feeling-*-<chapter>.md, state-updates-*-<chapter>.md) and treat a STRUCTURAL absent-file finding as valid only after a glob confirms absence — never from a reconstructed abbreviated filename."
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-08-sameness-001
+      created_at: 2026-06-08T00:00:00Z
+      created_by: "structural-sameness detector (PROP-0052 prototype run) on rebuilt b01 mid-book"
+      target:
+        command: /and-cohere
+        scope: "b01 c11-c19"
+        phase: null
+      severity: SOFT
+      description: |
+        SAMENESS-HIGH on the rebuilt b01 mid-book: 8 of 10 chapters c10-c19 run one scene template
+        (TEMPLATE-T: packet-arrives -> transcribe-to-channel -> withhold-the-protected-name -> lift-stylus
+        -> hand-off-surface). The withhold-name invariant + meaning-accretion (Wren -> false-name ->
+        blank-column -> Daven) is BY DESIGN and earns the c20 payoff; the problem is RUN-LENGTH at the
+        tail (unbroken c17->c18->c19 right before the payoff; c19 narrates its own repetitiveness) and
+        a literal terminal tic ("the hand came off the surface") in 6 chapters. The no-ledger rebuild
+        made the sameness more legible, not less. Cheapest fix = LIGHT targeted cohere on 3 chapters,
+        NOT a restructure: (1) c18 PRIMARY — re-anchor scene entry/exit off-template to break the
+        c17-c19 run (/and-write revise on entry/exit bones; zero substance-delta change); (2) c11
+        TERTIARY — swap scene-entry so it does not open with the same packet-arrives beat as adjacent c12;
+        (3) terminal-tic SECONDARY — vary the lift-stylus/hand-off close on ~3 of the 6 sharing chapters.
+        Leave c13/c16 (the dialogue-argument breaks) and the withhold-name invariant untouched.
+        NOTE: this MUTATES shipped+assembled drafts (completed-works/book-one.md) — archive baselines
+        first per the revisions protocol; principal-gated (do not auto-fire).
+      context_refs:
+        - active-project/staff/reviews/sameness-scan-b01-c08-c20.md
+        - staff/admin/process-proposals.md  # PROP-0052
+      resolution_suggestion: "principal greenlight -> /and-cohere b01 c11-c19 (light, 3-chapter structural pass per the scan's cheapest-fix list); archive draft baselines first; re-run the sameness detector + /and-review cohere on c11-c19 to confirm the run broke"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-08-formdebt-001
+      created_at: 2026-06-08T00:00:00Z
+      created_by: "cross-chapter bones form-scan (post-no-ledger-rebuild certification)"
+      target:
+        command: /and-write
+        scope: "b01 (perception-heavy chapters: c03 c04 c06 c07 c08 c09 c12 c14 c18)"
+        phase: null
+      severity: SOFT
+      description: |
+        The no-ledger rebuild re-emitted all 20 b01 chapters' bones via a render shortcut that SKIPPED
+        the bones-gate. Cross-chapter form-scan (bones-formscan-b01-2026-06-08.md) found SYSTEMIC SVO-form
+        debt: ~95 fault instances across 19 of 20 chapters (only c01/c02 near-clean). BUT severity is
+        mostly beneath-the-prose hygiene, NOT reader-facing:
+          - ABSTRACTION-AS-SUBJECT (the DEC-0115 no-ledger fence — the thing that mattered): only 1-2
+            instances book-wide. The rebuild HIT its primary target. The single clean fence violation is
+            c19:25 "the contempt rests beside the work" (highest-priority single fix).
+          - PERCEPTION-VERB (~46, "watches X"): dominant debt; partially reader-facing (cold-distance);
+            the stitcher rendered past these (why the prose cold-read still PASSED — verdict-rebuilt-b01).
+            Worst pocket: c18.
+          - STATIVE (~28, "holds the feet" motif): hygiene only + design-intentional; does not survive to prose.
+          - ABSTRACTION-OBJECT (~18): hygiene.
+        The reader-facing PROSE passes (PASS-WITH-NOTES re-certification, verdict-rebuilt-b01-2026-06-08).
+        This is bone-layer hygiene debt, logged as b01 known-debt — it does NOT block forward motion.
+      context_refs:
+        - active-project/staff/reviews/bones-formscan-b01-2026-06-08.md
+        - active-project/staff/reviews/verdict-rebuilt-b01-2026-06-08.md  # process caveat (form-scan resolution)
+        - staff/admin/decisions.md  # DEC-0115 (no-ledger fence — the axis the rebuild cleared)
+      resolution_suggestion: "OPTIONAL + principal-gated (mutates shipped drafts via re-cascade). Minimum: fix the single DEC-0115 fence fault c19:25 (1 bone + re-stitch c19). Fuller: a fixer-class /and-write revise form-pass on the 9 perception-heavy chapters (~45 bone-line edits, no substance-arc change) -> re-cascade. Tolerate-to-b02 is defensible: the prose cold-read passed; this is hygiene beneath alive prose."
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null

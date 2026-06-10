@@ -354,7 +354,7 @@ Phase 6 now verifies the Phase 1.5 dialogue output as part of the bone-gate (sin
 - **FAULT-DIALOGUE-EARTH-BET-FENCE (HARD)** — substring scan of every utterance and objective against the Earth-Bet hard-fence list (Khepri, Brockton Bay, Skitter, etc. per the auditor class library §Earth-Bet hard-fence scan).
 - **FAULT-DIALOGUE-COVERAGE (HARD)** — every speaker in the chapter's dialogue-anchor inventory has a per-character file on disk with ≥1 entry. Missing speaker file → HARD per speaker.
 
-These checks are MECHANICAL; the auditor enumerates them at audit time. Content-quality checks (does the line *land*, does it pay the substance) remain with `/and-facets` Phase 5b audience-gate downstream.
+These checks are MECHANICAL; the auditor enumerates them at audit time. Content-quality checks (does the line *land*, does it pay the substance) are judged downstream at the `/and-stitch` Phase 9 cold-read + naive-follow against rendered prose — the `/and-facets` Phase 5b audience-gate that used to hold this is retired under DEC-0116.
 
 **HARD findings block Phase 7 emission.** Re-fire Phase 1 (scene-decomposition) on the offending scenes; cycle 1 of the same `/and-write` invocation; max 2 internal HARD-resolution cycles. After 2 cycles, surface to user.
 
