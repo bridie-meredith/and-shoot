@@ -6531,3 +6531,56 @@ pr_ref: claude/ecstatic-volta-14ixm1
 defer_until: null
 supersedes: null
 ```
+
+---
+
+## PROP-0052
+
+```yaml
+id: PROP-0052
+created_at: 2026-06-08T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: on-demand
+  source_report: active-project/staff/reviews/sameness-scan-b01-c08-c20.md
+  source_verdict: SAMENESS-HIGH (8 of 10 mid-book chapters run one scene template; longest unbroken run fails the >=4 threshold at c17-c19)
+target:
+  type: command
+  path: .claude/commands/and-review.md
+  section: "cohere subcommand (add a cheap structural-sameness pre-scan) OR a new cross-chapter check"
+change_type: add
+rationale: |
+  The cohesion machinery has a real gap (confirmed this session): NOTHING detects cross-chapter
+  STRUCTURAL SAMENESS — N consecutive chapters running the same scene-move template. Per-chapter
+  Phase 9 cold-read cannot see it (each chapter reads fine alone); /and-cohere is opt-in, post-ship,
+  and oriented to setup/payoff + register, not scene-shape repetition. The b01 mid-book (c10-c19) was
+  diagnosed with this exact problem; the no-ledger rebuild fixed the register but left the structure,
+  making the sameness MORE legible. A prototype detector (run this session on the rebuilt drafts)
+  mechanically confirmed it: 8/10 mid-book chapters run TEMPLATE-T (packet-arrives -> transcribe ->
+  withhold-the-protected-name -> lift-stylus -> hand-off-surface), with an unbroken run at c17-c19.
+  The detector is CHEAP because it reads STRUCTURE (bones / scene-maps / dramatic_shape), not prose —
+  ~1 dispatch over a chapter range, no re-render. It is the structural-layer analogue of CLAUDE.md
+  Rule 22's "N=2 consecutive" circuit-breaker.
+evidence_refs:
+  - "active-project/staff/reviews/sameness-scan-b01-c08-c20.md — SAMENESS-HIGH; Template-T cluster c08-c19; 8/10 mid-book; breaks at c13/c16; threshold rule proposed"
+  - "staff/admin/decisions.md DEC-0115 — no-ledger overhaul fixed register but preserved structure (rebuild rendered faithful-to-existing-structure)"
+  - ".claude/commands/and-cohere.md + .claude/commands/and-review.md (cohere subcommand) — opt-in, post-ship; no scene-shape-repetition lens"
+recurrence_count: 2
+proposed_diff: |
+  Add a cheap structural-sameness pre-scan as a sub-step of /and-review cohere (or a standing flag at
+  /and-stitch Phase 10 forward-thread, which already reads accumulated past): over a chapter range,
+  compute a per-chapter scene-shape signature (dramatic_shape + central scene-move template, derived
+  from bones/scene-map — no prose read) and flag when >= 4 consecutive chapters share a signature OR
+  >= 2 consecutive are interchangeable instances (the invariant beat does not change meaning). Emit a
+  SOFT parking-lot flag suggesting a light /and-cohere structural pass; do NOT block. Threshold:
+  accretion is licensed if longest unbroken run <= 3 AND the repeated beat changes meaning each time.
+  ~1 dispatch per range; off the per-chapter critical path.
+cost_estimate: S
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```

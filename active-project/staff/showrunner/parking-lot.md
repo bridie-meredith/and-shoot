@@ -2905,3 +2905,35 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-06-08-sameness-001
+      created_at: 2026-06-08T00:00:00Z
+      created_by: "structural-sameness detector (PROP-0052 prototype run) on rebuilt b01 mid-book"
+      target:
+        command: /and-cohere
+        scope: "b01 c11-c19"
+        phase: null
+      severity: SOFT
+      description: |
+        SAMENESS-HIGH on the rebuilt b01 mid-book: 8 of 10 chapters c10-c19 run one scene template
+        (TEMPLATE-T: packet-arrives -> transcribe-to-channel -> withhold-the-protected-name -> lift-stylus
+        -> hand-off-surface). The withhold-name invariant + meaning-accretion (Wren -> false-name ->
+        blank-column -> Daven) is BY DESIGN and earns the c20 payoff; the problem is RUN-LENGTH at the
+        tail (unbroken c17->c18->c19 right before the payoff; c19 narrates its own repetitiveness) and
+        a literal terminal tic ("the hand came off the surface") in 6 chapters. The no-ledger rebuild
+        made the sameness more legible, not less. Cheapest fix = LIGHT targeted cohere on 3 chapters,
+        NOT a restructure: (1) c18 PRIMARY — re-anchor scene entry/exit off-template to break the
+        c17-c19 run (/and-write revise on entry/exit bones; zero substance-delta change); (2) c11
+        TERTIARY — swap scene-entry so it does not open with the same packet-arrives beat as adjacent c12;
+        (3) terminal-tic SECONDARY — vary the lift-stylus/hand-off close on ~3 of the 6 sharing chapters.
+        Leave c13/c16 (the dialogue-argument breaks) and the withhold-name invariant untouched.
+        NOTE: this MUTATES shipped+assembled drafts (completed-works/book-one.md) — archive baselines
+        first per the revisions protocol; principal-gated (do not auto-fire).
+      context_refs:
+        - active-project/staff/reviews/sameness-scan-b01-c08-c20.md
+        - staff/admin/process-proposals.md  # PROP-0052
+      resolution_suggestion: "principal greenlight -> /and-cohere b01 c11-c19 (light, 3-chapter structural pass per the scan's cheapest-fix list); archive draft baselines first; re-run the sameness detector + /and-review cohere on c11-c19 to confirm the run broke"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
