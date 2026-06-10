@@ -10,6 +10,7 @@ Format per entry:
 
 ---
 
+[2026-06-10] DEC-0118 | 3-way branch re-dispatched (follows DEC-0117 escalation) → ESCALATED again | No new signal; §human-only still governs; sharpened to A vs. C (real fork); B subsumed by either choice
 [2026-06-10] DEC-0117 | "Continue from where you left off" after 3-way branch (A=sameness cohere, B=fence fix, C=bank+b02) → ESCALATED | "Continue" does not discriminate; A+B both mutate finished shipped book; §human-only on irreversible mutation; principal has not said which reservation warrants spend
 [2026-06-08] DEC-0116 | /and-facets simplification GO + shape → Option A (slim, single command-body edit) | Phase 5b + R2 both demonstrated net-negative signal; DEC-0033 superseded by upstream hardening; Option B is human-only architectural direction
 [2026-06-07] DEC-0114 | Export-pass dispositions (4 Qs): trim=(b) moderate voice-preserving; mechanism=(A) editor on export COPY only (no re-cascade); dir=`completed-works/taylor-westeros-good-intentions/`; format=Markdown+.txt (no .docx/pandoc) | DEC-0058 governs trim ceiling; ~600d re-cascade blocked by methodology §human-only; `completed-works/` matches stated intent; paste-from-Markdown meets the doc need.

@@ -7672,3 +7672,66 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0118 | 2026-06-10 | ESCALATED (follows: DEC-0117)
+
+question: |
+  Same three-way branch as DEC-0117, re-dispatched. Book 1 is complete, shipped, re-certified
+  PASS-WITH-NOTES. Options: (A) light 3-chapter sameness cohere ~30-40 dispatches, mutates
+  shipped drafts; (B) minimal c19:25 fence fix, mutates shipped c19; (C) bank both, move to b02.
+  Caller asks whether "continue" + the principal having named problem (b) earlier constitutes
+  enough signal to answer without escalating again.
+
+context: |
+  DEC-0117 was an escalation on the same question on the same date (2026-06-10). The new dispatch
+  adds explicit framing that the principal "flagged BOTH halves of the original diagnosis" and "has
+  NOT said ship it / move on." Both factors were already weighed in DEC-0117's rationale. No human
+  verdict came back from DEC-0117 — this is a repeat ask, not a follow-up carrying a ruling.
+
+decision: ESCALATED-TO-HUMAN
+
+basis: methodology §human-only (irreversible destructive operations + spend commitments past
+  routine). No new signal closes the gap identified in DEC-0117.
+
+rationale: |
+  The principal naming problem (b) as one of two original diagnosis items does not authorize
+  30-40 dispatches mutating a finished, re-certified book. The book is now PASS-WITH-NOTES — not
+  failing. Option A's spend is a discretionary quality lift, not a repair. Admin cannot weigh
+  "is this discretionary lift worth ~35 dispatches on a closed deliverable" without a direct
+  principal call. Option B is a trivial mutation with low value (the prose already passes);
+  it is the kind of thing admin could authorize on forward motion signal alone, but the principal
+  has not said "fix the fence fault" or "do the smallest possible thing." Option C (b02) is the
+  only zero-mutation path, but "continue" from a book-completion state with two named unresolved
+  reservations does not cleanly resolve to "move on." The sharpest question to put to the
+  principal is A vs. C — the real fork. Option B is subsumed: if A, the c19:25 fence fault is
+  covered in the cohere pass; if C, it is banked as known-debt.
+
+trade-off: |
+  One more human turn. Alternative risk: spend 30-40 dispatches on a reservation the principal
+  is content to bank, or skip a fix the principal wanted and launch b02 with it outstanding.
+  DEC-0117 already made this calculus; it has not changed.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
+## DEC-0117/0118 RESOLUTION | 2026-06-10 | human ruling (AskUserQuestion)
+
+resolves: DEC-0117, DEC-0118 (both ESCALATED-TO-HUMAN on the same post-certification 3-way branch)
+human_ruling: Option A — "Light sameness cohere."
+  The principal, asked directly via AskUserQuestion, chose the light 3-chapter structural pass
+  (pl-2026-06-08-sameness-001) over the minimal c19:25 fix (B) and bank-and-move-to-b02 (C).
+  The §human-only bar both escalations guarded is satisfied: explicit principal greenlight to
+  re-open and mutate the finished, re-certified book for the de-sameness pass. Baselines archived
+  (active-project/draft/_archive/20260610-pre-sameness-cohere/) before mutation per the revisions protocol.
+process_note: |
+  DEC-0118 was a redundant re-escalation: the admin user-proxy agent was still running when the
+  main session committed DEC-0117 (file-presence was treated as agent-completion — a Rule-19-adjacent
+  slip), so the agent produced a second escalation of an already-surfaced question. No harm (same
+  conclusion; human answered). Lesson: wait for the agent's explicit return before committing its
+  shared-state writes, even when the file already shows the change.
