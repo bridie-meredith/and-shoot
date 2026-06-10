@@ -81,6 +81,7 @@ reverse-angle (Gael **misses** it, files her "Asset"), seeding the two-person wa
 **Beat:** IDs Valyrian steel as dragon-kin (the compatible source), eats it, breaks the plateau; the glow-up
 reads as impossible perfection → an appraising **Daemon** circles → modern-revulsion at the incest custom.
 Barth's framework brushes "consumed sorcerous material" and recoils. **Register:** SPIKE→CHILL. **Rung:** off-ladder.
+**Genre-misreads (②/⑤/⑥):** the glow-up read as a post-breakthrough body-refinement (proud, but frets it breaks concealment — she arms against the wrong, cultivation threat); "Dragonbane" spreading read as her dao-name preceding her (pleased; misses the realm means omen-child — seeds the mirror-flip); the maester's anomaly read as an expert closing in (none is — the realm's incompetence covers her). Daemon: she nopes the romance, has **no trope** for the creepy affection, files him under "evil sects are full of weirdos," ignores it — and cheerfully **abuses** his indulgence as access/cover, never clocking the danger. Ditzy and exposed; diligent about the wrong threat, blind to the real one.
 **Plants:** PLANT[VALYRIAN-STEEL-COMPATIBLE] · PLANT[UNCANNY-BEAUTY] · PLANT[DAEMON-THREAT] · PLANT[THEFT-ESCALATION] · PLANT[BARTH-NEAR-MISS]
 **Fires:** FIRE[COMPATIBLE-SOURCES] · FIRE[METHOD-LIMIT]
 
