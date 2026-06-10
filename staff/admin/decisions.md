@@ -7625,3 +7625,50 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0117 | 2026-06-10 | ESCALATED
+
+question: |
+  Principal said "continue from where you left off" after being presented a three-way branch on
+  what to do with completed Book 1 (taylor-westeros-good-intentions, re-certified PASS-WITH-NOTES
+  on rebuilt no-ledger drafts). The three options:
+    (A) Light 3-chapter sameness cohere — re-anchor c18 entry/exit, vary c11 opening, vary terminal
+        tic on ~3 chapters; ~30-40 dispatches; MUTATES shipped drafts; archive baselines first.
+    (B) Minimal c19:25 fence fix only — fix one fence-fault bone + re-stitch c19; tiny spend;
+        mutates shipped c19; low incremental value since prose already passes.
+    (C) Bank both as known-debt, move toward b02 — zero mutation now; book stands as PASS-WITH-NOTES.
+  Two parking-lot items remain: pl-2026-06-08-sameness-001 (back-third structural sameness) and
+  pl-2026-06-08-formdebt-001 (systemic bone-form debt ~95 faults, single fence fault c19:25).
+
+context: |
+  Book is COMPLETE, shipped, assembled at completed-works/taylor-westeros-good-intentions/book-one.md.
+  Re-certified PASS-WITH-NOTES on the rebuilt no-ledger drafts. DEC-0115 authorized the register
+  re-cascade (principal directive, explicit). The current three-way branch was NOT previously
+  adjudicated. Principal has NOT said "fix the sameness" or "move on." Book II + III outlines exist.
+
+decision: ESCALATED-TO-HUMAN
+
+basis: methodology §human-only (irreversible destructive operations) + methodology:3a (reversibility)
+  + methodology:3d (optionality). "Continue" does not disambiguate a three-way menu where two paths
+  irreversibly mutate the finished book. The principal has not previously stated whether the back-third
+  structural sameness (non-fatal, PASS-WITH-NOTES) warrants another mutation pass vs. moving to b02.
+
+rationale: |
+  The §human-only line on irreversible destructive operations applies to Options A and B. Option C
+  is the only zero-mutation path and enables forward motion on b02. If "continue" unambiguously meant
+  "start b02," admin would answer C. But the principal's last several messages pushed toward fixing
+  things (DEC-0115 re-cascade) and explicitly named problem (b) in the original diagnosis. Admin
+  cannot weigh "sameness warrants 30-40 dispatches on a PASS-WITH-NOTES book" without a direct signal.
+  That is an aesthetic + priority judgment the principal must make.
+
+trade-off: |
+  One human turn cost. Alternative risk: run 30-40 dispatches mutating a finished book on a
+  reservation the principal doesn't care about, or skip a fix the principal did want. Cost of wrong
+  call >> cost of one turn.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
