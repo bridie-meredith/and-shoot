@@ -78,8 +78,9 @@ reverse-angle (Gael **misses** it, files her "Asset"), seeding the two-person wa
 **Fires:** FIRE[SURVEILLANCE-PRESSURE] · FIRE[ACOLYTE-WALL] (the cost's wake — the reader's ledger)
 
 ### I.4 · valyrian-beauty *(~5–6)*
-**Beat:** IDs Valyrian steel as dragon-kin (the compatible source), eats it, breaks the plateau; the glow-up
-reads as impossible perfection → an appraising **Daemon** circles → modern-revulsion at the incest custom.
+**Beat:** IDs Valyrian steel as dragon-kin (the compatible source), eats it, **breaks through hard — drastic
+body-tempering** (sleepless, senses sharpened, the Book-III rooftop-agility seeded; body, never martial); the
+glow-up reads as impossible perfection → an appraising **Daemon** circles → modern-revulsion at the incest custom.
 Barth's framework brushes "consumed sorcerous material" and recoils. **Register:** SPIKE→CHILL. **Rung:** off-ladder.
 **Genre-misreads (②/⑤/⑥):** the glow-up read as a post-breakthrough body-refinement (proud, but frets it breaks concealment — she arms against the wrong, cultivation threat); "Dragonbane" spreading read as her dao-name preceding her (pleased; misses the realm means omen-child — seeds the mirror-flip); the maester's anomaly read as an expert closing in (none is — the realm's incompetence covers her). Daemon: she nopes the romance, has **no trope** for the creepy affection, files him under "evil sects are full of weirdos," ignores it — and cheerfully **abuses** his indulgence as access/cover. He slips her a cultivation-useful Valyrian **trinket**; she takes it as free material AND as **the favor of the evil sect** (appropriate patronage — so, like the king's audience, *pleased,* not wary), and angles for more. `PLANT[GIFT:DAEMON]` → repaid at I.5. Ditzy and exposed; diligent about the wrong threat, blind to the real one.
 **Plants:** PLANT[VALYRIAN-STEEL-COMPATIBLE] · PLANT[UNCANNY-BEAUTY] · PLANT[DAEMON-THREAT] · PLANT[THEFT-ESCALATION] · PLANT[BARTH-NEAR-MISS] · PLANT[GIFT:DAEMON]
@@ -92,7 +93,9 @@ platonic dual-cultivation** and runs it then and there — the demonic drain. **
 distance); Daemon is left near bed-ridden. Unsure whether that was a demonic-path deviation, she resolves on
 closed-door meditation — and the terrified realm obliges, **confining her to her chambers** (quarantine for a
 feared contagion) which she reads as the caring sect granting secluded cultivation. The no-wound dragon-death
-+ the uncanny beauty + "Dragonbane" **seed the realm's mirror-flip**. **Register:** CHILL. **Rung:** R1.
++ the uncanny beauty + "Dragonbane" **seed the realm's mirror-flip**. The drain is also a massive infusion —
+she swears off the *method* but keeps the *gains* (a second, bigger leap; the reserve she'll later spend on
+Wylla). Confined for weeks, attended only by her maids, the **Wylla bond warms hard** (seeds II.1). **Register:** CHILL. **Rung:** R1.
 **Genre-misreads (②/⑥; the one chapter the horror is real):** Daemon's predatory "special blood" pass read as an offer of **platonic dual-cultivation** — she runs it and accidentally guts him (the atrocity is itself a misread); "was that the demonic path?" left unresolved → `PLANT[CLEAN-HANDS-DOCTRINE]` (the line drawn at the *technique,* not the harm — the license the ladder runs on, fires II.7 + III.6); near-bedridden Daemon read as "an elder who lost his cultivation base" (a stat-change, not a man — completes GIFT:DAEMON); Caraxes mourned as kindred spirit-beast while the executed servants never register (③); the quarantine read as the sect granting secluded cultivation (`COURT-AS-EVIL-SECT`).
 **Plants:** PLANT[DEMONIC-PATH] · PLANT[DRAGON-DEATH-UNEXPLAINED] · PLANT[SYMPATHETIC-KILL-AT-DISTANCE] · PLANT[PLAYING-SMART] · PLANT[HIDEY-HOLE] · PLANT[BODY-TEMPERING-CONCEALED] · PLANT[COLLATERAL-DAMAGE] · PLANT[PROPHESIED-LEGEND] · PLANT[CLEAN-HANDS-DOCTRINE]
 **Fires:** FIRE[DAEMON-THREAT] · FIRE[UNCANNY-BEAUTY] · FIRE[VALYRIAN-STEEL-COMPATIBLE] · FIRE[THEFT-ESCALATION] · FIRE[GIFT:DAEMON] (the favor repaid — she took his gift, then his dragon-bond, never reading him)
