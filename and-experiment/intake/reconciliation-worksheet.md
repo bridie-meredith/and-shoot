@@ -202,18 +202,19 @@ The bestiary is **the one document in the series that tells the truth about Gael
 
 ---
 
-## E. Migration checklist (Phase 4–5) — NOT STARTED
+## E. Migration checklist (Phase 4–5) — IN PROGRESS (2026-06-09 · /and-reoutline → run-03)
 > **Adopted-spine source:** `intake/spine.md` — the consolidated 3-book narrative + tone/comedy
 > architecture + per-chapter reverse-angle (Westeros-native) format. This is the artifact Phase-4
 > tokenizes into `design/run-03/`. (Incoming raw outline: `intake/tentative-outline.md`; gate rulings
 > + comedy defs: this worksheet §C/§D.)
-- [ ] `design/run-03/` created; **`spine.md`** tokenized as the canonical 3-book outline
-- [ ] KEEP/ADAPT artifacts carried over (GUARDS register, thread-config, timeline/family, ledger)
-- [ ] RETIRE/SUPERSEDE artifacts archived to `intake/retired/<date>-<name>/` with tombstones
-- [ ] state-ledger re-founded on the 3-book structure; change-log started at the intake entry
-- [ ] family/court cards re-derived to Gael/Jaehaerys; Saerys→Gael renames
-- [ ] `time-anchor.md` §4 span fork settled; §5 drift rows rolled forward
-- [ ] `check-threads.py` on the new outline → PASS
-- [ ] convergence-ledger Round N digest appended
-- [ ] `memory.md` + `project-history.md` rolled forward (L8)
-- [ ] exit summary delivered (Phase 6)
+- [x] `design/run-03/` created; **`spine.md`** tokenized as the canonical 3-book outline (`series-outline.md`)
+- [~] KEEP/ADAPT artifacts carried over — thread-config ✅ (new run-03 config); GUARDs ✅ (carried into the outline header); **timeline/family ⏳ pending**; **state-ledger ⏳ pending**
+- [x] RETIRE/SUPERSEDE artifacts archived — run-02 Book-I outline → `intake/retired/2026-06-09-run02-book-i-outline/` (tombstone; original banner-marked); saerys-* cards/exemplar tombstoned
+- [ ] state-ledger re-founded on the 3-book structure ⏳ **pending (next pass)**
+- [x] family/court cards re-derived to Gael/Jaehaerys — 10 live span-A cards + 2 lead exemplars; Saerys→Gael done
+- [ ] `time-anchor.md` §4 span fork settled; §5 drift rows rolled forward ⏳ **pending (settle to span-A)**
+- [x] `check-threads.py` on the new outline → **PASS** (R0–R4 present; 60 plants/49 fires)
+- [x] convergence-ledger Round 9 digest appended
+- [ ] `memory.md` + `project-history.md` rolled forward (L8) ⏳ **pending (replace stale Saerys/Viserys/Dance framing)**
+- [x] exit summary delivered (Phase 6) — in chat 2026-06-09
+- **Open fork (non-blocking):** Otto/Daemon seating — AU-age (recommended) vs rename (§D-slots)
