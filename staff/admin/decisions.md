@@ -7735,3 +7735,49 @@ process_note: |
   slip), so the agent produced a second escalation of an already-surfaced question. No harm (same
   conclusion; human answered). Lesson: wait for the agent's explicit return before committing its
   shared-state writes, even when the file already shows the change.
+
+---
+
+## DEC-0119 | 2026-06-10 | RESOLVED — STOP HERE (human direction)
+
+resolution: |
+  Human answered the escalated question: "Stop here." b01 is shipped + certified; bank everything and
+  await a fresh direction (b02, a new project, or something else) before opening anything new. Book II is
+  NOT started. Both b01 optional items remain principal-gated/deferred: Sera payoff (DEC-0108 DEFERRED,
+  pl-2026-06-06-cohere-002) and form-debt (banked, pl-2026-06-08-formdebt-001). No new work opened.
+  Next session: b01 is COMPLETE; do not auto-open b02 or the deferred items — await explicit direction.
+
+question: |
+  "Continue from where you left off" immediately after the light sameness cohere on Book 1 completed
+  and was committed/pushed (PR #104). No in-flight task; cohere is done. Three options:
+    (A) Begin Book II — /and-substance book b02 → per-chapter cascade; large multi-session undertaking.
+    (B) Close one or both b01 optional items — Sera payoff (principal-DEFERRED per DEC-0108) and/or
+        form-debt hygiene pass (~45 edits, tolerate-to-b02 explicitly defensible).
+    (C) Hold — await explicit principal direction before opening anything new.
+
+context: |
+  b01 is a finished, re-certified PASS-WITH-NOTES novel; sameness reservation (pl-2026-06-08-sameness-001)
+  just closed. b01 optional items: Sera payoff (DEC-0108: principal-DEFERRED, not an unblocked action)
+  and form-debt (~95 SVO hygiene faults; banked; tolerate-to-b02 explicitly defensible). Book II
+  outlines exist; b02 is the natural forward move but has not been explicitly authorized by the
+  principal and is large spend.
+
+decision: ESCALATED-TO-HUMAN
+basis: human-only:strategic-priorities + human-only:spend-commitments-past-routine
+rationale: |
+  "Continue" resolves to a forward-direction choice among three materially distinct paths. Beginning b02
+  is explicitly large-spend (methodology §spend-commitments-past-routine). The two b01 optional items
+  are both explicitly principal-gated: DEC-0108 DEFERRED Sera; form-debt is banked with "tolerate-to-b02
+  explicitly defensible" already on record. Neither optional item is an unblocked standing action.
+  DEC-0107 established precedent: when a milestone completes and there is no in-flight task, the
+  next-direction call is a strategic-priorities question for the human. This situation is materially
+  the same — b01 milestone closed, no cascade in progress, forward direction not yet named.
+trade-off: |
+  Holding for human direction vs. auto-starting b02 on "natural next move" logic. The cost of asking
+  is one turn; the cost of auto-starting a multi-session undertaking without authorization, or
+  re-opening a principal-DEFERRED item without a new signal, is higher.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no

@@ -10,6 +10,7 @@ Format per entry:
 
 ---
 
+[2026-06-10] DEC-0119 | "Continue" after sameness cohere shipped (b01 done, no in-flight task) → ESCALATED | b02 is large-spend/unauthorized; both b01 optional items are explicitly principal-gated; DEC-0107 precedent governs
 [2026-06-10] DEC-0118 | 3-way branch re-dispatched (follows DEC-0117 escalation) → ESCALATED again | No new signal; §human-only still governs; sharpened to A vs. C (real fork); B subsumed by either choice
 [2026-06-10] DEC-0117 | "Continue from where you left off" after 3-way branch (A=sameness cohere, B=fence fix, C=bank+b02) → ESCALATED | "Continue" does not discriminate; A+B both mutate finished shipped book; §human-only on irreversible mutation; principal has not said which reservation warrants spend
 [2026-06-08] DEC-0116 | /and-facets simplification GO + shape → Option A (slim, single command-body edit) | Phase 5b + R2 both demonstrated net-negative signal; DEC-0033 superseded by upstream hardening; Option B is human-only architectural direction
