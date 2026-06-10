@@ -73,7 +73,8 @@ threads through as the quiet ledger (the empty place, the household's unease, Wy
 the first faint rung of the complicity that becomes devotion. **The cage is a two-girl cage:** Wylla, a
 minor-noble daughter placed for connections and an arranged future, shares a smaller one — surfaced in the
 reverse-angle (Gael **misses** it, files her "Asset"), seeding the two-person want. **Register:** CHILL→HOLD. **Rung:** off-ladder.
-**Plants:** PLANT[JAEHAERYS-TRANSACTIONAL] · PLANT[SEPTA-ENDORSEMENT] · PLANT[METHOD-LIMIT] · PLANT[ANTI-FAITH] · PLANT[MARRIAGE-THREAT] · PLANT[OUTWARD-COMPLIANCE] · PLANT[SKULLS-INACCESSIBLE] · PLANT[WYLLA-CAGED]
+**Genre-misreads (②/⑤/⑦):** the summons read as a Sect-Master's test; the cage-reveal as "the system assigning a love interest"; the acolyte's empty place as the inner court culling a weak disciple (paranoia, not guilt → she tempers colder); Wylla's attention as a planted monitor-disciple. She sees every beat and reads each one wrong.
+**Plants:** PLANT[JAEHAERYS-TRANSACTIONAL] · PLANT[SEPTA-ENDORSEMENT] · PLANT[METHOD-LIMIT] · PLANT[ANTI-FAITH] · PLANT[MARRIAGE-THREAT] · PLANT[OUTWARD-COMPLIANCE] · PLANT[SKULLS-INACCESSIBLE] · PLANT[WYLLA-CAGED] · PLANT[SPY-MISREAD]
 **Fires:** FIRE[SURVEILLANCE-PRESSURE] · FIRE[ACOLYTE-WALL] (the cost's wake — the reader's ledger)
 
 ### I.4 · valyrian-beauty *(~5–6)*
@@ -196,7 +197,7 @@ payments + the maid's movements; the pursuer **Wylla kills** is his man — the 
 it warmed). Wylla leaves her house and name behind to board; the realm's post-mortem reaches for any
 explanation — a foreign prince, a god, the prophecy — anything but a princess with **agency**. The ship sails
 south. **Register:** SPIKE (loudest since Book I). **Rung:** R4 (the apex).
-**Fires:** FIRE[SHIP] · FIRE[MAID-TEMPERED] · FIRE[EXCURSION-RISK] · FIRE[CITY-KNOWLEDGE] · FIRE[GHOST-LEGEND] · FIRE[CLOCK-CONCRETE] · FIRE[WARM-DESTINATIONS] · FIRE[BESTIARY-NAMED-ENTRY] · FIRE[OTTO-LEAK] · FIRE[WYLLA-CAGED] (she gives up her noble future — the two-girl cage opens) · FIRE[PROPHESIED-LEGEND] (the realm prefers the legend to her agency, sealed; she never learns)
+**Fires:** FIRE[SHIP] · FIRE[MAID-TEMPERED] · FIRE[EXCURSION-RISK] · FIRE[CITY-KNOWLEDGE] · FIRE[GHOST-LEGEND] · FIRE[CLOCK-CONCRETE] · FIRE[WARM-DESTINATIONS] · FIRE[BESTIARY-NAMED-ENTRY] · FIRE[OTTO-LEAK] · FIRE[WYLLA-CAGED] (she gives up her noble future — the two-girl cage opens) · FIRE[PROPHESIED-LEGEND] (the realm prefers the legend to her agency, sealed; she never learns) · FIRE[SPY-MISREAD] (the monitor-disciple she feared at I.3 is the one who kills for her — the misread inverted at the apex)
 
 ### Epilogue
 Two girls on a ship, the continent behind, the warm south ahead. Both desires satisfied; one of them now a
