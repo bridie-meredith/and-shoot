@@ -131,6 +131,32 @@ being walked item-by-item (principal chose deliberation over batch-ratify).*
 - **Destination:** I.5 no longer locks NORTH; open destination → reagent-map (Book II) → SOUTH (epilogue). North = betrothal-dread only. (Purification down-plant + S2 resolved.)
 - **The "one crack":** III.5 tempering is the anti-curdle break (the give); it no longer caps the ladder.
 
+### D-slots. Open-slot resolutions (2026-06-09 — proposed, vetoable)
+*The remaining creative-fill slots, resolved as recommendations the principal can override. Recorded here
+(the decisions log) and reflected in `spine.md` Open-slots + the per-character cards' seating caveats. None
+requires the Phase-4 migration; all de-risk it.*
+
+| Slot | Resolution (recommended) | Note |
+|---|---|---|
+| **Otto + Daemon age-seating** | **Deliberate AU-aging — keep both names; declare them era-appropriate adults in span-A.** | Canon Otto (b.77) / Daemon (b.81) are too young as the adult predator/operator the roles need. The premise is *already* heavily AU (Jaehaerys+Alicent as parents; a reincarnated Gael), so AU-aging two figures is consistent. **Most worth a veto:** if canon-cleanliness on names outranks the named figures, the fallback is to rename them to original Jaehaerys-era figures (the predatory asset-filer → an original Hightower kinsman; the drained relative → an era-appropriate adult dragon-rider prince) — the *archetypes* are load-bearing, not the names. **Barth needs no such fix** (cleanly seated, Hand 82–98 AC). |
+| **Helaena's role** | **Park her for this series.** | A HotD-era figure; the warm thread is Wylla, and a second warm-sister would dilute it. Hold Helaena for the parked Dance book (consistent with the "park, don't drop" cast ruling). Any cameo stays tiny and non-competing. |
+| **Alicent's arc-question** | **Knows-and-does-not-act.** | The love that sees and cannot move — the most tragic, least contrived option; keeps the interlude's dread live without giving Alicent plot-agency that competes with Jaehaerys (the cage-authority) or the maid-spine. Her terminal beat stays the bestiary-entry break. |
+
+**Net:** the only slot still genuinely open after this is the *fallback choice* on Otto/Daemon (AU-age vs
+rename) — a single principal call. Everything else in the character layer is settled.
+
+#### D-comedy.5 — gag ⑦ added: **death flags** (principal directive 2026-06-09)
+Gael is genre-poisoned about **death flags** — the fictional omens that precede a character's death ("when
+this is over I'll wed my sweetheart," a sudden kindness, a shown keepsake, talk of going home). She tracks
+them and manages people by flag-risk. **The engine: grimdark Westeros reinforces the paranoia** — flag-raisers
+in this realm genuinely *do* die (it's a meat-grinder), so a delusion that would be pure comedy anywhere else
+is relentlessly *validated,* and she's proved right for entirely the wrong reasons (ties to the because-Westeros
+fail-upward engine: the realm's lethality validates her trope-brain). Sibling to gag ②. **Build → payoff:**
+seed early (minor figures raise flags and die, reinforcing her) → escalates to dread that the people she
+*likes* are flagged → pays off on **Wylla** (she watches Wylla for flags; the III.5 tempering doubles as
+"clearing the flag") and darkens the III.6 apex. **Phase-4 / run-03 action:** add ⑦ to the per-chapter gag
+notes; propagate to `gael-targaryen` card (done) + profile; mark which chapters fire a death-flag observation.
+
 ### D-comedy. Comedy architecture — five running gags (principal directive 2026-06-09: "have a setup build over time")
 *The tone frame's two engines, implemented as recurring gags — each SEEDED early, ESCALATING across books, PAYING OFF on a heavy beat. The point: by III.6 every laugh has a paper trail, so the same devices that earned three books of comedy deliver the apex horror without the tone breaking. Phase-4: fold into the `comedy-register` card + per-chapter run-03 notes as PLANT/FIRE threads.*
 
@@ -176,18 +202,19 @@ The bestiary is **the one document in the series that tells the truth about Gael
 
 ---
 
-## E. Migration checklist (Phase 4–5) — NOT STARTED
+## E. Migration checklist (Phase 4–5) — IN PROGRESS (2026-06-09 · /and-reoutline → run-03)
 > **Adopted-spine source:** `intake/spine.md` — the consolidated 3-book narrative + tone/comedy
 > architecture + per-chapter reverse-angle (Westeros-native) format. This is the artifact Phase-4
 > tokenizes into `design/run-03/`. (Incoming raw outline: `intake/tentative-outline.md`; gate rulings
 > + comedy defs: this worksheet §C/§D.)
-- [ ] `design/run-03/` created; **`spine.md`** tokenized as the canonical 3-book outline
-- [ ] KEEP/ADAPT artifacts carried over (GUARDS register, thread-config, timeline/family, ledger)
-- [ ] RETIRE/SUPERSEDE artifacts archived to `intake/retired/<date>-<name>/` with tombstones
-- [ ] state-ledger re-founded on the 3-book structure; change-log started at the intake entry
-- [ ] family/court cards re-derived to Gael/Jaehaerys; Saerys→Gael renames
-- [ ] `time-anchor.md` §4 span fork settled; §5 drift rows rolled forward
-- [ ] `check-threads.py` on the new outline → PASS
-- [ ] convergence-ledger Round N digest appended
-- [ ] `memory.md` + `project-history.md` rolled forward (L8)
-- [ ] exit summary delivered (Phase 6)
+- [x] `design/run-03/` created; **`spine.md`** tokenized as the canonical 3-book outline (`series-outline.md`)
+- [~] KEEP/ADAPT artifacts carried over — thread-config ✅ (new run-03 config); GUARDs ✅ (carried into the outline header); **timeline/family ⏳ pending**; **state-ledger ⏳ pending**
+- [x] RETIRE/SUPERSEDE artifacts archived — run-02 Book-I outline → `intake/retired/2026-06-09-run02-book-i-outline/` (tombstone; original banner-marked); saerys-* cards/exemplar tombstoned
+- [ ] state-ledger re-founded on the 3-book structure ⏳ **pending (next pass)**
+- [x] family/court cards re-derived to Gael/Jaehaerys — 10 live span-A cards + 2 lead exemplars; Saerys→Gael done
+- [ ] `time-anchor.md` §4 span fork settled; §5 drift rows rolled forward ⏳ **pending (settle to span-A)**
+- [x] `check-threads.py` on the new outline → **PASS** (R0–R4 present; 60 plants/49 fires)
+- [x] convergence-ledger Round 9 digest appended
+- [ ] `memory.md` + `project-history.md` rolled forward (L8) ⏳ **pending (replace stale Saerys/Viserys/Dance framing)**
+- [x] exit summary delivered (Phase 6) — in chat 2026-06-09
+- **Open fork (non-blocking):** Otto/Daemon seating — AU-age (recommended) vs rename (§D-slots)

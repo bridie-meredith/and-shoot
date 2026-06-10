@@ -10,6 +10,7 @@ fences:
   - do not import the specific scene content (still-room, the maester's library, the account-book, Ser Harwin's list) into the target chapter's actual content
   - only the cadence, sentence-shape, cultivation-register parentheticals, flat-affect-on-shocking-content, and aside-to-posterity construction transfer
 dispatch-status: active
+superseded_by: gael-targaryen-exemplar
 ---
 
 # Exemplar — Saerys Targaryen

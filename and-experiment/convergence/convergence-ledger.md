@@ -399,3 +399,39 @@ PLANT[HINGE] I.4 → FIRE[HINGE→R2] I.7 token graph is unchanged → outline r
 
 **Status:** no new structural change; a fence clarified + one motif de-magicked. Baseline ★ outline
 untouched.
+
+---
+
+## Round 9 — run-03 intake migration (span-A REBOOT; /and-reoutline)
+
+*Working surface: `design/run-03/series-outline.md` + `thread-config.txt`. Source: `intake/spine.md`.
+Decisions: `intake/reconciliation-worksheet.md` §A/§B/§D/§D-slots.*
+
+**Branch:** REBOOT — the intake re-opened premises (GUARD-4 era/family re-seated to **Gael b.84 /
+Jaehaerys father / Alicent mother**; GUARD-1 → rev-4 *can-spend-but-won't*; GUARD-2/3 → visible
+immediate-horror kill at I.1; span → **HYBRID** escape-now / Dance-parked).
+
+**Dispositions (§A):** KEEP (convergence baseline, cultivation-library, counterfactual-life, run-01
+bible, check-threads.py) · ADAPT (GUARDS-register, timeline/family, time-anchor, state-ledger,
+thread-config, memory.md, project-history) · SUPERSEDE (run-02/book-i-outline → run-03/series-outline;
+saerys-* cards/exemplar → gael-targaryen / maester-lorren / septa-aldith) · RETIRE (down-planted
+threads: PURIFICATION-OBSESSION, WEIRWOOD-NEED, NORTH-as-weirwood).
+
+**New canon woven this session:** simple-minded monomaniac Gael · Wylla the convert (junior sister of
+the sect that never is) · antagonist = Westeros, three faces (Jaehaerys / Otto / Barth) · gag ⑦
+death-flags · the per-chapter running-gag map · the scholar ladder · R2/R3/apex resolved · 10 live
+cards + 2 lead exemplars.
+
+**Checker:** `check-threads.py run-03/series-outline.md` → **PASS** (60 plants / 49 fires; rungs R0–R4
+present, R4 = III.6 apex; 11 parked/diffuse PLANT-ONLY; SLATE-MATCH aliased to BETROTHAL-CLOCK).
+
+**Retired/archived:** run-02 Book-I outline → tombstone at
+`intake/retired/2026-06-09-run02-book-i-outline/TOMBSTONE.md` (original left in place w/ a superseded-by
+banner). Frozen `convergence/` baseline untouched.
+
+**Open fork (non-blocking):** Otto/Daemon seating — AU-age (recommended) vs rename. **Pending ADAPT
+(staged for adaptiveness):** time-anchor §4, state-ledger re-found, timeline family-tree re-derive,
+memory.md + project-history roll-forward (tracked in `design/run-03/README.md`).
+
+**Status:** new working layer **run-03** established; canonical outline tokenized + PASS; the heavier
+state/memory carry-overs staged as the next pass.

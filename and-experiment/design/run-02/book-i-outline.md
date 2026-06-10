@@ -1,5 +1,11 @@
 # Run-02 — BOOK I outline (re-fused) · *The Inferior Path*
 
+> **⛔ SUPERSEDED 2026-06-09** by `design/run-03/series-outline.md` (the span-A `/and-reoutline`
+> migration). Retained as provenance — this is the **span-B / Saerys / 11-chapter** Book I working
+> layer, replaced wholesale by the live span-A canon (Gael / Jaehaerys father / Alicent mother / escape
+> ~95 AC). Tombstone: `intake/retired/2026-06-09-run02-book-i-outline/TOMBSTONE.md`. Not deleted; not
+> the build target.
+
 *Clean consolidation of CL-001 → CL-004 (the staging history lives in `book-i-state-ledger.md`;
 premises/era/magic in `timeline-and-family-tree.md`). This file is the canonical Book-I structure for
 run-02 — 11 chapters. Thread-checkable: closes against the forward-bridge stubs at the end.*

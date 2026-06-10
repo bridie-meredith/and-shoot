@@ -1,7 +1,8 @@
 ---
 name: saerys-septa
 class: persona
-scope: project
+scope: tombstone
+superseded_by: septa-aldith
 project: and-experiment
 world: planetos
 persona-purpose: [on-stage-character]

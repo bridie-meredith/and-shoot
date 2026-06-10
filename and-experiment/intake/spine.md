@@ -8,8 +8,10 @@ doc is the *decisions record*). Phase-4 (`/and-reoutline` migration) tokenizes t
 
 **Gael Targaryen** — a reincarnated **nerd** who went on a cultivation-novel bender right before dying,
 now crammed into a Targaryen infant · setting-blind (knows she's isekai'd; blind to *Westeros*) ·
-Jaehaerys I's long peace, **84 → ~95 AC**, Gael age 0 → ~11 · **POV locked-inside Gael** (one external
-interlude). Span: **HYBRID** — this series ends on the escape; the Dance is parked for a later book.
+**somewhat simple-minded — a monomaniac focused solely on cultivation and tropes** (her "genius" is the
+world's misread; the empire is incidental, and Wylla runs it on the ground) · Jaehaerys I's long peace,
+**84 → ~95 AC**, Gael age 0 → ~11 · **POV locked-inside Gael** (one external interlude). Span: **HYBRID** —
+this series ends on the escape; the Dance is parked for a later book.
 
 ---
 
@@ -31,21 +33,62 @@ the maester's Citadel letters (the Greek chorus), witnessed reactions, rumor/epi
 interlude. Each chapter below carries: **Inside** (Gael) · **Reverse-angle** (😱 horror / 🤨 confounding
 / 😂 comedy, with the native + channel) · **Gags** firing.
 
-### The six running gags (legend — full defs in worksheet §D-comedy)
+### The seven running gags (legend — full defs in worksheet §D-comedy)
 - **① Title collector** — treats Westerosi slurs ("Dragonbane," "Poison-Eater") as earned cultivation epithets; collects + ranks them; her reputation (all misunderstandings) eventually does her intimidation for her.
 - **② Genre critic / trope-dodger** — keeps a do-not-do trope list; rates her grimdark life like a jaded reader ("derivative, two stars"); dodges real dangers on genre principle.
 - **③ The bestiary** — journal: reagents/beasts get reverent entries, humans logged by function ("Hands," "Obstacle," "Vendor"). **The one document that tells the truth about her.** Escalates to a plot spine (see Book II).
 - **④ Corporate euphemism** — thinks in margins/KPIs/stakeholders; grimdark deeds arrive in HR-speak ("offboarding a contractor"); blander jargon = darker deed.
 - **⑤ Misread indifference** — her not-caring reads as virtue (piety) or menace (inhuman calm); both wrong; her blankness writes its own legend.
 - **⑥ Self-audit ("am I the villain?")** — runs moral self-audits vs cultivation-novel ethics, clears herself on technicalities while being the realm's apex predator; pities the "real" villains.
+- **⑦ Death flags** — genre-poisoned, Gael dreads *death flags* (the fictional omens that precede a death — "when this is over I'll wed my sweetheart," a sudden kindness, a shown keepsake, talk of going home). She tracks them and quietly manages people by flag-risk. The dark joke: **grimdark Westeros keeps proving her right** — flag-raisers here genuinely die (the realm is a meat-grinder), so a paranoia that would be pure delusion anywhere else is relentlessly *validated,* right for entirely the wrong reasons. Sibling to ②. Builds her terror that the people she likes are flagged → pays off on **Wylla** (she watches her for flags; it helps drive the III.5 tempering — "clearing" the flag) and darkens the apex.
 
-### Recurring straight-men (the foils that power "everyone scratching their heads")
-- **Maester** — horrified-fascinated; tries to *study* her, gets maneuvered into *helping*; writes unhinged Citadel letters nobody believes.
-- **Septa** — scandalized; flips demonic/saintly by the day; takes credit for Gael's "piety"; compliance-mask turned against her.
-- **Alicent** — the *tragic* straight-man: loves her, closest to the truth, most unsettled; every tender normal-mother read is hopelessly wrong.
-- **The maid** — the only relationship that EVOLVES, not loops: awe stays, competence grows; the one true (partial) read who stays anyway.
-- **Jaehaerys** — powerful man failing to control one small girl; files the failure under "useless."
-- **⭐ The Cassandra witness** — the guard/still-room boy who keeps *accurately* seeing the truth (the jewelry-biting, the wall-climbing) and is **never believed.** "The boy who cried demon" — twice, correctly. His arc: be right, be ignored, stop reporting, transfer as far from her as he can get. The human form of "truth surfaces, the explanation never does."
+### Recurring foil gags (audience-funny; every chapter)
+Beyond Gael's six, the foils carry their own recurring **audience-funny** beats (the reader laughs; the character suffers), each **escalating** rather than repeating:
+- **Alicent's "what the hell"** — every chapter and every interlude (in person, or via the reverse-angle channel when she's offstage): she frets at the wrong target — catastrophizing the harmless or serenely missing the catastrophe — climbing to the terminal WTH when she reads her own bestiary entry.
+- **The antagonist faces breaking** — Jaehaerys's control-plays dissolve into her freedom; Otto's schemes slide off a target he can't name; Barth's grand theories collapse one fact short. The environment comically, constantly failing to close its hand on a simple, obsessive child.
+
+### The cast that powers "everyone scratching their heads"
+**The antagonist is Westeros itself — three faces** (full profiles: `intake/character-profiles.md`). The world claims Gael through *institutions, predators, and minds,* and its horrors double as her cheat codes, so it is forever, comically failing to close its hand on her:
+- **Jaehaerys — the institutional face.** Powerful man failing to control one small girl; files the failure under "useless"; his disposal-betrothal is the clock — and the plan that frees her.
+- **Otto — the predatory face.** The asset-filer; reads the bestiary as a *weapon* and makes the maid the lever (the leak); the scheme that won't close.
+- **Septon Barth — the intellectual face.** Hand of the King (82–98 AC) and author of *Unnatural History* — the realm's one genius equipped to theorize what Gael is, who gets *closest to the truth and still misses;* the theory that collapses. Realm-tier to the maester's household-tier (he alone takes the maester's mad letters seriously, and even he fails).
+
+The straight-men the antics escape:
+- **Maester (Lorren)** — horrified-fascinated; tries to *study* her, gets maneuvered into *helping*; writes unhinged Citadel letters (which travel up to Barth).
+- **Septa (Aldith)** — scandalized; flips demonic/saintly by the day; takes credit for Gael's "piety"; hoist by her own endorsement.
+- **Alicent — the fretting straight-man** (and interlude narrator): loves her, closest to the truth, most unsettled; **babied Gael hard** (armed her with the egg; smothers her — the surveillance obstacle; blinds herself), and every tender normal-mother read is hopelessly wrong. Her "what the hell" is the per-chapter gag above.
+- **Wylla (the maid) — the convert.** The one relationship that EVOLVES: starts as the *what-the-hell* sane outsider, then is **converted by the madness** into a true-believing **junior sister cultivator** of the great sect they will found — a sect that never happens in the inevitable future (two girls, a boat, a dao that doesn't work). The tempering "proves" it to her. She stays.
+- **⭐ The Cassandra witness (Hobb)** — the still-room boy → watchman who keeps *accurately* seeing the truth (the jewelry-biting, the wall-climbing) and is **never believed.** "The boy who cried demon" — twice, correctly. Be right, be ignored, stop reporting, transfer away. The human form of "truth surfaces, the explanation never does."
+
+---
+
+### Per-chapter running-gag map
+*Every chapter (and the interlude) lands an Alicent **"what the hell"** beat; the antagonist **faces break**
+where present. Both **escalate** — Alicent climbs fret → near-break → grief; the faces' failures climb
+toward the apex misfire. Audience-funny: the reader laughs, the character suffers.*
+
+| Chapter | Alicent's "what the hell" (audience-funny) | Antagonist face breaking |
+|---|---|---|
+| **I.1 dragonbane** | terror at the dead hatchling + blood → flips to proud "she's *strong*" | **Jaehaerys:** his "no egg for a girl" is overruled (Alicent's gift) — first thing he can't control · *Barth (offstage):* the maester's first baffled letter reaches him |
+| **I.2 the-heist** | "she ate poison and *thrived* — a refined palate!" → rewards her with a tutor | **Barth:** forms his first theory (immune? blessed?); it won't hold |
+| **I.3 the-cage** | frets at her solemn quiet ("is she *well?*") while the King calls her corrected | **Jaehaerys:** the Talk "works," changes nothing; doubled lessons become her cover — the plan that frees her (first instance) |
+| **I.4 valyrian-beauty** | *proud* of the uncanny beauty (finally a normal thing!) → WTH as Daemon circles and the misread curdles | **Barth:** the Valyrian-steel contradiction ("can't be eaten — so where is it?") collapses his framework |
+| **I.5 the-bond-breaker** | half-sees something monstrous around the dead dragon → **flinches:** "my frightened girl defended herself" | **Barth:** the no-wound dragon-death is the realm's puzzle; he gets closest, is diverted · *Jaehaerys:* "Dragonbane + dead dragon" hardens the "useless **and** dangerous" file |
+| **Interlude (Alicent POV)** | the sustained WTH — *what is my daughter?* — from outside; the chill | **Jaehaerys:** the disposal-betrothal revealed (the clock starts); the rift |
+| **II.1 the recluse** | relief-WTH: "thank the Seven, she's taken up *reading*" (the cover, donated) | *Barth:* charmed by the scholar-princess (a soft near-miss) |
+| **II.2 the startup** | proud "she has a head for *sums!*" (a mark at one remove) | *Otto (proto):* unusual money he can't yet trace |
+| **II.3 the world map** | "such a curious mind — *geography!*" (it's the reagent atlas / a ship's course) | **Barth:** delighted she studies the wide world; never sees the voyage |
+| **II.4 the betrothal** | **the righteous WTH** — furious he's selling their daughter cheap to a minor lord; aimed right, powerless | **Jaehaerys:** the betrothal he's *proud* of is the clock — cold deadpan symmetry (he solves a problem; she's relieved) |
+| **II.5 the compromise** | reads the bestiary → finds **her own entry** — the WTH escalation peak (near-break) | **all three converge:** *Otto* reads it as a weapon (the leak) · *Barth* as a cosmology (near-miss, collapses) · *Jaehaerys* armed → accelerates |
+| **II.6 the source** | "she sailed through the fever that felled half the Keep — such *strong blood!*" | **Barth:** "she never weakens though her supply's cut" — another collapsing theory · *(the maester's empty-purpose cope)* |
+| **II.7 the threat** | the exploiter's quiet ruin → "how *unlucky* for that man" (serenely misses it) | **Otto:** his lever (the maid) provokes Gael's R2 — his scheme yields a corpse he never predicted |
+| **II.8 nothing here is mine** | "she's become so *content* about the wedding!" (the eeriest misread) | — *(Gael's internal pivot)* |
+| **III.1 the commission** | *(letter)* content, planning so diligently — mistakes the ship-money for trousseau care | — *(the shipwright's agent, not a face)* |
+| **III.2 the excursions** | "the ghost of the Red Keep — how *dreadful;* thank the Seven my Gael's safe abed meditating" | — *(Hobb's Cassandra reprise)* |
+| **III.3 the greedy factor** | *(report)* Quint "let go" → another "how unlucky" gloss | **Otto:** surveillance tightens toward the apex misfire |
+| **III.4 the deadline** | "my poor *delicate* girl, too ill to travel north" — she campaigns for the delay, buying the escape unknowing (the babying weaponized one last time) | **Jaehaerys:** he accelerates; her stalling vs his push |
+| **III.5 the tempering** | *(letter)* a maternal gift "for the journey north," grotesquely mistimed — funny and aching | — *(the private anti-curdle scene)* |
+| **III.6 the narrow escape** | the **terminal WTH** — her daughter simply *gone;* the last "what the hell" is grief | **Otto (the catastrophic break):** his one correct deduction forces the interception; his man is the one Wylla kills; wins every move, loses the game · *Barth:* the mind that could've caught them, kept too busy · *Jaehaerys:* the realm's incoherent post-mortem (it *prefers the war*) |
 
 ---
 
@@ -133,6 +176,7 @@ interlude. Each chapter below carries: **Inside** (Gael) · **Reverse-angle** (�
 **Reverse-angle / the bestiary read by an authority:** the journal is **the one document that tells the truth about Gael.** Read accurately, it still can't yield "reincarnated cultivator," so it's misfiled into the nearest grimdark frame:
 - 😱 *Alicent (if she reads it):* breaks — finds **her own entry** ("Mother — sentimental, useful for egg-procurement, low threat").
 - 🧊 *Otto (RECOMMENDED reader):* doesn't recoil — sees a weapon, and the maid as the lever. **This is the leak.**
+- 🤨 *Septon Barth (the near-miss):* reads it as a *cosmology,* not a weapon — the one mind that brushes the truth (a child consuming dragon-essence; a source, not a pool) and **cannot connect it to the girl,** because the connecting step is a story he's never read. The closest the realm ever comes; his theory collapses one fact short.
 - ⚔ *Jaehaerys (if he reads it):* sees a kinslayer-in-waiting → accelerates the betrothal as *disposal.*
 - 😂 *Gael's lens:* not embarrassed by the content — annoyed at the **opsec failure** ("left my notes out — sloppy"), mildly offended they filed her as a *poisoner* (she's obviously a *cultivator*). Thereafter keeps a **decoy diary** of performed-normal-girl entries for them to find. (Relieves the straight-men; own running bit.)
 **Gags:** ③ (escalated to plot spine) · ④ + ⑤ (she's briefly *proud* her best asset got headhunted before remembering it's a crisis).
@@ -214,9 +258,39 @@ R0 (I.1 kill) → R1 (I.5 Daemon drain) → R2 (II.7) → R3 (III.3) → **apex 
 for the Dance.)*
 
 ## Open slots (creative-fill — see worksheet)
-maid's name · the Northern betrothal lord · R2 method (II.7) · R3 method (III.3) · Helaena's role ·
-Alicent's arc (does she ever act on the interlude's knowledge?) · the apex specifics (who the maid kills;
-how discovery happens).
+~~maid's name~~ → **Wylla** · ~~the Northern betrothal lord~~ → **Lord Errold Slate of Blackpool** ·
+~~R2 method (II.7)~~ · ~~R3 method (III.3)~~ · ~~the apex specifics (who the maid kills; how discovery
+happens)~~ → **all resolved 2026-06-09 (below)** · ~~Helaena's role~~ → **parked to the Dance book** ·
+~~Alicent's arc~~ → **knows-and-does-not-act** *(both per worksheet §D-slots)*. **Only remaining call:**
+Otto/Daemon seating — **AU-age (recommended)** vs rename to original era-appropriate figures.
+
+**Names assigned 2026-06-09** (primary cast — full rationale in `intake/character-reactions.md` §Appendix):
+the maid → **Wylla** · the Septa → **Septa Aldith** (Gael's POV still says "the Septa") · the Cassandra
+witness (still-room boy → watchman, one recurring figure) → **Hobb** · the greedy factor → **Lothar
+Quint** · the Northern betrothal lord → **Lord Errold Slate of Blackpool**.
+
+### Resolved creative-fill (2026-06-09)
+- **R2 method (II.7) — the first death she *means*.** Gael's first *premeditated* human removal, executed
+  entirely through the apparatus — the still-room (mithridatism/pharmacology turned outward) + the
+  maester's supply chain + a bill of exchange routed through the network — producing a death that reads as
+  natural (a "lingering flux" that doesn't lift). Colder than the Daemon drain because it is *chosen and
+  planned,* not a survival reflex. Target: the **exploiter** who leaned on Wylla (a Hightower client /
+  court factioneer), NOT the oblivious family member (who is unaddressable — that's the point). She tells
+  herself it protects the apparatus; the reader sees it's for Wylla. Filed ④ "a vendor dispute, resolved";
+  ⑥ clears her ("removing an impurity to the sect's qi-field is hygiene, not murder").
+- **R3 method (III.3) — the casual repeat.** Lothar Quint, handled colder than R2 precisely by being
+  *casual:* she takes his quicklime tip first, thanks him, then — ④ blander-as-darker — *the account is
+  closed.* Premeditated, deniable, barely breaking stride. The escalation is in *register,* not gore:
+  reactive animal-death (R1) → premeditated human death (R2) → casual human death (R3) → outsourced to
+  Wylla (apex).
+- **The apex (III.6) — discovery + who the maid kills.** Discovery pays off the **bestiary leak**: **Otto**
+  — who spotted the one anomaly (Wylla's *name*) and has watched her as the lever — connects the vanished
+  factor (Quint), the ship payments, and the maid's movements, and moves to intercept. He never reaches
+  "cultivator"; his accurate-but-wrong read is enough to *act.* The pursuer **Wylla kills** (tempered,
+  able) is **Otto's man** — so the apex cost traces straight back to the one warm thing Gael allowed
+  herself: the name in the bestiary is what Otto saw. **The one warm correction dooms the person it
+  warmed.** Counterpoint: **Hobb,** on the watch, sees them go and *says nothing* — the man who could have
+  caught them deliberately doesn't, while the man who reads her wrong nearly does.
 
 ---
 
