@@ -214,6 +214,14 @@ The bestiary is **the one document in the series that tells the truth about Gael
 - [x] family/court cards re-derived to Gael/Jaehaerys — 10 live span-A cards + 2 lead exemplars; Saerys→Gael done
 - [ ] `time-anchor.md` §4 span fork settled; §5 drift rows rolled forward ⏳ **pending (settle to span-A)**
 - [x] `check-threads.py` on the new outline → **PASS** (R0–R4 present; 60 plants/49 fires)
+- [x] **character-refinement fold into the tokenized spine (2026-06-10)** — fulfils the §C/§D Phase-4 actions
+  (lines ~127/157/161: fold the comedy/foil-gag architecture into per-chapter run-03 notes as PLANT/FIRE
+  threads). Named the household straight-men (Maester Lorren, Septa Aldith, Hobb, Daemon) in the beats;
+  added a per-beat `Foils:` line carrying the four escalating foil gags (Alicent-WTH · Otto-scheme ·
+  Jaehaerys-plan · Barth-theory) + the Cassandra/Daemon/banker/agent reactions; wired the **scholar-ladder
+  relay** (Lorren → Barth, R0 I.1 → R6 III.6) and the recurring **Alicent-WTH** thread. New tokens:
+  `ALICENT-WTH` (PLANT I.1 → FIRE III.6) + `SCHOLAR-LADDER` (PLANT-ONLY, ends one rung short forever).
+  `check-threads.py` re-run → **PASS** (62 plants/50 fires; plant-only=12).
 - [x] convergence-ledger Round 9 digest appended
 - [ ] `memory.md` + `project-history.md` rolled forward (L8) ⏳ **pending (replace stale Saerys/Viserys/Dance framing)**
 - [x] exit summary delivered (Phase 6) — in chat 2026-06-09

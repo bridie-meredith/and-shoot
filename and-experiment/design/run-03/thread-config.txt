@@ -11,6 +11,9 @@ PLANT-ONLY SYMPATHETIC-KILL-AT-DISTANCE  # scales terrifyingly; parked for the D
 PLANT-ONLY DRAGON-DEATH-UNEXPLAINED      # the realm never lands the true explanation (payoff diffuse)
 PLANT-ONLY LONGEVITY-OPEN                # epilogue door to the parked Dance installment
 
+# (the intellectual-antagonist relay — sharpens toward the truth and never arrives)
+PLANT-ONLY SCHOLAR-LADDER               # Lorren documents -> Barth theorizes; ends one rung short, forever (never fires by design)
+
 # (diffuse/ambient — sustained texture, no discrete FIRE token)
 PLANT-ONLY ISEKAI-AWARENESS             # her genre-brain; ambient throughout
 PLANT-ONLY ANTI-FAITH                   # gut revulsion at the Faith; ambient

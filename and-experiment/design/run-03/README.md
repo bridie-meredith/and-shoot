@@ -23,7 +23,12 @@ retained as provenance.
 
 ## Migration status (Phase-4)
 **Done:** run-03 created · spine tokenized as canonical outline · checker PASS · run-02 Book-I outline
-archived (tombstone) · convergence-ledger Round 9 appended · live cast carded (Gael/Jaehaerys/span-A).
+archived (tombstone) · convergence-ledger Round 9 appended · live cast carded (Gael/Jaehaerys/span-A) ·
+**character-refinement fold (2026-06-10)** — named the household straight-men (Lorren/Aldith/Hobb/Daemon)
+in the beats, added a per-beat `Foils:` line carrying the four escalating foil gags, and wired the
+**scholar-ladder relay** (Lorren → Barth, R0–R6) + the **Alicent-WTH** thread (new tokens `SCHOLAR-LADDER`
+[plant-only] + `ALICENT-WTH`; checker re-run → PASS). Fulfils worksheet §C/§D Phase-4 actions (per-chapter
+foil/comedy notes as PLANT/FIRE threads).
 
 **Pending (tracked — heavier ADAPT carry-overs; staged for adaptiveness):**
 - `time-anchor.md` §4 span fork → settle to span-A; roll §5 drift rows forward.
