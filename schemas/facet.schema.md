@@ -177,7 +177,7 @@ Vibes are permanent stickers — a vibe added in s01e01 persists to s01e02+ unle
 Audience-modeled context — the reader-gap content. For each thing a fresh reader cannot reasonably be expected to know on a cold read (Westeros-specific roles like `reeve` / `maester` / `Watch`; series-specific objects like `the log` / `the count`; pre-story circumstances like the resurrection and family acceptance), an exposition entry attaches a brief gloss to a specific anchor with a directive on how the stitcher should render it.
 
 ```
-<id> @<anchor> <key>: <gloss-text> | scope: <scope-kind> | renders-as: <position> | sources: <list> | licensed-by: <list>
+<id> @<anchor> <key>: <gloss-text> | scope: <scope-kind> | renders-as: <position> | surface: <surface-kind> | sources: <list> | licensed-by: <list>
 ```
 
 - **`@<anchor>`** — proto-line anchor where the gloss best lands. For episode-open scope, use `@0` (synthetic anchor; renders pre-body). For first-mention scope, use the proto-line ID where the term/object first appears in the rendered prose.
@@ -191,7 +191,7 @@ Audience-modeled context — the reader-gap content. For each thing a fresh read
   - `first-mention-place` — location whose context the audience needs.
   - `prior-episode-bridge` — recap content for subsequent-episode interval-bridge.
   - `scene-open-orient` — micro-bridge at scene boundary (time / place / why-here). **Conditional fire** (see fire-rule below).
-- **`renders-as: <position>`** — one of:
+- **`renders-as: <position>`** — one of (applies only to `surface: render` or `surface: both` entries):
   - `italic-preamble` — italic paragraph before the body (episode-open scopes only).
   - `preamble-paragraph` — additional preamble paragraph (episode-open-context only).
   - `inline-appositive` — em-dash appositive after the first-mention noun: `"the reeve — the lord's bookkeeper for village debts"`.
@@ -199,8 +199,15 @@ Audience-modeled context — the reader-gap content. For each thing a fresh read
   - `post-bone-clause` — full clause after the bone, period-separated.
   - `em-dash-fold` — em-dash phrase mid-sentence: `"the morning bowl — porridge and salt — on the table"`.
   - `scene-bridge` — micro-orientation sentence at scene-open (≤15 words).
+  - `reference-only` — no inline render (use with `surface: reference` entries; renders-as field may be omitted for reference entries).
+- **`surface: <surface-kind>` (REQUIRED — PROP-0004 / DEC-0014)** — controls whether the entry produces inline prose:
+  - `render` — entry folds into prose at its declared anchor per the `renders-as` directive.
+  - `reference` — entry is NOT rendered inline; stitcher and facet authors consult it for world-grounding context (stake-framing, term disambiguation) but it produces no inline prose. **Default intent when field absent** (treated as `reference` for consumption; absence is an authoring omission and triggers SURFACE-FIELD-MISSING HARD at audit).
+  - `both` — entry appears as inline prose AND is available as reference context; counts against the per-chapter render cap.
+  
+  **Per-chapter render cap:** total count of `surface: render` + `surface: both` entries MUST NOT exceed 3 per chapter. Entries beyond the cap MUST use `surface: reference`. Auditor check: RENDER-CAP-BREACH HARD. Entries stamped `surface: render` by a context-ledger license (carrying a `licensed-context-exception` token) count toward the cap but are exempt from the render-as fence constraints (they are ledger-licensed spine additions, not pacing-cost exposition).
 - **`sources: <list>`** — comma-separated graph sources the gloss content is derived from (series-plan paths, world-build cards, condition cards, character cards, prior facets). Every claim in `<gloss-text>` must trace to at least one source. Audit-able.
-- **`licensed-by: <list>`** — comma-separated audience-model justifications. At minimum one persona-card slug + the gap-claim ("cape-fic-doesnt-know-westerosi-feudal-roles", "worm-canon-doesnt-know-flea-bottom-geography"). The exposition-author's reasoning surface.
+- **`licensed-by: <list>`** — comma-separated audience-model justifications. At minimum one persona-card slug + the gap-claim ("cape-fic-doesnt-know-westerosi-feudal-roles", "worm-canon-doesnt-know-flea-bottom-geography"). The exposition-author's reasoning surface. Required for `surface: render` and `surface: both` entries; optional (but recommended) for `surface: reference` entries.
 
 **Author:** `exposition-author` — a dedicated audience-modeled subagent that loads the active audience persona cards (`active-project/audience/`) and the series/world-build sources, then asks per-anchor: "would the union of these audience personas know what X is on cold read?" If no, an exposition entry is authored.
 

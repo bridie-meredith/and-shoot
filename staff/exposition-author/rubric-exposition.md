@@ -40,6 +40,11 @@ Either handled by other facets or obvious from context:
 
 ## Form discipline
 
+- **Surface-field required (PROP-0004 / DEC-0014 — HARD).** Every exposition entry MUST declare `surface:`. Missing field → HARD at Phase 4 auditor scan (SURFACE-FIELD-MISSING). Default intent is `reference`; absence is an authoring omission, not an implicit reference.
+- **Per-chapter render cap (PROP-0004 / DEC-0014 — HARD).** Total count of `surface: render` + `surface: both` entries across the chapter MUST NOT exceed 3. Entries beyond the cap MUST declare `surface: reference`. Cap breach → HARD at Phase 4 auditor scan (RENDER-CAP-BREACH). Context-ledger-licensed entries (carrying `licensed-context-exception` token) count toward the cap but are exempt from render-as fence constraints (e.g. PROP-0001 dialogue-adjacency fence).
+- **Reference-only is the default.** When in doubt, use `surface: reference`. The stitcher consumes reference entries as world-grounding context without folding them inline. Prose non-appearance is not information loss — lens facets carry the narrative; exposition is the audience-gap safety net, not the prose layer.
+- **Render-as guidance is scoped to render/both entries only.** All render-as guidance in this rubric (cheapest-render-as heuristic, PROP-0001 dialogue-adjacency fence, render-as rank table) applies ONLY to entries with `surface: render` or `surface: both`. `surface: reference` entries do not use the `renders-as:` directive and are exempt from all render-as rules.
+
 - **Word caps:**
   - `first-mention-*` glosses: ≤30 words.
   - `episode-open-preamble`: ≤80 words.
@@ -165,6 +170,8 @@ R2 also resolves any `provisional-anchor` notes from R1 (e.g. R1 says "@first-me
 
 ## Audit classes (Phase 5 hooks)
 
+- **SURFACE-FIELD-MISSING (PROP-0004 / DEC-0014 — HARD).** Any exposition entry without a `surface:` field → HARD. No exception.
+- **RENDER-CAP-BREACH (PROP-0004 / DEC-0014 — HARD).** Total `surface: render` + `surface: both` entries in the chapter exceeds 3 → HARD. Context-ledger-licensed entries (`licensed-context-exception` token present) count toward the cap but may not be removed to cure the breach — if cap is breached including ledger entries, the phase-3 spine-hole remediation over-licensed and should be reviewed.
 - **CONSTRAINT — source-traceability.** Every claim in `<gloss-text>` must trace to a source in `<sources>`. The auditor's CONSTRAINT scan extracts each substantive claim and checks at least one source resolves to actual graph content matching the claim. Unresolvable claim → HARD.
 - **CONSTRAINT — license-completeness.** Every entry's `<licensed-by>` field must name ≥1 persona-card slug + a specific gap-claim. Missing/malformed → SIGNAL.
 - **FREQUENCY-BAND — per-episode caps.** Episode-open ≤4 entries; first-mention ≤12; scene-open-orient ≤scene count; sparsity 1-5%. Out-of-band → SIGNAL.
