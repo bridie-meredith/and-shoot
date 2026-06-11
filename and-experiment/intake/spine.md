@@ -282,11 +282,14 @@ The engine is the **asymmetry, sealed — and Alicent is the seal.** The observe
 **Gags:** ② (rates her own arc two stars — "all that risk for nothing, *sloppy*") · ⑥ at its darkest (mortified at the **inefficiency** — not that she made the girl she loves a criminal, and a target, for nothing — and still, somehow, not the villain in her own eyes).
 
 ### II.7 · the threat *(~9)*
-**Inside:** a family member casually endangers the maid out of obliviousness (servants are furniture) while the exploiter squeezes from the other side. Gael acts — paper, the maester, poison — and what she chooses is **colder than the Daemon drain.** › **R2.**
+**Inside:** the II.5 decision becomes the deed. A family member endangers Wylla out of pure obliviousness (servants are furniture) — *unaddressable;* you cannot poison a prince for failing to notice — so Gael turns, cold and precise, on the **addressable** half: the **exploiter** who leaned on the maid (a Hightower client, Otto's man, a court factioneer). No drain, no spend — **paper, the maester's supply chain, the still-room:** a bill of exchange, a dose folded into the apparatus, a death that reads as natural (a "lingering flux" that doesn't lift). **Colder than the Daemon drain** — that was a reflex; this is *chosen and planned,* the first death she **means.** › **R2.**
+**The clean-hands doctrine fires (the license the whole ladder runs on).** She draws the line exactly where she drew it at I.5 — at the *technique,* not the harm. This is poison and paper, **not the demonic path,** so to her it is *clean:* a channel closed, an asset protected, the books balanced. She tells herself it's for the apparatus; the reader sees it's for **Wylla** — and (the II.6 undertow) that Wylla stands in danger only because of an empire Gael never needed. Her first cold murder, committed to protect someone she endangered for nothing — and her hands feel clean.
 **Reverse-angle:**
 - 😱 *The court:* whoever crossed her meets a quiet, deniable ruin; no one can quite name what happened.
-- 😂 *Gael's lens:* filed as "a vendor dispute, resolved."
-**Gags:** ④ (the cold deed in HR-speak) · ③ (the maid's named entry is *why* she's in danger).
+- 😱 *The exploiter (gag ⑦):* he raises a flag before the end — a family, his reasons, a future he's owed — and it doesn't save him; his quiet removal ruins the dependents behind him too (`COLLATERAL-DAMAGE`), and not one of them makes Gael's ledger.
+- 🧊 *Otto:* his lever (the maid) provokes the R2 — a **corpse he never predicted** (his second Book-II move to misfire, after the backfired supply-cut); he loses a man and learns nothing.
+- 😂 *Gael's lens:* filed ④ as "a vendor dispute, resolved." (How *unlucky* for that man.)
+**Gags:** ④ (the cold deed in HR-speak — "offboarding a contractor") · ③ (the maid's *named entry* is why she's in danger — the bestiary's one warmth is the wound) · ⑥ (clean hands by her own accounting — the line at the technique, never the harm) · ⑦ (the exploiter's death-flag cashes).
 
 ### II.8 · nothing here is mine *(~9)*
 **Inside:** the terminal realization — everything inside these walls is held at someone else's pleasure; to *own* a thing you must be beyond reach: a **ship.** Infinite resources AND absolute solitude, aligned. › **Lock II perfected; the ship ordered through the maid (the long con begins).**
@@ -621,3 +624,16 @@ catastrophe); (3) **added the maester (Lorren) beat to the spine body** — `MAE
 the whole ledger → "the empire had no purpose"); it was named in the outline but absent from the spine body
 (outline↔spine consistency fix). No new tokens; check-threads unchanged. Review walk now at II.7 "the threat"
 (the first premeditated kill, which II.5/II.6 armed).*
+
+*__Book-II revision — FOLDED, cont. (2026-06-11): II.7 "the threat" (R2).__ Brought the thin spine body up to
+the resolved R2-method note and cashed the II.5/II.6 setups. Deltas: (1) **decision→deed** — the II.5
+cold-switch becomes the kill (cold, precise, "closing the compromised channel"); (2) **clean-hands doctrine
+fires** (the moral engine, planted I.5, was absent from the body) — poison+paper, *not the demonic path,* so
+to her it's *clean;* the line at the technique, never the harm — the license the ladder runs on; (3) **the
+II.6 undertow** — the kill protects Wylla from a danger born of a need that was never real (first cold murder,
+for someone endangered for nothing); (4) **method detail** pulled into the body (still-room + maester's supply
++ bill of exchange → "lingering flux"; target = the addressable exploiter, not the unaddressable family
+member); (5) **Otto's second misfire** (his lever yields a corpse he never predicted, after the backfired II.6
+supply-cut); (6) landed `COLLATERAL-DAMAGE` + gag ⑦ (the exploiter's death-flag cashes; his dependents
+ruined, unlogged). No new tokens; check-threads unchanged. Review walk now at II.8 "nothing here is mine" —
+the last of Book II.*

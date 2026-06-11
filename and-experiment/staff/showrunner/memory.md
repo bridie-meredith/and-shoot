@@ -23,9 +23,9 @@
 # (reagent-map + travel-knowledge; the underground vice-empire she founds in era-young KL; Wylla = keeper
 # of the secret things / sole crack). Betrothal retargeted Errold Slate -> the STARKS. Full spine-smoothing
 # pass complete (all three books hinted-prior + have-consequence; check-threads PASS). II.4 verified
-# consistent; II.5-II.6 folded (the carefree-limit arming II.7; the source-reveal voids the acquisition need
-# and retroactively the Wylla-cost). NEXT: resume at II.7 "the threat" (the first premeditated kill), then
-# II.8. See the dated
+# consistent; II.5-II.7 folded (the carefree-limit -> the R2 kill; clean-hands doctrine; the source-reveal
+# voids the need and the Wylla-cost). NEXT: resume at II.8 "nothing here is mine" -- the last of Book II.
+# See the dated
 # amendment foot of intake/spine.md for the full delta record + thread-arc confirmation.
 
 project:

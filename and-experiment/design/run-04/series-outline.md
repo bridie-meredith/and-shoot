@@ -201,9 +201,15 @@ reframes instantly, mortified only at the inefficiency, and keeps going. **Regis
 **Fires:** FIRE[SOURCE-NOT-POOL] · FIRE[ACQUISITION-DRIVE] · FIRE[REINCARNATION-SICKNESS] · FIRE[MAESTER-MARK]
 
 ### II.7 · the threat *(~9)*
-**Beat:** a family member casually endangers Wylla; the exploiter squeezes. Gael acts — the first
-*premeditated* human removal, via paper + the still-room, deniable ("a vendor dispute, resolved"). Otto's
-lever yields a corpse he didn't predict. **Register:** CHILL→SPIKE. **Rung:** R2.
+**Beat:** the II.5 cold decision becomes the deed. A family member endangers Wylla out of obliviousness
+(unaddressable — you can't poison a prince for failing to notice), so Gael turns on the **addressable** half:
+the **exploiter** who leaned on the maid (Otto's man). No spend — **paper + the maester's supply + the
+still-room:** a "lingering flux" that reads natural. **Clean-hands doctrine fires:** poison + paper, *not the
+demonic path,* so to her it's *clean* — a channel closed, the books balanced; she tells herself it's for the
+apparatus, the reader sees it's for Wylla (and, per II.6, for a danger born of a need that was never real).
+The exploiter's death-flag cashes (gag ⑦); his dependents are ruined and unlogged. Otto's lever yields a
+corpse he never predicted — his second move to misfire. **Colder than the Daemon drain** (chosen, planned).
+**Register:** CHILL→SPIKE. **Rung:** R2.
 **Fires:** FIRE[COMPROMISED-CHANNEL] · FIRE[COLLATERAL-DAMAGE] · FIRE[CLEAN-HANDS-DOCTRINE] (the first "clean" kill — paper + poison; "not the demonic path, therefore fine")
 
 ### II.8 · nothing here is mine *(~9)*
