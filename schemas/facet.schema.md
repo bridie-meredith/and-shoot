@@ -177,7 +177,7 @@ Vibes are permanent stickers — a vibe added in s01e01 persists to s01e02+ unle
 Audience-modeled context — the reader-gap content. For each thing a fresh reader cannot reasonably be expected to know on a cold read (Westeros-specific roles like `reeve` / `maester` / `Watch`; series-specific objects like `the log` / `the count`; pre-story circumstances like the resurrection and family acceptance), an exposition entry attaches a brief gloss to a specific anchor with a directive on how the stitcher should render it.
 
 ```
-<id> @<anchor> <key>: <gloss-text> | scope: <scope-kind> | renders-as: <position> | sources: <list> | licensed-by: <list>
+<id> @<anchor> <key>: <gloss-text> | scope: <scope-kind> | renders-as: <position> | sources: <list> | licensed-by: <list> | surface: <surface-kind>
 ```
 
 - **`@<anchor>`** — proto-line anchor where the gloss best lands. For episode-open scope, use `@0` (synthetic anchor; renders pre-body). For first-mention scope, use the proto-line ID where the term/object first appears in the rendered prose.
@@ -201,6 +201,13 @@ Audience-modeled context — the reader-gap content. For each thing a fresh read
   - `scene-bridge` — micro-orientation sentence at scene-open (≤15 words).
 - **`sources: <list>`** — comma-separated graph sources the gloss content is derived from (series-plan paths, world-build cards, condition cards, character cards, prior facets). Every claim in `<gloss-text>` must trace to at least one source. Audit-able.
 - **`licensed-by: <list>`** — comma-separated audience-model justifications. At minimum one persona-card slug + the gap-claim ("cape-fic-doesnt-know-westerosi-feudal-roles", "worm-canon-doesnt-know-flea-bottom-geography"). The exposition-author's reasoning surface.
+- **`surface: <surface-kind>`** (PROP-0004 / DEC-0014) — controls whether the entry folds into rendered prose or is held as reference-only context. One of:
+  - `render` — entry folds into prose at its declared anchor per the `renders-as` directive. Counts against the per-chapter render cap (≤3 `surface: render` + `surface: both` entries per chapter). Requires a `licensed-context-exception` token when promoted from reference by a context-ledger license.
+  - `reference` — entry is NOT rendered inline. The stitcher and facet authors consult it for world-grounding, stake-framing, and term disambiguation, but it produces no prose. Does NOT count toward the render cap or sparsity band.
+  - `both` — entry folds into prose AND is available as reference context. Reserved for critical terms the stitcher must gloss and carry forward. Counts against the render cap.
+  - **Default: `reference`** when the field is absent (backward-compatible; legacy pre-PROP-0004 entries without a `surface` field are treated as `surface: reference` by the stitcher unless they carry a `renders-as` directive, in which case treat as `surface: render`).
+
+  **Per-chapter render cap.** The total count of `surface: render` + `surface: both` entries per chapter MUST NOT exceed 3. Entries beyond the cap MUST use `surface: reference`. The exposition-author declares surface at authoring time; the `/and-facets` Phase 4 auditor verifies the cap (FREQUENCY-BAND class).
 
 **Author:** `exposition-author` — a dedicated audience-modeled subagent that loads the active audience persona cards (`active-project/audience/`) and the series/world-build sources, then asks per-anchor: "would the union of these audience personas know what X is on cold read?" If no, an exposition entry is authored.
 
