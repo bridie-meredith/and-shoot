@@ -511,3 +511,40 @@ offered as a cage) — left parked; Baelon as parallel griever — dropped.
 Baelon dropped. Canonical-fold-next: per-chapter body rewrites in this spine (II.1, II.4) + tokenized
 `series-outline.md` Book-II edits + Daemon card Voice + thread-config alias, then reconcile + check-threads
 PASS. Review walk paused at II.2 "the startup."*
+
+*__Book-II revision — STAGED, cont. (2026-06-11): II.2 "the startup."__ Five coherence-tightening deltas
+from the review walk; applied as judgment-defaults (reversible), all aligned with existing machinery (no
+new direction). Same canonical-fold-pending status as the II.1 cluster above.*
+
+**II.2-a — Cover-synergy with II.1 (the exploitation that hides her).** The enterprise is invisible
+*because* of what the King does to her in II.1: nobody connects the silent ornamental jewel / the
+book-buried recluse to the money. The display he forces on her to extract value is the very thing that
+perfects her concealment — his exploitation builds her empire's cover for free. Thread
+`DISPLAY-AS-ADVERTISEMENT` + `SCHOLAR-PRINCESS` into II.2's invisibility. (because-Westeros: a paraded
+decorative princess is the last person suspected of running a trade house.)
+
+**II.2-b — The dark undertow: the smallfolk hold the risk.** The triple-blind is not only funny;
+structurally it parks all the *exposure* on the bottom tier — Gael invisible, Wylla rank-insulated, the
+**chambermaids** (Pella/Nona/Marra) standing in the market holding the bag. The road-to-hell engine in
+miniature: she builds a structure that externalises risk onto the powerless, obliviously, because to her
+they are "Asset (hands)." Plant the cost *light* here (comedy on top, ledger underneath) → cashes II.5
+(who gets caught when the channel is compromised) + II.7 (the threat). `PLANT[SMALLFOLK-HOLD-RISK]`.
+
+**II.2-c — Bestiary upgrade (arming the named-entry spine).** Wylla's journal entry takes its first
+crossed-out climb — "Asset (hands/legs)" → "Asset (manager) / trusted" — the bookkeeping creep that later
+earns a *name* (③ → II.5 leak → II.7 → III.5/III.6). II.2 is the natural first-upgrade beat (she becomes
+the trusted manager). Seeds the existing `BESTIARY-NAMED-ENTRY` (PLANT at II.5). ⚠ Rule-22: the journal is
+a character prop / cut-to bit, never the prose register.
+
+**II.2-d — Otto-proto origin.** Confirm II.2 as the *origin* of Otto's thread: the unusual, untraceable
+money is the first string he pulls, long before he reads the bestiary at II.5. `PLANT[OTTO-MONEY-TRACE]` →
+`OTTO-LEAK` (II.5).
+
+**II.2-e — Gael's genre-read of the org (the proto-sect).** She does not see "a business" — she sees
+herself **founding her sect's mortal branch:** Wylla = her first *inner disciple / junior sister* (arms the
+conversion arc), the chambermaids = *outer-disciple mortals* running worldly affairs beneath her notice.
+The most profitable enterprise in King's Landing is, to her, the supply operation of a sect with two
+members. (Pairs gag ④ — corporate-euphemism birth — with the cultivation lens: KPIs *and* disciples, same org.)
+
+*New tokens to fold: `SMALLFOLK-HOLD-RISK` (II.2 → II.5/II.7) · `OTTO-MONEY-TRACE` (II.2 → II.5). Existing
+seeded earlier: `BESTIARY-NAMED-ENTRY`. Review walk now advances to II.3 "the world map."*
