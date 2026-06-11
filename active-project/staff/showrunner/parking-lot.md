@@ -2970,3 +2970,36 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-hygiene-2026-06-11-001
+      created_at: 2026-06-11T00:00:00Z
+      created_by: "artur hygiene pass 2026-06-11"
+      label: loose-draft-files-at-showrunner-root
+      target:
+        command: /and-any
+        scope: "active-project/staff/showrunner/"
+        phase: null
+      severity: SOFT
+      description: |
+        7 draft/bones files deposited at active-project/staff/showrunner/ root instead
+        of active-project/staff/showrunner/_drafts/:
+          b01c09-bones-draft-2026-05-31.md
+          b01c11-bones-draft.md
+          b01c11-draft.md
+          b01c15-bones-draft.md
+          b01c15-draft.md
+          b01c19-bones-draft.md
+          b01c20-draft.md
+        _drafts/ holds dated equivalents for some (c11, c15, c20); root copies lack timestamps.
+        Clutter impedes Phase 0 quick-scans of the showrunner root. Artur cannot move/delete
+        without principal/oskar confirmation — move is outside the trivial-fix allowlist.
+        Routed to oskar: confirm whether root copies are superseded by dated _drafts/ versions
+        (safe to move) or carry distinct content that warrants preservation with dated naming.
+      context_refs:
+        - active-project/staff/showrunner/_drafts/
+        - staff/admin/improvement-loop/hygiene.ledger.md  # 2026-06-11 pass
+      resolution_suggestion: "oskar reviews root vs _drafts/ versions; if superseded, move to _drafts/ with dated names; if distinct, rename at root with dates + move."
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
