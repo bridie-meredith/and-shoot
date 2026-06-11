@@ -10,6 +10,7 @@ Margit-maintained index. One row per exemplar. Schema: `schemas/persona-exemplar
 |------|-------------|---------------|-------------|-----------------|
 | cape-fic-reader | cape-fic-reader | high (generic capefic rooftop fight) | claude (2026-05-26) | active |
 | dark-fantasy-reader | dark-fantasy-reader | high (generic grimdark battlefield aftermath) | claude (2026-05-26) | active |
+| literary-snob | literary-snob | high (generic contemporary litfic, bereavement workshop scene) | claude (2026-06-11) | active |
 | worm-canon-pedant | worm-canon-pedant | high (generic Worm-fic with Lisa + Travelers OC) | claude (2026-05-26) | active |
 
 ## Impersonator exemplars — library (planetos / and-experiment cast)
@@ -65,7 +66,7 @@ Stored at `and-experiment/persona-exemplars/saerys-septa.md`. The persona card `
 
 ## Coverage notes
 
-- **Audience trio (3/3):** complete for the active-project audience selection. Library has 22 audience personas total; remaining 19 are uncovered. Author on demand when those personas activate in a project.
+- **Audience trio (3/3):** complete for the taylor-westeros-good-intentions audience selection (cape-fic-reader, dark-fantasy-reader, worm-canon-pedant). Library has 22 audience personas total; `literary-snob` added 2026-06-11 (covers and-experiment trio partial — `danmachi-reader` and `youjo-senki-reader` remain uncovered, quality: scant cards; author when those personas are expanded). Remaining personas uncovered — author on demand when they activate in a project.
 - **Active-project impersonators (11/11):** complete for taylor-westeros-good-intentions cast. Other active-project actors that get added in revisions will need exemplars authored at /and-cast Phase 4.
 - **and-experiment impersonators (7/7 — saerys + six supporting cast):** 6/7 promoted to library as of 2026-06-06. `saerys-septa` remains project-bound (project-only OC). Library copies at `cards/persona-exemplars/<slug>.md` for saerys-targaryen, viserys-i-targaryen, helaena-targaryen-122ac, daenys-velaryon, ser-harwin-the-patient, nymeria-summer-isles. Project copies at `and-experiment/persona-exemplars/<slug>.md` remain as working copies.
 - **Library personas without active-project use:** uncovered. Author on demand.
