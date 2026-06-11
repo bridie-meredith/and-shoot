@@ -2970,3 +2970,148 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-06-11-pipeline-001
+      created_at: 2026-06-11T201343Z
+      created_by: "improvement-loop/test (lens a: /and-review pipeline; STRUCT-001)"
+      label: pipeline
+      target:
+        command: /and-review
+        scope: "verdict *"
+        phase: null
+      severity: SOFT
+      description: |
+        staff/orchestrator-critic/card.md is deeply coupled to the retired /and-season
+        pipeline. The card frames its scope as judging "/and-season runs" and its F7
+        failure mode (the terminal bone-gate/R2-gate enforcement) is permanently
+        defanged: F7-bone checks tens-gate-residual-HARD (never fires in substance
+        overhaul chain); F7-r2 checks .r2-decisions.md f-r2-1 > 0 (R2 round retired
+        DEC-0116; file never written). B6 checks season-pass files that don't exist.
+        The card also says "verdict still emitted by /and-season" (lines 125, 209).
+        Net effect: /and-review verdict <book> can never fail F7 — the bone-gate
+        residual enforcement gate is permanently silent. Card needs update to (a)
+        reframe scope, (b) replace B6/B7/F7 with substance-overhaul equivalents
+        (substance_bone_gate_verdict, ABSTRACTION-AS-SUBJECT/SCENE-ABSTRACT-DOMINANT
+        HARD counts, SUBSTANCE-FLAT verdicts), (c) remove /and-season attribution.
+      context_refs:
+        - staff/orchestrator-critic/card.md  # lines 14, 27-47, 112-126, 196-209
+        - .claude/commands/and-review.md     # verdict subcommand (lines 254-293)
+        - active-project/staff/reviews/pipeline-20260611T201343Z.md  # STRUCT-001
+      resolution_suggestion: "principal-dispatched update session: rewrite staff/orchestrator-critic/card.md scope/inputs/B6/B7/F7 for substance-overhaul chain. See STRUCT-001 criteria."
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-11-pipeline-002
+      created_at: 2026-06-11T201343Z
+      created_by: "improvement-loop/test (lens a: /and-review pipeline; STRUCT-002)"
+      label: pipeline
+      target:
+        command: /and-review
+        scope: "pipeline"
+        phase: null
+      severity: SOFT
+      description: |
+        schemas/audit-report.schema.md §"R2 decision-shard frontmatter" (lines 106-158)
+        describes r2-decision-shard and r2-decisions-consolidated formats with no
+        DEPRECATED/RETIRED marker. The R2 round is RETIRED (DEC-0116). A new agent
+        reading this schema finds the R2 format described alongside live formats with
+        no signal it is obsolete. The consumer contract section (lines 155-157) still
+        attributes F7-r2 triggering behavior via these files. Fix: prefix the section
+        header with RETIRED 2026-06-08 (DEC-0116 / URI-FACETS-SLIM) and update the
+        consumer contract note.
+      context_refs:
+        - schemas/audit-report.schema.md   # lines 106-158
+        - .claude/commands/and-facets.md   # preamble lines 7-9 (DEC-0116 declaration)
+        - active-project/staff/reviews/pipeline-20260611T201343Z.md  # STRUCT-002
+      resolution_suggestion: "fixer pass: add RETIRED 2026-06-08 (DEC-0116) marker to audit-report.schema.md §R2 decision-shard frontmatter header; update consumer contract note at lines 155-157"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-11-pipeline-003
+      created_at: 2026-06-11T201343Z
+      created_by: "improvement-loop/test (lens a: /and-review pipeline; STRUCT-003)"
+      label: pipeline
+      target:
+        command: /and-write
+        scope: "*"
+        phase: "Phase 1.5"
+      severity: SOFT
+      description: |
+        staff/dialogue-writer/rubric-dialogue.md §Files lines 159-160 instruct the
+        dialogue-writer to emit R2 artifacts: r2-decision-shard-<character>.md and
+        _inflight-r2/proto-lines-dialogue-<character>.md. The R2 dialogue judge was
+        retired DEC-0116. This rubric is loaded at /and-write Phase 1.5 for every
+        dialogue-writer dispatch. A dialogue-writer following §Files verbatim will
+        attempt to write phantom files the pipeline never consumes. Fix: remove or
+        RETIRED-stamp lines 159-160 in the rubric's §Files section.
+      context_refs:
+        - staff/dialogue-writer/rubric-dialogue.md  # lines 159-160
+        - .claude/commands/and-write.md             # Phase 1.5, line 132 (loads this rubric)
+        - .claude/commands/and-facets.md            # line 8 (R2 dialogue judge retired DEC-0116)
+        - active-project/staff/reviews/pipeline-20260611T201343Z.md  # STRUCT-003
+      resolution_suggestion: "fixer pass: delete lines 159-160 from staff/dialogue-writer/rubric-dialogue.md §Files (R2 decision shard + _inflight-r2/ entries)"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-11-pipeline-004
+      created_at: 2026-06-11T201343Z
+      created_by: "improvement-loop/test (lens a: /and-review pipeline; STRUCT-004 / re-surfaced STRUCT-014)"
+      label: pipeline
+      target:
+        command: /and-review
+        scope: "pipeline"
+        phase: null
+      severity: SOFT
+      description: |
+        CLAUDE.md schema authority table (lines 118-133) is missing cohere-state.schema.md.
+        This schema is written at every /and-cohere invocation and referenced directly
+        in and-cohere.md. First surfaced in pipeline-20260607T004417Z.md as STRUCT-014
+        (SIGNAL) without a parking-lot item. Re-surfaced now to ensure it gets tracked.
+        Fix: add "| Cohere iteration state (/and-cohere resume checkpoint) | schemas/cohere-state.schema.md |"
+        to the CLAUDE.md schema authority table.
+      context_refs:
+        - CLAUDE.md            # schema authority table lines 118-133
+        - .claude/commands/and-cohere.md  # Phase 0 step 3
+        - schemas/cohere-state.schema.md
+        - active-project/staff/reviews/pipeline-20260607T004417Z.md  # prior STRUCT-014
+        - active-project/staff/reviews/pipeline-20260611T201343Z.md  # STRUCT-004
+      resolution_suggestion: "one-line CLAUDE.md edit at next schema authority table pass (batch with pl-2026-06-11-pipeline-005)"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-11-pipeline-005
+      created_at: 2026-06-11T201343Z
+      created_by: "improvement-loop/test (lens a: /and-review pipeline; STRUCT-005 / re-surfaced STRUCT-015)"
+      label: pipeline
+      target:
+        command: /and-review
+        scope: "pipeline"
+        phase: null
+      severity: SOFT
+      description: |
+        CLAUDE.md schema authority table (lines 118-133) is missing aggregate-state.schema.md.
+        This schema is referenced by both and-stitch.md Phase 10 and and-cohere.md Phase 6.5
+        as the forward-feed channel for cross-chapter narrative continuity. First surfaced
+        in pipeline-20260607T004417Z.md as STRUCT-015 (SIGNAL) without a parking-lot item.
+        Fix: add "| Cross-chapter narrative continuity feed (/and-stitch Phase 10 + /and-cohere Phase 6.5) | schemas/aggregate-state.schema.md |"
+        to the CLAUDE.md schema authority table.
+      context_refs:
+        - CLAUDE.md              # schema authority table lines 118-133
+        - .claude/commands/and-stitch.md  # Phase 10, line 990
+        - .claude/commands/and-cohere.md  # Phase 6.5, line 239
+        - schemas/aggregate-state.schema.md
+        - active-project/staff/reviews/pipeline-20260607T004417Z.md  # prior STRUCT-015
+        - active-project/staff/reviews/pipeline-20260611T201343Z.md  # STRUCT-005
+      resolution_suggestion: "one-line CLAUDE.md edit at next schema authority table pass (batch with pl-2026-06-11-pipeline-004)"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
