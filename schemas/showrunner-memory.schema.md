@@ -142,6 +142,10 @@ series:
       chapter: { delta_per_signature_axis: <range>, density_target: <range>, bone_count: <range> }
       scene:   { delta_per_signature_axis: <range>, density_target: <range>, bone_count: <range> }
       bone:    { delta_per_axis: <range>, axes_per_bone: <range> }   # typical 1-axis ±1 rank; occasionally 2-axis; conditional: 1-3 when scene_target_delta_magnitude >= 1.0; magnitude = scene_target_delta_magnitude when scene_target_delta_magnitude < 1.0 (fractional sub-scene moves permitted at sub-1.0 scene targets; Phase 6 gate accepts magnitude == scene_target_delta_magnitude in these cases). Precedent: DEC-0002 (c07 + c08 sub-1.0 bone deltas accepted).
+    readability_floor:          # REQUIRED — signature's non-negotiable concreteness constraint (PROP-0050 / CLAUDE.md Rule 22); validated by /and-substance series Phase 4 Step 4c
+      min_concrete_svo_ratio: <0.0-1.0>  # minimum fraction of concrete-SVO bones per scene; default ≥ 0.6 (matches /and-write Phase 6 SCENE-ABSTRACT-DOMINANT floor); not negotiable without rationale
+      register_constraint: <one line>    # explicit constraint on prose register (e.g. "ledger/accounting/apparatus-as-subject register prohibited per DEC-0115")
+      rationale: <one line>              # why this floor is set at this level for this story
   vibe_cloud:                              # series-level vibe-cloud, authored by /and-series
     keys: [...]
 
