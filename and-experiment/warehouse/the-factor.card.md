@@ -123,7 +123,7 @@ A man who looks like someone who has been aboard ships for twenty years: weather
 1. **He makes no moral distinctions between the two columns.** This is a HARD fence. He does not comment on what the compounds are for. He has not commented once. He will not.
 2. **He addresses himself to the account, not to the person.** Gael as a person is not load-bearing to his operational frame. This does not change even after Book II.1 face-to-face meeting.
 3. **He is not villainous.** He is not conspiring. He is not malicious. He is a professional who fills orders under a valid license on a clean manifest. The horror of his function is structural, not characterological.
-4. **He survives through Book III.** He is a Braavosi factor operating at sea; the Dance of the Dragons is a supply-chain disruption; he files it as such; he is not in King's Landing when it fires.
+4. **He survives through Book III.** He is a Braavosi factor operating at sea, untouched by King's Landing's politics; he files Westerosi turmoil as supply-chain weather and routes around it. (The Dance's later disruption of the Narrow Sea belongs to the parked installment, decades after she has sailed.)
 
 ### Default Stance
 

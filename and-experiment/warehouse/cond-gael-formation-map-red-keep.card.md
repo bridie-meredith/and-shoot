@@ -37,8 +37,8 @@ From the first day she could walk the Red Keep's corridors, Gael has been readin
 **Formation eye:** The report-transmission channel — specifically, her father's reception of the septa's accounts. The septa's formation collapses without the channel between observation and consequence.  
 **Nodes:** The septa herself; the attendants who report to the septa; the household staff who communicate attendance and whereabouts; the duty-schedule for who is with Gael at which hour  
 **Power source:** The Crown's general policy of supervised seclusion for young unmarried princesses  
-**Coverage gaps:** Below the stairs (the septa does not go; she relies on intermediary reports); the still-room (the maester's domain creates a jurisdictional ambiguity the septa cannot resolve by direct inspection); the sick-house (the charity operation creates a parallel authority structure)  
-**Her method for managing this formation:** she does not attack the nodes; she manages the formation eye — her father receives filtered reports (the septa's alarm is modulated by the father's indulgent reception). This is the counter-formation approach.
+**Coverage gaps:** Below the stairs (the septa does not go; she relies on intermediary reports); the still-room (the maester's domain creates a jurisdictional ambiguity the septa cannot resolve by direct inspection); her authorized works (her standing works-authorization creates a parallel authority structure the septa cannot override)  
+**Her method for managing this formation:** she does not attack the nodes; she manages the formation eye — the septa's reports surface to Alicent and, filtered, to the King; the alarm is modulated by the Queen's indulgent reception of her daughter's "works." This is the counter-formation approach.
 
 **Book I Bk-1-M2 note (Formation Eye confirmed):** When she plants the document with her father and it begins generating standing permissions, she has formally identified and addressed the formation eye. The septa's formation does not collapse — it is permanently managed from the eye.
 
@@ -92,10 +92,10 @@ From the first day she could walk the Red Keep's corridors, Gael has been readin
 | The septa's corridor | Detection formation; nodes at each attendant station | Attendant-reporting network | Below-stairs node array (her own counter-formation) |
 | Great Hall | Righteous-sect public-display formation | The court's ceremonial space; she is visible and watched | Irrelevant — she does not work in the Great Hall |
 | The godswood | Low-detection zone; the weirwood itself is a "Tier 2 node" | A rarely-visited sacred space with minimal surveillance | Used for the few conversations she needs to have where no formation-flag is in range |
-| The sick-house | Counter-formation she has constructed against the septa's primary array | Her own charity operation with its own access rules | She built this gap; it is her creation |
+| Her authorized works (the apothecary front) | Counter-formation she has constructed against the septa's primary array | Her own standing-authorized operation with its own access rules | She built this gap; it is her creation |
 
 **Book II updates (Red Keep scenes in Bk II):**  
-By Bk II, her father is dead (Bk III M1), and the formation-map is obsolete in its power-source readings — the formation eyes are the same structural points, but the power source (Viserys I's authority) is gone and the new power structure (Dance-era faction conflict) is a different formation entirely. She notes this as "the old formation's power source has been exhausted; the formation has not collapsed but its authority channel has been transferred to an unknown new core; the map requires a full re-survey." She does not have time to conduct the re-survey; Book III is the consequence.
+By Bk II the formation-map is mature and its power-source reading holds: the King lives, and her standing authorization (Alicent-sourced) remains the live authority channel the whole map rests on. The formation eyes are the same structural points; nothing has been orphaned; she has no need of a re-survey. The map carries her straight through to the escape.
 
 ---
 
