@@ -115,3 +115,46 @@ overwritten.
   exemplar.
 - **OQ-CL3 (names):** all servant names overridable.
 - **Next batch (not built):** the maester, the masters of accomplishments, the companion girls/ladies.
+
+---
+
+## Batch: span-A card migration (2026-06-11, session-authored)
+
+The full warehouse migration from span-B ("Saerys" / Viserys-father / charity-cover / span-B Dance casualties)
+to **span-A** (Gael / Jaehaerys-father + Alicent-warm-cage / soap-apothecary+vice cover / escape-ending,
+Dance parked). Coordinated per `staff/margit/span-a-card-migration-workorder.md` (now marked COMPLETE).
+
+**What was done:**
+- **Reference graph:** `saerys-targaryen → gael-targaryen` across 36 cards' `references:` (mechanical batch).
+- **Naming:** `Saerys → Gael` warehouse-wide (verified; provenance/parked/tombstone cards excluded).
+- **Content re-derivation (~20 cards):** Viserys→Jaehaerys (cold king) or Alicent (warm reactions/grants);
+  charity/sick-house cover → legit soap-apothecary front + off-books vice; "the Dance"/national-scale →
+  parked R5; Daenys → Wylla + the III.6 apex (the "blank line" register-silence); Harwin → Quint;
+  Harwin's-list → the bestiary; the curdle-ladder R-table → span-A. Includes the 3 **license cards**
+  (`prop-kings-hand-note`, `prop-bill-of-exchange`, `cond-trade-network-formation`): the span-B
+  orphaned-license/Dance-heist mechanic **dropped** (King lives, escape = off-books dice-coin per spine
+  III.1); the supply-chain cover re-derived to **Alicent's patronage**. *(Reversible judgment-default —
+  the spine doesn't pin the legal-cover mechanic.)*
+- **New card built:** `gael-targaryen-behavior` (per-character voice card; `character: gael-targaryen`,
+  `period: jaehaerys-reign`; supersedes `saerys-targaryen-behavior`). Schema-validated: required
+  `Direct samples` + all recommended sections present.
+- **Slug rename:** `cond-saerys-formation-map-red-keep → cond-gael-formation-map-red-keep` (git mv + name
+  field + referrer).
+- **Tombstoned** (`scope: tombstone` + `superseded_by`, schema-clean): `saerys-targaryen`→gael-targaryen ·
+  `saerys-maester`→maester-lorren · `saerys-septa`→septa-aldith · `saerys-targaryen-behavior`→
+  gael-targaryen-behavior · `viserys-i-targaryen`→jaehaerys-i-targaryen · `loc-sick-house`→loc-still-room.
+- **Parked** (`scope: project`, held for the Dance, not used span-A): `ser-harwin-the-patient` +
+  `prop-harwins-list`, `daenys-velaryon` (+behavior), `nymeria-summer-isles`, `helaena-targaryen-122ac`
+  (+behavior).
+- **Kept-and-re-derived (not retired):** `the-factor` (Moro Tessavik — the Braavosi supply factor, NOT the
+  III.3 greedy-factor Quint; the work-order's initial "tombstone" assumption was corrected).
+- **No-change (false positives checked):** `marra-chambermaid` ("pious" = her character, not the cover);
+  the live character cards' `supersedes:`/provenance "Saerys"/"Viserys" mentions (correct, preserved).
+
+**QA verified:** warehouse-wide sweep — no stale span-B in any live card; no live card references a tombstoned
+slug; no non-schema frontmatter fields (`retired_reason` removed; tombstones use the proven convention);
+`prop-kings-hand-note` re-derivation restored to schema-complete (all 6 prop sections); check-threads PASS.
+
+**Open (cosmetic, recommended-leave):** the `cond-*-122ac` library slug suffixes (in-world era already
+corrected in the bodies; `cond-kl-court-state-122ac` / `cond-kl-geography-122ac` are shared-library reuse
+cards that should keep their library names).

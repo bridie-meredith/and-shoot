@@ -123,12 +123,24 @@ is the legal root of the whole apparatus. The babying enables the empire.)*
 
 ---
 
-## Portability / Carry State
-Portable, stored securely (not with the account-book or dose-log). Produced from storage when authority must
-be demonstrated (Lock I). Books I–II: secure storage, not on the person during normal operation. Book III:
-still a live authorization, but not the escape instrument; she is not staking the getaway on it.
-Concealment: the document is legitimately what it appears to be — a royal/household works-grant — which is
-the best possible concealment.
+## Portability
+Portable — a single folio in a document wallet, a coat interior, or the account-book's vicinity (though she does not store the grant *with* the account-book or dose-log; critical documents are kept apart). Produced from storage when authority must be demonstrated.
+
+## Carry State
+Books I–II: secure storage, not on the person during normal operation — its *existence* is the authority; physical production is reserved for the moment authority must be shown (Lock I, defeating the septa). Book III: still a live authorization, but **not** the escape instrument; she is not staking the getaway on it, so it is not carried under pressure the way a heist tool would be. Concealment: the document is legitimately what it appears to be — a royal/household works-grant — which is the best possible concealment: visible and correct.
+
+## Functional State
+The grant tracks a simple span-A lifecycle (see Lifecycle above); active state by book:
+
+| Chapters | State | Key fact |
+|---|---|---|
+| I.1–I.2 | Verbal indulgence | Alicent's spoken word; soft household authority; no paper |
+| I.2 | Standing license | Written, unsealed; anchors the first bills |
+| I.3 region | Sealed grant | Sealed; full authority; defeats the septa — **Lock I closes** |
+| Books I–II | Operational | Live, continuously effective; the network's legal umbrella |
+| Book III (the escape) | **Still live — never orphaned** | The King lives; the grant keeps covering the supply chain. It is **not** the escape mechanism (the ship is off-books dice-coin + cut-out paper). |
+
+**Preservation:** genuine, never forged/copied/modified. Chain of custody: the Queen's household (grantor) → Gael (sole possessor). The span-B "orphaned-at-the-King's-death heist instrument" state does **not** occur in span-A (King lives, Dance parked).
 
 ---
 
