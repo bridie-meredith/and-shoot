@@ -4,7 +4,7 @@ class: location
 scope: library
 world: planetos
 origin: authored
-quality: scant
+quality: full
 ---
 
 # Red Keep — Outer Ring (Range-Reachable Late s2 / Early s3)
