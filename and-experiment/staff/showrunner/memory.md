@@ -51,16 +51,13 @@
 #   FULL TRIAGE of every remaining card (+ don't-blind-sed traps) is in the work-order §E. SAERYS→GAEL
 #   NAMING LAYER COMPLETE (2026-06-11): 15 content cards batch-migrated (verified clean); "Saerys" now remains
 #   only in provenance/parked/tombstone/formation-map. OPEN per-card (contextual, not sed-able): the OTHER
-#   span-B content. CARD MIGRATION ESSENTIALLY COMPLETE (2026-06-11): refs ✅ · Saerys→Gael naming ✅ ·
-#   ~17 content cards fixed (Viserys→Jaehaerys/Alicent · charity→soap/apothecary · Dance→parked R5 ·
-#   Daenys→Wylla/apex · Harwin→Quint · Harwin's-list→bestiary · curdle-ladder→span-A) ✅ · tombstones
-#   (saerys-* / loc-sick-house / viserys-i / prop-harwins-list / saerys-behavior) ✅ · formation-map slug
-#   renamed saerys→gael ✅ · gael-targaryen-behavior BUILT (voice card) ✅. marra "pious"=character (no change).
-#   ⛔ REMAINING — only the 3 DESIGN-FLAGGED license cards (need principal steer — a span-B PLOT mechanic, not
-#   naming): prop-kings-hand-note + prop-bill-of-exchange + cond-trade-network-formation built on the
-#   charitable-license→orphaned-at-king's-death→Dance-heist (Lock III) — incompatible w/ span-A (Jaehaerys
-#   LIVES through the escape; Dance parked; spine escape = off-books dice-coin + paper). Open Q: span-A
-#   legal-cover mechanic for the supply chain + the escape. (Optional cosmetic: cond-*-122ac slug suffixes.) + the 2 residual graph edges (loc-sick-house ref;
+#   span-B content. ✅ CARD MIGRATION COMPLETE (2026-06-11): refs ✅ · Saerys→Gael naming ✅ · ~20 content
+#   cards (Viserys→Jaehaerys/Alicent · charity/sick-house→soap/apothecary · Dance→parked R5 · Daenys→Wylla/apex
+#   · Harwin→Quint · Harwin's-list→bestiary · curdle-ladder→span-A) ✅ · tombstones (saerys-* / loc-sick-house
+#   / viserys-i / prop-harwins-list / saerys-behavior) ✅ · formation-map slug rename ✅ · gael-targaryen-behavior
+#   built ✅ · the 3 license cards re-derived ✅ (legal cover = Alicent's patronage; the orphaned-license/Dance/
+#   Lock-III heist DROPPED — King lives, escape = off-books dice-coin per spine III.1; all marked reversible).
+#   The whole warehouse is span-A. (Optional cosmetic remainder: the cond-*-122ac library slug suffixes.) + the 2 residual graph edges (loc-sick-house ref;
 #   saerys-targaryen-behavior refs) that resolve with those re-derivations.
 #   Full coordinated plan: staff/margit/span-a-card-migration-workorder.md. Character cards production-ready.
 
