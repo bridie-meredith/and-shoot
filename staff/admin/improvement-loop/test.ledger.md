@@ -32,8 +32,9 @@ plus status check on prior HARD findings (STRUCT-017 through STRUCT-026 from pip
   command body. PROP-0048 reference in and-stitch.md Phase 9 line 886 is dangling.
   Owner: and-stitch.md Phase 9 Step 4 + schemas/showrunner-memory.schema.md
 - `pl-2026-06-11-002` (SOFT) — STRUCT-032: CLAUDE.md Rule 22 requires signatures to declare a
-  concreteness floor; schemas/showrunner-memory.schema.md §series.substance has no such field.
-  Forward-only risk (b01 past signature authoring). Owner: and-substance.md + schemas.
+  readability/concreteness floor. Partially resolved: PROP-0050 (commit d3e288b, same branch)
+  already wired the field into the schema + and-substance.md Phase 4c gate. Remaining gap:
+  /and-review signature has no matching check for pre-PROP-0050 signatures. Owner: and-review.md.
 
 **No fixes applied.** Findings route to the owning agents; fixes belong to a separate session.
 

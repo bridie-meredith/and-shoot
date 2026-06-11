@@ -3017,35 +3017,33 @@ parking_lot:
     - id: pl-2026-06-11-002
       created_at: 2026-06-11T21:11:19Z
       created_by: "improvement-loop/test pipeline-20260611T211119Z (STRUCT-032)"
-      label: signature-concreteness-floor-field-absent
+      label: signature-readability-floor-review-gate-absent
       target:
-        command: /and-substance
-        scope: "series"
+        command: /and-review
+        scope: "signature"
         phase: null
       severity: SOFT
       description: |
         CLAUDE.md Rule 22 requires the substance signature to "declare a readability/concreteness
-        floor as a non-negotiable constraint the register coexists with — no single-axis
-        register-as-substance optimization." Neither schemas/showrunner-memory.schema.md §series.substance
-        nor .claude/commands/and-substance.md series authoring Phase 4 defines or gates on a
-        concreteness_floor or readability_constraint field. The existing b01 signature (authored
-        2026-05-24) contains no such declaration. /and-review signature does not check for it.
-        Risk is forward-only (b02+ or new project); b01 is past signature authoring.
+        floor as a non-negotiable constraint the register coexists with." Partially resolved:
+        commit d3e288b (PROP-0050, improvement-loop/process) added `readability_floor` to
+        schemas/showrunner-memory.schema.md §series.substance and wired a HARD
+        SIGNATURE-NO-READABILITY-FLOOR gate into /and-substance series Phase 4c.
+        REMAINING GAP: /and-review signature subcommand has no check that `readability_floor`
+        is populated. A principal running /and-review signature on an existing project would not
+        catch a missing floor declaration on an already-persisted signature.
       context_refs:
         - active-project/staff/reviews/pipeline-20260611T211119Z.md  # STRUCT-032
         - CLAUDE.md  # Rule 22 (declares the requirement)
-        - schemas/showrunner-memory.schema.md  # §series.substance (missing field)
-        - .claude/commands/and-substance.md  # series Phase 4 authoring (missing gate)
-        - .claude/commands/and-review.md  # signature subcommand (missing check)
+        - .claude/commands/and-review.md  # signature subcommand (missing readability_floor check)
+        - schemas/showrunner-memory.schema.md  # §series.substance.readability_floor (added d3e288b)
+        - .claude/commands/and-substance.md  # Phase 4c SIGNATURE-NO-READABILITY-FLOOR gate (d3e288b)
       resolution_suggestion: |
-        (1) Add to showrunner-memory.schema.md §series.substance: a `concreteness_floor` field
-            (e.g., `minimum_concrete_svo_fraction: <0.0-1.0>` + `prose_register_constraint: <one line>`).
-        (2) In and-substance.md series Phase 4 authoring brief: require the screen-writer to declare
-            this field alongside the state_axes; reject a signature that has no concreteness floor.
-        (3) In and-review.md signature subcommand: add a HARD check that `concreteness_floor` is
-            populated; an absent field is a schema violation (mirrors the dense-matrix discipline for
-            actor_baselines).
-        Apply at next /and-substance series run (b02 or new project); no retroactive b01 change needed.
+        In .claude/commands/and-review.md §signature subcommand "What it reviews" list, add:
+        HARD check: series.substance.readability_floor must contain min_concrete_svo_ratio (≥ 0.6),
+        register_constraint (non-empty), and rationale (non-empty). Absent or incomplete →
+        SIGNATURE-NO-READABILITY-FLOOR (HARD). Mirrors the Phase 4c authoring gate so /and-review
+        signature also catches stale signatures that predate the field.
       status: open
       resolved_at: null
       resolved_by: null
