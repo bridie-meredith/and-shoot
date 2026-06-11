@@ -275,10 +275,11 @@ The engine is the **asymmetry, sealed — and Alicent is the seal.** The observe
 **Gags:** ③ (the bestiary escalated to plot spine — the cold catalogue is the vulnerability, the named entry the crack) · ④ + ⑤ (briefly *proud* her best asset got *headhunted* before remembering it's a crisis) · the deflation holding for her *own* exposure — and dropping, hard, the instant it's Wylla.
 
 ### II.6 · the source *(~8–9)*
-**Inside:** supply cut, she should weaken — she doesn't. **The egg was a reactor, not a battery**; she's generated her own qi since birth. The deflating punchline: every theft, every risk was *unnecessary*; the panic was greed cosplaying as survival. Reframes instantly, keeps going.
+**Inside:** the II.5 squeeze bites — the compromise chokes her supply, and **Otto, who cut her off expecting it to cripple her, gets nothing:** she should weaken; she doesn't. **The egg was a reactor, not a battery** — she's generated her own qi since birth. The deflating punchline: every theft, every risk, the whole empire was *unnecessary;* the panic was **greed cosplaying as survival.** And the colder corollary she never reaches: if the acquisition was never needed, then the vice-empire, the crimes, and **Wylla dragged into all of it** — made a syndicate boss, a target, the named entry Otto found — were unnecessary too; the kill she is about to commit (II.7) *for* Wylla protects her from a danger that exists only because of a need that was never real. Gael registers none of it — she **reframes instantly and keeps going,** mortified only at the inefficiency.
 **Reverse-angle:** *(the quiet, self-directed chapter — the reader, not Westeros, gets this one.)*
 - 🤨 *The maid:* notes the princess never eats much, never tires, sails through a winter fever that fells half the Keep — and decides not to think about it.
-**Gags:** ② (rates her own arc two stars — "all that risk for nothing, *sloppy*") · ⑥ (mortified at the **inefficiency**, not the morality — and still, somehow, not the villain).
+- 🧊 *Maester Lorren* (`MAESTER-MARK`): reading the whole ledger at last — the supply gone, the child thriving — he reaches the emptiest conclusion in the realm: **the empire had no purpose.** He cannot prove it, cannot say it, cannot unsee it — the Cassandra who grasps the machine is pointless and watches it run on.
+**Gags:** ② (rates her own arc two stars — "all that risk for nothing, *sloppy*") · ⑥ at its darkest (mortified at the **inefficiency** — not that she made the girl she loves a criminal, and a target, for nothing — and still, somehow, not the villain in her own eyes).
 
 ### II.7 · the threat *(~9)*
 **Inside:** a family member casually endangers the maid out of obliviousness (servants are furniture) while the exploiter squeezes from the other side. Gael acts — paper, the maester, poison — and what she chooses is **colder than the Daemon drain.** › **R2.**
@@ -609,3 +610,14 @@ II.7 — no kill, no spend here (the chambermaid is squeezed/exposed, not killed
 premeditated kill). Calibration applied as judgment-default (reversible): the switch is cold focus, not fear
 or hot rage; the comedy guardrail holds for her own exposure and drops only for Wylla. No new tokens;
 check-threads unchanged. Review walk now at II.6 "the source."*
+
+*__Book-II revision — FOLDED, cont. (2026-06-11): II.6 "the source."__ Fresh-read fold. Deltas: (1) the
+supply-cut now has a **cause** — the II.5 compromise chokes her supply, and **Otto's move backfires** (he
+cuts her off to cripple her; she's self-generating, nothing happens) — threading II.5→II.6; (2) **the reveal
+retroactively poisons the Wylla-cost** — if acquisition was never needed, the vice-empire + the crimes +
+Wylla dragged into all of it were pointless, and the II.7 kill protects her from a danger born of a need that
+was never real (gag ⑥ at its darkest; Gael registers only the *inefficiency,* the reader holds the moral
+catastrophe); (3) **added the maester (Lorren) beat to the spine body** — `MAESTER-MARK` fires here (he reads
+the whole ledger → "the empire had no purpose"); it was named in the outline but absent from the spine body
+(outline↔spine consistency fix). No new tokens; check-threads unchanged. Review walk now at II.7 "the threat"
+(the first premeditated kill, which II.5/II.6 armed).*

@@ -191,9 +191,12 @@ kinslayer → accelerates. **Register:** CHILL. **Rung:** off-ladder. **(Arms II
 **Fires:** FIRE[BESTIARY] · FIRE[BARTH-NEAR-MISS] · FIRE[OTTO-MONEY-TRACE] (the coin he's traced since II.2 leads him to the journal) · FIRE[SMALLFOLK-HOLD-RISK] (the compromise lands first on the exposed market tier) · FIRE[WYLLA-TRUSTED] (the keeper of the secret things is the named entry — the one crack in an otherwise nameless empire)
 
 ### II.6 · the source *(~8–9)*
-**Beat:** supply cut, she doesn't weaken — **the egg was a reactor, not a battery**; every theft was
-unnecessary (greed cosplaying as survival). The maester, reading the whole ledger, realizes the empire had
-no purpose. **Register:** HOLD. **Rung:** off-ladder.
+**Beat:** the II.5 squeeze chokes her supply — and Otto, expecting it to cripple her, gets nothing: **the egg
+was a reactor, not a battery**; every theft, the whole empire, was *unnecessary* (greed cosplaying as
+survival). The colder corollary she never reaches: the vice-empire, the crimes, and Wylla dragged into all of
+it — and the II.7 kill she's about to commit *for* her — were for a need that was never real. The maester,
+reading the whole ledger, reaches the emptiest conclusion in the realm: the empire had no purpose. Gael
+reframes instantly, mortified only at the inefficiency, and keeps going. **Register:** HOLD. **Rung:** off-ladder.
 **Plants:** PLANT[NOTHING-MINE]
 **Fires:** FIRE[SOURCE-NOT-POOL] · FIRE[ACQUISITION-DRIVE] · FIRE[REINCARNATION-SICKNESS] · FIRE[MAESTER-MARK]
 
