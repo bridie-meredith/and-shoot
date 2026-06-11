@@ -23,9 +23,10 @@
 # (reagent-map + travel-knowledge; the underground vice-empire she founds in era-young KL; Wylla = keeper
 # of the secret things / sole crack). Betrothal retargeted Errold Slate -> the STARKS. Full spine-smoothing
 # pass complete (all three books hinted-prior + have-consequence; check-threads PASS). II.4 verified
-# consistent; II.1-II.8 ALL FOLDED -- BOOK II COMPLETE (carefree-limit -> R2 kill -> clean-hands doctrine;
-# source-reveal voids the need + the Wylla-cost; the ship ordered, except-Wylla arms Book III). NEXT: Book III
-# (the heist-caper escape), or merge the complete book to main. See the dated
+# consistent; II.1-II.8 ALL FOLDED & MERGED TO MAIN (ee2398c) -- BOOK II COMPLETE (carefree-limit -> R2 kill
+# -> clean-hands doctrine; source-reveal voids the need + the Wylla-cost; the ship ordered, except-Wylla arms
+# Book III). Book III walk begun: III.1 "the commission" folded. NEXT: resume at III.2 "the excursions"
+# (III.1->III.6 = the heist-caper escape). See the dated
 # amendment foot of intake/spine.md for the full delta record + thread-arc confirmation.
 
 project:

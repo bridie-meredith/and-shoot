@@ -228,8 +228,11 @@ walls (misfiled as logistics) — and the vessel is built through her own hands.
 ## BOOK III — *the narrow escape* · age ~9–11 · the Keep → the ship · heist caper
 
 ### III.1 · the commission
-**Beat:** the ship ordered through three layers of paper, paid from the startup; the shipwright (a craftsman
-who won't ask whose it is) quotes years. Tight against the betrothal clock. **Register:** HOLD→SPIKE. **Rung:** off-ladder.
+**Beat:** the long con begins in earnest — the ship ordered through three layers of paper, **run through
+Wylla,** designed off the reagent map, paid from the **off-books dice-coin** (the pointless vice-empire's one
+real use: untraceable money buys the getaway hull soap-money never could). The shipwright quotes *years;*
+tight against the betrothal clock. The con has exactly two cracks: a physical hull that could be found, and
+factors who could turn. **Register:** HOLD→SPIKE. **Rung:** off-ladder.
 **Plants:** PLANT[SHIPYARD-VULNERABILITY] · PLANT[FACTOR-THREAT]
 **Fires:** FIRE[SHIP-COMMISSION] · FIRE[ROUTE-MAP] · FIRE[STARTUP] · FIRE[PROFIT-CYCLE] · FIRE[OFFBOOKS-ACCOUNT] (the dirty dice-coin pays for the hull the soap-money can't be seen buying)
 

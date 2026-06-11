@@ -304,10 +304,11 @@ The engine is the **asymmetry, sealed — and Alicent is the seal.** The observe
 *Scale: the world / the sea. Lock III: the escape. Cost: R3 → the apex.*
 
 ### III.1 · the commission
-**Inside:** the ship is ordered through three layers of paper, designed from her room off the reagent map, **paid out of the off-books dice-coin** (the soap-money can't be seen buying a getaway hull). The shipwright quotes *years.* She runs it against the betrothal clock. Tight.
+**Inside:** the long con begins in earnest — the ship ordered through three layers of paper, designed from her room off the reagent map, **run through Wylla** (the named entry building, with her own hands, the vessel meant to carry her out), **paid out of the off-books dice-coin.** The quiet joke of it: the vice-empire that turned out to have *no purpose* (II.6) is the one machine whose dirty, untraceable coin now buys the only thing that matters — soap-money could never be *seen* purchasing a getaway hull; money nobody can trace can. The shipwright (a craftsman who won't ask whose it is) quotes *years.* She runs it against the betrothal clock. Tight. And for all its layers the con has exactly **two cracks:** a **physical hull** that exists in the world and could be found (`SHIPYARD-VULNERABILITY` → III.6), and the **factors** who move the coin and could turn greedy (`FACTOR-THREAT` → III.3).
 **Reverse-angle:**
 - 🤨 *The shipwright's agent:* a phantom buyer commissions a custom vessel through too many intermediaries — delighted by coin that clears, incurious about whose it is. (because-Westeros: nobody imagines a child.)
-**Gags:** ④ (the long con as a procurement project).
+- 😂 *Alicent (letter):* so *content,* planning so diligently — she mistakes the ship-money for **trousseau care** (the eerie-contentment of II.8, now in motion; she believes her daughter has made peace with the wedding).
+**Gags:** ④ (the long con as a dry procurement project — milestones, layers, a delivery date that is secretly a jailbreak) · ⑤ (the contentment misread).
 
 ### III.2 · the excursions
 **Inside:** sneaks **out** for the first time, the maid covering ("the princess is meditating and must not be disturbed"). Superhuman child parkour across the night city; the shipyard, harbor, markets made real. Every outing bets the maid's neck.
@@ -649,3 +650,12 @@ ship"; the III.6 cost); (4) threaded the **off-books vice-coin funds the commiss
 the ship's southern course** (`REAGENT-MAP` fires). No new tokens; check-threads unchanged. **Book II is now
 fully walked, folded, and internally consistent (II.1–II.8).** Next: Book III (the heist-caper escape) if the
 walk continues — or merge the complete book to main.*
+
+*__Book-III walk begun (2026-06-11): III.1 "the commission" folded.__ (Book II merged to main at `ee2398c`.)
+III.1 deltas: (1) the **off-books-money irony** — the vice-empire that proved purposeless (II.6) is the one
+machine whose untraceable coin buys the escape soap-money never could; (2) **Wylla runs the commission** —
+the named entry building, with her own hands, the vessel meant to carry her out (II.8's cruel fold in motion);
+(3) **the two cracks planted visibly** — `SHIPYARD-VULNERABILITY` (a physical hull that could be found →
+III.6) + `FACTOR-THREAT` (factors who could turn → III.3 Quint). Light tone held (the long con as
+procurement; Alicent's trousseau misread). No new tokens; check-threads unchanged. Walk now at III.2 "the
+excursions."*
