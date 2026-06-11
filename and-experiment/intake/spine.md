@@ -208,7 +208,7 @@ not hers.
 **Alicent the shield (the active protector).** She does not move *against* Gael — she moves to *cover* her, a quiet losing war her daughter never knows is being fought, on every front at once:
 - **From the King.** Jaehaerys files Gael *worthless* and arranges the disposal-betrothal — and means to wring her one remaining worth *first:* parade the jewel, inflate the match (the value-extraction that opens Book II — II.1). Worse, after the dead dragon a colder suspicion stirs — *kinslayer-in-waiting.* Alicent works him, deflects him, spends a wife's leverage to keep the sentence a *marriage* and not something final.
 - **From Septon Barth.** The one mind in the realm equipped to theorize what Gael *is* — his *Unnatural History,* the maester's unhinged letters climbing toward him. Alicent keeps the genius and the girl apart: redirects his curiosity, buries the letters, makes her daughter boring on paper.
-- **From Baelon.** The kinsman who **blames Gael for Caraxes** — not for the draining (no one knows) but by the superstition of association: the beauty, the name, the dead dragon, the gutted prince. His grief wants someone to answer for it; Alicent stands between his blame and her child.
+- **From Daemon.** The diminished prince, recovered enough to be **loud,** who **blames Gael for Caraxes** openly — not for the draining (no one knows the mechanism) but by the superstition of association he shouts to anyone: the beauty, the name, the dead dragon, the gutted prince. He is right and is heard as a jealous madman; Alicent's task is to keep his denunciation from *landing* — from reaching Gael or hardening into the realm's "maegi" file. *(Baelon-as-parallel-griever folded into Daemon, 2026-06-11 per spine §H / §E — Daemon carries the whole accusation thread; he is discredited by ridicule, not silence.)*
 - **From the realm — and from Gael herself.** Above all she keeps the *whispers* from reaching her daughter: the prophesied-one talk, the omen-child dread. **She is the reason the mirror-flip stays sealed** — half out of protection (a revered child is a *used* child; a feared one is a *dead* one) and half because she cannot bear for Gael to hear the realm call her a legend while Alicent still needs her to be a *daughter.* `PLANT[ALICENT-SHIELD]` → III.6. **Arms Book II:** the betrothal — high, to the **Starks** (the Warden of the North's heir; the omen-rumours that repel the south *attract* the grim North) — survives her interference; a match she can soften but not stop. **The clock starts.**
 
 **The Book-I payout button — the sealed mirror-flip (the gobsmack).** Book I closes on three corners staring straight past one another, every one of them wrong:
@@ -265,33 +265,38 @@ The engine is the **asymmetry, sealed — and Alicent is the seal.** The observe
 **Gags:** ⑤ (the centerpiece misread — her carefree blankness reads as grace/ice) · ② capstone (refuses to be cast as the Tragic Bride; nopes the North as a rival evil sect) · ④ (the marriage filed as a logistics deadline) · the deflation ("super not ideal; also I'm bailing, so — whatever"). **Guardrail:** the dread is the reader's / Alicent's — never Gael's.
 
 ### II.5 · the compromise *(~8–9)*
-**Inside:** someone with court leverage **leans on the maid** to reach the princess; the maid comes back nervous, carrying messages, holding opinions she shouldn't. The single channel is compromised. **⭐ The leak is the bestiary:** Otto (the asset-filer) has read it (see below) and clocked the one anomaly — a servant entry upgraded from "Asset (hands)" to a **name** — and understands the maid is the single lever that moves an unmovable girl. She is more than the lever: she is the **keeper of the secret things** from II.3 — the sole human who ties the whole hidden empire (the trade, the off-books vice-network, the account) together. The named entry is the one crack in an otherwise nameless apparatus, and Otto has found it.
-**Reverse-angle / the bestiary read by an authority:** the journal is **the one document that tells the truth about Gael.** Read accurately, it still can't yield "reincarnated cultivator," so it's misfiled into the nearest grimdark frame:
-- 😱 *Alicent (if she reads it):* breaks — finds **her own entry** ("Mother — sentimental, useful for egg-procurement, low threat").
-- 🧊 *Otto (RECOMMENDED reader):* doesn't recoil — sees a weapon, and the maid as the lever. **This is the leak.**
-- 🤨 *Septon Barth (the near-miss):* reads it as a *cosmology,* not a weapon — the one mind that brushes the truth (a child consuming dragon-essence; a source, not a pool) and **cannot connect it to the girl,** because the connecting step is a story he's never read. The closest the realm ever comes; his theory collapses one fact short.
-- ⚔ *Jaehaerys (if he reads it):* sees a kinslayer-in-waiting → accelerates the betrothal as *disposal.*
+**Inside:** someone with court leverage **leans on the maid** to reach the princess; the maid comes back nervous, carrying messages, holding opinions she shouldn't. The single channel is compromised. **⭐ The leak is the bestiary:** Otto (the asset-filer) has read it (see below) and clocked the one anomaly — a servant entry upgraded from "Asset (hands)" to a **name** — and understands the maid is the single lever that moves an unmovable girl. She is more than the lever: she is the **keeper of the secret things** from II.3 — the sole human who ties the whole hidden empire (the trade, the off-books vice-network, the account) together. The named entry is the one crack in an otherwise nameless apparatus, and Otto has found it. **The name-promotion is the warm beat the chapter weaponizes:** unguarded, in the quiet of Book II, Gael at last logged a person *as a person* — struck out "Asset (manager)" and wrote *Wylla,* the one tender thing she ever set down — and it is the exact thing the cold reader needs. **How Otto reaches it (`OTTO-MONEY-TRACE` → the journal):** the untraceable money he's pulled at since II.2 buys a watcher into her chambers; the bestiary is *found,* not surrendered — which is why Gael's later reaction is opsec-annoyance ("left my notes out — sloppy"), not a sense of betrayal.
+**Reverse-angle / one prop, three readers (the bestiary read by authority):** the journal is **the one document that tells the truth about Gael** — and this is its spotlight chapter, so the **Rule-22 guard is at its hottest here:** the bestiary is a *prop we cut to* for the entries, **never the prose register;** even as it becomes the plot's spine, the narration stays concrete-action, not ledger-voice. Read accurately, the journal still can't yield "reincarnated cultivator," so each reader misfiles it into a *different* frame — three vectors, no three-in-a-room:
+- 😱 *Alicent (the Queen's access — she reads it):* **the WTH near-break peak** — she breaks, finding **her own entry** ("Mother — sentimental, useful for egg-procurement, low threat"). The largest "what the hell" yet (the terminal-grief one waits at III.6); her read is the intimate one — heartbreak, not strategy.
+- 🧊 *Otto (the court search, off the money-trace — RECOMMENDED reader):* doesn't recoil — sees a weapon, and the maid as the lever. **This is the leak.**
+- 🤨 *Septon Barth (the near-miss — via the maester's letters-up, a transcription not the physical book):* reads it as a *cosmology,* not a weapon — the one mind that brushes the truth (a child consuming dragon-essence; a source, not a pool) and **cannot connect it to the girl,** because the connecting step is a story he's never read. The closest the realm ever comes; his theory collapses one fact short.
+- ⚔ *Jaehaerys (Otto hands the read up):* sees a kinslayer-in-waiting → accelerates the betrothal as *disposal.*
 - 😂 *Gael's lens:* not embarrassed by the content — annoyed at the **opsec failure** ("left my notes out — sloppy"), mildly offended they filed her as a *poisoner* (she's obviously a *cultivator*). Thereafter keeps a **decoy diary** of performed-normal-girl entries for them to find. (Relieves the straight-men; own running bit.)
 **Gags:** ③ (escalated to plot spine) · ④ + ⑤ (she's briefly *proud* her best asset got headhunted before remembering it's a crisis).
 
 ### II.6 · the source *(~8–9)*
 **Inside:** supply cut, she should weaken — she doesn't. **The egg was a reactor, not a battery**; she's generated her own qi since birth. The deflating punchline: every theft, every risk was *unnecessary*; the panic was greed cosplaying as survival. Reframes instantly, keeps going.
-**Reverse-angle:** *(the quiet, self-directed chapter — the reader, not Westeros, gets this one.)*
+**Reverse-angle:** *(the quiet, self-directed chapter — the reader, not Westeros, gets this one; the foils' beats ride the same winter-fever event so the chapter still lands its per-chapter obligations without breaking its interiority.)*
 - 🤨 *The maid:* notes the princess never eats much, never tires, sails through a winter fever that fells half the Keep — and decides not to think about it.
+- 😱 *Alicent (WTH, reverse-angle channel — a relayed maternal fret, she's offstage now):* the same fever → "she sailed through the pox that felled half the Keep — such *strong blood!*" The escalating misread: she reads near-invulnerability as hardy Targaryen stock and is *proud.*
+- 🤨 *Barth (the antagonist-face beat — scholar-ladder rung 5):* the maester's note "she never weakens though her supply is cut" reaches him and he articulates, *in the abstract,* nearly the true mechanism — **a source, not a pool; self-generating** — and still cannot attach it to the girl. Nearly the answer, no subject; the closest he comes to the engine itself, shelved one connecting-step short.
+- 🧊 *The maester (the empty-purpose cope):* reading the whole ledger he grasps the six-year supply-network he half-built served **no purpose** — a multinational of poison and paper feeding a hunger that was always self-fed. He checks it twice (of course); the books are correct; it was all unnecessary. He cannot decide whether that makes it better or worse, and files nothing.
 **Gags:** ② (rates her own arc two stars — "all that risk for nothing, *sloppy*") · ⑥ (mortified at the **inefficiency**, not the morality — and still, somehow, not the villain).
 
 ### II.7 · the threat *(~9)*
-**Inside:** a family member casually endangers the maid out of obliviousness (servants are furniture) while the exploiter squeezes from the other side. Gael acts — paper, the maester, poison — and what she chooses is **colder than the Daemon drain.** › **R2.**
+**Inside:** a family member casually endangers the maid out of obliviousness (servants are furniture) while **the exploiter — Otto's *lever,* a court factioneer / Hightower client he works through, not Otto himself** — squeezes from the other side. Gael acts — paper, the maester, poison — **her first *premeditated* human removal,** executed entirely through the apparatus (the still-room turned outward + the maester's supply chain + a bill of exchange), a death that reads as natural. What she chooses is **colder than the Daemon drain** because it is *chosen and planned,* not a survival reflex. › **R2.**
+**The displacement (the curdle the reader keeps).** The two real threats are *unreachable:* the **family member** can't be touched (you don't poison the blood of the dragon — "that's the point"), and behind the exploiter stands **Otto,** whom her simple-mindedness never even perceives as the hidden hand. So the cold removal lands on the one pressure she *can* reach — the visible proxy — while the larger threats walk free. **Otto survives because Gael only reaches his lever,** sees his proxy turn up a corpse he never predicted (his scheme yields a body, not leverage), and *learns* — tightening toward the apex (`OTTO-LEAK` → III.6). **Rule-22 at the kill:** render it as a *man sickening and dying,* concrete; "a vendor dispute, resolved" is the cut-to file-card gag, **not** the prose voice.
 **Reverse-angle:**
 - 😱 *The court:* whoever crossed her meets a quiet, deniable ruin; no one can quite name what happened.
-- 😂 *Gael's lens:* filed as "a vendor dispute, resolved."
-**Gags:** ④ (the cold deed in HR-speak) · ③ (the maid's named entry is *why* she's in danger).
+- 😱 *Alicent (WTH, reverse-angle channel):* the exploiter's quiet ruin → "how *unlucky* for that man" — she serenely misses a murder, the eeriest escalation of the misread.
+- 😂 *Gael's lens:* filed as "a vendor dispute, resolved"; ⑥ clears her ("removing an impurity from the sect's qi-field is hygiene, not murder").
+**Gags:** ④ (the cold deed in HR-speak — blander-as-darker) · ③ (the maid's named entry is *why* she's in danger) · ⑥ (the clean-hands self-acquittal).
 
 ### II.8 · nothing here is mine *(~9)*
-**Inside:** the terminal realization — everything inside these walls is held at someone else's pleasure; to *own* a thing you must be beyond reach: a **ship.** Infinite resources AND absolute solitude, aligned. › **Lock II perfected; the ship ordered through the maid (the long con begins).**
+**Inside:** the terminal realization — everything inside these walls is held at someone else's pleasure; to *own* a thing you must be beyond reach: a **ship.** Through her lens (setting-blind, genre-brain) the ship is a **mobile cave-heaven / a sect of one beyond the reach of the great houses** — the secluded mountain-gate every cultivator needs, except hers floats and answers to no elder. Infinite resources AND absolute solitude, the two wants that were always one, aligned in a single hull. › **Lock II perfected; the ship ordered through the maid (the long con begins).**
 **Reverse-angle:**
-- 🤨 *The household:* notes the princess has become eerily *content* about her wedding. (She has decided not to attend her own life.)
-**Gags:** ⑤ · the two-desires alignment beat.
+- 🤨 *Alicent (WTH, reverse-angle channel — the eeriest misread):* "she's become so *content* about the wedding!" — read as a daughter finally reconciled; it is a daughter who has decided not to attend her own life. The household echoes it.
+**Gags:** ⑤ · ④ (the ship filed as a logistics asset / a mobile abode) · the two-desires alignment beat.
 
 ---
 
@@ -596,3 +601,85 @@ rippled two Book-I setups stale — both fixed, and the III consequences threade
   ship) · `WYLLA-TRUSTED` (I.2/I.3 planted → II.1/II.2/II.3 confidant→manager→keeper → II.5 leak → III) ·
   `FACTOR-NETWORK` (II.3 → III.3 Quint) · `OFFBOOKS-ACCOUNT` (II.3 → III.1 hull). All arced; check-threads
   re-verified, no orphans.*
+
+*__Book-II review-walk — RESUMED & COMPLETED: II.4 consistency-check + II.5–II.8 fresh reads (2026-06-11).__
+Closed the chapter-by-chapter walk (II.1/II.2/II.3 + smoothing already folded above). Body edits applied as
+judgment-defaults (reversible), all aligned with existing machinery — no new direction, no new tokens (the
+run-04 tokenized layer was already current through II.8; **check-threads re-run → PASS,** plants=83/fires=66,
+curdle rungs R0–R4 present). Delta set:*
+
+**II.4 "the betrothal" — consistency-check (already Stark-retargeted): PASS, no body change.** Internally
+consistent with the run-04 outline (II.4) + foot §D. **Thread-integrity verified:** every II.4 fire resolves
+to a plant — `LESBIAN` (planted I.1), `MARRIAGE-THREAT`/`JAEHAERYS-TRANSACTIONAL` (I.3), `DISPLAY-AS-ADVERTISEMENT`/`DAEMON-DISCREDITED` (II.1), `BETROTHAL-CLOCK`/`STARK-MATCH` (Interlude); **no orphans.**
+Two micro-notes (recorded, not body-edited): (a) the Daemon knife resolves *by* II.4 (the `DAEMON-DISCREDITED`
+token fires there; II.5 carries no Daemon token), tightening the foot §E-15 "II.4–II.5" window to II.4 — the
+body's "Daemon's failed knife" past-reference is correct; (b) `FIRE[LESBIAN]` at II.4 stays **subtextual** per
+the Wylla pre-romantic-in-text fence — the betrothal fires it as contrast (married off to a man she'll never
+wed; the real bond is Wylla), not as on-page romance.
+
+**II.5 "the compromise" — fresh.** Four tightenings to the bestiary's spotlight chapter: **(a)** resolved
+Alicent's "*if* she reads it" → **she reads it** — the WTH near-break peak (the terminal-grief WTH waits at
+III.6); **(b)** disambiguated the **three reader-vectors** so one prop isn't three-people-in-a-room — Otto via
+a court search off `OTTO-MONEY-TRACE`, Barth via the maester's letters-up (a transcription, scholar-ladder
+rung 4), Alicent via the Queen's access (the intimate, heartbreak read), Jaehaerys via Otto handing it up;
+**(c)** staged the **name-promotion as the warm beat the chapter weaponizes** — the unguarded moment Gael
+strikes out "Asset (manager)" and writes *Wylla,* the one tender thing she sets down, is exactly what the cold
+reader needs (the journal is *found,* not surrendered — consistent with Gael's "left my notes out — sloppy"
+lens); **(d)** reaffirmed **Rule-22 at its hottest** here (bestiary = cut-to prop, never the prose register,
+even as it becomes the plot spine).
+
+**II.6 "the source" — fresh.** The body staged *neither* of its per-chapter recurring obligations (both were
+scheduled in the gag-map / scholar-ladder but dropped from the body). Restored, riding the shared winter-fever
+event so the interiority holds: **(a)** Alicent's WTH (reverse-angle channel — "such *strong blood!*", the
+escalating misread of near-invulnerability as hardy stock); **(b)** Barth's antagonist-face beat (scholar-
+ladder rung 5 — he articulates "**a source, not a pool**" in the abstract and still can't attach it to the
+girl; rides the existing `SOURCE-NOT-POOL` fire, no new token); plus the maester's empty-purpose cope (the
+six-year network served no purpose; he checks it twice, files nothing).
+
+**II.7 "the threat" — fresh.** The single most load-bearing fix: **(a)** made explicit that the **exploiter is
+Otto's *lever* / proxy** (a court factioneer he works through), **not Otto himself** — disambiguating the II.5
+Otto-leaner from the II.7-removed-exploiter and resolving *why Otto survives to III.6:* the two real threats
+(the untouchable family member; Otto the hidden hand, whom her simple-mindedness never perceives) are
+unreachable, so the cold removal lands on the one *visible* pressure she can reach; Otto sees his proxy yield a
+corpse he never predicted, learns, and tightens toward the apex (`OTTO-LEAK` → III.6). **(b)** restored
+Alicent's WTH ("how *unlucky* for that man" — serenely missing a murder); **(c)** stamped the guardrails on the
+chapter face: **first *premeditated* kill** (foot §G), executed through the apparatus (**no qi-spend** —
+GUARD-1 three-spends intact at I.1/I.5/III.5), and **Rule-22 at the kill** (render a man sickening and dying;
+"a vendor dispute, resolved" is the cut-to file-card, not the prose voice).
+
+**II.8 "nothing here is mine" — fresh.** **(a)** Framed the ownership/solitude realization in Gael's
+**cultivation lens** (setting-blind consistency) — the ship as a *mobile cave-heaven / a sect of one beyond
+the reach of the great houses,* the two wants that were always one aligned in a single hull; **(b)**
+re-attributed the eerie-contentment misread from the generic "household" to **Alicent's** WTH (reverse-angle
+channel — "she's become so *content* about the wedding!"), keeping the per-chapter Alicent beat firing.
+
+*__Pattern flagged:__ the mid-Book-II bodies (II.6/II.7/II.8) had systematically **dropped their gag-map-
+scheduled Alicent WTH beats** (and II.6 its Barth beat) — present in the per-chapter running-gag map but
+absent from the chapter bodies. All restored. Worth a Phase-4 lint: every chapter body must carry the
+gag-map's Alicent WTH + (where present) the antagonist-face break.*
+
+*__Cross-doc consistency sweep (the 2026-06-11 Book-II revision never propagated past the spine body + run-04
+outline + Daemon card + thread-config; the smoothing pass missed the two live companion docs).__ Fixed, as
+faithful propagation of already-ratified decisions (not new calls):*
+- *`character-profiles.md` — Stark-retarget into §3b (Jaehaerys antagonism: "Slate / cheap" → "the Starks /
+  sells high to a Great House") + §4 (Interlude job betrothal target).*
+- *`character-reactions.md` — (1) **Daemon register inversion** (DAEMON-DISCREDITED): the whole profile +
+  tempo-map row + I.5 roll-up row flipped from *silence/unspeakability* (a man who can't speak) to *discredited
+  volume/disbelief* (a man who won't stop accusing and whom no one believes — gagged by ridicule, not silence;
+  he discredits his own accuser by having ruined him); (2) Stark-retarget into the Jaehaerys tweak, the
+  Interlude arm-Book-II line, and the Appendix name-assignment.*
+- *__Baelon ripple (§H "Baelon-as-parallel-griever dropped" was unpropagated):__ the spine **Interlude body**
+  and **character-profiles §4** still carried Baelon as one of Alicent's three shield-fronts, contradicting §H.
+  **Folded Baelon's shield-front into Daemon** (per §E "Daemon carries the whole accusation thread") in both
+  docs — Alicent now shields Gael from the diminished-but-loud prince's public denunciations rather than a
+  parallel griever's blame; her three-front war (King / Barth / Daemon) is preserved.*
+
+*__Thread-arc confirmation (II.4–II.8, hint → escalation → consequence):__ `STARK-MATCH` (Interlude armed →
+II.4 sale → III clock) · `DAEMON-DISCREDITED` (I.5 drained → II.1 vocal → II.4 knife, resolved) ·
+`OTTO-MONEY-TRACE` (II.2 untraceable coin → II.5 leads him to the journal) → `OTTO-LEAK` (II.5 reads bestiary,
+clocks Wylla → II.7 proxy-removal teaches him → III.6 the apex interception) · `BESTIARY-NAMED-ENTRY` (II.2
+"Asset→manager" creep → II.5 name-promotion + leak → III.6 the named entry dooms the warmed) · `SMALLFOLK-HOLD-
+RISK` (II.2 exposure parked low → II.5 lands first on the market tier) · `SOURCE-NOT-POOL` (II.6 Gael's
+self-reveal ‖ Barth's abstract near-miss) · `CLEAN-HANDS-DOCTRINE` (I.5 method-not-harm line → II.7 first
+"clean" kill → III.6 the blood on Wylla) · `SHIP`/`NOTHING-MINE` (II.8 ordered through Wylla → III.1
+commission → III.6 escape). **All arced; check-threads PASS, no orphans. Book-II review-walk CLOSED.**__*

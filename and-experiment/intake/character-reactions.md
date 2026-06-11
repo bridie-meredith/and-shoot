@@ -61,7 +61,7 @@ a different **comic register/tempo** per foil, so the *rhythm* surprises even wh
 | Septa | **one-way ratchet** | a single endorsement, amplified, tightens on her |
 | Jaehaerys | **cold deadpan symmetry** | two people congratulate themselves on one deal |
 | Hobb | **attrition / flattening** | the register goes dead by degrees — a build, not a loop |
-| Daemon | **silence / unspeakability** | the menace gagged; the funny is what he *can't* say |
+| Daemon | **discredited volume / disbelief** | the menace dismissed; the funny is he's *right,* loudly, and no one believes him |
 | Alicent | **tragic near-miss** | the closeness is the wound; slow and quiet |
 | Wylla | **affectionate deadpan** | the only un-deflatable read; warmth, not irony |
 | Otto | **chess-player sliding off** | strategy applied to a game that isn't being played |
@@ -249,8 +249,9 @@ blinds him.** Every Talk *works* — she complies, perfectly — so he **never e
 correction guarantees he never looks again. The discomfort is a flicker of unease he *refuses to
 dignify* (a king does not fear a child), surfacing only as colder administrative reflexes — and the
 funniest/cruelest beat is **the disposal-betrothal as a self-congratulation that mirrors hers exactly**:
-he believes he is *solving a problem* (offloading a baffling, useless daughter to buy a minor lord's
-loyalty, cheap), while she — once she learns of it — is *relieved* (she's bailing anyway, so a fixed
+he believes he is *solving a problem* (disposing of a baffling, useless daughter by selling her *high* to
+the **Starks** — a Great-House alliance, the curdled omen-legend making her an asset to the grim North),
+while she — once she learns of it — is *relieved* (she's bailing anyway, so a fixed
 destination and a deadline are just logistics). The reader watches **two people congratulate themselves
 on opposite sides of the same transaction.** When the bestiary surfaces to him (II.5 path), it confirms
 "useless *and* dangerous" → he *accelerates the betrothal as disposal*: the cage tightens **because the
@@ -302,34 +303,41 @@ does.** Reprise him in III.2 as a watchman who *did* see the rooftop "ghost," is
 
 **History.** The realm's most dangerous young man, circling the uncanny-beautiful child as a marriage
 prospect (the Targaryen incest custom; Gael, modern-nerd, is revolted). In I.5 she senses his living
-**dragon-bond**, drains and severs it; a distant dragon dies; Daemon survives **concussed, diminished,
-silenced.** Baelon and Viserys (the nephew) blame *her* — not for the draining (unknown) but by
-association: she's "Dragonbane," she was alone with him, his dragon is dead.
+**dragon-bond**, drains and severs it; a distant dragon dies; Daemon survives **concussed, diminished in
+standing — but loud.** *(Revised 2026-06-11 per DAEMON-DISCREDITED, spine §E: menace broken, voice not.)*
+The realm blames *her* by superstitious association — "Dragonbane," alone with him, his dragon dead — and
+**Daemon himself, recovered enough to shout it,** becomes the loudest accuser. *(Baelon as a parallel
+griever is **dropped** per spine §H; Daemon carries the whole accusation/knife thread.)*
 
 **Personality / foibles.** Pride, menace, entitlement — the predator's certainty. His coping mechanism
-post-I.5 is **the thing he can't use:** he cannot say what was done to him without admitting *where he
-was* (broken into a child's room). His foible becomes his cage: unspeakability.
+post-I.5 inverts: he **cannot stop saying** what was done to him — *demon, she killed Caraxes, she's not
+human* — and **no one believes him.** His foible becomes his cage: **disbelief.** He is right, openly,
+loudly, and is dismissed behind his hands as a ruined, jealous husk — and the cruelty is that he is
+discredited *because* she ruined him: she destroyed her own accuser.
 
-**Vibes.** I.4 — silk and threat, appraising. I.5-onward — a man who flinches, can't finish sentences
-about that night, and won't be in a room with the child.
+**Vibes.** I.4 — silk and threat, appraising. I.5-onward — a diminished prince who **won't stop accusing**
+and whom the court has stopped hearing; volume without standing.
 
 **Baseline reaction (I.4).** Interested, appraising; the nice "most-beautiful-child" misread curdles as
 he starts circling.
 
 **The tweak (uncomfortable for them · funny for the reader).** **Deflate the menace to a man nobody
-pities, and lock him out of his own story.** The realm's deadliest figure is reduced to "he tripped, hit
-his head" — and *he cannot contradict it* (because-Westeros: scandal-burying launders the crime; a prince
-can't be admitted to a child's room). His discomfort is the **unspeakable diminishment**: he knows
-something took something from him, has no words for it, and every word he *could* say convicts him.
-Gael's lens makes it funnier and colder: appraised by the realm's deadliest man, her whole reaction is a
+*believes,* and lock him out of his own story.** The realm's deadliest figure is reduced to a ranting
+husk — and *the truth he keeps shouting is the one thing that gets him laughed at* (because-Westeros:
+scandal-burying launders the crime; a demon-screaming, dragon-bereaved prince is exactly the figure the
+court files under "jealous and broken"). His discomfort is the **discredited diminishment**: he knows
+exactly what took something from him, *says so,* and every accurate word convicts him further of madness —
+his accusations make him a joke (the demon-shrieking), his one knife (the assassin, II.4–II.5) fails
+mundanely and makes him a villain, and both leave her sailing on. Gael's lens makes it funnier and colder:
+appraised by the realm's deadliest man, her whole reaction is a
 bored two-star review — *"enemy-to-lovers with a cousin, two tropes stacked, absolutely not"* — and she
 turns back to her work, guilty *only about the dragon,* never the man. (Stage the line as a reaction in
 the moment with a consequence; don't *label* it "a ②-dodge" — the played-out move is naming the trope,
 the fresh one is dismissing the apex predator as derivative and going back to your reading.) The
 investigators chase a *phantom master-thief* (locked-room theft, no thief, a *shrinking* timeline); the
 realm's theory is "a Faceless Man, a rival, a poison" — anything but four feet tall and a bit guilty.
-Daemon is the dark-comedy proof that in Westeros even the apex predator can be *unmade and gagged by the
-one weapon nobody believes in.*
+Daemon is the dark-comedy proof that in Westeros even the apex predator can be *unmade and discredited —
+gagged not by silence but by disbelief: he screams the truth and the realm hears a jealous madman.*
 
 **Channel:** investigators chasing a phantom (🤨) + the realm's wrong theory (😂).
 
@@ -377,8 +385,8 @@ mother misreads throughout.
 
 **The reverse-angle, sustained.** Everything above for Alicent, given a full chapter from outside Gael's
 head. Structural job: **recontextualize the reader** (we rooted for her inside; from outside she's
-frightening) and **arm Book II** (Jaehaerys is quietly arranging the pacification betrothal to a minor
-Northern lord — selling his baffling daughter cheap; the clock starts). The comedy goes quiet here on
+frightening) and **arm Book II** (Jaehaerys is quietly arranging the betrothal to **the Starks** — the
+Warden of the North's heir, selling his baffling daughter *high* to a Great House; the clock starts). The comedy goes quiet here on
 purpose; this chapter is where the *chill* the farce has been sitting on top of is allowed to show, so
 Book II's lighter register lands against a remembered unease.
 
@@ -649,7 +657,7 @@ for being boring — sexism as the last cheat code, staged, not stated.)
 | **I.2 the-heist** | Maester; Cassandra (still-room boy); Alicent | underestimation → **access** | "she chose the *one* lethal jar and got healthier"; the punishment (a tutor) is the prize |
 | **I.3 the-cage** | Jaehaerys; Septa; throne-room guards | the Faith / authority → **cover** | his Talk "works" so he never looks again; she nods and files the skulls |
 | **I.4 valyrian-beauty** | Maester; Daemon; Cassandra (guard); the court | beauty misread as Valyrian perfection | "steel that can't be eaten — so where is it?"; the nice misread curdles as Daemon circles |
-| **I.5 the-bond-breaker** | Daemon; investigators; the realm; Alicent | scandal-burying → **laundering** | locked-room theft with a *shrinking* timeline; the menace gagged by the one weapon nobody believes |
+| **I.5 the-bond-breaker** | Daemon; investigators; the realm; Alicent | scandal-burying → **laundering** | locked-room theft with a *shrinking* timeline; the menace discredited — he screams the truth and is heard as a jealous madman |
 | **Interlude** | Alicent (POV); Jaehaerys (offstage) | — (the chill shown plain) | a mother loving a daughter she's losing; the betrothal-clock armed |
 | **II.1–II.3** | the Maid; Maester (now resource) | sexism → **free corporate veil** | the triple-blind; a princess wanting harbor records, "paid not to wonder" |
 | **II.4 the betrothal** | court; Jaehaerys (clock) | indifference misread as grace/ice | worst news of her life taken without a flicker; "what grace!" vs "what ice!" |
@@ -690,8 +698,9 @@ These reactions are written to the **live span-A spine**; the warehouse cards ar
   - the Septa → **Septa Aldith** (narration may still say "the Septa" per Gael's POV convention)
   - the Cassandra witness (still-room boy → watchman) → **Hobb** (one recurring figure)
   - the greedy factor → **Lothar Quint**
-  - the Northern betrothal lord → **Lord Errold Slate of Blackpool** (named offstage-pressure — a bleak,
-    obscure minor Northern house; the dreaded destination, not an on-page character)
+  - the Northern betrothal → **the Starks — the Warden of the North's heir** (a young cipher; the cold
+    *destination,* not the groom, carries the dread). *(Retargeted 2026-06-11; was Lord Errold Slate of
+    Blackpool — the King now sells her high to a Great House, not cheap to a minor lord.)*
 - **Otto, Daemon, Hobb, Lothar Quint, the shipwright's agent → cards to build** to the live span-A canon.
   (`the-factor` card exists but is span-B; re-derive as Lothar Quint.)
 - **Still role-labels by design (minor marks — no name required):** the Braavosi banker / buyers, the

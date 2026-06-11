@@ -301,8 +301,10 @@ because he is too good at correction to notice it isn't working.
 
 ### The antagonism
 - **The Talk (I.3)** — transactional correction delivered to a solemn nodding child planning a heist.
-- **The disposal-betrothal** to **Lord Errold Slate of Blackpool** — selling his baffling, useless daughter
-  *cheap.* This is **the clock** that drives Books II–III (surfaced via Alicent in the Interlude).
+- **The disposal-betrothal** to **the Starks** (the Warden of the North's heir) — disposing of his baffling,
+  useless daughter by selling her *high,* to a Great House, the curdled omen-legend that repels southron
+  houses making her an *asset* to the grim North. This is **the clock** that drives Books II–III (surfaced
+  via Alicent in the Interlude). *(Retargeted 2026-06-11; was Lord Errold Slate of Blackpool / "cheap.")*
 - **Acceleration** — armed by Otto's file, he confirms "useless **and** dangerous" and accelerates the
   disposal. The cage tightens *because the truth half-surfaced* — and the man who files everything has,
   characteristically, **filed it wrong.**
@@ -445,13 +447,16 @@ joke's punchline is the gut-punch: the last and largest "what the hell" is the o
 
 ### The Interlude's structural job
 1. **Recontextualize** the reader. 2. **Arm Book II** — she learns Jaehaerys is arranging the betrothal to
-Lord Errold Slate of Blackpool; *the clock starts.* 3. **The rift** — utility (Jaehaerys) vs affection
+**the Starks** (the Warden of the North's heir — a Great-House match she cannot argue against); *the clock
+starts.* 3. **The rift** — utility (Jaehaerys) vs affection
 (Alicent). 4. **The shield / the seal** — she is the *active protector* and the in-world reason the
 mirror-flip stays sealed: she keeps the realm's prophesied-one / omen-child whispers from reaching Gael, and
 runs interference on three fronts — the **King** (disposal-betrothal + a stirring *kinslayer* suspicion after
 the dead dragon), **Barth** (the one mind that could uncover her; she buries the maester's letters),
-**Baelon** (the kinsman who blames Gael for Caraxes by superstitious association). `PLANT[ALICENT-SHIELD]` →
-III.6 (the protector left behind; Gael sails never knowing her mother held the seal).
+**Daemon** (the diminished prince who loudly blames Gael for Caraxes by superstitious association — she keeps
+his denunciation from landing / hardening into the realm's maegi file). `PLANT[ALICENT-SHIELD]` →
+III.6 (the protector left behind; Gael sails never knowing her mother held the seal). *(Baelon-as-griever
+folded into Daemon, 2026-06-11 per spine §H / §E.)*
 
 ### Hard fences
 1. **Never reaches the *full* truth** — she *suspects,* wordlessly, that the gift made her daughter into
