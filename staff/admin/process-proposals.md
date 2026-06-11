@@ -6584,3 +6584,87 @@ pr_ref: null
 defer_until: null
 supersedes: null
 ```
+
+---
+
+## PROP-0053
+
+```yaml
+id: PROP-0053
+created_at: 2026-06-11T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: on-demand
+  source_report: staff/admin/improvement-loop/bridge.ledger.md
+  source_verdict: bridge-pass-1 (improvement-loop mining of brighid-creative-writing ingrid plans)
+target:
+  type: command
+  path: .claude/commands/and-review.md
+  section: "verdict subcommand Phase 4.5 (admin process-critic tail-step)"
+change_type: add
+rationale: |
+  Admin process-critic fires per-verdict (on each chain FAIL/REVISE/PASS-WITH-DEPTH-PASS-REQUIRED
+  at /and-write, /and-facets, /and-stitch Phase 9, and each /and-postop convergence). This is
+  purely forward-looking: given this failure, is a new process change warranted? There is no
+  backward-looking complement: at book-close, nothing asks "how many PROPs accumulated during
+  this book's production are still open / untriaged — what process debt are we carrying forward?"
+
+  The brighid harness addresses this gap explicitly. Ingrid's project-improvement-tracking.plan.md
+  Axis D — "Improvement closure rate" — fires at project-close and reports: of all improvement
+  items routed since the last project-close, what fraction were actually shipped (triaged +
+  pr_ref set) before the new project opened? The closure rate is a health signal: >80% shipped
+  = improving; 50-80% = flat; <50% = debt compounding. The mechanism is backed by an
+  auto-trigger: the check fires automatically at the defined milestone (project-close in
+  brighid; book-verdict in the and-shoot analogue) without requiring manual dispatch.
+
+  In and-shoot, b01 produced 52+ PROPs in process-proposals.md. Several are accepted and
+  implemented; many remain open. When b02 starts, the principal has no structured signal
+  about how much improvement debt is being carried forward. PROP-0037 (7-consecutive-
+  SHIPPED-WITH-CAVEATS) and PROP-0042 (protect-target-absent-from-book-plan) are both
+  status: open with recurrence_count >= 3 — they are load-bearing for b02 planning but
+  there is no milestone gate that surfaces this before b02's /and-substance book fires.
+
+  The per-verdict admin-critic is the right tool for "should this failure generate a new
+  proposal?" The book-close PROP-debt audit is the right tool for "how much process debt
+  have we accumulated and not yet acted on?" Both are needed; only one exists today.
+
+  Recurrence_count = 1 (first occurrence of this gap pattern; structural gap, not a one-off
+  failure). Proposing add rather than waiting for recurrence because: (a) the gap is
+  structural — it is the absence of a milestone check, which cannot generate a recurrence
+  signal by definition; (b) the evidence is cross-repo (brighid has the completed mechanism,
+  and-shoot lacks its analogue); (c) implementation cost is low (one phase-note + one schema
+  extension); (d) and-shoot already has all the input data (process-proposals.md with
+  timestamps, series_audit.approved_at in showrunner memory).
+evidence_refs:
+  - "brighid-creative-writing staff/agents/ingrid/project-improvement-tracking.plan.md §Axis D — Improvement closure rate"
+  - "brighid-creative-writing staff/agents/ingrid/project-improvement-tracking.plan.md §4 What 'verify' means in action — Axis D routing table"
+  - "staff/admin/process-proposals.md PROP-0037 (status: open, recurrence_count: 8) — carried forward from b01"
+  - "staff/admin/process-proposals.md PROP-0042 (status: open, recurrence_count: 4) — carried forward from b01"
+  - "staff/admin/process-proposals.md PROP-0052 (status: open) — filed 2026-06-08, untriaged at time of this proposal"
+  - "schemas/admin-proposal.schema.md — trigger.reason field currently accepts failure | postop | on-demand; book-close not listed"
+recurrence_count: 1
+proposed_diff: |
+  1. In .claude/commands/and-review.md, Phase 4.5 (admin process-critic tail-step at /and-review
+     verdict b<NN>): add a PROP-debt audit sub-step. After the per-verdict admin-critic fires,
+     admin also runs in book-close mode: reads staff/admin/process-proposals.md, selects all
+     PROPs with status: open and created_at >= the book's series_audit.approved_at (or >= the
+     prior book's verdict date), counts them, and emits a PROP-DEBT-REPORT block in the verdict
+     summary: "N open PROPs accumulated during b<NN> production. [list of IDs and one-line
+     descriptions]. Triaged: X. Untriaged: Y." If Y >= 5, emit PROP-DEBT-HIGH signal (surfacing
+     only — not a block; principal decides whether to triage before opening b<NN+1>).
+
+  2. In schemas/admin-proposal.schema.md, trigger.reason field: add book-close as a valid value
+     alongside failure | postop | on-demand. Document it as: "book-close — fired at /and-review
+     verdict b<NN> Phase 4.5 to report accumulated PROP debt; not tied to a specific failure."
+
+  No new file. No new gate. No block on existing flow. The PROP-DEBT-REPORT is a surfacing-only
+  addition to the existing Phase 4.5 output block.
+cost_estimate: S
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
