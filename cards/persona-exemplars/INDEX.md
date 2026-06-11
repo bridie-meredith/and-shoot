@@ -9,7 +9,18 @@ Margit-maintained index. One row per exemplar. Schema: `schemas/persona-exemplar
 | slug | persona-ref | content-match | authored-by | dispatch-status |
 |------|-------------|---------------|-------------|-----------------|
 | cape-fic-reader | cape-fic-reader | high (generic capefic rooftop fight) | claude (2026-05-26) | active |
+| cape-fic-reader-impersonator | cape-fic-reader | high (junior hero's first solo contact, rogue teleporter) | claude (2026-06-11) | active |
+| cape-fic-reader-critic | cape-fic-reader | high (three-chapter team engagement arc, generic capefic) | claude (2026-06-11) | active |
+| cape-fic-reader-plan | cape-fic-reader | high (prison-break plan outline, three characters, four complications) | claude (2026-06-11) | active |
 | dark-fantasy-reader | dark-fantasy-reader | high (generic grimdark battlefield aftermath) | claude (2026-05-26) | active |
+| literary-snob | literary-snob | high (historian discovers mentor's fraud in private notebooks) | claude (2026-06-11) | active |
+| literary-snob-impersonator | literary-snob | high (soldier returns to unchanged hometown after war) | claude (2026-06-11) | active |
+| literary-snob-critic | literary-snob | high (multi-generation family saga, three chapters) | claude (2026-06-11) | active |
+| literary-snob-cold-read | literary-snob | high (first-person bureaucrat processing deportation orders, no context) | claude (2026-06-11) | active |
+| pulp-enthusiast | pulp-enthusiast | high (heist crew discovers inside contact turned against them) | claude (2026-06-11) | active |
+| pulp-enthusiast-impersonator | pulp-enthusiast | high (spy discovers handler compromised, thriller chapter open) | claude (2026-06-11) | active |
+| pulp-enthusiast-critic | pulp-enthusiast | high (first-act political assassination arc, three chapters) | claude (2026-06-11) | active |
+| pulp-enthusiast-plan | pulp-enthusiast | high (informant extraction plan, six scenes, hostile location) | claude (2026-06-11) | active |
 | worm-canon-pedant | worm-canon-pedant | high (generic Worm-fic with Lisa + Travelers OC) | claude (2026-05-26) | active |
 
 ## Impersonator exemplars — library (planetos / and-experiment cast)
@@ -66,6 +77,7 @@ Stored at `and-experiment/persona-exemplars/saerys-septa.md`. The persona card `
 ## Coverage notes
 
 - **Audience trio (3/3):** complete for the active-project audience selection. Library has 22 audience personas total; remaining 19 are uncovered. Author on demand when those personas activate in a project.
+- **Multi-variant exemplars (3 personas × 4 variants, 2026-06-11):** cape-fic-reader, literary-snob, and pulp-enthusiast each have four dispatch variants: primary audience (live-read), impersonator (bare-minimum voice prime), critic (post-read analytical debrief), and plan/cold-read (bones-review or context-stripped mode). Dispatch the variant that matches the consumer context; the primary (no suffix) is the default for unspecified audience dispatch.
 - **Active-project impersonators (11/11):** complete for taylor-westeros-good-intentions cast. Other active-project actors that get added in revisions will need exemplars authored at /and-cast Phase 4.
 - **and-experiment impersonators (7/7 — saerys + six supporting cast):** 6/7 promoted to library as of 2026-06-06. `saerys-septa` remains project-bound (project-only OC). Library copies at `cards/persona-exemplars/<slug>.md` for saerys-targaryen, viserys-i-targaryen, helaena-targaryen-122ac, daenys-velaryon, ser-harwin-the-patient, nymeria-summer-isles. Project copies at `and-experiment/persona-exemplars/<slug>.md` remain as working copies.
 - **Library personas without active-project use:** uncovered. Author on demand.
