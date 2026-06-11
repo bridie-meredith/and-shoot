@@ -14,6 +14,17 @@
 # (the realm halos her prophesied; she never learns) · c03 = "both girls discover the bars".
 # The prior Saerys / Viserys-father / span-B (Dance) framing is RETIRED to provenance
 # (run-02 + tombstones); span-B (the Dance) is PARKED for a later installment, not deleted.
+#
+# REVIEW-WALK STATE (2026-06-11) — Book-II spine review-walk IN PROGRESS (design-level, NOT chapter
+# production). A chapter-by-chapter trope/comedy pass over Book II, folding revisions into the canonical
+# layer (design/run-04/series-outline.md + intake/spine.md + thread-config + warehouse cards). DONE &
+# FOLDED: II.1 (King display/favor + Daemon vocal-laughingstock + maegi-rumour + Alicent Dragonstone +
+# Wylla-confidant) · II.2 (triple-blind cover-synergy + smallfolk-risk + Otto-proto + proto-sect) · II.3
+# (reagent-map + travel-knowledge; the underground vice-empire she founds in era-young KL; Wylla = keeper
+# of the secret things / sole crack). Betrothal retargeted Errold Slate -> the STARKS. Full spine-smoothing
+# pass complete (all three books hinted-prior + have-consequence; check-threads PASS). NEXT SESSION: resume
+# at II.4 "the betrothal" (a consistency-check — already revised), then II.5-II.8 fresh. See the dated
+# amendment foot of intake/spine.md for the full delta record + thread-arc confirmation.
 
 project:
   brief: >

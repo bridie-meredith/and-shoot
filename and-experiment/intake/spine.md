@@ -197,7 +197,7 @@ not hers.
 - **Near-bedridden Daemon → "an elder who lost his cultivation base."** A husk read as a *stat-change,* not a man she destroyed — in-genre, losing your core is a known, near-recoverable fate. Detached pity, maybe relief (the predator's neutralized), a ⑥ credit for *restraint* ("only the once, then I swore off"). She never grasps what she did to him — completing the `GIFT:DAEMON` arc (⑥/③).
 - **Caraxes → kindred spirit-beast, mourned; the servants don't register (③).** She performs a reverent cultivator's rite for the dead dragon; the servants blamed and executed for the filed-down dagger never make her journal. Grief, real and *misallocated* — spirit-beasts are kin, mortals are furniture. The curdle undertow.
 **Reverse-angle:**
-- 😱 *The realm:* **Caraxes** dies, no wound, the same hour "Dragonbane" was alone with Prince Daemon — now diminished, near bed-ridden, silent. The name stops being a joke; the maester locks the princess away for fear of a contagion that fells dragons.
+- 😱 *The realm:* **Caraxes** dies, no wound, the same hour "Dragonbane" was alone with Prince Daemon — now diminished, near bed-ridden, his menace broken (his *voice* is not — the demon-accusations begin once he recovers it, II.1). The name stops being a joke; the maester locks the princess away for fear of a contagion that fells dragons.
 - 🤨 *Investigators:* a locked-room theft with no thief, no blade, a *shrinking* timeline → they chase a phantom master-thief. *Dragonkeepers:* find no illness; the beast simply *stopped*; they sleep badly.
 - 😂 *The realm's theory:* an elaborate conspiracy (poison? a rival? a Faceless Man?) — anything but the truth, which is four feet tall, confined to her room, and feeling a bit guilty (*about the dragon, specifically*). Gael is *offended* the dagger investigation is so sloppy — and quietly thrilled at the meditation leave.
 **Gags:** ③ (a reverent cultivator's rite for Caraxes; the executed servants never make the journal — the dark undertow) · ⑥ ("I may have deviated — closed-door meditation it is," a botched killing filed as a cultivation hiccup) · ⑤ (the quarantine read as the caring sect granting secluded cultivation) · ② (the investigation, two stars). · **because-Westeros:** scandal-burying launders "he tripped."
@@ -206,10 +206,10 @@ not hers.
 **This chapter IS the reverse-angle, sustained.** From outside, Gael is *unnerving* — too still, too perfect, eyes that don't track, a child who no longer tires and who was alone with a prince the hour his dragon died. Alicent loves a daughter she is losing to something she cannot name — and **she is the gift-egg mother:** she fought the King to put that egg in the cradle (`GIFT:ALICENT`, I.1), and she is the one person who suspects, without words for it, that the gift is what made her daughter into *this.* The rift with Jaehaerys (utility vs affection) has hardened.
 
 **Alicent the shield (the active protector).** She does not move *against* Gael — she moves to *cover* her, a quiet losing war her daughter never knows is being fought, on every front at once:
-- **From the King.** Jaehaerys files Gael *worthless* and arranges the disposal-betrothal; worse, after the dead dragon a colder suspicion stirs — *kinslayer-in-waiting.* Alicent works him, deflects him, spends a wife's leverage to keep the sentence a *marriage* and not something final.
+- **From the King.** Jaehaerys files Gael *worthless* and arranges the disposal-betrothal — and means to wring her one remaining worth *first:* parade the jewel, inflate the match (the value-extraction that opens Book II — II.1). Worse, after the dead dragon a colder suspicion stirs — *kinslayer-in-waiting.* Alicent works him, deflects him, spends a wife's leverage to keep the sentence a *marriage* and not something final.
 - **From Septon Barth.** The one mind in the realm equipped to theorize what Gael *is* — his *Unnatural History,* the maester's unhinged letters climbing toward him. Alicent keeps the genius and the girl apart: redirects his curiosity, buries the letters, makes her daughter boring on paper.
 - **From Baelon.** The kinsman who **blames Gael for Caraxes** — not for the draining (no one knows) but by the superstition of association: the beauty, the name, the dead dragon, the gutted prince. His grief wants someone to answer for it; Alicent stands between his blame and her child.
-- **From the realm — and from Gael herself.** Above all she keeps the *whispers* from reaching her daughter: the prophesied-one talk, the omen-child dread. **She is the reason the mirror-flip stays sealed** — half out of protection (a revered child is a *used* child; a feared one is a *dead* one) and half because she cannot bear for Gael to hear the realm call her a legend while Alicent still needs her to be a *daughter.* `PLANT[ALICENT-SHIELD]` → III.6. **Arms Book II:** the betrothal to **Lord Errold Slate of Blackpool** survives her interference — a marriage she can soften but not stop. **The clock starts.**
+- **From the realm — and from Gael herself.** Above all she keeps the *whispers* from reaching her daughter: the prophesied-one talk, the omen-child dread. **She is the reason the mirror-flip stays sealed** — half out of protection (a revered child is a *used* child; a feared one is a *dead* one) and half because she cannot bear for Gael to hear the realm call her a legend while Alicent still needs her to be a *daughter.* `PLANT[ALICENT-SHIELD]` → III.6. **Arms Book II:** the betrothal — high, to the **Starks** (the Warden of the North's heir; the omen-rumours that repel the south *attract* the grim North) — survives her interference; a match she can soften but not stop. **The clock starts.**
 
 **The Book-I payout button — the sealed mirror-flip (the gobsmack).** Book I closes on three corners staring straight past one another, every one of them wrong:
 - **Gael** has filed *herself* the **dangling reward** (I.2) — a side-character prize, quietly plotting not to be won.
@@ -299,7 +299,7 @@ The engine is the **asymmetry, sealed — and Alicent is the seal.** The observe
 *Scale: the world / the sea. Lock III: the escape. Cost: R3 → the apex.*
 
 ### III.1 · the commission
-**Inside:** the ship is ordered through three layers of paper, designed from her room off the reagent map. The shipwright quotes *years.* She runs it against the betrothal clock. Tight.
+**Inside:** the ship is ordered through three layers of paper, designed from her room off the reagent map, **paid out of the off-books dice-coin** (the soap-money can't be seen buying a getaway hull). The shipwright quotes *years.* She runs it against the betrothal clock. Tight.
 **Reverse-angle:**
 - 🤨 *The shipwright's agent:* a phantom buyer commissions a custom vessel through too many intermediaries — delighted by coin that clears, incurious about whose it is. (because-Westeros: nobody imagines a child.)
 **Gags:** ④ (the long con as a procurement project).
@@ -313,7 +313,7 @@ The engine is the **asymmetry, sealed — and Alicent is the seal.** The observe
 **Gags:** ⑤ (the meditation alibi) · the Cassandra witness reprised (a guard who *did* see her, ignored).
 
 ### III.3 · the greedy factor
-**Inside:** a factor in the payment chain smells money, can't produce the phantom buyer, leans on the maid. He has *no idea* he's poking a dragon-eating cultivator child. Gael handles him — **colder than R2.** › **R3, climbing.**
+**Inside:** **Lothar Quint — one of her own pit-factors, grown greedy** — smells the bigger money in the ship-payment chain, can't produce the phantom buyer, and leans on the maid. He has *no idea* he's poking a dragon-eating cultivator child. Gael handles him — **colder than R2.** › **R3, climbing.**
 **Reverse-angle:**
 - 😂 *The factor:* certain he's the smartest man in the room. (He is not the smartest thing within fifty feet of the maid.)
 - 😱 He's "let go"; never seen again; no one can say quite why.
@@ -472,8 +472,8 @@ soft near-miss; keep Barth as a grace note).
 **E. Daemon fallout + the Book-II realm-read hardening (maegi).**
 13. **Daemon post-drain = vocal laughingstock, NOT gagged.** Loud, accusing, a prince — and dismissed
     behind his back as a ruined, jealous husk (discredited by ridicule, not silence; "gagged by the one
-    weapon nobody believes in" re-reads as gagged by *disbelief*). **CARD EDIT (staged):** rewrite
-    `warehouse/daemon-targaryen.card.md` Voice (currently flinching / unspeakable / won't-be-in-a-room) →
+    weapon nobody believes in" re-reads as gagged by *disbelief*). **CARD EDIT (done 2026-06-11):** rewrote
+    `warehouse/daemon-targaryen.card.md` Voice (was flinching / unspeakable / won't-be-in-a-room) →
     vocal / ranting / openly accusing; diminished in standing, not volume. The cruelty: he is dismissed
     *because* she ruined him — she discredited her own accuser.
 14. **The confrontation (early Book-II counter-beat):** Daemon openly denounces her — *demon, she killed
@@ -577,3 +577,22 @@ handling (II.7 keeps the first kill); Gael breezy, the ruin is the reader's. New
 `BEAST-DAO-MISREAD` (`PLANT-ONLY`) · `OFFBOOKS-ACCOUNT` (→ III.1) · `FACTOR-NETWORK` (→ III.3 Quint) ·
 `WYLLA-TRUSTED` (→ II.5). check-threads re-verified. Review walk now at II.4 "the betrothal" (already
 revised — a consistency-check, not a fresh read).*
+
+*__Spine-smoothing pass — all three books (2026-06-11).__ Confirmed every Book-II-revision thread is
+**hinted-prior** and **has-consequence**; token pairing already PASS (1:1 plant→fire). The revisions had
+rippled two Book-I setups stale — both fixed, and the III consequences threaded:*
+- ***Daemon (I.5 body):** "diminished, near bed-ridden, silent" → menace broken but *voice* not (bridges to
+  the II.1 denunciation; card is now vocal-laughingstock).*
+- ***Betrothal (Interlude body):** retired "Lord Errold Slate of Blackpool" → the **Starks**; added the
+  King's **value-extraction hint** (he wrings her worth first — display → II.1) so II.1's parade is set up,
+  not sprung fresh.*
+- ***III consequence-threading:** III.1 hull **paid from the off-books dice-coin** (`OFFBOOKS-ACCOUNT`);
+  III.3 **Quint named as one of her own pit-factors grown greedy** (`FACTOR-NETWORK`).*
+- *__Thread-arc confirmation (hint → escalation → consequence):__ `DISPLAY-AS-ADVERTISEMENT` (Interlude
+  disposal-decision → II.1 display → II.4 sale) · `MAEGI-RUMOR` (I.4/I.5 omen/Dragonbane/dead-dragon dread →
+  II.1 sorcery → II.4 disposal + III gag-① intimidation) · `DAEMON-DISCREDITED` (I.5 drained → II.1 vocal →
+  II.4 knife) · `ALICENT-CANT-EXTRACT` (Interlude shield/rift → II.1 Dragonstone wall → III.6 left behind) ·
+  `STARK-MATCH` (Interlude armed → II.4 sale → III clock) · `VICE-NETWORK` (II.2 empire → II.3 vice → III.1
+  ship) · `WYLLA-TRUSTED` (I.2/I.3 planted → II.1/II.2/II.3 confidant→manager→keeper → II.5 leak → III) ·
+  `FACTOR-NETWORK` (II.3 → III.3 Quint) · `OFFBOOKS-ACCOUNT` (II.3 → III.1 hull). All arced; check-threads
+  re-verified, no orphans.*
