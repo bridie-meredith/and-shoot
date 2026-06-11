@@ -83,12 +83,15 @@ crisis as a charming phase). The babying is the human cause of the cultivation e
 shelters it, she cannot see it. Her love is the most poignant misread in the cast.
 
 ### Hard Fences
-1. **Never reaches the truth** — her love is the most poignant misread; the *tragic* straight-man, not a
-   fool.
+1. **Never reaches the *full* truth** — she *suspects,* wordlessly, that the gift made her daughter into
+   *this* (she half-knows), but never names the cultivation reality; her love is the most poignant misread,
+   the *tragic* straight-man, not a fool.
 2. **The Interlude is the one external-POV chapter** — she does not become a second running POV (the
    recurring WTH beats are *moments,* not POV).
-3. **Arc-question (open slot):** does she ever *act* on what the Interlude knows? Recommended: **she knows
-   and does not act** — the love that sees and cannot move. (Confirm or override.)
+3. **Arc RESOLVED (2026-06-11): she knows and *shields.*** Never acts *against* Gael, never exposes her — but
+   actively *covers* her: the three-front war (King / Barth / Baelon) + holding the mirror-flip seal (keeps
+   the realm's whispers from reaching Gael). `ALICENT-SHIELD` → III.6. The love that sees and cannot *save* —
+   left behind at the escape, never knowing she was the shield.
 
 ### Default Stance
 Hovering near Gael, fretting at the wrong target, narrating a daughter who isn't there.

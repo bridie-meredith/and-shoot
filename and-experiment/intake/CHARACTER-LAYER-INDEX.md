@@ -38,7 +38,7 @@ span-B Dance) are tombstoned/superseded, not deleted.
 ## Seating caveats carried to Phase-4
 - **Otto** and **Daemon** — canon birth-years (77 AC / 81 AC) make them too young in span-A as the adult predator/operator the roles need. **Barth is cleanly seated** (Hand 82–98 AC) and eases the Otto load. Settle in Phase-4.
 - **Alicent / Jaehaerys** — the AU seating (Alicent as Jaehaerys's queen) is deliberate per GUARD-4; reconcile in Phase-4.
-- **Open story slots** — Helaena's role; Alicent's arc-question (act on what the interlude knows? — recommended: knows-and-does-not-act).
+- **Open story slots** — Helaena's role; Alicent's arc-question **RESOLVED 2026-06-11: knows-and-*shields*** (active protector; holds the mirror-flip seal; `ALICENT-SHIELD` → III.6).
 
 ---
 

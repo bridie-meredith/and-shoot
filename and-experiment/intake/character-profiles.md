@@ -446,14 +446,22 @@ joke's punchline is the gut-punch: the last and largest "what the hell" is the o
 ### The Interlude's structural job
 1. **Recontextualize** the reader. 2. **Arm Book II** — she learns Jaehaerys is arranging the betrothal to
 Lord Errold Slate of Blackpool; *the clock starts.* 3. **The rift** — utility (Jaehaerys) vs affection
-(Alicent).
+(Alicent). 4. **The shield / the seal** — she is the *active protector* and the in-world reason the
+mirror-flip stays sealed: she keeps the realm's prophesied-one / omen-child whispers from reaching Gael, and
+runs interference on three fronts — the **King** (disposal-betrothal + a stirring *kinslayer* suspicion after
+the dead dragon), **Barth** (the one mind that could uncover her; she buries the maester's letters),
+**Baelon** (the kinsman who blames Gael for Caraxes by superstitious association). `PLANT[ALICENT-SHIELD]` →
+III.6 (the protector left behind; Gael sails never knowing her mother held the seal).
 
 ### Hard fences
-1. **Never reaches the truth** — her love is the most poignant misread; the *tragic* straight-man, not a
-   fool. 2. **The Interlude is the one external-POV chapter** — she does not become a second running POV
-   (the recurring WTH beats are *moments,* not POV). 3. **Arc-question (open slot):** does she ever *act* on
-   what the Interlude knows? Recommended: **she knows and does not act** — the love that sees and cannot
-   move. (Confirm or override.)
+1. **Never reaches the *full* truth** — she *suspects,* wordlessly, that the gift made her daughter into
+   *this* (she half-knows), but never names the cultivation reality; her love is the most poignant misread,
+   the *tragic* straight-man, not a fool. 2. **The Interlude is the one external-POV chapter** — she does not
+   become a second running POV (the recurring WTH beats are *moments,* not POV). 3. **Arc RESOLVED
+   (2026-06-11): she knows and *shields.*** She never acts *against* Gael and never exposes her — but she is
+   no longer passive: she actively *covers* her (the three-front war + holding the mirror-flip seal), a quiet
+   losing fight her daughter never knows is being fought. The love that sees and cannot *save* — she wins the
+   small war and loses the daughter, left behind at the escape (III.6).
 
 ### Comic function
 **The straight-man gag — the fretting** — the one person treating a farce as a crisis (and a crisis as a
@@ -489,7 +497,7 @@ than repeat — satisfying the comedy review's "escalation, not recurrence" rule
 - **The apex (III.6) closes it:** Otto's accurate-wrong read forces the kill; Wylla performs it (defending
   "the sect") and witnesses Gael's register-silence; Gael keeps her hands clean by spending the person she
   loves; Jaehaerys is the clock that drove them to the dock; Barth is the mind that could have caught them
-  and was kept too busy; Alicent (offstage) is the love that could not move.
+  and was kept too busy; Alicent (offstage) is the love that shields but cannot save.
 - **Two believers in a faith with no future:** Gael (simple, monomaniacal, *wrong* about the cosmology) and
   Wylla (converted, devout, a junior sister of a sect that never happens). The clock stays broken for both;
   the reader holds the inevitable future they can't see.

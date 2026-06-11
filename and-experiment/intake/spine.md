@@ -341,7 +341,7 @@ for the Dance.)*
 ~~maid's name~~ → **Wylla** · ~~the Northern betrothal lord~~ → **Lord Errold Slate of Blackpool** ·
 ~~R2 method (II.7)~~ · ~~R3 method (III.3)~~ · ~~the apex specifics (who the maid kills; how discovery
 happens)~~ → **all resolved 2026-06-09 (below)** · ~~Helaena's role~~ → **parked to the Dance book** ·
-~~Alicent's arc~~ → **knows-and-does-not-act** *(both per worksheet §D-slots)*. **Only remaining call:**
+~~Alicent's arc~~ → **knows-and-shields** *(active protector; revised 2026-06-11, was knows-and-does-not-act; worksheet §D-slots)*. **Only remaining call:**
 Otto/Daemon seating — **AU-age (recommended)** vs rename to original era-appropriate figures.
 
 **Names assigned 2026-06-09** (primary cast — full rationale in `intake/character-reactions.md` §Appendix):
