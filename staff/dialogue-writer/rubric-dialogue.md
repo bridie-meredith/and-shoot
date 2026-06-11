@@ -1,8 +1,10 @@
 # Rubric — dialogue facet
 
-Authority: `schemas/dialogue.schema.md` is the authoritative entry shape. This rubric is the working discipline the R1 + R2 dialogue-writer follows. Evidence backing every clause lives in `design/shoot-v2/round-trip-method.md` and `design/shoot-v2/dialogue-corpus.md` (v1 round-trip tuning on s01e01–s01e06, 2026-05-06).
+Authority: `schemas/dialogue.schema.md` is the authoritative entry shape. This rubric is the working discipline the **R1 dialogue-writer** follows. Evidence backing every clause lives in `design/shoot-v2/round-trip-method.md` and `design/shoot-v2/dialogue-corpus.md` (v1 round-trip tuning on s01e01–s01e06, 2026-05-06).
 
 Distilled from v1 round-trip work; not re-tuned for v2 — lifted into the facet pipeline as-is.
+
+**DEC-0116 retirement notice (2026-06-08).** The R2 judging round is retired. The following sections describe R2-only phases and are preserved for historical reference but do not describe current pipeline behavior: § V2 facet-citation extension (R2 graph-aware citation; `facet-licenses:` field); § Contamination disciplines (R2 graph context filtering); § R1 vs R2 differences; § V2 reviewer protocol (audience-gate Phase 5b). The single surviving gate is § Audit classes (Phase 5) below — the CONSTRAINT § citation-completeness check is updated accordingly.
 
 ---
 
@@ -58,9 +60,11 @@ facet-licenses: feeling-taylor:7 (somatic tell — held breath at the anchor)
 
 The slip / register-shift / weighted-monument does not have to land in the surface of the utterance alone — it lands in the slot, with adjacent fired facets carrying co-load. This is the structural answer to v1's open "invisible slip" problem.
 
-**Citation-completeness is a hard requirement at audit (CONSTRAINT § citation-completeness).** A chosen line missing either citation axis is a SIGNAL finding; missing both is HARD.
+**[R2-RETIRED — DEC-0116]** ~~Citation-completeness is a hard requirement at audit (CONSTRAINT § citation-completeness). A chosen line missing either citation axis is a SIGNAL finding; missing both is HARD.~~
 
-**Citation-completeness is enumerated per entry, not per file (URI-FACETS-CYCLE-1, 2026-05-19).** Audit enumerates every chosen-mark entry in every drafts sidecar and verifies that BOTH `card-signatures:` AND `facet-licenses:` are populated post-R2 — at the entry's `chosen:` block, not at a file-level summary section. A sidecar that documents the facet-license axis in R1-blind placeholder form (e.g., "facet-licenses: [DEFERRED-TO-R2]") and is not resolved at R2 with a concrete `<facet>:<id>` citation is a SIGNAL finding per entry. A sidecar that block-asserts citation-completeness ("all entries cite both axes — see above") without per-entry resolution is a SIGNAL escalation to HARD on cycle-2 (the assertion does not survive per-entry verification). **Citation resolution to the locked graph.** Every `facet-licenses:` citation must resolve to an actual entry on disk — e.g., `feeling-taylor:7 @23` requires `feeling-taylor-...md` to carry an entry whose id is `7` with proto-anchor `@23`. A citation that names an anchor where the cited facet does not fire (cite-index walk fails to resolve) is HARD per entry. Promoted from audience-gate cycle-1: cape-fic-reader and worm-canon-pedant independently attacked dialogue-coll sidecar's R1-blind placeholder citation; cycle-1 also surfaced dialogue-wren sidecar citing `feel-wren:@22` when the cite-index resolves `feel:2` only at `@21` — 3-of-3 audience convergence on the citation-resolution failure.
+The two-axis (card-signatures + facet-licenses) HARD gate below was conditioned on R2 reading the locked graph. R2 is retired (DEC-0116). The R1-blind writer cannot populate `facet-licenses:` — there are no locked facets at `/and-write` authoring time. The surviving requirement is card-signatures only; see § Audit classes below.
+
+**[R2-RETIRED — DEC-0116]** ~~Citation-completeness is enumerated per entry, not per file (URI-FACETS-CYCLE-1, 2026-05-19). Audit enumerates every chosen-mark entry in every drafts sidecar and verifies that BOTH `card-signatures:` AND `facet-licenses:` are populated post-R2...~~ (full text preserved for historical reference; do not treat `facet-licenses:` as a current auditor requirement).
 
 ---
 
@@ -144,7 +148,7 @@ Dialogue feeds into existing facet-audit classes; this section names dialogue-sp
 
 - **STRUCTURAL** — every entry's `@<proto-line-id>` resolves to a proto-line; every `<character-slug>:<id>` citation in proto-lines resolves to an existing entry; entry-ID monotonicity per-character; behavior-card slug in header matches a real card.
 - **CONSTRAINT § behavior-card-compliance** — every entry respects the card's §hard fences, §forbidden vocabulary, §monument rules.
-- **CONSTRAINT § citation-completeness** — every chosen-mark entry in the drafts sidecar has both card-signature §-cite AND facet-license citation (post-R2). Missing one axis: SIGNAL. Missing both: HARD.
+- **CONSTRAINT § citation-completeness** — every chosen-mark entry in the drafts sidecar has `card-signatures:` §-cite (which card §-sections the chosen line demonstrates). Missing card-signatures cite: HARD. `facet-licenses:` is deferred — the R1-blind writer cannot populate locked-graph citations, and R2 is retired (DEC-0116). Auditors must NOT raise a finding on absent `facet-licenses:` fields.
 - **CONSTRAINT § earth-bet-hard-fence** — proper-noun scan across utterance text. Any hit: HARD.
 - **AP-SCAN** — em-dash + semicolon chassis on non-Taylor speakers (v1 anti-pattern); modern HR-speak in Westerosi register; deposition cadence in non-administrative speakers; nominalizations substituting for plain English in colloquial-register speakers.
 - **DEDUP** — utterance content rendered by NI / feeling / memory at the same anchor (the speaker says aloud what another facet already shows — the dialogue or the other facet must yield).
@@ -155,6 +159,6 @@ Dialogue feeds into existing facet-audit classes; this section names dialogue-sp
 ## Files
 
 - **Output (canonical):** `active-project/theater/dialogue/<character-slug>.md` per `schemas/dialogue.schema.md`.
-- **Drafts sidecar:** `active-project/staff/dialogue-writer/<character-slug>.drafts.md` — multi-draft + chosen-mark + rejection notes + card-signature citations + facet-license citations. Audit reads this for CONSTRAINT § citation-completeness.
-- **R2 decision shard:** `active-project/staff/dialogue-writer/r2-decision-shard-<character>.md` — KEEP / DELETE / REWRITE per entry, folded into `.r2-decisions.md` at Phase 4.
-- **Annotated proto-lines copies:** `_inflight/proto-lines-dialogue-<card>.md` (R1) and `_inflight-r2/proto-lines-dialogue-<character>.md` (R2) — citations `[<character-slug>:<id>]` appended to speaking-beat anchors.
+- **Drafts sidecar:** `active-project/staff/dialogue-writer/<character-slug>.drafts.md` — multi-draft + chosen-mark + rejection notes + card-signature citations. Audit reads this for CONSTRAINT § citation-completeness (card-signatures axis only post-DEC-0116).
+- **[R2-RETIRED]** ~~R2 decision shard: `active-project/staff/dialogue-writer/r2-decision-shard-<character>.md`~~ — no longer authored.
+- **Annotated proto-lines copies:** `_inflight/proto-lines-dialogue-<card>.md` (R1) — citations `[<character-slug>:<id>]` appended to speaking-beat anchors. `_inflight-r2/` path is retired.
