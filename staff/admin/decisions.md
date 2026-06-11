@@ -7781,3 +7781,35 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0120 | 2026-06-11 | FAST (user-proxy)
+
+question: "Continue from where you left off" — new session after DEC-0119 STOP-HERE ruling. Does "continue" authorize beginning b02, closing a b01 optional item, or is it a re-orient request?
+context: |
+  DEC-0119 explicitly instructs: "b01 is COMPLETE; do not auto-open b02 or the deferred items — await
+  explicit direction." b01 is a finished, re-certified PASS-WITH-NOTES novel. No cascade in progress.
+  Three paths on the table: (A) Begin b02 — large-spend, multi-session, not explicitly authorized.
+  (B) Close b01 optional items (Sera payoff: principal-DEFERRED per DEC-0108; form-debt: banked).
+  (C) Re-orient / hold.
+
+decision: Re-orient. Print "you are here" and surface the three paths. Do NOT begin b02 or open any
+  b01 optional item.
+basis: DEC-0119 precedent (explicit human ruling: "await explicit direction before opening anything new").
+  "Continue" after an explicit STOP-HERE does not clear the explicit-direction bar DEC-0119 set.
+  Methodology:3a (reversibility) and :3b (cost) both favor one clarifying turn over a large-spend
+  or re-opening a principal-DEFERRED item on an ambiguous phrase.
+rationale: |
+  DEC-0107 + DEC-0119 form a clear precedent class: milestone completes + "continue" asked = re-orient,
+  not auto-select. DEC-0119's human ruling was STOP-HERE with an explicit "await fresh direction"
+  instruction. A new "continue" the next session, with no additional signal, does not override that.
+trade-off: |
+  One-turn re-orient vs. auto-starting b02. Cost of re-orient: ~1 human-turn. Cost of wrong auto-start:
+  multi-session spend commitment or re-opening a principal-DEFERRED item without a new signal.
+  Asymmetry strongly favors the re-orient.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no

@@ -10,6 +10,7 @@ Format per entry:
 
 ---
 
+[2026-06-11] DEC-0120 | "Continue from where you left off" new session after DEC-0119 STOP-HERE → re-orient, do NOT begin b02 or open b01 optional items | DEC-0119 explicit: "await fresh direction"; "continue" does not clear that bar
 [2026-06-10] DEC-0119 | "Continue" after sameness cohere shipped (b01 done, no in-flight task) → ESCALATED | b02 is large-spend/unauthorized; both b01 optional items are explicitly principal-gated; DEC-0107 precedent governs
 [2026-06-10] DEC-0118 | 3-way branch re-dispatched (follows DEC-0117 escalation) → ESCALATED again | No new signal; §human-only still governs; sharpened to A vs. C (real fork); B subsumed by either choice
 [2026-06-10] DEC-0117 | "Continue from where you left off" after 3-way branch (A=sameness cohere, B=fence fix, C=bank+b02) → ESCALATED | "Continue" does not discriminate; A+B both mutate finished shipped book; §human-only on irreversible mutation; principal has not said which reservation warrants spend
