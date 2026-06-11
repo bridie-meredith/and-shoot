@@ -154,7 +154,7 @@ Every command's Phase 0 reads `active-project/staff/showrunner/cascade-checkpoin
 
 `/and-postop` does NOT fire automatically. It is optional and surfaces in the end-of-run summary as a suggested next step only.
 
-`/and-cohere` is also NOT in this chain. Cohere is periodic and opt-in (run after every Nth chapter at principal discretion, or on demand). The end-of-run summary may suggest cohere if the threading pass surfaced multiple HOLD-THREAD signals.
+`/and-cohere` is **MANDATORY at book-third and two-thirds milestones (PROP-0050, 2026-06-08):** after the chapter at `ceil(planned_chapter_count / 3)` and `ceil(2 × planned_chapter_count / 3)` ships, fire `/and-cohere b<NN>` before proceeding to the next chapter — a `FAIL-COHERE` on interior-sameness blocks further ships until addressed. For all other chapters it is periodic and opt-in (run on demand, or when the threading pass surfaces multiple HOLD-THREAD signals).
 
 ### End-of-run summary (single message on completion or halt)
 
@@ -279,7 +279,7 @@ Every other prompt that *looks* like a human checkpoint (accept/redraft, mode pi
 - Don't ask "what do you want to work on" if memory.md has a clear `current_chapter` + `last_phase`. Just continue.
 - Don't re-litigate prior decisions by reading `staff/admin/decisions.md` end-to-end. Trust DEC entries; only read details if relevant to the current action.
 - Don't run `/and-postop` reflexively after `/and-stitch`. It's optional; only fire if the user asks or it's a book-mid/close milestone.
-- Don't run `/and-cohere` reflexively. Opt-in; only fire if the user asks or you're at a natural sub-section boundary AND the user has signaled cohere cadence.
+- Don't run `/and-cohere` reflexively for every chapter. Fire it **only** at the mandatory book-third and two-thirds milestones (PROP-0050) or when the user asks, the threading pass surfaces multiple HOLD-THREAD signals, or you're at a natural sub-section boundary with signaled cohere cadence.
 - Don't open a new ablation/experiment unless asked. They're on-demand.
 
 ---
