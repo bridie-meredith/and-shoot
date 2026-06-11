@@ -146,7 +146,11 @@ Dialogue feeds into existing facet-audit classes; this section names dialogue-sp
 - **CONSTRAINT § behavior-card-compliance** — every entry respects the card's §hard fences, §forbidden vocabulary, §monument rules.
 - **CONSTRAINT § citation-completeness** — every chosen-mark entry in the drafts sidecar has both card-signature §-cite AND facet-license citation (post-R2). Missing one axis: SIGNAL. Missing both: HARD.
 - **CONSTRAINT § earth-bet-hard-fence** — proper-noun scan across utterance text. Any hit: HARD.
-- **AP-SCAN** — em-dash + semicolon chassis on non-Taylor speakers (v1 anti-pattern); modern HR-speak in Westerosi register; deposition cadence in non-administrative speakers; nominalizations substituting for plain English in colloquial-register speakers.
+- **AP-SCAN** — four named codes (enumerated by RUBRIC-FIDELITY auditor; severity SIGNAL, escalates to HARD at saturation ≥0.40 per `and-facets.md` §AP-SCAN):
+  - **AP-chassis-contamination** — em-dash + semicolon spine on non-Taylor speakers (Taylor's sentence chassis bleeding into Westerosi or smallfolk registers; v1 anti-pattern).
+  - **AP-modern-hr-speak** — procedural/compliance-English in Westerosi register (e.g. "going forward", "at this time", "I need you to understand", "in terms of").
+  - **AP-deposition-cadence** — flat declarative question-and-answer sequencing in non-administrative speakers; acceptable only in maester, court-functionary, or inquisitor register with documented card authority.
+  - **AP-nominalization-substituting-plain-English** — abstract noun standing in for a concrete verb in colloquial-register speakers (e.g. "the situation requires consideration" when the card would say "we need to decide"; "a determination was reached" instead of "they decided").
 - **DEDUP** — utterance content rendered by NI / feeling / memory at the same anchor (the speaker says aloud what another facet already shows — the dialogue or the other facet must yield).
 - **FREQUENCY-BAND** — per-anchor cap ≤3 utterances; no sparsity gate.
 
