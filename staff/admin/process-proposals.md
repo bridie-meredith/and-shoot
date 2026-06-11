@@ -6584,3 +6584,80 @@ pr_ref: null
 defer_until: null
 supersedes: null
 ```
+
+---
+
+## PROP-0053
+
+```yaml
+id: PROP-0053
+created_at: 2026-06-11T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: on-demand
+  source_report: staff/admin/improvement-loop/bridge.ledger.md
+  source_verdict: improvement-loop/bridge pass 1 — pattern-transfer candidate
+target:
+  type: agent-card
+  path: .claude/agents/admin.md
+  section: "process-critic mode — recurrence_count computation and per-chapter finding-class log"
+change_type: add
+rationale: |
+  Admin process-critic mode computes recurrence_count by grepping staff/reviews/ (per
+  schemas/admin-proposal.schema.md). This is fragile: finding-class names drift across reports,
+  grep coverage depends on which reports exist, and the mechanism cannot distinguish "same class
+  in N consecutive chapters" from scattered one-off appearances — a distinction that matters for
+  deciding whether a gap is systematic (promote) or episodic (modify/add).
+
+  The and-shoot system has no structured cross-chapter finding-class tracking surface. This means
+  the Rule 11 TASTE-FLAG → AP-SCAN promotion path and Rule 22's N=2-consecutive circuit-breaker
+  both operate without a cheap, persistent signal about recurrence at the audit-finding layer.
+
+  In brighid-creative-writing, oskar appends a structured one-line register/location/foil summary
+  at each board close; ingrid reads the accumulated summaries at project close to detect rut classes
+  cheaply without grepping prose files (rut-detection.plan.md Option A). The cost of each append
+  is trivial; the payoff is reliable recurrence detection with no fragile grep dependency.
+
+  The directly portable pattern for and-shoot: admin process-critic, which already fires per-
+  chapter at /and-write Phase 6.5, /and-facets Phase 4.5, /and-stitch Phase 9.5, and /and-postop
+  Phase 3.5, should append one structured row to a per-book finding-class log after each dispatch.
+  The log gives admin (and /and-review verdict) a first-class, O(1)-scan recurrence signal. A
+  finding class present in ≥2 consecutive chapter rows signals systematic pipeline gap; ≥3
+  non-consecutive rows signals recurring weakness; both should escalate recurrence_count reliably
+  and trigger promote rather than add/modify.
+evidence_refs:
+  - "schemas/admin-proposal.schema.md — recurrence_count field: 'admin greps staff/reviews/ for the finding class. recurrence_count >= 3 is the default threshold for promote; below that, prefer add or modify with explicit rationale'"
+  - "CLAUDE.md Rule 11 — TASTE-FLAG to AP-SCAN promotion path: 'otherwise admin greps staff/reviews/' — no structured backing"
+  - "CLAUDE.md Rule 22 — N=2-consecutive circuit-breaker for design-inherent disposition exists for prose excuses; no analogous consecutive-chapter circuit-breaker at the auditor-finding-class layer"
+  - "brighid-creative-writing/staff/agents/ingrid/rut-detection.plan.md §Option A — oskar per-board structured summary + ingrid project-close scan; source of this port"
+recurrence_count: 1
+proposed_diff: |
+  In .claude/agents/admin.md, process-critic mode section: after returning any verdict (OK /
+  OK-MERGED / PROCESS-CHANGE-PROPOSED / etc.), add a mandatory write-step:
+
+    Append one row to active-project/staff/showrunner/finding-class-log-<book>.md (create with
+    a header row if absent). Pipe-delimited markdown table format:
+      | chapter-slug | gate | hard-finding-classes | verdict | timestamp |
+    where gate is one of: bones / facets / stitch / postop; hard-finding-classes is a comma-
+    separated list of finding-class codes that were HARD in this pass (empty string if none);
+    verdict is the chain gate verdict (PASS / FAIL / NOT-SUCCESSFUL / etc.).
+
+  In the same section, recurrence_count computation: before grepping staff/reviews/, read the
+  finding-class log for the current book. Count rows where hard-finding-classes contains the
+  target class. Use this count as the primary recurrence_count; fall back to grep only if the
+  log is absent or does not cover the finding class. A class present in >=2 consecutive rows
+  → change_type escalates to promote (unless already promoted); >=3 total rows with no prior
+  promote proposal → change_type is promote.
+
+  In .claude/commands/and-review.md, verdict subcommand Common-Phase 4.5 admin dispatch: add a
+  finding-class-log scan step that surfaces any class with >=3 occurrences in the book's log as a
+  "systematic gap" item in the verdict summary, distinct from one-off chapter findings.
+cost_estimate: S
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
