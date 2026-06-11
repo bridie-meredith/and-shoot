@@ -2970,3 +2970,85 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    # --- improvement-loop/test: pipeline tri-walk 2026-06-11 ---
+
+    - id: pl-2026-06-11-pipeline-001
+      created_at: 2026-06-11T23:10:29Z
+      created_by: "improvement-loop/test (pipeline tri-walk) Phase 3"
+      target:
+        command: /and-review
+        scope: "pipeline"
+        phase: null
+      severity: SOFT
+      description: |
+        schemas/audit-report.schema.md §"R2 decision-shard frontmatter" (lines 106-157)
+        documents retired R2 machinery: /and-facets-r2 command, Phase 6 of /and-facets,
+        .r2-decisions.md consolidated file, and orchestrator-critic reading f-r2-counts.
+        The R2 judging round is RETIRED under DEC-0116 (2026-06-08); /and-facets ends at
+        Phase 5. Any agent reading the schema section will expect files and phases that do
+        not exist. Fix: add RETIRED (DEC-0116, 2026-06-08) header to the section; redirect
+        consumer note from ".r2-decisions.md" to "staff/auditor/facets-final-audit.md".
+        Owner: fixer or principal schema-edit session.
+      context_refs:
+        - schemas/audit-report.schema.md
+        - .claude/commands/and-facets.md
+        - active-project/staff/reviews/pipeline-2026-06-11T2310Z.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-11-pipeline-002
+      created_at: 2026-06-11T23:10:29Z
+      created_by: "improvement-loop/test (pipeline tri-walk) Phase 3"
+      target:
+        command: /and-review
+        scope: "pipeline"
+        phase: null
+      severity: SOFT
+      description: |
+        and-stitch.md body text references proto-lines/<slug>.md as the active bones input
+        in 9 places (lines 186, 193, 259, 281, 282, 284, 419, 427, 1157) even though Phase 0
+        explicitly states the command reads theater/bones/<book>-<chapter>.md. Lines 419 and
+        427 are functional: Phase 1 scene-window validation reads bone IDs "verbatim from
+        proto-lines/<slug>.md". An agent executing and-stitch will look for the wrong file.
+        Fix: replace "proto-lines/<slug>.md" with "theater/bones/<book>-<chapter>.md" and
+        prose "proto-lines" with "bones file" in the affected body-text sections. Owner: fixer.
+      context_refs:
+        - .claude/commands/and-stitch.md
+        - schemas/bones.schema.md
+        - active-project/staff/reviews/pipeline-2026-06-11T2310Z.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-11-pipeline-003
+      created_at: 2026-06-11T23:10:29Z
+      created_by: "improvement-loop/test (pipeline tri-walk) Phase 3"
+      target:
+        command: /and-review
+        scope: "pipeline"
+        phase: null
+      severity: SOFT
+      description: |
+        theater/proto-lines/ path status is declared inconsistently across three authoritative
+        documents: (1) schemas/bones.schema.md says "no longer authored"; (2) and-facets.md
+        Phase 0 Step 5 includes theater/proto-lines/<prior-slug>.md in live archive clearance,
+        and Phase 1 references "the base proto-lines file" without a path; (3) CLAUDE.md
+        directory map lists theater/proto-lines/ as an active path with present-tense
+        description. Resolution requires principal determination: inspect whether
+        theater/proto-lines/<slug>.md files exist for a chapter that has completed the full
+        pipeline, then reconcile all three documents. If dead: remove from and-facets.md Phase
+        0 clearance, replace "base proto-lines file" in Phase 1, update CLAUDE.md. If live:
+        correct bones schema "no longer authored" claim. Owner: principal-dispatched session.
+      context_refs:
+        - schemas/bones.schema.md
+        - .claude/commands/and-facets.md
+        - CLAUDE.md
+        - active-project/staff/reviews/pipeline-2026-06-11T2310Z.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
