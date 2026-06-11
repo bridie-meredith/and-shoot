@@ -17,7 +17,7 @@ outcome: |
   c10-c19 stretch to break any residual structural repetition; /and-review verdict re-judge.
 baseline_archive: active-project/draft/_archive/2026-06-08-pre-no-ledger-revise/
 voice_target: staff/admin/no-ledger-revision-plan-2026-06-08.md (locked c01-opening re-render) + active-project/voice-exemplar.md
-current: {chapter: b01c01, step: "/and-write b01c01 revise", verdict: null}
+current: {chapter: b01c20, step: "complete", verdict: "COMPLETE"}
 caps_per_chapter: {bones_retry: 0/1, facet_cycles: 0/3, stitch_p9_retry: 0/1}
 note: |
   Register conversion only. Substance arc + signature axes UNCHANGED (DEC-0115 governs prose register,
