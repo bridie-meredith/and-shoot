@@ -4,7 +4,7 @@ class: location
 scope: library
 world: planetos
 origin: authored; extracted from brighid-creative-writing
-quality: scant
+quality: full
 ---
 
 # Forest Clearing, Dusk
@@ -29,8 +29,27 @@ Three exits, all informal: the paths game and people have worn through the treel
 - **Light:** The clearing holds the last grey-gold of dusk for a few minutes. Then: dark fast. The treeline is already black.
 - **Temperature:** Cold that arrives with the dark, faster than expected. The clearing loses its daytime warmth within minutes of the sun dropping below the treeline.
 
+## Fixed Props
+
+None catalogued. The fallen log (noted in Layout) is an environmental fixture, not a separate prop card.
+
 ## Exits
 
 - **Toward the stream** — eastward through the treeline, following the sound of water. Game trail, barely.
 - **Toward the road** — southward, track widens as you go. Twenty minutes to the King's Road or a comparable route.
 - **Deeper into the wood** — northward. No clear trail. For people who don't want to be found.
+
+## Hazards
+
+- **Disorientation after dark** — once the dusk light fails, the clearing offers no landmarks. The exits are identifiable only by sound (water, road noise); without those cues a character is genuinely lost. Moon-dependent.
+- **Forest fauna** — boar are nocturnal and territorial in Westerosi bracken. Wild dogs range at dusk. A startled deer bursting from the treeline reads as a threat.
+- **Sound carries both ways** — the clearing's open sky means noise travels up and out; anyone speaking at normal volume is audible at the treeline from any approach. Conversely, movement in the surrounding wood is also readable from inside the clearing.
+- **Exposure** — no shelter from sudden squalls. Rain hits the clearing directly while the surrounding canopy stays drier.
+
+## Ambient Interruption Hooks
+
+- Game moving through the treeline — a branch-snap or rustle before the shape becomes visible.
+- A traveler on the road, audible first: hooves, cart-wheels, voices, then torch-glow through the trees if after dark.
+- Rain starting suddenly — the clearing goes from dry to soaked faster than the wood around it.
+- A huntsman's horn or hounds in the middle distance — the forest being worked by someone, direction unclear.
+- Torchlight visible through the trees before any figure resolves — someone is coming, from the road direction or deeper wood.
