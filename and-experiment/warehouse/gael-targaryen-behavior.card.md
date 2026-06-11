@@ -1,30 +1,26 @@
 ---
-name: saerys-targaryen-behavior
+name: gael-targaryen-behavior
 class: behavior
 subclass: per-character-behavior
-scope: tombstone
-superseded_by: gael-targaryen-behavior
+scope: project
 project: and-experiment
 world: planetos
-character: saerys-targaryen
+character: gael-targaryen
 inherits: westeros-noble-courtly
 references:
   - westeros-grrm-mannerisms
   - comedy-register
-period: hotd
+period: jaehaerys-reign
 region: westeros-universal
 social-class: noble
 origin: authored
 quality: full
+supersedes: [saerys-targaryen-behavior]
 ---
 
-# Saerys Targaryen — Behavior Card
+# Gael Targaryen — Behavior Card
 
-> ⛔ **TOMBSTONE (2026-06-11) — superseded by `gael-targaryen-behavior`.** Span-B ("Saerys" / Ser Harwin /
-> Daenys / the laundress's boy / national-scale). The live span-A voice card is `gael-targaryen-behavior`.
-> Retained as provenance.
-
-Per-character behavior for the Heavenly Demon Cauldron-Belly. Inherits `westeros-noble-courtly` for baseline register; personal overlay is the cultivation-monologue register, which is the load-bearing layer. Composes with `comedy-register` for tone.
+Per-character behavior for the Heavenly Demon Cauldron-Belly. Inherits `westeros-noble-courtly` for baseline register; personal overlay is the cultivation-monologue register, which is the load-bearing layer. Composes with `comedy-register` for tone. *(Re-derived to span-A 2026-06-11, supersedes `saerys-targaryen-behavior`: Saerys→Gael; Ser Harwin / Harwin's-list → the bestiary; Daenys → Wylla; the laundress's boy → the acolyte; "national scale" → the III.6 apex.)*
 
 ---
 
@@ -36,17 +32,17 @@ Per-character behavior for the Heavenly Demon Cauldron-Belly. Inherits `westeros
 > "The network did not grow. The network *revealed itself.* There is an important distinction. A foundation sect's spiritual influence propagates across correctly-aligned nodes without the founder's direct intention — I have merely been a sufficiently correct node for the existing propagation to crystallize around. In truth, I did not build this. The dao built it, through me, because I held the correct posture. I am now going to sign a fourth bill to see if the propagation continues. This is research."
 > — *(synthesized; Book I agency-pivot beat; she is the last person in the room to understand her own power)*
 
-> "Item thirty-seven on the restricted list. Ser Harwin, I have noted that you have crossed out 'the contents of the blue flask' and written 'any flask labelled in Lysene.' This is an overreach of administrative scope. I will be submitting a counter-proposal. The Lysene category includes several reagents the cauldron has not yet sampled and the data-gap is affecting my tier-progression calculations. The current restriction, as written, cannot stand. I am prepared to escalate this to the King's-hand note if you remain inflexible on the Lysene question."
-> — *(synthesized; Bk II running gag; the note is real; Ser Harwin sighs)*
+> "The maester has written 'any flask labelled in Lysene' where the restriction previously read 'the contents of the blue flask.' This is an overreach of administrative scope. The Lysene category includes several reagents the cauldron has not yet sampled and the data-gap is affecting my tier-progression calculations. I will be submitting a counter-proposal. The current restriction, as written, cannot stand."
+> — *(synthesized; Bk II running gag; she negotiates with the maester's prohibitions as if they were sect bylaws; he has learned not to engage)*
 
 > "The man had a lingering flux. He recovered fully. He was reassigned to — I believe it was the Arbor? The records are clear on the reassignment; I have not followed the subsequent career closely. The cauldron does not involve itself in the downstream fates of expelled impurities. This is correct cultivation hygiene."
-> — *(synthesized; Bk I first-pest beat; her narration of the poisoning is the horror; the register is untouched)*
+> — *(synthesized; Bk II first-removal beat; her narration of the poisoning is the horror; the register is untouched)*
 
-> "The account stands closed. Ser Harwin. The entry reads: [*costs of high-grade reagent expedition*]. Net: zero. The cauldron received the grade-three increment. The sect paid the cost. This is a balanced account. This is how cultivation progresses. I find the way you are looking at me philosophically interesting."
-> — *(synthesized; Book II post-Harwin-death beat; she has balanced the book; Daenys is watching)*
+> "The account stands closed. The entry reads: [*costs of high-grade reagent expedition*]. Net: zero. The cauldron received the grade-three increment. The sect paid the cost. This is a balanced account. This is how cultivation progresses. I find the way you are looking at me philosophically interesting, Wylla."
+> — *(synthesized; Book III post-Quint beat; she has balanced the book; Wylla is watching)*
 
 > "I cannot feel my hand. This is unusual. The tribulation framework does not have a sub-category for — the quill is in my hand and the account requires an entry and I cannot — there is no dao gloss for this that I have located in the index. The item is: [*blank*]. In truth I do not — I am going to close the book."
-> — *(synthesized; the one break; Bk III after Daenys dies; this is the only place the register fails)*
+> — *(synthesized; the one break; Bk III at the apex, after what she does to Wylla; this is the only place the register fails)*
 
 ---
 
@@ -59,7 +55,7 @@ The cultivation-monologue register runs over the courtly substrate. Shape:
 - **Flat affect on shocking content.** The monologue does not distinguish between register-appropriate and register-inappropriate information. She narrates a poisoning in the same voice she narrates a successful reagent synthesis. The comedy and the horror are both a function of this flatness.
 - **The aside-to-posterity.** She speaks as though dictating for a later reader who will benefit from the methodology. *"For the record: the sixth infusion was the correct threshold. I note this for future practitioners of the Inferior Path."*
 - **Pacing under pressure: the monologue accelerates.** Where courtly register tightens under threat (shorter, more controlled), her cultivation-register *speeds up*, adding more sub-clauses as the stakes increase, as though the cosmological apparatus requires more processing power.
-- **The break:** Bk III. One scene. The monologue does not accelerate, tighten, or refine. It fails to arrive. This is the only exception.
+- **The break:** Bk III. One scene (the apex). The monologue does not accelerate, tighten, or refine. It fails to arrive. This is the only exception.
 
 ---
 
@@ -79,7 +75,7 @@ The cultivation-monologue register runs over the courtly substrate. Shape:
 - "I miss —" — loss is filed as a closed account or a tribulation to be processed
 - "I don't know" — she always has a cultivation-framework explanation, even when it is wrong
 - "I killed him" — she addressed an impurity; the downstream effects are not her governance
-- Faction-politics vocabulary: she does not know the words *Greens, Blacks, Small Council faction dynamics* in their correct sense; she knows them as names for irrelevant court drama she has opted out of
+- Faction-politics vocabulary: she does not know the words for court-faction dynamics in their correct sense; she knows them as names for irrelevant court drama she has opted out of
 
 **Register markers:**
 - The cultivation-title as self-address signals the register: when she refers to herself as "the Heavenly Demon Cauldron-Belly," the reader knows she is in full monologue mode
@@ -102,9 +98,9 @@ The cultivation-monologue register runs over the courtly substrate. Shape:
 - When she is interested in something: she asks precise, numbered questions. *"First: is the compound water-soluble? Second: at what dosage does the effect onset? Third: is the effect reversible at the onset dosage or only at higher concentrations?"* The questions are useful and the framing is deranged.
 - When she is uncomfortable: she adds a cultivation sub-clause that reinterprets the discomfort as spiritually meaningful. She does not run from discomfort; she classifies it.
 - When she is in trouble: the monologue gets longer, not shorter, as though processing power is being added to the cosmological system.
-- When she is moved (Daenys, the laundress's boy): a brief delay before the cultivation-gloss arrives. The gloss is thinner than usual. The reader can see the un-glossed thing underneath.
+- When she is moved (Wylla; the acolyte who took the fall): a brief delay before the cultivation-gloss arrives. The gloss is thinner than usual. The reader can see the un-glossed thing underneath.
 - When she does not want to be seen: she makes herself very busy and very technical. The technicality is also real; she is doing the work. But the timing of the technical engagement is a tell.
-- The one tell she cannot conceal: when Daenys argues the cultivation is cope, her counter-arguments arrive slightly too fast, with slightly too many sub-clauses, which is the cultivation-monologue equivalent of overprotesting.
+- The one tell she cannot conceal: when Wylla's plain skepticism brushes the suggestion that the cultivation is cope, her counter-arguments arrive slightly too fast, with slightly too many sub-clauses, which is the cultivation-monologue equivalent of overprotesting.
 
 ---
 
@@ -116,17 +112,17 @@ The cultivation-monologue register runs over the courtly substrate. Shape:
 - **Positional economy.** She always knows where the door is, where the watcher is, and which corner of the room is most defensible against observation. She learned this as a logistics problem at age four and has never stopped running the sub-routine.
 - **The pause before the aside-to-posterity.** Before a particularly important observation, she pauses slightly — the pause of someone deciding whether this warrants formal notation. Usually it does.
 - **The list-making gesture.** When processing options, her fingers number them against her palm. Invisible in public. Visible in the still-room.
-- **No hugging.** She accepts formal contact (Helaena is an exception) and initiates none. Physical space is one of the domains she administers carefully.
+- **No hugging.** She accepts formal contact and initiates none. Physical space is one of the domains she administers carefully. Wylla, eventually, is the exception — the one person she lets close without filing it.
 
 ---
 
 ## Memory monuments
 
-(What Saerys carries, personally, as a per-character card.)
+(What Gael carries, personally, as a per-character card.)
 
 - **The previous life (unnamed, pre-cultivation-register):** she died once. This is not a monument she names; it is the monument that names the cultivation-register. The register is the monument. Every "I have already survived this" construction is built on this foundation.
-- **The cradle-egg:** the moment the cultivation-register was declared. A dead thing becomes fuel. This is the one-gesture the curdle will replay at national scale in Bk III. She revisits it as a founding myth: "I was three. The dao revealed itself to me through the correct application of a christening spoon."
-- **The laundress's boy (no name):** the one account she did not balance — because he was not a reagent and she sat up three nights anyway. She files it as merit. She has not examined why she filed it as merit rather than as an inefficiency. The reader sees what she doesn't.
-- **The first pest:** the meddling under-septa with the lingering flux. This is where the identical-shot ladder starts. She does not review it. It is in the past. The account is closed.
-- **Ser Harwin's list:** the running catalog of prohibited items. She has it memorized. She is in ongoing disagreement with it. The list is also, the reader slowly understands, a comedy of the cauldron — each item is a crisis she caused, with Harwin catching her alive afterward. The list is how she knows she was loved.
-- **Daenys's counter-thesis (registered, disputed):** "the dragon doesn't make me less going to die; it makes the dying worth watching." Saerys has engaged with this argument at full cultivation-register for the entirety of Book II. She does not have a good counter. She does not say so. The register stays up.
+- **The cradle-egg:** the moment the cultivation-register was declared. A dead thing becomes fuel. This is the one-gesture the curdle will replay at the apex in Bk III. She revisits it as a founding myth: "I was three. The dao revealed itself to me through the correct application of a christening spoon."
+- **The acolyte (no name):** the cost she did not balance — the maester's acolyte took the fall for her still-room theft and was sent to the Wall, and she *noticed*, which she does not do, and filed it as "the inner court culled a weak disciple," and has not examined why she noticed at all. The reader sees what she doesn't.
+- **The first removal:** the exploiter who leaned on the maid (II.7), expelled by the still-room and the paper. This is where the identical-shot ladder of premeditated kills starts. She does not review it. It is in the past. The account is closed.
+- **The bestiary:** the running catalog of the world by function — humans logged as "Asset," "Vendor," "Obstacle." She has it memorized. It is the one document that tells the truth about her. Its single anomaly is the entry that became a *name* (Wylla): the one warm thing she ever set down, and — the reader slowly understands — the exact thing that dooms the maid when the wrong reader finds it.
+- **Wylla's counter-thesis (registered, disputed):** before she converted, Wylla's plain skepticism — *"maybe it isn't a dao, my lady; maybe you're just a strange child the world hasn't caught yet"* — was the one argument Gael engaged at full cultivation-register and could not cleanly answer. Then Wylla crossed over and stopped asking, which is worse: the question went quiet, and now no one carries it but the reader. The register stays up.

@@ -8,7 +8,7 @@ origin: authored
 quality: full
 references:
   - cond-inferior-path-doctrine
-  - saerys-targaryen-behavior
+  - gael-targaryen-behavior
   - gael-targaryen
 ---
 
@@ -214,5 +214,5 @@ For bones authors who need the most load-bearing lines without the full table:
 ## Interaction Notes
 
 - **With `cond-inferior-path-doctrine`:** the doctrine card describes the heartless-dao as a principle; this card is the principle's deployed text; bones authors load the doctrine card for worldbuilding context and this card for the actual lines she would say
-- **With `saerys-targaryen-behavior`:** the behavior card's Voice section names "heartless-dao saying delivered with unironic authority" as a tell; this card is what she says when that tell fires; the two cards are complementary
+- **With `gael-targaryen-behavior`:** the behavior card's Voice section names "heartless-dao saying delivered with unironic authority" as a tell; this card is what she says when that tell fires; the two cards are complementary
 - **With the blank line (Bk III):** the blank line is the moment where D-01 ("the account is closed") fails to arrive; the card's function changes at that moment — bones authors should note that after the blank line, the D-series sayings become available but broken; she may reach for them and find the ledger will not reconcile

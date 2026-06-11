@@ -17,6 +17,7 @@ references:
   - comedy-register
   - westeros-noble-courtly
   - westeros-grrm-mannerisms
+  - gael-targaryen-behavior
 ---
 
 # Gael Targaryen

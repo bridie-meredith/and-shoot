@@ -9,7 +9,7 @@ character: daenys-velaryon
 inherits: westeros-noble-courtly
 references:
   - westeros-grrm-mannerisms
-  - saerys-targaryen-behavior
+  - gael-targaryen-behavior
   - comedy-register
 period: hotd
 region: westeros-universal

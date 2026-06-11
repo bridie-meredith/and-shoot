@@ -9,7 +9,7 @@ character: helaena-targaryen-122ac
 inherits: westeros-noble-courtly
 references:
   - westeros-grrm-mannerisms
-  - saerys-targaryen-behavior
+  - gael-targaryen-behavior
 period: hotd
 region: westeros-universal
 social-class: noble
