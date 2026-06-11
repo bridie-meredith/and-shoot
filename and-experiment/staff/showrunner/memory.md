@@ -15,16 +15,32 @@
 # The prior Saerys / Viserys-father / span-B (Dance) framing is RETIRED to provenance
 # (run-02 + tombstones); span-B (the Dance) is PARKED for a later installment, not deleted.
 #
-# REVIEW-WALK STATE (2026-06-11) — Book-II spine review-walk IN PROGRESS (design-level, NOT chapter
-# production). A chapter-by-chapter trope/comedy pass over Book II, folding revisions into the canonical
-# layer (design/run-04/series-outline.md + intake/spine.md + thread-config + warehouse cards). DONE &
-# FOLDED: II.1 (King display/favor + Daemon vocal-laughingstock + maegi-rumour + Alicent Dragonstone +
-# Wylla-confidant) · II.2 (triple-blind cover-synergy + smallfolk-risk + Otto-proto + proto-sect) · II.3
-# (reagent-map + travel-knowledge; the underground vice-empire she founds in era-young KL; Wylla = keeper
-# of the secret things / sole crack). Betrothal retargeted Errold Slate -> the STARKS. Full spine-smoothing
-# pass complete (all three books hinted-prior + have-consequence; check-threads PASS). NEXT SESSION: resume
-# at II.4 "the betrothal" (a consistency-check — already revised), then II.5-II.8 fresh. See the dated
-# amendment foot of intake/spine.md for the full delta record + thread-arc confirmation.
+# REVIEW-WALK STATE (2026-06-11) — three-book spine review-walk CLOSED end-to-end (design-level, NOT
+# chapter production). The chapter-by-chapter trope/comedy + consistency + thread pass is COMPLETE across
+# all three books, folded into the canonical layer (design/run-04/series-outline.md + intake/spine.md +
+# thread-config). DONE & FOLDED:
+#   · Book II — II.1–II.8 (II.1 King-display/Daemon-vocal/maegi/Wylla-confidant · II.2 triple-blind/
+#     smallfolk-risk/Otto-proto · II.3 reagent-map/vice-empire/keeper · II.4 Stark betrothal consistency-check
+#     · II.5 bestiary-leak 3-reader-vectors + name-promotion · II.6 source-reveal + restored Alicent/Barth
+#     beats · II.7 exploiter = Otto's-lever + first-premeditated-kill · II.8 cultivation-lens + Alicent WTH).
+#   · Book III — III.1–III.6 + Epilogue (restored all SIX dropped Alicent-WTH beats — the escalation ladder
+#     to the terminal grief; Otto surveillance-tightening III.3 · babying-weaponized III.4 · death-flag
+#     rationalization + GUARD-1 third-spend III.5 · the ONE armor-break / register-silence witnessed by Wylla
+#     III.6 · Barth ladder-end · curdle label reconciled: III.6 apex = R4, parked Dance field = R5).
+#   · Provenance backlog CLEARED — stale run-02 mirrors (GUARDS-register, world-notes) banner-redirected to the
+#     LIVE authority: design/run-04/state-ledger.md §Invariants + worksheet §D (which already records all the
+#     Phase-3 rulings; the worksheet's "§D blank / Phase 4 NOT started" status header was stale → corrected).
+#   · Principal directive folded — the gambling/entertainment dao CONFIRMED (the old charity-apothecary cover
+#     RETIRED to span-B provenance) + seed capital STOLEN from the crown ("evil sect"): new token
+#     SECT-SEED-THEFT (PLANT II.3 → FIRE III.6 — the cage's own gold buys the escape). check-threads PASS
+#     (plants=84/fires=67, R0–R4). Full delta record + thread-arc confirmation: the dated amendment foot of
+#     intake/spine.md.
+# NEXT — principal-gated (NOT walk increments): (1) Otto/Daemon seating FALLBACK (AU-age, ruled/recommended,
+#   vs rename); (2) the "one-crack" nuance (III.5 give-break vs III.6 register-silence — two sanctioned
+#   once-beats, or reconcile against worksheet §C-5?); (3) optional displaced-cost victim for the crown-theft.
+# BUILD (needs a nod): character cards are already re-derived span-A, but the span-B LOCATION/PROP/CONDITION/
+#   BEHAVIOR cards still carry charity/Saerys framing — RETIRE loc-sick-house, reframe prop-account-book
+#   (charity-cover → soap-front + vice-ledger), sweep saerys-* behavior/formation/reagent cards.
 
 project:
   brief: >

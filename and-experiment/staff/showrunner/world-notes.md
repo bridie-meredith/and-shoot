@@ -1,5 +1,17 @@
 # World Notes — Decided Constraints
 
+> ## ⛔ STALE DIGEST — span-B / Viserys-I framing (banner added 2026-06-11)
+> This whole digest predates the span-A intake. Stale throughout: **Viserys-I era / ~119–131 AC** (now
+> **Jaehaerys I's long peace, ~84–95 AC**), **"daughter of Viserys I"** (now Jaehaerys's daughter / Alicent's),
+> **"comedy-first that curdles to tragedy on the Dance timeline"** (now **gritty-world / light-LENS,** comedy
+> dominant this series, the Dance parked), and the **"six loopholes (charity keystone …)"** model — the
+> **charity-apothecary cover is RETIRED** (the live funding engine is the legit soap business + the off-books
+> gambling/entertainment vice-network, seeded with crown gold stolen from the "evil sect"; `SECT-SEED-THEFT`).
+> **LIVE authorities:** `intake/spine.md` (narrative + per-chapter gag map) · `design/run-04/series-outline.md`
+> (tokenized, check-threads PASS) · `design/run-04/state-ledger.md` §Invariants (ruled premises) ·
+> `intake/character-profiles.md` (cast) · `design/time-anchor.md` (era/span). **Retained as frozen provenance —
+> do not check new work against this digest.**
+
 Full grounded bedrock: `and-experiment/design/run-01/constraints.md`. Digest below.
 
 ## Settings
