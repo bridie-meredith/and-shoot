@@ -4,9 +4,11 @@ class: location
 scope: library
 world: planetos
 origin: authored
-quality: scant
+quality: full
 variant-project: taylor-westeros-good-intentions
 ---
+
+# Stitch House Lane — Hook District Service Lane, Flea Bottom
 
 ## Geography
 
@@ -27,6 +29,17 @@ Tallow smoke from the stitch-house lamp, pooling at lane-floor level in still ai
 - Lane-mouth (north) → Hook District alley network
 - Angle-gap (south) → drain channel; not a traversable exit for persons
 
+## Fixed Props
+
+None card-level.
+
 ## Hazards
 
 Lane width forces single-file or pressed-shoulder movement at moderate crowd density; crowd compression blocks retreat. The angle-wall side loses direct lamplight.
+
+## Ambient Interruption Hooks
+
+- A stitch-house worker stepping out through the workshop door to shake fabric scraps into the lane or cool their hands in outside air — exits mid-scene without warning.
+- A Hook District regular cutting through the lane at pace, head down, on an established shortcut route — passes through without stopping or looking.
+- A shout or argument carrying in from the lane-mouth through the alley network — audible before its source is visible; could be nothing, could be a patrol.
+- The tallow lamp in the stitch-house guttering or brightening when someone moves inside — visible as a light-shift on the lane's east wall even when the interior is not otherwise perceivable.
