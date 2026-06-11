@@ -10,6 +10,7 @@ Margit-maintained index. One row per exemplar. Schema: `schemas/persona-exemplar
 |------|-------------|---------------|-------------|-----------------|
 | cape-fic-reader | cape-fic-reader | high (generic capefic rooftop fight) | claude (2026-05-26) | active |
 | dark-fantasy-reader | dark-fantasy-reader | high (generic grimdark battlefield aftermath) | claude (2026-05-26) | active |
+| literary-snob | literary-snob | high (generic literary fiction chapter — middle-aged son, diminished father) | claude (2026-06-11) | active |
 | worm-canon-pedant | worm-canon-pedant | high (generic Worm-fic with Lisa + Travelers OC) | claude (2026-05-26) | active |
 
 ## Impersonator exemplars — library (planetos / and-experiment cast)
