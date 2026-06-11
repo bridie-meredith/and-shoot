@@ -2970,3 +2970,198 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-06-11-pipeline-001
+      created_at: 2026-06-11T00:00:00Z
+      created_by: "improvement-loop/test — /and-review pipeline tri-walk (STRUCT-001)"
+      target:
+        command: /and-review
+        scope: "pipeline"
+        phase: null
+      severity: HARD
+      description: |
+        STRUCT-001: schemas/dialogue.schema.md header actively describes the R2 dialogue judge as
+        still-running ("The R2 dialogue judge at /and-facets Phase 2 remains…"). DEC-0116 (URI-FACETS-SLIM)
+        retired the entire R2 judging round. CLAUDE.md Rule 15 and and-facets.md Notes both confirm
+        retirement. Schema directly contradicts two authoritative sources; a consumer reading it will
+        attempt to route dialogue through a non-existent Phase 2 R2 pass.
+        Fix (fixer-class): Remove R2 judge claim from dialogue.schema.md header; replace with current
+        authority chain: "Dialogue ships with bones (URI-WRITE-DIALOGUE-COBONDED). Dialogue-coverage
+        and card-compliance are mechanical checks at /and-facets Phase 4 auditor DEDUP class.
+        R2 dialogue judge RETIRED (DEC-0116)."
+      context_refs:
+        - active-project/staff/reviews/pipeline-2026-06-11T000000Z.md
+        - schemas/dialogue.schema.md
+        - .claude/commands/and-facets.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-11-pipeline-002
+      created_at: 2026-06-11T00:00:00Z
+      created_by: "improvement-loop/test — /and-review pipeline tri-walk (STRUCT-002)"
+      target:
+        command: /and-review
+        scope: "pipeline"
+        phase: null
+      severity: HARD
+      description: |
+        STRUCT-002: schemas/audit-report.schema.md lines ~106-158 present the R2 decision-shard section
+        (shard format, .r2-decisions.md, F-R2-* class definitions, consumer contract) as currently-active
+        pipeline machinery. DEC-0116 retired the entire R2 round; no authoring step generates these
+        artifacts. The section has no "RETIRED" annotation. A pipeline reader following this schema would
+        attempt to produce, consolidate, and audit R2 decision shards that no step generates.
+        Fix (fixer-class): Annotate the section heading: "RETIRED under DEC-0116 — preserved for
+        reference only; no current pipeline step produces these artifacts."
+      context_refs:
+        - active-project/staff/reviews/pipeline-2026-06-11T000000Z.md
+        - schemas/audit-report.schema.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-11-pipeline-003
+      created_at: 2026-06-11T00:00:00Z
+      created_by: "improvement-loop/test — /and-review pipeline tri-walk (STRUCT-003)"
+      target:
+        command: /and-review
+        scope: "pipeline"
+        phase: null
+      severity: HARD
+      description: |
+        STRUCT-003: schemas/facet.schema.md scene-map consumer table entry reads "Consumed by: /and-facets
+        Phase 5 audit (per-scene cap enforcement)". Under DEC-0116, Phase 5 is PERSIST + orchestrator-critic
+        verdict; the mechanical auditor moved to Phase 4. /and-facets.md Phase 4 explicitly performs
+        scene-map coverage checks and per-scene cap enforcement. A consumer reading facet.schema.md will
+        route cap enforcement to the wrong phase.
+        Fix (fixer-class): Update consumer table entry from "Phase 5 audit (CONSTRAINT)" to
+        "Phase 4 audit (CONSTRAINT)".
+      context_refs:
+        - active-project/staff/reviews/pipeline-2026-06-11T000000Z.md
+        - schemas/facet.schema.md
+        - .claude/commands/and-facets.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-11-pipeline-004
+      created_at: 2026-06-11T00:00:00Z
+      created_by: "improvement-loop/test — /and-review pipeline tri-walk (STRUCT-004)"
+      target:
+        command: /and-review
+        scope: "pipeline"
+        phase: null
+      severity: HARD
+      description: |
+        STRUCT-004: schemas/aggregate-state.schema.md is absent from CLAUDE.md schema authority table
+        (lines ~113-134). The file exists on disk and is actively referenced by /and-stitch Phase 10
+        and /and-substance chapter Phase 0 (HARD-abort trigger for unacknowledged revision-layer entries).
+        Any author or agent looking up "what schema governs aggregate-state.md" will find no entry and
+        may author/read the file without schema enforcement.
+        Fix (fixer-class): Add row to CLAUDE.md schema authority table:
+        "Aggregate state (cross-chapter forward-feed) | schemas/aggregate-state.schema.md"
+      context_refs:
+        - active-project/staff/reviews/pipeline-2026-06-11T000000Z.md
+        - CLAUDE.md
+        - schemas/aggregate-state.schema.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-11-pipeline-005
+      created_at: 2026-06-11T00:00:00Z
+      created_by: "improvement-loop/test — /and-review pipeline tri-walk (STRUCT-005)"
+      target:
+        command: /and-review
+        scope: "pipeline"
+        phase: null
+      severity: SOFT
+      description: |
+        STRUCT-005 (SIGNAL): and-facets.md Phase 5c reads staff/audience/and-facets-orchestrator-critic/card.md.
+        Canonical path per CLAUDE.md routing table and /and-review.md verdict subcommand is
+        staff/orchestrator-critic/card.md. If the non-canonical path does not exist on disk, Phase 5c
+        will fail silently or error when reading the card.
+        Fix: Verify whether staff/audience/and-facets-orchestrator-critic/card.md exists on disk; if not,
+        correct path in and-facets.md Phase 5c to staff/orchestrator-critic/card.md.
+      context_refs:
+        - active-project/staff/reviews/pipeline-2026-06-11T000000Z.md
+        - .claude/commands/and-facets.md
+        - CLAUDE.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-11-pipeline-006
+      created_at: 2026-06-11T00:00:00Z
+      created_by: "improvement-loop/test — /and-review pipeline tri-walk (STRUCT-006)"
+      target:
+        command: /and-review
+        scope: "pipeline"
+        phase: null
+      severity: SOFT
+      description: |
+        STRUCT-006 (SIGNAL): CLAUDE.md Rule 13 states "/and-facets Phase 4.5 (renamed from the retired
+        Phase 5c under DEC-0116)." In and-facets.md, Phase 5c is the orchestrator-critic verdict (still
+        exists). Phase 4.5 is a net-new admin process-critic dispatch, not a rename of 5c. The claim
+        conflates two distinct phases with different agents and triggers.
+        Fix: Correct Rule 13 to state Phase 4.5 is net-new admin process-critic step; note Phase 5c
+        (orchestrator-critic verdict) remains under Phase 5.
+      context_refs:
+        - active-project/staff/reviews/pipeline-2026-06-11T000000Z.md
+        - CLAUDE.md
+        - .claude/commands/and-facets.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-11-pipeline-007
+      created_at: 2026-06-11T00:00:00Z
+      created_by: "improvement-loop/test — /and-review pipeline tri-walk (STRUCT-007)"
+      target:
+        command: /and-review
+        scope: "pipeline"
+        phase: null
+      severity: SOFT
+      description: |
+        STRUCT-007 (SIGNAL): and-write.md Phase 7 Notes section states "Citations in bones stay empty
+        here. They accrue at facet-authoring time." Under URI-WRITE-DIALOGUE-COBONDED (2026-05-25),
+        Phase 7 emits [<character-slug>:<id>] citation tokens on dialogue-anchor bones. Notes section
+        contradicts Phase 7 Step 3a and CLAUDE.md Rule 15.
+        Fix: Update Notes to reflect that dialogue citation tokens are emitted at Phase 7 for
+        dialogue-anchor bones; non-dialogue citations accrue downstream.
+      context_refs:
+        - active-project/staff/reviews/pipeline-2026-06-11T000000Z.md
+        - .claude/commands/and-write.md
+        - CLAUDE.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-11-pipeline-008
+      created_at: 2026-06-11T00:00:00Z
+      created_by: "improvement-loop/test — /and-review pipeline tri-walk (STRUCT-008)"
+      target:
+        command: /and-review
+        scope: "pipeline"
+        phase: null
+      severity: SOFT
+      description: |
+        STRUCT-008 (SIGNAL): schemas/showrunner-memory.schema.md chapters[].context_followability.unresolved[]
+        comment references "Phase 4.6 WARN carry." Under DEC-0116, Phases 4.5/4.6 were consolidated into
+        Phase 3 conditional spine-hole remediation. Correct current phase reference is Phase 3.
+        Fix: Update schema comment to reference "Phase 3 WARN carry."
+      context_refs:
+        - active-project/staff/reviews/pipeline-2026-06-11T000000Z.md
+        - schemas/showrunner-memory.schema.md
+        - .claude/commands/and-facets.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
