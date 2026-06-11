@@ -12,8 +12,13 @@ copy to `retired/<date>-worksheet.md` when an intake completes and reset this fi
   most chapters.
 - New working layer to create: `design/run-NN/` → `NN = 03`
 
-**STATUS: Phases 1–2 complete (dispositions + GUARD statuses proposed). Phase 3 gate OPEN —
-awaiting principal rulings (Section D blank). Phase 4 migration NOT started.**
+**STATUS (corrected 2026-06-11): Phases 1–3 COMPLETE — §D Decisions log is filled (gate questions + the
+premise/cast bundle ALL RULED 2026-06-08/09; §D-slots 2026-06-09). Phase 4 migration DONE →
+`design/run-03/` (2026-06-09) then `design/run-04/` (Book-I revision, 2026-06-10). The LIVE ruled-premise
+authority is now `design/run-04/state-ledger.md` §"Invariants the ledger guards (live)"; this worksheet is
+the pre-gate analysis + decisions log, retained as provenance. (The earlier status line — "§D blank / Phase
+4 NOT started" — was stale and is corrected here.) Genuinely-open residuals: the §D-slots *fallback* on
+Otto/Daemon (AU-age vs rename) + the "one-crack" nuance flagged on the §B rows below.**
 
 ---
 
@@ -60,12 +65,12 @@ awaiting principal rulings (Section D blank). Phase 4 migration NOT started.**
 | fence: cultivation real-but-hoarded + framework-wrong | **HONORED** | Unchanged. |
 | fence: materials-only — never cultivates people / never demonic | **CONTRADICTED** | I.5 drains a living dragon-bond = the demonic path. Reframe: **established-then-rejected** capability (the line she fears re-crossing). → GUARD-1 rev-4. |
 | fence: idiot-savant boundary | **HONORED** | Savant operator, setting-blind. |
-| fence: armor cracks exactly once (III.8) | **RE-RATIFY** | Structure changed (Book III = 6 ch, no III.8). The intake's emotional core is **III.5 the tempering** (the one outward spend; the anti-curdle). RULING NEEDED: relocate "the one crack" to III.5 (the give-not-take break), OR retain a separate grief-break. |
+| fence: armor cracks exactly once (III.8) | **RE-RATIFY → RULED** | Structure changed (Book III = 6 ch, no III.8). **RULED (§D-derived):** III.5 the tempering is the **anti-curdle GIVE-break** (the one outward spend). ⚠ **Residual nuance (flagged 2026-06-11):** the live `character-profiles.md` + spine III.6 *also* stage a distinct **register-ABSENT armor-crack at the III.6 apex** (the breezy grief-armor drops once, witnessed by Wylla). Two candidate readings — (i) two sanctioned once-beats (a *give*-break at III.5 + a *voice/grief*-break at III.6), or (ii) reconcile against §C-5's "relocate, not a separate grief-break." **Principal call; not resolved here.** |
 | fence: no dragon | **HONORED** (spirit) | She ate it; never bonds/rides. |
-| invariant: curdle ladder R0→R4 | **CONTRADICTED** at top | Span A drops **R4** (dead-dragon field). New ladder: R0 (I.1 visible kill) → R1 (I.5 Daemon bond) → R2 (II.7 maid-threat, *method TBD*) → R3 (III.3 factor, *method TBD*) → **apex TBD** (escape collateral, or plateau with III.5 tempering as the anti-curdle that reframes the whole ladder). RULING NEEDED on R2/R3 method + the apex. |
-| invariant: one method, three Locks (I.11→II.10→III.10) | **RE-RATIFY** (re-map) | Chapter numbers changed (5/8/6) and the old Lock-I machine (sick-house + sealed note) is GONE from the intake. Proposed re-map: **Lock I** = the heist-method *established* (I.2 still-room) → **Lock II** = the remote-acquisition apparatus *perfected* (the startup, Book II) → **Lock III** = the escape / ship-heist (III.6) at largest scale. |
-| invariant: gift→spend (warm chapter before cold spend; Bk I banks Jaehaerys + Helaena) | **CONTRADICTED / largely ORPHANED** | Span A spends no one of those: Jaehaerys not killed (open Q), Helaena's role undefined. Casualties under span A = the dragon(s), maybe the factor, maybe escape collateral. The **maid inverts it** — banked warm, then SAVED (tempered), not spent. RULING NEEDED: keep gift→spend only where it still bites, or retire as a span-B invariant. |
-| invariant: the one break III.8, register ABSENT | **RE-RATIFY** | See "armor cracks once" — relocate to III.5 or retire. |
+| invariant: curdle ladder R0→R4 | **CONTRADICTED → RULED** | **RULED (§D row 2 + §D-derived + resolved-creative-fill 2026-06-09):** R0 (I.1 visible kill) → R1 (I.5 Daemon drain) → R2 (**II.7** premeditated poison-removal of the exploiter) → R3 (**III.3** Quint, casual) → **R4 = the apex (III.6, the tempered maid kills)**; III.5 tempering = the anti-curdle GIVE just beneath. **Label reconciled 2026-06-11:** the III.6 apex *is* **R4** (matches run-04 tokens + check-threads, which require R0–R4); the parked **Dance** dead-dragon-field is **R5**, not R4 (earlier "span A drops R4" conflated the two). |
+| invariant: one method, three Locks (I.11→II.10→III.10) | **RE-RATIFY → RULED (§D-bundle F: ADOPTED)** | Re-map adopted exactly: **Lock I** = the heist-method *established* (I.2 still-room) → **Lock II** = the remote-acquisition apparatus *perfected* (the startup, Book II) → **Lock III** = the escape / ship-heist (III.6) at largest scale. Canonical in run-04 series-outline + state-ledger. |
+| invariant: gift→spend (warm chapter before cold spend; Bk I banks Jaehaerys + Helaena) | **CONTRADICTED → RULED** | **RULED (§D-bundle A+C / §D-derived):** Jaehaerys not killed (parked-Dance death); Helaena parked. **Kept where it still bites:** Daemon banked warm (I.4 circling/gift) before the I.5 drain; the Book-II/III marks each get a *virtue-to-betray* before the cold close (II.7 exploiter, III.3 Quint — per `character-reactions.md`). **Wylla inverts it** — banked warm, then SAVED (III.5 tempered), not spent; the apex *moral* cost lands on her (she boards a killer), not a Gael-spend. |
+| invariant: the one break III.8, register ABSENT | **RE-RATIFY → RULED (with the flagged nuance)** | The **register-ABSENT** beat = the live canon's **III.6 apex silence** (grief-armor drops once, witnessed by Wylla; spine III.6 + `character-profiles.md`). §D-derived separately calls **III.5** "the one crack" (the anti-curdle give). See the flagged residual on "armor cracks exactly once" above — whether III.5-give + III.6-register-silence are two sanctioned once-beats is the open principal call. |
 | invariant: POV locked-inside | **HONORED** | (Exception: the Alicent interlude is an explicit external-POV palate-cleanser — already in the intake's design.) |
 
 ---

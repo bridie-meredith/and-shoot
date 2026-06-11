@@ -763,3 +763,28 @@ her) · `ALICENT-SHIELD`/`ALICENT-CANT-EXTRACT` (Interlude → III.4 she buys th
 shore) · `PROPHESIED-LEGEND` (Book-I sealed mirror-flip → III.6 the realm prefers the legend to her agency) ·
 the **one break** (grief-armor → III.6 register-ABSENT, witnessed by Wylla). **All arced; check-threads PASS,
 R0–R4 present, no orphans. The three-book review-walk is now CLOSED end-to-end (I.1–III.6 + Epilogue).**__*
+
+*__Provenance-backlog hygiene — CLEARED (2026-06-11).__ Resolved the backlog flagged in the Book-III block
+above. Key finding: the **live ruled-premise authority already exists and is current** —
+`design/run-04/state-ledger.md` §"Invariants the ledger guards (live)" (GUARD-1 rev-4 three-spends, curdle
+R0→R4, III.5 anti-curdle, span-A, Rule 22) — and the intake worksheet §D already records all the Phase-3
+rulings; only the worksheet's STATUS header and the GUARDS-register mirror were stale. Actions (faithful
+sync only — no new rulings, no competing canon, provenance preserved):*
+- *`GUARDS-register.md` — added a **STALE / SUPERSEDED banner** redirecting to the run-04 ledger §Invariants
+  (the live authority) + the worksheet §B/§D; the run-02 snapshot body is kept frozen as provenance.*
+- *`reconciliation-worksheet.md` — corrected the stale STATUS header (it claimed "§D blank / Phase 4 NOT
+  started"; both false — §D is filled, run-03→run-04 migration done); stamped the §B rows
+  (armor-crack / curdle-ladder / Locks / gift→spend / one-break) **RE-RATIFY → RULED** with forward-pointers
+  to §D + the run-04 ledger; reconciled the curdle label inline (III.6 apex = R4; Dance field = R5).*
+- *__Flagged, not resolved (a residual principal call):__ §D-derived maps "the one crack" to **III.5** (the
+  anti-curdle GIVE-break), but the live `character-profiles.md` + the spine III.6 also stage a distinct
+  **register-ABSENT armor-crack at the III.6 apex** (grief-armor drops once, witnessed by Wylla). Whether
+  these are two sanctioned once-beats (give-break III.5 + voice/grief-break III.6) or need reconciling
+  against §C-5's "relocate, not a separate grief-break" is the open call — noted on the worksheet row, the
+  spine III.5/III.6 bodies, and here. Pre-existing (the III.6 register-silence was already live canon in the
+  character docs); surfaced by the walk, left for the principal.*
+- *__Remaining genuinely-open (principal-gated; NOT walk increments):__ (1) the §D-slots **fallback** on
+  Otto/Daemon seating (AU-age — recommended/ruled — vs rename); (2) the one-crack nuance above; (3) Phase-4
+  **card re-derivation** from the now-current `character-profiles.md` / `character-reactions.md` (a build, not
+  a walk). The story spine itself is coherent, recurring-beat-complete, thread-verified (check-threads PASS),
+  and its companion docs are swept into agreement.*

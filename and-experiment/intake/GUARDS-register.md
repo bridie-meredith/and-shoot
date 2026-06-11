@@ -1,5 +1,17 @@
 # GUARDS register — ratified premises (run-02, as of CL-005)
 
+> ## ⛔ STALE SNAPSHOT — SUPERSEDED (banner added 2026-06-11)
+> This is the **run-02 / CL-005 pre-intake** GUARD snapshot (span-B · "Saerys" · 11-ch · no-external-spend ·
+> armor-break III.8 · Locks I.11/II.10/III.10). The intake reconciliation **completed** (worksheet §D ruled
+> 2026-06-08/09; migration → `design/run-03/` then `design/run-04/`). The **LIVE ruled-premise authority is
+> now `design/run-04/state-ledger.md` §"Invariants the ledger guards (live)"** — GUARD-1 **rev-4** (three
+> outward spends I.1/I.5/III.5, no apex relapse), GUARD-2/3 replaced (visible I.1 kill), GUARD-4 re-seated
+> (Gael · Jaehaerys father · Alicent mother · **span-A**, Dance parked), curdle ladder **R0→R4 apex (III.6)**
+> + III.5 anti-curdle (Dance field = R5, parked), **Rule 22** (concrete-action prose), Locks **I.2 / Book-II /
+> III.6**, armor-crack at **III.6** (register ABSENT). Full rulings: `intake/reconciliation-worksheet.md`
+> §B/§D; story authority: `intake/spine.md`. **This file is retained as frozen provenance — do not check new
+> work against it; check against the run-04 ledger.**
+
 *Consolidated snapshot for outline-intake reconciliation. A tentative outline must be checked against
 each entry: **HONORED** (outline obeys it) · **RE-RATIFY** (outline changes it — needs an explicit
 principal ratification + a new GUARD) · **DROP** (principal retires it). Never silently break one.*
