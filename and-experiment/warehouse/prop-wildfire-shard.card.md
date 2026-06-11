@@ -8,7 +8,7 @@ portability: portable
 origin: authored
 quality: full
 references:
-  - saerys-targaryen
+  - gael-targaryen
   - cond-alchemists-guild-122ac
   - cond-westeros-reagent-tier-map
   - prop-dose-log

@@ -8,7 +8,7 @@ portability: portable
 origin: authored
 quality: full
 references:
-  - saerys-targaryen
+  - gael-targaryen
   - prop-account-book
   - prop-bill-of-exchange
   - cond-inferior-path-doctrine

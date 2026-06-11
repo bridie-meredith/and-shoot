@@ -8,7 +8,7 @@ portability: portable
 origin: authored
 quality: full
 references:
-  - saerys-targaryen
+  - gael-targaryen
   - cond-inferior-path-doctrine
   - loc-still-room
 ---

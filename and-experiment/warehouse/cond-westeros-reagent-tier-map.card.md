@@ -11,7 +11,7 @@ references:
   - cond-westerosi-poison-pharmacology
   - cond-maesters-cabinet
   - prop-wildfire-shard
-  - saerys-targaryen
+  - gael-targaryen
 ---
 
 # Condition — Westeros Reagent Tier Map

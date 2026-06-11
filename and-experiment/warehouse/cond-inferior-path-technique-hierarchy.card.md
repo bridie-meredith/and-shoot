@@ -10,7 +10,7 @@ references:
   - cond-inferior-path-doctrine
   - prop-account-book
   - loc-still-room
-  - saerys-targaryen
+  - gael-targaryen
 ---
 
 # Condition — Inferior Path Technique Hierarchy

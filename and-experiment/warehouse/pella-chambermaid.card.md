@@ -12,7 +12,7 @@ aliases: [pella, the-clever-maid, the-chamber-maid]
 references:
   - westeros-smallfolk
   - westeros-grrm-mannerisms
-  - saerys-targaryen
+  - gael-targaryen
   - loc-maegors-holdfast
 ---
 

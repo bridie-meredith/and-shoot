@@ -7,7 +7,7 @@ world: planetos
 origin: authored
 quality: full
 references:
-  - saerys-targaryen
+  - gael-targaryen
   - cond-inferior-path-doctrine
 ---
 

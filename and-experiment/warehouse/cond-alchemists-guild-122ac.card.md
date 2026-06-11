@@ -10,7 +10,7 @@ references:
   - prop-wildfire-shard
   - cond-westeros-reagent-tier-map
   - cond-inferior-path-doctrine
-  - saerys-targaryen
+  - gael-targaryen
   - cond-kl-court-state-122ac
 ---
 

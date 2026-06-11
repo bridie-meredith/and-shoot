@@ -12,7 +12,7 @@ aliases: [bessa, the-second-nurse, the-baker's-wife]
 references:
   - westeros-smallfolk
   - westeros-grrm-mannerisms
-  - saerys-targaryen
+  - gael-targaryen
   - loc-maegors-holdfast
 ---
 

@@ -57,12 +57,15 @@ cultivation-library + spine cultivation framing.) **Rule 22** applies to any pro
 → enumerate every card whose `references:` (or body) points at a tombstoned slug. (Live span-A cards' own
 `supersedes:`/prose mentions of the old slug are CORRECT — exclude those.)
 
-**Phase 1 — reference-graph rewrite (mechanical, do as one batch).** Repoint every dangling reference:
-`saerys-targaryen → gael-targaryen` · `saerys-maester → maester-lorren` · `saerys-septa → septa-aldith` ·
-`viserys-i-targaryen → jaehaerys-i-targaryen` (or alicent-hightower where the warm-cage function is meant).
-Touches the servant cards + the prop/cond layer. Validate: no live card references a tombstoned slug except
-in a `supersedes:`/provenance line. *(One already fixed by hand 2026-06-11: septon-barth `saerys-maester` →
-`maester-lorren`.)*
+**Phase 1 — reference-graph rewrite (mechanical, do as one batch).** ✅ **DONE 2026-06-11.** Repointed
+`saerys-targaryen → gael-targaryen` in the `references:` list-items of **36 cards** (anchored list-item match;
+`supersedes:` inline-lists + body prose + the 5 tombstone files all preserved; verified — no live card
+references `saerys-targaryen`/`saerys-maester`/`saerys-septa`/`viserys-i-targaryen` any longer). *(No live
+list-item refs to saerys-maester/saerys-septa/viserys-i existed outside tombstones; the one stray
+septon-barth `saerys-maester` was hand-fixed 2026-06-11.)* **Two residual graph edges deferred to Phase 2
+(each needs a card re-derivation, not a bare ref-swap):** (i) `cond-trade-network-formation` → `loc-sick-house`
+(remove when its charity-cover body is re-derived to soap/vice); (ii) `cond-heartless-dao-scripture` (+ the
+two parked behavior cards) → `saerys-targaryen-behavior` (repoint when `gael-targaryen-behavior` is built).
 
 **Phase 2 — content re-derivation (the real authoring; one card at a time, references intact).**
 - `saerys-targaryen-behavior` → **build `gael-targaryen-behavior`** (rename + span-A voice per

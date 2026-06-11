@@ -11,7 +11,7 @@ references:
   - cond-westeros-reagent-tier-map
   - loc-still-room
   - prop-still-room-kit
-  - saerys-targaryen
+  - gael-targaryen
 ---
 
 # Condition — Maester's Cabinet (Quick Reference)

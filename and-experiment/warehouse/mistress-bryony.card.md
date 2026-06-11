@@ -12,7 +12,7 @@ aliases: [bryony, the-nan, the-head-nursemaid, mistress-bryony]
 references:
   - westeros-smallfolk
   - westeros-grrm-mannerisms
-  - saerys-targaryen
+  - gael-targaryen
   - loc-maegors-holdfast
 ---
 

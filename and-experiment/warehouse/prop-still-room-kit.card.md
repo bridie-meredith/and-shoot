@@ -8,7 +8,7 @@ portability: portable
 origin: authored
 quality: full
 references:
-  - saerys-targaryen
+  - gael-targaryen
   - loc-still-room
   - cond-maesters-cabinet
   - cond-westerosi-poison-pharmacology

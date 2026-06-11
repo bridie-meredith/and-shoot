@@ -13,7 +13,7 @@ references:
   - westeros-noble-courtly
   - westeros-grrm-mannerisms
   - cond-kl-court-state-122ac
-  - saerys-targaryen
+  - gael-targaryen
 ---
 
 # Helaena Targaryen — 122 AC Variant

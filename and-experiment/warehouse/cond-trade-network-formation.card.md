@@ -11,7 +11,7 @@ references:
   - prop-bill-of-exchange
   - the-factor
   - loc-sick-house
-  - saerys-targaryen
+  - gael-targaryen
   - prop-kings-hand-note
 ---
 

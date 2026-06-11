@@ -12,7 +12,7 @@ aliases: [orla, the-wardrobe-mistress, the-tiring-mistress]
 references:
   - westeros-smallfolk
   - westeros-grrm-mannerisms
-  - saerys-targaryen
+  - gael-targaryen
   - loc-maegors-holdfast
 ---
 

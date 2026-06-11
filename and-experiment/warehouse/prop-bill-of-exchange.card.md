@@ -11,7 +11,7 @@ references:
   - the-factor
   - prop-account-book
   - cond-trade-network-formation
-  - saerys-targaryen
+  - gael-targaryen
 ---
 
 # Prop — The Bill of Exchange

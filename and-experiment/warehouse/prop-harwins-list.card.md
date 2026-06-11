@@ -9,7 +9,7 @@ origin: authored
 quality: full
 references:
   - ser-harwin-the-patient
-  - saerys-targaryen
+  - gael-targaryen
 ---
 
 # Prop — Harwin's List

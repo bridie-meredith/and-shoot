@@ -10,7 +10,7 @@ references:
   - loc-red-keep-interior
   - cond-inferior-path-doctrine
   - cond-inferior-path-technique-hierarchy
-  - saerys-targaryen
+  - gael-targaryen
 ---
 
 # Condition — Saerys's Formation Map of the Red Keep

@@ -12,7 +12,7 @@ tier: supporting
 references:
   - westeros-noble-courtly
   - westeros-grrm-mannerisms
-  - saerys-targaryen
+  - gael-targaryen
   - cond-kl-court-state-122ac
 ---
 

@@ -8,7 +8,7 @@ origin: authored
 quality: full
 references:
   - loc-red-keep-interior
-  - saerys-targaryen
+  - gael-targaryen
   - prop-account-book
   - prop-dose-log
   - cond-inferior-path-doctrine

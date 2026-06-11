@@ -12,7 +12,7 @@ aliases: [mella, the-wet-nurse, the-milk-mother, gaels-nurse]
 references:
   - westeros-smallfolk
   - westeros-grrm-mannerisms
-  - saerys-targaryen
+  - gael-targaryen
   - loc-maegors-holdfast
 ---
 

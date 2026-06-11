@@ -12,7 +12,7 @@ aliases: [wenda, the-rocker, the-cradle-girl]
 references:
   - westeros-smallfolk
   - westeros-grrm-mannerisms
-  - saerys-targaryen
+  - gael-targaryen
   - loc-maegors-holdfast
 ---
 

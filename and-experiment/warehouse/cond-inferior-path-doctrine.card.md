@@ -7,7 +7,7 @@ world: planetos
 origin: authored
 quality: full
 references:
-  - saerys-targaryen
+  - gael-targaryen
   - cond-westerosi-poison-pharmacology
   - prop-dose-log
   - prop-account-book

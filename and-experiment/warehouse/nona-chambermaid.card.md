@@ -12,7 +12,7 @@ aliases: [nona, the-chamber-maid, the-steady-maid]
 references:
   - westeros-smallfolk
   - westeros-grrm-mannerisms
-  - saerys-targaryen
+  - gael-targaryen
   - loc-maegors-holdfast
 ---
 

@@ -41,10 +41,12 @@
 #   SMALLFOLK-HOLD-RISK tier. No open creative-fill slots remain.
 # CARD-LAYER BUILD (in progress): ground-truth established — span-A character cards BUILT + supersedes-tagged;
 #   saerys-* + (now) loc-sick-house + viserys-i-targaryen tombstoned; septon-barth dangling ref fixed.
-#   REMAINING (a coordinated 30+-card reference-web migration, NOT piecemeal): Phase-1 ref-rewrite
-#   (saerys→gael / saerys-maester→lorren / saerys-septa→aldith / viserys-i→jaehaerys) + Phase-2 prop/cond
-#   re-derivation (prop-account-book charity→soap/vice + span-A casualties; prop-harwins-list;
-#   cond-saerys-formation-map; saerys-targaryen-behavior→gael-targaryen-behavior; the-factor→tombstone).
+#   REMAINING (a coordinated 30+-card reference-web migration, NOT piecemeal): Phase-1 ref-rewrite DONE
+#   (2026-06-11 — 36 cards repointed saerys-targaryen→gael-targaryen; graph verified clean). Phase-2 OPEN:
+#   prop/cond re-derivation (prop-account-book charity→soap/vice + span-A casualties; prop-harwins-list;
+#   cond-saerys-formation-map; cond-trade-network-formation charity/sick-house body; saerys-targaryen-behavior
+#   →gael-targaryen-behavior; the-factor→tombstone) + the 2 residual graph edges (loc-sick-house ref;
+#   saerys-targaryen-behavior refs) that resolve with those re-derivations.
 #   Full coordinated plan: staff/margit/span-a-card-migration-workorder.md. Character cards production-ready.
 
 project:

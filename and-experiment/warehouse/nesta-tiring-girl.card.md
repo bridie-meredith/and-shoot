@@ -12,7 +12,7 @@ aliases: [nesta, the-tiring-girl, the-hairdresser]
 references:
   - westeros-smallfolk
   - westeros-grrm-mannerisms
-  - saerys-targaryen
+  - gael-targaryen
   - loc-maegors-holdfast
 ---
 

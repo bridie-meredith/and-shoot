@@ -12,7 +12,7 @@ tier: supporting
 references:
   - westeros-noble-courtly
   - westeros-grrm-mannerisms
-  - saerys-targaryen
+  - gael-targaryen
 ---
 
 # Nymeria of the Summer Isles

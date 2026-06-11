@@ -8,7 +8,7 @@ portability: portable
 origin: authored
 quality: full
 references:
-  - saerys-targaryen
+  - gael-targaryen
   - prop-cradle-egg
   - cond-inferior-path-doctrine
 ---

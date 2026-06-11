@@ -9,7 +9,7 @@ quality: full
 references:
   - cond-inferior-path-doctrine
   - saerys-targaryen-behavior
-  - saerys-targaryen
+  - gael-targaryen
 ---
 
 # Condition — Heartless Dao Scripture

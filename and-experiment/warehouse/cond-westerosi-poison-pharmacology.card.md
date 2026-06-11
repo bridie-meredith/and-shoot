@@ -9,7 +9,7 @@ quality: full
 references:
   - prop-dose-log
   - cond-inferior-path-doctrine
-  - saerys-targaryen
+  - gael-targaryen
 ---
 
 # Condition — Westerosi Poison Pharmacology

@@ -8,7 +8,7 @@ origin: authored
 quality: full
 references:
   - cond-inferior-path-doctrine
-  - saerys-targaryen
+  - gael-targaryen
   - cond-transmigration-previous-life
 ---
 

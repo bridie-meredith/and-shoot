@@ -13,7 +13,7 @@ references:
   - westeros-smallfolk
   - westeros-grrm-mannerisms
   - westeros-septon
-  - saerys-targaryen
+  - gael-targaryen
   - loc-maegors-holdfast
 ---
 

@@ -12,7 +12,7 @@ aliases: [cissa, the-under-nursemaid, the-gentle-maid]
 references:
   - westeros-smallfolk
   - westeros-grrm-mannerisms
-  - saerys-targaryen
+  - gael-targaryen
   - loc-maegors-holdfast
 ---
 
