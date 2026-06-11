@@ -22,7 +22,7 @@ In her cultivation-register: each bill of exchange is a "formation-command scrol
 
 **Standing policy (constraints §3):** Authority rests on handwriting and relationship, not on the seal alone. A forged seal fails if the handwriting is wrong or the account relationship is absent. A correct handwriting with a correct relationship succeeds even under unusual circumstances — which is why the factor fills her orders without requiring face-to-face confirmation.
 
-**Cross-reference:** `the-factor` is the primary counterparty for Bk I–II bills. `prop-account-book` is the ledger in which bills are recorded and reconciled. `cond-trade-network-formation` is the world-state the bills create and sustain. The King's-hand note (`prop-kings-hand-note`) is the legal anchor that gives the bills their standing-license legitimacy.
+**Cross-reference:** `the-factor` is the primary counterparty for Bk I–II bills. `prop-account-book` is the ledger in which bills are recorded and reconciled. `cond-trade-network-formation` is the world-state the bills create and sustain. The standing authorization (`prop-kings-hand-note`) is the legal anchor that gives the bills their standing-license legitimacy.
 
 ---
 
@@ -32,7 +32,7 @@ A standard Braavosi commercial instrument — heavy paper (vellum or well-proces
 
 Her bills are distinctive for handwriting precision — she drafts in a very controlled, even script that looks older than a child's hand and younger than a counting-house clerk's. The weight specifications, concentration designations, and handling notes are the giveaway to a trained eye: they are written by someone who knows what the substances require, not someone writing from a list given to her. The factor noted this on the second order. He filed it as "the signatory has practical knowledge of the commodity class." He was correct.
 
-The standing-license notation appears in the upper-right corner of each bill: "per the authority of the King's Hand, standing license [reference], charitable works account of Princess Gael Targaryen, Royal Household of Viserys I." The notation is not elaborate. It does not need to be.
+The standing-authorization notation appears in the upper-right corner of each bill: "per the standing authorization of the Queen's household, works account of the Princess Gael Targaryen, Royal Household of Jaehaerys I." The notation is not elaborate. It does not need to be.
 
 Blank bill forms are kept in the account-book's back pocket — a dozen at most, folded. When she runs out, she obtains more through the factor or through the below-stairs faction's stationer contacts.
 
@@ -40,13 +40,13 @@ Blank bill forms are kept in the account-book's back pocket — a dozen at most,
 
 ## Affordances / Uses
 
-**The founding bill (I.2 — PLANT[FACTOR]):** Directs Moro Tessavik to supply a specific list of compounds (the first tier of her mithridatism regimen + two items that read medicine on the manifest and read otherwise in context) in specified concentrations, to be delivered to the sick-house address, charged to the account under the King's-hand license. The factor fills it. The empire begins.
+**The founding bill (I.2 — PLANT[FACTOR]):** Directs Moro Tessavik to supply a specific list of compounds (the first tier of her mithridatism regimen + two items that read medicine on the manifest and read otherwise in context) in specified concentrations, to be delivered to her still-room receiving point, charged to the account under the standing authorization. The factor fills it. The empire begins.
 
 **Operational bills (I.8, II.1, II.9, II.10):** Each successive bill is larger, more sophisticated in its specifications, and covers an expanding supply-chain. By I.8 the bill is authorizing not just delivery to King's Landing but routing coordination through the factor's established intermediaries. By II.1 the bills in the account-book's archive represent six years of operational documentation — the paper trail of the network.
 
 **Paper authority:** In Braavosi commercial practice, the bill of exchange stands in for the person. The factor does not require Gael to appear; the bill is her presence. The handwriting is her identity. The license is her standing. When she is eleven and presents herself in person at the II.1 meeting, it is the first time she has been present rather than represented — and the factor addresses himself to the bill regardless.
 
-**Heist mechanics (II.9, III.10):** The bill-of-exchange form underlies the later, more elaborate paper instruments (charter-parties, manifests, victualling orders). She understands the instrument class deeply by Bk III because she has been writing bills since she was six. The heist's paper-authenticity requirements are an extension of bill-of-exchange discipline: correct handwriting, correct account relationship, correct reference to a standing authority. The bill taught her everything she knows about what makes paper credible.
+**Escape paper (Book III):** The bill-of-exchange form underlies the later, more elaborate paper instruments the escape requires — the cut-out ship commission, the charter-party, the phantom-buyer layers (paid out of the off-books dice-coin, *not* these bills — the works-account money is visible). She understands the instrument class deeply by Bk III because she has been writing bills since she was six. The escape's paper-authenticity requirements are an extension of bill-of-exchange discipline: correct handwriting, correct account relationship, correct reference to a standing authority. The bill taught her everything she knows about what makes paper credible — and she launders the getaway through cut-outs precisely so it never touches the account that bears her name.
 
 ---
 
@@ -61,7 +61,7 @@ Blank bill forms are kept in the account-book's back pocket — a dozen at most,
 
 ## Portability
 
-Portable by design — the bill-of-exchange's entire purpose is to travel without its author. She keeps blanks in the account-book's back pocket, carries completed bills to the factor or to courier contacts, and receives acknowledgment copies back via the sick-house address or the below-stairs faction's mail-intercept.
+Portable by design — the bill-of-exchange's entire purpose is to travel without its author. She keeps blanks in the account-book's back pocket, carries completed bills to the factor or to courier contacts, and receives acknowledgment copies back via her still-room receiving point or the below-stairs faction's mail-intercept.
 
 ---
 
@@ -77,4 +77,4 @@ Folded in thirds; fits in a document wallet, a coat interior, or the account-boo
 
 **Archive (Bk I.8 visible; Bk II.1 visible in full):** The completed and acknowledged bills are filed in the account-book's archive section. At Bk II.1, when the full network's scale becomes visible, the archive is the evidence. Seventeen bills filled, eleven signed purchase agreements across three routes. The bills are not dramatic documents — they are precise, correct commercial instruments. Their drama is cumulative, not per-instance.
 
-**Obsolescence (Bk III):** After Viserys's death (Bk III M1), the King's-hand license on the bills' authority reference becomes formally orphaned. The factor continues to fill orders — the practical relationship holds — but the legal anchor is now the orphaned license itself rather than an active royal authority. She knows this. She has a plan for it. The plan is prop-kings-hand-note.
+**Still live (Book III):** The King lives; the standing authorization is never orphaned. The bills continue to run the apothecary supply chain under live royal-household authority through Book III. The escape's ship is *not* paid through these bills — it is commissioned through cut-out paper and the off-books dice-coin, kept deliberately clear of the works-account that bears her name. The supply network and the getaway are two separate paper systems, and only one of them touches her signature.
