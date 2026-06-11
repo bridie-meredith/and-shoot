@@ -36,7 +36,7 @@ The heartless-dao scripture is Gael's primary emotional-management toolkit — t
 
 `[gallows]` — The aphorism's full weight arrives; the situation is severe enough that the doctrine is being tested, not merely applied. The comedy register has dropped away.
 
-**The arc in one frame:** In Bk I she says these over spoiled reagents, minor setbacks, and the septa's tightened rules. In Bk III she says the same lines over the blank page where Daenys's death should be accounted. The lines do not change. The situation does. This is the register's primary structural function across the arc.
+**The arc in one frame:** In Bk I she says these over spoiled reagents, minor setbacks, and the septa's tightened rules. In Bk III she says the same lines over the blank page where the apex should be accounted. The lines do not change. The situation does. This is the register's primary structural function across the arc.
 
 ---
 
@@ -61,7 +61,7 @@ Per-line call-card. Signature lines marked **SIG**. For each: deployment tag + t
 **D-01** `[farce→gallows]` **SIG**
 > "The account is closed. Grief is not a balance that requires reconciliation; it is a notation error. The correct entry is: *cost paid, advancement achieved, ledger accurate.*"
 
-*Bones use:* Bk I — apply over small losses (a spoiled batch, a disrupted plan, the green jar); the "account closed" frame reads as comedy precision. Bk III — she tries to apply this over Daenys; the line arrives but the account does not close; this is the first moment the doctrine's bankruptcy shows directly.
+*Bones use:* Bk I — apply over small losses (a spoiled batch, a disrupted plan, the green jar); the "account closed" frame reads as comedy precision. Bk III — she tries to apply this over the apex (what she has made of Wylla); the line arrives but the account does not close; this is the first moment the doctrine's bankruptcy shows directly.
 
 ---
 
@@ -193,7 +193,7 @@ The HC-series governs warmth-as-resource: the doctrine that affection is an inve
 **HC-05** `[farce→gallows]`
 > "The attachment that has not been severed is not evidence of failure. It is evidence of an ongoing assessment. The Inferior Path is still collecting data on whether this attachment constitutes a cultivation liability or a cultivation asset. The assessment has been ongoing for some time. The Inferior Path will close it when the data is conclusive."
 
-*Bones use:* Bk II; primarily Daenys; the assessment that has been ongoing for some time is the arc's central unresolved attachment; in Bk III the data becomes conclusive in the worst way.
+*Bones use:* Bk II; primarily Wylla; the assessment that has been ongoing for some time is the arc's central unresolved attachment; in Bk III the data becomes conclusive in the worst way.
 
 ---
 
@@ -207,7 +207,7 @@ For bones authors who need the most load-bearing lines without the full table:
 | D-02 | `[farce→gallows]` | "Attachment is the tariff..." | Court expectations Bk I; the burned country Bk III |
 | D-07 | `[farce→gallows]` | "The dao does not punish loss..." | Paired with established "dao punishes the cold-hearted"; both books |
 | D-14 | `[gallows]` | "The cauldron that is never emptied..." | Late Bk II–III; the armor protesting too much |
-| HC-05 | `[farce→gallows]` | "The attachment that has not been severed..." | Bk II; Daenys; the assessment that cannot close |
+| HC-05 | `[farce→gallows]` | "The attachment that has not been severed..." | Bk II; Wylla; the assessment that cannot close |
 
 ---
 

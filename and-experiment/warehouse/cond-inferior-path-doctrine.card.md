@@ -82,7 +82,7 @@ Her alchemy is internal, not external — she is the cauldron, not the operator.
 
 **The heartless dao (Inferior Path's highest expression):** The doctrine that mortal attachments are active enemies of cultivation. She has codified the cultivation genre's detachment philosophy as the Inferior Path's central spiritual requirement. Every emotional bond is a "hook" the mortal world has in the cultivator; severing hooks enables advancement; grief is an impurity to expel. This doctrine preceded the register — she arrived at it before she built the cosmology, because she had already died once and resolved not to grieve again. The register confirmed what she already did.
 
-*Real state:* She is not practicing the heartless dao. She is performing it. The armor has a gap (the laundress's boy; Daenys; the blank line), which proves the performance has not become the achievement. The blank line disproves the claim.
+*Real state:* She is not practicing the heartless dao. She is performing it. The armor has a gap (the acolyte's fall she half-feels; Wylla; the blank line), which proves the performance has not become the achievement. The blank line disproves the claim.
 
 **Karma neutrality for the poison-path:** She classifies her pest-removal poisonings as "impurity expulsion" — a cultivation-path-neutral operation that removes obstacles from the sect's operational field without accumulating killing karma, because impurities are not morally weighted in the ledger. The genre is equivocal about this; demonic paths *do* accumulate killing karma even from "justified" kills. Her accounting is structurally correct and cosmologically wrong.
 
@@ -140,7 +140,7 @@ This condition is not environmental — it is the lens through which Gael proces
 
 ## Duration
 
-Persistent: Book I through Book III, dropping for exactly one scene (the blank line in Book III when Daenys dies). It returns after she closes the book and does not mention the gap in any subsequent entry.
+Persistent: Book I through Book III, dropping for exactly one scene (the blank line in Book III — the apex, when she makes Wylla a killer). It returns after she closes the book and does not mention the gap in any subsequent entry.
 
 ---
 

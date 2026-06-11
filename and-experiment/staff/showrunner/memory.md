@@ -51,8 +51,14 @@
 #   FULL TRIAGE of every remaining card (+ don't-blind-sed traps) is in the work-order §E. SAERYS→GAEL
 #   NAMING LAYER COMPLETE (2026-06-11): 15 content cards batch-migrated (verified clean); "Saerys" now remains
 #   only in provenance/parked/tombstone/formation-map. OPEN per-card (contextual, not sed-able): the OTHER
-#   span-B content in those 15 (Viserys→Jaehaerys/Alicent · charity/sick-house removal · Dance-scale→parked ·
-#   Harwin/Daenys casualties) + cond-saerys-formation-map slug-rename + the gael-targaryen-behavior build. + the 2 residual graph edges (loc-sick-house ref;
+#   span-B content. CONTENT-FIXED 11 cards (Viserys→Jaehaerys/Alicent · charity→soap/apothecary · Dance→parked ·
+#   Daenys→Wylla/apex · Harwin→Quint · curdle-ladder→span-A); tombstoned prop-harwins-list (parks w/ Harwin);
+#   marra "pious"=character (no change). DOABLE-NEXT (mappings in work-order §F): cond-heavenly-dao-calibration,
+#   cond-alchemists-guild, comedy-register. ⛔ DESIGN-FLAG (needs principal steer — a span-B PLOT mechanic, not
+#   naming): prop-kings-hand-note + prop-bill-of-exchange + cond-trade-network-formation built on the
+#   charitable-license→orphaned-at-king's-death→Dance-heist (Lock III) — incompatible w/ span-A (Jaehaerys
+#   LIVES through the escape; Dance parked; spine escape = off-books dice-coin + paper). + cond-saerys-formation-map
+#   slug-rename + the gael-targaryen-behavior build. + the 2 residual graph edges (loc-sick-house ref;
 #   saerys-targaryen-behavior refs) that resolve with those re-derivations.
 #   Full coordinated plan: staff/margit/span-a-card-migration-workorder.md. Character cards production-ready.
 

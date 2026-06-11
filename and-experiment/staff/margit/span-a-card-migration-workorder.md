@@ -173,3 +173,38 @@ mostly Saerys→Gael + the rename.
 **BEHAVIOR-CARD BUILD:** saerys-targaryen-behavior → build **gael-targaryen-behavior** (span-A voice per
 character-profiles §Gael Voice + Rule 22), point gael-targaryen + cond-heartless-dao-scripture + the parked
 behavior cards at it, then tombstone the saerys behavior card.
+
+---
+
+## F. Content-fix progress + the established span-A mappings (2026-06-11)
+
+**✅ CONTENT-FIXED (11 cards):** prop-wildfire-shard · loc-maegors-holdfast (Viserys→Jaehaerys) · prop-cradle-egg
+(christening→Alicent; curdle-ladder R-table→span-A; dead-dragon-field = parked R5) · prop-account-book
+(charity→soap/apothecary+vice; death-entries Harwin→Quint / Daenys-blank-line→III.6 apex) · cond-transmigration
+(blank-line→apex; body slug ref→gael) · cond-westerosi-poison-pharmacology (Dance→cage/betrothal) ·
+cond-westeros-reagent-tier-map (charity→apothecary; dragon-bone→parked) · prop-still-room-kit (sick-house clause
+removed) · cond-inferior-path-doctrine + cond-heartless-dao-scripture (Daenys→Wylla / the apex). **Tombstoned:**
+prop-harwins-list (parks with Ser Harwin). **No-change:** marra-chambermaid ("pious" = her character, not the cover).
+
+**The established mappings (use for the remaining cards):** Daenys (the central unresolved attachment) → **Wylla** ·
+Daenys's death / the blank line (Bk III) → **the III.6 apex** (the register-silence; *what she does to Wylla* — makes
+her a killer; she doesn't die) · Harwin (warm guardian / R3) → **Quint** (III.3 "the account is closed") · Harwin's-list
+(the comedy instrument) → **the bestiary** (gag ③) · charity/sick-house cover → **soap + apothecary** front (+ off-books
+vice) · "the Dance" / national-battlefield → **parked R5 (later installment)** · Viserys → **Jaehaerys** (cold king/
+authority) or **Alicent** (warm reaction/indulgence) by context.
+
+**⏳ DOABLE-NEXT (mappings above; ~3 cards):** cond-heavenly-dao-calibration (Daenys-row→apex; "Operating the
+sick-house"→household apothecary; the-Dance rows→parked; "her father intervened"→"the legal document held") ·
+cond-alchemists-guild-122ac (the Dance-wildfire-at-scale content → parked-Dance framing; sick-house→apothecary) ·
+comedy-register (Daenys-blank-line→apex; Harwin's-list→bestiary; "battlefield of dead dragons"→the apex).
+
+**⛔ DESIGN-FLAG — needs a principal steer before re-derivation (a span-B *plot mechanic*, not naming):**
+`prop-kings-hand-note` · `prop-bill-of-exchange` · `cond-trade-network-formation` are built on the **charitable-works
+royal license → orphaned at the King's death (Bk III) → cashed in the Dance-chaos (Lock III heist)** mechanic. This is
+**incompatible with span-A**: Jaehaerys **lives** through the escape (d. 103 AC, after the ~95 AC escape — he's the living
+cage she flees), the **Dance is parked**, and the spine's actual escape runs on **off-books dice-coin + three layers of
+paper** (III.1), not an orphaned royal license. Also the warm "fond father granted it" register is Viserys's — in span-A
+the cold King wouldn't, so the grant would route through **Alicent's** influence or be reframed as the Queen's patronage.
+**Open question:** in span-A, what is the legal-cover mechanic for (a) the Books I–II supply chain and (b) the Lock-III
+escape — re-derive these cards to the off-books-coin approach, keep a modified Books-I–II license (granted via Alicent)
+and drop the orphan/Dance heist, or tombstone? The spine doesn't pin it. **Do not guess.**
