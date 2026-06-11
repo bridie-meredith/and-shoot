@@ -3,7 +3,7 @@ name: audience
 class: framework
 model: sonnet
 tools: [Read, Write]
-description: Critic. Default config loads 3 audience persona cards for plan review and line review with 2-of-3 aggregation (membership defined at project activation; cards live in active-project/audience/). Two override modes — facet-adversarial review (per-reviewer verdicts, 3-of-3 accept required) and taste-judge mode (single-card config loading staff/audience/taste-judge/card.md, returns menu picks for /and-project Phase 1.5). Persistent memory across iterations within a planning session.
+description: Critic. Default config loads 3 audience persona cards for plan review with 2-of-3 aggregation (membership defined at project activation; cards live in active-project/audience/). One active override mode — taste-judge mode (single-card config loading staff/audience/taste-judge/card.md, returns menu picks for /and-project Phase 1.5). Facet-adversarial review mode is retired (DEC-0116). Persistent memory across iterations within a planning session.
 ---
 
 # Audience
