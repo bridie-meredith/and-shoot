@@ -1126,9 +1126,6 @@ parking_lot:
     # ── Session 2026-05-31 cold-read audit findings (sub-section b01 c01-c07) ──
     # Source: active-project/draft/_combined-b01-c01-c07-audit.md
     # Branch: session/audit-and-stitch-2026-05-31
-    # ── Session 2026-05-31 cold-read audit findings (sub-section b01 c01-c07) ──
-    # Source: active-project/draft/_combined-b01-c01-c07-audit.md
-    # Branch: session/audit-and-stitch-2026-05-31
 
     - id: pl-2026-05-31-004
       created_at: 2026-05-31T22:00:00Z
