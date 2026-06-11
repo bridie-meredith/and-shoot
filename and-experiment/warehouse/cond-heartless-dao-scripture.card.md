@@ -18,7 +18,7 @@ The D-series and HC-series aphorisms from the cultivation-aphorism bank, formatt
 
 **Source:** `cultivation-aphorisms-and-dao-sayings.md` Layer 1, D-series (Heartless-Dao/Severing-Grief Sayings) + HC-series (Human-Cauldron-adjacent warmth-governance aphorisms).
 
-**Hard fence:** The aphorisms are Saerys's register, not the story's endorsement. They are her armor. The bones author stages the armor; the story's events determine whether the armor holds.
+**Hard fence:** The aphorisms are Gael's register, not the story's endorsement. They are her armor. The bones author stages the armor; the story's events determine whether the armor holds.
 
 **Purpose of this card:** The aphorism doc is ~90+ entries and too long to load at bones time. This card distills the D-series and HC-series to deployable call-card format with deployment tags so bones authors can pick the right saying for the right emotional beat without loading the full document.
 
@@ -26,7 +26,7 @@ The D-series and HC-series aphorisms from the cultivation-aphorism bank, formatt
 
 ## Description
 
-The heartless-dao scripture is Saerys's primary emotional-management toolkit — the cultivation-register's doctrine that a sufficiently advanced practitioner can process any loss through the karma/tribulation framework and emerge stronger. The D-series aphorisms articulate the doctrine of grief-severance; the HC-series articulate the governance of warmth-as-resource. Both series have three deployment modes across the arc.
+The heartless-dao scripture is Gael's primary emotional-management toolkit — the cultivation-register's doctrine that a sufficiently advanced practitioner can process any loss through the karma/tribulation framework and emerge stronger. The D-series aphorisms articulate the doctrine of grief-severance; the HC-series articulate the governance of warmth-as-resource. Both series have three deployment modes across the arc.
 
 **Three deployment modes:**
 
@@ -82,7 +82,7 @@ Per-line call-card. Signature lines marked **SIG**. For each: deployment tag + t
 **D-04** `[farce→gallows]`
 > "A cultivator who cannot sever the cord of grief will be dragged backward by it until the grief becomes the cultivation. The Inferior Path chooses forward."
 
-*Bones use:* Bk I — comedic; she applies this to the septa's nostalgia for when Saerys was a "normal" child. Bk II/III — the cord is real.
+*Bones use:* Bk I — comedic; she applies this to the septa's nostalgia for when Gael was a "normal" child. Bk II/III — the cord is real.
 
 ---
 

@@ -14,9 +14,9 @@ references:
 
 # Condition — Westerosi Poison Pharmacology
 
-The real pharmacology of the substances Saerys works with. World-truth: what these things actually do, how mithridatism actually works, what she has actually built. The broken clock depends on this being accurate — prose must keep the pharmacology consistent across scenes so that the broken-clock comedy lands precisely and the Book III payoff (dose-log as evidence; legitimate ring) is earned.
+The real pharmacology of the substances Gael works with. World-truth: what these things actually do, how mithridatism actually works, what she has actually built. The broken clock depends on this being accurate — prose must keep the pharmacology consistent across scenes so that the broken-clock comedy lands precisely and the Book III payoff (dose-log as evidence; legitimate ring) is earned.
 
-**Hard fence:** this card records actual mechanisms, not Saerys's cultivation-register framing. The two-column format below shows her framing alongside the real state, but the real state is the authoritative column for prose consistency. When her cultivation-register calls something a "Tier 1 Water-attribute qi-disruptor," the actual pharmacological mechanism in this card is what the scene must honor.
+**Hard fence:** this card records actual mechanisms, not Gael's cultivation-register framing. The two-column format below shows her framing alongside the real state, but the real state is the authoritative column for prose consistency. When her cultivation-register calls something a "Tier 1 Water-attribute qi-disruptor," the actual pharmacological mechanism in this card is what the scene must honor.
 
 **Cross-reference:** `and-experiment/design/cultivation-library/westeros-alchemy-substances-mystica.md` § The Poison Catalogue and § Part II for extended coverage of each substance and three-register cross-map. `cultivation-types-methods-phenomenology.md` § Part I.2 (Poison Cultivation) and § Part III (body tempering deep-dive) for the mithridatism genre-frame. This card consolidates the prose-production-critical subset.
 
@@ -24,7 +24,7 @@ The real pharmacology of the substances Saerys works with. World-truth: what the
 
 ## Description
 
-Saerys Targaryen has constructed one of the most comprehensive mithridatism programs in the known world, running since age six, documented across approximately 200 events in the dose-log, spanning 40+ substances. The pharmacological reality underneath the cultivation register is this: systematic, progressive, correctly-executed poison-tolerance work that has produced genuine results. By Book III she is effectively immune to most poisons accessible in the Westerosi/Western Essosi market. This is real. The mechanism is mundane pharmacology. The cultivation-register's explanation of why is entirely wrong.
+Gael Targaryen has constructed one of the most comprehensive mithridatism programs in the known world, running since age six, documented across approximately 200 events in the dose-log, spanning 40+ substances. The pharmacological reality underneath the cultivation register is this: systematic, progressive, correctly-executed poison-tolerance work that has produced genuine results. By Book III she is effectively immune to most poisons accessible in the Westerosi/Western Essosi market. This is real. The mechanism is mundane pharmacology. The cultivation-register's explanation of why is entirely wrong.
 
 ---
 
@@ -55,13 +55,13 @@ Mithridatism is the development of immunity or tolerance to a poison through rep
 ### Tears of Lys
 **Actual mechanism:** dissolves vital organ tissue through a slow enzymatic process; oral ingestion primarily targets the gastrointestinal lining, then systemic organs; death occurs over hours to days depending on dose; mimics natural wasting disease; no odor or taste
 **Dose→lethality window:** at moderate dose (1-3 drops in a substantial liquid volume): onset 6-12 hours; symptoms indistinguishable from gastric illness for 24-48 hours; death 72-120 hours; larger doses compress the timeline proportionally
-**Mithridatism prospect:** moderate; repeated low-dose exposure can upregulate tissue repair and reduce the enzymatic binding efficiency; Saerys has documented a full concentration series (dose-log entries 100-115); the tolerance established is significant but not absolute
+**Mithridatism prospect:** moderate; repeated low-dose exposure can upregulate tissue repair and reduce the enzymatic binding efficiency; Gael has documented a full concentration series (dose-log entries 100-115); the tolerance established is significant but not absolute
 **Her classification:** "Tier 1 peak — a Water attribute qi-disruptor that dissolves the target's internal vital capacity over time"
 **Primary operational reagent in her pest-removal series**
 
 ### Milk of the Poppy
 **Actual mechanism:** opiate — binds opioid receptors in the central nervous system, producing analgesia, sedation, euphoria, respiratory depression; in sufficient quantities, respiratory arrest; dependency develops with regular use; withdrawal is medically significant
-**Dose→lethality window:** at therapeutic dose: sleep and pain relief; at 5-10x therapeutic dose in a non-tolerant individual: respiratory depression; at 20x+: lethal; tolerance develops rapidly; Saerys's tolerance from documentation is substantially elevated above the therapeutic range
+**Dose→lethality window:** at therapeutic dose: sleep and pain relief; at 5-10x therapeutic dose in a non-tolerant individual: respiratory depression; at 20x+: lethal; tolerance develops rapidly; Gael's tolerance from documentation is substantially elevated above the therapeutic range
 **Mithridatism prospect:** high; opioid tolerance is a well-documented human adaptive response; she has likely extensive cross-tolerance to other opiates as well
 **Her classification:** "Tier 0 to Tier 1 transition reagent — a Water/Yin attribute qi-calmer"
 **Widely accessible through the maesters' supply chain; her primary early training substance**
@@ -132,7 +132,7 @@ The payoff works because the methodology is real. Mithridatism produces real tol
 
 ## Sensory Impact
 
-This condition operates as a persistent background reality in every scene where Saerys ingests, compounds, or considers substances. Its sensory manifestation is in the still-room's characteristic smell (the third chemical register), in her body's documented reactions when she encounters new substances, and in the dose-log's notation of "hazard-states" and "tribulations" that translate to actual physiological events.
+This condition operates as a persistent background reality in every scene where Gael ingests, compounds, or considers substances. Its sensory manifestation is in the still-room's characteristic smell (the third chemical register), in her body's documented reactions when she encounters new substances, and in the dose-log's notation of "hazard-states" and "tribulations" that translate to actual physiological events.
 
 ---
 

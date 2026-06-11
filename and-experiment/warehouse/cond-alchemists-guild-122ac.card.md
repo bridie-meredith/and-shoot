@@ -16,7 +16,7 @@ references:
 
 # Condition — The Alchemists' Guild (122 AC)
 
-The institution Saerys encounters in Book I Movement 3. The source of wildfire. The "furnace sect" she petitions and whose product she survives. One of the two institutional encounters that shape her understanding of what she is doing and why the world does not recognize it.
+The institution Gael encounters in Book I Movement 3. The source of wildfire. The "furnace sect" she petitions and whose product she survives. One of the two institutional encounters that shape her understanding of what she is doing and why the world does not recognize it.
 
 **Belief vs. real-state note:** This card holds both columns, as required for all broken-clock elements. The real-state column is the authoritative column for prose consistency. Her cultivation-register reading of the Guild is labeled as such and is not the truth.
 
@@ -41,13 +41,13 @@ Scenes set near or inside Guild territory carry:
 
 ## Duration
 
-Persistent throughout the project. The Guild is an ongoing institution. In Book I it is the source of the shard incident. In Books II and III it is background-present — the wildfire supply chain continues to operate; the Dance will involve wildfire deployments (the burning of the Dragonpit; the city fires); those events are registered in Saerys's trade-network tracking even if she is not in King's Landing when they occur.
+Persistent throughout the project. The Guild is an ongoing institution. In Book I it is the source of the shard incident. In Books II and III it is background-present — the wildfire supply chain continues to operate; the Dance will involve wildfire deployments (the burning of the Dragonpit; the city fires); those events are registered in Gael's trade-network tracking even if she is not in King's Landing when they occur.
 
 ---
 
-## Institutional Characteristics Saerys Interacts With (Book I)
+## Institutional Characteristics Gael Interacts With (Book I)
 
-**The admission-petition process.** The Guild does not recruit. Petitioners present themselves; the Guild's pyromancers assess whether the petitioner has anything the Guild wants (knowledge, bloodline, aptitude with fire). In 122 AC, with the Targaryen dynasty alive and dragons still present, the Guild's criteria include attention to blood and possible magical aptitude. Saerys petitioned. She received a polite formal rejection. The rejection letter is in her files under "furnace sect admission: deferred pending realm advancement." Real-state reading: the Guild assessed her as a child with unusual chemical curiosity and no apparent pyromantic aptitude, and declined to invest training in her.
+**The admission-petition process.** The Guild does not recruit. Petitioners present themselves; the Guild's pyromancers assess whether the petitioner has anything the Guild wants (knowledge, bloodline, aptitude with fire). In 122 AC, with the Targaryen dynasty alive and dragons still present, the Guild's criteria include attention to blood and possible magical aptitude. Gael petitioned. She received a polite formal rejection. The rejection letter is in her files under "furnace sect admission: deferred pending realm advancement." Real-state reading: the Guild assessed her as a child with unusual chemical curiosity and no apparent pyromantic aptitude, and declined to invest training in her.
 
 **The laboratory inspection incident.** The Guild maintains public-facing operations — a showroom of sorts, pyrotechnic demonstrations for interested nobility, a formal hall for guild business. The interior working spaces are not public. She obtained access to a working space through a combination of Targaryen-princess social latitude (the Guild was not going to physically remove Viserys's daughter from the premises), the below-stairs faction's intelligence about the Guild's layout, and a distraction provided by one of her factor's King's Landing contacts. The fragment was obtained during approximately fifteen minutes of unsupervised access to a preparation room where partially-cured wildfire was in a storage container.
 
@@ -59,7 +59,7 @@ Persistent throughout the project. The Guild is an ongoing institution. In Book 
 
 The Guild's product. What it actually is and does, stated for prose-authoring consistency:
 
-**Physical form:** A viscous bright-green liquid with an intensely sulfurous-and-chemical smell. At room temperature, liquid. Under certain curing conditions, it can partially solidify to a waxy or crystalline semi-solid (the state of the fragment Saerys obtained).
+**Physical form:** A viscous bright-green liquid with an intensely sulfurous-and-chemical smell. At room temperature, liquid. Under certain curing conditions, it can partially solidify to a waxy or crystalline semi-solid (the state of the fragment Gael obtained).
 
 **Combustion properties:** Ignites at relatively low temperatures; burns intensely; spreads on water (does not extinguish on contact with water — exceptional property); extremely difficult to extinguish by conventional means (smothering with sand is the most reliable method; water spreads it; smothering with dirt tends to scatter burning material). The burn color is characteristic: a bright green-gold flame.
 
@@ -67,7 +67,7 @@ The Guild's product. What it actually is and does, stated for prose-authoring co
 
 **Toxicology:** Wildfire at non-trivial ingested doses is acutely toxic by both chemical and magical mechanisms. It is not food. It is not a medicine. It is not a safe experimental reagent at any realistic dose. Her 0.3 grain-weight shard was small enough to produce a survivable toxic reaction rather than immediate death; it was not small enough to produce a controlled or predictable one.
 
-**The Dance connection:** Wildfire features prominently in the Dance of the Dragons — it is used during the battle at the Dragonpit, contributing to the burning that kills dragons and thousands in King's Landing. Saerys's cultivation-register entry for this event: "the Furnace Sect's reagent deployed at scale." The real-state reading: the same substance she swallowed as a thumbnail-sized fragment was used in quantities that burned part of her city.
+**The Dance connection:** Wildfire features prominently in the Dance of the Dragons — it is used during the battle at the Dragonpit, contributing to the burning that kills dragons and thousands in King's Landing. Gael's cultivation-register entry for this event: "the Furnace Sect's reagent deployed at scale." The real-state reading: the same substance she swallowed as a thumbnail-sized fragment was used in quantities that burned part of her city.
 
 ---
 
@@ -88,6 +88,6 @@ She classifies the Alchemists' Guild as "the Furnace Sect" — a fire-attribute 
 ## Interaction Notes
 
 - **With `prop-wildfire-shard`:** The shard is the Guild's product in its most narratively load-bearing form. The Guild is the institutional context; the shard is the specific material-object consequence.
-- **With `cond-westeros-reagent-tier-map`:** Wildfire is Tier 3 on that table — genuinely magical, uncontrolled ingestion produces real effects. The Guild is the manufacturer of the only Tier-3 material Saerys directly ingests in Book I.
+- **With `cond-westeros-reagent-tier-map`:** Wildfire is Tier 3 on that table — genuinely magical, uncontrolled ingestion produces real effects. The Guild is the manufacturer of the only Tier-3 material Gael directly ingests in Book I.
 - **With `cond-kl-court-state-122ac`:** The Guild operates under Crown patronage; their relationship to the Crown is relevant when the septa moves to shut down the sick-house and the wildfire incident is one of her grounds. The Guild's diplomatic note contributed to the Lock I crisis.
 - **With the Dance (Book III):** The wildfire used in the Dance is the same institution's product at scale. The comedy-that-curdles dimension: the Tier-3 "fire-attribute reagent" that advanced her as a thumbnail fragment is the same substance that burns the Dragonpit. The cultivation-register's accounting treats both events as involving the same material. The reader does not.

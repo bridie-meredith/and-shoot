@@ -53,7 +53,7 @@ Shared behavior card. The comedy/farce voice overlay that the and-experiment pro
 
 **Book II (adventure with teeth):**
 - The same mismatch runs hotter: the stakes are higher (adult world, real consequences, Essos expeditions, actual deaths possible) but the register stays the same
-- The dramatic irony inverts: now Saerys is competent and the adults are the marks; the comedy comes from watching adults be out-managed by a child who does not understand she is managing them
+- The dramatic irony inverts: now Gael is competent and the adults are the marks; the comedy comes from watching adults be out-managed by a child who does not understand she is managing them
 - **Recovery is available but costs something:** a spike that touches real loss (Harwin's death) does not fully recover; the comedy survives the cost but it carries a mark
 - The running gag evolves: Harwin's list is Bk II's primary comedy instrument; it documents the cauldron's expanding claims against practical safety; it is funny and it is also a love letter written in incident-log format
 
@@ -73,13 +73,13 @@ Shared behavior card. The comedy/farce voice overlay that the and-experiment pro
 - Understatement as the load-bearing rhetorical tool: the alarming thing is described in the most accurate, most mundane, most bloodless terms available; the alarm is structural (the reader supplies it from context), not voiced
 - The **bureaucratic passive** for morally significant events: *"the man was relocated," "the account was settled," "the situation resolved itself"* — nothing is done to anyone; the situation processes itself
 - The **running list** as comedy instrument (Harwin's version): each entry documents a crisis; the entries accumulate; the list is funnier as it grows and also more alarming
-- The **dramatic irony sentence**: states both what Saerys thinks is happening and what is actually happening in the same sentence without acknowledging the gap: *"the factor had, through the mechanism of spiritual network propagation — or possibly through discovering a seventeen-percent arbitrage I had not noticed — established three new supply routes"*
+- The **dramatic irony sentence**: states both what Gael thinks is happening and what is actually happening in the same sentence without acknowledging the gap: *"the factor had, through the mechanism of spiritual network propagation — or possibly through discovering a seventeen-percent arbitrage I had not noticed — established three new supply routes"*
 
 **Comedy-register prohibitions (violations that break the farce):**
 
 - Named terror: the comedy stays up as long as the narrator does not name what is alarming. The moment the POV says *"this is dangerous"* without ironic framing, the spell is broken.
 - Tonal announcement: the farce never says *"and this is where the fun stopped."* The stakes rise under the constant behavior. No switch is thrown.
-- Vindication: the comedy does not reward Saerys's cultivation beliefs by making them correct. The clock stays broken. No payoff that endorses the cosmology. (The mithridatism payoff is a one-time win explicitly framed as pharmacology; not a cultivation vindication.)
+- Vindication: the comedy does not reward Gael's cultivation beliefs by making them correct. The clock stays broken. No payoff that endorses the cosmology. (The mithridatism payoff is a one-time win explicitly framed as pharmacology; not a cultivation vindication.)
 
 ---
 
@@ -124,7 +124,7 @@ The primary non-verbal comedy instrument in this project is **timing**: the paus
 
 **The straight-man's visible incomprehension:**
 
-When Saerys delivers a cultivation-framework interpretation to someone in the straight-man position (the Septa, the Braavosi banker, the court), the straight-man's incomprehension is non-verbal: a blink, a held expression, a glance toward someone else in the room. The comedy is not in the incomprehension but in the space between it and Saerys's complete sincerity. She is not performing. They know she is not performing. That's the problem.
+When Gael delivers a cultivation-framework interpretation to someone in the straight-man position (the Septa, the Braavosi banker, the court), the straight-man's incomprehension is non-verbal: a blink, a held expression, a glance toward someone else in the room. The comedy is not in the incomprehension but in the space between it and Gael's complete sincerity. She is not performing. They know she is not performing. That's the problem.
 
 ---
 

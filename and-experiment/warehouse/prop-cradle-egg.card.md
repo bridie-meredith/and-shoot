@@ -27,9 +27,9 @@ Dimensions: roughly the size that would fill both hands of an adult, uncomfortab
 
 The color, before grinding: a dark charcoal-grey with faint undertones of deep red, reading almost black in shadow. No iridescence. The surface is cool to the touch at all times regardless of ambient temperature — a minor wrongness the adults who handled it noticed and did not remark on.
 
-After Saerys's intervention in chapter I.1, the egg exists as powder. The powder is pale grey-white, fine, tasting faintly of iron and something Saerys will spend the rest of her life trying to classify. She eats it off the christening spoon, portion by portion, over the course of an afternoon. The nursery staff discover an empty cradle and a child with a chalky chin.
+After Gael's intervention in chapter I.1, the egg exists as powder. The powder is pale grey-white, fine, tasting faintly of iron and something Gael will spend the rest of her life trying to classify. She eats it off the christening spoon, portion by portion, over the course of an afternoon. The nursery staff discover an empty cradle and a child with a chalky chin.
 
-**[canon-uncertain]:** Whether a dead dragon egg constitutes a genuinely-magical Westeros material is treated throughout as ambiguous. The egg failed — the magic did not take. Whether residue of that failed magic remains in the shell's mineral composition is not established in canon. This card treats the egg's composition as real dragon-egg material (the body that would have been a dragon, mineralized) with uncertain magical residue. Effects on Saerys's body are noted under Functional State.
+**[canon-uncertain]:** Whether a dead dragon egg constitutes a genuinely-magical Westeros material is treated throughout as ambiguous. The egg failed — the magic did not take. Whether residue of that failed magic remains in the shell's mineral composition is not established in canon. This card treats the egg's composition as real dragon-egg material (the body that would have been a dragon, mineralized) with uncertain magical residue. Effects on Gael's body are noted under Functional State.
 
 ---
 
@@ -59,7 +59,7 @@ Her narration at the time of consumption (age three, as reconstructed by the reg
 
 She was three. The register came later. The logic was retro-fitted. The eating was anterior and unglossy — she ate it because it was there and it smelled of something.
 
-**Real-state note:** The genuine-magic material question is unresolved. The egg was a real dragon egg; it failed; its shell is real dragon-material-mineralized. Whether that mineral matrix carries magical residue is [canon-uncertain]. What is known is that Saerys experiences no immediate acute reaction to consuming the egg powder (contrast: the wildfire-shard fever in chapter I.5, which produced a three-day uncontrolled reaction). If the egg had magical residue, it was either inert, absorbed without effect, or produced only the most diffuse long-term change — and that ambiguity is the story's.
+**Real-state note:** The genuine-magic material question is unresolved. The egg was a real dragon egg; it failed; its shell is real dragon-material-mineralized. Whether that mineral matrix carries magical residue is [canon-uncertain]. What is known is that Gael experiences no immediate acute reaction to consuming the egg powder (contrast: the wildfire-shard fever in chapter I.5, which produced a three-day uncontrolled reaction). If the egg had magical residue, it was either inert, absorbed without effect, or produced only the most diffuse long-term change — and that ambiguity is the story's.
 
 The broken-clock rule holds: the egg powder is her first ingestion, her founding act, and its effects are genuinely ambiguous rather than proven-qi. The reader does not get confirmation. The clock is broken.
 
@@ -67,7 +67,7 @@ The broken-clock rule holds: the egg powder is her first ingestion, her founding
 
 ## Affordances / Uses
 
-**As founding reagent:** Saerys eats it. That is its entire use. It is not ground for any external purpose. The christening spoon becomes the grinding instrument; the egg becomes the powder; the powder becomes the first thing she ever consciously ingested as a cultivation act. There is no second use.
+**As founding reagent:** Gael eats it. That is its entire use. It is not ground for any external purpose. The christening spoon becomes the grinding instrument; the egg becomes the powder; the powder becomes the first thing she ever consciously ingested as a cultivation act. There is no second use.
 
 **As the inciting act:** The egg's consumption is the event that establishes the Cauldron-Belly frame — the self-title *Heavenly Demon Cauldron-Belly* is declared in I.1 during or immediately after the consumption. Without this act, every subsequent eating antic lacks its anchor. The egg is eaten once; its function echoes across thirty chapters.
 
@@ -82,8 +82,8 @@ The broken-clock rule holds: the egg powder is her first ingestion, her founding
 - Cool, heavy, wrong-weight object; the three-year-old's grip on it is a two-hand grip with the strain of something too dense
 - Surface texture: fine irregular facets, faintly rough, not smooth — closer to rough shale than to a polished stone
 - Color in shadow: near-black; in full light: charcoal-grey with dark red undertones that don't quite resolve into orange or gold
-- The powder, after grinding: pale grey-white, very fine, settling in the teeth like chalk dust; the iron taste is clean and mineral; the other note underneath it resists categorization (Saerys will spend years trying; she will call it "the latent attribute"; it is probably the taste of calcined bone and old mineral deposit and something she has no word for)
-- The christening spoon grinding against the egg surface: a fine, high-pitched scraping that the nursery staff find extremely upsetting and which Saerys barely notices
+- The powder, after grinding: pale grey-white, very fine, settling in the teeth like chalk dust; the iron taste is clean and mineral; the other note underneath it resists categorization (Gael will spend years trying; she will call it "the latent attribute"; it is probably the taste of calcined bone and old mineral deposit and something she has no word for)
+- The christening spoon grinding against the egg surface: a fine, high-pitched scraping that the nursery staff find extremely upsetting and which Gael barely notices
 
 ---
 
@@ -93,7 +93,7 @@ The egg exists as powder by the end of I.1. The powder was consumed in full. The
 
 As an object (before I.1): portable, barely — at the edge of what a three-year-old can manage; adults carry it with two hands at waist height; it lives in the cradle and is not moved.
 
-As a narrative prop after I.1: carried only as memory, as the founding act, as the frame Saerys narrates over everything that follows.
+As a narrative prop after I.1: carried only as memory, as the founding act, as the frame Gael narrates over everything that follows.
 
 ---
 
@@ -109,7 +109,7 @@ After I.1 — gone from the world; present in every scene.
 
 ## Functional State
 
-**Pre-consumption (I.1 chapter entry):** In cradle. Intact. Failing to hatch has been its only function since Saerys was born; it was placed there to bond with her and has been refusing to do so for three years. It is also, technically, the sacred relic she was given to pray over. It is, from Saerys's perspective, an ingredient.
+**Pre-consumption (I.1 chapter entry):** In cradle. Intact. Failing to hatch has been its only function since Gael was born; it was placed there to bond with her and has been refusing to do so for three years. It is also, technically, the sacred relic she was given to pray over. It is, from Gael's perspective, an ingredient.
 
 **Post-consumption (I.1 onward):** Consumed. Absent as a physical object. Present as:
 - The founding act of the Inferior Path and the Cauldron-Belly declaration

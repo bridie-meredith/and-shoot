@@ -15,7 +15,7 @@ references:
 
 # Condition — Inferior Path Technique Hierarchy
 
-The Inferior Path's named techniques, their genre grade, what they actually are, and the broken-clock mapping. The consistency anchor for how Saerys narrates every action she takes — she never describes what she does in plain terms if she can narrate it as technique deployment. Bones authors reach for this card whenever she executes any of her operational moves so the naming stays consistent across all 30 chapters.
+The Inferior Path's named techniques, their genre grade, what they actually are, and the broken-clock mapping. The consistency anchor for how Gael narrates every action she takes — she never describes what she does in plain terms if she can narrate it as technique deployment. Bones authors reach for this card whenever she executes any of her operational moves so the naming stays consistent across all 30 chapters.
 
 **Purpose of this card:** naming consistency + broken-clock enforcement. The biggest drift risk is bones authors inventing new technique names or varying the existing ones scene-to-scene. This card is the canonical technique vocabulary. New technique names should be logged here; existing ones should not be varied.
 
@@ -27,7 +27,7 @@ The Inferior Path's named techniques, their genre grade, what they actually are,
 
 ## Description
 
-Saerys has named, graded, and documented every operational method she uses as a technique of the Inferior Path. The technique hierarchy is not a martial hierarchy — she has no combat techniques. It is a logistics-and-control hierarchy: the methods by which she manages information, materials, people, and access. In genre terms, she has produced a complete technical catalogue of a non-combat demonic path's toolkit. The techniques are real and effective. The cosmological framing is not.
+Gael has named, graded, and documented every operational method she uses as a technique of the Inferior Path. The technique hierarchy is not a martial hierarchy — she has no combat techniques. It is a logistics-and-control hierarchy: the methods by which she manages information, materials, people, and access. In genre terms, she has produced a complete technical catalogue of a non-combat demonic path's toolkit. The techniques are real and effective. The cosmological framing is not.
 
 ---
 

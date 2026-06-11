@@ -14,13 +14,13 @@ references:
 
 # Condition — Heavenly Dao Calibration
 
-The Heavenly Dao as active force in Saerys's model: tribulation dispatch, karma accounting, and fate-luck attribution. Formatted as her model vs. what is actually happening for every category of event she classifies as a cultivation event. Per-scene running companion to `cond-inferior-path-doctrine`.
+The Heavenly Dao as active force in Gael's model: tribulation dispatch, karma accounting, and fate-luck attribution. Formatted as her model vs. what is actually happening for every category of event she classifies as a cultivation event. Per-scene running companion to `cond-inferior-path-doctrine`.
 
 **Source:** `cultivation-cosmology-dao-law-and-dark-paths.md` Section 2, extended.
 
 **Hard fence:** The broken clock stays broken. The Heavenly Dao is not real in-story. No event in the 3-book arc is cosmologically directed. What is actually happening is always mundane or, at most, genuinely-magical-Westerosi-material. Her model is in the left column; reality is in the right column.
 
-**Purpose of this card:** Every chapter features Saerys invoking the Heavenly Dao, tribulation, karma, or fate-luck to explain something. Bones authors need a consistent "here is her model vs. what is happening" reference that `cond-inferior-path-doctrine` points to but does not detail at the per-event level. This card is that reference.
+**Purpose of this card:** Every chapter features Gael invoking the Heavenly Dao, tribulation, karma, or fate-luck to explain something. Bones authors need a consistent "here is her model vs. what is happening" reference that `cond-inferior-path-doctrine` points to but does not detail at the per-event level. This card is that reference.
 
 ---
 

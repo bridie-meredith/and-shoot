@@ -17,15 +17,15 @@ references:
 
 # Condition — The Trade-Network Formation (Real-State)
 
-The factor-and-medicine empire as a world-state condition: its nodes, how it operates, its legal underpinning, what it carries, and why the same manifests work for both cargoes. This is the real-state card — the network as it actually exists in the world, not Saerys's cultivation reading of it. Her cultivation reading (the network-as-formation, with the account-book as its formation eye) is a separate P2 card (`cond-grand-formation-trade-network`). Do NOT build that here.
+The factor-and-medicine empire as a world-state condition: its nodes, how it operates, its legal underpinning, what it carries, and why the same manifests work for both cargoes. This is the real-state card — the network as it actually exists in the world, not Gael's cultivation reading of it. Her cultivation reading (the network-as-formation, with the account-book as its formation eye) is a separate P2 card (`cond-grand-formation-trade-network`). Do NOT build that here.
 
-**Purpose:** The world-state Saerys discovers she owns in Bk II.1. The operational context for Bk I.2–I.8 plant beats and the Bk II Essosi operation. Bones authors for any scene involving the supply chain — bills of exchange, the factor, the sick-house receiving a delivery, the below-stairs faction running an import — need to know what this network actually is.
+**Purpose:** The world-state Gael discovers she owns in Bk II.1. The operational context for Bk I.2–I.8 plant beats and the Bk II Essosi operation. Bones authors for any scene involving the supply chain — bills of exchange, the factor, the sick-house receiving a delivery, the below-stairs faction running an import — need to know what this network actually is.
 
 ---
 
 ## Description
 
-A medicine-and-specialty-compound import network operating on the Narrow Sea under a standing royal license issued in the name of the charitable works of Princess Saerys Targaryen. Founded in Bk I.2 when she wrote the first bill of exchange to Moro Tessavik. Built by: six years of accurate orders, a factor who expanded his routes because the license permitted it and the demand existed, and a below-stairs faction that handled King's Landing logistics without asking too many questions about the provenance of specific items.
+A medicine-and-specialty-compound import network operating on the Narrow Sea under a standing royal license issued in the name of the charitable works of Princess Gael Targaryen. Founded in Bk I.2 when she wrote the first bill of exchange to Moro Tessavik. Built by: six years of accurate orders, a factor who expanded his routes because the license permitted it and the demand existed, and a below-stairs faction that handled King's Landing logistics without asking too many questions about the provenance of specific items.
 
 By Bk II.1, when the network's full scale becomes visible in the account-book, it consists of:
 - **The factor** (Moro Tessavik) — primary import agent; 17 bills filled, 11 signed purchase agreements, 3 additional supply routes built under the King's-hand license
@@ -61,7 +61,7 @@ The network has no direct sensory presence — it is a paper-and-relationship st
 
 ## Legal Underpinning (Real-State)
 
-**The standing license:** A document issued by the King's Hand under Viserys I's authority, authorizing charitable medical supply purchases charged to the Princess Saerys Targaryen charitable works account. The license is genuine, stamped, and indexed in the Tower of the Hand's records. It was obtained in Bk I.2 through Bk I.9 via her father's good offices (Viserys I, indulgent, found the charitable framing charming and appropriate to a princess of her station).
+**The standing license:** A document issued by the King's Hand under Viserys I's authority, authorizing charitable medical supply purchases charged to the Princess Gael Targaryen charitable works account. The license is genuine, stamped, and indexed in the Tower of the Hand's records. It was obtained in Bk I.2 through Bk I.9 via her father's good offices (Viserys I, indulgent, found the charitable framing charming and appropriate to a princess of her station).
 
 **What the license permits:** Medical supply purchases in quantities appropriate to a functioning charitable sick-house. In practice: it has been interpreted expansively by the factor (who built three additional supply routes under it) and by the below-stairs faction (who have used it as authority for import arrangements well beyond the original scope). No one has challenged the interpretation because the license is genuine, the charitable operation is real, and Viserys is not the kind of king who audits his daughters' piety.
 
@@ -81,7 +81,7 @@ This is the network's central operational fact and its founding moral ambiguity.
 
 **The founding ambiguity:** The factor did not create this structure; he found it on the second order and filed it correctly. She did not explain which column was which; he did not ask. Six years of operations have normalized a manifest that covers two fundamentally different use-cases without distinguishing between them. This is the trade network's structural condition. It is not the factor's fault. It is not her fault in the sense of a specific lie. The ambiguity preceded the network and is now the network's operating logic.
 
-The factor's summary of this (delivered, without affect, when Saerys at age nine first referenced the compound column explicitly): "Both cargoes have been on this manifest since the second order. Nothing has changed." He said this very quietly. He has never said it again. Nothing changed after he said it either.
+The factor's summary of this (delivered, without affect, when Gael at age nine first referenced the compound column explicitly): "Both cargoes have been on this manifest since the second order. Nothing has changed." He said this very quietly. He has never said it again. Nothing changed after he said it either.
 
 ---
 

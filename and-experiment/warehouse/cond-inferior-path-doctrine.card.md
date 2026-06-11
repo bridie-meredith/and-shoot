@@ -15,7 +15,7 @@ references:
 
 # Condition — Inferior Path Doctrine
 
-The codified cosmology as Saerys Targaryen believes it. The cultivation-register she runs on. The grief-armor made doctrinal.
+The codified cosmology as Gael Targaryen believes it. The cultivation-register she runs on. The grief-armor made doctrinal.
 
 **Purpose of this card:** impersonator consistency anchor. This is the world-model she operates from — tight, usable, internally consistent, and wrong. Prose authors need to know this model precisely so they can write her correctly when she narrates. Do not confuse the doctrine with what is actually happening; the card holds both columns.
 
@@ -27,7 +27,7 @@ The codified cosmology as Saerys Targaryen believes it. The cultivation-register
 
 ## Description
 
-A complete subjective cosmology built by Saerys Targaryen from her previous life's knowledge of cultivation fiction, applied to Westeros. It is internally consistent, systematically wrong about mechanisms, occasionally correct about structure, and never dropped (with one documented exception: the blank line). It functions simultaneously as an epistemological framework, a grief-management protocol, and a narrative register in which she records everything that happens to her.
+A complete subjective cosmology built by Gael Targaryen from her previous life's knowledge of cultivation fiction, applied to Westeros. It is internally consistent, systematically wrong about mechanisms, occasionally correct about structure, and never dropped (with one documented exception: the blank line). It functions simultaneously as an epistemological framework, a grief-management protocol, and a narrative register in which she records everything that happens to her.
 
 ---
 
@@ -128,7 +128,7 @@ All seven are documented. The cauldron expels them as they arrive. This is corre
 
 ## Sensory Impact
 
-This condition is not environmental — it is the lens through which Saerys processes every environment she inhabits. Its sensory impact is the cultivation-register imposed on sensory data:
+This condition is not environmental — it is the lens through which Gael processes every environment she inhabits. Its sensory impact is the cultivation-register imposed on sensory data:
 
 - A smell in the still-room is a "qi-resonance signature consistent with the reagent's attribute classification"
 - Pain is a "tribulation the cauldron is processing; note the progress markers"

@@ -14,7 +14,7 @@ references:
 
 # Prop — Harwin's List
 
-Ser Harwin Strong's running list of items Saerys Targaryen is no longer permitted to put in her mouth. It began as a practical safety measure. It became, over the course of Book II, the project's primary running-gag instrument. It is also, in structural fact, a love letter written in the form of an incident log.
+Ser Harwin Strong's running list of items Gael Targaryen is no longer permitted to put in her mouth. It began as a practical safety measure. It became, over the course of Book II, the project's primary running-gag instrument. It is also, in structural fact, a love letter written in the form of an incident log.
 
 ---
 

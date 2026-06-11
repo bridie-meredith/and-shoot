@@ -16,7 +16,7 @@ references:
 
 # Prop — The Bill of Exchange
 
-The paper instrument that built the trade empire. Not a single object — a class of documents that appears across the arc as a recurring prop, each instance a specific signed claim. The first one (I.2, Saerys to Moro Tessavik, plant PLANT[FACTOR]) is the founding instrument. Subsequent bills are its descendants. She carries blank forms and drafts them on demand.
+The paper instrument that built the trade empire. Not a single object — a class of documents that appears across the arc as a recurring prop, each instance a specific signed claim. The first one (I.2, Gael to Moro Tessavik, plant PLANT[FACTOR]) is the founding instrument. Subsequent bills are its descendants. She carries blank forms and drafts them on demand.
 
 In her cultivation-register: each bill of exchange is a "formation-command scroll" — a physical token that activates the trade-network formation's action at a distance. The authority the bill carries is, in her reading, qi-charge impressed by her signature and the standing license. The real-state reading: authority rests on the counterparty's trust in the handwriting, in the license seal, and in the established account relationship. No magic. Paper and reputation.
 
@@ -32,7 +32,7 @@ A standard Braavosi commercial instrument — heavy paper (vellum or well-proces
 
 Her bills are distinctive for handwriting precision — she drafts in a very controlled, even script that looks older than a child's hand and younger than a counting-house clerk's. The weight specifications, concentration designations, and handling notes are the giveaway to a trained eye: they are written by someone who knows what the substances require, not someone writing from a list given to her. The factor noted this on the second order. He filed it as "the signatory has practical knowledge of the commodity class." He was correct.
 
-The standing-license notation appears in the upper-right corner of each bill: "per the authority of the King's Hand, standing license [reference], charitable works account of Princess Saerys Targaryen, Royal Household of Viserys I." The notation is not elaborate. It does not need to be.
+The standing-license notation appears in the upper-right corner of each bill: "per the authority of the King's Hand, standing license [reference], charitable works account of Princess Gael Targaryen, Royal Household of Viserys I." The notation is not elaborate. It does not need to be.
 
 Blank bill forms are kept in the account-book's back pocket — a dozen at most, folded. When she runs out, she obtains more through the factor or through the below-stairs faction's stationer contacts.
 
@@ -44,7 +44,7 @@ Blank bill forms are kept in the account-book's back pocket — a dozen at most,
 
 **Operational bills (I.8, II.1, II.9, II.10):** Each successive bill is larger, more sophisticated in its specifications, and covers an expanding supply-chain. By I.8 the bill is authorizing not just delivery to King's Landing but routing coordination through the factor's established intermediaries. By II.1 the bills in the account-book's archive represent six years of operational documentation — the paper trail of the network.
 
-**Paper authority:** In Braavosi commercial practice, the bill of exchange stands in for the person. The factor does not require Saerys to appear; the bill is her presence. The handwriting is her identity. The license is her standing. When she is eleven and presents herself in person at the II.1 meeting, it is the first time she has been present rather than represented — and the factor addresses himself to the bill regardless.
+**Paper authority:** In Braavosi commercial practice, the bill of exchange stands in for the person. The factor does not require Gael to appear; the bill is her presence. The handwriting is her identity. The license is her standing. When she is eleven and presents herself in person at the II.1 meeting, it is the first time she has been present rather than represented — and the factor addresses himself to the bill regardless.
 
 **Heist mechanics (II.9, III.10):** The bill-of-exchange form underlies the later, more elaborate paper instruments (charter-parties, manifests, victualling orders). She understands the instrument class deeply by Bk III because she has been writing bills since she was six. The heist's paper-authenticity requirements are an extension of bill-of-exchange discipline: correct handwriting, correct account relationship, correct reference to a standing authority. The bill taught her everything she knows about what makes paper credible.
 

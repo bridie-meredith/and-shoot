@@ -14,9 +14,9 @@ references:
 
 # Location — Maegor's Holdfast
 
-The fortified box inside the Red Keep. Twelve-foot curtain walls. A dry spiked moat. One drawbridge. This is where the royal children live, and Saerys is one of them.
+The fortified box inside the Red Keep. Twelve-foot curtain walls. A dry spiked moat. One drawbridge. This is where the royal children live, and Gael is one of them.
 
-The cage is the attendant, not the door. The holdfast is not the primary confinement instrument — the septa and the household watch are. But the holdfast's architecture provides the *frame*: Saerys can only leave through one chokepoint, on official purpose, usually with a watcher at her shoulder. Every Book I operation begins here, with the question of how to account for the next two hours.
+The cage is the attendant, not the door. The holdfast is not the primary confinement instrument — the septa and the household watch are. But the holdfast's architecture provides the *frame*: Gael can only leave through one chokepoint, on official purpose, usually with a watcher at her shoulder. Every Book I operation begins here, with the question of how to account for the next two hours.
 
 In her cultivation-register, she reads the holdfast as a control formation with a single formation eye (the drawbridge mechanism and the gatehouse guard-post), covered on all approaches by the moat-ring. Her analysis concludes that any formation whose only eye is external cannot contain an internal practitioner who has mapped the formation's coverage gaps from the inside. She is correct about this for entirely non-cultivation reasons. **This is her belief, not a verified cultivation fact.**
 
@@ -44,7 +44,7 @@ The original scene of Book I. The room where the cradle-egg was placed, where th
 
 By the middle of Book I, this room is no longer a nursery. The transition is gradual: dolls replaced by ceramic jars; embroidery thread replaced by binding cord for dried herb bundles; the prayer shelf with its religious objects incrementally colonized by things that are not religious objects. The household notices but says nothing because the maester's report on the subject has been filed and the outcome was the King's verbal indulgence.
 
-### Saerys's chamber
+### Gael's chamber
 
 Adjacent to or evolved from the nursery; by mid-Book I it is her primary private space. It contains the dose-log (when the dose-log is not in the still-room), a second copy of the account-book's summary pages, several items the septa's reports describe as "objects of unclear provenance," and a smell the household has stopped trying to identify (the still-room tertiary register, transferred on her skin and in her clothing).
 
@@ -56,7 +56,7 @@ The administrative center of the household. She is summoned there for formal hou
 
 ### The private chapel/sept
 
-Daily devotions. The septa oversees these. Saerys attends with an expression of appropriate piety and uses the time to count things: the acoustics pattern of the chapel (sound travels in a specific direction and not others), the number of heartbeats in a spoken prayer, the regularity of the candle-trim interval. She is present. She is not present in the way that would satisfy the septa.
+Daily devotions. The septa oversees these. Gael attends with an expression of appropriate piety and uses the time to count things: the acoustics pattern of the chapel (sound travels in a specific direction and not others), the number of heartbeats in a spoken prayer, the regularity of the candle-trim interval. She is present. She is not present in the way that would satisfy the septa.
 
 ### The courtyard
 
@@ -78,7 +78,7 @@ Cold stone that radiates chill in winter and does not warm quickly even in summe
 **The apartments:**
 Beeswax candles (the household distinction from tallow is maintained throughout; she knows the smell of the right candles by now). Cedar and lavender from the storage chests. The soap-clean smell of maintained royal-household spaces overlaid with the specific secondary register of her room, which has gradually acquired the still-room's tertiary chemistry.
 
-**Saerys's chamber specifically:**
+**Gael's chamber specifically:**
 The still-room smell is present here in a diluted form — dried herbs, a faint metallic note when she has been working and has not fully washed her hands. The room also carries a faint sweet-wood smell from a particular compound she has stored in the secondary container that the maester's inspection identified as "storage for dried fruit samples." (It is not dried fruit.)
 
 **The drawbridge chain:**
@@ -109,7 +109,7 @@ Small high windows that admit limited light. The specific cold-air quality of st
 ## Hazards
 
 **The watcher problem (Book I primary hazard):**
-Every space in the holdfast is potentially observed. The hazard is not the architecture — the twelve-foot walls are navigable in principle and completely irrelevant to how she actually operates. The hazard is the septa's observational routine and cross-referencing capacity. If the septa compares the time Saerys was officially in the still-room against the time the below-stairs delivery arrived, the times are compatible. If the septa compares three such windows against each other and asks the gatepost guard for his log, the pattern becomes visible. The septa is capable of doing this. She has not yet.
+Every space in the holdfast is potentially observed. The hazard is not the architecture — the twelve-foot walls are navigable in principle and completely irrelevant to how she actually operates. The hazard is the septa's observational routine and cross-referencing capacity. If the septa compares the time Gael was officially in the still-room against the time the below-stairs delivery arrived, the times are compatible. If the septa compares three such windows against each other and asks the gatepost guard for his log, the pattern becomes visible. The septa is capable of doing this. She has not yet.
 
 **The bridge going up:**
 An unscheduled drawbridge closure isolates the holdfast from the rest of the Red Keep. This has happened twice in her operational history: once during a fire in the outer yard (thirty minutes; she was in the still-room at the time and used the back stair to return to the holdfast through the supply area before the bridge went down again), and once during a formal security exercise (four hours; she was inside the holdfast, which was operationally inconvenient for a reagent transfer already in motion). Unscheduled closures are the hardest interruption type to predict.
@@ -118,7 +118,7 @@ An unscheduled drawbridge closure isolates the holdfast from the rest of the Red
 The twelve-foot walls protect the royal family. They also mean that anything happening inside the holdfast is not easily visible from outside. This is the logic that makes the chamber's gradual transformation possible: the household's attention is on controlling what leaves the holdfast, not on what is happening within it. She uses this norm.
 
 **The septa's acceleration problem:**
-The septa files reports on Saerys's behavior. The reports go to Alicent and, filtered, to Viserys. The hazard is not any single report — it is a cluster of reports arriving within a short span and triggering enough scrutiny that the King acts. The Book I climax navigates exactly this: the wildfire fever generates multiple simultaneous reports, and she needs the King's-hand note to produce a counter-narrative louder than all of them at once.
+The septa files reports on Gael's behavior. The reports go to Alicent and, filtered, to Viserys. The hazard is not any single report — it is a cluster of reports arriving within a short span and triggering enough scrutiny that the King acts. The Book I climax navigates exactly this: the wildfire fever generates multiple simultaneous reports, and she needs the King's-hand note to produce a counter-narrative louder than all of them at once.
 
 ---
 
@@ -126,7 +126,7 @@ The septa files reports on Saerys's behavior. The reports go to Alicent and, fil
 
 - **The chain going up without ceremony:** no announced function, no fire in the outer yard — the drawbridge is being raised and she does not know why; she has forty minutes of exposed material in the chamber and a reagent transfer expected via below-stairs in two hours.
 - **A Kingsguard stationed in the inner courtyard:** the watch rotation has placed an armed guard in the courtyard space at an unusual hour; her standard route between the chamber and the holdfast gate has a watchful eye at the pivot point.
-- **The septa's report being filed early:** the septa normally files weekly; a mid-week filing means something she has observed is urgent; the urgency is either about Saerys or about something else; Saerys needs to know which.
+- **The septa's report being filed early:** the septa normally files weekly; a mid-week filing means something she has observed is urgent; the urgency is either about Gael or about something else; Gael needs to know which.
 - **Alicent asks to see her immediately:** a summons to the solar during a window she had allocated for a still-room session; the session runs unattended; she must end it early or leave a compound at an uncertain state.
 - **Helaena has told someone about the insects in the still-room:** Helaena mentioned, in passing, that the still-room's drying rack includes a species she has not seen before; the someone is the maester; the maester is now curious about the origin of the samples.
 - **One of the gatepost guards has been replaced:** a new guard who does not know her schedule, her face in unofficial contexts, or the overlap-window practice; she has three days to map his habits before the next below-stairs delivery arrives.

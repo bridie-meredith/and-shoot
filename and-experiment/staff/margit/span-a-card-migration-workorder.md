@@ -138,7 +138,12 @@ viserys-i-targaryen (+ pre-existing saerys-targaryen/maester/septa).
 mistress-bryony/nona/pella/marra*/mistress-orla/nesta — bodies already "Gael", refs fixed). *(marra has one
 "pious" → check it's not a stale charity/piety-cover line.)*
 
-**CONTENT-FIX bucket (Saerys→Gael PLUS the listed span-B content — per-card, NOT blind-sed):**
+**✅ Saerys→Gael NAMING LAYER COMPLETE (2026-06-11):** the 15 content cards below have had `Saerys→Gael`
+applied in one verified batch (every diff line a clean swap; "Saerys" now remains only in provenance/parked/
+tombstone/the slug-rename card). **What remains per card is the OTHER span-B content listed below** (Viserys,
+charity/sick-house, Dance-scale, Harwin/Daenys casualties) — that part is contextual, NOT blind-sed.
+
+**CONTENT-FIX bucket — REMAINING span-B content (Saerys→Gael already done; these need per-card work):**
 | Card | Span-B content to fix |
 |---|---|
 | comedy-register | Saerys + Daenys/Harwin **examples** → Gael/Quint; **battlefield** (Dance-scale) → parked-future framing |

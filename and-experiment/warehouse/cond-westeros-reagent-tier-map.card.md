@@ -16,7 +16,7 @@ references:
 
 # Condition — Westeros Reagent Tier Map
 
-The Tier 0–4 material classification table as Saerys Targaryen uses it. Her primary reference system for every substance she ingests, compounds, or assigns to the network. Needed by bones authors for any scene involving her relationship to a material — she cannot encounter a substance without immediately assigning it a tier.
+The Tier 0–4 material classification table as Gael Targaryen uses it. Her primary reference system for every substance she ingests, compounds, or assigns to the network. Needed by bones authors for any scene involving her relationship to a material — she cannot encounter a substance without immediately assigning it a tier.
 
 **Purpose of this card:** bones-author lookup. Tier assignments are the most frequently reached-for element of her cultivation register — every still-room scene, every ingestion beat, every "I noted the reagent at such-and-such grade" line requires this table. Too long to reload from the source doc inline; this is the dispatch-loadable condensation.
 
@@ -28,7 +28,7 @@ The Tier 0–4 material classification table as Saerys Targaryen uses it. Her pr
 
 ## Description
 
-A five-level classification system Saerys applies to every material in her operational scope. In cultivation-genre terms this maps to the standard reagent grade ladder (mortal → spirit → earth → heaven → saint/divine). In Westerosi terms it maps to: common herbs, medicinal/poisonous plants, magically-resonant materials, genuinely magical Westeros materials, and the frontier-class materials where the broken clock may have genuine charge.
+A five-level classification system Gael applies to every material in her operational scope. In cultivation-genre terms this maps to the standard reagent grade ladder (mortal → spirit → earth → heaven → saint/divine). In Westerosi terms it maps to: common herbs, medicinal/poisonous plants, magically-resonant materials, genuinely magical Westeros materials, and the frontier-class materials where the broken clock may have genuine charge.
 
 ---
 
@@ -80,7 +80,7 @@ The expensive Yi Ti tea she encounters in Bk II (Ch II.5) is placed, by her, at 
 
 ## Sensory Impact
 
-This condition operates as a mental overlay in any scene where Saerys encounters a material. Its behavioral signature: she goes still for one breath when she picks up or sees a new substance; she categorizes before she does anything else; she can be distracted from social obligations by an interesting reagent mid-conversation. These are Tier-assignment behaviors, not tier outcomes.
+This condition operates as a mental overlay in any scene where Gael encounters a material. Its behavioral signature: she goes still for one breath when she picks up or sees a new substance; she categorizes before she does anything else; she can be distracted from social obligations by an interesting reagent mid-conversation. These are Tier-assignment behaviors, not tier outcomes.
 
 ---
 

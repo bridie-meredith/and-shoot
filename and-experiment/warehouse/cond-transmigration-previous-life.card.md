@@ -23,7 +23,7 @@ The foundational event. What she died doing. What carried over. The wound the ar
 
 ## Description
 
-Saerys Targaryen is a meta-transmigrator of the specific sub-type documented in `cultivation-metagenre-roots-and-archetypes.md § Part I`: a person who died in the previous world having read cultivation novels extensively, and who was reborn (or had their soul transmigrated) into Westeros with that genre-knowledge intact. Her cheat — the transmigrator's golden finger — is a comprehensive archive of cultivation-fiction knowledge that is internally consistent, technically sophisticated, and entirely inapplicable to the rules of the world she now inhabits.
+Gael Targaryen is a meta-transmigrator of the specific sub-type documented in `cultivation-metagenre-roots-and-archetypes.md § Part I`: a person who died in the previous world having read cultivation novels extensively, and who was reborn (or had their soul transmigrated) into Westeros with that genre-knowledge intact. Her cheat — the transmigrator's golden finger — is a comprehensive archive of cultivation-fiction knowledge that is internally consistent, technically sophisticated, and entirely inapplicable to the rules of the world she now inhabits.
 
 Her previous life is not a resource. It is a wound that arrived already closed.
 
@@ -56,7 +56,7 @@ The "floor" detail is not sentimentalized. It is a data-point. It confirms that 
 
 **The no-system condition:** She has no system. No RPG interface validates her progress. No ring-grandpa confirms her realm assessments. No cosmic voice tells her she is doing it correctly. The absence of system validation means she is completely alone with her framework and the world will never confirm it. She has manufactured the system's validation function through the dose-log — a system she built herself, which checks her own results against her own predictions. The confirmation loop is circular. She would know this, if she looked. She does not look.
 
-**The transmigrator's relationship to identity:** She arrived in a body she did not grow up in — a princess's body, a Targaryen body, with its social context and its expectations and its dragonlessness already established at age three. She did not choose Saerys Targaryen's identity. She occupied it. The cultivation-register is partly a mechanism for maintaining the previous life's personality framework inside an inherited identity: "I am the Heavenly Demon Cauldron-Belly" is not a name anyone gave her; it is the name she gave herself, which makes it the most genuine assertion of identity in a situation where all the official identity markers belong to the previous tenant.
+**The transmigrator's relationship to identity:** She arrived in a body she did not grow up in — a princess's body, a Targaryen body, with its social context and its expectations and its dragonlessness already established at age three. She did not choose Gael Targaryen's identity. She occupied it. The cultivation-register is partly a mechanism for maintaining the previous life's personality framework inside an inherited identity: "I am the Heavenly Demon Cauldron-Belly" is not a name anyone gave her; it is the name she gave herself, which makes it the most genuine assertion of identity in a situation where all the official identity markers belong to the previous tenant.
 
 ---
 

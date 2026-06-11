@@ -48,9 +48,11 @@
 #   loc-still-room, prop-christening-spoon, prop-dose-log). COSMOLOGY-FLAG RESOLVED: "Inferior Path" is
 #   span-A-VALID (cultivation-library defines it as her operational philosophy) → prop-account-book +
 #   cond-inferior-path-* keep the framing, just need standard Saerys→Gael + casualty/charity/Dance-scale fixes.
-#   FULL TRIAGE of every remaining card (+ the don't-blind-sed traps: provenance Saerys, parked-Dance skip,
-#   lowercase "slate"≠Stark, Viserys→Jaehaerys-vs-Alicent) is in the work-order §E. OPEN: the ~18 content-fix
-#   cards + cond-saerys-formation-map slug-rename + the gael-targaryen-behavior build. + the 2 residual graph edges (loc-sick-house ref;
+#   FULL TRIAGE of every remaining card (+ don't-blind-sed traps) is in the work-order §E. SAERYS→GAEL
+#   NAMING LAYER COMPLETE (2026-06-11): 15 content cards batch-migrated (verified clean); "Saerys" now remains
+#   only in provenance/parked/tombstone/formation-map. OPEN per-card (contextual, not sed-able): the OTHER
+#   span-B content in those 15 (Viserys→Jaehaerys/Alicent · charity/sick-house removal · Dance-scale→parked ·
+#   Harwin/Daenys casualties) + cond-saerys-formation-map slug-rename + the gael-targaryen-behavior build. + the 2 residual graph edges (loc-sick-house ref;
 #   saerys-targaryen-behavior refs) that resolve with those re-derivations.
 #   Full coordinated plan: staff/margit/span-a-card-migration-workorder.md. Character cards production-ready.
 
