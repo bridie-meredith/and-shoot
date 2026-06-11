@@ -78,8 +78,23 @@ two parked behavior cards) → `saerys-targaryen-behavior` (repoint when `gael-t
   with the account-book.
 - `cond-saerys-formation-map-red-keep` → rename Saerys→Gael (slug + body); the spatial formation map is
   otherwise span-A-valid.
-- `the-factor` → tombstone (span-B); Quint is a "card on demand" minor mark (memory.md stage_elements). Build
-  `lothar-quint` only if III.3 graduates to needing a full card.
+- `the-factor` (Moro Tessavik) → ✅ **KEPT + RE-DERIVED to span-A (DONE 2026-06-11).** *(Correction: the prior
+  "tombstone → Quint" assumption was WRONG.)* He is **not** the III.3 greedy-factor (Quint) — he is the
+  span-A-valid **Braavosi medicine/poison supply factor,** "the founding ambiguity" of the trade empire (one
+  manifest, both columns). Re-derived: Saerys→Gael, Viserys I→Jaehaerys I, the charity/sick-house cover →
+  **apothecary/scholar-princess** cover. *(Quint, if ever a full card, is a separate `lothar-quint` build —
+  the III.3 pit-factor-grown-greedy, distinct from Moro.)*
+- ⚠ **`prop-account-book` + the two `cond-inferior-path-*` cards are COSMOLOGY-DEPENDENT — flagged for
+  design-grounding (do NOT do as a naming pass).** Finding 2026-06-11: **"the Inferior Path" is a span-B
+  doctrine term — it does NOT appear in the live span-A docs** (spine / character-profiles / run-04). Span-A
+  frames her (wrong) cultivation as "the dao / the cultivation cosmology / the evil-sect court," with no
+  single doctrine NAME surfaced. So these cards' "Inferior Path natal artifact" / doctrine-hierarchy framing
+  needs **genuine re-derivation against the span-A cultivation cosmology** (`design/cultivation-library/`),
+  not a Saerys→Gael swap. **Open grounding question:** does span-A keep a named doctrine (and if so what), or
+  is it the generic "her cultivation cosmology / the dao"? Resolve (cultivation-library research or a principal
+  steer) before re-deriving these three. `prop-account-book` also needs: charity-cover→soap/vice-ledger; the
+  span-B casualties in its "one place a death is entered" beat (Harwin / Daenys) → span-A (Quint "the account
+  is closed" III.3 · the II.7 exploiter · the III.6 apex uncosted debt).
 
 **Phase 3 — audit-then-keep-or-fix (the "likely-valid" bucket).** For each cond/prop in the audit bucket:
 spot-check for span-B casualty/charity/Saerys content. Most are mechanics (poison pharmacology, reagent-tier,
