@@ -1,8 +1,21 @@
 # Rubric — dialogue facet
 
-Authority: `schemas/dialogue.schema.md` is the authoritative entry shape. This rubric is the working discipline the R1 + R2 dialogue-writer follows. Evidence backing every clause lives in `design/shoot-v2/round-trip-method.md` and `design/shoot-v2/dialogue-corpus.md` (v1 round-trip tuning on s01e01–s01e06, 2026-05-06).
+Authority: `schemas/dialogue.schema.md` is the authoritative entry shape. This rubric is the working discipline the **R1 dialogue-writer** follows (dispatched at `/and-write` Phase 1.5). Evidence backing every clause lives in `design/shoot-v2/round-trip-method.md` and `design/shoot-v2/dialogue-corpus.md` (v1 round-trip tuning on s01e01–s01e06, 2026-05-06).
 
 Distilled from v1 round-trip work; not re-tuned for v2 — lifted into the facet pipeline as-is.
+
+> **CURRENT STATUS (DEC-0116 + URI-WRITE-DIALOGUE-COBONDED, 2026-05-25 / 2026-06-08)**
+>
+> **LIVE sections:** What dialogue is for · The two-question gate · Eight writer patterns · V2 facet-citation extension · Hard fences · Per-anchor caps · Sparsity · Audit classes · Files (R1 outputs only — see below).
+>
+> **RETIRED sections** (kept for reference; do NOT follow):
+> - `## Contamination disciplines (R2 graph context filtering)` — R2 round retired (DEC-0116); no graph-aware re-pass occurs.
+> - `## V2 reviewer protocol (audience-gate Phase 5b)` — Phase 5b adversarial audience-gate retired (DEC-0116); per-facet 3-of-3 and defense-or-revise cycle no longer run.
+> - `## R1 vs R2 differences` — R2 retired; all dialogue authoring happens at R1 only.
+>
+> **Dispatch point changed.** Dialogue is now authored at `/and-write` Phase 1.5, NOT at `/and-facets`. Phase 7 of `/and-write` co-emits the bones file + dialogue files as an atomic set.
+>
+> **Citation-completeness at R1 (live rule).** `facet-licenses: [DEFERRED-TO-R2]` placeholders are **forbidden** — there is no R2 pass to complete them. Both `card-signatures:` and `facet-licenses:` must be populated in the R1 chosen-mark entry before submitting. A dangling placeholder is a HARD finding at the `/and-facets` Phase 4 auditor (CONSTRAINT § citation-completeness).
 
 ---
 
