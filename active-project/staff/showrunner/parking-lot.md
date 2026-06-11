@@ -2970,3 +2970,38 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-06-11-hygiene-001
+      created_at: 2026-06-11T00:00:00Z
+      created_by: "improvement-loop/hygiene (artur, first pass)"
+      target:
+        command: oskar-session-review
+        scope: "*"
+        phase: null
+      severity: SOFT
+      description: |
+        Hygiene sweep found three related issues routed to oskar:
+        (1) memory.md at 13,401 lines — consider archiving pre-no-ledger-revision
+        bones records or early-chapter phase records to a _archive/ split to reduce
+        per-session context-load cost.
+        (2) 60/86 parking-lot items open, many targeting chapters b01c01–b01c07
+        whose terminal drafts are all shipped; the no-ledger revision cascade
+        (COMPLETE 2026-06-08) did not batch-resolve these. A staleness review and
+        resolved/dismissed stamping is warranted.
+        (3) 7 intermediate draft files at showrunner root (b01c09-bones-draft,
+        b01c11-bones-draft, b01c11-draft, b01c15-bones-draft, b01c15-draft,
+        b01c19-bones-draft, b01c20-draft) — confirm intentional root placement
+        or move to _drafts/.
+        Secondary: missing context-ledger-b01-c16 (both ledgers absent) and
+        context-ledger-b01-c19 (grounding exists, context absent) — oskar
+        determines if gaps need backfill or are expected from the combined
+        revise+render pass.
+      context_refs:
+        - active-project/staff/showrunner/memory.md
+        - active-project/staff/showrunner/parking-lot.md
+        - active-project/staff/showrunner/cascade-checkpoint.md
+        - staff/admin/improvement-loop/hygiene.ledger.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
