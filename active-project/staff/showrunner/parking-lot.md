@@ -2970,3 +2970,102 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-06-11-pipeline-001
+      created_at: 2026-06-11T00:00:00Z
+      created_by: "improvement-loop/test run 1 (/and-review pipeline)"
+      target:
+        command: /fixer
+        scope: "schemas/audit-report.schema.md"
+        phase: null
+      severity: SOFT
+      description: |
+        schemas/audit-report.schema.md retains a live-schema R2 decision-shard section
+        (objects: r2-decision-shard, r2-decisions-consolidated, F-R2-* failure classes,
+        f-r2-counts frontmatter, cite_index_hash REQUIRED field) — all from the R2 round
+        retired by DEC-0116. Also: "Phase 6 verdict reads f-r2-counts" reference is stale;
+        current /and-facets orchestrator-critic verdict is Phase 5, not Phase 6.
+        Fix: mark R2 section RETIRED/DEPRECATED with DEC-0116 reference + date, or move to
+        archive. Correct Phase 6 → Phase 5 in the consumer contract note.
+      context_refs:
+        - active-project/staff/reviews/pipeline-2026-06-11T000000Z.md
+        - schemas/audit-report.schema.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-11-pipeline-002
+      created_at: 2026-06-11T00:00:00Z
+      created_by: "improvement-loop/test run 1 (/and-review pipeline)"
+      target:
+        command: /fixer
+        scope: ".claude/commands/and-write.md"
+        phase: null
+      severity: HARD
+      description: |
+        .claude/commands/and-write.md Phase 4 (Trim) audience dispatch context block loads
+        `series.theme` — a field that does not exist in schemas/showrunner-memory.schema.md.
+        The series block defines series.chunk, series.substance, series.laws, series.lore,
+        series.behaviors, series.vibe_cloud — no series.theme at any path. A dispatch loading
+        a missing key will silently load nothing or mismatch. Thematic content likely intended
+        lives in series.chunk.path.{motivation,trade,irony} or series.substance.state_axes[].
+        Fix: replace `series.theme` with the correct schema field(s) per showrunner-memory.schema.md.
+      context_refs:
+        - active-project/staff/reviews/pipeline-2026-06-11T000000Z.md
+        - .claude/commands/and-write.md
+        - schemas/showrunner-memory.schema.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-11-pipeline-003
+      created_at: 2026-06-11T00:00:00Z
+      created_by: "improvement-loop/test run 1 (/and-review pipeline)"
+      target:
+        command: /fixer
+        scope: ".claude/commands/and-facets.md"
+        phase: null
+      severity: HARD
+      description: |
+        .claude/commands/and-facets.md Phase 5c (orchestrator-critic verdict) reads the OC card
+        from `staff/audience/and-facets-orchestrator-critic/card.md`. The canonical path per
+        CLAUDE.md routing table is `staff/orchestrator-critic/card.md`. The
+        `staff/audience/and-facets-orchestrator-critic/` path does not correspond to any
+        registered directory. A silent card-miss on this path invalidates the facet-layer
+        success gate (SUCCESS / SHIPPABLE-WITH-CAVEATS / NOT-SUCCESSFUL).
+        Fix: correct Phase 5c to read from `staff/orchestrator-critic/card.md`. If a
+        facet-specific OC variant is intentional, register it in CLAUDE.md routing table.
+      context_refs:
+        - active-project/staff/reviews/pipeline-2026-06-11T000000Z.md
+        - .claude/commands/and-facets.md
+        - CLAUDE.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-11-pipeline-004
+      created_at: 2026-06-11T00:00:00Z
+      created_by: "improvement-loop/test run 1 (/and-review pipeline)"
+      target:
+        command: /fixer
+        scope: "schemas/showrunner-memory.schema.md"
+        phase: null
+      severity: SOFT
+      description: |
+        /and-stitch Phase 8.5 actively writes chapters[<slug>].coherence_review to showrunner
+        memory (subfields: reviewed_at, verdict, weave_gaps, followability_breaks,
+        cold_read_risk_high, cold_read_risk_advisory, findings, report_path). This field is NOT
+        defined in schemas/showrunner-memory.schema.md. This is a fully wired, actively executed
+        phase — not a pending-triage item. Schema validation will surface it as an unknown field.
+        Fix: add chapters[<slug>].coherence_review with all Phase 8.5 subfields to the memory schema.
+      context_refs:
+        - active-project/staff/reviews/pipeline-2026-06-11T000000Z.md
+        - schemas/showrunner-memory.schema.md
+        - .claude/commands/and-stitch.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
