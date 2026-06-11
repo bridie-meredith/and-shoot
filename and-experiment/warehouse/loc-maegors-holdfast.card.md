@@ -8,7 +8,6 @@ origin: authored
 quality: full
 references:
   - loc-red-keep-interior
-  - cond-saerys-formation-map-red-keep
   - cond-kl-geography-122ac
 ---
 
@@ -20,7 +19,7 @@ The cage is the attendant, not the door. The holdfast is not the primary confine
 
 In her cultivation-register, she reads the holdfast as a control formation with a single formation eye (the drawbridge mechanism and the gatehouse guard-post), covered on all approaches by the moat-ring. Her analysis concludes that any formation whose only eye is external cannot contain an internal practitioner who has mapped the formation's coverage gaps from the inside. She is correct about this for entirely non-cultivation reasons. **This is her belief, not a verified cultivation fact.**
 
-**Cross-reference:** `loc-red-keep-interior` covers the wider Red Keep — the Great Hall, the maester's tower, the corridors between family apartments, the gardens. This card covers the holdfast as the distinct inner fortress. For her cultivation reading of this space as a node-and-control-system, see `cond-saerys-formation-map-red-keep` (parallel sibling; her interpretation of the physical geography).
+**Cross-reference:** `loc-red-keep-interior` covers the wider Red Keep — the Great Hall, the maester's tower, the corridors between family apartments, the gardens. This card covers the holdfast as the distinct inner fortress. Her cultivation reading of this space as a node-and-control-system (the single-formation-eye analysis above) was previously carried in a parallel `cond-saerys-formation-map-red-keep` card, retired 2026-06-11 (Saerys/Viserys-death-keyed old framing; see `intake/retired/2026-06-11-stale-warehouse-cards/`).
 
 ---
 

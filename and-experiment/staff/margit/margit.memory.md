@@ -1,5 +1,37 @@
 # Margit Working Memory — and-experiment
 
+## Warehouse cleanup pass: 2026-06-11 — retire old-framing / Dance-parked cards
+
+**Scope:** reconcile the live `warehouse/` to span-A canon (run-04). The pre-migration framing
+(Saerys / Viserys-I-father / 122 AC / Dance-in-Book-III) left a layer of cards that no span-A roster
+entry uses. Retired 11 cards + 5 paired exemplars to
+`intake/retired/2026-06-11-stale-warehouse-cards/` (TOMBSTONE.md there is the authoritative record).
+
+**Retired:** `viserys-i-targaryen` (→ superseded by `jaehaerys-i-targaryen`) · `helaena-targaryen-122ac`
+(+behavior) · `daenys-velaryon` (+behavior) · `nymeria-summer-isles` · `ser-harwin-the-patient` +
+`prop-harwins-list` · `cond-alchemists-guild-122ac` + `prop-wildfire-shard` (old I.5 guild-fever) ·
+`cond-saerys-formation-map-red-keep` (Saerys/Viserys-death-keyed). All are parked-for-Dance or
+superseded; none deleted. Warehouse: 57 → 46 cards.
+
+**Reconciled:** `loc-maegors-holdfast` dropped its dead `cond-saerys-formation-map-red-keep` ref.
+
+**NOT retired (deliberate):** the four `saerys-*` slug-anchors (`saerys-targaryen`, `-maester`,
+`-septa`, `-targaryen-behavior`) stay — ~30 live cards reference them via frontmatter and there is no
+`gael-targaryen-behavior`. The migration left the slugs un-repointed on purpose (see `pella-chambermaid`
+naming note). Retiring them is blocked on the **era-fix** task (repoint slugs → gael/lorren/aldith;
+author a gael behavior card), tracked in the TOMBSTONE.
+
+**ERA-CASTING HAZARD (prior open flag) — partially resolved:** the parked/wrong-era family cards are
+now out of the live warehouse, so the servants can no longer be co-cast against `helaena-122ac` /
+`viserys-i` by accident. Residual: live cards still carry "Saerys"/"Viserys" **prose** + dangling
+`cond-kl-geography-122ac` / `cond-kl-court-state-122ac` refs (era-fix debt, not this pass).
+
+> ⚠ The `cards/` **library** copies (`scope: both` cards: helaena/daenys/harwin/nymeria + behaviors,
+> wildfire-shard, alchemists-guild) were left untouched — they belong to the repo-root library, not the
+> and-experiment workspace. The pre-migration `coverage-audit-2026-06-06.md` is provenance, not live.
+
+---
+
 ## Card build session: 2026-06-05
 
 ### Session scope

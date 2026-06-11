@@ -10,7 +10,6 @@ references:
   - cond-inferior-path-doctrine
   - cond-westerosi-poison-pharmacology
   - cond-maesters-cabinet
-  - prop-wildfire-shard
   - saerys-targaryen
 ---
 
@@ -94,5 +93,5 @@ Persistent across all three books. Tier assignments are stable (she does not re-
 
 - **With `cond-inferior-path-doctrine`:** the tier map is the primary operational tool of the doctrine — every doctrinal entry about alchemy begins with a tier assignment. The doctrine explains the cosmological significance; this card provides the lookup.
 - **With `cond-westerosi-poison-pharmacology`:** the Tier 1 entries have pharmacological counterparts in that card. Impersonator holds both: she narrates the tier; the prose honors the pharmacology.
-- **With `prop-wildfire-shard`:** the wildfire shard is a Tier 3 material that produced a real effect (the fever). This is the table's most-cited confirmation case — "the cauldron was vindicated at Tier 3."
+- **Wildfire as the Tier-3 confirmation case:** a wildfire shard is a Tier 3 material that produced a real effect — "the cauldron was vindicated at Tier 3." (The dedicated `prop-wildfire-shard` card was retired 2026-06-11 with the old-framing I.5 guild-fever staging; the Tier-3 worldbuilding claim stands, but re-anchor the staging to span-A before reuse — see `intake/retired/2026-06-11-stale-warehouse-cards/`.)
 - **With `cond-maesters-cabinet`:** the maester's vocabulary for the same substances, for any scene where the two registers collide (she tells the maester the "qi-attribute" of something he calls by its pharmacological name; neither is wrong; they are the same substance, different frame).

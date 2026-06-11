@@ -28,6 +28,13 @@
 # Book III). Book III walk begun: III.1 "the commission" folded. NEXT: resume at III.2 "the excursions"
 # (III.1->III.6 = the heist-caper escape). See the dated
 # amendment foot of intake/spine.md for the full delta record + thread-arc confirmation.
+#
+# WAREHOUSE CLEANUP (2026-06-11): retired 11 old-framing/Dance-parked cards + 5 exemplars to
+# intake/retired/2026-06-11-stale-warehouse-cards/ (viserys-i, helaena-122ac+beh, daenys-velaryon+beh,
+# nymeria, ser-harwin+prop-harwins-list, cond-alchemists-guild-122ac+prop-wildfire-shard,
+# cond-saerys-formation-map). Warehouse 57->46; loc-maegors-holdfast ref reconciled. The four saerys-*
+# slug-anchors KEPT (load-bearing; era-fix debt — repoint slugs saerys->gael/lorren/aldith + author a
+# gael behavior card before they can retire too). See margit.memory.md cleanup entry + the TOMBSTONE.
 
 project:
   brief: >
