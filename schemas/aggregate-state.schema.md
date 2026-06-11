@@ -101,6 +101,20 @@ aggregate_state:
       resolution: aggregate-wins | cohere-wins | held-for-principal
       affected_entries: [<entry refs into axis_state | open_hooks | characters | world_state | revision_layer>]
 
+  # Consecutive-caveat streak tracker (PROP-0048 / CLAUDE.md Rule 22 / DEC-0115).
+  # Tracks how many consecutive chapters shipped a given defect class as "design-inherent /
+  # accepted-caveat" (NOTE rather than forced depth-pass). When consecutive_count reaches N=2,
+  # the NEXT chapter that would accept the same defect as caveat triggers the circuit breaker
+  # at /and-stitch Phase 9 Step 4: auto-promotes the finding from NOTE to BLOCKING.
+  # Written by /and-stitch Phase 10 (updated per chapter). Reset on READABLE verdict or FAIL.
+  caveat_streaks:
+    - defect_class: <slug>                # e.g. AIRLESS, ABSTRACTION-AS-SUBJECT
+      consecutive_count: <int>            # chapters in the current unbroken caveat-accepted run
+      chapters: [<chapter-slug>, ...]     # ordered list of chapters in the streak
+      last_chapter: <chapter-slug>        # most recent chapter in the streak
+      circuit_breaker_fired_at: <chapter-slug|null>   # chapter where N+1 fire occurred; null = not yet fired
+      last_updated_by: and-stitch-phase-10 | and-cohere
+
   # Optional per-book close-state archive for completed prior books.
   books:
     - book: <slug>
@@ -145,6 +159,7 @@ Producers MUST declare classification per edit. Uncertain-classification edits a
 6. Every `revision_layer[].chapter` must be ≤ `through_chapter`.
 7. `revision_layer[].class: substantive` with `acknowledged: false` → blocks `/and-substance chapter <next>` Phase 0 (HARD-abort).
 8. `conflict_log[]` is append-only. Resolution updates allowed; entry removal not allowed.
+9. `caveat_streaks[].consecutive_count` must equal `len(caveat_streaks[].chapters)`. On circuit-breaker fire: stamp `circuit_breaker_fired_at: <chapter>`, then reset streak (`consecutive_count: 0`, `chapters: []`). The fired entry's `circuit_breaker_fired_at` is preserved even after streak reset so the verdict gate can surface it.
 
 ---
 

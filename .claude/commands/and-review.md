@@ -263,6 +263,8 @@ Reviewers: orchestrator-critic (`staff/orchestrator-critic/card.md`, version per
 - (c) Any chapter under the book has no `bones_file` recorded or that file does not exist on disk, or any scene under any chapter has empty `bones[]`.
 - (d) The orchestrator-critic card version recorded in `project.staff.orchestrator_critic` is missing from the library.
 
+**Consecutive-caveat circuit-breaker scan (PROP-0048 / CLAUDE.md Rule 22; HARD).** Before dispatching reviewers, read `active-project/staff/showrunner/aggregate-state.md.caveat_streaks[]`. For any entry where `circuit_breaker_fired_at != null` AND the fired chapter has no `depth_pass_resolved_at` stamped in `chapters[<slug>].cold_read`: emit `CAVEAT-STREAK-UNRESOLVED`. This means the circuit breaker fired during production but the mandatory depth-pass was not completed. A `CAVEAT-STREAK-UNRESOLVED` finding is a **HARD** block on the book verdict — the orchestrator-critic verdict cannot PASS until the depth pass clears the streak (see `/and-stitch Phase 9 PASS-WITH-DEPTH-PASS-REQUIRED` routing). Additionally, scan `chapters[].cold_read.readability_axis[]` directly across the book: if 3+ consecutive chapters share `readability_axis.verdict == AIRLESS` with no intervening `READABLE` or `FAIL`, emit `CAVEAT-STREAK-EXCEEDED` as a HARD finding (the streak should have been caught at production; this is a safety net for legacy chapters).
+
 On pass, dispatches the critic against:
 - Chunks at every level under the book (book chunk + chapter chunks + scene chunks).
 - Bones files for every chapter under the book: `[theater/bones/<book-slug>-<chapter-slug>.md for chapter in books[<slug>].chapters]`.
