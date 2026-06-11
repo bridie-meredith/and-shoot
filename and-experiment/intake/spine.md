@@ -265,14 +265,14 @@ The engine is the **asymmetry, sealed — and Alicent is the seal.** The observe
 **Gags:** ⑤ (the centerpiece misread — her carefree blankness reads as grace/ice) · ② capstone (refuses to be cast as the Tragic Bride; nopes the North as a rival evil sect) · ④ (the marriage filed as a logistics deadline) · the deflation ("super not ideal; also I'm bailing, so — whatever"). **Guardrail:** the dread is the reader's / Alicent's — never Gael's.
 
 ### II.5 · the compromise *(~8–9)*
-**Inside:** someone with court leverage **leans on the maid** to reach the princess; the maid comes back nervous, carrying messages, holding opinions she shouldn't. The single channel is compromised. **⭐ The leak is the bestiary:** Otto (the asset-filer) has read it (see below) and clocked the one anomaly — a servant entry upgraded from "Asset (hands)" to a **name** — and understands the maid is the single lever that moves an unmovable girl. She is more than the lever: she is the **keeper of the secret things** from II.3 — the sole human who ties the whole hidden empire (the trade, the off-books vice-network, the account) together. The named entry is the one crack in an otherwise nameless apparatus, and Otto has found it.
+**Inside:** the quiet finally cracks — and it cracks from the bottom up. **Otto has been tracing the unusual coin since II.2;** the money made him *look,* and now the **bestiary** tells him where to *push.* The squeeze lands first on the **exposed tier** — a market-facing **chambermaid** leaned on and caught (the smallfolk hold the risk; they're spent first) — but the trail runs up through the one anomaly in the journal: a servant entry climbed from "Asset (hands)" to a **name.** Otto reads it cold — no recoil, he sees a *weapon* — and grasps what the named entry means: **Wylla** is the single lever that moves an unmovable girl, and more, the **keeper of the secret things** from II.3, the sole human who ties the whole hidden apparatus (the trade, the off-books vice-network, the account) together. The one crack in a nameless empire, found from two directions at once.
+**The limit of carefree (the chapter's spine — arms II.7).** Her *own* exposure she shrugs off, perfectly breezy: annoyed at the **opsec failure** ("left my notes out — sloppy"), mildly *offended* they filed her a *poisoner* (she's obviously a *cultivator*); she sets a **decoy diary** of performed-normal-girl entries for them to find and considers it handled. But the instant the lever turns out to be **Wylla,** the breeze stops. She goes quiet, cold, precise — *not afraid* (she is never afraid), only lethally focused — and tells herself it is a **compromised channel that must be closed,** a logistics problem, protecting the apparatus. The reader sees what she cannot: this is the one thing she is not carefree about, and she has just, calmly, *decided.* (The decision is here; the deed is II.7 — the first death she means.)
 **Reverse-angle / the bestiary read by an authority:** the journal is **the one document that tells the truth about Gael.** Read accurately, it still can't yield "reincarnated cultivator," so it's misfiled into the nearest grimdark frame:
 - 😱 *Alicent (if she reads it):* breaks — finds **her own entry** ("Mother — sentimental, useful for egg-procurement, low threat").
 - 🧊 *Otto (RECOMMENDED reader):* doesn't recoil — sees a weapon, and the maid as the lever. **This is the leak.**
 - 🤨 *Septon Barth (the near-miss):* reads it as a *cosmology,* not a weapon — the one mind that brushes the truth (a child consuming dragon-essence; a source, not a pool) and **cannot connect it to the girl,** because the connecting step is a story he's never read. The closest the realm ever comes; his theory collapses one fact short.
 - ⚔ *Jaehaerys (if he reads it):* sees a kinslayer-in-waiting → accelerates the betrothal as *disposal.*
-- 😂 *Gael's lens:* not embarrassed by the content — annoyed at the **opsec failure** ("left my notes out — sloppy"), mildly offended they filed her as a *poisoner* (she's obviously a *cultivator*). Thereafter keeps a **decoy diary** of performed-normal-girl entries for them to find. (Relieves the straight-men; own running bit.)
-**Gags:** ③ (escalated to plot spine) · ④ + ⑤ (she's briefly *proud* her best asset got headhunted before remembering it's a crisis).
+**Gags:** ③ (the bestiary escalated to plot spine — the cold catalogue is the vulnerability, the named entry the crack) · ④ + ⑤ (briefly *proud* her best asset got *headhunted* before remembering it's a crisis) · the deflation holding for her *own* exposure — and dropping, hard, the instant it's Wylla.
 
 ### II.6 · the source *(~8–9)*
 **Inside:** supply cut, she should weaken — she doesn't. **The egg was a reactor, not a battery**; she's generated her own qi since birth. The deflating punchline: every theft, every risk was *unnecessary*; the panic was greed cosplaying as survival. Reframes instantly, keeps going.
@@ -596,3 +596,16 @@ rippled two Book-I setups stale — both fixed, and the III consequences threade
   ship) · `WYLLA-TRUSTED` (I.2/I.3 planted → II.1/II.2/II.3 confidant→manager→keeper → II.5 leak → III) ·
   `FACTOR-NETWORK` (II.3 → III.3 Quint) · `OFFBOOKS-ACCOUNT` (II.3 → III.1 hull). All arced; check-threads
   re-verified, no orphans.*
+
+*__Book-II revision — FOLDED, cont. (2026-06-11): II.5 "the compromise."__ First fresh-read fold of the
+walk. Deltas: (1) **Otto's two-angle convergence** — the money-trace since II.2 + the bestiary both land on
+Wylla (`OTTO-MONEY-TRACE` + `BESTIARY`); (2) **smallfolk-first** — the squeeze hits the exposed chambermaid
+tier before it reaches Wylla (cashes `SMALLFOLK-HOLD-RISK`); (3) the lever is **catastrophic** — Wylla =
+keeper of the whole hidden empire, not just the emotional lever (`WYLLA-TRUSTED`); (4) **the limit of
+carefree (the spine)** — Gael shrugs her own exposure (opsec/decoy diary) but flips to cold, precise, lethal
+problem-solving the instant the lever is Wylla, misfiling it as "closing a compromised channel / protecting
+the apparatus" while the reader sees it is *for Wylla.* **Arms II.7:** the decision lands at II.5, the deed at
+II.7 — no kill, no spend here (the chambermaid is squeezed/exposed, not killed; II.7 keeps the first
+premeditated kill). Calibration applied as judgment-default (reversible): the switch is cold focus, not fear
+or hot rage; the comedy guardrail holds for her own exposure and drops only for Wylla. No new tokens;
+check-threads unchanged. Review walk now at II.6 "the source."*

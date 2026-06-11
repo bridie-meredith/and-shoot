@@ -22,8 +22,9 @@
 # Wylla-confidant) · II.2 (triple-blind cover-synergy + smallfolk-risk + Otto-proto + proto-sect) · II.3
 # (reagent-map + travel-knowledge; the underground vice-empire she founds in era-young KL; Wylla = keeper
 # of the secret things / sole crack). Betrothal retargeted Errold Slate -> the STARKS. Full spine-smoothing
-# pass complete (all three books hinted-prior + have-consequence; check-threads PASS). NEXT SESSION: resume
-# at II.4 "the betrothal" (a consistency-check — already revised), then II.5-II.8 fresh. See the dated
+# pass complete (all three books hinted-prior + have-consequence; check-threads PASS). II.4 verified
+# consistent; II.5 "the compromise" folded (fresh read — Otto two-angle · smallfolk-first · the
+# limit-of-carefree spine arming II.7). NEXT: resume at II.6 "the source", then II.7-II.8. See the dated
 # amendment foot of intake/spine.md for the full delta record + thread-arc confirmation.
 
 project:

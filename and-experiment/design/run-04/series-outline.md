@@ -179,9 +179,14 @@ grieves. **Register:** CHILL (for everyone but Gael). **Rung:** off-ladder.
 **Fires:** FIRE[BETROTHAL-CLOCK] · FIRE[STARK-MATCH] · FIRE[MARRIAGE-THREAT] · FIRE[LESBIAN] · FIRE[JAEHAERYS-TRANSACTIONAL] · FIRE[DISPLAY-AS-ADVERTISEMENT] · FIRE[DAEMON-DISCREDITED]
 
 ### II.5 · the compromise *(~8–9)*
-**Beat:** the single channel is compromised. **The leak is the bestiary:** Otto reads it (sees a weapon,
-clocks **Wylla** — the named entry, a noble companion making court connections — as the lever); Barth reads it
-as a cosmology (closest miss, collapses); Alicent (if she reads it) finds her own entry. **Register:** CHILL. **Rung:** off-ladder.
+**Beat:** the quiet cracks from the bottom up — Otto, tracing the coin since II.2, squeezes the exposed
+**chambermaid** tier first, and the **bestiary** (the one true document, misfiled by every reader) runs him up
+the one anomaly: a servant logged into a **name.** **Wylla** is the lever — and the keeper of the whole hidden
+apparatus; the one crack in a nameless empire, found from two angles at once. Gael shrugs off her *own*
+exposure (opsec annoyance; a decoy diary) — but the instant the lever is **Wylla,** carefree stops: cold and
+precise, she decides to *close the channel* (misfiled as protecting the apparatus; the reader sees it's for
+Wylla). Barth reads a cosmology (near-miss, collapses); Alicent finds her own entry; Jaehaerys reads
+kinslayer → accelerates. **Register:** CHILL. **Rung:** off-ladder. **(Arms II.7 — the first death she means.)**
 **Plants:** PLANT[BESTIARY-NAMED-ENTRY] · PLANT[OTTO-LEAK] · PLANT[COMPROMISED-CHANNEL]
 **Fires:** FIRE[BESTIARY] · FIRE[BARTH-NEAR-MISS] · FIRE[OTTO-MONEY-TRACE] (the coin he's traced since II.2 leads him to the journal) · FIRE[SMALLFOLK-HOLD-RISK] (the compromise lands first on the exposed market tier) · FIRE[WYLLA-TRUSTED] (the keeper of the secret things is the named entry — the one crack in an otherwise nameless empire)
 
