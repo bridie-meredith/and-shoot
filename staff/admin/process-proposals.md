@@ -6584,3 +6584,87 @@ pr_ref: null
 defer_until: null
 supersedes: null
 ```
+
+---
+
+## PROP-0053
+
+```yaml
+id: PROP-0053
+created_at: 2026-06-11T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: on-demand
+  source_report: staff/admin/improvement-loop/bridge.ledger.md (pass 1 — ingrid plans)
+  source_verdict: bridge-loop pattern-transfer (brighid audience-health trendline → and-shoot)
+target:
+  type: command
+  path: .claude/commands/and-review.md
+  section: "verdict <book-slug> subcommand — add §Audience health trend step"
+change_type: add
+rationale: |
+  In brighid-creative-writing, oskar writes a structured stink-total table at campaign close
+  (audience_persona | cumulative_stink | prior_campaign_stink | delta | signal_source);
+  ingrid reads it as Axis A of a predecessor-comparison framework. This makes rising audience
+  displeasure visible as a cross-project trendline rather than a series of isolated per-chapter
+  verdicts.
+
+  And-shoot has per-chapter audience verdict files (active-project/audience/<slug>/*.md) but:
+  (a) no structured accumulation of stink signals across chapters into a per-book total, and
+  (b) no book-close health trend read at /and-review verdict.
+
+  The live proof of this gap is DEC-0115: 16 consecutive AIRLESS chapters shipped because each
+  chapter passed its per-chapter Phase 9 cold-read in isolation — the audience-gate blessed the
+  pattern chapter-by-chapter while the cross-chapter signal went unobserved. A stink trendline
+  (per-chapter audience reaction signals accumulated in showrunner memory, read at verdict time)
+  would have flagged the AIRLESS pattern at or around b01c06 — the first chapter where a
+  consistent audience signal could constitute a trend — rather than being discovered
+  retrospectively after the full book shipped.
+
+  PROP-0052 (open) addresses cross-chapter structural sameness (scene-move template). This
+  proposal is orthogonal: PROP-0052 checks structural shape; PROP-0053 checks reader-reaction
+  health. Both are needed; neither subsumes the other.
+
+  Ported from brighid-creative-writing staff/agents/ingrid/project-improvement-tracking.plan.md
+  §Axis A (audience stink delta) and the oskar campaign-close stink-total write discipline.
+  Structure-only port — no persona/voice content crosses repos.
+evidence_refs:
+  - "staff/admin/decisions.md DEC-0115 — 16 consecutive AIRLESS chapters; per-chapter audience-gate
+     blessed unreadable signature with no cross-chapter circuit breaker; cross-chapter accumulation
+     invisible by construction to per-chapter gates"
+  - "staff/admin/process-proposals.md PROP-0052 (open) — structural sameness detector; orthogonal
+     to the reader-reaction health axis proposed here"
+  - "brighid-creative-writing/staff/agents/ingrid/project-improvement-tracking.plan.md §Axis A —
+     audience stink delta; oskar writes campaign-close stink-total table; ingrid reads as Axis A
+     of predecessor-comparison; directly analogous to the and-shoot book-close gap"
+  - "active-project/audience/cape-fic-reader/memory.md — blank; verdict files exist per-chapter
+     but no structured accumulation; confirms the gap is not already filled"
+recurrence_count: 1
+proposed_diff: |
+  Two coordinated changes:
+
+  1. Showrunner memory schema (schemas/showrunner-memory.schema.md): add
+     books[N].chapters[M].audience_reactions[] field. Each entry: persona_slug,
+     chapter_slug, stink_signal (integer: 0=PASS, 1=PASS-WITH-NOTES,
+     2=PASS-WITH-DEPTH-PASS-REQUIRED, 3=FAIL), reaction_summary (one line),
+     source_report (path). Written by /and-stitch Phase 9 immediately after the
+     audience cold-read verdict (one entry per active persona, per chapter).
+
+  2. /and-review verdict <book-slug> (.claude/commands/and-review.md): add a §Audience
+     health trend step after the orchestrator-critic verdict. For each of the three active
+     audience personas: sum stink_signal across all chapters; flag the first chapter at which
+     the rolling per-chapter mean crossed 1.5 (PASS-WITH-NOTES territory). Output: a
+     ## Audience health trend section in the verdict report with per-persona stink totals
+     and first-flag chapter. If first-flag chapter < (total chapters / 2): emit SOFT finding
+     AUDIENCE-EARLY-FLAG naming the first-flag chapter and accumulated stink count — advisory
+     signal that the reader-reaction gap opened in the first half of the book and warrants
+     upstream inspection before book N+1 starts. No blocking gate; advisory only at this step.
+cost_estimate: M
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
