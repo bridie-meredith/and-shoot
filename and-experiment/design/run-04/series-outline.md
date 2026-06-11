@@ -213,8 +213,13 @@ corpse he never predicted — his second move to misfire. **Colder than the Daem
 **Fires:** FIRE[COMPROMISED-CHANNEL] · FIRE[COLLATERAL-DAMAGE] · FIRE[CLEAN-HANDS-DOCTRINE] (the first "clean" kill — paper + poison; "not the demonic path, therefore fine")
 
 ### II.8 · nothing here is mine *(~9)*
-**Beat:** to own a thing you must be beyond reach — a **ship**. Lock II perfected; the ship ordered through
-Wylla (the long con begins). **Register:** HOLD→SPIKE. **Rung:** off-ladder.
+**Beat:** the terminal realization — the empire is purposeless (II.6), she herself is sold (II.4), her
+secrets leaked (II.5): nothing inside these walls is hers. To *own* a thing you must be **beyond reach** — a
+**ship**, which finally aligns the two warring desires (supply AND solitude at once). Lock II perfected; the
+commission begins — ordered through Wylla, paid from the off-books coin, its course the reagent-map drawn
+south (the long con starts). The silent exception: *except Wylla,* the one thing she means to take beyond the
+walls (misfiled as logistics) — and the vessel is built through her own hands. **Register:** HOLD→SPIKE.
+**Rung:** off-ladder.
 **Plants:** PLANT[SHIP] · PLANT[SHIP-COMMISSION] · PLANT[ROUTE-MAP]
 **Fires:** FIRE[NOTHING-MINE] · FIRE[REAGENT-MAP]
 

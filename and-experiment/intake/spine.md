@@ -292,10 +292,11 @@ The engine is the **asymmetry, sealed — and Alicent is the seal.** The observe
 **Gags:** ④ (the cold deed in HR-speak — "offboarding a contractor") · ③ (the maid's *named entry* is why she's in danger — the bestiary's one warmth is the wound) · ⑥ (clean hands by her own accounting — the line at the technique, never the harm) · ⑦ (the exploiter's death-flag cashes).
 
 ### II.8 · nothing here is mine *(~9)*
-**Inside:** the terminal realization — everything inside these walls is held at someone else's pleasure; to *own* a thing you must be beyond reach: a **ship.** Infinite resources AND absolute solitude, aligned. › **Lock II perfected; the ship ordered through the maid (the long con begins).**
+**Inside:** the terminal realization, earned by the whole book — the empire she built has no purpose (II.6), her own body and fate are sold north (II.4), even her secrets aren't hers (II.5): **everything inside these walls is held at someone else's pleasure.** To *own* a thing you must be **beyond reach** — a **ship.** It resolves the war the two desires fought all book: inside the walls, acquiring *costs* solitude and solitude *costs* acquisition; a vessel gives **both at once** — infinite supply and absolute, unclaimable solitude, aligned. › **Lock II perfected.** The commission begins — ordered through Wylla, paid from the off-books dice-coin, its course the route the reagent-map drew **south** to the warm world (`REAGENT-MAP`), three layers of paper deep; **the long con starts.**
+**The one exception (arms Book III).** "Nothing here is mine" carries a silent footnote she will not say aloud: *except Wylla.* The one thing the carefree girl decided was hers to keep (II.5/II.7) is the one she means to take beyond the walls — and she misfiles it, as ever, as logistics ("an asset I won't leave behind," a junior sister, a trusted hand). The reader sees the ship is half for her two desires and half for the girl she loves and won't name. The cruelest fold: the vessel meant to carry Wylla *out* is **built through Wylla's own hands** — the long con runs through the maid, so the named entry that endangers her is also constructing her escape. (→ the "two girls on a ship" ending; the III.6 cost.)
 **Reverse-angle:**
-- 🤨 *The household:* notes the princess has become eerily *content* about her wedding. (She has decided not to attend her own life.)
-**Gags:** ⑤ · the two-desires alignment beat.
+- 🤨 *Alicent / the household:* note the princess has become eerily *content* about her wedding — the eeriest misread, her escape-calm read as bridal acceptance. She has simply *decided not to attend her own life.*
+**Gags:** ⑤ (the centerpiece misread — serene because she's leaving, taken for serene because she's resigned) · the two-desires alignment (the ship is the machine that finally wins both at once).
 
 ---
 
@@ -637,3 +638,14 @@ member); (5) **Otto's second misfire** (his lever yields a corpse he never predi
 supply-cut); (6) landed `COLLATERAL-DAMAGE` + gag ⑦ (the exploiter's death-flag cashes; his dependents
 ruined, unlogged). No new tokens; check-threads unchanged. Review walk now at II.8 "nothing here is mine" —
 the last of Book II.*
+
+*__Book-II revision — FOLDED, cont. (2026-06-11): II.8 "nothing here is mine" — BOOK II COMPLETE.__ The
+closer. Deltas: (1) **`NOTHING-MINE` earned** by the whole book — the empire is purposeless (II.6), she
+herself is sold (II.4), her secrets leaked (II.5): nothing inside the walls is hers; (2) **the two-desires
+resolution** — the ship aligns supply + solitude (the war they fought all book) at last; (3) **the one
+exception (arms Book III)** — *except Wylla,* the thing she'll take beyond the walls, misfiled as logistics;
+the cruelest fold: the vessel meant to carry her out is built through Wylla's own hands (→ "two girls on a
+ship"; the III.6 cost); (4) threaded the **off-books vice-coin funds the commission** + the **reagent-map is
+the ship's southern course** (`REAGENT-MAP` fires). No new tokens; check-threads unchanged. **Book II is now
+fully walked, folded, and internally consistent (II.1–II.8).** Next: Book III (the heist-caper escape) if the
+walk continues — or merge the complete book to main.*
