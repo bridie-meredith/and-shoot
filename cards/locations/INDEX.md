@@ -54,6 +54,9 @@ planetos:
   - loc-still-room
   - loc-maegors-holdfast
   - loc-sick-house
+  - neck-deep-swamp
+  - north-godswood-grove
+  - north-highland-moorland
 
 ---
 
@@ -105,6 +108,9 @@ full:
   - loc-still-room
   - loc-maegors-holdfast
   - loc-sick-house
+  - neck-deep-swamp
+  - north-godswood-grove
+  - north-highland-moorland
 
 scant:
   - loc-red-keep-outer-ring
