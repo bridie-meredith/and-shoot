@@ -12,7 +12,7 @@ tier: supporting
 references:
   - gael-targaryen
   - jaehaerys-i-targaryen
-  - saerys-maester
+  - maester-lorren
   - comedy-register
   - westeros-noble-courtly
   - westeros-grrm-mannerisms

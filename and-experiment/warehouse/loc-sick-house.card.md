@@ -1,7 +1,8 @@
 ---
 name: loc-sick-house
 class: location
-scope: both
+scope: tombstone
+retired_reason: "span-A retires the charity-apothecary laundering cover (the old run-02 'charity keystone' loophole). Live span-A cover = the legit soap/chemistry front + the off-books gambling/entertainment vice-network (seed stolen from the crown; SECT-SEED-THEFT). No single replacement card. Retired 2026-06-11."
 project: and-experiment
 world: planetos
 origin: authored
@@ -14,6 +15,12 @@ references:
 ---
 
 # Location — The Sick-House (Charity Apothecary)
+
+> ⛔ **TOMBSTONE (2026-06-11) — span-B / retired mechanism.** The charity-apothecary cover is **retired** under
+> span-A: the live funding/laundering engine is the legit **soap-chemistry front** + the **off-books
+> gambling/entertainment vice-network** (`VICE-NETWORK`, seeded with crown gold — `SECT-SEED-THEFT`), not a
+> charity. This card is span-B provenance ("Saerys" naming; references the tombstoned `saerys-maester`). **Do
+> not use in span-A.** Authority: `intake/spine.md` II.2/II.3 + the funding-engine foot-note.
 
 The public-facing piety operation. Where Saerys is *seen* to be doing what a charitable princess ought to do. Where the laundress's boy was nursed back. Where the supply lines run past eyes that do not see supply lines because all they see is a child dispensing charity.
 

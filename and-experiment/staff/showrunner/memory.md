@@ -35,12 +35,17 @@
 #     SECT-SEED-THEFT (PLANT II.3 → FIRE III.6 — the cage's own gold buys the escape). check-threads PASS
 #     (plants=84/fires=67, R0–R4). Full delta record + thread-arc confirmation: the dated amendment foot of
 #     intake/spine.md.
-# NEXT — principal-gated (NOT walk increments): (1) Otto/Daemon seating FALLBACK (AU-age, ruled/recommended,
-#   vs rename); (2) the "one-crack" nuance (III.5 give-break vs III.6 register-silence — two sanctioned
-#   once-beats, or reconcile against worksheet §C-5?); (3) optional displaced-cost victim for the crown-theft.
-# BUILD (needs a nod): character cards are already re-derived span-A, but the span-B LOCATION/PROP/CONDITION/
-#   BEHAVIOR cards still carry charity/Saerys framing — RETIRE loc-sick-house, reframe prop-account-book
-#   (charity-cover → soap-front + vice-ledger), sweep saerys-* behavior/formation/reagent cards.
+# DECISIONS CLOSED (2026-06-11, reversible defaults): (1) Otto/Daemon = AU-age court-transposition CONFIRMED
+#   (keep names; rename declined); (2) "one-crack" = two distinct once-beats (III.5 give-spend + III.6
+#   voice-break, non-competing); (3) crown-theft (SECT-SEED-THEFT) stays clean — displaced cost already on the
+#   SMALLFOLK-HOLD-RISK tier. No open creative-fill slots remain.
+# CARD-LAYER BUILD (in progress): ground-truth established — span-A character cards BUILT + supersedes-tagged;
+#   saerys-* + (now) loc-sick-house + viserys-i-targaryen tombstoned; septon-barth dangling ref fixed.
+#   REMAINING (a coordinated 30+-card reference-web migration, NOT piecemeal): Phase-1 ref-rewrite
+#   (saerys→gael / saerys-maester→lorren / saerys-septa→aldith / viserys-i→jaehaerys) + Phase-2 prop/cond
+#   re-derivation (prop-account-book charity→soap/vice + span-A casualties; prop-harwins-list;
+#   cond-saerys-formation-map; saerys-targaryen-behavior→gael-targaryen-behavior; the-factor→tombstone).
+#   Full coordinated plan: staff/margit/span-a-card-migration-workorder.md. Character cards production-ready.
 
 project:
   brief: >
@@ -138,7 +143,8 @@ series:
     - {slug: daemon-targaryen, role: appraising relative drained at I.5 (adult dragon-bonded kinsman, expendable dragon), source: built, tier: supporting}   # seating RULED: court-transposition (§D-slots)
     - {slug: cissa-nursemaid / bessa-wet-nurse / wenda-the-rocker, role: nursery chorus (Book I), source: built (era-clean), tier: minor}
     # PARKED for the Dance book (not this series): daenys-velaryon, ser-harwin-the-patient, nymeria-summer-isles
-    # tombstoned (superseded): saerys-targaryen→gael-targaryen, saerys-maester→maester-lorren, saerys-septa→septa-aldith
+    # tombstoned (superseded): saerys-targaryen→gael-targaryen, saerys-maester→maester-lorren, saerys-septa→septa-aldith, viserys-i-targaryen→jaehaerys-i-targaryen (+alicent warm-cage), loc-sick-house→retired (charity cover dropped; soap-front + vice-ledger)
+    # CARD MIGRATION: coordinated span-A reference-web rewrite + prop/cond re-derivation pending — see staff/margit/span-a-card-migration-workorder.md
   stage_elements:
     - {slug: comedy-register, source: built}
     - {slug: loc-red-keep-interior, source: built}

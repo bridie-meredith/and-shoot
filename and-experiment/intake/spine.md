@@ -375,8 +375,8 @@ not R4 — earlier spine prose called the parked field "R4," colliding with the 
 ~~maid's name~~ → **Wylla** · ~~the Northern betrothal~~ → **the Starks — the Warden of the North's heir** *(retargeted 2026-06-11; was Lord Errold Slate of Blackpool — the King now sells her high to a Great House)* ·
 ~~R2 method (II.7)~~ · ~~R3 method (III.3)~~ · ~~the apex specifics (who the maid kills; how discovery
 happens)~~ → **all resolved 2026-06-09 (below)** · ~~Helaena's role~~ → **parked to the Dance book** ·
-~~Alicent's arc~~ → **knows-and-shields** *(active protector; revised 2026-06-11, was knows-and-does-not-act; worksheet §D-slots)*. **Only remaining call:**
-Otto/Daemon seating — **AU-age (recommended)** vs rename to original era-appropriate figures.
+~~Alicent's arc~~ → **knows-and-shields** *(active protector; revised 2026-06-11, was knows-and-does-not-act; worksheet §D-slots)* ·
+~~Otto/Daemon seating~~ → **RESOLVED 2026-06-11: AU-age court-transposition confirmed** (keep the names "Otto Hightower" / "Daemon"; the HotD-adjacent court re-seated a generation early *with* Alicent — Otto = Gael's maternal grandfather; cards already built to this). The rename-to-original-figures fallback is **declined** (reversible — a future principal call if ever wanted; per §D-slots "call closed, no veto pending" + five resume cycles with no veto). **No open creative-fill slots remain.**
 
 **Names assigned 2026-06-09** (primary cast — full rationale in `intake/character-reactions.md` §Appendix):
 the maid → **Wylla** · the Septa → **Septa Aldith** (Gael's POV still says "the Septa") · the Cassandra
@@ -812,3 +812,29 @@ gold bootstraps the escape** — and it pays off at III.6, where no inquiry trac
 institution that meant to sell her funded her getaway and never knows it.* New token **`SECT-SEED-THEFT`**
 (PLANT II.3 → FIRE III.6, clean 1:1). Folded into the spine II.3/III.6 bodies + the run-04 outline II.3/III.6
 stubs. **check-threads PASS** (plants=84/fires=67, R0–R4 present, no orphans).
+
+*__Pending design decisions — CLOSED at reversible defaults (2026-06-11).__ Resolved the three open calls
+(after five resume cycles with no veto; reversible if the principal later overrides):*
+- ***Otto/Daemon seating → AU-age court-transposition CONFIRMED** (keep the names; Otto = Gael's maternal
+  grandfather; cards already built to this). Rename-to-original-figures declined. Per §D-slots ("call closed,
+  no veto pending"). Spine Open-slots updated; no creative-fill slots remain.*
+- ***The "one-crack" nuance → two distinct sanctioned once-beats.** III.5 = the one outward GIVE-spend (breaks
+  the no-spend hoarding rule); III.6 = the one VOICE-break (grief-armor drops at the apex, witnessed by
+  Wylla). Different categories, non-competing — she gives at III.5, her armor fails at III.6. Worksheet row
+  resolved.*
+- ***Crown-theft (`SECT-SEED-THEFT`) displaced-cost → stays CLEAN, no marquee fall-guy.** Consistent with Lock-II
+  "remote acquisition perfected / the blind machine"; the enterprise's displaced cost is already carried
+  structurally by the existing `SMALLFOLK-HOLD-RISK` tier (the chambermaids hold the exposure), so no new
+  victim is needed. (Reversible — a seed-theft fall-guy could be added as a displaced-cost rung if wanted.)*
+
+*__Card-layer migration — ground-truth established + staged (2026-06-11).__ The warehouse is transitional:
+span-A character cards are BUILT (`gael-targaryen`, `wylla-maid`, `jaehaerys-i-targaryen`, `maester-lorren`,
+`septa-aldith`, `otto-hightower`, `septon-barth`, `alicent-hightower`, `hobb`, `daemon-targaryen`) with
+`supersedes:` tags, and the saerys-* originals are `scope: tombstone`. Remaining (a coordinated build, not
+piecemeal — a 30+-card reference web): the span-B-content **props/conds** (`prop-account-book`,
+`prop-harwins-list`, `cond-saerys-formation-map`, the trade-network/charity threads) need re-derivation;
+`viserys-i` + `the-factor` need tombstoning; `saerys-targaryen-behavior` needs re-derivation to a
+`gael-targaryen-behavior`; a few dangling tombstoned-slug refs need rewriting. Concrete fixes applied this
+pass: `loc-sick-house` + `viserys-i-targaryen` tombstoned; `septon-barth` dangling `saerys-maester` →
+`maester-lorren`. Full coordinated plan: `staff/margit/span-a-card-migration-workorder.md`. The character
+cards are production-ready; the prop/cond re-derivation is the open build.*
