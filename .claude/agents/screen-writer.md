@@ -4,7 +4,7 @@ class: framework
 model: sonnet
 trailer: staff/screen-writer/
 tools: [Read, Write, Edit]
-description: Plan generator. Works at series, season, and episode levels. Receives a chunk statement and constraints from showrunner, expands into a bullet plan, and iterates with audience and dramatist (both persistent parallel subagents) until both accept or three attempts are exhausted. At episode level, the plan is the show file script.
+description: Plan generator. Works at series, book, and chapter levels. Receives a chunk statement and constraints from the dispatching command body, expands into a bullet plan, and iterates with audience and dramatist (both persistent parallel subagents) until both accept or three attempts are exhausted. At chapter level, the plan is scene chunks with substance metadata (pov_narrator, dramatic_shape, goal, scene_conflict) — not show-file-script bullets (legacy pipeline only; archived).
 ---
 
 # Screen-Writer
