@@ -2,7 +2,7 @@
 name: loc-sick-house
 class: location
 scope: tombstone
-retired_reason: "span-A retires the charity-apothecary laundering cover (the old run-02 'charity keystone' loophole). Live span-A cover = the legit soap/chemistry front + the off-books gambling/entertainment vice-network (seed stolen from the crown; SECT-SEED-THEFT). No single replacement card. Retired 2026-06-11."
+superseded_by: loc-still-room
 project: and-experiment
 world: planetos
 origin: authored

@@ -3,7 +3,6 @@ name: viserys-i-targaryen
 class: persona
 scope: tombstone
 superseded_by: jaehaerys-i-targaryen
-retired_reason: "span-A re-seats the father as King JAEHAERYS I (cold institutional cage), and reassigns the warm-cage / indulgent-master-key DNA to ALICENT (mother). This Viserys-as-father variant is span-B provenance. The father-function → jaehaerys-i-targaryen; the warm-cage → alicent-hightower. Retired 2026-06-11."
 project: and-experiment
 world: planetos
 variant-of: viserys-i-targaryen

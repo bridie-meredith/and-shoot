@@ -1,5 +1,20 @@
 # Span-A card-migration work-order
 
+> ## ✅ MIGRATION COMPLETE (2026-06-11)
+> All phases executed and verified. **Phase 1** reference-rewrite (saerys-targaryen→gael-targaryen, 36 cards) ·
+> **Saerys→Gael naming** warehouse-wide · **~20 content cards** re-derived (Viserys→Jaehaerys/Alicent ·
+> charity/sick-house→soap/apothecary · Dance→parked R5 · Daenys→Wylla/apex · Harwin→Quint · Harwin's-list→
+> bestiary · curdle-ladder→span-A) · **the-factor** re-derived (kept — Braavosi supply factor, not Quint) ·
+> **formation-map** slug-renamed saerys→gael · **gael-targaryen-behavior** built · **the 3 license cards**
+> re-derived (legal cover = Alicent's patronage; the orphaned-license/Dance/Lock-III heist DROPPED — King lives,
+> escape = off-books dice-coin per spine III.1; reversible). **Tombstones** schema-clean (`scope: tombstone` +
+> `superseded_by`): saerys-targaryen/maester/septa/behavior, viserys-i, loc-sick-house. **Parked** (`scope:
+> project`, held for the Dance): ser-harwin + prop-harwins-list, daenys(+behavior), nymeria, helaena(+behavior).
+> **QA verified:** no stale span-B in any live card · no live card references a tombstoned slug · no non-schema
+> frontmatter fields · check-threads PASS. **Open (cosmetic, recommended-leave):** the `cond-*-122ac` library
+> slug suffixes (in-world era already corrected; some are shared-library reuse cards that should keep their
+> library names). The detail below is retained as the execution record.
+
 **Authored 2026-06-11** (from the card-layer ground-truth audit during the spine review-walk). Authority:
 `schemas/card.schema.md`. The warehouse is in a **transitional** state — span-A character cards are built, but
 a 30+-card **reference web** still points at span-B slugs, and the prop/cond layer still carries span-B
