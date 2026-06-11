@@ -1,5 +1,5 @@
 ---
-name: cond-saerys-formation-map-red-keep
+name: cond-gael-formation-map-red-keep
 class: condition
 scope: both
 project: and-experiment
@@ -13,7 +13,7 @@ references:
   - gael-targaryen
 ---
 
-# Condition — Saerys's Formation Map of the Red Keep
+# Condition — Gael's Formation Map of the Red Keep
 
 Her internal cultivation reading of the Red Keep: nodes, formation eyes of each control system, coverage gaps, and her Book I vs. Book II state of understanding. Distinct from `loc-red-keep-interior`, which is the physical geography — this card is the cultivation overlay, the reading she imposes on that geography. It determines how she narrates every room she enters, every guard post she clocks, every exit she locates.
 
@@ -27,7 +27,7 @@ Her internal cultivation reading of the Red Keep: nodes, formation eyes of each 
 
 ## Description
 
-From the first day she could walk the Red Keep's corridors, Saerys has been reading them as a formation master reads an array. Every space has nodes (watchers, choke-points, information-collection positions), a formation eye (the mechanism whose disruption would break the control system), a power source (the authority that sustains the formation), and coverage gaps (where the formation cannot see her). She maps these systematically and updates the map as her access expands. The formation-map is not a spatial diagram; it is a control-systems audit maintained in the cultivation-register.
+From the first day she could walk the Red Keep's corridors, Gael has been reading them as a formation master reads an array. Every space has nodes (watchers, choke-points, information-collection positions), a formation eye (the mechanism whose disruption would break the control system), a power source (the authority that sustains the formation), and coverage gaps (where the formation cannot see her). She maps these systematically and updates the map as her access expands. The formation-map is not a spatial diagram; it is a control-systems audit maintained in the cultivation-register.
 
 ---
 
@@ -35,7 +35,7 @@ From the first day she could walk the Red Keep's corridors, Saerys has been read
 
 **Formation type:** Detection + trapping (combined)  
 **Formation eye:** The report-transmission channel — specifically, her father's reception of the septa's accounts. The septa's formation collapses without the channel between observation and consequence.  
-**Nodes:** The septa herself; the attendants who report to the septa; the household staff who communicate attendance and whereabouts; the duty-schedule for who is with Saerys at which hour  
+**Nodes:** The septa herself; the attendants who report to the septa; the household staff who communicate attendance and whereabouts; the duty-schedule for who is with Gael at which hour  
 **Power source:** The Crown's general policy of supervised seclusion for young unmarried princesses  
 **Coverage gaps:** Below the stairs (the septa does not go; she relies on intermediary reports); the still-room (the maester's domain creates a jurisdictional ambiguity the septa cannot resolve by direct inspection); the sick-house (the charity operation creates a parallel authority structure)  
 **Her method for managing this formation:** she does not attack the nodes; she manages the formation eye — her father receives filtered reports (the septa's alarm is modulated by the father's indulgent reception). This is the counter-formation approach.

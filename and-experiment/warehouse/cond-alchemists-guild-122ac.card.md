@@ -16,7 +16,7 @@ references:
 
 # Condition — The Alchemists' Guild (Jaehaerys's reign, ~84–95 AC)
 
-> *Card slug retains the span-B `-122ac` suffix pending the slug-rename batch; the era is span-A (~84–95 AC).*
+> *Slug keeps the library `-122ac` suffix as a bare identifier; the in-world era is span-A — Jaehaerys's long peace, ~84–95 AC.*
 
 The institution Gael encounters in Book I Movement 3. The source of wildfire. The "furnace sect" she petitions and whose product she survives. One of the two institutional encounters that shape her understanding of what she is doing and why the world does not recognize it.
 
