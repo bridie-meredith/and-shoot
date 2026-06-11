@@ -2970,3 +2970,163 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    # ─── improvement-loop/test pass 1 (2026-06-11) ───────────────────────────
+    # /and-review pipeline FAIL findings — 3 HARD residue + 2 high-SIGNAL struct
+    # Source report: active-project/staff/reviews/pipeline-2026-06-11T19-06-38Z.md
+
+    - id: pl-2026-06-11-pipeline-001
+      created_at: 2026-06-11T19:17:00Z
+      created_by: "improvement-loop/test — /and-review pipeline 2026-06-11T19-06-38Z (RESIDUE-001 + RESIDUE-002)"
+      label: uri-026-in-active-schemas
+      target:
+        command: /and-review
+        scope: pipeline
+        phase: null
+      severity: SOFT
+      description: |
+        HARD pipeline finding (RESIDUE class). `URI-026` appears in two active (non-archive)
+        schema files:
+        (a) schemas/audit-report.schema.md line 107: R2 decision-shard section header reads
+            "R2 decision-shard frontmatter (URI-026 follow-on, 2026-05-10)". URI-026 is the
+            pre-overhaul tens-gate URI, superseded by URI-SUBSTANCE-OVERHAUL 2026-05-17.
+        (b) schemas/bones.schema.md line 150: "Phase 6 substance bone-gate (the substance
+            overhaul's replacement for URI-026 tens-gate)."
+        Both are one-line edits for a principal-dispatched fixer session: replace "URI-026
+        tens-gate" with "pre-overhaul tens-gate (see URI-SUBSTANCE-OVERHAUL 2026-05-17)" or
+        remove the attribution. These HARD findings also cause the next chain dispatch to
+        block until the pipeline returns clean.
+      context_refs:
+        - active-project/staff/reviews/pipeline-2026-06-11T19-06-38Z.md  # RESIDUE-001, RESIDUE-002
+        - schemas/audit-report.schema.md  # line 107
+        - schemas/bones.schema.md  # line 150
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-11-pipeline-002
+      created_at: 2026-06-11T19:17:00Z
+      created_by: "improvement-loop/test — /and-review pipeline 2026-06-11T19-06-38Z (RESIDUE-003)"
+      label: tens-prefix-in-active-command-body
+      target:
+        command: /and-review
+        scope: pipeline
+        phase: null
+      severity: SOFT
+      description: |
+        HARD pipeline finding (RESIDUE class). The deprecated `tens:` citation prefix token
+        appears by name in an active command body. .claude/commands/and-write.md Notes section
+        line 503 reads: "`tens:` citation prefix is removed from the recognized list
+        (schemas/bones.schema.md § citation prefixes) — tensometer dropped."
+        The intent is correct (documenting the removal) but the presence of `tens:` in the
+        active command body triggers the residue-scan HARD. Fix: rephrase to "the tensometer
+        citation prefix is removed from the recognized list (schemas/bones.schema.md
+        § citation prefixes)" — no functional change, avoids the deprecated token.
+        One-line edit; dispatch fixer before next pipeline clean run.
+      context_refs:
+        - active-project/staff/reviews/pipeline-2026-06-11T19-06-38Z.md  # RESIDUE-003
+        - .claude/commands/and-write.md  # line 503
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-11-pipeline-003
+      created_at: 2026-06-11T19:17:00Z
+      created_by: "improvement-loop/test — /and-review pipeline 2026-06-11T19-06-38Z (STRUCT-001 + STRUCT-002)"
+      label: r2-mechanics-undeprecated-in-live-schemas
+      target:
+        command: /and-review
+        scope: pipeline
+        phase: null
+      severity: SOFT
+      description: |
+        SIGNAL pipeline finding (high clarity risk). Two active schemas describe retired R2
+        mechanics without deprecation labeling:
+        (a) schemas/audit-report.schema.md lines 106–158: the entire R2 decision-shard section
+            documents /and-facets-r2 emitting per-layer decision shards and a Phase 6 reading
+            f-r2-counts. R2 judging round retired under DEC-0116 (URI-FACETS-SLIM). The section
+            is not marked deprecated and reads as an active authoring target.
+        (b) schemas/dialogue.schema.md line 3: states "The R2 dialogue judge at /and-facets
+            Phase 2 remains as a locked-graph review pass (KEEP / DELETE / REWRITE…)". The R2
+            dialogue judge is explicitly retired under DEC-0116; the current /and-facets command
+            body Notes §1 confirms this. The schema directly contradicts the command body.
+        Fix: add a deprecation notice to the R2 decision-shard section in audit-report.schema.md;
+        update dialogue.schema.md line 3 to state the R2 judge is retired under DEC-0116 and
+        dialogue now ships complete from /and-write Phase 7.
+        Both load-bearing clarity gaps for orchestrators reading these schemas at audit/review time.
+      context_refs:
+        - active-project/staff/reviews/pipeline-2026-06-11T19-06-38Z.md  # STRUCT-001, STRUCT-002
+        - schemas/audit-report.schema.md  # lines 106-158
+        - schemas/dialogue.schema.md  # line 3
+        - .claude/commands/and-facets.md  # Notes §1 (R2 judge retired DEC-0116)
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-11-pipeline-004
+      created_at: 2026-06-11T19:17:00Z
+      created_by: "improvement-loop/test — /and-review pipeline 2026-06-11T19-06-38Z (STRUCT-010 + STRUCT-011)"
+      label: missing-rubric-files-in-phase4-enumeration
+      target:
+        command: /and-review
+        scope: pipeline
+        phase: null
+      severity: SOFT
+      description: |
+        SIGNAL pipeline finding. /and-facets Phase 4 RUBRIC-FIDELITY source enumeration
+        (and-facets.md line 333) lists `rubric-dialogue.md` and `rubric-exposition.md` as
+        rubric files to enumerate anti-patterns from. Neither file is confirmed to exist on
+        disk under design/shoot-v2/.
+        (a) rubric-dialogue.md: the Phase 4 AP-SCAN section also inlines the dialogue anti-
+            patterns (AP-chassis-contamination, AP-modern-hr-speak, AP-deposition-cadence,
+            AP-nominalization-substituting-plain-English), so the audit falls back to those
+            inline definitions. But the RUBRIC-FIDELITY source-enumeration lists the file as
+            an authority — if absent, the enumeration claim is false.
+        (b) rubric-exposition.md: a prior parking-lot item (pl-2026-06-07-pipeline-001)
+            tracked de-referencing this in Phase 1 (DEC-0111), but Phase 4 RUBRIC-FIDELITY
+            still names it. The file is deferred to b02-activation per pl-2026-06-07-pipeline-001.
+        Resolution paths:
+        - For rubric-exposition.md: remove from Phase 4 RUBRIC-FIDELITY source-enumeration
+          (already de-referenced from Phase 1 per DEC-0111; Phase 4 also needs the removal).
+        - For rubric-dialogue.md: either create the file from the inline AP-SCAN definitions
+          already in and-facets.md Phase 4, OR update RUBRIC-FIDELITY to name the inline
+          Phase 4 definitions as the authority (no separate file).
+        Dispatch: fixer session or principal-authored rubric. Related: pl-2026-06-07-pipeline-001.
+      context_refs:
+        - active-project/staff/reviews/pipeline-2026-06-11T19-06-38Z.md  # STRUCT-010, STRUCT-011
+        - .claude/commands/and-facets.md  # line 333 (RUBRIC-FIDELITY source enumeration)
+        - active-project/staff/showrunner/parking-lot.md  # pl-2026-06-07-pipeline-001
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-11-pipeline-005
+      created_at: 2026-06-11T19:17:00Z
+      created_by: "improvement-loop/test — /and-review pipeline 2026-06-11T19-06-38Z (STRUCT-012)"
+      label: aggregate-state-schema-missing-from-claude-md
+      target:
+        command: /and-review
+        scope: pipeline
+        phase: null
+      severity: SOFT
+      description: |
+        SIGNAL pipeline finding. schemas/aggregate-state.schema.md is referenced by
+        /and-substance chapter Phase 0 step 6a as a real schema file, but it is NOT listed
+        in CLAUDE.md's schema authority table. A reader using CLAUDE.md as the index of all
+        schemas would not know aggregate-state.schema.md exists.
+        Fix: add one line to CLAUDE.md schema authority table:
+        "| Aggregate rolling close-state for shipped chapters | schemas/aggregate-state.schema.md |"
+        (or equivalent; description per PROP-0031 which introduced this schema). Trivial one-line
+        edit; principal or fixer session.
+      context_refs:
+        - active-project/staff/reviews/pipeline-2026-06-11T19-06-38Z.md  # STRUCT-012
+        - CLAUDE.md  # schema authority table
+        - schemas/aggregate-state.schema.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
