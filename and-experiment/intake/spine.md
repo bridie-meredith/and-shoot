@@ -388,3 +388,126 @@ the enterprise's market hands (three-tier triple-blind); (6) Wylla enters ancill
 the prophesied one; she never learns). c03 reshaped to "both girls discover the bars." Canonical tokenized
 spine: `design/run-04/series-outline.md` (check-threads PASS). No GUARD contradicted; hard-fence-1 ADAPTed
 (smallfolk → minor-noble POV).*
+
+*__Book-II opening revision — STAGED (2026-06-11).__ From the chapter-by-chapter trope/comedy review walk
+(the II.1 cluster). **Not yet folded into the tokenized `design/run-04/series-outline.md`** — the canonical
+fold (per-chapter body rewrites + token renames + Daemon card Voice + thread-config alias) is the next
+deliberate step and must end on a reconcile + check-threads PASS before the tokenized layer is treated as
+current. Delta set:*
+
+**A. II.1 "the recluse" — the King's display + the favor-misread.**
+1. Beat adds the King **dangling Gael before the court** under strict handling — *silent, say nothing.* The
+   scholar-princess recluse cover (existing) coexists; both the recluse and the silent jewel are perfect
+   cover for the invisible commercial source (II.2). `PLANT[DISPLAY-AS-ADVERTISEMENT]` → FIRE II.4.
+2. She **knows she's a beauty** and is vain about it *as a cultivation achievement* (the glow = power-level
+   readout, escalated past the I.4 first-bloom by the I.5 infusion). She **preens — complicit, advertises
+   herself**, reading the display as the evil-sect honoring its prized jade-beauty disciple; blind only to
+   beauty = sellable bride-stock. Glow stays on the I.4 line (reads supernatural, narrator-unconfirmed).
+   `PLANT[KNOWS-SHE-GLOWS]`.
+3. **Favor-misread (I.3 double-blind, escalated):** the King is a cold transactional *investor inspecting a
+   holding* — never warm, never openly cruel; that register is indistinguishable from an evil-sect
+   patriarch's calibrated favor to a prize disciple. Display → "the sect parades its jewel, my standing
+   rises"; rumour-building → "my dao-name spreads"; the brokered match → "the elder secures me a powerful
+   placement." The colder he is, the more favoured she feels. Both satisfied, both wrong; she preens at
+   being sold.
+4. **Two-desires gag:** being *commanded to be silent and still* is her dream — mandated non-engagement;
+   she cultivates / drafts the reagent-map in her head while displayed. Cost (exposure) softened by the
+   gift (no social labour). Gags: ⑤ (silent radiance = grace/menace) · ② + prize-self-cast · ③ (the maid log).
+
+**B. Alicent at II.1 — stacked beat + the Dragonstone near-break.**
+5. Stack her existing relief ("thank the Seven, she's taken up reading") with a new **display-anxiety:** the
+   King is feeding the very reverence she spends herself burying (a revered child is a *used* child).
+6. **Dragonstone near-break** (her fret→grief mid-rung): she would flee the King's scheme to Dragonstone
+   *but cannot take Gael* — a princess is the King's dynastic asset to dispose of, not the Queen's to
+   remove; doubly so now he is monetising her. The legitimate maternal escape is sealed shut — exactly what
+   Gael later does *illegitimately* (the ship) — and the gut-punch: the mother who would give anything to
+   take her is **left behind** while the maid gets the berth. `PLANT[ALICENT-CANT-EXTRACT]` → III.6.
+
+**C. King throughline II.1→II.4 (dangle → build rumours → sell).** Jaehaerys upgraded from passive disposer
+to **active predatory investor face** across early Book II: II.1 dangle · II.1–II.3 inflate the legend ·
+II.4 the auction closes. Gives early Book II a King face-beat with teeth (replaces II.1's thin Barth-only
+soft near-miss; keep Barth as a grace note).
+
+**D. II.4 "the betrothal" — the Starks (retire Errold Slate); Gael carefree.**
+7. **Target change:** retire **Lord Errold Slate of Blackpool (minor lord, "cheap")** → the **Starks /
+   Warden of the North** (the *heir* — keep the groom a young cipher so the *destination* carries the
+   dread, not a creepy-old-man note doubling Daemon). The King's build-up *succeeds* — a Great-House
+   alliance binding Winterfell, real political value, so his cold calculus is legible.
+8. **The curdled legend is the mechanism:** the maegi/omen rumours (E) *repel* southron houses but
+   *attract* the Starks — grim First-Men North, unspooked by southron omen-talk, who read "a girl who
+   killed a dragon and never sickens" as an *asset.* The rumours that tank her southern price raise it in
+   the North; the buyer pool filters to the one house grim enough to want an omen-bride.
+9. **Gael's read:** the North = the **frozen demonic / evil ice-sect** (Winterfell = ice-sect stronghold;
+   the Wall + the Others = the demon-horde it borders); the betrothal = **jade-beauty sacrifice-bride to
+   the enemy sect / claimed by the evil sect's young master.** Leaves the North reading evil/bad (principal
+   preference). North enters gag ②'s pecking-order as a top-tier rival sect ("final boss?" candidate); the
+   Stark heir = a "young master" entry.
+10. **Affect = ditzy / carefree, NOT dread.** She takes the worst news of her life without a flicker
+    (gag ⑤ payoff) — files the destination as "would snuff my furnace, hard pass," knows the
+    don't-make-them-lose-face rule, and serenely plans to **bail to cultivate outside 'the plot.'** She
+    treats the forced marriage as a **logistics deadline** (gag ④: the ship must clear the wedding date).
+    **GUARDRAIL — the `BETROTHAL-DREAD` token's owner is the reader / Alicent / realm, NEVER Gael:** zero
+    anxiety in her interiority; a draft that has Gael fretting the marriage is mis-rendered.
+11. **Escape-method logic (the III payoff):** slighting a great sect — evil or not — triggers the
+    revenge-arc / hunt-the-villainess trope; she will not take the villainess role (gag ②/⑥), so she
+    vanishes *clean* (the quiet ship-disappearance), not a public jilt. Motivates the *shape* of the
+    Book-III escape from inside her wrong worldview.
+12. **Alicent's II.4 beat reframe:** from "furious he's selling her *cheap*" → **powerless against an
+    unimpeachable match** (cannot argue a Great-House alliance is beneath them; her objection collapses to
+    pure maternal grief — silenced by the match's own prestige; ties to the Dragonstone wall).
+
+**E. Daemon fallout + the Book-II realm-read hardening (maegi).**
+13. **Daemon post-drain = vocal laughingstock, NOT gagged.** Loud, accusing, a prince — and dismissed
+    behind his back as a ruined, jealous husk (discredited by ridicule, not silence; "gagged by the one
+    weapon nobody believes in" re-reads as gagged by *disbelief*). **CARD EDIT (staged):** rewrite
+    `warehouse/daemon-targaryen.card.md` Voice (currently flinching / unspeakable / won't-be-in-a-room) →
+    vocal / ranting / openly accusing; diminished in standing, not volume. The cruelty: he is dismissed
+    *because* she ruined him — she discredited her own accuser.
+14. **The confrontation (early Book-II counter-beat):** Daemon openly denounces her — *demon, she killed
+    Caraxes, not human* — and he is right, and the court snickers behind their hands. Gael files it as
+    **sour-grapes rival villainy** (gag ②/⑥: "petty, and a *bad* move"), serenely unbothered. Opens Book II
+    by showing the I.5 cost still live.
+15. **The assassin (into II.4–II.5):** ignored, **Daemon himself** sends a knife (Baelon proxy not needed —
+    **Baelon dropped**; Daemon carries the whole thread). **GUARDRAILS:** fails *mundanely* (her passive
+    body-tempering won't take the blade / the omen-reputation spooks the killer / the household catches it)
+    — **NOT a fourth spend** (GUARD-1 fixes spends at I.1/I.5/III.5) and **NOT Gael's first premeditated
+    kill** (II.7 keeps that; she likely never registers the attempt, or misreads it as a rival sect's knife
+    = flattering proof she matters). The loop: his accusations make him a joke, his knife makes him a
+    villain, both fail, she sails on.
+16. Both feed the disposal: a prince loudly crying *demon* + a botched murder + the dead dragon = embarrassing
+    noise the King resolves by marrying the problem to the far North. The withered prince is part of *why*
+    II.4 happens.
+17. **Maegi hardening (Book-II realm-read):** the dark read crystallises from diffuse omen (Book I) into a
+    **concrete sorcery category — maegi / the dragon-witch.** Not baseless (broken-clock: she genuinely does
+    magic-adjacent things; the frame is wrong but points at something real; narrator-unconfirmed). A **real
+    lethal category** (maegi burn; the Faith's enemy) → makes Alicent's shield life-or-death and feeds the
+    King's quiet-disposal logic; **contained, never resolved** (princess + blood of the dragon + the
+    reverence-pole counterbalances → no actual witch-trial; that would derail the genre).
+18. **Gael collects it (gag ①):** "Maegi," "Sorceress," "the Dragon-Witch" = proud earned dao-epithets /
+    renown (a powerful cultivator is *supposed* to be feared by orthodox sects); gag ⑤ rides on top
+    (feared-as-witch = power preceding her); indignant they brand her *demonic* right after she renounced
+    the demonic path at I.5 (keeps the gains, naturally). `PLANT[MAEGI-RUMOR]` / `PLANT[MAEGI-TITLE]` →
+    `FIRE` at the III escape (the legend does her intimidation; gag ① capstone).
+19. **Mirror-flip asymmetry holds:** she *hears* the slurs and collects them (witch / demon / maegi reach a
+    child as cruel whispers + Daemon's shouting); Alicent keeps the *reverence* (prophesied-one) sealed.
+    Dark talk in, awe withheld — louder, same asymmetry. The II.4 cacophony: Daemon "demon," temples
+    "prophesied one," King "useless" — three maximal readings, she oblivious to all.
+20. **Faith = ambient whisper (default), Barth deflects** the crude "witch" framing (his closest-miss read
+    is more sophisticated and self-interested than a burning). No named Faith inquisitor unless re-opened.
+
+**F. Tokens to fold (next):** add `DISPLAY-AS-ADVERTISEMENT` (II.1→II.4) · `KNOWS-SHE-GLOWS` (II.1) ·
+`ALICENT-CANT-EXTRACT` (II.1→III.6) · `MAEGI-RUMOR` / `MAEGI-TITLE` (II.1–II.5 → III escape); **rename
+`SLATE-MATCH` → `STARK-MATCH`** everywhere (token + `design/run-04/thread-config.txt` alias + the spine
+name-resolution table; retire "Lord Errold Slate of Blackpool").
+
+**G. Guardrails re-affirmed (do not break on fold):** GUARD-1 three-spends (I.1/I.5/III.5) — the Daemon
+knife adds none; II.7 retains "first premeditated kill"; Rule-22 no ledger register; setting-blind (genre
+lens, no Westeros meta-knowledge); magic narrator-unconfirmed; `BETROTHAL-DREAD` owner = reader/Alicent.
+
+**H. Parked / unratified (NOT folded):** S1 weirwood→North prison-irony (the one place she once coveted
+offered as a cage) — left parked; Baelon as parallel griever — dropped.
+
+*Open principal calls applied as defaults this stage (reversible): Faith ambient (not a named inquisitor);
+Baelon dropped. Canonical-fold-next: per-chapter body rewrites in this spine (II.1, II.4) + tokenized
+`series-outline.md` Book-II edits + Daemon card Voice + thread-config alias, then reconcile + check-threads
+PASS. Review walk paused at II.2 "the startup."*
