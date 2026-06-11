@@ -153,16 +153,20 @@ parks all the exposure on the **chambermaids** while Otto first pulls at the unu
 ### II.3 · the world map *(~7–8)*
 **Beat:** the want widens — diverse reagents *and* the **knowledge to reach them** (routes, tongues, what
 each port holds); she starts the **reagent map** (half shopping-list, half escape-chart) and wants, serenely,
-all of it. To fund the shady far reach she needs *untraceable* coin — and finding King's Landing too young
+all of it. To fund the shady far reach she needs *untraceable* coin — **so she steals the seed from the
+crown** (the court's own coffers / household funds, siphoned through the maester's books she already owns; to
+her, righteously sacking the **evil sect's** vault — ⑥ / `COURT-AS-EVIL-SECT`; the cage's own gold bootstraps
+the escape). Then, finding King's Landing too young
 for any gambling-hall, its diversions only **drink, whores, and crude bloodsport,** she **fills the vacuum:**
 enters via a doped fighting-beast stable (her poison/biology edge) and floods the gap with **games it has
 never seen** (past-life formats + the house-math she alone understands), founding the city's first
-**underground gambling trade.** Run through Wylla → cut-outs → factors, deliberately *quiet* (spread thin,
+**underground gambling trade** (the stolen seed grown into a self-sustaining off-books engine). Run through
+Wylla → cut-outs → factors, deliberately *quiet* (spread thin,
 lose for cover, a faceless phantom kingpin for a decoy); the coin pours off-books toward the reagents and the
 ship. She mistakes the vice-empire for her sect's **worldly branch rendering tribute,** the doped hounds for
 *spirit-beasts she's tempering.* Barth, charmed she studies geography, never sees the voyage. (South glows;
 the North is barren — arming II.4.) **Register:** HOLD→SPIKE. **Rung:** off-ladder.
-**Plants:** PLANT[REAGENT-MAP] · PLANT[WARM-DESTINATIONS] · PLANT[VICE-NETWORK] · PLANT[BEAST-DAO-MISREAD] · PLANT[OFFBOOKS-ACCOUNT] · PLANT[FACTOR-NETWORK] · PLANT[WYLLA-TRUSTED]
+**Plants:** PLANT[REAGENT-MAP] · PLANT[WARM-DESTINATIONS] · PLANT[VICE-NETWORK] · PLANT[BEAST-DAO-MISREAD] · PLANT[OFFBOOKS-ACCOUNT] · PLANT[FACTOR-NETWORK] · PLANT[WYLLA-TRUSTED] · PLANT[SECT-SEED-THEFT]
 
 ### II.4 · the betrothal *(~8)*
 **Beat:** the King's build-up closes — he sells her **high, to the Starks** (the Warden of the North's heir;
@@ -241,9 +245,11 @@ Gael, it "clears the death flag" on the one person she can't lose. **Register:**
 **Beat:** Lock III at full scale. Discovery via **Otto** (he connects the vanished factor + the ship
 payments + the maid's movements; the pursuer **Wylla kills** is his man — the named entry dooms the person
 it warmed). Wylla leaves her house and name behind to board; the realm's post-mortem reaches for any
-explanation — a foreign prince, a god, the prophecy — anything but a princess with **agency**. The ship sails
+explanation — a foreign prince, a god, the prophecy — anything but a princess with **agency**; and not one
+inquiry traces the coin home — **the crown's own stolen seed-gold (II.3) bought the hull,** the cage funding
+its own loss. The ship sails
 south. **Register:** SPIKE (loudest since Book I). **Rung:** R4 (the apex).
-**Fires:** FIRE[SHIP] · FIRE[MAID-TEMPERED] · FIRE[EXCURSION-RISK] · FIRE[CITY-KNOWLEDGE] · FIRE[GHOST-LEGEND] · FIRE[CLOCK-CONCRETE] · FIRE[WARM-DESTINATIONS] · FIRE[BESTIARY-NAMED-ENTRY] · FIRE[OTTO-LEAK] · FIRE[WYLLA-CAGED] (she gives up her noble future — the two-girl cage opens) · FIRE[PROPHESIED-LEGEND] (the realm prefers the legend to her agency, sealed; she never learns) · FIRE[SPY-MISREAD] (the monitor-disciple she feared at I.3 is the one who kills for her — the misread inverted at the apex) · FIRE[CLEAN-HANDS-DOCTRINE] ("clean hands" at last means the blood is on Wylla — the I.5 doctrine carried to its endpoint) · FIRE[ALICENT-SHIELD] (the shield's terminus — Gael sails, never knowing her mother held the seal; the protector left behind) · FIRE[ALICENT-CANT-EXTRACT] (the mother who'd have fled with her, had the King allowed it, is left on the shore — the legitimate escape she could never make)
+**Fires:** FIRE[SHIP] · FIRE[MAID-TEMPERED] · FIRE[EXCURSION-RISK] · FIRE[CITY-KNOWLEDGE] · FIRE[GHOST-LEGEND] · FIRE[CLOCK-CONCRETE] · FIRE[WARM-DESTINATIONS] · FIRE[BESTIARY-NAMED-ENTRY] · FIRE[OTTO-LEAK] · FIRE[WYLLA-CAGED] (she gives up her noble future — the two-girl cage opens) · FIRE[PROPHESIED-LEGEND] (the realm prefers the legend to her agency, sealed; she never learns) · FIRE[SPY-MISREAD] (the monitor-disciple she feared at I.3 is the one who kills for her — the misread inverted at the apex) · FIRE[CLEAN-HANDS-DOCTRINE] ("clean hands" at last means the blood is on Wylla — the I.5 doctrine carried to its endpoint) · FIRE[ALICENT-SHIELD] (the shield's terminus — Gael sails, never knowing her mother held the seal; the protector left behind) · FIRE[ALICENT-CANT-EXTRACT] (the mother who'd have fled with her, had the King allowed it, is left on the shore — the legitimate escape she could never make) · FIRE[SECT-SEED-THEFT] (the crown's own stolen seed-gold bootstrapped the vice-network that paid for the ship — the evil sect funded its prize's exit, untraced)
 
 ### Epilogue
 Two girls on a ship, the continent behind, the warm south ahead. Both desires satisfied; one of them now a
