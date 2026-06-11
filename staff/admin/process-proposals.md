@@ -6584,3 +6584,101 @@ pr_ref: null
 defer_until: null
 supersedes: null
 ```
+
+---
+
+## PROP-0053
+
+```yaml
+id: PROP-0053
+created_at: 2026-06-11T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: on-demand
+  source_report: staff/admin/improvement-loop/bridge.ledger.md
+  source_verdict: improvement-loop/bridge pass-1 (pattern mined from brighid-creative-writing ingrid auto-trigger registry)
+target:
+  type: command
+  path: .claude/commands/and-review.md
+  section: "verdict <book-slug> subcommand — add Phase 5 book-close admin pattern aggregation"
+change_type: add
+rationale: |
+  Admin's process-critic mode fires per-failure (non-PASS verdict from any chain gate), but there
+  is no mechanism that accumulates admin proposals across a book's chapters and identifies PATTERN
+  CLASSES — cases where the same gate gap fired N>=2 times in the same book. The b01 experience
+  is the clearest evidence of this gap: the ABSTRACTION-AS-SUBJECT / ledger-register failure mode
+  produced proposals (or should have) across ~16 chapters before DEC-0115 reversed the root design
+  — a structural fix proposable at c03 if aggregation had flagged that the same gate gap recurred
+  across c01, c02, and c03. Individual per-failure proposals name the right target but cannot
+  distinguish "one-off exception" from "structurally deficient gate" — that distinction requires
+  a count across the book.
+
+  The source pattern in brighid-creative-writing is ingrid's auto-trigger registry
+  (staff/agents/ingrid/project-improvement-tracking.plan.md §Auto-trigger registry, filed
+  2026-04-27). At project close, ingrid checks specific signal conditions against project critic
+  artifacts and fires targeted workshop routines when conditions are met. The key structural
+  properties: (1) falsifiable signal conditions checked against on-disk artifacts, (2) targeted
+  dispatch rather than open-ended investigation, (3) dispatch-ID tracking with chase at the next
+  retrospective, (4) compounding — each triggered session adds to a rolling pattern surface
+  consumed by downstream gates. This is a process/structure pattern with no persona content.
+
+  For and-shoot the adapted form is a Phase 5 added to /and-review verdict: after the
+  orchestrator-critic verdict and per-verdict admin process-critic dispatch (Phase 4.5), scan
+  staff/admin/process-proposals.md for proposals whose evidence_refs touch the current book's
+  chapters; cluster by target.path + change_type; any cluster with count >= 2 is a PATTERN CLASS.
+  Admin fires in pattern-synthesis mode for each class, returning a structural-limitation
+  diagnosis and the cheapest single-file fix. Cross-book patterns (same class across two books)
+  get a SOFT parking-lot item targeting the next book's Phase 0. The step is always-fires, SOFT,
+  non-blocking — it does not change the orchestrator-critic verdict.
+evidence_refs:
+  - "staff/admin/decisions.md DEC-0115 — ledger-register prohibition was a structural fix reverse-
+     engineered from ~16 b01 chapters; pattern aggregation would have surfaced it at c03"
+  - "staff/admin/process-proposals.md PROP-0046/0047/0048/0049/0050 — five proposals in the same
+     session addressing the same ledger-register class from five different gate entry-points; an
+     aggregation step would have collapsed these into one structural proposal at first recurrence"
+  - "staff/admin/process-proposals.md PROP-0052 — structural-sameness scan proposed after b01
+     mid-book sameness was diagnosed; same class of gap (per-chapter gates cannot see cross-chapter
+     accumulation; pattern only visible in aggregate)"
+  - "brighid-creative-writing/staff/agents/ingrid/project-improvement-tracking.plan.md §Auto-trigger
+     registry (2026-04-27) — source pattern: signal conditions + targeted dispatch + dispatch
+     tracking + compounding rolling window"
+recurrence_count: 1
+proposed_diff: |
+  Add Phase 5 to the 'verdict <book-slug>' subcommand body in .claude/commands/and-review.md,
+  after Phase 4.5 (admin process-critic on non-PASS verdict). Phase 5 always fires (PASS or not).
+
+  Phase 5 — Book-close admin pattern aggregation (SOFT; non-blocking):
+    1. Read staff/admin/process-proposals.md; collect proposals where ANY evidence_refs entry
+       contains the current book slug OR any chapter slug under it. Include proposals with
+       status: open OR status: accepted with pr_ref: null (accepted but not yet implemented).
+       Skip rejected / deferred / superseded.
+    2. Cluster collected proposals by {target.path, change_type}. Each cluster is one gate-gap
+       instance set.
+    3. Any cluster with instance_count >= 2 is a PATTERN CLASS. Record: target.path |
+       change_type | instance_count | chapter_slugs_affected. Additionally grep evidence_refs for
+       any prior-book slug — if found, mark cross_book: true.
+    4. If zero pattern classes: emit "Phase 5: no pattern classes." Exit.
+    5. For each pattern class: dispatch admin (mode: pattern-synthesis) with the cluster list,
+       evidence paths, and the gate file named in target.path. Admin returns: (a) structural-
+       limitation diagnosis (one paragraph — why the gate fires per-failure but misses the class),
+       (b) cheapest single-file change that would prevent the class, (c) proposed PROP-<N+1> if
+       the structural fix is not already an open proposal.
+    6. Persist to staff/reviews/pattern-report-<book>-<timestamp>.md. YAML front-matter:
+       book_slug, verdict_timestamp, pattern_count, cross_book_count. No new schema needed
+       (reuse audit-report.schema.md structure).
+    7. For each cross_book pattern class: append one SOFT parking-lot item targeting
+       /and-substance book <next-book> Phase 0, body: "Pattern class <target.path / change_type>
+       recurred across books — structural fix pending; surface at book-open."
+    8. Exit Phase 5. Verdict subcommand result is unchanged.
+
+  Max new dispatches per verdict call: 0-N admin pattern-synthesis calls (N = pattern classes
+  found; expected 0-3 per book). No new schema. Parking-lot items use existing schema.
+cost_estimate: M
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
