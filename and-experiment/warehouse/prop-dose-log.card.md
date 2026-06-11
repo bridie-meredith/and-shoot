@@ -15,7 +15,7 @@ references:
 
 # Prop — Dose Log
 
-The mithridatism record. Simultaneously the most scientifically sound document Saerys has ever produced and the most cosmologically incorrect.
+The mithridatism record. Simultaneously the most scientifically sound document Gael has ever produced and the most cosmologically incorrect.
 
 ---
 

@@ -27,7 +27,7 @@ Hallmarks of use: the bowl is scratched. The scratches are fine, distributed acr
 
 Weight: negligible; lighter than it feels like it should be; the silver is thin-gauge ornamental, not working cutlery. It was never meant to grind a dead dragon egg. It performed the function anyway.
 
-Temperature: silver takes the temperature of its environment quickly; on the day of I.1 it was room-temperature, then body-temperature as Saerys held it for an extended period.
+Temperature: silver takes the temperature of its environment quickly; on the day of I.1 it was room-temperature, then body-temperature as Gael held it for an extended period.
 
 ---
 
@@ -35,7 +35,7 @@ Temperature: silver takes the temperature of its environment quickly; on the day
 
 The christening spoon is the founding *object* of the Cauldron-Belly in a way the cradle-egg is not. The egg was a given — placed in her cradle before she could make choices; she transformed it. The spoon she reached for. It was the nearest implement. It was not given to her for this purpose. The selection was practical and three years old and entirely correct: the bowl is the right shape for grinding, the handle is the right length for leverage, and the silver is soft enough to work against the egg's harder mineral surface without destroying the tool.
 
-She kept it. After I.1, the christening spoon lives in the nursery as a seemingly-normal object with an abnormal history. It is her first functional tool. It is also the comedy prop for the belly-as-cultivation gag: subsequent appearances (a toddler reaching for it when something else needs to be "processed," a nurse finding it where it should not be, the spoon's presence in a scene as a single low-comedy signal that Saerys is about to eat something inadvisable) play off the founding act.
+She kept it. After I.1, the christening spoon lives in the nursery as a seemingly-normal object with an abnormal history. It is her first functional tool. It is also the comedy prop for the belly-as-cultivation gag: subsequent appearances (a toddler reaching for it when something else needs to be "processed," a nurse finding it where it should not be, the spoon's presence in a scene as a single low-comedy signal that Gael is about to eat something inadvisable) play off the founding act.
 
 The chapter slug "the-christening-spoon" (I.1) names it rather than the egg. This is intentional: the egg was given; the spoon was chosen; the choice is the act.
 
@@ -53,10 +53,10 @@ The chapter slug "the-christening-spoon" (I.1) names it rather than the egg. Thi
 
 ## Sensory Hooks
 
-- Silver's clean metallic taste when held between the teeth, which is the wrong way to hold it and which Saerys does briefly during the grinding task
+- Silver's clean metallic taste when held between the teeth, which is the wrong way to hold it and which Gael does briefly during the grinding task
 - Weight: lighter than it looks; the balance tips toward the bowl when held at the handle's end
 - Surface: the engraved decoration on the handle has a raised-edge texture that catches under a fingernail
-- Sound of grinding: the fine high-pitched mineral scrape, as described on the cradle-egg card — the spoon transmits this upward through the handle as a faint vibration; Saerys found this uninteresting; the nursery staff found it appalling
+- Sound of grinding: the fine high-pitched mineral scrape, as described on the cradle-egg card — the spoon transmits this upward through the handle as a faint vibration; Gael found this uninteresting; the nursery staff found it appalling
 - The grey powder residue in the bowl's scratches, when the spoon is found after I.1: fine, pale, chalky; it does not clean out fully; the ghost of the founding act stays in the metal
 
 ---
@@ -69,7 +69,7 @@ Portable. Small enough to fit in a pocket, a sleeve, or a cupped hand. Weight: n
 
 ## Carry State
 
-Post-I.1 location: the nursery of Maegor's Holdfast, in or near Saerys's things. Not carried on the body outside the nursery context. Present as a background prop in any nursery-set scene. Its location is stable until the move out of Maegor's Holdfast at Book I's close; after that, its custody is unspecified but Saerys would not discard it.
+Post-I.1 location: the nursery of Maegor's Holdfast, in or near Gael's things. Not carried on the body outside the nursery context. Present as a background prop in any nursery-set scene. Its location is stable until the move out of Maegor's Holdfast at Book I's close; after that, its custody is unspecified but Gael would not discard it.
 
 Weight and concealment: small, light, easy to conceal if needed, but not deliberately concealed — it is a christening spoon; nobody looks for it.
 

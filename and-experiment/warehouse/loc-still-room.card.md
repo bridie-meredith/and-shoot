@@ -16,7 +16,7 @@ references:
 
 # Location — The Still-Room
 
-The operational center of Saerys's project. The place that smells like her. The space she has built inside the space she was given.
+The operational center of Gael's project. The place that smells like her. The space she has built inside the space she was given.
 
 In her cultivation-register, the still-room is the Inferior Path's first completed domain formation — a space she has arranged according to an internally consistent theory of optimal qi-flow that is actually an internally consistent theory of efficient workflow and contamination prevention. The "qi-gathering formation" is ergonomics. The formation is real; the qi is not flowing through it.
 

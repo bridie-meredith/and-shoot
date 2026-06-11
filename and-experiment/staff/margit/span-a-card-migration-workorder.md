@@ -84,17 +84,18 @@ two parked behavior cards) → `saerys-targaryen-behavior` (repoint when `gael-t
   manifest, both columns). Re-derived: Saerys→Gael, Viserys I→Jaehaerys I, the charity/sick-house cover →
   **apothecary/scholar-princess** cover. *(Quint, if ever a full card, is a separate `lothar-quint` build —
   the III.3 pit-factor-grown-greedy, distinct from Moro.)*
-- ⚠ **`prop-account-book` + the two `cond-inferior-path-*` cards are COSMOLOGY-DEPENDENT — flagged for
-  design-grounding (do NOT do as a naming pass).** Finding 2026-06-11: **"the Inferior Path" is a span-B
-  doctrine term — it does NOT appear in the live span-A docs** (spine / character-profiles / run-04). Span-A
-  frames her (wrong) cultivation as "the dao / the cultivation cosmology / the evil-sect court," with no
-  single doctrine NAME surfaced. So these cards' "Inferior Path natal artifact" / doctrine-hierarchy framing
-  needs **genuine re-derivation against the span-A cultivation cosmology** (`design/cultivation-library/`),
-  not a Saerys→Gael swap. **Open grounding question:** does span-A keep a named doctrine (and if so what), or
-  is it the generic "her cultivation cosmology / the dao"? Resolve (cultivation-library research or a principal
-  steer) before re-deriving these three. `prop-account-book` also needs: charity-cover→soap/vice-ledger; the
-  span-B casualties in its "one place a death is entered" beat (Harwin / Daenys) → span-A (Quint "the account
-  is closed" III.3 · the II.7 exploiter · the III.6 apex uncosted debt).
+- ✅ **CORRECTION (2026-06-11): "the Inferior Path" is span-A-VALID — NOT a span-B coinage; do NOT defer
+  these cards as cosmology-blocked.** It's absent from the *narrative* docs (spine/character-profiles) only
+  because those use plain language; the **cultivation-library defines it** as her self-conceived path-name /
+  operational philosophy (`cultivation-cosmology-dao-law-and-dark-paths.md`: *"the Inferior Path does not
+  require Heavenly Dao approval… is a precise statement of her actual operational philosophy"*). The cosmology
+  (Inferior Path · Heavenly Demon self-label · Cauldron-Belly · human-cauldron) is unchanged span-A→span-B.
+  So `prop-account-book` + `cond-inferior-path-*` **keep the Inferior-Path framing** and just need the
+  **standard fixes**: Saerys→Gael; the span-B **casualties** (Harwin → Quint III.3 / the II.7 exploiter;
+  Daenys → the III.6 apex uncosted debt); charity-cover → soap/vice; and **Dance-scale content** (national
+  battlefield / harvester) → reframed as *parked future* (span-A ends at the escape, R4 III.6; the
+  national-scale curdle is the parked Dance, R5). *(The cultivation-library docs themselves are still
+  Saerys-named + carry Dance-scale content — a parallel lower-priority migration, not card-layer.)*
 
 **Phase 3 — audit-then-keep-or-fix (the "likely-valid" bucket).** For each cond/prop in the audit bucket:
 spot-check for span-B casualty/charity/Saerys content. Most are mechanics (poison pharmacology, reagent-tier,
@@ -114,4 +115,56 @@ provenance); record the batch in `staff/margit/card-build-manifest.md`.
 - **Gate:** none of this is blocked — the Otto/Daemon seating is ruled (AU court-transposition, keep names),
   so the otto/daemon cards are final. The build is unblocked.
 - **Concrete fixes already applied (2026-06-11):** loc-sick-house + viserys-i-targaryen tombstoned;
-  septon-barth dangling ref fixed.
+  septon-barth dangling ref fixed; Phase-1 ref-rewrite (36 cards); the-factor re-derived; 5 naming-only cards
+  migrated (see §E).
+
+---
+
+## E. Full triage (2026-06-11 — every remaining card classified)
+
+> **Traps (do NOT blind-sed):** (1) the **live replacement cards** (gael-targaryen, maester-lorren,
+> septa-aldith, jaehaerys-i-targaryen, alicent-hightower) carry *correct* "Saerys"/"Viserys" mentions in
+> `supersedes:` + provenance prose — **preserve them.** (2) **Parked-Dance cards** (daenys-velaryon +behavior,
+> nymeria-summer-isles, helaena-targaryen-122ac +behavior, ser-harwin-the-patient) are Saerys/Daenys/Harwin-
+> heavy but **SKIP** — they're the parked installment, not span-A-live. (3) lowercase **"slate"** = the
+> writing-material, NOT Errold Slate — never sed `slate→Stark` blind. (4) **"Viserys"** maps to *Jaehaerys*
+> (cold father/king) OR *Alicent* (warm-cage) depending on context — read before swapping.
+
+**DONE:** Phase-1 refs (36 cards) · the-factor (re-derived) · **5 naming-only:** cond-maesters-cabinet ·
+loc-red-keep-interior · loc-still-room · prop-christening-spoon · prop-dose-log · **tombstoned:** loc-sick-house ·
+viserys-i-targaryen (+ pre-existing saerys-targaryen/maester/septa).
+
+**ALREADY CLEAN (no action):** the span-A character cards + the servant minors (bessa/mella/cissa/wenda/
+mistress-bryony/nona/pella/marra*/mistress-orla/nesta — bodies already "Gael", refs fixed). *(marra has one
+"pious" → check it's not a stale charity/piety-cover line.)*
+
+**CONTENT-FIX bucket (Saerys→Gael PLUS the listed span-B content — per-card, NOT blind-sed):**
+| Card | Span-B content to fix |
+|---|---|
+| comedy-register | Saerys + Daenys/Harwin **examples** → Gael/Quint; **battlefield** (Dance-scale) → parked-future framing |
+| cond-alchemists-guild-122ac | Saerys + Viserys + **sick-house** + Dance |
+| cond-heartless-dao-scripture | Saerys + Daenys; ref `saerys-targaryen-behavior` (Phase-2 behavior build) |
+| cond-heavenly-dao-calibration | Saerys + Daenys + **charity/sick-house** + Dance |
+| cond-inferior-path-doctrine | Saerys + Daenys + Dance — **keep Inferior-Path framing** |
+| cond-inferior-path-technique-hierarchy | Saerys + national-scale (Dance) — keep framing |
+| cond-trade-network-formation | Saerys + Viserys + **charity/sick-house** (+ the loc-sick-house dangling ref) + Dance → soap/vice cover |
+| cond-transmigration-previous-life | Saerys + Daenys |
+| cond-westeros-reagent-tier-map | Saerys + **charity/sick-house** + Dance |
+| cond-westerosi-poison-pharmacology | Saerys + Dance (note: "slate" here is the material — leave) |
+| loc-maegors-holdfast | Saerys + Viserys; ref to cond-saerys-formation-map (slug rename pending) |
+| prop-account-book | **charity/charitable** → soap/vice; **Harwin/Daenys** death-entries → span-A casualties; keep Inferior-Path artifact framing |
+| prop-bill-of-exchange | Saerys + Viserys + **charity/sick-house** |
+| prop-cradle-egg | Saerys + Harwin + Viserys + national-scale |
+| prop-harwins-list | **assess: is this a span-A factor-list (→ rename) or Harwin-specific span-B (→ tombstone)?** |
+| prop-kings-hand-note | Saerys + Viserys + **charity** + Dance |
+| prop-still-room-kit | **sick-house** + "slate" (material — leave) |
+| prop-wildfire-shard | Viserys |
+| marra-chambermaid | "pious" (check) |
+
+**SLUG-RENAME (filename + referrers):** cond-saerys-formation-map-red-keep → cond-gael-formation-map-red-keep
+(referrers: itself + loc-maegors-holdfast — only 1 external). Body is span-A-stable (Red-Keep surveillance map);
+mostly Saerys→Gael + the rename.
+
+**BEHAVIOR-CARD BUILD:** saerys-targaryen-behavior → build **gael-targaryen-behavior** (span-A voice per
+character-profiles §Gael Voice + Rule 22), point gael-targaryen + cond-heartless-dao-scripture + the parked
+behavior cards at it, then tombstone the saerys behavior card.

@@ -16,9 +16,9 @@ references:
 
 # Condition — Maester's Cabinet (Quick Reference)
 
-Condensed 60-second bones-author lookup for the 15–20 most-used still-room substances. Each entry: maester-register name · one-line real property · Saerys's cultivation-tier gloss. Distilled from `maesters-cabinet-glossary.md` (~90 entries). For fine pharmacological detail (dose→lethality windows, tolerance ceilings, mithridatism efficacy), load `cond-westerosi-poison-pharmacology.card.md`. For Tier 0–4 table, load `cond-westeros-reagent-tier-map.card.md`.
+Condensed 60-second bones-author lookup for the 15–20 most-used still-room substances. Each entry: maester-register name · one-line real property · Gael's cultivation-tier gloss. Distilled from `maesters-cabinet-glossary.md` (~90 entries). For fine pharmacological detail (dose→lethality windows, tolerance ceilings, mithridatism efficacy), load `cond-westerosi-poison-pharmacology.card.md`. For Tier 0–4 table, load `cond-westeros-reagent-tier-map.card.md`.
 
-**Hard fence:** Saerys's cultivation-tier gloss is in the belief column. Real properties are in the right column. The broken clock stays broken.
+**Hard fence:** Gael's cultivation-tier gloss is in the belief column. Real properties are in the right column. The broken clock stays broken.
 
 **Cross-reference:** `maesters-cabinet-glossary.md` is the exhaustive 90-entry version of this card. Reach for this card at bones/facets time; reach for the full doc only when authoring a scene requiring precise dosing, specific compound interactions, or a substance not on this list.
 
