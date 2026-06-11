@@ -151,9 +151,18 @@ parks all the exposure on the **chambermaids** while Otto first pulls at the unu
 **Fires:** FIRE[HEIST-METHOD]
 
 ### II.3 · the world map *(~7–8)*
-**Beat:** trade reports unfurl the warm world; she starts the **reagent map** and wants all of it. Barth,
-charmed she studies geography, never sees the voyage. **Register:** HOLD→SPIKE. **Rung:** off-ladder.
-**Plants:** PLANT[REAGENT-MAP] · PLANT[WARM-DESTINATIONS]
+**Beat:** the want widens — diverse reagents *and* the **knowledge to reach them** (routes, tongues, what
+each port holds); she starts the **reagent map** (half shopping-list, half escape-chart) and wants, serenely,
+all of it. To fund the shady far reach she needs *untraceable* coin — and finding King's Landing too young
+for any gambling-hall, its diversions only **drink, whores, and crude bloodsport,** she **fills the vacuum:**
+enters via a doped fighting-beast stable (her poison/biology edge) and floods the gap with **games it has
+never seen** (past-life formats + the house-math she alone understands), founding the city's first
+**underground gambling trade.** Run through Wylla → cut-outs → factors, deliberately *quiet* (spread thin,
+lose for cover, a faceless phantom kingpin for a decoy); the coin pours off-books toward the reagents and the
+ship. She mistakes the vice-empire for her sect's **worldly branch rendering tribute,** the doped hounds for
+*spirit-beasts she's tempering.* Barth, charmed she studies geography, never sees the voyage. (South glows;
+the North is barren — arming II.4.) **Register:** HOLD→SPIKE. **Rung:** off-ladder.
+**Plants:** PLANT[REAGENT-MAP] · PLANT[WARM-DESTINATIONS] · PLANT[VICE-NETWORK] · PLANT[BEAST-DAO-MISREAD] · PLANT[OFFBOOKS-ACCOUNT] · PLANT[FACTOR-NETWORK] · PLANT[WYLLA-TRUSTED]
 
 ### II.4 · the betrothal *(~8)*
 **Beat:** the King's build-up closes — he sells her **high, to the Starks** (the Warden of the North's heir;
@@ -174,7 +183,7 @@ grieves. **Register:** CHILL (for everyone but Gael). **Rung:** off-ladder.
 clocks **Wylla** — the named entry, a noble companion making court connections — as the lever); Barth reads it
 as a cosmology (closest miss, collapses); Alicent (if she reads it) finds her own entry. **Register:** CHILL. **Rung:** off-ladder.
 **Plants:** PLANT[BESTIARY-NAMED-ENTRY] · PLANT[OTTO-LEAK] · PLANT[COMPROMISED-CHANNEL]
-**Fires:** FIRE[BESTIARY] · FIRE[BARTH-NEAR-MISS] · FIRE[OTTO-MONEY-TRACE] (the coin he's traced since II.2 leads him to the journal) · FIRE[SMALLFOLK-HOLD-RISK] (the compromise lands first on the exposed market tier)
+**Fires:** FIRE[BESTIARY] · FIRE[BARTH-NEAR-MISS] · FIRE[OTTO-MONEY-TRACE] (the coin he's traced since II.2 leads him to the journal) · FIRE[SMALLFOLK-HOLD-RISK] (the compromise lands first on the exposed market tier) · FIRE[WYLLA-TRUSTED] (the keeper of the secret things is the named entry — the one crack in an otherwise nameless empire)
 
 ### II.6 · the source *(~8–9)*
 **Beat:** supply cut, she doesn't weaken — **the egg was a reactor, not a battery**; every theft was
@@ -203,7 +212,7 @@ Wylla (the long con begins). **Register:** HOLD→SPIKE. **Rung:** off-ladder.
 **Beat:** the ship ordered through three layers of paper, paid from the startup; the shipwright (a craftsman
 who won't ask whose it is) quotes years. Tight against the betrothal clock. **Register:** HOLD→SPIKE. **Rung:** off-ladder.
 **Plants:** PLANT[SHIPYARD-VULNERABILITY] · PLANT[FACTOR-THREAT]
-**Fires:** FIRE[SHIP-COMMISSION] · FIRE[ROUTE-MAP] · FIRE[STARTUP] · FIRE[PROFIT-CYCLE]
+**Fires:** FIRE[SHIP-COMMISSION] · FIRE[ROUTE-MAP] · FIRE[STARTUP] · FIRE[PROFIT-CYCLE] · FIRE[OFFBOOKS-ACCOUNT] (the dirty dice-coin pays for the hull the soap-money can't be seen buying)
 
 ### III.2 · the excursions
 **Beat:** sneaks out for the first time, Wylla covering; superhuman child parkour across the night city; the
@@ -214,7 +223,7 @@ who won't ask whose it is) quotes years. Tight against the betrothal clock. **Re
 ### III.3 · the greedy factor
 **Beat:** **Lothar Quint** smells money, leans on Wylla; Gael handles him colder-by-casual (takes his
 quicklime tip first; "the account is closed"). Her reputation does some of the intimidating. **Register:** CHILL. **Rung:** R3.
-**Fires:** FIRE[FACTOR-THREAT] · FIRE[SHIPYARD-VULNERABILITY] · FIRE[DRAGONBANE-EPITHET]
+**Fires:** FIRE[FACTOR-THREAT] · FIRE[SHIPYARD-VULNERABILITY] · FIRE[DRAGONBANE-EPITHET] · FIRE[FACTOR-NETWORK] (Quint is one of her own pit-factors, grown greedy)
 
 ### III.4 · the deadline
 **Beat:** the betrothal accelerates; they're packing her north; the two countdowns cross; she feigns the

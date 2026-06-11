@@ -244,10 +244,18 @@ The engine is the **asymmetry, sealed — and Alicent is the seal.** The observe
 **Gags:** ④ (a 7-y-o thinking in margins/KPIs *and* disciples — same org) · ③ (assay; Wylla's entry takes its first crossed-out climb, *Asset → trusted manager*) · ①.
 
 ### II.3 · the world map *(~7–8)*
-**Inside:** trade reports unfurl the world — Lys, the Summer Isles, Yi Ti, Asshai, **warm** places full of things that radiate. Starts the **reagent map**; wants, serenely, *all of it.* (North = cold-and-death only.)
+**Inside (four beats):**
+1. **The warm world.** Trade reports unfurl Planetos — Lys, the Summer Isles, Yi Ti, Asshai, *warm* places full of things that radiate. She starts the **reagent map** and wants, serenely, *all of it* — and more than the materials, the **knowledge to reach them** (routes, tongues, what each port holds). Half shopping-list, half escape-chart. (South glows; the North is cold-and-death only — arming II.4.)
+2. **Clean money won't do.** The soap-empire's coin is *visible* — taxed, watched, in the books. The shady, far reagents and the travel can't be bought with money that trails back to a princess. She needs *untraceable* cash and a reach she can trust — a child stating a money-laundering requirement as a sect-supply problem.
+3. **The worldly branch.** King's Landing is too young for a gambling-hall; its diversions are only **drink, whores, and crude bloodsport** — a *vacuum.* She fills it: enters via a **doped fighting-beast stable** (still-room pharmacology + her vigour-sense — she conditions the animals and reads them like reagents), then floods the gap with **games it has never seen** (past-life formats + the house-math she alone understands), founding the city's first **underground gambling trade.** Run through Wylla → cut-outs → factors; deliberately *quiet* (spread thin, lose for cover, no blessed-looking table); the coin pours off-books into a hidden account (a Lyseni moneylender, a bill of exchange) toward the reagents and the ship.
+4. **The keeper of the secret things.** Wylla steps up the last rung — tracks the resources, directs the factors, holds the account, secretly bosses a vice-syndicate for a seven-year-old. The rapport is warm and real; the *complicity* is the same gesture. Everything is buffered and nameless **but for her** — the one human who knows it all.
 **Reverse-angle:**
-- 🤨 *Maester:* charmed she wants to learn geography — such a curious mind! (She's drafting a reagent atlas / a future ship's course.)
-**Gags:** ② (rates exotic ports by genre appeal) · the appetite-is-infinite engine.
+- 🤨 *Barth/the maester:* charmed she studies **geography** — such a curious mind! (He's looking at a global plunder-atlas and a ship's course.) The closest-miss delighted by the very thing that should alarm him.
+- 😂 *The vacuum is the cheat (because-Westeros):* a child who remembers card games is a runaway hit because the competition is *drinking and watching dogs fight.* The world's crudeness is her cheat code.
+- 😂 *The misread:* she thinks she **invented recreation** and is modestly proud of the service — the vice-empire is her sect's *worldly branch rendering tribute,* the doped hounds are *spirit-beasts she's tempering* (logged reverently in the bestiary; the smallfolk bled of coppers never make the page). A seven-year-old vice kingpin who has never heard the word.
+- 🧊 *The phantom kingpin:* the underworld credits a faceless bogey ("the Quiet Coin") — a decoy pointing nowhere near a dais, keeping her street-empire and her court maegi-rumour decoupled.
+- 🧊 *The single crack:* the bigger and more hidden she builds it, the more everything rides on **Wylla** — the sole thread tying the nameless layers, the named entry the II.5 leak will pull. (And the pharmacology she perfects on the hounds is the rehearsal for the still-room poison she turns on a *person* at II.7.)
+**Gags:** ② (genre-casts the atlas) · ④ (vice-empire as sect-administration; doping-notes as alchemy treatises) · ③ (the reverent beast-bestiary) · the **beast/founder-dao misread** · ⑤ (Barth misreads her studies as scholarship). **Gael breezy throughout; the addiction, the ruin, the coming leak are the reader's.**
 
 ### II.4 · the betrothal *(~8)*
 **Inside:** the King's build-up closes — he sells her **high, to the Starks** (the Warden of the North's heir): a Great-House alliance binding Winterfell, real value, so the cold calculus is legible. The omen/maegi rumours that *repel* southron houses *attract* the grim North — the one house that reads a dragon-killing, never-sickening girl as an *asset* — so the curdled legend itself picks the buyer; and **Daemon's failed knife** plus his demon-shrieking are the embarrassing noise the match conveniently silences. To Gael the North is the **frozen enemy ice-sect** (Winterfell its stronghold; the Wall and the things beyond it its demon-horde), the betrothal a **sacrifice-bride handed to the rival sect** — *would snuff my furnace, hard pass.* She isn't afraid: she knows not to make a great sect **lose face** (jilt them and you're the villain of their revenge arc), so she'll **vanish clean,** and she's leaving to cultivate **outside the plot** anyway — the wedding is just a *delivery deadline* for the ship.
@@ -257,7 +265,7 @@ The engine is the **asymmetry, sealed — and Alicent is the seal.** The observe
 **Gags:** ⑤ (the centerpiece misread — her carefree blankness reads as grace/ice) · ② capstone (refuses to be cast as the Tragic Bride; nopes the North as a rival evil sect) · ④ (the marriage filed as a logistics deadline) · the deflation ("super not ideal; also I'm bailing, so — whatever"). **Guardrail:** the dread is the reader's / Alicent's — never Gael's.
 
 ### II.5 · the compromise *(~8–9)*
-**Inside:** someone with court leverage **leans on the maid** to reach the princess; the maid comes back nervous, carrying messages, holding opinions she shouldn't. The single channel is compromised. **⭐ The leak is the bestiary:** Otto (the asset-filer) has read it (see below) and clocked the one anomaly — a servant entry upgraded from "Asset (hands)" to a **name** — and understands the maid is the single lever that moves an unmovable girl.
+**Inside:** someone with court leverage **leans on the maid** to reach the princess; the maid comes back nervous, carrying messages, holding opinions she shouldn't. The single channel is compromised. **⭐ The leak is the bestiary:** Otto (the asset-filer) has read it (see below) and clocked the one anomaly — a servant entry upgraded from "Asset (hands)" to a **name** — and understands the maid is the single lever that moves an unmovable girl. She is more than the lever: she is the **keeper of the secret things** from II.3 — the sole human who ties the whole hidden empire (the trade, the off-books vice-network, the account) together. The named entry is the one crack in an otherwise nameless apparatus, and Otto has found it.
 **Reverse-angle / the bestiary read by an authority:** the journal is **the one document that tells the truth about Gael.** Read accurately, it still can't yield "reincarnated cultivator," so it's misfiled into the nearest grimdark frame:
 - 😱 *Alicent (if she reads it):* breaks — finds **her own entry** ("Mother — sentimental, useful for egg-procurement, low threat").
 - 🧊 *Otto (RECOMMENDED reader):* doesn't recoil — sees a weapon, and the maid as the lever. **This is the leak.**
@@ -553,3 +561,19 @@ members. (Pairs gag ④ — corporate-euphemism birth — with the cultivation l
 
 *New tokens to fold: `SMALLFOLK-HOLD-RISK` (II.2 → II.5/II.7) · `OTTO-MONEY-TRACE` (II.2 → II.5). Existing
 seeded earlier: `BESTIARY-NAMED-ENTRY`. Review walk now advances to II.3 "the world map."*
+
+*__Book-II revision — FOLDED, cont. (2026-06-11): II.3 "the world map."__ The review-walk's II.3 build,
+folded into the canonical layer. Deltas: (1) the want widens — diverse reagents **+ travel-knowledge**
+(routes/tongues/ports); (2) **clean-money problem** → she needs untraceable coin and reach; (3) the
+**worldly branch** — young King's Landing has no gambling-hall (era-correct: only drink/whores/crude
+bloodsport), so she **founds** the underground gambling trade: enters via a doped fighting-beast stable
+(poison/biology edge), then floods the vacuum with past-life **games** + the house-math (rides
+`PAST-LIFE-COVER`); run quiet through Wylla → cut-outs → factors, a phantom "Quiet Coin" kingpin as decoy,
+coin off-books toward reagents + ship; (4) **Wylla → keeper of the secret things** (the deepening
+confidant/complicity), the sole crack that the II.5 leak pulls. Misread: vice-empire = sect's worldly
+branch; doped hounds = spirit-beasts (gag ③ bestiary). Guardrails: edge = poison/biology/perception + math,
+**no qi-spend (`GUARD-1` clean)**; the conditioning rehearses the II.7 still-room poison; non-lethal factor
+handling (II.7 keeps the first kill); Gael breezy, the ruin is the reader's. New tokens: `VICE-NETWORK` /
+`BEAST-DAO-MISREAD` (`PLANT-ONLY`) · `OFFBOOKS-ACCOUNT` (→ III.1) · `FACTOR-NETWORK` (→ III.3 Quint) ·
+`WYLLA-TRUSTED` (→ II.5). check-threads re-verified. Review walk now at II.4 "the betrothal" (already
+revised — a consistency-check, not a fresh read).*

@@ -24,3 +24,5 @@ PLANT-ONLY CHAMBERMAID-HANDS            # run-04: the smallfolk operator tier; a
 PLANT-ONLY COURT-AS-EVIL-SECT           # run-04: her operating lens — the court read as an evil cultivation sect; ambient (she's pleased by elders' cold "favor" and abuses it)
 PLANT-ONLY KNOWS-SHE-GLOWS              # run-04 Book-II rev: she knows she's a beauty (a cultivation glow-up) and is vain/complicit; ambient trait (II.1+)
 PLANT-ONLY MAEGI-RUMOR                  # run-04 Book-II rev: the realm's dark read hardens omen -> sorcery; ambient (cashes into the betrothal-disposal + the title-collector gag ① at III)
+PLANT-ONLY VICE-NETWORK                 # run-04 II.3: the underground gambling/entertainment industry she founds; ambient infrastructure (Books II-III); funds OFFBOOKS-ACCOUNT
+PLANT-ONLY BEAST-DAO-MISREAD            # run-04 II.3: she mistakes doped fighting-beasts + house-math for alchemy/fortune-cultivation; ambient gag (broken-clock)
