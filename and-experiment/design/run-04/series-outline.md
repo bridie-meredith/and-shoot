@@ -101,13 +101,19 @@ Wylla). Confined for weeks, attended only by her maids, the **Wylla bond warms h
 **Fires:** FIRE[DAEMON-THREAT] · FIRE[UNCANNY-BEAUTY] · FIRE[VALYRIAN-STEEL-COMPATIBLE] · FIRE[THEFT-ESCALATION] · FIRE[GIFT:DAEMON] (the favor repaid — she took his gift, then his dragon-bond, never reading him)
 
 ### Interlude · Alicent *(external POV — the one camera outside her head)*
-**Beat:** from outside, Gael is unnerving; Alicent loves a daughter she's losing; the rift with Jaehaerys.
-**The Book-I payout button — the sealed mirror-flip:** three corners, all wrong, all staring past each
-other — Gael has filed herself the *dangling reward* (plotting not to be won), Jaehaerys files her *worthless*
-and arranges to **give her away** as a pacification-bribe to **Lord Errold Slate of Blackpool**, and the wider
-realm, gobsmacked by the dragon-death + the beauty + Dragonbane, halos her as **the prophesied one**. Gael
-never learns the realm reveres her; she keeps building her own delusions. The clock starts. **Register:** CHILL.
-**Plants:** PLANT[BETROTHAL-CLOCK] · PLANT[SLATE-MATCH]
+**Beat:** from outside, Gael is unnerving (never tires; alone with Daemon the hour Caraxes died); Alicent —
+the gift-egg mother (`GIFT:ALICENT`) — loves a daughter she's losing and half-knows the gift made her *this.*
+The rift with Jaehaerys hardens.
+**Alicent the shield (active protector):** she moves to cover Gael on three fronts — the **King** (the
+disposal-betrothal + a stirring *kinslayer* suspicion after the dead dragon), **Barth** (keeps the one mind
+that could uncover her away; buries the maester's letters), **Baelon** (the kinsman who blames Gael for
+Caraxes by association) — and above all keeps the realm's *whispers from reaching Gael.* **She is why the
+mirror-flip stays sealed.** `PLANT[ALICENT-SHIELD]` → III.6.
+**The sealed mirror-flip:** three corners, all wrong — Gael the *dangling reward* (plotting not to be won),
+Jaehaerys *worthless* (give her away; *kinslayer* behind his teeth), the realm — gobsmacked by dead **Caraxes**
++ near-bedridden Daemon + the quarantine + the beauty + Dragonbane — halos her **the prophesied one.** Gael
+never learns (Alicent keeps it from her); she keeps her own delusions. The clock starts. **Register:** CHILL.
+**Plants:** PLANT[BETROTHAL-CLOCK] · PLANT[SLATE-MATCH] · PLANT[ALICENT-SHIELD]
 **Fires:** FIRE[GENRE-CASTING] (the dangling-reward self-cast pays out as the literal betrothal)
 
 ---
@@ -205,7 +211,7 @@ payments + the maid's movements; the pursuer **Wylla kills** is his man — the 
 it warmed). Wylla leaves her house and name behind to board; the realm's post-mortem reaches for any
 explanation — a foreign prince, a god, the prophecy — anything but a princess with **agency**. The ship sails
 south. **Register:** SPIKE (loudest since Book I). **Rung:** R4 (the apex).
-**Fires:** FIRE[SHIP] · FIRE[MAID-TEMPERED] · FIRE[EXCURSION-RISK] · FIRE[CITY-KNOWLEDGE] · FIRE[GHOST-LEGEND] · FIRE[CLOCK-CONCRETE] · FIRE[WARM-DESTINATIONS] · FIRE[BESTIARY-NAMED-ENTRY] · FIRE[OTTO-LEAK] · FIRE[WYLLA-CAGED] (she gives up her noble future — the two-girl cage opens) · FIRE[PROPHESIED-LEGEND] (the realm prefers the legend to her agency, sealed; she never learns) · FIRE[SPY-MISREAD] (the monitor-disciple she feared at I.3 is the one who kills for her — the misread inverted at the apex) · FIRE[CLEAN-HANDS-DOCTRINE] ("clean hands" at last means the blood is on Wylla — the I.5 doctrine carried to its endpoint)
+**Fires:** FIRE[SHIP] · FIRE[MAID-TEMPERED] · FIRE[EXCURSION-RISK] · FIRE[CITY-KNOWLEDGE] · FIRE[GHOST-LEGEND] · FIRE[CLOCK-CONCRETE] · FIRE[WARM-DESTINATIONS] · FIRE[BESTIARY-NAMED-ENTRY] · FIRE[OTTO-LEAK] · FIRE[WYLLA-CAGED] (she gives up her noble future — the two-girl cage opens) · FIRE[PROPHESIED-LEGEND] (the realm prefers the legend to her agency, sealed; she never learns) · FIRE[SPY-MISREAD] (the monitor-disciple she feared at I.3 is the one who kills for her — the misread inverted at the apex) · FIRE[CLEAN-HANDS-DOCTRINE] ("clean hands" at last means the blood is on Wylla — the I.5 doctrine carried to its endpoint) · FIRE[ALICENT-SHIELD] (the shield's terminus — Gael sails, never knowing her mother held the seal; the protector left behind)
 
 ### Epilogue
 Two girls on a ship, the continent behind, the warm south ahead. Both desires satisfied; one of them now a
