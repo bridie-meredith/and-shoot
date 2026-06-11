@@ -6584,3 +6584,89 @@ pr_ref: null
 defer_until: null
 supersedes: null
 ```
+
+---
+
+## PROP-0053
+
+```yaml
+id: PROP-0053
+created_at: 2026-06-11T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: on-demand
+  source_report: staff/admin/improvement-loop/bridge.ledger.md (pass 1 — brighid bridge)
+  source_verdict: BRIDGE-PATTERN — brighid-creative-writing ingrid auto-trigger registry has no equivalent in and-shoot
+target:
+  type: agent-card
+  path: .claude/agents/admin.md
+  section: "process-critic mode — add book-close recurrence-sweep sub-mode"
+change_type: add
+rationale: |
+  And-shoot's admin fires reactively: one process-critic dispatch per non-PASS chain verdict,
+  counting recurrences only for the specific fault class being proposed. There is no standing
+  book-close sweep that tabulates ALL fault classes across ALL chapters for a book and auto-
+  proposes corrections for classes that recurred without ever crossing the per-chapter HARD
+  threshold.
+
+  Brighid's ingrid runs exactly this at project-close: it surveys accumulated signal artifacts
+  (audience stink deltas, retrospective finding tier-distributions, rut-class frequency,
+  improvement-closure rate) and auto-fires tuning routines for any class above threshold
+  (per ingrid/project-improvement-tracking.plan.md Axes A-D and rut-detection.plan.md
+  auto-trigger registry). The auto-trigger is proactive — it fires regardless of whether
+  individual chapters passed — and gives book-scope visibility that per-chapter reactive
+  triggers cannot.
+
+  The gap in and-shoot is real and already has an evidence trail: PROP-0052 (structural
+  sameness across b01 mid-book c10-c19) was filed only because a manual sameness scan was
+  run after the fact. A standing book-close sweep over bones/scene-map dramatic_shape fields
+  would have surfaced the same pattern automatically when /and-review verdict b01 fired.
+  Similarly, a finding class that appeared as SIGNAL in 4 chapters but never as HARD in any
+  single chapter currently evades process-critic entirely — no reactive trigger fires on a
+  SIGNAL-only verdict.
+
+  The port adapts ingrid's project-close survey to and-shoot's existing admin agent structure:
+  admin gains a recurrence-sweep sub-mode, wired as an always-fires step at /and-review
+  verdict <book>, independent of the verdict outcome. The sweep is cheap (reads existing
+  artifacts, no new authoring) and produces the same class of output admin already produces
+  (PROP entries in process-proposals.md), so no new infrastructure is needed.
+evidence_refs:
+  - "brighid-creative-writing/staff/agents/ingrid/project-improvement-tracking.plan.md — Axes A-E, predecessor comparison at project close; auto-trigger at step 7"
+  - "brighid-creative-writing/staff/agents/ingrid/rut-detection.plan.md — auto-trigger registry (Triggers A + B); fires on accumulated signal artifacts, not per-chapter verdicts"
+  - "staff/admin/process-proposals.md PROP-0052 — structural sameness filed after-the-fact on manual scan; a book-close sweep would have caught it at /and-review verdict b01"
+  - ".claude/agents/admin.md + CLAUDE.md Rule 13 — admin fires on non-PASS per-chapter only; no book-close trigger wired"
+  - ".claude/commands/and-review.md Phase 4.5 — admin dispatched only when HARD finding OR REVISE/FAIL/NOT-SUCCESSFUL verdict present; not unconditional at book-close"
+recurrence_count: 1
+proposed_diff: |
+  In .claude/agents/admin.md, add a recurrence-sweep sub-mode to the process-critic section.
+  Trigger: always fires when /and-review verdict <book> completes (NOT conditional on verdict
+  outcome — fires on PASS too). The sweep:
+
+  1. Reads all chapter-level staff/reviews/ artifacts for the named book (postop, auditor,
+     bones-review, stitch Phase 9 reports, facets Phase 4 auditor reports).
+  2. Reads active-project/staff/showrunner/parking-lot.md — closed HARD items for the book.
+  3. Tabulates finding classes by chapter count (how many chapters saw this class, at any
+     severity — HARD, SIGNAL, or SOFT parking-lot).
+  4. For classes appearing in >= 2 chapters: author a PROP entry (change_type: promote if
+     recurrence >= 3, change_type: modify if recurrence 2) unless an open or rejected
+     proposal already covers the same target + change_type (existing matching-rules apply).
+  5. For classes appearing in only 1 chapter: log to admin STM as a "watch" item; re-check
+     at next book-close.
+
+  In .claude/commands/and-review.md verdict section, add a Phase 4.6 (after existing
+  Phase 4.5 reactive dispatch): unconditional admin recurrence-sweep dispatch, passing
+  book slug + list of chapter slugs under the book. Non-blocking — verdict exits per
+  Phase 4 outcome regardless.
+
+  Schema note: trigger.reason should gain a new value "book-close" alongside "failure" and
+  "postop" in schemas/admin-proposal.schema.md Field semantics block. Cost-estimate reflects
+  this coupled schema edit.
+cost_estimate: M
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
