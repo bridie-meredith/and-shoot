@@ -1,7 +1,8 @@
 ---
 name: prop-harwins-list
 class: prop
-scope: both
+scope: tombstone
+retired_reason: "Ser Harwin Strong is PARKED for the later Dance installment (not span-A this series); this artifact is entirely his (his memory monument, his death in Bk II). It parks with him. The eat-list running-gag could be rebuilt for span-A with a span-A keeper (the maester / a nanny) as a NEW card if wanted — not a re-derivation of this one. Retired 2026-06-11."
 project: and-experiment
 world: planetos
 portability: portable
@@ -13,6 +14,11 @@ references:
 ---
 
 # Prop — Harwin's List
+
+> ⛔ **TOMBSTONE (2026-06-11) — parks with Ser Harwin (Dance installment).** Ser Harwin Strong is parked for the
+> later Dance book, not span-A this series; this artifact is entirely his. **Do not use in span-A.** The
+> eat-list running-gag, if wanted for span-A, is a NEW card with a span-A keeper (the maester / a nanny), not
+> this one.
 
 Ser Harwin Strong's running list of items Gael Targaryen is no longer permitted to put in her mouth. It began as a practical safety measure. It became, over the course of Book II, the project's primary running-gag instrument. It is also, in structural fact, a love letter written in the form of an incident log.
 

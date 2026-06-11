@@ -66,7 +66,7 @@ These are restocked for each deployment and consumed during it. The specific loa
 
 *Yi Ti deployment:* Included the poison-master's case as an integrated addition — a separate fitted case (see functional state below) acquired in Yi Ti. The variable set for Yi Ti was lighter than the Essosi set because she had anticipated sourcing locally (correct; the Yi Ti market for exotic toxins exceeded her expectations). The poison-master's case integrates with the standard kit but is held separately and has its own labeling system.
 
-*Red Keep operational:* The fixed still-room is the primary; the kit in Red Keep mode is deployed only during extended visits to the sick-house or during periods when the still-room is inaccessible (one such period during Book I Lock I, approximately three days, when the maester's tower access was restricted pending the wildfire-stunt inquiry).
+*Red Keep operational:* The fixed still-room is the primary; the kit in Red Keep mode is deployed only during periods when the still-room is inaccessible (one such period during Book I Lock I, approximately three days, when the maester's tower access was restricted pending the wildfire-stunt inquiry).
 
 ---
 

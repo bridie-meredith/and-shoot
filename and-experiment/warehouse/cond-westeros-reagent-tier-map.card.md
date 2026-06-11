@@ -49,10 +49,10 @@ A five-level classification system Gael applies to every material in her operati
 
 Her supply-line is structured around tier:
 
-- **Tier 0–1 (early):** the maester's still-room stock and the charity sick-house supply; the maesters' restricted-items list is a Tier 1 (early) problem, not a Tier 1 (peak) problem
+- **Tier 0–1 (early):** the maester's still-room stock and the household apothecary supply; the maesters' restricted-items list is a Tier 1 (early) problem, not a Tier 1 (peak) problem
 - **Tier 1 (peak):** the Braavosi factor network; some substances require Essosi import; appears on the trade manifests as "medicinal preparations"
 - **Tier 2:** the Alchemists' Guild (for wildfire-adjacent materials); weirwood is rare and requires strategic acquisition; Valyrian steel filings are a long-term project
-- **Tier 3:** the dragon egg was a one-time event; wildfire shard was a one-time event; dragon bone fragments require the Dance's aftermath (Bk III windfall)
+- **Tier 3:** the dragon egg was a one-time event; wildfire shard was a one-time event; dragon bone fragments (the battlefield windfall) are **parked for the later Dance installment**, not available this series
 - **Tier 4:** the oily black stone is in Yi Ti; she knows this; it is the stated goal of the Bk II expedition's cultivation-register framing
 
 ---

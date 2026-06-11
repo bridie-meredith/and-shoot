@@ -126,7 +126,7 @@ The dose-log's Book III function is the broken clock's most important legitimate
 
 The payoff works because the methodology is real. Mithridatism produces real tolerance. The cultivation-register was running on a correct mechanical process described in the wrong cosmological vocabulary. The clock chimed true.
 
-**What mithridatism cannot save her from:** the things the world is actually going to use. She is immune to most poisons. She is not immune to the Dance, to political catastrophe, to war, to the deaths of people she refuses to grieve. The armor she has built is specifically effective against the threat category she chose to armor against, and specifically ineffective against the threat category the story deploys.
+**What mithridatism cannot save her from:** the things the world is actually going to use. She is immune to most poisons. She is not immune to the cage, to political catastrophe, to the betrothal that would claim her, to the cost she displaces onto the people she refuses to grieve. The armor she has built is specifically effective against the threat category she chose to armor against, and specifically ineffective against the threat category the story deploys.
 
 ---
 

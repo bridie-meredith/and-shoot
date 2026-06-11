@@ -118,7 +118,7 @@ An unscheduled drawbridge closure isolates the holdfast from the rest of the Red
 The twelve-foot walls protect the royal family. They also mean that anything happening inside the holdfast is not easily visible from outside. This is the logic that makes the chamber's gradual transformation possible: the household's attention is on controlling what leaves the holdfast, not on what is happening within it. She uses this norm.
 
 **The septa's acceleration problem:**
-The septa files reports on Gael's behavior. The reports go to Alicent and, filtered, to Viserys. The hazard is not any single report — it is a cluster of reports arriving within a short span and triggering enough scrutiny that the King acts. The Book I climax navigates exactly this: the wildfire fever generates multiple simultaneous reports, and she needs the King's-hand note to produce a counter-narrative louder than all of them at once.
+The septa files reports on Gael's behavior. The reports go to Alicent and, filtered, to Jaehaerys. The hazard is not any single report — it is a cluster of reports arriving within a short span and triggering enough scrutiny that the King acts. The Book I climax navigates exactly this: the wildfire fever generates multiple simultaneous reports, and she needs the King's-hand note to produce a counter-narrative louder than all of them at once.
 
 ---
 

@@ -78,7 +78,7 @@ The "floor" detail is not sentimentalized. It is a data-point. It confirms that 
 
 **The no-system loneliness is the secondary surface.** Moments when she would benefit from external validation of her progress — when the dose-log's circular confirmation is visible as circular, when no one around her can assess whether what she is doing is advancing — these are the moments where the previous life's absence is felt as the absence of the world that contained the genre's confirmatory systems. The world she is in does not have systems. She built one. It does not actually confirm anything.
 
-**The blank line is the one surface where the previous life's wound is not contained.** The previous life taught her that death is a transition. Daenys's death is the event that the doctrine's account of death cannot close because it is not the practitioner's own death but the death of the one attachment the register classified as an anomaly. The blank line is the previous-life doctrine meeting a fact it was not designed to process.
+**The blank line is the one surface where the previous life's wound is not contained.** The previous life taught her that death is a transition. The apex (III.6) is the event that the doctrine's account of death cannot close — not the practitioner's own death, and not a death she can file as reagent-value, but what she does to the one attachment the register classified as an anomaly: she makes Wylla a killer to keep her own hands clean. The blank line is the previous-life doctrine meeting a fact it was not designed to process.
 
 ---
 
@@ -99,8 +99,8 @@ Persistent: pre-story through the end of Book III. The previous life is a condit
 ## Interaction Notes
 
 - **With `cond-inferior-path-doctrine`:** the doctrine is the previous life's knowledge, operationalized. The doctrine exists because the previous life left the archive; the archive contains the doctrine; the doctrine explains the current life's events. They are not separable.
-- **With `saerys-targaryen` persona card:** the persona card's Vibe Seeds section contains the accumulation of what this has produced. The previous-life entries ("she died once"; "the second time will be different") are the persona card's most compressed version of what this card expands. No contradiction exists; this card extends.
-- **With the blank line:** the previous-life doctrine was designed to make Daenys's death processable. It fails. The condition's single functional failure is the story's most important event.
+- **With `gael-targaryen` persona card:** the persona card's Vibe Seeds section contains the accumulation of what this has produced. The previous-life entries ("she died once"; "the second time will be different") are the persona card's most compressed version of what this card expands. No contradiction exists; this card extends.
+- **With the blank line:** the previous-life doctrine was designed to make every cost processable as cultivation-logic. At the apex — with what she does to Wylla — it fails. The condition's single functional failure is the story's most important event.
 
 ---
 

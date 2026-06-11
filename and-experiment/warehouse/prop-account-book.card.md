@@ -45,11 +45,11 @@ She would narrate: *"The account-book approaches the threshold of natal-artifact
 
 ## What It Actually Is
 
-**A logistics ledger.** The trade-and-medicine network is a real commercial operation running charitable apothecary work as a charity cover and genuine apothecary supply as the commercial core. The account-book is where the commercial operation is recorded. Every factor, every bill of exchange, every cargo manifest, every provisioning order, every letter of credit — they have corresponding entries. The entries are accurate. The network is real. The book makes it legible.
+**A logistics ledger.** The trade-and-medicine network is a real commercial operation running a legitimate apothecary-and-soap trade as the visible cover and the genuine apothecary supply (and, off-books, the vice-network) as the operative core. The account-book is where the commercial operation is recorded. Every factor, every bill of exchange, every cargo manifest, every provisioning order, every letter of credit — they have corresponding entries. The entries are accurate. The network is real. The book makes it legible.
 
 **The network's formation eye.** The account-book is the node at which all information about the network converges. Losing it would not destroy the network — each factor has their own partial record — but it would destroy the *coherence* of the network's view of itself. The formation eye is the component whose destruction collapses the formation's coordination, not its components. She knows this. She does not keep the account-book and the dose-log in the same place.
 
-**The one place a death is ever entered.** The pest-removal poisonings are nowhere in the account-book — they exist only in the cultivation-register as "impurity expulsion" events. But two entries deviate from this. Harwin's death: the account-book has a closed line — a single entry that credits his standing and then debits it to zero, a balance that the column shows as settled. The handwriting is the same as every other entry. The entry took approximately forty seconds to write. She closed the book after and did not open it again that day. The second death entered is Daenys's: a blank line in Book III — entry number without content; the quill stopped after the date; the column fills with white space; the next entry is a week later, date and content both present, as though the book picked up in the middle. The blank line sets up Book III's dramatic accounting: the one debt carried off the edge of the map uncosted.
+**The one place a death is ever entered.** The impurity-expulsion poisonings (the II.7 removal and after) are nowhere in the account-book — they exist only in the cultivation-register as "impurity expulsion" events. But two entries deviate from this. **Lothar Quint's removal (III.3):** the account-book has a closed line — a single entry that credits his standing and then debits it to zero, a balance the column shows as settled; *the account is closed.* The handwriting is the same as every other entry. The entry took approximately forty seconds to write. She closed the book after and did not open it again that day. **The apex (III.6) is the second:** a blank line — entry number without content; the quill stopped after the date; the column fills with white space; the next entry is dated after they have sailed, as though the book picked up in the middle. The blank line is the kill Wylla commits to free them — the one debt Gael never enters, carried off the edge of the map uncosted (she sails with it unpaid). It is the account-book's version of the register-silence: the one moment the ledger, like the monologue, does not arrive.
 
 ---
 
@@ -59,7 +59,7 @@ She would narrate: *"The account-book approaches the threshold of natal-artifact
 - Read: the formation map of the network; the factored relationships; who owes whom, in which direction, across how many intermediaries
 - Coordinate: update factor relationships, close old lines, open new ones
 - Cover: the account-book legitimizes the scale of transactions because it shows the legitimate transactions that embed the operative ones
-- Historical record: the account-book is the evidentiary basis for "she just runs a very large charitable apothecary operation"; without it the operation collapses under scrutiny; with it, the scrutiny slides off
+- Historical record: the account-book is the evidentiary basis for "she just runs a very large household apothecary-and-soap trade"; without it the operation collapses under scrutiny; with it, the scrutiny slides off
 
 ---
 

@@ -40,12 +40,14 @@ The cradle-egg is the first rung of the five-rung curdle ladder (dead-thing→fu
 | Rung | Act | Scale | Register |
 |---|---|---|---|
 | **R0** | Cradle-egg ground and swallowed | Nursery (one dead egg) | Pure farce — the foundational laugh |
-| R1 | Ward-child filed as "impure reagents" | Household (one dying child) | Laugh less |
-| R2 | The pest quietly poisoned | Court (one adult removed) | Stop laughing |
-| R3 | Ser Harwin balanced in the book | Trade-empire scale (one person, deliberately wasted) | Wince |
-| **R4** | Field of dead dragons, refiner's calm | National-grave scale (an apocalypse harvested) | Horror |
+| R1 | The Caraxes-bond drained (I.5; Daemon left a husk) | Court (a dragon dead, a prince hollowed) | Laugh less |
+| R2 | The exploiter quietly poisoned (II.7) | Court (one adult removed) | Stop laughing |
+| R3 | Lothar Quint, the account closed (III.3) | Trade-empire scale (one person, casually removed) | Wince |
+| **R4** | The apex (III.6): the tempered maid kills to free them | The escape (the cost displaced onto the one she loves) | Horror |
 
-The frame is *identical* at R0 and R4: she assesses dead material, classifies it as a cultivation resource, and extracts value from it with undisturbed focus. At R0 the reader laughs. At R4 the reader hates what they laughed at. The egg is the joke that makes R4 possible because R4 is R0 at national scale, and the reader has been primed for eighty thousand words to see a dead thing as fuel the way she does.
+*(R5 — the dead-dragon battlefield, refiner's calm at national-grave scale — is **parked for the later Dance installment**, beyond this series.)*
+
+The frame is *identical* at R0 and R4: she assesses dead material, classifies it as a cultivation resource, and extracts value from it with undisturbed focus. At R0 the reader laughs. At R4 the reader hates what they laughed at. The egg is the joke that makes R4 possible because R4 is R0 carried to its endpoint — the same refiner's calm, now turned on a human cost she displaces onto the one she loves — and the reader has been primed for eighty thousand words to see a dead thing as fuel the way she does.
 
 This arc note is carried on the card so bones authors staging either R0 (chapter I.1) or R4 (chapter III.5) have the rhyme visible and can write the identical-shot precision the curdle requires.
 
@@ -71,7 +73,7 @@ The broken-clock rule holds: the egg powder is her first ingestion, her founding
 
 **As the inciting act:** The egg's consumption is the event that establishes the Cauldron-Belly frame — the self-title *Heavenly Demon Cauldron-Belly* is declared in I.1 during or immediately after the consumption. Without this act, every subsequent eating antic lacks its anchor. The egg is eaten once; its function echoes across thirty chapters.
 
-**As a prop for bones authors:** Any scene staging I.1 or referencing the founding act needs this card for physical and register-fidelity. The powder tastes of iron and something else. The spoon was silver. The nursery staff were present. Viserys found it delightful.
+**As a prop for bones authors:** Any scene staging I.1 or referencing the founding act needs this card for physical and register-fidelity. The powder tastes of iron and something else. The spoon was silver. The nursery staff were present. Alicent found it delightful.
 
 **As the curdle's first rung:** Staging R4 in chapter III.5 requires the author to have I.1's gesture present as a template. This card is the anchor for both ends of the ladder.
 
