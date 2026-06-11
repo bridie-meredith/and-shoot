@@ -14,7 +14,9 @@ references:
   - cond-kl-court-state-122ac
 ---
 
-# Condition — The Alchemists' Guild (122 AC)
+# Condition — The Alchemists' Guild (Jaehaerys's reign, ~84–95 AC)
+
+> *Card slug retains the span-B `-122ac` suffix pending the slug-rename batch; the era is span-A (~84–95 AC).*
 
 The institution Gael encounters in Book I Movement 3. The source of wildfire. The "furnace sect" she petitions and whose product she survives. One of the two institutional encounters that shape her understanding of what she is doing and why the world does not recognize it.
 
@@ -24,9 +26,9 @@ The institution Gael encounters in Book I Movement 3. The source of wildfire. Th
 
 ## Description
 
-The Alchemists' Guild is a hereditary craft guild operating in King's Landing under Crown patronage, specializing in the manufacture of wildfire and related pyrotechnic compounds. In 122 AC — Viserys I's reign, before the Dance and the Guild's significant post-Dance decline — the Guild is at a relative high point: patronized by the Crown, occupying their guildhall near the River Gate, producing wildfire in modest quantities for Crown use, and maintaining a monopoly on the production and sale of pyrotechnic compounds in King's Landing.
+The Alchemists' Guild is a hereditary craft guild operating in King's Landing under Crown patronage, specializing in the manufacture of wildfire and related pyrotechnic compounds. In **Jaehaerys I's reign (the long peace, ~84–95 AC)** — generations before the Dance and the Guild's eventual post-Dance decline — the Guild is at a relative high point: patronized by the Crown, occupying their guildhall near the River Gate, producing wildfire in modest quantities for Crown use, and maintaining a monopoly on the production and sale of pyrotechnic compounds in King's Landing.
 
-At 122 AC the Guild is not the faded, desperate, slightly unstable institution of the late post-Dance era. They are cautious, secretive, protective of their processes, and doing moderate business. They regard their knowledge as a sacred trust — not a guild mystification (though it is that too) but a genuine practitioner's caution around a genuinely dangerous substance. The pyromancers who work wildfire know what it does. Their secrecy is partly self-preservation.
+In the long peace the Guild is not the faded, desperate, slightly unstable institution of the late post-Dance era. They are cautious, secretive, protective of their processes, and doing moderate business. They regard their knowledge as a sacred trust — not a guild mystification (though it is that too) but a genuine practitioner's caution around a genuinely dangerous substance. The pyromancers who work wildfire know what it does. Their secrecy is partly self-preservation.
 
 ---
 
@@ -41,7 +43,7 @@ Scenes set near or inside Guild territory carry:
 
 ## Duration
 
-Persistent throughout the project. The Guild is an ongoing institution. In Book I it is the source of the shard incident. In Books II and III it is background-present — the wildfire supply chain continues to operate; the Dance will involve wildfire deployments (the burning of the Dragonpit; the city fires); those events are registered in Gael's trade-network tracking even if she is not in King's Landing when they occur.
+Persistent throughout the project. The Guild is an ongoing institution. In Book I it is the source of the shard incident. In Books II and III it is background-present — the wildfire supply chain continues to operate. (The Dance's wildfire deployments — the burning of the Dragonpit, the city fires — belong to the **parked later installment**, decades after Gael has sailed; not this series.)
 
 ---
 
@@ -67,7 +69,7 @@ The Guild's product. What it actually is and does, stated for prose-authoring co
 
 **Toxicology:** Wildfire at non-trivial ingested doses is acutely toxic by both chemical and magical mechanisms. It is not food. It is not a medicine. It is not a safe experimental reagent at any realistic dose. Her 0.3 grain-weight shard was small enough to produce a survivable toxic reaction rather than immediate death; it was not small enough to produce a controlled or predictable one.
 
-**The Dance connection:** Wildfire features prominently in the Dance of the Dragons — it is used during the battle at the Dragonpit, contributing to the burning that kills dragons and thousands in King's Landing. Gael's cultivation-register entry for this event: "the Furnace Sect's reagent deployed at scale." The real-state reading: the same substance she swallowed as a thumbnail-sized fragment was used in quantities that burned part of her city.
+**The Dance connection (parked):** In the later Dance installment (beyond this series — Gael has long since sailed), wildfire is used at the Dragonpit, burning dragons and thousands in King's Landing. Her register *would* file it "the Furnace Sect's reagent deployed at scale": the same substance she swallowed as a thumbnail-sized fragment, used in quantities that burn a city. Retained as parked-future framing.
 
 ---
 
@@ -89,5 +91,5 @@ She classifies the Alchemists' Guild as "the Furnace Sect" — a fire-attribute 
 
 - **With `prop-wildfire-shard`:** The shard is the Guild's product in its most narratively load-bearing form. The Guild is the institutional context; the shard is the specific material-object consequence.
 - **With `cond-westeros-reagent-tier-map`:** Wildfire is Tier 3 on that table — genuinely magical, uncontrolled ingestion produces real effects. The Guild is the manufacturer of the only Tier-3 material Gael directly ingests in Book I.
-- **With `cond-kl-court-state-122ac`:** The Guild operates under Crown patronage; their relationship to the Crown is relevant when the septa moves to shut down the sick-house and the wildfire incident is one of her grounds. The Guild's diplomatic note contributed to the Lock I crisis.
+- **With `cond-kl-court-state-122ac`:** The Guild operates under Crown patronage; their relationship to the Crown is relevant when the septa moves to shut down her still-room works and the wildfire incident is one of her grounds. The Guild's diplomatic note contributed to the Lock I crisis.
 - **With the Dance (Book III):** The wildfire used in the Dance is the same institution's product at scale. The comedy-that-curdles dimension: the Tier-3 "fire-attribute reagent" that advanced her as a thumbnail fragment is the same substance that burns the Dragonpit. The cultivation-register's accounting treats both events as involving the same material. The reader does not.

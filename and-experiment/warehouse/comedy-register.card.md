@@ -38,7 +38,7 @@ Shared behavior card. The comedy/farce voice overlay that the and-experiment pro
 
 *Gallows — Book III register (same sentence, opposite effect):*
 
-> She walked the field at the pace of a woman who has done inventory before and knows that haste introduces transcription errors. The scale was different. She had a refined sense of scale. The cauldron could process, theoretically, materials from a single cradle-egg to a dead dragon on a battlefield, and the math of refinement was the same at each scale, and she was aware that the math was the same, and she was aware that she was aware, and the monologue arrived on schedule, and she let it arrive, because the monologue arriving was the only thing between her and what the math was trying to mean, and the math was being very precise about what it meant.
+> She went through it at the pace of a woman who has done inventory before and knows that haste introduces transcription errors. The scale was different. She had a refined sense of scale. The cauldron could process, theoretically, materials from a single cradle-egg to a man she had quietly decided to remove, and the math of refinement was the same at each scale, and she was aware that the math was the same, and she was aware that she was aware, and the monologue arrived on schedule, and she let it arrive, because the monologue arriving was the only thing between her and what the math was trying to mean, and the math was being very precise about what it meant.
 > *(synthesized; Bk III curdle beat; cultivation-register is present; the stakes have made it monstrous)*
 
 ---
@@ -54,13 +54,13 @@ Shared behavior card. The comedy/farce voice overlay that the and-experiment pro
 **Book II (adventure with teeth):**
 - The same mismatch runs hotter: the stakes are higher (adult world, real consequences, Essos expeditions, actual deaths possible) but the register stays the same
 - The dramatic irony inverts: now Gael is competent and the adults are the marks; the comedy comes from watching adults be out-managed by a child who does not understand she is managing them
-- **Recovery is available but costs something:** a spike that touches real loss (Harwin's death) does not fully recover; the comedy survives the cost but it carries a mark
-- The running gag evolves: Harwin's list is Bk II's primary comedy instrument; it documents the cauldron's expanding claims against practical safety; it is funny and it is also a love letter written in incident-log format
+- **Recovery is available but costs something:** a spike that touches real loss (the apex — what she does to Wylla) does not fully recover; the comedy survives the cost but it carries a mark
+- The running gag evolves: the **bestiary** is Bk II's primary comedy instrument; it logs the cauldron's world by function (humans as "Asset," "Vendor," "Obstacle"); it is funny and it is also the one document that tells the truth about her
 
 **Book III (gallows-voice):**
 - The register does not switch. The cultivation-monologue stays. The stakes rise under the constant behavior.
-- **The joke and the wound become the same thing:** *"In truth, the motherlode — an unimaginable windfall"* over a field of dead dragons is not a comedy beat. But it is not a tragedy beat either. It is both simultaneously. The gallows-voice is the cultivation-register looking at its own horror and continuing to narrate, because the alternative is worse.
-- **The break beats are defined by register-failure, not register-switch:** the comedy goes quiet when the monologue cannot arrive (Daenys's blank line). It does not switch; it fails. The absence of the register is the tragedy signal.
+- **The joke and the wound become the same thing:** the gallows-voice — the cultivation-register looking at its own horror and continuing to narrate — over the apex (the body her maid left to free them, filed as a closed account) is not a comedy beat. But it is not a tragedy beat either. It is both simultaneously, because the alternative is worse.
+- **The break beats are defined by register-failure, not register-switch:** the comedy goes quiet when the monologue cannot arrive (the apex — the III.6 register-silence, witnessed by Wylla). It does not switch; it fails. The absence of the register is the tragedy signal.
 - Recovery is closed: by Bk III, the register-vs-stakes mismatch is monstrous, and the reader has been set up across 80k to feel it that way.
 
 ---
@@ -72,7 +72,7 @@ Shared behavior card. The comedy/farce voice overlay that the and-experiment pro
 - Cultivation vocabulary used to classify mundane events: *"the sect's qi-field," "outer disciples," "a tribulation of the administrative variety," "the cauldron expels impurities," "net of costs"*
 - Understatement as the load-bearing rhetorical tool: the alarming thing is described in the most accurate, most mundane, most bloodless terms available; the alarm is structural (the reader supplies it from context), not voiced
 - The **bureaucratic passive** for morally significant events: *"the man was relocated," "the account was settled," "the situation resolved itself"* — nothing is done to anyone; the situation processes itself
-- The **running list** as comedy instrument (Harwin's version): each entry documents a crisis; the entries accumulate; the list is funnier as it grows and also more alarming
+- The **running document** as comedy instrument (the bestiary): each entry logs a person or beast by function; the entries accumulate; the document is funnier as it grows and also more damning
 - The **dramatic irony sentence**: states both what Gael thinks is happening and what is actually happening in the same sentence without acknowledging the gap: *"the factor had, through the mechanism of spiritual network propagation — or possibly through discovering a seventeen-percent arbitrage I had not noticed — established three new supply routes"*
 
 **Comedy-register prohibitions (violations that break the farce):**
@@ -90,11 +90,11 @@ Shared behavior card. The comedy/farce voice overlay that the and-experiment pro
 - **The precision-of-wrongness:** the more precisely the cultivation-register names the wrong thing, the funnier. Vague wrongness is boring; specific wrongness is comedy. *"The still-room's qi-coherence had been degraded by the maester's persistent insistence on labelling reagents with their non-cultivational appellations"* is funnier than *"she was annoyed at the labels."*
 - **The trailing consequence:** the sentence that describes the cultivationally-meaningful action, followed by a short clause that names what actually happened: *"I addressed the impurity through the qi-expulsion method — the relevant technique involving nightshade at approximately one-quarter the fatal dose — and the impurity subsequently relocated to the Arbor, where he has apparently flourished."*
 - **The understatement-terminal sentence:** a long paragraph of correctly-described alarming events, closed with a one-sentence cultivation summary that does not address any of it: *"This was consistent with a Foundation Establishment breakthrough."*
-- **The list-comma:** Harwin's list format; each item is a clause; the clauses accumulate without syntactic escalation; the escalation is semantic: *"...item 28: the wax seal on her outgoing correspondence; item 29: any wax; item 30: the oil lamp in the western still-room for reasons that remain unclear; item 31: the green jar..."*
+- **The list-comma:** her cataloguing format (reagents, the bestiary); each item is a clause; the clauses accumulate without syntactic escalation; the escalation is semantic: *"...item 28: the wax seal on her outgoing correspondence; item 29: any wax; item 30: the oil lamp in the western still-room for reasons that remain unclear; item 31: the green jar..."*
 
 **Gallows-voice syntax additions (Bk III):**
 
-- The same patterns, applied to events that are not funny: the understatement-terminal sentence applied to a battlefield of dead dragons produces a different sensation in the same grammatical position
+- The same patterns, applied to events that are not funny: the understatement-terminal sentence applied to the apex — the tempered maid killing to free them — produces a different sensation in the same grammatical position
 - The **register-continuing** clause: *"and she was aware that she was aware"* — the voice noting its own persistence, which is what the gallows-register does
 - The **absent arrival:** the sentence that winds up to the cultivation-gloss and then doesn't get there: *"In truth, the correct framing for this event was — "* [pause; no completion] — the cultivation-gloss as gesture that fails; this is the approach to the break-scene
 
@@ -133,5 +133,5 @@ When Gael delivers a cultivation-framework interpretation to someone in the stra
 (Shared-behavior card; the monuments specific to the and-experiment comedy register.)
 
 - **The Cradle-Egg (founding monument of the register):** the moment the cultivation-register was declared and a dead thing became fuel. This is the first beat of the identical-shot ladder. Every subsequent beat is measured against it: was this funnier? Was this scarier? The cradle-egg is the calibration point.
-- **Harwin's List:** the accumulated comedy of the cauldron; the monument that documents every crisis by virtue of surviving it; the list is funny because it exists and it exists because she keeps surviving.
-- **The Dead Dragon Field:** the identical-shot ladder's final rung. The same gesture (dead thing becomes fuel) at national-grave scale. The gallows-voice monument: the cultivation-register continuing over something the reader knows is monstrous, because it has always been monstrous, because the farce didn't curdle — it was always this, and the scale revealed it.
+- **The Bestiary:** the accumulated comedy and truth of the cauldron; humans logged by function; the one document that tells the truth about her; the named entry (Wylla) is the warm anomaly that dooms her. It is funny because it exists and it costs because of what it reveals.
+- **The Apex (the ladder's final rung this series):** the same gesture (a dead thing becomes a closed account) carried to the cost she displaces onto the one she loves — and the one place the gallows-voice *fails to arrive* (the register-silence). The monument: the register narrating over something the reader knows is monstrous, because it was always this and the scale revealed it — until, at the apex, it cannot. *(The Dead Dragon Field at national-grave scale is the **parked** later installment's rung, R5.)*

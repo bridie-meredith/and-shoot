@@ -49,13 +49,13 @@ Persistent across all three books. The Dao is always active in her framework. Wh
 | A supply-chain success (the factor fills an unusual order without question) | "Qi-fortune activating; the Heavenly Dao rewards correct sect-positioning" | She drafted an accurate, complete order that met a professional's standard; he filled it because it was correct |
 | A social setback (the septa tightens restrictions) | "Tribulation of the surveillance-array variety; the Heavenly Dao tests the formation's resilience" | The septa has noticed something and is responding appropriately to her job description |
 | A loss (a reagent batch spoiled, a relationship disrupted) | "The Dao removes an attachment to compel advancement; cost paid; ledger reconciled" | The batch spoiled because of a miscalculation; the relationship disrupted because of a real decision |
-| Her father's death (Bk III M1) | "Tribulation of the attachment-severing variety: the dao removes a mortal hook to compel advancement" | Her father is dying; she has no framework for loving a parent that permits grief; the cultivation-register provides the one that converts the love to method rather than liability |
-| Daenys's death (Bk III M2) | [The blank line] — "the cultivation-register should provide a gloss. It does not." | The heartless-dao doctrine's promise — that sufficient advancement enables the practitioner to process any loss through the karma/tribulation framework — is disproved |
+| The betrothal — sold north to the Starks (II.4) | "Tribulation of the attachment-severing variety: the dao removes a mortal hook to compel advancement beyond the mortal world" | She is being married off and severed from home and kin; she has no framework that permits grieving it (and she is bailing anyway); the cultivation-register converts the loss to logistics rather than liability |
+| The apex (III.6) — what she does to Wylla | [The blank line] — "the cultivation-register should provide a gloss. It does not." | The heartless-dao doctrine's promise — that sufficient advancement enables the practitioner to process any loss through the karma/tribulation framework — is disproved |
 | An improbable operational success | "Exceptional qi-fortune; the Heavenly Dao endorses the Inferior Path's current positioning" | She planned this carefully, over years, and it worked; the cultivation framework is designed to prevent her from knowing she did it |
 | The wildfire fever (Bk I M3) | "Heavenly tribulation of the breakthrough-tier; Foundation Establishment confirmed; the Heavenly Dao dispatches tribulation proportional to the advancement tier; this was a Tier-3 advancement event" | An uncontrolled toxic-and-magical reaction to a genuine Tier 3 Westerosi material; the fever was physiological crisis; the "aperture event" was a perceptual side-effect |
-| The Dance of the Dragons (Bk III) | "Heavenly tribulation of the Dynasty-class: the Targaryens accumulated too much; the Heavenly Dao dispatches a corrective event; the formation is being broken at the power-source level" | Succession politics, not cosmological equilibrium; the structural description is accidentally accurate (overcapitalized power-structure facing catastrophic resource loss) even as the mechanism is completely wrong |
+| *(The Dance — parked for the later installment)* | "Heavenly tribulation of the Dynasty-class: the Targaryens accumulated too much; the Heavenly Dao dispatches a corrective event; the formation is being broken at the power-source level" | Succession politics, not cosmological equilibrium — and **parked beyond this series** (the escape ends Book III; the Dance is the later installment). The structural description is accidentally accurate (overcapitalized power-structure facing catastrophic resource loss) even as the mechanism is completely wrong |
 | Her network growing without her full direction | "The Heavenly Dao routes fortuitous encounters toward correctly-positioned practitioners; the below-stairs faction and the factor expand because the Dao selects them as formation-disciples" | Time plus a signed license plus professionals who do their jobs; no routing required |
-| An enemy's retreat (Lock I — the septa fails to shut down the sick-house) | "The Inferior Path's counter-formation succeeded; the enemy's qi depleted against the formation's eye; the Heavenly Dao does not support formations that attack lawful charitable institutions" | Her father intervened; the legal mechanism she created held; the septa had no standing to override the document |
+| An enemy's retreat (Lock I — the septa fails to shut down her still-room works) | "The Inferior Path's counter-formation succeeded; the enemy's qi depleted against the formation's eye; the Heavenly Dao does not support formations that attack lawful institutions" | The legal mechanism she created held; the septa had no standing to override the document |
 
 ---
 
@@ -71,7 +71,7 @@ She has a taxonomy of tribulations that she applies consistently across the arc:
 
 **Breakthrough tribulations:** The wildfire fever (Bk I M3). The only event she classifies as a genuine tribulation sent in response to her advancement rather than as correction for imbalance. She files it as proof the Heavenly Dao has acknowledged her tier. The real-state reading: the Dao dispatches tribulations correctively, not congratulatorily; even in her model, this classification is slightly off.
 
-**Dynasty-class tribulations:** The Dance. The event the Heavenly Dao sends to correct the Targaryen overcapitalization. She is an incidental node in this event, not its target, which her framework correctly predicts: the tribulation is aimed at the formation's power-source (the Targaryen dynasty), not at peripheral formation-elements who did not contribute to the overcapitalization. She files herself as a practitioner who did not accumulate the karma this tribulation is settling.
+**Dynasty-class tribulations:** The Dance — **parked for the later installment** (this series ends at the escape; the Dance is beyond it). Her register *would* file her as an incidental node in such an event, not its target: aimed at the formation's power-source (the Targaryen dynasty), not at peripheral formation-elements who did not contribute to the overcapitalization. Retained here as parked-future framing.
 
 ---
 
@@ -80,7 +80,7 @@ She has a taxonomy of tribulations that she applies consistently across the arc:
 She runs a karma ledger in her head:
 
 **Merit-generating actions:**
-- Operating the sick-house (supporting life, protecting the innocent) — substantial merit, deliberately cultivated
+- Operating her household apothecary (supporting life, protecting the innocent) — substantial merit, deliberately cultivated
 - Filling the factor's orders accurately (correct commercial practice) — minor merit
 - Maintaining the dose-log discipline (correct cultivation hygiene) — merit classified as "technique investment rather than merit-proper"
 
@@ -89,7 +89,7 @@ She runs a karma ledger in her head:
 - Any compound she uses that reads ambiguously on the poison column — she classifies these as "correctly manifested; the manifest reads medical supplies; the karma attaches to the manifest's classification, not to the compound's secondary uses"
 - Losses caused by her decisions (people she harmed indirectly through network operations) — she does not run this accounting; the framework does not flag these as karma unless they reach her intentional awareness, which she manages
 
-**The blank-line karma problem (Bk III):** The killing-karma ledger that she does not run is the arc's structural horror. She has been accumulating demerit she has not accounted for. The Heavenly Dao does not actually dispatch its settlements in the cultivation novel's clean karmic-accounting style — but the structure of the story does. The Dance is the ledger's settling.
+**The blank-line karma problem (Bk III):** The killing-karma ledger that she does not run is the arc's structural horror. She has been accumulating demerit she has not accounted for. The Heavenly Dao does not actually dispatch its settlements in the cultivation novel's clean karmic-accounting style — but the structure of the story does. The apex (III.6) is where the unaccounted ledger settles — not on her, but on Wylla, whom she makes a killer.
 
 ---
 
@@ -105,4 +105,4 @@ The cultivation-register's "the Heavenly Dao selects and rewards the correctly-p
 
 - **With `cond-inferior-path-doctrine`:** this card details the dao/tribulation/fate section of the doctrine at the per-event level; load the doctrine card for the framework's full cosmology; load this card when authoring a specific scene where the Heavenly Dao framing needs to be deployed
 - **With `cond-transmigration-previous-life`:** the previous-life's reading practice is the source of the Heavenly Dao framework; she inherited a genre's cosmology and is applying it to a world that does not conform; the broken-clock is loudest when the dao-calibration events are real losses rather than convenient tribulations
-- **With the blank-line (Bk III):** this card's function changes at the blank line — the table's "Daenys's death" row is the card's own failure moment; bones authors should note that the Heavenly Dao calibration framework becomes partially non-functional after this event; she still reaches for it, but the accounting no longer arrives
+- **With the blank-line (Bk III):** this card's function changes at the blank line — the table's apex row is the card's own failure moment; bones authors should note that the Heavenly Dao calibration framework becomes partially non-functional after this event; she still reaches for it, but the accounting no longer arrives
