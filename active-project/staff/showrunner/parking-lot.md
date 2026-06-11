@@ -2970,3 +2970,83 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-06-11-001
+      created_at: 2026-06-11T21:11:19Z
+      created_by: "improvement-loop/test pipeline-20260611T211119Z (STRUCT-031)"
+      label: circuit-breaker-unimplemented
+      target:
+        command: /and-stitch
+        scope: "*"
+        phase: Phase 9
+      severity: HARD
+      description: |
+        CLAUDE.md Rule 22 declares a binding disposition circuit-breaker: "a single defect class may
+        be dispositioned 'design-inherent / accepted-caveat' at most N=2 consecutive chapters; the
+        (N+1)th auto-promotes NOTE → BLOCKING." This rule has no implementation:
+        (1) No state field in schemas/showrunner-memory.schema.md tracks per-defect-class
+            consecutive design-inherent disposition counts across chapters.
+        (2) No command body (and-stitch.md Phase 9 Step 4, and-postop.md, or and-review verdict)
+            reads a streak count or applies the auto-promotion.
+        The only N=2 reference in command bodies is and-stitch.md Phase 9 line 886 (FOLLOW-FAIL
+        consecutive cap, "see Step 4 / PROP-0048"), but Step 4 (lines 918-960) has no streak-tracking
+        or auto-promotion logic, and PROP-0048 is not defined anywhere in the corpus.
+        Without enforcement, the b01 pattern (16 consecutive design-inherent dispositions, no breaker)
+        can recur on future chapters with no automatic escalation.
+      context_refs:
+        - active-project/staff/reviews/pipeline-20260611T211119Z.md  # STRUCT-031
+        - CLAUDE.md  # Rule 22 (declares the circuit-breaker)
+        - .claude/commands/and-stitch.md  # Phase 9 Step 4 (enforcement site)
+        - schemas/showrunner-memory.schema.md  # §chapters[] (state field needed here)
+      resolution_suggestion: |
+        (1) Add to showrunner-memory.schema.md §chapters[]: a field such as
+            `cold_read.design_inherent_streaks: { <defect-class-label>: <count> }` that the
+            Phase 9 verdict write increments when a defect is dispositioned design-inherent,
+            and resets to 0 when the same class fires clean on a chapter.
+        (2) In and-stitch.md Phase 9 Step 4, after the cluster check: read
+            `cold_read.design_inherent_streaks` for each finding class; if any class count >= 3,
+            promote the verdict to at-minimum PASS-WITH-DEPTH-PASS-REQUIRED (the depth pass IS the
+            escalation), and surface "CIRCUIT-BREAKER-FIRED: <class> consecutive N=<count>" in
+            the verdict block. A count >= 3 on the central-event class fires FAIL.
+        (3) Define PROP-0048 or retire the reference; the and-stitch.md line 886 citation is dangling.
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-11-002
+      created_at: 2026-06-11T21:11:19Z
+      created_by: "improvement-loop/test pipeline-20260611T211119Z (STRUCT-032)"
+      label: signature-concreteness-floor-field-absent
+      target:
+        command: /and-substance
+        scope: "series"
+        phase: null
+      severity: SOFT
+      description: |
+        CLAUDE.md Rule 22 requires the substance signature to "declare a readability/concreteness
+        floor as a non-negotiable constraint the register coexists with — no single-axis
+        register-as-substance optimization." Neither schemas/showrunner-memory.schema.md §series.substance
+        nor .claude/commands/and-substance.md series authoring Phase 4 defines or gates on a
+        concreteness_floor or readability_constraint field. The existing b01 signature (authored
+        2026-05-24) contains no such declaration. /and-review signature does not check for it.
+        Risk is forward-only (b02+ or new project); b01 is past signature authoring.
+      context_refs:
+        - active-project/staff/reviews/pipeline-20260611T211119Z.md  # STRUCT-032
+        - CLAUDE.md  # Rule 22 (declares the requirement)
+        - schemas/showrunner-memory.schema.md  # §series.substance (missing field)
+        - .claude/commands/and-substance.md  # series Phase 4 authoring (missing gate)
+        - .claude/commands/and-review.md  # signature subcommand (missing check)
+      resolution_suggestion: |
+        (1) Add to showrunner-memory.schema.md §series.substance: a `concreteness_floor` field
+            (e.g., `minimum_concrete_svo_fraction: <0.0-1.0>` + `prose_register_constraint: <one line>`).
+        (2) In and-substance.md series Phase 4 authoring brief: require the screen-writer to declare
+            this field alongside the state_axes; reject a signature that has no concreteness floor.
+        (3) In and-review.md signature subcommand: add a HARD check that `concreteness_floor` is
+            populated; an absent field is a schema violation (mirrors the dense-matrix discipline for
+            actor_baselines).
+        Apply at next /and-substance series run (b02 or new project); no retroactive b01 change needed.
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
