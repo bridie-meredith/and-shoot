@@ -306,7 +306,8 @@ The engine is the **asymmetry, sealed — and Alicent is the seal.** The observe
 ### III.1 · the commission
 **Inside:** the ship is ordered through three layers of paper, designed from her room off the reagent map, **paid out of the off-books dice-coin** (the soap-money can't be seen buying a getaway hull). The shipwright quotes *years.* She runs it against the betrothal clock. Tight.
 **Reverse-angle:**
-- 🤨 *The shipwright's agent:* a phantom buyer commissions a custom vessel through too many intermediaries — delighted by coin that clears, incurious about whose it is. (because-Westeros: nobody imagines a child.)
+- 🤨 *The shipwright's agent:* a craftsman who *loves* this commission — the most beautiful hull of his career — and never lets himself ask who it's for, because asking would mean not building it. Delighted by coin that clears, incurious by the virtue of his own craft. (because-Westeros: nobody imagines a child. The benign mirror of Quint — love-of-the-work makes him *not* pry, and prosper.)
+- 😂 *Alicent (WTH, reverse-angle channel — a letter):* reads the diligent planning as a daughter finally taking her wedding seriously — mistakes the ship-money and the route-study for *trousseau care.* "She plans so dutifully for the journey north." (The misread that helps build the escape.)
 **Gags:** ④ (the long con as a procurement project).
 
 ### III.2 · the excursions
@@ -314,36 +315,47 @@ The engine is the **asymmetry, sealed — and Alicent is the seal.** The observe
 **Reverse-angle:**
 - 😱 *The watch:* sightings of a small swift figure on the roofs → a "ghost of the Red Keep" legend; mothers warn children.
 - 🤨 They can't catch it, can't map its routes, add patrols, achieve nothing.
-- 😂 The "ghost" is *great for discipline* — the watch is sharper than it's been in years; the captain is commended. (Westeros benefits from being haunted by a truant princess.)
-**Gags:** ⑤ (the meditation alibi) · the Cassandra witness reprised (a guard who *did* see her, ignored).
+- 😂 The "ghost" is *great for discipline* — the watch is sharper than it's been in years; the **captain commended** is the very one who, years back, mocked Hobb's report and had him transferred. The system metabolises its own deafness into a virtue, decorated for the alertness it only has because it refuses to hear the man who could explain it.
+- 😱 *Alicent (WTH, reverse-angle channel):* frets at the *ghost* — "the ghost of the Red Keep, how *dreadful;* thank the Seven my Gael is safe abed, meditating." Reassured by the exact alibi that covers the truth: she catastrophizes the harmless and is soothed by the catastrophe.
+**Gags:** ⑤ (the meditation alibi) · the Cassandra witness reprised (Hobb, on that same watch, sees the rooftop figure plainly and *says nothing* — he learned).
 
 ### III.3 · the greedy factor
-**Inside:** **Lothar Quint — one of her own pit-factors, grown greedy** — smells the bigger money in the ship-payment chain, can't produce the phantom buyer, and leans on the maid. He has *no idea* he's poking a dragon-eating cultivator child. Gael handles him — **colder than R2.** › **R3, climbing.**
+**Inside:** **Lothar Quint — one of her own pit-factors, grown greedy** — smells the bigger money in the ship-payment chain, can't produce the phantom buyer, and leans on the maid. **Not purely greedy:** a cautious man clawing a family out of debt, and the lean on the maid is the one reckless gamble of an otherwise-careful life — so the cold resolution violates a *love,* not just a vice. He has *no idea* he's poking a dragon-eating cultivator child. Gael handles him — **colder than R2, precisely by being *casual*:** takes his quicklime tip first, thanks him sincerely, notes it in a small book, and the account is closed. › **R3, climbing.**
 **Reverse-angle:**
-- 😂 *The factor:* certain he's the smartest man in the room. (He is not the smartest thing within fifty feet of the maid.)
-- 😱 He's "let go"; never seen again; no one can say quite why.
-**Gags:** ④ (he's "offboarded") · ① (her reputation does some of the intimidating).
+- 😂 *The factor:* certain he's the smartest man in the room. (He is not the smartest thing within fifty feet of the maid.) Because we were shown the family, the long fall costs us the comfort of thinking the mark deserved it.
+- 😱 He's "let go"; never seen again; no one can say quite why. *(Hobb, three streets over and off-duty, later declines to report the smell.)*
+- 🧊 *Otto (the antagonist-face beat — the scheme that won't close, tightening):* the vanished factor is a data point his surveillance *catches.* He doesn't grasp it — but the maid's orbit, the untraceable coin, now a quietly-erased factor: the pattern thickens and he tightens the watch, sliding toward the apex misfire (the corpse at II.7 taught him the maid is live; III.6 is where his one correct deduction fires). `OTTO-LEAK` climbing.
+- 😂 *Alicent (WTH, reverse-angle channel — a report):* the factor "let go" reaches her as court news → "how *unlucky* for that man" — the same serene gloss as the II.7 exploiter, **repeated and not noticed as a repeat;** she is now missing murders on a schedule.
+**Gags:** ④ (blander-as-darker — "the account is closed," the flattest word) · ① (her reputation does some of the intimidating) · ⑥ (she was *polite,* so she's not the villain).
 
 ### III.4 · the deadline
-**Inside:** the betrothal accelerates; they're packing her north; the two countdowns cross — the hull isn't ready. She burns her last delay-capital.
+**Inside:** the betrothal accelerates; they're packing her north; the two countdowns cross — the hull isn't ready. She burns her last delay-capital, feigning the delicate-waif to buy time.
 **Reverse-angle:**
 - 😂 *Everyone:* an unkillable superhuman feigns being a sickly waif — and they believe it, because the legend her blankness built says the scholar-princess has "always been delicate." Her cover is a story Westeros wrote for her.
-**Gags:** ⑤ (paying into a practical tool) · ② (stalls on cue).
+- 😱 *Alicent (WTH — the babying weaponized one last time):* "my poor *delicate* girl, too ill to travel north." She **campaigns for the delay herself** — frets to the King, presses the maesters, buys her daughter the very weeks the escape needs — **unknowing,** the smothering maternal love turned, one final time, into the tool that frees the child it will lose. The cruelest "what the hell": she helps build the escape she'll be left behind by.
+- 🧊 *Jaehaerys (the antagonist-face beat — the plan that frees her):* he *accelerates* — pushes the packing, the date — her stalling against his push. The more decisively he moves to dispose of her, the more precisely he sets the clock she's racing to beat; a king architecting his daughter's escape and unable to perceive it.
+**Gags:** ⑤ (the delicate-waif misread paid into a practical tool) · ② (stalls on cue) · ④ (the wedding as a delivery deadline she's gaming). **Guardrail:** `BETROTHAL-DREAD` stays the reader's/Alicent's — Gael is gaming a clock, not dreading a marriage.
 
 ### III.5 · the tempering
-**Inside:** *the one outward spend.* Runs qi through the maid to make her durable enough for the sea, deadpan-framed as logistics ("an untampered mortal is a liability at sea"). The reader knows exactly what it is. Costs her real cultivation — **she chose to be weaker** for one person. › **the anti-curdle break.**
+**Inside:** *the one outward spend* (GUARD-1's third and last — I.1 / I.5 / III.5; **no relapse follows at the apex**). Runs qi through the maid to make her durable enough for the sea, deadpan-framed as logistics ("an untampered mortal is a liability at sea"). The reader knows exactly what it is. Costs her real cultivation — **she chose to be weaker** for one person. › **the anti-curdle break.**
+**The death-flag rationalization (gag ⑦ payoff — the excuse for the one spend she'd never otherwise make).** Genre-poisoned, Gael is *certain every flag-raiser dies* — and Wylla has begun raising them (talking about *the future,* the sect, "after we're away"). So she tells herself the tempering **clears the flag:** make the marked one too durable to be collected, and the omen can't cash. It is the cultivation-logic mask over the one purely-loving act in the series — and the dark turn (III.6) is that the tempering is *exactly why* the flag doesn't cash on Wylla: instead Wylla is the one who does the killing. Right for the wrong reasons, one last time — she "saved" Wylla from a narrative omen and what she actually did was make her a killer.
 **Reverse-angle (the maid is the native):**
-- 😱 Warmth pours into her, a glow under the skin, her body *changes*; she's briefly afraid of what her princess is.
+- 😱 Warmth pours into her, a glow under the skin, her body *changes*; she's briefly afraid of what her princess is — and then **faith closes over the fear:** the magic visibly, bodily working on her own flesh is proof past arguing, and she crosses fully over (the junior-sister conversion *sealed* here).
 - 🤨 Afterward she's stronger, sleeps less, no fever touches her — she never asks; some doors you don't open.
 - 😂 Gael calls it "a tonic for the voyage"; the maid accepts it the way you accept a powerful friend's strange gift — graciously, without reading the label.
-**Gags:** ③ (the named entry is the one she spends power on) · ④ ("investing in the asset").
+- 😂 *Alicent (WTH, reverse-angle channel — a letter):* sends a maternal going-away gift "for the journey north," **grotesquely mistimed** against the escape it knows nothing of — funny and aching in one stroke; the last tender wrong note before the silence.
+**Gags:** ③ (the named entry is the one she spends power on) · ④ ("investing in the asset") · ⑦ (clears the flag).
 
 ### III.6 · the narrow escape
-**Inside:** Lock III, the heist at full scale. It narrows — discovery, a pursuer, an early arrival — and **the tempered maid kills to get them out** (Gael's gift made her able). Surface: a triumphant farce (a child foils a royal betrothal and vanishes by sea on a ship she built). Underneath: the maid boards a killer, and Gael's hands stayed clean only because she put the cost on the girl she loves. › **the apex.**
-**Reverse-angle (the realm's post-mortem):**
+**Inside:** Lock III, the heist at full scale. It narrows — **discovery via Otto** (he connects the vanished factor [Quint], the ship payments, and the maid's movements, and moves to intercept; he never reaches "cultivator," but his accurate-but-wrong read is enough to *act*), a pursuer, an early arrival — and **the tempered maid kills to get them out** (Gael's gift made her able; **the pursuer she kills is Otto's man**). Surface: a triumphant farce (a child foils a royal betrothal and vanishes by sea on a ship she built). Underneath: the maid boards a killer, and Gael's hands stayed clean only because she put the cost on the girl she loves — *the one warm correction (the name in the bestiary) dooms the person it warmed.* › **the apex.**
+**The one break (the armor cracks exactly once — witnessed by Wylla).** At the apex the breezy cultivation-register, grief-armor since I.1, finally **does not arrive** — the monologue that always fills the space is simply *gone.* Wylla, who knows her Senior Sister's voice better than anyone, is the only one who notices — not the deed, the *quiet* — and keeps her face still, and that stillness is the reader's cue. The joke that can't be told is the tragedy landing. *(GUARD: register ABSENT, exactly here, never again.)*
+**Reverse-angle (the realm's post-mortem + the faces' last failures):**
 - 🤨 The official account is incoherent; survivors' stories don't agree; quietly filed as an embarrassment no one wants explained.
-- 😂 The realm's final theory: a foreign prince, a god, a conspiracy — *anything* but "she built a boat and left," because a princess with **agency** is the one thing they cannot imagine. (Sexism: the last cheat code.)
-**Gags:** ③ + ④ converge — the named entry "performs to spec"; the kill files under her oldest reagent maxim, *waste nothing, everything has a use.*
+- 😂 The realm's final theory: a foreign prince, a god, a conspiracy — *anything* but "she built a boat and left," because a princess with **agency** is the one thing they cannot imagine. (Sexism: the last cheat code.) *Three reports: a Faceless Man (recommend war) · a foreign abduction (allocate rescue funds) · a junior clerk who read the harbor ledgers and got it exactly right — marked* insufficiently serious *and not entered, because by then the realm prefers the war.*
+- 🧊 *Otto (the catastrophic break — the scheme that won't close, at last):* his **one correct deduction** (the maid matters) forces the interception — and produces a catastrophe he never understands; his man dies, the girl is gone, he wins every move and loses the game without ever naming what he was playing against.
+- 🤨 *Barth (the ladder ends one rung short, forever):* the mind that could have caught them, **kept too busy** — statecraft, the Faith, his own age (he dies 98 AC). The realm's one capable mind never writes the true account; the closest miss the truth ever gets, shelved permanently.
+- 😱 *Alicent (the terminal WTH — the gag's whole-series punchline):* her daughter simply *gone.* The last and largest "what the hell" is **grief.** She held the seal, shielded her on every front, would have fled with her had the King allowed it — and is left on the shore, never knowing her mother was the shield. The love that saw most clearly and could save least.
+**Gags:** ③ + ④ converge — the named entry "performs to spec"; the kill files under her oldest reagent maxim, *waste nothing, everything has a use* · ① capstone (the legend she collected does the last of her intimidating) · ⑤ (the realm reads agency as anything but agency).
 
 ### Epilogue
 Two girls on a ship, the continent behind them, the warm south ahead. Both desires satisfied; one of them now a killer. Freedom or a prettier cage — the reader decides. Door left open for the parked Dance book (her longevity intact).
@@ -351,9 +363,11 @@ Two girls on a ship, the continent behind them, the warm south ahead. Both desir
 ---
 
 ## Curdle ladder (the dark undertow, comedy on top the whole way)
-R0 (I.1 kill) → R1 (I.5 Daemon drain) → R2 (II.7) → R3 (III.3) → **apex (III.6, the maid kills)**, with
-**III.5 the tempering** as the giving-break just beneath the peak. *(R4 / the dead-dragon field parked
-for the Dance.)*
+R0 (I.1 kill) → R1 (I.5 Daemon drain) → R2 (II.7) → R3 (III.3) → **R4 — the apex (III.6, the maid kills)**,
+with **III.5 the tempering** as the giving-break just beneath the peak. *(R5 / the dead-dragon field parked
+for the Dance.)* **Label note (2026-06-11):** the III.6 apex *is* R4 in the tokenized run-04 layer + the
+check-threads rung map (which requires R0–R4 present); the parked Dance dead-dragon-field is therefore **R5,**
+not R4 — earlier spine prose called the parked field "R4," colliding with the token. Reconciled here.
 
 ## Open slots (creative-fill — see worksheet)
 ~~maid's name~~ → **Wylla** · ~~the Northern betrothal~~ → **the Starks — the Warden of the North's heir** *(retargeted 2026-06-11; was Lord Errold Slate of Blackpool — the King now sells her high to a Great House)* ·
@@ -683,3 +697,69 @@ RISK` (II.2 exposure parked low → II.5 lands first on the market tier) · `SOU
 self-reveal ‖ Barth's abstract near-miss) · `CLEAN-HANDS-DOCTRINE` (I.5 method-not-harm line → II.7 first
 "clean" kill → III.6 the blood on Wylla) · `SHIP`/`NOTHING-MINE` (II.8 ordered through Wylla → III.1
 commission → III.6 escape). **All arced; check-threads PASS, no orphans. Book-II review-walk CLOSED.**__*
+
+*__Book-III review-walk — COMPLETED: III.1–III.6 + Epilogue (2026-06-11).__ Extended the per-chapter walk
+through Book III (same lens: consistency-check vs the run-04 outline + character docs · recurring-beat
+completeness · guardrails · thread-arc). Body edits as reversible judgment-defaults, **no new tokens**
+(run-04 III layer already current; **check-threads re-run → PASS,** R4=[III.6] confirmed). The
+Book-II-flagged lint **confirmed and worse in Book III: all six chapter bodies had dropped their
+gag-map-scheduled Alicent WTH beat** — and that beat is also the *escalation ladder* of her gag toward the
+terminal grief. All restored; the ladder now reads end-to-end. Delta set:*
+
+- **III.1 "the commission":** restored Alicent's letter-WTH (mistakes the ship-money/route-study for
+  *trousseau care*); folded the shipwright's-agent virtue (a craftsman who *loves* the hull and won't ask —
+  the benign mirror of Quint).
+- **III.2 "the excursions":** restored Alicent's WTH ("the ghost — how *dreadful;* thank the Seven my Gael's
+  safe abed" — soothed by the exact alibi that hides the truth); sharpened the Hobb/City-Watch payoff (the
+  commended captain is the one who mocked Hobb; Hobb now sees and says nothing).
+- **III.3 "the greedy factor":** restored Alicent's WTH ("how *unlucky* for that man" — the II.7 gloss
+  *repeated,* unnoticed; she misses murders on a schedule); **added Otto's antagonist-face beat** (the
+  vanished factor is a data point his surveillance catches → he tightens toward the apex; pairs with the
+  II.7-a "Otto learns from the proxy-removal" delta); folded Quint's virtue-to-betray (a cautious man
+  clawing a family out of debt) so the cold close violates a love, not just greed.
+- **III.4 "the deadline":** restored the *load-bearing* Alicent beat — **she campaigns for the delay
+  herself** ("my poor delicate girl, too ill to travel north"), the **babying weaponized one last time,**
+  unknowingly buying the escape she'll be left behind by; added Jaehaerys's face-beat (he accelerates — the
+  plan-that-frees-her, his push setting the clock she races); re-stamped the `BETROTHAL-DREAD` owner-guard.
+- **III.5 "the tempering":** stamped GUARD-1 (the **third and last** outward spend — I.1/I.5/III.5, **no
+  relapse at the apex**); added the **death-flag rationalization** (gag ⑦ payoff — she tempers Wylla to
+  *clear the flag,* the genre-logic mask over the one loving act; the dark turn is it's *why* Wylla becomes
+  the killer instead); made the **junior-sister conversion-seal** explicit (the magic visibly working on her
+  flesh closes faith over fear); restored Alicent's mistimed-gift WTH.
+- **III.6 "the narrow escape":** named **Otto** as the discovery-vector explicitly in the body (connects
+  Quint + ship-payments + maid-movements; the pursuer Wylla kills is *his man* — the named entry dooms the
+  warmed); **staged the one armor-break** — the apex register-silence, grief-armor failing exactly once,
+  **witnessed by Wylla** (she notices the *quiet,* the reader's cue; GUARD register-ABSENT, here and never
+  again — the emotional apex the whole comedy-register is built toward); added **Barth's ladder-end beat**
+  (the mind that could've caught them, kept too busy, dies 98 AC — the ladder ends one rung short forever);
+  added **Alicent's terminal-grief WTH** (the gag's whole-series punchline — her daughter simply gone, she
+  held the seal and is left on the shore never knowing); staged the realm's three-report post-mortem.
+- **Curdle-ladder label reconciled:** the III.6 apex **is R4** (the tokenized run-04 layer + check-threads
+  rung map require R0–R4; III.6 was already R4 there); the parked Dance dead-dragon-field is therefore **R5,**
+  not R4 — earlier spine prose called the parked field "R4," colliding with the token. Fixed in the
+  curdle-ladder section.
+
+*__Cross-doc / Phase-4 provenance backlog (FLAGGED, not edited — these are run-02-snapshot + decisions-record
+artifacts explicitly slated for Phase-4 regeneration; the spine is the authority and already embodies the
+resolutions; piecemeal edits now would fight the migration):__*
+- *`GUARDS-register.md` is a stale run-02 snapshot — Saerys naming, **armor-break "III.8"** (now III.6),
+  **GUARD-1 "no external energy spend"** (now the ratified three-spends I.1/I.5/III.5), **Locks
+  "I.11→II.10→III.10"** (now I.2 / Book-II / III.6). Premises mostly HONORED-but-remapped; the doc's own
+  header concedes the ledger/timeline win on disagreement. Phase-4 re-derivation target.*
+- *`reconciliation-worksheet.md` rows 63/66/68 still read **"RULING NEEDED"** on questions the spine has
+  **resolved:** the "one crack" is a *separate grief-break at III.6* (register ABSENT), with **III.5 the
+  tempering** as the distinct anti-curdle GIVE; the Locks re-map (I.2/Book-II/III.6) is the worksheet's own
+  proposed mapping, now canonical. Record the resolutions at Phase-4 (left as-is here to avoid asserting a
+  human gate-ruling out of band).*
+
+*__Thread-arc confirmation (Book III — the apex convergence):__ `STARK-MATCH`/`CLOCK-CONCRETE` (Interlude →
+II.4 → III.4 deadline) · `OFFBOOKS-ACCOUNT` (II.3 dice-coin → III.1 hull) · `FACTOR-NETWORK` (II.3 → III.3
+Quint) · `OTTO-LEAK` (II.5 reads bestiary → II.7 proxy-removal teaches him → III.3 surveillance tightens →
+III.6 the catastrophic-but-blind interception) · `MAID-TEMPERED`/`WYLLA-CONVERSION`/`DEATH-FLAG` (III.5 →
+III.6 the maid able to kill) · `EXCURSION-RISK`/`GHOST-LEGEND`/`CASSANDRA` (III.2 → III.6 / Hobb's silence) ·
+`BESTIARY-NAMED-ENTRY` (II.2 creep → II.5 name+leak → III.6 dooms the warmed) · `CLEAN-HANDS-DOCTRINE` (I.5 →
+II.7 → III.6 the blood on Wylla) · `SPY-MISREAD` (I.3 monitor-disciple feared → III.6 inverted, she kills for
+her) · `ALICENT-SHIELD`/`ALICENT-CANT-EXTRACT` (Interlude → III.4 she buys the delay → III.6 left on the
+shore) · `PROPHESIED-LEGEND` (Book-I sealed mirror-flip → III.6 the realm prefers the legend to her agency) ·
+the **one break** (grief-armor → III.6 register-ABSENT, witnessed by Wylla). **All arced; check-threads PASS,
+R0–R4 present, no orphans. The three-book review-walk is now CLOSED end-to-end (I.1–III.6 + Epilogue).**__*
