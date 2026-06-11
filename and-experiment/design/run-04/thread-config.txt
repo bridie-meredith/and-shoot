@@ -2,8 +2,8 @@
 # Run-04 = Book-I REVISION of run-03. The outline closes most threads in-file (plant -> fire);
 # only genuine non-1:1 tokens are declared here.
 
-# --- aliases: the Northern lord is the betrothal clock made a name ---
-ALIAS SLATE-MATCH = BETROTHAL-CLOCK
+# --- aliases: the Northern match is the betrothal clock made a name ---
+ALIAS STARK-MATCH = BETROTHAL-CLOCK   # run-04 Book-II rev: retargeted minor-lord (Slate) -> the Starks (Warden of the North's heir)
 
 # --- plant-only: setups whose payoff is parked for the Dance book, or is diffuse/ambient ---
 # (parked for the Dance — established-then-rejected or scales later)
@@ -22,3 +22,5 @@ PLANT-ONLY SEPTA-ENDORSEMENT            # the endorsement-trap running gag; diff
 PLANT-ONLY SKULLS-INACCESSIBLE          # power she can't reach this series (proximity != access)
 PLANT-ONLY CHAMBERMAID-HANDS            # run-04: the smallfolk operator tier; ambient enterprise infrastructure
 PLANT-ONLY COURT-AS-EVIL-SECT           # run-04: her operating lens — the court read as an evil cultivation sect; ambient (she's pleased by elders' cold "favor" and abuses it)
+PLANT-ONLY KNOWS-SHE-GLOWS              # run-04 Book-II rev: she knows she's a beauty (a cultivation glow-up) and is vain/complicit; ambient trait (II.1+)
+PLANT-ONLY MAEGI-RUMOR                  # run-04 Book-II rev: the realm's dark read hardens omen -> sorcery; ambient (cashes into the betrothal-disposal + the title-collector gag ① at III)

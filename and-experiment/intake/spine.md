@@ -77,10 +77,10 @@ toward the apex misfire. Audience-funny: the reader laughs, the character suffer
 | **I.4 valyrian-beauty** | *proud* of the uncanny beauty (finally a normal thing!) → WTH as Daemon circles and the misread curdles | **Barth:** the Valyrian-steel contradiction ("can't be eaten — so where is it?") collapses his framework |
 | **I.5 the-bond-breaker** | half-sees something monstrous around the dead dragon → **flinches:** "my frightened girl defended herself" | **Barth:** the no-wound dragon-death is the realm's puzzle; he gets closest, is diverted · *Jaehaerys:* "Dragonbane + dead dragon" hardens the "useless **and** dangerous" file |
 | **Interlude (Alicent POV)** | the sustained WTH — *what is my daughter?* — from outside; the chill | **Jaehaerys:** the disposal-betrothal revealed (the clock starts); the rift · **the realm (the sealed mirror-flip / payout button):** gobsmacked, it halos her as *the prophesied one* in the very beat the King discards her as worthless and she files herself the *prize* — three wrong readings, and she never learns of the realm's awe |
-| **II.1 the recluse** | relief-WTH: "thank the Seven, she's taken up *reading*" (the cover, donated) | *Barth:* charmed by the scholar-princess (a soft near-miss) |
+| **II.1 the recluse** | relief ("she's taken up *reading*") curdling to dread — the King is *parading* her; she'd flee to Dragonstone but **cannot take her daughter** | **Jaehaerys:** finds her one use — dangle the jewel, stoke the legend, price the sale · *Daemon:* denounces her a *demon,* laughed at behind his back (seeds the maegi-rumour) · *Barth:* charmed by the scholar-princess (soft near-miss) |
 | **II.2 the startup** | proud "she has a head for *sums!*" (a mark at one remove) | *Otto (proto):* unusual money he can't yet trace |
 | **II.3 the world map** | "such a curious mind — *geography!*" (it's the reagent atlas / a ship's course) | **Barth:** delighted she studies the wide world; never sees the voyage |
-| **II.4 the betrothal** | **the righteous WTH** — furious he's selling their daughter cheap to a minor lord; aimed right, powerless | **Jaehaerys:** the betrothal he's *proud* of is the clock — cold deadpan symmetry (he solves a problem; she's relieved) |
+| **II.4 the betrothal** | not "cheap" now but **powerless** — an unimpeachable Stark match she cannot argue against; pure maternal grief | **Jaehaerys:** the build-up pays — he sells her *high,* to the North; the match he's proud of is the clock (he solves a problem; she's serenely relieved) |
 | **II.5 the compromise** | reads the bestiary → finds **her own entry** — the WTH escalation peak (near-break) | **all three converge:** *Otto* reads it as a weapon (the leak) · *Barth* as a cosmology (near-miss, collapses) · *Jaehaerys* armed → accelerates |
 | **II.6 the source** | "she sailed through the fever that felled half the Keep — such *strong blood!*" | **Barth:** "she never weakens though her supply's cut" — another collapsing theory · *(the maester's empty-purpose cope)* |
 | **II.7 the threat** | the exploiter's quiet ruin → "how *unlucky* for that man" (serenely misses it) | **Otto:** his lever (the maid) provokes Gael's R2 — his scheme yields a corpse he never predicted |
@@ -225,19 +225,23 @@ The engine is the **asymmetry, sealed — and Alicent is the seal.** The observe
 *Scale: the Keep, through one pair of hands. Lock II: remote acquisition perfected. Cost: R2.*
 
 ### II.1 · the recluse *(~6–7)*
-**Inside:** trades sulking for the **scholar-princess cover** (library, correspondence, harbor records — paper maps the world she can't touch). **The maid she already has — Wylla — steps up:** the childhood errand-running formalizes into the single channel (no new assignment; she's been here since I.2).
+**Inside:** trades sulking for the **scholar-princess cover** (library, correspondence, harbor records — paper maps the world she can't touch). **The maid she already has — Wylla — steps up into her one confidant:** the childhood errand-running formalizes into the single channel, and Gael — for the first time with someone to talk *to* — blithely narrates her whole mad cultivation cosmology at a loyal girl who believes none of it. Meanwhile the King, having decided his useless-and-dangerous daughter has exactly one realizable value, **parades her before the court** under strict handling — *silent, say nothing* — and stokes her legend to price the sale. She **knows she's a beauty** (the glow-up = a power-level readout, escalated) and *preens:* the parade reads to her as the evil-sect elder honouring its prized jade-disciple, the silence-rule as a *gift* (she meditates standing up while they look). And across the same hall **Daemon — diminished but loud, a laughingstock behind his back** — denounces her a *demon;* she pockets "Maegi / Sorceress" as a flattering new dao-title, and the sorcery-rumour begins to harden.
 **Reverse-angle:**
 - 😂 *The household:* relieved the strange one finally took up a *seemly* hobby (reading). The cover is donated, not built. (because-Westeros.)
-- 🤨 *The maid:* wonders why a princess wants harbor records and trade logs — and is paid not to wonder.
-**Gags:** ⑤ (reclusion read as scholarly virtue) · ③ (the maid logged: "Asset (hands/legs)").
+- 🧊 *The King:* finds her one use — a decorative jewel to dangle and a legend to inflate, advertising the merchandise toward the sale; she's *pleased* to be shown off. (`PLANT[DISPLAY-AS-ADVERTISEMENT]` → II.4.)
+- 😱 *Alicent:* the display feeds the very reverence she spends herself burying — and she grasps she **cannot flee to Dragonstone with her daughter:** a princess is the King's to keep, not the Queen's to take. The legitimate escape is sealed shut. (`PLANT[ALICENT-CANT-EXTRACT]` → III.6.)
+- 🤨 *The maid:* wonders why a princess wants harbor records and trade logs — and is paid not to wonder; loves her strange mistress anyway.
+**Gags:** ⑤ (reclusion read as scholarly virtue; her silent radiance as grace/menace) · ② + the prize self-cast (the parade *confirms* she's the kept jade-beauty) · ① (collects "Maegi" as an earned epithet) · ③ (the maid logged — "Asset (hands/legs)," climbing).
 
 ### II.2 · the startup *(~7)*
-**Inside:** walks the maid through past-life chemistry — soap, dyes that set, preservatives, spirits — accidentally founding the most profitable little enterprise in King's Landing; incoming materials assayed, radiant ones kept.
+**Inside:** walks the maid through past-life chemistry — soap, dyes that set, preservatives, spirits — accidentally founding the most profitable little enterprise in King's Landing; incoming materials assayed, radiant ones kept. To Gael it isn't a business — it's her **sect's mortal branch:** Wylla her first *junior-sister / inner disciple* (and confidant), the chambermaids outer-disciple mortals running worldly affairs beneath her notice.
 **Reverse-angle:**
 - 😂 *The triple-blind (three real tiers):* the buyers think they deal with a **clever commoner** (the smallfolk chambermaids who walk the market); **Wylla** the noble lady-in-waiting thinks Gael's the greatest mind in Westeros and quietly *manages* it; Gael thinks it's high-school chemistry. Everyone's wrong about who runs it; it prints money. (A noble can't hawk soap in the market — so the chambermaids are the hands, Wylla the manager, Gael the invisible source.)
+- 😂 *The cover does the hiding:* nobody connects the **paraded jewel / book-buried recluse** of II.1 to the coin — the King's own display perfects her concealment.
 - 🤨 *Buyers:* praise her "supernatural eye for goods." (They mean it as a figure of speech. It is not one.)
+- 🧊 *The ledger underneath:* the structure parks all the **exposure** on the chambermaids (Gael invisible, Wylla rank-insulated) — the road-to-hell engine in miniature, the cost that cashes when the channel is compromised (II.5/II.7). Meanwhile **Otto** first pulls at the unusual, untraceable money. (`PLANT[SMALLFOLK-HOLD-RISK]` · `PLANT[OTTO-MONEY-TRACE]` → II.5.)
 - 😂 *Nobody audits a girl's pin-money hobby.* Sexism = the perfect veil. (because-Westeros.)
-**Gags:** ④ (a 7-y-o thinking in margins/KPIs) · ③ (assay) · ①.
+**Gags:** ④ (a 7-y-o thinking in margins/KPIs *and* disciples — same org) · ③ (assay; Wylla's entry takes its first crossed-out climb, *Asset → trusted manager*) · ①.
 
 ### II.3 · the world map *(~7–8)*
 **Inside:** trade reports unfurl the world — Lys, the Summer Isles, Yi Ti, Asshai, **warm** places full of things that radiate. Starts the **reagent map**; wants, serenely, *all of it.* (North = cold-and-death only.)
@@ -246,10 +250,11 @@ The engine is the **asymmetry, sealed — and Alicent is the seal.** The observe
 **Gags:** ② (rates exotic ports by genre appeal) · the appetite-is-infinite engine.
 
 ### II.4 · the betrothal *(~8)*
-**Inside:** learns of the **Northern match** — marriage (max "leave me alone" violation) *and* the dreaded destination, stacked. Can't refuse; the clock goes concrete.
+**Inside:** the King's build-up closes — he sells her **high, to the Starks** (the Warden of the North's heir): a Great-House alliance binding Winterfell, real value, so the cold calculus is legible. The omen/maegi rumours that *repel* southron houses *attract* the grim North — the one house that reads a dragon-killing, never-sickening girl as an *asset* — so the curdled legend itself picks the buyer; and **Daemon's failed knife** plus his demon-shrieking are the embarrassing noise the match conveniently silences. To Gael the North is the **frozen enemy ice-sect** (Winterfell its stronghold; the Wall and the things beyond it its demon-horde), the betrothal a **sacrifice-bride handed to the rival sect** — *would snuff my furnace, hard pass.* She isn't afraid: she knows not to make a great sect **lose face** (jilt them and you're the villain of their revenge arc), so she'll **vanish clean,** and she's leaving to cultivate **outside the plot** anyway — the wedding is just a *delivery deadline* for the ship.
 **Reverse-angle:**
 - 😂 *The court (template beat):* she takes the worst news of her life without a flicker; opinion splits — "what grace!" vs "what ice!" — and nobody guesses *she simply has other plans.* Her blankness writes its own legend.
-**Gags:** ⑤ (the centerpiece misread) · ② capstone (refuses to be cast as the Tragic Bride) · the deflation ("super not ideal; also I'm bailing, so — whatever").
+- 😱 *Alicent:* **powerless against an unimpeachable match** — she cannot argue a Great-House alliance is beneath them, so her objection collapses to pure maternal grief; the match's own prestige silences her.
+**Gags:** ⑤ (the centerpiece misread — her carefree blankness reads as grace/ice) · ② capstone (refuses to be cast as the Tragic Bride; nopes the North as a rival evil sect) · ④ (the marriage filed as a logistics deadline) · the deflation ("super not ideal; also I'm bailing, so — whatever"). **Guardrail:** the dread is the reader's / Alicent's — never Gael's.
 
 ### II.5 · the compromise *(~8–9)*
 **Inside:** someone with court leverage **leans on the maid** to reach the princess; the maid comes back nervous, carrying messages, holding opinions she shouldn't. The single channel is compromised. **⭐ The leak is the bestiary:** Otto (the asset-filer) has read it (see below) and clocked the one anomaly — a servant entry upgraded from "Asset (hands)" to a **name** — and understands the maid is the single lever that moves an unmovable girl.
@@ -338,7 +343,7 @@ R0 (I.1 kill) → R1 (I.5 Daemon drain) → R2 (II.7) → R3 (III.3) → **apex 
 for the Dance.)*
 
 ## Open slots (creative-fill — see worksheet)
-~~maid's name~~ → **Wylla** · ~~the Northern betrothal lord~~ → **Lord Errold Slate of Blackpool** ·
+~~maid's name~~ → **Wylla** · ~~the Northern betrothal~~ → **the Starks — the Warden of the North's heir** *(retargeted 2026-06-11; was Lord Errold Slate of Blackpool — the King now sells her high to a Great House)* ·
 ~~R2 method (II.7)~~ · ~~R3 method (III.3)~~ · ~~the apex specifics (who the maid kills; how discovery
 happens)~~ → **all resolved 2026-06-09 (below)** · ~~Helaena's role~~ → **parked to the Dance book** ·
 ~~Alicent's arc~~ → **knows-and-shields** *(active protector; revised 2026-06-11, was knows-and-does-not-act; worksheet §D-slots)*. **Only remaining call:**
@@ -347,7 +352,7 @@ Otto/Daemon seating — **AU-age (recommended)** vs rename to original era-appro
 **Names assigned 2026-06-09** (primary cast — full rationale in `intake/character-reactions.md` §Appendix):
 the maid → **Wylla** · the Septa → **Septa Aldith** (Gael's POV still says "the Septa") · the Cassandra
 witness (still-room boy → watchman, one recurring figure) → **Hobb** · the greedy factor → **Lothar
-Quint** · the Northern betrothal lord → **Lord Errold Slate of Blackpool**.
+Quint** · the Northern betrothal → **the Starks — the Warden of the North's heir** (a young cipher; the cold destination, not the groom, carries the dread). *Retargeted 2026-06-11 (was Lord Errold Slate of Blackpool).*
 
 ### Resolved creative-fill (2026-06-09)
 - **R2 method (II.7) — the first death she *means*.** Gael's first *premeditated* human removal, executed
@@ -389,11 +394,11 @@ the prophesied one; she never learns). c03 reshaped to "both girls discover the 
 spine: `design/run-04/series-outline.md` (check-threads PASS). No GUARD contradicted; hard-fence-1 ADAPTed
 (smallfolk → minor-noble POV).*
 
-*__Book-II opening revision — STAGED (2026-06-11).__ From the chapter-by-chapter trope/comedy review walk
-(the II.1 cluster). **Not yet folded into the tokenized `design/run-04/series-outline.md`** — the canonical
-fold (per-chapter body rewrites + token renames + Daemon card Voice + thread-config alias) is the next
-deliberate step and must end on a reconcile + check-threads PASS before the tokenized layer is treated as
-current. Delta set:*
+*__Book-II opening revision — FOLDED (2026-06-11).__ From the chapter-by-chapter trope/comedy review walk
+(the II.1 cluster). **Folded 2026-06-11** into `design/run-04/series-outline.md` (II.1/II.2/II.4 stubs +
+tokens), `thread-config.txt` (SLATE-MATCH→STARK-MATCH alias; KNOWS-SHE-GLOWS / MAEGI-RUMOR plant-only), the
+Daemon card Voice/Description, and the spine bodies + gag map + name-resolution above; PLANT/FIRE pairing
+re-verified. This block is retained as the rationale record. Delta set:*
 
 **A. II.1 "the recluse" — the King's display + the favor-misread.**
 1. Beat adds the King **dangling Gael before the court** under strict handling — *silent, say nothing.* The
@@ -512,9 +517,9 @@ Baelon dropped. Canonical-fold-next: per-chapter body rewrites in this spine (II
 `series-outline.md` Book-II edits + Daemon card Voice + thread-config alias, then reconcile + check-threads
 PASS. Review walk paused at II.2 "the startup."*
 
-*__Book-II revision — STAGED, cont. (2026-06-11): II.2 "the startup."__ Five coherence-tightening deltas
+*__Book-II revision — FOLDED, cont. (2026-06-11): II.2 "the startup."__ Five coherence-tightening deltas
 from the review walk; applied as judgment-defaults (reversible), all aligned with existing machinery (no
-new direction). Same canonical-fold-pending status as the II.1 cluster above.*
+new direction). Folded into the canonical layer with the II.1 cluster above (2026-06-11).*
 
 **II.2-a — Cover-synergy with II.1 (the exploitation that hides her).** The enterprise is invisible
 *because* of what the King does to her in II.1: nobody connects the silent ornamental jewel / the

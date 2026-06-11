@@ -113,7 +113,7 @@ mirror-flip stays sealed.** `PLANT[ALICENT-SHIELD]` → III.6.
 Jaehaerys *worthless* (give her away; *kinslayer* behind his teeth), the realm — gobsmacked by dead **Caraxes**
 + near-bedridden Daemon + the quarantine + the beauty + Dragonbane — halos her **the prophesied one.** Gael
 never learns (Alicent keeps it from her); she keeps her own delusions. The clock starts. **Register:** CHILL.
-**Plants:** PLANT[BETROTHAL-CLOCK] · PLANT[SLATE-MATCH] · PLANT[ALICENT-SHIELD]
+**Plants:** PLANT[BETROTHAL-CLOCK] · PLANT[STARK-MATCH] · PLANT[ALICENT-SHIELD]
 **Fires:** FIRE[GENRE-CASTING] (the dangling-reward self-cast pays out as the literal betrothal)
 
 ---
@@ -121,18 +121,33 @@ never learns (Alicent keeps it from her); she keeps her own delusions. The clock
 ## BOOK II — *the blind machine* · age ~6–9 · intermediaries only · workplace comedy
 
 ### II.1 · the recluse *(~6–7)*
-**Beat:** trades sulking for the **scholar-princess** cover (library, harbor records — paper maps the world
-she can't touch). **The maid she already has — Wylla — steps up** (the errand-running formalizes into the
-single channel; no new assignment). **Register:** HOLD. **Rung:** off-ladder.
-**Plants:** PLANT[SCHOLAR-PRINCESS]
-**Fires:** FIRE[PLAYING-SMART] · FIRE[MAID] (the channel formalizes)
+**Beat:** two readings collide over one child and she breezily enjoys both. The King — his
+useless-and-dangerous daughter having exactly one realizable value — **dangles her before the court** under
+strict handling (*silent, say nothing*) and stokes her legend, pricing the asset for sale; she, **knowing
+full well she's a beauty** (a cultivation glow-up, escalated since I.4), reads the cold parade as an
+**evil-sect elder's calibrated favour** and the silence-rule as a *gift* (no social labour — she meditates
+standing up), and preens. Across the same hall **Daemon — diminished, vocal, a laughingstock behind his
+back** — openly denounces her as a *demon* who killed Caraxes; the court snickers, she files "Maegi /
+Sorceress" as a flattering new dao-title, and the **sorcery-rumour starts to harden.** Her cover sets
+(scholar-princess + ornamental jewel = the last girl suspected of anything), and **the maid — Wylla — steps
+up into her one confidant** (she chatters her whole mad cultivation cosmology at a loyal girl who believes
+none of it). Only Alicent reads it true: the display feeds the reverence she's burying, and she grasps she
+**cannot flee to Dragonstone with her daughter** — a princess is the King's to keep. **Register:** HOLD.
+**Rung:** off-ladder.
+**Plants:** PLANT[SCHOLAR-PRINCESS] · PLANT[DISPLAY-AS-ADVERTISEMENT] · PLANT[KNOWS-SHE-GLOWS] · PLANT[DAEMON-DISCREDITED] · PLANT[MAEGI-RUMOR] · PLANT[ALICENT-CANT-EXTRACT]
+**Fires:** FIRE[PLAYING-SMART] · FIRE[MAID] (the channel formalizes; the confidant bond warms)
 
 ### II.2 · the startup *(~7)*
 **Beat:** walks Wylla through past-life chemistry → the most profitable little enterprise in King's Landing.
 **The three-tier org** runs the triple-blind: Gael the invisible source, **Wylla** the noble trusted manager
 and social cover, the **smallfolk chambermaids** the market-facing hands (the "clever commoner" buyers think
-they deal with). It prints money. **Register:** SPIKE. **Rung:** off-ladder.
-**Plants:** PLANT[STARTUP] · PLANT[PAST-LIFE-COVER] · PLANT[PROFIT-CYCLE] · PLANT[TRIPLE-BLIND] · PLANT[CHAMBERMAID-HANDS]
+they deal with). It prints money. To Gael it isn't a business — it's her **sect's mortal branch:** Wylla her
+first junior-sister / inner disciple (and confidant), the chambermaids outer-disciple mortals beneath her
+notice. Her II.1 cover does the hiding (nobody connects the paraded jewel / book-recluse to the coin), the
+bestiary entry takes its first crossed-out climb (*Asset → trusted manager*), and — unseen — the structure
+parks all the exposure on the **chambermaids** while Otto first pulls at the unusual, untraceable money.
+**Register:** SPIKE. **Rung:** off-ladder.
+**Plants:** PLANT[STARTUP] · PLANT[PAST-LIFE-COVER] · PLANT[PROFIT-CYCLE] · PLANT[TRIPLE-BLIND] · PLANT[CHAMBERMAID-HANDS] · PLANT[SMALLFOLK-HOLD-RISK] · PLANT[OTTO-MONEY-TRACE]
 **Fires:** FIRE[HEIST-METHOD]
 
 ### II.3 · the world map *(~7–8)*
@@ -141,17 +156,25 @@ charmed she studies geography, never sees the voyage. **Register:** HOLD→SPIKE
 **Plants:** PLANT[REAGENT-MAP] · PLANT[WARM-DESTINATIONS]
 
 ### II.4 · the betrothal *(~8)*
-**Beat:** learns of the Northern match — marriage + dread destination, stacked; can't refuse; the clock goes
-concrete. The court splits "what grace!"/"what ice!" **Register:** CHILL. **Rung:** off-ladder.
-**Plants:** PLANT[BETROTHAL-DREAD] · PLANT[CLOCK-CONCRETE]
-**Fires:** FIRE[BETROTHAL-CLOCK] · FIRE[SLATE-MATCH] · FIRE[MARRIAGE-THREAT] · FIRE[LESBIAN] · FIRE[JAEHAERYS-TRANSACTIONAL]
+**Beat:** the King's build-up closes — he sells her **high, to the Starks** (the Warden of the North's heir;
+a Great-House alliance binding Winterfell). The omen/maegi rumours that *repel* southron houses *attract* the
+grim North — the one house that reads a dragon-killing, never-sickening girl as an asset — so the curdled
+legend itself filters the buyer; and **Daemon's failed knife** plus his demon-shrieking are the embarrassing
+noise the King resolves by marrying the problem far away. Gael, **carefree**, takes the worst news of her
+life without a flicker: she files the frozen North as "the enemy ice-sect, would snuff my furnace — hard
+pass," knows better than to make a great sect *lose face* (so she'll **vanish clean,** never jilt), and
+serenely plans to bail and cultivate **outside the plot** — treating the wedding as a *delivery deadline* for
+the ship. The court splits "what grace!"/"what ice!"; Alicent, powerless against an unimpeachable match,
+grieves. **Register:** CHILL (for everyone but Gael). **Rung:** off-ladder.
+**Plants:** PLANT[BETROTHAL-DREAD] (owner: reader / Alicent — never Gael) · PLANT[CLOCK-CONCRETE]
+**Fires:** FIRE[BETROTHAL-CLOCK] · FIRE[STARK-MATCH] · FIRE[MARRIAGE-THREAT] · FIRE[LESBIAN] · FIRE[JAEHAERYS-TRANSACTIONAL] · FIRE[DISPLAY-AS-ADVERTISEMENT] · FIRE[DAEMON-DISCREDITED]
 
 ### II.5 · the compromise *(~8–9)*
 **Beat:** the single channel is compromised. **The leak is the bestiary:** Otto reads it (sees a weapon,
 clocks **Wylla** — the named entry, a noble companion making court connections — as the lever); Barth reads it
 as a cosmology (closest miss, collapses); Alicent (if she reads it) finds her own entry. **Register:** CHILL. **Rung:** off-ladder.
 **Plants:** PLANT[BESTIARY-NAMED-ENTRY] · PLANT[OTTO-LEAK] · PLANT[COMPROMISED-CHANNEL]
-**Fires:** FIRE[BESTIARY] · FIRE[BARTH-NEAR-MISS]
+**Fires:** FIRE[BESTIARY] · FIRE[BARTH-NEAR-MISS] · FIRE[OTTO-MONEY-TRACE] (the coin he's traced since II.2 leads him to the journal) · FIRE[SMALLFOLK-HOLD-RISK] (the compromise lands first on the exposed market tier)
 
 ### II.6 · the source *(~8–9)*
 **Beat:** supply cut, she doesn't weaken — **the egg was a reactor, not a battery**; every theft was
@@ -211,7 +234,7 @@ payments + the maid's movements; the pursuer **Wylla kills** is his man — the 
 it warmed). Wylla leaves her house and name behind to board; the realm's post-mortem reaches for any
 explanation — a foreign prince, a god, the prophecy — anything but a princess with **agency**. The ship sails
 south. **Register:** SPIKE (loudest since Book I). **Rung:** R4 (the apex).
-**Fires:** FIRE[SHIP] · FIRE[MAID-TEMPERED] · FIRE[EXCURSION-RISK] · FIRE[CITY-KNOWLEDGE] · FIRE[GHOST-LEGEND] · FIRE[CLOCK-CONCRETE] · FIRE[WARM-DESTINATIONS] · FIRE[BESTIARY-NAMED-ENTRY] · FIRE[OTTO-LEAK] · FIRE[WYLLA-CAGED] (she gives up her noble future — the two-girl cage opens) · FIRE[PROPHESIED-LEGEND] (the realm prefers the legend to her agency, sealed; she never learns) · FIRE[SPY-MISREAD] (the monitor-disciple she feared at I.3 is the one who kills for her — the misread inverted at the apex) · FIRE[CLEAN-HANDS-DOCTRINE] ("clean hands" at last means the blood is on Wylla — the I.5 doctrine carried to its endpoint) · FIRE[ALICENT-SHIELD] (the shield's terminus — Gael sails, never knowing her mother held the seal; the protector left behind)
+**Fires:** FIRE[SHIP] · FIRE[MAID-TEMPERED] · FIRE[EXCURSION-RISK] · FIRE[CITY-KNOWLEDGE] · FIRE[GHOST-LEGEND] · FIRE[CLOCK-CONCRETE] · FIRE[WARM-DESTINATIONS] · FIRE[BESTIARY-NAMED-ENTRY] · FIRE[OTTO-LEAK] · FIRE[WYLLA-CAGED] (she gives up her noble future — the two-girl cage opens) · FIRE[PROPHESIED-LEGEND] (the realm prefers the legend to her agency, sealed; she never learns) · FIRE[SPY-MISREAD] (the monitor-disciple she feared at I.3 is the one who kills for her — the misread inverted at the apex) · FIRE[CLEAN-HANDS-DOCTRINE] ("clean hands" at last means the blood is on Wylla — the I.5 doctrine carried to its endpoint) · FIRE[ALICENT-SHIELD] (the shield's terminus — Gael sails, never knowing her mother held the seal; the protector left behind) · FIRE[ALICENT-CANT-EXTRACT] (the mother who'd have fled with her, had the King allowed it, is left on the shore — the legitimate escape she could never make)
 
 ### Epilogue
 Two girls on a ship, the continent behind, the warm south ahead. Both desires satisfied; one of them now a
