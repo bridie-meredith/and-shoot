@@ -6584,3 +6584,113 @@ pr_ref: null
 defer_until: null
 supersedes: null
 ```
+
+---
+
+## PROP-0053
+
+```yaml
+id: PROP-0053
+created_at: 2026-06-11T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: on-demand
+  source_report: staff/admin/improvement-loop/bridge.ledger.md
+  source_verdict: improvement-loop/bridge pass-1
+target:
+  type: agent-card
+  path: staff/admin/card.md
+  section: "Proactive behaviors"
+change_type: add
+rationale: |
+  Admin's process-critic mode fires reactively on per-chapter gate failures and /and-postop
+  convergences, recording findings per invocation, but has no standing cross-chapter
+  accumulator that proactively checks whether the same failure CLASS is repeating across
+  chapters within a book. The b01 readability failure demonstrated the gap: the
+  ledger-register rut ran for ~16 chapters without systemic detection — each chapter's
+  bone-gate and auditor passed or flagged locally while the book-level pattern built
+  unchecked. DEC-0115 added a 2-chapter disposition cap for that specific defect class
+  (ledger-register), but the fix is class-specific, not a general rut detector. The
+  condition that let 16 chapters accumulate before detection is structural: no
+  cross-chapter accumulator existed.
+
+  Brighid's reference harness (staff/agents/ingrid/rut-detection.plan.md) solves the
+  analogous production problem with a 6-class rut taxonomy tracked per-board by oskar
+  and aggregated proactively by ingrid at project close — independent of whether any
+  specific finding was filed in a tracking artifact. The key structural insight: the
+  detector operates on already-available per-board summary data, not raw scene content,
+  so it is cheap. This maps directly onto and-shoot: admin already holds per-chapter
+  gate verdicts and /and-postop quality scores in STM. Adding a standing rut-scan as a
+  proactive behavior in admin's process-critic mode uses existing data without new
+  command-body changes.
+
+  Distinct from PROP-0052 (structural-sameness scan at /and-review cohere, triggered by
+  scene-shape signature repetition in dramatic_shape + scene-move template): this
+  proposal tracks substance delivery rut classes (axis-flat, bone-class, gate/postop
+  discrepancy, disposition-rut), not scene-shape sameness. The two proposals address
+  orthogonal failure modes.
+evidence_refs:
+  - "staff/admin/ltm.md — 'Parking lot administration' preference: admin promotes
+    recurring parking-lot items into process proposals (reactive); no proactive
+    cross-chapter survey exists"
+  - "staff/admin/process-proposals.md — PROP-0046 through PROP-0050 (DEC-0115
+    no-ledger overhaul): five proposals addressing one rut class that ran ~16 chapters
+    before detection; no general rut scanner was proposed at that time"
+  - "staff/admin/decisions.md — DEC-0115: 2-chapter disposition circuit-breaker for
+    ledger-register specifically; class-specific point-fix, not a general accumulator"
+  - "brighid reference harness: staff/agents/ingrid/rut-detection.plan.md — 6-class
+    rut taxonomy; Option A (oskar board-close accumulate + ingrid project-close survey)
+    is the proven implementation pattern that this port adapts"
+recurrence_count: 1
+proposed_diff: |
+  In staff/admin/card.md, §Proactive behaviors, add §6 "Substance rut scan
+  (process-critic mode only)":
+
+  At each /and-postop convergence dispatch, after per-chapter process-critic findings,
+  admin reads its STM for the last ≤ 6 chapter outcomes (gate verdicts, /and-postop
+  quality axes, auditor finding classes, disposition decisions) and checks for four rut
+  classes:
+
+  AXIS-FLAT-RUT — the same substance axis (power, safety, belonging, authority, etc.)
+  shows no meaningful movement (or only flagged cheap-gain) across ≥ 3 consecutive
+  chapters. Detection: scan STM for SUBSTANCE-FLAT-<axis> or cost-absent findings in
+  the bone-gate column for the last 6 chapters; if the same axis appears in ≥ 3 of the
+  last 4, file rut to watchlist + emit PROCESS-CHANGE-PROPOSED (change_type: add,
+  target: substance contract for that axis) after recurrence_count ≥ 2.
+
+  BONE-CLASS-RUT — the same bone class (central-event / stakes / cost-bearer /
+  opening-bone / closing-bone) is persistently problematic across ≥ 3 chapters.
+  Detection: scan STM for HARD auditor findings by bone class for the last 6 chapters;
+  same class in ≥ 3 of last 4 fires rut + PROCESS-CHANGE-PROPOSED (change_type:
+  modify, target: /and-write Phase 6 bone-gate criteria for that class).
+
+  GATE-PASS/POSTOP-FAIL-RUT — chain gate passes but /and-postop consistently scores the
+  same quality axis (FOLLOWABLE / ALIVE / substance-delivery) below threshold across
+  ≥ 3 consecutive chapters. Signals structural gate incapability. Detection: compare
+  chain-verdict column vs. /and-postop axis scores per chapter in STM; same axis gap
+  in ≥ 3 of last 4 fires rut + PROCESS-CHANGE-PROPOSED (change_type: add, target:
+  the upstream gate for that axis).
+
+  DISPOSITION-RUT — the same defect class is dispositioned NOTE or
+  SHIPPABLE-WITH-CAVEATS in ≥ 2 consecutive chapters without a HARD finding. DEC-0115
+  built this for ledger-register specifically; this generalizes it. Detection: scan STM
+  disposition column for the last 4 chapters; any defect class in ≥ 2 consecutive
+  chapters fires rut + PROCESS-CHANGE-PROPOSED (change_type: modify, target:
+  disposition rules for that class).
+
+  Admin STM gains a "## Substance rut watchlist" section (row format: chapter-slug |
+  rut-class | axes/bone-classes | status: open/resolved | fired-proposal: null/PROP-NNNN).
+  Entries are never deleted; resolved entries are stamped. The watchlist is the primary
+  data source for cross-chapter pattern detection.
+
+  This behavior fires only in process-critic mode (after /and-postop), not in
+  user-proxy mode. Admin does not re-scan on user-proxy dispatches.
+cost_estimate: M
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
