@@ -2970,3 +2970,36 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-06-11-hygiene-001
+      created_at: 2026-06-11T00:00:00Z
+      created_by: "artur hygiene pass (improvement-loop/hygiene.ledger.md 2026-06-11)"
+      label: hygiene
+      target:
+        command: /and-substance
+        scope: "book b02"
+        phase: Phase 0
+      severity: SOFT
+      description: |
+        Hygiene sweep found 4 open HARD depth-pass parking-lot items that describe
+        themselves as gating b02 activation, but whose mechanical target.command is
+        /and-write (not /and-substance), so they will NOT fire at /and-substance book b02
+        Phase 0 via the standard parking-lot scan. The items are:
+          pl-2026-06-04-002   (b01c14 depth-pass-mandatory)
+          pl-2026-06-04-c15-004 (b01c15 depth-pass-mandatory)
+          pl-2026-06-04-c16-001 (b01c16 depth-pass-mandatory)
+          pl-2026-06-05-c19-deptpass (b01c19 depth-pass, scope "book-close")
+        All shipped SHIPPED-WITH-CAVEATS under DEC-0085/0087/0090/0099 coupling; depth
+        passes were intended before b02. DEC-0115 (2026-06-08) changed the project's
+        abstraction/apparatus stance retroactively — it is an open question whether these
+        depth passes are still obligatory or supersedable under DEC-0115. Needs oskar/ingrid
+        triage: (a) execute depth passes on c14/c15/c16/c19, or (b) dismiss with
+        DEC-0115 rationale + dismissed status + resolution_note on each item.
+      context_refs:
+        - active-project/staff/showrunner/parking-lot.md  # pl-2026-06-04-002, c15-004, c16-001, c19-deptpass
+        - staff/admin/decisions.md  # DEC-0085, DEC-0087, DEC-0090, DEC-0099, DEC-0115
+        - staff/admin/improvement-loop/hygiene.ledger.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
