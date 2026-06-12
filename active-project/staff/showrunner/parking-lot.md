@@ -2970,3 +2970,180 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-06-12-pipeline-001
+      created_at: 2026-06-12T09:06:11Z
+      created_by: "improvement-loop/test pass 1 — /and-review pipeline (STRUCT-001)"
+      target:
+        command: /and-facets
+        scope: "*"
+        phase: null
+      severity: HARD
+      description: |
+        schemas/dialogue.schema.md line 3 states "The R2 dialogue judge at /and-facets
+        Phase 2 remains as a locked-graph review pass." This directly contradicts DEC-0116,
+        which retired the entire R2 round including the R2 dialogue judge. The /and-facets.md
+        Notes section explicitly states "The R2 dialogue judge ... is retired too." An agent
+        dispatched with dialogue.schema.md as its authority would believe an R2 locked-graph
+        judging pass is still active at /and-facets — potentially waiting for or referencing
+        a Phase 2 pass that no longer exists.
+        Fix: update schemas/dialogue.schema.md line 3 to reflect DEC-0116 retirement; note
+        that dedup concern is now handled by the /and-facets Phase 4 auditor DEDUP class.
+      context_refs:
+        - active-project/staff/reviews/pipeline-2026-06-12T090611Z.md  # STRUCT-001
+        - schemas/dialogue.schema.md
+        - .claude/commands/and-facets.md  # Notes section: "R2 dialogue judge ... is retired too"
+        - staff/admin/decisions.md  # DEC-0116
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-12-pipeline-002
+      created_at: 2026-06-12T09:06:11Z
+      created_by: "improvement-loop/test pass 1 — /and-review pipeline (STRUCT-008)"
+      target:
+        command: /and-write
+        scope: "*"
+        phase: null
+      severity: SOFT
+      description: |
+        staff/dialogue-writer/rubric-dialogue.md describes R2 dialogue authoring (lines
+        128-138 "R1 vs R2 differences"), V2 reviewer protocol / Phase 5b audience-gate
+        (lines 97-123), and R2 decision-shard emission (lines 159-160) in active-voice
+        present tense. Under URI-WRITE-DIALOGUE-COBONDED and DEC-0116, the R2 dialogue
+        round is retired; dialogue is authored once (R1 blind) at /and-write Phase 1.5.
+        This rubric is loaded by /and-write Phase 1.5 dispatches. A dialogue-writer fork
+        reading this rubric receives guidance for workflow phases that no longer exist.
+        Fix: mark the R2 authoring sections, V2 reviewer protocol, and audience-gate hooks
+        as retired under DEC-0116. Retain R1 writer patterns (eight patterns) and the
+        two-question gate as current discipline.
+      context_refs:
+        - active-project/staff/reviews/pipeline-2026-06-12T090611Z.md  # STRUCT-008
+        - staff/dialogue-writer/rubric-dialogue.md
+        - .claude/commands/and-write.md  # Phase 1.5 rubric load
+        - staff/admin/decisions.md  # DEC-0116
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-12-pipeline-003
+      created_at: 2026-06-12T09:06:11Z
+      created_by: "improvement-loop/test pass 1 — /and-review pipeline (STRUCT-009)"
+      target:
+        command: /and-facets
+        scope: "*"
+        phase: null
+      severity: SOFT
+      description: |
+        staff/exposition-author/rubric-exposition.md describes R2 graph-aware authoring
+        (lines 153-165 "R1 vs R2 differences"), Phase 5b audience-gate hooks (lines
+        181-190), R2 sweep of dialogue-adjacent entries (line 121), and a tensometer.md
+        reference (line 155: "correlative gate for which anchors are peak/transitional")
+        — all retired under DEC-0116 and URI-SUBSTANCE-OVERHAUL. This rubric is loaded
+        by /and-facets Phase 1 exposition-author dispatches. A dispatcher reading this
+        rubric would expect a second exposition-author pass post-fanin and an audience-gate
+        that no longer exist.
+        Fix: mark the R2 differences section and Phase 5b hooks section as retired under
+        DEC-0116; update tensometer.md reference to scene-map facet.
+      context_refs:
+        - active-project/staff/reviews/pipeline-2026-06-12T090611Z.md  # STRUCT-009
+        - staff/exposition-author/rubric-exposition.md
+        - .claude/commands/and-facets.md  # Phase 1 exposition-author dispatch
+        - staff/admin/decisions.md  # DEC-0116
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-12-pipeline-004
+      created_at: 2026-06-12T09:06:11Z
+      created_by: "improvement-loop/test pass 1 — /and-review pipeline (STRUCT-007)"
+      target:
+        command: /and-facets
+        scope: "*"
+        phase: Phase 4
+      severity: SOFT
+      description: |
+        /and-facets.md line 333 Phase 4 RUBRIC-FIDELITY source enumeration lists all ten
+        rubric files by bare name. Eight live at design/shoot-v2/ but rubric-exposition.md
+        lives at staff/exposition-author/ and rubric-dialogue.md lives at
+        staff/dialogue-writer/. An auditor dispatched for Phase 4 resolving bare names to
+        design/shoot-v2/ fails to load the exposition and dialogue rubrics, producing an
+        incomplete RUBRIC-FIDELITY scan for those two facets.
+        Fix: add explicit paths for rubric-exposition.md (staff/exposition-author/) and
+        rubric-dialogue.md (staff/dialogue-writer/) in the Phase 4 RUBRIC-FIDELITY enumeration.
+      context_refs:
+        - active-project/staff/reviews/pipeline-2026-06-12T090611Z.md  # STRUCT-007
+        - .claude/commands/and-facets.md  # line 333 Phase 4 RUBRIC-FIDELITY
+        - staff/exposition-author/rubric-exposition.md
+        - staff/dialogue-writer/rubric-dialogue.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-12-pipeline-005
+      created_at: 2026-06-12T09:06:11Z
+      created_by: "improvement-loop/test pass 1 — /and-review pipeline (STRUCT-002 + STRUCT-003 + RESIDUE-001)"
+      target:
+        command: /and-facets
+        scope: "*"
+        phase: null
+      severity: SOFT
+      description: |
+        schemas/audit-report.schema.md carries three DEC-0116 residue issues that affect
+        /and-facets Phase 4 auditor dispatches:
+        (1) STRUCT-002: /and-facets.md Phase 4 audit output format (section-header style)
+            diverges from audit-report.schema.md YAML findings list while citing that schema.
+            Auditors receive contradictory format instructions.
+        (2) STRUCT-003: audit-report.schema.md lines 106-157 (R2 decision-shard section)
+            describe retired /and-facets-r2 machinery — /and-facets-r2 command, f-r2-counts,
+            .r2-decisions.md — with no deprecation marker. Agents reading the schema treat
+            R2 decision shards as currently active artifacts.
+        (3) RESIDUE-001: line 108 of the same section carries a /and-season reference as
+            if /and-season is a current pipeline participant.
+        Fix: (1) align /and-facets.md Phase 4 audit output format with schema or add a schema
+        note for the pipeline-specific variant; (2) mark the R2 decision-shard section as
+        retired under DEC-0116; (3) resolved if (2) is addressed.
+      context_refs:
+        - active-project/staff/reviews/pipeline-2026-06-12T090611Z.md  # STRUCT-002, STRUCT-003, RESIDUE-001
+        - schemas/audit-report.schema.md
+        - .claude/commands/and-facets.md  # Phase 4 audit output format
+        - staff/admin/decisions.md  # DEC-0116
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-12-pipeline-006
+      created_at: 2026-06-12T09:06:11Z
+      created_by: "improvement-loop/test pass 1 — /and-review pipeline (STRUCT-004 + STRUCT-005 + STRUCT-006)"
+      target:
+        command: /and-review
+        scope: "pipeline"
+        phase: null
+      severity: SOFT
+      description: |
+        CLAUDE.md has three authority-table omissions surfaced by Pass 5 of the pipeline audit:
+        (1) STRUCT-004: /and-cohere is absent from the CLAUDE.md Commands table despite being
+            referenced in Rules 18, 21, /and-review cohere, and /and-substance Phase 0.
+        (2) STRUCT-005: schemas/aggregate-state.schema.md is absent from the CLAUDE.md schema
+            authority table despite being the parse authority for aggregate-state.md, referenced
+            in /and-substance.md Phase 0 Step 6a and /and-stitch.md Phase 10.
+        (3) STRUCT-006: active-project/staff/cite-index/ is absent from the CLAUDE.md directory
+            map despite being referenced in /and-facets.md Phase 2 as the location for
+            build_cite_index.py.
+        Fix: add /and-cohere to Commands table; add aggregate-state schema to schema authority
+        table; add cite-index/ subdirectory to directory map.
+      context_refs:
+        - active-project/staff/reviews/pipeline-2026-06-12T090611Z.md  # STRUCT-004, STRUCT-005, STRUCT-006
+        - CLAUDE.md  # Commands table, Schema authority table, Directory map
+        - .claude/commands/and-cohere.md
+        - schemas/aggregate-state.schema.md
+        - .claude/commands/and-facets.md  # Phase 2 cite-index reference
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
