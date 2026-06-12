@@ -1343,10 +1343,19 @@ parking_lot:
         - staff/admin/process-proposals.md  # PROP-0023
         - staff/admin/process-proposals.md  # PROP-0030 (drafted 2026-05-31)
       resolution_suggestion: "/and-review pipeline — discriminate cross-chapter aliveness audit from chapter-isolated; route to PROP-0023 or PROP-0030 disposition"
-      status: open
-      resolved_at: null
-      resolved_by: null
-      resolution_note: null
+      status: resolved
+      resolved_at: 2026-06-12T06:14:00Z
+      resolved_by: "/and-review pipeline 20260612T061200Z (improvement-loop/test)"
+      resolution_note: |
+        Cross-chapter aliveness scoring is handled by /and-review cohere Q6
+        (apparatus-register cumulative load; load-bearing axis, per PROP-0030 /
+        URI-COHERE-SUBSECTION). Q6 fires against the combined chapter stretch and
+        asks whether the technical/accounting/instrument register has accumulated
+        past the reader's tolerance across N chapters. This is the cross-chapter
+        equivalent of the per-chapter aliveness check at /and-stitch Phase 9.
+        The chapter-isolated design is correct and by design; /and-review cohere
+        is the opt-in cross-chapter complement. No pipeline-design change needed.
+        PROP-0030 is the routing destination this item was pointing toward.
 
     - id: pl-2026-06-01-cohere-001
       created_at: 2026-06-01T04:20:31Z
@@ -2966,6 +2975,153 @@ parking_lot:
         - active-project/staff/reviews/verdict-rebuilt-b01-2026-06-08.md  # process caveat (form-scan resolution)
         - staff/admin/decisions.md  # DEC-0115 (no-ledger fence — the axis the rebuild cleared)
       resolution_suggestion: "OPTIONAL + principal-gated (mutates shipped drafts via re-cascade). Minimum: fix the single DEC-0115 fence fault c19:25 (1 bone + re-stitch c19). Fuller: a fixer-class /and-write revise form-pass on the 9 perception-heavy chapters (~45 bone-line edits, no substance-arc change) -> re-cascade. Tolerate-to-b02 is defensible: the prose cold-read passed; this is hygiene beneath alive prose."
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-12-pipeline-001
+      created_at: 2026-06-12T06:14:00Z
+      created_by: "/and-review pipeline 20260612T061200Z (improvement-loop/test)"
+      label: rubric-exposition-dead-pointer-phase4-rubric-fidelity
+      target:
+        command: /and-facets
+        scope: "*"
+        phase: Phase 4
+      severity: HARD
+      description: |
+        STRUCT-026: and-facets.md Phase 4 RUBRIC-FIDELITY source enumeration (line 333)
+        lists `rubric-exposition.md` alongside live design/shoot-v2/rubric-*.md files.
+        No design/shoot-v2/rubric-exposition.md exists. DEC-0111 de-referenced it
+        from Phase 1 item 10 but did NOT update the Phase 4 RUBRIC-FIDELITY source
+        enumeration. An auditor dispatched by /and-facets Phase 4 reads this list and
+        cannot locate the file; the exposition RUBRIC-FIDELITY scan either silently
+        skips or errors. The prior STRUCT-025 fix was incomplete (too narrow in scope).
+      context_refs:
+        - active-project/staff/reviews/pipeline-20260612T061200Z.md  # STRUCT-026
+        - .claude/commands/and-facets.md  # line 333
+        - staff/admin/decisions.md  # DEC-0111
+        - active-project/staff/showrunner/parking-lot.md  # pl-2026-06-07-pipeline-001
+      resolution_suggestion: >
+        fixer → and-facets.md Phase 4 RUBRIC-FIDELITY line 333: remove `rubric-exposition.md`
+        from the source enumeration list; add parenthetical "(rubric-exposition.md deferred
+        to b02-activation; see pl-2026-06-07-pipeline-001)".
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-12-pipeline-002
+      created_at: 2026-06-12T06:14:00Z
+      created_by: "/and-review pipeline 20260612T061200Z (improvement-loop/test)"
+      label: rubric-dialogue-path-missing-in-and-facets
+      target:
+        command: /and-facets
+        scope: "*"
+        phase: Phase 4
+      severity: SOFT
+      description: |
+        STRUCT-027: and-facets.md Phase 4 AP-SCAN (line 324) references dialogue
+        anti-patterns "from `rubric-dialogue.md`" without a path qualifier; the Phase 4
+        RUBRIC-FIDELITY source enumeration (line 333) also lists bare `rubric-dialogue.md`.
+        No design/shoot-v2/rubric-dialogue.md exists. The only rubric-dialogue.md is at
+        staff/dialogue-writer/rubric-dialogue.md. An auditor following the implied
+        design/shoot-v2/ path cannot locate the file. and-write.md correctly specifies
+        the full path; and-facets.md does not.
+      context_refs:
+        - active-project/staff/reviews/pipeline-20260612T061200Z.md  # STRUCT-027
+        - .claude/commands/and-facets.md  # lines 324, 333
+        - staff/dialogue-writer/rubric-dialogue.md  # correct location
+      resolution_suggestion: >
+        fixer → and-facets.md: (a) line 324 change "from `rubric-dialogue.md`" to
+        "from `staff/dialogue-writer/rubric-dialogue.md`"; (b) line 333 change bare
+        `rubric-dialogue.md` to `staff/dialogue-writer/rubric-dialogue.md`.
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-12-pipeline-003
+      created_at: 2026-06-12T06:14:00Z
+      created_by: "/and-review pipeline 20260612T061200Z (improvement-loop/test)"
+      label: audit-report-schema-r2-section-undeprecated
+      target:
+        command: /and-facets
+        scope: "*"
+        phase: Phase 4
+      severity: SOFT
+      description: |
+        RESIDUE-001: schemas/audit-report.schema.md §"R2 decision-shard frontmatter"
+        (lines 106-157) describes the pre-DEC-0116 R2 pipeline (F-R2-* counts,
+        .r2-decisions.md, /and-facets-r2 shards) in active-voice present-tense with
+        no deprecation notice. DEC-0116 retired the R2 round; these artifacts are never
+        produced. A new session reading the schema section could mistake it for an
+        active format type.
+      context_refs:
+        - active-project/staff/reviews/pipeline-20260612T061200Z.md  # RESIDUE-001
+        - schemas/audit-report.schema.md  # lines 106-157
+        - staff/admin/decisions.md  # DEC-0116
+      resolution_suggestion: >
+        fixer → schemas/audit-report.schema.md line 106: add deprecation header
+        "DEPRECATED 2026-06-08 (DEC-0116 / URI-FACETS-SLIM). The R2 round and all
+        its artifacts are retired. Section retained as historical reference only."
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-12-pipeline-004
+      created_at: 2026-06-12T06:14:00Z
+      created_by: "/and-review pipeline 20260612T061200Z (improvement-loop/test)"
+      label: orchestrator-critic-f7r2-b7-dead-machinery
+      target:
+        command: /and-review
+        scope: "verdict *"
+        phase: null
+      severity: SOFT
+      description: |
+        RESIDUE-002: staff/orchestrator-critic/card.md B7 + F7-r2 sections describe
+        live checks against theater/facets/.r2-decisions.md and F-R2-* count thresholds.
+        Post-DEC-0116, .r2-decisions.md is never authored; F7-r2 can never fire; B7
+        always reports `not-fired`. The card describes dead machinery in active-voice
+        alongside live checks. Verdict degrades gracefully (always `not-fired`); no
+        blocking failure. Calibration/clarity issue only.
+      context_refs:
+        - active-project/staff/reviews/pipeline-20260612T061200Z.md  # RESIDUE-002
+        - staff/orchestrator-critic/card.md  # B7, F7-r2 sections
+        - staff/admin/decisions.md  # DEC-0116
+      resolution_suggestion: >
+        fixer → staff/orchestrator-critic/card.md: add one-line note at B7 and F7-r2
+        openings: "(DEC-0116: permanently not-fired — R2 round retired, .r2-decisions.md
+        never produced by slim pipeline; sections are historical documentation)."
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-12-pipeline-005
+      created_at: 2026-06-12T06:14:00Z
+      created_by: "/and-review pipeline 20260612T061200Z (improvement-loop/test)"
+      label: claude-md-schema-table-missing-aggregate-cohere-schemas
+      target:
+        command: /and-stitch
+        scope: "*"
+        phase: null
+      severity: SOFT
+      description: |
+        STRUCT-028: CLAUDE.md schema authority table is missing two active schemas:
+        schemas/aggregate-state.schema.md (consumed by /and-stitch Phase 10 and
+        /and-cohere Phase 6.5) and schemas/cohere-state.schema.md (the /and-cohere
+        resume checkpoint schema). Both files exist in schemas/ and are live consumers.
+        Completeness gap — agents reading the table will not know these schemas exist.
+      context_refs:
+        - active-project/staff/reviews/pipeline-20260612T061200Z.md  # STRUCT-028
+        - CLAUDE.md  # schema authority table
+        - schemas/aggregate-state.schema.md
+        - schemas/cohere-state.schema.md
+      resolution_suggestion: >
+        fixer → CLAUDE.md schema authority table: add rows for aggregate-state.schema.md
+        and cohere-state.schema.md with their file types.
       status: open
       resolved_at: null
       resolved_by: null
