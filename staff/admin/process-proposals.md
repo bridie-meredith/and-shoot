@@ -6584,3 +6584,112 @@ pr_ref: null
 defer_until: null
 supersedes: null
 ```
+
+## PROP-0053
+
+```yaml
+id: PROP-0053
+created_at: 2026-06-12T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: on-demand
+  source_report: staff/admin/improvement-loop/bridge.ledger.md
+  source_verdict: improvement-loop/bridge pass-1 (brighid rut-detection + project-improvement-tracking mining)
+target:
+  type: command
+  path: .claude/commands/and-review.md
+  section: "verdict <book-slug> / Phase 4.5 — Admin process-critic dispatch"
+change_type: modify
+rationale: |
+  And-shoot's admin process-critic fires chapter-by-chapter on non-PASS events and
+  accumulates recurrence_count by scanning the proposals log at each dispatch. This
+  produces a log that now contains proposals with recurrence_count up to 8 (PROP-0037,
+  recurrence_count: 8 across 14 chapters). The recurrence signal is present but is
+  never harvested at book close as a structured, book-scoped aggregate. The `verdict`
+  subcommand (the natural book-close gate) dispatches admin in Phase 4.5 with only the
+  book verdict report — admin receives no structured inventory of which defect classes
+  accumulated high recurrence within THIS book's chapters.
+
+  The result: recurring defect classes sit in the proposals log with bumped counts,
+  visible in principle but not surfaced as a prioritized triage list. The principal must
+  manually cross-reference individual PROPs to identify systemic patterns. At
+  recurrence_count = 4 (PROP-0037, PROP-0030, PROP-0031, PROP-0041) the signal is
+  strong enough to warrant automatic escalation, not just note-bumping.
+
+  Brighid's reference harness addresses this via ingrid's auto-trigger registry
+  (staff/agents/ingrid/project-improvement-tracking.plan.md §Auto-trigger registry):
+  at project close, ingrid scans signal artifacts, identifies repeating defect classes,
+  and auto-dispatches structured tuning routines. The and-shoot adaptation is simpler
+  and rides an existing checkpoint: add a "recurrence-manifest pre-pass" to
+  `/and-review verdict` Phase 4.5 that builds a book-scoped recurrence manifest BEFORE
+  dispatching admin, so admin's book-close output can include a RECURRENCE-SUMMARY
+  block — a ranked list of defect classes by accumulated count for this book, with a
+  direct "implement / escalate / defer" recommendation per class rather than another
+  per-chapter PROP bump.
+
+  This is a process-level signal gap, not a content failure. The gate that should
+  produce this signal (the book-close verdict) exists; it just doesn't aggregate
+  chapter-level recurrence data before its admin dispatch.
+evidence_refs:
+  - "staff/admin/process-proposals.md — PROP-0037 (recurrence_count: 8; cohere execution
+    machinery; 14 chapters without convergence); PROP-0030 (recurrence_count: 4);
+    PROP-0031 (recurrence_count: 4); PROP-0041 (recurrence_count: 4) — high-recurrence
+    open proposals that accumulated without a book-close triage trigger"
+  - "staff/admin/improvement-loop/bridge.ledger.md — pass-1 source: brighid
+    staff/agents/ingrid/project-improvement-tracking.plan.md §Auto-trigger registry
+    (auto-dispatch of parroting-tuning and subtraction-pass-tuning routines at project
+    close based on signal artifacts)"
+  - ".claude/commands/and-review.md §verdict Phase 4.5 — current admin dispatch context
+    carries only the book verdict report; no recurrence manifest"
+recurrence_count: 1
+proposed_diff: |
+  In `.claude/commands/and-review.md`, in the `verdict <book-slug>` section, extend
+  Phase 4.5 with a "recurrence-manifest pre-pass" step that runs BEFORE the admin
+  dispatch:
+
+  **Recurrence-manifest pre-pass (new sub-step of Phase 4.5, verdict only).**
+  Before dispatching admin process-critic on the book verdict:
+
+  1. Grep `staff/admin/process-proposals.md` for all PROP entries whose
+     `evidence_refs` or `rationale` contain any chapter slug belonging to this book
+     (e.g. for book b01, match `b01c01` through `b01c<NN>`). Collect the set of
+     matching PROP ids.
+
+  2. For each matched PROP, read: `target.path`, `change_type`, `recurrence_count`,
+     `status`. Group by `(target.path, change_type)` — these groups are defect classes.
+
+  3. Build the recurrence manifest (a markdown table):
+     - Columns: `class (target.path + change_type)` | `open PROPs` | `max recurrence_count`
+       | `suggested action`
+     - Rows: only defect classes with `recurrence_count >= 2` AND `status: open`.
+     - Suggested action derived from recurrence_count:
+       - count 2–3: "implement or defer with explicit rationale before next book"
+       - count >= 4: "ESCALATE — implement before next chapter production; or principal
+         must record explicit deferral rationale"
+
+  4. Include the recurrence manifest in the admin dispatch context as an additional
+     field: `recurrence_manifest: <the markdown table>` alongside the existing
+     `trigger.source_report`, `trigger.source_verdict`, and `gate_path` fields.
+
+  5. Admin's output at book-close (verdict trigger) MUST include a `## RECURRENCE-SUMMARY`
+     block before the standard PROP-or-OK output. The block lists each row from the
+     manifest with admin's triage call (implement / escalate / defer with rationale).
+     This block lands in the report tail under `## admin-process-critic` alongside any
+     new PROPs admin authors for the book verdict itself.
+
+  When all open chapter-scoped PROPs have `recurrence_count < 2`, the manifest is empty
+  and the RECURRENCE-SUMMARY block is omitted (the block itself is a signal of systemic
+  drift; absence is the healthy state).
+
+  No new schema required. The manifest is a structured markdown block passed in the
+  admin prompt and recorded in the verdict report tail. Implementation cost: one
+  command-body addition (~15 lines) in `.claude/commands/and-review.md §verdict`.
+cost_estimate: M
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
