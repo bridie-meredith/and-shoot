@@ -262,6 +262,14 @@ Reviewers: orchestrator-critic (`staff/orchestrator-critic/card.md`, version per
 - (b) Any chapter under the book is missing `chunk`, `dramatic_shape`, `scenes[]`, or any scene is unsubstanced (missing `substance_delta` or `scene_conflict`).
 - (c) Any chapter under the book has no `bones_file` recorded or that file does not exist on disk, or any scene under any chapter has empty `bones[]`.
 - (d) The orchestrator-critic card version recorded in `project.staff.orchestrator_critic` is missing from the library.
+- (e) **Circuit-breaker pre-check (PROP-0048 / CLAUDE.md Rule 22).** Read `active-project/staff/showrunner/aggregate-state.md` `design_inherent_tracking[]` if present. For any entry with `auto_promoted_at` non-null AND `principal_escalated_at` null: HARD-abort with:
+  ```
+  CIRCUIT-BREAKER ABORT (/and-review verdict): <defect_class> was auto-promoted to BLOCKING at <auto_promoted_at>.
+  The book verdict cannot proceed until that chapter's circuit-breaker resolves.
+  Required: /and-write <auto_promoted_at> revise --from-signals (depth-pass resets the counter)
+             OR principal explicit acknowledgment (set principal_escalated_at in aggregate-state out-of-band).
+  ```
+  This ensures the orchestrator-critic never issues a book-level PASS or PASS-WITH-NOTES while a per-chapter circuit-breaker finding is outstanding.
 
 On pass, dispatches the critic against:
 - Chunks at every level under the book (book chunk + chapter chunks + scene chunks).

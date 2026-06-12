@@ -959,6 +959,30 @@ The two axis-results compose: **PASS** requires completeness-pass AND `READABLE`
   ```
   In a `--cascade` run, a Phase 9 FAIL halts the cascade per the standard cascade-failure surfacing (checkpoint `reason: halted-on-failure`).
 
+**Circuit-breaker update (PROP-0048 / CLAUDE.md Rule 22 — fires after every verdict; no additional dispatch).**
+
+Read `active-project/staff/showrunner/aggregate-state.md` `design_inherent_tracking[]` (absent = treat as empty; initialize the block on first write).
+
+- **On PASS-WITH-DEPTH-PASS-REQUIRED:** For each named defect class driving the verdict (`readability-axis-AIRLESS` when `readability_axis.verdict == AIRLESS`; `cluster:<pattern-label>` for each cluster entry in `signal_clusters[]`; `prose-rationale-mute` when `prose_rationale_audit.verdict == SOFT-BLOCK`):
+  1. Find or create the `design_inherent_tracking[]` entry for the class.
+  2. Increment `consecutive_count`; set `last_incremented_at: <chapter-slug>`.
+  3. **If `consecutive_count > 2`:** stamp `auto_promoted_at: <chapter-slug>` on the entry. Upgrade the chapter's disposition to **CIRCUIT-BREAKER-BLOCKED** — it may NOT be treated as terminal. Print:
+     ```
+     CIRCUIT-BREAKER BLOCKED (CLAUDE.md Rule 22 / PROP-0048):
+     <defect_class> has shipped as PASS-WITH-DEPTH-PASS-REQUIRED for <consecutive_count> consecutive chapters.
+     This chapter cannot ship under a standing accepted-caveat disposition.
+     Required before further ships:
+       (a) /and-write <chapter> revise --from-signals  (depth-pass; resets the counter on clean re-stitch)
+       (b) Principal explicit acknowledgment (sets principal_escalated_at in aggregate-state)
+     next: /and-write <chapter> revise --from-signals
+     ```
+     Do NOT set `chapters[<slug>].cold_read.verdict` to PASS-WITH-DEPTH-PASS-REQUIRED; instead record `circuit-breaker-blocked` as the chapter's gate status in showrunner memory. In a `--cascade` run, halt the cascade with `reason: circuit-breaker-blocked`.
+  4. Write the updated `design_inherent_tracking[]` to `aggregate-state.md`.
+
+- **On clean PASS (`readability_axis.verdict == READABLE` AND no cluster AND `prose_rationale_audit.verdict != SOFT-BLOCK`):** For every entry in `design_inherent_tracking[]`: reset `consecutive_count: 0`; set `last_reset_at: <chapter-slug>`. Write updated tracking.
+
+- **On FAIL:** No tracking update. The chapter must revise; it did not ship.
+
 ---
 
 ## Phase 9.5 — Admin process-critic dispatch (URI-ADMIN-PROCESS-CRITIC, 2026-05-25; non-blocking)

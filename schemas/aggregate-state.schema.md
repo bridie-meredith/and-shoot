@@ -107,6 +107,19 @@ aggregate_state:
       closed_at: <chapter-slug>
       axis_state_at_close: [<copy of axis_state at book close>]
       open_hooks_at_close: [<open_hooks unresolved at book close>]
+
+  # Consecutive-caveat circuit-breaker tracking (PROP-0048 / CLAUDE.md Rule 22).
+  # Per defect-class counter: how many consecutive chapters the class has shipped as
+  # PASS-WITH-DEPTH-PASS-REQUIRED without a depth-pass resolving it.
+  # Updated at /and-stitch Phase 9 Step 4 (increment on PASS-WITH-DEPTH-PASS-REQUIRED;
+  # reset to 0 on clean PASS). At consecutive_count > 2 the chapter is CIRCUIT-BREAKER-BLOCKED.
+  design_inherent_tracking:                        # optional block; absent = no tracked classes yet
+    - defect_class: <string>                       # e.g. "readability-axis-AIRLESS", "cluster:body-staging-gap"
+      consecutive_count: <integer>                 # chapters since last clean PASS for this class
+      last_incremented_at: <chapter-slug>          # most recent chapter that incremented this counter
+      last_reset_at: <chapter-slug|null>           # most recent chapter that reset this counter; null if never
+      auto_promoted_at: <chapter-slug|null>        # chapter where consecutive_count first exceeded 2; null if not yet
+      principal_escalated_at: <chapter-slug|null>  # principal explicit acknowledgment; null until set out-of-band
 ```
 
 ---
@@ -145,6 +158,7 @@ Producers MUST declare classification per edit. Uncertain-classification edits a
 6. Every `revision_layer[].chapter` must be ≤ `through_chapter`.
 7. `revision_layer[].class: substantive` with `acknowledged: false` → blocks `/and-substance chapter <next>` Phase 0 (HARD-abort).
 8. `conflict_log[]` is append-only. Resolution updates allowed; entry removal not allowed.
+9. `design_inherent_tracking[].consecutive_count > 2` → `auto_promoted_at` MUST be stamped. Any entry with `auto_promoted_at` non-null AND `principal_escalated_at` null is circuit-breaker-blocked: the chapter may not ship without a depth-pass (which resets the counter on clean re-stitch) or explicit principal acknowledgment (which sets `principal_escalated_at`). `/and-review verdict` HARD-aborts if any chapter in the book scope carries an unresolved circuit-breaker entry.
 
 ---
 
