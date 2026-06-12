@@ -24,9 +24,17 @@
 # of the secret things / sole crack). Betrothal retargeted Errold Slate -> the STARKS. Full spine-smoothing
 # pass complete (all three books hinted-prior + have-consequence; check-threads PASS). II.4 verified
 # consistent; II.1-II.8 ALL FOLDED -- BOOK II COMPLETE (carefree-limit -> R2 kill -> clean-hands doctrine;
-# source-reveal voids the need + the Wylla-cost; the ship ordered, except-Wylla arms Book III). NEXT: Book III
-# (the heist-caper escape), or merge the complete book to main. See the dated
-# amendment foot of intake/spine.md for the full delta record + thread-arc confirmation.
+# source-reveal voids the need + the Wylla-cost; the ship ordered, except-Wylla arms Book III).
+# CASINO-ARC FOLD (2026-06-12) — II.3 RE-OPENED + expanded per principal direction: the Entertainment-Dao
+# (gambling/spectacle as a Way transmitted via Wylla) -> a casino/vice-trade Gael UNWITTINGLY grows into a
+# runaway racketeering empire BY ITS OWN MOMENTUM, funding cultivation + escape; she sneaks out to (a) SEED it
+# by robbing a crime-syndicate "evil sect" treasury and (b) BACK THE MAID against rival gangs (a lone maid
+# isn't taken seriously) as the unseen enforcer; Wylla HORRIFIED by Gael's blithe violence (conversion seed);
+# funny-forward. New tokens: ENTERTAINMENT-DAO / RACKET-MOMENTUM / SEED-VAULT-RAID (ambient), UNSEEN-ENFORCER
+# (->III.2, reframed "first excursion"->"routine/citywide"), WYLLA-HORROR (->III.5). GUARD-1 clean (no qi-spend;
+# R2 still II.7); setting-blind held; check-threads PASS. Reversible default: vault target = crime-syndicate
+# (alts: Faith / rival house). II.1/II.2/II.4-II.8 stand. NEXT: continue the casino arc into Book III's heist
+# beats, OR resume the Book-III review-walk, OR merge. See the dated amendment foot of intake/spine.md.
 
 project:
   brief: >

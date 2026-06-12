@@ -150,19 +150,28 @@ parks all the exposure on the **chambermaids** while Otto first pulls at the unu
 **Plants:** PLANT[STARTUP] · PLANT[PAST-LIFE-COVER] · PLANT[PROFIT-CYCLE] · PLANT[TRIPLE-BLIND] · PLANT[CHAMBERMAID-HANDS] · PLANT[SMALLFOLK-HOLD-RISK] · PLANT[OTTO-MONEY-TRACE]
 **Fires:** FIRE[HEIST-METHOD]
 
-### II.3 · the world map *(~7–8)*
-**Beat:** the want widens — diverse reagents *and* the **knowledge to reach them** (routes, tongues, what
-each port holds); she starts the **reagent map** (half shopping-list, half escape-chart) and wants, serenely,
-all of it. To fund the shady far reach she needs *untraceable* coin — and finding King's Landing too young
-for any gambling-hall, its diversions only **drink, whores, and crude bloodsport,** she **fills the vacuum:**
-enters via a doped fighting-beast stable (her poison/biology edge) and floods the gap with **games it has
-never seen** (past-life formats + the house-math she alone understands), founding the city's first
-**underground gambling trade.** Run through Wylla → cut-outs → factors, deliberately *quiet* (spread thin,
-lose for cover, a faceless phantom kingpin for a decoy); the coin pours off-books toward the reagents and the
-ship. She mistakes the vice-empire for her sect's **worldly branch rendering tribute,** the doped hounds for
-*spirit-beasts she's tempering.* Barth, charmed she studies geography, never sees the voyage. (South glows;
-the North is barren — arming II.4.) **Register:** HOLD→SPIKE. **Rung:** off-ladder.
-**Plants:** PLANT[REAGENT-MAP] · PLANT[WARM-DESTINATIONS] · PLANT[VICE-NETWORK] · PLANT[BEAST-DAO-MISREAD] · PLANT[OFFBOOKS-ACCOUNT] · PLANT[FACTOR-NETWORK] · PLANT[WYLLA-TRUSTED]
+### II.3 · the world map *(~7–8)* — the Entertainment-Dao & the empire she doesn't notice she built
+**Beat:** the want widens — diverse reagents *and* the **knowledge to reach them** (routes, tongues, ports);
+she starts the **reagent map** (half shopping-list, half escape-chart). To fund the shady far reach she needs
+*untraceable* founding capital, so — genre-precedent in hand (the poor disciple robs the wicked sect) — she
+**sneaks out and raids the treasury of a KL crime-racket she's filed as "the local demonic sect"** (still-room
+to drop the guards, the vault read like a formation-array; a robbed crime-lord can't report stolen stolen
+money), seeding clean coin *and* decapitating the competition. Then, finding the city too young for any
+gambling-hall (only **drink, whores, crude bloodsport** — a vacuum), she fills it as the sole heir of the
+**Dao of Games and Fortune:** a doped fighting-beast stable (poison/biology edge) + **games it has never
+seen** (past-life formats + house-math, "the house is fate"). It does not stay small — vacuum + seed + an
+unmatchable edge + ambitious men makes it **grow by its own momentum into runaway organized crime** (dice →
+protection → territory → laundries → the watch on retainer): she **unwittingly becomes King's Landing's first
+true crime-lord** and notices only a faint administrative *largeness* she finds tedious, filing the whole
+racket as the worldly branch *rendering tribute.* Run through Wylla → cut-outs → factors, buffered behind a
+faceless phantom kingpin ("the Quiet Coin"); coin off-books toward the reagents and the ship. **A lone maid
+won't be taken seriously** by violent men, and rivals test the house constantly — so the master comes down:
+Gael **sneaks out repeatedly to back Wylla up,** the unseen enforcer who makes challengers *stop* (poison +
+leverage + the maegi-legend; no qi-spend `GUARD-1` clean; no kill she *means* — yet; the rehearsal that arms
+II.7). **Wylla is horrified by how blithe Gael is with violence** (cultivation worlds are violent — *this is
+Tuesday*) — the first cut of her conversion. Barth, charmed she studies geography, never sees the voyage.
+(South glows; the North is barren — arming II.4.) **Register:** HOLD→SPIKE. **Rung:** off-ladder.
+**Plants:** PLANT[REAGENT-MAP] · PLANT[WARM-DESTINATIONS] · PLANT[VICE-NETWORK] · PLANT[ENTERTAINMENT-DAO] · PLANT[SEED-VAULT-RAID] · PLANT[RACKET-MOMENTUM] · PLANT[UNSEEN-ENFORCER] · PLANT[WYLLA-HORROR] · PLANT[BEAST-DAO-MISREAD] · PLANT[OFFBOOKS-ACCOUNT] · PLANT[FACTOR-NETWORK] · PLANT[WYLLA-TRUSTED]
 
 ### II.4 · the betrothal *(~8)*
 **Beat:** the King's build-up closes — he sells her **high, to the Starks** (the Warden of the North's heir;
@@ -234,10 +243,13 @@ who won't ask whose it is) quotes years. Tight against the betrothal clock. **Re
 **Fires:** FIRE[SHIP-COMMISSION] · FIRE[ROUTE-MAP] · FIRE[STARTUP] · FIRE[PROFIT-CYCLE] · FIRE[OFFBOOKS-ACCOUNT] (the dirty dice-coin pays for the hull the soap-money can't be seen buying)
 
 ### III.2 · the excursions
-**Beat:** sneaks out for the first time, Wylla covering; superhuman child parkour across the night city; the
-"ghost of the Red Keep" legend. Hobb, on the watch, sees her and says nothing. **Register:** SPIKE. **Rung:** off-ladder.
+**Beat:** the excursions go **routine and citywide** — she slipped out before (backing the maid against the
+racket's rivals all through Book II: short, surgical, underworld-only), but now she's out constantly for the
+ship-build (shipyard, harbor, markets), the difference being scale + stakes against the betrothal clock; Wylla
+covering; superhuman child parkour; the "ghost of the Red Keep" legend. Hobb, on the watch, sees her and says
+nothing. **Register:** SPIKE. **Rung:** off-ladder.
 **Plants:** PLANT[EXCURSION-RISK] · PLANT[GHOST-LEGEND] · PLANT[CITY-KNOWLEDGE]
-**Fires:** FIRE[BODY-TEMPERING-CONCEALED] · FIRE[HIDEY-HOLE] · FIRE[CASSANDRA] · FIRE[WYLLA-COMPLICIT] (she has covered for Gael since the still-room; the burying becomes the alibi)
+**Fires:** FIRE[UNSEEN-ENFORCER] (the Book-II underworld outings escalate to citywide ship-runs) · FIRE[BODY-TEMPERING-CONCEALED] · FIRE[HIDEY-HOLE] · FIRE[CASSANDRA] · FIRE[WYLLA-COMPLICIT] (she has covered for Gael since the still-room; the burying becomes the alibi)
 
 ### III.3 · the greedy factor
 **Beat:** **Lothar Quint** smells money, leans on Wylla; Gael handles him colder-by-casual (takes his
@@ -254,7 +266,7 @@ delicate-waif (the mask paying off) to buy delay. **Register:** CHILL. **Rung:**
 costs Gael real cultivation. For Wylla, the magic visibly working **seals her faith** (junior sister); for
 Gael, it "clears the death flag" on the one person she can't lose. **Register:** HOLD (anti-curdle GIVE). **Rung:** off-ladder.
 **Plants:** PLANT[MAID-TEMPERED]
-**Fires:** FIRE[WYLLA-CONVERSION] · FIRE[DEATH-FLAG]
+**Fires:** FIRE[WYLLA-CONVERSION] · FIRE[WYLLA-HORROR] (the Book-II horror at Gael's blithe violence, metabolized into faith — she has chosen this, eyes open) · FIRE[DEATH-FLAG]
 
 ### III.6 · the narrow escape
 **Beat:** Lock III at full scale. Discovery via **Otto** (he connects the vanished factor + the ship

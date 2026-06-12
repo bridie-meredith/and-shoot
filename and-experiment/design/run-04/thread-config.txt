@@ -26,3 +26,10 @@ PLANT-ONLY KNOWS-SHE-GLOWS              # run-04 Book-II rev: she knows she's a 
 PLANT-ONLY MAEGI-RUMOR                  # run-04 Book-II rev: the realm's dark read hardens omen -> sorcery; ambient (cashes into the betrothal-disposal + the title-collector gag ① at III)
 PLANT-ONLY VICE-NETWORK                 # run-04 II.3: the underground gambling/entertainment industry she founds; ambient infrastructure (Books II-III); funds OFFBOOKS-ACCOUNT
 PLANT-ONLY BEAST-DAO-MISREAD            # run-04 II.3: she mistakes doped fighting-beasts + house-math for alchemy/fortune-cultivation; ambient gag (broken-clock)
+PLANT-ONLY ENTERTAINMENT-DAO            # run-04 II.3 (casino-arc fold 2026-06-12): gambling/spectacle reframed as a Way she transmits through Wylla; ambient lens-gag (pairs BEAST-DAO-MISREAD)
+PLANT-ONLY RACKET-MOMENTUM              # run-04 II.3 (casino-arc fold): the vice-network sprawls by its own momentum into runaway organized crime she unwittingly lords; ambient (Books II-III); the exposure the II.5 leak exploits + spawns the III.3 greedy factor
+PLANT-ONLY SEED-VAULT-RAID              # run-04 II.3 (casino-arc fold): she robs a KL crime-racket's treasury ("the local demonic sect") for founding capital; self-contained founding beat — seeds OFFBOOKS-ACCOUNT + RACKET-MOMENTUM (clears the competition)
+
+# --- casino-arc discrete plant->fire (1:1; declared because the fire lands in a later book) ---
+# UNSEEN-ENFORCER : PLANT II.3 (Gael sneaks out to back the maid — a lone maid won't be taken seriously) -> FIRE III.2 (underworld outings escalate to citywide ship-runs)
+# WYLLA-HORROR    : PLANT II.3 (Wylla horrified by Gael's blithe violence; conversion seed)              -> FIRE III.5 (metabolized into faith alongside WYLLA-CONVERSION)
