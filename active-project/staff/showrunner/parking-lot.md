@@ -2970,3 +2970,104 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-06-12-pipeline-001
+      created_at: 2026-06-12T00:00:00Z
+      created_by: "improvement-loop/test — /and-review pipeline (STRUCT-001 + RESIDUE-001)"
+      target:
+        command: /and-facets
+        scope: "*"
+        phase: null
+      severity: SOFT
+      description: |
+        schemas/audit-report.schema.md lines 106-158: section "## R2 decision-shard frontmatter
+        (URI-026 follow-on, 2026-05-10)" is undeprecated despite the entire R2 round being RETIRED
+        under DEC-0116 (URI-FACETS-SLIM, 2026-06-08). The section documents /and-facets-r2 as an
+        active command, .r2-decisions.md as a live cross-pipeline artifact, and F-R2-* counts as
+        something /and-review verdict surfaces — all of which are false. Any schema reader will be
+        misled into attempting to produce or consume ghost artifacts. URI-026 also appears in the
+        section heading as a primary authority label (RESIDUE-001). Fix: prepend a DEPRECATED block
+        to the section heading noting the R2 round is retired under DEC-0116 and no current command
+        produces or consumes these artifacts.
+      context_refs:
+        - schemas/audit-report.schema.md
+        - active-project/staff/reviews/pipeline-2026-06-12T000000Z.md
+        - .claude/commands/and-facets.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-12-pipeline-002
+      created_at: 2026-06-12T00:00:00Z
+      created_by: "improvement-loop/test — /and-review pipeline (STRUCT-002)"
+      target:
+        command: /and-substance
+        scope: "*"
+        phase: null
+      severity: SOFT
+      description: |
+        CLAUDE.md schema authority table missing two operational schemas: (a) schemas/cohere-state.schema.md
+        — referenced by /and-cohere Phase 0, /and-review cohere Phase 4; (b) schemas/aggregate-state.schema.md
+        — referenced by /and-stitch Phase 10, /and-cohere Phase 6.5, /and-substance chapter Phase 0.
+        Rule 1 compliance depends on agents finding schemas via the authority table. RECONCILE (Rule 21)
+        for /and-cohere is under-specified without cohere-state.schema.md in the table. Fix: add both
+        to the CLAUDE.md schema authority table with one-line descriptors.
+      context_refs:
+        - CLAUDE.md
+        - schemas/cohere-state.schema.md
+        - schemas/aggregate-state.schema.md
+        - active-project/staff/reviews/pipeline-2026-06-12T000000Z.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-12-pipeline-003
+      created_at: 2026-06-12T00:00:00Z
+      created_by: "improvement-loop/test — /and-review pipeline (STRUCT-003)"
+      target:
+        command: /and-facets
+        scope: "*"
+        phase: Phase 4
+      severity: SOFT
+      description: |
+        design/shoot-v2/rubric-exposition.md is referenced in and-facets.md Phase 4 RUBRIC-FIDELITY
+        source enumeration but does not exist on disk. Auditor will silently skip exposition
+        rubric-fidelity checks (ACCEPT/REJECT signatures, anti-patterns, cross-facet contract).
+        Exposition discipline is currently embedded inline in the CONSTRAINT class but has no
+        canonical rubric file. Fix options: (a) author design/shoot-v2/rubric-exposition.md; or
+        (b) remove the reference and note that exposition rubric-fidelity lives in the CONSTRAINT class.
+      context_refs:
+        - .claude/commands/and-facets.md
+        - active-project/staff/reviews/pipeline-2026-06-12T000000Z.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-12-pipeline-004
+      created_at: 2026-06-12T00:00:00Z
+      created_by: "improvement-loop/test — /and-review pipeline (STRUCT-004)"
+      target:
+        command: /and-facets
+        scope: "*"
+        phase: Phase 4
+      severity: SOFT
+      description: |
+        design/shoot-v2/rubric-dialogue.md is referenced in and-facets.md Phase 4 AP-SCAN (four
+        dialogue anti-patterns: AP-chassis-contamination, AP-modern-hr-speak, AP-deposition-cadence,
+        AP-nominalization) and RUBRIC-FIDELITY source enumeration. Also referenced in and-write.md
+        Phase 1.5b (staff/dialogue-writer/rubric-dialogue.md). Neither path exists. Dialogue is
+        HARD-gated throughout the pipeline; the AP-SCAN anti-patterns live only as inline text in
+        the command body with no canonical rubric file for auditors or dialogue writers to load.
+        Fix: author design/shoot-v2/rubric-dialogue.md collecting the inline AP-SCAN anti-patterns
+        + ACCEPT/REJECT signatures, or update the command body to reference the actual path.
+      context_refs:
+        - .claude/commands/and-facets.md
+        - .claude/commands/and-write.md
+        - active-project/staff/reviews/pipeline-2026-06-12T000000Z.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
