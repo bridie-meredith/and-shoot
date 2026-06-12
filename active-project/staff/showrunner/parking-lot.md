@@ -2970,3 +2970,36 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-06-12-hygiene-001
+      created_at: 2026-06-12T00:00:00Z
+      created_by: "artur / improvement-loop hygiene pass"
+      label: actor-stm-ltm-stasis-book-complete
+      target:
+        command: oskar-review
+        scope: "active-project/actors/"
+        phase: null
+      severity: SOFT
+      description: |
+        All 11 actors (taylor-hebert-kl-122ac, otto-hightower, wren-stitch-maker-flea-bottom-ward,
+        oswyn-mudway-flea-bottom-elder, septon-halvard-flea-bottom, jarvis-coin-kl-courier,
+        sera-hightower-kl-122ac, criston-cole-122ac, alicent-hightower-122ac,
+        rhaenyra-targaryen-122ac, aemond-targaryen-122ac) carry STMs of 2-5 lines and LTMs of
+        1 line, uniformly reading "Series open; no events yet" -- provisioned at /and-cast Phase 4,
+        2026-05-24. Book I (b01c01-b01c20) is now complete. Twenty chapters of actor movement,
+        arc progression, and substance delta are NOT recorded in actor memory files.
+        CLAUDE.md Rule 4: "Nothing changes without being recorded."
+
+        Routing to oskar: decide before active-project/ is archived to projects/ whether to
+        (a) back-fill STM/LTM from memory.md chapter records, (b) accept empty-at-book-close
+        as acceptable given books[b01].chapters[].substance_delta in memory.md already holds all
+        substance deltas (actor memory may be redundant), or (c) clarify in
+        schemas/memory.schema.md when actor STM/LTM is expected to advance during production.
+      context_refs:
+        - active-project/actors/taylor-hebert-kl-122ac/stm.md
+        - active-project/staff/showrunner/memory.md
+        - staff/admin/improvement-loop/hygiene.ledger.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
