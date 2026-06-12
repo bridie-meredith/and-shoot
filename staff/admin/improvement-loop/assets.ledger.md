@@ -71,3 +71,19 @@ The dialogue-writer is dispatched live at `/and-write` Phase 1.5 and loads this 
 - Combined fix: 3 line edits. Zero structural risk. Eliminates the contradiction between preamble and live body.
 
 **Next candidate:** `rubric-dialogue.md` body — add `[RETIRED — DEC-0116]` section headers to `## Contamination disciplines`, `## V2 reviewer protocol`, and `## R1 vs R2 differences`. Deferred two passes; preamble guards the section boundaries but the section headers themselves still look live to a scanner.
+
+---
+
+### 2026-06-12 — Pass 5
+
+**Asset changed:** `.claude/commands/and-facets.md` — PILE-UP REVIEW audit class definition (#11)
+
+**Change:** Added the warranted test and over-decoration criteria to the previously undefined `warranted | over-decoration` verdict. Two mechanically evaluable conditions (both required for warranted): (a) anchor is listed in the scene's `peak-bones` or `peak-shadow-bones`, OR scene `rhythm-shape` is `rising-to-peak`, `peak-and-release`, or `double-peak`; AND (b) every co-located facet contributes to a distinct character × facet-class pair — no same-character same-class redundancy. Over-decoration fires on any of: `flat-low`/`resolving`/`release-only` scene; OR any character × facet-class pair appears in ≥2 co-located entries.
+
+**Why top-ranked:**
+- With R2 retired under DEC-0116, PILE-UP is the sole over-decoration gate in the slim pipeline. The verdict was binary (`warranted | over-decoration`) with no defined criteria — every judgment was subjective and non-reproducible.
+- Pass 3 survey noted "no clear gap without a live review signal to anchor it" — this is a different finding: not a missing class but an underspecified test inside an existing class.
+- The criteria are grounded in existing scene-map fields (`peak-bones`, `peak-shadow-bones`, `rhythm-shape`) the auditor already reads for CURVE-SHAPE — zero new information sources required.
+- Cost: ~90 words added to one line. Value: auditor dispatch becomes deterministic on pile-ups.
+
+**Next candidate:** `rubric-dialogue.md` body — add `[RETIRED — DEC-0116]` section headers to `## Contamination disciplines`, `## V2 reviewer protocol`, `## R1 vs R2 differences`. Deferred three passes now; preamble guards execution but headers look live to a scanner.
