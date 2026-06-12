@@ -2970,3 +2970,30 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-06-12-hygiene-001
+      created_at: 2026-06-12T00:00:00Z
+      created_by: "artur hygiene pass 2026-06-12"
+      target:
+        command: oskar-audience-health-review
+        scope: "active-project/audience/"
+        phase: null
+      severity: SOFT
+      description: |
+        active-project/audience/literary-snob/ exists with a 19 KB stm.md and
+        supporting files. The active project audience is cape-fic-reader /
+        dark-fantasy-reader / worm-canon-pedant (memory.md line 26). literary-snob
+        is a library persona (staff/audience/literary-snob/) but not an active
+        project member. The directory is orphaned state from an earlier project-setup
+        trial. Not blocking, but a Phase-0 glob over active-project/audience/*/stm.md
+        will pick it up alongside the active trio.
+        Oskar: confirm whether this directory is safe to remove. If yes, margit
+        should archive/delete and update any index that references it.
+      context_refs:
+        - active-project/audience/literary-snob/stm.md
+        - active-project/staff/showrunner/memory.md  # line 26: audience membership
+        - staff/admin/improvement-loop/hygiene.ledger.md  # pass 2026-06-12, finding 1
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
