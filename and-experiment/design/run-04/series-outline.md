@@ -187,13 +187,14 @@ life without a flicker: she files the frozen North as "the enemy ice-sect, would
 pass," knows better than to make a great sect *lose face* (so she'll **vanish clean,** never jilt), and
 serenely plans to bail and cultivate **outside the plot** — treating the wedding as a *delivery deadline* for
 the ship. The court splits "what grace!"/"what ice!"; Alicent, powerless against an unimpeachable match,
-grieves. **The needle (the one insult she can't collect — sudden, almost-lethal):** court ladies chat idly,
-fondly, about her hopelessness at *embroidery* ("no talent, that one, talentless with a thread"); Gael walks
-in midway, catches only **"talentless"** fixed to her name, hears the one unsurvivable cultivation verdict
-(no spiritual root — the negation gag ① cannot reframe as a flattering title), and answers in the same breath
-with **immediate, almost-lethal violence** (body-tempered, flat, the needle or her hands at the woman's
-throat — **no qi-spend `GUARD-1` clean; no death, the first meant kill is still II.7; off-ladder reflex-flash,
-not a rung**), then **moves on placidly,** the matter closed. Fallout: no one can read the trigger → the
+grieves. **The overheard word (the one insult she can't collect — sudden, almost-lethal):** court ladies chat idly,
+fondly, about her hopelessness at some trivial courtly accomplishment (*embroidery a stand-in example —
+subject settled at /and-write*) — "no talent, that one, talentless"; Gael walks in midway, catches only
+**"talentless"** out of context, fixed to her name, hears the one unsurvivable cultivation verdict (no
+spiritual root — the negation gag ① cannot reframe as a flattering title), and answers in the same breath
+with **immediate, almost-lethal violence** (body-tempered, flat, whatever's nearest or her hands at the
+woman's throat — **no qi-spend `GUARD-1` clean; no death, the first meant kill is still II.7; off-ladder
+reflex-flash, not a rung**), then **moves on placidly,** the matter closed. Fallout: no one can read the trigger → the
 maegi-rumour hardens; the **Starks read cold-instant lethality as asset-confirmation** (the flash that should
 repel a suitor closes the sale); the King gains motive to **marry the trouble away fast;** Wylla's horror
 deepens. **Register:** CHILL (for everyone but Gael) → SPIKE (the needle). **Rung:** off-ladder.
