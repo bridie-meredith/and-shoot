@@ -156,7 +156,7 @@ If you cannot discriminate cleanly between two change_types, prefer the lower-co
 
 ### 4. Count recurrence
 
-Grep `active-project/staff/reviews/` (and `projects/*/staff/reviews/` if the project boundary is relevant) for prior occurrences of the same finding class. Set `recurrence_count` accordingly. If `recurrence_count == 1` AND the failure is non-catastrophic, prefer to return `OK` and wait for recurrence — premature promotion of a one-off SIGNAL is the anti-pattern. Override only when the failure was catastrophic (irreversible, multi-chapter blast radius, or a known leakage class the chain was supposed to prevent).
+Grep `active-project/staff/reviews/` and `active-project/staff/auditor/` (and `projects/*/staff/reviews/` + `projects/*/staff/auditor/` if the project boundary is relevant) for prior occurrences of the same finding class. Set `recurrence_count` accordingly. If `recurrence_count == 1` AND the failure is non-catastrophic, prefer to return `OK` and wait for recurrence — premature promotion of a one-off SIGNAL is the anti-pattern. Override only when the failure was catastrophic (irreversible, multi-chapter blast radius, or a known leakage class the chain was supposed to prevent).
 
 ### 5. Apply methodology
 
