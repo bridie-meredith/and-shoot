@@ -43,8 +43,10 @@ If `active-project/` is empty: no project active. Tell the user and ask whether 
                                           └─ Phase 10 FORWARD-THREAD     ← reads past, edits current, updates aggregate-state.md
                                                 └─> [optional] /and-postop b<NN>c<MM>
 
-  [periodic, opt-in]  /and-cohere b<NN> [<from>-<to>]   ← cross-chapter coherence loop;
-                                                          PASS-COHERE updates aggregate-state.md
+  [book-thirds: mandatory; otherwise opt-in]  /and-cohere b<NN> [<from>-<to>]   ← cross-chapter coherence loop;
+                                                          MANDATORY at ~⅓ and ~⅔ of planned chapters (step 7);
+                                                          FAIL-COHERE at book-third is R5 hard halt, blocks further ships;
+                                                          PASS-COHERE updates aggregate-state.md + memory cohere_checkpoints
 ```
 
 `/and-substance --cascade` chains chapter → write → bones-review → facets → stitch (including Phase 10) automatically. **Producing a chapter follows the protocol below, which uses `--cascade` as its backbone and adds discipline rules so the operator (Claude) does not bail mid-run.**
@@ -62,7 +64,7 @@ If `active-project/` is empty: no project active. Tell the user and ask whether 
 | "finalize the book" / "export for Google Docs" / "package the completed work" / "close out the project" | **Engage the finalize & export protocol** (`design/finalize-export-protocol.md`). Cold-read forks → editor trim pass on an export copy → assemble one reader-facing file → save to `completed-works/<slug>/` → archive `active-project/` to `projects/` → harvest new personas/cards (margit). Book-close operation; does NOT re-cascade the bones chain. |
 | "ship it" / "stitch" | If facets are done: `/and-stitch <slug>` (will include Phase 10). Else: figure out what's missing and route there. |
 | "review the chapter" | `/and-review verdict b<NN>` (book-level) or `/and-postop b<NN>c<MM>` (chapter-level depth-of-quality). |
-| "cohere" / "check the stretch" / "is the book hanging together" | `/and-cohere b<NN> [<from>-<to>]`. Opt-in cross-chapter loop. |
+| "cohere" / "check the stretch" / "is the book hanging together" | `/and-cohere b<NN> [<from>-<to>]`. Mandatory at book-thirds (step 7 in chapter-production protocol); opt-in otherwise. |
 | "what's next" / "where are we" | Just print the state summary. Don't act. |
 | "fix this" / "this is wrong" | Read the user's specific concern. Don't just rerun a phase blindly. |
 
@@ -100,6 +102,7 @@ Cap exhaustion → HALT cleanly with checkpoint.
 - Mid-run discovery of a parking-lot HARD item targeting a phase already passed in this run.
 - `/and-cut` invocation by the principal.
 - `/and-substance chapter` Phase 0 HARD-abort on unacknowledged substantive aggregate-state entries.
+- Step 7 FAIL-COHERE at a book-third boundary (blocks further chapter ships until addressed).
 - Any HARD-abort the chain documents that is not in the R2 cap-iteration table.
 - Tool failure that cannot be retried.
 
@@ -150,11 +153,13 @@ Sequence — no principal output between steps:
 5. **`/and-stitch b<NN>c<MM>`** through Phase 9 (cold-read terminal gate; on FAIL → R2 auto-iterate).
 6. **`/and-stitch b<NN>c<MM>` Phase 10 FORWARD-THREAD** (reads aggregate-state.md / prior drafts; threading-review fork; classify-and-apply; emit/update aggregate-state.md; PASS-THREAD or HOLD-THREAD).
 
+7. **Mandatory cohere at book-thirds (conditional).** After Phase 10 completes: compare the just-completed chapter's 1-based position in book order to `floor(planned_chapters × 1/3)` and `floor(planned_chapters × 2/3)`, where `planned_chapters` = `memory.md books[<NN>].structure.chapter_count`. If the just-completed chapter is the first to reach or cross either threshold AND `memory.md books[<NN>].cohere_checkpoints[]` does not yet contain a record for that threshold: fire `/and-cohere b<NN>` covering all chapters to date. FAIL-COHERE is a R5 hard halt (not cap-bounded; does not retry; blocks further chapter ships). PASS-COHERE appends a record to `memory.md books[<NN>].cohere_checkpoints[]` (schema: `schemas/showrunner-memory.schema.md`) and proceeds normally. Non-threshold chapters skip this step entirely.
+
 Every command's Phase 0 reads `active-project/staff/showrunner/cascade-checkpoint.md` and observes `mode: unattended` to suppress per-command narration. Update cascade-checkpoint at every step transition with the current command and verdict.
 
 `/and-postop` does NOT fire automatically. It is optional and surfaces in the end-of-run summary as a suggested next step only.
 
-`/and-cohere` is also NOT in this chain. Cohere is periodic and opt-in (run after every Nth chapter at principal discretion, or on demand). The end-of-run summary may suggest cohere if the threading pass surfaced multiple HOLD-THREAD signals.
+`/and-cohere` is NOT in the per-chapter chain EXCEPT at book-third boundaries (see step 7). At ~⅓ and ~⅔ of the book's planned chapter count, cohere fires automatically after Phase 10. Outside book-thirds it is opt-in (on demand, or suggested in the summary when multiple HOLD-THREAD signals accumulate). A FAIL-COHERE at a book-third is a R5 hard halt; PASS-COHERE records the threshold in memory and proceeds normally.
 
 ### End-of-run summary (single message on completion or halt)
 
@@ -162,10 +167,11 @@ Every command's Phase 0 reads `active-project/staff/showrunner/cascade-checkpoin
 ================================================================
 PRODUCE CHAPTER b<NN>c<MM> — <COMPLETE | HALTED-<class>>
 ================================================================
-Outcome            : COMPLETED | HALTED-CAP-EXHAUSTION | HALTED-HARD-BLOCK | HALTED-CUT | HALTED-TOOL-FAILURE
+Outcome            : COMPLETED | HALTED-CAP-EXHAUSTION | HALTED-HARD-BLOCK | HALTED-CUT | HALTED-TOOL-FAILURE | HALTED-FAIL-COHERE
 Chapter            : b<NN>c<MM>
 Phase 9 verdict    : PASS | PASS-WITH-DEPTH-PASS-REQUIRED | FAIL (after N retries)
 Phase 10 verdict   : PASS-THREAD | HOLD-THREAD (M substantive items surfaced)
+Cohere (step 7)    : N/A (not at book-third)  |  PASS-COHERE (threshold: 1/3|2/3)  |  FAIL-COHERE (HALTED)
 Retries            : bones <0|1> / facet-cycles <1|2|3> / stitch <0|1>
 Aggregate-state    : updated through_chapter=b<NN>c<MM>, <K> unack substantive
 Parking-lot        : <N> new HARD, <M> new SOFT items written
@@ -197,7 +203,8 @@ While the chain runs:
 - Do NOT narrate Phase transitions to the principal.
 - Do NOT pause to "check in" between gates.
 - Do NOT skip Phase 10 (it is part of the chapter-production motion, not optional).
-- Do NOT fire `/and-postop` or `/and-cohere` as part of this chain. They are opt-in suggestions in the summary.
+- Do NOT fire `/and-postop` as part of this chain — it is an opt-in suggestion in the summary.
+- Do NOT fire `/and-cohere` mid-chain (before Phase 10 completes). The book-thirds mandatory cohere fires only at step 7, after Phase 10. Non-threshold chapters skip step 7 entirely.
 - Do NOT decide to upgrade an R2 cap-bounded retry into a hard halt before cap is exhausted.
 - Do NOT decide to upgrade a hard halt into "let me try one more thing" past R5 conditions.
 
@@ -279,7 +286,7 @@ Every other prompt that *looks* like a human checkpoint (accept/redraft, mode pi
 - Don't ask "what do you want to work on" if memory.md has a clear `current_chapter` + `last_phase`. Just continue.
 - Don't re-litigate prior decisions by reading `staff/admin/decisions.md` end-to-end. Trust DEC entries; only read details if relevant to the current action.
 - Don't run `/and-postop` reflexively after `/and-stitch`. It's optional; only fire if the user asks or it's a book-mid/close milestone.
-- Don't run `/and-cohere` reflexively. Opt-in; only fire if the user asks or you're at a natural sub-section boundary AND the user has signaled cohere cadence.
+- Don't run `/and-cohere` reflexively outside book-thirds. Book-thirds cohere fires automatically inside the chapter-production protocol at step 7. Outside book-thirds, cohere is opt-in — only fire if the user asks or you're at a natural sub-section boundary AND the user has signaled cohere cadence.
 - Don't open a new ablation/experiment unless asked. They're on-demand.
 
 ---

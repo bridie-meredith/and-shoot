@@ -347,6 +347,14 @@ books:
         depth_pass_resolved_at:            # /and-stitch Phase 9 PASS stamps this when depth_pass_pending was true; confirms delivery
           <iso-timestamp> | null           # PC-01 (URI-STITCH-SIGNAL-CLUSTER MANDATORY promotion, 2026-05-25);
                                            # consumed by /and-substance book <next-book> Phase 0 HARD-abort + /and-review verdict <book> precondition
+    # book-level fields filled by RUNBOOK step 7 (mandatory book-thirds cohere; PROP-0050)
+    cohere_checkpoints:            # appended by step 7 on PASS-COHERE; never overwritten
+      - threshold: "1/3" | "2/3"  # which book-third was cohered
+        chapter_at_cohere: <chapter-slug>  # last chapter included in the cohere range
+        cohered_at: <iso-timestamp>
+        verdict: PASS-COHERE
+        report_path: active-project/staff/cohere/<book>-cohere-<timestamp>.md
+
     # book-level field filled by /and-review verdict <book-slug>
     orchestrator_critic_verdict:
       ruling: PASS | PASS-WITH-NOTES | FAIL
