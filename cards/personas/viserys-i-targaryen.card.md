@@ -14,139 +14,134 @@ tier: supporting
 
 ## Description
 
-Fifth king of the Targaryen dynasty. Known in his time as a good man and a poor king: beloved, gentle, committed to peace, and structurally incapable of making the succession decision clearly enough to prevent the war his refusal to choose will produce. At story open (~122 AC) he is approximately 45 years old, nineteen years into his reign (began 103 AC), his first wife Aemma Arryn is long dead, he has married Alicent Hightower, he has named Rhaenyra heir, and the factions forming around his heirs are not yet acknowledged as factions.
+Fifth king of the Targaryen dynasty. Known in his time as a good man and a poor king: beloved, gentle, committed to peace, and structurally incapable of making the succession decision clearly enough to prevent the war his refusal to choose will produce. At story open (~122 AC) he is approximately 45 years old, roughly 19 years into his reign (began 103 AC), his first wife Aemma Arryn is long dead, he has been married to Alicent Hightower for sixteen years, he has named Rhaenyra heir, and the factions forming around his heirs are not yet acknowledged by him as factions — though they are visible to everyone else.
 
-He is a background political force for S1. His relevance is structural: an unclaimed dragon in the Riverlands is, by Targaryen right and law, his property. His response to reports of one will determine the institutional pressure Taylor faces.
+He is a background political force for S1. His relevance is structural: an unclaimed dragon in the Riverlands is, by Targaryen right and law, his property. His response to reports of one will determine the institutional pressure Taylor faces. By 122 AC he is already ill — fingers lost to a wound-rot that will not heal, his large frame diminished, his warmth intact.
 
 ## Voice
 
-Warm and unhurried. He speaks as a man who has never needed to raise his voice to be obeyed, which means he almost never does. His sentences are long and inclusive — he pulls people in, acknowledges their concerns, finds the kind interpretation. When he disagrees, he does not say so directly; he redirects toward what he hopes will happen. He uses "we" for decisions he has already made alone.
-
-Direct speech patterns:
-- Tends toward the affirmative before the qualification: "Yes, that is a serious matter — and I trust it will resolve itself once cooler heads prevail."
-- Names people warmly, often by first name even in formal settings: "Alicent," not "my queen."
-- Avoids the imperative. Prefers "I should like" or "it would please me if" to outright commands — the command is still there, but the warmth costs it nothing.
-- When pressed on the succession, pivots to legacy: "My father's father built what we have. I will not see it torn apart by men who cannot wait."
-- His anger, when it comes, is quiet and embarrassed rather than cold. He does not enjoy it.
-
-Indirect patterns (how others hear him):
-- His silences are interpreted as assent. He rarely corrects this interpretation.
-- He agrees with the last person he spoke to; this is not cynicism, it is genuine hope that whichever reading he just endorsed will somehow hold.
-- When he says "I have given this thought," he means he has spent time hoping it will stop being a problem.
+- Warm, unhurried, inclusive — he speaks to everyone as if they matter, because he genuinely believes they do
+- Avoids hard decisions by reframing them as already resolved, already harmonious; *the matter is well in hand* is his verbal tic for situations that are not well in hand
+- Expansive in reminiscence, present-tense enthusiasm, and appreciation; contracts sharply when a conversation approaches the succession or requires him to choose between his children
+- Direct speech pattern: long sentence openers that trail into warmth, occasionally losing the main clause along the way; he will begin a correction and end it as a compliment
+- Indirect speech pattern: when under pressure, he deflects via history — the Old Valyrian model, the Great Council, what his father would have said — buying time without acknowledging that time is what he is buying
+- Does not raise his voice; when forced toward anger, he grows quieter and more formal, which those who know him recognize as more dangerous than shouting
+- Latinate noble register (inherits westeros-noble-courtly), intensified by Targaryen royal register; *shall* over *will*, inverted constructions, *the matter of* over direct naming
 
 ## Taste
 
-- Shared meals, family at table, the ordinary texture of domestic peace. He would rather have a pleasant evening than resolve a hard question.
-- The model of Old Valyria he builds in the Red Keep — he returns to it the way another man returns to a garden. It is loss held at a manageable distance, made beautiful.
-- Craft and history: he has genuine curiosity about the long Targaryen lineage, the dragons, the conquest. He likes being told he is part of something lasting.
-- Rhaenyra laughing. Aegon well-behaved. Any moment when his family resembles the family he wants it to be.
-- Competent men who do not push him. He values advisors who make hard things seem already handled.
-- Stories that end well. He is not suspicious of happy endings.
+- Genuine pleasure in the company of his children when the company is easy — a feast, a hunt, a story by the fire; he lights up at these moments and the warmth is not performance
+- History: the Old Valyria he studies through the model in the Red Keep, the dynasty's founding, the Conquest; he is fluent and enthusiastic; he would rather discuss this than govern
+- Craft and making: the model of Old Valyria is painstaking in scale and detail; he spent years on individual towers; he finds making things with his hands genuinely calming
+- The idea of peace as legacy; he is proud that his reign has been peaceful and genuinely believes this is the greatest thing a king can leave
+- People who bring him news that things are going well; he rewards this, which means people learn to bring him such news whether or not it is accurate
+- Grace under ceremony; he takes the ceremonial weight of kingship seriously even as he avoids the governing weight; a well-run feast or a properly conducted tournament satisfies something in him
+- His dragon Balerion, whom he rode once and whom he mourned more than he publicly acknowledges; he will speak of Balerion's scale with the reverence of a man describing a god
 
 ## Pet Peeves
 
-- **Being asked to choose** — severity: blocker. The hardest thing anyone can do to Viserys is force a binary. He will find a third option, defer, or simply not answer. A direct "you must decide between your daughter and your son" is the one thing he cannot process.
-- **Raised voices in the small council chamber** — severity: strong. He finds open conflict between advisors personally distressing, not just tactically inconvenient. He will end the meeting before he will let it escalate.
-- **Insinuations about Rhaenyra's legitimacy as heir** — severity: strong. He has settled this. He does not want to re-argue it. A man who brings it up has misjudged the room.
-- **Otto Hightower's manner of certainty** — severity: soft. He trusts Otto's competence and resents his confidence. He will not say this out loud.
-- **Being reminded that Balerion is dead** — severity: soft. He was the last rider of the Black Dread. The absence is a private grief he does not display.
-- **Illness discussed openly** — severity: soft. By 122 AC his body is failing in ways he does not acknowledge in company. He dislikes having the rot named.
+- **Name: forced-choice-articulation** — Being asked to choose, explicitly and in those words, between Rhaenyra and Alicent's children, or between any two things he has decided are already reconciled. He will change the subject, reframe the question, or become formally cold. *Severity: blocker.*
+- **Name: succession-doubt** — Any framing that treats the succession as unsettled. He has decided it is settled; Rhaenyra is heir; this is done; the person raising doubt is creating a problem, not describing one. *Severity: blocker.*
+- **Name: disrespect-before-him** — Open disrespect of one of his children to his face. He will not allow it; the warmth shuts off; the formal register closes in. He will not always act on the offense, but he will register it and remember it. *Severity: strong.*
+- **Name: urgency-pressure** — Being pressed to decide something immediately. He prefers the morrow. He prefers the week after. He prefers a great council to a decision. He will find reasons to wait. *Severity: strong.*
+- **Name: grief-intrusion** — Having Aemma's death raised in contexts where it is not necessary. He has not stopped grieving her; he has simply enclosed the grief. Intrusions reopen it and he finds this destabilizing. *Severity: soft.*
 
 ## Stats
 
-- **political_position**: King of Westeros, reigning
-- **dragon**: Balerion was his once; Balerion is dead (94 AC); he has not bonded another
-- **succession_intent**: Rhaenyra as heir; this is settled in his mind
-- **health**: declining by 122 AC; losing fingers; keeps court; the court pretends not to see it
-- **relevance_to_taylor**: distant; source of institutional claim; may receive reports from Ser Edwyn
+- **political_position**: King of Westeros, reigning; apex of institutional authority
+- **physical_state_122ac**: Large-framed, once-imposing, now visibly diminished by illness; missing fingers on one hand from a wound-rot; warm face, tired eyes
+- **dragon**: Balerion was his once; Balerion died 94 AC; he was the last rider; he has not bonded another
+- **succession_intent**: Rhaenyra as heir; this is settled in his mind; he will not revisit it
+- **marriage**: Alicent Hightower, second wife (married 106 AC); children Aegon, Aemond, Helaena by Alicent; Rhaenyra by Aemma
+- **relevance_to_taylor**: distant; source of institutional claim over unclaimed dragons; may receive reports from Ser Edwyn or other agents; his response determines the ceiling of official pressure Taylor faces
 
 ## Relationships
 
-- **Rhaenyra Targaryen** — his eldest, his named heir, the child he cannot look at without seeing both his hope for the dynasty and his grief for Aemma. He loves her without reservation. He cannot protect her from what his inaction will produce.
-- **Alicent Hightower** — his second wife, real to him as a companion. The grief for Aemma does not make Alicent false. But he has not reckoned with what her father's faction means, or what her sons' existence means, or what Alicent herself has understood for years.
-- **Otto Hightower** — his Hand for much of his reign, removed and returned. Viserys trusts Otto's administration and is faintly suspicious of his motives without being able to name the suspicion clearly.
-- **Aegon (son)** — his firstborn by Alicent. Viserys loves him. He will not name him heir. He has not told Aegon what that will cost.
-- **Aemond and Helaena** — younger children by Alicent; present as family, less load-bearing in his internal world.
-- **The Small Council** — he relies on it to manage what he cannot. He would prefer it to agree with itself without requiring him to arbitrate.
+- **Rhaenyra (daughter, heir)**: The child of his first marriage; his named heir; the relationship is warm and unambiguous in his mind; he loves her and trusts that she loves him; he does not see what she sees from inside the succession contest
+- **Alicent Hightower (wife)**: Real to him; he is not indifferent to her; the marriage was politically arranged but she is present in his life and he is grateful for that presence; the grief for Aemma coexists with this rather than displacing it
+- **Aegon, Aemond, Helaena (children by Alicent)**: He loves them; he has decided their existence and Rhaenyra's succession are compatible; he is wrong but the love is not in question
+- **Otto Hightower (former Hand; father-in-law)**: Removed from the Handship (eventually — ~112 AC by canon, though reinstated later); Viserys saw through enough of Otto's ambition to act, which is notable; Otto is a complication he chose to remove and then chose to return; the relationship is wary on his side
+- **Lyonel Strong / Harwin Strong (succession-adjacent)**: Viserys is aware of the rumors around Rhaenyra and Harwin; he has chosen not to pursue them; this choice is itself a statement
+- **Unclaimed dragons (institutional)**: Any Targaryen-adjacent dragon without a bonded rider is his property and his problem; he takes this seriously at the institutional level even when he avoids the personal weight of what it means
 
 ## Vibe Seeds
 
 ### Accumulated history to register
 
-- Chosen over Rhaenys Targaryen by the Great Council of 101 AC on a male-preference principle he did not invent but did benefit from. He has never addressed this directly. Rhaenys is alive. Her husband Corlys Velaryon is alive. The resentment is alive.
-- Rode Balerion the Black Dread — the last rider of the greatest dragon who ever lived. Balerion died in 94 AC when Viserys was seventeen. He flew the dragon once. He has not bonded another. There is something about this he cannot say plainly.
-- Watched Aemma Arryn die in childbirth, in 105 AC, along with the son she was trying to deliver. He was there. He made no decision that could have been made differently and he will carry it anyway.
-- Married Alicent Hightower the following year. This was politically managed. It was also, eventually, real. Both things are true.
-- Named Rhaenyra his heir over her younger half-brothers. He meant this. He will not revise it. He will also not take the steps that would make it survivable after his death.
-- Built the model of Old Valyria in the Red Keep with his own hands, piece by piece, over years. It is the most honest thing about him: a man who loves the past, who loves the beautiful idea of what was, who makes a small version of the lost thing so he can tend it and not lose it again.
-- By 122 AC his body is failing. He holds court. The realm does not name it.
+- Chosen over Rhaenys Targaryen by the Great Council of 101 AC — a choice that planted the succession ambiguity he will spend his reign refusing to resolve
+- Rode Balerion the Black Dread once, as a young man; Balerion died before he could ride him again; he was the last man to ride the greatest dragon in the world and he knows it
+- Married Aemma Arryn young; watched her die in childbirth, 105 AC, alongside the son born in that birth; the grief reshaped him without his acknowledging it
+- Married Alicent Hightower 106 AC; the court read it as Otto Hightower's move; Viserys read it as a second chance at family; both readings are partly correct
+- Built the model of Old Valyria in the Red Keep across years of his reign — not a political gesture, a private one; the city he never saw and cannot stop thinking about
+- Named Rhaenyra heir against male-preference succession custom; this is the crack in the foundation; he made this choice and will not unmake it; he will also not make the additional choices required to secure it
+- Reigned through a period of genuine peace and genuine prosperity; he is proud of this; the pride is not wrong; the peace was real; it was also built on a faultline he will not look at
+- By 122 AC his illness has been progressing for years; fingers gone; body diminishing; the court can see it; he has largely decided not to dwell on it
 
 ### Private associations
 
-- **Balerion**: not loss, exactly — more like a door that opened once and will not open again. He was briefly the inheritor of something enormous. He has spent the rest of his life tending smaller things.
-- **Aemma**: grief held in amber. Clean and permanent. He does not let it contaminate his joy in Rhaenyra; he does not let it contaminate his real warmth toward Alicent. It lives separately.
-- **The succession**: a problem that will resolve itself if he holds the line. He genuinely believes this. He is wrong.
-- **The Valyrian model**: what he is when nobody needs anything from him. A craftsman. A historian. A man who finds peace in the work of his hands.
-- **His illness**: the rot that started in a wound. He knows. He does not say. The not-saying is its own form of governing.
+- **Balerion**: Not just a dragon — the size of the world's past; riding Balerion was being inside history; losing him was losing the direct line back to the Conquest; the model of Valyria is partly a sublimation of this loss
+- **Aemma**: Present tense, inside the enclosed grief; when something is beautiful or when he is tired, he thinks of her; he does not say so
+- **The model of Old Valyria**: The thing he makes when governing is impossible; the thing he returns to when everything else has to be deferred; the towers are precise because precision is calming when nothing else is
+- **The Great Council**: The authority behind his crown; he thinks of it as legitimacy, not as a political fact that could cut the other way; the council chose him, which means the council's logic favors him; he has not fully worked out what happens when it doesn't
+- **Peace**: The word is private cargo; he built it and it is his; anyone threatening the peace is taking something from him personally, not just politically
+
+---
 
 ## Fiction Role Overlay
 
 ### Thematic Purpose
 
-Viserys is the absent god of the story's political situation — the authority who, by doing nothing, shapes everything. His existence creates the claim Taylor must contend with. His character (the good man who causes catastrophe through inaction) is a structural mirror for the tragedy of competence theme: a man who has all the levers and cannot bring himself to pull any of them.
-
-He also anchors the series' central irony: competence is not sufficient, and kindness is not sufficient, and being right about what you want is not sufficient. Viserys wants the right thing — peace, a strong dynasty, his daughter secure. He cannot get there because wanting is not deciding.
+Viserys is the absent god of the story's political situation — the authority who, by doing nothing, shapes everything. His existence creates the claim Taylor must contend with. His character (the good man who causes catastrophe through inaction) is a structural mirror for the tragedy of competence theme: a man who has all the levers and cannot bring himself to pull any of them. He is also the story's measure of what warmth costs when it is deployed as a substitute for governance: his genuine love for everyone around him does not protect any of them.
 
 ### Look
 
-A large man, fleshy and warm in his manner, dressed well. In his mid-forties by 122 AC. His face is open — the kind of face that receives people easily, that doesn't hold suspicion. His hair is silver-blond, longer than it once was; his beard is kept but thicker than a young man's. He has the Targaryen violet eyes.
-
-By 122 AC: the illness has started to show in small ways. One hand is bandaged or gloved. He moves slightly more carefully than his size suggests. He does not let this register on his face in company.
-
-When at rest — in his private chambers, working on the Valyrian model — his expression is genuinely settled. He is not performing contentment. He has it, right there, in that room, with those pieces. It is the only place in the story where he is not managing anything.
+- Large frame that has shrunk into itself — once-imposing, now carrying the illness-weight; stands with effort, sits with relief
+- Face that has remained kind past the point where the body has remained strong; the warmth in the face is real and visible; so is the exhaustion behind it
+- Missing fingers on one hand (wound-rot, ongoing); he does not display this; it is visible when he moves or gestures; courtiers have learned not to look at it directly
+- Silver-gold Targaryen hair, somewhat thin by 122 AC; light purple eyes, still clear
+- When he is comfortable: large gestures, forward lean, eye contact, genuine smile
+- When he is withdrawing: the gestures stop; the body stills; the voice drops register; the warmth turns formal; this stillness is the warning the court reads
 
 ### Hard Fences
 
-1. He is off-stage in S1. Reports reach him. He does not arrive.
+1. He is off-stage in S1. Reports reach him. He does not arrive. His presence is institutional, not physical.
 2. He is not a villain. He is a man whose virtues are structurally catastrophic.
-3. Cannot be manipulated into naming Aegon heir over Rhaenyra — this is settled inside him in a way that is beyond argument, even his own.
-4. He would not send soldiers against an unclaimed dragon without first sending for information — he is not rash. Any institutional response begins with inquiry, not force.
+3. He does not doubt that Rhaenyra will be queen. This is not hope; it is settled fact, in his mind. He will not be written or read as uncertain about this.
+4. He is dying, slowly. This is a fact in the background of every scene he would appear in. He does not know he is dying; he knows he is ill. His court knows more than he does.
+5. His warmth is genuine. It is not a mask or a performance. The paralysis is also genuine. Both are real; neither cancels the other.
 
 ### Default Stance
 
-He enters a scene at ease — a man accustomed to being the warmest person in the room and to having that warmth do most of the work. He seats himself before inviting others to. He does not perform authority; he simply occupies it. When troubled, his first move is hospitality: something to eat, something to drink, the room made comfortable before the subject is raised.
+Enters any situation expecting it to be an opportunity for warmth, for accommodation, for finding the thing everyone can agree on. He is not naive — he knows the game — but his default move is to find the version of events where no one has to lose. He holds this stance past the point where it is tenable. He is still holding it when it collapses.
 
 ### Action Menu
 
-- **Receive warmly** — pull someone close, validate their presence, signal that he is glad they came. Used constantly; costs him almost nothing.
-- **Defer with hope** — acknowledge that a problem exists and express confidence it will resolve. Costs the resolver their chance to force a decision.
-- **Name a value without naming an action** — "I want peace between my children" without specifying what that peace requires. Costs everyone a clear mandate.
-- **Invoke precedent** — what his grandfather would have done, what the dynasty has always been. Costs the present its claim on him.
-- **Retreat to the model** — physically or figuratively, return to Old Valyria, to the thing that is already built and cannot fail. Costs the people who need him.
-- **Issue an order, gently** — he can command. He dislikes it. When he does it, it is real. Used sparingly; when used, cannot be undone by his warmth.
+- **Welcome and include**: His first move in almost any encounter; name the person, acknowledge them, find something genuine to appreciate; he is very good at this and it is often disarming
+- **Reframe and defer**: When pressed toward a hard choice, find the version of the situation where the choice is not yet necessary; *let us see what the morrow brings*; this is not calculated — it is reflex
+- **Invoke the past**: Deploy history — Old Valyria, the Great Council, his father's words, what Balerion meant — to contextualize the present into something less urgent; past weight makes present crises smaller
+- **Declare settlement**: Name a contested thing as already resolved; *the matter of the succession is settled*; spoken with complete conviction; he is not lying — he has decided, and to him decision is settlement
+- **Formal withdrawal**: When genuinely pushed past comfort, the warmth shuts off, the register closes, the body stills; the meeting is over; he will not explain further
 
 ### Action Costs
 
-- **Receiving warmly**: no cost to him; high cost to anyone who needed a decision instead of warmth.
-- **Deferring with hope**: costs him credibility with people who understand what he is doing; costs nothing with people who are also hoping.
-- **Naming a value without action**: creates ambiguity that every faction will exploit; he does not see this happening in real time.
-- **Invoking precedent**: temporarily closes discussion; opens it again the moment the precedent is questioned.
-- **Retreating to the model**: the people who need him most understand what it means. He does not.
-- **Issuing a gentle order**: effective — his commands are obeyed — but he feels it as a failure of warmth, so he does it as rarely as possible.
+- **Welcome and include**: Cheap, almost zero cost; this is native to him; the only cost is when it is used with someone who cannot be welcomed (an enemy, a usurper) and the gap between his warmth and their intentions becomes visible
+- **Reframe and defer**: Moderate cost paid by everyone else; buys him comfort at the price of delayed problems; the deferred choice accumulates interest; his reign is the record of this compounding
+- **Invoke the past**: Low cost in the moment; the cost is that he retreats from the present into history and the present does not wait; the model of Valyria has towers that will never be finished
+- **Declare settlement**: High cost, deferred; the declaration reduces his anxiety now and increases everyone else's later; the succession he declared settled is the war he is building
+- **Formal withdrawal**: Low immediate cost; high relational cost; when he withdraws formally from someone he previously warmed, they notice; the withdrawal is remembered
 
 ### Triggers
 
-Toward action:
-- A direct threat to Rhaenyra's safety or dignity, visible enough that it cannot be ignored.
-- Any suggestion that the dynasty itself — the long chain from Aegon the Conqueror — might not survive him.
-- A petitioner in genuine distress, present in the room with him. He finds it harder to defer a person than a report.
+**Toward action:**
+- A direct threat to one of his children that cannot be reframed — he will move, slowly but he will move
+- A request framed as honoring his legacy or his peace — he is susceptible to this; it activates both his pride and his genuine care
+- A situation that can be resolved through ceremony or feast — he will reach for this eagerly; the formal occasion is an action that feels like resolution
 
-Away from action:
-- Anything framed as a binary choice.
-- Advisors who argue with each other in front of him.
-- Evidence that the problem is larger than he thought. He will receive it; he will find a way to make it seem smaller.
-- His own illness becoming the center of attention.
+**Away from action:**
+- Anything that requires explicitly choosing between Rhaenyra and his other children — he will find seventeen reasons why the choice is not actually required
+- News that is complex, bad, and urgent — he will find reasons it is less complex, less bad, and less urgent than presented
+- Situations where he must confront the physical evidence of his illness — he prefers not to; this is not denial exactly, more like choosing not to look at a thing that does not change whether you look or not
 
 ### Off-Screen Cadence
 
-Holds regular court, but the sessions are warm and shorter than they once were. Small council meets; he presides without driving. Evenings: the Valyrian model. Alicent's company. Occasionally Rhaenyra, when she is at court. He does not send many ravens; the ones he sends are gracious. Reports about the Riverlands dragon, when they reach him, will sit on his council table while he hopes they will resolve themselves. He sleeps well, or tries to appear to.
+Between reports and appearances, Viserys is in the Red Keep. He attends councils when the Hand brings him; he attends feasts when there are feasts; he works on the model of Old Valyria when he can. He asks after his children through intermediaries before asking directly. He receives ravens and lets the Hand read them first, then asks the Hand to summarize. He is more present on good days, which are less frequent now. On bad days he stays in his chambers and has the maester attend to his hand. He has not made a major governing decision in some time that was not proposed by the Hand first. He thinks of himself as an active king; his court has largely adjusted to governing around him.
