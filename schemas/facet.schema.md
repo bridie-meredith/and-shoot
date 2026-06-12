@@ -177,7 +177,7 @@ Vibes are permanent stickers — a vibe added in s01e01 persists to s01e02+ unle
 Audience-modeled context — the reader-gap content. For each thing a fresh reader cannot reasonably be expected to know on a cold read (Westeros-specific roles like `reeve` / `maester` / `Watch`; series-specific objects like `the log` / `the count`; pre-story circumstances like the resurrection and family acceptance), an exposition entry attaches a brief gloss to a specific anchor with a directive on how the stitcher should render it.
 
 ```
-<id> @<anchor> <key>: <gloss-text> | scope: <scope-kind> | renders-as: <position> | sources: <list> | licensed-by: <list>
+<id> @<anchor> <key>: <gloss-text> | scope: <scope-kind> | renders-as: <position> | surface: <surface-kind> | sources: <list> | licensed-by: <list>
 ```
 
 - **`@<anchor>`** — proto-line anchor where the gloss best lands. For episode-open scope, use `@0` (synthetic anchor; renders pre-body). For first-mention scope, use the proto-line ID where the term/object first appears in the rendered prose.
@@ -201,6 +201,12 @@ Audience-modeled context — the reader-gap content. For each thing a fresh read
   - `scene-bridge` — micro-orientation sentence at scene-open (≤15 words).
 - **`sources: <list>`** — comma-separated graph sources the gloss content is derived from (series-plan paths, world-build cards, condition cards, character cards, prior facets). Every claim in `<gloss-text>` must trace to at least one source. Audit-able.
 - **`licensed-by: <list>`** — comma-separated audience-model justifications. At minimum one persona-card slug + the gap-claim ("cape-fic-doesnt-know-westerosi-feudal-roles", "worm-canon-doesnt-know-flea-bottom-geography"). The exposition-author's reasoning surface.
+- **`surface: <surface-kind>`** — controls whether the entry is rendered inline as prose or held as reference context only (PROP-0004 / DEC-0014). One of:
+  - `render` — entry folds into prose at its `@<anchor>` per the `renders-as` directive. Used only for entries with a context-ledger license (`licensed-context-exception` token). Counts against the ≤3 per-chapter render cap.
+  - `reference` — entry is NOT rendered inline; the stitcher and facet authors consult it for world-grounding and stake-framing but it produces no inline prose. **Default for all new entries.**
+  - `both` — entry appears inline (counts against render cap) AND is held as reference context. Reserved for critical terms the stitcher must both gloss and carry forward.
+
+  **Default / legacy behavior.** New entries default to `surface: reference` (the inline em-dash fold-in that the ablation showed hurts pacing is off unless explicitly licensed). Legacy entries without a `surface` field are treated as `surface: render` by the stitcher for backward compatibility; the Phase 4 auditor emits `WARN-SURFACE-ABSENT` (SIGNAL, not HARD) on such entries.
 
 **Author:** `exposition-author` — a dedicated audience-modeled subagent that loads the active audience persona cards (`active-project/audience/`) and the series/world-build sources, then asks per-anchor: "would the union of these audience personas know what X is on cold read?" If no, an exposition entry is authored.
 
@@ -222,6 +228,7 @@ When scene-orient fires, the entry is brief (≤15 words) and emits as `renders-
 - `first-mention-*` scopes: ≤12 entries per episode (one per first-mention term/object/place that needs glossing; if more are needed, audience-model is wrong or the episode is overloaded).
 - `scene-open-orient` scopes: 1 entry per scene MAX (the micro-bridge).
 - `prior-episode-bridge` scope: ≤1 entry per episode (replaces episode-open-preamble for non-first-episode runs).
+- **`surface: render` + `surface: both` combined**: ≤3 per chapter total (across all scope types). `surface: reference` entries are uncapped. Entries beyond the cap MUST use `surface: reference`.
 
 **Cross-episode promotion.** Once a first-mention gloss for `reeve` is authored in s01e01, future episodes do NOT re-gloss `reeve` — the term is now reader-resident. The exposition-author tracks already-glossed terms via a per-project register at `active-project/staff/exposition-author/glossed-terms.md`. A reader who skips s01e01 sees the s01e02 episode-open-preamble's prior-episode-bridge content + their own first-mention exposures; explicit glossing past first-mention is wallpaper and forbidden.
 
