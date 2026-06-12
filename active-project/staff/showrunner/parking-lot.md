@@ -2970,3 +2970,158 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-06-12-pipeline-001
+      created_at: 2026-06-12T13:07:57Z
+      created_by: "improvement-loop/test pipeline audit (pipeline-20260612T130757Z.md STRUCT-001)"
+      target:
+        command: /and-review
+        scope: pipeline
+        phase: null
+      severity: SOFT
+      description: |
+        schemas/dialogue.schema.md line 3 states "The R2 dialogue judge at `/and-facets`
+        Phase 2 remains as a locked-graph review pass" — directly contradicts DEC-0116
+        (URI-FACETS-SLIM) which retired the R2 dialogue judge entirely. CLAUDE.md Rule 15
+        confirms. The false claim will mislead any agent loading the dialogue schema about
+        whether a review pass still fires at /and-facets Phase 2. Fix: update line 3 to
+        reflect the R2 dialogue judge is RETIRED under DEC-0116; its one non-mechanical
+        concern (dialogue duplicating a lens facet at the same anchor) now lives in the
+        /and-facets Phase 4 auditor's DEDUP class.
+      context_refs:
+        - schemas/dialogue.schema.md
+        - active-project/staff/reviews/pipeline-20260612T130757Z.md
+        - staff/admin/decisions.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-12-pipeline-002
+      created_at: 2026-06-12T13:07:57Z
+      created_by: "improvement-loop/test pipeline audit (pipeline-20260612T130757Z.md STRUCT-002)"
+      target:
+        command: /and-review
+        scope: pipeline
+        phase: null
+      severity: SOFT
+      description: |
+        schemas/audit-report.schema.md lines ~106-157 contain a live-documented R2 decision-
+        shard infrastructure section: the /and-facets-r2 command, r2-decision-shard.md shard
+        format, .r2-decisions.md consolidated file, F-R2-* class definitions, and the
+        orchestrator-critic consumer contract on f-r2-counts (f-r2-1 > 0 HARD threshold).
+        The entire R2 round is retired under DEC-0116; none of these artifacts are produced.
+        Any agent reading this schema section may check for files that will never exist or
+        block on counts never set. Fix: mark the section RETIRED under DEC-0116 or remove it.
+      context_refs:
+        - schemas/audit-report.schema.md
+        - active-project/staff/reviews/pipeline-20260612T130757Z.md
+        - staff/admin/decisions.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-12-pipeline-003
+      created_at: 2026-06-12T13:07:57Z
+      created_by: "improvement-loop/test pipeline audit (pipeline-20260612T130757Z.md STRUCT-003)"
+      target:
+        command: /and-review
+        scope: pipeline
+        phase: null
+      severity: SOFT
+      description: |
+        .claude/commands/and-stitch.md Phase 0.7 (~line 254) states: "The dialogue facet is
+        authored upstream at `/and-facets` time by the per-character `dialogue-writer` fork."
+        Under URI-WRITE-DIALOGUE-COBONDED (2026-05-25), dialogue is authored at /and-write
+        Phase 1.5 and co-emitted at Phase 7, not at /and-facets. /and-facets Phase 0 verifies
+        presence (does not author). The misdescription leads fault-routing to /and-facets when
+        the correct target for dialogue faults is /and-write revise. Fix: update Phase 0.7 to
+        state dialogue files are co-emitted by /and-write Phase 7, verified-present by
+        /and-facets Phase 0, and arrive already on disk at theater/dialogue/<character-slug>.md.
+      context_refs:
+        - .claude/commands/and-stitch.md
+        - active-project/staff/reviews/pipeline-20260612T130757Z.md
+        - CLAUDE.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-12-pipeline-004
+      created_at: 2026-06-12T13:07:57Z
+      created_by: "improvement-loop/test pipeline audit (pipeline-20260612T130757Z.md STRUCT-004)"
+      target:
+        command: /and-review
+        scope: pipeline
+        phase: null
+      severity: SOFT
+      description: |
+        .claude/commands/and-stitch.md retains `refused-at-R2=<n>` as a live field in two
+        places: Phase 0.5 pre-flight display block (~line 171) and Phase 8 STATS exposition
+        accounting line (~line 773). R2 is retired (DEC-0116); this count can never be non-
+        zero. Dead residue misleads operators about expected Phase 0 summary fields and any
+        agent parsing the render-log. Fix: remove `refused-at-R2=<n>` from both locations.
+        Where the R2 refusal count was meaningful, note that exposition entries not selected
+        for `surface: render` default to `surface: reference` (PROP-0004 / DEC-0014).
+      context_refs:
+        - .claude/commands/and-stitch.md
+        - active-project/staff/reviews/pipeline-20260612T130757Z.md
+        - staff/admin/decisions.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-12-pipeline-005
+      created_at: 2026-06-12T13:07:57Z
+      created_by: "improvement-loop/test pipeline audit (pipeline-20260612T130757Z.md STRUCT-005)"
+      target:
+        command: /and-review
+        scope: pipeline
+        phase: null
+      severity: SOFT
+      description: |
+        .claude/commands/and-facets.md Phase 5c reads
+        `staff/audience/and-facets-orchestrator-critic/card.md` as the orchestrator-critic
+        card path. CLAUDE.md agent routing table and Rule 8 exception place the orchestrator-
+        critic at `staff/orchestrator-critic/card.md`. The file exists at the staff/audience/
+        path so it won't fail at runtime, but placement in staff/audience/ violates the
+        taxonomy guidance and CLAUDE.md does not document this as a deliberate deviation.
+        Resolution options: (a) move the card to staff/orchestrator-critic/ and update the
+        path in and-facets.md, OR (b) document the /and-facets-specific critic in CLAUDE.md
+        as a deliberate exception to the routing table.
+      context_refs:
+        - .claude/commands/and-facets.md
+        - staff/audience/and-facets-orchestrator-critic/card.md
+        - CLAUDE.md
+        - active-project/staff/reviews/pipeline-20260612T130757Z.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-12-pipeline-006
+      created_at: 2026-06-12T13:07:57Z
+      created_by: "improvement-loop/test pipeline audit (pipeline-20260612T130757Z.md STRUCT-006)"
+      target:
+        command: /and-review
+        scope: pipeline
+        phase: null
+      severity: SOFT
+      description: |
+        CLAUDE.md schema authority table does not list schemas/aggregate-state.schema.md or
+        schemas/cohere-state.schema.md. Both exist on disk and are actively referenced: and-
+        substance.md Phase 0 Step 6 and and-stitch.md Phase 10 Step 4 read aggregate-state;
+        and-cohere.md reads cohere-state. An agent consulting only the CLAUDE.md table to
+        locate schema authority for these file types has no pointer. Fix: add both schemas
+        to the CLAUDE.md schema authority table.
+      context_refs:
+        - CLAUDE.md
+        - schemas/aggregate-state.schema.md
+        - schemas/cohere-state.schema.md
+        - active-project/staff/reviews/pipeline-20260612T130757Z.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
