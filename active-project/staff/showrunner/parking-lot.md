@@ -2970,3 +2970,39 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-06-12-hygiene-001
+      created_at: 2026-06-12T00:00:00Z
+      created_by: "artur hygiene sweep (improvement-loop)"
+      target:
+        command: /and-substance
+        scope: "*"
+        phase: null
+      severity: SOFT
+      description: |
+        ROUTING NOTE TO OSKAR — 7 draft files orphaned at showrunner root.
+        The following files sit at `active-project/staff/showrunner/` but belong
+        in the adjacent `_drafts/` subdirectory (which already holds analogous
+        draft files for c01–c08). All seven are unique (not duplicated in `_drafts/`):
+          - b01c09-bones-draft-2026-05-31.md
+          - b01c11-bones-draft.md
+          - b01c11-draft.md
+          - b01c15-bones-draft.md
+          - b01c15-draft.md
+          - b01c19-bones-draft.md
+          - b01c20-draft.md
+        These appear to be working-notes / intermediate bones drafts written directly
+        to the showrunner root during cascade runs rather than into `_drafts/`.
+        Action required: oskar should (1) grep memory.md for any path reference to
+        these seven paths, (2) update any such refs, (3) git mv each file into
+        `active-project/staff/showrunner/_drafts/`. Not blocking any chain command.
+        See staff/admin/improvement-loop/hygiene.ledger.md (2026-06-12 run) for
+        full findings including secondary items (broken context_refs in
+        pl-2026-06-01-002, orphaned theater/ voice-exemplar experiments,
+        missing c16/c19 context-ledgers, worm-canon-pedant STM bloat).
+      context_refs:
+        - staff/admin/improvement-loop/hygiene.ledger.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
