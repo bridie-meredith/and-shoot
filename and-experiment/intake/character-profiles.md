@@ -265,8 +265,9 @@ but good play. *(Entry points: the grudge enters **I.5**; the motive drives **II
 ### The antagonism
 - **II.5 — the leak.** **Spies on Gael directly** (a turned household servant, Marra, the inside vector);
   through that channel reaches the bestiary, reads it accurately, identifies Wylla as the lever, begins
-  pressuring her. (Gael notices the cruder watching, misreads it as a rival sect's scrying, and obliviously
-  foils *that* — while blind to the leak that already escaped through the servant.)
+  pressuring her. (Gael notices the cruder watching but reads it as a **reclusive hidden master's secret
+  test** — flattered, she performs for it and leaves her journal out as "merit," her vanity serving up the
+  very leak; she never dreams it's her predatory grandfather.)
 - **Arms the cage.** Confirms to Jaehaerys "useless **and** dangerous" → the king accelerates the
   betrothal-as-disposal. The predatory face arming the institutional one.
 - **III.6 — the apex.** Connects the vanished factor (Quint), the ship payments, and the maid's movements,

@@ -209,9 +209,9 @@ the King. **Spying on her directly since II.2** (`OTTO-SURVEILLANCE` — watcher
 turned servant; *not* the coin), he works the exposed tier — **Marra** (the timid, pious one) leaned on and
 turned, *the maid comes back different* — and through that inside channel reaches the **bestiary** (the one
 true document, misfiled by every reader): the one anomaly, a servant logged into a **name.** **Wylla** is the
-lever — and the keeper of the whole hidden apparatus; the one crack. Gael notices the cruder watching, misreads
-it as a rival sect's scrying, obliviously foils *that* (moves the journal, plants a decoy diary) — blind to
-the leak that already escaped through Marra. But the instant the lever is **Wylla,** carefree stops: cold and
+lever — and the keeper of the whole hidden apparatus; the one crack. Gael notices the cruder watching but reads it
+as a **reclusive hidden master's secret test** (flattered, she performs for it and leaves her journal out as
+"merit" — her vanity serves up the named entry; she never dreams it's her grandfather), blind to the leak. But the instant the lever is **Wylla,** carefree stops: cold and
 precise, she decides to *close the channel* (misfiled as protecting the apparatus; the reader sees it's for
 Wylla). **The fallout blooms (`CASINO-FALLOUT-MISREAD` fires):** the house is now notorious — ruined men, a
 spreading "curse" — and Gael, hearing the court buzz, reads it as a **rival demonic sect** to guard against,
