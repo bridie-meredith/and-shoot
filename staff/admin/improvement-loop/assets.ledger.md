@@ -55,3 +55,19 @@ The dialogue-writer is dispatched live at `/and-write` Phase 1.5 and loads this 
 - `and-facets.md` class library — 12 classes fully enumerated; no clear gap without a live review signal to anchor it
 
 **Next candidate:** `rubric-dialogue.md` body — three retired sections still carry detailed dead workflow text (Pass 2 deferred this). Alternatively `scripts/normalize_inflight_r2.py` removal (dead code from retired R2 round).
+
+---
+
+### 2026-06-12 — Pass 4
+
+**Asset changed:** `staff/dialogue-writer/rubric-dialogue.md` — live enforcement sections
+
+**Change:** Replaced "post-R2" with "at R1 submit" in two live enforcement sentences (§ V2 facet-citation extension line, and the CONSTRAINT § citation-completeness audit-class definition). Removed the two R2-only artifact paths from `## Files` (`r2-decision-shard-<character>.md` and the `_inflight-r2/` annotated proto-lines path). No body content removed from the retired sections themselves.
+
+**Why top-ranked:**
+- The three retired sections have a preamble guard (Pass 2); they're dead but clearly labeled.
+- The "post-R2" claim in the LIVE citation-completeness paragraph (§ V2 facet-citation extension) is not guarded — an R1 dialogue-writer reading the live enforcement block sees "audit verifies post-R2" and may infer a downstream pass still exists to resolve citations, contradicting the preamble's explicit "no R2" rule. Same problem at the audit-classes CONSTRAINT § citation-completeness definition.
+- The R2 artifact paths in `## Files` point to paths that neither `/and-write` nor `/and-facets` write; a writer following `## Files` to locate or emit outputs would find two dead targets.
+- Combined fix: 3 line edits. Zero structural risk. Eliminates the contradiction between preamble and live body.
+
+**Next candidate:** `rubric-dialogue.md` body — add `[RETIRED — DEC-0116]` section headers to `## Contamination disciplines`, `## V2 reviewer protocol`, and `## R1 vs R2 differences`. Deferred two passes; preamble guards the section boundaries but the section headers themselves still look live to a scanner.
