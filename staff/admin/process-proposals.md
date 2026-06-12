@@ -6682,3 +6682,87 @@ pr_ref: null
 defer_until: null
 supersedes: null
 ```
+
+---
+
+## PROP-0054
+
+```yaml
+id: PROP-0054
+created_at: 2026-06-12T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: on-demand
+  source_report: staff/admin/improvement-loop/bridge.ledger.md
+  source_verdict: improvement-loop/bridge pass-2 (pattern mined from brighid-creative-writing critics/audience/narrator INDEX registries)
+target:
+  type: agent-card
+  path: staff/audience/INDEX.md
+  section: "Full personas table — add archetype field + chorus-avoidance guidance section"
+change_type: add
+rationale: |
+  And-shoot's audience trio (3 personas selected at /and-project invocation) has no mechanism
+  to ensure the three personas cover orthogonal failure-detection axes. If two of the three
+  selected personas share the same aesthetic reaction archetype, their combined review output
+  is a CHORUS — near-identical findings at double dispatch cost. The current INDEX table has
+  per-persona "axis" descriptions (e.g. "voice, theme, meaning" for literary-snob; "plot
+  momentum, escalation" for pulp-enthusiast) but no formal archetype grouping and no advisory
+  rule against same-archetype pairs.
+
+  The source pattern is brighid-creative-writing's critics/INDEX.md archetype column + the
+  anxiety-axis cheat sheet at the bottom of that file (critics/INDEX.md §Anxiety-axis cheat
+  sheet, 2026-04-19 backfill). The cheat sheet provides: (a) a small archetype vocabulary
+  with explicit what-they-catch summaries per critic, (b) a "chorus avoidance" rule ("never
+  all four [formal-systems critics] simultaneously — identical archetype = chorus"), (c) cast
+  composition guidance ("pick 2-3 that cover a spread without creating a chorus"). The
+  audience/INDEX.md in brighid also adds a Tier column (standing-pool vs. on-demand)
+  distinguishing personas that load on every dispatch from those named explicitly.
+
+  For and-shoot the adapted form is (a) adding an archetype field to each full persona's
+  INDEX row using a compact vocabulary (5 archetypes covering the current 5 full personas),
+  and (b) adding a chorus-avoidance guidance section to the INDEX. No command-body gate
+  change needed — the guidance is advisory at selection time, surfaced to the selector at
+  /and-project invocation. The archetype vocabulary is structure-only; no persona card content
+  changes, no voice changes. Stubs do not need archetype tags until promoted to full quality.
+evidence_refs:
+  - "brighid-creative-writing/critics/INDEX.md §Personas table (archetype column) + §Anxiety-axis cheat sheet — source pattern: per-persona archetype tag + chorus-avoidance rule + cast composition guidance"
+  - "brighid-creative-writing/audience/INDEX.md §Personas table — Tier column distinguishing standing-pool from on-demand personas"
+  - "staff/audience/INDEX.md — current state: 5 full personas with axis descriptions but no archetype field, no chorus-avoidance guidance, no tier distinction"
+  - "CLAUDE.md Rule 6 — audience membership defined at /and-project, unchanged mid-project except via /and-cast revise --swap; selection is caller-specified with no axis-coverage check"
+recurrence_count: 1
+proposed_diff: |
+  In staff/audience/INDEX.md:
+
+  1. Add an archetype column to the Full personas table using a 5-type vocabulary:
+     - stakes-reader — cares about character weight, emotional cost, whether stakes are
+       felt (cape-fic-reader fits here: rule-consistency + character-stakes)
+     - momentum-reader — pacing, escalation, earned payoffs; walks away from slack
+       (pulp-enthusiast fits here)
+     - craft-lens — voice, register, theme, prose quality; patience-required
+       (literary-snob fits here)
+     - fidelity-reader — canon accuracy, world-consistency, rule integrity within the
+       established system (worm-canon-pedant fits here; scope-gated to applicable projects)
+     - depth-reader — earned darkness, consequence weight, world-honesty; patient with
+       bleakness when grounded (dark-fantasy-reader fits here)
+
+  2. Add a Chorus-avoidance guidance section after the full-personas table:
+     "When selecting 3 personas at /and-project, prefer a spread: max 1 persona per archetype
+     in the trio. Two personas sharing an archetype produce a chorus — near-identical findings
+     at double review cost. The default trio (cape-fic-reader + literary-snob +
+     pulp-enthusiast) covers stakes-reader + craft-lens + momentum-reader — three distinct
+     axes. Verify any substitution preserves axis coverage."
+
+  3. Optionally: add a notes column (one line) flagging scope-gated personas
+     (worm-canon-pedant: Worm projects only) so the selector does not pick them for
+     non-applicable series.
+
+  No command-body changes. No schema changes. No persona card content changes.
+cost_estimate: S
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
