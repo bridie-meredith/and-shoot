@@ -187,9 +187,18 @@ life without a flicker: she files the frozen North as "the enemy ice-sect, would
 pass," knows better than to make a great sect *lose face* (so she'll **vanish clean,** never jilt), and
 serenely plans to bail and cultivate **outside the plot** — treating the wedding as a *delivery deadline* for
 the ship. The court splits "what grace!"/"what ice!"; Alicent, powerless against an unimpeachable match,
-grieves. **Register:** CHILL (for everyone but Gael). **Rung:** off-ladder.
-**Plants:** PLANT[BETROTHAL-DREAD] (owner: reader / Alicent — never Gael) · PLANT[CLOCK-CONCRETE]
-**Fires:** FIRE[BETROTHAL-CLOCK] · FIRE[STARK-MATCH] · FIRE[MARRIAGE-THREAT] · FIRE[LESBIAN] · FIRE[JAEHAERYS-TRANSACTIONAL] · FIRE[DISPLAY-AS-ADVERTISEMENT] · FIRE[DAEMON-DISCREDITED]
+grieves. **The needle (the one insult she can't collect — sudden, almost-lethal):** court ladies chat idly,
+fondly, about her hopelessness at *embroidery* ("no talent, that one, talentless with a thread"); Gael walks
+in midway, catches only **"talentless"** fixed to her name, hears the one unsurvivable cultivation verdict
+(no spiritual root — the negation gag ① cannot reframe as a flattering title), and answers in the same breath
+with **immediate, almost-lethal violence** (body-tempered, flat, the needle or her hands at the woman's
+throat — **no qi-spend `GUARD-1` clean; no death, the first meant kill is still II.7; off-ladder reflex-flash,
+not a rung**), then **moves on placidly,** the matter closed. Fallout: no one can read the trigger → the
+maegi-rumour hardens; the **Starks read cold-instant lethality as asset-confirmation** (the flash that should
+repel a suitor closes the sale); the King gains motive to **marry the trouble away fast;** Wylla's horror
+deepens. **Register:** CHILL (for everyone but Gael) → SPIKE (the needle). **Rung:** off-ladder.
+**Plants:** PLANT[BETROTHAL-DREAD] (owner: reader / Alicent — never Gael) · PLANT[CLOCK-CONCRETE] · PLANT[TALENTLESS-TRIGGER]
+**Fires:** FIRE[BETROTHAL-CLOCK] · FIRE[STARK-MATCH] · FIRE[MARRIAGE-THREAT] · FIRE[LESBIAN] · FIRE[JAEHAERYS-TRANSACTIONAL] · FIRE[DISPLAY-AS-ADVERTISEMENT] · FIRE[DAEMON-DISCREDITED] · FIRE[MAEGI-RUMOR] (the needle-flash hardens the sorcery read another notch; the Stark match reads it as asset) · FIRE[WYLLA-HORROR] (the teeth take a near-fatal bite; she feels nothing after)
 
 ### II.5 · the compromise *(~8–9)*
 **Beat:** the quiet cracks from the bottom up — Otto, tracing the coin since II.2, squeezes the exposed

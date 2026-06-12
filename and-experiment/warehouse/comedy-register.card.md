@@ -40,6 +40,18 @@ Every beat is a **single concrete physical act** (a man threatened, a vault robb
 
 ---
 
+## Recurring leitmotifs (the lines we keep coming back to)
+
+A handful of her cultivation-aphorisms are **designated recurring refrains** — deployed at escalating stakes across the books (farce early, gallows late) so the reader greets the line like an old friend and feels it curdle under them. The escalation-by-repetition *is* the device; keep them **scarce** (a refrain only lands if it's recognized). Source bank: `design/cultivation-library/cultivation-aphorisms-and-dao-sayings.md`.
+
+- **PRIMARY (locked) — R-02:** *"Everything that enters the cauldron is changed. The cauldron does not negotiate which direction the change runs. This is the primary doctrine of the Inferior Path — and it applies to materials, situations, and things the cauldron did not intend to process."* Deploy over a reagent early; the reader realizes "the things it did not intend to process" are **people** late (the Wylla-tempering line). The single most-returned-to refrain.
+- **Plot-wired (rides regardless) — D-01:** *"The account is closed."* Said over a spoiled jar / small loss early; over a **person** at III.3 (Quint's button: *"I'm only doing this for my family" → "the account is closed"*). Already threaded; functions as the second de-facto leitmotif.
+- Established canon anchor: **"the dao punishes the cold-hearted"** (+ its inverse, D-07) — she deploys whichever justifies her current behavior.
+
+*(House-keeping: the aphorism bank is still written in the retired `Saerys`/"Inferior Path" voice — tombstoned to `gael-targaryen`. The lines carry; a slug pass on that doc is overdue whenever it's next touched.)*
+
+---
+
 ## Direct samples
 
 *Comedy — Book I register (pure farce):*
