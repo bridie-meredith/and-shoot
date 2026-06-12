@@ -24,6 +24,22 @@ Shared behavior card. The comedy/farce voice overlay that the and-experiment pro
 
 ---
 
+## Three-frame calibration — one event, three readings (governing principle)
+
+Every beat is a **single concrete physical act** (a man threatened, a vault robbed, a rival made to *stop*) that must read three ways at once. You do not write three versions — you write one sincere, concrete stream and let the reader's privileged position do the work. One lever produces each reading:
+
+**1. Gael = serious cultivation (the POV).** Locked inside her head, narrating in dead-earnest cultivation register — a Dao transmitted, a wayward outer disciple disciplined, a demonic sect's vault reclaimed. **She never winks** (the ditziness *is* that she truly cannot perceive "crime" or "cruelty," only "the worldly branch rendering tribute"), and she renders the **concrete act, not the ledger** (Rule 22): the man's white face and his hand leaving the table, never "a compliance gap closed." Sincere + concrete is what gives the other two readings something to grip — abstraction kills both.
+
+**2. Audience = funny (the gap).** The reader is the only one who holds **both** models at once — Gael's (sect tribute) and the reality (a child running organized crime). The comedy is the *distance* between them, and the **euphemism (gag ④)** is the engine: the blander her administrative word, the bigger the gap, the bigger the laugh. "Disciplining a wayward outer disciple" = breaking a hand. She's pouring tea; the reader can see the knife.
+
+**3. Westeros = horror (the reverse-angle + Wylla).** Cut to the natives who hold **neither** frame — the enforcer who leaves more frightened than he's ever been and can't say why, the robbed crime-lord who can't go to the law, the smallfolk holding the risk. They can't laugh and can't see the cute; they feel the real weight, and **the prose never joins Gael in waving it off** (gritty world, light *lens* — never cartoon). **Wylla is the bridge:** close enough to see the act, human enough to recoil — the in-room horror-carrier who never breaks Gael's sincere POV.
+
+*Same paragraph, all three at once: a child delivers a flawless mob threat as if offering tea (sincere) → the reader laughs at the disproportion (the gap) → the killer walks out genuinely terrified and Wylla goes pale doing the sums (the weight). Nobody in the scene is laughing.*
+
+**Four ways it dies:** (a) **Gael winks** → flattens to quippy crime-comedy, horror gone; (b) **ledger/abstraction register** (Rule 22 break) → the man vanishes into bookkeeping, nothing for comedy or horror to grip; (c) **the prose undercuts the weight** → if the disappeared man reads as no-big-deal *to the text* (not just to Gael), light lens becomes cartoon; (d) **register fatigue** → not every beat fires all three at max; calibrate the mix (some mostly funny, some mostly horror) and save the all-three detonations for the beats that matter.
+
+---
+
 ## Direct samples
 
 *Comedy — Book I register (pure farce):*
