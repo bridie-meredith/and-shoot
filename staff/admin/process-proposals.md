@@ -6584,3 +6584,79 @@ pr_ref: null
 defer_until: null
 supersedes: null
 ```
+
+## PROP-0053
+
+```yaml
+id: PROP-0053
+created_at: 2026-06-12T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: on-demand
+  source_report: staff/admin/improvement-loop/bridge.ledger.md
+  source_verdict: improvement-loop/bridge pass 1 — gap identified via cross-repo mining
+target:
+  type: command
+  path: .claude/commands/and-review.md
+  section: "verdict subcommand — Phase 4.5 admin dispatch + new book-close improvement-debt scan"
+change_type: add
+rationale: |
+  And-shoot's admin fires in process-critic mode reactively (per non-PASS verdict or postop
+  convergence) and accumulates proposals in staff/admin/process-proposals.md. The log now holds
+  52 proposals (PROP-0001 through PROP-0052), some accepted, none with a systematic check that
+  accepted proposals are actually implemented before the next chapter or book run. There is no
+  mechanism in the pipeline that asks: "of the proposals that were accepted, how many have a
+  pr_ref (meaning they shipped)?" The result is silent compounding process debt — a proposal
+  marked accepted sits unimplemented across multiple chapter runs while the failure it was
+  supposed to fix keeps appearing.
+
+  This gap was identified by examining ingrid's project-improvement-tracking.plan.md in
+  brighid-creative-writing (Axis D — improvement closure rate). In brighid, ingrid reads
+  routed dispatches from the prior project and compares them to the current project's shipped
+  items. A closure rate below 50% is a regression signal. The analog in and-shoot: at book
+  close (/and-review verdict <book>), admin should scan process-proposals.md for entries with
+  `status: accepted` AND `pr_ref: null` (accepted but never implemented) and surface the list
+  as an improvement-debt section in its return. If the accepted-but-unimplemented count is
+  high, admin surfaces a WARNING that process debt is compounding (advisory, not blocking).
+
+  This is the simplest viable adaptation: no new schema, no new agent, no new command. It rides
+  the Phase 4.5 admin process-critic dispatch that already fires at `/and-review verdict`. The
+  only change is (a) the Phase 4.5 brief tells admin to run the improvement-debt scan
+  unconditionally at `verdict` subcommand (not only on non-PASS), and (b) admin.md adds a
+  `book-close-synthesis` note to the process-critic procedure describing the scan.
+evidence_refs:
+  - "brighid-creative-writing/staff/agents/ingrid/project-improvement-tracking.plan.md §2 Axis D"
+  - "staff/admin/process-proposals.md — 52 proposals, several with status:accepted, pr_ref:null across the log (verifiable by scanning the file)"
+  - ".claude/commands/and-review.md Phase 4.5 — current admin dispatch condition: only on non-PASS verdict or HARD findings; skips PASS entirely"
+recurrence_count: 1
+proposed_diff: |
+  Two-file change:
+
+  1. .claude/commands/and-review.md Phase 4.5 — change the dispatch condition for the
+  `verdict` subcommand from "only on NOT-SUCCESSFUL" to "always at verdict subcommand
+  completion." Add a named sub-step: "improvement-debt scan — admin reads
+  staff/admin/process-proposals.md for entries where status == accepted AND pr_ref == null;
+  if count > 0, admin surfaces an improvement-debt list in its return; if count >= 3, admin
+  surfaces a WARNING: accepted proposals are compounding unimplemented." Admin's return on
+  a clean PASS verdict where all accepted proposals have pr_ref is OK-BOOK-CLEAN.
+
+  2. .claude/agents/admin.md process-critic procedure — add a §Book-close synthesis note:
+  "When trigger.reason == book-close (fired from /and-review verdict unconditionally), run
+  the improvement-debt scan in addition to the standard process-critic analysis. Scan
+  staff/admin/process-proposals.md for status:accepted + pr_ref:null entries. Surface as
+  improvement-debt: [list of PROP ids + one-line summaries]. The standard PROCESS-CHANGE-
+  PROPOSED / OK logic still applies to the report's findings; the improvement-debt list is
+  additive to that return, not a replacement."
+
+  The trigger label `book-close` is a new value for `trigger.reason`; the schema comment
+  in schemas/admin-proposal.schema.md would gain `book-close` as an enumerated value
+  alongside `failure` / `postop` / `on-demand`.
+cost_estimate: M
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
