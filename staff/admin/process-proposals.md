@@ -6840,3 +6840,91 @@ pr_ref: null
 defer_until: null
 supersedes: null
 ```
+
+## PROP-0056
+
+```yaml
+id: PROP-0056
+created_at: 2026-06-12T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: on-demand
+  source_report: staff/admin/improvement-loop/bridge.ledger.md
+  source_verdict: improvement-loop/bridge pass 4 — cross-repo pattern transfer
+target:
+  type: schema
+  path: schemas/showrunner-memory.schema.md
+  section: "New artifact: per-chapter gate-trace log"
+change_type: add
+rationale: |
+  And-shoot has no structured per-chapter record of which phases in the chapter production
+  chain (substance → write → review-bones → facets → stitch) fired, which were skipped, and
+  why. The admin process-critic currently reconstructs this picture retrospectively from
+  narrative prose in showrunner memory.md, audit reports in active-project/staff/reviews/,
+  and parking-lot entries — three separate files, none machine-readable as a gate-verdict
+  sequence. This means the process-critic cannot systematically answer: "Did Phase 8.5 of
+  /and-stitch fire on this chapter? Was the /and-review bones followability pre-check
+  skipped, and if so, why?" without reading multiple files and inferring from prose.
+
+  Brighid-creative-writing resolves this with a per-run `process-notes.md` file (referenced
+  in pipeline-architecture.spec.md §4a and §4b: "this gate is skipped and the skip is logged
+  to process-notes.md"). Every gate — ran or skipped — appends one record: gate name,
+  command, verdict, rationale. The file is the canonical reconstruction surface for any
+  retrospective or process-critic analysis.
+
+  The adapted form for and-shoot is a per-chapter gate-trace log at
+  `active-project/staff/showrunner/gate-trace-<book>-<chapter>.md`. Each command phase in
+  the chapter chain appends one row at phase-exit: which phase, which command, FIRED vs
+  SKIPPED, the gate verdict if applicable (PASS/FAIL/HARD-count/etc.), and a one-line
+  reason when skipped. This file becomes the primary input for admin process-critic when
+  admin fires on a non-PASS verdict: instead of reading multiple narrative files, admin
+  reads the gate trace for the chapter in question and can immediately locate which gate
+  failed, what else fired upstream, and which gates were bypassed. It also enables
+  project-level retrospectives: which gates fire most often? which are always skipped?
+  which phases consistently precede FAIL verdicts?
+
+  The pattern transfers cleanly: it is pure structural/process bookkeeping, no persona or
+  voice content, and requires only a one-row append at the exit of each existing phase —
+  zero new agents, zero new gate logic.
+evidence_refs:
+  - "brighid-creative-writing/specs/pipeline-architecture.spec.md §4a — backstory gate skip logged to process-notes.md"
+  - "brighid-creative-writing/specs/pipeline-architecture.spec.md §4b — tripwire gate skip logged to process-notes.md"
+  - "staff/admin/process-proposals.md PROP-0046–0050 (DEC-0115 abstraction failure) — admin process-critic had to reconstruct gate-firing history from narrative prose across 3 files"
+  - "CLAUDE.md Rule 13 (admin process-critic mode) — fires on non-PASS verdicts; currently reads source_report narrative, not a structured gate sequence"
+  - "schemas/showrunner-memory.schema.md — no gate-trace field or artifact type defined"
+recurrence_count: 1
+proposed_diff: |
+  1. In schemas/showrunner-memory.schema.md: add a per-chapter artifact type reference:
+     gate_trace_path: active-project/staff/showrunner/gate-trace-<book>-<chapter>.md
+     Document format: append-log table with columns:
+       phase | command | status (FIRED|SKIPPED) | verdict | skip_reason | timestamp
+     Append-only, one row per phase-exit.
+
+  2. In each command body (.claude/commands/and-substance.md,
+     and-write.md, and-review.md, and-facets.md, and-stitch.md):
+     At each phase-exit (or phase-skip determination in Phase 0), append one row to
+     the gate-trace log. Skipped phases record why (e.g., "bones-review precondition
+     not met", "cold_read_risk not armed", "cascade mode; chapter already complete").
+     Fired phases record the gate verdict (PASS/FAIL/HARD-count/SOFT-count/NOT-SUCCESSFUL).
+
+  3. In CLAUDE.md Rule 13 (admin process-critic mode dispatch):
+     Add "reads gate-trace-<book>-<chapter>.md when available as the primary phase-
+     sequence input before reading narrative memory.md" to the context list admin
+     receives.
+
+  4. In RUNBOOK.md §R4 end-of-run summary: add a "gate trace path:" line to the summary
+     block template so the principal can find the trace for the run just completed.
+
+  5. No new agents. No new gate logic. The trace is observational (records what happened)
+     not prescriptive (does not affect gate firing). Retroactive traces for chapters
+     already shipped can be constructed by artur on demand from memory.md narrative, but
+     are not required.
+cost_estimate: M
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
