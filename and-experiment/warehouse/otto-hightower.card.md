@@ -42,15 +42,18 @@ leverage.** Otto is close to the throne *now* (the Queen's father), but a Highto
 dynasty is never secure, and a strategist plays the long game: the regime that will outlast Jaehaerys. The
 **heir-faction — Prince Baelon and his son Viserys — already resent Gael** (they blame the maegi-princess
 for the dead dragon, the I.5 Caraxes association). So Otto makes himself indispensable to the future court
-by becoming *the man who hands it leverage over the dangerous wildcard princess:* gather the dirt (the
-money-trace, the bestiary), deliver control-or-neutralization, bank the credit with the people who matter
+by becoming *the man who hands it leverage over the dangerous wildcard princess:* gather the dirt by
+**spying on her directly** (watchers, intercepted letters, a pressed household servant — *whatever means come
+to hand;* not by chasing her coin), reach the bestiary, deliver control-or-neutralization, bank the credit
+with the people who matter
 for the succession. **Dirt on Gael is currency the heir-faction already wants** — and the same file, handed
 sideways to Jaehaerys, accelerates the disposal-betrothal (double dividend). The cold horror underneath: he
 is mining *his own granddaughter* for dynastic credit, and does not feel it as anything but good play.
 
 **Arc entry points:** the heir-faction grudge **enters I.5** (the dragon-blame); Otto's favor-currying motive
-is the through-line under **II.2** (he starts pulling at the untraceable money — `OTTO-MONEY-TRACE`) → **II.5**
-(the leak: he assembles the deliverable, squeezes the exposed tier, finds the Wylla-lever — `OTTO-LEAK`) →
+is the through-line under **II.2** (he sets watchers / presses a household servant — direct surveillance,
+`OTTO-SURVEILLANCE`) → **II.5** (the leak: through the turned servant Marra he reaches the bestiary, finds
+the Wylla-lever — `OTTO-LEAK`) →
 arms **II.4** (the file that helps the King price the betrothal) → culminates **III.6** (the apex pursuit; his
 man is the one Wylla kills).
 

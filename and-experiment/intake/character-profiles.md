@@ -258,11 +258,15 @@ for the dead dragon, I.5), so Otto makes himself indispensable to the future cou
 hands it leverage over the dangerous princess.* Dirt on Gael is currency the heir-faction already wants; the
 same file, slid to Jaehaerys, also accelerates the disposal-betrothal (double dividend). The horror: the
 predatory face is mining his **own granddaughter** for credit with the next king, and reads it as nothing
-but good play. *(Entry points: the grudge enters **I.5**; the motive drives **II.2** money-trace → **II.5**
-leak → arms **II.4** → **III.6** apex.)*
+but good play. *(Entry points: the grudge enters **I.5**; the motive drives **II.2** direct surveillance
+(`OTTO-SURVEILLANCE` — watchers / a pressed servant, **not** a money-trace) → **II.5** leak → arms **II.4**
+→ **III.6** apex.)*
 
 ### The antagonism
-- **II.5 — the leak.** Reads the bestiary accurately; identifies Wylla as the lever; begins pressuring her.
+- **II.5 — the leak.** **Spies on Gael directly** (a turned household servant, Marra, the inside vector);
+  through that channel reaches the bestiary, reads it accurately, identifies Wylla as the lever, begins
+  pressuring her. (Gael notices the cruder watching, misreads it as a rival sect's scrying, and obliviously
+  foils *that* — while blind to the leak that already escaped through the servant.)
 - **Arms the cage.** Confirms to Jaehaerys "useless **and** dangerous" → the king accelerates the
   betrothal-as-disposal. The predatory face arming the institutional one.
 - **III.6 — the apex.** Connects the vanished factor (Quint), the ship payments, and the maid's movements,
