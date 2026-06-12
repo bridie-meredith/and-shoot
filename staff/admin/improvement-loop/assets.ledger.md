@@ -103,3 +103,18 @@ The dialogue-writer is dispatched live at `/and-write` Phase 1.5 and loads this 
 - Change is one addition, zero deletions, no persona voice content touched. Bounded and reversible.
 
 **Next candidate:** `rubric-dialogue.md` body — add `[RETIRED — DEC-0116]` section headers to `## Contamination disciplines`, `## V2 reviewer protocol`, `## R1 vs R2 differences`. Deferred four passes now; preamble guards execution but the section headers look live to a scanner. Alternatively, apply the same DEC-0115 apparatus-as-subject gap to `rubric-feeling.md` (lower probability of contamination than NI but the fence is not there).
+
+---
+
+### 2026-06-12 — Pass 7
+
+**Asset changed:** `staff/dialogue-writer/rubric-dialogue.md` — retired section headers
+
+**Change:** Added `[RETIRED — DEC-0116]` suffix to three section headers that were listed as dead in the preamble but still looked live to a scanner: `## Contamination disciplines (R2 graph context filtering)`, `## V2 reviewer protocol (audience-gate Phase 5b)`, `## R1 vs R2 differences`. Three line edits; no body content removed.
+
+**Why top-ranked:**
+- This improvement was explicitly deferred four consecutive passes (Passes 2–6) because the preamble already guards execution paths. The deferred count itself made it the obvious next pick.
+- The preamble (Pass 2) warns "do NOT follow" the three sections by name. But the section headers are rendered by markdown as visual anchors — a scanner reading the file top-to-bottom sees live-looking H2 headers before scrolling back to the preamble. The `[RETIRED — DEC-0116]` label closes this discoverability gap without touching the preserved body text.
+- Cost: 3 character appends to 3 lines. Risk: zero (header text is non-functional; body preserved for reference per preamble rule).
+
+**Next candidate:** `rubric-feeling.md` — apply DEC-0115 apparatus-as-subject REJECT entry (AP-18) to the anti-pattern catalog. Lower probability of contamination than NI but the fence is absent; the RUBRIC-FIDELITY class at `/and-facets` Phase 4 seeds from each rubric's §Anti-patterns, so adding it here converts DEC-0115 intent into a mechanical check on feeling entries. Note: `rubric-feeling.md` is V1 LOCKED (2026-05-07); the addition would be an additive tightening, which per the locked-notation rule requires noting it as a post-lock addition. Also `literary-snob` exemplar (Tier-1 audience gap) is still outstanding — blocked on persona voice content, must remain in Brighid's lane (logged Pass 1).

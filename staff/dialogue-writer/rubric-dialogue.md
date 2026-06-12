@@ -77,7 +77,7 @@ The slip / register-shift / weighted-monument does not have to land in the surfa
 
 ---
 
-## Contamination disciplines (R2 graph context filtering)
+## Contamination disciplines (R2 graph context filtering) [RETIRED — DEC-0116]
 
 R1 is blind. R2 reads the locked graph. Filtering the graph payload prevents voice pickup from other agents' registers:
 
@@ -107,7 +107,7 @@ Unconstrained — dialogue is content, not flag. Sparsity follows what the proto
 
 ---
 
-## V2 reviewer protocol (audience-gate Phase 5b)
+## V2 reviewer protocol (audience-gate Phase 5b) [RETIRED — DEC-0116]
 
 Two-stage per reviewer per character file:
 
@@ -137,7 +137,7 @@ Cycle cap: 3 per `/and-season` convention.
 
 ---
 
-## R1 vs R2 differences
+## R1 vs R2 differences [RETIRED — DEC-0116]
 
 **R1 (blind):** dialogue-writer reads behavior card stack + speaker persona/ltm/stm/state + base proto-lines + upstream `tensometer.md` + this rubric. Authoring is from intent (derived per-beat from cast + tens + speaker-state) + cards only. Forbidden: other R1 facet outputs, show files, source prose.
 
