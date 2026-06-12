@@ -136,7 +136,7 @@ Then read `gate_path`. Identify the actual check the report exercised (or should
 
 Read the tail of `staff/admin/process-proposals.md`. Apply the matching rules from `schemas/admin-proposal.schema.md`:
 
-- **Open proposal with same target + change_type** → do not duplicate. Append `recurrence_refs: + <new evidence ref>` to the existing entry and increment its `recurrence_count`. Return `OK-MERGED-INTO PROP-<NNNN>`.
+- **Open proposal with same target + change_type** → do not duplicate. Append `recurrence_refs: + <new evidence ref>` to the existing entry and increment its `recurrence_count`. Return `OK-MERGED PROP-<NNNN>`.
 - **Rejected proposal materially the same** → return `OK-PRIOR-REJECTION` with a one-line citation. Do not re-author.
 - **Deferred proposal whose `defer_until` has passed** → re-surface it. Stamp `re_surfaced_at`; flip `status: open`. Return `OK-RE-SURFACED PROP-<NNNN>`.
 - **No prior match** → proceed to step 3.
