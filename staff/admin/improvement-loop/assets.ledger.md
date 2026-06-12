@@ -118,3 +118,18 @@ The dialogue-writer is dispatched live at `/and-write` Phase 1.5 and loads this 
 - Cost: 3 character appends to 3 lines. Risk: zero (header text is non-functional; body preserved for reference per preamble rule).
 
 **Next candidate:** `rubric-feeling.md` — apply DEC-0115 apparatus-as-subject REJECT entry (AP-18) to the anti-pattern catalog. Lower probability of contamination than NI but the fence is absent; the RUBRIC-FIDELITY class at `/and-facets` Phase 4 seeds from each rubric's §Anti-patterns, so adding it here converts DEC-0115 intent into a mechanical check on feeling entries. Note: `rubric-feeling.md` is V1 LOCKED (2026-05-07); the addition would be an additive tightening, which per the locked-notation rule requires noting it as a post-lock addition. Also `literary-snob` exemplar (Tier-1 audience gap) is still outstanding — blocked on persona voice content, must remain in Brighid's lane (logged Pass 1).
+
+---
+
+### 2026-06-12 — Pass 8
+
+**Asset changed:** `design/shoot-v2/rubric-state-updates.md` — cross-facet contract example correction
+
+**Change:** Corrected the @52 NI entry example in the state-updates rubric's cross-facet contract section (§ "POV-character actor-state shifts require co-citation"). The prior text quoted *"the count of allies in the yard drops to one"* as the expected NI form. This is the apparatus-as-subject form that Pass 6 added AP-011 to reject. A reader following the cross-facet contract section in state-updates would see the NI example and infer this form is correct — contradicting the NI rubric's new AP-011. Updated to the concrete-actor form (*"she has one position of cover left and Mira is it"*) with a parenthetical naming the rejected form and citing AP-011 + DEC-0115.
+
+**Why top-ranked:**
+- Pass 6 closed the NI rubric gap. This closes the consistency gap created by Pass 6: the state-updates rubric still taught the wrong NI form as the cross-facet anchor example. A dispatcher or author reading state-updates §cross-facet would find the AP-011-rejected form presented as expected output.
+- The state-updates rubric is read by the state-updates author and the CONSTRAINT auditor; the cross-facet example actively instructs what the paired NI entry should look like. An incorrect example here could generate incorrect NI entries that then fail AP-011.
+- Cost: 1 line edit. No structural change. No persona voice content touched.
+
+**Next candidate:** `rubric-feeling.md` — apparatus-as-subject prohibition (same DEC-0115 gap as NI AP-011, lower contamination probability). V1 LOCKED; addition must note post-lock status.
