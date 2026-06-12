@@ -6584,3 +6584,77 @@ pr_ref: null
 defer_until: null
 supersedes: null
 ```
+
+---
+
+## PROP-0053
+
+```yaml
+id: PROP-0053
+created_at: 2026-06-12T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: on-demand
+  source_report: improvement-loop/bridge pass-1 (brighid-creative-writing rut-detection.plan.md)
+  source_verdict: GAP — PROP-0052 proposes detection but not escalation or override-logging
+target:
+  type: command
+  path: .claude/commands/and-review.md
+  section: "verdict subcommand — add structural-rut escalation table + override-logging discipline"
+change_type: add
+rationale: |
+  PROP-0052 (open) proposes a cheap structural-sameness scan that emits a SOFT parking-lot flag.
+  That is the detection half of the mechanism. The escalation half — multi-tier response table and
+  principal override-logging — is absent from and-shoot entirely. brighid-creative-writing's
+  staff/agents/ingrid/rut-detection.plan.md has this fully designed as a Class 3-5 detection to
+  response table: log-only at first occurrence, surface-to-principal at second consecutive
+  occurrence, escalate-to-blocking-surface at third. It also adds override-logging: when the
+  principal explicitly overrides the N=2 surface without recording a reason, that silent override
+  is itself surfaced as a finding at the next book verdict. Without escalation, PROP-0052's SOFT
+  flag is easy to ignore across multiple books — there is no circuit-breaker for accumulated
+  structural sameness. The N=2 soft-stop and N=3 HARD-SIGNAL escalation table is the structural
+  complement to CLAUDE.md Rule 22's "N=2 consecutive disposition" circuit-breaker, applied to
+  substance shape rather than reviewer dispositions.
+evidence_refs:
+  - "brighid-creative-writing/staff/agents/ingrid/rut-detection.plan.md — Class 3-5 detection-to-response table; escalation tiers: log-only / surface-to-principal / surface-as-HARD"
+  - "brighid-creative-writing/staff/agents/ingrid/rut-detection.plan.md — 'Naomi silent-override tracking': override without logged reason fires a finding at project close"
+  - "staff/admin/process-proposals.md PROP-0052 — detection side (structural-sameness scan emitting a SOFT parking-lot flag); escalation and override-logging not proposed there"
+  - "CLAUDE.md Rule 22 — N=2 consecutive disposition circuit-breaker (analogous pattern applied to reviewer dispositions; rut escalation is the same circuit applied to substance shapes)"
+recurrence_count: 1
+proposed_diff: |
+  Add to /and-review verdict <book> a structural-rut escalation step that reads the accumulated
+  sameness scan results from PROP-0052's detector (once landed) and applies a three-tier response:
+
+  Tier 1 (N=1 chapter-range match in a book): log in showrunner memory under
+  books[<slug>].structural_rut_log[] — shape signature + chapter range + run length. No surface.
+
+  Tier 2 (same signature cluster recurs across two consecutive books, OR run length >= 4 in a
+  single book): surface in the /and-review verdict summary under a new "Structural-shape rut
+  signals" section as a SIGNAL-class finding. Include the shape signature, run length, and a
+  suggestion to vary dramatic_shape or scene-move template in the next book's /and-substance book
+  contract. Non-blocking; principal may override, but must log a one-line reason in showrunner
+  memory at books[<slug>].rut_overrides[].
+
+  Tier 3 (N=3 consecutive books with same dominant shape, OR silent override at Tier 2 without
+  logged reason): HARD-SIGNAL in /and-review verdict; the book verdict cannot be PASS-CLEAN
+  without either (a) a logged override reason in showrunner memory or (b) a delta in the next
+  book's /and-substance book contract that explicitly breaks the shape pattern. Mirrors the
+  Rule 22 N+1 auto-promote.
+
+  Override-logging discipline: when the principal overrides a Tier 2 or Tier 3 surface without
+  recording a reason, the /and-review verdict for the FOLLOWING book surfaces a "silent override"
+  finding as a Tier 2 escalation regardless of the raw run-length count.
+
+  One schema change: showrunner-memory.schema.md gains two optional fields on the per-book entry:
+  structural_rut_log (list of shape-signature + range + run_length) and rut_overrides (list of
+  shape-signature + reason + date). Cost M if paired with PROP-0052 implementation; S if
+  PROP-0052 is already landed and only the escalation logic is being added.
+cost_estimate: M
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
