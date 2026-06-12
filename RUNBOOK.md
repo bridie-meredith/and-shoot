@@ -43,7 +43,7 @@ If `active-project/` is empty: no project active. Tell the user and ask whether 
                                           └─ Phase 10 FORWARD-THREAD     ← reads past, edits current, updates aggregate-state.md
                                                 └─> [optional] /and-postop b<NN>c<MM>
 
-  [periodic, opt-in]  /and-cohere b<NN> [<from>-<to>]   ← cross-chapter coherence loop;
+  [mandatory at book-thirds; opt-in otherwise]  /and-cohere b<NN> [<from>-<to>]   ← cross-chapter coherence loop;
                                                           PASS-COHERE updates aggregate-state.md
 ```
 
@@ -154,7 +154,7 @@ Every command's Phase 0 reads `active-project/staff/showrunner/cascade-checkpoin
 
 `/and-postop` does NOT fire automatically. It is optional and surfaces in the end-of-run summary as a suggested next step only.
 
-`/and-cohere` is also NOT in this chain. Cohere is periodic and opt-in (run after every Nth chapter at principal discretion, or on demand). The end-of-run summary may suggest cohere if the threading pass surfaced multiple HOLD-THREAD signals.
+**`/and-cohere` at book-thirds — MANDATORY (PROP-0050, 2026-06-08).** After Phase 10 completes, compute `completed = count of chapters[].shipped_at non-null for this book` and `planned = project.chapter_count` from memory.md. If `completed == floor(planned / 3)` or `completed == floor(2 * planned / 3)`, AND no cohere has run since the previous book-third (check `project.last_cohere_at` in memory.md), run `/and-cohere b<NN>` covering the current third before the next chapter-production run may begin. A `FAIL-COHERE` finding **blocks the next chapter** until the finding is addressed or the principal explicitly defers it via parking-lot. Outside book-third checkpoints, `/and-cohere` remains opt-in (on principal request or on-demand). The end-of-run summary reports the cohere-trigger status ("COHERE-DUE" / "COHERE-NOT-DUE / "COHERE-MANDATORY-BLOCKED") as a new summary line.
 
 ### End-of-run summary (single message on completion or halt)
 
@@ -171,12 +171,13 @@ Aggregate-state    : updated through_chapter=b<NN>c<MM>, <K> unack substantive
 Parking-lot        : <N> new HARD, <M> new SOFT items written
 ESCALATE queue     : <N> items (file: active-project/staff/showrunner/escalate-queue-<ts>.md)
 Process-critic     : <N> proposal candidates logged
+Cohere-trigger     : COHERE-NOT-DUE (<M>/<N> chapters, next third at <P>)  |  COHERE-DUE (run /and-cohere b<NN> before next chapter)  |  COHERE-MANDATORY-BLOCKED (FAIL-COHERE; resolve before next chapter)
 Checkpoint         : active-project/staff/showrunner/cascade-checkpoint.md
 Dispatches         : <count>
 Runtime            : <min>
 Draft              : active-project/draft/b<NN>-c<MM>.md  (<word-count> words)
 ----------------------------------------------------------------
-Next               : /and-postop b<NN>c<MM> (optional)  |  produce b<NN>c<MM+1>  |  resolve <halt-reason>
+Next               : /and-postop b<NN>c<MM> (optional)  |  /and-cohere b<NN> (MANDATORY — see cohere-trigger)  |  produce b<NN>c<MM+1>  |  resolve <halt-reason>
 ================================================================
 ```
 
@@ -197,7 +198,8 @@ While the chain runs:
 - Do NOT narrate Phase transitions to the principal.
 - Do NOT pause to "check in" between gates.
 - Do NOT skip Phase 10 (it is part of the chapter-production motion, not optional).
-- Do NOT fire `/and-postop` or `/and-cohere` as part of this chain. They are opt-in suggestions in the summary.
+- Do NOT fire `/and-postop` as part of this chain. It is an opt-in suggestion in the summary.
+- Do NOT fire `/and-cohere` as part of this chain except at book-thirds (PROP-0050): at `floor(N/3)` and `floor(2N/3)` completed chapters it is mandatory and fires after Phase 10 before the next chapter may begin; outside those checkpoints it is an opt-in summary suggestion.
 - Do NOT decide to upgrade an R2 cap-bounded retry into a hard halt before cap is exhausted.
 - Do NOT decide to upgrade a hard halt into "let me try one more thing" past R5 conditions.
 
@@ -279,7 +281,7 @@ Every other prompt that *looks* like a human checkpoint (accept/redraft, mode pi
 - Don't ask "what do you want to work on" if memory.md has a clear `current_chapter` + `last_phase`. Just continue.
 - Don't re-litigate prior decisions by reading `staff/admin/decisions.md` end-to-end. Trust DEC entries; only read details if relevant to the current action.
 - Don't run `/and-postop` reflexively after `/and-stitch`. It's optional; only fire if the user asks or it's a book-mid/close milestone.
-- Don't run `/and-cohere` reflexively. Opt-in; only fire if the user asks or you're at a natural sub-section boundary AND the user has signaled cohere cadence.
+- Don't run `/and-cohere` reflexively. It fires automatically at book-thirds (PROP-0050); outside those checkpoints, only fire if the user asks or it's a natural sub-section boundary with user signal.
 - Don't open a new ablation/experiment unless asked. They're on-demand.
 
 ---

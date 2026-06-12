@@ -6457,13 +6457,16 @@ proposed_diff: |
       declare a readability/concreteness floor as a non-negotiable constraint the register coexists with
       (prevents register-as-substance single-axis optimization).
 cost_estimate: M
-status: accepted
+status: implemented
 triaged_at: 2026-06-08
 triaged_by: principal (session)
 disposition_note: "ACCEPTED per DEC-0115. Wiring staged; binding policy recorded now."
-pr_ref: claude/optimistic-newton-YCnTC
+pr_ref: claude/gallant-brown-1kugxc
 defer_until: null
 supersedes: null
+implemented_at: 2026-06-12
+implemented_by: improvement-loop/process session
+implementation_note: "RUNBOOK.md: pipeline diagram updated (opt-in → mandatory at book-thirds), chain note rewritten with trigger logic (floor(N/3) + floor(2N/3) completed chapters), What-NOT-to-do updated (cohere book-thirds exempt), end-of-run summary + next-step line updated with Cohere-trigger field, session-start do-not list updated."
 ```
 
 ---
