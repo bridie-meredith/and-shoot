@@ -2970,3 +2970,159 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-06-12-pipeline-001
+      created_at: 2026-06-12T10:14:08Z
+      created_by: "improvement-loop/test lens-a /and-review pipeline (STRUCT-031)"
+      target:
+        command: /and-review
+        scope: "pipeline"
+        phase: null
+      severity: SOFT
+      description: |
+        HARD pipeline finding: schemas/audit-report.schema.md §"R2 decision-shard
+        frontmatter" (lines 106-157) describes an active contract for /and-facets-r2
+        emitting per-layer shard files and a consolidated .r2-decisions.md, with an
+        orchestrator-critic consumer contract (f-r2-1 > 0 is HARD). Under DEC-0116,
+        the R2 round is entirely retired — no shard files are emitted, .r2-decisions.md
+        is never created, f-r2-counts are never populated. The section has no retirement
+        notice. Any fork reading this schema to understand what the audit pipeline
+        produces will attempt to emit files that nothing reads; the orchestrator-critic
+        consumer contract references a metric that is never populated post-DEC-0116.
+        Fix: mark the R2 decision-shard section RETIRED under DEC-0116/URI-FACETS-SLIM
+        and note that the Phase 4 mechanical auditor gate is the replacement.
+      context_refs:
+        - active-project/staff/reviews/pipeline-20260612T101408Z.md  # STRUCT-031
+        - schemas/audit-report.schema.md lines 106-157
+        - staff/admin/decisions.md  # DEC-0116
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-12-pipeline-002
+      created_at: 2026-06-12T10:14:08Z
+      created_by: "improvement-loop/test lens-a /and-review pipeline (STRUCT-032)"
+      target:
+        command: /and-review
+        scope: "pipeline"
+        phase: null
+      severity: SOFT
+      description: |
+        CLAUDE.md Rule 17 spine-legibility pair says "ABSTRACTION-DOMINANT (SIGNAL)"
+        but Rule 22 (same document) says "SCENE-ABSTRACT-DOMINANT (HARD)" for the same
+        finding class. The command body (and-write.md Phase 6) is correct and consistent
+        with Rule 22. Rule 17 is stale: pre-DEC-0115 name + pre-DEC-0115 severity.
+        A session reading CLAUDE.md Rule 17 will configure wrong fault name AND wrong
+        severity for one of the two new DEC-0115 HARD gates.
+        Fix: update CLAUDE.md Rule 17 spine-legibility pair to replace
+        "ABSTRACTION-DOMINANT (SIGNAL)" with "SCENE-ABSTRACT-DOMINANT (HARD, DEC-0115)"
+        and reference Rule 22 for full specification.
+      context_refs:
+        - active-project/staff/reviews/pipeline-20260612T101408Z.md  # STRUCT-032
+        - CLAUDE.md lines 192 + 211
+        - .claude/commands/and-write.md Phase 6 line 301
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-12-pipeline-003
+      created_at: 2026-06-12T10:14:08Z
+      created_by: "improvement-loop/test lens-a /and-review pipeline (STRUCT-025/026/027)"
+      target:
+        command: /and-review
+        scope: "pipeline"
+        phase: null
+      severity: SOFT
+      description: |
+        Three schema gaps from DEC-0115 (no-ledger overhaul):
+        (1) bones.schema.md has no documentation of ABSTRACTION-AS-SUBJECT or
+            SCENE-ABSTRACT-DOMINANT as Phase 6 HARD fault classes. The 0.6
+            concreteness floor threshold also appears only in CLAUDE.md Rule 22
+            and and-write.md, not in the schema.
+        (2) stitch-render-log.schema.md Phase 4 move-class table is missing
+            LEDGER-REGISTER and EMBODIMENT-BLOCKED (new DEC-0115 Phase 4 classes).
+        (3) stitch-render-log.schema.md has no Phase 9 section at all; NAIVE-FOLLOW
+            and FOLLOW-FAIL (new DEC-0115 Phase 9 terminal-gate fault classes) have
+            no schema home.
+        Fix: dispatch fixer to add fault-class notes to bones.schema.md + Phase 4/9
+        additions to stitch-render-log.schema.md.
+      context_refs:
+        - active-project/staff/reviews/pipeline-20260612T101408Z.md  # STRUCT-025/026/027
+        - schemas/bones.schema.md
+        - schemas/stitch-render-log.schema.md
+        - .claude/commands/and-write.md Phase 6 lines 300-301
+        - .claude/commands/and-stitch.md Phase 4 + Phase 9
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-12-pipeline-004
+      created_at: 2026-06-12T10:14:08Z
+      created_by: "improvement-loop/test lens-a /and-review pipeline (STRUCT-033/034/035)"
+      target:
+        command: /and-review
+        scope: "pipeline"
+        phase: null
+      severity: SOFT
+      description: |
+        DEC-0116 residue in three rubrics and two agent/schema files:
+        (1) rubric-feeling.md line 207, rubric-memory-flags.md line 302,
+            rubric-narrator-interest.md line 231 all prescribe "Mechanic + dialect
+            verdicts are independent gates. Both must pass" — a mandate for the
+            Phase 5b dialect-audience gate that DEC-0116 retired. Particularly
+            high-risk in rubric-narrator-interest.md (the spine facet).
+        (2) facet.schema.md line 42 still documents "interest flags — audience
+            (facets/interest-aud-<persona>.md)" as an active facet type.
+            Under DEC-0116's slim pipeline, these files are not emitted.
+        (3) audience.md frontmatter description field still lists "facet-adversarial
+            review (per-reviewer verdicts, 3-of-3 accept required)" as an active
+            override mode (agent body correctly marks it RETIRED).
+        Fix: dispatch fixer to update the three rubric "Verdict combination" sections,
+        mark interest-aud in facet.schema.md RETIRED, and update audience.md frontmatter.
+      context_refs:
+        - active-project/staff/reviews/pipeline-20260612T101408Z.md  # STRUCT-033/034/035
+        - design/shoot-v2/rubric-feeling.md line 207
+        - design/shoot-v2/rubric-memory-flags.md line 302
+        - design/shoot-v2/rubric-narrator-interest.md line 231
+        - schemas/facet.schema.md line 42
+        - .claude/agents/audience.md
+        - staff/admin/decisions.md  # DEC-0116
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-12-pipeline-005
+      created_at: 2026-06-12T10:14:08Z
+      created_by: "improvement-loop/test lens-a /and-review pipeline (STRUCT-028/029, RESIDUE-002)"
+      target:
+        command: /and-review
+        scope: "pipeline"
+        phase: null
+      severity: SOFT
+      description: |
+        Three CLAUDE.md documentation gaps (all SIGNAL, low blocking risk):
+        (1) /and-reoutline is a live command (added since last pipeline run) but
+            missing from CLAUDE.md Commands table.
+        (2) cohere-state.schema.md and aggregate-state.schema.md are live schemas
+            still absent from CLAUDE.md schema authority table (first noted as
+            STRUCT-014/015, 2026-06-07, now a third pass unresolved).
+        (3) rubric-sensory.md anti-pattern #14 uses "audience-gate cycle N"
+            vocabulary from the retired Phase 5b mechanism; principle is still
+            valid but needs reframing for the slim-facets Phase 3/Phase 4 pipeline.
+        These are housekeeping items; fix at book-2 activation pass or earlier if
+        a CLAUDE.md maintenance session is dispatched.
+      context_refs:
+        - active-project/staff/reviews/pipeline-20260612T101408Z.md  # STRUCT-028/029 + RESIDUE-002
+        - CLAUDE.md (commands table + schema authority table)
+        - design/shoot-v2/rubric-sensory.md line 217
+        - .claude/commands/and-reoutline.md
+        - schemas/cohere-state.schema.md
+        - schemas/aggregate-state.schema.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
