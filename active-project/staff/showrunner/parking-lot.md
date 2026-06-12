@@ -2970,3 +2970,246 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-06-12-pipeline-001
+      created_at: 2026-06-12T151320Z
+      created_by: "/and-review pipeline 2026-06-12T151320Z (STRUCT-030)"
+      label: pipeline
+      target:
+        command: /and-facets
+        scope: "*"
+        phase: Phase 4
+      severity: HARD
+      description: |
+        STRUCT-030: schemas/dialogue.schema.md line 3 states "The R2 dialogue judge at
+        /and-facets Phase 2 remains as a locked-graph review pass (KEEP/DELETE/REWRITE)
+        — review only, no authoring." DEC-0116 (2026-06-08) retired the R2 dialogue
+        judge along with the entire R2 round. The word "remains" directly contradicts
+        the retirement. Any /and-facets dispatch loading this schema believes the R2
+        dialogue judge is a live downstream gate. Fix: update line 3 to state the R2
+        dialogue judge is RETIRED under DEC-0116 and point to Phase 4 DEDUP class +
+        /and-review bones HARD gate as the current enforcement path.
+      context_refs:
+        - active-project/staff/reviews/pipeline-2026-06-12T151320Z.md  # STRUCT-030
+        - schemas/dialogue.schema.md  # line 3
+        - staff/admin/decisions.md  # DEC-0116
+        - .claude/commands/and-facets.md  # Notes section confirming R2 retirement
+      resolution_suggestion: "fixer: edit dialogue.schema.md line 3 to remove 'remains as a locked-graph review pass' and replace with DEC-0116 retirement note"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-12-pipeline-002
+      created_at: 2026-06-12T151320Z
+      created_by: "/and-review pipeline 2026-06-12T151320Z (STRUCT-031)"
+      label: pipeline
+      target:
+        command: /and-facets
+        scope: "*"
+        phase: null
+      severity: HARD
+      description: |
+        STRUCT-031: schemas/audit-report.schema.md lines 106-157 "R2 decision-shard
+        frontmatter (URI-026 follow-on, 2026-05-10)" — fully documents the retired
+        /and-facets-r2 pipeline (r2-decision-shard format, .r2-decisions.md path,
+        F-R2-1..4 class definitions, orchestrator-critic f-r2-counts consumer
+        contract, /and-season reference) without any DEPRECATED notice. The R2 round
+        and /and-facets-r2 were retired under DEC-0116 (2026-06-08). The audit-report
+        schema is loaded by every /and-facets Phase 4 auditor and /and-review chain
+        dispatch. An undeprecated R2 section reads as a live authoring target.
+        Compare: facet.schema.md §tensometer correctly uses "DEPRECATED 2026-05-17
+        (URI-SUBSTANCE-OVERHAUL)" at lines 34-38. Fix: add matching DEPRECATED header.
+      context_refs:
+        - active-project/staff/reviews/pipeline-2026-06-12T151320Z.md  # STRUCT-031
+        - schemas/audit-report.schema.md  # lines 106-157
+        - schemas/facet.schema.md  # lines 34-38 (correct DEPRECATED pattern)
+        - staff/admin/decisions.md  # DEC-0116
+      resolution_suggestion: "fixer: add DEPRECATED (DEC-0116) header to audit-report.schema.md §R2 decision-shard frontmatter, mirroring facet.schema.md tensometer deprecation pattern"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-12-pipeline-003
+      created_at: 2026-06-12T151320Z
+      created_by: "/and-review pipeline 2026-06-12T151320Z (STRUCT-032)"
+      label: pipeline
+      target:
+        command: /and-facets
+        scope: "*"
+        phase: Phase 4
+      severity: SOFT
+      description: |
+        STRUCT-032: .claude/commands/and-facets.md line 333 AP-SCAN source
+        enumeration names nonexistent design/shoot-v2/rubric-exposition.md alongside
+        eight live rubric files. STRUCT-025 (2026-06-07/DEC-0111) fixed Phase 1
+        item 10 but missed line 333. The auditor silently skips the absent file,
+        meaning exposition AP-SCAN anti-patterns are unchecked at Phase 4. Known-
+        deferred to b02-activation per pl-2026-06-07-pipeline-001. Fix: remove or
+        annotate rubric-exposition.md as deferred in the enumeration.
+      context_refs:
+        - active-project/staff/reviews/pipeline-2026-06-12T151320Z.md  # STRUCT-032
+        - .claude/commands/and-facets.md  # line 333
+        - active-project/staff/showrunner/parking-lot.md  # pl-2026-06-07-pipeline-001
+        - staff/admin/decisions.md  # DEC-0111
+      resolution_suggestion: "fixer: update and-facets.md line 333 to note rubric-exposition.md as deferred"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-12-pipeline-004
+      created_at: 2026-06-12T151320Z
+      created_by: "/and-review pipeline 2026-06-12T151320Z (STRUCT-033)"
+      label: pipeline
+      target:
+        command: /and-stitch
+        scope: "*"
+        phase: null
+      severity: SOFT
+      description: |
+        STRUCT-033: schemas/stitch-profile.schema.md §Interval bridge (~line 290)
+        describes exposition facet as "R2-judged, audience-gate-cleared content."
+        Both retired under DEC-0116 (2026-06-08). Current chain delivers only
+        R1-authored + Phase 4 mechanical audit. Schema creates false confidence
+        in upstream vetting for the stitcher.
+      context_refs:
+        - active-project/staff/reviews/pipeline-2026-06-12T151320Z.md  # STRUCT-033
+        - schemas/stitch-profile.schema.md  # §Interval bridge ~line 290
+        - staff/admin/decisions.md  # DEC-0116
+      resolution_suggestion: "fixer: edit stitch-profile.schema.md §Interval bridge to remove 'R2-judged' and 'audience-gate-cleared'"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-12-pipeline-005
+      created_at: 2026-06-12T151320Z
+      created_by: "/and-review pipeline 2026-06-12T151320Z (STRUCT-034)"
+      label: pipeline
+      target:
+        command: /and-stitch
+        scope: "*"
+        phase: null
+      severity: SOFT
+      description: |
+        STRUCT-034: .claude/commands/and-stitch.md lines 171, 236, 773 include
+        refused-at-R2 as a live pre-flight and render-log field. Under DEC-0116
+        no R2 round exists; this count is invariably 0 or absent. Pre-flight
+        output and STATS block surface refused-at-R2 to the operator as if R2
+        were active. Three occurrences: pre-flight template (line 171), render-log
+        spec (line 236), STATS section (line 773).
+      context_refs:
+        - active-project/staff/reviews/pipeline-2026-06-12T151320Z.md  # STRUCT-034
+        - .claude/commands/and-stitch.md  # lines 171, 236, 773
+        - staff/admin/decisions.md  # DEC-0116
+      resolution_suggestion: "fixer: remove refused-at-R2 from all three and-stitch.md templates"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-12-pipeline-006
+      created_at: 2026-06-12T151320Z
+      created_by: "/and-review pipeline 2026-06-12T151320Z (STRUCT-035)"
+      label: pipeline
+      target:
+        command: /and-write
+        scope: "*"
+        phase: null
+      severity: SOFT
+      description: |
+        STRUCT-035: .claude/commands/and-write.md Notes section says "Citations in
+        bones stay empty here. They accrue at facet-authoring time." Also
+        schemas/bones.schema.md line 165 says "The bone itself does NOT carry a
+        forward-anchor to the dialogue entry." Both miss the dialogue-citation
+        exception: per URI-WRITE-DIALOGUE-COBONDED, /and-write Phase 7 emits
+        [<character-slug>:<id>] tokens on dialogue-anchor bones. A dialogue-writer
+        or auditor reading either of these would misunderstand when dialogue
+        citations appear on bones.
+      context_refs:
+        - active-project/staff/reviews/pipeline-2026-06-12T151320Z.md  # STRUCT-035
+        - .claude/commands/and-write.md  # Notes section
+        - schemas/bones.schema.md  # line 165
+      resolution_suggestion: "fixer: add dialogue-citation exception to and-write.md Notes + bones.schema.md line 165"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-12-pipeline-007
+      created_at: 2026-06-12T151320Z
+      created_by: "/and-review pipeline 2026-06-12T151320Z (STRUCT-036)"
+      label: pipeline
+      target:
+        command: /and-facets
+        scope: "*"
+        phase: Phase 4
+      severity: SOFT
+      description: |
+        STRUCT-036: schemas/facet.schema.md §scene-map "Consumed by" table
+        references Phase 5 audit for scene-map coverage and per-scene cap
+        enforcement. The active /and-facets command places this at Phase 4
+        (CONSTRAINT class, step 4d). Phase 5 is persist, not validate.
+        An agent reading the schema would look in Phase 5 for coverage checks.
+      context_refs:
+        - active-project/staff/reviews/pipeline-2026-06-12T151320Z.md  # STRUCT-036
+        - schemas/facet.schema.md  # §scene-map "Consumed by" table
+        - .claude/commands/and-facets.md  # Phase 4 CONSTRAINT class step 4d
+      resolution_suggestion: "fixer: update facet.schema.md scene-map 'Consumed by' Phase 5 → Phase 4"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-12-pipeline-008
+      created_at: 2026-06-12T151320Z
+      created_by: "/and-review pipeline 2026-06-12T151320Z (STRUCT-037)"
+      label: pipeline
+      target:
+        command: /and-substance
+        scope: "*"
+        phase: null
+      severity: SOFT
+      description: |
+        STRUCT-037: CLAUDE.md §Schema authority table missing two live schemas:
+        schemas/aggregate-state.schema.md (referenced in and-substance.md Phase 0
+        step 6a; written by /and-stitch Phase 10 + /and-cohere) and
+        schemas/cohere-state.schema.md (referenced in /and-cohere and CLAUDE.md
+        Rule 20). Table claims "All file formats are defined in schemas/" but omits
+        these two. Both files confirmed on disk.
+      context_refs:
+        - active-project/staff/reviews/pipeline-2026-06-12T151320Z.md  # STRUCT-037
+        - CLAUDE.md  # §Schema authority table
+        - schemas/aggregate-state.schema.md
+        - schemas/cohere-state.schema.md
+      resolution_suggestion: "fixer: add aggregate-state and cohere-state to CLAUDE.md §Schema authority table"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-12-pipeline-009
+      created_at: 2026-06-12T151320Z
+      created_by: "/and-review pipeline 2026-06-12T151320Z (STRUCT-038)"
+      label: pipeline
+      target:
+        command: /and-stitch
+        scope: "*"
+        phase: null
+      severity: SOFT
+      description: |
+        STRUCT-038: CLAUDE.md §Directory map theater/proto-lines/ entry says
+        "consumed by /and-facets Phase 4 auditor + /and-stitch Phase 0/1." The
+        "/and-stitch Phase 0/1" claim is stale — under URI-SUBSTANCE-OVERHAUL
+        the stitcher renders from bones + facets, not from proto-lines as primary
+        source. Proto-lines are consumed by /and-facets for cite-index lookup only.
+      context_refs:
+        - active-project/staff/reviews/pipeline-2026-06-12T151320Z.md  # STRUCT-038
+        - CLAUDE.md  # §Directory map theater/proto-lines/
+      resolution_suggestion: "fixer: correct CLAUDE.md proto-lines consumption description to remove stale /and-stitch Phase 0/1 primary-source claim"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
