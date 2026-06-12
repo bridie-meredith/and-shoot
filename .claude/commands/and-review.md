@@ -263,6 +263,15 @@ Reviewers: orchestrator-critic (`staff/orchestrator-critic/card.md`, version per
 - (c) Any chapter under the book has no `bones_file` recorded or that file does not exist on disk, or any scene under any chapter has empty `bones[]`.
 - (d) The orchestrator-critic card version recorded in `project.staff.orchestrator_critic` is missing from the library.
 
+**Consecutive-caveat check (PROP-0048 / CLAUDE.md Rule 22).** Before dispatching the critic, read `active-project/staff/showrunner/aggregate-state.md` `caveat_history[]` if the file exists. Walk every entry: if any `defect_class` has `consecutive_count >= 2` (the per-chapter circuit-breaker threshold), the class has been dispositioned design-inherent for too many chapters and the book-level verdict is pre-annotated:
+- If any class has `consecutive_count >= 2`: include `caveat_escalations[]` in the critic dispatch brief and in the persisted report, flagging each over-threshold class + its chapter run. The orchestrator-critic MUST factor these as book-level systemic findings.
+- If any class has `consecutive_count >= 4` (double the per-chapter threshold): auto-promote the final verdict from PASS/PASS-WITH-NOTES to **FAIL** with finding `SYSTEMIC-CAVEAT-<class>`. The book cannot be project-complete while a defect class has been tolerated across four or more consecutive chapters without a depth-pass. Include in the verdict block:
+  ```
+  SYSTEMIC-CAVEAT-<class> — <N> consecutive chapters (<chapter-slugs>) dispositioned this class as design-inherent.
+  Circuit breaker (N >= 4) promotes verdict to FAIL. Requires depth-pass or principal escalation before book-close.
+  ```
+If `aggregate-state.md` does not exist, skip the check.
+
 On pass, dispatches the critic against:
 - Chunks at every level under the book (book chunk + chapter chunks + scene chunks).
 - Bones files for every chapter under the book: `[theater/bones/<book-slug>-<chapter-slug>.md for chapter in books[<slug>].chapters]`.

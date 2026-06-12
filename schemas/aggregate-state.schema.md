@@ -101,6 +101,17 @@ aggregate_state:
       resolution: aggregate-wins | cohere-wins | held-for-principal
       affected_entries: [<entry refs into axis_state | open_hooks | characters | world_state | revision_layer>]
 
+  # Consecutive-caveat history per defect class (PROP-0048 circuit breaker).
+  # Tracks how many consecutive chapters each defect class has been dispositioned
+  # as "design-inherent / accepted-caveat" (shipped under PASS-WITH-DEPTH-PASS-REQUIRED).
+  # Checked at /and-stitch Phase 9 Step 4 before finalizing verdict (auto-promotes on count > N=2).
+  # Written/updated at /and-stitch Phase 10 Step 4.
+  caveat_history:
+    - defect_class: <string>             # e.g. AIRLESS, LEDGER-REGISTER, staging-gap, prose-rationale-mute
+      consecutive_count: <int>           # current consecutive chapter streak; reset to 0 on clean PASS (remove entry)
+      last_chapter: <chapter-slug>       # most recent chapter where this class was dispositioned
+      last_updated_by: and-stitch-phase-10 | and-review-verdict
+
   # Optional per-book close-state archive for completed prior books.
   books:
     - book: <slug>
@@ -145,6 +156,8 @@ Producers MUST declare classification per edit. Uncertain-classification edits a
 6. Every `revision_layer[].chapter` must be ≤ `through_chapter`.
 7. `revision_layer[].class: substantive` with `acknowledged: false` → blocks `/and-substance chapter <next>` Phase 0 (HARD-abort).
 8. `conflict_log[]` is append-only. Resolution updates allowed; entry removal not allowed.
+9. `caveat_history[].consecutive_count >= 1`. A count of zero is invalid — remove the entry instead of zeroing it (streak broken means entry removed, not zeroed).
+10. `caveat_history[].last_chapter` must be ≤ `through_chapter`.
 
 ---
 
