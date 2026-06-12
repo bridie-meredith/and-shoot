@@ -2970,3 +2970,38 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-06-12-hygiene-001
+      created_at: 2026-06-12T00:00:00Z
+      created_by: "artur hygiene pass (improvement-loop/hygiene.ledger.md 2026-06-12)"
+      label: stale-hard-c16-depth-pass-gate-unstamped
+      target:
+        command: /and-review
+        scope: "verdict b01"
+        phase: null
+      severity: SOFT
+      description: |
+        STATE INCONSISTENCY. pl-2026-06-04-c16-001 (depth-pass-mandatory-b01c16) carries
+        severity: HARD and status: open. Its description explicitly states it gates
+        "/and-substance book b02 Phase 0 + /and-review verdict b01". However, the b01
+        verdict was issued 2026-06-06 (PASS-WITH-NOTES; staff/reviews/verdict-b01-2026-06-06T04-08-37Z.md)
+        and the project was archived 2026-06-07 (active-project/ARCHIVE_NOTE.md), while
+        pl-2026-06-04-c16-001 remains open. Either the c16 depth pass was executed but
+        never stamped in the parking lot, or the gate was bypassed via an admin/principal
+        decision not recorded here. A HARD item that gated a delivered milestone must be
+        resolved-or-overridden in the parking lot record to keep the append-only state
+        consistent with what actually happened.
+        Route: oskar. Action required: (a) if the depth pass was executed, stamp
+        pl-2026-06-04-c16-001 resolved (resolved_at + resolved_by + resolution_note); or
+        (b) if the gate was bypassed by a principal decision, add a resolution_note citing
+        the relevant DEC and mark resolved.
+      context_refs:
+        - active-project/staff/showrunner/parking-lot.md  # pl-2026-06-04-c16-001 (the stale HARD item)
+        - active-project/ARCHIVE_NOTE.md  # project-close record (archived 2026-06-07)
+        - active-project/staff/reviews/verdict-b01-2026-06-06T04-08-37Z.md  # verdict issued while gate open
+        - staff/admin/improvement-loop/hygiene.ledger.md  # this sweep's full findings list
+      resolution_suggestion: "oskar: stamp pl-2026-06-04-c16-001 resolved with the actual resolution path (cohere run / depth-pass / DEC override). Also confirm context-ledger-b01-c16.md + grounding-ledger-b01-c16.md absence (companion finding in hygiene ledger)."
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
