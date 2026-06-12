@@ -56,19 +56,30 @@ Plain text, newline-separated entries. One bone per line. No section headers, no
 <flat_id> SUBJECT VERB OBJECT [<cited-id>, <cited-id>, ...]
 ```
 
-Example:
+Example (complete file — all seven header fields required):
 ```
-narrator: taylor-hebert-westeros
-goal: Show the audience Taylor's first brush with Westerosi administrative machinery.
+# bones — b01c01
 
-1 taylor-hebert-westeros wakes in the loft
-2 taylor-hebert-westeros descends the loft ladder
-3 septon-dying-protector breathes
-4 taylor-hebert-westeros crosses the cottage floor
+episode: b01c01
+narrator: pov-actor-slug
+goal: Show the audience the first act that costs the POV character something real.
+cast: pov-actor-slug, second-actor-slug
+locations: oc-location-slug
+prior_episode: none
+aggregate_range: 1-8
+
+1 pov-actor-slug wakes in the loft
+2 pov-actor-slug descends the ladder
+3 second-actor-slug enters the room
+4 pov-actor-slug crosses the floor
 
 5
-6 taylor-hebert-westeros lights a candle
+6 pov-actor-slug raises the voice [pov-actor-slug:1, pov-actor-slug:2]
+7 second-actor-slug speaks to pov-actor-slug [second-actor-slug:1]
+8 pov-actor-slug exits the door
 ```
+
+The blank `5` on its own line is a time-skip marker (see § Blank numbered lines). Lines 6–7 show citation-bearing bones: line 6 is a licensed-action dialogue anchor carrying dialogue-file citations; line 7 is the canonical speech form (`speaks to`). Line 7's `[second-actor-slug:1]` citation resolves to entry 1 in `theater/dialogue/second-actor-slug.md`.
 
 ---
 

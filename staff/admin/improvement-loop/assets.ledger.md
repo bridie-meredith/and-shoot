@@ -32,3 +32,26 @@ Owner: oskar (studio/foreman). Updated after each improvement-loop pass.
 The dialogue-writer is dispatched live at `/and-write` Phase 1.5 and loads this rubric as its primary discipline. The authority line still claimed "R1 + R2" and three large sections described the R2 graph-aware pass and Phase 5b audience-gate — both retired under DEC-0116 + URI-WRITE-DIALOGUE-COBONDED. A dispatched writer reading the rubric blind would infer a downstream R2 completion pass exists and produce `[DEFERRED-TO-R2]` placeholder citations. The `/and-facets` Phase 4 auditor then flags these as HARD (CONSTRAINT § citation-completeness) with no recovery path — a systematic HARD on every chapter's facet audit. Cost of fix: one insertion. Value: eliminates a systematic HARD finding from every future chapter run.
 
 **Next candidate:** `rubric-dialogue.md` body — the three retired sections (`## Contamination disciplines`, `## V2 reviewer protocol`, `## R1 vs R2 differences`) still contain detailed dead workflow text. A follow-on pass could add `[RETIRED — DEC-0116]` headers to each section and update `## Files` to remove R2 artifact paths. Deferred because the new preamble already prevents execution of the dead paths.
+
+---
+
+### 2026-06-12 — Pass 3
+
+**Asset changed:** `schemas/bones.schema.md` — Body format example
+
+**Change:** Replaced the truncated Body format example (showed only `narrator:` + `goal:` — 2 of 7 required header fields; stale slugs `taylor-hebert-westeros` / `septon-dying-protector`) with a complete canonical file example. New example shows all seven header fields, generic non-stale slugs, a time-skip marker (bare flat_id), a citation-bearing licensed-action dialogue anchor, and the canonical `<speaker> speaks to <listener>` speech form. Added a one-paragraph explanation of the three illustrated bone forms below the code block.
+
+**Why top-ranked:**
+- The schema is the authoritative reference for `/and-write` Phase 7 emission and `/and-facets` Phase 0's parser. Missing 5/7 header fields in the canonical example is a silent drift accelerant.
+- Validated against `active-project/theater/bones/b01-c01.md` (all 7 fields present in real output; the example had 2).
+- Stale slug `taylor-hebert-westeros` predates the `-kl-122ac` project-context suffix convention; `septon-dying-protector` is not in the active cast.
+- Cost: ~15 lines; no structural change; no downstream breakage.
+
+**Surveyed surfaces this pass:**
+- `cards/persona-exemplars/` — all active actors + audience personas covered (Tier-1 gap from Pass 1 is closed)
+- `and-experiment/persona-exemplars/` — gael-targaryen.md structure correct; frontmatter complete; no gap
+- `scripts/normalize_inflight_r2.py` — dead code (R2 retired under DEC-0116); unreferenced in any command body; low-risk removal but lower value than schema fix
+- `scripts/check-threads.py` — active (referenced in `and-reoutline.md` Phase 5); no brittleness finding at this resolution
+- `and-facets.md` class library — 12 classes fully enumerated; no clear gap without a live review signal to anchor it
+
+**Next candidate:** `rubric-dialogue.md` body — three retired sections still carry detailed dead workflow text (Pass 2 deferred this). Alternatively `scripts/normalize_inflight_r2.py` removal (dead code from retired R2 round).
