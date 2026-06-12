@@ -2372,7 +2372,7 @@ parking_lot:
         (b) signal-009 (prop cards for coverage-log/apparatus/ledger): carried forward — not
         within scope of vibes authoring; margit referral still pending for future pass.
 
-    - id: pl-2026-06-05-c17-001
+    - id: pl-2026-06-05-c17-002
       created_at: 2026-06-05T01:00:00Z
       created_by: "/and-stitch b01-c17 Phase 9 cold-read terminal gate"
       target:
