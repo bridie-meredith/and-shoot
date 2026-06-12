@@ -151,7 +151,7 @@ first glimpse of the teeth; also *why* a seven-year-old's maid is obeyed — the
 coin), the bestiary entry takes its first crossed-out climb (*Asset → trusted manager*), and — unseen — the
 structure parks all the exposure on the **chambermaids** while Otto first pulls at the unusual, untraceable
 money. **Register:** SPIKE. **Rung:** off-ladder.
-**Plants:** PLANT[STARTUP] · PLANT[PAST-LIFE-COVER] · PLANT[PROFIT-CYCLE] · PLANT[TRIPLE-BLIND] · PLANT[CHAMBERMAID-HANDS] · PLANT[WYLLA-HORROR] · PLANT[SMALLFOLK-HOLD-RISK] · PLANT[OTTO-MONEY-TRACE]
+**Plants:** PLANT[STARTUP] · PLANT[PAST-LIFE-COVER] · PLANT[PROFIT-CYCLE] · PLANT[TRIPLE-BLIND] · PLANT[CHAMBERMAID-HANDS] · PLANT[WYLLA-HORROR] · PLANT[SMALLFOLK-HOLD-RISK] · PLANT[OTTO-MONEY-TRACE] · PLANT[OTTO-HEIR-FAVOR] (Otto's motive enters as he starts pulling the money-trace: dynastic credit with the heir-faction)
 **Fires:** FIRE[HEIST-METHOD]
 
 ### II.3 · the world map *(~7–8)* — the Entertainment-Dao & the empire she doesn't notice she built
@@ -175,7 +175,7 @@ leverage + the maegi-legend; no qi-spend `GUARD-1` clean; no kill she *means* �
 II.7). **Wylla is horrified by how blithe Gael is with violence** (cultivation worlds are violent — *this is
 Tuesday*) — the first cut of her conversion. Barth, charmed she studies geography, never sees the voyage.
 (South glows; the North is barren — arming II.4.) **Register:** HOLD→SPIKE. **Rung:** off-ladder.
-**Plants:** PLANT[REAGENT-MAP] · PLANT[WARM-DESTINATIONS] · PLANT[VICE-NETWORK] · PLANT[ENTERTAINMENT-DAO] · PLANT[SEED-VAULT-RAID] · PLANT[RACKET-MOMENTUM] · PLANT[UNSEEN-ENFORCER] · PLANT[WYLLA-HORROR] · PLANT[BEAST-DAO-MISREAD] · PLANT[OFFBOOKS-ACCOUNT] · PLANT[FACTOR-NETWORK] · PLANT[WYLLA-TRUSTED]
+**Plants:** PLANT[REAGENT-MAP] · PLANT[WARM-DESTINATIONS] · PLANT[VICE-NETWORK] · PLANT[ENTERTAINMENT-DAO] · PLANT[SEED-VAULT-RAID] · PLANT[RACKET-MOMENTUM] · PLANT[UNSEEN-ENFORCER] · PLANT[WYLLA-HORROR] · PLANT[CASINO-FALLOUT-MISREAD] (the house's social wreckage begins; Gael reads it as a rival demonic sect, never her own hall) · PLANT[BEAST-DAO-MISREAD] · PLANT[OFFBOOKS-ACCOUNT] · PLANT[FACTOR-NETWORK] · PLANT[WYLLA-TRUSTED]
 
 ### II.4 · the betrothal *(~8)*
 **Beat:** the King's build-up closes — he sells her **high, to the Starks** (the Warden of the North's heir;
@@ -202,16 +202,21 @@ deepens. **Register:** CHILL (for everyone but Gael) → SPIKE (the needle). **R
 **Fires:** FIRE[BETROTHAL-CLOCK] · FIRE[STARK-MATCH] · FIRE[MARRIAGE-THREAT] · FIRE[LESBIAN] · FIRE[JAEHAERYS-TRANSACTIONAL] · FIRE[DISPLAY-AS-ADVERTISEMENT] · FIRE[DAEMON-DISCREDITED] · FIRE[MAEGI-RUMOR] (the needle-flash hardens the sorcery read another notch; the Stark match reads it as asset) · FIRE[WYLLA-HORROR] (the teeth take a near-fatal bite; she feels nothing after)
 
 ### II.5 · the compromise *(~8–9)*
-**Beat:** the quiet cracks from the bottom up — Otto, tracing the coin since II.2, squeezes the exposed
-**chambermaid** tier first, and the **bestiary** (the one true document, misfiled by every reader) runs him up
-the one anomaly: a servant logged into a **name.** **Wylla** is the lever — and the keeper of the whole hidden
-apparatus; the one crack in a nameless empire, found from two angles at once. Gael shrugs off her *own*
-exposure (opsec annoyance; a decoy diary) — but the instant the lever is **Wylla,** carefree stops: cold and
-precise, she decides to *close the channel* (misfiled as protecting the apparatus; the reader sees it's for
-Wylla). Barth reads a cosmology (near-miss, collapses); Alicent finds her own entry; Jaehaerys reads
+**Beat:** the quiet cracks from the bottom up. Otto's motive is legible (`OTTO-HEIR-FAVOR`): dirt on Gael is
+the credit he means to bank with the heir-faction (Baelon/Viserys, who blame her for the dragon) and slide to
+the King. Tracing the coin since II.2, he squeezes the exposed **chambermaid** tier first — **Marra** (the
+timid, pious one) leaned on and caught, *the maid comes back different* — and the **bestiary** (the one true
+document, misfiled by every reader) runs him up the one anomaly: a servant logged into a **name.** **Wylla**
+is the lever — and the keeper of the whole hidden apparatus; the one crack, found from two angles at once.
+Gael shrugs off her *own* exposure (opsec annoyance; a decoy diary) — but the instant the lever is **Wylla,**
+carefree stops: cold and precise, she decides to *close the channel* (misfiled as protecting the apparatus;
+the reader sees it's for Wylla). **The fallout blooms (`CASINO-FALLOUT-MISREAD` fires):** the house is now
+notorious — ruined men, a spreading "curse" — and Gael, hearing the court buzz, reads it as a **rival demonic
+sect** to guard against, never her own hall (she's hunting herself; the same notoriety is what made Otto's
+trace land). Barth reads a cosmology (near-miss, collapses); Alicent finds her own entry; Jaehaerys reads
 kinslayer → accelerates. **Register:** CHILL. **Rung:** off-ladder. **(Arms II.7 — the first death she means.)**
 **Plants:** PLANT[BESTIARY-NAMED-ENTRY] · PLANT[OTTO-LEAK] · PLANT[COMPROMISED-CHANNEL]
-**Fires:** FIRE[BESTIARY] · FIRE[BARTH-NEAR-MISS] · FIRE[OTTO-MONEY-TRACE] (the coin he's traced since II.2 leads him to the journal) · FIRE[SMALLFOLK-HOLD-RISK] (the compromise lands first on the exposed market tier) · FIRE[WYLLA-TRUSTED] (the keeper of the secret things is the named entry — the one crack in an otherwise nameless empire)
+**Fires:** FIRE[BESTIARY] · FIRE[BARTH-NEAR-MISS] · FIRE[OTTO-MONEY-TRACE] (the coin he's traced since II.2 leads him to the journal) · FIRE[SMALLFOLK-HOLD-RISK] (the compromise lands first on the exposed market tier — Marra) · FIRE[WYLLA-TRUSTED] (the keeper of the secret things is the named entry — the one crack in an otherwise nameless empire) · FIRE[CASINO-FALLOUT-MISREAD] (the wreckage seeded II.3 blooms; she misreads her own hall as a rival demonic sect — and the notoriety is what made the leak traceable)
 
 ### II.6 · the source *(~8–9)*
 **Beat:** the II.5 squeeze chokes her supply — and Otto, expecting it to cripple her, gets nothing: **the egg

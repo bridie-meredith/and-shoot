@@ -35,6 +35,25 @@ leverage.* The active human antagonist — the one who moves against Gael direct
 alarmed person in the room, which is exactly why his alarm matters when it finally comes: reading the
 bestiary, he is the one who clocks that the maid is the lever that moves an unmovable girl.
 
+## Motivation
+
+**Dynastic positioning for the *next* reign — he curries favor with the heir-faction by mining Gael for
+leverage.** Otto is close to the throne *now* (the Queen's father), but a Hightower's grip on a Targaryen
+dynasty is never secure, and a strategist plays the long game: the regime that will outlast Jaehaerys. The
+**heir-faction — Prince Baelon and his son Viserys — already resent Gael** (they blame the maegi-princess
+for the dead dragon, the I.5 Caraxes association). So Otto makes himself indispensable to the future court
+by becoming *the man who hands it leverage over the dangerous wildcard princess:* gather the dirt (the
+money-trace, the bestiary), deliver control-or-neutralization, bank the credit with the people who matter
+for the succession. **Dirt on Gael is currency the heir-faction already wants** — and the same file, handed
+sideways to Jaehaerys, accelerates the disposal-betrothal (double dividend). The cold horror underneath: he
+is mining *his own granddaughter* for dynastic credit, and does not feel it as anything but good play.
+
+**Arc entry points:** the heir-faction grudge **enters I.5** (the dragon-blame); Otto's favor-currying motive
+is the through-line under **II.2** (he starts pulling at the untraceable money — `OTTO-MONEY-TRACE`) → **II.5**
+(the leak: he assembles the deliverable, squeezes the exposed tier, finds the Wylla-lever — `OTTO-LEAK`) →
+arms **II.4** (the file that helps the King price the betrothal) → culminates **III.6** (the apex pursuit; his
+man is the one Wylla kills).
+
 ## Voice
 
 Quiet, exact, unhurried. **Strategic framing** is his whole register — every actor is a piece with a motive
@@ -72,6 +91,9 @@ he cannot stop chewing on it. **Severity:** strong.
 - **Wylla** — the lever. He is *right* about her importance and *wrong* about why — and that is the leak.
 - **Jaehaerys** — he hands the king the file ("useless **and** dangerous") that accelerates the
   disposal-betrothal; the predatory face arming the institutional one.
+- **Baelon / Viserys (the heir-faction)** — the regime he plays *for.* They already blame Gael for the dead
+  dragon (I.5); Otto cultivates their favor by becoming the man who can deliver leverage over her. The dirt
+  is currency they want; his standing in the next reign is the prize.
 
 ## Fiction Role Overlay
 

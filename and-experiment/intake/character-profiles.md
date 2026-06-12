@@ -251,6 +251,16 @@ understanding Wylla is **the lever that moves an unmovable girl.** But he can on
 frame doesn't exist in his world. He's playing chess against a player who **isn't in the game,** and a
 strategist's worst feeling is *an opponent whose objective he cannot name.*
 
+### Motivation — *dynastic positioning for the next reign*
+Why he moves against Gael at all: Otto plays for the Hightowers' place in the regime that will **outlast
+Jaehaerys.** The heir-faction — **Prince Baelon and his son Viserys** — already resent Gael (they blame her
+for the dead dragon, I.5), so Otto makes himself indispensable to the future court by being *the man who
+hands it leverage over the dangerous princess.* Dirt on Gael is currency the heir-faction already wants; the
+same file, slid to Jaehaerys, also accelerates the disposal-betrothal (double dividend). The horror: the
+predatory face is mining his **own granddaughter** for credit with the next king, and reads it as nothing
+but good play. *(Entry points: the grudge enters **I.5**; the motive drives **II.2** money-trace → **II.5**
+leak → arms **II.4** → **III.6** apex.)*
+
 ### The antagonism
 - **II.5 — the leak.** Reads the bestiary accurately; identifies Wylla as the lever; begins pressuring her.
 - **Arms the cage.** Confirms to Jaehaerys "useless **and** dangerous" → the king accelerates the
