@@ -37,3 +37,40 @@ Schema: append-only. Each pass adds a dated block.
 Deleted `active-project/theater/proto-lines/b01c19.md` (malformed duplicate of `b01-c19.md`).
 
 ---
+
+## Pass 2026-06-12 — branch claude/bold-thompson-6yrk3o
+
+**Scope swept:** active-project/, staff/, proto-lines, facets, parking-lot open items, internal path refs.
+
+### Findings (severity-ordered)
+
+**1. HIGH — Foreign directory: `staff/screener-personas/` (19 files)**
+19 persona cards + INDEX.md from a different project (`resume-targeting`, 2026-05 Catherine Olver career-pivot analysis) sit inside the fiction pipeline's `staff/` directory. The INDEX.md labels them a "preservation copy" with no fiction-pipeline connection. No command body, schema, or routing table references this directory. Foreign content in `staff/` will accumulate context noise at every staff-sweep.
+→ Route: **oskar** (owns process + tooling). Parking-lot entry pl-2026-06-12-hygiene-001.
+
+**2. MEDIUM — Stale live content in `active-project/theater/facets/`**
+- Full c07 facets remain in the live `theater/facets/` directory, but c07 is also fully archived at `theater/_archive/20260531T050032Z-b01c07-facets/`. All other chapters' facets have been cleaned from the live dir after archiving. c07's live copy is a stale orphan.
+- `.r2-decisions.md` in the live facets dir references c13 (retired R2 shard from DEC-0116 era). Belongs with the c13 archive at `theater/_archive/20260604T003328Z-b01c13-facets/`.
+→ Route: **oskar**. Not trivially fixable (deletion of live files; surface first per Rule 4).
+
+**3. MEDIUM — Parking-lot context_refs path drift**
+pl-2026-05-25-005, -006, -007 (all SOFT/OPEN) reference:
+- `active-project/theater/facets/memory-b01-c01.md`
+- `active-project/theater/facets/sensory-b01-c01.md`
+- `active-project/theater/facets/state-updates-b01-c01.md`
+- `active-project/theater/dialogue/taylor-hebert-kl-122ac.drafts.md`
+All four paths moved to archive or do not exist at the listed paths. Files are recoverable (c01 facets are in `theater/_archive/20260526T031937Z-b01c01-facets/`; the drafts file is at `staff/dialogue-writer/taylor-hebert-kl-122ac.drafts.md`). Parking-lot is append-only per schema — refs cannot be corrected in-place. Impact: low (SOFT items only; human can trace to archive).
+→ Surface only. No routing action.
+
+**4. LOW — Duplicate proto-line file** *(superseded by Pass 2026-06-11 finding #1 — file already deleted)*
+`active-project/theater/proto-lines/b01c19.md` was observed as an exact duplicate of canonical `b01-c19.md`. The 2026-06-11 pass already deleted it.
+
+**5. LOW — Missing context/grounding ledgers for c06 and c16**
+`context-ledger-b01-c06.md` and `grounding-ledger-b01-c06.md` absent (c06 may have been produced at the mechanism's first live boundary). `context-ledger-b01-c16.md` and `grounding-ledger-b01-c16.md` absent (no clear reason). `context-ledger-b01-c19.md` absent (only grounding ledger exists). All three chapters shipped to draft; no forward impact.
+→ Surface only. Historical artifact gap.
+
+### Action taken
+
+**Top finding routes to oskar.** Parking-lot entry pl-2026-06-12-hygiene-001 appended to
+`active-project/staff/showrunner/parking-lot.md` with routing note for `staff/screener-personas/`
+cleanup decision. No files deleted; no files merged.

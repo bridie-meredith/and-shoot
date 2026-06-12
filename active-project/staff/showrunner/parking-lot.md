@@ -3048,3 +3048,29 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-06-12-hygiene-001
+      created_at: 2026-06-12T00:00:00Z
+      created_by: "artur hygiene pass (improvement-loop/hygiene.ledger.md)"
+      target:
+        command: oskar-review
+        scope: "staff/screener-personas cleanup"
+        phase: null
+      severity: SOFT
+      description: |
+        ROUTING NOTE — no pipeline command resolves this; decision belongs to oskar.
+        19 persona cards + INDEX.md from a different project (resume-targeting, 2026-05
+        Catherine Olver career-pivot analysis) sit inside staff/screener-personas/. The
+        INDEX.md labels them a preservation copy with no fiction-pipeline connection. No
+        command body, schema, or routing table references this directory. Foreign content
+        in staff/ accumulates context noise at every staff-sweep. Owning agent (oskar)
+        should decide: (a) move to a sibling top-level directory outside the fiction
+        pipeline (e.g. projects/ or a new resume-targeting/ root), or (b) explicitly
+        retain with a note in staff/INDEX.md so future sweeps know it is intentional.
+      context_refs:
+        - staff/screener-personas/INDEX.md
+        - staff/admin/improvement-loop/hygiene.ledger.md  # 2026-06-12 pass finding #1
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
