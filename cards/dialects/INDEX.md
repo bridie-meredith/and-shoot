@@ -17,6 +17,7 @@ Schema: `schemas/card.schema.md` §behavior.
 
 ### planetos
 - [taylor-hebert-westeros](taylor-hebert-westeros.card.md) — per-character; Westeros 120 AC variant (eleven-year-old sept ward, doubled register); inherits taylor-hebert; references grrm-mannerisms + smallfolk + septon; full
+- [taylor-hebert-kl-122ac](taylor-hebert-kl-122ac.card.md) — per-character; KL 122 AC adult variant (post-Gold-Morning, insect-network, Flea Bottom, Earth-Bet noun fence); inherits taylor-hebert; references grrm-mannerisms + smallfolk + monument supplements; full
 - [monument-cost-borne-by-the-unconsenting](monument-cost-borne-by-the-unconsenting.card.md) — per-character (taylor-hebert-kl-122ac); memory-monument family: Earth-Bet displacement, cost landing on unconsenting bearer; quiet-beat instrument; full
 - [monument-conquest-charter-language](monument-conquest-charter-language.card.md) — per-character (taylor-hebert-kl-122ac); memory-monument family: Westerosi-clamp, institutional language that outlives its author; quiet-beat instrument; full
 - [saerys-targaryen-behavior](saerys-targaryen-behavior.card.md) — per-character (saerys-targaryen); cultivation-monologue register + comedy overlay; hotd; noble; full
@@ -39,6 +40,7 @@ Schema: `schemas/card.schema.md` §behavior.
 - [taylor-hebert-westeros](taylor-hebert-westeros.card.md) — variant, project, planetos; inherits taylor-hebert
 
 ### taylor-hebert-kl-122ac
+- [taylor-hebert-kl-122ac](taylor-hebert-kl-122ac.card.md) — root per-character behavior; KL 122 AC adult config; library; planetos
 - [monument-cost-borne-by-the-unconsenting](monument-cost-borne-by-the-unconsenting.card.md) — monument family; Earth-Bet displacement; library; planetos
 - [monument-conquest-charter-language](monument-conquest-charter-language.card.md) — monument family; Westerosi-clamp; library; planetos
 
@@ -118,6 +120,10 @@ Schema's `inherits:` cap is currently 1; per-character card sets `inherits:` to 
 For `taylor-hebert-westeros`, the stack is:
 - `inherits:` `taylor-hebert` (carries the deepest character-shaping content)
 - `references:` `[westeros-grrm-mannerisms, westeros-smallfolk, westeros-septon]` (universal overlay + class context for sept ward)
+
+For `taylor-hebert-kl-122ac`, the stack is:
+- `inherits:` `taylor-hebert` (carries the deepest character-shaping content)
+- `references:` `[westeros-grrm-mannerisms, westeros-smallfolk, monument-conquest-charter-language, monument-cost-borne-by-the-unconsenting]` (universal overlay + class context for Flea Bottom + monument supplements)
 
 ---
 
