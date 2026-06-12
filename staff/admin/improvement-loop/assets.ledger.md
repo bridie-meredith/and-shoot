@@ -87,3 +87,19 @@ The dialogue-writer is dispatched live at `/and-write` Phase 1.5 and loads this 
 - Cost: ~90 words added to one line. Value: auditor dispatch becomes deterministic on pile-ups.
 
 **Next candidate:** `rubric-dialogue.md` body — add `[RETIRED — DEC-0116]` section headers to `## Contamination disciplines`, `## V2 reviewer protocol`, `## R1 vs R2 differences`. Deferred three passes now; preamble guards execution but headers look live to a scanner.
+
+---
+
+### 2026-06-12 — Pass 6
+
+**Asset changed:** `design/shoot-v2/rubric-narrator-interest.md` — §Anti-patterns
+
+**Change:** Added anti-pattern #11 — *Apparatus-as-subject registration (DEC-0115 / PROP-0046, 2026-06-08).* Entries whose grammatical subject is the apparatus/process/lens (feed, count, insect-network, swarm) rather than a concrete actor or the narrator's concrete perception are a named REJECT target. Three concrete example rejections, two corrected-form examples, the "who physically did the thing?" rule of thumb, and an explicit note closing the facet-layer re-entry vector for the pattern that ABSTRACTION-AS-SUBJECT HARD already blocks at `/and-write` Phase 6.
+
+**Why top-ranked:**
+- DEC-0115 (2026-06-08) wired apparatus-as-subject enforcement into `/and-write` Phase 6 and `/and-stitch` Phase 4, but zero of the five production rubrics received a corresponding REJECT entry. The Phase 4 RUBRIC-FIDELITY class seeds from `rubric-narrator-interest.md §Anti-patterns` at audit time — adding AP-11 here converts DEC-0115 intent into a mechanical facet-layer check at no additional dispatch cost.
+- NI is the primary narrative-perception surface for Taylor's POV and the facet most exposed to apparatus-vocabulary contamination. The b01 airless-apparatus failure (16 consecutive chapters dispositioned "design-inherent") originated in exactly this register; NI is the door through which it re-enters at the facet layer after the bone gate enforces the fence at origin.
+- Passes 1–5 closed Tier-1 exemplar gaps, stale rubric claims, dead code paths, and an underspecified audit criterion. The NI rubric DEC-0115 gap was the first rubric-level REJECT omission not yet addressed.
+- Change is one addition, zero deletions, no persona voice content touched. Bounded and reversible.
+
+**Next candidate:** `rubric-dialogue.md` body — add `[RETIRED — DEC-0116]` section headers to `## Contamination disciplines`, `## V2 reviewer protocol`, `## R1 vs R2 differences`. Deferred four passes now; preamble guards execution but the section headers look live to a scanner. Alternatively, apply the same DEC-0115 apparatus-as-subject gap to `rubric-feeling.md` (lower probability of contamination than NI but the fence is not there).
