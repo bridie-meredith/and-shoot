@@ -152,7 +152,7 @@ coin), the bestiary entry takes its first crossed-out climb (*Asset → trusted 
 structure parks all the exposure on the **chambermaids** while Otto — hunting dirt on the wildcard princess
 — sets his first eyes on her *directly* (a watcher; a household servant pressed), **not** on the coin.
 **Register:** SPIKE. **Rung:** off-ladder.
-**Plants:** PLANT[STARTUP] · PLANT[PAST-LIFE-COVER] · PLANT[PROFIT-CYCLE] · PLANT[TRIPLE-BLIND] · PLANT[CHAMBERMAID-HANDS] · PLANT[WYLLA-HORROR] · PLANT[SMALLFOLK-HOLD-RISK] · PLANT[OTTO-SURVEILLANCE] · PLANT[OTTO-HEIR-FAVOR] (Otto's motive enters as he begins spying on her directly: dynastic credit with the heir-faction)
+**Plants:** PLANT[STARTUP] · PLANT[PAST-LIFE-COVER] · PLANT[PROFIT-CYCLE] · PLANT[TRIPLE-BLIND] · PLANT[CHAMBERMAID-HANDS] · PLANT[WYLLA-HORROR] · PLANT[SMALLFOLK-HOLD-RISK] · PLANT[OTTO-SURVEILLANCE] · PLANT[OTTO-HEIR-FAVOR] (Otto's motive enters as he begins spying on her directly: dynastic credit with the heir-faction) · PLANT[HIDDEN-MASTER-TEST] (Gael's first prickle of being watched — filed hopefully as a hidden master's notice, not a threat)
 **Fires:** FIRE[HEIST-METHOD]
 
 ### II.3 · the world map *(~7–8)* — the Entertainment-Dao & the empire she doesn't notice she built
@@ -219,7 +219,7 @@ never her own hall (she's hunting herself; the city's turmoil keeps her under un
 cosmology (near-miss, collapses); Alicent finds her own entry; Jaehaerys reads kinslayer → accelerates.
 **Register:** CHILL. **Rung:** off-ladder. **(Arms II.7 — the first death she means.)**
 **Plants:** PLANT[BESTIARY-NAMED-ENTRY] · PLANT[OTTO-LEAK] · PLANT[COMPROMISED-CHANNEL]
-**Fires:** FIRE[BESTIARY] · FIRE[BARTH-NEAR-MISS] · FIRE[OTTO-SURVEILLANCE] (the watchers/turned servant he set in II.2 reach the journal) · FIRE[SMALLFOLK-HOLD-RISK] (the squeeze lands first on the exposed market tier — Marra, turned) · FIRE[WYLLA-TRUSTED] (the keeper of the secret things is the named entry — the one crack in an otherwise nameless empire) · FIRE[CASINO-FALLOUT-MISREAD] (the wreckage seeded II.3 blooms; she misreads her own hall as a rival demonic sect)
+**Fires:** FIRE[BESTIARY] · FIRE[BARTH-NEAR-MISS] · FIRE[OTTO-SURVEILLANCE] (the watchers/turned servant he set in II.2 reach the journal) · FIRE[SMALLFOLK-HOLD-RISK] (the squeeze lands first on the exposed market tier — Marra, turned) · FIRE[WYLLA-TRUSTED] (the keeper of the secret things is the named entry — the one crack in an otherwise nameless empire) · FIRE[CASINO-FALLOUT-MISREAD] (the wreckage seeded II.3 blooms; she misreads her own hall as a rival demonic sect) · FIRE[HIDDEN-MASTER-TEST] (the prickle seeded II.2 → certainty II.3 → she declares "a hidden test!" and performs for it; Wylla facepalms; her vanity serves up the named entry)
 
 ### II.6 · the source *(~8–9)*
 **Beat:** the II.5 squeeze chokes her supply — and Otto, expecting it to cripple her, gets nothing: **the egg
