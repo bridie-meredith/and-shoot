@@ -6584,3 +6584,64 @@ pr_ref: null
 defer_until: null
 supersedes: null
 ```
+
+## PROP-0053
+
+```yaml
+id: PROP-0053
+created_at: 2026-06-12T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: on-demand
+  source_report: staff/admin/improvement-loop/bridge.ledger.md
+  source_verdict: BRIDGE pass-1 — pattern mined from brighid-creative-writing ingrid rut-detection + project-improvement-tracking plans
+target:
+  type: agent-card
+  path: staff/admin/card.md
+  section: "fire points / project_open sweep (new fire point alongside failure + postop)"
+change_type: add
+rationale: |
+  And-shoot's admin process-critic currently fires on two triggers: (a) non-PASS chain verdicts
+  (failure) and (b) /and-postop convergence writes. There is no sweep at project-open to surface
+  accepted proposals that were never implemented. The schema already supports this — every accepted
+  proposal has a pr_ref field (null until an implementation PR lands) — but nothing reads it at the
+  project boundary. The debt accretes silently: a principal can run /and-project for a new series
+  while carrying accepted-but-unimplemented proposals from prior projects, and the system will not
+  say so. The equivalent mechanism in the brighid-creative-writing harness is Ingrid Solheim's
+  Axis D (improvement closure rate) from project-improvement-tracking.plan.md — at every project
+  close, Ingrid scans routed dispatches against the Shipped section to compute a closure rate and
+  surfaces it as an advisory verdict (>80% = better; <50% = worse). The and-shoot adaptation is
+  leaner: a single read-and-report sweep, no closure-rate arithmetic, just "here are the accepted
+  proposals that have no pr_ref, grouped by cost_estimate, entering this project." Low dispatch
+  cost (~1 read), zero gate — SOFT surface only. The principal decides which debt to clear before
+  committing to new production. The mechanism becomes more valuable as the proposals log grows;
+  PROP-0053 is the 53rd entry and and-shoot now has multiple accepted proposals whose implementation
+  status is not tracked at any project boundary.
+evidence_refs:
+  - "brighid-creative-writing/staff/agents/ingrid/project-improvement-tracking.plan.md §2 Axis D — improvement closure rate (pattern source)"
+  - "staff/admin/process-proposals.md — 52 proposals accumulated with no project-boundary sweep wired"
+  - "schemas/admin-proposal.schema.md — pr_ref field exists but nothing reads it at project-open"
+  - "CLAUDE.md Rule 13 — admin fire points documented (failure + postop only; project_open absent)"
+recurrence_count: 1
+proposed_diff: |
+  1. staff/admin/card.md — add a third fire point: project_open. At /and-project Phase 0, admin
+     is dispatched in project_open mode. Admin reads staff/admin/process-proposals.md, collects
+     every entry where status == accepted AND pr_ref == null, groups by cost_estimate (S / M / L),
+     and returns a concise debt-surface: "Entering this project with N accepted-but-unimplemented
+     proposals (S: x, M: y, L: z). IDs: PROP-XXXX, ...". If N == 0, returns "OK — no accepted
+     proposals pending implementation." Result is printed in the /and-project Phase 0 block;
+     it does not block activation.
+  2. .claude/commands/and-project.md — add a Phase 0 step: "Dispatch admin (mode: project_open).
+     Print the debt-surface block." Position: before world-building (1a), after reading the schema.
+  3. CLAUDE.md Rule 13 — extend the fire-point list to include: "(c) at /and-project activation
+     (project_open mode) — sweeps process-proposals.md for accepted proposals with pr_ref null
+     and surfaces the unimplemented-debt count to the principal."
+cost_estimate: M
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
