@@ -133,3 +133,19 @@ The dialogue-writer is dispatched live at `/and-write` Phase 1.5 and loads this 
 - Cost: 1 line edit. No structural change. No persona voice content touched.
 
 **Next candidate:** `rubric-feeling.md` — apparatus-as-subject prohibition (same DEC-0115 gap as NI AP-011, lower contamination probability). V1 LOCKED; addition must note post-lock status.
+
+---
+
+### 2026-06-12 — Pass 9
+
+**Asset changed:** `design/shoot-v2/rubric-feeling.md` — §Anti-patterns
+
+**Change:** Added anti-pattern #18 — *Apparatus-as-somatic-tell (DEC-0115 / PROP-0046, 2026-06-08; post-lock addition 2026-06-12).* Entries whose somatic-tell clause reports an apparatus-process or lens-event instead of a body action are a named REJECT target. Two concrete example rejections, one corrected-form example, a distinguishing test (substitute any non-powered character — if the somatic tell becomes physically incoherent, it's apparatus-vocabulary), and an explicit note closing the feeling-flag re-entry vector that NI AP-11 and the bone-layer ABSTRACTION-AS-SUBJECT HARD do not cover. Marked as post-lock addition per the V1 LOCKED notation.
+
+**Why top-ranked:**
+- Pass 7's next-candidate note and Pass 8's next-candidate note both named this as the deferred item. Two consecutive deferral records made it the obvious next pick.
+- Pass 6 closed the NI layer for apparatus-as-subject (AP-11). The same DEC-0115 intent was not in the feeling rubric. The RUBRIC-FIDELITY class at `/and-facets` Phase 4 seeds mechanical checks from each rubric's §Anti-patterns — adding AP-18 here converts DEC-0115 intent into a mechanical check on feeling entries at zero additional dispatch cost.
+- Feeling-flags' tight form discipline (`<character-slug>: <subject> <verb>`) means apparatus contamination requires the apparatus to appear as the somatic tell's subject, which is a distinct failure mode from NI (where apparatus vocabulary can appear anywhere in the registration). The probability is lower than NI but the gap is real for POV Taylor's insect-network experience.
+- Change is one addition, zero deletions, no persona voice content touched. Post-lock status noted per locked-notation rule.
+
+**Next candidate:** Apply the same DEC-0115 apparatus-as-subject gap to `rubric-memory-flags.md` — memory flag entries can register apparatus-process events as the triggering monument (e.g., "the count hitting zero" as a memory anchor rather than a concrete human action). Lower probability than feeling but the fence is absent from the memory rubric's anti-pattern catalog. Alternatively, verify `scripts/normalize_inflight_r2.py` is truly unreferenced and remove it (dead code, R2 retired under DEC-0116).
