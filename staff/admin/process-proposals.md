@@ -6584,3 +6584,71 @@ pr_ref: null
 defer_until: null
 supersedes: null
 ```
+
+---
+
+## PROP-0053
+
+```yaml
+id: PROP-0053
+created_at: 2026-06-12T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: on-demand
+  source_report: staff/admin/improvement-loop/bridge.ledger.md
+  source_verdict: improvement-loop/bridge-pass-1 — cross-repo pattern mining (brighid-creative-writing rut-detection + auto-trigger registry)
+target:
+  type: command
+  path: .claude/commands/and-review.md
+  section: "verdict subcommand — Common-Phase 4.5 (admin process-critic dispatch)"
+change_type: add
+rationale: |
+  And-shoot's admin process-critic fires REACTIVELY per chapter on non-PASS verdicts, but has no
+  mechanism to aggregate fault-class frequency across all chapters of a book. The b01 evidence
+  is dispositive: LEDGER-REGISTER appeared in ~16 chapters; per-chapter process-critic filed
+  PROP-0046 through PROP-0050 as five separate proposals for the same defect class. No cross-
+  chapter aggregator fired. The pattern was only named systemically during the DEC-0115 diagnosis
+  session — too late, after ~16 chapters had shipped with the defect. This gap mirrors the
+  Class 3-5 rut problem brighid-creative-writing's Ingrid auto-trigger registry closes: oskar
+  logs a register/location/foil summary at each board close; Ingrid reads the accumulated summaries
+  at project close; a rut is named when the same class appears in N>=2 boards. The adapted form
+  for and-shoot: at book close (/and-review verdict <book> Common-Phase 4.5), admin scans all
+  chapter audit reports for the book, counts occurrences of each fault class by fault-ID prefix,
+  and surfaces any class with count >= N_RUT as FAULT-RUT-<class> with chapter list. FAULT-RUT
+  findings route to a targeted book-level process-change proposal rather than another per-chapter
+  instance. This is the proactive complement to the existing reactive per-chapter trigger:
+  different signal (book-aggregate vs. per-chapter instance), different routing (modify/promote
+  the gate or add to substance-contract authoring, not re-diagnose the chapter), different action
+  scope (systemic fix vs. chapter repair). The scan is cheap: reads on-disk audit reports that
+  already exist — no new agent dispatches, no prose reads.
+evidence_refs:
+  - "staff/admin/improvement-loop/bridge.ledger.md — pass 1 pattern analysis; source pattern from brighid-creative-writing staff/agents/ingrid/rut-detection.plan.md Classes 3-5 and project-improvement-tracking.plan.md §Auto-trigger registry"
+  - "staff/admin/decisions.md DEC-0115 — LEDGER-REGISTER ran ~16 chapters before being caught; no cross-chapter aggregator existed at the time"
+  - "staff/admin/process-proposals.md PROP-0046 through PROP-0050 — five independently-filed per-chapter proposals for the same defect class; cross-chapter pattern was invisible to the per-instance mechanism"
+  - ".claude/commands/and-review.md Common-Phase 4.5 — admin process-critic already fires here; the scan sub-step attaches to this existing dispatch point"
+recurrence_count: 1
+proposed_diff: |
+  In .claude/commands/and-review.md verdict subcommand, at Common-Phase 4.5 (admin process-critic
+  dispatch), add a sub-step BEFORE the per-verdict admin dispatch: "Fault-rut pre-scan. Admin
+  reads all chapter audit reports for <book> on disk (active-project/staff/reviews/ — auditor
+  Phase 4 outputs for every chapter slug in books[<book>].chapters[]). For each report, extract
+  the fault-class list (HARD and SIGNAL findings by fault-ID prefix, e.g. LEDGER-REGISTER,
+  ABSTRACTION-AS-SUBJECT, FOLLOW-FAIL). Tally occurrences per class across all chapters. Any
+  class with tally >= N_RUT (proposed default: 3) is a FAULT-RUT-<class> finding: emit chapter
+  list + count. Include all FAULT-RUT findings in the same admin process-critic dispatch that
+  already fires at Common-Phase 4.5 — the book-level verdict report is the source_report; the
+  per-rut routing is: (a) modify the upstream gate if the check exists but fires inconsistently
+  across chapters; (b) promote if currently SIGNAL-only and the rut count >= 3; (c) add to the
+  screen-writer substance-contract authoring phase if the root cause is upstream of any audit.
+  The scan reads existing on-disk artifacts — no new agent dispatches. If no chapter audit reports
+  exist for the book (book produced before this mechanism existed), skip with a note. N_RUT is
+  a named constant in the command body, adjustable per project."
+cost_estimate: M
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
