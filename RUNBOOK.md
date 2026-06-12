@@ -154,7 +154,7 @@ Every command's Phase 0 reads `active-project/staff/showrunner/cascade-checkpoin
 
 `/and-postop` does NOT fire automatically. It is optional and surfaces in the end-of-run summary as a suggested next step only.
 
-`/and-cohere` is also NOT in this chain. Cohere is periodic and opt-in (run after every Nth chapter at principal discretion, or on demand). The end-of-run summary may suggest cohere if the threading pass surfaced multiple HOLD-THREAD signals.
+**`/and-cohere` fires as a mandatory gate at book-thirds checkpoints (PROP-0050, accepted 2026-06-08).** After Phase 10 completes, check whether the just-shipped chapter is the first chapter to reach the ~1/3 or ~2/3 threshold of the current book's planned chapter count. Compute the two thresholds as `ceil(chapter_count × 1/3)` and `ceil(chapter_count × 2/3)` from `books[b<NN>].chapter_count` in `active-project/staff/showrunner/memory.md`; each threshold fires exactly once (mark `cohere_fired_at_third: [1/3|2/3]` in the cascade-checkpoint after firing). If the completed chapter's index equals either threshold: fire `/and-cohere b<NN>` over the full completed range (`from: b<NN>c01 to: b<NN>c<MM>`) before printing the end-of-run summary. A `FAIL-COHERE` on structural sameness or setup/payoff failure blocks the next chapter ship until addressed — do NOT continue the cascade past FAIL-COHERE. `PASS-COHERE` or `PASS-COHERE-WITH-SOFT-ITEMS` continues normally; soft items surface in the end-of-run summary. Outside book-thirds triggers, `/and-cohere` is opt-in (suggest in summary on HOLD-THREAD signals; do not fire automatically).
 
 ### End-of-run summary (single message on completion or halt)
 
@@ -197,7 +197,8 @@ While the chain runs:
 - Do NOT narrate Phase transitions to the principal.
 - Do NOT pause to "check in" between gates.
 - Do NOT skip Phase 10 (it is part of the chapter-production motion, not optional).
-- Do NOT fire `/and-postop` or `/and-cohere` as part of this chain. They are opt-in suggestions in the summary.
+- Do NOT fire `/and-postop` as part of this chain; it is an opt-in suggestion in the summary only.
+- Exception: `/and-cohere` DOES fire automatically at book-thirds checkpoints per the rule above — it is the one permitted automatic dispatch outside the 6-step chain. Do NOT suppress it at those checkpoints.
 - Do NOT decide to upgrade an R2 cap-bounded retry into a hard halt before cap is exhausted.
 - Do NOT decide to upgrade a hard halt into "let me try one more thing" past R5 conditions.
 
@@ -279,7 +280,7 @@ Every other prompt that *looks* like a human checkpoint (accept/redraft, mode pi
 - Don't ask "what do you want to work on" if memory.md has a clear `current_chapter` + `last_phase`. Just continue.
 - Don't re-litigate prior decisions by reading `staff/admin/decisions.md` end-to-end. Trust DEC entries; only read details if relevant to the current action.
 - Don't run `/and-postop` reflexively after `/and-stitch`. It's optional; only fire if the user asks or it's a book-mid/close milestone.
-- Don't run `/and-cohere` reflexively. Opt-in; only fire if the user asks or you're at a natural sub-section boundary AND the user has signaled cohere cadence.
+- Don't run `/and-cohere` reflexively outside of the book-thirds checkpoints. The two book-thirds triggers are mandatory (see "The chain" above) and fire automatically; outside them, only fire if the user asks.
 - Don't open a new ablation/experiment unless asked. They're on-demand.
 
 ---
