@@ -6766,3 +6766,77 @@ pr_ref: null
 defer_until: null
 supersedes: null
 ```
+
+---
+
+## PROP-0055
+
+```yaml
+id: PROP-0055
+created_at: 2026-06-12T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: on-demand
+  source_report: staff/admin/improvement-loop/bridge.ledger.md
+  source_verdict: improvement-loop/bridge pass 3 — cross-repo pattern transfer
+target:
+  type: command
+  path: .claude/commands/and-substance.md
+  section: "Phase 0 cascade start — add sibling-chapter partial-chain scan"
+change_type: add
+rationale: |
+  And-shoot's cascade start has no proactive sibling-chapter scan. The RUNBOOK trigger-table
+  handles the "mid-chain chapter" case reactively — when the user types "continue," the runbook
+  says "resume from the next phase." But at cascade-start (/and-substance chapter --cascade, or
+  the RUNBOOK chapter-production chain), Phase 0 does not scan sibling chapters under the same
+  book for partial-chain state (bones-written but no draft, facets-written but no draft). If a
+  prior chapter was abandoned mid-chain — bones emitted, stitch never ran — the cascade will
+  happily start the NEXT chapter without completing the prior one. The only protection is the
+  user explicitly saying "continue" and triggering the RUNBOOK trigger-table path. A proactive
+  scan at cascade-start would catch silent chain abandonments (session timeout, /and-cut with no
+  resume, tool failure mid-cascade) before they compound into a multi-chapter debt. This pattern
+  is directly adapted from brighid-creative-writing's director-cuts/standard.cut.md §Auto-roll
+  invariant: "no closed board left unwrapped — a board with status:closed and no
+  manuscript-b<N>.md is a P0 pipeline bug; if detected at any phase-open, naomi MUST run /wrap
+  before advancing." The and-shoot equivalent: a chapter with bones_file recorded but no
+  draft/<book>-<chapter>.md is a partial-chain chapter; cascade-start must surface it before
+  advancing to the next chapter.
+evidence_refs:
+  - "brighid-creative-writing/director-cuts/standard.cut.md §Auto-roll — No closed board left unwrapped invariant"
+  - "RUNBOOK.md line 61 — reactive mid-chain resume (user-triggered; no proactive scan)"
+  - "RUNBOOK.md §R3 pre-flight block — scans target chapter state but not sibling partial-chain state"
+  - ".claude/commands/and-substance.md §Phase 0 — reads aggregate-state.md and parking lot but no sibling-chapter scan"
+recurrence_count: 1
+proposed_diff: |
+  In .claude/commands/and-substance.md Phase 0 (cascade-start path):
+  After the existing parking-lot scan (Rule 14), add a SIBLING PARTIAL-CHAIN SCAN step:
+
+  1. Read books[<book>].chapters[] from showrunner memory for all chapters under the
+     current book that precede the requested chapter (by chapter order).
+  2. For each preceding chapter: check (a) chapters[<slug>].bones_file is recorded AND the
+     file exists on disk AND (b) draft/<book>-<slug>.md does NOT exist.
+  3. If any preceding chapter matches (partial-chain state): surface in the Phase 0 print block
+     as PARTIAL-CHAIN-SIBLING finding (SOFT, not blocking at Phase 0). Include the chapter slug
+     and which phases have completed (last recorded status from memory).
+  4. Dispatch admin user-proxy with: "Chapter <slug> is partial-chain (bones written, no draft).
+     Queue it for completion before <requested-chapter>, or proceed to <requested-chapter> only
+     (mark <slug> for later cascade)?" Default: complete the partial chapter first.
+  5. On admin response: if complete-first, redirect cascade to the partial chapter; if skip,
+     add a SOFT parking-lot item for the partial chapter with target.command: /and-write
+     and a note that it is intentionally deferred.
+
+  In RUNBOOK.md §R3 pre-flight block: add a "sibling partial-chain" pre-flight line:
+  "Partial-chain siblings: [NONE | <slug> bones-only | <slug> facets-only]" — informational,
+  not a HALT by itself (the admin user-proxy handles the routing decision).
+
+  Cost: ~1 showrunner memory read (already in cache at Phase 0) + 1 admin dispatch.
+  No schema changes. No new files.
+cost_estimate: M
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
