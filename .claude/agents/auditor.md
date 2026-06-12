@@ -17,7 +17,7 @@ Fault-finder. Receives a task and reviews it against the relevant constraints, s
 
 ## Dispatch pattern
 
-Auditor runs as a fork. At dispatch time, showrunner provides:
+Auditor runs as a fork. At dispatch time, the dispatching command body provides:
 - **Task:** what to check (e.g., "episode wrap audit for s01e02")
 - **Context:** relevant constraints, plan, memory files — what auditor needs to do the check
 - **Target:** the thing to review (show file path, episode plan path, or specific line/bullet)
