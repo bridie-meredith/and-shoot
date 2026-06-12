@@ -6584,3 +6584,86 @@ pr_ref: null
 defer_until: null
 supersedes: null
 ```
+
+---
+
+## PROP-0053
+
+```yaml
+id: PROP-0053
+created_at: 2026-06-12T00:00:00Z
+created_by: admin process-critic
+trigger:
+  reason: on-demand
+  source_report: staff/admin/improvement-loop/bridge.ledger.md
+  source_verdict: improvement-loop/bridge pass-1 — pattern ported from brighid-creative-writing
+target:
+  type: command
+  path: .claude/commands/and-review.md
+  section: "verdict subcommand Phase 4.5 (admin process-critic dispatch)"
+change_type: modify
+rationale: |
+  And-shoot's admin process-critic fires reactively — on individual non-PASS events per
+  chapter (Phase 4.5 of /and-review subcommands; tail-steps in /and-write, /and-facets,
+  /and-stitch, /and-postop). The per-event trigger works well for hard failures but misses
+  patterns that only surface when a full book is read together: three chapters each with
+  PASS-WITH-DEPTH-PASS-REQUIRED trigger no individual recurrence alert, yet collectively
+  signal a systematic weakness in a specific gate or rubric class.
+
+  The brighid-creative-writing harness addresses the equivalent gap through ingrid's
+  "auto-trigger registry at project close" (staff/agents/ingrid/project-improvement-
+  tracking.plan.md §Auto-trigger registry): at project close, a standing step scans all
+  chapter/board artifacts for recurring signal conditions (N >= 2 occurrences of the same
+  finding class) and dispatches improvement analysis regardless of whether any single event
+  independently triggered a failure. The structural insight is that a proactive per-book
+  aggregation sweep complements (not replaces) the existing reactive per-event dispatch.
+
+  /and-review verdict is the natural per-book aggregation point — it already reads all
+  chapter data — but its current Phase 4.5 admin dispatch only fires when the top-level
+  verdict is NOT-SUCCESSFUL. A PASS-WITH-NOTES verdict on a book where 4 of 10 chapters
+  carry PASS-WITH-DEPTH-PASS-REQUIRED from /and-stitch never triggers Phase 4.5 and no
+  pattern-based proposal is ever filed. The finding-class recurrence was discoverable from
+  the artifact set; it simply was never aggregated.
+evidence_refs:
+  - "brighid-creative-writing/staff/agents/ingrid/project-improvement-tracking.plan.md §Auto-trigger registry — parroting-tuning + subtraction-pass-tuning auto-triggers at project close regardless of top-level verdict"
+  - ".claude/commands/and-review.md Phase 4.5 — dispatch condition: 'If the persisted report contains any HARD finding OR if the subcommand emitted a REVISE / FAIL / NOT-SUCCESSFUL verdict'; clean PASS/PASS-WITH-NOTES skips dispatch entirely"
+  - "staff/admin/process-proposals.md PROP-0052 — structural-sameness detector arrived via on-demand trigger after a dedicated scan run; the pattern was latent in the existing artifact set but required manual discovery"
+  - "schemas/admin-proposal.schema.md — trigger.reason documented as failure | postop; no book_pattern_scan reason exists"
+recurrence_count: 1
+proposed_diff: |
+  /and-review.md verdict subcommand: add Phase 4.5-B immediately after the existing
+  Phase 4.5-A (reactive non-PASS dispatch). Phase 4.5-B fires after every book verdict
+  regardless of top-level result.
+
+  Phase 4.5-B steps:
+  1. Collect a cross-chapter finding-class inventory by reading all chapter-level review
+     reports in active-project/staff/reviews/ whose filename contains the book slug
+     (bones-, facets-, stitch-phase9-, postop- prefixes).
+  2. Tally each finding-class token (e.g. ABSTRACTION-AS-SUBJECT, FOLLOW-FAIL,
+     SCENE-ABSTRACT-DOMINANT, SUBSTANCE-FLAT-<axis>, PASS-WITH-DEPTH-PASS-REQUIRED,
+     LEDGER-REGISTER) across all chapter reports.
+  3. Apply thresholds: HARD-class or Phase 9 verdict tokens — flag at count >= 2;
+     SIGNAL-class tokens from bones/facets — flag at count >= 3.
+  4. If any class meets its threshold: dispatch admin in process-critic mode with
+     trigger.reason: book_pattern_scan, carrying the tally as the in-brief source
+     (not a pre-persisted file — the tally IS the brief).
+  5. Admin's standard pre-proposal scan (check process-proposals.md for open/rejected
+     proposals with same target + change_type) runs normally. New pattern-based proposals
+     carry recurrence_count = chapter-count and evidence_refs citing the specific chapter
+     reports that contained the finding class.
+  6. If no threshold is met, admin returns OK — no dispatch overhead.
+
+  Phase 4.5-A (existing reactive dispatch on non-PASS verdicts) is unchanged.
+  Phase 4.5-B is strictly additive.
+
+  schemas/admin-proposal.schema.md: add book_pattern_scan to the trigger.reason enum
+  alongside failure | postop | on-demand.
+cost_estimate: M
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
