@@ -115,6 +115,7 @@ correct deduction (the maid matters) is what forces the apex catastrophe.
 ### Action Menu
 - **The read** — files people by function; spots the anomaly (the named entry).
 - **The leverage** — pressures the maid; arms the king.
+- **The clampdown** (II.5, `THE-CLAMPDOWN`) — with the Queen withdrawn to Dragonstone and the II.4 needle as pretext, gets the King to cut Gael's allowance, strip her tutors+library, and impose septa training; means it as correction, never knowing the allowance is a rounding error to a secret crime-lord and the books were the cut that mattered.
 - **The interception** — at the apex, connects the threads and sends his man (the one Wylla kills).
 
 ### 🎭 Running gag — *the scheme that won't close* (audience-funny, every appearance)

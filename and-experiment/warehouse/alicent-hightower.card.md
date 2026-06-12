@@ -66,6 +66,7 @@ She gets almost all the way there and flinches, because the alternative is unbea
 - **the inciting act:** bullied past Jaehaerys's misogyny to give the sickly babe the dragon egg
   (GIFT:ALICENT) — the act that *armed* Gael.
 - **read on Gael:** the mother's narrative — contemplative / refined / delicate; never the truth.
+- **Book-II arc (`ALICENT-TO-DRAGONSTONE`):** defeated by the betrothal she can't stop and the daughter she can no longer read (the II.4 needle), she **withdraws to Dragonstone — alone** (the refuge she'd dreamed of taking Gael to; a princess is the King's to keep). Her departure removes the warm shield and is the opening her own father, Otto, exploits for the II.5 clampdown. Pays off III.6 ("the protector left behind on the shore").
 
 ## Relationships
 

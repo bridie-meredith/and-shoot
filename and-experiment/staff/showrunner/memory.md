@@ -33,8 +33,20 @@
 # funny-forward. New tokens: ENTERTAINMENT-DAO / RACKET-MOMENTUM / SEED-VAULT-RAID (ambient), UNSEEN-ENFORCER
 # (->III.2, reframed "first excursion"->"routine/citywide"), WYLLA-HORROR (->III.5). GUARD-1 clean (no qi-spend;
 # R2 still II.7); setting-blind held; check-threads PASS. Reversible default: vault target = crime-syndicate
-# (alts: Faith / rival house). II.1/II.2/II.4-II.8 stand. NEXT: continue the casino arc into Book III's heist
-# beats, OR resume the Book-III review-walk, OR merge. See the dated amendment foot of intake/spine.md.
+# (alts: Faith / rival house). NEXT: continue the casino arc into Book III's heist beats, OR resume the
+# Book-III review-walk. See the dated amendment foot of intake/spine.md.
+#
+# SESSION 2026-06-12 (cont.) — II.2-II.6 deepened + MERGED TO MAIN. Folds, all check-threads PASS, R2 still II.7:
+# II.2 Wylla-horror seed (nonchalant intimidation) · II.3 casino arc (Entertainment-Dao, seed-vault raid,
+# racket-by-momentum, unseen-enforcer, Wylla-horror, CASINO-FALLOUT-MISREAD seed) · II.4 "the overheard word"
+# (talentless -> almost-lethal violence -> moves on; subject an open placeholder) + Alicent withdraws to
+# Dragonstone (ALICENT-TO-DRAGONSTONE -> III.6) + THE-CLAMPDOWN pretext · II.5 Otto = direct surveillance via
+# turned chambermaid Marra (OTTO-MONEY-TRACE retired -> OTTO-SURVEILLANCE); OTTO-HEIR-FAVOR motive (Baelon/
+# Viserys promoted to heir-faction); HIDDEN-MASTER-TEST runner (II.2 prickle -> II.3 certainty -> II.5 "a
+# hidden test!" + Wylla facepalm); CASINO-FALLOUT-MISREAD bloom; THE-CLAMPDOWN fires (allowance/books/septa;
+# septa = rival-sect + hidden-master humility-trial -> SEPTA-ENDORSEMENT) · II.6 supply-choke now caused by
+# clampdown + compromised channel. Leitmotif R-02 locked in comedy-register card (+ three-frame calibration).
+# Otto vault-target default = crime-syndicate (reversible). See intake/spine.md amendment foot for the full record.
 
 project:
   brief: >

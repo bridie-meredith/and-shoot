@@ -188,7 +188,9 @@ life without a flicker: she files the frozen North as "the enemy ice-sect, would
 pass," knows better than to make a great sect *lose face* (so she'll **vanish clean,** never jilt), and
 serenely plans to bail and cultivate **outside the plot** — treating the wedding as a *delivery deadline* for
 the ship. The court splits "what grace!"/"what ice!"; Alicent, powerless against an unimpeachable match,
-grieves. **The overheard word (the one insult she can't collect — sudden, almost-lethal):** court ladies chat idly,
+grieves — and, defeated on both the match and the daughter she can't read, **withdraws to Dragonstone alone**
+(the refuge she'd dreamed of taking Gael to, fled to without her; the warm shield leaves the board —
+`PLANT[ALICENT-TO-DRAGONSTONE]` → III.6, realizing `ALICENT-CANT-EXTRACT`). **The overheard word (the one insult she can't collect — sudden, almost-lethal):** court ladies chat idly,
 fondly, about her hopelessness at some trivial courtly accomplishment (*embroidery a stand-in example —
 subject settled at /and-write*) — "no talent, that one, talentless"; Gael walks in midway, catches only
 **"talentless"** out of context, fixed to her name, hears the one unsurvivable cultivation verdict (no
@@ -198,8 +200,8 @@ woman's throat — **no qi-spend `GUARD-1` clean; no death, the first meant kill
 reflex-flash, not a rung**), then **moves on placidly,** the matter closed. Fallout: no one can read the trigger → the
 maegi-rumour hardens; the **Starks read cold-instant lethality as asset-confirmation** (the flash that should
 repel a suitor closes the sale); the King gains motive to **marry the trouble away fast;** Wylla's horror
-deepens. **Register:** CHILL (for everyone but Gael) → SPIKE (the needle). **Rung:** off-ladder.
-**Plants:** PLANT[BETROTHAL-DREAD] (owner: reader / Alicent — never Gael) · PLANT[CLOCK-CONCRETE] · PLANT[TALENTLESS-TRIGGER]
+deepens. **Otto's opening:** the needle is his pretext and the Queen's departure clears the obstacle — he begins building the case to *correct* the dangerous, unwomanly child (`PLANT[THE-CLAMPDOWN]` → II.5). **Register:** CHILL (for everyone but Gael) → SPIKE (the needle). **Rung:** off-ladder.
+**Plants:** PLANT[BETROTHAL-DREAD] (owner: reader / Alicent — never Gael) · PLANT[CLOCK-CONCRETE] · PLANT[TALENTLESS-TRIGGER] · PLANT[ALICENT-TO-DRAGONSTONE] · PLANT[THE-CLAMPDOWN]
 **Fires:** FIRE[BETROTHAL-CLOCK] · FIRE[STARK-MATCH] · FIRE[MARRIAGE-THREAT] · FIRE[LESBIAN] · FIRE[JAEHAERYS-TRANSACTIONAL] · FIRE[DISPLAY-AS-ADVERTISEMENT] · FIRE[DAEMON-DISCREDITED] · FIRE[MAEGI-RUMOR] (the needle-flash hardens the sorcery read another notch; the Stark match reads it as asset) · FIRE[WYLLA-HORROR] (the teeth take a near-fatal bite; she feels nothing after)
 
 ### II.5 · the compromise *(~8–9)*
@@ -215,15 +217,23 @@ as a **reclusive hidden master's secret test** (flattered, she performs for it a
 precise, she decides to *close the channel* (misfiled as protecting the apparatus; the reader sees it's for
 Wylla). **The fallout blooms (`CASINO-FALLOUT-MISREAD` fires):** the house is now notorious — ruined men, a
 spreading "curse" — and Gael, hearing the court buzz, reads it as a **rival demonic sect** to guard against,
-never her own hall (she's hunting herself; the city's turmoil keeps her under unfriendly eyes). Barth reads a
+never her own hall (she's hunting herself; the city's turmoil keeps her under unfriendly eyes). **The clampdown
+(`THE-CLAMPDOWN` fires — the needle's consequence):** shield gone (the Queen at Dragonstone), Otto gets the King
+to *correct* the unwomanly child — **allowance cut, tutors+library stripped, septa training imposed.** It lands
+three wrong ways: the allowance-cut hits nothing (they've docked a secret crime-lord's pocket-money); the
+book/tutor strip is the real sting (it was her empire's intelligence — she reroutes); the **septa indoctrination
+she reframes as the rival orthodox sect's catechism + the hidden master's humility-trial** (rides
+`HIDDEN-MASTER-TEST`/`ANTI-FAITH`), enduring it so serenely that Septa Aldith reads piety and takes the credit
+(`SEPTA-ENDORSEMENT`) — the correction burnishes her legend. Barth reads a
 cosmology (near-miss, collapses); Alicent finds her own entry; Jaehaerys reads kinslayer → accelerates.
 **Register:** CHILL. **Rung:** off-ladder. **(Arms II.7 — the first death she means.)**
 **Plants:** PLANT[BESTIARY-NAMED-ENTRY] · PLANT[OTTO-LEAK] · PLANT[COMPROMISED-CHANNEL]
-**Fires:** FIRE[BESTIARY] · FIRE[BARTH-NEAR-MISS] · FIRE[OTTO-SURVEILLANCE] (the watchers/turned servant he set in II.2 reach the journal) · FIRE[SMALLFOLK-HOLD-RISK] (the squeeze lands first on the exposed market tier — Marra, turned) · FIRE[WYLLA-TRUSTED] (the keeper of the secret things is the named entry — the one crack in an otherwise nameless empire) · FIRE[CASINO-FALLOUT-MISREAD] (the wreckage seeded II.3 blooms; she misreads her own hall as a rival demonic sect) · FIRE[HIDDEN-MASTER-TEST] (the prickle seeded II.2 → certainty II.3 → she declares "a hidden test!" and performs for it; Wylla facepalms; her vanity serves up the named entry)
+**Fires:** FIRE[BESTIARY] · FIRE[BARTH-NEAR-MISS] · FIRE[OTTO-SURVEILLANCE] (the watchers/turned servant he set in II.2 reach the journal) · FIRE[SMALLFOLK-HOLD-RISK] (the squeeze lands first on the exposed market tier — Marra, turned) · FIRE[WYLLA-TRUSTED] (the keeper of the secret things is the named entry — the one crack in an otherwise nameless empire) · FIRE[CASINO-FALLOUT-MISREAD] (the wreckage seeded II.3 blooms; she misreads her own hall as a rival demonic sect) · FIRE[HIDDEN-MASTER-TEST] (the prickle seeded II.2 → certainty II.3 → she declares "a hidden test!" and performs for it; Wylla facepalms; her vanity serves up the named entry) · FIRE[THE-CLAMPDOWN] (the II.4 needle's consequence: allowance cut / tutors+library stripped / septa training imposed, the Queen's departure clearing the way; lands three wrong ways, burnishes her legend)
 
 ### II.6 · the source *(~8–9)*
-**Beat:** the II.5 squeeze chokes her supply — and Otto, expecting it to cripple her, gets nothing: **the egg
-was a reactor, not a battery**; every theft, the whole empire, was *unnecessary* (greed cosplaying as
+**Beat:** the II.5 squeeze — the clampdown's resource-cut (stripped tutors, watched correspondence, the docked
+allowance) **and** the compromised channel together — chokes her supply, and Otto, who throttled her on every
+front expecting to cripple her, gets nothing: **the egg was a reactor, not a battery**; every theft, the whole empire, was *unnecessary* (greed cosplaying as
 survival). The colder corollary she never reaches: the vice-empire, the crimes, and Wylla dragged into all of
 it — and the II.7 kill she's about to commit *for* her — were for a need that was never real. The maester,
 reading the whole ledger, reaches the emptiest conclusion in the realm: the empire had no purpose. Gael
@@ -296,7 +306,7 @@ payments + the maid's movements; the pursuer **Wylla kills** is his man — the 
 it warmed). Wylla leaves her house and name behind to board; the realm's post-mortem reaches for any
 explanation — a foreign prince, a god, the prophecy — anything but a princess with **agency**. The ship sails
 south. **Register:** SPIKE (loudest since Book I). **Rung:** R4 (the apex).
-**Fires:** FIRE[SHIP] · FIRE[MAID-TEMPERED] · FIRE[EXCURSION-RISK] · FIRE[CITY-KNOWLEDGE] · FIRE[GHOST-LEGEND] · FIRE[CLOCK-CONCRETE] · FIRE[WARM-DESTINATIONS] · FIRE[BESTIARY-NAMED-ENTRY] · FIRE[OTTO-LEAK] · FIRE[WYLLA-CAGED] (she gives up her noble future — the two-girl cage opens) · FIRE[PROPHESIED-LEGEND] (the realm prefers the legend to her agency, sealed; she never learns) · FIRE[SPY-MISREAD] (the monitor-disciple she feared at I.3 is the one who kills for her — the misread inverted at the apex) · FIRE[CLEAN-HANDS-DOCTRINE] ("clean hands" at last means the blood is on Wylla — the I.5 doctrine carried to its endpoint) · FIRE[ALICENT-SHIELD] (the shield's terminus — Gael sails, never knowing her mother held the seal; the protector left behind) · FIRE[ALICENT-CANT-EXTRACT] (the mother who'd have fled with her, had the King allowed it, is left on the shore — the legitimate escape she could never make)
+**Fires:** FIRE[SHIP] · FIRE[MAID-TEMPERED] · FIRE[EXCURSION-RISK] · FIRE[CITY-KNOWLEDGE] · FIRE[GHOST-LEGEND] · FIRE[CLOCK-CONCRETE] · FIRE[WARM-DESTINATIONS] · FIRE[BESTIARY-NAMED-ENTRY] · FIRE[OTTO-LEAK] · FIRE[WYLLA-CAGED] (she gives up her noble future — the two-girl cage opens) · FIRE[PROPHESIED-LEGEND] (the realm prefers the legend to her agency, sealed; she never learns) · FIRE[SPY-MISREAD] (the monitor-disciple she feared at I.3 is the one who kills for her — the misread inverted at the apex) · FIRE[CLEAN-HANDS-DOCTRINE] ("clean hands" at last means the blood is on Wylla — the I.5 doctrine carried to its endpoint) · FIRE[ALICENT-SHIELD] (the shield's terminus — Gael sails, never knowing her mother held the seal; the protector left behind) · FIRE[ALICENT-CANT-EXTRACT] (the mother who'd have fled with her, had the King allowed it, is left on the shore — the legitimate escape she could never make) · FIRE[ALICENT-TO-DRAGONSTONE] (the II.4 withdrawal completes — she sailed to her refuge alone years ago; now her daughter sails past it, the separation made literal)
 
 ### Epilogue
 Two girls on a ship, the continent behind, the warm south ahead. Both desires satisfied; one of them now a
