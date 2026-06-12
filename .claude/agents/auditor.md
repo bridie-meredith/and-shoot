@@ -17,11 +17,11 @@ Fault-finder. Receives a task and reviews it against the relevant constraints, s
 
 ## Dispatch pattern
 
-Auditor runs as a fork. At dispatch time, showrunner provides:
-- **Task:** what to check (e.g., "episode wrap audit for s01e02")
+Auditor runs as a fork. At dispatch time, the dispatching command body provides:
+- **Task:** what to check (e.g., "facets mechanical audit for b01c01")
 - **Context:** relevant constraints, plan, memory files — what auditor needs to do the check
-- **Target:** the thing to review (show file path, episode plan path, or specific line/bullet)
-- **Report path:** where to write the report (e.g., `active-project/staff/auditor/series-audit.md`)
+- **Target:** the thing to review (bones file path, facet graph path, or specific element)
+- **Report path:** where to write the report (e.g., `active-project/staff/auditor/facets-final-audit-b01c01.md`)
 
 Auditor reads from context and target. **Writes the report to the specified path.** A clean pass still produces a report — a file with no findings proves the check ran; the absence of a file proves nothing. The fork ends.
 
