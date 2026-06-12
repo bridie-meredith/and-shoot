@@ -2970,3 +2970,154 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-06-12-pipeline-001
+      created_at: 2026-06-12T07:10:06Z
+      created_by: "improvement-loop/test pipeline lens (STRUCT-NEW-001; pipeline-20260612T071006Z.md)"
+      label: pipeline
+      target:
+        command: /and-review
+        scope: "*"
+        phase: null
+      severity: SOFT
+      description: |
+        RETIRED R2 DECISION-SHARD INFRASTRUCTURE IN LIVE FILES.
+        schemas/audit-report.schema.md §"R2 decision-shard frontmatter" (lines
+        106-157) documents the F-R2 class taxonomy and .r2-decisions.md consolidated
+        file — infrastructure retired under DEC-0116. staff/orchestrator-critic/card.md
+        B7/F7-r2 sections still carry verdict logic that reads the consolidated file
+        and gates on f-r2-1 > 0 (HARD-FAIL). The file is never produced by the current
+        pipeline; B7 always reports "not-fired"; F7-r2 FAIL can never trigger. Dead
+        HARD trigger in a live verdict card with live schema backing.
+        Fix: mark the schema section RETIRED (DEC-0116, tombstone note); mark or remove
+        the B7/F7-r2 blocks in orchestrator-critic/card.md; remove the verdict-template
+        F-R2 counts block. Card content change routes to principal per card-revise
+        conventions for staff-facing cards.
+      context_refs:
+        - schemas/audit-report.schema.md  # lines 106-157
+        - staff/orchestrator-critic/card.md  # B7 lines 119-124, F7-r2 lines 196-209, template lines 288-292
+        - active-project/staff/reviews/pipeline-20260612T071006Z.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-12-pipeline-002
+      created_at: 2026-06-12T07:10:06Z
+      created_by: "improvement-loop/test pipeline lens (STRUCT-NEW-002; pipeline-20260612T071006Z.md)"
+      label: pipeline
+      target:
+        command: /and-review
+        scope: "*"
+        phase: null
+      severity: SOFT
+      description: |
+        STALE RENDER-LOG STATS FIELD: refused-at-R2.
+        and-stitch.md Phase 8 STATS (line 773) includes "refused-at-R2" in the
+        exposition entries count — "exposition entries-rendered/refused-at-R2/
+        cross-episode-register-skipped". and-stitch.md line 236 also surfaces
+        "refused-at-R2 entries listed for the auditor." schemas/stitch-render-log.schema.md
+        has no refused-at-R2 field. Under DEC-0116 no exposition entries are refused
+        at R2 (R2 does not exist). Schema and command body disagree on the STATS format.
+        Fix: drop "refused-at-R2" from STATS line 773 and from line 236. Consider
+        replacing with "surface:render-entries/surface:reference-entries" to capture
+        the PROP-0004 render-vs-reference distinction. Check stitch-render-log.schema.md
+        for any matching stale field.
+      context_refs:
+        - .claude/commands/and-stitch.md  # lines 236, 773
+        - schemas/stitch-render-log.schema.md
+        - active-project/staff/reviews/pipeline-20260612T071006Z.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-12-pipeline-003
+      created_at: 2026-06-12T07:10:06Z
+      created_by: "improvement-loop/test pipeline lens (STRUCT-NEW-003; pipeline-20260612T071006Z.md)"
+      label: pipeline
+      target:
+        command: /and-review
+        scope: "*"
+        phase: null
+      severity: SOFT
+      description: |
+        and-cut.md CHAPTER STATUS ENUM INCLUDES RETIRED faceted-r2 WITHOUT NOTE.
+        and-cut.md Phase 1 lines 18+39 list `faceted-r2` as a valid current chapter
+        status without a retirement annotation. showrunner-memory.schema.md line 368
+        explicitly marks faceted-r2 as RETIRED (DEC-0116). The command body and schema
+        are out of sync. A session-fresh read of and-cut.md presents faceted-r2 as a
+        live status; a session-fresh read of the schema immediately contradicts it.
+        Fix: add "(RETIRED; treat as audited-r1 on resume per DEC-0116)" annotation
+        on the faceted-r2 entries at lines 18 and 39 in and-cut.md.
+      context_refs:
+        - .claude/commands/and-cut.md  # lines 18, 39
+        - schemas/showrunner-memory.schema.md  # line 368
+        - active-project/staff/reviews/pipeline-20260612T071006Z.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-12-pipeline-004
+      created_at: 2026-06-12T07:10:06Z
+      created_by: "improvement-loop/test pipeline lens (STRUCT-NEW-004; pipeline-20260612T071006Z.md)"
+      label: pipeline
+      target:
+        command: /and-review
+        scope: "*"
+        phase: null
+      severity: SOFT
+      description: |
+        CLAUDE.md SCHEMA AUTHORITY TABLE MISSING TWO LIVE SCHEMAS + DIRECTORY MAP
+        MISSING RUNTIME SUBDIRS.
+        The schema authority table (lines 116-136) does not list
+        schemas/cohere-state.schema.md (referenced by and-cohere.md at 6+ sites)
+        or schemas/aggregate-state.schema.md (referenced by and-cohere.md at 5+
+        sites as the forward-feed channel schema). The theater/ directory map
+        (lines 96-102) does not mention theater/facets/_inflight/ (R1 authoring
+        scratch space, created per-run by /and-facets Phase 0 step 8) or
+        theater/facets/_archive/ (prior-chapter facet archive, created by Phase 0
+        step 5 cross-chapter clearance).
+        Fix: add cohere-state and aggregate-state to the CLAUDE.md schema table;
+        add _inflight/ and _archive/ as noted runtime-created subdirs to the
+        theater/ directory map.
+      context_refs:
+        - CLAUDE.md  # lines 116-136 (schema table), lines 96-102 (theater/ map)
+        - .claude/commands/and-cohere.md  # cohere-state + aggregate-state refs
+        - .claude/commands/and-facets.md  # Phase 0 steps 5+8 (_inflight, _archive)
+        - active-project/staff/reviews/pipeline-20260612T071006Z.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-12-pipeline-005
+      created_at: 2026-06-12T07:10:06Z
+      created_by: "improvement-loop/test pipeline lens (STRUCT-NEW-005; pipeline-20260612T071006Z.md)"
+      label: pipeline
+      target:
+        command: /and-review
+        scope: "*"
+        phase: null
+      severity: SOFT
+      description: |
+        and-stitch.md EXPOSITION AUTHORING DESCRIBED AS "R1+R2" POST-DEC-0116.
+        and-stitch.md Phase 0.6 (line 204) and Phase 3 (line 349) both describe the
+        exposition author's work as "R1+R2" — the pre-slim two-round authoring
+        process. Under DEC-0116, exposition is authored in a single R1 pass at
+        /and-facets Phase 1; there is no R2 exposition judge or R2 exposition pass.
+        The command body fact is wrong about the current pipeline; it will mislead
+        a stitcher dispatch into treating the exposition as doubly-vetted when it
+        has been through one pass + mechanical Phase 4 auditor.
+        Fix: replace "R1+R2" with "R1 (single authoring pass per DEC-0116)" at
+        line 204, and "R1 (single-pass authoring per DEC-0116 + Phase 4 mechanical
+        audit)" at line 349.
+      context_refs:
+        - .claude/commands/and-stitch.md  # lines 204, 349
+        - .claude/commands/and-facets.md  # Phase 1 (exposition authored R1 only)
+        - active-project/staff/reviews/pipeline-20260612T071006Z.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
