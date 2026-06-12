@@ -2970,3 +2970,100 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    # --- improvement-loop/test 2026-06-12 pipeline audit ---
+
+    - id: pl-2026-06-12-pipeline-001
+      created_at: 2026-06-12T08:10:39Z
+      created_by: "/and-review pipeline improvement-loop/test (STRUCT-001)"
+      target:
+        command: /and-review
+        scope: "verdict *"
+        phase: Phase 0
+      severity: HARD
+      description: |
+        STRUCT-001: staff/orchestrator-critic/card.md is entirely calibrated against
+        the retired /and-season command (authored 2026-05-10; never updated post
+        substance-overhaul 2026-05-17 or DEC-0116 2026-06-08). The card's Category A
+        criteria evaluate /and-season Phases 2/3/4 split (none exist in current chain);
+        Category B7 reads f-r2-counts from .r2-decisions.md (never produced; R2 retired
+        under DEC-0116); Category B6 checks tens-gate-residual-HARD (URI-026 retired);
+        Category C checks seasons[<slug>].* memory fields (current chain uses books[<slug>].*);
+        verdict-producer cross-check says "verdict still emitted by /and-season."
+        Effect: /and-review verdict <book> dispatches this card and applies dead criteria.
+        The book-level quality gate is currently a non-gate. The two existing b01 verdicts
+        (2026-06-06, 2026-06-08) were produced under these stale criteria.
+        RESOLUTION REQUIRES PRINCIPAL DISPATCH: rewrite staff/orchestrator-critic/card.md
+        to evaluate /and-review verdict <book> runs against current substance-overhaul
+        criteria (bone-gate convergence, Phase 4 mechanical audit, Phase 9 cold-read,
+        books[<slug>].* memory fields). Remove B7/F7-r2 (R2 dead), update F7-bone to
+        SUBSTANCE-FLAT/SUBSTANCE-SUSPECT residuals, remove /and-season runtime budgets.
+        After fix: run /and-review pipeline to confirm STRUCT-001 resolved.
+      context_refs:
+        - active-project/staff/reviews/pipeline-2026-06-12T081039Z.md  # STRUCT-001
+        - staff/orchestrator-critic/card.md
+        - .claude/commands/and-review.md  # §verdict subcommand
+        - staff/admin/decisions.md  # DEC-0116 (R2 retirement)
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-12-pipeline-002
+      created_at: 2026-06-12T08:10:39Z
+      created_by: "/and-review pipeline improvement-loop/test (STRUCT-002)"
+      target:
+        command: /and-review
+        scope: "pipeline"
+        phase: null
+      severity: SOFT
+      description: |
+        STRUCT-002: schemas/audit-report.schema.md §"R2 decision-shard frontmatter"
+        (lines 106-157) presents the R2 decision-shard format and .r2-decisions.md
+        consolidated file as active schema. Under DEC-0116 the R2 round was retired;
+        /and-facets-r2 no longer exists; /and-facets goes to Phase 5 (the section
+        references a "Phase 6" that does not exist); the "consumer contract" directs
+        the orchestrator-critic to read f-r2-counts — a cross-reference to the dead B7
+        block in pl-2026-06-12-pipeline-001. Creates a circular residue loop and
+        misleads engineers about what the pipeline currently produces.
+        RESOLUTION: Mark §"R2 decision-shard frontmatter" as RETIRED at the section
+        top: "> **RETIRED 2026-06-08 under DEC-0116 (URI-FACETS-SLIM).** R2 round
+        eliminated; this format is no longer produced." and remove the "consumer
+        contract" sub-section, OR remove the section entirely.
+        After fix: next /and-review pipeline run confirms STRUCT-002 resolved.
+      context_refs:
+        - active-project/staff/reviews/pipeline-2026-06-12T081039Z.md  # STRUCT-002
+        - schemas/audit-report.schema.md  # lines 106-157 §R2 decision-shard
+        - staff/admin/decisions.md  # DEC-0116
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-12-pipeline-003
+      created_at: 2026-06-12T08:10:39Z
+      created_by: "/and-review pipeline improvement-loop/test (STRUCT-003)"
+      target:
+        command: /and-review
+        scope: "pipeline"
+        phase: null
+      severity: SOFT
+      description: |
+        STRUCT-003: CLAUDE.md schema authority table missing two active schemas:
+        schemas/aggregate-state.schema.md and schemas/cohere-state.schema.md.
+        Both exist in schemas/ and are referenced by /and-cohere.md. The table
+        currently ends at tournament-scorecard without listing either.
+        A file format without a table entry creates an undiscoverable schema.
+        RESOLUTION: Add to CLAUDE.md schema authority table:
+          | Aggregate state (cross-chapter coherence tracking) | schemas/aggregate-state.schema.md |
+          | Cohere state (/and-cohere iteration state) | schemas/cohere-state.schema.md |
+        After fix: next /and-review pipeline run confirms STRUCT-003 resolved.
+      context_refs:
+        - active-project/staff/reviews/pipeline-2026-06-12T081039Z.md  # STRUCT-003
+        - CLAUDE.md  # schema authority table
+        - schemas/aggregate-state.schema.md
+        - schemas/cohere-state.schema.md
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
