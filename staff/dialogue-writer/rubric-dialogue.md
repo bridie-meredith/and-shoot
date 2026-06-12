@@ -109,45 +109,17 @@ Unconstrained — dialogue is content, not flag. Sparsity follows what the proto
 
 ## V2 reviewer protocol (audience-gate Phase 5b) [RETIRED — DEC-0116]
 
-Two-stage per reviewer per character file:
+**Do not execute.** The per-facet 3-of-3 adversarial audience-gate at `/and-facets` Phase 5b is retired in full under DEC-0116 (URI-FACETS-SLIM, 2026-06-08). The adversarial reading of actual prose now lives at `/and-stitch` Phase 9 cold-read + naive-follow. The `/and-facets` Phase 4 mechanical auditor (DEDUP / SUPERFLUOUS / AP-SCAN) is the sole facet-layer gate.
 
-### Stage 1 — V2 strict affirmative-demonstration
-
-Per entry: ACCEPT (Q1 + Q2 both pass) / REVISE / FAIL. Persona-distinct lenses (atmosphere / board-move / voice-precision — or facet-equivalents from the active audience). Inoffensive lines fail Q1; on-card-but-violating fail Q2.
-
-### Stage 2 — V3 adversarial seam-finding
-
-For every line, accepts included, each persona produces the strongest hostile counter-argument from its lens. Aggregate the strongest as the seam. Persona-distinct constraint: seams must differ by lens so they aren't generic craft-criticism.
-
-Facet evidence is fair attack surface: "the chosen draft cites `feeling-taylor:7` as license, but that entry is a held-breath tell that doesn't carry register-slip in stitch — the slip claim is unsupported."
-
-### Aggregation
-
-Strict 3-of-3 ACCEPT per character per `/and-facets` audience-gate convention (URI-AUDIENCE-AGGREGATION-RULE). Single dissent fails the character — defaulted to revise.
-
-### Convergence
-
-Failed characters route callouts to fixer. Fixer dispatches dialogue-writer in **defense-or-revise mode** (v1 R3 protocol):
-
-- Per line with a seam: defend with card + facet citations, OR revise.
-- Defended accept stays as is.
-- Revision means the seam was load-bearing; revisions get full multi-draft + chosen-mark + rejection-notes treatment.
-
-Cycle cap: 3 per `/and-season` convention.
+Historical protocol details (Stage 1 strict affirmative-demonstration, Stage 2 adversarial seam-finding, 3-of-3 aggregation, defense-or-revise convergence) are removed. See git history for the pre-DEC-0116 text if needed.
 
 ---
 
 ## R1 vs R2 differences [RETIRED — DEC-0116]
 
-**R1 (blind):** dialogue-writer reads behavior card stack + speaker persona/ltm/stm/state + base proto-lines + upstream `tensometer.md` + this rubric. Authoring is from intent (derived per-beat from cast + tens + speaker-state) + cards only. Forbidden: other R1 facet outputs, show files, source prose.
+**R1 (blind — the only dispatch):** dialogue-writer reads behavior card stack (margit-composed: leaf → inherits → universal overlay → references) + speaker persona/ltm/stm/state + base proto-lines + this rubric. Authoring is from intent (derived per-beat from cast + `substance_delta` + speaker-state) + cards only. Forbidden inputs: other R1 facet outputs, show files, source prose. Dispatched from `/and-write` Phase 1.5; one fork per behavior card, authors all speakers sharing that card. (Note: the `tensometer.md` reference in older versions of this rubric is stale — tensometer is retired; use `substance_delta` from showrunner memory.)
 
-**R2 (graph-aware):** dialogue-writer re-runs in judge mode with all nine other R1 facet files + cite-index. Decisions per existing entry:
-
-- KEEP — card signature affirmatively demonstrated; facet-license citations resolve in locked graph; somatic-tell / monument adjacency claimed by the chosen draft is structurally present.
-- DELETE — card signature missing (inoffensive); forbidden vocabulary; facet-license citation does not resolve; hard-fence hit; other facets render the same content (DEDUP with NI, feeling, memory).
-- REWRITE (delete + new ID) — internal mini-V3 surfaces a closable seam; revised draft cites different facet license or different §-section.
-
-Add-cap: ≤3 per character per run. Adds are exceptional — R1 covers the speaking beats; R2 adds only when a beat is genuinely silent that the card + graph license a line for.
+**R2 (graph-aware) — RETIRED (DEC-0116):** the locked-graph KEEP / DELETE / REWRITE pass at `/and-facets` Phase 2 is retired. Its DEDUP concern is now the `/and-facets` Phase 4 auditor's DEDUP class. No R2 pass is dispatched; no R2 artifact files are authored.
 
 ---
 
@@ -167,6 +139,8 @@ Dialogue feeds into existing facet-audit classes; this section names dialogue-sp
 
 ## Files
 
-- **Output (canonical):** `active-project/theater/dialogue/<character-slug>.md` per `schemas/dialogue.schema.md`.
+- **Output (canonical):** `active-project/theater/dialogue/<character-slug>.md` per `schemas/dialogue.schema.md`. Co-emitted with the bones file at `/and-write` Phase 7.
 - **Drafts sidecar:** `active-project/staff/dialogue-writer/<character-slug>.drafts.md` — multi-draft + chosen-mark + rejection notes + card-signature citations + facet-license citations. Audit reads this for CONSTRAINT § citation-completeness.
-- **Annotated proto-lines copies:** `_inflight/proto-lines-dialogue-<card>.md` — citations `[<character-slug>:<id>]` appended to speaking-beat anchors.
+- **Annotated proto-lines copy:** `_inflight/proto-lines-dialogue-<card>.md` — citations `[<character-slug>:<id>]` appended to dialogue-anchor bones. One copy per behavior card (R1 only).
+
+Retired (DEC-0116): `r2-decision-shard-<character>.md` and `_inflight-r2/proto-lines-dialogue-<character>.md` — these R2 artifacts are no longer authored.

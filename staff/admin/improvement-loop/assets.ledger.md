@@ -149,3 +149,20 @@ The dialogue-writer is dispatched live at `/and-write` Phase 1.5 and loads this 
 - Change is one addition, zero deletions, no persona voice content touched. Post-lock status noted per locked-notation rule.
 
 **Next candidate:** Apply the same DEC-0115 apparatus-as-subject gap to `rubric-memory-flags.md` — memory flag entries can register apparatus-process events as the triggering monument (e.g., "the count hitting zero" as a memory anchor rather than a concrete human action). Lower probability than feeling but the fence is absent from the memory rubric's anti-pattern catalog. Alternatively, verify `scripts/normalize_inflight_r2.py` is truly unreferenced and remove it (dead code, R2 retired under DEC-0116).
+
+---
+
+### 2026-06-12 — Pass 10
+
+**Asset changed:** `staff/dialogue-writer/rubric-dialogue.md` — retired section bodies + Files section; `schemas/dialogue.schema.md` — stale R2 claim.
+
+**Change:** Replaced the dead workflow text in the Phase 5b and R1-vs-R2 sections with compact tombstone notices ("Do not execute…"). Updated the R1 block in the R1 vs R2 section to use `substance_delta` (not the retired `tensometer.md`), describe the current Phase 1.5 dispatch model, and separate R2 into its own tombstone paragraph. Added "Co-emitted with the bones file at `/and-write` Phase 7" to the Files output line; added a retirement notice for the two retired R2 artifact paths (`r2-decision-shard-<character>.md`, `_inflight-r2/`). Fixed `schemas/dialogue.schema.md`'s introductory paragraph which still said R2 "remains as a locked-graph review pass" — now correctly says R2 is retired (DEC-0116).
+
+**Why top-ranked:**
+- Passes 2, 4, and 7 addressed the dialogue rubric in three stages (preamble → live-enforcement cleanup → section header labels). Pass 7's next-candidate log explicitly called this out: "the section headers look live to a scanner" for three sections. The body content was preserved each time. Pass 10 is the body cleanup that the earlier passes explicitly deferred.
+- The `tensometer.md` reference in the R1 block was the strongest remaining risk: the section header says [RETIRED], but the R1 body text references a retired artifact. A dispatcher reading the section could interpret "R1 part is live; R2 part is retired" and try to use `tensometer.md`. The fix makes the current dispatch model (Phase 1.5 + `substance_delta`) explicit.
+- The `schemas/dialogue.schema.md` fix is one sentence; the schema is the authority document and its claim that R2 "remains" directly contradicts DEC-0116.
+- No persona voice content touched. Net: -20 lines of dead workflow + +12 lines of tombstone/correction text.
+
+**Next candidate:** `rubric-memory-flags.md` — apparatus-as-subject gap (Pass 9 next-candidate). OR `scripts/normalize_inflight_r2.py` removal — Pass 9 flagged it as unreferenced dead code from the retired R2 round; a grep to confirm no references would be the first step.
+

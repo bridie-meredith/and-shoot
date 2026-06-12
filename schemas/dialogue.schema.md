@@ -1,6 +1,6 @@
 # Dialogue Schema
 
-Per-character dialogue files. One file per speaking character per chapter. Authored by the dialogue-writer fork dispatched from `/and-write` Phase 1.5 (URI-WRITE-DIALOGUE-COBONDED, 2026-05-25) and co-emitted with the bones file at `/and-write` Phase 7. Pre-2026-05-25 the author dispatch lived at `/and-facets` Phase 1; that authoring step is retired. The R2 dialogue judge at `/and-facets` Phase 2 remains as a locked-graph review pass (KEEP / DELETE / REWRITE against the facet graph the upstream author was blind to) — review only, no authoring.
+Per-character dialogue files. One file per speaking character per chapter. Authored by the dialogue-writer fork dispatched from `/and-write` Phase 1.5 (URI-WRITE-DIALOGUE-COBONDED, 2026-05-25) and co-emitted with the bones file at `/and-write` Phase 7. Pre-2026-05-25 the author dispatch lived at `/and-facets` Phase 1; that authoring step is retired. The R2 dialogue judge at `/and-facets` Phase 2 is also retired (DEC-0116, URI-FACETS-SLIM, 2026-06-08); its DEDUP concern (utterance duplicating a lens facet at the same anchor) is now the `/and-facets` Phase 4 auditor's DEDUP class.
 
 Path: `active-project/theater/dialogue/<character-slug>.md`
 
