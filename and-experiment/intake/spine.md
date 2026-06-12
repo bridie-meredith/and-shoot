@@ -234,14 +234,15 @@ The engine is the **asymmetry, sealed — and Alicent is the seal.** The observe
 **Gags:** ⑤ (reclusion read as scholarly virtue; her silent radiance as grace/menace) · ② + the prize self-cast (the parade *confirms* she's the kept jade-beauty) · ① (collects "Maegi" as an earned epithet) · ③ (the maid logged — "Asset (hands/legs)," climbing).
 
 ### II.2 · the startup *(~7)*
-**Inside:** walks the maid through past-life chemistry — soap, dyes that set, preservatives, spirits — accidentally founding the most profitable little enterprise in King's Landing; incoming materials assayed, radiant ones kept. To Gael it isn't a business — it's her **sect's mortal branch:** Wylla her first *junior-sister / inner disciple* (and confidant), the chambermaids outer-disciple mortals running worldly affairs beneath her notice.
+**Inside:** walks the maid through past-life chemistry — soap, dyes that set, preservatives, spirits — accidentally founding the most profitable little enterprise in King's Landing; incoming materials assayed, radiant ones kept. To Gael it isn't a business — it's her **sect's mortal branch:** Wylla her first *junior-sister / inner disciple* (and confidant), the chambermaids outer-disciple mortals running worldly affairs beneath her notice. And when an **unruly subordinate** turns up — a hand skimming the take, or one who's worked out the princess is the source and means to talk — Gael *handles it,* with the flat, weightless calm of someone shooing a cat off a table: a quiet word, a thing she already knows about him, the gentlest mention of how easily a body's tea can disagree with it. No anger, no raised voice. The man goes white and never strays again. To her it's nothing — *outer disciples need discipline; this is Tuesday.*
 **Reverse-angle:**
 - 😂 *The triple-blind (three real tiers):* the buyers think they deal with a **clever commoner** (the smallfolk chambermaids who walk the market); **Wylla** the noble lady-in-waiting thinks Gael's the greatest mind in Westeros and quietly *manages* it; Gael thinks it's high-school chemistry. Everyone's wrong about who runs it; it prints money. (A noble can't hawk soap in the market — so the chambermaids are the hands, Wylla the manager, Gael the invisible source.)
+- 😱 *Wylla's first glimpse of the teeth (the conversion seed begins):* she signed on to a clever child's pin-money hobby — and then watches her sweet, odd little mistress make a grown man tremble without breaking from her sums, *blithe* about it, faintly puzzled that anyone finds it remarkable. Wylla is **horrified** — and this is exactly why the workforce obeys a seven-year-old's maid, and why the comedy of *Wylla-runs-everything* holds: the unseen thing behind her is what makes "ask nicely" enough. (`PLANT[WYLLA-HORROR]` — first instance; escalates II.3 → III.5.)
 - 😂 *The cover does the hiding:* nobody connects the **paraded jewel / book-buried recluse** of II.1 to the coin — the King's own display perfects her concealment.
 - 🤨 *Buyers:* praise her "supernatural eye for goods." (They mean it as a figure of speech. It is not one.)
 - 🧊 *The ledger underneath:* the structure parks all the **exposure** on the chambermaids (Gael invisible, Wylla rank-insulated) — the road-to-hell engine in miniature, the cost that cashes when the channel is compromised (II.5/II.7). Meanwhile **Otto** first pulls at the unusual, untraceable money. (`PLANT[SMALLFOLK-HOLD-RISK]` · `PLANT[OTTO-MONEY-TRACE]` → II.5.)
 - 😂 *Nobody audits a girl's pin-money hobby.* Sexism = the perfect veil. (because-Westeros.)
-**Gags:** ④ (a 7-y-o thinking in margins/KPIs *and* disciples — same org) · ③ (assay; Wylla's entry takes its first crossed-out climb, *Asset → trusted manager*) · ①.
+**Gags:** ④ (a 7-y-o thinking in margins/KPIs *and* disciples — same org; "discipline" in HR-speak) · ③ (assay; Wylla's entry takes its first crossed-out climb, *Asset → trusted manager*) · ① · the **competent-sidekick / boss-who-doesn't-know-she's-the-boss** gag, working only because its dark twin (the nonchalant intimidation) shows the reader why everyone obeys.
 
 ### II.3 · the world map *(~7–8)* — *the Entertainment-Dao & the empire she doesn't notice she built*
 **Inside (six beats):**
@@ -689,3 +690,13 @@ is **horrified by how blithe Gael is with violence**; and **it has to be funny.*
   (GUARD-1 spend-count unchanged; setting-blind held; Rule-22 helped — these are concrete physical beats).
   The curdle ladder is unchanged (R2 still II.7). check-threads re-verified, no orphans.* **This re-opens
   II.3 only; II.1/II.2/II.4–II.8 stand.**
+
+*__II.2 refinement — Wylla-horror seeded early (FOLDED, 2026-06-12).__ Craft note (principal): the II.2
+"competent-sidekick / boss-who-doesn't-know-she's-the-boss" comedy doesn't land unless the reader also sees
+Gael's teeth in the same chapter — otherwise she reads as a harmless passive source and the enforcer-violence
+of II.3 arrives from nowhere. Fold: II.2 now stages **Gael nonchalantly intimidating an unruly subordinate**
+(a skimming/threatening-to-talk hand) — weightless, no anger, a soft poison-adjacent word — and **Wylla
+horrified** at the blitheness (her first glimpse of the teeth). This (a) makes the Wylla-runs-everything gag
+work — the unseen thing behind her is *why* "ask nicely" is enough; (b) pulls `WYLLA-HORROR` earlier:
+PLANT now **II.2** (first instance) → escalates **II.3** (the enforcer/gangs) → FIRE **III.5**. GUARD-1 clean
+(intimidation, no kill — the first death she means is still II.7); curdle ladder unchanged; check-threads PASS.*

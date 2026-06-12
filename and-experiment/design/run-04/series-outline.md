@@ -143,11 +143,15 @@ none of it). Only Alicent reads it true: the display feeds the reverence she's b
 and social cover, the **smallfolk chambermaids** the market-facing hands (the "clever commoner" buyers think
 they deal with). It prints money. To Gael it isn't a business — it's her **sect's mortal branch:** Wylla her
 first junior-sister / inner disciple (and confidant), the chambermaids outer-disciple mortals beneath her
-notice. Her II.1 cover does the hiding (nobody connects the paraded jewel / book-recluse to the coin), the
-bestiary entry takes its first crossed-out climb (*Asset → trusted manager*), and — unseen — the structure
-parks all the exposure on the **chambermaids** while Otto first pulls at the unusual, untraceable money.
-**Register:** SPIKE. **Rung:** off-ladder.
-**Plants:** PLANT[STARTUP] · PLANT[PAST-LIFE-COVER] · PLANT[PROFIT-CYCLE] · PLANT[TRIPLE-BLIND] · PLANT[CHAMBERMAID-HANDS] · PLANT[SMALLFOLK-HOLD-RISK] · PLANT[OTTO-MONEY-TRACE]
+notice. When an **unruly subordinate** appears (a hand skimming, or one who's guessed the source and means to
+talk), Gael **handles it with weightless nonchalance** — a quiet word, a soft poison-adjacent threat, no
+anger — and **Wylla, who thought this a child's pin-money hobby, is horrified** at how blithe she is (the
+first glimpse of the teeth; also *why* a seven-year-old's maid is obeyed — the unseen thing behind her makes
+"ask nicely" enough). Her II.1 cover does the hiding (nobody connects the paraded jewel / book-recluse to the
+coin), the bestiary entry takes its first crossed-out climb (*Asset → trusted manager*), and — unseen — the
+structure parks all the exposure on the **chambermaids** while Otto first pulls at the unusual, untraceable
+money. **Register:** SPIKE. **Rung:** off-ladder.
+**Plants:** PLANT[STARTUP] · PLANT[PAST-LIFE-COVER] · PLANT[PROFIT-CYCLE] · PLANT[TRIPLE-BLIND] · PLANT[CHAMBERMAID-HANDS] · PLANT[WYLLA-HORROR] · PLANT[SMALLFOLK-HOLD-RISK] · PLANT[OTTO-MONEY-TRACE]
 **Fires:** FIRE[HEIST-METHOD]
 
 ### II.3 · the world map *(~7–8)* — the Entertainment-Dao & the empire she doesn't notice she built

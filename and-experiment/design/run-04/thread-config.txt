@@ -32,4 +32,4 @@ PLANT-ONLY SEED-VAULT-RAID              # run-04 II.3 (casino-arc fold): she rob
 
 # --- casino-arc discrete plant->fire (1:1; declared because the fire lands in a later book) ---
 # UNSEEN-ENFORCER : PLANT II.3 (Gael sneaks out to back the maid — a lone maid won't be taken seriously) -> FIRE III.2 (underworld outings escalate to citywide ship-runs)
-# WYLLA-HORROR    : PLANT II.3 (Wylla horrified by Gael's blithe violence; conversion seed)              -> FIRE III.5 (metabolized into faith alongside WYLLA-CONVERSION)
+# WYLLA-HORROR    : PLANT II.2 (first glimpse — Gael nonchalantly intimidates an unruly subordinate) -> escalates II.3 (the enforcer/gangs) -> FIRE III.5 (metabolized into faith alongside WYLLA-CONVERSION)
