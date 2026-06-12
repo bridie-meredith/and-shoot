@@ -2970,3 +2970,30 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-06-12-hygiene-001
+      created_at: 2026-06-12T00:00:00Z
+      created_by: "artur hygiene sweep (staff/admin/improvement-loop/hygiene.ledger.md)"
+      label: proto-lines-duplicate-b01c19
+      target:
+        command: artur-cleanup
+        scope: "active-project/theater/proto-lines/"
+        phase: null
+      severity: SOFT
+      description: |
+        EXACT DUPLICATE in active-project/theater/proto-lines/. Two files with identical
+        content (39 lines; diff-empty):
+          - b01-c19.md  (canonical naming: hyphens, consistent with b01-c18.md + b01-c20.md)
+          - b01c19.md   (non-canonical: no hyphens; inconsistent with all other proto-line files)
+        The non-canonical b01c19.md appears to be an accidental second emit (and-experiment
+        authoring path on later chapters). No unique content is at risk. Resolution: delete
+        b01c19.md, retain b01-c19.md. Cannot delete without surfacing first per hygiene rules.
+        Routing: oskar to greenlight deletion, then artur or manual cleanup.
+      context_refs:
+        - active-project/theater/proto-lines/b01-c19.md
+        - active-project/theater/proto-lines/b01c19.md
+        - staff/admin/improvement-loop/hygiene.ledger.md  # Run 2026-06-12 MEDIUM-2
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
