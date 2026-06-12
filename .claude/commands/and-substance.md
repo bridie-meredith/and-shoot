@@ -184,6 +184,7 @@ Phase 4 at series level is where the signature itself is born. The 1–9 archety
   - Writes `one_means` / `five_means` / `nine_means` anchors calibrated to the story-world.
   - Drafts cost-ledger entries (gain ↔ cost pairings) and antagonist-pressure entries.
   - Drafts `chunk_targets` (defaults from `design/substance/delta-targets.md`, may be tuned per project).
+  - Declares `readability_floor` — a non-negotiable minimum the signature's prose register MUST coexist with (**CLAUDE.md Rule 22 / PROP-0050**). Minimum fields: `concrete_svo_ratio` (default `>= 0.6`) and `naive_follow` (`required`). A signature satisfiable by register optimization alone (no followability/concreteness floor) is INCOMPLETE — the screen-writer must include this field before writing the draft to disk.
 
   Writes draft to `staff/showrunner/signature-draft.md` (full YAML).
 
@@ -197,6 +198,8 @@ Phase 4 at series level is where the signature itself is born. The 1–9 archety
   Edit the YAML in place. Add/remove axes, adjust ranks, rewrite cost-ledger entries.
   When ready, type `accept`. Type `redraft` to ask the screen-writer for a fresh proposal.
   ```
+
+  **Pre-surface validation (SIGNATURE CONSTRAINT FENCE — CLAUDE.md Rule 22 / PROP-0050).** Before surfacing the edit prompt, read `staff/showrunner/signature-draft.md` and verify `readability_floor` is present and non-empty. If absent or empty: do NOT surface the edit prompt; dispatch the screen-writer with feedback "signature missing `readability_floor` — add `concrete_svo_ratio >= 0.6` + `naive_follow: required` (or a tighter project-specific floor) before this draft is ready for user edit." Re-write the draft after the addition, then proceed. This check fires on every `redraft` iteration, not only the first.
 
 - **Step 4c — Persist on accept.** Edited YAML moves from `signature-draft.md` to `series.substance.*` in memory. Phase 5 review runs against the accepted signature. **NOTE:** `series.substance.actor_baselines[]` (per-actor positional grid, dense 8×9 matrix or similar per `schemas/showrunner-memory.schema.md`) is NOT authored at this step — the cast roster doesn't exist yet (cast is provisioned by `/and-cast` after `/and-substance series`). `actor_baselines[]` is authored later: see Step 4d below for the post-cast pass.
 
