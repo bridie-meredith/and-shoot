@@ -2970,3 +2970,140 @@ parking_lot:
       resolved_at: null
       resolved_by: null
       resolution_note: null
+
+    - id: pl-2026-06-12-pipeline-001
+      created_at: 2026-06-12T12:15:00Z
+      created_by: "improvement-loop/test lens-a (/and-review pipeline; STRUCT-025 Phase 4 carryover)"
+      target:
+        command: /and-facets
+        scope: "*"
+        phase: Phase 4
+      severity: HARD
+      description: |
+        STRUCT-025 (pipeline 2026-06-12): and-facets.md Phase 4 RUBRIC-FIDELITY source enumeration
+        (approx line 333) lists `rubric-exposition.md` as one of 10 rubric sources for the AP-SCAN.
+        That file does NOT exist at design/shoot-v2/. DEC-0111 de-referenced the dead pointer from
+        Phase 1 item 10, but Phase 4 was NOT updated. Any auditor dispatch using this source list
+        will attempt to read a non-existent file, producing an incomplete RUBRIC-FIDELITY scan
+        (REJECT rules from that rubric will be missing). Fix: remove `rubric-exposition.md` from
+        the Phase 4 source enumeration (or annotate as "not yet authored; skip until b02-activation"
+        consistent with pl-2026-06-07-pipeline-001's resolution direction). One-line edit to
+        and-facets.md. Does NOT require authoring rubric-exposition.md now.
+      context_refs:
+        - active-project/staff/reviews/pipeline-20260612T121301Z.md  # STRUCT-025-STATUS
+        - .claude/commands/and-facets.md  # Phase 4 RUBRIC-FIDELITY source enumeration
+        - active-project/staff/reviews/pipeline-legs23-20260607T010305Z.md  # original STRUCT-025
+        - staff/admin/decisions.md  # DEC-0111 (Phase 1 partial fix)
+      resolution_suggestion: "edit and-facets.md Phase 4 RUBRIC-FIDELITY source enumeration: remove 'rubric-exposition.md' from the named-rubric list; append a parenthetical '(rubric-exposition.md not yet authored; omit until b02-activation per pl-2026-06-07-pipeline-001)'; then stamp this item resolved"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-12-pipeline-002
+      created_at: 2026-06-12T12:15:00Z
+      created_by: "improvement-loop/test lens-a (/and-review pipeline; STRUCT-013 carryover)"
+      target:
+        command: /and-review
+        scope: "pipeline"
+        phase: null
+      severity: SOFT
+      description: |
+        STRUCT-013 (pipeline 2026-06-12): rubric-dialogue.md lives at
+        staff/dialogue-writer/rubric-dialogue.md — outside the and-review.md facets-subcommand
+        glob (design/shoot-v2/rubric-*.md). Additionally, and-facets.md Phase 4 RUBRIC-FIDELITY
+        source enumeration names rubric-dialogue.md as one of its 10 sources; the auditor's read
+        will succeed only if the brief resolves the actual path. Drift: two surfaces (and-review.md
+        glob + and-facets.md Phase 4 source list) assume rubric-dialogue.md is co-located with
+        the other 9 rubrics under design/shoot-v2/, but it is not. Resolution options: (a) move
+        rubric-dialogue.md to design/shoot-v2/ to match the glob, (b) extend the and-review.md
+        facets glob to also cover staff/dialogue-writer/rubric-*.md, or (c) update and-facets.md
+        Phase 4 source list with the explicit path. No runtime failure today (dialogue rubric is
+        read by the auditor via direct path; the mismatch only affects /and-review facets leg).
+      context_refs:
+        - active-project/staff/reviews/pipeline-20260612T121301Z.md  # STRUCT-013-STATUS
+        - .claude/commands/and-review.md  # facets subcommand glob (approx line 164)
+        - .claude/commands/and-facets.md  # Phase 4 RUBRIC-FIDELITY source list
+        - staff/dialogue-writer/rubric-dialogue.md  # actual file location
+      resolution_suggestion: "move rubric-dialogue.md to design/shoot-v2/rubric-dialogue.md (simplest; matches glob + the 9 peers); update any direct path references in and-facets.md if needed; confirm and-review.md facets subcommand now discovers it"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-12-pipeline-003
+      created_at: 2026-06-12T12:15:00Z
+      created_by: "improvement-loop/test lens-a (/and-review pipeline; STRUCT-022 carryover)"
+      target:
+        command: /and-review
+        scope: "pipeline"
+        phase: null
+      severity: SOFT
+      description: |
+        STRUCT-022 (pipeline 2026-06-12): design/shoot-v2/rubric-feeling.md line 239 contains a
+        stale "Schema edit (caveat-pre-ship):" notice flagging that schemas/facet.schema.md §feeling
+        would drop the `feels <feeling>` field when Phase 5 facet files shipped. The schema has
+        already shipped without that field. The caveat-pre-ship notice is now stale and will mislead
+        any agent reading the rubric about the current schema state. One-line delete or replace.
+      context_refs:
+        - active-project/staff/reviews/pipeline-20260612T121301Z.md  # STRUCT-022-STATUS
+        - design/shoot-v2/rubric-feeling.md  # line 239
+        - schemas/facet.schema.md  # §feeling (shipped without `feels` field — current authority)
+      resolution_suggestion: "delete or replace the stale caveat-pre-ship notice at rubric-feeling.md line 239; replace with a past-tense note ('Schema edit shipped: facet.schema.md §feeling drops `feels <feeling>`; rubric reflects current shipped state') or remove entirely"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-12-pipeline-004
+      created_at: 2026-06-12T12:15:00Z
+      created_by: "improvement-loop/test lens-a (/and-review pipeline; STRUCT-024 carryover)"
+      target:
+        command: /and-review
+        scope: "pipeline"
+        phase: null
+      severity: SOFT
+      description: |
+        STRUCT-024 (pipeline 2026-06-12): design/shoot-v2/rubric-memory-flags.md has a sparsity
+        inconsistency. Line 166 states "The file fires on 1–5% of bones for chapter-length corpora"
+        while line 225 states "Sparsity. 5–12% of bones fire." and-facets.md Phase 4 FREQUENCY-BAND
+        uses "memory 5-12%" as the operative gate, making the 5-12% range the authoritative number.
+        The 1-5% figure at line 166 is the outlier and will misdirect any author reading the rubric's
+        general prose. One-line fix: change "1–5%" to "5–12%" at line 166 to match the gate and line 225.
+      context_refs:
+        - active-project/staff/reviews/pipeline-20260612T121301Z.md  # STRUCT-024-STATUS
+        - design/shoot-v2/rubric-memory-flags.md  # line 166 (1-5%), line 225 (5-12%)
+        - .claude/commands/and-facets.md  # Phase 4 FREQUENCY-BAND "memory 5-12%" (operative gate)
+      resolution_suggestion: "edit rubric-memory-flags.md line 166: change '1–5%' to '5–12%' to match Phase 4 FREQUENCY-BAND gate and line 225; one-line fix"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
+
+    - id: pl-2026-06-12-pipeline-005
+      created_at: 2026-06-12T12:15:00Z
+      created_by: "improvement-loop/test lens-a (/and-review pipeline; STRUCT-027 carryover)"
+      target:
+        command: /and-review
+        scope: "pipeline"
+        phase: null
+      severity: SOFT
+      description: |
+        STRUCT-027 (pipeline 2026-06-12): and-facets.md Phase 1 (approx line 154) instructs the
+        exposition author: "Where pressure-signal is needed, the per-chapter substance_delta from
+        showrunner memory is the substitute." But substance_delta is a per-bone field in showrunner
+        memory — not a pressure-signal surface. The canonical pressure-signal surface under the
+        substance overhaul is the scene-map facet file (theater/facets/scene-map-<book>-<chapter>.md),
+        which carries `rhythm-shape` zones and `peak-bones[]` arrays. The instruction should route
+        to the scene-map, not to substance_delta. Moderate authoring impact: an exposition author
+        following this line would pull pressure-signal from memory instead of the co-emitted scene-map.
+      context_refs:
+        - active-project/staff/reviews/pipeline-20260612T121301Z.md  # STRUCT-027-STATUS
+        - .claude/commands/and-facets.md  # Phase 1 approx line 154 (substance_delta reference)
+        - schemas/scene-map.schema.md  # rhythm-shape + peak-bones[] (pressure-signal surface)
+        - schemas/showrunner-memory.schema.md  # substance_delta location (per-bone, memory-only)
+      resolution_suggestion: "edit and-facets.md Phase 1 line ~154: replace 'the per-chapter substance_delta from showrunner memory' with 'the co-emitted scene-map facet (theater/facets/scene-map-<book>-<chapter>.md), specifically the rhythm-shape zones and peak-bones[] array' — this is the correct pressure-signal surface under the substance overhaul"
+      status: open
+      resolved_at: null
+      resolved_by: null
+      resolution_note: null
