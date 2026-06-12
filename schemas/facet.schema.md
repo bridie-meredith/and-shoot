@@ -177,7 +177,7 @@ Vibes are permanent stickers — a vibe added in s01e01 persists to s01e02+ unle
 Audience-modeled context — the reader-gap content. For each thing a fresh reader cannot reasonably be expected to know on a cold read (Westeros-specific roles like `reeve` / `maester` / `Watch`; series-specific objects like `the log` / `the count`; pre-story circumstances like the resurrection and family acceptance), an exposition entry attaches a brief gloss to a specific anchor with a directive on how the stitcher should render it.
 
 ```
-<id> @<anchor> <key>: <gloss-text> | scope: <scope-kind> | renders-as: <position> | sources: <list> | licensed-by: <list>
+<id> @<anchor> <key>: <gloss-text> | scope: <scope-kind> | renders-as: <position> | sources: <list> | licensed-by: <list> | surface: <surface-kind>
 ```
 
 - **`@<anchor>`** — proto-line anchor where the gloss best lands. For episode-open scope, use `@0` (synthetic anchor; renders pre-body). For first-mention scope, use the proto-line ID where the term/object first appears in the rendered prose.
@@ -201,6 +201,10 @@ Audience-modeled context — the reader-gap content. For each thing a fresh read
   - `scene-bridge` — micro-orientation sentence at scene-open (≤15 words).
 - **`sources: <list>`** — comma-separated graph sources the gloss content is derived from (series-plan paths, world-build cards, condition cards, character cards, prior facets). Every claim in `<gloss-text>` must trace to at least one source. Audit-able.
 - **`licensed-by: <list>`** — comma-separated audience-model justifications. At minimum one persona-card slug + the gap-claim ("cape-fic-doesnt-know-westerosi-feudal-roles", "worm-canon-doesnt-know-flea-bottom-geography"). The exposition-author's reasoning surface.
+- **`surface: <surface-kind>`** — (PROP-0004 / DEC-0014; required at authoring, enforced at audit) Controls whether the stitcher folds the entry inline as prose or consults it as background context only. Values:
+  - `reference` — entry is NOT rendered inline; stitcher and facet authors consult it for world-grounding (stake-framing, term disambiguation, character interiority) but it produces no inline prose. **Default when field is absent; treat-as-reference for legacy pre-PROP-0004 entries.** Does NOT count against the per-chapter render cap.
+  - `render` — entry folds into prose at its `@<anchor>` per the `renders-as` directive. Counts against the per-chapter render cap (≤3 `render`+`both` entries per chapter, excluding context-ledger-licensed exceptions). A `surface: render` entry promoted by a `/and-facets` Phase 3 context-ledger license MUST carry a `licensed-context-exception: ctx-<NNN>` token that resolves in the chapter's context-ledger.
+  - `both` — entry folds into prose AND is available as reference context. Counts against the render cap. Reserved for terms the stitcher must both gloss and carry forward in subsequent phase authoring.
 
 **Author:** `exposition-author` — a dedicated audience-modeled subagent that loads the active audience persona cards (`active-project/audience/`) and the series/world-build sources, then asks per-anchor: "would the union of these audience personas know what X is on cold read?" If no, an exposition entry is authored.
 
@@ -227,9 +231,9 @@ When scene-orient fires, the entry is brief (≤15 words) and emits as `renders-
 
 **Audit-able.** The auditor's CONSTRAINT class scans each `<gloss-text>` against the `<sources>` list — any claim not derivable from sources is fault. AP-SCAN class scans for invented plot content (exposition is restatement of graph-resident facts, not new content). FREQUENCY-BAND validates the per-episode caps.
 
-**Renders at Stitcher Phase 1 fold-in.** The stitcher reads exposition entries at Phase 1 alongside the lens facets. `scope: episode-open-*` entries are pulled by Phase 0.6 and rendered as the interval-bridge. `scope: first-mention-*` entries fold in at their `@<anchor>` per the `renders-as` directive. `scope: scene-open-orient` entries render as the scene's opening micro-bridge. Phase 7 evaluates exposition prose under Q1-Q9 like any other rendered content; the audience-model upstream is the primary defense against bad glosses.
+**Renders at Stitcher Phase 1 fold-in (surface-aware, PROP-0004 / DEC-0014).** The stitcher reads exposition entries at Phase 1 alongside the lens facets. Only entries with `surface: render` (or `surface: both`) enter the inline render pool — `scope: episode-open-*` entries fold into the preamble; `scope: first-mention-*` entries fold at their `@<anchor>` per `renders-as`; `scope: scene-open-orient` entries render as scene-opening micro-bridges. Entries with `surface: reference` (the default) are loaded as background context — provided to Phase 1 fork dispatches as world-grounding notes but NOT rendered as prose inline. Phase 7 evaluates exposition prose under Q1-Q9 like any other rendered content; the audience-model upstream is the primary defense against bad glosses.
 
-(Schema added 2026-05-12. Replaces stitch-profile.schema.md's `interval-bridge:` block and the project-profile `first-mention-glosses:` ad-hoc list; both subsumed by upstream-authored exposition facets.)
+(Schema added 2026-05-12. `surface:` field added 2026-06-12 per PROP-0004 / DEC-0014. Replaces stitch-profile.schema.md's `interval-bridge:` block and the project-profile `first-mention-glosses:` ad-hoc list; both subsumed by upstream-authored exposition facets.)
 
 ---
 

@@ -40,6 +40,9 @@ Either handled by other facets or obvious from context:
 
 ## Form discipline
 
+- **Surface-field required (PROP-0004 / DEC-0014) (HARD).** Every exposition entry MUST declare an explicit `surface:` field. Absence is treated as `surface: reference` at authoring time but flagged HARD at the Phase 4 auditor scan. The field MUST appear on every entry, including `episode-open-*` and `scene-open-orient` entries (which are virtually always `surface: render`; the field is still required).
+- **Per-chapter render cap (PROP-0004) (HARD).** The total count of entries with `surface: render` + `surface: both` in a single chapter MUST NOT exceed 3. Entries carrying a `licensed-context-exception: ctx-<NNN>` token (context-ledger-licensed orientation adds promoted by `/and-facets` Phase 3) are EXEMPT from this cap. All other entries beyond the cap MUST use `surface: reference`. Author entries defensively — prefer `surface: reference` and only promote to `surface: render` when the entry satisfies the audience-gap test AND no lens facet already carries the context.
+- **Reference-only is the default.** When in doubt, author the entry as `surface: reference`. The stitcher and facet authors consult reference entries for world-grounding regardless; the absence of inline prose is not information loss. The inline em-dash fold-in that ablation evidence showed crushes pacing is off by default.
 - **Word caps:**
   - `first-mention-*` glosses: ≤30 words.
   - `episode-open-preamble`: ≤80 words.
@@ -165,6 +168,8 @@ R2 also resolves any `provisional-anchor` notes from R1 (e.g. R1 says "@first-me
 
 ## Audit classes (Phase 5 hooks)
 
+- **CONSTRAINT — surface-field-required (PROP-0004).** Every exposition entry must carry an explicit `surface:` field with a valid value (`render` | `reference` | `both`). Missing or invalid `surface:` → HARD (enumerate all offending entries).
+- **FREQUENCY-BAND — surface:render cap (PROP-0004).** Count entries where `surface:` is `render` or `both`. Exclude entries carrying a `licensed-context-exception:` token whose id resolves in the chapter's context-ledger. Remaining count > 3 → HARD. Count = 0 is acceptable (reference-only chapter). A dangling `licensed-context-exception:` token (id not in context-ledger) → HARD `FAULT-CONTEXT-LICENSE-DANGLING`.
 - **CONSTRAINT — source-traceability.** Every claim in `<gloss-text>` must trace to a source in `<sources>`. The auditor's CONSTRAINT scan extracts each substantive claim and checks at least one source resolves to actual graph content matching the claim. Unresolvable claim → HARD.
 - **CONSTRAINT — license-completeness.** Every entry's `<licensed-by>` field must name ≥1 persona-card slug + a specific gap-claim. Missing/malformed → SIGNAL.
 - **FREQUENCY-BAND — per-episode caps.** Episode-open ≤4 entries; first-mention ≤12; scene-open-orient ≤scene count; sparsity 1-5%. Out-of-band → SIGNAL.
