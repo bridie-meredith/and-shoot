@@ -47,6 +47,26 @@
 # septa = rival-sect + hidden-master humility-trial -> SEPTA-ENDORSEMENT) · II.6 supply-choke now caused by
 # clampdown + compromised channel. Leitmotif R-02 locked in comedy-register card (+ three-frame calibration).
 # Otto vault-target default = crime-syndicate (reversible). See intake/spine.md amendment foot for the full record.
+#
+# SESSION 2026-06-13 — BOOK II BACK-HALF REWORK: DIRECTION AGREED, NOT YET FOLDED (smoothing in progress).
+# Principal redirected II.2-II.8; captured here so the canonical spine/outline stay untouched until we smooth + fold.
+# NEW SHAPE: II.2 founds the GAMBLING/ENTERTAINMENT DAO (cultivation-nerd frame; soap/chemistry premise RETIRED —
+#   she remembers cultivation novels, not science; doped-beast pit + house-math + still-room alchemy stand in) ·
+# II.3 = the BETROTHAL (moved up from II.4, to the Starks) + casino-establishment via sneaking-out/enforcer violence ·
+# II.4 = the "talentless" insult -> sudden violence (MAIM, not kill) + Otto maneuvers, uses it to cut the allowance ·
+# II.5 = Otto pushes harder (motive: hurting Gael pleases Baelon/Viserys) + bestiary leak (Marra) + clampdown tightens ·
+# II.6 = empire pulls in real cultivation resources + Wylla's FIRST body-tempering via an alchemical mix (dramatic/
+#   dangerous; NO qi-spend so GUARD-1 stays clean; the old "source reveal / empire was unnecessary" beat CUT) ·
+# II.7 = Otto leverages the maid's exposure into a vise (early forceful wedding); Gael hits next phase, clocks that
+#   Targaryens aren't strong but for dragons, pushes into SHIPPING + moves to order the finest ship; maid-squeeze obstructs ·
+# II.8 = the maid bodily threatened -> Gael & Wylla DISAPPEAR the (Otto-faction) suitor + sycophants (Gael kills,
+#   Wylla complicit/body-disposal — her first kill BY HER OWN HAND stays III.6); ship ORDERED; Otto melodramatically
+#   probes the corpseless disappearance (-> Book III manhunt). Retitle II.8 -> "the disappearance".
+# DECISIONS (defaults accepted by principal): (1) II.4 maim not kill; (2) R-ladder R2 -> II.8 (first MEANT kill);
+# (3) Wylla = complicity at II.8, own-hand kill stays III.6; (4) II.6 tempering = no-spend alchemical mix, III.5 stays
+# the apex give (GUARD-1 intact); (5) II.8 suitor = Otto-faction man, NOT the Stark heir (keeps "vanish clean").
+# STATUS: spine.md + run-04/series-outline.md + thread-config.txt still hold the OLD II.2-II.8 + R2@II.7 — to be folded
+# + check-threads re-run on the next Book-II pass. Verify III.5/III.6 (tempering apex; Wylla's own-hand kill) still consistent at fold time.
 
 project:
   brief: >
