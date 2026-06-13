@@ -77,8 +77,11 @@ R2 @ II.8 → **R3 @ III.3** → **apex @ III.6** (the tempered maid kills by he
 1. **(CLOCK × SHIP)** The wedding party arrives to collect the bride exactly as the hull comes ready — collection and launch
    collide at the water.
 2. **(OTTO)** His one correct deduction puts his man at the dock to intercept; he wins every move and loses the game.
-3. **(GANG/FACTOR loose end)** The pursuer at the waterline is the last loose end of the underworld she built — and **the
-   tempered maid kills him by her own hand** (the apex; Gael's gift made her able). They sail.
+3. **(OTTO × GANG/FACTOR loose end)** The man at the waterline is **Otto's** — but he is there because a loose end of the
+   underworld she built (a rival she once spared / a removed factor's vengeful associate) **sold the Quiet Coin's movements
+   into the investigation.** The front she could never fully close becomes Otto's eyes; his instrument is who reaches the dock.
+   **The tempered maid kills the interceptor by her own hand** (the apex; Gael's gift made her able). Otto wins every move and
+   loses the game. They sail.
 
 > **LOCKED BEAT — the absent-arrival (the one crack).** On the deck, the continent sliding back, Gael reaches for the
 > cultivation-gloss to *file* leaving her mother — the line that should arrive (*"Mother: an attachment severed; the dao
@@ -107,7 +110,7 @@ the **absent-arrival** the last note we hold. Door left open for the parked Danc
 Every chapter braids exactly three; the braid tightens III.1 → III.6; R-ladder R3@III.3 → apex@III.6 (R2@II.8 per Book II rework).
 
 ## Open smoothing items (for the eventual fold)
-- **III.6 pursuer identity:** Otto's man / a betrayed Quint-ally / a rival-sect enforcer — currently "last loose end of the underworld she built" (overlaps all three; pin one at fold).
+- ~~**III.6 pursuer identity**~~ → **RESOLVED (2026-06-13):** the interceptor is **Otto's man**, placed at the dock by an underworld loose end (a spared rival / a removed factor's vengeful associate) who sold the Quiet Coin's movements into Otto's investigation — braids OTTO + GANG/FACTOR + CLOCK at the apex; preserves the canonical "his man is the one Wylla kills."
 - **What Otto actually *deduces*** (III.3→III.4) — the exact chain from the "natural" death to Wylla; keep it one-fact-short of the truth (he never reaches "reincarnated cultivator").
 - **Token reconciliation** at fold: REAGENT-MAP, GHOST-OF-RED-KEEP, QUIET-COIN, the curdle-ladder block (R2→II.8), and the stray III.1 "soap-money" line (delete — funding is dice-coin) all need updating in spine + thread-config.
 - **Absent-arrival** now LOCKED — carry it into the spine fold as a III.6 sub-beat (decision recorded, not open).
