@@ -321,47 +321,60 @@ The engine is the **asymmetry, sealed — and Alicent is the seal.** The observe
 ## BOOK III — *the narrow escape* · age ~9–11 · the Keep → the ship · heist caper, loud finish
 *Scale: the world / the sea. Lock III: the escape. Cost: R3 → the apex.*
 
-### III.1 · the commission
-**Inside:** the ship is ordered through three layers of paper, designed from her room off the reagent map, **paid out of the off-books dice-coin** (the soap-money can't be seen buying a getaway hull). The shipwright quotes *years.* She runs it against the betrothal clock. Tight.
-**Reverse-angle:**
-- 🤨 *The shipwright's agent:* a phantom buyer commissions a custom vessel through too many intermediaries — delighted by coin that clears, incurious about whose it is. (because-Westeros: nobody imagines a child.)
-**Gags:** ④ (the long con as a procurement project).
+### III.1 · the commission — `[SHIP · CLOCK · OTTO]`
+**Braid (three events):** *(SHIP)* she orders the hull through three layers of paper, designed off the reagent map, paid from off-books dice-coin; the shipwright quotes *years.* · *(CLOCK)* Otto's II.7 vise has set the wedding early — the Starks send word, a date forms — and years-of-build against months-to-bride is murder. · *(OTTO)* his II.8 manhunt is live, so she builds the exit **under an active investigation,** serenely misreading the inquisitor as an orthodox sect hunting the demonic Quiet Coin — and resolving, gravely, to *help him.*
+**New trope — artifact-refining / natal-treasure commission.** She treats the shipwright as a **grandmaster artificer** she's commissioning a transcendent **spirit-vessel** from.
+**New misunderstanding:** the *years* don't faze her — a high-grade treasure of course needs a long forging-cycle in the furnace; she's serenely patient about a timeline that should terrify her, and only the betrothal clock makes it tight.
+**Reverse-angle:** 🤨 *the shipwright's agent* — a phantom buyer through too many intermediaries; coin that clears, incurious whose (because-Westeros: nobody imagines a child).
+**Gags:** ④ (the long con as a procurement project) · the artificer-misread.
+**Characters:** Gael · Wylla (places the order, fronts the paper) · the shipwright's agent (role-mark) · a Braavosi banker / coin cut-out (role-mark) · Otto (offstage — the manhunt) · Jaehaerys + the Starks (offstage — the date forms).
+**Set pieces:** Gael's chamber (the reagent-map planning room) · the harbor / a shipwright's counting-house (via intermediary) · the reagent map (prop) · the off-books dice-coin account (prop) · the Stark betrothal letter (prop — the CLOCK).
 
-### III.2 · the excursions
-**Inside:** the excursions go **routine and citywide.** She has slipped out before — backing the maid against the racket's rivals all through Book II — but those were short, surgical, underworld-only; now she's **out constantly and openly-to-the-night,** the maid covering ("the princess is meditating and must not be disturbed"), as the ship-build pulls her to the shipyard, the harbor, the markets, made real. The difference is scale and stakes: no longer the unseen hand on her own turf, but a small figure all over the city against the betrothal clock. Every outing bets the maid's neck.
-**Reverse-angle:**
-- 😱 *The watch:* sightings of a small swift figure on the roofs → a "ghost of the Red Keep" legend; mothers warn children.
-- 🤨 They can't catch it, can't map its routes, add patrols, achieve nothing.
-- 😂 The "ghost" is *great for discipline* — the watch is sharper than it's been in years; the captain is commended. (Westeros benefits from being haunted by a truant princess.)
-**Gags:** ⑤ (the meditation alibi) · the Cassandra witness reprised (a guard who *did* see her, ignored).
+### III.2 · the excursions — `[SHIP · GANG · FACTOR]`
+**Braid (three events):** *(SHIP)* the build pulls her citywide — shipyard, harbor, timber-yards — and the night-roof traffic births the "ghost of the Red Keep"; Wylla covers ("at her meditations, do not disturb"). · *(GANG)* rivals sense the Quiet Coin distracted and overextended and test the house she can't fully mind — she answers a few, fast and quiet, but can't be everywhere. · *(FACTOR)* the ship-money has swollen past safe trust; a pit-factor starts skimming and dreaming bigger (Quint seeded).
+**New trope — the night-roaming expert / "the great hermit hides in the city" (大隐于市); the light-body art.**
+**New misunderstanding:** she reads the watch's *ghost* legend as proof her **qinggong / light-body art has matured** — quietly pleased the mortals have begun telling stories of the unseen expert in their midst (every master earns a city-legend). The manhunt-risk reads to her as flattering reputation.
+**Reverse-angle:** 😱 the watch invents the "ghost of the Red Keep" (mothers warn children) · 🤨 can't catch it, can't map it, add patrols, achieve nothing · 😂 the haunting *sharpens* the watch — the captain commended (Westeros benefits from being haunted by a truant princess).
+**Gags:** ⑤ (the meditation alibi) · ① (the ghost-legend does her intimidating) · the Cassandra reprise (a guard who *did* see her, ignored — Hobb) · the city-hermit misread.
+**Characters:** Gael (the ghost) · Wylla (the alibi) · the Watch captain (role-mark) · Hobb (Cassandra) · rival-gang figures (role-marks) · a chafing pit-factor (Quint, seeded) · the smallfolk chambermaids (operators holding the exposure).
+**Set pieces:** the city rooftops (qinggong) · the shipyard / harbor / timber-yards · the dice-dens / gambling hall · Gael's chamber (the meditation alibi) · the Red Keep walls.
 
-### III.3 · the greedy factor
-**Inside:** **Lothar Quint — one of her own pit-factors, grown greedy** — smells the bigger money in the ship-payment chain, can't produce the phantom buyer, and leans on the maid. He has *no idea* he's poking a dragon-eating cultivator child. Gael handles him — **colder than R2.** › **R3, climbing.**
-**Reverse-angle:**
-- 😂 *The factor:* certain he's the smartest man in the room. (He is not the smartest thing within fifty feet of the maid.)
-- 😱 He's "let go"; never seen again; no one can say quite why.
-**Gags:** ④ (he's "offboarded") · ① (her reputation does some of the intimidating).
+### III.3 · the greedy factor — `[FACTOR · GANG · OTTO]` › **R3**
+**Braid (three events):** *(FACTOR)* Lothar Quint, grown greedy, can't produce the phantom buyer behind the ship-money and leans on the maid; Gael removes him — paper, the maester's supply chain, the still-room — **colder than R2,** his death-flag cashing (⑦ *"I'm only doing this for my family"* → *"the account is closed"*). › **R3.** · *(GANG)* Quint's grab cracks the house open and a rival crew pounces; she puts two fires out at once, louder trail than usual. · *(OTTO)* that trail is the lead his manhunt needed — a "natural" death + a gang-flare circling the maid he'd flagged in the bestiary; he draws the line toward Wylla. **Her handling feeds the hunter.**
+**New trope — karmic retribution / cause-and-effect (业); the wayward disciple who courts his own tribulation.**
+**New misunderstanding:** she frames Quint not as a frightened greedy man she's murdering but as a **disciple who turned on the sect and drew down karmic justice** — she is merely the instrument of cause-and-effect, the heavens balancing his greed. (The clean-hands doctrine in cosmic robes.)
+**Reverse-angle:** 😂 *the factor,* certain he's the smartest man in the room (he is not the smartest thing within fifty feet of the maid) · 😱 "let go," never seen again, no one can say why.
+**Gags:** ④ (he's "offboarded") · ① (reputation intimidates) · ⑥ (cleared on a karmic technicality) · ⑦ (the death-flag cashes) · the karma-instrument misread.
+**Characters:** Lothar Quint (FACTOR / R3 target) · Wylla (leaned-on) · Gael (removes him) · a rival crew (GANG) · Otto (gets the lead — offstage, tightening) · Maester Lorren (the supply chain, out-administered) · Quint's dependents (collateral, off-ledger).
+**Set pieces:** the still-room (loc-still-room) · the maester's stores / supply chain (prop) · a counting-house / dice-den (FACTOR–GANG turf) · a bill of exchange (prop) · the bestiary (prop — Otto's earlier flag).
 
-### III.4 · the deadline
-**Inside:** the betrothal accelerates; they're packing her north; the two countdowns cross — the hull isn't ready. She burns her last delay-capital.
-**Reverse-angle:**
-- 😂 *Everyone:* an unkillable superhuman feigns being a sickly waif — and they believe it, because the legend her blankness built says the scholar-princess has "always been delicate." Her cover is a story Westeros wrote for her.
-**Gags:** ⑤ (paying into a practical tool) · ② (stalls on cue).
+### III.4 · the deadline — `[CLOCK · OTTO · SHIP]`
+**Braid (three events):** *(CLOCK)* the wedding accelerates — Jaehaerys is packing her north; she burns her last delay-capital playing the sickly waif too delicate to travel. · *(OTTO)* having drawn his line in III.3, he closes — surveillance peaks, melodramatically certain; he maneuvers to expose her **before the wedding carries her out of reach.** · *(SHIP)* the hull is behind; the two countdowns cross — accelerate the build while stalling the wedding, both maxed.
+**New trope — concealing one's cultivation / playing weak (扮猪吃虎, the pig that eats the tiger).**
+**New misunderstanding:** she congratulates herself on a flawless **hidden-base disguise** — the frail-mortal act so no one detects her power — when the realm believes her delicate only because it already wrote her that way (she fools no one; they were never looking). She also clocks the court as **a sect of soft mortals with a few tamed spirit-beasts (the dragons) for cultivators,** which steels the leaving.
+**Reverse-angle:** 😂 an unkillable superhuman feigns delicacy and they *believe* it because the legend says the scholar-princess was "always delicate" — her cover is a story Westeros wrote for her.
+**Gags:** ⑤ + ② (stalls on cue; the babying weaponized one last time) · the hidden-base misread.
+**Characters:** Jaehaerys (packing her north) · Gael (the waif) · Otto (closes in) · Wylla (cover) · Septa Aldith (piety/illness witness — optional) · the Stark party (approaching — role-marks) · Alicent (offstage — Dragonstone).
+**Set pieces:** the Red Keep interior — her sickbed / chambers (the waif performance) · the shipyard (the behind-schedule hull) · the northbound travel preparations / trousseau (props — the CLOCK) · Maegor's Holdfast.
 
-### III.5 · the tempering
-**Inside:** *the one outward spend.* Runs qi through the maid to make her durable enough for the sea, deadpan-framed as logistics ("an untampered mortal is a liability at sea"). The reader knows exactly what it is. Costs her real cultivation — **she chose to be weaker** for one person. › **the anti-curdle break.**
-**Reverse-angle (the maid is the native):**
-- 😱 Warmth pours into her, a glow under the skin, her body *changes*; she's briefly afraid of what her princess is.
-- 🤨 Afterward she's stronger, sleeps less, no fever touches her — she never asks; some doors you don't open.
-- 😂 Gael calls it "a tonic for the voyage"; the maid accepts it the way you accept a powerful friend's strange gift — graciously, without reading the label.
-**Gags:** ③ (the named entry is the one she spends power on) · ④ ("investing in the asset").
+### III.5 · the tempering — `[the GIVE · SHIP · OTTO/CLOCK = why-now]` › **the anti-curdle break**
+**Braid (three events):** *(the GIVE)* the one outward spend — she runs her own qi into Wylla to make her sea-durable ("an untampered mortal is a liability at sea"); it costs her real cultivation — **she chose to be weaker** for one person (GUARD-1's third and final spend). · *(SHIP)* framed as voyage-prep; the ship days from ready. · *(why-now: OTTO/CLOCK)* the wedding imminent and Otto at the threshold — now-or-never, the rite under the gun.
+**New trope — power-bestowal / dao-transmission rite (灌顶, the master opening a disciple's meridians).**
+**New misunderstanding:** she files the deepest act of love she will ever commit as a **formal master-to-disciple transmission rite** — opening the junior sister's meridians, "investing in the asset" — and entirely misses that she has made the one choice no cultivator's logic permits: to be weaker, for a person. The genre-cover is exactly what lets her do it.
+**Reverse-angle (the maid is the native):** 😱 warmth pours in, a glow under the skin, her body *changes* — briefly afraid of what her princess is · 🤨 afterward stronger, fever-proof, sleeps less — she never asks (some doors you don't open) · 😂 "a tonic for the voyage."
+**Gags:** ③ (the named entry is the one she spends power on) · ④ ("investing in the asset") · the transmission-rite misread. **Irony:** the gift that "saves" Wylla is what makes her able to kill at III.6.
+**Characters:** Gael (the give) · Wylla (tempered — the native POV); a near-two-hander. Offstage pressure: Otto, Jaehaerys / the wedding.
+**Set pieces:** the still-room / a private chamber (the rite — loc-still-room) · the alchemical tempering mix (prop) · the near-ready ship (offstage — SHIP).
 
-### III.6 · the narrow escape
-**Inside:** Lock III, the heist at full scale. It narrows — discovery, a pursuer, an early arrival — and **the tempered maid kills to get them out** (Gael's gift made her able). Surface: a triumphant farce (a child foils a royal betrothal and vanishes by sea on a ship she built). Underneath: the maid boards a killer, and Gael's hands stayed clean only because she put the cost on the girl she loves. › **the apex.**
-**Reverse-angle (the realm's post-mortem):**
-- 🤨 The official account is incoherent; survivors' stories don't agree; quietly filed as an embarrassment no one wants explained.
-- 😂 The realm's final theory: a foreign prince, a god, a conspiracy — *anything* but "she built a boat and left," because a princess with **agency** is the one thing they cannot imagine. (Sexism: the last cheat code.)
-**Gags:** ③ + ④ converge — the named entry "performs to spec"; the kill files under her oldest reagent maxim, *waste nothing, everything has a use.*
+### III.6 · the narrow escape — `[OTTO · CLOCK · GANG/FACTOR loose end]` + **the LOCKED absent-arrival** › **the apex**
+**Braid (three events):** *(CLOCK × SHIP)* the wedding party arrives to collect the bride exactly as the hull comes ready — collection and launch collide at the water. · *(OTTO)* his one correct deduction puts his man at the dock; he wins every move and loses the game. · *(GANG/FACTOR loose end)* the interceptor is **Otto's man,** placed there because a loose end of the underworld she built — a rival she once spared, a removed factor's vengeful associate — **sold the Quiet Coin's movements into the investigation;** the front she could never close becomes Otto's eyes, and **the tempered maid kills the interceptor by her own hand** (Gael's gift made her able). They sail.
+**New trope — severing the red dust / the ascension departure (斩断红尘 · 飞升): the cultivator cuts all mortal ties to leave the lower realm.**
+**New misunderstanding:** she frames the whole escape as serene **transcendence** — severing the mortal dust to rise to a higher world — which is exactly why the absent-arrival lands: the heartless dao says one should feel *nothing* cutting the red dust, and the one tie that won't sever cleanly is the blank where the gloss should be.
+> **LOCKED — the absent-arrival (the one crack).** On the deck, the continent sliding back, Gael reaches for the cultivation-gloss to *file* leaving her mother — *"Mother: an attachment severed; the dao requires —"* — and **it doesn't come.** A blank where the register should be. She doesn't name it; she looks at the water; she goes on. The only sign she'll miss anyone, and she won't let herself know it. (Wylla, beside her, sees her go quiet and doesn't ask.) *(Pulled-forward micro of the Dance-book blank-line device; principal-locked 2026-06-13.)*
+**Reverse-angle (the realm's post-mortem):** 🤨 the official account is incoherent; survivors disagree; filed as an embarrassment no one wants explained · 😂 the final theory — a foreign prince, a god, a conspiracy, *anything* but "she built a boat and left," because a princess with **agency** is the one thing the realm cannot imagine (sexism, the last cheat code). Far at **Dragonstone, Alicent** gets the terminal "what the hell" — her daughter simply *gone* — and never learns she was the shield.
+**Gags:** ③ + ④ converge (the named entry "performs to spec"; the kill files under her oldest maxim, *waste nothing, everything has a use*) · ⑤ (serene-because-leaving misread) · the ascension-departure misread.
+**Characters:** Gael · Wylla (kills by her own hand) · the interceptor — Otto's man (role-mark) · the underworld informant / loose end (role-mark) · the Stark wedding party (role-marks) · Otto (offstage — deduces, loses) · Alicent (offstage, Dragonstone — terminal grief) · the gold cloaks / watch (the manhunt).
+**Set pieces:** the docks / the waterline (the interception + the kill) · the ship (the launch — SHIP payoff) · the deck (the absent-arrival beat) · the harbor at the city's edge · Dragonstone (Alicent, offstage).
 
 ### Epilogue
 Two girls on a ship, the continent behind them, the warm south ahead. Both desires satisfied; one of them now a killer. Freedom or a prettier cage — the reader decides. Door left open for the parked Dance book (her longevity intact).
@@ -369,7 +382,7 @@ Two girls on a ship, the continent behind them, the warm south ahead. Both desir
 ---
 
 ## Curdle ladder (the dark undertow, comedy on top the whole way)
-R0 (I.1 kill) → R1 (I.5 Daemon drain) → R2 (II.7) → R3 (III.3) → **apex (III.6, the maid kills)**, with
+R0 (I.1 kill) → R1 (I.5 Daemon drain) → R2 (II.8, the disappearance) → R3 (III.3) → **apex (III.6, the maid kills)**, with
 **III.5 the tempering** as the giving-break just beneath the peak. *(R4 / the dead-dragon field parked
 for the Dance.)*
 

@@ -69,7 +69,10 @@
 # + check-threads re-run on the next Book-II pass. Verify III.5/III.6 (tempering apex; Wylla's own-hand kill) still consistent at fold time.
 #
 # SESSION 2026-06-13 (cont.) — BOOK III REWORKED to the three-angles/three-events-per-chapter braid; WORKING DRAFT at
-# design/run-04/book-iii-rework.md (NOT yet folded to spine/outline — fold together with Book II in one clean pass).
+# design/run-04/book-iii-rework.md, and FOLDED into spine.md Book III on 2026-06-13 (braid + per-chapter new-trope/
+# new-misunderstanding + characters/set-pieces now canonical; curdle-ladder block updated R2->II.8). STILL OWED: outline
+# (tokenized) Book III + thread-config; the Book II back-half fold; spine.md Book II still has one stale "first meant kill
+# II.7" ref in II.4 (superseded by this note). One clean Book-II+outline pass + check-threads still owed.
 # Five fronts braided 3-per-chapter: SHIP (the escape vessel) · CLOCK (betrothal, Otto-accelerated) · OTTO (the II.8
 # manhunt tightening; she misreads him as an orthodox-sect inquisitor hunting her own phantom Quiet Coin) · FACTOR (greedy
 # pit-factors; Quint = R3 @ III.3) · GANG (rival underworld = "rival sects"). Apex @ III.6 (tempered maid kills by her own

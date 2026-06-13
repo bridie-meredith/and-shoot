@@ -1,8 +1,11 @@
 # Book III — *the narrow escape* — REWORK (three angles / three events per chapter)
 
-**Status:** WORKING DRAFT, smoothing-in-progress (2026-06-13). NOT yet folded into `intake/spine.md`
-or `series-outline.md` — those still hold the old mono-thread Book III. To be folded together with the
-Book II back-half rework (see memory.md header, SESSION 2026-06-13) in one clean pass + check-threads.
+**Status:** ✅ FOLDED into `intake/spine.md` Book III (2026-06-13) — the braid + new-trope/new-misunderstanding +
+characters/set-pieces per chapter are now canonical in spine.md, and the curdle-ladder block updated (R2→II.8).
+This file is retained as the rationale/design doc (the table + open items). STILL PENDING: `series-outline.md`
+(tokenized) Book III + `thread-config.txt` not yet updated, and the **Book II** back-half rework (memory.md header,
+SESSION 2026-06-13) not yet folded — so spine.md Book II still carries one stale "first meant kill II.7" ref in II.4
+(superseded by the memory note; reconcile when Book II folds). One clean Book II+outline pass + check-threads still owed.
 
 **Principal direction (2026-06-13):** "rework all the best stuff in with the three angle / three events
 per chapter," and **LOCK the III.6 absent-arrival beat** (the cultivation-register fails to arrive over
