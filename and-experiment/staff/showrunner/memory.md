@@ -67,6 +67,15 @@
 # the apex give (GUARD-1 intact); (5) II.8 suitor = Otto-faction man, NOT the Stark heir (keeps "vanish clean").
 # STATUS: spine.md + run-04/series-outline.md + thread-config.txt still hold the OLD II.2-II.8 + R2@II.7 — to be folded
 # + check-threads re-run on the next Book-II pass. Verify III.5/III.6 (tempering apex; Wylla's own-hand kill) still consistent at fold time.
+#
+# SESSION 2026-06-13 (cont.) — BOOK III REWORKED to the three-angles/three-events-per-chapter braid; WORKING DRAFT at
+# design/run-04/book-iii-rework.md (NOT yet folded to spine/outline — fold together with Book II in one clean pass).
+# Five fronts braided 3-per-chapter: SHIP (the escape vessel) · CLOCK (betrothal, Otto-accelerated) · OTTO (the II.8
+# manhunt tightening; she misreads him as an orthodox-sect inquisitor hunting her own phantom Quiet Coin) · FACTOR (greedy
+# pit-factors; Quint = R3 @ III.3) · GANG (rival underworld = "rival sects"). Apex @ III.6 (tempered maid kills by her own
+# hand); III.5 = the give (GUARD-1 third spend). DECISION LOCKED: the III.6 ABSENT-ARRIVAL beat — the cultivation-register
+# fails to arrive over her mother (the one crack; she won't let herself know she misses anyone); pulled-forward micro of the
+# Dance-book blank-line device. R-ladder now R2@II.8 -> R3@III.3 -> apex@III.6 (reconcile spine curdle-ladder block at fold).
 
 project:
   brief: >
