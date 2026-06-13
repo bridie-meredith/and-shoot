@@ -65,6 +65,9 @@ If `active-project/` is empty: no project active. Tell the user and ask whether 
 | "cohere" / "check the stretch" / "is the book hanging together" | `/and-cohere b<NN> [<from>-<to>]`. Opt-in cross-chapter loop. |
 | "what's next" / "where are we" | Just print the state summary. Don't act. |
 | "fix this" / "this is wrong" | Read the user's specific concern. Don't just rerun a phase blindly. |
+| "tend" / "maintain" / "do the upkeep" / "run maintenance" / "improve the library/agents/processes" | `/and-tend`. The consolidated improvement routine (defers if a cascade is in flight). Designed to be fired by a scheduled trigger several times a day. |
+| "tune the editor" / "improve the revisor" / "train <agent>" | `/and-forge <agent>`. Training harness; arbiter judges variants. |
+| "retrospective" / "post-mortem" / "what should we tune" / "what's been broken" | Dispatch **ingrid** (retrospective/improvement coordinator) — or `/and-tend` if you want the full cadence sweep. |
 
 ---
 
