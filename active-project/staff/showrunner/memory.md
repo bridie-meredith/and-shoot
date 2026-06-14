@@ -38,6 +38,32 @@
 #     the DEC-0117 beat redistribution; Otto/Daemon AU-seating-vs-rename (standing principal call, does not block).
 # NEXT (principal-steer, mid-session): a per-chapter MC question pass (II.1->II.8, several questions each) was requested — surfacing those.
 #
+# SESSION 2026-06-14 (cont. 2) — BOOK-II PER-CHAPTER PASS FOLDED (resolve-by-choice; same branch). 28 per-chapter MC
+# picks (II.1->II.8) + a 4-item cascade batch, all folded. Headline outcomes:
+# - POV CHANGE (cascade C1): RECURRING WYLLA-POV CAMERA (the convert's-eye arc horror->complicity->faith->killer),
+#   opened II.1. Was "one external interlude (Alicent)." Interlude placements beyond II.1 are a proposed set (refinable).
+# - II.2: TWO raids — crime-syndicate counting-house AND the Faith's coffers (cascade C2: both kept, low-heat,
+#   Faith-ambient guardrail HELD, no inquisitor; she reads the Faith as a rival orthodox sect, no reverence).
+#   The skimmer is CASUALLY MURDERED — OFF-LADDER (cascade C3: casual means casual — Gael doesn't count it, annoyed
+#   only by the mess; onlookers/Wylla recoil; R2@II.8 stays the first kill she MEANS, for Wylla). Hybrid execution.
+# - II.4: insult subject = DANCING; a named/recurring court lady is the near-victim; the Daemon knife glances off her
+#   body-tempering (she never registers the attack).
+# - II.5: Marra turned by SYMPATHETIC MANIPULATION (Otto convinces her it HELPS Gael; she never knows she betrays her);
+#   Otto gets only her reported account. Cascade C5: Gael CLOCKS + SPARES Marra in Bk III -> the III.6 loose-end.
+#   NEW TOKEN MARRA-LEAK (PLANT II.5 -> FIRE III.6).
+# - II.6: tempering mix briefly GOES WRONG; Wylla half-knows, won't ask. II.7: over-dramatic ship declaration + Wylla
+#   facepalm; commission initiated II.7, finalized III.1. II.8: larger party (5+); kill ELIDED; Wylla PASSIVE cover
+#   (knows/silent — active disposal + own-hand kill stay III.6); both suitor + sycophant cash death-flags.
+# - II.1 denunciation concurrent w/ parade + Gael's bored "none of this matters" detachment; II.3 on-page Stark envoy
+#   + on-page Alicent goodbye.
+# FOLDED: validated layer first (series-outline frame/POV + II.1-II.8 + III.6 + ladder gloss + MARRA-LEAK) ->
+#   check-threads PASS, R0-R4 intact (R2=II.8) -> spine bodies + POV/comedy + III.6 -> live sweep (wylla/gael/marra/otto
+#   ltms + marra x2/daemon cards; Marra OQ-CL2 resolved -> CONFIRMED). Dated FOLDED entry at spine tail. GUARD-1
+#   (I.1/I.5/III.5) + setting-blind + Rule-22 all held (II.2 murder + II.8 kill no-qi; II.2 murder + II.4 maim OFF-ladder).
+#   4 commits this batch, each pushed to the working branch; tree clean.
+# OPEN/FLAGGED: the II.4 named lady needs a name + final outcome + downstream role (-> margit / /and-write); the Wylla
+#   interlude placements beyond II.1 (proposed set, refinable); the 6 DEC-0117 re-titles + Otto/Daemon AU-seating (un-raised).
+#
 # REVIEW-WALK STATE (2026-06-11) — Book-II spine review-walk IN PROGRESS (design-level, NOT chapter
 # production). A chapter-by-chapter trope/comedy pass over Book II, folding revisions into the canonical
 # layer (design/run-04/series-outline.md + intake/spine.md + thread-config + warehouse cards). DONE &

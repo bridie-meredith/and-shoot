@@ -940,3 +940,46 @@ chapter re-titles; the **seed-vault target** = a KL crime-syndicate (alts: the F
 the **II.4 insult subject** (embroidery a stand-in — settled at `/and-write`); the **Daemon-knife failure
 mechanism** (settled at `/and-write`); the **DEC-0117 beat redistribution** (founding→II.2, betrothal→II.3,
 allowance-cut→II.4); and the standing **Otto/Daemon AU-seating vs rename** principal call (does not block).*
+
+*__Book-II per-chapter pass — FOLDED (2026-06-14; resolve-by-choice, cont.).__ A second principal-driven pass,
+chapter by chapter (II.1→II.8) through multiple-choice prompts, + a four-item cascade batch. Several of the
+"surviving reversible defaults" above are now **resolved** (seed-vault target, II.4 subject, knife mechanism).
+The picks:*
+- ***II.1:** denunciation concurrent with the parade; the confidant hinge is the **first Wylla-POV interlude;**
+  the parade played through Gael's bored detachment ("none of this matters — I bail before the protagonist
+  arrives, and he slaughters them all anyway").*
+- ***II.2:** **two raids** — a crime-syndicate counting-house (clears competition, untraceable) **and the
+  Faith's coffers** (a rival *orthodox* sect in her lens — no reverence; **C2:** both kept, both low-heat, the
+  *Faith-ambient guardrail holds*, no inquisitor). The skimmer is **casually murdered — OFF-LADDER** (**C3:**
+  casual *means* casual — Gael doesn't count it, is annoyed only by the mess; the onlookers/Wylla recoil; R2@II.8
+  stays the first kill she *means*). Hybrid execution (in-person raids; intermediaries for routine).*
+- ***II.3:** on-page **Stark envoy** (groom abstract); on-page **Alicent goodbye** (Gael obliviously misreads
+  the grief). Density kept combined; enforcer-violence surgical/bloodless.*
+- ***II.4:** insult subject = **dancing;** a **named, recurring court lady** is the near-victim; the **Daemon
+  knife glances off her body-tempering** and she never registers the attack.*
+- ***II.5:** Marra turned by **sympathetic manipulation** — Otto convinces her informing *helps* Gael (her
+  safety, the betrothal), so she never knows she betrays her; Otto gets only her *reported account* (nothing
+  stolen); the hidden-master-test is a full comic set-piece. **C5:** Gael **clocks Marra in Bk III and spares
+  her** — the mercy is the III.6 loose-end. New token **`MARRA-LEAK`** (PLANT II.5 → FIRE III.6).*
+- ***II.6:** the first-tempering mix **briefly goes wrong** (a scare that bonds them); Wylla **half-knows, won't
+  ask;** reagent-trio kept gestured.*
+- ***II.7:** the ship-resolution as an **over-dramatic declaration + Wylla facepalm;** Otto accelerates via a
+  court maneuver; commission **initiated II.7, finalized III.1.***
+- ***II.8:** a **larger advance party (5+);** the kill **elided** (aftermath only); Wylla's complicity is
+  **passive** (knows, silent — active disposal + own-hand kill stay III.6); **both** the suitor and a sycophant
+  cash death-flags.*
+- ***C1 (cascade):** the Wylla interlude becomes a **recurring Wylla-POV camera** (series-level — the convert's-eye
+  arc: horror → complicity → faith → killer). POV commitment updated from "one external interlude (Alicent)."*
+
+*__Fold record:__ validated layer first (`series-outline.md` frame/POV + II.1–II.8 beats + III.6 + ladder gloss
++ `PLANT[MARRA-LEAK]`) → **check-threads PASS, R0–R4 intact (R2=II.8, R3=III.3), MARRA-LEAK resolves 1:1** →
+spine bodies + POV/comedy section + III.6 → live span-A sweep (wylla/gael/marra/otto actor LTMs +
+marra×2/daemon warehouse cards; Marra OQ-CL2 resolved). Fixed a stale ALICENT-TO-DRAGONSTONE "II.4"→"II.3" ref
+(DEC-0117 leftover). **Guardrails held:** GUARD-1 three spends (I.1/I.5/III.5) unchanged — the II.2 casual
+murder + II.8 kill are no-qi; curdle ladder R0–R4 intact (the II.2 murder + II.4 maim are OFF-ladder, not
+rungs); setting-blind + Rule-22 held.*
+
+***Open / flagged:*** *the **II.4 named recurring lady** still needs a name + final outcome (near-miss vs
+maimed) + downstream role → `margit` / `/and-write`. The **recurring Wylla-camera** interlude *placements* (which
+beats beyond II.1) are a proposed set (II.2/II.3/II.6/II.8/III.5/III.6 candidates) — refinable. The six DEC-0117
+re-titles + the Otto/Daemon AU-seating call still stand un-raised.*
