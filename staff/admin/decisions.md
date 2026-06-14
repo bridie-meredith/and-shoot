@@ -7625,3 +7625,48 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0117 | 2026-06-14 | FAST (user-proxy)
+
+question: |
+  "Next chapter?" in and-experiment track immediately after Book-I spine refresh commit.
+  What does this mean — which unit, at what granularity?
+
+context: |
+  and-experiment is in DESIGN/OUTLINE phase (not prose production). Just-committed work was a
+  principal-directed Book-I spine refresh (Caraxes feral + pure-frame at I.5). Nothing mid-flight.
+  Owed next work per memory.md: Book-II back-half fold (II.2–II.8 new shape agreed and captured
+  in memory.md 2026-06-13; spine.md + run-04/series-outline.md + thread-config.txt still hold the
+  OLD II.2–II.8 + R2@II.7). R2 stale at II.7 confirmed by check-threads. One stale "first meant
+  kill II.7" ref in spine.md II.4. Book-III tokenized outline + thread-config sync also owed but
+  secondary.
+
+options: |
+  A. Fold II.2 first this turn, continue II.3→II.8 serially (chapter-by-chapter)
+  B. Fold entire II.2–II.8 as one coherent pass this turn
+  C. Something else (prose drafting, Book-III outline, etc.)
+
+decision: Option B — fold the entire II.2–II.8 block as one coherent pass now.
+
+basis: goal:2 (cost), goal:4 (lean), methodology:3b (cheaper path — one pass vs. multiple with
+  transient incoherence), methodology:3a (piecemeal fold leaves check-threads broken between steps)
+
+rationale: |
+  The new shape is a fully-agreed, principal-locked block — this is execution of a decided plan,
+  not new creative calls. Piecemeal serial folding (Option A) creates transient check-threads
+  breakage at each step (R2 stays at old II.7 until II.8 is folded), requiring either 7 check-thread
+  re-runs or accepting mid-fold incoherence. One coherent pass eliminates that. Option C is cheaper
+  to do AFTER the fold — Book-III tokenized outline depends on the settled II shape.
+
+trade-off: |
+  Option A allows mid-fold checkpointing if something unexpected surfaces. Given the direction is
+  pre-agreed and the fold is largely mechanical (stamping agreed decisions into canonical files +
+  adjusting R-ladder token positions), the risk of needing a stop is low. The terse prompt pattern
+  signals the principal wants forward motion, not ceremony.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
