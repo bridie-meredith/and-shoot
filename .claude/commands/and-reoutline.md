@@ -4,17 +4,17 @@ description: Intake a tentative outline (whole-book/series) into the and-experim
 
 Re-baseline the and-experiment plot planning around a **tentative outline** the principal brings.
 This is the big-grain intake (a whole book/series draft that may supersede existing planning) — NOT
-the single-chapter-note loop (`and-experiment/design/run-02/idea-inbox.md`).
+the single-chapter-note loop (`active-project/design/run-02/idea-inbox.md`).
 
-**Execute `and-experiment/intake/INTAKE-RUNBOOK.md` verbatim.** Do not improvise a different process;
+**Execute `active-project/intake/INTAKE-RUNBOOK.md` verbatim.** Do not improvise a different process;
 do not delete existing work (archive, never delete).
 
 ## Orientation (read in order)
-1. `and-experiment/intake/tentative-outline.md` — the incoming draft (the dropbox). If it's still the
+1. `active-project/intake/tentative-outline.md` — the incoming draft (the dropbox). If it's still the
    empty template, ask the principal to paste the outline (or paste it for them), then proceed.
-2. `and-experiment/intake/GUARDS-register.md` — ratified premises the new outline must be reconciled against.
-3. `and-experiment/intake/reconciliation-worksheet.md` — the worksheet you fill in.
-4. `and-experiment/intake/INTAKE-RUNBOOK.md` — the full phased process (this is authoritative).
+2. `active-project/intake/GUARDS-register.md` — ratified premises the new outline must be reconciled against.
+3. `active-project/intake/reconciliation-worksheet.md` — the worksheet you fill in.
+4. `active-project/intake/INTAKE-RUNBOOK.md` — the full phased process (this is authoritative).
 
 ## The shape (full detail in the runbook)
 - **Phase 0** — receive + scope; settle the branch: **REVISION** (keeps premises, replaces structure)

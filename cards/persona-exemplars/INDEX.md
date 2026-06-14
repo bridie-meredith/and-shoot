@@ -59,7 +59,7 @@ Margit-maintained index. One row per exemplar. Schema: `schemas/persona-exemplar
 |------|-------------|---------------|-------------|-----------------|------|
 | saerys-septa | saerys-septa | high (household consultation room, septa delivering incident report to steward) | claude (2026-06-06) | active | project-only OC; no library persona card; exemplar cannot promote |
 
-Stored at `and-experiment/persona-exemplars/saerys-septa.md`. The persona card `saerys-septa` is a project-scoped OC (no library card) so this exemplar has no library home and stays project-bound permanently unless/until the persona is promoted.
+Stored at `active-project/persona-exemplars/saerys-septa.md`. The persona card `saerys-septa` is a project-scoped OC (no library card) so this exemplar has no library home and stays project-bound permanently unless/until the persona is promoted.
 
 ---
 
@@ -67,7 +67,7 @@ Stored at `and-experiment/persona-exemplars/saerys-septa.md`. The persona card `
 
 - **Audience trio (3/3):** complete for the active-project audience selection. Library has 22 audience personas total; remaining 19 are uncovered. Author on demand when those personas activate in a project.
 - **Active-project impersonators (11/11):** complete for taylor-westeros-good-intentions cast. Other active-project actors that get added in revisions will need exemplars authored at /and-cast Phase 4.
-- **and-experiment impersonators (7/7 — saerys + six supporting cast):** 6/7 promoted to library as of 2026-06-06. `saerys-septa` remains project-bound (project-only OC). Library copies at `cards/persona-exemplars/<slug>.md` for saerys-targaryen, viserys-i-targaryen, helaena-targaryen-122ac, daenys-velaryon, ser-harwin-the-patient, nymeria-summer-isles. Project copies at `and-experiment/persona-exemplars/<slug>.md` remain as working copies.
+- **and-experiment impersonators (7/7 — saerys + six supporting cast):** 6/7 promoted to library as of 2026-06-06. `saerys-septa` remains project-bound (project-only OC). Library copies at `cards/persona-exemplars/<slug>.md` for saerys-targaryen, viserys-i-targaryen, helaena-targaryen-122ac, daenys-velaryon, ser-harwin-the-patient, nymeria-summer-isles. Project copies at `active-project/persona-exemplars/<slug>.md` remain as working copies.
 - **Library personas without active-project use:** uncovered. Author on demand.
 - **Voice exemplars:** one library entry (Robinson). Author additional library entries as voice registers become recurrent across projects; project-bound overrides live in `active-project/voice-exemplar.md`.
 - **Standing policy (2026-06-06):** cards authored for and-experiment default to `scope: both` with a library copy in `cards/<class>/`, unless a card genuinely cannot have a library home (e.g. an exemplar whose persona has no library card).

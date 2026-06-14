@@ -1,59 +1,42 @@
 # World Notes — Decided Constraints
 
-## Settings (decided)
+Full grounded bedrock: `active-project/design/run-01/constraints.md`. Digest below.
 
-- **Currency:** Westerosi standard — gold dragon, silver stag, copper penny / copper star. Smallfolk count in coppers; landed knights in stags; lords in dragons. F&B-canonical.
-- **Class structure:** Westerosi stratification — smallfolk (Flea Bottom + craft / trade), landed knights, lordly houses, royal household, Faith (septons / Most Devout), Maesters (Citadel-chained). Class language is Westerosi, not Earth-Bet.
-- **Geography (King's Landing proximate places):**
-  - Flea Bottom — slum; smallfolk substrate.
-  - Red Keep — royal household; Targaryen seat.
-  - Dragonpit (Rhaenys's Hill) — political object pre-Dance; dragons housed.
-  - Street of Silk, Street of Steel, Street of Sisters, Street of Seeds — economic axes.
-  - Mud Gate, Dragon Gate, Iron Gate, Gate of the Gods, Lion Gate, Old Gate, King's Gate — KL perimeter.
-  - Visenya's Hill, Aegon's Hill, Rhaenys's Hill — the three hills.
-  - Great Sept of Baelor — Faith seat.
-  - Blackwater Bay / Blackwater Rush — river approach.
-- **Westeros canonicity:** F&B-aligned (pre-Dance era is F&B territory). Where F&B and HOTD diverge, F&B wins. House Hightower / Otto / Alicent / Rhaenyra / Viserys I / Rhaenys / Daemon / Aegon II / Aemond / Helaena are F&B canonical figures available as on-stage cast.
-- **Magic / prophecy load:** Dormant — Westerosi magic is rumored, attenuated, not directly operative on the KL court layer. Greenseer / Valyrian pyromancy / faceless-man flavor available as colorable rumor but not narrator-confirmed mechanic.
-- **Dragon proximity:** Backgrounded with instrumental pressure. Dragons exist, are political objects, fly overhead, but Taylor does not ride or directly engage. Closer than HOTD-show framing; not on-stage as scene partners.
+## Settings
+> ⚠ STALE ERA — the line below is the retired Viserys-I framing. The ratified era is **Jaehaerys I's
+> long peace**; the series spans **~84 → ~95 AC** (Gael age 0 → ~11). Authority: `design/time-anchor.md`.
+- King's Landing / Red Keep, reign of Viserys I, ~119–131 AC.
+- Maegor's Holdfast (12-ft walls, spiked dry moat, single drawbridge, nursery within) = home/cage.
+- The Dragonpit (Rhaenys's Hill, Dragonkeeper-guarded) — a dragonless princess MAY visit it.
+- Book II reaches: Essos (Qarth, Lys), Yi Ti, Sothoryos.
 
 ## Themes-as-bounds
-
-- **Thematic spine:** "road to hell is paved with good intentions" — instrumental moral causation. Every load-bearing choice must be readable backward from the end-revelation to the prior choice's auditable mistake.
-- **Story-type:** Slow-prevention-tragedy (mirror-of-canon). Convergence between Taylor's prevention-logic and the canon Dance-igniter's path is the hidden dramatic line.
-- **Tonal commitments:** Tragic / ironic-causal. Smallfolk gallows humor permitted (dark-fantasy-reader expects it). No comic-relief register. No fairytale-stasis. No omniscient narration of the theme — the maester-chronicler witness frames retroactive revelation; the theme is never spoken by Taylor or by the prose.
-- **Protagonist register:** Cold-utilitarian. Moral accounting is explicit and systematic; affect is suppressed but not absent. The lyra-cost is the item her accounting cannot absorb.
+- Comedy-first that curdles to tragedy on the canon Dance timeline (tone is a gradient).
+- Cultivation cosmology is WRONG; the materials are genuinely magical (broken-clock seam).
+- Cultivation is grief-armor; the Dance forces the bill; the escape is her refusal to pay it.
 
 ## Hard fences
+- Protagonist is SETTING-BLIND — no meta-knowledge of Westeros, houses, or the coming war.
+- Canon-clean: an original younger daughter of Viserys I (only canon daughter is Helaena).
+- Real Westeros magic only — she may misclassify, but no invented substances.
+- She never claims/rides a dragon; her power is logistics, not cultivation.
+- Locked-inside POV — reader hears the immortal's monologue; the world sees a child eating rocks.
 
-- **Earth-Bet proper-noun fence:** Taylor does NOT speak parahuman jargon in dialogue or recognizable third-party-readable form. "Shard", "trigger", "Khepri", "Endbringer", "PRT", "cape", named heroes/villains by their cape names — inner-monologue-rare and dialogue-banned. Westerosi POV characters describe what they see in their own terms (witchery, devilry, foreign sorcery).
-- **POV fence:** Taylor-only, first-person. Per global memory rule. Non-Taylor chapters must be marked interludes; default expectation is no interludes in a single-book series unless 2.4 escalates.
-- **Title fence:** No book or chapter titles authored. Slugs only.
-- **Worm-canon scope:** AU-tolerant. Post-Gold-Morning displacement to Westeros is the inciting frame and is not subject to canon-strict transit mechanics. Within that frame, Worm-canon-pedant audience reviews power-mechanics consistency.
-- **End-place fence:** The bad end is structural (theme demands retroactive-revelation cost). Not negotiable. The locus (Taylor / realm / both / third-party) is open and pinned by 1b.
-- **Single-book length fence:** No multi-book setup. Every beat does double work — advance the prevention-plot AND lay a stone in the retroactive trail.
+## Canon laws (load-bearing, from constraints.md §1)
+- Cradle-egg custom AND its failure rate (the dragonless premise is canon-grounded: Rhaena, Aemond).
+- Septa = central handler (tutor + chaperone); soft walls, not bars. "Escaping handlers" = ditching the septa.
+- Incest-marriage norm (Faith tolerates per Jaehaerys's compromise); betrothed in childhood, married ~13.
+- The cage = the attendant, not the door. The six loopholes (charity keystone, king's-note master key,
+  performed illness, eccentric-royal latitude, below-stairs faction, stewardship-foothold) are canon-real.
 
-## Auto-decided (no escalation needed)
-
-- One-book length (from brief, HIGH-confidence).
-- Audience trio: cape-fic-reader, dark-fantasy-reader, worm-canon-pedant (from invocation).
-- Story-type and per-role archetypes: taste-judge picks at Phase 1.8 — see `prompt-binding.md`.
-
-## 1b resolutions (Phase 2.4 — dramatist + audience ACCEPT)
-
-- **Taylor power-state at open:** Khepri-residue range-limited. Insect control intact at pre-industrial-city density; multi-shard hijack capability gone; organizational precog surfaces as pattern-recognition only.
-- **Arrival mechanism:** Authorial-fiat cold-open. Taylor wakes in an alley off the Hook; transit mechanism permanently unresolved in inner monologue.
-- **Year:** 122 AC, late Viserys-I reign. Otto Hightower off Small Council (dismissed 120 AC) but operating advisory from outside; Alicent faction consolidated; Rhaenyra at Dragonstone; Lucerys + Jace children.
-- **Social entry-point:** Flea Bottom anonymous. No institutional cover; surfaces via visible insect-network capability in first quarter; reaches patron channel by end of act one.
-- **Good intention:** Keep [protect-target] alive — a court-tier vulnerable node in the succession calculus whose survival Taylor calculates will delay or prevent the Dance. Single declarative cold-utilitarian objective. Resolved at `/and-cast` Phase 4 (2026-05-18) → `sera-hightower-kl-122ac` (Hightower cadet-branch ward, age 14; structural legitimacy-question; does not know Taylor exists).
-- **Bad thing:** Taylor becomes Otto Hightower's calibrated intelligence asset in exchange for his protection of [protect-target] in the succession calculus. First trade is the auditable mistake beat.
-- **Cost-bearer:** [cost-bearer] — smallfolk class-slot, Flea Bottom-resident, present from scene-zero. At least one scene per act. Closing-image cost is their death in the Flea Bottom violence of the Dance's opening. Resolved at `/and-cast` Phase 4 (2026-05-18) → `wren-stitch-maker-flea-bottom-ward` (Flea Bottom seamstress-ward, age 11; observer-training habit; original-character; d14 closing-image death).
-- **End-place locus:** Both. Taylor dead or expelled by closing image; Dance ignites on or before canon timeline; cost-bearer (Wren) dies in Flea Bottom violence.
-- **Naming-discipline note (2026-05-17, refreshed 2026-05-21):** Prior drafts of this file named Lucerys (protect-target) and Nessa (cost-bearer) as load-bearing. The series chunk at `/and-series` (composed path-4 + path-2 + contempt-emergence) stripped both to class-slots; identities were deferred to `/and-cast` and resolved 2026-05-18 to Sera Hightower (protect-target; original-character, NOT canon Lucerys) and Wren (cost-bearer; original-character, NOT prior-draft Nessa). The `cond-nessa-scene-frequency` card was retained as `cond-cost-bearer-scene-frequency` (margit-renamed) — see card; the body governs Wren's scene-frequency contract under the new slug. Stale Lucerys/Nessa references cleaned at A12 (2026-05-21) per `run-action-plan-b01c01-2026-05-20.md`.
-- **Tentative structural ranges:** 18–24 chapters, 3–5 scenes per chapter, 8–14 bones per scene. Floors: minimum 18 chapters and 3 scenes/chapter (re-run OQ-9 to compress below).
-
-## Carry-forwards for /and-series (advisory, not blocking 1d)
-
-- Place **naive-idealist foil** as a distinct character OR declare load-bearing fusion into Rhaenyra. Implicit fusion not sufficient.
-- Place **opposite-number (canon Dance-igniter)** — Aemond is the canonical candidate. Plant convergence line in act one, not at ignition beat.
-- Give **Rhaenyra an active agenda** putting pressure on Taylor's choices throughout — not only a trust to be violated at the end. Patron-with-agenda requires the patron to be moving.
+## Lived texture (the exterior well) — counterfactual-life library
+The institutional bedrock above (offices, laws, loopholes) is rendered as *lived, day-by-day* detail —
+the ordinary princess life Gael deviates from — in `active-project/design/counterfactual-life/`
+(INDEX + the-household / the-day / the-script). Reach for it for "who is in the room," the hour-by-hour
+timetable, and the expectation-script the compliance mask performs against; the INDEX **seam map** is
+the production table (every ordinary element → the deviation already in the outline). Authored to the
+**live Gael / Jaehaerys-as-father layer** (the cards/this digest's Viserys-I-era framing is stale,
+pending run-03). NB: this digest's "Settings" block above still names the Viserys-I era; the ratified
+era is Jaehaerys's long peace (~84–93 AC for Book I) per `intake/GUARDS-register.md` GUARD-4 +
+`design/run-02/timeline-and-family-tree.md`. The reusable derivation process:
+`design/counterfactual-baseline-process.md`.

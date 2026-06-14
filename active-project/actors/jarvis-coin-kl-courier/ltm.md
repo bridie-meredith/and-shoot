@@ -1,1 +1,0 @@
-[2026-05-24] PROVISIONED: actor directory created at /and-cast Phase 4; project taylor-hebert-westeros-road-to-hell | original character authored; supporting:Otto-courier-adjacent slot; name-novelty check PASS (jarvis/coin not in library, projects, or boundary-scope); archetype: oc-local-expert Green-courier-network adapted to KL-122-AC

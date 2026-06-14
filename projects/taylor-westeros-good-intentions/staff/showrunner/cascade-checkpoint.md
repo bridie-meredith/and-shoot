@@ -1,24 +1,26 @@
 # cascade-checkpoint
-mode: unattended
-run: produce-chapter b01c20
-operator_protocol: RUNBOOK Producing-a-chapter (R1-R5)
+mode: attended-revision
+run: no-ledger-revision b01 (DEC-0115 / PROP-0046-0050)
+operator_protocol: RUNBOOK Producing-revisions (book-complete) + worst-first batches
 status: COMPLETE
-outcome: COMPLETED (b01c20 SHIPPED-WITH-CAVEATS @ Phase 9 [7th Class-B c14-c20, depth-pass gated book-close], PASS-THREAD @ Phase 10; SERIES-TERMINAL — book b01 complete c01-c20)
-last_step: {command: "/and-substance chapter b01c20", verdict: "COMPLETE (Phase5 CLEAN post-3-fault-fix; cold-read CHUNK-CLASS-B P/DEC-0102); scenes s01-s05; axis sums match", at: "2026-06-05"}
-last_completed: {level: draft, slug: b01c19, completed_at: 2026-06-05T20:20:00Z}
-next: {command: "/and-review verdict b01 (book-close: resolve c14-c20 depth-pass cohort first) OR /and-postop b01c20 (optional)", args: []}
-chapter: b01c20
-phase9_verdict: null
-phase10_verdict: null
-retries: {bones: 0, facet_cycles: 0, stitch_p9: 0}
-caps: {bones_retry: 0/1, facet_cycles: 0/3, stitch_p9_retry: 0/1}
-escalate_queue: []
-halt_reason: null
-aggregate_state: {through_chapter: b01c19, unack_substantive: 0, c20_phase0: CLEAR}
-note: "b01c20 is the terminal catastrophe-climax (d14 burn). Book-close depth passes (c14-c19) + /and-review verdict b01 are POST-c20 opt-in, gated to book-close, NOT c20 Phase 0 blockers."
-and_write_done: {bones: 30, gate: PASS-0HARD-1SIGNAL-accepted, audience: SUBSTANCE-FELT-3of3, phase6_5: OK-DEC-0103, emit: COMPLETE}
-bones_review_done: {verdict: PASS-WITH-NOTES, follow_check: PASS-WITH-NOTES, fidelity: PASS, aliveness: BONES-AIRLESS-RISK-advisory, dialogue: PASS, facets: CLEARED}
-facets_done: {audit: CLEAN-0HARD-7SIGNAL, audience_gate: ACCEPT-9of9-1cycle, context: FOLLOWABLE-ALIVE, oc: SUCCESS-7of7, phase5c: SKIPPED-clean}
-stitch_done: {phase8: 1042w, phase8_5: PASS, phase9: SHIPPED-WITH-CAVEATS-readability-AIRLESS-pre-auth, phase9_5: OK-MERGED-PROP-0037-DEC-0104, phase10: PASS-THREAD-0edits, aggregate: through-b01c20-all-12-axes-at-end_rank-books-archive-appended}
-pending_depth_passes: [b01c14, b01c15, b01c16, b01c17, b01c18, b01c19, b01c20]
-pending_threading_holds: []
+scope: full-book register conversion (ledger -> concrete/human-first)
+order: [c01, c02, c10, c11, c12, c13, c14, c15, c16, c17, c18, c19, c03, c04, c05, c06, c07, c08, c09, c20]
+batch: ALL 20 chapters converted + rendered (bones concrete, drafts no-ledger, manuscript + export rebuilt)
+completed_at: 2026-06-08
+outcome: |
+  All 20 chapters re-authored concrete (every ABSTRACTION-AS-SUBJECT bone eliminated; ~330 across the
+  book) and re-rendered no-ledger. Final residual ledger-subject sweep across all 20 drafts: CLEAN.
+  Consolidated manuscript (active-project/draft/b01-manuscript.md) + reader export
+  (completed-works/.../book-one.md + .txt, pure ASCII) rebuilt + colophon updated.
+  NOT YET RUN (optional follow-ups): full /and-facets + /and-stitch pipeline per chapter (this was a
+  combined revise+render pass, not the 10-facet/8-phase chain); /and-cohere cross-chapter pass on the
+  c10-c19 stretch to break any residual structural repetition; /and-review verdict re-judge.
+baseline_archive: active-project/draft/_archive/2026-06-08-pre-no-ledger-revise/
+voice_target: staff/admin/no-ledger-revision-plan-2026-06-08.md (locked c01-opening re-render) + active-project/voice-exemplar.md
+current: {chapter: b01c01, step: "/and-write b01c01 revise", verdict: null}
+caps_per_chapter: {bones_retry: 0/1, facet_cycles: 0/3, stitch_p9_retry: 0/1}
+note: |
+  Register conversion only. Substance arc + signature axes UNCHANGED (DEC-0115 governs prose register,
+  not the axis machinery). New gates under test: ABSTRACTION-AS-SUBJECT + SCENE-ABSTRACT-DOMINANT
+  (/and-write Phase 6), LEDGER-REGISTER prohibition (/and-stitch Phase 4), NAIVE-FOLLOW (/and-stitch
+  Phase 9). The chain MUST flag the abstract c01 bones (12-14, 18-27) on entry.

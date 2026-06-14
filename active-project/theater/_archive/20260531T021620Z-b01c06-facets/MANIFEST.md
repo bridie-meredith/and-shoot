@@ -1,6 +1,0 @@
-# Archive manifest — b01c06 facet working set
-timestamp: 2026-05-31T02:16:34Z
-reason: /and-facets b01c07 Phase 0 step 5 cross-chapter facet-namespace clearance. The c06 facet working set occupied the shared unnamespaced theater/facets/ paths (+ c06 proto-lines, the stale c06 wren dialogue file, c06 auditor facets-* reports, the c06 and-facets summary). Auto-archived so the b01c07 R1 fanout writes to a clean namespace.
-contents: 23 files — all theater/facets/*.md except scene-map-b01-c07.md (incl _cite-index.md, exposition-b01-c06.md, scene-map-b01-c06.md, all lens facets + per-character feeling/state slices); theater/proto-lines/b01-c06.md; theater/dialogue/wren-stitch-maker-flea-bottom-ward.md (Wren not in c07 cast); staff/auditor/facets-*.md; staff/showrunner/and-facets-b01c06-summary.md.
-kept_in_place: scene-map-b01-c07.md (current chapter, bones-co-emitted); theater/dialogue/{septon-halvard-flea-bottom,taylor-hebert-kl-122ac}.md (c07 cast); theater/bones/*; persona/agent cards; staff/exposition-author/glossed-terms.md.
-restore: cp -rn active-project/theater/_archive/20260531T021620Z-b01c06-facets/theater active-project/theater/_archive/20260531T021620Z-b01c06-facets/staff active-project/    # before /and-stitch consumes c06, if ever needed
