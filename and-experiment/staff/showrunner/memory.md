@@ -78,10 +78,13 @@
 #     re-sourced to cold genre-bookkeeping). Folded across spine + run-04 outline/thread-config/family-tree + daemon/
 #     otto/alicent/gael cards + intake companions; token DRAGON-DEATH-UNEXPLAINED -> DRAGON-MADDENED-UNEXPLAINED;
 #     SYMPATHETIC-KILL-AT-DISTANCE stays parked (lethal grade = Dance). check-threads PASS.
-# (2) BOOK-II BACK-HALF FOLD (DEC-0117, above). STILL OWED (next pass): the TOKENIZED Book-III outline + thread-config
-#     sync (Book III is folded into the SPINE but the run-04 outline Book III may lag the braid); and the deferred
-#     Book-I COMPANION-CARD sweep tail (alicent/gael done; saerys = alt seating + comedy-register/props = Dance-R4
-#     field, intentionally untouched). No active-project binding; track still DESIGN/OUTLINE phase (cards not provisioned).
+# (2) BOOK-II BACK-HALF FOLD (DEC-0117, above).
+# (3) BOOK-III OUTLINE SYNC: run-04 outline Book III brought up to the spine's braid (braid tags + GANG front +
+#     III.6 absent-arrival + new token GANG-LOOSE-END II.2->III.6); check-threads PASS. thread-config needed NO change
+#     this session (DRAGON-MADDENED rename + GANG-LOOSE-END/OTTO-MANHUNT all resolve in-outline 1:1).
+# STILL OWED (next pass, minor): the deferred Book-I COMPANION-CARD sweep tail (alicent/gael done; saerys = alt
+#     seating + comedy-register/props = Dance-R4 field, intentionally untouched) — scan only, low priority.
+# No active-project binding; track still DESIGN/OUTLINE phase (cards not provisioned by margit).
 #
 # SESSION 2026-06-13 (cont.) — BOOK III REWORKED to the three-angles/three-events-per-chapter braid; WORKING DRAFT at
 # design/run-04/book-iii-rework.md, and FOLDED into spine.md Book III on 2026-06-13 (braid + per-chapter new-trope/
