@@ -94,9 +94,9 @@
 #
 # SESSION 2026-06-13 (cont.) — BOOK III REWORKED to the three-angles/three-events-per-chapter braid; WORKING DRAFT at
 # design/run-04/book-iii-rework.md, and FOLDED into spine.md Book III on 2026-06-13 (braid + per-chapter new-trope/
-# new-misunderstanding + characters/set-pieces now canonical; curdle-ladder block updated R2->II.8). STILL OWED: outline
-# (tokenized) Book III + thread-config; the Book II back-half fold; spine.md Book II still has one stale "first meant kill
-# II.7" ref in II.4 (superseded by this note). One clean Book-II+outline pass + check-threads still owed.
+# new-misunderstanding + characters/set-pieces now canonical; curdle-ladder block updated R2->II.8). [ALL OWED ITEMS
+# CLOSED 2026-06-14: Book-II back-half folded (DEC-0117); run-04 outline Book III synced to the braid; thread-config
+# current; the II.7->II.8 ref fixed everywhere; check-threads PASS. Nothing owed.]
 # Five fronts braided 3-per-chapter: SHIP (the escape vessel) · CLOCK (betrothal, Otto-accelerated) · OTTO (the II.8
 # manhunt tightening; she misreads him as an orthodox-sect inquisitor hunting her own phantom Quiet Coin) · FACTOR (greedy
 # pit-factors; Quint = R3 @ III.3) · GANG (rival underworld = "rival sects"). Apex @ III.6 (tempered maid kills by her own
