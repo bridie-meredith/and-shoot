@@ -473,9 +473,12 @@ ratchet, the maester a slow private grind — so the Book-II foils don't rhyme.)
 **The yield turn (she runs on nothing the realm feeds her).** When the supply is throttled and Gael *doesn't*
 weaken (II.6: the egg was a reactor, not a battery — her *base* is self-fed), the bleakest, funniest
 cope-incrimination lands on the maester, the one man who can read the *whole* ledger. It does **not** say the
-empire was pointless — the far-sourced reach bought her *real* advancement (the acquisition vindicated, and
-the first surplus spent tempering the maid) — it says the thing he can prove and never voice: **this child
-thrives on nothing the realm feeds her.** The clampdown should have crippled her; it changed nothing. He
+empire was pointless — the far-sourced reach bought her *real* advancement (the acquisition vindicated, the
+first surplus spent tempering the maid, the same coin buying the ship) — and yet, the hybrid turn, none of it was
+ever *needed:* her base self-feeds, so the empire, the crimes, and Wylla's drawing-in were never *survival,* only
+advancement and exit (the dark note falls on the **Wylla-cost,** never the racket's furniture — Gael would not
+spend a thought on whether a minion lives). What the maester can prove and never voice is narrower and stranger:
+**this child thrives on nothing the realm feeds her.** The clampdown should have crippled her; it changed nothing. He
 checks it twice (of course he does); the books are correct; the girl is impossible. He cannot decide whether
 knowing makes it better or worse, and files nothing. (`MAESTER-MARK`: the Cassandra who grasps the impossible
 and watches it run on.)

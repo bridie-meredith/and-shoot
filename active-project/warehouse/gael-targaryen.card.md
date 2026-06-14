@@ -172,10 +172,13 @@ not to, "ill" for the court functions she's required to attend because the work 
   days old. The declaration was sincere; it still is.
 - I.5: drained Daemon's living bond; a distant dragon went mad and was chained (not killed). She felt **nothing** — pure frame, zero affect; she filed it flat and resolved to check whether the *technique* was demonic. She swore
   off the demonic path on principle (genre-bookkeeping, ⑥) and counts the swearing-off as growth.
-- II.6: the throttle (clampdown + compromised channel) fails to cripple her — her base is self-sustaining (the
-  egg a reactor, not a battery) — and the empire's reach finally yields *real* far-sourced advancement-reagents
-  (a genuine leap; the acquisition vindicated). She spends the first surplus on Wylla's first body-tempering (a
-  no-spend alchemical mix), filed as "investing in the asset."
+- II.6 (HYBRID): the throttle (clampdown + compromised channel) fails to cripple her — her base is self-sustaining
+  (the egg a reactor, not a battery) — and the empire's reach finally yields *real* far-sourced advancement-reagents
+  (a genuine leap; the acquisition vindicated, for advancement *and* escape). **And yet none of it was ever *needed*
+  to survive** — so the empire, the crimes, and Wylla's drawing-in were never survival, only advancement/exit; the
+  dark note falls on the **Wylla-cost,** never the racket's dead men (furniture — she'd not spend a thought on whether
+  a minion lives). She spends the first surplus on Wylla's first body-tempering (a no-spend alchemical mix), filed as
+  "investing in the asset."
 
 **Private associations:**
 - `the-grindy-routine` — the cultivation cycle; the one thing that quiets the thing she survived.
