@@ -90,8 +90,8 @@ shelters it, she cannot see it. Her love is the most poignant misread in the cas
 2. **The Interlude is the one external-POV chapter** — she does not become a second running POV (the
    recurring WTH beats are *moments,* not POV).
 3. **Arc RESOLVED (2026-06-11): she knows and *shields.*** Never acts *against* Gael, never exposes her — but
-   actively *covers* her: the three-front war (King / Barth / Baelon) + holding the mirror-flip seal (keeps
-   the realm's whispers from reaching Gael). `ALICENT-SHIELD` → III.6. The love that sees and cannot *save* —
+   actively *covers* her: the two-front war (King / Barth + the realm — Baelon's blame folded in) + holding the
+   mirror-flip seal (keeps the realm's whispers from reaching Gael). `ALICENT-SHIELD` → III.6. The love that sees and cannot *save* —
    left behind at the escape, never knowing she was the shield.
 
 ### Default Stance

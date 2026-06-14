@@ -98,7 +98,7 @@ and the child sails on never knowing he tried.
 5. **AU-seating** to settle in Phase-4; keep the predator→prey *role.*
 
 ### Action Menu
-- **The appraisal** (I.4) — circles the uncanny child as a prospect.
+- **The appraisal** (I.4) — circles the uncanny child as a prospect; slips her a string of small Valyrian gifts (a grooming *pattern*, `GIFT:DAEMON`) — the predation unmistakable to the reader, Gael oblivious.
 - **The intrusion** (I.5) — corners her during the heirloom uproar (the predatory pass she misreads as
   dual-cultivation; the drain).
 - **The denunciation** (after) — loud, public, repeated: *she is a demon, she drove Caraxes mad and broke him* — and
