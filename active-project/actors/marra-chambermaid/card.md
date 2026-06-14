@@ -21,8 +21,8 @@ references:
 
 # Marra — chamber-maid (the timid one)
 
-*The frightened one: timid, anxious, intensely pious. Loyal but breakable. The maid-candidate (cautionary)
-who, if she is the one Otto turns, makes the II.5 compromise structural and characterological.*
+*The frightened one: timid, anxious, intensely pious. Loyal but breakable. **The turned maid** (confirmed) —
+Otto turns her by convincing her it *helps* Gael, making the II.5 compromise structural and characterological.*
 
 ## Description
 
@@ -39,4 +39,6 @@ frightened, which is often. Trails off, starts over, says "I'm sorry, my lady" r
 1. **Smallfolk, setting seen from below.** No notion of cultivation or what Gael is.
 2. **Breakable, not wicked — keep it.** She yields to fear and kindly pressure she can't identify as
    pressure. The pathos is that she means well.
-3. **Candidate / cautionary, not committed.** The II.5 turned-maid role is hers only if OQ-CL2 rules her in.
+3. **Confirmed the turned maid** (OQ-CL2 resolved, 2026-06-14). Turned by sympathetic manipulation — convinced
+   informing *helps* Gael — and clocked-and-spared in Book III (the III.6 loose-end, `MARRA-LEAK`); she never
+   knows she betrayed her mistress. *The pathos is she means well throughout.*
