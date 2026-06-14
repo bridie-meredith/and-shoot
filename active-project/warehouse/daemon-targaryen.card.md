@@ -90,14 +90,15 @@ and the child sails on never knowing he tried.
 2. **Diminished, not dead** — he survives, diminished in vigour and standing; he does not recover his menace.
 3. **Never reaches the truth** — he frames it as *demon / sorcery* (wrong, though it seeds the maegi-rumour);
    he cannot name the cultivation reality.
-4. **The knife fails clean** — ignored, he sends an assassin (≈II.4); it fails *mundanely* (her tempered body
-   won't take a blade / the omen-reputation spooks the killer / the household catches it) — **not** by any
-   power-spend of Gael's, and **not** her first premeditated kill (that is II.8). She likely never registers
-   it, or files it as a rival sect's knife (= flattering proof she matters).
+4. **The knife fails clean** — ignored, he sends an assassin (≈II.4); it fails *mundanely* — **her passive
+   body-tempering won't take the blade,** the steel skating off skin that should have parted — **not** by any
+   power-spend of Gael's, and **not** her first premeditated kill (that is II.8). **She never registers it at
+   all** — his one act of violence vanishes beneath her notice exactly like his shouting (the rival-sect-misread
+   alt is retired; she simply never looks his way).
 5. **AU-seating** to settle in Phase-4; keep the predator→prey *role.*
 
 ### Action Menu
-- **The appraisal** (I.4) — circles the uncanny child as a prospect.
+- **The appraisal** (I.4) — circles the uncanny child as a prospect; slips her a string of small Valyrian gifts (a grooming *pattern*, `GIFT:DAEMON`) — the predation unmistakable to the reader, Gael oblivious.
 - **The intrusion** (I.5) — corners her during the heirloom uproar (the predatory pass she misreads as
   dual-cultivation; the drain).
 - **The denunciation** (after) — loud, public, repeated: *she is a demon, she drove Caraxes mad and broke him* — and

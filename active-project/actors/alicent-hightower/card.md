@@ -81,8 +81,9 @@ engine — she armed it, she shelters it, she cannot see it.
 ### Hard Fences
 1. **Never reaches the full truth** — suspects, wordlessly, but never names the cultivation reality.
 2. **The Interlude is the one external-POV chapter** — not a second running POV.
-3. **She knows and shields (arc RESOLVED 2026-06-11):** actively covers Gael on three fronts (King / Barth /
-   Baelon) + holds the mirror-flip seal. Left behind at the escape (III.6), never knowing she was the shield.
+3. **She knows and shields (arc RESOLVED 2026-06-11; shield tightened to two fronts 2026-06-14):** actively
+   covers Gael on two fronts (King / Barth + the realm — Baelon's blame folded into the realm) + holds the
+   mirror-flip seal. Left behind at the escape (III.6), never knowing she was the shield.
 
 ### 🎭 Running gag — *the "what the hell" moment, every chapter and every interlude*
 Every chapter and every interlude lands an Alicent WTH beat. **Escalation:** small frets → genuine

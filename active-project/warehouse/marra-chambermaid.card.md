@@ -20,8 +20,9 @@ references:
 # Marra — chamber-maid (the timid one)
 
 *Naming/era note: protagonist card slug `saerys-targaryen`; here she is **Gael**. Jaehaerys's peace,
-Gael age ~6–9. A **cautionary** maid-candidate (OQ-CL2): built to make the "maid compromised" pressure
-(II.5) structural if chosen.*
+Gael age ~6–9. **CONFIRMED the turned maid** (OQ-CL2 resolved, 2026-06-14 conflict pass): she makes the "maid
+compromised" pressure (II.5) structural — turned by sympathetic manipulation (convinced informing *helps* Gael),
+clocked-and-spared in Book III (the III.6 loose-end, `MARRA-LEAK`).*
 
 ## Description
 
@@ -64,8 +65,8 @@ the Seven when frightened, which is often. Trails off, starts over, says "I'm so
 
 - **age:** ~16 · **faith:** the Seven, fervently and fearfully
 - **origin:** smallfolk; a pious, poor family; raised to dread doing wrong
-- **status:** chamber-maid to Gael — **maid-candidate: MEDIUM / CAUTIONARY** (her fear pre-builds the
-  II.5 squeeze; OQ-CL2)
+- **status:** chamber-maid to Gael — **CONFIRMED the turned maid** (OQ-CL2 resolved 2026-06-14); turned via
+  sympathetic manipulation (believes informing helps Gael), clocked-and-spared in Bk III (`MARRA-LEAK`)
 
 ## Relationships
 
@@ -98,8 +99,9 @@ told she's failed.
    *wrongness and possible sin* and is frightened of it through the Faith's frame.
 2. **Breakable, not wicked — keep it.** She does not betray out of malice or greed; she yields to fear
    and kindly pressure she can't identify as pressure. The pathos is that she means well.
-3. **Candidate / cautionary, not committed.** If chosen as the maid she makes II.5 structural; if not,
-   she is anxious household texture. Do not write her as the confirmed maid until OQ-CL2 is ruled.
+3. **Confirmed the turned maid** (OQ-CL2 resolved, 2026-06-14 conflict pass). She makes the II.5 compromise
+   structural — turned by sympathetic manipulation (she believes it *helps* Gael), clocked-and-spared in
+   Book III (the III.6 loose-end, `MARRA-LEAK`); she never knows she betrayed her mistress.
 
 ## Default Stance
 

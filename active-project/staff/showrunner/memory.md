@@ -16,6 +16,140 @@
 # The prior Saerys / Viserys-father / span-B (Dance) framing is RETIRED to provenance
 # (run-02 + tombstones); span-B (the Dance) is PARKED for a later installment, not deleted.
 #
+# SESSION 2026-06-14 (cont. 5) — BOOK-III PASS STARTED + HORROR-UNDERTOW STEER FOLDED (resolve-by-choice; same branch).
+# Per-chapter MC pass moved into Book III (III.1-III.6). Picks folded so far:
+# - III.1: Book-III Wylla-POV interlude placements = III.3 (the factor kill) + III.6 (the apex) ONLY (III.5 stays external).
+#   Inquisitor/manhunt misread kept DRIER/underplayed (the absurd "resolves to help him" set-piece DROPPED; the
+#   years-as-forging-cycle timeline comedy carries III.1).
+# - III.2: the GANG loose-end rival she spares is NAMED + met ON-PAGE (concrete plant for the III.6 betrayal; needs a
+#   name -> margit, a new recurring underworld figure). Ghost-of-the-Red-Keep legend leads COMIC-FLATTERING (Gael's
+#   misread; the realm-side dread is the reader's).
+# - III.3 questions (Quint pathos / Wylla interlude POV) were DISMISSED by the principal in favor of a register steer (below),
+#   which subsumes them: Quint humanized (death-flag means it; ruined dependents), the removal rendered as horror.
+# HORROR-UNDERTOW STEER (principal, verbatim seed: "play into the horror of it. people go missing. thefts. black-cells and
+#   servants"): Book III's dark undertow is played as GENUINE HORROR, not cold-comic gag. Comedy stays on top (Gael's
+#   misreads, the ghost-legend), but underneath: Gael's removals + swelling THEFTS make the Keep a place where PEOPLE GO
+#   MISSING; the realm's panic grinds in kind -> SERVANTS taken down to the BLACK-CELLS, questioned, not coming back up;
+#   the smallfolk pay TWICE (used by her operation, then swept up by the realm's terror for crimes they never did). Gael
+#   stays furniture-cold + oblivious; the dread is the reader's/realm's. Render person-first/concrete (Rule 22 aligned).
+# FOLDED: series-outline Book-III HEADER register note + III.1 (drier) + III.2 (named rival + thefts/servants-to-cells) +
+#   III.3 (Quint humanized + vanishing-as-horror + servants below) + III.4 (manhunt fills the cells) + interlude line
+#   (III.3/III.6); spine bodies (curdle-ladder Book-III horror note + III.1 drier + III.2/III.3/III.4 reverse-angle horror
+#   beats + named-rival) + wylla LTM (Book-III interlude placements). No PLANT/FIRE token add/remove; GUARD-1 + R-ladder
+#   (R3=III.3, apex III.6) intact. CANDIDATE motif token BLACK-CELLS / MISSING-SERVANTS flagged for principal (NOT wired —
+#   avoids unreviewed check-threads churn). OPEN: III.4/III.5/III.6 MC questions still to run; the named spared-rival + the
+#   black-cells location both -> margit.
+# BOOK-III PASS COMPLETED (III.4-III.6 folded same session):
+# - III.4: HARD comic/horror contrast (the waif-act farce runs directly over the black-cells horror; the register-gap is
+#   the engine). Otto's closing = REAL NEAR-MISS / tension spike (genuinely close, exposure nearly lands before she slips;
+#   modifies the prior "melodramatically certain but always a step behind" -> now a real scare into III.6).
+# - III.5: PURE-FRAME (she files the give as "investing in the asset," entirely misses she chose to be weaker; the crack
+#   stays reserved for III.6). The rite stays the WARM ANTI-CURDLE EXCEPTION — deliberately EXEMPT from the Book-III horror
+#   undertow (the one beat that gives; intimate scare, not horror).
+# - III.6: Wylla's first kill (the interceptor) = she HESITATES, then crosses (the horror of crossing visible; devotion
+#   tested + chosen; NOT smooth/reflexive — modifies the prior clean-kill framing). The apex FOREGROUNDS THE HORROR-COST
+#   (black-cells full, vanished servants, the manhunt's wreckage left on the shore) just before the close; the LOCKED
+#   absent-arrival stays the emotional close after it (block untouched).
+# FOLDED (III.4-III.6): series-outline III.4/III.6 beats; spine III.6 braid; wylla LTM (III.6 kill). No token churn; LOCKED
+#   absent-arrival untouched; R-ladder intact. BOOK-III PER-CHAPTER PASS COMPLETE (III.1-III.6).
+# EPILOGUE PASS (folded same session): TWO movements, BOTH cameras off Gael (principal picked "2 and 3" = Wylla coda +
+#   realm's post-mortem, NOT the two-girls-close-only), landing on CLEAN OPEN AMBIGUITY (principal picked clean-ambiguity
+#   over the horror-whisper — the Book-III dark undertow stays UPSTREAM, NOT reprised at the close). (1) Wylla's POV coda =
+#   the arc's terminus (the killer she's become, beside Gael, watching the water; "what she is now" unasked; resolves into
+#   freedom-or-prettier-cage, not dread). (2) the realm's comic post-mortem = a LIGHT satirical reprise (not a re-run of
+#   III.6) — agency unimaginable, the legend seals. Close: "freedom or a prettier cage, the reader decides" + Dance-book
+#   door (LONGEVITY-OPEN). FOLDED: spine + series-outline epilogue; wylla LTM (epilogue coda). No token churn.
+#   NEXT: resolve the margit flags (II.4 maimed lady, III.2 named spared-rival, black-cells location), or chapter production.
+#
+# SESSION 2026-06-14 (cont. 4) — BOOK-II II.4->II.8 REFINEMENT PASS FOLDED (resolve-by-choice, 2 MC/chapter; same branch).
+# A deeper per-chapter pass on II.4-II.8. Two picks OVERTURN prior folds (flagged REVISE); the rest refine/confirm:
+# - II.4 (REVISE x2): (a) the court ladies are NOT fond of Gael — she's an ODD DUCK, the strange one talked *about,* never *to*;
+#   their chatter is IDLE GOSSIP about a trivial skill (dancing), benign-but-not-affectionate ("fondly"/"poor mite" STRIPPED
+#   everywhere). The comic-horror engine survives (benign subject, mis-heard "talentless"); only the affection is wrong.
+#   (b) the maimed lady = AMBIENT RECURRING COST ONLY — a marked face the reader keeps seeing (ruined voice/permanent mark);
+#   NO dedicated thread, NO grudge-engine routed to Otto. This OVERTURNS the cont.3 "small recurring fear-spreader thread."
+# - II.5 (refine): Marra's turning STAGED ON-PAGE (we watch Otto work her, the kindly patron; the pathos of a maid who thinks
+#   she's helping) — not merely the reported "maid comes back different." Hidden-master-test = BROAD COMIC SET-PIECE (she
+#   performs the imagined trial for the surveillance she should fear; Wylla facepalms).
+# - II.6 (refine): the II.6 Wylla interlude (the first tempering, the night it goes wrong) lands TERROR -> DEEPENED DEVOTION
+#   (fear and love fusing; the half-knowing tips to devotion). The advancement-leap = VIVID cultivation set-piece (genre payoff).
+# - II.7 (REVISE): the "nothing inside these walls is mine" turn is MINIMAL — filed breezily as TYPICAL EVIL-SECT BUSINESS
+#   (a master owns everything, a disciple keeps nothing; flat, no felt loss), NOT the earned terminal epiphany the prior body
+#   framed. Structural pivot (nothing-mine -> beyond-reach -> ship) intact; only the affect is downplayed. Wylla-squeeze kept
+#   LIGHT in II.7, lands bodily in II.8.
+# - II.8 (refine): the II.8 Wylla interlude = SILENCE AS A CHOICE (she knows, chooses to say nothing; LOVE not fear makes her
+#   complicit; the rung toward III.6). The "except Wylla" exception + the ship built-through-her-own-hands fold KEPT IMPLICIT
+#   (reader assembles; understated, not spelled out).
+# FOLDED: validated layer (series-outline II.4-II.8 beats) -> spine bodies (II.4 260/731/1002, II.5 272, II.7 295, II.8 303-306)
+#   -> showrunner memory + gael LTM (II.7 minimal). No token add/remove; GUARD-1 + setting-blind + Rule-22 held; R2=II.8 intact.
+# OPEN/FLAGGED UPDATE: the II.4 maimed lady's DOWNSTREAM ROLE is now RESOLVED = ambient recurring cost (no thread); she still
+#   needs a NAME + card -> margit / /and-write (a recurring marked face, lighter than a thread node).
+#
+# SESSION 2026-06-14 (cont.) — BOOK-II CONFLICT PASS FOLDED (resolve-by-choice; branch claude/book-ii-conflict-pass-1r0u77).
+# Surfaced Book II's open tensions as multiple-choice decisions, principal picked, cascade folded. FOUR primary + two cascade picks:
+# (1) II.6 reading -> HYBRID: empire VINDICATED (real far-sourced reagents + a genuine leap; pays for advancement AND escape)
+#     AND never NEEDED (self-generating base; the survival-panic was hollow). CASCADE: deflation CONTAINED at II.6, its dark
+#     weight on the WYLLA-COST (NOT the II.8 kill, NOT the racket's dead men — Gael feels nothing for minions; they're furniture).
+#     II.8 unchanged; III ship-funding intact; no token churn (SOURCE-NOT-POOL + ACQUISITION-DRIVE already fire II.6).
+# (2) Daemon knife -> RESTORED at II.4 (the DEC-0117 reshuffle had dropped it from every chapter body; the live Daemon cards/LTM
+#     had kept it — so this reconciled the spine/outline UP to the cards). CASCADE: she NEVER REGISTERS it (rival-sect-misread
+#     alt RETIRED). Rides DAEMON-DISCREDITED (now fires II.4 too); no new token; GUARD-1 untouched; first meant kill still II.8.
+# (3) R2 -> KEEP MULTIPLE at II.8, "register not count" (corpseless suitor-PARTY vanish; escalation is in coldness/register,
+#     not body-count; R3 single-casual is by design). Also fixed a STALE "R2 II.7" in the series-outline ladder header -> II.8.
+# (4) II.6 first-tempering -> KEPT (PLANT[MAID-TEMPERED] rehearsal for the III.5 apex give; no-spend vs spend contrast sharpens it).
+# FOLDED in order: validated layer first (series-outline II.4/II.6 beats + ladder header) -> check-threads PASS, R0-R4 intact
+#     (R2=II.8, R3=III.3) -> spine bodies + gag map + curdle block -> live span-A sweep (gael card x2 + gael/daemon actor LTM +
+#     character-reactions yield-turn + warehouse daemon card; worksheet per-beat payoff-map reconciled to DEC-0117 numbering).
+#     Dated FOLDED entry appended to the spine tail (supersedes the 2026-06-11 E-block knife/II.7). GUARD-1 (I.1/I.5/III.5) +
+#     setting-blind + Rule-22 all held. 4 logical commits, each pushed to the working branch; tree clean.
+# SURVIVING reversible defaults (flagged, un-raised this pass): the 6 DEC-0117 chapter re-titles; the seed-vault target
+#     (crime-syndicate; alts Faith/rival house); the II.4 insult subject + the Daemon-knife failure-mechanism (both -> /and-write);
+#     the DEC-0117 beat redistribution; Otto/Daemon AU-seating-vs-rename (standing principal call, does not block).
+# NEXT (principal-steer, mid-session): a per-chapter MC question pass (II.1->II.8, several questions each) was requested — surfacing those.
+#
+# SESSION 2026-06-14 (cont. 2) — BOOK-II PER-CHAPTER PASS FOLDED (resolve-by-choice; same branch). 28 per-chapter MC
+# picks (II.1->II.8) + a 4-item cascade batch, all folded. Headline outcomes:
+# - POV CHANGE (cascade C1): RECURRING WYLLA-POV CAMERA (the convert's-eye arc horror->complicity->faith->killer),
+#   opened II.1. Was "one external interlude (Alicent)." Interlude placements beyond II.1 are a proposed set (refinable).
+# - II.2: TWO raids — crime-syndicate counting-house AND the Faith's coffers (cascade C2: both kept, low-heat,
+#   Faith-ambient guardrail HELD, no inquisitor; she reads the Faith as a rival orthodox sect, no reverence).
+#   The skimmer is CASUALLY MURDERED — OFF-LADDER (cascade C3: casual means casual — Gael doesn't count it, annoyed
+#   only by the mess; onlookers/Wylla recoil; R2@II.8 stays the first kill she MEANS, for Wylla). Hybrid execution.
+# - II.4: insult subject = DANCING; a named/recurring court lady is the near-victim; the Daemon knife glances off her
+#   body-tempering (she never registers the attack).
+# - II.5: Marra turned by SYMPATHETIC MANIPULATION (Otto convinces her it HELPS Gael; she never knows she betrays her);
+#   Otto gets only her reported account. Cascade C5: Gael CLOCKS + SPARES Marra in Bk III -> the III.6 loose-end.
+#   NEW TOKEN MARRA-LEAK (PLANT II.5 -> FIRE III.6).
+# - II.6: tempering mix briefly GOES WRONG; Wylla half-knows, won't ask. II.7: over-dramatic ship declaration + Wylla
+#   facepalm; commission initiated II.7, finalized III.1. II.8: larger party (5+); kill ELIDED; Wylla PASSIVE cover
+#   (knows/silent — active disposal + own-hand kill stay III.6); both suitor + sycophant cash death-flags.
+# - II.1 denunciation concurrent w/ parade + Gael's bored "none of this matters" detachment; II.3 on-page Stark envoy
+#   + on-page Alicent goodbye.
+# FOLDED: validated layer first (series-outline frame/POV + II.1-II.8 + III.6 + ladder gloss + MARRA-LEAK) ->
+#   check-threads PASS, R0-R4 intact (R2=II.8) -> spine bodies + POV/comedy + III.6 -> live sweep (wylla/gael/marra/otto
+#   ltms + marra x2/daemon cards; Marra OQ-CL2 resolved -> CONFIRMED). Dated FOLDED entry at spine tail. GUARD-1
+#   (I.1/I.5/III.5) + setting-blind + Rule-22 all held (II.2 murder + II.8 kill no-qi; II.2 murder + II.4 maim OFF-ladder).
+#   4 commits this batch, each pushed to the working branch; tree clean.
+# OPEN/FLAGGED: the II.4 named lady needs a name + final outcome + downstream role (-> margit / /and-write); the Wylla
+#   interlude placements beyond II.1 (proposed set, refinable); the 6 DEC-0117 re-titles + Otto/Daemon AU-seating (un-raised).
+#
+# SESSION 2026-06-14 (cont. 3) — SPINE REWORK + I.1->II.8 PASS FOLDED (resolve-by-choice; same branch).
+# (1) SPINE REWORK: whole-spine (I-III) editorial consolidation (delegated to a general-purpose agent, writing to a
+#   separate file, verified non-destructive per Rules 19/20 before swap-in: PLANT/FIRE token multiset+placement identical,
+#   changelog tail byte-identical, all decisions intact; prior spine in git history). spine.md now reads clean/integrated.
+# (2) QUESTION PASS I.1->II.8 (Book I = first conflict treatment; Book II re-traversed for remaining opens). Changes:
+#   I.1 evil-sect verdict TENTATIVE->hardening (not a hard lock); I.3 two-girl cage FOREGROUNDED (Gael still blind);
+#   I.4 Daemon predation UNMISTAKABLE to reader (non-graphic) + GIFT:DAEMON = MULTIPLE small grooming-gifts;
+#   I.5 Caraxes maddening now an ON-PAGE glimpse (Gael witnesses, files flat); Interlude mirror-flip WOVEN (no
+#   three-corner button) + shield TIGHTENED to TWO fronts (Baelon folded into the realm) + Stark match IMPLIED-not-confirmed;
+#   Book II: Wylla-interlude placements II.1/II.2/II.6/II.8; II.4 named lady MAIMED (crushed throat) + a small
+#   recurring fear-spreader thread. (Many Book-I picks were confirmations of the existing clean build.)
+# FOLDED: validated layer (series-outline) -> check-threads PASS, R0-R4 intact (R2=II.8), NO token add/remove ->
+#   spine bodies + POV note -> live sweep (Daemon gifts; Alicent two-fronts x3; Wylla placements). GUARD-1 + setting-blind
+#   + Rule-22 held. Dated FOLDED entry at spine tail. ~5 commits this batch (rework + 4-step fold), each pushed; tree clean.
+# OPEN/FLAGGED: the II.4 MAIMED lady needs a NAME + card -> margit (new recurring character); Book-III Wylla-interlude
+#   placements TBD; 6 DEC-0117 re-titles + Otto/Daemon AU-seating still un-raised.
+#
 # REVIEW-WALK STATE (2026-06-11) — Book-II spine review-walk IN PROGRESS (design-level, NOT chapter
 # production). A chapter-by-chapter trope/comedy pass over Book II, folding revisions into the canonical
 # layer (design/run-04/series-outline.md + intake/spine.md + thread-config + warehouse cards). DONE &
