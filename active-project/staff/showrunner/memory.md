@@ -64,6 +64,23 @@
 # OPEN/FLAGGED: the II.4 named lady needs a name + final outcome + downstream role (-> margit / /and-write); the Wylla
 #   interlude placements beyond II.1 (proposed set, refinable); the 6 DEC-0117 re-titles + Otto/Daemon AU-seating (un-raised).
 #
+# SESSION 2026-06-14 (cont. 3) — SPINE REWORK + I.1->II.8 PASS FOLDED (resolve-by-choice; same branch).
+# (1) SPINE REWORK: whole-spine (I-III) editorial consolidation (delegated to a general-purpose agent, writing to a
+#   separate file, verified non-destructive per Rules 19/20 before swap-in: PLANT/FIRE token multiset+placement identical,
+#   changelog tail byte-identical, all decisions intact; prior spine in git history). spine.md now reads clean/integrated.
+# (2) QUESTION PASS I.1->II.8 (Book I = first conflict treatment; Book II re-traversed for remaining opens). Changes:
+#   I.1 evil-sect verdict TENTATIVE->hardening (not a hard lock); I.3 two-girl cage FOREGROUNDED (Gael still blind);
+#   I.4 Daemon predation UNMISTAKABLE to reader (non-graphic) + GIFT:DAEMON = MULTIPLE small grooming-gifts;
+#   I.5 Caraxes maddening now an ON-PAGE glimpse (Gael witnesses, files flat); Interlude mirror-flip WOVEN (no
+#   three-corner button) + shield TIGHTENED to TWO fronts (Baelon folded into the realm) + Stark match IMPLIED-not-confirmed;
+#   Book II: Wylla-interlude placements II.1/II.2/II.6/II.8; II.4 named lady MAIMED (crushed throat) + a small
+#   recurring fear-spreader thread. (Many Book-I picks were confirmations of the existing clean build.)
+# FOLDED: validated layer (series-outline) -> check-threads PASS, R0-R4 intact (R2=II.8), NO token add/remove ->
+#   spine bodies + POV note -> live sweep (Daemon gifts; Alicent two-fronts x3; Wylla placements). GUARD-1 + setting-blind
+#   + Rule-22 held. Dated FOLDED entry at spine tail. ~5 commits this batch (rework + 4-step fold), each pushed; tree clean.
+# OPEN/FLAGGED: the II.4 MAIMED lady needs a NAME + card -> margit (new recurring character); Book-III Wylla-interlude
+#   placements TBD; 6 DEC-0117 re-titles + Otto/Daemon AU-seating still un-raised.
+#
 # REVIEW-WALK STATE (2026-06-11) — Book-II spine review-walk IN PROGRESS (design-level, NOT chapter
 # production). A chapter-by-chapter trope/comedy pass over Book II, folding revisions into the canonical
 # layer (design/run-04/series-outline.md + intake/spine.md + thread-config + warehouse cards). DONE &

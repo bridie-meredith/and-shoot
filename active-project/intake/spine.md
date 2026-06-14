@@ -981,3 +981,30 @@ rungs); setting-blind + Rule-22 held.*
 maimed) + downstream role → `margit` / `/and-write`. The **recurring Wylla-camera** interlude *placements* (which
 beats beyond II.1) are a proposed set (II.2/II.3/II.6/II.8/III.5/III.6 candidates) — refinable. The six DEC-0117
 re-titles + the Otto/Daemon AU-seating call still stand un-raised.*
+
+*__Whole-spine rework + I.1→II.8 pass — FOLDED (2026-06-14; resolve-by-choice).__ (1) **Spine rework:** a
+whole-spine (I–III) editorial consolidation integrated the accreted fold-edits into clean prose — verified
+non-destructive (PLANT/FIRE token multiset + placement identical; changelog tail byte-identical; all decisions
+intact; prior spine in git history). (2) **Question pass I.1→II.8** (Book I = first conflict treatment; Book II
+re-traversed for remaining opens). Picks:*
+- ***I.1:** elided body-horror kill; full breezy adult-nerd monologue; evil-sect verdict **tentative →
+  hardening** over I.2–I.3 (not a hard I.1 lock); egg-origin **withheld** to the Interlude.*
+- ***I.2:** acolyte cost stays reverse-angle; **Wylla-camera stays II.1-onward** (no Book-I interludes); heist =
+  caper-comedy; dangling-reward a prominent comic runner.*
+- ***I.3:** Talk = one scene in Gael's misread; skull beat quick; **two-girl cage FOREGROUNDED** (unmistakable to
+  the reader, Gael still blind — a change from the subtle build); colder-misread light.*
+- ***I.4:** Daemon predation **unmistakable to the reader** (non-graphic; Gael oblivious); breakthrough both
+  interior+external; **GIFT:DAEMON = multiple small grooming-gifts** (a pattern/supply line); mirror-flip lightly seeded.*
+- ***I.5:** predatory pass / oblivious run (bond-rip pure-frame); **Caraxes maddening now an ON-PAGE glimpse**
+  (Gael witnesses from a window, files flat — a change from reported-only); dark-math emphasized; seclusion real warmth.*
+- ***Interlude:** mirror-flip **woven/diffuse** through Alicent (no three-corner button); shield **tightened to
+  two fronts** (King + Barth/realm; Baelon folded); Stark match **implied, not confirmed** (II.3 confirms); full tragic button.*
+- ***Book II (remaining opens):** Wylla-interlude placements settled **II.1/II.2/II.6/II.8**; the II.4 named lady
+  is **MAIMED** (crushed throat / ruined voice — still no kill) + a **small recurring fear-spreader thread**
+  (rides the existing maegi-rumour; no new token).*
+
+*__Fold:__ validated layer (series-outline frame/POV + I.1–Interlude beats + II.4) → **check-threads PASS, R0–R4
+intact (R2=II.8), no token add/remove** → spine bodies + POV note → live sweep (Daemon gifts; Alicent two-fronts
+×3; Wylla placements). GUARD-1 (I.1/I.5/III.5) + setting-blind + Rule-22 all held. **Open:** the II.4 maimed lady
+needs a name + card → `margit`; Book-III Wylla-interlude placements TBD; the 6 DEC-0117 re-titles + Otto/Daemon
+seating still un-raised.*
