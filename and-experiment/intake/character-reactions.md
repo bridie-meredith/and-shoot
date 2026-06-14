@@ -470,14 +470,15 @@ foil for the septa: she was right and fought with authority and lost; he is righ
 *dependency.* (Two defeat mechanisms, deliberately *different in tempo* — the septa is a fast public
 ratchet, the maester a slow private grind — so the Book-II foils don't rhyme.)
 
-**The source-reveal turn (the empire had no purpose).** When the supply is cut and Gael *doesn't* weaken
-(II.6: the egg was a reactor, not a battery — she never needed any of it), the bleakest, funniest
-cope-incrimination lands on the maester, the one man who can read the *whole* ledger: it now says the
-six-year network he half-built served **no purpose** — a multinational of poison and paper assembled to
-feed a hunger that was always self-fed. He checks it twice (of course he does); the books are correct; it
-was all unnecessary. He cannot decide whether that makes it better or worse, and files nothing. (Fixes the
-logic gap where the source reveal lived only in Gael's head — the acquisition-empire's punchline must
-incriminate a *coper,* not just deflate privately.)
+**The yield turn (she runs on nothing the realm feeds her).** When the supply is throttled and Gael *doesn't*
+weaken (II.6: the egg was a reactor, not a battery — her *base* is self-fed), the bleakest, funniest
+cope-incrimination lands on the maester, the one man who can read the *whole* ledger. It does **not** say the
+empire was pointless — the far-sourced reach bought her *real* advancement (the acquisition vindicated, and
+the first surplus spent tempering the maid) — it says the thing he can prove and never voice: **this child
+thrives on nothing the realm feeds her.** The clampdown should have crippled her; it changed nothing. He
+checks it twice (of course he does); the books are correct; the girl is impossible. He cannot decide whether
+knowing makes it better or worse, and files nothing. (`MAESTER-MARK`: the Cassandra who grasps the impossible
+and watches it run on.)
 
 **Channel:** the long pause; the silent review.
 

@@ -92,7 +92,7 @@ and the child sails on never knowing he tried.
    he cannot name the cultivation reality.
 4. **The knife fails clean** — ignored, he sends an assassin (≈II.4); it fails *mundanely* (her tempered body
    won't take a blade / the omen-reputation spooks the killer / the household catches it) — **not** by any
-   power-spend of Gael's, and **not** her first premeditated kill (that is II.7). She likely never registers
+   power-spend of Gael's, and **not** her first premeditated kill (that is II.8). She likely never registers
    it, or files it as a rival sect's knife (= flattering proof she matters).
 5. **AU-seating** to settle in Phase-4; keep the predator→prey *role.*
 
