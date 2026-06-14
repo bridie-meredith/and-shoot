@@ -10,7 +10,7 @@ the tokenized structural spine; the **full prose/comedy detail lives in `intake/
 
 **Era / frame:** Jaehaerys I's long peace, **84 → ~95 AC** · Gael b. 84 AC (infant → ~age 11) · POV
 locked-inside Gael, **setting-blind** (genre-aware), with **recurring Wylla-POV interludes** (the convert's-eye
-arc: horror → complicity → faith → killer; opened II.1, Book-II interludes at II.1/II.2/II.6/II.8, Book-III TBD)
+arc: horror → complicity → faith → killer; opened II.1, Book-II interludes at II.1/II.2/II.6/II.8, Book-III at III.3/III.6)
 + the Alicent Bk-I interlude · **somewhat simple-minded monomaniac** · span = **HYBRID**
 (this series ends on the escape; the Dance is parked). Three books: I (the cage · 5 ch + interlude · broad
 farce) · II (the blind machine · 8 ch · workplace comedy) · III (the narrow escape · 6 ch · heist caper).
@@ -343,12 +343,27 @@ the reader to assemble:** not spelled out, not pointed at; understated in the pr
 
 ## BOOK III — *the narrow escape* · age ~9–11 · the Keep → the ship · heist caper
 
+> **Book-III dark undertow — play the HORROR (register, 2026-06-14, principal-directed).** Comedy stays on top
+> (Gael's misreads, the ghost-legend, the genre-glosses), but Book III's undertow runs as **genuine horror, not
+> cold-comic gag.** Gael's removals + the swelling thefts make the Red Keep **a place where people go missing** —
+> and the realm's panicked response grinds in kind: **servants swept down into the black-cells** as suspects,
+> questioned, *not coming back up;* the smallfolk tier pays **twice** — used by her operation, then taken by the
+> realm's terror for crimes they never committed. Each removal is a real disappearance with a human face and
+> ruined dependents (not "furniture" to the reader — only to Gael). **Gael stays furniture-cold and oblivious;
+> the dread is the reader's and the realm's.** Render person-first / concrete (Rule 22): *"they took her down to
+> the black cells and she did not come back up,"* never an abstraction. Touches III.2 (thefts + the questioned
+> servants), III.3 (the vanishing as horror, Quint humanized + dependents), III.4/III.6 (Otto's manhunt fills the
+> cells). Candidate motif token `BLACK-CELLS` / `MISSING-SERVANTS` flagged for the principal (not yet wired —
+> avoids unreviewed check-threads churn).
+
+
 ### III.1 · the commission — `[SHIP · CLOCK · OTTO]`
 **Beat:** *(SHIP)* the hull ordered through three layers of paper, designed off the reagent map, paid from the
 off-books dice-coin; the shipwright (a craftsman who won't ask whose it is) quotes *years.* · *(CLOCK)* Otto's
 II.7 vise has set the wedding early — a date forms — so years-of-build against months-to-bride is murder. ·
-*(OTTO)* his II.8 manhunt is live, so she builds the exit **under an active investigation,** serenely misreading
-the inquisitor as an orthodox sect hunting her own phantom Quiet Coin and resolving, gravely, to *help him.*
+*(OTTO)* his II.8 manhunt is live, so she builds the exit **under an active investigation,** misreading the
+inquisitor as an orthodox sect hunting her own phantom Quiet Coin — **underplayed** (the misread present, the
+absurd "resolves to *help him*" set-piece dropped; the timeline/forging-cycle comedy carries the chapter).
 (New trope: the natal-treasure / artificer commission — the *years* read to her as a treasure's forging-cycle,
 so a timeline that should terrify her doesn't.) **Register:** HOLD→SPIKE. **Rung:** off-ladder.
 **Plants:** PLANT[SHIPYARD-VULNERABILITY] · PLANT[FACTOR-THREAT]
@@ -358,19 +373,26 @@ so a timeline that should terrify her doesn't.) **Register:** HOLD→SPIKE. **Ru
 **Beat:** *(SHIP)* the excursions go **routine and citywide** — short, surgical underworld outings in Book II,
 now constant for the ship-build (shipyard, harbor, timber-yards), the difference scale + stakes against the
 betrothal clock; Wylla covers ("at her meditations"); superhuman child parkour births the **"ghost of the Red
-Keep"** legend (she reads it as proof her light-body art has matured — flattering, not a manhunt risk). Hobb,
-on the watch, sees her and says nothing. · *(GANG)* rivals sense the Quiet Coin distracted and overextended and
-**test the house she can't fully mind** — she answers a few, fast and quiet, but can't be everywhere, and a
-rival or two she only *spares* (the loose end that sells her out at III.6). · *(FACTOR)* the ship-money has
-swollen past safe trust; a pit-factor starts skimming and dreaming bigger (**Quint seeded**). **Register:** SPIKE. **Rung:** off-ladder.
+Keep"** legend — **Gael's misread leads comic-flattering** (proof her light-body art has matured — flattering,
+not a manhunt risk); the realm-side dread is the reader's, and **now plays as horror:** the swelling **thefts**
+and the vanishings put the Keep on edge, **servants questioned and swept toward the black-cells** for a ghost
+they can't catch. Hobb, on the watch, sees her and says nothing. · *(GANG)* rivals sense the Quiet Coin
+distracted and overextended and **test the house she can't fully mind** — she answers a few, fast and quiet, but
+can't be everywhere, and **one rival she spares is named + met on-page** (a concrete underworld figure she judges
+not worth the effort — the loose end that sells her out at III.6; needs a name → margit). · *(FACTOR)* the
+ship-money has swollen past safe trust; a pit-factor starts skimming and dreaming bigger (**Quint seeded**). **Register:** SPIKE. **Rung:** off-ladder.
 **Plants:** PLANT[EXCURSION-RISK] · PLANT[GHOST-LEGEND] · PLANT[CITY-KNOWLEDGE] · PLANT[GANG-LOOSE-END] (the rivals she can't close / only spares — the underworld thread that feeds Otto at the apex)
 **Fires:** FIRE[UNSEEN-ENFORCER] (the Book-II underworld outings escalate to citywide ship-runs) · FIRE[BODY-TEMPERING-CONCEALED] · FIRE[HIDEY-HOLE] · FIRE[CASSANDRA] · FIRE[WYLLA-COMPLICIT] (she has covered for Gael since the still-room; the burying becomes the alibi)
 
 ### III.3 · the greedy factor — `[FACTOR · GANG · OTTO]` › **R3**
 **Beat:** *(FACTOR)* **Lothar Quint,** grown greedy, can't produce the phantom buyer behind the ship-money and
 leans on Wylla; Gael removes him colder-by-casual (takes his quicklime tip first, thanks him; "the account is
-closed") — **colder than R2,** his death-flag cashing (⑦). She frames it as **karmic retribution** (the
-wayward disciple courts his own tribulation — the clean-hands doctrine in cosmic robes). · *(GANG)* Quint's
+closed") — **colder than R2,** his death-flag cashing (⑦). **Play the horror:** Quint has a human face and a
+household — the death-flag ("I've only a family to feed") *means* it; he simply **goes missing,** a man here
+then not, and in the aftermath **his servants are taken down to the black-cells** and questioned and don't come
+back up (the smallfolk paying for a vanishing they didn't cause). To Gael it's **karmic retribution** (the
+wayward disciple courts his own tribulation — the clean-hands doctrine in cosmic robes); to the reader it's a
+disappearance with a body-count she never sees. · *(GANG)* Quint's
 grab cracks the house open and a rival crew pounces; she puts two fires out at once, a louder trail than usual.
 · *(OTTO)* that trail is the lead his manhunt needed — a "natural" death + a gang-flare circling the maid he
 flagged in the bestiary; he draws the line toward Wylla. **Her handling feeds the hunter.** **Register:** CHILL. **Rung:** R3.
@@ -380,7 +402,10 @@ flagged in the bestiary; he draws the line toward Wylla. **Her handling feeds th
 **Beat:** *(CLOCK)* the wedding accelerates — Jaehaerys packing her north; she burns her last delay-capital
 playing the **sickly waif** too delicate to travel (the mask paying off — they believe her delicate because
 the legend already wrote her so). · *(OTTO)* having drawn his line in III.3, he closes — surveillance peaks,
-melodramatically certain; he maneuvers to expose her *before* the wedding carries her out of reach. · *(SHIP)*
+melodramatically certain; he maneuvers to expose her *before* the wedding carries her out of reach. **The
+manhunt's machinery is its own horror:** as he closes, **more servants are taken below and questioned** for the
+ghost and the missing men — the innocent swept up in his certainty, the black-cells filling while the one
+culprit plays sickly in her bed. · *(SHIP)*
 the hull is behind; the two countdowns cross — accelerate the build while stalling the wedding, both maxed.
 (New trope: playing weak, the pig that eats the tiger.) **Register:** CHILL. **Rung:** off-ladder.
 **Fires:** FIRE[BETROTHAL-DREAD] · FIRE[OUTWARD-COMPLIANCE]
