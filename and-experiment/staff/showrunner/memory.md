@@ -82,9 +82,15 @@
 # (3) BOOK-III OUTLINE SYNC: run-04 outline Book III brought up to the spine's braid (braid tags + GANG front +
 #     III.6 absent-arrival + new token GANG-LOOSE-END II.2->III.6); check-threads PASS. thread-config needed NO change
 #     this session (DRAGON-MADDENED rename + GANG-LOOSE-END/OTTO-MANHUNT all resolve in-outline 1:1).
-# STILL OWED (next pass, minor): the deferred Book-I COMPANION-CARD sweep tail (alicent/gael done; saerys = alt
-#     seating + comedy-register/props = Dance-R4 field, intentionally untouched) — scan only, low priority.
-# No active-project binding; track still DESIGN/OUTLINE phase (cards not provisioned by margit).
+# (4) CLOSE-OUT SWEEP DONE: cards + companions aligned to the Book-II fold — gael card (pet-peeve + II.6 bio
+#     reframed off the CUT source-reveal), daemon card (first kill II.7->II.8), character-reactions (source-reveal
+#     turn -> yield turn), reconciliation-worksheet (R2 II.7->II.8). Confirmed out-of-scope/untouched: world-card
+#     soap/chemistry = sensory/wildfire lore (not the retired enterprise); saerys = tombstoned alt-seating;
+#     comedy-register/props "field of dead dragons" = Dance-R4 (not Caraxes); tentative-outline + dated tails = historical.
+# STATE: live layer (spine + run-04 outline I/II/III + thread-config + all current span-A cards + intake companions)
+#     fully consistent across Book-I refresh + Book-II fold + Book-III braid; check-threads PASS. NOTHING substantive owed.
+# No active-project binding; track still DESIGN/OUTLINE phase (cards not provisioned by margit). Natural next phase-changes
+#     (principal-steer needed, NOT auto): margit card-provisioning toward prose, OR /and-reoutline migration of the reworked spine.
 #
 # SESSION 2026-06-13 (cont.) — BOOK III REWORKED to the three-angles/three-events-per-chapter braid; WORKING DRAFT at
 # design/run-04/book-iii-rework.md, and FOLDED into spine.md Book III on 2026-06-13 (braid + per-chapter new-trope/
