@@ -48,7 +48,7 @@
 # clampdown + compromised channel. Leitmotif R-02 locked in comedy-register card (+ three-frame calibration).
 # Otto vault-target default = crime-syndicate (reversible). See intake/spine.md amendment foot for the full record.
 #
-# SESSION 2026-06-13 — BOOK II BACK-HALF REWORK: DIRECTION AGREED, NOT YET FOLDED (smoothing in progress).
+# SESSION 2026-06-13 — BOOK II BACK-HALF REWORK: DIRECTION AGREED  [FOLDED 2026-06-14, DEC-0117 — see foot note below].
 # Principal redirected II.2-II.8; captured here so the canonical spine/outline stay untouched until we smooth + fold.
 # NEW SHAPE: II.2 founds the GAMBLING/ENTERTAINMENT DAO (cultivation-nerd frame; soap/chemistry premise RETIRED —
 #   she remembers cultivation novels, not science; doped-beast pit + house-math + still-room alchemy stand in) ·
@@ -65,8 +65,23 @@
 # DECISIONS (defaults accepted by principal): (1) II.4 maim not kill; (2) R-ladder R2 -> II.8 (first MEANT kill);
 # (3) Wylla = complicity at II.8, own-hand kill stays III.6; (4) II.6 tempering = no-spend alchemical mix, III.5 stays
 # the apex give (GUARD-1 intact); (5) II.8 suitor = Otto-faction man, NOT the Stark heir (keeps "vanish clean").
-# STATUS: spine.md + run-04/series-outline.md + thread-config.txt still hold the OLD II.2-II.8 + R2@II.7 — to be folded
-# + check-threads re-run on the next Book-II pass. Verify III.5/III.6 (tempering apex; Wylla's own-hand kill) still consistent at fold time.
+# STATUS: FOLDED 2026-06-14 (DEC-0117). spine.md bodies + gag map + run-04/series-outline.md + R-ladder all carry the
+# NEW shape; R2 reconciled -> II.8; check-threads PASS (R0-R4 intact). Chapter retitles: II.2 the house · II.3 the
+# betrothal · II.4 the overheard word · II.6 the yield · II.7 the vise · II.8 the disappearance. Reversible defaults
+# (flagged at spine foot): the retitles, the NARROW II.6 reading (self-generation cosmology KEPT — only the "empire
+# unnecessary" deflation cut; SOURCE-NOT-POOL still fires, empire vindicated -> real advancement-reagents), the beat
+# redistribution, new tokens PLANT[MAID-TEMPERED]@II.6 + OTTO-MANHUNT (II.8->III.6). thread-config needed NO change.
+# III.5/III.6 verified consistent (III.5 stays the apex give; Wylla's own-hand kill stays III.6).
+#
+# SESSION 2026-06-14 — TWO FOLDS SHIPPED (branch claude/book1-spine-material-refresh-gfkr5m).
+# (1) BOOK-I REFRESH: Caraxes MADDENED/feral (not killed) at I.5 + PURE FRAME at I.5 (felt-horror retired; CLEAN-HANDS
+#     re-sourced to cold genre-bookkeeping). Folded across spine + run-04 outline/thread-config/family-tree + daemon/
+#     otto/alicent/gael cards + intake companions; token DRAGON-DEATH-UNEXPLAINED -> DRAGON-MADDENED-UNEXPLAINED;
+#     SYMPATHETIC-KILL-AT-DISTANCE stays parked (lethal grade = Dance). check-threads PASS.
+# (2) BOOK-II BACK-HALF FOLD (DEC-0117, above). STILL OWED (next pass): the TOKENIZED Book-III outline + thread-config
+#     sync (Book III is folded into the SPINE but the run-04 outline Book III may lag the braid); and the deferred
+#     Book-I COMPANION-CARD sweep tail (alicent/gael done; saerys = alt seating + comedy-register/props = Dance-R4
+#     field, intentionally untouched). No active-project binding; track still DESIGN/OUTLINE phase (cards not provisioned).
 #
 # SESSION 2026-06-13 (cont.) — BOOK III REWORKED to the three-angles/three-events-per-chapter braid; WORKING DRAFT at
 # design/run-04/book-iii-rework.md, and FOLDED into spine.md Book III on 2026-06-13 (braid + per-chapter new-trope/
