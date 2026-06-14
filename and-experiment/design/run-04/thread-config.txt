@@ -8,8 +8,8 @@ ALIAS STARK-MATCH = BETROTHAL-CLOCK   # run-04 Book-II rev: retargeted minor-lor
 # --- plant-only: setups whose payoff is parked for the Dance book, or is diffuse/ambient ---
 # (parked for the Dance — established-then-rejected or scales later)
 PLANT-ONLY DEMONIC-PATH                  # I.5 line she swears off; NOT re-crossed this series (Dance)
-PLANT-ONLY SYMPATHETIC-KILL-AT-DISTANCE  # scales terrifyingly; parked for the Dance
-PLANT-ONLY DRAGON-DEATH-UNEXPLAINED      # the realm never lands the true explanation (payoff diffuse)
+PLANT-ONLY SYMPATHETIC-KILL-AT-DISTANCE  # the LETHAL grade of bond-draining; parked for the Dance (I.5 demonstrates only the sub-lethal, maddening grade)
+PLANT-ONLY DRAGON-MADDENED-UNEXPLAINED   # Caraxes driven mad/feral (NOT killed) at I.5; the realm never lands the true explanation (payoff diffuse)
 PLANT-ONLY LONGEVITY-OPEN                # epilogue door to the parked Dance installment
 
 # (diffuse/ambient — sustained texture, no discrete FIRE token)

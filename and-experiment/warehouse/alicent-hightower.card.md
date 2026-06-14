@@ -56,7 +56,7 @@ flinch at the edge of a truth she won't let herself reach.
 revelation of what Gael is *worth* to him. **Severity:** strong.
 
 ### What she half-sees
-**Description:** the dead dragon nobody can explain; the performed politeness; the eyes that don't track.
+**Description:** the maddened dragon nobody can explain; the performed politeness; the eyes that don't track.
 She gets almost all the way there and flinches, because the alternative is unbearable. **Severity:** blocker
 (the tragic engine).
 

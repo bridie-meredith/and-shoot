@@ -169,8 +169,8 @@ not to, "ill" for the court functions she's required to attend because the work 
   mortality took everything and won't again. She was a reader with no power. This time is different.
 - I.1: killed the hatchling in her own crib, scarred, ate a claw, declared herself a cultivator. She was
   days old. The declaration was sincere; it still is.
-- I.5: drained Daemon's living bond; a distant dragon died. She felt guilt — *about the dragon.* She swore
-  off the demonic path and counts the swearing-off as growth.
+- I.5: drained Daemon's living bond; a distant dragon went mad and was chained (not killed). She felt **nothing** — pure frame, zero affect; she filed it flat and resolved to check whether the *technique* was demonic. She swore
+  off the demonic path on principle (genre-bookkeeping, ⑥) and counts the swearing-off as growth.
 - II.6: learned the egg was a reactor, not a battery — every theft was unnecessary. She was mortified by the
   *inefficiency,* not the morality, and kept going.
 

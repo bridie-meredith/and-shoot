@@ -302,9 +302,9 @@ does.** Reprise him in III.2 as a watchman who *did* see the rooftop "ghost," is
 
 **History.** The realm's most dangerous young man, circling the uncanny-beautiful child as a marriage
 prospect (the Targaryen incest custom; Gael, modern-nerd, is revolted). In I.5 she senses his living
-**dragon-bond**, drains and severs it; a distant dragon dies; Daemon survives **concussed, diminished,
-silenced.** Baelon and Viserys (the nephew) blame *her* — not for the draining (unknown) but by
-association: she's "Dragonbane," she was alone with him, his dragon is dead.
+**dragon-bond**, drains and severs it; the unbonded dragon goes mad at a distance and must be chained, lost to him for good; Daemon survives **concussed, diminished,
+discredited — but loud.** Baelon and Viserys (the nephew) blame *her* — not for the draining (unknown) but by
+association: she's "Dragonbane," she was alone with him, his dragon turned.
 
 **Personality / foibles.** Pride, menace, entitlement — the predator's certainty. His coping mechanism
 post-I.5 is **the thing he can't use:** he cannot say what was done to him without admitting *where he
@@ -327,7 +327,7 @@ turns back to her work, guilty *only about the dragon,* never the man. (Stage th
 the moment with a consequence; don't *label* it "a ②-dodge" — the played-out move is naming the trope,
 the fresh one is dismissing the apex predator as derivative and going back to your reading.) The
 investigators chase a *phantom master-thief* (locked-room theft, no thief, a *shrinking* timeline); the
-realm's theory is "a Faceless Man, a rival, a poison" — anything but four feet tall and a bit guilty.
+realm's theory is "a Faceless Man, a rival, a poison" — anything but four feet tall and entirely untroubled.
 Daemon is the dark-comedy proof that in Westeros even the apex predator can be *unmade and gagged by the
 one weapon nobody believes in.*
 
@@ -360,7 +360,7 @@ attached to monstrous facts ("the most beautiful child in the realm," said over 
 dragon and a man's bond). The *discomfort* is the engine of the interlude: from outside, Gael is
 *unnerving* — too still, too perfect, eyes that don't track like a child's — and Alicent **loves a
 daughter she is losing to something she cannot name.** The near-miss beat: once per arc she gets *almost
-all the way there* (the dead dragon nobody can explain; the performed politeness) and **chooses the
+all the way there* (the maddened dragon nobody can explain; the performed politeness) and **chooses the
 story anyway**, because the alternative is unbearable — the flinch is the part that hurts. The apex of
 this engine is the **bestiary** (Book II): if Alicent ever reads it, she breaks — and the gut-punch-laugh
 is that she finds **her own entry**: *"Mother — sentimental, useful for egg-procurement, low threat."*

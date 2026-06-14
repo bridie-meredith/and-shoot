@@ -19,8 +19,8 @@ references:
 # Daemon Targaryen — the appraising predator who becomes prey
 
 *Live span-A canon. The relative Gael drains (I.4 circles → I.5 the bond-breaker). **Seating RULED
-2026-06-09 — court-transposition:** an adult dragon-bonded Targaryen kinsman (with an **expendable** dragon
-— the one that dies at I.5) of the transposed HotD-adjacent court; name kept, seated onto the long-peace
+2026-06-09 — court-transposition:** an adult dragon-bonded Targaryen kinsman (with a dragon
+— the one driven mad/feral at I.5, not killed) of the transposed HotD-adjacent court; name kept, seated onto the long-peace
 frame (not a canon-dated figure aged in isolation). Full profile context: `intake/character-profiles.md`
 §Daemon / spine I.4–I.5.*
 
@@ -28,9 +28,9 @@ frame (not a canon-dated figure aged in isolation). Full profile context: `intak
 
 The realm's most dangerous young man, drawn to circle the uncanny-beautiful child as a marriage prospect
 (the Targaryen incest custom; Gael, modern-nerd, is revolted). In I.5 she senses his **living dragon-bond,**
-drains and severs it; a distant dragon dies; Daemon survives **concussed and diminished — but loud.** Baelon
+drains and severs it; the unbonded dragon **goes mad** at a distance and must be **chained,** lost to him for good; Daemon survives **concussed and diminished — but loud.** Baelon
 and Viserys blame *her* — not for the draining (unknown) but by association: she's "Dragonbane," she was
-alone with him, his dragon is dead. The apex predator of the setting, **unmade and made a laughingstock** —
+alone with him, his dragon turned. The apex predator of the setting, **unmade and made a laughingstock** —
 shrill with an accusation that happens to be true and that nobody will ever credit.
 
 ## Voice
@@ -66,10 +66,10 @@ silence, but **ridicule.**
 
 - **Gael** — the child he appraised as prey and who unmade him; to her, a **②-trope-dodge** ("enemy-to-lovers
   with a cousin, two tropes stacked — absolutely not"), then a defeated rival-elder's **sour-grapes
-  villainy** (his denunciation read as petty, *bad* sect-politics), and a flicker of guilt — *about the
-  dragon,* never the man. She never connects his ruin, the maegi-talk she proudly collects, or the knife to
-  herself.
-- **Baelon / Viserys (the nephew)** — blame Gael by association; the "Dragonbane + dead dragon" link that
+  villainy** (his denunciation read as petty, *bad* sect-politics), and — pure frame — **no guilt at all,**
+  only a clinical bestiary note *about the dragon,* never the man. She never connects his ruin, the maegi-talk
+  she proudly collects, or the knife to herself.
+- **Baelon / Viserys (the nephew)** — blame Gael by association; the "Dragonbane + a dragon driven mad" link that
   hardens her reputation and the King's "useless **and** dangerous" file. (Baelon stays *talk;* Daemon
   himself carries the active fallout.)
 
@@ -79,7 +79,7 @@ silence, but **ridicule.**
 The dark-comedy proof that in Westeros even the apex predator can be unmade and **made a laughingstock** by
 the one weapon nobody believes in. His diminishment is the curdle's R1 made visible from the outside — a man
 nobody pities, **loud with the truth and laughed at for it;** the realm chases a phantom master-thief and
-prefers a raving husk to the four-foot-tall culprit actually responsible (and a bit guilty). He is also the
+prefers a raving husk to the four-foot-tall culprit actually responsible (and wholly untroubled by it). He is also the
 lesson that *being right earns nothing:* the accurate witness, discredited, escalates to the knife and fails,
 and the child sails on never knowing he tried.
 
@@ -100,7 +100,7 @@ and the child sails on never knowing he tried.
 - **The appraisal** (I.4) — circles the uncanny child as a prospect.
 - **The intrusion** (I.5) — corners her during the heirloom uproar (the predatory pass she misreads as
   dual-cultivation; the drain).
-- **The denunciation** (after) — loud, public, repeated: *she is a demon, she killed Caraxes* — and
+- **The denunciation** (after) — loud, public, repeated: *she is a demon, she drove Caraxes mad and broke him* — and
   dismissed, the court snickering behind his back; seeds `MAEGI-RUMOR`.
 - **The knife** (≈II.4) — ignored, he hires it done; it fails, and his ranting now sounds murderous as well
   as mad. Feeds the King's quiet-disposal of the girl (the Stark match).
@@ -116,7 +116,7 @@ while everyone humours him to his face and howls behind his back. Investigators 
 **Accumulated history to register:**
 - He came as a hunter and left a punchline; the most dangerous man in the realm, **unmade by a child and
   laughed out of every room he says so in.**
-- A dragon died for what he did to a little girl's room — and he is the only one who half-knows it, **shouts
+- A dragon was driven mad for what he did to a little girl's room — and he is the only one who half-knows it, **shouts
   it,** and is mocked for it.
 
 **Private associations:**

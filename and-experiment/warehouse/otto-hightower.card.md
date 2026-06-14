@@ -41,7 +41,7 @@ bestiary, he is the one who clocks that the maid is the lever that moves an unmo
 leverage.** Otto is close to the throne *now* (the Queen's father), but a Hightower's grip on a Targaryen
 dynasty is never secure, and a strategist plays the long game: the regime that will outlast Jaehaerys. The
 **heir-faction — Prince Baelon and his son Viserys — already resent Gael** (they blame the maegi-princess
-for the dead dragon, the I.5 Caraxes association). So Otto makes himself indispensable to the future court
+for the maddened dragon, the I.5 Caraxes association — Caraxes driven feral, not killed). So Otto makes himself indispensable to the future court
 by becoming *the man who hands it leverage over the dangerous wildcard princess:* gather the dirt by
 **spying on her directly** (watchers, intercepted letters, a pressed household servant — *whatever means come
 to hand;* not by chasing her coin), reach the bestiary, deliver control-or-neutralization, bank the credit
@@ -94,8 +94,8 @@ he cannot stop chewing on it. **Severity:** strong.
 - **Wylla** — the lever. He is *right* about her importance and *wrong* about why — and that is the leak.
 - **Jaehaerys** — he hands the king the file ("useless **and** dangerous") that accelerates the
   disposal-betrothal; the predatory face arming the institutional one.
-- **Baelon / Viserys (the heir-faction)** — the regime he plays *for.* They already blame Gael for the dead
-  dragon (I.5); Otto cultivates their favor by becoming the man who can deliver leverage over her. The dirt
+- **Baelon / Viserys (the heir-faction)** — the regime he plays *for.* They already blame Gael for the
+  maddened dragon (I.5 — Caraxes driven feral, not killed); Otto cultivates their favor by becoming the man who can deliver leverage over her. The dirt
   is currency they want; his standing in the next reign is the prize.
 
 ## Fiction Role Overlay

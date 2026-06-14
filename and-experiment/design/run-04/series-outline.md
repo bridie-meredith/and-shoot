@@ -89,29 +89,31 @@ Barth's framework brushes "consumed sorcerous material" and recoils. **Register:
 ### I.5 · the-bond-breaker *(~6)*
 **Beat:** files the king's heirloom with her cultivated jaw (servants blamed — collateral). Daemon corners
 her, pressing a gross "special blood" pass dressed as bloodline-mysticism; Gael **misreads it as an offer of
-platonic dual-cultivation** and runs it then and there — the demonic drain. **Caraxes dies** (no wound, at
-distance); Daemon is left near bed-ridden. Unsure whether that was a demonic-path deviation, she resolves on
-closed-door meditation — and the terrified realm obliges, **confining her to her chambers** (quarantine for a
-feared contagion) which she reads as the caring sect granting secluded cultivation. The no-wound dragon-death
-+ the uncanny beauty + "Dragonbane" **seed the realm's mirror-flip**. The drain is also a massive infusion —
+platonic dual-cultivation** and runs it then and there — the demonic drain. It **rips out the living
+dragon-bond: Caraxes goes mad** (no wound, at distance) and must be **chained,** a living horror that won't
+be ridden again; Daemon is left near bed-ridden. Unsure whether that was a demonic-path deviation, she
+resolves on closed-door meditation — and the terrified realm obliges, **confining her to her chambers**
+(quarantine for a feared contagion *that turns dragons feral*) which she reads as the caring sect granting
+secluded cultivation. The no-wound maddening of Caraxes + the uncanny beauty + "Dragonbane" **seed the
+realm's mirror-flip**. The drain is also a massive infusion —
 she swears off the *method* but keeps the *gains* (a second, bigger leap; the reserve she'll later spend on
 Wylla). Confined for weeks, attended only by her maids, the **Wylla bond warms hard** (seeds II.1). **Register:** CHILL. **Rung:** R1.
-**Genre-misreads (②/⑥; the one chapter the horror is real):** Daemon's predatory "special blood" pass read as an offer of **platonic dual-cultivation** — she runs it and accidentally guts him (the atrocity is itself a misread); "was that the demonic path?" left unresolved → `PLANT[CLEAN-HANDS-DOCTRINE]` (the line drawn at the *technique,* not the harm — the license the ladder runs on, fires II.7 + III.6); near-bedridden Daemon read as "an elder who lost his cultivation base" (a stat-change, not a man — completes GIFT:DAEMON); Caraxes mourned as kindred spirit-beast while the executed servants never register (③); the quarantine read as the sect granting secluded cultivation (`COURT-AS-EVIL-SECT`).
-**Plants:** PLANT[DEMONIC-PATH] · PLANT[DRAGON-DEATH-UNEXPLAINED] · PLANT[SYMPATHETIC-KILL-AT-DISTANCE] · PLANT[PLAYING-SMART] · PLANT[HIDEY-HOLE] · PLANT[BODY-TEMPERING-CONCEALED] · PLANT[COLLATERAL-DAMAGE] · PLANT[PROPHESIED-LEGEND] · PLANT[CLEAN-HANDS-DOCTRINE]
+**Genre-misreads (②/⑥; PURE FRAME — zero affect in her, the horror is the reader's alone):** Daemon's predatory "special blood" pass read as an offer of **platonic dual-cultivation** — she runs it and accidentally guts him + maddens his dragon (the atrocity is itself a misread, filed flat); "was that the demonic path?" booked as a flat genre rule with no moral weight → `PLANT[CLEAN-HANDS-DOCTRINE]` (the line drawn at the *technique,* not the harm — pure genre-bookkeeping, the license the ladder runs on, fires II.7 + III.6); near-bedridden Daemon read as "an elder who lost his cultivation base" (a stat-change, not a man — completes GIFT:DAEMON); the maddened Caraxes logged as a kindred spirit-beast lost to deviation (clinical, not mourned) while the executed servants never register (③); the quarantine read as the sect granting secluded cultivation (`COURT-AS-EVIL-SECT`).
+**Plants:** PLANT[DEMONIC-PATH] · PLANT[DRAGON-MADDENED-UNEXPLAINED] · PLANT[SYMPATHETIC-KILL-AT-DISTANCE] · PLANT[PLAYING-SMART] · PLANT[HIDEY-HOLE] · PLANT[BODY-TEMPERING-CONCEALED] · PLANT[COLLATERAL-DAMAGE] · PLANT[PROPHESIED-LEGEND] · PLANT[CLEAN-HANDS-DOCTRINE]
 **Fires:** FIRE[DAEMON-THREAT] · FIRE[UNCANNY-BEAUTY] · FIRE[VALYRIAN-STEEL-COMPATIBLE] · FIRE[THEFT-ESCALATION] · FIRE[GIFT:DAEMON] (the favor repaid — she took his gift, then his dragon-bond, never reading him)
 
 ### Interlude · Alicent *(external POV — the one camera outside her head)*
-**Beat:** from outside, Gael is unnerving (never tires; alone with Daemon the hour Caraxes died); Alicent —
+**Beat:** from outside, Gael is unnerving (never tires; alone with Daemon the hour Caraxes went mad); Alicent —
 the gift-egg mother (`GIFT:ALICENT`) — loves a daughter she's losing and half-knows the gift made her *this.*
 The rift with Jaehaerys hardens.
 **Alicent the shield (active protector):** she moves to cover Gael on three fronts — the **King** (the
-disposal-betrothal + a stirring *kinslayer* suspicion after the dead dragon), **Barth** (keeps the one mind
+disposal-betrothal + a stirring *kinslayer* suspicion after the maddened dragon), **Barth** (keeps the one mind
 that could uncover her away; buries the maester's letters), **Baelon** (the kinsman who blames Gael for
 Caraxes by association) — and above all keeps the realm's *whispers from reaching Gael.* **She is why the
 mirror-flip stays sealed.** `PLANT[ALICENT-SHIELD]` → III.6.
 **The sealed mirror-flip:** three corners, all wrong — Gael the *dangling reward* (plotting not to be won),
-Jaehaerys *worthless* (give her away; *kinslayer* behind his teeth), the realm — gobsmacked by dead **Caraxes**
-+ near-bedridden Daemon + the quarantine + the beauty + Dragonbane — halos her **the prophesied one.** Gael
+Jaehaerys *worthless* (give her away; *kinslayer* behind his teeth), the realm — gobsmacked by **Caraxes**
+driven mad and chained + near-bedridden Daemon + the quarantine + the beauty + Dragonbane — halos her **the prophesied one.** Gael
 never learns (Alicent keeps it from her); she keeps her own delusions. The clock starts. **Register:** CHILL.
 **Plants:** PLANT[BETROTHAL-CLOCK] · PLANT[STARK-MATCH] · PLANT[ALICENT-SHIELD]
 **Fires:** FIRE[GENRE-CASTING] (the dangling-reward self-cast pays out as the literal betrothal)
@@ -127,7 +129,7 @@ strict handling (*silent, say nothing*) and stokes her legend, pricing the asset
 full well she's a beauty** (a cultivation glow-up, escalated since I.4), reads the cold parade as an
 **evil-sect elder's calibrated favour** and the silence-rule as a *gift* (no social labour — she meditates
 standing up), and preens. Across the same hall **Daemon — diminished, vocal, a laughingstock behind his
-back** — openly denounces her as a *demon* who killed Caraxes; the court snickers, she files "Maegi /
+back** — openly denounces her as a *demon* who drove Caraxes mad and broke him; the court snickers, she files "Maegi /
 Sorceress" as a flattering new dao-title, and the **sorcery-rumour starts to harden.** Her cover sets
 (scholar-princess + ornamental jewel = the last girl suspected of anything), and **the maid — Wylla — steps
 up into her one confidant** (she chatters her whole mad cultivation cosmology at a loyal girl who believes

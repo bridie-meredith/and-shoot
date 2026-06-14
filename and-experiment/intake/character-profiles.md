@@ -254,7 +254,7 @@ strategist's worst feeling is *an opponent whose objective he cannot name.*
 ### Motivation — *dynastic positioning for the next reign*
 Why he moves against Gael at all: Otto plays for the Hightowers' place in the regime that will **outlast
 Jaehaerys.** The heir-faction — **Prince Baelon and his son Viserys** — already resent Gael (they blame her
-for the dead dragon, I.5), so Otto makes himself indispensable to the future court by being *the man who
+for the maddened dragon, I.5 — Caraxes driven feral, not killed), so Otto makes himself indispensable to the future court by being *the man who
 hands it leverage over the dangerous princess.* Dirt on Gael is currency the heir-faction already wants; the
 same file, slid to Jaehaerys, also accelerates the disposal-betrothal (double dividend). The horror: the
 predatory face is mining his **own granddaughter** for credit with the next king, and reads it as nothing
@@ -360,7 +360,7 @@ His pride and his danger are the same: **he can think his way to almost anything
 dragon-sorcery; he is the one mind in Westeros whose framework could, in principle, contain
 "child-who-consumes-dragon-essence." So he is the **real intellectual threat** — the person who might
 actually *expose* her — and the engine-fence is that **even he can't close it:** the evidence is four feet
-tall and a bit guilty, the Faith condemns his unnatural-history work, the King redirects his genius to
+tall and entirely untroubled, the Faith condemns his unnatural-history work, the King redirects his genius to
 statecraft, and the one true pattern keeps slipping his grasp. He gets *closest,* and misses — which is far
 more frustrating for a genius than never seeing at all.
 
@@ -464,7 +464,7 @@ Lord Errold Slate of Blackpool; *the clock starts.* 3. **The rift** — utility 
 (Alicent). 4. **The shield / the seal** — she is the *active protector* and the in-world reason the
 mirror-flip stays sealed: she keeps the realm's prophesied-one / omen-child whispers from reaching Gael, and
 runs interference on three fronts — the **King** (disposal-betrothal + a stirring *kinslayer* suspicion after
-the dead dragon), **Barth** (the one mind that could uncover her; she buries the maester's letters),
+the maddened dragon), **Barth** (the one mind that could uncover her; she buries the maester's letters),
 **Baelon** (the kinsman who blames Gael for Caraxes by superstitious association). `PLANT[ALICENT-SHIELD]` →
 III.6 (the protector left behind; Gael sails never knowing her mother held the seal).
 
