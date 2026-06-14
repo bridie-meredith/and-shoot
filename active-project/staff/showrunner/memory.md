@@ -16,6 +16,30 @@
 # The prior Saerys / Viserys-father / span-B (Dance) framing is RETIRED to provenance
 # (run-02 + tombstones); span-B (the Dance) is PARKED for a later installment, not deleted.
 #
+# SESSION 2026-06-14 (cont. 5) — BOOK-III PASS STARTED + HORROR-UNDERTOW STEER FOLDED (resolve-by-choice; same branch).
+# Per-chapter MC pass moved into Book III (III.1-III.6). Picks folded so far:
+# - III.1: Book-III Wylla-POV interlude placements = III.3 (the factor kill) + III.6 (the apex) ONLY (III.5 stays external).
+#   Inquisitor/manhunt misread kept DRIER/underplayed (the absurd "resolves to help him" set-piece DROPPED; the
+#   years-as-forging-cycle timeline comedy carries III.1).
+# - III.2: the GANG loose-end rival she spares is NAMED + met ON-PAGE (concrete plant for the III.6 betrayal; needs a
+#   name -> margit, a new recurring underworld figure). Ghost-of-the-Red-Keep legend leads COMIC-FLATTERING (Gael's
+#   misread; the realm-side dread is the reader's).
+# - III.3 questions (Quint pathos / Wylla interlude POV) were DISMISSED by the principal in favor of a register steer (below),
+#   which subsumes them: Quint humanized (death-flag means it; ruined dependents), the removal rendered as horror.
+# HORROR-UNDERTOW STEER (principal, verbatim seed: "play into the horror of it. people go missing. thefts. black-cells and
+#   servants"): Book III's dark undertow is played as GENUINE HORROR, not cold-comic gag. Comedy stays on top (Gael's
+#   misreads, the ghost-legend), but underneath: Gael's removals + swelling THEFTS make the Keep a place where PEOPLE GO
+#   MISSING; the realm's panic grinds in kind -> SERVANTS taken down to the BLACK-CELLS, questioned, not coming back up;
+#   the smallfolk pay TWICE (used by her operation, then swept up by the realm's terror for crimes they never did). Gael
+#   stays furniture-cold + oblivious; the dread is the reader's/realm's. Render person-first/concrete (Rule 22 aligned).
+# FOLDED: series-outline Book-III HEADER register note + III.1 (drier) + III.2 (named rival + thefts/servants-to-cells) +
+#   III.3 (Quint humanized + vanishing-as-horror + servants below) + III.4 (manhunt fills the cells) + interlude line
+#   (III.3/III.6); spine bodies (curdle-ladder Book-III horror note + III.1 drier + III.2/III.3/III.4 reverse-angle horror
+#   beats + named-rival) + wylla LTM (Book-III interlude placements). No PLANT/FIRE token add/remove; GUARD-1 + R-ladder
+#   (R3=III.3, apex III.6) intact. CANDIDATE motif token BLACK-CELLS / MISSING-SERVANTS flagged for principal (NOT wired —
+#   avoids unreviewed check-threads churn). OPEN: III.4/III.5/III.6 MC questions still to run; the named spared-rival + the
+#   black-cells location both -> margit.
+#
 # SESSION 2026-06-14 (cont. 4) — BOOK-II II.4->II.8 REFINEMENT PASS FOLDED (resolve-by-choice, 2 MC/chapter; same branch).
 # A deeper per-chapter pass on II.4-II.8. Two picks OVERTURN prior folds (flagged REVISE); the rest refine/confirm:
 # - II.4 (REVISE x2): (a) the court ladies are NOT fond of Gael — she's an ODD DUCK, the strange one talked *about,* never *to*;
