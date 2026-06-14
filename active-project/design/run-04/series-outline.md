@@ -214,15 +214,16 @@ charmed she studies geography, never sees the voyage. (South glows; the North is
 
 ### II.4 · the overheard word *(~8)*
 **Beat:** the one insult gag ① **cannot collect** — and the proof of where her carefree ends. Court ladies
-chat idly, fondly, about her hopelessness at **dancing** (a courtly skill — the faint marriage-market rhyme) —
+gossip idly about the princess — **an odd, unsettling child none of the noblewomen quite warm to** (not fond, not cruel: she is the strange one, talked *about*) — and her hopelessness at **dancing** (a courtly skill — the faint marriage-market rhyme) —
 **a named, recurring court lady** among them sighing "no talent, that one, talentless"; Gael walks in midway, catches
 only **"talentless"** out of context, fixed to her name, hears the one unsurvivable cultivation verdict (no
 spiritual root — the negation gag ① cannot reframe as a flattering title), and answers in the same breath with
 **immediate, almost-lethal violence** — body-tempered, flat, her hands at the **named lady's** throat. **A
 lasting maim, not a kill** — she crushes the throat (a ruined voice, a permanent mark; **no qi-spend `GUARD-1`
 clean; no death — the first death she *means* is II.8;** off-ladder reflex-flash, not a rung) — then **moves on
-placidly,** the matter closed. The **maimed lady becomes a small recurring thread:** a fear-spreader nursing her
-grudge, feeding the hardening maegi-rumour (and Otto's case). Fallout: no one can
+placidly,** the matter closed. The **maimed lady becomes ambient recurring cost** — a marked face the reader
+keeps seeing (the ruined voice, the permanent mark), the visible price recurring; **no dedicated thread, no
+grudge-engine** routed to Otto. Fallout: no one can
 read the trigger → the maegi-rumour hardens; the **Starks read cold-instant lethality as asset-confirmation;**
 the King gains motive to **marry the trouble away fast.** **The ignored prince escalates:** Daemon — discredited
 since his II.3 demon-shrieking, dismissed behind every hand — **sends a knife;** it fails mundanely — **her
@@ -244,13 +245,16 @@ Baelon/Viserys, who blame her for the dragon). **Spying on her directly since II
 watchers, intercepted letters, a turned servant; *not* the coin), he works the exposed tier — **Marra** (the
 timid, pious one) won over not by threat but by **sympathetic manipulation:** the kindly-patron Otto convinces
 her that reporting on the princess *helps* Gael — her safety, the upcoming betrothal — so Marra cooperates
-believing she's *protecting* her mistress, never once knowing she is the leak that dooms her (*the maid comes
-back different*). Through that inside channel he reaches the **bestiary,** the one true document: the one
+believing she's *protecting* her mistress, never once knowing she is the leak that dooms her. **Staged
+on-page:** the reader watches Otto work her — the kindly patron — and sees the manipulation land + the pathos
+(a maid who thinks she's helping), not merely learns afterward that *the maid came back different.* Through that inside channel he reaches the **bestiary,** the one true document: the one
 anomaly, a servant logged into a **name.** **Wylla** is the lever — and the keeper of the whole hidden
 apparatus; the one crack. (Gael does not clock Marra now; she **clocks her later, in Book III, and spares her**
 — and that mercy is the III.6 loose-end. `PLANT[MARRA-LEAK]`.) Gael notices the cruder watching
-but reads it as a **reclusive hidden master's secret test** (flattered, she performs for it and leaves her
-journal out as "merit" — her vanity serves up the named entry; she never dreams it's her grandfather). But the
+but reads it as a **reclusive hidden master's secret test** — and this plays as a **broad comic set-piece:**
+flattered, she loudly *performs* the trial (diligence on display, the journal left out as "merit"), turning the
+very surveillance she should fear into her audition; her vanity serves up the named entry; Wylla facepalms; she
+never dreams it's her grandfather. But the
 instant the lever is **Wylla,** carefree stops: cold and precise, she decides to *close the channel* (misfiled
 as protecting the apparatus; the reader sees it's for Wylla). **The clampdown tightens** (`THE-CLAMPDOWN` fires
 — following the II.4 allowance-cut, shield gone): Otto gets the King to **strip her tutors+library** (it was
@@ -270,7 +274,8 @@ kinslayer → accelerates. **Register:** CHILL. **Rung:** off-ladder. **(Arms II
 self-sustaining** (the egg was a reactor, not a battery — `SOURCE-NOT-POOL`), so throttling her changes
 nothing she needs to *survive.* The empire was never about survival — and the hybrid turn lands both ways at once.
 **It pays:** the empire finally **yields real cultivation reagents** (the far-sourced, radiant materials the trade
-+ the vice-coin can reach that the Keep never could), and she takes a genuine **leap** off the yield — the
++ the vice-coin can reach that the Keep never could), and she takes a genuine **leap** off the yield — **rendered
+as a vivid cultivation set-piece** (the acquisition-drive paying off in real power, the genre payoff beat) — the
 acquisition-drive **vindicated** for *advancement* (and, later, *escape:* the same coin funds the ship) — the road
 real, paid in power. **And it was never needed:** her base self-generates, so the whole vice-network, the crimes,
 the blood were never survival — only advancement and exit. The dark note does **not** land on the racket's dead men
@@ -279,8 +284,9 @@ criminal empire and (II.8) toward blood for a survival-panic that never existed.
 faint *inefficiency,* breezy; the reader holds the Wylla-cost (gag ⑥ at its quietest and darkest). And with the
 first true surplus she makes the choice that reveals the one attachment she won't name: she spends a measure of the yield on **Wylla's first body-tempering** — a
 **dramatic, dangerous alchemical mix** that **briefly goes wrong** (a frightening night — warmth turning to
-fever, the body visibly changing, a real scare that bonds them) before it takes; **Wylla half-knows it's
-*something* and chooses not to ask** (NOT a qi-spend — `GUARD-1` stays clean; the apex *give* is still
+fever, the body visibly changing, a real scare that bonds them) before it takes; **the II.6 Wylla interlude lands
+here — her POV of the night it goes wrong: terror → deepened devotion** (fear and love fusing; the half-knowing
+tips toward devotion); **Wylla half-knows it's *something* and chooses not to ask** (NOT a qi-spend — `GUARD-1` stays clean; the apex *give* is still
 III.5) — framed by Gael as "fortifying the asset," the foreshadow of the gift she'll make at the apex. The
 maester, reading the ledger, marks only that she thrives though throttled — strong blood he cannot explain
 (`MAESTER-MARK`, reframed: the Cassandra who sees the impossible child and can prove nothing). **Register:**
@@ -290,11 +296,13 @@ HOLD. **Rung:** off-ladder.
 
 ### II.7 · the vise *(~9)*
 **Beat:** Otto turns the maid's exposure into a **vise** — he maneuvers the wedding *early and forceful,* a
-disposal he wants closed before the wildcard can slip; the betrothal clock jumps. Cornered, Gael reaches the
-terminal realization the whole book earned — the empire is hers in no way that counts, she herself is sold, her
-secrets leaked: **nothing inside these walls is hers.** To *own* a thing you must be **beyond reach** — and she
-clocks the cold truth that **Targaryens aren't strong but for their dragons** (a court of soft mortals with a
-few tamed spirit-beasts), so there is nothing here worth staying for. The resolve crystallizes — and lands as
+disposal he wants closed before the wildcard can slip; the betrothal clock jumps. Cornered, Gael clocks the cage
+for what it is — but **minimally, breezily:** *nothing inside these walls is hers* registers **not as an earned
+epiphany but as typical evil-sect business** (a master owns everything and lets a disciple keep nothing — flat,
+unremarkable; she feels no loss). To *own* a thing you must be **beyond reach** — and she clocks the matching
+genre-fact that **Targaryens aren't strong but for their dragons** (a court of soft mortals with a few tamed
+spirit-beasts), so there is nothing here worth staying for. She reasons straight to the solution. The resolve
+crystallizes — and lands as
 **comedy:** out of nowhere she **declares it,** grand and over-dramatic ("I will forge a vessel to bear me
 beyond the reach of this mortal realm," or the like), to a baffled Wylla who can only **facepalm** (the
 facepalm motif again). A **ship** finally aligns the two warring desires (supply AND solitude at once). ›
@@ -313,7 +321,9 @@ II.5 cold decision becomes the deed: she **disappears the Otto-faction suitor an
 gets only the aftermath** (they were here, then they simply *go*); no drain, no spend — **paper + the maester's
 supply + the still-room:** a poison that reads natural. **Gael does the killing; Wylla's complicity is
 *passive* — she knows, and says nothing** (she does **not** dispose bodies — her own-hand kill, and her active
-crossing, stay III.6; here she crosses only into *silence about murder,* a lighter rung). **Colder than the
+crossing, stay III.6; here she crosses only into *silence about murder,* a lighter rung). **The II.8 Wylla
+interlude lands here — silence as a choice:** she knows what Gael did and *chooses* to stay silent; **love, not
+fear, makes her complicit** — the rung toward III.6. **Colder than the
 Daemon drain** (chosen, planned) — the first death she **means** (the casual II.2 swat she never counted; *this*
 she chooses, for Wylla). **Clean-hands doctrine fires:** poison + paper, *not the demonic path,* so to her it's
 *clean* — a channel closed, the books balanced; she tells herself it's for the apparatus, the reader sees it's
@@ -322,7 +332,9 @@ I'll…" / "I've only a family to feed") and die anyway; dependents ruined, unlo
 the **ship commission is placed** (finalized at III.1; the long con starts; coin off-books, the course the
 reagent-map drew south). And the cruelest fold: the vessel meant to carry Wylla *out* is built through her
 own hands. **Otto** is left with a **corpseless disappearance** he can't close — he probes it melodramatically,
-the lead that becomes the Book-III manhunt. The silent exception under "nothing here is mine": *except Wylla.*
+the lead that becomes the Book-III manhunt. The silent exception under "nothing here is mine": *except Wylla* —
+and the cruel fold (the ship that carries her out is built through her own hands) is **kept implicit, left for
+the reader to assemble:** not spelled out, not pointed at; understated in the prose.
 **Register:** CHILL→SPIKE. **Rung:** R2.
 **Plants:** PLANT[SHIP-COMMISSION] · PLANT[ROUTE-MAP] · PLANT[OTTO-MANHUNT] (the corpseless disappearance is the lead → Book III) · PLANT[WYLLA-COMPLICIT] (*passive* — she knows and stays silent; her active disposal + own-hand kill are III.6)
 **Fires:** FIRE[NOTHING-MINE] · FIRE[REAGENT-MAP] · FIRE[COMPROMISED-CHANNEL] · FIRE[COLLATERAL-DAMAGE] · FIRE[CLEAN-HANDS-DOCTRINE] (the first "clean" kill — paper + poison; "not the demonic path, therefore fine")
