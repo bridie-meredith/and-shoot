@@ -444,8 +444,16 @@ south. **Register:** SPIKE (loudest since Book I). **Rung:** R4 (the apex).
 **Fires:** FIRE[SHIP] · FIRE[MAID-TEMPERED] · FIRE[EXCURSION-RISK] · FIRE[CITY-KNOWLEDGE] · FIRE[GHOST-LEGEND] · FIRE[CLOCK-CONCRETE] · FIRE[WARM-DESTINATIONS] · FIRE[BESTIARY-NAMED-ENTRY] · FIRE[OTTO-LEAK] · FIRE[OTTO-MANHUNT] (the corpseless II.8 disappearance was the lead; his man at the dock is the manhunt's terminus — he wins every move, loses the game) · FIRE[GANG-LOOSE-END] (the underworld front she could never close sold her movements in — why Otto's man is at the dock) · FIRE[MARRA-LEAK] (the chambermaid she clocked and spared in Book III kept feeding Otto; the mercy is the loose-end that converges at the dock) · FIRE[WYLLA-CAGED] (she gives up her noble future — the two-girl cage opens) · FIRE[PROPHESIED-LEGEND] (the realm prefers the legend to her agency, sealed; she never learns) · FIRE[SPY-MISREAD] (the monitor-disciple she feared at I.3 is the one who kills for her — the misread inverted at the apex) · FIRE[CLEAN-HANDS-DOCTRINE] ("clean hands" at last means the blood is on Wylla — the I.5 doctrine carried to its endpoint) · FIRE[ALICENT-SHIELD] (the shield's terminus — Gael sails, never knowing her mother held the seal; the protector left behind) · FIRE[ALICENT-CANT-EXTRACT] (the mother who'd have fled with her, had the King allowed it, is left on the shore — the legitimate escape she could never make) · FIRE[ALICENT-TO-DRAGONSTONE] (the II.3 withdrawal completes — she sailed to her refuge alone years ago; now her daughter sails past it, the separation made literal)
 
 ### Epilogue
-Two girls on a ship, the continent behind, the warm south ahead. Both desires satisfied; one of them now a
-killer. The door left open for the parked Dance book (her longevity intact).
+Two short movements, **both cameras off Gael** (the deuteragonist, then the realm), landing on **clean open
+ambiguity** (not a horror-whisper — the dark undertow stays upstream; the close is light + unresolved). · *(1)*
+**Wylla's coda (her POV — the arc's terminus):** beside her princess at the rail, the continent gone, the warm
+south ahead — the convert who became a killer at the dock, watching the water, *what she is now* an open question
+she doesn't ask; the horror→complicity→faith→killer arc's last quiet beat, resolving into the same ambiguity (not
+dread): freedom, or a prettier cage of her own. · *(2)* **the realm's post-mortem (a light satirical reprise,
+not a re-run of III.6):** Westeros reaches for any explanation but a princess with **agency** — a foreign prince,
+a god, the prophecy; the legend seals, the girls already gone. · **The close:** two girls on a ship, both desires
+satisfied, one of them now a killer. **Freedom or a prettier cage — the reader decides.** The door left open for
+the parked Dance book (her longevity intact).
 **Plants (parked for the Dance):** PLANT[LONGEVITY-OPEN]
 
 ---

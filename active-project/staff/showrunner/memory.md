@@ -51,8 +51,15 @@
 #   (black-cells full, vanished servants, the manhunt's wreckage left on the shore) just before the close; the LOCKED
 #   absent-arrival stays the emotional close after it (block untouched).
 # FOLDED (III.4-III.6): series-outline III.4/III.6 beats; spine III.6 braid; wylla LTM (III.6 kill). No token churn; LOCKED
-#   absent-arrival untouched; R-ladder intact. BOOK-III PER-CHAPTER PASS COMPLETE (III.1-III.6). NEXT: optional epilogue
-#   pass, or resolve the margit flags (named spared-rival, black-cells location), or move to chapter production.
+#   absent-arrival untouched; R-ladder intact. BOOK-III PER-CHAPTER PASS COMPLETE (III.1-III.6).
+# EPILOGUE PASS (folded same session): TWO movements, BOTH cameras off Gael (principal picked "2 and 3" = Wylla coda +
+#   realm's post-mortem, NOT the two-girls-close-only), landing on CLEAN OPEN AMBIGUITY (principal picked clean-ambiguity
+#   over the horror-whisper — the Book-III dark undertow stays UPSTREAM, NOT reprised at the close). (1) Wylla's POV coda =
+#   the arc's terminus (the killer she's become, beside Gael, watching the water; "what she is now" unasked; resolves into
+#   freedom-or-prettier-cage, not dread). (2) the realm's comic post-mortem = a LIGHT satirical reprise (not a re-run of
+#   III.6) — agency unimaginable, the legend seals. Close: "freedom or a prettier cage, the reader decides" + Dance-book
+#   door (LONGEVITY-OPEN). FOLDED: spine + series-outline epilogue; wylla LTM (epilogue coda). No token churn.
+#   NEXT: resolve the margit flags (II.4 maimed lady, III.2 named spared-rival, black-cells location), or chapter production.
 #
 # SESSION 2026-06-14 (cont. 4) — BOOK-II II.4->II.8 REFINEMENT PASS FOLDED (resolve-by-choice, 2 MC/chapter; same branch).
 # A deeper per-chapter pass on II.4-II.8. Two picks OVERTURN prior folds (flagged REVISE); the rest refine/confirm:

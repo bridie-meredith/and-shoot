@@ -373,7 +373,10 @@ The engine is the **asymmetry, sealed — and Alicent is the seal.** The observe
 **Set pieces:** the docks / the waterline (the interception + the kill) · the ship (the launch — SHIP payoff) · the deck (the absent-arrival beat) · the harbor at the city's edge · Dragonstone (Alicent, offstage).
 
 ### Epilogue
-Two girls on a ship, the continent behind them, the warm south ahead. Both desires satisfied; one of them now a killer. Freedom or a prettier cage — the reader decides. Door left open for the parked Dance book (her longevity intact).
+Two short movements, **both cameras off Gael** (the deuteragonist, then the realm), landing on **clean open ambiguity** — *not* a horror-whisper; the dark undertow stays upstream (III.2–III.6) and the close is light and unresolved.
+- **(1) Wylla's coda (her POV — the arc's terminus).** Beside her princess at the rail, the continent gone, the warm south ahead: the convert who became a killer at the dock, watching the water, *what she is now* an open question she doesn't ask. The horror → complicity → faith → killer arc gets its last quiet beat — and it resolves into the same ambiguity, not dread (freedom, or a prettier cage of her own; she chose it either way).
+- **(2) The realm's post-mortem (the satire's last laugh — a light reprise, not a re-run of III.6).** Westeros reaches for any explanation but a princess with **agency** — a foreign prince, a god, the prophecy; the legend seals, the truth stays unimaginable, the girls already gone.
+- **The close.** Two girls on a ship, the continent behind them, the warm south ahead. Both desires satisfied; one of them now a killer. **Freedom or a prettier cage — the reader decides.** Door left open for the parked Dance book (her longevity intact).
 
 ---
 
