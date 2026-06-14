@@ -16,6 +16,30 @@
 # The prior Saerys / Viserys-father / span-B (Dance) framing is RETIRED to provenance
 # (run-02 + tombstones); span-B (the Dance) is PARKED for a later installment, not deleted.
 #
+# SESSION 2026-06-14 (cont. 4) — BOOK-II II.4->II.8 REFINEMENT PASS FOLDED (resolve-by-choice, 2 MC/chapter; same branch).
+# A deeper per-chapter pass on II.4-II.8. Two picks OVERTURN prior folds (flagged REVISE); the rest refine/confirm:
+# - II.4 (REVISE x2): (a) the court ladies are NOT fond of Gael — she's an ODD DUCK, the strange one talked *about,* never *to*;
+#   their chatter is IDLE GOSSIP about a trivial skill (dancing), benign-but-not-affectionate ("fondly"/"poor mite" STRIPPED
+#   everywhere). The comic-horror engine survives (benign subject, mis-heard "talentless"); only the affection is wrong.
+#   (b) the maimed lady = AMBIENT RECURRING COST ONLY — a marked face the reader keeps seeing (ruined voice/permanent mark);
+#   NO dedicated thread, NO grudge-engine routed to Otto. This OVERTURNS the cont.3 "small recurring fear-spreader thread."
+# - II.5 (refine): Marra's turning STAGED ON-PAGE (we watch Otto work her, the kindly patron; the pathos of a maid who thinks
+#   she's helping) — not merely the reported "maid comes back different." Hidden-master-test = BROAD COMIC SET-PIECE (she
+#   performs the imagined trial for the surveillance she should fear; Wylla facepalms).
+# - II.6 (refine): the II.6 Wylla interlude (the first tempering, the night it goes wrong) lands TERROR -> DEEPENED DEVOTION
+#   (fear and love fusing; the half-knowing tips to devotion). The advancement-leap = VIVID cultivation set-piece (genre payoff).
+# - II.7 (REVISE): the "nothing inside these walls is mine" turn is MINIMAL — filed breezily as TYPICAL EVIL-SECT BUSINESS
+#   (a master owns everything, a disciple keeps nothing; flat, no felt loss), NOT the earned terminal epiphany the prior body
+#   framed. Structural pivot (nothing-mine -> beyond-reach -> ship) intact; only the affect is downplayed. Wylla-squeeze kept
+#   LIGHT in II.7, lands bodily in II.8.
+# - II.8 (refine): the II.8 Wylla interlude = SILENCE AS A CHOICE (she knows, chooses to say nothing; LOVE not fear makes her
+#   complicit; the rung toward III.6). The "except Wylla" exception + the ship built-through-her-own-hands fold KEPT IMPLICIT
+#   (reader assembles; understated, not spelled out).
+# FOLDED: validated layer (series-outline II.4-II.8 beats) -> spine bodies (II.4 260/731/1002, II.5 272, II.7 295, II.8 303-306)
+#   -> showrunner memory + gael LTM (II.7 minimal). No token add/remove; GUARD-1 + setting-blind + Rule-22 held; R2=II.8 intact.
+# OPEN/FLAGGED UPDATE: the II.4 maimed lady's DOWNSTREAM ROLE is now RESOLVED = ambient recurring cost (no thread); she still
+#   needs a NAME + card -> margit / /and-write (a recurring marked face, lighter than a thread node).
+#
 # SESSION 2026-06-14 (cont.) — BOOK-II CONFLICT PASS FOLDED (resolve-by-choice; branch claude/book-ii-conflict-pass-1r0u77).
 # Surfaced Book II's open tensions as multiple-choice decisions, principal picked, cascade folded. FOUR primary + two cascade picks:
 # (1) II.6 reading -> HYBRID: empire VINDICATED (real far-sourced reagents + a genuine leap; pays for advancement AND escape)
