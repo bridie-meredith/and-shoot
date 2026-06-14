@@ -1,0 +1,7 @@
+[2026-06-14] IDENTITY: Marra — chamber-maid to Gael; smallfolk; ~16; pious (the Seven, fervently and fearfully); timid, anxious; loyal but breakable; the cautionary maid-candidate (OQ-CL2)
+[2026-06-14] PERSONALITY CORE: does her duty out of fear of failing it; privately, deeply unnerved by the odd princess she serves; reaches for the Seven when frightened (often); crumbles when made to feel she's done wrong — this is the lever
+[2026-06-14] II.5 ROLE (IF SELECTED AS THE MAID): the "maid comes back different" — Otto leans on her (kindly pressure she can't identify as pressure) and she carries messages she shouldn't; her fear is the handle; through her he reaches the bestiary; the compromise is characterological, not contrived
+[2026-06-14] RELATIONSHIP WITH GAEL: a mistress she serves dutifully and fears privately; would not betray Gael willingly — but "willingly" is exactly what pressure erodes
+[2026-06-14] RELATIONSHIP WITH SEPTA: the septa is her moral lodestar; she trusts the septa's frame, which makes her more alarmed by Gael, not less
+[2026-06-14] CANDIDATE STATUS: maid-candidate MEDIUM / CAUTIONARY (OQ-CL2 open ruling; do not write her as the confirmed turned maid until ruled)
+[2026-06-14] HARD FENCES: (1) smallfolk — no cultivation awareness; perceives wrongness-and-sin through the Faith's frame; (2) breakable not wicked — yields to fear and kindly pressure; (3) candidate/cautionary not committed

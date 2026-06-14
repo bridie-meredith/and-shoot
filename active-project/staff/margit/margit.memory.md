@@ -527,3 +527,97 @@ a stale `-122ac` / Viserys-era card.**
 All 10 are net-new files; no pre-existing card or memory was overwritten. Schema-validated against
 `schemas/card.schema.md` (frontmatter complete; persona core sections + Fiction-role overlay present;
 typography-checked — only intended em/en-dashes, middot, ellipsis, arrow; no stray glyphs).
+
+---
+
+## Actor provisioning: 2026-06-14
+
+### Session scope
+
+Principal directive: provision the active span-A cast for the live Gael cultivation-reincarnation comedy
+project (promoted from and-experiment prototype). Cast was never provisioned. This is /and-cast Phase-4
+style provisioning against the new live span-A cards (gael-targaryen, wylla-maid, alicent-hightower, etc.)
+that supersede the stale saerys / viserys-I / span-B warehouse cards.
+
+Schema authority: `schemas/memory.schema.md`.
+Source cards: `active-project/warehouse/<slug>.card.md` (warehouse authoritative persona layer).
+Source narrative: `active-project/intake/character-profiles.md`, `active-project/intake/spine.md`.
+
+### Directories and files created
+
+**PRINCIPAL actors (full provision — ltm + stm + state + vibes + card copy):**
+
+| slug | directory | files created |
+|------|-----------|---------------|
+| gael-targaryen | `active-project/actors/gael-targaryen/` | card.md, state.md, vibes.md (ltm.md + stm.md already existed from prior partial provision) |
+| wylla-maid | `active-project/actors/wylla-maid/` | card.md, ltm.md, stm.md, state.md, vibes.md |
+| alicent-hightower | `active-project/actors/alicent-hightower/` | card.md, ltm.md, stm.md, state.md, vibes.md |
+| otto-hightower | `active-project/actors/otto-hightower/` | card.md, ltm.md, stm.md, state.md, vibes.md |
+| jaehaerys-i-targaryen | `active-project/actors/jaehaerys-i-targaryen/` | card.md, ltm.md, stm.md, state.md, vibes.md |
+| septon-barth | `active-project/actors/septon-barth/` | card.md, ltm.md, stm.md, state.md, vibes.md |
+| maester-lorren | `active-project/actors/maester-lorren/` | card.md, ltm.md, stm.md, state.md, vibes.md |
+| septa-aldith | `active-project/actors/septa-aldith/` | card.md, ltm.md, stm.md, state.md, vibes.md |
+| hobb | `active-project/actors/hobb/` | card.md, ltm.md, stm.md, state.md, vibes.md |
+| daemon-targaryen | `active-project/actors/daemon-targaryen/` | card.md, ltm.md, stm.md, state.md, vibes.md |
+
+**SUPPORTING actors (lighter — ltm + stm + state + card copy; vibes optional per instruction):**
+
+| slug | directory | files created |
+|------|-----------|---------------|
+| marra-chambermaid | `active-project/actors/marra-chambermaid/` | card.md, ltm.md, stm.md, state.md |
+| pella-chambermaid | `active-project/actors/pella-chambermaid/` | card.md, ltm.md, stm.md, state.md |
+| nona-chambermaid | `active-project/actors/nona-chambermaid/` | card.md, ltm.md, stm.md, state.md |
+| the-factor | `active-project/actors/the-factor/` | card.md, ltm.md, stm.md, state.md |
+
+### Seeding basis
+
+- **ltm.md:** durable identity, history, relationships, wants, fences distilled from warehouse card +
+  character-profiles.md + spine.md. Full event-history seeded for characters with documented Book I–II arcs.
+- **stm.md:** "fresh — no scenes shot yet" placeholder for all actors; spine-correct opening-position note.
+- **state.md:** Book-I-opening snapshot — who/where/condition at I.1 scene-open. Characters not yet on-stage
+  at I.1 (Wylla, Daemon, the Factor) are noted with their entry points.
+- **vibes.md:** series-level vibe-cloud seed for all principal cast. Supporting cast vibes omitted per
+  instruction ("vibes optional" for supporting); the chambermaids and the-factor are thin.
+- **card.md:** actor working copy of the warehouse card with provenance header.
+
+### Pre-existing partial provision
+
+`active-project/actors/gael-targaryen/ltm.md` and `stm.md` already existed from a prior partial
+provision session (dated 2026-06-14 per the ltm entries). These files were preserved; card.md, state.md,
+and vibes.md were added to complete the full provision. No overwrite of pre-existing files.
+
+### Excluded per instruction
+
+NOT provisioned (per principal directive):
+- Minor texture (provision on-demand): bessa-wet-nurse, mella-wet-nurse, cissa-nursemaid, nesta-tiring-girl,
+  mistress-orla-wardrobe, mistress-bryony, wenda-the-rocker, ser-harwin-the-patient.
+- Tombstoned / stale span-B cards: saerys-targaryen, viserys-i-targaryen, helaena-targaryen-122ac,
+  daenys-velaryon, nymeria-summer-isles, and any saerys-* exemplar.
+- Not a persona: comedy-register (register card, not a persona).
+
+### Exemplar status
+
+- `gael-targaryen` — exemplar exists at `active-project/persona-exemplars/gael-targaryen.md`. NOTED.
+- `wylla-maid` — exemplar exists at `active-project/persona-exemplars/wylla-maid.md`. NOTED.
+- All other span-A cast: no paired exemplars in `active-project/persona-exemplars/` (the existing exemplars
+  there are for the OLD span-B cast: saerys-targaryen, viserys-i-targaryen, helaena-targaryen-122ac,
+  daenys-velaryon, nymeria-summer-isles, saerys-septa, ser-harwin-the-patient). New exemplars for
+  alicent-hightower, otto-hightower, jaehaerys-i-targaryen, septon-barth, maester-lorren, septa-aldith,
+  hobb, daemon-targaryen are NOT authored here (no instruction to do so; not blocking for span-A chapter
+  production unless /and-cast Phase 5 audit fires). FLAG for principal: exemplar authoring pass needed for
+  span-A cast before /and-cast Phase 5 gate fires.
+
+### Open flags for principal
+
+- **OQ-CL2 (Book II maid):** three candidates provisioned (Pella HIGH / Marra MED-cautionary / Nona LOW);
+  none committed. On ruling: promote the chosen card to `tier: supporting` + author a persona-exemplar.
+- **Span-A exemplar gap:** gael + wylla have exemplars; the remaining 8 principals do not. Needs an
+  exemplar-authoring pass before /and-cast Phase 5 gate.
+- **the-factor references `saerys-targaryen`** in the warehouse card's relationships section; this is a
+  stale cross-reference (the protagonist slug has changed to `gael-targaryen`). Not corrected here (margit
+  does not edit card content); flag for fixer.
+
+### Preservation
+
+All files are net-new. The two pre-existing files (`active-project/actors/gael-targaryen/ltm.md` and
+`stm.md`) were read for context and not overwritten. No destructive operations this session.

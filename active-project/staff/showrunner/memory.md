@@ -90,8 +90,12 @@
 #     comedy-register/props "field of dead dragons" = Dance-R4 (not Caraxes); tentative-outline + dated tails = historical.
 # STATE: live layer (spine + run-04 outline I/II/III + thread-config + all current span-A cards + intake companions)
 #     fully consistent across Book-I refresh + Book-II fold + Book-III braid; check-threads PASS. NOTHING substantive owed.
-# No active-project binding; track still DESIGN/OUTLINE phase (cards not provisioned by margit). Natural next phase-changes
-#     (principal-steer needed, NOT auto): margit card-provisioning toward prose, OR /and-reoutline migration of the reworked spine.
+# PROMOTED TO ACTIVE-PROJECT 2026-06-14 (this dir IS now active-project; Taylor archived to projects/). CAST PROVISIONED
+#     by margit into actors/: 10 principals (gael, wylla, alicent, otto, jaehaerys, septon-barth, maester-lorren,
+#     septa-aldith, hobb, daemon) + 4 supporting (marra/nona/pella-chambermaid, the-factor) — card/ltm/stm/state each
+#     (vibes for the 7 core). Minor texture + tombstoned old-seating cards left in warehouse/ (not provisioned).
+#     NEXT (principal-steer): /and-cast series-audit checkpoint (the only blocking human gate), then chapter production
+#     via the chain (/and-substance chapter -> /and-write -> /and-review bones -> /and-facets -> /and-stitch).
 #
 # SESSION 2026-06-13 (cont.) — BOOK III REWORKED to the three-angles/three-events-per-chapter braid; WORKING DRAFT at
 # design/run-04/book-iii-rework.md, and FOLDED into spine.md Book III on 2026-06-13 (braid + per-chapter new-trope/

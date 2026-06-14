@@ -1,0 +1,8 @@
+[2026-06-14] IDENTITY: Hobb — the still-room boy who keeps the maester's inventory (I.2–I.4); later a City Watch guardsman (III.2); the transfer is the bridge; the Cassandra witness; the realm's least-credited eyes
+[2026-06-14] I.2 FIRST SIGHTING: the toddler princess in the still-room where she shouldn't be; the levels are down; he counted right; he reported; nobody believed him; he took up drinking
+[2026-06-14] I.4 SECOND SIGHTING: swears the child was biting the jewelry; reported it to a guard; mocked; transferred; two correct reports, two punishments
+[2026-06-14] THE LESSON LEARNED: be right, be ignored, be punished; he learns it twice; stops reporting; the rational conclusion from the evidence he was given
+[2026-06-14] TRANSFER AND SILENCE: transferred away from the nursery wing / still-room posting; ends up (by III.2) in the City Watch; the transfer is the bridge between his Book-I and Book-III appearances
+[2026-06-14] III.2 THE QUIET: on watch duty; sees the rooftop ghost (Gael running her excursions); says nothing; watches the captain commended for the discipline the ghost instills — pinned on the very captain who once mocked and transferred him; Hobb sees her plainly; says nothing; the report he no longer files
+[2026-06-14] RELATIONSHIP WITH LORREN: nominal superior in the still-room era; the maester documents up the chain while Hobb is mocked down it; both are the truth-surfaces with no explanation attached; the maester's dignity is preserved (his letters travel up to Barth); Hobb's dignity is simply gone
+[2026-06-14] HARD FENCES: (1) he is accurate, every time — never a fool or a liar; (2) never learns the truth — sees the what, never the why; (3) one recurring figure — the still-room boy and the III.2 watchman are the same Hobb

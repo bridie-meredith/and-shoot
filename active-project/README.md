@@ -26,4 +26,5 @@ canonical build target: `active-project/intake/spine.md` (narrative) +
 
 ## Status
 Promoted to active-project 2026-06-14. Spine + outline reconciled across Books I–III
-(check-threads PASS). Cast provisioning underway. No chapters drafted yet.
+(check-threads PASS). Cast provisioned into `actors/` (14 active span-A roles). No chapters drafted yet —
+next is the `/and-cast` series-audit checkpoint, then chapter production via the chain.

@@ -1,0 +1,11 @@
+VIBES:
+  the-egg: [incubation, threshold, a thing about to change, the gift that arms the problem]
+  cultivation: [obsession, armor, the grindy comfort of repetition, wrong and working anyway]
+  the-previous-iteration: [death-that-was, the reader with no power, the wound the register covers]
+  wylla: [the-unbookable-account, the one who stays, warmth the cauldron can't process]
+  grimdark-westeros: [cheat-codes, logistics-problems, the-backdrop-that-deflates, the-cage-she-exits]
+  the-grindy-routine: [quiet, control, the thing that quiets the thing she survived, Tuesday]
+  titles: [earned-misunderstandings, her-resume, the-slurs-she-wears-with-pride]
+  the-still-room: [domain, unwatched-corner, the-work, the-one-room-that-is-hers]
+  mortality: [pre-emptive-refusal, scar-tissue, the-argument-she-is-already-winning]
+  the-register: [breezy-armor, posterity-dictation, the-blank-line-that-has-not-yet-arrived]

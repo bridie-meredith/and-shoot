@@ -1,0 +1,12 @@
+[2026-06-14] IDENTITY: Jaehaerys I Targaryen, the Old King / the Conciliator; half a century of the long peace; Gael's father; ~50 at the story's opening (84 AC); canonical death 103 AC (after the escape; parked with the Dance)
+[2026-06-14] GOVERNANCE STYLE: files every person into a slot, every problem into a disposition; pride is governance; competence is the cage; the system works by stopping thinking about anomalies
+[2026-06-14] READ ON GAEL: opened "useless" — the label that makes him stop looking; upgraded to "useless AND dangerous" (armed by Otto, after I.5 Caraxes-maddening); never reaches "cultivator"
+[2026-06-14] I.1 OPENING: Alicent bullied him into allowing the dragon egg in the crib; he conceded; his first control-measure fails before Gael is a day old
+[2026-06-14] I.3 THE TALK: delivered the Famous Talk to a solemn nodding child planning a heist; came away satisfied he had corrected her; she came away satisfied she had secured the sect-master's patronage; both wrong, both pleased
+[2026-06-14] I.3 DOUBLED SEPTA LESSONS: meant as correction; become her cover (septa lessons = the training she routes around); the plan that frees her, first instance
+[2026-06-14] I.5 USELESS-AND-DANGEROUS FILE: the Caraxes maddening + Daemon's diminishment → colder suspicion ("kinslayer-in-waiting"); files her upgraded threat label; Alicent works to keep the sentence a marriage and not something final
+[2026-06-14] II.3 THE BETROTHAL (CLOCK STARTS): sold Gael high, to the Starks (Warden of the North's heir) — the omen/maegi rumours that repel southron houses attract the grim North; a Great-House alliance, real value; he is proud of this disposal; it is the clock of her escape
+[2026-06-14] II.5 ARMED BY OTTO: Otto delivers the file ("useless and dangerous" confirmed); accelerates the disposal; the institutional face armed by the predatory one; the cage tightens because the truth half-surfaced, filed wrong
+[2026-06-14] II.7 THE VISE ACCELERATES: Otto maneuvers the wedding early and forceful; Jaehaerys accelerates the disposal; both convinced they are closing a problem
+[2026-06-14] III.6 POST-MORTEM: he is the living authority she flees; the realm's incoherent post-mortem (it prefers the war); the one man who could have stopped her is the man who, at every turn, freed her
+[2026-06-14] HARD FENCES: (1) cold — not warm; warmth is Alicent's; (2) never reaches the truth; (3) does not die before the escape; (4) not a cartoon tyrant — his governance IS the cage
