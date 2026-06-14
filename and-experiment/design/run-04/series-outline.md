@@ -279,45 +279,74 @@ the lead that becomes the Book-III manhunt. The silent exception under "nothing 
 
 ## BOOK III — *the narrow escape* · age ~9–11 · the Keep → the ship · heist caper
 
-### III.1 · the commission
-**Beat:** the ship ordered through three layers of paper, paid from the startup; the shipwright (a craftsman
-who won't ask whose it is) quotes years. Tight against the betrothal clock. **Register:** HOLD→SPIKE. **Rung:** off-ladder.
+### III.1 · the commission — `[SHIP · CLOCK · OTTO]`
+**Beat:** *(SHIP)* the hull ordered through three layers of paper, designed off the reagent map, paid from the
+off-books dice-coin; the shipwright (a craftsman who won't ask whose it is) quotes *years.* · *(CLOCK)* Otto's
+II.7 vise has set the wedding early — a date forms — so years-of-build against months-to-bride is murder. ·
+*(OTTO)* his II.8 manhunt is live, so she builds the exit **under an active investigation,** serenely misreading
+the inquisitor as an orthodox sect hunting her own phantom Quiet Coin and resolving, gravely, to *help him.*
+(New trope: the natal-treasure / artificer commission — the *years* read to her as a treasure's forging-cycle,
+so a timeline that should terrify her doesn't.) **Register:** HOLD→SPIKE. **Rung:** off-ladder.
 **Plants:** PLANT[SHIPYARD-VULNERABILITY] · PLANT[FACTOR-THREAT]
-**Fires:** FIRE[SHIP-COMMISSION] · FIRE[ROUTE-MAP] · FIRE[STARTUP] · FIRE[PROFIT-CYCLE] · FIRE[OFFBOOKS-ACCOUNT] (the dirty dice-coin pays for the hull the soap-money can't be seen buying)
+**Fires:** FIRE[SHIP-COMMISSION] · FIRE[ROUTE-MAP] · FIRE[STARTUP] · FIRE[PROFIT-CYCLE] · FIRE[OFFBOOKS-ACCOUNT] (the dirty dice-coin pays for the hull the clean coin can't be seen buying)
 
-### III.2 · the excursions
-**Beat:** the excursions go **routine and citywide** — she slipped out before (backing the maid against the
-racket's rivals all through Book II: short, surgical, underworld-only), but now she's out constantly for the
-ship-build (shipyard, harbor, markets), the difference being scale + stakes against the betrothal clock; Wylla
-covering; superhuman child parkour; the "ghost of the Red Keep" legend. Hobb, on the watch, sees her and says
-nothing. **Register:** SPIKE. **Rung:** off-ladder.
-**Plants:** PLANT[EXCURSION-RISK] · PLANT[GHOST-LEGEND] · PLANT[CITY-KNOWLEDGE]
+### III.2 · the excursions — `[SHIP · GANG · FACTOR]`
+**Beat:** *(SHIP)* the excursions go **routine and citywide** — short, surgical underworld outings in Book II,
+now constant for the ship-build (shipyard, harbor, timber-yards), the difference scale + stakes against the
+betrothal clock; Wylla covers ("at her meditations"); superhuman child parkour births the **"ghost of the Red
+Keep"** legend (she reads it as proof her light-body art has matured — flattering, not a manhunt risk). Hobb,
+on the watch, sees her and says nothing. · *(GANG)* rivals sense the Quiet Coin distracted and overextended and
+**test the house she can't fully mind** — she answers a few, fast and quiet, but can't be everywhere, and a
+rival or two she only *spares* (the loose end that sells her out at III.6). · *(FACTOR)* the ship-money has
+swollen past safe trust; a pit-factor starts skimming and dreaming bigger (**Quint seeded**). **Register:** SPIKE. **Rung:** off-ladder.
+**Plants:** PLANT[EXCURSION-RISK] · PLANT[GHOST-LEGEND] · PLANT[CITY-KNOWLEDGE] · PLANT[GANG-LOOSE-END] (the rivals she can't close / only spares — the underworld thread that feeds Otto at the apex)
 **Fires:** FIRE[UNSEEN-ENFORCER] (the Book-II underworld outings escalate to citywide ship-runs) · FIRE[BODY-TEMPERING-CONCEALED] · FIRE[HIDEY-HOLE] · FIRE[CASSANDRA] · FIRE[WYLLA-COMPLICIT] (she has covered for Gael since the still-room; the burying becomes the alibi)
 
-### III.3 · the greedy factor
-**Beat:** **Lothar Quint** smells money, leans on Wylla; Gael handles him colder-by-casual (takes his
-quicklime tip first; "the account is closed"). Her reputation does some of the intimidating. **Register:** CHILL. **Rung:** R3.
-**Fires:** FIRE[FACTOR-THREAT] · FIRE[SHIPYARD-VULNERABILITY] · FIRE[DRAGONBANE-EPITHET] · FIRE[FACTOR-NETWORK] (Quint is one of her own pit-factors, grown greedy)
+### III.3 · the greedy factor — `[FACTOR · GANG · OTTO]` › **R3**
+**Beat:** *(FACTOR)* **Lothar Quint,** grown greedy, can't produce the phantom buyer behind the ship-money and
+leans on Wylla; Gael removes him colder-by-casual (takes his quicklime tip first, thanks him; "the account is
+closed") — **colder than R2,** his death-flag cashing (⑦). She frames it as **karmic retribution** (the
+wayward disciple courts his own tribulation — the clean-hands doctrine in cosmic robes). · *(GANG)* Quint's
+grab cracks the house open and a rival crew pounces; she puts two fires out at once, a louder trail than usual.
+· *(OTTO)* that trail is the lead his manhunt needed — a "natural" death + a gang-flare circling the maid he
+flagged in the bestiary; he draws the line toward Wylla. **Her handling feeds the hunter.** **Register:** CHILL. **Rung:** R3.
+**Fires:** FIRE[FACTOR-THREAT] · FIRE[SHIPYARD-VULNERABILITY] · FIRE[DRAGONBANE-EPITHET] · FIRE[FACTOR-NETWORK] (Quint is one of her own pit-factors, grown greedy) · FIRE[CLEAN-HANDS-DOCTRINE] (the karmic-justice reframe — poison + paper, not the demonic path)
 
-### III.4 · the deadline
-**Beat:** the betrothal accelerates; they're packing her north; the two countdowns cross; she feigns the
-delicate-waif (the mask paying off) to buy delay. **Register:** CHILL. **Rung:** off-ladder.
+### III.4 · the deadline — `[CLOCK · OTTO · SHIP]`
+**Beat:** *(CLOCK)* the wedding accelerates — Jaehaerys packing her north; she burns her last delay-capital
+playing the **sickly waif** too delicate to travel (the mask paying off — they believe her delicate because
+the legend already wrote her so). · *(OTTO)* having drawn his line in III.3, he closes — surveillance peaks,
+melodramatically certain; he maneuvers to expose her *before* the wedding carries her out of reach. · *(SHIP)*
+the hull is behind; the two countdowns cross — accelerate the build while stalling the wedding, both maxed.
+(New trope: playing weak, the pig that eats the tiger.) **Register:** CHILL. **Rung:** off-ladder.
 **Fires:** FIRE[BETROTHAL-DREAD] · FIRE[OUTWARD-COMPLIANCE]
 
-### III.5 · the tempering
-**Beat:** *the one outward spend.* Runs qi through Wylla to make her sea-durable, deadpan-framed as logistics;
-costs Gael real cultivation. For Wylla, the magic visibly working **seals her faith** (junior sister); for
-Gael, it "clears the death flag" on the one person she can't lose. **Register:** HOLD (anti-curdle GIVE). **Rung:** off-ladder.
+### III.5 · the tempering — `[the GIVE · SHIP · OTTO/CLOCK = why-now]` › **the anti-curdle break**
+**Beat:** *(the GIVE)* the **one outward spend** — she runs her own qi into Wylla to make her sea-durable
+(deadpan-framed as "investing in the asset" / a dao-transmission rite); it **costs Gael real cultivation —
+she chose to be weaker for one person** (GUARD-1's third and final spend; distinct from the II.6 no-spend
+alchemical first temper). · *(SHIP)* framed as voyage-prep; the ship days from ready. · *(why-now: OTTO/CLOCK)*
+the wedding imminent and Otto at the threshold — the rite under the gun. For Wylla the magic visibly working
+**seals her faith** (junior sister); for Gael it "clears the death flag" on the one person she can't lose.
+**Register:** HOLD (anti-curdle GIVE). **Rung:** off-ladder.
 **Plants:** PLANT[MAID-TEMPERED]
 **Fires:** FIRE[WYLLA-CONVERSION] · FIRE[WYLLA-HORROR] (the Book-II horror at Gael's blithe violence, metabolized into faith — she has chosen this, eyes open) · FIRE[DEATH-FLAG]
 
-### III.6 · the narrow escape
-**Beat:** Lock III at full scale. Discovery via **Otto** (he connects the vanished factor + the ship
-payments + the maid's movements; the pursuer **Wylla kills** is his man — the named entry dooms the person
-it warmed). Wylla leaves her house and name behind to board; the realm's post-mortem reaches for any
+### III.6 · the narrow escape — `[OTTO · CLOCK · GANG/FACTOR loose end]` + **the LOCKED absent-arrival** › **the apex**
+**Beat:** Lock III at full scale. *(CLOCK × SHIP)* the wedding party arrives to collect the bride exactly as
+the hull comes ready — collection and launch collide at the water. · *(OTTO)* his one correct deduction puts
+his man at the dock; he wins every move and loses the game. · *(GANG/FACTOR loose end)* the interceptor is
+**Otto's man,** placed there because a **loose end of the underworld she built** — a rival she once spared, a
+removed factor's vengeful associate — **sold the Quiet Coin's movements into the investigation;** the front
+she could never close becomes Otto's eyes, and **the tempered maid kills the interceptor by her own hand**
+(Gael's III.5 gift made her able; the I.3 monitor-disciple misread inverts — the spy she feared kills *for*
+her). Wylla leaves her house and name behind to board. **The LOCKED absent-arrival (the one crack):** on the
+deck, the continent sliding back, Gael reaches for the cultivation-gloss to *file* leaving her mother — and
+**it doesn't come.** A blank where the register should be; she doesn't name it, looks at the water, goes on
+(the only sign she'll miss anyone, and she won't let herself know it). The realm's post-mortem reaches for any
 explanation — a foreign prince, a god, the prophecy — anything but a princess with **agency**. The ship sails
 south. **Register:** SPIKE (loudest since Book I). **Rung:** R4 (the apex).
-**Fires:** FIRE[SHIP] · FIRE[MAID-TEMPERED] · FIRE[EXCURSION-RISK] · FIRE[CITY-KNOWLEDGE] · FIRE[GHOST-LEGEND] · FIRE[CLOCK-CONCRETE] · FIRE[WARM-DESTINATIONS] · FIRE[BESTIARY-NAMED-ENTRY] · FIRE[OTTO-LEAK] · FIRE[OTTO-MANHUNT] (the corpseless II.8 disappearance was the lead; his man at the dock is the manhunt's terminus — he wins every move, loses the game) · FIRE[WYLLA-CAGED] (she gives up her noble future — the two-girl cage opens) · FIRE[PROPHESIED-LEGEND] (the realm prefers the legend to her agency, sealed; she never learns) · FIRE[SPY-MISREAD] (the monitor-disciple she feared at I.3 is the one who kills for her — the misread inverted at the apex) · FIRE[CLEAN-HANDS-DOCTRINE] ("clean hands" at last means the blood is on Wylla — the I.5 doctrine carried to its endpoint) · FIRE[ALICENT-SHIELD] (the shield's terminus — Gael sails, never knowing her mother held the seal; the protector left behind) · FIRE[ALICENT-CANT-EXTRACT] (the mother who'd have fled with her, had the King allowed it, is left on the shore — the legitimate escape she could never make) · FIRE[ALICENT-TO-DRAGONSTONE] (the II.4 withdrawal completes — she sailed to her refuge alone years ago; now her daughter sails past it, the separation made literal)
+**Fires:** FIRE[SHIP] · FIRE[MAID-TEMPERED] · FIRE[EXCURSION-RISK] · FIRE[CITY-KNOWLEDGE] · FIRE[GHOST-LEGEND] · FIRE[CLOCK-CONCRETE] · FIRE[WARM-DESTINATIONS] · FIRE[BESTIARY-NAMED-ENTRY] · FIRE[OTTO-LEAK] · FIRE[OTTO-MANHUNT] (the corpseless II.8 disappearance was the lead; his man at the dock is the manhunt's terminus — he wins every move, loses the game) · FIRE[GANG-LOOSE-END] (the underworld front she could never close sold her movements in — why Otto's man is at the dock) · FIRE[WYLLA-CAGED] (she gives up her noble future — the two-girl cage opens) · FIRE[PROPHESIED-LEGEND] (the realm prefers the legend to her agency, sealed; she never learns) · FIRE[SPY-MISREAD] (the monitor-disciple she feared at I.3 is the one who kills for her — the misread inverted at the apex) · FIRE[CLEAN-HANDS-DOCTRINE] ("clean hands" at last means the blood is on Wylla — the I.5 doctrine carried to its endpoint) · FIRE[ALICENT-SHIELD] (the shield's terminus — Gael sails, never knowing her mother held the seal; the protector left behind) · FIRE[ALICENT-CANT-EXTRACT] (the mother who'd have fled with her, had the King allowed it, is left on the shore — the legitimate escape she could never make) · FIRE[ALICENT-TO-DRAGONSTONE] (the II.4 withdrawal completes — she sailed to her refuge alone years ago; now her daughter sails past it, the separation made literal)
 
 ### Epilogue
 Two girls on a ship, the continent behind, the warm south ahead. Both desires satisfied; one of them now a
