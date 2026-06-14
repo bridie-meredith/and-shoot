@@ -10,7 +10,7 @@ origin: authored
 quality: full
 tier: supporting
 references:
-  - saerys-targaryen
+  - gael-targaryen
   - prop-bill-of-exchange
   - cond-trade-network-formation
   - prop-account-book
