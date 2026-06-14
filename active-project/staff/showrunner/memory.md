@@ -39,6 +39,20 @@
 #   (R3=III.3, apex III.6) intact. CANDIDATE motif token BLACK-CELLS / MISSING-SERVANTS flagged for principal (NOT wired —
 #   avoids unreviewed check-threads churn). OPEN: III.4/III.5/III.6 MC questions still to run; the named spared-rival + the
 #   black-cells location both -> margit.
+# BOOK-III PASS COMPLETED (III.4-III.6 folded same session):
+# - III.4: HARD comic/horror contrast (the waif-act farce runs directly over the black-cells horror; the register-gap is
+#   the engine). Otto's closing = REAL NEAR-MISS / tension spike (genuinely close, exposure nearly lands before she slips;
+#   modifies the prior "melodramatically certain but always a step behind" -> now a real scare into III.6).
+# - III.5: PURE-FRAME (she files the give as "investing in the asset," entirely misses she chose to be weaker; the crack
+#   stays reserved for III.6). The rite stays the WARM ANTI-CURDLE EXCEPTION — deliberately EXEMPT from the Book-III horror
+#   undertow (the one beat that gives; intimate scare, not horror).
+# - III.6: Wylla's first kill (the interceptor) = she HESITATES, then crosses (the horror of crossing visible; devotion
+#   tested + chosen; NOT smooth/reflexive — modifies the prior clean-kill framing). The apex FOREGROUNDS THE HORROR-COST
+#   (black-cells full, vanished servants, the manhunt's wreckage left on the shore) just before the close; the LOCKED
+#   absent-arrival stays the emotional close after it (block untouched).
+# FOLDED (III.4-III.6): series-outline III.4/III.6 beats; spine III.6 braid; wylla LTM (III.6 kill). No token churn; LOCKED
+#   absent-arrival untouched; R-ladder intact. BOOK-III PER-CHAPTER PASS COMPLETE (III.1-III.6). NEXT: optional epilogue
+#   pass, or resolve the margit flags (named spared-rival, black-cells location), or move to chapter production.
 #
 # SESSION 2026-06-14 (cont. 4) — BOOK-II II.4->II.8 REFINEMENT PASS FOLDED (resolve-by-choice, 2 MC/chapter; same branch).
 # A deeper per-chapter pass on II.4-II.8. Two picks OVERTURN prior folds (flagged REVISE); the rest refine/confirm:

@@ -429,9 +429,13 @@ interceptor is **Otto's man,** placed there because the **loose ends she let liv
 spared / a removed factor's vengeful associate **sold the Quiet Coin's movements,** and **Marra** — the turned
 chambermaid Gael clocked in Book III and *spared* — kept feeding Otto her movements (the mercy that dooms her).
 The threads she could never close, and the **one she *chose* not to,** become Otto's eyes, and **the tempered
-maid kills the interceptor by her own hand**
-(Gael's III.5 gift made her able; the I.3 monitor-disciple misread inverts — the spy she feared kills *for*
-her). Wylla leaves her house and name behind to board. **The LOCKED absent-arrival (the one crack):** on the
+maid kills the interceptor by her own hand — but she *hesitates first*:** at the threshold she falters, the
+horror of crossing visible in the moment, and then commits *for Gael* (not smooth, not reflexive — her devotion
+tested and chosen; the gift that "saved" her is what makes her able). (Gael's III.5 gift made her able; the I.3
+monitor-disciple misread inverts — the spy she feared kills *for* her.) Wylla leaves her house and name behind
+to board. **The horror-cost foregrounded (just before the close):** as they slip free, a last glimpse of what
+their freedom cost others — **the black-cells full, the vanished servants, the manhunt's human wreckage** left
+behind on the shore; her serene ascension is paid in people she never counts. **The LOCKED absent-arrival (the one crack):** on the
 deck, the continent sliding back, Gael reaches for the cultivation-gloss to *file* leaving her mother — and
 **it doesn't come.** A blank where the register should be; she doesn't name it, looks at the water, goes on
 (the only sign she'll miss anyone, and she won't let herself know it). The realm's post-mortem reaches for any
