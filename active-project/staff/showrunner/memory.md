@@ -16,6 +16,28 @@
 # The prior Saerys / Viserys-father / span-B (Dance) framing is RETIRED to provenance
 # (run-02 + tombstones); span-B (the Dance) is PARKED for a later installment, not deleted.
 #
+# SESSION 2026-06-14 (cont.) — BOOK-II CONFLICT PASS FOLDED (resolve-by-choice; branch claude/book-ii-conflict-pass-1r0u77).
+# Surfaced Book II's open tensions as multiple-choice decisions, principal picked, cascade folded. FOUR primary + two cascade picks:
+# (1) II.6 reading -> HYBRID: empire VINDICATED (real far-sourced reagents + a genuine leap; pays for advancement AND escape)
+#     AND never NEEDED (self-generating base; the survival-panic was hollow). CASCADE: deflation CONTAINED at II.6, its dark
+#     weight on the WYLLA-COST (NOT the II.8 kill, NOT the racket's dead men — Gael feels nothing for minions; they're furniture).
+#     II.8 unchanged; III ship-funding intact; no token churn (SOURCE-NOT-POOL + ACQUISITION-DRIVE already fire II.6).
+# (2) Daemon knife -> RESTORED at II.4 (the DEC-0117 reshuffle had dropped it from every chapter body; the live Daemon cards/LTM
+#     had kept it — so this reconciled the spine/outline UP to the cards). CASCADE: she NEVER REGISTERS it (rival-sect-misread
+#     alt RETIRED). Rides DAEMON-DISCREDITED (now fires II.4 too); no new token; GUARD-1 untouched; first meant kill still II.8.
+# (3) R2 -> KEEP MULTIPLE at II.8, "register not count" (corpseless suitor-PARTY vanish; escalation is in coldness/register,
+#     not body-count; R3 single-casual is by design). Also fixed a STALE "R2 II.7" in the series-outline ladder header -> II.8.
+# (4) II.6 first-tempering -> KEPT (PLANT[MAID-TEMPERED] rehearsal for the III.5 apex give; no-spend vs spend contrast sharpens it).
+# FOLDED in order: validated layer first (series-outline II.4/II.6 beats + ladder header) -> check-threads PASS, R0-R4 intact
+#     (R2=II.8, R3=III.3) -> spine bodies + gag map + curdle block -> live span-A sweep (gael card x2 + gael/daemon actor LTM +
+#     character-reactions yield-turn + warehouse daemon card; worksheet per-beat payoff-map reconciled to DEC-0117 numbering).
+#     Dated FOLDED entry appended to the spine tail (supersedes the 2026-06-11 E-block knife/II.7). GUARD-1 (I.1/I.5/III.5) +
+#     setting-blind + Rule-22 all held. 4 logical commits, each pushed to the working branch; tree clean.
+# SURVIVING reversible defaults (flagged, un-raised this pass): the 6 DEC-0117 chapter re-titles; the seed-vault target
+#     (crime-syndicate; alts Faith/rival house); the II.4 insult subject + the Daemon-knife failure-mechanism (both -> /and-write);
+#     the DEC-0117 beat redistribution; Otto/Daemon AU-seating-vs-rename (standing principal call, does not block).
+# NEXT (principal-steer, mid-session): a per-chapter MC question pass (II.1->II.8, several questions each) was requested — surfacing those.
+#
 # REVIEW-WALK STATE (2026-06-11) — Book-II spine review-walk IN PROGRESS (design-level, NOT chapter
 # production). A chapter-by-chapter trope/comedy pass over Book II, folding revisions into the canonical
 # layer (design/run-04/series-outline.md + intake/spine.md + thread-config + warehouse cards). DONE &

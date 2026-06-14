@@ -895,3 +895,46 @@ re-titles; the narrow II.6 reading (cosmology kept, only the deflation cut); the
 held:** GUARD-1 three outward spends unchanged (I.1 / I.5 / III.5 — II.6 tempering + II.8 kill are both
 no-qi-spend); curdle ladder R0–R4 intact; setting-blind + Rule-22 held. The Otto-card / family-tree
 "heir-faction" wiring and III.1's "II.7 vise / II.8 manhunt" cross-refs already match the new shape.*
+
+*__Book-II conflict pass — FOLDED (2026-06-14; resolve-by-choice).__ A principal-driven conflict-resolution
+pass over Book II (not executing a pre-agreed plan): the open tensions were surfaced as multiple-choice
+decisions, the principal picked, the secondary decisions each pick forced were surfaced and picked, then the
+full cascade was folded. Four primary picks + two cascade picks:*
+- ***II.6 reading → HYBRID** (was the DEC-0117 "narrow vindicated" default). The empire is **vindicated** —
+  it yields real far-sourced advancement-reagents (a genuine leap) and the same coin funds the ship, so it
+  pays for *advancement AND escape* — **and yet it was never *needed*** (her base self-generates; the
+  survival-panic was hollow). **Cascade pick (scope):** the deflation is **contained at II.6** and its dark
+  weight lands on the **Wylla-cost** (drawn into a criminal empire + blood for a survival-need that never
+  existed), **NOT** on the II.8 kill or the racket's dead men — *Gael feels nothing for minions; they are
+  furniture* (principal's correction). II.8 unchanged; III ship-funding intact. No token churn
+  (`SOURCE-NOT-POOL` + `ACQUISITION-DRIVE` already fire at II.6).*
+- ***Daemon knife → RESTORED at II.4** (it had survived only in the 2026-06-11 E-block rationale record below;
+  the DEC-0117 back-half reshuffle dropped it from every chapter body — the live Daemon cards/actor LTM had
+  kept it). Folded into II.4 body + gag map + outline. **Cascade pick (read):** *she never registers it at
+  all* (household foils it / her passive body-tempering won't take the blade / an omen-spooked hireling
+  balks) — the **rival-sect-misread alternative is retired.** Rides `DAEMON-DISCREDITED` (now also fires II.4);
+  no new token; GUARD-1 untouched (the knife adds no spend; the first meant kill is still II.8). The *how it
+  fails* is the only piece left to `/and-write` (three offered variants).*
+- ***R2 register → KEEP MULTIPLE at II.8, "register not count."** The corpseless suitor-*party* vanish stays
+  multiple (the "vanish clean" mechanism needs the whole advance party gone); the ladder's rising scale is in
+  **register** (reactive → premeditated → casual → outsourced), not body-count — R2-multiple reading "larger"
+  than R3-single (Quint) is by design; the count + intimacy spike is the apex's. Clarifier added to the
+  curdle-ladder block + the series-outline ladder header (which also carried a **stale `R2 II.7`** — corrected
+  to II.8).*
+- ***II.6 first-tempering → KEPT.** `PLANT[MAID-TEMPERED]`@II.6 (the no-spend alchemical mix) stays as the
+  rehearsal for the III.5 apex GIVE (the qi-spend); the no-spend/spend contrast sharpens the apex. (Compounds
+  the hybrid: the surplus she never *needed* is first spent on Wylla — the tell.)*
+
+*__Fold record:__ validated layer first (`design/run-04/series-outline.md` II.4/II.6 beats + ladder header) →
+**check-threads PASS, R0–R4 intact (R2=II.8, R3=III.3)**, thread-config needed no change → spine bodies + gag
+map + curdle block → live span-A sweep (gael card ×2 + gael/daemon actor LTM + character-reactions yield-turn +
+warehouse daemon card; worksheet per-beat payoff map reconciled to DEC-0117 numbering). **Supersedes** the
+2026-06-11 E-block item-15 ("the assassin into II.4–II.5", "II.7 keeps the first kill") — the knife is now folded
+at **II.4** with the never-registers read, and the first meant kill is **II.8**. **Guardrails held:** GUARD-1
+three outward spends (I.1 / I.5 / III.5) unchanged; curdle ladder R0–R4 intact; setting-blind + Rule-22 held.*
+
+***Reversible defaults that SURVIVED this pass (un-raised; flagged for a later call):*** *the six DEC-0117
+chapter re-titles; the **seed-vault target** = a KL crime-syndicate (alts: the Faith's coffers / a rival house);
+the **II.4 insult subject** (embroidery a stand-in — settled at `/and-write`); the **Daemon-knife failure
+mechanism** (settled at `/and-write`); the **DEC-0117 beat redistribution** (founding→II.2, betrothal→II.3,
+allowance-cut→II.4); and the standing **Otto/Daemon AU-seating vs rename** principal call (does not block).*
