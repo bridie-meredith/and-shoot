@@ -60,6 +60,9 @@
 #   III.6) — agency unimaginable, the legend seals. Close: "freedom or a prettier cage, the reader decides" + Dance-book
 #   door (LONGEVITY-OPEN). FOLDED: spine + series-outline epilogue; wylla LTM (epilogue coda). No token churn.
 #   NEXT: resolve the margit flags (II.4 maimed lady, III.2 named spared-rival, black-cells location), or chapter production.
+#   OUTSTANDING ACTIONS FILED TO PARKING-LOT (2026-06-14): pl-2026-06-14-001 (II.4 maimed lady name+card -> /and-cast),
+#   pl-2026-06-14-002 (III.2 named spared-rival name+card -> /and-cast), pl-2026-06-14-003 (black-cells location card ->
+#   /and-write), pl-2026-06-14-004 (BLACK-CELLS/MISSING-SERVANTS motif-token wiring decision -> principal triage). All SOFT.
 #
 # SESSION 2026-06-14 (cont. 4) — BOOK-II II.4->II.8 REFINEMENT PASS FOLDED (resolve-by-choice, 2 MC/chapter; same branch).
 # A deeper per-chapter pass on II.4-II.8. Two picks OVERTURN prior folds (flagged REVISE); the rest refine/confirm:
