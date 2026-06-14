@@ -10,7 +10,8 @@ the tokenized structural spine; the **full prose/comedy detail lives in `intake/
 
 **Era / frame:** Jaehaerys I's long peace, **84 → ~95 AC** · Gael b. 84 AC (infant → ~age 11) · POV
 locked-inside Gael, **setting-blind** (genre-aware), with **recurring Wylla-POV interludes** (the convert's-eye
-arc: horror → complicity → faith → killer) + the Alicent Bk-I interlude · **somewhat simple-minded monomaniac** · span = **HYBRID**
+arc: horror → complicity → faith → killer; opened II.1, Book-II interludes at II.1/II.2/II.6/II.8, Book-III TBD)
++ the Alicent Bk-I interlude · **somewhat simple-minded monomaniac** · span = **HYBRID**
 (this series ends on the escape; the Dance is parked). Three books: I (the cage · 5 ch + interlude · broad
 farce) · II (the blind machine · 8 ch · workplace comedy) · III (the narrow escape · 6 ch · heist caper).
 
@@ -51,8 +52,10 @@ org**: Gael (invisible source) → Wylla (noble trusted manager / the lever Otto
 
 ### I.1 · dragonbane
 **Beat:** reincarnated-nerd infant clocks the gift-egg radiating *something*, concludes isekai, cultivates;
-bleeds on a chip → qi; draws harder → it **hatches** → she fights, kills it (scar, blood), eats a claw.
-Alicent fought the King to give the egg. **Register:** SPIKE. **Rung:** R0.
+bleeds on a chip → qi; draws harder → it **hatches** → she fights, kills it (scar, blood), eats a claw (the kill
+**elided body-horror** — cradle, blood, a dead thing; the reader infers it; full breezy adult-nerd monologue in
+a newborn body). Alicent fought the King to give the egg (withheld — paid at the Interlude). The **evil-sect
+read begins *tentative* here, hardening over I.2–I.3.** **Register:** SPIKE. **Rung:** R0.
 **Plants:** PLANT[GIFT:ALICENT] · PLANT[SYMPATHETIC-RESONANCE] · PLANT[ACQUISITION-DRIVE] · PLANT[SOURCE-NOT-POOL] · PLANT[ISEKAI-AWARENESS] · PLANT[LESBIAN] · PLANT[DRAGONBANE-EPITHET] · PLANT[BESTIARY] · PLANT[REINCARNATION-SICKNESS] · PLANT[DEATH-FLAG] · PLANT[GENRE-CASTING]
 **Fires:** FIRE[GIFT:ALICENT] (the egg given → seeds the source)
 
@@ -75,8 +78,9 @@ she buries what she saw. Bestiary opens her as "Asset (hands/legs)." **Register:
 lessons reveal the real cage (marriage, dynasty, Faith). Outward yes, inward no. **The acolyte aftermath**
 threads through as the quiet ledger (the empty place, the household's unease, Wylla having stood near it) —
 the first faint rung of the complicity that becomes devotion. **The cage is a two-girl cage:** Wylla, a
-minor-noble daughter placed for connections and an arranged future, shares a smaller one — surfaced in the
-reverse-angle (Gael **misses** it, files her "Asset"), seeding the two-person want. **Register:** CHILL→HOLD. **Rung:** off-ladder.
+minor-noble daughter placed for connections and an arranged future, shares a smaller one — **foregrounded for the
+reader** (a clear, unmistakable beat — though Gael still **misses** it, files her "Asset"), seeding the
+two-person want. (The heist register is caper-comedy; the colder-misread kept light.) **Register:** CHILL→HOLD. **Rung:** off-ladder.
 **Genre-misreads (⑤/⑦) — lens: the court is an evil cultivation sect (`COURT-AS-EVIL-SECT`, ambient).** The king's cold audience read as an evil-sect patriarch's *calibrated favor* — she leaves **pleased,** "patronage secured" (an evil elder doing warmth would be suspect); the acolyte's empty place as the inner court culling a weak disciple (paranoia, not guilt → she tempers colder); Wylla's attention as a planted monitor-disciple. She sees every beat and reads each one wrong — and is flattered by the cold ones.
 **Plants:** PLANT[JAEHAERYS-TRANSACTIONAL] · PLANT[SEPTA-ENDORSEMENT] · PLANT[METHOD-LIMIT] · PLANT[ANTI-FAITH] · PLANT[MARRIAGE-THREAT] · PLANT[OUTWARD-COMPLIANCE] · PLANT[SKULLS-INACCESSIBLE] · PLANT[WYLLA-CAGED] · PLANT[SPY-MISREAD] · PLANT[COURT-AS-EVIL-SECT]
 **Fires:** FIRE[SURVEILLANCE-PRESSURE] · FIRE[ACOLYTE-WALL] (the cost's wake — the reader's ledger)
@@ -86,15 +90,17 @@ reverse-angle (Gael **misses** it, files her "Asset"), seeding the two-person wa
 body-tempering** (sleepless, senses sharpened, the Book-III rooftop-agility seeded; body, never martial); the
 glow-up reads as impossible perfection → an appraising **Daemon** circles → modern-revulsion at the incest custom.
 Barth's framework brushes "consumed sorcerous material" and recoils. **Register:** SPIKE→CHILL. **Rung:** off-ladder.
-**Genre-misreads (②/⑤/⑥):** the glow-up read as a post-breakthrough body-refinement (proud, but frets it breaks concealment — she arms against the wrong, cultivation threat); "Dragonbane" spreading read as her dao-name preceding her (pleased; misses the realm means omen-child — seeds the mirror-flip); the maester's anomaly read as an expert closing in (none is — the realm's incompetence covers her). Daemon: she nopes the romance, has **no trope** for the creepy affection, files him under "evil sects are full of weirdos," ignores it — and cheerfully **abuses** his indulgence as access/cover. He slips her a cultivation-useful Valyrian **trinket**; she takes it as free material AND as **the favor of the evil sect** (appropriate patronage — so, like the king's audience, *pleased,* not wary), and angles for more. `PLANT[GIFT:DAEMON]` → repaid at I.5. Ditzy and exposed; diligent about the wrong threat, blind to the real one.
+**Genre-misreads (②/⑤/⑥):** the glow-up read as a post-breakthrough body-refinement (proud, but frets it breaks concealment — she arms against the wrong, cultivation threat); "Dragonbane" spreading read as her dao-name preceding her (pleased; misses the realm means omen-child — seeds the mirror-flip); the maester's anomaly read as an expert closing in (none is — the realm's incompetence covers her). Daemon: she nopes the romance, has **no trope** for the creepy affection, files him under "evil sects are full of weirdos," ignores it — and cheerfully **abuses** his indulgence as access/cover (the predation **unmistakable to the reader,** kept non-graphic; Gael wholly oblivious). He slips her **multiple small** cultivation-useful Valyrian **gifts** over time (a grooming *pattern* she reads as a supply line); she takes them as free material AND as **the favor of the evil sect** (appropriate patronage — so, like the king's audience, *pleased,* not wary), and angles for more. `PLANT[GIFT:DAEMON]` → repaid at I.5. Ditzy and exposed; diligent about the wrong threat, blind to the real one.
 **Plants:** PLANT[VALYRIAN-STEEL-COMPATIBLE] · PLANT[UNCANNY-BEAUTY] · PLANT[DAEMON-THREAT] · PLANT[THEFT-ESCALATION] · PLANT[BARTH-NEAR-MISS] · PLANT[GIFT:DAEMON]
 **Fires:** FIRE[COMPATIBLE-SOURCES] · FIRE[METHOD-LIMIT]
 
 ### I.5 · the-bond-breaker *(~6)*
 **Beat:** files the king's heirloom with her cultivated jaw (servants blamed — collateral). Daemon corners
 her, pressing a gross "special blood" pass dressed as bloodline-mysticism; Gael **misreads it as an offer of
-platonic dual-cultivation** and runs it then and there — the demonic drain. It **rips out the living
-dragon-bond: Caraxes goes mad** (no wound, at distance) and must be **chained,** a living horror that won't
+platonic dual-cultivation** and runs it then and there — the demonic drain (the pass plainly predatory to the
+reader, her "acceptance" oblivious; the bond-rip itself flat/pure-frame). It **rips out the living
+dragon-bond: Caraxes goes mad** (no wound, at distance) — **Gael glimpses the rampage on-page** (from
+confinement, across the Keep) and files it flat — and the dragon must be **chained,** a living horror that won't
 be ridden again; Daemon is left near bed-ridden. Unsure whether that was a demonic-path deviation, she
 resolves on closed-door meditation — and the terrified realm obliges, **confining her to her chambers**
 (quarantine for a feared contagion *that turns dragons feral*) which she reads as the caring sect granting
@@ -110,15 +116,17 @@ Wylla). Confined for weeks, attended only by her maids, the **Wylla bond warms h
 **Beat:** from outside, Gael is unnerving (never tires; alone with Daemon the hour Caraxes went mad); Alicent —
 the gift-egg mother (`GIFT:ALICENT`) — loves a daughter she's losing and half-knows the gift made her *this.*
 The rift with Jaehaerys hardens.
-**Alicent the shield (active protector):** she moves to cover Gael on three fronts — the **King** (the
-disposal-betrothal + a stirring *kinslayer* suspicion after the maddened dragon), **Barth** (keeps the one mind
-that could uncover her away; buries the maester's letters), **Baelon** (the kinsman who blames Gael for
-Caraxes by association) — and above all keeps the realm's *whispers from reaching Gael.* **She is why the
-mirror-flip stays sealed.** `PLANT[ALICENT-SHIELD]` → III.6.
-**The sealed mirror-flip:** three corners, all wrong — Gael the *dangling reward* (plotting not to be won),
-Jaehaerys *worthless* (give her away; *kinslayer* behind his teeth), the realm — gobsmacked by **Caraxes**
-driven mad and chained + near-bedridden Daemon + the quarantine + the beauty + Dragonbane — halos her **the prophesied one.** Gael
-never learns (Alicent keeps it from her); she keeps her own delusions. The clock starts. **Register:** CHILL.
+**Alicent the shield (active protector):** she moves to cover Gael on **two fronts** — the **King** (the
+disposal-betrothal + a stirring *kinslayer* suspicion after the maddened dragon) and **Barth / the realm**
+(keeps the one mind that could uncover her away, buries the maester's letters, and keeps the realm's *whispers
+from reaching Gael* — Baelon's blame folds into the realm's). **She is why the mirror-flip stays sealed.**
+`PLANT[ALICENT-SHIELD]` → III.6.
+**The sealed mirror-flip (delivered woven, not as a button):** the asymmetry — Gael the *dangling reward*
+(plotting not to be won), Jaehaerys *worthless* (give her away; *kinslayer* behind his teeth), the realm haloing
+her **the prophesied one** (gobsmacked by **Caraxes** driven mad and chained + near-bedridden Daemon + the
+quarantine + the beauty + Dragonbane) — **delivered diffusely through Alicent's POV, no formal three-corner
+button.** Gael never learns (Alicent keeps it from her); she keeps her own delusions. The clock starts — **a grim
+northern match looming, the buyer implied but not yet confirmed (II.3 confirms the Starks).** **Register:** CHILL.
 **Plants:** PLANT[BETROTHAL-CLOCK] · PLANT[STARK-MATCH] · PLANT[ALICENT-SHIELD]
 **Fires:** FIRE[GENRE-CASTING] (the dangling-reward self-cast pays out as the literal betrothal)
 
@@ -210,9 +218,11 @@ chat idly, fondly, about her hopelessness at **dancing** (a courtly skill — th
 **a named, recurring court lady** among them sighing "no talent, that one, talentless"; Gael walks in midway, catches
 only **"talentless"** out of context, fixed to her name, hears the one unsurvivable cultivation verdict (no
 spiritual root — the negation gag ① cannot reframe as a flattering title), and answers in the same breath with
-**immediate, almost-lethal violence** — body-tempered, flat, her hands at the woman's throat, stopped a hair
-short. **A maim, not a kill** (**no qi-spend `GUARD-1` clean; no death — the first death she *means* is II.8;
-off-ladder reflex-flash, not a rung**) — then **moves on placidly,** the matter closed. Fallout: no one can
+**immediate, almost-lethal violence** — body-tempered, flat, her hands at the **named lady's** throat. **A
+lasting maim, not a kill** — she crushes the throat (a ruined voice, a permanent mark; **no qi-spend `GUARD-1`
+clean; no death — the first death she *means* is II.8;** off-ladder reflex-flash, not a rung) — then **moves on
+placidly,** the matter closed. The **maimed lady becomes a small recurring thread:** a fear-spreader nursing her
+grudge, feeding the hardening maegi-rumour (and Otto's case). Fallout: no one can
 read the trigger → the maegi-rumour hardens; the **Starks read cold-instant lethality as asset-confirmation;**
 the King gains motive to **marry the trouble away fast.** **The ignored prince escalates:** Daemon — discredited
 since his II.3 demon-shrieking, dismissed behind every hand — **sends a knife;** it fails mundanely — **her
