@@ -24,9 +24,9 @@ gift), **no relapse at the apex** (the cost lands on the tempered maid).
 euphemism · ⑤ misread indifference · ⑥ self-audit · ⑦ **death flags** (grimdark Westeros keeps proving her
 paranoia right). **Recurring foil gags:** Alicent's per-chapter "what the hell"; the antagonist faces breaking.
 
-**Curdle ladder (one gesture, rising scale):** `R0 I.1 the hatchling kill` → `R1 I.5 the Daemon drain` →
-`R2 II.7 the cold removal` → `R3 III.3 the factor, colder-by-casual` → `R4 III.6 the apex (the tempered maid
-kills)`. **III.5 the tempering** is the anti-curdle GIVE just beneath the peak. *(The Dance's dead-dragon-field
+**Curdle ladder (one gesture, rising scale — escalation is in REGISTER, not body-count):** `R0 I.1 the hatchling kill` → `R1 I.5 the Daemon drain` →
+`R2 II.8 the disappearance (the first kill she means)` → `R3 III.3 the factor, colder-by-casual` → `R4 III.6 the apex (the tempered maid
+kills)`. The escalation runs **reactive → premeditated → casual → outsourced**; the corpseless suitor-party vanish (II.8) reading "larger" than the single casual removal (III.3) is **by design** — the step is in coldness/register, not count (the count + intimacy spike is reserved for the apex). **III.5 the tempering** is the anti-curdle GIVE just beneath the peak. *(The Dance's dead-dragon-field
 R-rung is parked, not in this series.)* The **acolyte→Wall** displaced cost (I.2) is OFF-ladder — not Gael's
 escalation but the realm's collateral for her crime; it opens the "comedy on top, the reader keeps the ledger"
 seam a rung earlier than R1.
@@ -196,13 +196,18 @@ spiritual root — the negation gag ① cannot reframe as a flattering title), a
 short. **A maim, not a kill** (**no qi-spend `GUARD-1` clean; no death — the first death she *means* is II.8;
 off-ladder reflex-flash, not a rung**) — then **moves on placidly,** the matter closed. Fallout: no one can
 read the trigger → the maegi-rumour hardens; the **Starks read cold-instant lethality as asset-confirmation;**
-the King gains motive to **marry the trouble away fast.** **Otto's opening:** the needle is his pretext, and
+the King gains motive to **marry the trouble away fast.** **The ignored prince escalates:** Daemon — discredited
+since his II.3 demon-shrieking, dismissed behind every hand — **sends a knife;** it fails mundanely (an
+omen-spooked hireling balks / her passive body-tempering won't take the blade / the household quietly foils it),
+and **Gael never registers the attempt at all,** oblivious as ever — his one act of violence vanishing beneath her
+notice like everything else. A demon-crying prince + a botched murder only sharpen the King's resolve to marry the
+trouble far away. **Otto's opening:** the needle is his pretext, and
 with the Queen gone he moves first — he gets the King to **cut her allowance** (the mother's gift, undefended),
 the opening move of a *correction* of the dangerous, unwomanly child. It lands wrong: they've docked the
 pocket-money of a girl who secretly bankrolls the underworld and is buying a *ship* (she barely notices, faintly
 amused they imagine a princess's power is the coin a man grants her). **Register:** SPIKE. **Rung:** off-ladder.
 **Plants:** PLANT[TALENTLESS-TRIGGER] · PLANT[THE-CLAMPDOWN] (the allowance-cut is the opening move; tightens II.5)
-**Fires:** FIRE[MAEGI-RUMOR] (the needle-flash hardens the sorcery read another notch) · FIRE[WYLLA-HORROR] (the teeth take a near-fatal bite; she feels nothing after)
+**Fires:** FIRE[MAEGI-RUMOR] (the needle-flash hardens the sorcery read another notch) · FIRE[WYLLA-HORROR] (the teeth take a near-fatal bite; she feels nothing after) · FIRE[DAEMON-DISCREDITED] (the ignored prince escalates from accusation to a blade; it fails mundanely, she never registers it — both his weapons, voice and knife, slide off)
 
 ### II.5 · the compromise *(~8–9)*
 **Beat:** Otto pushes harder (motive legible — `OTTO-HEIR-FAVOR`: dirt on Gael is credit with the heir-faction,
@@ -230,11 +235,16 @@ kinslayer → accelerates. **Register:** CHILL. **Rung:** off-ladder. **(Arms II
 **Beat:** the squeeze bites — the clampdown's resource-cut **and** the compromised channel together choke her
 *outside* supply — and the deflation everyone (Otto included) expects never comes: **her base cultivation is
 self-sustaining** (the egg was a reactor, not a battery — `SOURCE-NOT-POOL`), so throttling her changes
-nothing she needs to *survive.* But the empire was never about survival — it was about *advancement,* and here
-the empire finally **yields real cultivation reagents:** the far-sourced, radiant materials the trade + the
-vice-coin can reach that the Keep never could. The acquisition-drive is **vindicated, not deflated** (the road
-isn't "all for nothing" — it pays, in power). And with the first true surplus she makes a choice that reveals
-the one attachment she won't name: she spends a measure of the yield on **Wylla's first body-tempering** — a
+nothing she needs to *survive.* The empire was never about survival — and the hybrid turn lands both ways at once.
+**It pays:** the empire finally **yields real cultivation reagents** (the far-sourced, radiant materials the trade
++ the vice-coin can reach that the Keep never could), and she takes a genuine **leap** off the yield — the
+acquisition-drive **vindicated** for *advancement* (and, later, *escape:* the same coin funds the ship) — the road
+real, paid in power. **And it was never needed:** her base self-generates, so the whole vice-network, the crimes,
+the blood were never survival — only advancement and exit. The dark note does **not** land on the racket's dead men
+(they're furniture; she'd not spend a thought on whether a minion lives) — it lands on **Wylla,** dragged into a
+criminal empire and (II.8) toward blood for a survival-panic that never existed. Gael registers only the leap and a
+faint *inefficiency,* breezy; the reader holds the Wylla-cost (gag ⑥ at its quietest and darkest). And with the
+first true surplus she makes the choice that reveals the one attachment she won't name: she spends a measure of the yield on **Wylla's first body-tempering** — a
 **dramatic, dangerous alchemical mix** (NOT a qi-spend — `GUARD-1` stays clean; the apex *give* is still
 III.5) — framed to herself as "fortifying the asset," the foreshadow of the gift she'll make at the apex. The
 maester, reading the ledger, marks only that she thrives though throttled — strong blood he cannot explain
