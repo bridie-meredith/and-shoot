@@ -9,7 +9,8 @@ the tokenized structural spine; the **full prose/comedy detail lives in `intake/
 `intake/reconciliation-worksheet.md`**. Checker config: `thread-config.txt` (beside this file).*
 
 **Era / frame:** Jaehaerys I's long peace, **84 → ~95 AC** · Gael b. 84 AC (infant → ~age 11) · POV
-locked-inside Gael, **setting-blind** (genre-aware) · **somewhat simple-minded monomaniac** · span = **HYBRID**
+locked-inside Gael, **setting-blind** (genre-aware), with **recurring Wylla-POV interludes** (the convert's-eye
+arc: horror → complicity → faith → killer) + the Alicent Bk-I interlude · **somewhat simple-minded monomaniac** · span = **HYBRID**
 (this series ends on the escape; the Dance is parked). Three books: I (the cage · 5 ch + interlude · broad
 farce) · II (the blind machine · 8 ch · workplace comedy) · III (the narrow escape · 6 ch · heist caper).
 
@@ -25,11 +26,14 @@ euphemism · ⑤ misread indifference · ⑥ self-audit · ⑦ **death flags** (
 paranoia right). **Recurring foil gags:** Alicent's per-chapter "what the hell"; the antagonist faces breaking.
 
 **Curdle ladder (one gesture, rising scale — escalation is in REGISTER, not body-count):** `R0 I.1 the hatchling kill` → `R1 I.5 the Daemon drain` →
-`R2 II.8 the disappearance (the first kill she means)` → `R3 III.3 the factor, colder-by-casual` → `R4 III.6 the apex (the tempered maid
+`R2 II.8 the disappearance (the first kill she *means* — the one she chooses, for Wylla)` → `R3 III.3 the factor, colder-by-casual` → `R4 III.6 the apex (the tempered maid
 kills)`. The escalation runs **reactive → premeditated → casual → outsourced**; the corpseless suitor-party vanish (II.8) reading "larger" than the single casual removal (III.3) is **by design** — the step is in coldness/register, not count (the count + intimacy spike is reserved for the apex). **III.5 the tempering** is the anti-curdle GIVE just beneath the peak. *(The Dance's dead-dragon-field
 R-rung is parked, not in this series.)* The **acolyte→Wall** displaced cost (I.2) is OFF-ladder — not Gael's
 escalation but the realm's collateral for her crime; it opens the "comedy on top, the reader keeps the ledger"
-seam a rung earlier than R1.
+seam a rung earlier than R1. Also OFF-ladder (not rungs): the **II.2 casual murder** of a skimming subordinate
+(she does not even count it — furniture; only the onlookers recoil, Wylla above all) and the **II.4 maim** (the
+reflex-flash over the "talentless" trigger). Casual/reflexive kills she does **not** *mean* — distinct from the
+rungs, which track the gesture she **chooses.**
 
 **The Wylla layer (run-04):** the deuteragonist is a **minor-noble** girl (bedmaid → lady-in-waiting, sent to
 court for connections), **planted early** (I.2, ancillary to the still-room theft) and slow-burned — present
@@ -128,14 +132,17 @@ useless-and-dangerous daughter having exactly one realizable value — **dangles
 strict handling (*silent, say nothing*) and stokes her legend, pricing the asset for sale; she, **knowing
 full well she's a beauty** (a cultivation glow-up, escalated since I.4), reads the cold parade as an
 **evil-sect elder's calibrated favour** and the silence-rule as a *gift* (no social labour — she meditates
-standing up), and preens. Across the same hall **Daemon — diminished, vocal, a laughingstock behind his
+standing up). She preens, but bored-blank under it: *none of this matters* — standard evil-sect pageantry, and
+she means to bail before the protagonist even shows up (and then he'll slaughter the lot of them anyway), so
+there's no drama in it for her. **Concurrent in the same hall, Daemon — diminished, vocal, a laughingstock behind his
 back** — openly denounces her as a *demon* who drove Caraxes mad and broke him; the court snickers, she files "Maegi /
 Sorceress" as a flattering new dao-title, and the **sorcery-rumour starts to harden.** Her cover sets
 (scholar-princess + ornamental jewel = the last girl suspected of anything), and **the maid — Wylla — steps
-up into her one confidant** (she chatters her whole mad cultivation cosmology at a loyal girl who believes
-none of it). Only Alicent reads it true: the display feeds the reverence she's burying, and she grasps she
-**cannot flee to Dragonstone with her daughter** — a princess is the King's to keep. **Register:** HOLD.
-**Rung:** off-ladder.
+up into her one confidant** — rendered as the book's **first Wylla-POV interlude:** shut-in and bored, Gael
+narrates her whole mad cultivation cosmology at a loyal girl who believes none of it, and we watch the
+confidant bond form from *Wylla's* side. Only Alicent reads it true: the display feeds the reverence she's
+burying, and she grasps she **cannot flee to Dragonstone with her daughter** — a princess is the King's to
+keep. **Register:** HOLD. **Rung:** off-ladder.
 **Plants:** PLANT[SCHOLAR-PRINCESS] · PLANT[DISPLAY-AS-ADVERTISEMENT] · PLANT[KNOWS-SHE-GLOWS] · PLANT[DAEMON-DISCREDITED] · PLANT[MAEGI-RUMOR] · PLANT[ALICENT-CANT-EXTRACT]
 **Fires:** FIRE[PLAYING-SMART] · FIRE[MAID] (the channel formalizes; the confidant bond warms)
 
@@ -145,16 +152,23 @@ none of it). Only Alicent reads it true: the display feeds the reverence she's b
 vacuum), so as sole heir to the half-remembered **Dao of Games and Fortune** she **transmits** it: a doped
 fighting-beast pit (still-room pharmacology + her vigour-sense) + **games it's never seen** (past-life
 formats + house-math, "the house is fate"). To fund the reach she needs *untraceable* capital, so —
-genre-precedent in hand (the poor disciple robs the wicked sect) — she **sneaks out and raids a KL
-crime-racket's treasury** ("the local demonic sect"; still-room to drop the guards, the vault read like a
-formation-array; a robbed crime-lord can't report stolen stolen money), seeding clean coin and decapitating
-the competition. **The three-tier org** runs the triple-blind: Gael the invisible source, **Wylla** the noble
-trusted manager, the **smallfolk chambermaids** the market hands. To Gael it isn't crime — it's her **sect's
-mortal branch** *rendering tribute* (Wylla her junior-sister/inner disciple, the chambermaids outer-disciple
-mortals). When an **unruly subordinate** appears, she **handles it with weightless nonchalance** (a quiet
-word, a soft poison-adjacent threat, no anger) — and **Wylla, who thought this a child's pin-money hobby, is
-horrified** at how blithe she is (the first glimpse of the teeth; also *why* a seven-year-old's maid is
-obeyed). Her II.1 cover does the hiding; the bestiary entry takes its first crossed-out climb (*Asset →
+genre-precedent in hand (the poor disciple robs the wicked sect) — she **sneaks out and raids two treasuries:**
+a **KL crime-syndicate's counting-house** (clean untraceable coin — a robbed crime-lord can't report stolen
+stolen money — and it *decapitates the competition*) **and the Faith's coffers** (filed, in her
+`COURT-AS-EVIL-SECT` lens, as just another rival *orthodox* sect — no reverence, no "righteous" target;
+robbing it is reclaiming from inferior-path rivals). Both stay low-heat: a child is never suspected, and the
+Faith buries the embarrassment rather than advertise the theft (the *Faith-ambient* guardrail holds — no
+inquisitor). **Execution is hybrid:** she does the raids and the surgical work *in person* when she can sneak
+out; routine follow-up runs through intermediaries. **The three-tier org** runs the triple-blind: Gael the
+invisible source, **Wylla** the noble trusted manager, the **smallfolk chambermaids** the market hands. To Gael
+it isn't crime — it's her **sect's mortal branch** *rendering tribute* (Wylla her junior-sister/inner disciple,
+the chambermaids outer-disciple mortals). When a **petty skimmer** turns up, she **casually has him killed** —
+no qi-spend (a soft word, the wrong tea; `GUARD-1` clean), an **off-ladder** swat she does not count as a *kill*
+at all (it doesn't even register; if anything she's mildly put out by the *mess* — the corpse-logistics
+cultivation novels never show). The people *around* her take note; **Wylla, who thought this a child's
+pin-money hobby, is horrified** at the blitheness (the first true glimpse of the teeth — a body, not a threat;
+also *why* a seven-year-old's maid is obeyed). The first death she *means* is still II.8; this one she doesn't
+mean, doesn't weigh, barely sees. Her II.1 cover does the hiding; the bestiary entry takes its first crossed-out climb (*Asset →
 trusted manager*); the structure parks the exposure on the **chambermaids;** and Otto — hunting dirt on the
 wildcard princess — sets his first eyes on her *directly* (a watcher; a household servant pressed), **not** on
 the coin. **Register:** SPIKE. **Rung:** off-ladder.
@@ -163,7 +177,9 @@ the coin. **Register:** SPIKE. **Rung:** off-ladder.
 
 ### II.3 · the betrothal *(~7–8)* — *the sale closes; the house puts down roots*
 **Beat:** two clocks start at once. **The sale:** the King's build-up closes — he sells her **high, to the
-Starks** (the Warden of the North's heir; a Great-House alliance binding Winterfell). The omen/maegi rumours
+Starks** (the Warden of the North's heir; a Great-House alliance binding Winterfell). **A Stark envoy comes
+on-page to seal it** (the grim North gets a face; the *groom* stays an abstract cipher — the cold destination,
+not a person, carries the dread). The omen/maegi rumours
 that *repel* southron houses *attract* the grim North — the one house that reads a dragon-maddening,
 never-sickening girl as an asset — so the curdled legend itself filters the buyer; Daemon's demon-shrieking is
 the embarrassing noise the match silences. Gael, **carefree,** takes the worst news of her life without a
@@ -171,7 +187,9 @@ flicker: she files the frozen North as "the enemy ice-sect, would snuff my furna
 than to make a great sect *lose face* (so she'll **vanish clean,** never jilt), and treats the wedding as a
 *delivery deadline.* Alicent, powerless against an unimpeachable match, grieves — and, defeated on both the
 match and the daughter she can't read, **withdraws to Dragonstone alone** (the refuge she'd dreamed of taking
-Gael to, fled to without her; the warm shield leaves the board). **The roots:** the house she lit in II.2 does
+Gael to, fled to without her; the warm shield leaves the board). **They share an on-page goodbye** — the last
+scene mother and daughter have before the III.6 shore — and Gael, obliviously, misreads the grief entirely
+(a tedious sentimental send-off; she's already drafting the reagent-map in her head). **The roots:** the house she lit in II.2 does
 not stay small — vacuum + seed + an unmatchable edge + ambitious men makes it **grow by its own momentum into
 runaway organized crime** (dice → protection → territory → laundries → the watch on retainer): she
 **unwittingly becomes King's Landing's first true crime-lord** and notices only a tedious *largeness,* filing
@@ -188,8 +206,8 @@ charmed she studies geography, never sees the voyage. (South glows; the North is
 
 ### II.4 · the overheard word *(~8)*
 **Beat:** the one insult gag ① **cannot collect** — and the proof of where her carefree ends. Court ladies
-chat idly, fondly, about her hopelessness at some trivial courtly accomplishment (*embroidery a stand-in
-example — subject settled at /and-write*) — "no talent, that one, talentless"; Gael walks in midway, catches
+chat idly, fondly, about her hopelessness at **dancing** (a courtly skill — the faint marriage-market rhyme) —
+**a named, recurring court lady** among them sighing "no talent, that one, talentless"; Gael walks in midway, catches
 only **"talentless"** out of context, fixed to her name, hears the one unsurvivable cultivation verdict (no
 spiritual root — the negation gag ① cannot reframe as a flattering title), and answers in the same breath with
 **immediate, almost-lethal violence** — body-tempered, flat, her hands at the woman's throat, stopped a hair
@@ -197,10 +215,11 @@ short. **A maim, not a kill** (**no qi-spend `GUARD-1` clean; no death — the f
 off-ladder reflex-flash, not a rung**) — then **moves on placidly,** the matter closed. Fallout: no one can
 read the trigger → the maegi-rumour hardens; the **Starks read cold-instant lethality as asset-confirmation;**
 the King gains motive to **marry the trouble away fast.** **The ignored prince escalates:** Daemon — discredited
-since his II.3 demon-shrieking, dismissed behind every hand — **sends a knife;** it fails mundanely (an
-omen-spooked hireling balks / her passive body-tempering won't take the blade / the household quietly foils it),
-and **Gael never registers the attempt at all,** oblivious as ever — his one act of violence vanishing beneath her
-notice like everything else. A demon-crying prince + a botched murder only sharpen the King's resolve to marry the
+since his II.3 demon-shrieking, dismissed behind every hand — **sends a knife;** it fails mundanely — **her
+passive body-tempering simply won't take the blade,** the steel skating off skin that should have parted — and
+**Gael never registers the attempt as an attack at all,** so absorbed in her reagent-ledger she files it (if she
+clocks anything) as a clumsy servant's stumble; his one act of violence vanishes beneath her notice like
+everything else. A demon-crying prince + a botched murder only sharpen the King's resolve to marry the
 trouble far away. **Otto's opening:** the needle is his pretext, and
 with the Queen gone he moves first — he gets the King to **cut her allowance** (the mother's gift, undefended),
 the opening move of a *correction* of the dangerous, unwomanly child. It lands wrong: they've docked the
@@ -213,9 +232,13 @@ amused they imagine a princess's power is the coin a man grants her). **Register
 **Beat:** Otto pushes harder (motive legible — `OTTO-HEIR-FAVOR`: dirt on Gael is credit with the heir-faction,
 Baelon/Viserys, who blame her for the dragon). **Spying on her directly since II.2** (`OTTO-SURVEILLANCE` —
 watchers, intercepted letters, a turned servant; *not* the coin), he works the exposed tier — **Marra** (the
-timid, pious one) leaned on and turned, *the maid comes back different* — and through that inside channel
-reaches the **bestiary,** the one true document: the one anomaly, a servant logged into a **name.** **Wylla**
-is the lever — and the keeper of the whole hidden apparatus; the one crack. Gael notices the cruder watching
+timid, pious one) won over not by threat but by **sympathetic manipulation:** the kindly-patron Otto convinces
+her that reporting on the princess *helps* Gael — her safety, the upcoming betrothal — so Marra cooperates
+believing she's *protecting* her mistress, never once knowing she is the leak that dooms her (*the maid comes
+back different*). Through that inside channel he reaches the **bestiary,** the one true document: the one
+anomaly, a servant logged into a **name.** **Wylla** is the lever — and the keeper of the whole hidden
+apparatus; the one crack. (Gael does not clock Marra now; she **clocks her later, in Book III, and spares her**
+— and that mercy is the III.6 loose-end. `PLANT[MARRA-LEAK]`.) Gael notices the cruder watching
 but reads it as a **reclusive hidden master's secret test** (flattered, she performs for it and leaves her
 journal out as "merit" — her vanity serves up the named entry; she never dreams it's her grandfather). But the
 instant the lever is **Wylla,** carefree stops: cold and precise, she decides to *close the channel* (misfiled
@@ -228,7 +251,7 @@ piety and takes the credit (`SEPTA-ENDORSEMENT`) — the correction burnishes he
 hearing the court buzz, reads it as a **rival demonic sect** to guard against, never her own hall (she's hunting
 herself). Barth reads a cosmology (near-miss, collapses); Alicent finds her own entry; Jaehaerys reads
 kinslayer → accelerates. **Register:** CHILL. **Rung:** off-ladder. **(Arms II.8 — the first death she means.)**
-**Plants:** PLANT[BESTIARY-NAMED-ENTRY] · PLANT[OTTO-LEAK] · PLANT[COMPROMISED-CHANNEL]
+**Plants:** PLANT[BESTIARY-NAMED-ENTRY] · PLANT[OTTO-LEAK] · PLANT[COMPROMISED-CHANNEL] · PLANT[MARRA-LEAK] (Marra, manipulated into believing she helps Gael, is the inside channel; Gael clocks-and-spares her in Book III → the III.6 loose-end)
 **Fires:** FIRE[BESTIARY] · FIRE[BARTH-NEAR-MISS] · FIRE[OTTO-SURVEILLANCE] (the watchers/turned servant he set in II.2 reach the journal) · FIRE[SMALLFOLK-HOLD-RISK] (the squeeze lands first on the exposed market tier — Marra, turned) · FIRE[WYLLA-TRUSTED] (the keeper of the secret things is the named entry — the one crack) · FIRE[CASINO-FALLOUT-MISREAD] (the wreckage seeded II.3 blooms; she misreads her own hall as a rival demonic sect) · FIRE[HIDDEN-MASTER-TEST] (the prickle seeded II.2 → certainty II.3 → she declares "a hidden test!" and performs for it; Wylla facepalms) · FIRE[THE-CLAMPDOWN] (the tutors+library stripped / septa imposed; the allowance already cut at II.4; lands three wrong ways, burnishes her legend)
 
 ### II.6 · the yield *(~8–9)*
@@ -245,8 +268,10 @@ the blood were never survival — only advancement and exit. The dark note does 
 criminal empire and (II.8) toward blood for a survival-panic that never existed. Gael registers only the leap and a
 faint *inefficiency,* breezy; the reader holds the Wylla-cost (gag ⑥ at its quietest and darkest). And with the
 first true surplus she makes the choice that reveals the one attachment she won't name: she spends a measure of the yield on **Wylla's first body-tempering** — a
-**dramatic, dangerous alchemical mix** (NOT a qi-spend — `GUARD-1` stays clean; the apex *give* is still
-III.5) — framed to herself as "fortifying the asset," the foreshadow of the gift she'll make at the apex. The
+**dramatic, dangerous alchemical mix** that **briefly goes wrong** (a frightening night — warmth turning to
+fever, the body visibly changing, a real scare that bonds them) before it takes; **Wylla half-knows it's
+*something* and chooses not to ask** (NOT a qi-spend — `GUARD-1` stays clean; the apex *give* is still
+III.5) — framed by Gael as "fortifying the asset," the foreshadow of the gift she'll make at the apex. The
 maester, reading the ledger, marks only that she thrives though throttled — strong blood he cannot explain
 (`MAESTER-MARK`, reframed: the Cassandra who sees the impossible child and can prove nothing). **Register:**
 HOLD. **Rung:** off-ladder.
@@ -259,10 +284,13 @@ disposal he wants closed before the wildcard can slip; the betrothal clock jumps
 terminal realization the whole book earned — the empire is hers in no way that counts, she herself is sold, her
 secrets leaked: **nothing inside these walls is hers.** To *own* a thing you must be **beyond reach** — and she
 clocks the cold truth that **Targaryens aren't strong but for their dragons** (a court of soft mortals with a
-few tamed spirit-beasts), so there is nothing here worth staying for. The resolve crystallizes: a **ship** —
-which finally aligns the two warring desires (supply AND solitude at once). › **Lock II perfected.** She moves
-to **order the finest vessel she can buy,** through Wylla, off the books — but the maid-squeeze obstructs at
-every turn, and the two countdowns (the hull, the wedding) are now set against each other. **Register:** HOLD→SPIKE.
+few tamed spirit-beasts), so there is nothing here worth staying for. The resolve crystallizes — and lands as
+**comedy:** out of nowhere she **declares it,** grand and over-dramatic ("I will forge a vessel to bear me
+beyond the reach of this mortal realm," or the like), to a baffled Wylla who can only **facepalm** (the
+facepalm motif again). A **ship** finally aligns the two warring desires (supply AND solitude at once). ›
+**Lock II perfected.** She **moves to order the finest vessel coin can buy,** through Wylla, off the books —
+the commission *initiated here,* its hull finalized at III.1 — but the maid-squeeze obstructs at every turn,
+and the two countdowns (the hull, the wedding) are now set against each other. **Register:** HOLD→SPIKE.
 **Rung:** off-ladder.
 **Plants:** PLANT[NOTHING-MINE] · PLANT[SHIP]
 **Fires:** FIRE[MARRIAGE-THREAT] (Otto forces the wedding early — the vise) · FIRE[JAEHAERYS-TRANSACTIONAL] (the disposal closes fast)
@@ -270,19 +298,23 @@ every turn, and the two countdowns (the hull, the wedding) are now set against e
 ### II.8 · the disappearance *(~9)* › **R2**
 **Beat:** the squeeze reaches **Wylla bodily** — the Otto-faction suitor's men (the wedding party's advance,
 leaning on the maid to break the obstruction) — and *that* is the one thing Gael is not carefree about. The
-II.5 cold decision becomes the deed: she and Wylla **disappear the suitor and his sycophants.** No drain, no
-spend — **paper + the maester's supply + the still-room:** a poison that reads natural, bodies that simply
-*go.* **Gael does the killing; Wylla is complicit — covers, disposes, holds the secret** (her **first kill by
-her own hand stays III.6;** here she crosses into accessory). **Colder than the Daemon drain** (chosen,
-planned) — the first death she **means.** **Clean-hands doctrine fires:** poison + paper, *not the demonic
-path,* so to her it's *clean* — a channel closed, the books balanced; she tells herself it's for the
-apparatus, the reader sees it's for Wylla. The exploiter's death-flag cashes (gag ⑦); dependents ruined,
-unlogged. With the obstruction gone the **ship is ordered** (the long con starts; coin off-books, the course
-the reagent-map drew south). And the cruelest fold: the vessel meant to carry Wylla *out* is built through her
+II.5 cold decision becomes the deed: she **disappears the Otto-faction suitor and his advance party** — a
+**larger party (5+),** a bigger corpseless hole for Otto to fail to close. The kill is **elided — the reader
+gets only the aftermath** (they were here, then they simply *go*); no drain, no spend — **paper + the maester's
+supply + the still-room:** a poison that reads natural. **Gael does the killing; Wylla's complicity is
+*passive* — she knows, and says nothing** (she does **not** dispose bodies — her own-hand kill, and her active
+crossing, stay III.6; here she crosses only into *silence about murder,* a lighter rung). **Colder than the
+Daemon drain** (chosen, planned) — the first death she **means** (the casual II.2 swat she never counted; *this*
+she chooses, for Wylla). **Clean-hands doctrine fires:** poison + paper, *not the demonic path,* so to her it's
+*clean* — a channel closed, the books balanced; she tells herself it's for the apparatus, the reader sees it's
+for Wylla. **Two death-flags cash (gag ⑦):** the suitor *and* a sycophant each raise one ("after the wedding
+I'll…" / "I've only a family to feed") and die anyway; dependents ruined, unlogged. With the obstruction gone
+the **ship commission is placed** (finalized at III.1; the long con starts; coin off-books, the course the
+reagent-map drew south). And the cruelest fold: the vessel meant to carry Wylla *out* is built through her
 own hands. **Otto** is left with a **corpseless disappearance** he can't close — he probes it melodramatically,
 the lead that becomes the Book-III manhunt. The silent exception under "nothing here is mine": *except Wylla.*
 **Register:** CHILL→SPIKE. **Rung:** R2.
-**Plants:** PLANT[SHIP-COMMISSION] · PLANT[ROUTE-MAP] · PLANT[OTTO-MANHUNT] (the corpseless disappearance is the lead → Book III) · PLANT[WYLLA-COMPLICIT] (accessory now; her own-hand kill is III.6)
+**Plants:** PLANT[SHIP-COMMISSION] · PLANT[ROUTE-MAP] · PLANT[OTTO-MANHUNT] (the corpseless disappearance is the lead → Book III) · PLANT[WYLLA-COMPLICIT] (*passive* — she knows and stays silent; her active disposal + own-hand kill are III.6)
 **Fires:** FIRE[NOTHING-MINE] · FIRE[REAGENT-MAP] · FIRE[COMPROMISED-CHANNEL] · FIRE[COLLATERAL-DAMAGE] · FIRE[CLEAN-HANDS-DOCTRINE] (the first "clean" kill — paper + poison; "not the demonic path, therefore fine")
 
 ---
@@ -345,10 +377,12 @@ the wedding imminent and Otto at the threshold — the rite under the gun. For W
 ### III.6 · the narrow escape — `[OTTO · CLOCK · GANG/FACTOR loose end]` + **the LOCKED absent-arrival** › **the apex**
 **Beat:** Lock III at full scale. *(CLOCK × SHIP)* the wedding party arrives to collect the bride exactly as
 the hull comes ready — collection and launch collide at the water. · *(OTTO)* his one correct deduction puts
-his man at the dock; he wins every move and loses the game. · *(GANG/FACTOR loose end)* the interceptor is
-**Otto's man,** placed there because a **loose end of the underworld she built** — a rival she once spared, a
-removed factor's vengeful associate — **sold the Quiet Coin's movements into the investigation;** the front
-she could never close becomes Otto's eyes, and **the tempered maid kills the interceptor by her own hand**
+his man at the dock; he wins every move and loses the game. · *(GANG/FACTOR loose end + the spared leak)* the
+interceptor is **Otto's man,** placed there because the **loose ends she let live converge:** a rival she once
+spared / a removed factor's vengeful associate **sold the Quiet Coin's movements,** and **Marra** — the turned
+chambermaid Gael clocked in Book III and *spared* — kept feeding Otto her movements (the mercy that dooms her).
+The threads she could never close, and the **one she *chose* not to,** become Otto's eyes, and **the tempered
+maid kills the interceptor by her own hand**
 (Gael's III.5 gift made her able; the I.3 monitor-disciple misread inverts — the spy she feared kills *for*
 her). Wylla leaves her house and name behind to board. **The LOCKED absent-arrival (the one crack):** on the
 deck, the continent sliding back, Gael reaches for the cultivation-gloss to *file* leaving her mother — and
@@ -356,7 +390,7 @@ deck, the continent sliding back, Gael reaches for the cultivation-gloss to *fil
 (the only sign she'll miss anyone, and she won't let herself know it). The realm's post-mortem reaches for any
 explanation — a foreign prince, a god, the prophecy — anything but a princess with **agency**. The ship sails
 south. **Register:** SPIKE (loudest since Book I). **Rung:** R4 (the apex).
-**Fires:** FIRE[SHIP] · FIRE[MAID-TEMPERED] · FIRE[EXCURSION-RISK] · FIRE[CITY-KNOWLEDGE] · FIRE[GHOST-LEGEND] · FIRE[CLOCK-CONCRETE] · FIRE[WARM-DESTINATIONS] · FIRE[BESTIARY-NAMED-ENTRY] · FIRE[OTTO-LEAK] · FIRE[OTTO-MANHUNT] (the corpseless II.8 disappearance was the lead; his man at the dock is the manhunt's terminus — he wins every move, loses the game) · FIRE[GANG-LOOSE-END] (the underworld front she could never close sold her movements in — why Otto's man is at the dock) · FIRE[WYLLA-CAGED] (she gives up her noble future — the two-girl cage opens) · FIRE[PROPHESIED-LEGEND] (the realm prefers the legend to her agency, sealed; she never learns) · FIRE[SPY-MISREAD] (the monitor-disciple she feared at I.3 is the one who kills for her — the misread inverted at the apex) · FIRE[CLEAN-HANDS-DOCTRINE] ("clean hands" at last means the blood is on Wylla — the I.5 doctrine carried to its endpoint) · FIRE[ALICENT-SHIELD] (the shield's terminus — Gael sails, never knowing her mother held the seal; the protector left behind) · FIRE[ALICENT-CANT-EXTRACT] (the mother who'd have fled with her, had the King allowed it, is left on the shore — the legitimate escape she could never make) · FIRE[ALICENT-TO-DRAGONSTONE] (the II.4 withdrawal completes — she sailed to her refuge alone years ago; now her daughter sails past it, the separation made literal)
+**Fires:** FIRE[SHIP] · FIRE[MAID-TEMPERED] · FIRE[EXCURSION-RISK] · FIRE[CITY-KNOWLEDGE] · FIRE[GHOST-LEGEND] · FIRE[CLOCK-CONCRETE] · FIRE[WARM-DESTINATIONS] · FIRE[BESTIARY-NAMED-ENTRY] · FIRE[OTTO-LEAK] · FIRE[OTTO-MANHUNT] (the corpseless II.8 disappearance was the lead; his man at the dock is the manhunt's terminus — he wins every move, loses the game) · FIRE[GANG-LOOSE-END] (the underworld front she could never close sold her movements in — why Otto's man is at the dock) · FIRE[MARRA-LEAK] (the chambermaid she clocked and spared in Book III kept feeding Otto; the mercy is the loose-end that converges at the dock) · FIRE[WYLLA-CAGED] (she gives up her noble future — the two-girl cage opens) · FIRE[PROPHESIED-LEGEND] (the realm prefers the legend to her agency, sealed; she never learns) · FIRE[SPY-MISREAD] (the monitor-disciple she feared at I.3 is the one who kills for her — the misread inverted at the apex) · FIRE[CLEAN-HANDS-DOCTRINE] ("clean hands" at last means the blood is on Wylla — the I.5 doctrine carried to its endpoint) · FIRE[ALICENT-SHIELD] (the shield's terminus — Gael sails, never knowing her mother held the seal; the protector left behind) · FIRE[ALICENT-CANT-EXTRACT] (the mother who'd have fled with her, had the King allowed it, is left on the shore — the legitimate escape she could never make) · FIRE[ALICENT-TO-DRAGONSTONE] (the II.3 withdrawal completes — she sailed to her refuge alone years ago; now her daughter sails past it, the separation made literal)
 
 ### Epilogue
 Two girls on a ship, the continent behind, the warm south ahead. Both desires satisfied; one of them now a
