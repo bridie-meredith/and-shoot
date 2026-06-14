@@ -846,7 +846,16 @@ with the project-wide deflecting-lens guarantee, theme 4). Consequence for the l
 **Guardrails (held):** GUARD-1 spend-count unchanged (I.5 is still the R1 spend); curdle ladder unchanged
 (R1 still I.5, R2 still II.7); setting-blind held (prophecy frame stays the natives', never Gael's);
 **Rule-22 respected** — the maddening renders as concrete physical action ("the dragon rampages and must be
-chained"), never as an apparatus/ledger trace. *Deferred / fold-next (companion docs, not yet swept for
-residual dead-Caraxes beats): `intake/reconciliation-worksheet.md`, `intake/character-profiles.md`,
-`intake/character-reactions.md`, and the `alicent` / `gael` / `saerys` / `comedy-register` / prop cards.
-Re-run check-threads after that sweep.*
+chained"), never as an apparatus/ledger trace.
+
+*__Companion sweep + check-threads — COMPLETE (same session, 2026-06-14).__ Swept and folded:
+`intake/reconciliation-worksheet.md` (③ bestiary I.5 beat → clinical maddened-dragon note), `intake/character-profiles.md`
+(Otto heir-grudge + Barth's "four feet tall and a bit guilty" → "untroubled" + Alicent's King-front),
+`intake/character-reactions.md` (Daemon I.5 history → maddened + a pre-existing "silenced"→"loud" drift aligned to the
+canonical vocal-laughingstock card), and the `alicent` + `gael` cards (Gael's card no longer says "she felt guilt").
+Untouched by design: `saerys` (the alternate HotD-proper seating, not span-A), and `comedy-register` / the cradle-egg +
+spoon props (their "field of dead dragons" / "dead dragon egg" are the parked Dance R4 beat and the I.1 inciting egg —
+not Caraxes). Token rename verified: `DRAGON-MADDENED-UNEXPLAINED` resolves clean as a plant-only exception;
+**`check-threads.py` on `design/run-04/series-outline.md` = PASS** (no new orphans/unplanted fires; curdle ladder
+R0–R4 intact, R1 still I.5). Stale `DRAGON-DEATH-UNEXPLAINED` survives only in `run-03/*` + the pre-spine
+`tentative-outline.md` (both superseded — left as historical).*
