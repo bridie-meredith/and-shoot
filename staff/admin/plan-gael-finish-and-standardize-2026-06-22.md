@@ -44,9 +44,14 @@ The bridge. Re-run the and-shoot front half **using existing gael material as in
   R0→R1→R2→R3→apex maps directly) + **antagonist pressure** (Westeros-as-three-faces) + chunk_targets +
   per-book Δ. Per **DEC-0115**, the signature must declare a **readability/concreteness floor** as a
   non-negotiable constraint the comic register coexists with.
+- **Voice readiness (Plan B Track 1, EXECUTED HERE — not just a precondition):** author the 4 missing
+  marquee exemplars (Alicent interlude-narrator, Barth, Jaehaerys, Otto) + retire the stale ones, so
+  every POV / interlude / recurring-comedy voice is primed before any prose is rendered. This is the
+  unblock for `/and-cast` Phase 5 *and* the hard precondition for Phase 2 voice fidelity. Listed inside
+  Plan A so Plan A is self-contained on voice readiness.
 - `/and-cast` — provision the roster from existing cards + **fire the series-level audit (the ONE
-  blocking human checkpoint)**. ⚠ Phase 5 margit gate blocks on missing actor exemplars → **Plan B
-  Track 1 must precede this.**
+  blocking human checkpoint)**. ⚠ Phase 5 margit gate blocks on missing exemplars → satisfied by the
+  Voice-readiness step above.
 - `/and-substance book b01` (then b02, b03) — book drama + per-chapter Δ + chapter chunks + handoff.
 
 ### Phase 2 — Per-chapter production (RUNBOOK "Producing a chapter")
@@ -62,6 +67,12 @@ Epilogue — map to a `b<NN>c<MM>` scheme in Phase 1):
   Phase 9 naive-follow.
 - **Plot check:** scene-conflict + dramatic-shape (chapter substance) → bones fidelity (`/and-review
   bones`) → forward-thread (stitch Phase 10).
+- **Soak / emotional-landing check (named gate):** does the dramatic + horror weight get room to *land*
+  under the breezy comic lens — the project's "comedy on top, the reader keeps the ledger underneath"
+  thesis? Mechanically covered by facets Phase 2.5 aliveness axis (`ALIVE`/`AIRLESS`) + grounding-ledger,
+  `/and-stitch` Phase 6 buildup-preservation, and the dramatist dramatic-shape review — elevated here to
+  a first-class gate because the breezy register is precisely what can steamroll the weight (acute in
+  Book III's horror undertow; the dead hatchling / executed servants / mother's grief must register).
 
 ### Phase 3 — Cross-chapter cohere + per-book QA
 - Per book, after its chapters ship: `/and-cohere b0X` (cross-chapter cold-read; consumes revise queue;
