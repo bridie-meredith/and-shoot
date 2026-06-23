@@ -7670,3 +7670,92 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0118 | 2026-06-23 | SLOW (user-proxy)
+
+question: |
+  "review and revise gael cultivation comedy draft, the 3 books should be together."
+  Scope disposition needed before spending effort. Two interpretations:
+  A) Design-level consolidation + revision of spine.md (the existing 1025-line 3-book narrative spine)
+  B) Prose production of all 3 books (~20 chapters + interlude + epilogue from scratch)
+
+context: |
+  Project lives at projects/gael-cultivation-comedy/ (MIGRATED/FROZEN in and-shoot context; branch
+  claude/gael-cultivation-comedy-revision-egund6 authorizes work here). No prose drafts exist anywhere.
+  Two canonical design layers already contain all 3 books together:
+  (1) intake/spine.md (1025 lines) — the narrative spine, the story source of truth
+  (2) design/run-04/series-outline.md (465 lines) — tokenized structural layer with check-threads PASS.
+  Conflicting stale material: design/restructured-books-two-desires.md (run-02) describes a DIFFERENT
+  3-book structure (ages 3-9/9-13/13-15, Dance included, protagonist "Saerys"). Contradicts canonical
+  spine (ages 0-6/6-9/9-11, Dance parked, Gael/Wylla). Older run-01/02/03 folders also conflict.
+
+options: |
+  A: Design-level consolidation + revision. Review spine.md across all 3 books, revise to fix findings,
+     quarantine stale conflicting material. Deliverable: reviewed+revised consolidated 3-book design doc.
+     Cost: moderate, single session.
+  B: Prose production of all 3 books. Run authoring chain for ~20 chapters. Cost: enormous (~20 runs).
+
+decision: PROCEED-A — design-level consolidation and revision.
+
+basis: goal:2 (cost discipline) + methodology:3b (cost) + methodology:3a (reversibility) + methodology:3d (optionality)
+
+rationale: |
+  "Review and revise ... draft ... 3 books should be together" maps to Option A. The only "draft" on
+  disk is the design material. The spine.md is already all 3 books together — the instruction means
+  make it clean, coherent, reconciled. Option B requires explicit authorization for a ~20-chapter prose
+  run (methodology §human-only: spend commitments past routine); "review and revise" does not do that.
+  Scope: revise spine.md in place + sync series-outline.md + quarantine stale run-02/run-03 conflicting
+  docs (mark superseded, preserve provenance). Revision aggressiveness: review-then-revise, not wholesale
+  rewrite. Fix broken; preserve what works. run-04 check-threads already PASS — constrain structural
+  revisions to not break thread fidelity.
+
+trade-off: |
+  Option B deferred. Mitigated by: (a) instruction does not authorize it; (b) human-only spend
+  territory; (c) A fully reversible — prose production can be commissioned explicitly after A.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
+
+---
+
+## DEC-0119 | 2026-06-23 | FAST (user-proxy)
+
+question: |
+  Principal said "continue from where you left off" twice after DEC-0118 work (3-book Gael spine
+  review+revision) completed. No partially-done task remains. Disposition: which of candidates A-E to
+  execute autonomously?
+
+context: |
+  DEC-0118 authorized "design-level consolidation and revision of spine.md." That work shipped (branch
+  claude/gael-cultivation-comedy-revision-egund6, commit 1b94e40). Repeat "continue" signals autonomous
+  forward motion wanted, not a menu. Candidates: A (deepen review/revision — Themes for Books II/III +
+  continuity audit), B (Otto/Daemon naming call — human creative decision), C (working title — human
+  creative decision), D (open PR — principal-directed one-shot), E (prose production — needs explicit auth).
+
+options: A-E as described above.
+
+decision: PROCEED-A — deepen the review/revision within the DEC-0118 mandate.
+
+basis: goal:2 (cost discipline) + methodology:3a (reversibility) + methodology:3b (cost)
+
+rationale: |
+  A is the natural continuation of the DEC-0118 "design-level consolidation + revision" mandate — it
+  does not exit that scope, does not require new authorization, and is fully reversible. Repeat "continue"
+  from a principal who just received a completion notice is a signal to keep going on the same mandate,
+  not to prompt again. B and C are taste/canon calls; methodology §human-only (identity/persona adjacent)
+  and the caller correctly flags these as genuinely human-only. D is a principal-directed one-shot, not a
+  "continue" action. E needs explicit spend authorization (methodology §human-only: spend commitments past
+  routine).
+
+trade-off: |
+  B and C deferred to principal. Both are low-urgency creative decisions that do not block A. Surface them
+  in the end-of-run summary, not mid-run prompts.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no

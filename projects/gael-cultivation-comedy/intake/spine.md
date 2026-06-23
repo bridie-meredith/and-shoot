@@ -15,6 +15,27 @@ this series ends on the escape; the Dance is parked for a later book.
 
 ---
 
+## Canonical authority — read this first
+
+The **body of this document** (from *How the comedy works* through *Resolved creative-fill*) is the
+**canonical 3-book spine** — Books I, II, and III, together, as one coherent unit. Everything **below the
+body** (the dated `*__…FOLDED…__*` blocks under *Provenance & revision history*) is **provenance**,
+retained per the project's preservation invariant; it **includes superseded intermediate states**.
+**Where any note below the line conflicts with the body, the body wins.** Companion decision-record:
+`intake/reconciliation-worksheet.md`. Tokenized, thread-checked structural layer:
+`design/run-04/series-outline.md` (check-threads PASS).
+
+> **Latest canonical state (reaffirmed 2026-06-23 review).** Three books, one arc:
+> **I · *the cage*** (age 0–6 · 5 ch + the Alicent interlude · broad farce) · **II · *the blind machine***
+> (age ~6–9 · 8 ch · workplace comedy) · **III · *the narrow escape*** (age ~9–11 · 6 ch + epilogue ·
+> heist caper). Curdle ladder **R0 I.1 → R1 I.5 → R2 II.8 → R3 III.3 → apex III.6**, with **III.5** the
+> anti-curdle GIVE. Caraxes is **maddened, not killed** (I.5). Book II is the **gambling / Entertainment-Dao**
+> shape (the soap/chemistry premise is retired). The **Dance is parked** for a later installment.
+> The earlier `design/restructured-books-two-desires.md` and `design/run-01..03/` layers are **superseded
+> provenance** (different ages, names, and a Dance-included structure) — do not build from them.
+
+---
+
 ## How the comedy works (read once, applies everywhere)
 
 **Gritty world, light LENS.** The world stays genuinely grimdark (incest, child-marriage, the Faith,
@@ -398,8 +419,8 @@ Candidate motif token `BLACK-CELLS`/`MISSING-SERVANTS` flagged for the principal
 
 ## Open slots (creative-fill — see worksheet)
 ~~maid's name~~ → **Wylla** · ~~the Northern betrothal~~ → **the Starks — the Warden of the North's heir** *(retargeted 2026-06-11; was Lord Errold Slate of Blackpool — the King now sells her high to a Great House)* ·
-~~R2 method (II.7)~~ · ~~R3 method (III.3)~~ · ~~the apex specifics (who the maid kills; how discovery
-happens)~~ → **all resolved 2026-06-09 (below)** · ~~Helaena's role~~ → **parked to the Dance book** ·
+~~R2 method (II.8)~~ · ~~R3 method (III.3)~~ · ~~the apex specifics (who the maid kills; how discovery
+happens)~~ → **all resolved (below)** · ~~Helaena's role~~ → **parked to the Dance book** ·
 ~~Alicent's arc~~ → **knows-and-shields** *(active protector; revised 2026-06-11, was knows-and-does-not-act; worksheet §D-slots)*. **Only remaining call:**
 Otto/Daemon seating — **AU-age (recommended)** vs rename to original era-appropriate figures.
 
@@ -409,14 +430,21 @@ witness (still-room boy → watchman, one recurring figure) → **Hobb** · the 
 Quint** · the Northern betrothal → **the Starks — the Warden of the North's heir** (a young cipher; the cold destination, not the groom, carries the dread). *Retargeted 2026-06-11 (was Lord Errold Slate of Blackpool).*
 
 ### Resolved creative-fill (2026-06-09)
-- **R2 method (II.7) — the first death she *means*.** Gael's first *premeditated* human removal, executed
+- **R2 method (II.8) — the first death she *means*.** Gael's first *premeditated* human removal, executed
   entirely through the apparatus — the still-room (mithridatism/pharmacology turned outward) + the
-  maester's supply chain + a bill of exchange routed through the network — producing a death that reads as
-  natural (a "lingering flux" that doesn't lift). Colder than the Daemon drain because it is *chosen and
-  planned,* not a survival reflex. Target: the **exploiter** who leaned on Wylla (a Hightower client /
-  court factioneer), NOT the oblivious family member (who is unaddressable — that's the point). She tells
-  herself it protects the apparatus; the reader sees it's for Wylla. Filed ④ "a vendor dispute, resolved";
-  ⑥ clears her ("removing an impurity to the sect's qi-field is hygiene, not murder").
+  maester's supply chain + a bill of exchange routed through the network — producing deaths that read as
+  natural. The target is **not** a lone exploiter but the **Otto-faction suitor and his advance party (5+)**,
+  who lean *bodily* on **Wylla** to break the obstruction around the rushed wedding — and *that* is the one
+  thing Gael is not carefree about. A prince's oblivious endangerment would be unaddressable (you cannot
+  poison a man for failing to notice a servant); these are **addressable,** so she addresses them. The deed
+  is **elided** — the reader gets only the aftermath (they were here; then they are not) — and the party
+  **vanishes corpseless,** a hole Otto cannot close (→ the III.6 manhunt). Colder than the Daemon drain
+  because it is *chosen and planned,* not a survival reflex; **Wylla is passively complicit** (she knows and
+  stays silent — her own-hand kill stays III.6). She tells herself it protects the apparatus; the reader
+  sees it's for Wylla. Filed ④ "a vendor dispute, resolved"; ⑥ clears her on the **clean-hands doctrine**
+  (the line drawn at the technique, never the harm). *(Updated 2026-06-23: relocated II.7 → II.8 and
+  single-exploiter → suitor-party disappearance, reconciling this 2026-06-09 note to the canonical body per
+  DEC-0117.)*
 - **R3 method (III.3) — the casual repeat.** Lothar Quint, handled colder than R2 precisely by being
   *casual:* she takes his quicklime tip first, thanks him, then — ④ blander-as-darker — *the account is
   closed.* Premeditated, deniable, barely breaking stride. The escalation is in *register,* not gore:
@@ -430,6 +458,17 @@ Quint** · the Northern betrothal → **the Starks — the Warden of the North's
   herself: the name in the bestiary is what Otto saw. **The one warm correction dooms the person it
   warmed.** Counterpoint: **Hobb,** on the watch, sees them go and *says nothing* — the man who could have
   caught them deliberately doesn't, while the man who reads her wrong nearly does.
+
+---
+
+## ⟢ Provenance & revision history — *below the line is NOT canonical reference*
+
+*Everything from here down is the **dated fold record** of how this spine reached its current state, kept
+per the project's preservation invariant (archive, never delete). It **includes superseded intermediate
+states** — for example, earlier notes place the first meant-kill at **II.7** and treat Caraxes as **killed**;
+both were later revised (the first meant-kill is **II.8**; Caraxes is **maddened, not killed**). **The body
+above is canonical. Where any note below conflicts with it, the body wins.** For the adjudicated decision
+record, see `intake/reconciliation-worksheet.md`.*
 
 ---
 

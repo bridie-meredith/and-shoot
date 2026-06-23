@@ -1,3 +1,12 @@
+> **⚠ SUPERSEDED 2026-06-23 — provenance only; do not build from this file.** This is the **run-02** two-desires
+> re-axis. Its **engine** (the two desires — *acquire resources* vs *be left alone* — at war, the whole apparatus
+> as one "do-not-disturb sign with a supply chain") **survived and was folded** into the canonical spine. Its
+> **chapter STRUCTURE here is stale and contradicts canon:** it uses ages **3–9 / 9–13 / 13–15**, **includes the
+> Dance**, and the old protagonist/cast names (**Saerys / Daenys / Harwin / Helaena**). The canonical structure is
+> ages **0–6 / 6–9 / 9–11**, the **Dance parked**, cast **Gael / Wylla**. Canonical: `intake/spine.md` (story) +
+> `design/run-04/series-outline.md` (tokenized, check-threads PASS). Retained as provenance per the preservation
+> invariant.
+
 # Restructured spine — the two desires (run-02, principal directive)
 
 **Principal note (re-axis):** *"Each book needs to be focused on acquiring resources and

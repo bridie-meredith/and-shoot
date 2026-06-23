@@ -1,3 +1,7 @@
+> **⚠ SUPERSEDED — provenance only; do not build from this file.** run-01 is the earliest three-book outline;
+> its structure (ages/cast/Dance framing) does **not** match canon. Canonical: `intake/spine.md` +
+> `design/run-04/series-outline.md`.
+
 # Three-book outline — run-01
 
 One cohesive work in three books. Built from `treatment.md` + `constraints.md` +

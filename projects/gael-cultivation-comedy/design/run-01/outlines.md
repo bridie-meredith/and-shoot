@@ -1,3 +1,6 @@
+> **⚠ SUPERSEDED — provenance only; do not build from this file.** Earliest broad outline (the "~4 linked
+> novellas" framing is obsolete). Canonical: `intake/spine.md` + `design/run-04/series-outline.md`.
+
 # Broad outlines — run-01
 
 Target: ~80k words, structured as **a few linked novellas** (~4 × ~20k).
