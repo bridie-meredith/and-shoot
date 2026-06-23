@@ -6837,7 +6837,7 @@ cost_estimate: S
 status: open
 triaged_at: null
 triaged_by: null
-disposition_note: null
+disposition_note: "BUILT-PENDING-TRIAGE 2026-06-23 (status remains open — NOT accepted; speculative build for ship-or-revert triage). Wired: /and-stitch Phase 1.5 Step 2 ceiling-collapse short-circuit — process scenes in order; if scene-1 returns ceiling-collapse: true, suppress cherry-pick (skip Steps 2-3) for scenes B..N and use pure-winner. Opt-in cherry-pick default unchanged. Revert = drop the short-circuit paragraph."
 pr_ref: null
 defer_until: null
 supersedes: null

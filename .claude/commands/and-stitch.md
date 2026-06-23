@@ -575,6 +575,8 @@ The cherry-pick path is **opt-in** (pass `--cherry-pick=paragraph` to enable). W
 
 **Step 2 — Per-scene cherry-pick composition (one judge fork per scene).**
 
+**Ceiling-collapse short-circuit (URI-STITCH-CHERRY-PICK-CEILING-SUPPRESS / PROP-0058; built-pending-triage 2026-06-23).** Process scenes **in order** (A, B, C, …). If the FIRST scene's Step-2 composition returns `ceiling-collapse: true` (0 substitutions — the per-arm winner was already paragraph-optimal), **suppress cherry-pick for the remaining scenes of this chapter**: skip Steps 2–3 for scenes B..N and use each scene's pure-winner (`<slug>.scene-<L>.draft.md` = the Step-1 winner) as the canonical scene draft. Rationale: both b01 cherry-pick chapters (c02, c04) collapsed on **every** scene, so the composer was doing dead work scene after scene; a first-scene collapse is a strong signal the whole chapter's bones substrate has no paragraph-level lift room. Record `cherry-pick-suppressed: scenes B..N (first-scene ceiling-collapse)` in the render-log Phase 1.5 header. The suppression is per-chapter and does not change the opt-in default; it only avoids spending the composer fork once the chapter has shown it has no lift. (Evidence: `design/tournament-tuning-retrospective-2026-06-23.md` § 2 Q1.)
+
 Dispatch one `general-purpose` agent per scene with the judge prompt at `staff/admin/exemplar-tournament-judge-prompts/cherry-pick-composer.md`. Inputs:
 - All N candidate scene drafts (`<slug>.scene-<L>.arm-<N>.draft.md`)
 - The Step 1 per-scene tournament verdict (per-criterion table, counterweight verdict, rank order)
