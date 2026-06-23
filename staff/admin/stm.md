@@ -10,6 +10,7 @@ Format per entry:
 
 ---
 
+[2026-06-23] DEC-0120 | "continue" after backlog-reconcile + 3 builds + 3 jobs + 6 filed proposals — all authorized work complete → C (stop; hand off queue to principal for triage) | PROP-0053..0058 filed not accepted; building without acceptance bypasses triage gate; B has name collisions (human-only); authorized scope exhausted
 [2026-06-23] DEC-0119 | "continue from where you left off" (×2) after DEC-0118 work complete → PROCEED-A (deepen review/revision: Books II/III Themes + continuity audit) | still inside DEC-0118 mandate; B/C are human-only taste calls; E needs explicit auth; D is one-shot
 [2026-06-23] DEC-0118 | "review and revise gael cultivation comedy draft, the 3 books should be together" → PROCEED-A (design-level consolidation + revision of spine.md) | no prose draft exists; B is ~20-chapter run requiring explicit human auth; A is moderate cost, reversible, serves the instruction
 [2026-06-14] DEC-0117 | "Next chapter?" in and-experiment track after Book-I spine refresh → fold entire II.2–II.8 block as one coherent pass | direction pre-agreed; piecemeal folding leaves check-threads transiently broken; one-pass is cheaper + cleaner

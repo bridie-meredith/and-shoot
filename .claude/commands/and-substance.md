@@ -39,7 +39,7 @@ Re-runnable per `design/substance/rerun-protocol.md`. Cascade-aware per `design/
 2. Check own output:
    - **`series`:** `books[*].chunk` populated AND `series.substance.*` populated.
    - **`book b<NN>`:** `books[b<NN>].chapters[*].chunk` populated AND `books[b<NN>].drama` populated.
-   - **`chapter b<NN>c<MM>`:** `chapters[b<NN>c<MM>].scenes[*].chunk` + `scene_conflict` populated AND `chapters[b<NN>c<MM>].{pov_narrator, dramatic_shape, goal}` populated.
+   - **`chapter b<NN>c<MM>`:** `chapters[b<NN>c<MM>].scenes[*].chunk` + `scene_conflict` populated AND `chapters[b<NN>c<MM>].{pov_narrator, dramatic_shape, goal, what_changed_by_end}` populated.
 3. **Mode resolution:**
    - Output empty → fresh-authoring mode.
    - Output populated + mode arg → mode preselected.
@@ -85,6 +85,28 @@ Re-runnable per `design/substance/rerun-protocol.md`. Cascade-aware per `design/
       - `aggregate-state: PRESENT, through_chapter=<slug>, last_updated_by=<producer>, last_updated=<ts>` (or `aggregate-state: ABSENT (falling back to handoff_in only)` per step 6a).
       - `handoff_conflicts: <count> (aggregate prevailed on all)` — emit only if count > 0.
       - `revision_layer: <N> presentation-reinforcement entries, <M> substantive entries (all acknowledged)` — emit only when file present.
+
+6.5. **Consecutive SHIPPED-WITH-CAVEATS gate (URI-CONSECUTIVE-CAVEATS; PROP-0037, 2026-06-23).** *Fires ONLY at the `chapter b<NN>c<MM>` invocation level.* Skip for `series` and `book b<NN>` invocations. Structural analog of the step-6 aggregate-state HARD-abort: it prevents the principal from starting the next chapter on top of an unresolved *cross-chapter* apparatus-register / design-inherent-caveat accumulation. The per-chapter gates ship each chapter correctly; the failure this gates is *structural* — nothing otherwise forces the `/and-cohere` recommendation to be honored before the next run (b01 bypassed it twice, c10→c11→c12, then ran a 7-consecutive Class-B cohort c14-c20). At N=3 consecutive on the same pattern, the recommendation becomes a HARD-abort class.
+
+   a. Read showrunner memory: `books[<book>].consecutive_shipped_with_caveats` (integer; default 0 if absent) and `books[<book>].cohere_acknowledgment` (object or null; see step c).
+   b. **Proceed** if `consecutive_shipped_with_caveats < 3` OR a valid `cohere_acknowledgment` is present (its `acknowledged_at` post-dates the last SHIPPED-WITH-CAVEATS entry).
+   c. **HARD-ABORT** if `consecutive_shipped_with_caveats >= 3` AND no valid `cohere_acknowledgment`:
+      ```
+      /and-substance chapter <slug> Phase 0 abort: consecutive SHIPPED-WITH-CAVEATS = <N> (>= 3 threshold).
+      Cross-chapter apparatus-register / design-inherent-caveat accumulation requires resolution before the
+      next chapter production run. Resolve by one of:
+        (a) Run /and-cohere <book> [range covering the SHIPPED-WITH-CAVEATS chapters] and let it complete or
+            reach its convergence cap. On completion /and-cohere stamps books[<book>].cohere_acknowledgment
+            in showrunner memory; this gate clears automatically.
+        (b) Stamp a manual acknowledgment in showrunner memory (if /and-cohere is not feasible before this
+            chapter): books[<book>].cohere_acknowledgment: { acknowledged_at: <ISO>, acknowledged_by: <principal>,
+            reason: <one line why /and-cohere is deferred> }. This allows the chapter to proceed; it does NOT
+            reset the counter — the gate re-fires at the NEXT chapter unless /and-cohere runs.
+      ```
+   d. **Acknowledgment validity:** a `cohere_acknowledgment` stamp qualifies for ONE chapter production run only. After the chapter ships, the gate re-evaluates `consecutive_shipped_with_caveats` against the current count; a prior acknowledgment does not carry forward.
+   e. Log to the Phase 0 print block: `consecutive-caveats: <N> (gate <CLEAR | ACK-<date> | ABORT>)`.
+
+   **Counter maintenance (companion):** `/and-stitch` Phase 9's verdict-persist block increments `books[<book>].consecutive_shipped_with_caveats` on each `SHIPPED-WITH-CAVEATS` / `PASS-WITH-DEPTH-PASS-REQUIRED` verdict and resets it to 0 on a clean `PASS`. `/and-cohere` Phase 7 (persist) writes the `cohere_acknowledgment` stamp on completion. Schema fields: `books[<book>].consecutive_shipped_with_caveats` (integer, default 0) + `books[<book>].cohere_acknowledgment` (object: `acknowledged_at`, `acknowledged_by`, `reason`; nullable) — see `schemas/showrunner-memory.schema.md`. **Process note:** DEC-0098 held the book-*close* enforcement surface to be `/and-review verdict`; this gate is the *next-chapter* enforcement surface (orthogonal — DEC-0106 orchestrator-critic named PROP-0037 as the correct gate for the empirical 7-consecutive case). The two are complementary, not duplicative.
 
 7. Run.
 
@@ -209,9 +231,10 @@ Phase 4 at series level is where the signature itself is born. The 1–9 archety
 
 **Book level — drama statement.** Screen-writer authors `books[b<NN>].drama` — a one-paragraph "what cannot survive this book" statement. Names the structural collision at book scope.
 
-**Chapter level — dramatic_shape + goal + pov_narrator + chapter_class.**
+**Chapter level — dramatic_shape + goal + what_changed_by_end + pov_narrator + chapter_class.**
 - `chapters[].dramatic_shape`: one of `rising` / `climax` / `falling` / `hinge`. Picked per chapter to honor book drama curve.
 - `chapters[].goal`: one-line "what this chapter shows the audience." Pass 4 trim and `/and-write` Phase 7 `goal:` header source.
+- `chapters[].what_changed_by_end` (PROP-0055; built-pending-triage 2026-06-23): one line naming the **net change** the chapter effects — the answer to "what was the point of this chapter?". Sibling to `goal`/`dramatic_shape`, authored here. MUST name an actual change of state (not restate `goal` verbatim, not "nothing changes"). Read downstream by `/and-stitch` Phase 9 naive-follow + `/and-postop` as the declared target the rendered prose must deliver. Verified at Phase 5 dramatist (`WHAT-CHANGED-MISSING-OR-TRIVIAL`, HARD).
 - `chapters[].pov_narrator`: resolved from `series.structure.pov`:
   - `single` → inherited from series (the protagonist actor slug).
   - `rotating-per-book` → inherited from book-level POV decision.
@@ -227,8 +250,8 @@ Dispatch the project's three audience personas + dramatist + auditor in parallel
 | reviewer | role |
 |---|---|
 | audience (×3) | Does this chunk *feel* substantive — Δ feel earned, cost feel real, meaningfulness land? Verdicts: `SUBSTANCE-FELT` / `SUBSTANCE-FLAT-<axis>` / `SUBSTANCE-SUSPECT-cheap-gain-<axis>` |
-| dramatist | Is the chunk shape sound? Do children fit within parent's Δ? Scenes-not-too-small (chapter level)? Cyclical / cross-book / structural commitments honored? Chapter dramatic-arc completion? **Book level additionally checks cross-chapter handoff:** for every adjacent chapter pair (N, N+1) under the book, `chapters[N].handoff_out` is consistent with `chapters[N+1].handoff_in`. Mismatches HARD-fail and force revise on the offending chapter chunks. |
-| auditor | Does the chunk text match the substance contract? No rank claim without described cause. Cost-ledger consistency. Per `schemas/audit-report.schema.md`. **Thematic-axis-coverage (chapter level, URI-CONTRACT-THEMATIC-AXIS):** the chapter `goal` names a thesis; the contract must declare that thesis axis in `axes_in_motion[]` or `axes_held[]`. A `goal` about a moral-framework turn whose contract never lists `moral-framework` is under-declaring its own thesis — `THEMATIC-AXIS-UNDECLARED-<axis>`, HARD at this level (blocks persist, forces revise). The mechanical sum/enum checks never catch this; it asks whether the contract is about what the chapter is about. |
+| dramatist | Is the chunk shape sound? Do children fit within parent's Δ? Scenes-not-too-small (chapter level)? Cyclical / cross-book / structural commitments honored? **Chapter dramatic-arc completion (chapter level, URI-ARC-COMPLETION / PROP-0055; built-pending-triage 2026-06-23):** a `dramatic_shape` tag is a curve label, not a completeness guarantee. Verify the chapter chunk exhibits an identifiable (1) setup beat, (2) complication beat, and (3) resolution-or-cliffhanger beat — a chunk tagged `rising` with no complication and nothing changed is the "puff of air" the tag was meant to prevent → `ARC-INCOMPLETE`, **HARD** (blocks persist, forces chunk revise). AND verify `chapters[].what_changed_by_end` is populated, non-trivial, and consistent with the chunk + `goal` — empty, or a verbatim restatement of `goal`, or naming no net change → `WHAT-CHANGED-MISSING-OR-TRIVIAL`, **HARD** (the field's value is that it cannot be faked). **Book level additionally checks cross-chapter handoff:** for every adjacent chapter pair (N, N+1) under the book, `chapters[N].handoff_out` is consistent with `chapters[N+1].handoff_in`. Mismatches HARD-fail and force revise on the offending chapter chunks. |
+| auditor | Does the chunk text match the substance contract? No rank claim without described cause. Cost-ledger consistency. Per `schemas/audit-report.schema.md`. **Thematic-axis-coverage (chapter level, URI-CONTRACT-THEMATIC-AXIS):** the chapter `goal` names a thesis; the contract must declare that thesis axis in `axes_in_motion[]` or `axes_held[]`. A `goal` about a moral-framework turn whose contract never lists `moral-framework` is under-declaring its own thesis — `THEMATIC-AXIS-UNDECLARED-<axis>`, HARD at this level (blocks persist, forces revise). The mechanical sum/enum checks never catch this; it asks whether the contract is about what the chapter is about. **Emotional-substance orthogonality (chapter level, URI-CONTRACT-EMOTIONAL-AXIS / PROP-0054; built-pending-triage 2026-06-23):** when the chapter is a **stakes-event chapter** — heuristic: `scenes[*].scene_conflict.stakes_axis` resolves to a high-consequence axis OR the chapter `goal` names a death / return / betrayal / revelation / loss — the contract MUST move a feeling: `axes_in_motion[]` (or `axes_held[]`) must contain ≥1 axis whose `series.substance.state_axes[].class == emotional`. A resurrection or a death whose contract registers only wealth/capability/community Δ and no emotional axis is under-declaring → `STAKES-EVENT-EMOTIONALLY-UNDECLARED`, **HARD** (blocks persist; fix is to add the emotional axis to the contract, after which `/and-write` Phase 6 `SUBSTANCE-FLAT-<axis>` already guarantees delivery). Non-stakes (quiet/logistics) chapters do NOT fire this — the check is conditional, not a blanket ≥2-axis-class rule. Mirrors THEMATIC-AXIS-UNDECLARED: a mechanical contract enumeration, not a prose taste call (DEC-0116-aligned). Requires `state_axes[].class` populated (see schema). |
 
 **SUBSTANCE-FLAT and SUBSTANCE-SUSPECT-cheap-gain are HARD findings** at this level (per intent-gaps rationale). They block persist and force revise.
 
