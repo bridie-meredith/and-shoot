@@ -10,6 +10,7 @@ Format per entry:
 
 ---
 
+[2026-06-23] DEC-0119 | "continue from where you left off" (×2) after DEC-0118 work complete → PROCEED-A (deepen review/revision: Books II/III Themes + continuity audit) | still inside DEC-0118 mandate; B/C are human-only taste calls; E needs explicit auth; D is one-shot
 [2026-06-23] DEC-0118 | "review and revise gael cultivation comedy draft, the 3 books should be together" → PROCEED-A (design-level consolidation + revision of spine.md) | no prose draft exists; B is ~20-chapter run requiring explicit human auth; A is moderate cost, reversible, serves the instruction
 [2026-06-14] DEC-0117 | "Next chapter?" in and-experiment track after Book-I spine refresh → fold entire II.2–II.8 block as one coherent pass | direction pre-agreed; piecemeal folding leaves check-threads transiently broken; one-pass is cheaper + cleaner
 [2026-06-08] DEC-0116 | /and-facets simplification GO + shape → Option A (slim, single command-body edit) | Phase 5b + R2 both demonstrated net-negative signal; DEC-0033 superseded by upstream hardening; Option B is human-only architectural direction

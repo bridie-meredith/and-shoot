@@ -7719,3 +7719,43 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0119 | 2026-06-23 | FAST (user-proxy)
+
+question: |
+  Principal said "continue from where you left off" twice after DEC-0118 work (3-book Gael spine
+  review+revision) completed. No partially-done task remains. Disposition: which of candidates A-E to
+  execute autonomously?
+
+context: |
+  DEC-0118 authorized "design-level consolidation and revision of spine.md." That work shipped (branch
+  claude/gael-cultivation-comedy-revision-egund6, commit 1b94e40). Repeat "continue" signals autonomous
+  forward motion wanted, not a menu. Candidates: A (deepen review/revision — Themes for Books II/III +
+  continuity audit), B (Otto/Daemon naming call — human creative decision), C (working title — human
+  creative decision), D (open PR — principal-directed one-shot), E (prose production — needs explicit auth).
+
+options: A-E as described above.
+
+decision: PROCEED-A — deepen the review/revision within the DEC-0118 mandate.
+
+basis: goal:2 (cost discipline) + methodology:3a (reversibility) + methodology:3b (cost)
+
+rationale: |
+  A is the natural continuation of the DEC-0118 "design-level consolidation + revision" mandate — it
+  does not exit that scope, does not require new authorization, and is fully reversible. Repeat "continue"
+  from a principal who just received a completion notice is a signal to keep going on the same mandate,
+  not to prompt again. B and C are taste/canon calls; methodology §human-only (identity/persona adjacent)
+  and the caller correctly flags these as genuinely human-only. D is a principal-directed one-shot, not a
+  "continue" action. E needs explicit spend authorization (methodology §human-only: spend commitments past
+  routine).
+
+trade-off: |
+  B and C deferred to principal. Both are low-urgency creative decisions that do not block A. Surface them
+  in the end-of-run summary, not mid-run prompts.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
