@@ -749,10 +749,10 @@ proposed_diff: |
   The two proposals are complementary: PROP-0003-A is the renderer instance;
   PROP-0005 is the persona-agent generalization. Accept / reject / defer each independently.
 cost_estimate: L
-status: open
-triaged_at: null
-triaged_by: null
-disposition_note: null
+status: implemented
+triaged_at: 2026-06-23
+triaged_by: principal (backlog reconciliation 2026-06-23)
+disposition_note: "IMPLEMENTED. Persona-exemplar architecture live: schemas/persona-exemplar.schema.md + cards/persona-exemplars/ populated; CLAUDE.md Rule 16 (URI-PERSONA-EXEMPLAR); Tier-1 auto-resolve at dispatch. Reconciled 2026-06-23."
 pr_ref: null
 defer_until: null
 supersedes: null
@@ -887,10 +887,10 @@ proposed_diff: |
   amendment's exclusion. PROP-0005 Items 5-7 (dispatch convention, migration plan, open
   questions) apply only to Tier 1 agents.
 cost_estimate: S
-status: open
-triaged_at: null
-triaged_by: null
-disposition_note: null
+status: implemented
+triaged_at: 2026-06-23
+triaged_by: principal (backlog reconciliation 2026-06-23)
+disposition_note: "IMPLEMENTED. Tier-1/2/3 exemplar split codified in CLAUDE.md Rule 16 (Tier-2 exclusion recorded). Reconciled 2026-06-23."
 pr_ref: null
 defer_until: null
 supersedes: null
@@ -2170,10 +2170,10 @@ proposed_diff: |
     Both must be yes for the trigger to fire.
 
 cost_estimate: S
-status: open
-triaged_at: null
-triaged_by: null
-disposition_note: null
+status: implemented
+triaged_at: 2026-06-23
+triaged_by: principal (backlog reconciliation 2026-06-23)
+disposition_note: "IMPLEMENTED. Cherry-pick default-on live in .claude/commands/and-stitch.md. Reconciled 2026-06-23."
 pr_ref: null
 defer_until: null
 supersedes: null
@@ -2552,10 +2552,10 @@ proposed_diff: |
   ---
 
 cost_estimate: M
-status: open
-triaged_at: null
-triaged_by: null
-disposition_note: null
+status: implemented
+triaged_at: 2026-06-23
+triaged_by: principal (backlog reconciliation 2026-06-23)
+disposition_note: "IMPLEMENTED. Chunk-cold-read upstream gate wired in and-substance.md Phase 5.5 + and-stitch.md Phase 8.5 (CLAUDE.md Rule 17); exercised live through b01c20; superseded as sole readability backstop by DEC-0115 no-ledger layer. Reconciled 2026-06-23."
 pr_ref: null
 defer_until: null
 supersedes: null
@@ -2826,10 +2826,10 @@ proposed_diff: |
     `schemas/showrunner-memory.schema.md` would make this mechanical; cost S.
 
 cost_estimate: S
-status: open
-triaged_at: null
-triaged_by: null
-disposition_note: null
+status: implemented
+triaged_at: 2026-06-23
+triaged_by: principal (backlog reconciliation 2026-06-23)
+disposition_note: "IMPLEMENTED (reshaped). Aliveness axis (FOLLOWABLE x ALIVE) live at /and-facets Phase 2.5; the apparatus-register-as-axis framing was superseded by DEC-0115 (apparatus register prohibited as prose mode, not scored). Reconciled 2026-06-23."
 pr_ref: null
 defer_until: null
 supersedes: null
@@ -4535,10 +4535,10 @@ proposed_diff: |
     aggregate-state.md is shared with Amendment 1.
 
 cost_estimate: L
-status: open
-triaged_at: null
-triaged_by: null
-disposition_note: null
+status: implemented
+triaged_at: 2026-06-23
+triaged_by: principal (backlog reconciliation 2026-06-23)
+disposition_note: "IMPLEMENTED. /and-cohere shipped (.claude/commands/and-cohere.md); PROP-0031 directive satisfied. Reconciled 2026-06-23."
 pr_ref: null
 defer_until: null
 supersedes: null
@@ -6289,10 +6289,10 @@ proposed_diff: |
     "signature/intended register"; followability is judged against a naive reader.
   Authoritative home: CLAUDE.md Rule 22.
 cost_estimate: M
-status: accepted
+status: implemented
 triaged_at: 2026-06-08
 triaged_by: principal (session)
-disposition_note: "ACCEPTED per DEC-0115 ('no ledger at all'). CLAUDE.md Rule 22 + stitch/write edits this session; schema + card edits staged."
+disposition_note: "ACCEPTED per DEC-0115 ('no ledger at all'). CLAUDE.md Rule 22 + stitch/write edits this session; schema + card edits staged. | RECONCILED accepted->implemented 2026-06-23: no-ledger fences verified live in command bodies (ABSTRACTION-AS-SUBJECT/SCENE-ABSTRACT-DOMINANT in and-write; LEDGER-REGISTER/EMBODIMENT-BLOCKED in and-stitch; naive-follow/FOLLOW-FAIL in and-stitch+and-facets; CLAUDE.md Rule 22)."
 pr_ref: claude/optimistic-newton-YCnTC
 defer_until: null
 supersedes: null
@@ -6331,10 +6331,10 @@ proposed_diff: |
       one-paragraph plain-English "what physically happens" summary per scene. If it cannot, FOLLOW-FAIL
       (blocking; routes to /and-write revise). This fork may not be told the register is intentional.
 cost_estimate: S
-status: accepted
+status: implemented
 triaged_at: 2026-06-08
 triaged_by: principal (session)
-disposition_note: "ACCEPTED per DEC-0115. Implemented this session."
+disposition_note: "ACCEPTED per DEC-0115. Implemented this session. | RECONCILED accepted->implemented 2026-06-23: no-ledger fences verified live in command bodies (ABSTRACTION-AS-SUBJECT/SCENE-ABSTRACT-DOMINANT in and-write; LEDGER-REGISTER/EMBODIMENT-BLOCKED in and-stitch; naive-follow/FOLLOW-FAIL in and-stitch+and-facets; CLAUDE.md Rule 22)."
 pr_ref: claude/optimistic-newton-YCnTC
 defer_until: null
 supersedes: null
@@ -6373,10 +6373,10 @@ proposed_diff: |
   disposition. Wire the counter into aggregate-state and check it at /and-stitch Phase 9.5 and
   /and-review verdict.
 cost_estimate: M
-status: accepted
+status: implemented
 triaged_at: 2026-06-08
 triaged_by: principal (session)
-disposition_note: "ACCEPTED per DEC-0115. Command-body wiring staged; recorded as binding policy now."
+disposition_note: "ACCEPTED per DEC-0115. Command-body wiring staged; recorded as binding policy now. | RECONCILED accepted->implemented 2026-06-23: no-ledger fences verified live in command bodies (ABSTRACTION-AS-SUBJECT/SCENE-ABSTRACT-DOMINANT in and-write; LEDGER-REGISTER/EMBODIMENT-BLOCKED in and-stitch; naive-follow/FOLLOW-FAIL in and-stitch+and-facets; CLAUDE.md Rule 22)."
 pr_ref: claude/optimistic-newton-YCnTC
 defer_until: null
 supersedes: null
@@ -6414,10 +6414,10 @@ proposed_diff: |
   (3) Promote EMBODIMENT-BLOCKED: when /and-stitch returns >=K EMBODIMENT-BLOCKED on a chapter, it
       routes to /and-write revise (the fix is content bones must supply), not a silent ship.
 cost_estimate: M
-status: accepted
+status: implemented
 triaged_at: 2026-06-08
 triaged_by: principal (session)
-disposition_note: "ACCEPTED per DEC-0115. Phase 6 edit this session."
+disposition_note: "ACCEPTED per DEC-0115. Phase 6 edit this session. | RECONCILED accepted->implemented 2026-06-23: no-ledger fences verified live in command bodies (ABSTRACTION-AS-SUBJECT/SCENE-ABSTRACT-DOMINANT in and-write; LEDGER-REGISTER/EMBODIMENT-BLOCKED in and-stitch; naive-follow/FOLLOW-FAIL in and-stitch+and-facets; CLAUDE.md Rule 22)."
 pr_ref: claude/optimistic-newton-YCnTC
 defer_until: null
 supersedes: null
@@ -6457,10 +6457,10 @@ proposed_diff: |
       declare a readability/concreteness floor as a non-negotiable constraint the register coexists with
       (prevents register-as-substance single-axis optimization).
 cost_estimate: M
-status: accepted
+status: implemented
 triaged_at: 2026-06-08
 triaged_by: principal (session)
-disposition_note: "ACCEPTED per DEC-0115. Wiring staged; binding policy recorded now."
+disposition_note: "ACCEPTED per DEC-0115. Wiring staged; binding policy recorded now. | RECONCILED accepted->implemented 2026-06-23: no-ledger fences verified live in command bodies (ABSTRACTION-AS-SUBJECT/SCENE-ABSTRACT-DOMINANT in and-write; LEDGER-REGISTER/EMBODIMENT-BLOCKED in and-stitch; naive-follow/FOLLOW-FAIL in and-stitch+and-facets; CLAUDE.md Rule 22)."
 pr_ref: claude/optimistic-newton-YCnTC
 defer_until: null
 supersedes: null
@@ -6523,10 +6523,10 @@ proposed_diff: |
   status table (faceted-r2 retired); staff/audience/and-facets-orchestrator-critic/card.md acceptance
   criteria + hot_buttons (criterion 4 audience-gate -> Phase 2.5/auditor).
 cost_estimate: M
-status: accepted
+status: implemented
 triaged_at: 2026-06-08
 triaged_by: principal (session, via admin user-proxy DEC-0116)
-disposition_note: "ACCEPTED + IMPLEMENTED this session per DEC-0116 (Option A). R2 dialogue judge dropped (implementer call); its dedup concern folded into Phase 4 auditor DEDUP."
+disposition_note: "ACCEPTED + IMPLEMENTED this session per DEC-0116 (Option A). R2 dialogue judge dropped (implementer call); its dedup concern folded into Phase 4 auditor DEDUP. | RECONCILED accepted->implemented 2026-06-23: no-ledger fences verified live in command bodies (ABSTRACTION-AS-SUBJECT/SCENE-ABSTRACT-DOMINANT in and-write; LEDGER-REGISTER/EMBODIMENT-BLOCKED in and-stitch; naive-follow/FOLLOW-FAIL in and-stitch+and-facets; CLAUDE.md Rule 22)."
 pr_ref: claude/ecstatic-volta-14ixm1
 defer_until: null
 supersedes: null
