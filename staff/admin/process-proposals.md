@@ -6584,3 +6584,261 @@ pr_ref: null
 defer_until: null
 supersedes: null
 ```
+
+## PROP-0053
+
+```yaml
+id: PROP-0053
+created_at: 2026-06-23T00:00:00Z
+created_by: backlog research job (main session)
+trigger:
+  reason: on-demand
+  source_report: design/research-backlog-designs-2026-06-23.md
+  source_verdict: backlog research job — OOS item "absolute-length floor mechanism"
+target:
+  type: command
+  path: .claude/commands/and-write.md + .claude/commands/and-stitch.md + schemas/showrunner-memory.schema.md
+  section: "and-write Phase 6 (projection) + and-stitch Phase 8 (realized check) + series.structure.book_length"
+change_type: add
+rationale: |
+  User feedback "all episodes too short" (intent-gaps.md item 5) has no enforcement surface.
+  Mechanism: add chapter_word_count_floor (+ words-per-bone estimate field) to
+  series.structure.book_length; at /and-write Phase 6 project bones-count x words-per-bone and
+  fire LENGTH-PROJECTION-SHORT (SIGNAL) if under floor; at /and-stitch Phase 8 check realized
+  word-count and fire CHAPTER-BELOW-FLOOR (SIGNAL, promoted to blocking on N=2 consecutive via
+  Rule 22's circuit breaker). Reuses existing circuit-breaker pattern; not subsumed by DEC-0115.
+  Full spec (problem/mechanism/wire-in/disposition/cost/deps) at the source_report § 1.
+evidence_refs:
+  - "design/research-backlog-designs-2026-06-23.md § 1 — full design spec"
+  - "design/substance/intent-gaps.md item 5 — 'all episodes too short' (OOS-tracked)"
+  - "CLAUDE.md 'Not in scope' — Absolute-length floor mechanism (OOS, follow-on issue)"
+recurrence_count: 1
+proposed_diff: |
+  See source_report § 1 (c). Two new book_length fields; LENGTH-PROJECTION-SHORT at /and-write
+  Phase 6; CHAPTER-BELOW-FLOOR at /and-stitch Phase 8 (SIGNAL, N=2 → blocking).
+cost_estimate: S
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
+
+---
+
+## PROP-0054
+
+```yaml
+id: PROP-0054
+created_at: 2026-06-23T00:00:00Z
+created_by: backlog research job (main session)
+trigger:
+  reason: on-demand
+  source_report: design/research-backlog-designs-2026-06-23.md
+  source_verdict: backlog research job — OOS item "emotional-substance orthogonality check"
+target:
+  type: command
+  path: .claude/commands/and-substance.md + schemas/showrunner-memory.schema.md
+  section: "and-substance chapter Phase 5 auditor; state_axes[].class"
+change_type: add
+rationale: |
+  User feedback "harsh; missing the feels" (intent-gaps.md item 7): plot-substance can move while
+  emotional-substance stays flat. Mechanism: a conditional contract-level check at /and-substance
+  chapter Phase 5 — when a stakes-event is present in the chapter, require axes_in_motion[] to
+  include >= 1 axis with class: emotional; else STAKES-EVENT-EMOTIONALLY-UNDECLARED (HARD).
+  Promotes the existing optional state_axes[].class field to required. Reuses the contract-check
+  pattern. Full spec at source_report § 2. Recommended to batch with PROP-0055 (same phase).
+evidence_refs:
+  - "design/research-backlog-designs-2026-06-23.md § 2 — full design spec"
+  - "design/substance/intent-gaps.md item 7 — emotional-substance orthogonal to plot-substance"
+  - "CLAUDE.md 'Not in scope' — Emotional-substance orthogonality check (OOS, follow-on)"
+recurrence_count: 1
+proposed_diff: |
+  See source_report § 2 (c). Make state_axes[].class required; add a stakes-event-conditional
+  >=1-emotional-axis HARD check at /and-substance chapter Phase 5 auditor.
+cost_estimate: S
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
+
+---
+
+## PROP-0055
+
+```yaml
+id: PROP-0055
+created_at: 2026-06-23T00:00:00Z
+created_by: backlog research job (main session)
+trigger:
+  reason: on-demand
+  source_report: design/research-backlog-designs-2026-06-23.md
+  source_verdict: backlog research job — OOS item "plot-arc-completion dramatist check"
+target:
+  type: command
+  path: .claude/commands/and-substance.md + schemas/showrunner-memory.schema.md
+  section: "and-substance chapter Phase 4/5 dramatist; chapters[].what_changed_by_end"
+change_type: add
+rationale: |
+  User feedback "what was the point of this chapter?" (intent-gaps.md item 8). Mechanism: at
+  /and-substance chapter the dramatist verifies identifiable setup / complication /
+  resolution-or-cliffhanger beats plus a new stored chapters[].what_changed_by_end one-liner;
+  ARC-INCOMPLETE and WHAT-CHANGED-MISSING are HARD. The stored line also feeds the /and-stitch
+  Phase 9 naive-follow gate (a reader should be able to recover what changed). Full spec at
+  source_report § 3. Recommended to batch with PROP-0054 (same phase, shared schema-tag discipline).
+evidence_refs:
+  - "design/research-backlog-designs-2026-06-23.md § 3 — full design spec"
+  - "design/substance/intent-gaps.md item 8 — plot-arc-completion"
+  - "CLAUDE.md 'Not in scope' — Plot-arc-completion dramatist check (OOS, follow-on)"
+recurrence_count: 1
+proposed_diff: |
+  See source_report § 3 (c). Add chapters[].what_changed_by_end field; dramatist beat-presence
+  check at /and-substance chapter Phase 4/5 (ARC-INCOMPLETE / WHAT-CHANGED-MISSING, both HARD).
+cost_estimate: S
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
+
+---
+
+## PROP-0056
+
+```yaml
+id: PROP-0056
+created_at: 2026-06-23T00:00:00Z
+created_by: backlog research job (main session)
+trigger:
+  reason: on-demand
+  source_report: design/research-backlog-designs-2026-06-23.md
+  source_verdict: backlog research job — OOS item "world-detail consistency audit"
+target:
+  type: command
+  path: .claude/commands/and-review.md
+  section: "consistency subcommand — new --world-detail axis"
+change_type: add
+rationale: |
+  User feedback "bowl weird; do smallfolk have salt?" (intent-gaps.md item 11): props/resources
+  inconsistent with a character's class/economic register. Mechanism: a --world-detail axis on
+  /and-review consistency where the auditor cross-references each concrete object/resource against
+  the relevant location + condition + persona-card economic/class register; WORLD-DETAIL-ANACHRONISM
+  (SIGNAL). Kept off the per-chapter hot path (review-on-demand). Full spec at source_report § 4.
+evidence_refs:
+  - "design/research-backlog-designs-2026-06-23.md § 4 — full design spec"
+  - "design/substance/intent-gaps.md item 11 — world-detail consistency (class/economic level)"
+  - "CLAUDE.md 'Not in scope' — World-detail consistency (OOS, follow-on)"
+recurrence_count: 1
+proposed_diff: |
+  See source_report § 4 (c). Add --world-detail axis to /and-review consistency; auditor cross-ref
+  of concrete objects vs setting-class register; WORLD-DETAIL-ANACHRONISM (SIGNAL).
+cost_estimate: M
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
+
+---
+
+## PROP-0057
+
+```yaml
+id: PROP-0057
+created_at: 2026-06-23T00:00:00Z
+created_by: backlog research job (main session)
+trigger:
+  reason: on-demand
+  source_report: design/research-backlog-designs-2026-06-23.md
+  source_verdict: backlog research job — OOS item "name-novelty enforcement for original characters"
+target:
+  type: command
+  path: .claude/commands/and-project.md + .claude/commands/and-cast.md
+  section: "and-project 1b naming forks + boundary-scope/prompt-binding; and-cast P2-3 margit naming"
+change_type: add
+rationale: |
+  Library persona slugs leak into original-character naming through three documented vectors
+  (boundary-scope embeds library slugs by archetype tag; prompt-binding carries them; the naming
+  forks aren't isolated from projects/ + library by name) — observed: "Mira" reused. Mechanism:
+  (1) strip library/archive proper names from boundary-scope.md + prompt-binding.md (pass archetype
+  TAGS, never slugs); (2) a margit name-novelty gate at the /and-project 1b + /and-cast naming forks
+  that checks proposed ORIGINAL-character names against a cards/ + projects/ name union;
+  NAME-NOVELTY-COLLISION (HARD). Scoped to original characters only — explicit --add <slug> reuse of
+  a canon/library figure is exempt. Closes all three leak vectors. Full spec at source_report § 5.
+evidence_refs:
+  - "design/research-backlog-designs-2026-06-23.md § 5 — full design spec"
+  - "CLAUDE.md 'Not in scope' — Name-novelty enforcement for original characters (three leak vectors documented; the 'Mira' case)"
+  - "staff/margit/harvest-manifest-2026-06-23.md — name-collision flags (wylla-maid, nymeria-summer-isles) are live instances of the same risk"
+recurrence_count: 1
+proposed_diff: |
+  See source_report § 5 (c). Two sites: name-strip fence on boundary-scope/prompt-binding; margit
+  name-novelty gate at the naming forks (NAME-NOVELTY-COLLISION HARD, original-characters-only).
+cost_estimate: M
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
+
+---
+
+## PROP-0058
+
+```yaml
+id: PROP-0058
+created_at: 2026-06-23T00:00:00Z
+created_by: backlog tuning job (main session)
+trigger:
+  reason: on-demand
+  source_report: design/tournament-tuning-retrospective-2026-06-23.md
+  source_verdict: tournament-tuning retrospective — Q1 (the one non-live-gated calibration)
+target:
+  type: command
+  path: .claude/commands/and-stitch.md
+  section: "Phase 1.5 Step 2 — cherry-pick composition"
+change_type: modify
+rationale: |
+  Retrospective Q1: of the five open tournament-tuning questions, four are live-gated, but one is
+  calibratable on existing evidence. Both cherry-pick chapters in b01 (c02, c04) returned
+  ceiling_collapse on every scene — the per-arm winner was already paragraph-optimal and the
+  composer did dead work. Mechanism: gate cherry-pick on a non-collapse precondition — if the FIRST
+  scene's cherry-pick returns ceiling_collapse: true, suppress cherry-pick for the remaining scenes
+  of that chapter (fall back to pure per-arm winner). Cheap guard against dead composer spend; does
+  not touch the (separately ratified) opt-in default. Full spec + the broader retrospective at
+  source_report § 2 Q1 + § 4. NOTE: the retrospective's core finding (per-arm rubric scores do NOT
+  predict cold-read CONTINUE; tournament is a craft proxy, not a continue-rate predictor; keep
+  opt-in) is documentation-level and is recorded in the source_report — no command change needed
+  beyond ratifying the post-c04 opt-in state, which is already live.
+evidence_refs:
+  - "design/tournament-tuning-retrospective-2026-06-23.md § 2 Q1 + § 3 (core-hypothesis NEGATIVE) + § 4 (recommended settings)"
+  - "projects/taylor-westeros-good-intentions — c02 + c04 cherry-pick records: both ceiling_collapse on all scenes"
+  - "design/tournament-tuning.md — Q1 (cherry-pick N) open question"
+recurrence_count: 1
+proposed_diff: |
+  See source_report § 2 Q1. At /and-stitch Phase 1.5 Step 2: if scene-1 cherry-pick returns
+  ceiling_collapse: true, skip cherry-pick for scenes 2..N (use pure per-arm winner). Opt-in
+  tournament default is unchanged (ratified at § 4 rec 1).
+cost_estimate: S
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: null
+pr_ref: null
+defer_until: null
+supersedes: null
+```
