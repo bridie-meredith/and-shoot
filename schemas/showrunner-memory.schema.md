@@ -101,7 +101,7 @@ series:
         perspective: protagonist | antagonist | world
         start_rank: <1-9>
         end_rank: <1-9>
-        class: plot | emotional            # optional; used by future emotional-substance orthogonality check (OOS)
+        class: plot | emotional            # REQUIRED (PROP-0054; built-pending-triage 2026-06-23). Every axis tagged at /and-substance series Phase 4 (dense, no cell untagged — actor_baselines[] is the precedent). Read by the /and-substance chapter Phase 5 STAKES-EVENT-EMOTIONALLY-UNDECLARED check. Untagged axis → schema-validation HARD at signature persist.
         notes: <one line>                  # optional; phase-shape, two-phase axes, consequence-vs-trade anchoring
     actor_baselines:                       # per-actor, per-axis positions — DENSE matrix: every actor × every axis
       # The state_axes block above pins per-perspective aggregate positions (the dramatic shape).
@@ -214,6 +214,7 @@ books:
         pov_narrator: <actor-slug>         # /and-substance chapter Phase 3; resolved from series.structure.pov
         dramatic_shape: rising | climax | falling | hinge
         goal: <one-line "what this chapter shows the audience">
+        what_changed_by_end: <one-line net change>   # REQUIRED (PROP-0055; built-pending-triage 2026-06-23). The "what was the point of this chapter?" answer. Authored at /and-substance chapter Phase 4 alongside dramatic_shape + goal; must name an actual state change (not restate goal, not "nothing"). Verified at Phase 5 dramatist (WHAT-CHANGED-MISSING-OR-TRIVIAL, HARD); read downstream by /and-stitch Phase 9 naive-follow + /and-postop as the delivery target.
         handoff_in:                        # /and-substance book Phase 3; cross-chapter continuity
           open_threads: [...]
           world_state: [...]
@@ -368,7 +369,7 @@ Monotonic state machine; status only ever moves forward within a fresh authoring
 | status | set by | meaning |
 |---|---|---|
 | `planned` | `/and-substance book` Phase 6 | Chapter chunk + per-chapter Δ written; scenes not yet authored. |
-| `scened` | `/and-substance chapter` Phase 6 | Scenes + per-scene `substance_delta` + `scene_conflict` + `pov_narrator` + `dramatic_shape` + `goal` + `handoff_in/out` populated; bones not yet authored. |
+| `scened` | `/and-substance chapter` Phase 6 | Scenes + per-scene `substance_delta` + `scene_conflict` + `pov_narrator` + `dramatic_shape` + `goal` + `what_changed_by_end` + `handoff_in/out` populated; bones not yet authored. |
 | `bones-written` | `/and-write` Phase 7 (post-bone-gate PASS) | Bones authored across all scenes; bones file + scene-map facet emitted. |
 | `faceted-r1` | `/and-facets` Phase 2 fanin | Single R1 authoring round merged; cite-index built. |
 | `audited-r1-mechanical` | `/and-facets` Phase 4 audit pass (0 HARD) | Mechanical auditor clean — the facet-layer gate (URI-FACETS-SLIM / DEC-0116). |

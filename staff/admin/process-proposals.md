@@ -6662,7 +6662,7 @@ cost_estimate: S
 status: open
 triaged_at: null
 triaged_by: null
-disposition_note: null
+disposition_note: "BUILT-PENDING-TRIAGE 2026-06-23 (status remains open — NOT accepted; speculative build for ship-or-revert triage). Wired: /and-substance chapter Phase 5 auditor STAKES-EVENT-EMOTIONALLY-UNDECLARED (HARD, conditional on stakes-event); schemas/showrunner-memory.schema.md state_axes[].class promoted optional->required. Revert = drop the auditor clause + restore class to optional."
 pr_ref: null
 defer_until: null
 supersedes: null
@@ -6704,7 +6704,7 @@ cost_estimate: S
 status: open
 triaged_at: null
 triaged_by: null
-disposition_note: null
+disposition_note: "BUILT-PENDING-TRIAGE 2026-06-23 (status remains open — NOT accepted; speculative build for ship-or-revert triage). Wired: chapters[].what_changed_by_end (required) authored at /and-substance chapter Phase 4; Phase 5 dramatist ARC-INCOMPLETE + WHAT-CHANGED-MISSING-OR-TRIVIAL (both HARD); Phase 0 readiness + scened-enum updated. Revert = drop the field + dramatist clause."
 pr_ref: null
 defer_until: null
 supersedes: null
