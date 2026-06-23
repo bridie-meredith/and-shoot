@@ -10,6 +10,7 @@ Format per entry:
 
 ---
 
+[2026-06-23] DEC-0118 | "review and revise gael cultivation comedy draft, the 3 books should be together" → PROCEED-A (design-level consolidation + revision of spine.md) | no prose draft exists; B is ~20-chapter run requiring explicit human auth; A is moderate cost, reversible, serves the instruction
 [2026-06-14] DEC-0117 | "Next chapter?" in and-experiment track after Book-I spine refresh → fold entire II.2–II.8 block as one coherent pass | direction pre-agreed; piecemeal folding leaves check-threads transiently broken; one-pass is cheaper + cleaner
 [2026-06-08] DEC-0116 | /and-facets simplification GO + shape → Option A (slim, single command-body edit) | Phase 5b + R2 both demonstrated net-negative signal; DEC-0033 superseded by upstream hardening; Option B is human-only architectural direction
 [2026-06-07] DEC-0114 | Export-pass dispositions (4 Qs): trim=(b) moderate voice-preserving; mechanism=(A) editor on export COPY only (no re-cascade); dir=`completed-works/taylor-westeros-good-intentions/`; format=Markdown+.txt (no .docx/pandoc) | DEC-0058 governs trim ceiling; ~600d re-cascade blocked by methodology §human-only; `completed-works/` matches stated intent; paste-from-Markdown meets the doc need.

@@ -1,3 +1,7 @@
+> **⚠ SUPERSEDED — provenance only; do not build from this layer.** run-02 is an early revision framework; its
+> chapter structure was carried forward and reshaped through run-03 → **run-04 (canonical)**. Build target:
+> `intake/spine.md` + `design/run-04/series-outline.md` (check-threads PASS).
+
 # run-02 — plot-revision framework
 
 **What run-02 is.** The working layer for *revising the converged story* one chapter-note at a
