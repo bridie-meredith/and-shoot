@@ -293,6 +293,14 @@ Per PROP-0031 Amendment 1, on cohere convergence to PASS-COHERE this command wal
    ```
 3. **Chapter-level memory record.** For every chapter that re-cascaded with `result: PASS`, append to `chapters[<slug>].cohere_iterations` in showrunner memory (schema field pending PROP-0031 triage; until then, persist to the iteration log).
 4. **Parking-lot.** Resolution stamps from Phase 4 are already written; verify and surface the resolution-count to user.
+5. **Consecutive-caveats acknowledgment (PROP-0037 companion; 2026-06-23).** On any terminal convergence that actually ran the cohere pass over the flagged range — `final_verdict ∈ {PASS-COHERE, CAUTION-COHERE}` or `CAP-HIT` — stamp `books[<book>].cohere_acknowledgment` in showrunner memory:
+   ```yaml
+   cohere_acknowledgment:
+     acknowledged_at: <ISO now>
+     acknowledged_by: and-cohere
+     reason: "auto: /and-cohere <range> reached <final_verdict>"
+   ```
+   This is PROP-0037 path (a): it clears `/and-substance chapter` Phase 0 step 6.5 for the next chapter production run (the cross-chapter accumulation the gate guards against has now been handled). The stamp does NOT reset `books[<book>].consecutive_shipped_with_caveats` — the counter only resets on a clean Phase 9 `PASS`; the acknowledgment is valid for one chapter run, after which the gate re-evaluates. Skipped on `HELD` and `dry_run` (no real cohere pass completed). On `dry_run`, log `cohere_acknowledgment: SKIPPED (dry-run)` to the summary.
 
 ---
 
