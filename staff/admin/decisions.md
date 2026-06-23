@@ -7759,3 +7759,56 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0120 | 2026-06-23 | SLOW (user-proxy)
+
+question: |
+  Session completed backlog reconciliation + built 3 authorized items (PROP-0002, 0052, 0037) + ran 3
+  background jobs (harvest/research/tuning) + filed 6 new proposals (PROP-0053..0058, all status: open).
+  Working tree clean + pushed. Principal says "continue." Candidates: A (build un-triaged PROP-0054/0055/0058
+  now — research-recommended, high confidence), B (promote 15 staged harvest cards — name collisions need
+  human call), C (stop — backlog needs triage; parallel sessions handle the rest), D (other).
+
+context: |
+  Three sessions back-to-back "continue" with nothing actually pending. This is the same shape as DEC-0119
+  (continue×2 after DEC-0118 work complete — decision was "deepen within authorized mandate"). Key
+  difference from the first-batch build (where principal explicitly said "build all three"): PROP-0053..0058
+  are filed but NOT accepted. Principal has not said "build these." The proposal schema has a triage step
+  precisely because the principal wants to decide before build. The first batch was principal-explicitly-
+  authorized; this batch is not. Background jobs were also explicitly authorized. Nothing in the current
+  state corresponds to an authorized-but-unfinished task that "continue" could continue.
+
+options:
+  A: Build PROP-0054/0055/0058 now (un-triaged, principal has not accepted them)
+  B: Promote 15 harvest cards (name collisions are human creative decisions)
+  C: Stop — surface the queue, hand off to principal for triage
+  D: Something else grounded in goals
+
+decision: C — stop and surface the queue to the principal for triage.
+
+basis: methodology:3a (reversibility) + methodology:§human-only (identity/persona changes on B; strategic
+       priorities on A) + goal:2 (cost discipline) + ltm:DEC-0119 pattern (continue-with-nothing-pending
+       = find continuation within AUTHORIZED scope; here the authorized scope is exhausted).
+
+rationale: |
+  DEC-0119's "find the next useful thing inside authorized scope" rule applies only while authorized scope
+  has remaining work. The authorized scope this session is complete. PROP-0053..0058 are filed proposals
+  awaiting triage — building without acceptance bypasses the gate the proposal schema exists to enforce.
+  The first batch was explicitly authorized ("build all three"); this batch is not. Treating "continue" as
+  implicit acceptance inverts the authorization order and degrades triage-gate signal for all future
+  proposals. Option B is blocked by methodology §human-only: name collision on wylla-maid /
+  nymeria-summer-isles is an identity/persona call outside admin's authority. The correct move is to
+  hand the queue to the principal.
+
+trade-off: |
+  Option A deferred. PROP-0054/0055 are high-confidence (research-backed, close to "no feels" / "what
+  was the point" principal complaint axes, S-cost each). They could be built in one session. But building
+  without acceptance sets a "filed = accepted" precedent that erodes the triage gate long-term. One
+  triage turn is cheaper than normalizing unauthorized builds across the full proposal backlog.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
