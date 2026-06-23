@@ -95,10 +95,10 @@ proposed_diff: |
   bones @22–@27; on a 40-bone chapter it's @32–@40. The audit pass computes it per chapter
   from the bones file's total-bone count.
 cost_estimate: S
-status: open
-triaged_at: null
-triaged_by: null
-disposition_note: null
+status: implemented
+triaged_at: 2026-06-23
+triaged_by: principal (backlog build 2026-06-23)
+disposition_note: "IMPLEMENTED this session. Added to staff/exposition-author/rubric-exposition.md: per-chapter em-dash-fold density cap (<=2) + terminal-anchor fold fence (final 20% of bones) under Form discipline, plus two AP-SCAN audit classes (em-dash-fold density, terminal-anchor fold). 2026-06-23."
 pr_ref: null
 defer_until: null
 supersedes: null
@@ -2048,10 +2048,10 @@ proposed_diff: |
     of a speech bone. Violation → SIGNAL (HARD on second occurrence per chapter after
     recurrence is confirmed at project level).
 cost_estimate: S
-status: open
-triaged_at: null
-triaged_by: null
-disposition_note: null
+status: implemented
+triaged_at: 2026-06-23
+triaged_by: principal (backlog build 2026-06-23)
+disposition_note: "IMPLEMENTED (already-applied; reconciled). Dialogue-adjacent fold-in fence live in staff/exposition-author/rubric-exposition.md (Scope-specific render-as guidance + AP-SCAN dialogue-adjacent-fold-in); DEC-0010. Status reconciled 2026-06-23."
 pr_ref: null
 defer_until: null
 supersedes: null
@@ -5182,10 +5182,10 @@ proposed_diff: |
       PROP-0037 does not need to wait for that.
 
 cost_estimate: S
-status: open
-triaged_at: null
-triaged_by: null
-disposition_note: null
+status: implemented
+triaged_at: 2026-06-23
+triaged_by: principal (backlog build 2026-06-23)
+disposition_note: "IMPLEMENTED this session. /and-substance chapter Phase 0 step 6.5 consecutive-SHIPPED-WITH-CAVEATS HARD-abort (>=3 unless cohere_acknowledgment) + /and-stitch Phase 9 Step 4 counter-maintenance (+1 on PASS-WITH-DEPTH-PASS-REQUIRED, reset on clean PASS) + schemas/showrunner-memory.schema.md books[] fields (consecutive_shipped_with_caveats, cohere_acknowledgment). Process note: complementary to DEC-0098/DEC-0106 (next-chapter gate vs book-close verdict surface). 2026-06-23."
 pr_ref: null
 defer_until: null
 supersedes: null
@@ -6576,10 +6576,10 @@ proposed_diff: |
   accretion is licensed if longest unbroken run <= 3 AND the repeated beat changes meaning each time.
   ~1 dispatch per range; off the per-chapter critical path.
 cost_estimate: S
-status: open
-triaged_at: null
-triaged_by: null
-disposition_note: null
+status: implemented
+triaged_at: 2026-06-23
+triaged_by: principal (backlog build 2026-06-23)
+disposition_note: "IMPLEMENTED this session. /and-review cohere Phase 0b structural-sameness pre-scan (structure-only; per-chapter scene-shape signature from dramatic_shape + scene-map; SOFT SAMENESS-HIGH flag at >=4 consecutive shared OR >=2 interchangeable; emits SOFT parking-lot item + report front-matter; non-blocking). 2026-06-23."
 pr_ref: null
 defer_until: null
 supersedes: null

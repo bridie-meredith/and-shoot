@@ -318,6 +318,13 @@ Chapter <N>
 
 Compute combined word-count + chapter-count for the report header. Persist alongside the verdict report.
 
+**Phase 0b — Structural-sameness pre-scan (PROP-0052 / 2026-06-23; ~1 dispatch, structure-only, no prose read).** Before the prose forks spend, run a cheap cross-chapter scene-shape check. The cold-read forks cannot see structural sameness — each chapter reads fine alone; `/and-cohere` is oriented to setup/payoff + register, not scene-shape repetition. This pre-scan is the structural-layer analogue of CLAUDE.md Rule 22's "N=2 consecutive" circuit breaker. It catches N consecutive chapters running the same scene-move template (the b01 mid-book failure: 8/10 chapters ran one template, unbroken run at c17-c19; the no-ledger rebuild fixed register but left structure, making the sameness *more* legible).
+
+- **Input (structure only — do NOT read drafts):** for each chapter in the range, read `chapters[<slug>].dramatic_shape` + `chapters[<slug>].goal` from showrunner memory and the scene-map facet `theater/facets/scene-map-<book>-<chapter>.md` (or the bones file `theater/bones/<book>-<chapter>.md` if the scene-map is absent). One `subagent_type: general-purpose` (or `dramatist`) dispatch over the whole range.
+- **Compute** a per-chapter **scene-shape signature**: `dramatic_shape` + the central scene-move template (the ordered spine of scene-moves — e.g. `packet-arrives → transcribe → withhold-protected-name → lift-stylus → hand-off-surface`), derived from bones/scene-map, no prose.
+- **Flag `SAMENESS-HIGH`** (SOFT) when **≥ 4 consecutive chapters share a signature** OR **≥ 2 consecutive are interchangeable instances** (the invariant beat does not change meaning between them). Accretion is *licensed* (no flag) when the longest unbroken run ≤ 3 AND the repeated beat changes meaning each time.
+- **On flag:** emit a **SOFT** parking-lot item (`schemas/parking-lot.schema.md`; `target.command: /and-cohere`, `created_by: /and-review cohere`) suggesting a light `/and-cohere` structural pass over the flagged run, and surface the cluster (chapter range + shared signature) in the verdict report's front-matter (`structural_sameness: SAMENESS-HIGH | OK` + `sameness_cluster: <range>`). **Do NOT block** — this is advisory, like the rest of the cohere read.
+
 **Phase 1 — Cold-read fanout (3 forks; parallel).**
 
 #### Fork A — Naive cold-reader · `subagent_type: general-purpose`

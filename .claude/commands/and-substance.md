@@ -86,6 +86,28 @@ Re-runnable per `design/substance/rerun-protocol.md`. Cascade-aware per `design/
       - `handoff_conflicts: <count> (aggregate prevailed on all)` — emit only if count > 0.
       - `revision_layer: <N> presentation-reinforcement entries, <M> substantive entries (all acknowledged)` — emit only when file present.
 
+6.5. **Consecutive SHIPPED-WITH-CAVEATS gate (URI-CONSECUTIVE-CAVEATS; PROP-0037, 2026-06-23).** *Fires ONLY at the `chapter b<NN>c<MM>` invocation level.* Skip for `series` and `book b<NN>` invocations. Structural analog of the step-6 aggregate-state HARD-abort: it prevents the principal from starting the next chapter on top of an unresolved *cross-chapter* apparatus-register / design-inherent-caveat accumulation. The per-chapter gates ship each chapter correctly; the failure this gates is *structural* — nothing otherwise forces the `/and-cohere` recommendation to be honored before the next run (b01 bypassed it twice, c10→c11→c12, then ran a 7-consecutive Class-B cohort c14-c20). At N=3 consecutive on the same pattern, the recommendation becomes a HARD-abort class.
+
+   a. Read showrunner memory: `books[<book>].consecutive_shipped_with_caveats` (integer; default 0 if absent) and `books[<book>].cohere_acknowledgment` (object or null; see step c).
+   b. **Proceed** if `consecutive_shipped_with_caveats < 3` OR a valid `cohere_acknowledgment` is present (its `acknowledged_at` post-dates the last SHIPPED-WITH-CAVEATS entry).
+   c. **HARD-ABORT** if `consecutive_shipped_with_caveats >= 3` AND no valid `cohere_acknowledgment`:
+      ```
+      /and-substance chapter <slug> Phase 0 abort: consecutive SHIPPED-WITH-CAVEATS = <N> (>= 3 threshold).
+      Cross-chapter apparatus-register / design-inherent-caveat accumulation requires resolution before the
+      next chapter production run. Resolve by one of:
+        (a) Run /and-cohere <book> [range covering the SHIPPED-WITH-CAVEATS chapters] and let it complete or
+            reach its convergence cap. On completion /and-cohere stamps books[<book>].cohere_acknowledgment
+            in showrunner memory; this gate clears automatically.
+        (b) Stamp a manual acknowledgment in showrunner memory (if /and-cohere is not feasible before this
+            chapter): books[<book>].cohere_acknowledgment: { acknowledged_at: <ISO>, acknowledged_by: <principal>,
+            reason: <one line why /and-cohere is deferred> }. This allows the chapter to proceed; it does NOT
+            reset the counter — the gate re-fires at the NEXT chapter unless /and-cohere runs.
+      ```
+   d. **Acknowledgment validity:** a `cohere_acknowledgment` stamp qualifies for ONE chapter production run only. After the chapter ships, the gate re-evaluates `consecutive_shipped_with_caveats` against the current count; a prior acknowledgment does not carry forward.
+   e. Log to the Phase 0 print block: `consecutive-caveats: <N> (gate <CLEAR | ACK-<date> | ABORT>)`.
+
+   **Counter maintenance (companion):** `/and-stitch` Phase 9's verdict-persist block increments `books[<book>].consecutive_shipped_with_caveats` on each `SHIPPED-WITH-CAVEATS` / `PASS-WITH-DEPTH-PASS-REQUIRED` verdict and resets it to 0 on a clean `PASS`. `/and-cohere` Phase 7 (persist) writes the `cohere_acknowledgment` stamp on completion. Schema fields: `books[<book>].consecutive_shipped_with_caveats` (integer, default 0) + `books[<book>].cohere_acknowledgment` (object: `acknowledged_at`, `acknowledged_by`, `reason`; nullable) — see `schemas/showrunner-memory.schema.md`. **Process note:** DEC-0098 held the book-*close* enforcement surface to be `/and-review verdict`; this gate is the *next-chapter* enforcement surface (orthogonal — DEC-0106 orchestrator-critic named PROP-0037 as the correct gate for the empirical 7-consecutive case). The two are complementary, not duplicative.
+
 7. Run.
 
 ### Phase 1 — Read parent

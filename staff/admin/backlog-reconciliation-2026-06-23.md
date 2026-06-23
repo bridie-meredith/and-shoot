@@ -110,3 +110,41 @@ schema) also unbuilt.
 3. **Decide PROP-0037 residual** against Rule 22 (subsumed vs. still wanted).
 4. **Everything else (D/E/F) is project-gated** — parks until the next book
    gives second-occurrence evidence or a live tuning run.
+
+---
+
+## Session outcome (2026-06-23) — what was done
+
+**Backlog hygiene (12 flips).** `process-proposals.md` statuses flipped to
+`implemented` with evidence citations: PROP-0005, 0005-A, 0017, 0019, 0023,
+0031 (open→implemented) and 0046–0051 (accepted→implemented). Raw `open` count
+dropped from ~40 to ~30; `implemented` rose from 4 to 21.
+
+**Three items built (principal-authorized):**
+
+1. **PROP-0002 — em-dash-fold density cap + terminal-anchor fence.**
+   `staff/exposition-author/rubric-exposition.md`: new §Form-discipline sub-rules
+   (per-chapter `em-dash-fold` cap ≤ 2; terminal-anchor — final 20% of bones —
+   fold prohibited) + two AP-SCAN audit classes. (PROP-0001 dialogue-fence was
+   already applied; its status was reconciled to `implemented` in the same pass.)
+2. **PROP-0052 — structural-sameness pre-scan.** `.claude/commands/and-review.md`
+   cohere subcommand: new Phase 0b (structure-only, ~1 dispatch) computing a
+   per-chapter scene-shape signature and emitting a SOFT `SAMENESS-HIGH`
+   parking-lot flag at ≥4 consecutive shared / ≥2 interchangeable. Non-blocking.
+3. **PROP-0037 — consecutive-SHIPPED-WITH-CAVEATS gate.**
+   `.claude/commands/and-substance.md` Phase 0 step 6.5 (HARD-abort at ≥3
+   unless `cohere_acknowledgment`) + `.claude/commands/and-stitch.md` Phase 9
+   Step 4 counter-maintenance + `schemas/showrunner-memory.schema.md` two
+   `books[]` fields. **Caveat to revisit:** DEC-0098 held the *book-close*
+   enforcement surface to be `/and-review verdict`; this gate is the
+   *next-chapter* surface (orthogonal per DEC-0106's orchestrator-critic, which
+   named PROP-0037 as the correct gate). If a future run finds the two redundant,
+   collapse to one.
+
+All four built proposals flipped to `status: implemented` with disposition notes.
+
+**Untouched (correctly parked):** the genuinely-open guidance tail (§D),
+evidence-blocked items (§E — voice-prime, tournament-tuning Q1–Q5, Tier-2
+exemplars), and OOS/design-decision items (§F, incl. plan-holes Hole E which
+still needs a principal decision). These need a live project or a design call,
+not a build.

@@ -122,6 +122,21 @@ Use the cheapest render-as that the gloss content can fit. If a term needs >30 w
 
 **Exclusion.** Entries at @0 (preamble / context paragraphs) and `scene-open-orient` entries are exempt — they are not bone-adjacent renderings.
 
+### Em-dash-fold density cap + terminal-anchor fence (REQUIRED — PROP-0002 / 2026-06-23)
+
+The dialogue-adjacency fence above brakes folds *locally* (one anchor at a time). It does not brake on *aggregate* density — four em-dash folds spread across a chapter created a register-rhythm accumulation a cold reader perceived as pacing compression independent of any single fold's local disruption. Evidence: `/and-ablate` b01-c01 fold-density follow-up; report `staff/reviews/ablation-b01-c01-2026-05-26T000543Z.md`. These two sub-rules add the aggregate brake.
+
+**Per-chapter em-dash-fold density cap.** Across all `first-mention-*` entries in a single chapter, the total count of `em-dash-fold` renders-as MUST NOT exceed **2**. If a third or subsequent fold candidate arises, the author MUST step up to `post-bone-clause` or `parenthetical-aside` for that entry (or, retroactively, for an earlier entry, to stay under cap). Two is the cap because the dialogue-adjacency fence typically eliminates one potential fold per chapter; the residual budget is kept tight to prevent accumulation without over-restricting.
+
+**Terminal-anchor fold fence.** A `first-mention-*` entry whose anchor falls in the final 20% of bones (anchor @N where N ≥ 0.80 × total_bones) is a *terminal-anchor*. Terminal-anchor entries MUST NOT use `em-dash-fold`. Instead:
+- `post-bone-clause` (if the gloss fits as a following clause), OR
+- `parenthetical-aside` (if the aside completes before the next scene boundary), OR
+- defer to `episode-open-context` for the following chapter if the term is not critical to this chapter's close.
+
+**Why.** Terminal-anchor folds compete with the chapter's own reveal-register demand (elder recognition, cost-bearer reveal, protagonist closing interiority). The fold mechanism at that weight class splits reader attention between the gloss and the reveal simultaneously; heavier render-as keeps the gloss structurally subordinate.
+
+**Exclusion.** Entries at @0 are exempt from both sub-rules.
+
 ## Scene-open-orient conditional fire-rule (REQUIRED)
 
 A `scene-open-orient` entry fires for a scene boundary if AND ONLY IF:
@@ -177,6 +192,8 @@ R2 also resolves any `provisional-anchor` notes from R1 (e.g. R1 says "@first-me
 - **AP-SCAN — voice-fault.** When profile sets `pov-frame`, scan for 3rd-person pronouns in `episode-open-*` and `scene-open-orient` entries. Hit → SIGNAL (Phase 2 dogfood emitted 3rd-person; this fault must surface at audit).
 - **AP-SCAN — scene-orient-fire-rule.** For each `scene-open-orient` entry, verify (a) time-skip-blank + (b) loc-state silent at anchor + (c) NI silent on time/place in first 2 anchors. Any violation → HARD (entry fires when lens should carry).
 - **AP-SCAN — dialogue-adjacent-fold-in (PROP-0001 / DEC-0010).** For each `first-mention-*` entry, walk ±2 bones from the anchor against the bones file + dialogue cite-index. If any bone in that window is a speech bone (carries a `[<character-slug>:<id>]` citation or a speech-act SVO: says / asks / calls / replies / answers / shouts / whispers / murmurs / mutters / declares / instructs) AND the entry's `renders-as` is `inline-appositive` or `em-dash-fold` → HARD (cheap fold prohibited at dialogue-adjacent anchor). Exclusion: entries at @0 and `scene-open-orient` are exempt.
+- **AP-SCAN — em-dash-fold density (PROP-0002).** Count `em-dash-fold` renders-as across all `first-mention-*` entries in the chapter. Total > 2 → SIGNAL (HARD on second chapter-level occurrence in the project). Exclusion: entries at @0 are exempt.
+- **AP-SCAN — terminal-anchor fold (PROP-0002).** Compute the terminal-anchor band per chapter from the bones file's total-bone count (final 20%: anchor @N where N ≥ 0.80 × total_bones). For each `first-mention-*` entry whose anchor is in that band AND whose `renders-as` is `em-dash-fold` → SIGNAL (HARD on second chapter-level occurrence in the project). Exclusion: entries at @0 are exempt. (On a 27-bone chapter the band is @22–@27; on a 40-bone chapter, @32–@40.)
 
 ## Audience-gate (Phase 5b) hooks
 
