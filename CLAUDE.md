@@ -84,6 +84,7 @@ cards/            — story-facing card library (on-stage characters, locations,
   props/          — prop cards
   conditions/     — condition cards
   dialects/       — behavior cards (rename to behaviors/ pending; deferred under this overhaul)
+  humor/          — humor hall: comedic-mechanism reference cards (joke categories + faceted exemplars). Library-resource class, NOT story-facing; consulted by the dialogue-writer fork like a behavior card. Schema: schemas/humor-card.schema.md
 
 active-project/   — sole active project
   actors/         — active cast (provisioned by /and-cast Phase 4)
@@ -130,6 +131,7 @@ All file formats are defined in `schemas/`.
 | Parking-lot (cross-chunk watch items) | `schemas/parking-lot.schema.md` |
 | Admin process-change proposal | `schemas/admin-proposal.schema.md` |
 | Tournament scorecard (per-scene cherry-pick scoring) | `schemas/tournament-scorecard.schema.md` |
+| Humor card (comedic-mechanism reference resource) | `schemas/humor-card.schema.md` |
 | Substance framework | `design/substance/{README,questionnaire,delta-targets,rerun-protocol,staleness-cascade,run-book,plan}.md` |
 | Tournament tuning framework | `design/tournament-tuning.md` |
 
@@ -162,7 +164,7 @@ Legacy schemas preserved for reference: `episode-plan.schema.md`, `show-file.for
 5. Bones files are append-only during a single `/and-write` invocation. Re-running `revise` or `redo` clears `gate_verdict` on bones in scope and re-runs the SVO + bone-gate; flat IDs are preserved for unchanged bones in revise mode.
 6. Audience membership is defined at `/and-project`. It does not change mid-project except via `/and-cast revise --swap`.
 7. Human checkpoints: series-level audit only (inside `/and-cast` Phase 5). `/and-substance book b<NN>` Phase 0 HARD-aborts if `project.series_audit.approved_at` is missing or `stale_since` is set.
-8. Card schema authority is `schemas/card.schema.md`. Margit validates against it. No card class outside the five defined (persona, location, prop, condition, behavior). **Exception:** `staff/orchestrator-critic/card.md` is staff-facing (judges production, not story content) and is explicitly outside the cards/ taxonomy.
+8. Card schema authority is `schemas/card.schema.md`. Margit validates against it. No *story-facing* card class outside the five defined (persona, location, prop, condition, behavior). **Resource class:** `humor` (`cards/humor/`, schema `schemas/humor-card.schema.md`) is a sixth class but is a non-story-facing library reference resource consulted by the dialogue-writer fork — registered in `card.schema.md` §Classes / §humor. **Exception:** `staff/orchestrator-critic/card.md` is staff-facing (judges production, not story content) and is explicitly outside the cards/ taxonomy.
 9. All agent dispatches use the Agent tool. Inline generation is not a substitute.
 10. **`/and-write` Phase 6 substance bone-gate is the bones-first authoring gate.** Per-bone axis-movement verification + per-scene aggregate Δ delivery + cost-paid check + opposing-force-visible. Replaces URI-026 tens-gate. `SUBSTANCE-FLAT-<axis>` and `SUBSTANCE-SUSPECT-cheap-gain-<axis>` are HARD findings. Deformed substance contracts cannot be rescued by downstream facet skin.
 11. **Shared reviewer resources.** The audience persona cards' `Threshold Discipline` body sections and the auditor class library (`CURVE-SHAPE` / `AP-SCAN` / `FREQUENCY-BAND` / `RUBRIC-FIDELITY` definitions in `.claude/commands/and-facets.md`) are the canonical shared surfaces. No pipeline-specific reimplementation. Patterns the audience flags at `/and-write` bone-gate graduate into AP-SCAN entries via the auditor's TASTE-FLAG → AP-SCAN promotion path. The `/and-facets` Phase 5b audience-gate is RETIRED (DEC-0116), so the audience no longer flags facet patterns there; the promotion path into RUBRIC-FIDELITY survives for patterns surfaced anywhere (the `/and-stitch` Phase 9 prose read, `/and-postop`, or principal review) — add the rule to the relevant facet rubric's REJECT / anti-pattern / cross-facet contract section, and the `/and-facets` Phase 4 auditor enumerates those sections at audit time, promoting a taste call to a mechanical check on the next run.

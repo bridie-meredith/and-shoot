@@ -57,9 +57,11 @@ tier: lead | supporting | minor
 
 ## Classes
 
-Five classes: **persona, location, prop, condition, behavior**.
+Five story-facing classes: **persona, location, prop, condition, behavior** — plus one library-resource class, **humor** (§humor below; full format in `schemas/humor-card.schema.md`).
 
-All five are story-facing. Persona/location/prop/condition compose the cast, the stage, and the ambient state. Behavior carries voice samples *and* non-verbal tics *and* memory-monument register for shoot-v2 dialogue authoring and review. No system-facing card class exists in and-shoot (margit's workshop operates on cards directly, not on a separate class).
+The five are story-facing. Persona/location/prop/condition compose the cast, the stage, and the ambient state. Behavior carries voice samples *and* non-verbal tics *and* memory-monument register for shoot-v2 dialogue authoring and review. No system-facing card class exists in and-shoot (margit's workshop operates on cards directly, not on a separate class).
+
+**Humor** is a sixth class but is **not story-facing** — it is a cross-project reference resource consulted by the dialogue-writer fork (like a behavior card), never cast or staged. It lives in the library hall `cards/humor/`. Its full schema is `schemas/humor-card.schema.md`; the §humor stub below is a pointer. (CLAUDE.md Rule 8 enumerates the five story-facing classes for the cast/stage taxonomy; the humor resource class is registered here and in that rule's note.)
 
 (The `behavior` class supersedes the previous `dialect` class. *Dialect* — voice samples and verbal patterns — is one section of the broader behavior card, alongside non-verbal tics and memory monuments. Existing `class: dialect` cards should be migrated to `class: behavior`. Margit handles migration on touch.)
 
@@ -214,6 +216,18 @@ Behavior cards are reviewed by margit and used by audience critics during line r
 The card answers four questions about the speaker: *how do they sound, how do they move, what do they refuse to name, and what do they reach for that no one else in the scene would?* The first is dialect. The second is non-verbal. The third is the negative space of memory monuments. The fourth is the positive space of vocabulary and reach.
 
 A behavior card with no direct samples is incomplete — the samples are the load-bearing section; the descriptive sections describe patterns, samples *show* them. An agent authoring against a sample-empty behavior card is generating in the void.
+
+---
+
+### humor (library-resource class)
+
+A catalog of one comedic *mechanism* (a category of joke / way of being funny) with a bank of faceted exemplars. Not story-facing: it is consulted by the dialogue-writer fork the way a `behavior` card is — raw material aimed at, not a runtime persona embodied. Lives in `cards/humor/`.
+
+Full format authority: **`schemas/humor-card.schema.md`**. In brief, a humor card carries:
+- frontmatter `class: humor` + `mechanism` + `family` (incongruity | superiority | relief | wordplay | observational | character) + `register` + facet `tags`.
+- body sections: **Mechanism**, **Facet axes** (setting × teller × target × delivery), **Exemplars** (the load-bearing bank — multiple jokes spread across eras/cultures/classes/tellers), **When it lands / When it fails**, **Pairs with**, **Anti-patterns / fences**, **Dialogue-generation hooks**.
+
+A humor card complements `comedy-register` (behavior): behavior = *whose voice*; humor = *which mechanism*. The two compose at dialogue-authoring time. The surface-convention fence applies: only the comedic *mechanism/structure* transfers into prose, never the exemplar's content (mirrors the persona-exemplar fence).
 
 ---
 
