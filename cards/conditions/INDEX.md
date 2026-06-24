@@ -4,6 +4,12 @@ All ambient state modifier cards. Maintained by margit — update on every card 
 
 ---
 
+## wings
+
+- **psyche/** — psyche-profile wing: 72 library cards, one per major psychological disorder (DSM-5-TR / ICD-11), each colouring a *character* (behaviour / perception / interiority) rather than a location. Both a clinical-reference layer and a fiction-characterisation layer. See `psyche/INDEX.md` for the full by-category catalogue. Slug convention: `psyche-<disorder>`.
+
+---
+
 ## by_world
 
 planetos:
