@@ -1,6 +1,6 @@
 # Generator spec — the thing that turns a prompt into a summary
 
-The generator is a first-class object whose *improvement is a goal of the loop*, not a fixed black box. Reviewers feed it `GENERATOR INSIGHT`s; those become versioned rules here. A gauntlet improves nothing; this loop makes the **next** summary better by construction.
+The generator is a first-class object whose *improvement is a goal of the loop*, not a fixed iterate-to-best loop. Reviewers feed it `GENERATOR INSIGHT`s; those become versioned rules here. A gauntlet improves nothing; this loop makes the **next** summary better by construction.
 
 ---
 
@@ -28,7 +28,7 @@ Nine rules, each traceable to convergent reviewer findings. The first seven rais
 
 `LOGLINE · ENGINE (concrete) · PROTAGONIST ARC · ANTAGONIST (with a will) · STAKES · COST PAID · PLOT STRUCTURE (with a reversal) · HOOK IMAGE (staged in a beat) · RANGE/TONE · MARKETABILITY · NOVELTY` — the fields map 1:1 onto the 10 review criteria, so a weak field is a visible, gradeable hole rather than a hidden one.
 
-This schema and these rules are the generator the black box (`blackbox/iterate-to-best.workflow.js`) ships with. The black box's reviser fork applies R1–R9 every iteration; its critic fork grades against the 10 criteria those rules target.
+This schema and these rules are the generator the iterate-to-best loop (`iterate-to-best/iterate-to-best.workflow.js`) ships with. The iterate-to-best loop's reviser fork applies R1–R9 every iteration; its critic fork grades against the 10 criteria those rules target.
 
 ---
 
@@ -36,5 +36,5 @@ This schema and these rules are the generator the black box (`blackbox/iterate-t
 
 1. Each review emits a `GENERATOR INSIGHT` (a systemic pattern, not a one-off fix).
 2. Insights that ≥2 independent forks name converge into a new GEN rule here, with the fork count as evidence.
-3. The black box's generator/reviser prompts embed the current ruleset, so improvements compound automatically.
+3. The iterate-to-best loop's generator/reviser prompts embed the current ruleset, so improvements compound automatically.
 4. Field-level faults (range, sameness) come only from the **non-blind field-critic** — blind forks cannot see them — so the field-critic is a required part of any multi-prompt run.

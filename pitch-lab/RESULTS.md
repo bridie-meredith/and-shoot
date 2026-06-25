@@ -1,6 +1,6 @@
 # pitch-lab — RESULTS
 
-A run that started as a 33-pitch tournament and, under the principal's corrections, became something more useful: a **discerning critic + feedback loop**, and finally a reusable **black box**. This file records the honest end state, including where the early framing was wrong.
+A run that started as a 33-pitch tournament and, under the principal's corrections, became something more useful: a **discerning critic + feedback loop**, and finally a reusable **iterate-to-best loop**. This file records the honest end state, including where the early framing was wrong.
 
 ---
 
@@ -15,8 +15,8 @@ A run that started as a 33-pitch tournament and, under the principal's correctio
 | `00-pitches.md` + `plans/` | 33 single-sentence fantasy–sci-fi pitches expanded into substance-backed plans |
 | `eval/round-1..3.md` | the field-narrowing rounds (33 → 15 → 5+2) |
 | `eval/discernment/` | the independent blind-fork reviews + the non-blind field-critic + the corrected verdict |
-| **`blackbox/iterate-to-best.workflow.js`** | **the black box** — (prompt, maxIterations) → generate → loop[harsh independent critic → fresh reviser] → full history; best = last |
-| `blackbox/demo-run.md` | a real run of the black box, with its full per-iteration history |
+| **`iterate-to-best/iterate-to-best.workflow.js`** | **the iterate-to-best loop** — (prompt, maxIterations) → generate → loop[harsh independent critic → fresh reviser] → full history; best = last |
+| `iterate-to-best/demo-run.md` | a real run of the iterate-to-best loop, with its full per-iteration history |
 | `process-improvements.md` | 19 harvested improvements (PI-01..19), spanning the whole arc |
 
 ---
@@ -44,9 +44,9 @@ So the honest top-3 is **P09, P32, P01** — stated with the field-critic's cave
 
 ---
 
-## The black box (the portable result)
+## The iterate-to-best loop (the portable result)
 
-`blackbox/iterate-to-best.workflow.js` distills the whole run into one re-runnable mechanism. Demonstrated on a fresh, deliberately off-formula prompt (a heist with a human antagonist and a winnable ending):
+`iterate-to-best/iterate-to-best.workflow.js` distills the whole run into one re-runnable mechanism. Demonstrated on a fresh, deliberately off-formula prompt (a heist with a human antagonist and a winnable ending):
 
 ```
 Trajectory:  i1 GOOD 32/50  →  i2 GOOD 34/50  →  i3 GOOD 34/50  →  final GOOD 33/50
@@ -61,4 +61,4 @@ What this single run shows:
 
 ## The one-line answer to "the runbook is my actual goal"
 
-Take a prompt → generate a substance-backed summary → hand it to an **independent, blind, self-escalating** critic that grades on ten criteria with a near-unreachable ceiling and treats an unproven pitch as a liability → hand the critique to a **fresh** reviser → repeat, ratcheting the bar each pass → keep the full history, and *verify* rather than assume which summary is best. Run it across a field and add a **non-blind field-critic** to catch the sameness no single review can see. That loop — not a bracket of survivors — is what turns a one-line prompt into the best version of its story, and it is now a button: `blackbox/iterate-to-best.workflow.js`.
+Take a prompt → generate a substance-backed summary → hand it to an **independent, blind, self-escalating** critic that grades on ten criteria with a near-unreachable ceiling and treats an unproven pitch as a liability → hand the critique to a **fresh** reviser → repeat, ratcheting the bar each pass → keep the full history, and *verify* rather than assume which summary is best. Run it across a field and add a **non-blind field-critic** to catch the sameness no single review can see. That loop — not a bracket of survivors — is what turns a one-line prompt into the best version of its story, and it is now a button: `iterate-to-best/iterate-to-best.workflow.js`.
