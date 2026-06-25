@@ -1,4 +1,4 @@
-# Black box demo run — iterate-to-best
+# iterate-to-best loop demo run — iterate-to-best
 
 **Prompt:** A retired vault-architect is blackmailed into breaking into the floating treasury she designed, one step ahead of the apprentice who upgraded her own traps.
 

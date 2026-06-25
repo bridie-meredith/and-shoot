@@ -86,17 +86,17 @@ Harvested during the 33-pitch tournament. Tournament-internal findings stay here
 
 ## PI-17 [criteria] — Five axes are too few to judge a pitch; expand to ten and tie fields 1:1 to criteria
 **Finding (principal feedback):** The C/D/S/O/A set omits stakes, interestingness, action, hook, and marketability — things an acquiring editor weighs.
-**Change:** Ten criteria (C / PS / ST / CO / CR / IN / AC / HK / AL / MK), /50, with bands rescaled. The generator's summary schema emits one field per criterion, so a weak axis is a visible hole, not a hidden one. The black box and reviewer-spec both use the 10-criterion rubric.
+**Change:** Ten criteria (C / PS / ST / CO / CR / IN / AC / HK / AL / MK), /50, with bands rescaled. The generator's summary schema emits one field per criterion, so a weak axis is a visible hole, not a hidden one. The iterate-to-best loop and reviewer-spec both use the 10-criterion rubric.
 **Status:** adopted (reviewer-spec.md expanded criteria; generator-spec.md 10-field schema).
 
-## PI-18 [process] — The whole loop generalizes into a reusable BLACK BOX
+## PI-18 [process] — The whole loop generalizes into a reusable ITERATE-TO-BEST LOOP
 **Finding (principal direction):** All the above — independent forks, self-escalating brutal critic, 10-criterion rubric, fresh-reviser-per-iteration, generator feedback, best=last — composes into one parameterized mechanism: (prompt, maxIterations) → generate → loop[harsh independent critic → fresh reviser] → full history.
-**Change:** Built as a committed, re-runnable workflow at `blackbox/iterate-to-best.workflow.js`. Each fork is fresh (independence structural); the critic self-escalates per iteration; output is the history of every summary + critique with best assumed last. This is the portable distillation of the entire pitch-lab run.
+**Change:** Built as a committed, re-runnable workflow at `iterate-to-best/iterate-to-best.workflow.js`. Each fork is fresh (independence structural); the critic self-escalates per iteration; output is the history of every summary + critique with best assumed last. This is the portable distillation of the entire pitch-lab run.
 **Status:** built + demonstrated.
 
 ## PI-19 [process] — Empirical: "best = last" is a useful default but NOT a guarantee — track the argmax
-**Finding (black box demo run):** On the heist demo, the independent per-iteration critics scored the trajectory **i1 GOOD 32 → i2 GOOD 34 → i3 GOOD 34 → final 33**. The loop improved the summary (32→34), but the *last* revision slightly over-corrected, scoring 33 — below the iteration peak of 34. Because each critic is an independent blind fork, scores are not monotonic; a reviser handed a long fix-list can trade a gain on one axis for a loss on another.
-**Change:** "Best = last" (the principal's spec) is the right *default* and the box honors it, but the box also runs a final independent score and returns the full per-iteration `trajectory` so the assumption is **auditable**. Recommended stricter variant (noted in `blackbox/README.md`): track the running argmax and return the highest-scored summary, not the last, when they differ. The demo is left as-is precisely because it shows the caveat is real, not hypothetical.
+**Finding (iterate-to-best loop demo run):** On the heist demo, the independent per-iteration critics scored the trajectory **i1 GOOD 32 → i2 GOOD 34 → i3 GOOD 34 → final 33**. The loop improved the summary (32→34), but the *last* revision slightly over-corrected, scoring 33 — below the iteration peak of 34. Because each critic is an independent blind fork, scores are not monotonic; a reviser handed a long fix-list can trade a gain on one axis for a loss on another.
+**Change:** "Best = last" (the principal's spec) is the right *default* and the box honors it, but the box also runs a final independent score and returns the full per-iteration `trajectory` so the assumption is **auditable**. Recommended stricter variant (noted in `iterate-to-best/README.md`): track the running argmax and return the highest-scored summary, not the last, when they differ. The demo is left as-is precisely because it shows the caveat is real, not hypothetical.
 **Status:** demonstrated; argmax variant noted for future.
 
 ## PI-12 [content→ESCALATE candidate] — "Unavoidability" (structural trap vs. character choice) is the single sharpest discriminator at the top of the field

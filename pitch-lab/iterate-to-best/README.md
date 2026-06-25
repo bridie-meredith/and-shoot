@@ -1,4 +1,4 @@
-# The iterate-to-best black box
+# The iterate-to-best loop
 
 A self-contained, re-runnable mechanism that takes **a prompt and a maximum number of iterations** and returns **the full history of every summary and every critique**, with the best assumed to be the last summary. It is the portable distillation of the entire pitch-lab run — every lesson is baked in.
 
@@ -6,7 +6,7 @@ A self-contained, re-runnable mechanism that takes **a prompt and a maximum numb
 
 ```
 Workflow({
-  scriptPath: "pitch-lab/blackbox/iterate-to-best.workflow.js",
+  scriptPath: "pitch-lab/iterate-to-best/iterate-to-best.workflow.js",
   args: { prompt: "<one-line story or series prompt>", mode: "story" | "series", maxIterations: <N> }
 })
 ```
@@ -17,7 +17,7 @@ Output (returned object + persisted to `demo-run.md`):
   trajectory: [{ i, band, total }, ...],     // band/score per iteration
   finalBand, finalTotal,                       // the last summary's score
   bestIsLast: true,
-  persisted: "pitch-lab/blackbox/demo-run.md"  // full history: every summary + critique
+  persisted: "pitch-lab/iterate-to-best/demo-run.md"  // full history: every summary + critique
 }
 ```
 
@@ -55,5 +55,5 @@ Each iteration's reviser receives the harshest available critique and must addre
 ## Notes / honest limits
 
 - **Best=last is an assumption, not a proof.** A reviser can over-correct. The final-critic score lets you verify; if the trajectory dips, take the highest-scored iteration instead. (A stricter variant would track the argmax and return that; this version honors the principal's "best = last" spec and exposes the trajectory so the assumption is auditable.)
-- **Single-prompt scope.** The black box improves one summary. The *field-level* faults (formula sameness, range deficit) need the non-blind **field-critic** (`../reviewer-spec.md`) across many prompts — that is deliberately outside this box.
+- **Single-prompt scope.** The iterate-to-best loop improves one summary. The *field-level* faults (formula sameness, range deficit) need the non-blind **field-critic** (`../reviewer-spec.md`) across many prompts — that is deliberately outside this box.
 - **Convergence.** If a critic ever returns BEST the box stops early (`converged: true`). At the brutal bar this is rare and that is the point.

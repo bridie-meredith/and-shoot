@@ -1,6 +1,6 @@
 export const meta = {
   name: 'iterate-to-best-summary',
-  description: 'Black box: given a prompt + max iterations, generate a story/series summary, then loop[independent harsh critic -> fresh reviser] up to max times. Returns the full history of every summary and every critique; best is assumed to be the last summary.',
+  description: 'iterate-to-best loop: given a prompt + max iterations, generate a story/series summary, then loop[independent harsh critic -> fresh reviser] up to max times. Returns the full history of every summary and every critique; best is assumed to be the last summary.',
   phases: [
     { title: 'Generate' },
     { title: 'Iterate' },
@@ -9,7 +9,7 @@ export const meta = {
 }
 
 // ----------------------------------------------------------------------------
-// BLACK BOX: prompt + maxIterations  ->  history of {summary, critique}, best = last
+// ITERATE-TO-BEST LOOP: prompt + maxIterations  ->  history of {summary, critique}, best = last
 //
 // Topology (exactly as specified):
 //   1. a FORK generates an initial summary from the prompt
@@ -61,7 +61,7 @@ NOVELTY: <the one thing not done this exact way; be honest if it recombines know
 `
 
 function generatorPrompt(prompt, mode) {
-  return `You are the GENERATOR fork in an iterate-to-best black box. Turn this ${mode === 'series' ? 'SERIES' : 'STORY'} prompt into a substance-backed ${mode === 'series' ? 'SERIES (multi-book arc)' : 'single-story'} summary.
+  return `You are the GENERATOR fork in an iterate-to-best loop. Turn this ${mode === 'series' ? 'SERIES' : 'STORY'} prompt into a substance-backed ${mode === 'series' ? 'SERIES (multi-book arc)' : 'single-story'} summary.
 
 PROMPT: "${prompt}"
 
@@ -81,7 +81,7 @@ Return ONLY the summary in the field format. Your text is the artifact, not a me
 }
 
 function criticPrompt(summary, iter, mode) {
-  return `You are an INDEPENDENT, BLIND, self-escalating CRITIC fork (iteration ${iter}) in an iterate-to-best black box. You have seen no other summary and no other critic's notes. Your job is to review this ${mode} summary VERY HARSHLY and hand the creative side concrete feedback.
+  return `You are an INDEPENDENT, BLIND, self-escalating CRITIC fork (iteration ${iter}) in an iterate-to-best loop. You have seen no other summary and no other critic's notes. Your job is to review this ${mode} summary VERY HARSHLY and hand the creative side concrete feedback.
 
 SELF-ESCALATION: assume any prior critic was too soft. Raise your bar ABOVE iteration ${iter - 1}. Assume this summary is OVERRATED until it proves otherwise; every time you are tempted to give a 4 or 5, stop and raise the standard.
 
@@ -100,7 +100,7 @@ ${summary}`
 function reviserPrompt(oldSummary, critique, mode) {
   const fixes = (critique && critique.fixes || []).map((f, i) => `  ${i + 1}. ${f}`).join('\n')
   const weaknesses = (critique && critique.weaknesses || []).map((w, i) => `  ${i + 1}. ${w}`).join('\n')
-  return `You are a FRESH REVISER fork in an iterate-to-best black box. You receive the previous ${mode} summary and a harsh critic's feedback. Produce a REVISED summary that genuinely raises its quality band - do not merely patch wording; fix the structural faults named.
+  return `You are a FRESH REVISER fork in an iterate-to-best loop. You receive the previous ${mode} summary and a harsh critic's feedback. Produce a REVISED summary that genuinely raises its quality band - do not merely patch wording; fix the structural faults named.
 
 PREVIOUS SUMMARY:
 ${oldSummary}
@@ -152,7 +152,7 @@ const CRITIC_SCHEMA = {
 // --- run -------------------------------------------------------------------
 
 phase('Generate')
-log(`black box: mode=${MODE} maxIterations=${MAX}`)
+log(`iterate-to-best loop: mode=${MODE} maxIterations=${MAX}`)
 let current = await agent(generatorPrompt(PROMPT, MODE), { label: 'generate:v0', phase: 'Generate' })
 
 const history = []
@@ -185,7 +185,7 @@ const finalCritique = converged
 
 // --- persist the full history to disk (the box's output artifact) ----------
 function bandStr(c) { return c ? `${c.band} ${c.total}/50` : 'n/a' }
-let md = `# Black box demo run — iterate-to-best\n\n`
+let md = `# iterate-to-best loop demo run — iterate-to-best\n\n`
 md += `**Prompt:** ${PROMPT}\n\n`
 md += `**mode:** ${MODE} · **maxIterations:** ${MAX} · **converged:** ${converged}\n\n`
 md += `**Trajectory:** ` + history.map((h) => `i${h.iteration} ${bandStr(h.critique)}`).join('  →  ') + `  →  final ${bandStr(finalCritique)}\n`
@@ -205,7 +205,7 @@ if (finalCritique) {
 }
 
 await agent(
-  `Use the Write tool to create the file /home/user/and-shoot/pitch-lab/blackbox/demo-run.md with EXACTLY the content between the BEGIN and END markers below — verbatim, no edits, no added commentary, do not include the markers themselves.\n\n<<<BEGIN>>>\n${md}\n<<<END>>>`,
+  `Use the Write tool to create the file /home/user/and-shoot/pitch-lab/iterate-to-best/demo-run.md with EXACTLY the content between the BEGIN and END markers below — verbatim, no edits, no added commentary, do not include the markers themselves.\n\n<<<BEGIN>>>\n${md}\n<<<END>>>`,
   { label: 'persist-history', phase: 'Final-score' }
 )
 
@@ -218,5 +218,5 @@ return {
   trajectory: history.map((h) => ({ i: h.iteration, band: h.critique.band, total: h.critique.total })),
   finalBand: finalCritique ? finalCritique.band : null,
   finalTotal: finalCritique ? finalCritique.total : null,
-  persisted: 'pitch-lab/blackbox/demo-run.md',
+  persisted: 'pitch-lab/iterate-to-best/demo-run.md',
 }
