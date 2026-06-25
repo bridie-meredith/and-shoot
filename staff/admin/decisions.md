@@ -7812,3 +7812,85 @@ stm-written: yes
 ltm-written: no
 goals-update-proposed: no
 methodology-update-proposed: no
+
+---
+
+## DEC-0121 | 2026-06-25 | SLOW (user-proxy)
+
+question: |
+  Pitch tournament meta-pipeline (33 fantasy sci-fi pitches → plans → evaluator rounds → best-3 +
+  runbook). No active-project. Five ratification questions:
+  Q1. House under pitch-lab/ (vs design/)
+  Q2. Batch dispatches (~30-50 total) rather than per-item-per-round
+  Q3. Summarizer = fixed-schema one-para summary; Evaluator = rubric critic on concreteness/followability/
+      dramatic-shape/substance/originality/aliveness; escalating difficulty = raising pass thresholds
+  Q4. Primary deliverable is the RUNBOOK (repeatable prompt→plan→rework-until-best process); best-3
+      are proof, not the main point
+  Q5. Process improvements: local process-improvements.md in pitch-lab/, only cross-pipeline findings
+      escalated to real PROP entries
+
+context: |
+  Self-contained meta-pipeline, not a full /and-project activation. No active-project. Branch:
+  claude/fantasy-scifi-story-pitches-ek05et. User stated explicitly: "The runbook of fleshing out a
+  prompt into story and then reworking the plan until it passes as the bestest is my actual goal."
+  All five questions are architectural/scoping decisions for this new workstream.
+
+options:
+  Q1: pitch-lab/ vs design/
+  Q2: batched (~30-50 dispatches) vs per-item-per-round (hundreds)
+  Q3: This reading vs some other interpretation of "summarizer and evaluator we built"
+  Q4: Runbook-primary vs best-3-primary
+  Q5: Local process-improvements.md vs routing all findings to real PROP entries
+
+decision: |
+  Q1: YES — pitch-lab/ is correct.
+  Q2: YES — batched evaluation is correct.
+  Q3: YES — this reading is correct.
+  Q4: YES — runbook is the primary deliverable; best-3 are the proof/demonstration.
+  Q5: YES — local process-improvements.md for tournament-process findings; only cross-pipeline
+      improvements escalate to staff/admin/process-proposals.md.
+
+basis: goal:4 (lean architecture) + goal:2 (cost discipline) + goal:1 (pipeline correctness) +
+       methodology:3b (cost) + methodology:3c (blast radius) + methodology:3d (optionality)
+
+rationale: |
+  Q1: pitch-lab/ is the correct top-level directory. design/ is for and-shoot pipeline design artifacts
+  (substance framework, tournament tuning, etc.); this is a self-contained experiment with its own
+  runbook, evaluator specs, and output artifacts. Separate root = zero blast radius on existing pipeline
+  structure. Branch already named for this work.
+  
+  Q2: Batching is the correct posture. Per-item-per-round at 33 items × N rounds × M phases would be
+  hundreds of dispatches; that's spend-commitment-past-routine territory for a meta-pipeline experiment.
+  Batching to ~30-50 total is goal:2 cost discipline without sacrificing the discriminating-evaluator
+  goal. The evaluation rubric can score multiple plans per dispatch.
+  
+  Q3: Reading is correct and complete. The five axes (concreteness/followability per DEC-0115/Rule 22,
+  dramatic shape per /and-substance pattern, substance = costs-paid + antagonist-pressure-escalation,
+  originality/novelty, aliveness) map directly to what the and-shoot pipeline has built and validated.
+  "Escalating difficulty = raising thresholds until ~3 survive" is exactly the tournament framing.
+  
+  Q4: The user's explicit statement ("the runbook... is my actual goal") is dispositive. Best-3 summaries
+  and plans are output artifacts; the runbook is the transferable process. Weight effort toward: a
+  genuinely discriminating evaluator, a clear iterate-to-best loop documented as a runbook, and the
+  best-3 as demonstrated proof. This ordering also means if time/budget runs short, the runbook +
+  evaluator survive even if only a subset of pitches are fully processed.
+  
+  Q5: Lean architecture (goal:4) — the real PROP mechanism exists for cross-pipeline process changes
+  that affect the and-shoot authoring chain. Tournament-internal process discoveries (evaluator rubric
+  calibration, batch sizing, round sequencing, summarizer schema) are local to pitch-lab/ and should
+  not pollute the proposal log. Only findings that expose a gap or improvement in the core and-shoot
+  pipeline (e.g., a dimension the evaluator reveals that /and-review bones or /and-substance is missing)
+  warrant a real PROP entry.
+
+trade-off: |
+  Q1: design/ would keep the experiment under the existing "design thinking" umbrella but muddies the
+  boundary between pipeline design artifacts and tournament output. pitch-lab/ is cleaner separation.
+  Q2: Per-item dispatch would give more granular per-plan signal but at 10-20x cost — not justified
+  for a 33-pitch calibration experiment.
+  Q5: Some genuine cross-pipeline insights might initially land in process-improvements.md before being
+  recognized as PROP-worthy — the local file is the staging ground; escalation is always available.
+
+stm-written: yes
+ltm-written: no
+goals-update-proposed: no
+methodology-update-proposed: no
