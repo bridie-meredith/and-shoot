@@ -183,17 +183,40 @@ const finalCritique = converged
   ? history[history.length - 1].critique
   : await agent(criticPrompt(current, MAX + 1, MODE), { label: 'critique:final', phase: 'Final-score', schema: CRITIC_SCHEMA })
 
+// --- persist the full history to disk (the box's output artifact) ----------
+function bandStr(c) { return c ? `${c.band} ${c.total}/50` : 'n/a' }
+let md = `# Black box demo run — iterate-to-best\n\n`
+md += `**Prompt:** ${PROMPT}\n\n`
+md += `**mode:** ${MODE} · **maxIterations:** ${MAX} · **converged:** ${converged}\n\n`
+md += `**Trajectory:** ` + history.map((h) => `i${h.iteration} ${bandStr(h.critique)}`).join('  →  ') + `  →  final ${bandStr(finalCritique)}\n`
+for (const h of history) {
+  md += `\n---\n\n## Iteration ${h.iteration}\n\n### Summary going in\n\n${h.summary}\n\n`
+  md += `### Independent critic — ${bandStr(h.critique)}\n\n`
+  md += `Scores: \`${JSON.stringify(h.critique.scores)}\`\n\n`
+  md += `**Weaknesses:**\n` + h.critique.weaknesses.map((w) => `- ${w}`).join('\n') + `\n\n`
+  md += `**Fixes handed to the reviser:**\n` + h.critique.fixes.map((f) => `- ${f}`).join('\n') + `\n\n`
+  md += `**Feedback to the generator:** ${h.critique.generator_feedback}\n`
+}
+md += `\n---\n\n## FINAL SUMMARY (best assumed = last)\n\n${current}\n\n`
+md += `### Final critic — ${bandStr(finalCritique)}\n\n`
+if (finalCritique) {
+  md += `Scores: \`${JSON.stringify(finalCritique.scores)}\`\n\n`
+  md += `Verdict: ${finalCritique.verdict}\n`
+}
+
+await agent(
+  `Use the Write tool to create the file /home/user/and-shoot/pitch-lab/blackbox/demo-run.md with EXACTLY the content between the BEGIN and END markers below — verbatim, no edits, no added commentary, do not include the markers themselves.\n\n<<<BEGIN>>>\n${md}\n<<<END>>>`,
+  { label: 'persist-history', phase: 'Final-score' }
+)
+
 return {
   prompt: PROMPT,
   mode: MODE,
   maxIterations: MAX,
   converged,
-  iterations: history,
-  finalSummary: current,
-  finalCritique,
   bestIsLast: true,
-  firstBand: history.length ? history[0].critique.band : null,
-  firstTotal: history.length ? history[0].critique.total : null,
+  trajectory: history.map((h) => ({ i: h.iteration, band: h.critique.band, total: h.critique.total })),
   finalBand: finalCritique ? finalCritique.band : null,
   finalTotal: finalCritique ? finalCritique.total : null,
+  persisted: 'pitch-lab/blackbox/demo-run.md',
 }
