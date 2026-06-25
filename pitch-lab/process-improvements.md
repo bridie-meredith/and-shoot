@@ -59,6 +59,41 @@ Harvested during the 33-pitch tournament. Tournament-internal findings stay here
 **Change:** Make the specific-actionable-fix a HARD requirement of any REWORK verdict (already in evaluator-rubric.md honesty discipline). The evaluator that finds a flaw must also author the fix at the level of a concrete scene/mechanism change. This is the difference between a tournament that converges and one that thrashes.
 **Status:** adopted + validated (2/2 reworks cleared on first pass).
 
+## PI-12 [process] — A gauntlet (survival filter) is the WRONG frame; a discerning critic + feedback loop is the right one
+**Finding (principal feedback):** The Tier-4 gauntlet passed its three finalists at 24/25 each. A reviewer that grades its own survivors at near-perfect is curving, not judging — and a gauntlet produces *survivors*, never *insight*. It never tells the generator how to improve.
+**Change:** Replace the gauntlet with a **discerning critic** (`reviewer-spec.md`) whose job is to (a) place each summary honestly on an awful→best spectrum and (b) emit insight to improve both the summary AND the generator. "Best" = highest honest band under the harshest independent review, not last-one-standing. Validated: independent forks sorted a deliberate spectrum to 3/4 (awful straws) · 17 (weak) · 18-19 (strong), refusing to award BEST to any.
+**Status:** adopted (gauntlet retired; reviewer-spec.md is authoritative).
+
+## PI-13 [process] — Reviews must be INDEPENDENT BLIND FORKS, one per summary
+**Finding (principal feedback):** One critic batch-scoring a field curves (scores relative to the batch) and anchors (early scores set the scale). 
+**Change:** Each review is its own fork seeing exactly one summary and nothing else — no other summaries, no other scores, no tournament history. Convergence is then real, not curved (three separate forks independently landed P01/P09/P32 at 19). 
+**Status:** adopted.
+
+## PI-14 [process] — Escalate by refreshing the critic's BAR each pass, and recalibrate the scale so a 5 is near-unreachable
+**Finding (principal feedback, twice — "24/25 too nice", then "still not critical enough"):** Capping fives-per-column wasn't enough; the strong plans still floated to GOOD (18-19). 
+**Change:** An escalation ladder (L1 generous → L2 skeptical → L3 brutal), where each pass is told the prior was too soft and raises its bar. The brutal anchor: *a pitch is unproven potential; credit only what's demonstrated; treat unproven payoff as a liability.* Re-scored, the strong plans dropped to BAD (12-13). A genuinely strong but unproven pitch should land BAD–MEDIOCRE; GOOD requires defeating every attack; BEST is near-impossible for a pitch.
+**Status:** adopted (reviewer-spec.md escalation ladder + L3 attacks).
+
+## PI-15 [process] — Independence has a blind spot; pair blind forks with a non-blind FIELD-CRITIC
+**Finding:** Blind forks each see one plan, so none can see that the whole field is one shape repeated. That sameness is the single most damning criticism of this field and was invisible until a non-blind field-critic read the strong plans together.
+**Change:** A multi-prompt run requires BOTH independent blind forks (per-plan discernment, no curve) AND one non-blind field-critic (shared-formula / range / sentimentality / what-none-of-them-do). They are complementary.
+**Status:** adopted (reviewer-spec.md field-critic role).
+
+## PI-16 [content→ESCALATE candidate] — The 33-prompt brief over-selected ONE shape; coverage must be a designed constraint
+**Finding (field-critic):** All 33 prompts (and certainly the top of the field) are the tragic-irony-mechanism shape — "a power whose use IS the harm." No comedy, no hope, no winnable plot, no human antagonist, no tonal range. The defect is upstream: the generation brief rewarded individual tragic-irony quality and never solicited range, so the field converged.
+**Change (GEN-v2 R8):** A field brief must fill explicit tonal slots (tragic/comic/ambiguous/adventure/mystery), require a human antagonist in ≥⅓, require ≥1 winnable-protagonist prompt, and PENALIZE structural convergence. **ESCALATE candidate:** this is the same failure mode as a substance signature collapsing to a single register (DEC-0115/0120 lineage) — a note to staff/admin that "diversity/coverage as an explicit anti-convergence constraint" generalizes to series-level premise generation in the core pipeline.
+**Status:** local-adopted (generator-spec.md R8); escalation candidate noted.
+
+## PI-17 [criteria] — Five axes are too few to judge a pitch; expand to ten and tie fields 1:1 to criteria
+**Finding (principal feedback):** The C/D/S/O/A set omits stakes, interestingness, action, hook, and marketability — things an acquiring editor weighs.
+**Change:** Ten criteria (C / PS / ST / CO / CR / IN / AC / HK / AL / MK), /50, with bands rescaled. The generator's summary schema emits one field per criterion, so a weak axis is a visible hole, not a hidden one. The black box and reviewer-spec both use the 10-criterion rubric.
+**Status:** adopted (reviewer-spec.md expanded criteria; generator-spec.md 10-field schema).
+
+## PI-18 [process] — The whole loop generalizes into a reusable BLACK BOX
+**Finding (principal direction):** All the above — independent forks, self-escalating brutal critic, 10-criterion rubric, fresh-reviser-per-iteration, generator feedback, best=last — composes into one parameterized mechanism: (prompt, maxIterations) → generate → loop[harsh independent critic → fresh reviser] → full history.
+**Change:** Built as a committed, re-runnable workflow at `blackbox/iterate-to-best.workflow.js`. Each fork is fresh (independence structural); the critic self-escalates per iteration; output is the history of every summary + critique with best assumed last. This is the portable distillation of the entire pitch-lab run.
+**Status:** built + demonstrated.
+
 ## PI-12 [content→ESCALATE candidate] — "Unavoidability" (structural trap vs. character choice) is the single sharpest discriminator at the top of the field
 **Finding (Round 4):** The adversarial gauntlet's third attack — *can a smarter protagonist sidestep the tragedy by the premise's own rules?* — was the decisive killer. It eliminated THREE of seven finalists (P10 sisters, P19 life-vote-senate, P03 healing-wasps), all on the identical fault: the bad outcome depends on the protagonist *choosing* the self-destructive path when the premise does not structurally forbid the obvious alternative (Renne could negotiate via the notebook; Elia could abstain on procedural motions; Davan could stop curing and leave after cure 2). The three SURVIVORS (P01, P30, P32) all have the trap built into the premise's own laws — disease+guild+love (P01), her-nature-cannot-watch-hunger (P30), theology-forecloses-the-workaround (P32).
 **Change:** The unavoidability test should be applied EARLIER (it's cheap and brutal) and should be a named axis sub-criterion under Substance, not only a Tier-4 attack. The cleanest line between a good tragedy and a great one is: *is the catastrophe forced by the rules, or chosen by a protagonist who had an out?* A great premise leaves the protagonist no out a smarter person would take.

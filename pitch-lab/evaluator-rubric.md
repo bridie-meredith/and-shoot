@@ -75,6 +75,51 @@ This is the difficulty dial the principal asked to crank.
 
 ---
 
+---
+
+## Tier 5 — CRUCIBLE *(the brutal recalibration; added 2026-06-25 after the principal flagged Tier-4 winners scoring 24/25 as "too nice")*
+
+**Why this exists.** Tier 4 capped *fives per column* but never made the top score genuinely hard to reach, so the survivors floated to 24/25 — "great" sitting one point under perfect. A reviewer that grades its own finalists at 24/25 is curving, not judging. Tier 5 redefines the scale so the ceiling is earned, not assumed.
+
+### The recalibrated 0–5 scale (binding; replaces the generous anchors above for Tier 5)
+
+- **5 — Definitive.** Could not be improved by a top professional editor; the example the form is measured against. Award at most **once or twice across an entire field**, with explicit written justification for why it is genuinely unimprovable. **Default assumption: nothing is a 5.**
+- **4 — Excellent.** A clear, real strength — but a specific improvement is still nameable. (If you can name a better version, it is a 4, not a 5.)
+- **3 — Competent / professional.** Does the job without distinction. **This is the DEFAULT for a strong plan.** Most axes of most good plans live here.
+- **2 — Functional but flawed.** A weakness a reader would actually notice.
+- **1 — Deficient.**
+- **0 — Absent / broken.**
+
+**Expected outcome:** a genuinely strong pitch lands **~16–20/25**. A 21–22 is rare and exceptional. **24–25 should essentially never occur** — if you are about to award it, you have stopped looking for the flaw.
+
+### Mandatory-criticism rule
+
+For **every** plan — including the best — the critic MUST name **at least three concrete, specific weaknesses** (not generic hedges; a named beat, a named cliché, a named structural risk). A plan presented as flawless is an **evaluation failure**, not a perfect plan. At most **one** axis may reach 5, and only with the unimprovability justification.
+
+### The CRUCIBLE attack battery (six; harsher than Tier 4's four)
+
+A plan's score is docked by each attack that lands. All six are run; the first three are carried from Tier 4, sharpened:
+
+1. **GENERIC (mechanism)** — strongest case that the engine is derivative. Lands → dock O.
+2. **NAIVE-FOLLOW** — zero-context plain-English retell. Fails → dock C hard (DEC-0115).
+3. **UNAVOIDABILITY** — can a smarter protagonist sidestep the tragedy by the premise's own rules? Sidestep exists → dock S hard. *(This one already has teeth — it eliminated three Tier-4 finalists.)*
+4. **CLICHÉ-IN-EXECUTION** *(new)* — the *mechanism* may be fresh, but are the human/emotional materials stock? (the dying sister, the noble idealist, the suffering saint, the disillusioned priest, the plucky apprentice). Name the stock parts. Lands → dock A and/or O.
+5. **ONE-NOTE / SCALABILITY** *(new)* — does this sustain a novel or series, or is it one beat repeated until the protagonist collapses? What is the *second act* actually made of besides "more of the same, worse"? If the engine is a single repeating transaction with no developing complication, dock D.
+6. **PREDICTABLE-ENDING + ON-THE-NOSE** *(new)* — can the ending be called from the logline? Is the allegory tidy enough to state in one sentence (capitalism; martyrdom; grief)? Either lands → dock D and/or O.
+
+(Optionally also probe **protagonist agency** — does the protagonist drive events or only absorb them? A protagonist who is purely acted-upon docks D/S.)
+
+### Tier 5 gate
+
+- **Total floor: ≥ 18/25** to be called "good." **≥ 21/25** to be called "best."
+- **Per-axis floor: no axis below 3.**
+- At least four of the six attacks survived.
+- The critic's three-named-weaknesses requirement satisfied for every plan.
+
+Under Tier 5, expect the prior 24/25 winners to settle into the high teens / low twenties, and expect the ranking to be decided by *which plan has the least-bad worst axis*, not by which floated highest.
+
+---
+
 ## Scorecard format (per plan, per round)
 
 ```
