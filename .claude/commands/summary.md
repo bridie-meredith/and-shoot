@@ -1,5 +1,5 @@
 ---
-description: Iterate-to-best loop. Given a one-line story/series prompt and a max iteration count, generate a summary then loop[independent harsh critic -> fresh reviser] up to N times, returning the full history (best assumed = last). Usage - /iterate-to-best "<prompt>" [N] [story|series]
+description: Produce the best story (or series) summary from a one-line prompt. Internally generates a summary then loops [independent harsh critic -> fresh reviser] up to N times; returns the best summary (assumed = last) plus its full critique/revision history. Usage - /summary "<prompt>" [N] [story|series]
 ---
 
 Run the **iterate-to-best loop** at `pitch-lab/iterate-to-best/iterate-to-best.workflow.js`.
