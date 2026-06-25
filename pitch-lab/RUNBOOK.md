@@ -1,5 +1,7 @@
 # pitch-lab RUNBOOK — prompt → plan → rework-until-best
 
+> **SUPERSEDED IN PART (2026-06-25).** The "tournament / gauntlet" framing below (Tier-4 BESTEST, survivors-pass) was retired after principal review: a survival gauntlet inflates scores and teaches the generator nothing. The authoritative evaluation model is now the **discerning critic** in `reviewer-spec.md` (independent blind forks · self-escalating brutal bar · 10-criterion scale · non-blind field-critic), the generator is improved by reviewer insight per `generator-spec.md`, and the whole loop is packaged as the re-runnable **black box** in `blackbox/`. The field-narrowing rounds below are still valid; the final-judging tier is replaced by discernment. See `RESULTS.md` for the corrected verdict.
+
 **This is the deliverable.** A repeatable process that takes a one-sentence story prompt, fleshes it into a substance-backed story plan, summarizes the plan in a fixed schema, evaluates the summary against an escalating-difficulty rubric, and reworks the plan until it passes at the highest tier — or is eliminated. Run it over a field of prompts and it functions as a tournament that converges on the few best.
 
 It is a deliberately lighter-weight sibling of the main and-shoot planning chain (`/and-project → /and-series → /and-substance → /and-cast`). It borrows that chain's *discriminators* (substance contracts, dramatic shape, the DEC-0115 concreteness law) but not its full apparatus, so a single operator can run a wide field cheaply.

@@ -1,83 +1,64 @@
 # pitch-lab — RESULTS
 
-A 33-pitch fantasy–sci-fi tournament run end-to-end through the pitch-lab runbook: **prompt → plan → summarize → evaluate at rising difficulty → rework the near-best → converge on 3.** The runbook (`RUNBOOK.md`) is the deliverable; this field is its proof.
+A run that started as a 33-pitch tournament and, under the principal's corrections, became something more useful: a **discerning critic + feedback loop**, and finally a reusable **black box**. This file records the honest end state, including where the early framing was wrong.
 
 ---
 
-## The best 3
+## What was built (the deliverables)
 
-| Rank | Plan | Score | Engine in one line |
-|------|------|-------|--------------------|
-| **#1** | **P01 bonewright-sister** | 24/25 · SURVIVES-ALL | A bonewright keeps her dying sister walking by grafting living bone grown from her own marrow — but the grafts carry her signature, so the saved sister becomes *her*. The cost of the gift is the recipient's selfhood, paid incrementally, from love. |
-| **#2** | **P30 famine-saint** | 24/25 · SURVIVES-ALL | A saint multiplies bread by absorbing others' hunger into her own body; at city scale the hunger stops dissipating and starts *growing*, eating her from inside. Not martyrdom — parasitism. |
-| **#3** | **P32 weather-priest-invoice (REWORKED)** | 24/25 · SURVIVES-ALL | A weather-priest finds his own ordination oath printed verbatim in his guild's founding charter: his faith was commercial property before he ever held it. The sacred *was* commercial, at origin. |
-
-Full packages (ranking + summary + adversarial result + why-it-won + full plan) in `best-3/`.
-
-**The headline:** **#3 is a reworked plan.** P32 entered Round 3 *below the cut line* (21/25, held back by one capped axis — Originality). It was carried into the iterate-to-best loop, given one surgical fix, and climbed to 24/25 in the final three. That single trajectory is the runbook's whole thesis: *rework the near-best until it passes as the bestest.*
+| Artifact | What it is |
+|---|---|
+| `RUNBOOK.md` | the repeatable prompt → plan → rework-until-best process |
+| `reviewer-spec.md` | **the discerning critic** — independent blind forks, self-escalating bar, 10-criterion brutal scale, the field-critic role |
+| `generator-spec.md` | the generator as a first-class object that *improves* (GEN-v1 → GEN-v2, nine rules from reviewer insight) |
+| `summarizer-spec.md` | the fixed-schema, honest-flagging summarizer |
+| `00-pitches.md` + `plans/` | 33 single-sentence fantasy–sci-fi pitches expanded into substance-backed plans |
+| `eval/round-1..3.md` | the field-narrowing rounds (33 → 15 → 5+2) |
+| `eval/discernment/` | the independent blind-fork reviews + the non-blind field-critic + the corrected verdict |
+| **`blackbox/iterate-to-best.workflow.js`** | **the black box** — (prompt, maxIterations) → generate → loop[harsh independent critic → fresh reviser] → full history; best = last |
+| `blackbox/demo-run.md` | a real run of the black box, with its full per-iteration history |
+| `process-improvements.md` | 19 harvested improvements (PI-01..19), spanning the whole arc |
 
 ---
 
-## Convergence trace (33 → 3)
+## The corrected verdict (this supersedes the early "best-3")
+
+The first pass produced a `best-3/` of P01, P30, P32 at **24/25** via a Tier-4 "gauntlet." **That framing was wrong and is retired.** A gauntlet asks "which summary survived furthest"; it inflates (everything that survives looks near-perfect) and it teaches nothing. Under the principal's corrections — *be more critical, use independent forks, escalate the bar, discern don't filter, and feed insight back* — the honest picture is:
+
+**Under independent, blind, self-escalating brutal forks:**
+
+| Summary | gauntlet | **honest (blind)** | **brutal (L3)** |
+|---|---|---|---|
+| SX1 / SX2 (deliberately-awful straws) | — | **3–4/25 AWFUL** | — |
+| P29 cartomancer (weak) | eliminated | **17 MEDIOCRE** | — |
+| P09 year-debt (competent) | eliminated | **19 GOOD** | — |
+| P01 bonewright | **24** | **19 GOOD** | **12 BAD** |
+| P30 famine-saint | **24** | **18 GOOD** | **12 BAD** |
+| P32 weather-priest | **24** | **19 GOOD** | **13 BAD** |
+
+The reviewer now **discerns** (sorts awful→best with spread scores; refuses to award BEST), and at the brutal bar it exposes every "winner" as **clever, concrete, formulaic, and unproven** (BAD).
+
+**The field-critic (non-blind) found the deeper truth blind forks structurally cannot see:** the entire field is *one shape* — "a mechanism whose operation IS the harm," tragic-irony, paid on the body. Severe range deficit — no comedy, no hope, no winnable plot, no human antagonist. Its ranking: **P09 > P32 > P01 > P30**, with the verdict that *none is "best" in absolute terms — P09 is "best of a samey field, a designation that is accurate and indicting simultaneously."*
+
+So the honest top-3 is **P09, P32, P01** — stated with the field-critic's caveat: they are the least-cramped corners of a field the generator (and the original 33-prompt brief) over-narrowed to one tragic register. The real fix is upstream: GEN-v2 R8 (category coverage + structural-sameness penalty).
+
+---
+
+## The black box (the portable result)
+
+`blackbox/iterate-to-best.workflow.js` distills the whole run into one re-runnable mechanism. Demonstrated on a fresh, deliberately off-formula prompt (a heist with a human antagonist and a winnable ending):
 
 ```
-33 plans
-  │  Round 1  Tier 1 OPEN (generous)      gate: ≥16, no axis 0
-  ▼  → ALL 33 PROMOTE  (strong field; the generous tier did no cutting — PI-05)
-33
-  │  Round 2  Tier 2 STANDARD (skeptical + anti-inflation anchors)   cut line: ≥20
-  ▼  → 15 PROMOTE  / 6 rework-not-carried / 6 below-line / 6 structural-elim
-15
-  │  Round 3  Tier 3 HARD (skeptical; C≥4 & S≥4; O-cap for nameable engines)   gate: ≥22
-  ▼  → 5 PROMOTE  + 2 of 6 reworks carried into a lift attempt
-5 + 2 reworked (P03, P32)
-  │  Round 4  Tier 4 BESTEST (adversarial gauntlet: generic / naive-follow / unavoidability / one-image)
-  ▼  → 3 SURVIVE-ALL
-BEST 3:  P01, P30, P32(reworked)
+Trajectory:  i1 GOOD 32/50  →  i2 GOOD 34/50  →  i3 GOOD 34/50  →  final GOOD 33/50
 ```
 
-### What each round actually did
-
-- **Round 1 (Tier 1, generous):** promoted all 33. Not a failure — the field was uniformly strong (the *expansion brief* hard-coded the discriminators, so weak plans never entered — PI-06). Lesson: when the field over-performs the opening tier, escalate by *stance + anti-inflation anchors*, not threshold alone (**PI-05**).
-- **Round 2 (Tier 2, skeptical):** the anti-inflation re-score compressed the bunched 16–24 band into a separable 13–23 spread. 18 eliminations across three honest classes (structural fault / near-miss-with-fix / cleared-but-below-line). Caught P12's abstract engine that the summarizer had passed — concreteness must be re-judged at a harder stance (**PI-08**).
-- **Round 3 (Tier 3, hard):** all four eliminations died on the *same* disqualifier — **Originality capped because the engine was a nameable archetype**. In a concreteness-and-substance-disciplined field, originality is the axis that actually selects (**PI-09**).
-- **Round 4 (Tier 4, adversarial):** the **unavoidability attack** was the decisive killer — it eliminated 3 of 7 finalists (P10, P19, P03), all on the identical fault: tragedy resting on a character *choice* the premise didn't structurally foreclose. The survivors all have premise-*forced* traps (**PI-12** → escalated as PROP-0059).
+What this single run shows:
+- The loop **works** (generate → independent harsh critic → fresh reviser, 9 forks) and **improves** (32 → 34).
+- The off-formula prompt scored *higher* than the tragic-irony field under the same bar — direct evidence for the range critique.
+- **"Best = last" is a default, not a law:** the final revision over-corrected to 33, below the iteration peak of 34. The box returns the full trajectory so this is auditable (PI-19); an argmax variant is noted for anyone who wants the strict guarantee.
 
 ---
 
-## The iterate-to-best loop, demonstrated
+## The one-line answer to "the runbook is my actual goal"
 
-Two near-best plans were reworked under the loop (rework budget reserved for plans that could change the *winner* — **PI-07**):
-
-| Plan | Pre-rework | Fix (surgical, single-axis, concrete) | Post-rework | Outcome |
-|------|-----------|----------------------------------------|-------------|---------|
-| **P32** weather-priest | 21/25 (O=3, nameable) | Reveal the ordination oath *is* Article 1 of the guild charter — faith was property before vocation | **24/25** | **→ BEST-3 #3** |
-| **P03** healing-wasps | 20/25 (A,D soft) | Concrete memory-gap beat + visible causal-loop event | 21/25 | FELL at Tier 4 on unavoidability (S) — an axis the rework didn't touch (**PI-13**) |
-
-Both reworks *landed on the first pass* because each instruction named the exact axis AND the exact concrete change (**PI-11**). P32 is the success case; P03 is the instructive near-miss that produced PI-13 (re-test the whole gauntlet after a rework — the new binding constraint may be elsewhere).
-
----
-
-## What the tournament taught (process improvements)
-
-Full log in `process-improvements.md` (PI-01 … PI-13). The load-bearing ones:
-
-1. **Split summarizer from evaluator** (PI-01) — faithful compression + honest flags vs. judgment; never the same agent.
-2. **Front-load discriminators into the generator, not just the judge** (PI-06) — the cheapest quality lever in the pipeline; it's why the field was strong enough that selection moved to the hard tiers.
-3. **Escalate the critic's *stance*, not just the numeric bar** (PI-04, PI-05) — generous → neutral → skeptical → adversarial; re-score from scratch each tier.
-4. **The gate is three-way and logged** (PI-03) — promote / rework / eliminate, always with a reason; no plan kept or dropped on vibes.
-5. **Reserve rework budget for the winner-deciding plans** (PI-07); **a rework instruction must be axis-specific and concrete** (PI-11); **re-test the full gauntlet after a rework** (PI-13).
-6. **Originality is the top-of-field discriminator once concreteness is disciplined** (PI-09); **unavoidability (premise-forced vs. character-chosen) is the sharpest single test** (PI-12).
-
-Two findings crossed into the core and-shoot pipeline (per DEC-0121): **PI-08** (multi-stage concreteness gating — confirmatory of DEC-0115, filed as a note) and **PI-12** (an explicit unavoidability sub-gate for the substance contract — filed as **PROP-0059** for principal triage).
-
----
-
-## Run accounting
-
-- **Field:** 33 single-sentence prompts (`00-pitches.md`), seeded across all 8 premise lenses.
-- **Dispatches:** ~21 agent dispatches total — 1 admin (scope), 6 screen-writer (expansion), 3 summarizer, 6 evaluator (rounds 1-2), 1 evaluator (round 3), 2 screen-writer (rework), 1 summarizer (re-summarize), 1 evaluator (round 4 gauntlet). Batched per DEC-0121 rather than per-item-per-round (which would have been hundreds).
-- **Artifacts:** 33 plans + 2 reworks (`plans/`), 35 summaries (`eval/summaries-*`), 4 round reports + scorecards (`eval/round-*`), 3 winner packages (`best-3/`), the runbook + 2 specs, the process log, this file.
-- **Escalations:** PROP-0059 (unavoidability sub-gate) filed to `staff/admin/process-proposals.md`.
-
-The runbook ran clean end-to-end and converged on exactly the target of 3 with no human intervention; all flow-control was ratified once via admin user-proxy (DEC-0121).
+Take a prompt → generate a substance-backed summary → hand it to an **independent, blind, self-escalating** critic that grades on ten criteria with a near-unreachable ceiling and treats an unproven pitch as a liability → hand the critique to a **fresh** reviser → repeat, ratcheting the bar each pass → keep the full history, and *verify* rather than assume which summary is best. Run it across a field and add a **non-blind field-critic** to catch the sameness no single review can see. That loop — not a bracket of survivors — is what turns a one-line prompt into the best version of its story, and it is now a button: `blackbox/iterate-to-best.workflow.js`.
