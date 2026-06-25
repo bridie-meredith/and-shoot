@@ -58,3 +58,21 @@ Harvested during the 33-pitch tournament. Tournament-internal findings stay here
 **Finding (Round 3-4):** Both reworks (P03, P32) landed on the first pass because the evaluator's REWORK directive was surgical: not "improve originality" but "reveal the ordination ceremony itself was a guild contract, so faith was commercial property before he held it." The screen-writer could execute it directly with no guesswork.
 **Change:** Make the specific-actionable-fix a HARD requirement of any REWORK verdict (already in evaluator-rubric.md honesty discipline). The evaluator that finds a flaw must also author the fix at the level of a concrete scene/mechanism change. This is the difference between a tournament that converges and one that thrashes.
 **Status:** adopted + validated (2/2 reworks cleared on first pass).
+
+## PI-12 [content→ESCALATE candidate] — "Unavoidability" (structural trap vs. character choice) is the single sharpest discriminator at the top of the field
+**Finding (Round 4):** The adversarial gauntlet's third attack — *can a smarter protagonist sidestep the tragedy by the premise's own rules?* — was the decisive killer. It eliminated THREE of seven finalists (P10 sisters, P19 life-vote-senate, P03 healing-wasps), all on the identical fault: the bad outcome depends on the protagonist *choosing* the self-destructive path when the premise does not structurally forbid the obvious alternative (Renne could negotiate via the notebook; Elia could abstain on procedural motions; Davan could stop curing and leave after cure 2). The three SURVIVORS (P01, P30, P32) all have the trap built into the premise's own laws — disease+guild+love (P01), her-nature-cannot-watch-hunger (P30), theology-forecloses-the-workaround (P32).
+**Change:** The unavoidability test should be applied EARLIER (it's cheap and brutal) and should be a named axis sub-criterion under Substance, not only a Tier-4 attack. The cleanest line between a good tragedy and a great one is: *is the catastrophe forced by the rules, or chosen by a protagonist who had an out?* A great premise leaves the protagonist no out a smarter person would take.
+**Status:** local-adopted. **ESCALATE candidate:** this maps directly onto the and-shoot substance contract — the cost ledger and antagonist pressure already exist, but "unavoidability / no-smarter-sidestep" is not an explicit gate at `/and-substance` or `/and-write`. Worth proposing as a substance-signature sub-check.
+
+## PI-13 [process] — A single-axis rework can leave a DIFFERENT axis exposed at the next-harder tier; re-test the whole gauntlet, not just the fixed axis
+**Finding (Round 4):** P03's rework correctly lifted A (4→5) and D (the two axes Round 3 named) and both fixes landed — but the Tier-4 gauntlet then killed P03 on **unavoidability (S)**, an axis the rework never touched and Round 3 had not flagged because Tier 3 doesn't run the unavoidability attack. The fix was real; it just wasn't the binding constraint at the harder tier. By contrast P32's rework happened to deepen S and D as a side-effect of the O-fix, so it survived.
+**Change:** After a rework, re-run the FULL evaluation at the target tier, not just a re-check of the fixed axis. A rework changes the plan; the new hardest-tier binding constraint may be somewhere the rework didn't look. (Cross-pipeline parallel: this is why `/and-write revise` re-runs the whole bone-gate, not just the bones it touched — Rule 5.)
+**Status:** adopted (Round 4 re-scored all 5 axes + all 4 attacks on the reworked plans).
+
+---
+
+## Escalations to the real proposals log
+
+The following local findings cross the boundary into the core and-shoot pipeline and have been (or should be) surfaced to `staff/admin/process-proposals.md` per DEC-0121:
+- **PI-08** — concreteness must be gated at multiple rising stances; the pitch-lab independently reproduced the "abstraction survives a single lenient gate" failure (P12) that DEC-0115's multi-surface enforcement exists to catch. *Confirmatory evidence for the existing design — filed as a note.*
+- **PI-12** — "unavoidability / no-smarter-sidestep" as an explicit substance sub-gate. *Genuinely additive — the substance contract gates cost and pressure but not whether the tragedy is premise-forced vs. character-chosen.* This is the one worth a real PROP.
