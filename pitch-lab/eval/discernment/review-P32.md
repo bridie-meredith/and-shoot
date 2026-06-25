@@ -1,0 +1,24 @@
+REVIEW — P32
+SCORES: C:4 D:4 S:4 O:4 A:3 TOTAL:19/25
+BAND: GOOD
+
+WEAKNESSES (>=3 concrete/specific, never a hedge):
+1. The antagonist is a mechanism, not a will. The factor delivers an invoice, the clerk points to a charter, the enforcement arm arrives with a writ — these are functions, not pressures. There is no scene where a human being with a competing stake pushes back against the priest in a way that costs the antagonist something. The guild's pressure is bureaucratic sequencing, not escalating human antagonism. A guild factor who wants the city-post deal to close for his own advancement — who has something to lose if the priest refuses — would make the same structural escalation feel like a contest rather than a ratchet.
+
+2. The midpoint discovery (oath as Article 1 Clause 2) is the strongest beat but its emotional consequence is not paid on screen. The summary shows him copying it by hand onto parish paper — a beautiful image — but gives no account of what that copying costs him in the room, in the moment. Does he finish? Does he stop? Does a clerk notice? The physical detail lands; the interior collapse does not. The hook image works as an image and fails as a scene; a scene requires consequence inside the four walls of the registry hall, not only downstream in the chapter summary.
+
+3. The ending forecloses its own tragedy. He calls rain a fourth time, loses his priesthood, the field transfers, he stays and farms it under lien — and this is presented as resolution. But the premise's cruelest implication is unreached: the rain he calls without a license is still measurable rain on still real fields; is it still holy? The summary stops at the legal and material outcome without pressing the theological question the logline promises to resolve. The promised question is "what remains holy" — the ending answers "he farms the field" and never returns to the question. That gap is not ambiguity; it is evasion.
+
+SUMMARY INSIGHTS (2-3 actionable fixes; name axis + exact change):
+1. D (dramatic shape): Add one moment where the antagonist faces a counterpressure — the factor needs the priest's city-post acceptance to close a quota, or the clerk who pointed him to the charter risks censure for it. The escalation is currently one-directional; a reversal requires the priest's choices to cost the guild something it was counting on, or at minimum to disrupt a plan. Without that, the shape is exposure+enforcement, not confrontation.
+
+2. S (substance): Force the theological question into the ending's physical action. When rain falls on the unlicensed fourth call, have the field's new lien-holder (the guild, or a named farmer who now owes them) immediately register it as a guild disbursement anyway — the mechanism swallows the sacred act without acknowledging the revocation. That image — rain credited to a guild ledger the priest no longer belongs to — makes "what remains holy" answerable by the scene itself rather than deferred to the reader's abstraction.
+
+3. A (aliveness): The registry-hall image is the strongest moment but it is framed as a discovery rather than a crisis. Sharpen: give the clerk at the standing desk a name and a reaction (does he see? does he pretend not to?), and let the priest's handcopy be interrupted or completed under observation. The image gains weight when another human is in the room witnessing what it means.
+
+GENERATOR INSIGHT (1-2 systemic patterns about the GENERATOR/process that made this, generalizable):
+1. The generator is strong at building structural irony (the oath IS the contract) and weak at populating the antagonist with will. The guild functions as a legal system rather than a cast of people with competing interests. This is a recurring pattern in high-concept mechanism-pitches: the mechanism is so elegant that the generator stops short of asking who inside the institution needs the mechanism to work and why that person would fight to protect it. Every strong mechanism needs at least one human who would be personally harmed if the protagonist won.
+
+2. The generator resolves loglines with material outcomes when the logline promises metaphysical outcomes. "What remains holy" is the question; "he farms the field under lien" is the answer given. The generator consistently closes at the legal/economic layer (the one the mechanism operates in) without pressing through to the spiritual/existential layer (the one the logline opens). Fix: when writing the ending beat, require the generator to name which sentence of the logline-question the ending physically enacts — not just what happens, but which word of the question it answers.
+
+ONE-LINE VERDICT: A structurally elegant premise with a mechanism that earns its irony and a midpoint image that nearly justifies the whole — blunted by a guild that never fights back as a human will and an ending that answers the material question while evading the theological one the logline promised to crack open.

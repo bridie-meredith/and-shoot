@@ -6842,3 +6842,61 @@ pr_ref: null
 defer_until: null
 supersedes: null
 ```
+
+---
+
+## PROP-0059
+
+```yaml
+id: PROP-0059
+created_at: 2026-06-25T00:00:00Z
+created_by: pitch-lab tournament (main session)
+trigger:
+  reason: on-demand
+  source_report: pitch-lab/process-improvements.md
+  source_verdict: pitch-lab Round 4 adversarial gauntlet — PI-12
+target:
+  type: command
+  path: .claude/commands/and-substance.md
+  section: "substance signature — cost_ledger / antagonist_pressure (add an unavoidability sub-check)"
+change_type: modify
+rationale: |
+  The pitch-lab tournament (33 fantasy-scifi pitches → plans → 4 escalating evaluation rounds → best-3)
+  surfaced that the single sharpest discriminator at the top of a strong field is UNAVOIDABILITY:
+  "can a smarter protagonist sidestep the tragedy by the premise's own rules?" In the Tier-4 adversarial
+  round this one attack eliminated 3 of 7 finalists (P10, P19, P03), all on the identical fault — the
+  catastrophe depended on the protagonist CHOOSING a self-destructive path the premise did not
+  structurally foreclose (a smarter protagonist negotiates / abstains / stops early and the tragedy
+  evaporates). All three SURVIVORS had the trap built into the premise's own laws.
+
+  The and-shoot substance contract already gates cost_ledger (is the price paid, escalating, on-page)
+  and antagonist_pressure (does it escalate mechanically) — but it does NOT explicitly gate whether the
+  central tragedy is PREMISE-FORCED vs. CHARACTER-CHOSEN. A road-to-hell that a competent protagonist
+  could simply decline is a weaker contract than one whose own rules leave no out. This is the cleanest
+  line between a good dramatic premise and a great one, and it is currently unenforced.
+
+  Proposal: add an "unavoidability" sub-check to the substance signature at /and-substance (series/book/
+  chapter dramatic_shape) and echo it at /and-write Phase 6 bone-gate — for the central-conflict axis,
+  ask whether a smarter protagonist following the premise's stated rules could sidestep the cost. If yes
+  → SIGNAL (the road-to-hell rests on character choice, not structural trap); the author must either
+  close the sidestep in the world-rules or accept the softer contract explicitly.
+evidence_refs:
+  - "pitch-lab/process-improvements.md § PI-12"
+  - "pitch-lab/eval/round-4-adversarial.md (Attack 3 — unavoidability; P10/P19/P03 FALL, P01/P30/P32 SURVIVE)"
+  - "pitch-lab/RUNBOOK.md + evaluator-rubric.md (Tier 4 adversarial gauntlet design)"
+recurrence_count: 1
+proposed_diff: |
+  At /and-substance, in the dramatic_shape / antagonist_pressure section of the substance signature,
+  add an UNAVOIDABILITY sub-criterion: "State the obvious smarter-protagonist sidestep to the central
+  cost, and the premise rule that forecloses it. If no rule forecloses it, the road-to-hell is
+  character-chosen, not premise-forced → SIGNAL." Echo at /and-write Phase 6 bone-gate for the
+  central-event/stakes-axis bone.
+cost_estimate: M
+status: open
+triaged_at: null
+triaged_by: null
+disposition_note: "Filed from the pitch-lab experiment per DEC-0121 (genuinely cross-pipeline finding; the local tournament-internal improvements PI-01..11/13 stay in pitch-lab/). NOT built — proposal only, for principal triage. A companion confirmatory note (PI-08: multi-stage concreteness gating reproduces independently) is recorded in pitch-lab/process-improvements.md and needs no command change."
+pr_ref: null
+defer_until: null
+supersedes: null
+```
